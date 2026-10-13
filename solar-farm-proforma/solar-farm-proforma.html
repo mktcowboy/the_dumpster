@@ -149,6 +149,22 @@
       table.pf tr.neg td { color: var(--bad); }
       table.pf tr.sub td { background: var(--green-soft); }
       @media (max-width: 760px) { table.pf .opt { display: none; } }
+      .flag.fix { color: var(--green); background: var(--green-soft); border-color: var(--green); }
+      .stmt-wrap { overflow-x: auto; border: 1px solid var(--line); background: var(--card); margin: 10px 0 6px; -webkit-overflow-scrolling: touch; }
+      table.stmt { border-collapse: separate; border-spacing: 0; font-size: 12.5px; }
+      table.stmt th, table.stmt td { padding: 4px 8px; text-align: right; white-space: nowrap; border-bottom: 1px solid var(--line); }
+      table.stmt th { font-size: 11px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); border-bottom: 2px solid var(--ink); position: sticky; top: 0; background: var(--card); }
+      table.stmt th:first-child, table.stmt td:first-child { position: sticky; left: 0; z-index: 1; text-align: left; background: var(--card); border-right: 1px solid var(--line-strong); min-width: 230px; white-space: normal; }
+      @media (max-width: 640px) { table.stmt th:first-child, table.stmt td:first-child { min-width: 140px; max-width: 150px; font-size: 11.5px; } }
+      table.stmt td.n { color: var(--bad); }
+      table.stmt td.tot { font-weight: 700; border-left: 1px solid var(--line-strong); }
+      table.stmt tr.hd td { font-size: 11px; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase; color: var(--accent-ink); padding-top: 12px; border-bottom: 1px solid var(--line-strong); }
+      table.stmt tr.b td { font-weight: 700; }
+      table.stmt tr.sub td { font-weight: 700; background: var(--green-soft); }
+      table.stmt tr.sub td:first-child { background: var(--green-soft); }
+      table.data.audit { min-width: 860px; margin: 0; font-size: 14px; }
+      table.data.audit td, table.data.audit th { padding-left: 10px; }
+      .controls select:disabled, .controls input:disabled { opacity: 0.45; }
       .dl-btn { display: inline-block; margin: 10px 0 4px; padding: 10px 18px; font-size: 14px; font-weight: 700; color: var(--accent-ink); border: 1.5px solid var(--accent); border-radius: 4px; background: transparent; cursor: pointer; font-family: inherit; }
       .dl-btn:hover { background: var(--warn-bg); }
 
@@ -186,10 +202,10 @@
         <div class="tile"><span>Total capital cost</span><b id="t-capex">—</b><small id="t-capex-sub">EPC + interconnection</small></div>
         <div class="tile"><span>Year-1 revenue</span><b id="t-rev">—</b><small id="t-rev-sub">under contract</small></div>
         <div class="tile"><span>Year-1 EBITDA</span><b id="t-ebitda">—</b><small id="t-ebitda-sub">before debt service</small></div>
-        <div class="tile"><span>Unlevered IRR · 30 yr</span><b id="t-uirr">—</b><small>project level, incl. ITC sale</small></div>
-        <div class="tile"><span>Sponsor levered IRR</span><b id="t-lirr">—</b><small id="t-lirr-sub">after senior debt</small></div>
-        <div class="tile"><span>Year-1 DSCR</span><b id="t-dscr">—</b><small>lenders look for ≥ 1.30×</small></div>
-        <div class="tile"><span>Cash payback</span><b id="t-payback">—</b><small>unlevered, incl. ITC proceeds</small></div>
+        <div class="tile"><span>Unlevered IRR · after tax</span><b id="t-uirr">—</b><small id="t-uirr-sub">project level, incl. ITC sale</small></div>
+        <div class="tile"><span>Sponsor IRR · after tax</span><b id="t-lirr">—</b><small id="t-lirr-sub">after senior debt</small></div>
+        <div class="tile"><span>Minimum DSCR</span><b id="t-dscr">—</b><small>lenders look for ≥ 1.30×</small></div>
+        <div class="tile"><span>Equity payback</span><b id="t-payback">—</b><small id="t-payback-sub">levered, after tax</small></div>
       </div>
       <p class="src">Headline tiles show the interactive model's base case (Section 7). Change any assumption there and every figure on this page's model updates.</p>
 
@@ -210,7 +226,7 @@
         </p>
         <p>
           Two structural features carry the deal, and one Texas feature threatens it. First, the federal
-          investment tax credit (ITC) rebates 30% of the build cost — worth roughly <strong>$51 million</strong>
+          investment tax credit (ITC) rebates 30% of the eligible build cost — worth roughly <strong>$47 million</strong>
           on this project — and it can be sold for cash at about 90–95¢ on the dollar. Second, ERCOT's
           “connect and manage” interconnection is far cheaper and faster than in SPP or MISO (Section 2).
           Against that, Texas property tax is a top cost driver: unabated, a plant this size could face
@@ -267,7 +283,7 @@
             5-plus-year national median — and ERCOT executed more interconnection agreements in 2024
             than any other ISO.
           </p>
-          <p class="src">Sources: Berkeley Lab “Queued Up” via <a href="https://pv-magazine-usa.com/2026/01/07/ercot-outperformed-on-interconnection-in-2024-likely-due-to-connect-and-manage/">pv magazine USA, Jan 7, 2026</a>; timeline: <a href="https://www.renewableenergyworld.com/energy-business/policy-and-regulation/why-texas-builds-and-everyone-else-waits/">Renewable Energy World, Sep 2026</a>. The trade-off of connect-and-manage is curtailment risk, which this simplified model does not deduct — see Section 8.</p>
+          <p class="src">Sources: Berkeley Lab “Queued Up” via <a href="https://pv-magazine-usa.com/2026/01/07/ercot-outperformed-on-interconnection-in-2024-likely-due-to-connect-and-manage/">pv magazine USA, Jan 7, 2026</a>; timeline: <a href="https://www.renewableenergyworld.com/energy-business/policy-and-regulation/why-texas-builds-and-everyone-else-waits/">Renewable Energy World, Sep 2026</a>. The trade-off of connect-and-manage is curtailment risk; the model deducts a 3% allowance (adjustable) — see Section 9.</p>
         </div>
       </section>
 
@@ -428,12 +444,22 @@
                 about <strong>$300,000/yr</strong> scaled to this 149 MWdc project. Without any abatement,
                 the one Texas project with a published figure (350 MW in Concho County) expects
                 ~$5M/yr — <strong>≈$14,300/MW/yr</strong> <span class="flag">Single-source proxy</span> —
-                over $2.1M/yr here. The model therefore runs the PILOT rate for years 1–10 and the full
-                rate from year 11, with both as sliders: if the county says no, set the PILOT to the
-                full rate and watch the tail. One legislative risk: SB 819 (2025) would have banned
+                over $2.1M/yr here.
+              </p>
+              <p>
+                <strong>The catch: a county abatement does not touch school taxes.</strong> Chapter 312
+                abatements are granted by counties and cities; school districts cannot grant them, and
+                Chapter 403 shuts solar out of the school-district program. So the PILOT replaces only
+                the county's slice. Around Wichita Falls the school district is the biggest slice —
+                Electra ISD proposed ~$1.09 per $100 of value for 2025 against Wichita County's ~$0.52 —
+                so the model treats <strong>~65% of the full rate as school tax that is paid every
+                year</strong>, PILOT or not, and applies the PILOT only to the remaining county share in
+                years 1–10. It also lets the plant's appraised value fall over time (default 3%/yr, floor
+                20%) rather than holding it flat. One legislative risk: SB 819 (2025) would have banned
                 abatements for ≥10 MW renewables; it died in the House in May 2025 but could return in
                 the 2027 session.
               </p>
+              <p class="src">School districts excluded from Ch. 312: <a href="https://comptroller.texas.gov/economy/development/prop-tax/ch312/">Texas Comptroller, Property Tax Abatement Act</a>; county-only scope illustrated by <a href="https://txktoday.com/news/bowie-county-votes-tuesday-on-a-10-year-tax-break-for-red-barn-solar/">Bowie County / Red Barn Solar</a>; 2025 rates from taxing-unit notices posted by the <a href="https://wichitatax.com/">Wichita County Appraisal District</a> (Aug 2025) — proposed, not adopted, rates. The 65% split and the 3%/yr value decline are <span class="flag">Model assumptions</span>: get the actual ISD and the appraisal district's solar depreciation schedule.</p>
               <p class="src">Sources: Wichita County PILOT via <a href="https://citizenportal.ai/articles/7048155/Wichita-County/Texas/Wichita-County-authorizes-10-year-PILOT-with-Total-Energy-for-proposed-solar-project">Citizen Portal, Nov 2025</a> and <a href="https://citizenportal.ai/articles/5915561/Wichita-County/Texas/Wichita-County-approves-reinvestment-zone-for-proposed-TotalEnergies-solar-project">reinvestment zone, Oct 2025</a>; Chapter 403 exclusion: <a href="https://www.keatax.com/how-the-texas-jeti-act-shapes-manufacturing-energy-and-technology-investment/">KE Andrews, May 2026</a>; unabated proxy: <a href="https://constructionreviewonline.com/construction-begins-on-524m-350mw-lucy-solar-project-in-texas/">Construction Review Online, Jan 2026</a>; SB 819: <a href="https://electrek.co/2025/05/28/texas-just-shot-its-wind-solar-boom-in-the-foot-on-purpose/">Electrek, May 28, 2025</a>.</p>
             </div>
           </div>
@@ -463,8 +489,9 @@
         <div class="callout">
           <h3>⚠ The December 31, 2027 cliff</h3>
           <p>
-            The ITC is 30% of build cost (with prevailing-wage and apprenticeship compliance) — about
-            <strong>$51 million</strong> on this project. But under the OBBBA law, a project keeps that 30%
+            The ITC is 30% of eligible build cost (with prevailing-wage and apprenticeship compliance) — about
+            <strong>$47 million</strong> on this project, since the grid connection, roads and fencing do not
+            qualify. But under the OBBBA law, a project keeps that 30%
             only if it <strong>began construction by July 4, 2026</strong> (already past) <strong>or is
             placed in service by December 31, 2027</strong>. A greenfield project starting today therefore
             has ~14 months to be fully built and energized — against an ERCOT path that, while the fastest
@@ -476,7 +503,7 @@
             The model's ITC slider goes to 0% so you can see what that world looks like: at $52/MWh,
             it is not pretty.
           </p>
-          <p class="src">Sources: <a href="http://seia.org/initiatives/tax-policy/">SEIA tax policy page, updated Oct 2026</a>; Enphase and industry guidance on OBBBA deadlines, 2026. Adders exist beyond 30% — +10 points each for domestic content and energy-community siting — but none are in the base case.</p>
+          <p class="src">Sources: <a href="http://seia.org/initiatives/tax-policy/">SEIA tax policy page, updated Oct 2026</a>; Enphase and industry guidance on OBBBA deadlines, 2026. Adders exist beyond 30% — +10 points each for domestic content and energy-community siting — but none are in the base case; whether Wichita County is a statistical-area energy community under <a href="https://www.hklaw.com/en/insights/publications/2026/07/irs-releases-2026-energy-community-bonus-credit-updates">IRS Notice 2026-39</a> was <span class="flag">not verified</span>. A second OBBBA gate: projects beginning construction after December 31, 2025 lose the credit if they take "material assistance" from a prohibited foreign entity — a supply-chain test on modules, inverters and trackers.</p>
         </div>
         <div class="cols">
           <div>
@@ -488,11 +515,23 @@
               pays <strong>$31/MWh for 10 years</strong> in 2026; Berkeley Lab found the PTC beat the ITC for
               54 of 75 recent projects, and a high-yield Wichita Falls tracker is exactly the profile where it can
               win — but it faces the same OBBBA deadlines and needs project-specific modeling, so the proforma
-              uses the ITC. Depreciation adds a second, quieter benefit: solar is 5-year MACRS property and
-              OBBBA permanently restored <strong>100% bonus depreciation</strong> for property acquired after
-              January 19, 2025.
+              uses the ITC.
             </p>
-            <p class="src">Sources: <a href="https://www.novoco.com/news/irs-establishes-2026-inflation-adjustment-factor-applicable-amounts-for-ptc">IRS 2026 PTC adjustment (Novogradac)</a>; <a href="http://seia.org/depreciation-solar-energy-property-macrs/">SEIA MACRS guidance</a>; Berkeley Lab 2024.</p>
+            <p>
+              <strong>Depreciation is the second, quieter benefit — now modeled line by line.</strong>
+              OBBBA permanently restored <strong>100% bonus depreciation</strong> for property acquired
+              after January 19, 2025, so essentially the whole depreciable basis — build cost less half
+              the ITC — can be deducted in year 1 (≈$151M here, worth ≈$31M of federal tax at 21%).
+              Two corrections to the usual rule of thumb: OBBBA <em>removed</em> solar from the automatic
+              5-year MACRS class for projects beginning construction after 2024, and the fallback class
+              life is unsettled — it only matters if bonus is below 100%, so the model lets you pick
+              5, 7, 15 or 20 years. And a deduction is only worth cash if someone can use it: the model
+              shows returns three ways — pre-tax, a standalone project that carries losses forward
+              (usable against only 80% of later income), and a sponsor with other taxable income that
+              uses the losses immediately. Individual investors face passive-loss and at-risk limits
+              that may put them in the standalone column. Cash from selling the ITC is not taxable income.
+            </p>
+            <p class="src">Sources: <a href="https://www.novoco.com/news/irs-establishes-2026-inflation-adjustment-factor-applicable-amounts-for-ptc">IRS 2026 PTC adjustment (Novogradac)</a>; OBBBA 5-year MACRS change and 100% bonus: <a href="https://www.pierceatwood.com/alerts/congress-phases-out-energy-tax-credits">Pierce Atwood</a>, <a href="https://www.chapman.com/publication-impact-of-one-big-beautiful-bill-on-clean-energy-tax-credits">Chapman and Cutler</a>; <a href="http://seia.org/depreciation-solar-energy-property-macrs/">SEIA MACRS guidance</a> (pre-OBBBA); Berkeley Lab 2024. Basis reduction of half the ITC: IRC §50(c)(3); ITC sale proceeds excluded from income: IRC §6418(b). <span class="flag">Get tax counsel</span> on class life and loss usability.</p>
           </div>
           <div>
             <h3>How it's financed</h3>
@@ -526,20 +565,21 @@
       <section>
         <div class="sec-head"><span class="no">07 — The proforma</span><h2>1,000 acres, built out: the 30-year model</h2></div>
         <p>
-          The base case below is assembled only from the figures in Sections 2–6: 1,000 acres near
+          The base case below is assembled from the figures in Sections 2–6: 1,000 acres near
           Wichita Falls at 6.7 acres/MWdc (≈149 MWdc, ~115 MWac), tracking EPC at $1.06/W plus a
-          $75/kW ERCOT interconnection allowance, a $52/MWh PPA with a 2% escalator for 25 years
-          (the model keeps a 25-year term for comparability; ERCOT deals are often shorter — the
-          local Google deal is 15 years), and the 30% ITC sold at 93¢. Every input is a slider —
-          stress the PPA down to the sourced ERCOT P25 of $49 (or $44), the PILOT to zero relief, or
-          the ITC to zero and watch the returns. Fixed assumptions: 1.30 inverter loading ratio;
-          O&amp;M and other opex escalating 2.5%/yr; land lease escalating 2%/yr; inverter replacement
-          in year 13; 18-year level-payment debt; property tax at the Wichita County PILOT rate in
-          years 1–10 and the full unabated rate from year 11; pre-tax project cash flows; no
-          curtailment deduction and no terminal salvage value. One consequence to notice in the
-          table: at a $30/MWh merchant price under full property tax, years 26–30 run at negative
-          EBITDA — the model operates the plant anyway, but a real sponsor would recontract,
-          repower, or retire at PPA expiry rather than burn cash.
+          $75/kW ERCOT interconnection allowance and 3% for development and construction interest,
+          a $52/MWh PPA with a 2% escalator for 25 years (the local Google deal is 15 — the term is
+          now a slider), and the 30% ITC on eligible cost sold at 93¢. It is an
+          <strong>after-tax</strong> model: 21% federal income tax, 100% bonus depreciation, the
+          Texas franchise tax, and three views of who can use the tax losses. Debt is sized the way
+          lenders size it — sculpted so every year's debt service is covered 1.30× by EBITDA — with
+          2% upfront fees and a six-month debt-service reserve. Property tax splits into the school
+          district share (always paid) and the county share (PILOT in years 1–10), on a value that
+          declines over time. Generation is cut 3% for curtailment and outages, and decommissioning
+          net of salvage is paid in the final year. Fixed assumptions: 1.30 inverter loading ratio;
+          O&amp;M, insurance and decommissioning escalating 2.5%/yr; land lease 2%/yr; inverter
+          replacement in year 13 at $22/kWac; merchant price escalating 2%/yr after the PPA.
+          Every line is in the full statement at the bottom — each year, each cost, each tax line.
         </p>
 
         <div class="model-grid">
@@ -559,12 +599,22 @@
               <div class="ctl">
                 <label>Interconnection <output id="o-ixKW"></output></label>
                 <input type="range" id="i-ixKW" min="25" max="225" step="5" />
-                <div class="hint">Per kWdc. ERCOT connect-and-manage: no developer-funded network upgrades and no published $/kW benchmark — $75/kW is a connection allowance, not a quote.</div>
+                <div class="hint">Per kWdc. ERCOT connect-and-manage: no developer-funded network upgrades and no published $/kW benchmark — $75/kW is a connection allowance, not a quote. Not ITC-eligible.</div>
+              </div>
+              <div class="ctl">
+                <label>Development &amp; construction interest <output id="o-ownersPct"></output></label>
+                <input type="range" id="i-ownersPct" min="0" max="10" step="0.5" />
+                <div class="hint">% of EPC + interconnection. Permitting, studies, owner's costs and interest during construction — not in the market $/W price. Allowance, not sourced.</div>
               </div>
               <div class="ctl">
                 <label>Specific yield, year 1 <output id="o-yield"></output></label>
                 <input type="range" id="i-yield" min="1650" max="2100" step="25" />
                 <div class="hint">kWh per kWdc, Wichita Falls tracking. Fixed-tilt Atlas yield 1,655; tracking estimated ~1,900.</div>
+              </div>
+              <div class="ctl">
+                <label>Curtailment &amp; outages <output id="o-curtail"></output></label>
+                <input type="range" id="i-curtail" min="0" max="15" step="0.5" />
+                <div class="hint">Lost generation. ERCOT curtailed 9% of available utility solar in 2022, mostly West Texas (EIA); North zone is lower. Judgment: 3%.</div>
               </div>
               <div class="ctl">
                 <label>Degradation <output id="o-degr"></output></label>
@@ -582,12 +632,24 @@
               <div class="ctl">
                 <label>PPA escalator <output id="o-ppaEsc"></output></label>
                 <input type="range" id="i-ppaEsc" min="0" max="3" step="0.25" />
-                <div class="hint">Fixed escalators commonly 2–5% where present; many deals are flat. 25-year term modeled (ERCOT deals often 10–15 years).</div>
+                <div class="hint">Load-bearing: many ERCOT corporate PPAs are flat. At 0% the base case does not recover its cost.</div>
               </div>
               <div class="ctl">
-                <label>Merchant price, years 26–30 <output id="o-merchant"></output></label>
+                <label>PPA term <output id="o-ppaTerm"></output></label>
+                <input type="range" id="i-ppaTerm" min="10" max="30" step="1" />
+                <div class="hint">ERCOT deals often 10–15 years; the local Google deal is 15. Debt tenor is capped at the PPA term.</div>
+              </div>
+              <div class="ctl">
+                <label>Merchant price after the PPA <output id="o-merchant"></output></label>
                 <input type="range" id="i-merchant" min="15" max="60" step="1" />
-                <div class="hint">Nominal $/MWh in year 26, escalating 2%/yr. ERCOT real-time averaged $31.91 in 2024; solar capture is lower and volatile.</div>
+                <div class="hint">Nominal $/MWh in the first merchant year, escalating 2%/yr. ERCOT real-time averaged $31.91 in 2024; solar capture is lower and volatile.</div>
+              </div>
+              <div class="ctl">
+                <label>After the PPA ends</label>
+                <select id="i-postPPA">
+                  <option value="merchant" selected>Keep running, sell at merchant price to year 30</option>
+                  <option value="retire">Retire and decommission at PPA expiry</option>
+                </select>
               </div>
             </fieldset>
             <fieldset>
@@ -608,45 +670,106 @@
                 <div class="hint">Per acre-year on 1,000 acres. Texas typical ~$800; North Texas midpoint ~$800–900.</div>
               </div>
               <div class="ctl">
-                <label>Property tax — PILOT, years 1–10 <output id="o-pilotKW"></output></label>
-                <input type="range" id="i-pilotKW" min="0" max="15" step="0.1" />
-                <div class="hint">Per kWdc-year under a Chapter 312 PILOT. Wichita County precedent ≈ $2.0/kW (≈$2,006/MW/yr). Set equal to the full rate to model no abatement.</div>
+                <label>Property tax — full rate, new plant <output id="o-fullTaxKW"></output></label>
+                <input type="range" id="i-fullTaxKW" min="0" max="20" step="0.1" />
+                <div class="hint">Per kWdc-year, all taxing units, unabated. Texas proxy ≈ $14.3/kW (single source).</div>
               </div>
               <div class="ctl">
-                <label>Property tax — full, from year 11 <output id="o-fullTaxKW"></output></label>
-                <input type="range" id="i-fullTaxKW" min="0" max="20" step="0.1" />
-                <div class="hint">Per kWdc-year unabated. Texas proxy ≈ $14.3/kW (≈$14,300/MW/yr, single source). No Chapter 403 school relief for solar.</div>
+                <label>School-district share of that rate <output id="o-schoolPct"></output></label>
+                <input type="range" id="i-schoolPct" min="0" max="85" step="1" />
+                <div class="hint">Never abated: Ch. 312 is county/city only and Ch. 403 excludes solar. Electra ISD ~$1.09 vs county ~$0.52 per $100 (2025 proposed).</div>
+              </div>
+              <div class="ctl">
+                <label>County PILOT, years 1–10 <output id="o-pilotKW"></output></label>
+                <input type="range" id="i-pilotKW" min="0" max="10" step="0.1" />
+                <div class="hint">Per kWdc-year, flat, replacing the county share only. Wichita County precedent ≈ $2.0/kW.</div>
+              </div>
+              <div class="ctl">
+                <label>Appraised value decline <output id="o-valueDecl"></output></label>
+                <input type="range" id="i-valueDecl" min="0" max="6" step="0.25" />
+                <div class="hint">Straight-line per year, floor 20% of new. Judgment — get the appraisal district's solar schedule.</div>
+              </div>
+              <div class="ctl">
+                <label>Decommissioning, net of salvage <output id="o-decomKW"></output></label>
+                <input type="range" id="i-decomKW" min="0" max="100" step="5" />
+                <div class="hint">Per kWdc in today's $, paid at end of life. Published estimates cluster ~$40/kW (~$0.04/W) net. Texas Ch. 302 also requires a bond or LC by year 20 (modeled at 1.5%/yr).</div>
               </div>
             </fieldset>
             <fieldset>
-              <legend>Financing &amp; tax credits</legend>
+              <legend>Financing</legend>
               <div class="ctl">
-                <label>Senior debt share <output id="o-debtPct"></output></label>
-                <input type="range" id="i-debtPct" min="25" max="60" step="1" />
-                <div class="hint">Remainder is sponsor equity (ITC proceeds arrive year 1). Market leverage incl. tax equity runs ~70–75%.</div>
+                <label>Debt sizing</label>
+                <select id="i-debtSize">
+                  <option value="sculpt" selected>Sculpted to a target DSCR (lender practice)</option>
+                  <option value="fixed">Fixed share of cost, level payments</option>
+                </select>
+              </div>
+              <div class="ctl">
+                <label>Target DSCR <output id="o-dscrTarget"></output></label>
+                <input type="range" id="i-dscrTarget" min="1.15" max="1.60" step="0.05" />
+                <div class="hint">EBITDA ÷ debt service in every loan year. Lenders look for ≥ 1.30× on P50 contracted cash flow.</div>
+              </div>
+              <div class="ctl">
+                <label id="l-debtPct">Debt cap, % of project cost <output id="o-debtPct"></output></label>
+                <input type="range" id="i-debtPct" min="25" max="80" step="1" />
+                <div class="hint" id="h-debtPct">Sculpted debt cannot exceed this share. In fixed mode, this is the debt share.</div>
               </div>
               <div class="ctl">
                 <label>Interest rate <output id="o-rate"></output></label>
                 <input type="range" id="i-rate" min="4.5" max="8.5" step="0.05" />
-                <div class="hint">All-in. Market: SOFR + 175–275 bps ≈ 5.75–7.0%. 18-year level payments.</div>
+                <div class="hint">All-in. Market: SOFR + 175–275 bps ≈ 5.75–7.0%. Plus 2% upfront fees and a 6-month reserve.</div>
               </div>
+              <div class="ctl">
+                <label>Loan tenor <output id="o-tenor"></output></label>
+                <input type="range" id="i-tenor" min="10" max="22" step="1" />
+                <div class="hint">Years; capped at the PPA term.</div>
+              </div>
+              <div class="ctl">
+                <label>Hurdle rate for NPV <output id="o-hurdle"></output></label>
+                <input type="range" id="i-hurdle" min="4" max="14" step="0.5" />
+                <div class="hint">The sponsor's required return on equity. NPV &gt; 0 means the deal beats it.</div>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Tax credits &amp; depreciation</legend>
               <div class="ctl">
                 <label>Investment tax credit <output id="o-itcRate"></output></label>
                 <input type="range" id="i-itcRate" min="0" max="50" step="1" />
                 <div class="hint">30% base with wage/apprenticeship compliance; adders can add +10–20 points. Set to 0 to model missing the 2027 deadline.</div>
               </div>
               <div class="ctl">
-                <label>ITC sale price <output id="o-itcXfer"></output></label>
-                <input type="range" id="i-itcXfer" min="85" max="98" step="1" />
-                <div class="hint">Transferability market: ~90–95¢ per $1 of credit.</div>
+                <label>ITC-eligible share of build cost <output id="o-itcElig"></output></label>
+                <input type="range" id="i-itcElig" min="80" max="100" step="1" />
+                <div class="hint">Of EPC + development. Roads, fencing and site work are not energy property; interconnection is excluded separately.</div>
               </div>
               <div class="ctl">
-                <label>Depreciation benefit</label>
-                <select id="i-depr">
-                  <option value="no" selected>Not credited (sponsor has no tax appetite)</option>
-                  <option value="yes">Credited at 21% (100% bonus, year 1)</option>
+                <label>ITC sale price <output id="o-itcXfer"></output></label>
+                <input type="range" id="i-itcXfer" min="85" max="100" step="1" />
+                <div class="hint">Transferability market: ~90–95¢ per $1 of credit. Proceeds are not taxable income.</div>
+              </div>
+              <div class="ctl">
+                <label>Bonus depreciation <output id="o-bonusPct"></output></label>
+                <input type="range" id="i-bonusPct" min="0" max="100" step="10" />
+                <div class="hint">OBBBA: 100%, permanent, for property acquired after Jan 19, 2025. Basis is cost less half the ITC.</div>
+              </div>
+              <div class="ctl">
+                <label>MACRS class for non-bonus basis</label>
+                <select id="i-macrsLife">
+                  <option value="5">5-year (pre-OBBBA rule)</option>
+                  <option value="7" selected>7-year (fallback — unsettled)</option>
+                  <option value="15">15-year</option>
+                  <option value="20">20-year</option>
                 </select>
-                <div class="hint">Simplification: 5-yr MACRS with 100% bonus on basis net of half the ITC. In flip structures this value goes to tax equity instead.</div>
+                <div class="hint">Only matters below 100% bonus. Site work and gen-tie use 15-year.</div>
+              </div>
+              <div class="ctl">
+                <label>Who uses the tax losses?</label>
+                <select id="i-taxMode">
+                  <option value="capacity" selected>Sponsor with other taxable income (losses used as they occur)</option>
+                  <option value="standalone">Standalone project (losses carried forward, 80% limit)</option>
+                  <option value="pretax">Ignore income tax (pre-tax view)</option>
+                </select>
+                <div class="hint">Drives the tiles, chart and statement. The returns table shows all three.</div>
               </div>
             </fieldset>
             <button class="reset-btn" id="reset" type="button">Reset to base case</button>
@@ -655,86 +778,120 @@
           <div class="outputs">
             <div class="verdict" id="verdict">—</div>
 
+            <h3>Return profile — three ways to count tax</h3>
+            <table class="data" id="ret-table">
+              <thead>
+                <tr><th></th><th class="r">Pre-tax</th><th class="r">Standalone<br />(NOLs carried)</th><th class="r">Sponsor uses<br />losses</th></tr>
+              </thead>
+              <tbody id="ret-body"></tbody>
+            </table>
+            <p class="src" id="bonus-note">—</p>
+
             <div class="cols" style="gap:26px">
               <div>
                 <h3>Sources &amp; uses at closing</h3>
                 <table class="data">
                   <tr><td>EPC (build cost)</td><td class="r" id="u-epc">—</td></tr>
-                  <tr><td>Interconnection &amp; network upgrades</td><td class="r" id="u-ix">—</td></tr>
-                  <tr class="total"><td>Total capital</td><td class="r" id="u-total">—</td></tr>
-                  <tr><td>Funded by senior debt</td><td class="r" id="u-debt">—</td></tr>
-                  <tr><td>Funded by sponsor equity</td><td class="r" id="u-equity">—</td></tr>
+                  <tr><td>Interconnection (gen-tie &amp; substation)</td><td class="r" id="u-ix">—</td></tr>
+                  <tr><td>Development &amp; construction interest</td><td class="r" id="u-owners">—</td></tr>
+                  <tr class="total"><td>Project cost</td><td class="r" id="u-proj">—</td></tr>
+                  <tr><td>Upfront loan fees (2%)</td><td class="r" id="u-fees">—</td></tr>
+                  <tr><td>Debt-service reserve (6 months)</td><td class="r" id="u-dsra">—</td></tr>
+                  <tr class="total"><td>Total uses</td><td class="r" id="u-total">—</td></tr>
+                  <tr><td>Senior debt</td><td class="r" id="u-debt">—</td></tr>
+                  <tr><td>Sponsor equity</td><td class="r" id="u-equity">—</td></tr>
+                  <tr><td>ITC-eligible basis (memo)</td><td class="r" id="u-itcb">—</td></tr>
                   <tr><td>ITC face value (memo)</td><td class="r" id="u-itc">—</td></tr>
-                  <tr><td>ITC cash proceeds, year 1 (memo)</td><td class="r" id="u-itcp">—</td></tr>
+                  <tr><td>ITC sale proceeds, year 1 (memo)</td><td class="r" id="u-itcp">—</td></tr>
+                  <tr><td>Depreciable basis (memo)</td><td class="r" id="u-dep">—</td></tr>
                 </table>
               </div>
               <div>
-                <h3>Year 1 operating snapshot</h3>
-                <table class="data">
-                  <tr><td>Generation</td><td class="r" id="y-gen">—</td></tr>
-                  <tr><td>Revenue</td><td class="r" id="y-rev">—</td></tr>
-                  <tr><td>Operating costs</td><td class="r" id="y-opex">—</td></tr>
-                  <tr><td>EBITDA</td><td class="r" id="y-ebitda">—</td></tr>
-                  <tr><td>Debt service</td><td class="r" id="y-ds">—</td></tr>
-                  <tr><td>Cash after debt service</td><td class="r" id="y-cfads">—</td></tr>
-                </table>
+                <h3>Year 1, line by line</h3>
+                <table class="data" id="y1-table"></table>
               </div>
             </div>
 
             <div class="chart-box">
-              <h3>Cash flow by year — bars: sponsor cash flow · line: cumulative</h3>
+              <h3>Sponsor cash flow by year — bars: annual · line: cumulative</h3>
               <div class="legend">
-                <span><i style="background:var(--accent)"></i>Annual levered cash flow ($M)</span>
-                <span><i style="background:var(--green)"></i>Cumulative levered cash flow ($M)</span>
+                <span><i style="background:var(--accent)"></i>Annual levered after-tax cash flow ($M)</span>
+                <span><i style="background:var(--green)"></i>Cumulative, from the equity check ($M)</span>
               </div>
               <div id="chart"></div>
-              <p class="src">Year 1 spikes because the ITC sale lands there. The year-11 step-down is the Chapter 312 PILOT expiring into full property tax; the year-13 dip is the inverter replacement; the year-19 step-up is the debt burning off; years 26–30 are the merchant tail after the PPA expires.</p>
+              <p class="src">Year 1 spikes because the ITC sale and (if the sponsor can use it) the bonus-depreciation tax saving both land there. Year 11 steps down as the county PILOT ends; year 13 dips for the inverter replacement; cash steps up when the debt is repaid; the PPA expiry and the final-year decommissioning bill close it out.</p>
             </div>
 
-            <h3>PPA price sensitivity (all other inputs at base case)</h3>
-            <p class="src">Rows: $44 = ERCOT P25 Q1 2025 · $49 = ERCOT P25 Q4 2025 · $52 = base case · $52.65 = continental P25 Q2 2026 · $61.40 = continental average Q2 2026.</p>
+            <h3>PPA price sensitivity (all other inputs as set)</h3>
+            <p class="src">Rows: $44 = ERCOT P25 Q1 2025 · $49 = ERCOT P25 Q4 2025 · $52 = base case · $52.65 = continental P25 Q2 2026 · $61.40 = continental average Q2 2026. IRRs use the tax view selected at left.</p>
             <table class="data">
               <thead>
-                <tr><th>PPA price</th><th class="r">Year-1 revenue</th><th class="r">Year-1 DSCR</th><th class="r">Unlevered IRR</th><th class="r">Sponsor levered IRR</th></tr>
+                <tr><th>PPA price</th><th class="r">Year-1 revenue</th><th class="r">Debt raised</th><th class="r">Unlevered IRR</th><th class="r">Levered IRR</th><th class="r">Levered IRR, flat PPA</th></tr>
               </thead>
               <tbody id="sens-body"></tbody>
             </table>
-
-            <h3>The full 30 years</h3>
-            <div class="pf-table-wrap">
-              <table class="pf">
-                <thead>
-                  <tr>
-                    <th>Year</th><th>GWh</th><th class="opt">$/MWh</th><th>Revenue $M</th>
-                    <th>OpEx $M</th><th>EBITDA $M</th><th class="opt">Debt svc $M</th>
-                    <th class="opt">Credits &amp; capex $M</th><th>Levered CF $M</th><th class="opt">Cum. $M</th>
-                  </tr>
-                </thead>
-                <tbody id="pf-body"></tbody>
-              </table>
-            </div>
-            <button class="dl-btn" id="dl" type="button">Download the full proforma (CSV)</button>
-            <p class="src">“Credits &amp; capex” = ITC sale proceeds (year 1) less inverter replacement (year 13) and any depreciation benefit if credited. Levered cash flow is to the sponsor after senior debt service. This is a simplified teaching model, not investment advice: it excludes financing fees, debt-service reserves, working capital, curtailment (a real risk under ERCOT connect-and-manage), basis risk, hail losses above insurance, and end-of-life decommissioning cost (financial assurance required under Texas Utilities Code Ch. 302).</p>
           </div>
+        </div>
+
+        <h3 style="margin-top:34px">The full statement — every line, every year</h3>
+        <p class="src">$ thousands unless noted; parentheses are negatives. Tax lines follow the view selected under “Who uses the tax losses?”. Scroll sideways for years 1–30 and the total.</p>
+        <div class="stmt-wrap"><table class="stmt" id="stmt"></table></div>
+        <button class="dl-btn" id="dl" type="button">Download the full statement (CSV)</button>
+        <p class="src">A simplified teaching model, not investment advice. Still excluded: the IRC §163(j) interest limit, tax-equity flip structures, P90/P99 debt sizing, ERCOT hub-to-node basis risk, negative-price hours, working capital, hail losses above insurance, and ITC recapture risk in years 1–5.</p>
+      </section>
+
+      <section>
+        <div class="sec-head"><span class="no">08 — Assumption audit</span><h2>What was checked, what changed</h2></div>
+        <p>
+          Every assumption behind the return profile, reviewed October 12, 2026. “Fixed” means the
+          earlier version of this model was wrong or missing the item; “Flag” means the number is
+          defensible but the returns depend heavily on it.
+        </p>
+        <div class="stmt-wrap">
+          <table class="data audit">
+            <thead><tr><th>Assumption</th><th>Before</th><th>Now</th><th>Status</th><th>Why</th></tr></thead>
+            <tbody>
+              <tr><td>Income tax</td><td>Not modeled — pre-tax cash flows, yet the ITC (a tax item) was added in</td><td>21% federal on taxable income; three views of loss use</td><td><span class="flag fix">Fixed</span></td><td>A return is what the owner keeps after tax. Adding an after-tax credit to pre-tax cash mixed two bases.</td></tr>
+              <tr><td>Bonus depreciation</td><td>Off by default; one lump, levered only, no loss limits</td><td>100% bonus on cost less ½ ITC, in both unlevered and levered returns; slider 0–100%</td><td><span class="flag fix">Fixed</span></td><td>OBBBA made 100% bonus permanent for property acquired after Jan 19, 2025. Worth ≈$31M in year 1 if the sponsor can use it.</td></tr>
+              <tr><td>MACRS class</td><td>Text said “5-year property”</td><td>Selectable; default 7-year, flagged unsettled</td><td><span class="flag fix">Fixed</span></td><td>OBBBA removed solar from automatic 5-year treatment for construction starting after 2024. Irrelevant at 100% bonus.</td></tr>
+              <tr><td>Loss usability</td><td>Assumed none, or all in year 1</td><td>Standalone: NOLs carried forward, usable against 80% of income. Sponsor: used as they occur</td><td><span class="flag fix">Fixed</span></td><td>Post-2017 NOL rules. Individuals also face passive-loss and at-risk limits.</td></tr>
+              <tr><td>ITC basis</td><td>30% of all capital incl. interconnection ($51M)</td><td>30% of 95% of EPC + development ($46.5M)</td><td><span class="flag fix">Fixed</span></td><td>Gen-tie, roads and fencing are not energy property.</td></tr>
+              <tr><td>School-district property tax</td><td>Missing in years 1–10 — only the $2/kW county PILOT</td><td>~65% of the full rate paid every year; PILOT replaces only the county share</td><td><span class="flag fix">Fixed</span></td><td>School districts cannot grant Ch. 312 abatements; Ch. 403 excludes solar. Largest single correction: year-1 property tax ≈ $0.3M → $1.7M.</td></tr>
+              <tr><td>Property-tax trend</td><td>PILOT and full rate both rising 2.5%/yr</td><td>PILOT flat; full rate on a value falling 3%/yr (floor 20%)</td><td><span class="flag fix">Fixed</span></td><td>A plant's appraised value depreciates; PILOTs are fixed sums. Decline rate is a judgment.</td></tr>
+              <tr><td>Curtailment &amp; outages</td><td>None</td><td>3% of generation</td><td><span class="flag fix">Fixed</span></td><td>ERCOT curtailed 9% of available utility solar in 2022 (EIA), concentrated in West Texas. Judgment for the North zone.</td></tr>
+              <tr><td>Debt sizing</td><td>Fixed 40%, level payments; DSCR an output</td><td>Sculpted to 1.30× DSCR, tenor ≤ PPA term, 2% fees, 6-month reserve</td><td><span class="flag fix">Fixed</span></td><td>How project lenders actually size debt — and what the page already said they do.</td></tr>
+              <tr><td>Development &amp; construction interest</td><td>None</td><td>3% of EPC + interconnection</td><td><span class="flag fix">Fixed</span></td><td>Market $/W prices exclude owner's costs and interest during construction. Allowance, not sourced.</td></tr>
+              <tr><td>Decommissioning</td><td>Excluded, despite Texas law requiring it</td><td>$40/kWdc net of salvage, inflated to year 30; bond premium from year 20</td><td><span class="flag fix">Fixed</span></td><td>Published net estimates cluster ~$42k/MW; Texas Ch. 302 requires financial assurance by the 20th anniversary.</td></tr>
+              <tr><td>Texas franchise tax</td><td>None</td><td>0.75% × 70% of revenue</td><td><span class="flag fix">Fixed</span></td><td>Texas has no income tax but taxes margin; revenue is far above the $2.65M no-tax-due threshold.</td></tr>
+              <tr><td>PPA escalator</td><td>2%/yr</td><td>2%/yr (unchanged)</td><td><span class="flag">Flag</span></td><td>Load-bearing. At 0% — common in ERCOT corporate PPAs — the base case never pays back.</td></tr>
+              <tr><td>PPA term</td><td>25 years, fixed</td><td>25 years, now a slider</td><td><span class="flag">Flag</span></td><td>The local Google/TotalEnergies deal is 15 years. Shorter terms also shorten the debt.</td></tr>
+              <tr><td>PPA price</td><td>$52/MWh</td><td>$52/MWh (unchanged)</td><td><span class="flag">Flag</span></td><td>Judgment above the last published ERCOT P25 ($49). Single most important number.</td></tr>
+              <tr><td>Merchant tail</td><td>Runs at a loss years 26–30</td><td>Option to retire at PPA expiry</td><td><span class="flag">Flag</span></td><td>At $30/MWh and current costs, EBITDA is negative after the PPA.</td></tr>
+              <tr><td>ITC eligibility &amp; timing</td><td>30%, sold at 93¢</td><td>Unchanged</td><td><span class="flag">Flag</span></td><td>Must be placed in service by Dec 31, 2027, and pass the foreign-entity “material assistance” test. Energy-community adder for Wichita County not verified.</td></tr>
+              <tr><td>Yield, degradation, O&amp;M, insurance, land, inverter, interest rate</td><td>As sourced</td><td>Unchanged</td><td>OK</td><td>Within the sourced ranges in Sections 2–6.</td></tr>
+            </tbody>
+          </table>
         </div>
       </section>
 
       <section>
-        <div class="sec-head"><span class="no">08 — Open questions</span><h2>What the research could not verify</h2></div>
+        <div class="sec-head"><span class="no">09 — Open questions</span><h2>What the research could not verify</h2></div>
         <ul class="risks">
           <li><strong>ERCOT average PPA price.</strong> LevelTen publishes the ERCOT P25 ($49/MWh, Q4 2025) but not the ERCOT mean, and no ERCOT-specific P25 for Q1–Q2 2026 was published. The model's $52/MWh base case is a judgment anchored to those two points — the single most important number in the model.</li>
           <li><strong>Property tax after the PILOT.</strong> The $14,300/MW/yr unabated figure is a single-source proxy from a Concho County project, not a Wichita County appraisal. The actual post-PILOT bill depends on the appraisal district and any renewal — get the county's figure before trusting years 11–30.</li>
           <li><strong>ERCOT interconnection cost.</strong> No published $/kW figure exists for ERCOT connect-and-manage; the $75/kW in the model is an allowance for the physical connection, not a benchmark, and Oncor substation-level capacity near Wichita Falls requires a screening study.</li>
-          <li><strong>Solar capture price &amp; curtailment.</strong> Only daily Platts snapshots were found (~$25–69/MWh); no annual ERCOT solar capture rate, negative-price share, or curtailment rate could be verified. The model deducts none of these, which flatters merchant exposure.</li>
+          <li><strong>Solar capture price &amp; curtailment.</strong> Only daily Platts snapshots were found (~$25–69/MWh); no annual ERCOT solar capture rate or negative-price share could be verified, and the newest solar-specific curtailment figure found is EIA's 9% ERCOT-wide for 2022. The model deducts a 3% curtailment-and-outage allowance for the North zone — a judgment — and nothing for negative prices or hub-to-node basis.</li>
           <li><strong>Site yield.</strong> The ~1,900 kWh/kWdc tracking yield is estimated from the Global Solar Atlas fixed-tilt yield (1,655) plus documented tracker gain, not a site production study (P50/P90 engineering report).</li>
           <li><strong>Wichita County land values.</strong> No county-specific purchase price or lease rate was found; the page uses Texas / North Texas figures (~$800–900/acre lease; $3,100/acre USDA farm real estate).</li>
           <li><strong>Component-level build cost.</strong> Only the module price ($0.33/W) and tracker premium ($0.15–0.35/W) are current and verified; the rest of the $1.06/W stack is not published at usable granularity for 2025–26.</li>
+          <li><strong>Tax treatment.</strong> The MACRS class life for solar after OBBBA, whether the sponsor can actually use the bonus-depreciation losses (passive-loss, at-risk and §163(j) interest limits are not modeled), and the energy-community and foreign-entity status of the project all need tax counsel.</li>
+          <li><strong>School-district share of property tax.</strong> The 65% split is read from 2025 <em>proposed</em> rates for one ISD (Electra) and the county; the actual site's ISD, any hospital or college district, and the appraisal district's solar depreciation schedule decide the real bill.</li>
           <li><strong>Return benchmarks.</strong> Quoted sponsor IRR targets (12–18%) and financing spreads rest partly on single or weak sources; the model's outputs — computed from the harder numbers above — land below those targets at ERCOT-realistic prices, which is itself the finding.</li>
         </ul>
       </section>
 
       <section>
-        <div class="sec-head"><span class="no">09 — Sources</span><h2>Research base</h2></div>
+        <div class="sec-head"><span class="no">10 — Sources</span><h2>Research base</h2></div>
         <ul class="sources-list">
           <li>Wood Mackenzie / SEIA pricing via pv magazine Global — <a href="https://now.solar/2026/09/25/u-s-solar-system-pricing-rises-for-utility-ci-projects-as-residential-costs-decline-pv-magazine-global/">US solar system pricing, Q2 2026</a></li>
           <li>LevelTen Energy PPA index via pv magazine USA — <a href="https://pv-magazine-usa.com/2026/01/30/uncertainty-looms-as-solar-ppa-prices-climb-for-second-straight-quarter/">ERCOT P25 Q4 2025</a>, <a href="https://pv-magazine-usa.com/2025/04/24/solar-ppa-market-remains-stable-in-q1-2025/">ERCOT P25 Q1 2025</a>, <a href="https://pv-magazine-usa.com/2026/07/27/solar-ppa-prices-dip-in-q2-while-wind-climbs-as-july-4-tax-credit-deadline-looms-reports-levelten/">Q2 2026 continental</a></li>
@@ -762,34 +919,57 @@
     <script>
       (function () {
         "use strict";
-        var ACRES = 1000, ILR = 1.30, PPA_TERM = 25, TENOR = 18, OPEX_ESC = 0.025,
-            LAND_ESC = 0.02, MERCH_ESC = 0.02, INV_YR = 13, INV_KWAC = 22, TAX_RATE = 0.21;
+        var ACRES = 1000, ILR = 1.30, OPEX_ESC = 0.025, LAND_ESC = 0.02, MERCH_ESC = 0.02,
+            INV_YR = 13, INV_KWAC = 22, FED_TAX = 0.21, NOL_LIMIT = 0.80, TX_MARGIN = 0.0075 * 0.70,
+            FEE_PCT = 0.02, DSRA_MONTHS = 6, PILOT_YRS = 10, VALUE_FLOOR = 0.20, SURETY_YR = 20,
+            SURETY_PCT = 0.015, LIFE = 30;
+
+        // MACRS half-year convention tables (IRS Pub. 946, Table A-1 / A-2 equivalents), % of basis.
+        var MACRS = {
+          5: [20, 32, 19.2, 11.52, 11.52, 5.76],
+          7: [14.29, 24.49, 17.49, 12.49, 8.93, 8.92, 8.93, 4.46],
+          15: [5, 9.5, 8.55, 7.7, 6.93, 6.23, 5.9, 5.9, 5.91, 5.9, 5.91, 5.9, 5.91, 5.9, 5.91, 2.95],
+          20: [3.75, 7.219, 6.677, 6.177, 5.713, 5.285, 4.888, 4.522, 4.462, 4.461, 4.462, 4.461, 4.462, 4.461, 4.462, 4.461, 4.462, 4.461, 4.462, 4.461, 2.231]
+        };
 
         var DEFAULTS = {
-          acresPerMW: 6.7, capexW: 1.06, ixKW: 75, yield: 1900, degr: 0.5,
-          ppa: 52, ppaEsc: 2.0, merchant: 30,
-          omKW: 15, insAM: 18, landLease: 850, pilotKW: 2.0, fullTaxKW: 14.3,
-          debtPct: 40, rate: 6.25, itcRate: 30, itcXfer: 93, depr: "no"
+          acresPerMW: 6.7, capexW: 1.06, ixKW: 75, ownersPct: 3, yield: 1900, curtail: 3, degr: 0.5,
+          ppa: 52, ppaEsc: 2.0, ppaTerm: 25, merchant: 30, postPPA: "merchant",
+          omKW: 15, insAM: 18, landLease: 850, fullTaxKW: 14.3, schoolPct: 65, pilotKW: 2.0, valueDecl: 3, decomKW: 40,
+          debtSize: "sculpt", dscrTarget: 1.30, debtPct: 60, rate: 6.25, tenor: 18, hurdle: 8,
+          itcRate: 30, itcElig: 95, itcXfer: 93, bonusPct: 100, macrsLife: "7", taxMode: "capacity"
         };
+        var SELECTS = ["postPPA", "debtSize", "macrsLife", "taxMode"];
 
         var FMT = {
           acresPerMW: function (v) { return v.toFixed(1) + " ac/MW"; },
           capexW: function (v) { return "$" + v.toFixed(2) + "/W"; },
           ixKW: function (v) { return "$" + Math.round(v) + "/kW"; },
+          ownersPct: function (v) { return v.toFixed(1) + "%"; },
           yield: function (v) { return Math.round(v).toLocaleString("en-US") + " kWh/kW"; },
+          curtail: function (v) { return v.toFixed(1) + "%"; },
           degr: function (v) { return v.toFixed(2) + "%/yr"; },
           ppa: function (v) { return "$" + v.toFixed(2) + "/MWh"; },
           ppaEsc: function (v) { return v.toFixed(2) + "%/yr"; },
+          ppaTerm: function (v) { return Math.round(v) + " yrs"; },
           merchant: function (v) { return "$" + Math.round(v) + "/MWh"; },
           omKW: function (v) { return "$" + v.toFixed(1) + "/kWdc"; },
           insAM: function (v) { return "$" + v.toFixed(1) + "/kWac"; },
           landLease: function (v) { return "$" + Math.round(v) + "/acre"; },
-          pilotKW: function (v) { return "$" + v.toFixed(1) + "/kWdc"; },
           fullTaxKW: function (v) { return "$" + v.toFixed(1) + "/kWdc"; },
+          schoolPct: function (v) { return Math.round(v) + "%"; },
+          pilotKW: function (v) { return "$" + v.toFixed(1) + "/kWdc"; },
+          valueDecl: function (v) { return v.toFixed(2) + "%/yr"; },
+          decomKW: function (v) { return "$" + Math.round(v) + "/kWdc"; },
+          dscrTarget: function (v) { return v.toFixed(2) + "×"; },
           debtPct: function (v) { return Math.round(v) + "%"; },
           rate: function (v) { return v.toFixed(2) + "%"; },
+          tenor: function (v) { return Math.round(v) + " yrs"; },
+          hurdle: function (v) { return v.toFixed(1) + "%"; },
           itcRate: function (v) { return Math.round(v) + "%"; },
-          itcXfer: function (v) { return Math.round(v) + "¢ / $1"; }
+          itcElig: function (v) { return Math.round(v) + "%"; },
+          itcXfer: function (v) { return Math.round(v) + "¢ / $1"; },
+          bonusPct: function (v) { return Math.round(v) + "%"; }
         };
         var KEYS = Object.keys(FMT);
 
@@ -798,7 +978,7 @@
         function getInputs() {
           var o = {};
           KEYS.forEach(function (k) { o[k] = parseFloat($("i-" + k).value); });
-          o.depr = $("i-depr").value;
+          SELECTS.forEach(function (k) { o[k] = $("i-" + k).value; });
           return o;
         }
 
@@ -810,8 +990,8 @@
         function irr(flows) {
           // Scan upward from a deeply negative rate and bisect the first
           // positive-to-negative NPV crossing. (A naive NPV check at -95%
-          // fails when the merchant tail runs at a loss: at extreme negative
-          // rates the last years dominate the sum and flip its sign.)
+          // fails when the tail runs at a loss: at extreme negative rates
+          // the last years dominate the sum and flip its sign.)
           var prevR = -0.5, prevV = npv(prevR, flows), r, v, lo, hi, mid, i;
           for (r = -0.49; r <= 5.0001; r += 0.01) {
             v = npv(r, flows);
@@ -828,119 +1008,293 @@
           return null; // no positive-to-negative crossing: never earns its cost of capital
         }
 
+        // Tax depreciation for an asset placed in service in year `start`: the bonus
+        // share is expensed that year, the rest follows the MACRS half-year table.
+        // Anything still undepreciated at retirement is written off in `end`.
+        function addDepr(arr, basis, start, bonus, life, end) {
+          var b = basis * bonus;
+          arr[start] += b;
+          MACRS[life].forEach(function (pct, i) {
+            arr[Math.min(start + i, end)] += (basis - b) * pct / 100;
+          });
+        }
+
+        // Federal income tax on a taxable-income series (negative tax = cash saving).
+        function taxSeries(ti, mode) {
+          var tax = [0], nolUsed = [0], nolBal = [0], nol = 0;
+          for (var t = 1; t <= LIFE; t++) {
+            var x = ti[t], tx = 0, used = 0;
+            if (mode === "capacity") {
+              tx = x * FED_TAX;
+            } else if (mode === "standalone") {
+              if (x < 0) nol += -x;
+              else { used = Math.min(nol, NOL_LIMIT * x); nol -= used; tx = (x - used) * FED_TAX; }
+            }
+            tax.push(tx); nolUsed.push(used); nolBal.push(nol);
+          }
+          return { tax: tax, nolUsed: nolUsed, nolBal: nolBal };
+        }
+
         function runModel(inp) {
           var mwDC = ACRES / inp.acresPerMW;
           var kWdc = mwDC * 1000, kWac = kWdc / ILR;
-          var epc = kWdc * inp.capexW / 1000;            // $M
-          var ix = kWdc * inp.ixKW / 1e6;                // $M
-          var capex = epc + ix;
-          var itcFace = capex * inp.itcRate / 100;
-          var itcProceeds = itcFace * inp.itcXfer / 100;
-          var deprBenefit = inp.depr === "yes" ? capex * (1 - 0.5 * inp.itcRate / 100) * TAX_RATE : 0;
-          var debt = capex * inp.debtPct / 100;
-          var equity = capex - debt;
-          var r = inp.rate / 100;
-          var ds = debt > 0 ? debt * r / (1 - Math.pow(1 + r, -TENOR)) : 0;
+          var epc = kWdc * inp.capexW / 1000;                 // $M
+          var ix = kWdc * inp.ixKW / 1e6;
+          var owners = (epc + ix) * inp.ownersPct / 100;
+          var projCost = epc + ix + owners;
+          var itcBasis = (epc + owners) * inp.itcElig / 100;  // interconnection excluded
+          var itcFace = itcBasis * inp.itcRate / 100;
+          var itcProceeds = itcFace * inp.itcXfer / 100;      // not taxable income, IRC §6418(b)
           var invCost = kWac * INV_KWAC / 1e6;
-          var mwh1 = kWdc * inp.yield / 1000;
+          var decomBase = kWdc * inp.decomKW / 1e6;           // today's $, net of salvage
+          var ppaTerm = Math.round(inp.ppaTerm);
+          var endYr = inp.postPPA === "retire" ? Math.min(ppaTerm, LIFE) : LIFE;
+          var decomCost = decomBase * Math.pow(1 + OPEX_ESC, endYr - 1);
+          var tenor = Math.min(Math.round(inp.tenor), ppaTerm, endYr);
+          var r = inp.rate / 100, bonus = inp.bonusPct / 100;
+          var mwh1 = kWdc * inp.yield / 1000 * (1 - inp.curtail / 100);
+          var t, y;
 
-          var years = [], uFlows = [-capex], lFlows = [-equity];
-          var cumU = -capex, paybackU = null, minDscr = Infinity, dscr1 = null;
-
-          for (var t = 1; t <= 30; t++) {
-            var mwh = mwh1 * Math.pow(1 - inp.degr / 100, t - 1);
-            var price = t <= PPA_TERM
+          // ---- operations ----
+          var Y = [];
+          for (t = 0; t <= LIFE; t++) Y.push({ t: t });
+          for (t = 1; t <= LIFE; t++) {
+            y = Y[t];
+            y.live = t <= endYr;
+            y.merchant = t > ppaTerm;
+            var on = y.live ? 1 : 0;
+            y.mwh = on * mwh1 * Math.pow(1 - inp.degr / 100, t - 1);
+            y.price = !y.live ? 0 : !y.merchant
               ? inp.ppa * Math.pow(1 + inp.ppaEsc / 100, t - 1)
-              : inp.merchant * Math.pow(1 + MERCH_ESC, t - PPA_TERM - 1);
-            var rev = mwh * price / 1e6;
-            var om = kWdc * inp.omKW / 1e6 * Math.pow(1 + OPEX_ESC, t - 1);
-            var ins = kWac * inp.insAM / 1e6 * Math.pow(1 + OPEX_ESC, t - 1);
-            var land = ACRES * inp.landLease / 1e6 * Math.pow(1 + LAND_ESC, t - 1);
-            var taxRateKW = t <= 10 ? inp.pilotKW : inp.fullTaxKW;
-            var tax = kWdc * taxRateKW / 1e6 * Math.pow(1 + OPEX_ESC, t - 1);
-            var opex = om + ins + land + tax;
-            var ebitda = rev - opex;
-            var dsvc = t <= TENOR ? ds : 0;
-            var credits = (t === 1 ? itcProceeds + deprBenefit : 0) - (t === INV_YR ? invCost : 0);
-            var creditsU = (t === 1 ? itcProceeds : 0) - (t === INV_YR ? invCost : 0);
-            var lcf = ebitda - dsvc + credits;
-            var ucf = ebitda + creditsU;
-            uFlows.push(ucf); lFlows.push(lcf);
-            cumU += ucf;
-            if (paybackU === null && cumU >= 0) paybackU = t;
-            if (t <= TENOR && ds > 0) { var d = ebitda / ds; if (d < minDscr) minDscr = d; if (t === 1) dscr1 = d; }
-            years.push({ t: t, mwh: mwh, price: price, rev: rev, opex: opex, ebitda: ebitda, ds: dsvc, credits: credits, lcf: lcf });
+              : inp.merchant * Math.pow(1 + MERCH_ESC, t - ppaTerm - 1);
+            y.rev = y.mwh * y.price / 1e6;
+            var esc = Math.pow(1 + OPEX_ESC, t - 1);
+            y.om = on * kWdc * inp.omKW / 1e6 * esc;
+            y.ins = on * kWac * inp.insAM / 1e6 * esc;
+            y.land = on * ACRES * inp.landLease / 1e6 * Math.pow(1 + LAND_ESC, t - 1);
+            // Property tax on a depreciating appraised value. The school-district share is
+            // never abated (Ch. 312 is county/city only; Ch. 403 excludes solar); the county
+            // share is replaced by a flat PILOT in years 1-10.
+            var valueF = Math.max(VALUE_FLOOR, 1 - inp.valueDecl / 100 * (t - 1));
+            var fullTax = on * kWdc * inp.fullTaxKW / 1e6 * valueF;
+            y.schoolTax = fullTax * inp.schoolPct / 100;
+            y.countyTax = t <= PILOT_YRS ? on * kWdc * inp.pilotKW / 1e6 : fullTax * (1 - inp.schoolPct / 100);
+            y.marginTax = y.rev * TX_MARGIN;
+            y.surety = on * (t >= SURETY_YR ? decomBase * esc * SURETY_PCT : 0);
+            y.opex = y.om + y.ins + y.land + y.schoolTax + y.countyTax + y.marginTax + y.surety;
+            y.ebitda = y.rev - y.opex;
+            y.inverter = t === INV_YR && y.live ? invCost : 0;
+            y.decom = t === endYr ? decomCost : 0;
+            y.cfads = y.ebitda - y.inverter - y.decom;
           }
-          var cumL = -equity;
-          years.forEach(function (y) { cumL += y.lcf; y.cumL = cumL; });
+
+          // ---- debt ----
+          var debt = 0, dsSched = [];
+          for (t = 0; t <= LIFE; t++) dsSched.push(0);
+          if (inp.debtSize === "sculpt") {
+            // Each year's debt service = EBITDA / target DSCR; debt = PV of that schedule.
+            for (t = 1; t <= tenor; t++) {
+              dsSched[t] = Math.max(0, Y[t].ebitda / inp.dscrTarget);
+              debt += dsSched[t] / Math.pow(1 + r, t);
+            }
+            var cap = projCost * inp.debtPct / 100;
+            if (debt > cap) {
+              for (t = 1; t <= tenor; t++) dsSched[t] *= cap / debt;
+              debt = cap;
+            }
+          } else {
+            debt = projCost * inp.debtPct / 100;
+            var lvl = debt > 0 ? debt * r / (1 - Math.pow(1 + r, -tenor)) : 0;
+            for (t = 1; t <= tenor; t++) dsSched[t] = lvl;
+          }
+          var fees = debt * FEE_PCT;
+          var dsra = dsSched[1] * DSRA_MONTHS / 12;
+          var totalUses = projCost + fees + dsra;
+          var equity = totalUses - debt;
+          var bal = debt, minDscr = Infinity;
+          for (t = 1; t <= LIFE; t++) {
+            y = Y[t];
+            y.debtOpen = bal;
+            y.interest = bal * r;
+            y.ds = t <= tenor ? dsSched[t] : 0;
+            y.principal = Math.min(bal, Math.max(0, y.ds - y.interest));
+            if (t === tenor) { y.principal = bal; y.ds = y.interest + y.principal; }
+            bal -= y.principal;
+            y.debtClose = bal;
+            y.dsraRel = t === tenor ? dsra : 0;   // reserve released with the final payment
+            y.dscr = y.ds > 0 ? y.ebitda / y.ds : null;
+            if (y.dscr !== null) minDscr = Math.min(minDscr, y.dscr);
+          }
+
+          // ---- tax depreciation ----
+          var dE = [], dO = [], dI = [];
+          for (t = 0; t <= LIFE; t++) { dE.push(0); dO.push(0); dI.push(0); }
+          var energyBasis = itcBasis - 0.5 * itcFace;          // IRC §50(c)(3) basis reduction
+          var otherBasis = projCost - itcBasis;                // site work, gen-tie: 15-year
+          addDepr(dE, energyBasis, 1, bonus, inp.macrsLife, endYr);
+          addDepr(dO, otherBasis, 1, bonus, "15", endYr);
+          if (INV_YR <= endYr) addDepr(dI, invCost, INV_YR, bonus, inp.macrsLife, endYr);
+          for (t = 1; t <= LIFE; t++) {
+            y = Y[t];
+            y.deprBonus = (t === 1 ? (energyBasis + otherBasis) * bonus : 0) + (t === INV_YR && y.live ? invCost * bonus : 0);
+            y.depr = dE[t] + dO[t] + dI[t];
+            y.deprMacrs = y.depr - y.deprBonus;
+            y.feeAmort = t <= tenor ? fees / tenor : 0;
+            y.tiU = y.ebitda - y.depr - y.decom;
+            y.tiL = y.tiU - y.interest - y.feeAmort;
+          }
+
+          function view(mode) {
+            var tU = taxSeries(Y.map(function (y) { return y.tiU || 0; }), mode);
+            var tL = taxSeries(Y.map(function (y) { return y.tiL || 0; }), mode);
+            var u = [-projCost], l = [-equity], cum = -equity, payback = null, inflow = 0;
+            for (var t = 1; t <= LIFE; t++) {
+              var y = Y[t], itc = t === 1 ? itcProceeds : 0;
+              u.push(y.cfads + itc - tU.tax[t]);
+              l.push(y.cfads - y.ds + y.dsraRel + itc - tL.tax[t]);
+              cum += l[t]; inflow += l[t];
+              if (payback === null && cum >= 0) payback = t;
+            }
+            return {
+              u: u, l: l, tU: tU, tL: tL, y1Tax: -tL.tax[1],
+              uirr: irr(u), lirr: irr(l), npvL: npv(inp.hurdle / 100, l), moic: inflow / equity, payback: payback
+            };
+          }
+          var views = { pretax: view("pretax"), standalone: view("standalone"), capacity: view("capacity") };
+          var sel = views[inp.taxMode];
+          var cumL = 0;
+          for (t = 0; t <= LIFE; t++) {
+            y = Y[t];
+            y.ucfPre = views.pretax.u[t];
+            y.ucf = sel.u[t];
+            y.lcf = sel.l[t];
+            y.taxL = sel.tL.tax[t];
+            y.nolUsed = sel.tL.nolUsed[t];
+            y.nolBal = sel.tL.nolBal[t];
+            y.itc = t === 1 ? itcProceeds : 0;
+            cumL += y.lcf; y.cumL = cumL;
+          }
 
           return {
-            mwDC: mwDC, mwAC: kWac / 1000, kWdc: kWdc, epc: epc, ix: ix, capex: capex,
-            itcFace: itcFace, itcProceeds: itcProceeds, deprBenefit: deprBenefit,
-            debt: debt, equity: equity, ds: ds, years: years,
-            uirr: irr(uFlows), lirr: irr(lFlows), dscr1: dscr1,
-            minDscr: minDscr === Infinity ? null : minDscr, paybackU: paybackU
+            mwDC: mwDC, mwAC: kWac / 1000, kWdc: kWdc, epc: epc, ix: ix, owners: owners, projCost: projCost,
+            fees: fees, dsra: dsra, totalUses: totalUses, debt: debt, equity: equity, tenor: tenor,
+            ppaTerm: ppaTerm, endYr: endYr, itcBasis: itcBasis, itcFace: itcFace, itcProceeds: itcProceeds,
+            deprBasis: energyBasis + otherBasis, years: Y, views: views, sel: sel,
+            minDscr: minDscr === Infinity ? null : minDscr
           };
         }
 
-        function M(x) { return "$" + x.toFixed(1) + "M"; }
-        function P(x) { return x === null ? "neg." : (x * 100).toFixed(1) + "%"; }
+        function M(x) { return (x < 0 ? "−$" : "$") + Math.abs(x).toFixed(1) + "M"; }
+        function P(x) { return x === null ? "neg." : (Math.abs(x) < 0.0005 ? 0 : x * 100).toFixed(1) + "%"; }
         function X(x) { return x === null ? "—" : x.toFixed(2) + "×"; }
+        function K(x) { // $ thousands, accounting style
+          if (x === null || x === undefined || Math.abs(x) < 0.0005) return "–";
+          var s = Math.round(Math.abs(x) * 1000).toLocaleString("en-US");
+          return x < 0 ? "(" + s + ")" : s;
+        }
+
+        var TAX_LABEL = {
+          capacity: "sponsor uses losses",
+          standalone: "standalone, NOLs carried",
+          pretax: "pre-tax"
+        };
 
         function render() {
           var inp = getInputs();
           KEYS.forEach(function (k) { $("o-" + k).textContent = FMT[k](inp[k]); });
-          var m = runModel(inp);
-          var y1 = m.years[0];
+          var fixed = inp.debtSize === "fixed";
+          $("i-dscrTarget").disabled = fixed;
+          $("l-debtPct").firstChild.textContent = fixed ? "Debt share, % of project cost " : "Debt cap, % of project cost ";
+          var m = runModel(inp), s = m.sel, y1 = m.years[1];
 
           // headline tiles
           $("t-cap").textContent = Math.round(m.mwDC) + " MWdc";
           $("t-cap-sub").textContent = "≈ " + Math.round(m.mwAC) + " MWac · 1,000 acres · ILR 1.30";
-          $("t-capex").textContent = M(m.capex);
-          $("t-capex-sub").textContent = "$" + (m.capex * 1e6 / m.kWdc / 1000).toFixed(2) + "/Wdc all-in · EPC " + M(m.epc) + " + grid " + M(m.ix);
+          $("t-capex").textContent = M(m.projCost);
+          $("t-capex-sub").textContent = "$" + (m.projCost * 1e3 / m.kWdc).toFixed(2) + "/Wdc · EPC " + M(m.epc) + " + grid " + M(m.ix) + " + dev " + M(m.owners);
           $("t-rev").textContent = M(y1.rev);
           $("t-rev-sub").textContent = Math.round(y1.mwh / 1000) + " GWh × $" + y1.price.toFixed(2) + "/MWh";
           $("t-ebitda").textContent = M(y1.ebitda);
           $("t-ebitda-sub").textContent = Math.round(y1.ebitda / y1.rev * 100) + "% margin · OpEx " + M(y1.opex);
-          $("t-uirr").textContent = P(m.uirr);
-          $("t-lirr").textContent = P(m.lirr);
-          $("t-lirr-sub").textContent = "debt " + Math.round(inp.debtPct) + "% at " + inp.rate.toFixed(2) + "% · equity " + M(m.equity);
-          $("t-dscr").textContent = X(m.dscr1);
-          $("t-payback").textContent = m.paybackU ? "Year " + m.paybackU : "> 30 yrs";
+          $("t-uirr").textContent = P(s.uirr);
+          $("t-uirr-sub").textContent = TAX_LABEL[inp.taxMode] + " · incl. ITC sale";
+          $("t-lirr").textContent = P(s.lirr);
+          $("t-lirr-sub").textContent = "equity " + M(m.equity) + " · debt " + M(m.debt);
+          $("t-dscr").textContent = X(m.minDscr);
+          $("t-payback").textContent = s.payback ? "Year " + s.payback : "> 30 yrs";
+          $("t-payback-sub").textContent = "levered, " + TAX_LABEL[inp.taxMode];
+
+          // return profile
+          var V = m.views, cols = ["pretax", "standalone", "capacity"];
+          function row(label, f) {
+            return "<tr><td>" + label + "</td>" + cols.map(function (c) {
+              return '<td class="r"' + (c === inp.taxMode ? ' style="font-weight:700"' : "") + ">" + f(V[c]) + "</td>";
+            }).join("") + "</tr>";
+          }
+          $("ret-body").innerHTML =
+            row("Unlevered project IRR", function (v) { return P(v.uirr); }) +
+            row("Sponsor levered IRR", function (v) { return P(v.lirr); }) +
+            row("Equity NPV at " + inp.hurdle.toFixed(1) + "%", function (v) { return M(v.npvL); }) +
+            row("Equity multiple (cash back ÷ cash in)", function (v) { return v.moic.toFixed(2) + "×"; }) +
+            row("Equity payback", function (v) { return v.payback ? "Year " + v.payback : "> 30 yrs"; }) +
+            row("Year-1 tax saving", function (v) { return M(v.y1Tax); });
+          var noBonus = {}; for (var k in inp) noBonus[k] = inp[k];
+          noBonus.bonusPct = 0;
+          var nb = runModel(noBonus).sel;
+          $("bonus-note").textContent = inp.taxMode === "pretax"
+            ? "Pre-tax view selected: depreciation has no cash value in this view. Pick a tax view to see what bonus depreciation is worth."
+            : "What bonus depreciation is worth here (" + TAX_LABEL[inp.taxMode] + "): sponsor IRR " + P(s.lirr) + " with " +
+              Math.round(inp.bonusPct) + "% bonus vs. " + P(nb.lirr) + " with none; equity NPV " + M(s.npvL) + " vs. " + M(nb.npvL) +
+              ". It is a timing benefit — the same total deductions, taken sooner — so it is worth most when returns are high and losses can be used at once.";
 
           // sources & uses
           $("u-epc").textContent = M(m.epc);
           $("u-ix").textContent = M(m.ix);
-          $("u-total").textContent = M(m.capex);
-          $("u-debt").textContent = M(m.debt) + " (" + Math.round(inp.debtPct) + "%)";
-          $("u-equity").textContent = M(m.equity) + " (" + Math.round(100 - inp.debtPct) + "%)";
-          $("u-itc").textContent = M(m.itcFace) + " (" + Math.round(inp.itcRate) + "% of capital)";
-          $("u-itcp").textContent = M(m.itcProceeds) + (m.deprBenefit > 0 ? " · plus depreciation benefit " + M(m.deprBenefit) : "");
+          $("u-owners").textContent = M(m.owners);
+          $("u-proj").textContent = M(m.projCost);
+          $("u-fees").textContent = M(m.fees);
+          $("u-dsra").textContent = M(m.dsra);
+          $("u-total").textContent = M(m.totalUses);
+          $("u-debt").textContent = M(m.debt) + " (" + Math.round(m.debt / m.totalUses * 100) + "%)";
+          $("u-equity").textContent = M(m.equity) + " (" + Math.round(m.equity / m.totalUses * 100) + "%)";
+          $("u-itcb").textContent = M(m.itcBasis);
+          $("u-itc").textContent = M(m.itcFace) + " (" + Math.round(inp.itcRate) + "%)";
+          $("u-itcp").textContent = M(m.itcProceeds);
+          $("u-dep").textContent = M(m.deprBasis);
 
-          // year 1 snapshot
-          $("y-gen").textContent = Math.round(y1.mwh).toLocaleString("en-US") + " MWh";
-          $("y-rev").textContent = M(y1.rev);
-          $("y-opex").textContent = M(y1.opex);
-          $("y-ebitda").textContent = M(y1.ebitda);
-          $("y-ds").textContent = M(y1.ds);
-          $("y-cfads").textContent = M(y1.ebitda - y1.ds);
+          // year 1, line by line
+          var y1rows = [
+            ["Generation", Math.round(y1.mwh).toLocaleString("en-US") + " MWh"],
+            ["Revenue", M(y1.rev)],
+            ["O&amp;M", M(-y1.om)], ["Insurance &amp; asset mgmt", M(-y1.ins)], ["Land lease", M(-y1.land)],
+            ["Property tax — school district", M(-y1.schoolTax)], ["Property tax — county PILOT", M(-y1.countyTax)],
+            ["Texas franchise tax", M(-y1.marginTax)],
+            ["EBITDA", M(y1.ebitda), 1],
+            ["Debt service", M(-y1.ds)],
+            ["ITC sale proceeds", M(y1.itc)],
+            ["Federal income tax (saving)", M(-y1.taxL)],
+            ["Sponsor cash flow, year 1", M(y1.lcf), 1]
+          ];
+          $("y1-table").innerHTML = y1rows.map(function (r) {
+            return "<tr" + (r[2] ? ' class="total"' : "") + "><td>" + r[0] + '</td><td class="r">' + r[1] + "</td></tr>";
+          }).join("");
 
           // verdict
           var v = $("verdict");
-          var txt = "Base case at a $" + inp.ppa.toFixed(2) + "/MWh PPA: the project returns " + P(m.uirr) +
-            " unlevered and " + P(m.lirr) + " to the sponsor, with year-1 DSCR of " + X(m.dscr1) + ". ";
+          var txt = "At a $" + inp.ppa.toFixed(2) + "/MWh PPA (" + TAX_LABEL[inp.taxMode] + "), the project returns " + P(s.uirr) +
+            " unlevered and " + P(s.lirr) + " to the sponsor after tax, on " + M(m.equity) + " of equity. ";
           var bad = false;
           if (m.minDscr !== null && m.minDscr < 1.30) {
-            txt += "Minimum DSCR of " + X(m.minDscr) + " is below the 1.30× lenders typically require on P50 production — at these terms the debt would be sized down, pushing more equity in. ";
+            txt += "Minimum DSCR of " + X(m.minDscr) + " is below the 1.30× lenders typically require — they would lend less. ";
             bad = true;
           }
-          if (m.lirr === null || m.lirr < 0.05) {
-            txt += "That is below any plausible return hurdle: at this price the deal does not pencil without a cheaper build, a richer contract, or full tax-equity value.";
+          if (s.lirr === null || s.lirr < 0.05) {
+            txt += "That is below any plausible return hurdle: at this price the deal does not pencil without a cheaper build, a richer contract, or more tax value.";
             bad = true;
-          } else if (m.lirr < 0.08) {
+          } else if (s.lirr < 0.08) {
             txt += "That is thin — below the 8–11% range of recent core-project returns and well below the 12–18% sponsor targets quoted in industry guides.";
             bad = true;
-          } else if (m.lirr < 0.12) {
+          } else if (s.lirr < 0.12) {
             txt += "That sits in the 8–11% range of recent core-project returns — respectable infrastructure economics, though below the 12–18% sponsor targets quoted in industry guides.";
           } else {
             txt += "That reaches the 12–18% sponsor target range quoted in industry guides.";
@@ -951,46 +1305,42 @@
 
           renderChart(m);
           renderSensitivity(inp);
-          renderTable(m);
+          renderStatement(m, inp);
           currentModel = m; currentInputs = inp;
         }
 
         function renderChart(m) {
           var W = 720, H = 300, ml = 48, mr = 52, mt = 16, mb = 28;
           var iw = W - ml - mr, ih = H - mt - mb;
-          var cfs = m.years.map(function (y) { return y.lcf; });
+          var ys = m.years.slice(1);
+          var cfs = ys.map(function (y) { return y.lcf; });
           var maxB = Math.max.apply(null, cfs.concat([0]));
           var minB = Math.min.apply(null, cfs.concat([0]));
           var cum = [-m.equity];
-          m.years.forEach(function (y) { cum.push(cum[cum.length - 1] + y.lcf); });
-          var maxC = Math.max.apply(null, cum), minC = Math.min.apply(null, cum);
+          ys.forEach(function (y) { cum.push(cum[cum.length - 1] + y.lcf); });
+          var maxC = Math.max.apply(null, cum.concat([0])), minC = Math.min.apply(null, cum);
           function bx(i) { return ml + iw * i / 30; }
           function by(v) { return mt + ih * (maxB - v) / (maxB - minB); }
           function cy(v) { return mt + ih * (maxC - v) / (maxC - minC); }
-          var s = '<svg viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="Bar chart of annual sponsor cash flow and cumulative cash flow over 30 years">';
-          // gridlines on bar scale
+          var s = '<svg viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="Bar chart of annual sponsor after-tax cash flow and cumulative cash flow over 30 years">';
           for (var g = 0; g <= 4; g++) {
             var gv = minB + (maxB - minB) * g / 4, gy = by(gv);
             s += '<line x1="' + ml + '" y1="' + gy + '" x2="' + (W - mr) + '" y2="' + gy + '" stroke="var(--line)" stroke-width="1"/>';
             s += '<text x="' + (ml - 6) + '" y="' + (gy + 4) + '" text-anchor="end" font-size="11" fill="var(--muted)" font-family="Archivo, sans-serif">' + Math.round(gv) + "</text>";
           }
-          // zero line for cumulative
           if (minC < 0 && maxC > 0) {
             s += '<line x1="' + ml + '" y1="' + cy(0) + '" x2="' + (W - mr) + '" y2="' + cy(0) + '" stroke="var(--green)" stroke-width="1" stroke-dasharray="4 3" opacity="0.55"/>';
           }
           s += '<text x="' + (W - mr + 6) + '" y="' + (cy(maxC) + 4) + '" font-size="11" fill="var(--green)" font-family="Archivo, sans-serif">' + Math.round(maxC) + "</text>";
           s += '<text x="' + (W - mr + 6) + '" y="' + (cy(minC) + 4) + '" font-size="11" fill="var(--green)" font-family="Archivo, sans-serif">' + Math.round(minC) + "</text>";
-          // bars
           var bw = iw / 30 * 0.68;
-          m.years.forEach(function (y, i) {
+          ys.forEach(function (y, i) {
             var x = bx(i) + iw / 30 * 0.16, yTop = by(Math.max(y.lcf, 0)), yBot = by(Math.min(y.lcf, 0));
             s += '<rect x="' + x.toFixed(1) + '" y="' + yTop.toFixed(1) + '" width="' + bw.toFixed(1) + '" height="' + Math.max(yBot - yTop, 0.5).toFixed(1) + '" style="fill:' + (y.lcf < 0 ? "var(--bad)" : "var(--accent)") + '" opacity="0.88"/>';
           });
-          // cumulative line
           var path = "";
           cum.forEach(function (v, i) { path += (i === 0 ? "M" : "L") + bx(i).toFixed(1) + " " + cy(v).toFixed(1) + " "; });
           s += '<path d="' + path + '" fill="none" style="stroke:var(--green)" stroke-width="2.2"/>';
-          // x labels
           [1, 5, 10, 15, 20, 25, 30].forEach(function (yr) {
             s += '<text x="' + (bx(yr - 1) + iw / 60) + '" y="' + (H - 8) + '" text-anchor="middle" font-size="11" fill="var(--muted)" font-family="Archivo, sans-serif">Yr ' + yr + "</text>";
           });
@@ -1002,62 +1352,147 @@
           var prices = [44, 49, 52, 52.65, 61.40];
           var html = "";
           prices.forEach(function (p) {
-            var over = {}; KEYS.forEach(function (k) { over[k] = inp[k]; });
-            over.ppa = p; over.depr = inp.depr;
+            var over = {}; for (var k in inp) over[k] = inp[k];
+            over.ppa = p;
             var mm = runModel(over);
+            over.ppaEsc = 0;
+            var flat = runModel(over);
             var isCur = Math.abs(p - inp.ppa) < 0.01;
             html += "<tr" + (isCur ? ' style="font-weight:700"' : "") + "><td>$" + p.toFixed(2) + (isCur ? " · current" : "") + "</td>" +
-              '<td class="r">' + M(mm.years[0].rev) + "</td>" +
-              '<td class="r">' + X(mm.dscr1) + "</td>" +
-              '<td class="r">' + P(mm.uirr) + "</td>" +
-              '<td class="r">' + P(mm.lirr) + "</td></tr>";
+              '<td class="r">' + M(mm.years[1].rev) + "</td>" +
+              '<td class="r">' + M(mm.debt) + "</td>" +
+              '<td class="r">' + P(mm.sel.uirr) + "</td>" +
+              '<td class="r">' + P(mm.sel.lirr) + "</td>" +
+              '<td class="r">' + P(flat.sel.lirr) + "</td></tr>";
           });
           $("sens-body").innerHTML = html;
         }
 
-        function renderTable(m) {
-          var html = "";
-          m.years.forEach(function (y) {
-            html += "<tr" + (y.lcf < 0 ? ' class="neg"' : "") + "><td>" + y.t + (y.t <= PPA_TERM ? "" : " · merchant") + "</td>" +
-              "<td>" + (y.mwh / 1000).toFixed(0) + "</td>" +
-              '<td class="opt">' + y.price.toFixed(2) + "</td>" +
-              "<td>" + y.rev.toFixed(1) + "</td>" +
-              "<td>" + y.opex.toFixed(1) + "</td>" +
-              "<td>" + y.ebitda.toFixed(1) + "</td>" +
-              '<td class="opt">' + (y.ds ? y.ds.toFixed(1) : "—") + "</td>" +
-              '<td class="opt">' + (y.credits ? y.credits.toFixed(1) : "—") + "</td>" +
-              "<td>" + y.lcf.toFixed(1) + "</td>" +
-              '<td class="opt">' + y.cumL.toFixed(1) + "</td></tr>";
+        // Line-by-line statement. Each row: [label, value(y) or null for a header,
+        // format, sum across years?, css class]. Year 0 is closing.
+        function statementRows(m, inp) {
+          var neg = function (f) { return function (y) { var v = f(y); return v === undefined ? undefined : -v; }; };
+          var ops = function (k) { return function (y) { return y.t ? y[k] : undefined; }; };
+          return [
+            ["Operations"],
+            ["Contract", function (y) { return y.t ? (!y.live ? "retired" : y.merchant ? "merchant" : "PPA") : ""; }, "txt"],
+            ["Net generation (MWh)", ops("mwh"), "int", true],
+            ["Realized price ($/MWh)", ops("price"), "dec"],
+            ["Revenue"],
+            ["Energy revenue", ops("rev"), "k", true, "b"],
+            ["Operating expenses"],
+            ["O&M", neg(ops("om")), "k", true],
+            ["Insurance & asset management", neg(ops("ins")), "k", true],
+            ["Land lease", neg(ops("land")), "k", true],
+            ["Property tax — school district", neg(ops("schoolTax")), "k", true],
+            ["Property tax — county (PILOT yrs 1–10)", neg(ops("countyTax")), "k", true],
+            ["Texas franchise (margin) tax", neg(ops("marginTax")), "k", true],
+            ["Decommissioning bond premium", neg(ops("surety")), "k", true],
+            ["Total operating expenses", neg(ops("opex")), "k", true, "b"],
+            ["EBITDA", ops("ebitda"), "k", true, "sub"],
+            ["Capital items"],
+            ["Project cost (EPC + grid + development)", function (y) { return y.t ? undefined : -m.projCost; }, "k", true],
+            ["Inverter replacement", neg(ops("inverter")), "k", true],
+            ["Decommissioning, net of salvage", neg(ops("decom")), "k", true],
+            ["Unlevered pre-tax cash flow", function (y) { return y.ucfPre; }, "k", true, "sub"],
+            ["Senior debt"],
+            ["Debt drawn", function (y) { return y.t ? undefined : m.debt; }, "k", true],
+            ["Loan fees & reserve funding", function (y) { return y.t ? undefined : -(m.fees + m.dsra); }, "k", true],
+            ["Opening balance", ops("debtOpen"), "k"],
+            ["Interest", neg(ops("interest")), "k", true],
+            ["Principal", neg(ops("principal")), "k", true],
+            ["Total debt service", neg(ops("ds")), "k", true, "b"],
+            ["Closing balance", ops("debtClose"), "k"],
+            ["DSCR (EBITDA ÷ debt service)", ops("dscr"), "x"],
+            ["Reserve released", ops("dsraRel"), "k", true],
+            ["Federal income tax — " + TAX_LABEL[inp.taxMode]],
+            ["EBITDA", ops("ebitda"), "k", true],
+            ["Less: bonus depreciation", neg(ops("deprBonus")), "k", true],
+            ["Less: MACRS depreciation", neg(ops("deprMacrs")), "k", true],
+            ["Less: decommissioning expense", neg(ops("decom")), "k", true],
+            ["Less: interest", neg(ops("interest")), "k", true],
+            ["Less: loan-fee amortization", neg(ops("feeAmort")), "k", true],
+            ["Taxable income (loss)", ops("tiL"), "k", true, "b"],
+            ["NOL used", ops("nolUsed"), "k", true],
+            ["NOL balance carried forward", ops("nolBal"), "k"],
+            ["Federal tax at 21%: saving / (paid)", neg(ops("taxL")), "k", true, "b"],
+            ["Tax credit"],
+            ["ITC sale proceeds (not taxable)", ops("itc"), "k", true],
+            ["Cash to the sponsor"],
+            ["Unlevered after-tax cash flow", function (y) { return y.ucf; }, "k", true],
+            ["Sponsor levered after-tax cash flow", function (y) { return y.lcf; }, "k", true, "sub"],
+            ["Cumulative sponsor cash flow", function (y) { return y.cumL; }, "k"]
+          ];
+        }
+
+        function fmtCell(v, f) {
+          if (v === undefined || v === null) return f === "txt" ? "" : "–";
+          if (f === "txt") return v;
+          if (f === "int") return Math.round(v).toLocaleString("en-US");
+          if (f === "dec") return v ? v.toFixed(2) : "–";
+          if (f === "x") return v.toFixed(2) + "×";
+          return K(v);
+        }
+
+        function renderStatement(m, inp) {
+          var rows = statementRows(m, inp), Y = m.years;
+          var html = "<thead><tr><th>$000s</th>";
+          Y.forEach(function (y) { html += "<th>" + (y.t ? "Yr " + y.t : "Close") + "</th>"; });
+          html += "<th>Total</th></tr></thead><tbody>";
+          rows.forEach(function (r) {
+            if (r.length === 1) {
+              html += '<tr class="hd"><td>' + r[0] + '</td><td colspan="' + (Y.length + 1) + '"></td></tr>';
+              return;
+            }
+            var tot = 0, any = false;
+            html += "<tr" + (r[4] ? ' class="' + r[4] + '"' : "") + "><td>" + r[0].replace(/&(?!amp;)/g, "&amp;") + "</td>";
+            Y.forEach(function (y) {
+              var v = r[1](y);
+              if (typeof v === "number") { tot += v; any = true; }
+              html += '<td class="' + (typeof v === "number" && v < 0 ? "n" : "") + '">' + fmtCell(v, r[2]) + "</td>";
+            });
+            html += '<td class="tot">' + (r[3] && any ? fmtCell(tot, r[2]) : "") + "</td></tr>";
           });
-          $("pf-body").innerHTML = html;
+          $("stmt").innerHTML = html + "</tbody>";
         }
 
         var currentModel = null, currentInputs = null;
 
         $("dl").addEventListener("click", function () {
           if (!currentModel) return;
-          var lines = ["Year,Generation (MWh),Avg price ($/MWh),Revenue ($M),OpEx ($M),EBITDA ($M),Debt service ($M),Credits & capex ($M),Sponsor levered CF ($M),Cumulative levered CF ($M)"];
-          currentModel.years.forEach(function (y) {
-            lines.push([y.t, Math.round(y.mwh), y.price.toFixed(2), y.rev.toFixed(2), y.opex.toFixed(2),
-              y.ebitda.toFixed(2), y.ds.toFixed(2), y.credits.toFixed(2), y.lcf.toFixed(2), y.cumL.toFixed(2)].join(","));
+          var rows = statementRows(currentModel, currentInputs), Y = currentModel.years;
+          function q(s) { return '"' + String(s).replace(/"/g, '""') + '"'; }
+          var lines = [["Line item ($000s unless noted)"].concat(Y.map(function (y) { return y.t ? "Year " + y.t : "Closing"; }), ["Total"]).map(q).join(",")];
+          rows.forEach(function (r) {
+            if (r.length === 1) { lines.push(q(r[0].toUpperCase())); return; }
+            var tot = 0, cells = Y.map(function (y) {
+              var v = r[1](y);
+              if (typeof v !== "number") return v ? q(v) : "";
+              tot += v;
+              if (r[2] === "k") return (v * 1000).toFixed(0);
+              if (r[2] === "x") return v.toFixed(3);
+              return v.toFixed(2);
+            });
+            lines.push([q(r[0])].concat(cells, [r[3] ? (r[2] === "k" ? (tot * 1000).toFixed(0) : tot.toFixed(0)) : ""]).join(","));
           });
+          lines.push("");
+          lines.push(q("Inputs"));
+          Object.keys(currentInputs).forEach(function (k) { lines.push(q(k) + "," + q(currentInputs[k])); });
           var blob = new Blob([lines.join("\n")], { type: "text/csv" });
           var a = document.createElement("a");
           a.href = URL.createObjectURL(blob);
-          a.download = "solar-farm-proforma-wichita-falls-1000-acre.csv";
+          a.download = "solar-farm-proforma-wichita-falls-line-items.csv";
           document.body.appendChild(a); a.click();
           setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 400);
         });
 
-        $("reset").addEventListener("click", function () {
-          KEYS.forEach(function (k) { $("i-" + k).value = DEFAULTS[k]; });
-          $("i-depr").value = DEFAULTS.depr;
-          render();
-        });
-
+        function setDefaults() {
+          KEYS.concat(SELECTS).forEach(function (k) { $("i-" + k).value = DEFAULTS[k]; });
+        }
+        $("reset").addEventListener("click", function () { setDefaults(); render(); });
         KEYS.forEach(function (k) { $("i-" + k).addEventListener("input", render); });
-        $("i-depr").addEventListener("change", render);
-        KEYS.forEach(function (k) { $("i-" + k).value = DEFAULTS[k]; });
+        SELECTS.forEach(function (k) { $("i-" + k).addEventListener("change", render); });
+        setDefaults();
         render();
       })();
     </script>
