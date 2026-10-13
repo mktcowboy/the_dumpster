@@ -1,0 +1,1065 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="data:," />
+    <title>Solar Farm Proforma — Wichita Falls, Texas · 1,000-Acre Utility-Scale Economics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600;6..72,700&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        color-scheme: light dark;
+        --paper: #f6f3ea;
+        --card: #fffdf6;
+        --ink: #1d2620;
+        --ink-soft: #3c4740;
+        --muted: #68736a;
+        --line: #d9d2bf;
+        --line-strong: #b9b09a;
+        --accent: #a86e08;
+        --accent-ink: #8a5c05;
+        --green: #2e5d43;
+        --green-soft: #e4ecdf;
+        --warn-bg: #f8ecd2;
+        --warn-line: #c99b3f;
+        --warn-ink: #5f4303;
+        --bad: #a03a2a;
+        --input-bg: #fffdf6;
+        --shadow: 0 1px 2px rgba(29, 38, 32, 0.06);
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --paper: #12160f;
+          --card: #1a2016;
+          --ink: #ece7d7;
+          --ink-soft: #c9cdbc;
+          --muted: #9aa48f;
+          --line: #333b2c;
+          --line-strong: #4c5741;
+          --accent: #e3a92e;
+          --accent-ink: #e9bc55;
+          --green: #7fb894;
+          --green-soft: #22301f;
+          --warn-bg: #33290f;
+          --warn-line: #8a6c22;
+          --warn-ink: #f0d492;
+          --bad: #e08a76;
+          --input-bg: #141a11;
+          --shadow: none;
+        }
+      }
+      * { box-sizing: border-box; }
+      html { -webkit-text-size-adjust: 100%; }
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: "Archivo", "Helvetica Neue", Arial, sans-serif;
+        font-size: 16.5px;
+        line-height: 1.62;
+      }
+      .wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px 80px; }
+      h1, h2, h3 { font-family: "Newsreader", Georgia, "Times New Roman", serif; line-height: 1.12; margin: 0; font-weight: 600; }
+      h1 { font-size: clamp(34px, 6vw, 54px); letter-spacing: -0.01em; }
+      h2 { font-size: clamp(26px, 4vw, 34px); margin-bottom: 10px; }
+      h3 { font-size: 21px; margin-bottom: 6px; }
+      p { margin: 0 0 14px; }
+      a { color: var(--accent-ink); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+      .num, td, .tile b, output { font-variant-numeric: tabular-nums; }
+
+      /* ---------- header ---------- */
+      header { padding: 44px 0 0; }
+      .kicker {
+        font-size: 12.5px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+        color: var(--accent-ink); margin-bottom: 14px;
+      }
+      .standfirst { font-size: 19px; line-height: 1.55; color: var(--ink-soft); max-width: 46em; margin-top: 16px; }
+      .basis { font-size: 13.5px; color: var(--muted); margin-top: 14px; }
+      figure.hero { margin: 28px 0 8px; }
+      figure.hero img { width: 100%; height: auto; display: block; border: 1px solid var(--line-strong); }
+      figure.hero figcaption { font-size: 13px; color: var(--muted); padding-top: 8px; }
+
+      /* ---------- stat tiles ---------- */
+      .tiles { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); margin: 30px 0 8px; }
+      .tile { background: var(--card); padding: 16px 18px 14px; }
+      .tile span { display: block; font-size: 12px; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+      .tile b { display: block; font-family: "Newsreader", Georgia, serif; font-weight: 600; font-size: 30px; line-height: 1.05; }
+      .tile small { display: block; font-size: 13px; color: var(--muted); margin-top: 5px; line-height: 1.4; }
+      @media (max-width: 760px) { .tiles { grid-template-columns: repeat(2, 1fr); } }
+
+      /* ---------- sections ---------- */
+      section { margin-top: 56px; }
+      .sec-head { border-top: 2.5px solid var(--ink); padding-top: 14px; margin-bottom: 18px; }
+      .sec-head .no { font-size: 12.5px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent-ink); display: block; margin-bottom: 6px; }
+      .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 34px; }
+      @media (max-width: 820px) { .cols { grid-template-columns: 1fr; } }
+      .flag { font-size: 12px; font-weight: 700; color: var(--warn-ink); background: var(--warn-bg); border: 1px solid var(--warn-line); padding: 0 6px; border-radius: 3px; white-space: nowrap; }
+      .src { font-size: 13px; color: var(--muted); }
+      .src a { color: var(--muted); }
+      ul.tight { margin: 0 0 14px; padding-left: 20px; }
+      ul.tight li { margin-bottom: 7px; }
+      .callout { border: 1px solid var(--warn-line); background: var(--warn-bg); color: var(--warn-ink); padding: 18px 20px; margin: 20px 0; }
+      .callout h3 { color: var(--warn-ink); margin-bottom: 6px; }
+      .callout p:last-child { margin-bottom: 0; }
+      .note-box { border: 1px solid var(--line-strong); background: var(--card); padding: 18px 20px; margin: 20px 0; box-shadow: var(--shadow); }
+      .note-box p:last-child { margin-bottom: 0; }
+
+      table.data { width: 100%; border-collapse: collapse; font-size: 15px; margin: 12px 0 18px; }
+      table.data th { text-align: left; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); border-bottom: 2px solid var(--ink); padding: 6px 10px 6px 0; }
+      table.data td { border-bottom: 1px solid var(--line); padding: 8px 10px 8px 0; vertical-align: top; }
+      table.data td.r, table.data th.r { text-align: right; padding-right: 0; }
+      table.data tr.total td { border-top: 2px solid var(--ink); border-bottom: none; font-weight: 700; }
+
+      /* ---------- proforma ---------- */
+      .model-grid { display: grid; grid-template-columns: 330px 1fr; gap: 30px; align-items: start; }
+      @media (max-width: 900px) { .model-grid { grid-template-columns: 1fr; } }
+      .controls { border: 1px solid var(--line-strong); background: var(--card); padding: 6px 20px 14px; box-shadow: var(--shadow); }
+      @media (min-width: 901px) { .controls { position: sticky; top: 14px; } }
+      .controls fieldset { border: none; border-top: 1px solid var(--line); margin: 0; padding: 14px 0 6px; }
+      .controls fieldset:first-of-type { border-top: none; }
+      .controls legend { font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent-ink); padding: 0; margin-bottom: 4px; }
+      .ctl { margin-bottom: 12px; }
+      .ctl label { display: flex; justify-content: space-between; align-items: baseline; font-size: 13.5px; font-weight: 600; color: var(--ink-soft); gap: 10px; }
+      .ctl output { font-size: 14px; font-weight: 700; color: var(--ink); white-space: nowrap; }
+      .ctl input[type="range"] { width: 100%; accent-color: var(--accent); margin: 4px 0 0; height: 26px; }
+      .ctl .hint { font-size: 12px; color: var(--muted); line-height: 1.45; margin-top: 1px; }
+      .ctl select { width: 100%; margin-top: 5px; padding: 8px; font: inherit; font-size: 14px; background: var(--input-bg); color: var(--ink); border: 1px solid var(--line-strong); border-radius: 4px; }
+      .reset-btn { margin: 12px 0 8px; width: 100%; padding: 10px; font: inherit; font-size: 14px; font-weight: 700; background: transparent; color: var(--accent-ink); border: 1.5px solid var(--accent); border-radius: 4px; cursor: pointer; }
+      .reset-btn:hover { background: var(--warn-bg); }
+
+      .out-tiles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); margin-bottom: 22px; }
+      @media (max-width: 640px) { .out-tiles { grid-template-columns: repeat(2, 1fr); } }
+      .verdict { border-left: 4px solid var(--green); background: var(--green-soft); padding: 14px 18px; margin-bottom: 22px; font-size: 15.5px; }
+      .verdict.bad { border-left-color: var(--bad); background: var(--warn-bg); }
+      .chart-box { border: 1px solid var(--line); background: var(--card); padding: 16px 16px 8px; margin-bottom: 22px; }
+      .chart-box h3 { font-size: 17px; }
+      .chart-box svg { width: 100%; height: auto; display: block; }
+      .legend { display: flex; gap: 18px; flex-wrap: wrap; font-size: 12.5px; color: var(--muted); margin: 6px 0 8px; }
+      .legend i { display: inline-block; width: 11px; height: 11px; margin-right: 5px; vertical-align: -1px; }
+
+      .pf-table-wrap { margin-bottom: 8px; }
+      table.pf { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+      table.pf th { font-size: 11px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); border-bottom: 2px solid var(--ink); padding: 6px 6px; text-align: right; }
+      table.pf th:first-child { text-align: left; }
+      table.pf td { border-bottom: 1px solid var(--line); padding: 5px 6px; text-align: right; white-space: nowrap; }
+      table.pf td:first-child { text-align: left; font-weight: 600; }
+      table.pf tr.neg td { color: var(--bad); }
+      table.pf tr.sub td { background: var(--green-soft); }
+      @media (max-width: 760px) { table.pf .opt { display: none; } }
+      .dl-btn { display: inline-block; margin: 10px 0 4px; padding: 10px 18px; font-size: 14px; font-weight: 700; color: var(--accent-ink); border: 1.5px solid var(--accent); border-radius: 4px; background: transparent; cursor: pointer; font-family: inherit; }
+      .dl-btn:hover { background: var(--warn-bg); }
+
+      .risks li { margin-bottom: 10px; }
+      .sources-list { font-size: 14px; columns: 2; column-gap: 40px; }
+      @media (max-width: 760px) { .sources-list { columns: 1; } }
+      .sources-list li { margin-bottom: 8px; break-inside: avoid; }
+      footer { border-top: 2px solid var(--ink); margin-top: 64px; padding-top: 16px; font-size: 13.5px; color: var(--muted); }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="kicker">Utility-Scale Solar · Wichita Falls, Texas · ERCOT Grid (Oncor)</div>
+        <h1>The economics of a solar farm near Wichita Falls, on 1,000 acres</h1>
+        <p class="standfirst">
+          A utility-scale solar farm is a simple business with four moving parts: what it costs to build,
+          how much sunlight the site converts to electricity, the contract price for that electricity,
+          and a federal tax credit that currently pays for roughly a third of the plant. This page works
+          through each part with current (October 2026) market figures, then builds a full 30-year
+          proforma for a 1,000-acre greenfield project near Wichita Falls, Texas — about 150&nbsp;MW of panels
+          in ERCOT, roughly $170&nbsp;million all-in — with every assumption adjustable. Texas changes
+          three things versus the plains further north: the sun is a little better, the grid connects
+          faster and cheaper, and property tax — not land — is the local cost that can break the deal.
+        </p>
+        <p class="basis">Basis: hypothetical greenfield near Wichita Falls (Wichita / Archer County area), single-axis tracking, leased land, 30-year life, ERCOT North Zone, Oncor as transmission provider. All figures nominal USD. Researched October 12, 2026; sources linked throughout.</p>
+        <figure class="hero">
+          <img src="data:image/jpeg;base64,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" alt="Aerial view of a utility-scale solar farm: long rows of tracking panels stretching across green fields to the horizon" width="2350" height="1761" />
+          <figcaption>A utility-scale solar plant of the type modeled here — single-axis tracking rows across open North Texas farmland. At typical densities, 1,000 acres hosts roughly 125–200 MWdc of panels. Wichita County already has a direct precedent: TotalEnergies' 625 MW phase 1 on ~6,000 acres.</figcaption>
+        </figure>
+      </header>
+
+      <div class="tiles" aria-label="Base case headline figures">
+        <div class="tile"><span>Capacity</span><b id="t-cap">—</b><small id="t-cap-sub">on 1,000 acres</small></div>
+        <div class="tile"><span>Total capital cost</span><b id="t-capex">—</b><small id="t-capex-sub">EPC + interconnection</small></div>
+        <div class="tile"><span>Year-1 revenue</span><b id="t-rev">—</b><small id="t-rev-sub">under contract</small></div>
+        <div class="tile"><span>Year-1 EBITDA</span><b id="t-ebitda">—</b><small id="t-ebitda-sub">before debt service</small></div>
+        <div class="tile"><span>Unlevered IRR · 30 yr</span><b id="t-uirr">—</b><small>project level, incl. ITC sale</small></div>
+        <div class="tile"><span>Sponsor levered IRR</span><b id="t-lirr">—</b><small id="t-lirr-sub">after senior debt</small></div>
+        <div class="tile"><span>Year-1 DSCR</span><b id="t-dscr">—</b><small>lenders look for ≥ 1.30×</small></div>
+        <div class="tile"><span>Cash payback</span><b id="t-payback">—</b><small>unlevered, incl. ITC proceeds</small></div>
+      </div>
+      <p class="src">Headline tiles show the interactive model's base case (Section 7). Change any assumption there and every figure on this page's model updates.</p>
+
+      <section>
+        <div class="sec-head"><span class="no">01 — The short version</span><h2>How the money works</h2></div>
+        <p>
+          A solar farm has no fuel cost and almost no moving parts, so its economics are decided almost
+          entirely on day one: the construction price, the power contract, and the tax credit. Build costs
+          for a tracking plant run about <strong>$1.06 per watt</strong> in late 2026, before grid
+          interconnection. The plant then sells its output under a power purchase agreement (PPA) —
+          typically 10–25 years in ERCOT; the local precedent, TotalEnergies' 1&nbsp;GW deal with Google
+          covering its Wichita County project, is 15 years. Continental PPA prices averaged
+          <strong>$61.40/MWh</strong> in Q2 2026, but ERCOT is the cheapest ISO in North America on
+          LevelTen's index: its P25 (competitive-quartile) solar offer price was <strong>$49/MWh in
+          Q4 2025</strong>, up from $44 in Q1 2025. That discount is the whole ballgame: Wichita Falls
+          produces more energy per panel than central Oklahoma, but it sells that energy into the
+          country's most competitive power market.
+        </p>
+        <p>
+          Two structural features carry the deal, and one Texas feature threatens it. First, the federal
+          investment tax credit (ITC) rebates 30% of the build cost — worth roughly <strong>$51 million</strong>
+          on this project — and it can be sold for cash at about 90–95¢ on the dollar. Second, ERCOT's
+          “connect and manage” interconnection is far cheaper and faster than in SPP or MISO (Section 2).
+          Against that, Texas property tax is a top cost driver: unabated, a plant this size could face
+          roughly <strong>$14,300 per MW per year</strong> — over $2 million a year — so the Wichita County
+          Chapter 312 abatement / PILOT negotiation in Section 5 is not paperwork, it is the margin.
+          Land itself is still cheap: leasing 1,000 Texas acres at ~$850/acre/year costs about 6% of
+          year-1 revenue. The timing catch also remains: under the 2025 OBBBA law, a project starting
+          now keeps the 30% credit only if it is <em>placed in service by December 31, 2027</em> —
+          ERCOT's ~3-year path to operation is faster than SPP's, but it still does not beat that
+          clock for a brand-new request. Section 6 takes that up directly.
+        </p>
+      </section>
+
+      <section>
+        <div class="sec-head"><span class="no">02 — Build cost</span><h2>What it costs to build</h2></div>
+        <div class="cols">
+          <div>
+            <p>
+              US utility-scale pricing in Q2 2026 put a <strong>single-axis tracking plant at ~$1.06M per
+              MWdc ($1.06/W)</strong> and fixed-tilt at ~$0.95/W. Prices rose year over year — tracking
+              +2.0% — on steel, aluminum, and copper tariffs and transport costs. Modules alone are about
+              $0.33/W, with developers paying a premium for US-made modules to qualify for domestic-content
+              credit adders. Trackers cost $0.15–0.35/W more than fixed-tilt but harvest roughly 4 points
+              more capacity factor, which is why nearly every new plains-state plant tracks.
+            </p>
+            <p class="src">Source: Wood Mackenzie / SEIA US market pricing via <a href="https://now.solar/2026/09/25/u-s-solar-system-pricing-rises-for-utility-ci-projects-as-residential-costs-decline-pv-magazine-global/">pv magazine Global, Sep 25, 2026</a>; tracker premium: National Laboratory of the Rockies data via <a href="https://www.pv-tech.org/to-track-or-not-to-track/">pv-tech, Sep 2026</a>.</p>
+          </div>
+          <div>
+            <table class="data">
+              <tr><th>Cross-checks</th><th class="r">$/Wdc</th></tr>
+              <tr><td>NREL modeled benchmark, 100 MWdc (MSP, 2025 Q1)</td><td class="r">1.07</td></tr>
+              <tr><td>NREL market-price benchmark (MMP)</td><td class="r">1.12</td></tr>
+              <tr><td>Berkeley Lab, 2023 completions average</td><td class="r">1.08</td></tr>
+              <tr><td>IRENA, US 2024 average ($1,058/kW)</td><td class="r">1.06</td></tr>
+              <tr><td>2026 industry proforma range, all-in</td><td class="r">0.95–1.30</td></tr>
+            </table>
+            <p class="src">Sources: <a href="https://www.energy.gov/cmei/systems/solar-photovoltaic-system-cost-benchmarks">DOE/NREL cost benchmarks</a>; <a href="https://emp.lbl.gov/sites/default/files/2024-10/Utility-Scale%20Solar%202024_Executive_Summary.pdf">Berkeley Lab, Utility-Scale Solar 2024</a>. A verified component-level split (modules / inverters / BOS / labor / development) for 2025–26 was <span class="flag">not published</span> — beyond the module price and tracker premium, the remaining ~$0.50–0.70/W is structural and electrical balance-of-system, labor, interconnection, and soft costs.</p>
+          </div>
+        </div>
+        <div class="note-box">
+          <h3>Interconnection in ERCOT: the Texas advantage</h3>
+          <p>
+            ERCOT runs “connect and manage”: a generator does <strong>not</strong> fund network upgrades
+            the way it does in SPP or MISO — congestion is managed instead through redispatch and
+            curtailment, and power is delivered on an as-available basis. Oncor, the transmission
+            provider for the Wichita Falls area, still has to study and build the physical connection
+            (gen-tie, substation work, metering), but there is no $200+/kW network-upgrade bill.
+            <strong>No ERCOT-specific $/kW interconnection cost is published</strong>
+            <span class="flag">Not published</span> — the model below therefore uses a
+            <strong>$75/kW allowance (~$11 million)</strong> for the connection itself, explicitly as a
+            modeling allowance and not a benchmark, and lets you stress it to $225/kW if a screening
+            study finds constrained capacity at the nearest substation. ERCOT also moves faster:
+            studies can take ~1 year and a realistic request-to-operation path is ~3 years, versus a
+            5-plus-year national median — and ERCOT executed more interconnection agreements in 2024
+            than any other ISO.
+          </p>
+          <p class="src">Sources: Berkeley Lab “Queued Up” via <a href="https://pv-magazine-usa.com/2026/01/07/ercot-outperformed-on-interconnection-in-2024-likely-due-to-connect-and-manage/">pv magazine USA, Jan 7, 2026</a>; timeline: <a href="https://www.renewableenergyworld.com/energy-business/policy-and-regulation/why-texas-builds-and-everyone-else-waits/">Renewable Energy World, Sep 2026</a>. The trade-off of connect-and-manage is curtailment risk, which this simplified model does not deduct — see Section 8.</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="sec-head"><span class="no">03 — Land &amp; sunlight</span><h2>What 1,000 acres produces</h2></div>
+        <div class="cols">
+          <div>
+            <h3>Land → capacity</h3>
+            <p>
+              Utility solar needs <strong>5–8 acres per MWdc</strong> all-in, including setbacks, access
+              roads, and inverter pads; tracking plants sit at the denser end (~4–6). So 1,000 acres
+              supports <strong>~125–200 MWdc, with ~150 MWdc a reasonable midpoint</strong>. The model uses
+              6.7 acres/MWdc (≈149 MWdc).
+            </p>
+            <p>
+              A real-world check on density, in the same county: TotalEnergies' Wichita project —
+              805 MWp in total, with phase 1 at <strong>625 MW on ~6,000 acres (about 9.6 acres/MW of
+              total site)</strong>, 1.56 million panels, ~$830 million of capex, construction from
+              Q1 2026 toward a Q4 2027 operation date. Total-site acreage runs well above the fenced
+              array footprint, which is why the model keeps land intensity adjustable.
+            </p>
+            <p class="src">Sources: <a href="https://www.beaconjournal.com/story/news/local/2025/09/08/power-company-seeks-incentives-to-build-solar-farm-in-wichita-county/85997774007/">Beacon Journal, Sep 8, 2025</a> (TotalEnergies Wichita County project); NREL array-density data.</p>
+          </div>
+          <div>
+            <h3>Sunlight → energy</h3>
+            <p>
+              Wichita Falls gets <strong>1,813 kWh/m²/yr of global horizontal irradiation — about
+              4.97 peak sun-hours a day</strong> — with unusually high direct irradiation (2,034 kWh/m²/yr)
+              that favors trackers. That is ~4% more sun than Oklahoma City on the same dataset. A
+              fixed-tilt plant at the optimum 32° tilt yields <strong>1,655 kWh per kWdc</strong> there;
+              a tracking plant is estimated at <strong>~1,900 kWh per kWdc in year 1</strong> — a ~21.7%
+              DC capacity factor, roughly 27–28% on the AC side at the typical 1.3 inverter loading
+              ratio. Output then degrades <strong>0.45–0.55% per year</strong>.
+            </p>
+            <p>
+              <span class="flag">Tracking figure is an estimate</span> The Global Solar Atlas calculator
+              has no tracking configuration; the ~1,900 figure adds the tracker gain Berkeley Lab
+              documents (~+3–5 points of AC capacity factor) to the Atlas fixed-tilt yield for this
+              exact site. Treat the exact yield as an open question until a site-specific production
+              study (P50/P90) exists.
+            </p>
+            <p class="src">Sources: <a href="https://globalsolaratlas.info/detail?c=33.9125,-98.4939,11&s=33.912594,-98.493805&m=site">Global Solar Atlas v2.13 (World Bank / ESMAP / Solargis), Wichita Falls site, read Oct 12, 2026</a>; Oklahoma City comparison from the same Atlas; <a href="https://emp.lbl.gov/sites/default/files/2024-10/Utility-Scale%20Solar%202024_Executive_Summary.pdf">Berkeley Lab, Utility-Scale Solar 2024</a>.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="sec-head"><span class="no">04 — Revenue</span><h2>The power contract is the business</h2></div>
+        <p>
+          Almost no utility solar is built on speculation. The plant signs a PPA — a utility or corporate
+          buyer commits to 10–25 years of output at a fixed price, often with an escalator — and
+          that contract is what lenders lend against. ERCOT is where the country's data-center buyers are
+          shopping (Google's 1 GW, 15-year Texas deal is the local example), but it is also the cheapest
+          power market on the continent for a seller:
+        </p>
+        <div class="chart-box">
+          <h3>Solar PPA offer prices, $/MWh — ERCOT P25 vs. North America</h3>
+          <svg viewBox="0 0 560 218" role="img" aria-label="Bar chart of solar PPA prices: ERCOT P25 Q1 2022 32 dollars; ERCOT P25 Q1 2025 44 dollars; ERCOT P25 Q4 2025 49 dollars; North America P25 Q2 2026 52.65 dollars; North America average Q2 2026 61.40 dollars">
+            <line x1="10" y1="170" x2="550" y2="170" stroke="var(--line-strong)" stroke-width="1.5" />
+            <g font-family="Archivo, sans-serif" font-size="12.5">
+              <rect x="22" y="97" width="78" height="73" fill="var(--green)" />
+              <text x="61" y="88" text-anchor="middle" font-weight="700" fill="var(--ink)">$32.00</text>
+              <text x="61" y="190" text-anchor="middle" fill="var(--muted)">ERCOT ’22</text>
+              <text x="61" y="206" text-anchor="middle" fill="var(--muted)">P25</text>
+              <rect x="127" y="70" width="78" height="100" fill="var(--green)" />
+              <text x="166" y="61" text-anchor="middle" font-weight="700" fill="var(--ink)">$44.00</text>
+              <text x="166" y="190" text-anchor="middle" fill="var(--muted)">ERCOT Q1 ’25</text>
+              <text x="166" y="206" text-anchor="middle" fill="var(--muted)">P25</text>
+              <rect x="232" y="58" width="78" height="112" fill="var(--green)" />
+              <text x="271" y="49" text-anchor="middle" font-weight="700" fill="var(--ink)">$49.00</text>
+              <text x="271" y="190" text-anchor="middle" fill="var(--muted)">ERCOT Q4 ’25</text>
+              <text x="271" y="206" text-anchor="middle" fill="var(--muted)">P25</text>
+              <rect x="337" y="50" width="78" height="120" fill="var(--accent)" />
+              <text x="376" y="41" text-anchor="middle" font-weight="700" fill="var(--ink)">$52.65</text>
+              <text x="376" y="190" text-anchor="middle" fill="var(--muted)">N. Am. Q2 ’26</text>
+              <text x="376" y="206" text-anchor="middle" fill="var(--muted)">P25</text>
+              <rect x="442" y="30" width="78" height="140" fill="var(--accent)" />
+              <text x="481" y="21" text-anchor="middle" font-weight="700" fill="var(--ink)">$61.40</text>
+              <text x="481" y="190" text-anchor="middle" fill="var(--muted)">N. Am. Q2 ’26</text>
+              <text x="481" y="206" text-anchor="middle" fill="var(--muted)">Average</text>
+            </g>
+          </svg>
+          <p class="src" style="margin-top:6px">P25 = the price at the competitive quartile of developer offers (LevelTen publishes the P25 publicly, not the ERCOT average — the ERCOT mean is <span class="flag">not published</span>). Sources: LevelTen Energy index via <a href="https://pv-magazine-usa.com/2025/04/24/solar-ppa-market-remains-stable-in-q1-2025/">pv magazine USA, Apr 24, 2025</a> (ERCOT Q1 2025), <a href="https://pv-magazine-usa.com/2026/01/30/uncertainty-looms-as-solar-ppa-prices-climb-for-second-straight-quarter/">Jan 30, 2026</a> (ERCOT Q4 2025 — lowest of all ISOs; next-cheapest shown were CAISO $62 and MISO $64.95), <a href="https://pv-magazine-usa.com/2026/07/27/solar-ppa-prices-dip-in-q2-while-wind-climbs-as-july-4-tax-credit-deadline-looms-reports-levelten/">Jul 27, 2026</a> (Q2 2026 continental); Q1 2022 ERCOT via AltEnergyMag, Apr 13, 2022. No ERCOT-specific P25 for Q1–Q2 2026 was published.</p>
+        </div>
+        <div class="cols">
+          <div>
+            <h3>The ERCOT discount — now with a number on it</h3>
+            <p>
+              Unlike SPP, ERCOT has a published regional price: <strong>$49/MWh P25 in Q4 2025</strong>,
+              rising fast ($32 in early 2022, $44 in early 2025) on data-center demand, tariffs, and the
+              tax-credit deadline — but still ~$13/MWh below the continental average. The model defaults
+              to <strong>$52/MWh</strong>, just under the Q2 2026 continental P25, on the view that a
+              2026-vintage ERCOT deal with a creditworthy buyer prices at or modestly above the last
+              published ERCOT P25. <span class="flag">Base case is a judgment</span> The sensitivity table
+              in Section 7 shows what $44 and $49 do to returns — use those rows if you want the
+              strictly-sourced ERCOT prices.
+            </p>
+          </div>
+          <div>
+            <h3>Why you can't just sell into the market</h3>
+            <p>
+              ERCOT wholesale energy is below PPA levels and violently variable: the market monitor put
+              the <strong>2024 real-time average at $31.91/MWh</strong> (all-in $34), with 2025 indicators
+              near ~$30 — and solar's <em>capture</em> price, what a solar plant actually realizes, swung
+              from <strong>~$25/MWh in the North zone on a mild December 2025 day to ~$69/MWh during a
+              cold snap</strong> in Platts' daily index. Midday solar cannibalization is the structural
+              story in ERCOT; an annual capture rate could not be verified
+              <span class="flag">Not published</span>. Wholesale energy alone does not carry a plant —
+              the PPA does — which is why the model's post-contract merchant tail (years 26–30) is
+              priced at $30/MWh and contributes so little.
+            </p>
+            <p class="src">Sources: <a href="https://www.ercot.com/files/docs/2025/06/19/6.1-Independent-Market-Monitor-IMM-2024-State-of-the-Market-Report.pdf">Potomac Economics, ERCOT 2024 State of the Market (PDF)</a>; Platts capture-price commentaries via TradingView, Dec 3 &amp; Dec 15, 2025.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="sec-head"><span class="no">05 — Running costs &amp; land</span><h2>Cheap to run, not free</h2></div>
+        <div class="cols">
+          <div>
+            <h3>Operating costs</h3>
+            <ul class="tight">
+              <li><strong>O&amp;M:</strong> ~$10–20 per kWdc-year all-in for a 2026-vintage plant (NREL's modeled benchmark is $20; IRENA's 2024 fleet average $13.1; Berkeley Lab's older pure-O&amp;M survey $5–8). The model uses $15.</li>
+              <li><strong>Insurance — the hail problem:</strong> Wichita Falls sits in hail alley. Texas and Southeast solar premiums rose as much as 50% in a single year in BloombergNEF's survey, coverage is capped in high-risk areas, and insurance can exceed 30% of a Texas project's operating costs. Hail-stow trackers materially cut premiums (one Texas project cut insurance ~72% with hail measures). Base insurance range $5–12 per kWac-year nationally; asset management another $3–6. Model: $18 combined, above the national midpoint, for the hail loading.</li>
+              <li><strong>Inverters:</strong> budget a $15–30/kWac replacement around years 12–15. Model: year 13 at $22/kWac (~$2.5M).</li>
+              <li><strong>Degradation:</strong> 0.45–0.55%/yr after a ~1.5–2.5% first-year step (fleet data from Berkeley Lab suggests up to 0.9%/yr system-level on newer plants — the slider goes there).</li>
+            </ul>
+            <p class="src">Sources: <a href="https://www.energy.gov/cmei/systems/solar-photovoltaic-system-cost-benchmarks">NREL/DOE benchmarks</a>; IRENA 2024; Berkeley Lab 2024; hail/insurance: BloombergNEF via <a href="https://www.energyconnects.com/news/renewables/2023/august/baseball-size-hail-makes-insuring-solar-and-wind-farms-pricier/">EnergyConnects, Aug 2023</a> and <a href="https://www.pv-magazine.com/2026/05/12/how-hail-is-rewriting-the-solar-insurance-rulebook/">pv magazine, May 12, 2026</a>. Inverter, insurance, and asset-management ranges rest partly on a 2026 industry proforma reference and are <span class="flag">single-source</span>.</p>
+          </div>
+          <div>
+            <h3>Land: lease, don't buy</h3>
+            <p>
+              The dominant model is a 30-year lease (plus extensions) at <strong>~$800/acre/year typical
+              in Texas</strong>, with West Texas offers of $750–1,000 and a North Texas midpoint around
+              $800–900 — about <strong>$850,000/yr</strong> for this project at the model's $850 default,
+              and a life-changing annuity for the landowner relative to farm income. Buying instead would
+              cost ~$3.1M up front at the USDA's 2026 Texas farm real-estate average of $3,100/acre
+              (statewide rural-land surveys run higher, ~$5,218/acre in Q2 2026, skewed by metro-fringe
+              sales; no Wichita County-specific price was found <span class="flag">Not published</span>),
+              but most developers lease to keep capital in the plant — TotalEnergies' Wichita County
+              land is leased.
+            </p>
+            <p class="src">Sources: Texas developer OCI Energy via <a href="https://commercialobserver.com/2024/05/texas-solar-farm-development/">Commercial Observer, May 2024</a>; USDA NASS Land Values 2026 via <a href="https://agrilife.org/agecon/usda-2026-land-values-texas-agricultural-land-values-continue-to-rise/">Texas A&amp;M AgriLife</a>; Texas Real Estate Research Center statewide figures via thetexaslandagent.com.</p>
+          </div>
+        </div>
+        <div class="cols">
+          <div>
+            <div class="note-box">
+              <h3>Texas property tax: negotiate the PILOT or pay full freight</h3>
+              <p>
+                Texas has no state income tax, so counties appraise a solar plant at market value and
+                property tax becomes a top operating cost. There is <strong>no school-district relief for
+                solar</strong>: the Chapter 403 “JETI Act” (successor to the expired Chapter 313)
+                <strong>explicitly excludes solar, wind, and storage</strong>. What remains is a
+                <strong>Chapter 312 county abatement</strong> — up to 100% for up to 10 years. Wichita
+                County's own precedent, set for the TotalEnergies project in fall 2025, is a 10-year
+                PILOT of <strong>$1,253,648/yr on a ≥$830M / 625 MW project (≈$2,006/MW/yr)</strong> —
+                about <strong>$300,000/yr</strong> scaled to this 149 MWdc project. Without any abatement,
+                the one Texas project with a published figure (350 MW in Concho County) expects
+                ~$5M/yr — <strong>≈$14,300/MW/yr</strong> <span class="flag">Single-source proxy</span> —
+                over $2.1M/yr here. The model therefore runs the PILOT rate for years 1–10 and the full
+                rate from year 11, with both as sliders: if the county says no, set the PILOT to the
+                full rate and watch the tail. One legislative risk: SB 819 (2025) would have banned
+                abatements for ≥10 MW renewables; it died in the House in May 2025 but could return in
+                the 2027 session.
+              </p>
+              <p class="src">Sources: Wichita County PILOT via <a href="https://citizenportal.ai/articles/7048155/Wichita-County/Texas/Wichita-County-authorizes-10-year-PILOT-with-Total-Energy-for-proposed-solar-project">Citizen Portal, Nov 2025</a> and <a href="https://citizenportal.ai/articles/5915561/Wichita-County/Texas/Wichita-County-approves-reinvestment-zone-for-proposed-TotalEnergies-solar-project">reinvestment zone, Oct 2025</a>; Chapter 403 exclusion: <a href="https://www.keatax.com/how-the-texas-jeti-act-shapes-manufacturing-energy-and-technology-investment/">KE Andrews, May 2026</a>; unabated proxy: <a href="https://constructionreviewonline.com/construction-begins-on-524m-350mw-lucy-solar-project-in-texas/">Construction Review Online, Jan 2026</a>; SB 819: <a href="https://electrek.co/2025/05/28/texas-just-shot-its-wind-solar-boom-in-the-foot-on-purpose/">Electrek, May 28, 2025</a>.</p>
+            </div>
+          </div>
+          <div>
+            <div class="note-box">
+              <h3>Decommissioning is in the lease — by statute</h3>
+              <p>
+                Texas Utilities Code <strong>Chapter 302</strong>, as amended by <strong>HB 3228
+                (effective September 1, 2025)</strong>, requires every solar lease signed on or after
+                that date to provide for removal of the facilities and restoration of the land to
+                near-original condition, backed by financial assurance — parent guaranty, letter of
+                credit, or bond — covering removal, recycling/disposal, and restoration net of salvage.
+                The cost estimate must be updated <strong>every five years</strong>, clauses waiving
+                the obligation are void, and HB 3228 adds a duty to recycle all practicably recyclable
+                components, <strong>including the modules themselves</strong>. Wichita County's
+                TotalEnergies PILOT likewise includes a third-party-held decommissioning bond.
+                <span class="flag">Enacted</span> — unlike many states, this is settled law, not a proposal.
+              </p>
+              <p class="src">Sources: <a href="https://statutes.capitol.texas.gov/Docs/UT/htm/UT.302.htm">Texas Utilities Code Ch. 302</a>; Foley &amp; Lardner summary via <a href="https://www.mondaq.com/unitedstates/renewables/1681966/new-requirements-for-wind-solar-and-storage-facility-leases-in-texas">Mondaq, May 2025</a>; <a href="https://pv-magazine-usa.com/2025/05/27/texas-to-require-recycling-of-retired-solar-wind-projects-pending-governors-approval/">pv magazine USA, May 27, 2025</a>.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="sec-head"><span class="no">06 — Tax credits, financing &amp; the grid queue</span><h2>Where the deal is really made</h2></div>
+        <div class="callout">
+          <h3>⚠ The December 31, 2027 cliff</h3>
+          <p>
+            The ITC is 30% of build cost (with prevailing-wage and apprenticeship compliance) — about
+            <strong>$51 million</strong> on this project. But under the OBBBA law, a project keeps that 30%
+            only if it <strong>began construction by July 4, 2026</strong> (already past) <strong>or is
+            placed in service by December 31, 2027</strong>. A greenfield project starting today therefore
+            has ~14 months to be fully built and energized — against an ERCOT path that, while the fastest
+            in the country, still runs ~3 years from request to operation. Even Texas speed does not beat
+            this clock for a brand-new request. In practice, a new Wichita Falls greenfield must either
+            acquire a project that already holds interconnection position and safe-harbored status, or
+            underwrite the deal with a much smaller (or zero) credit. Note the local precedent is racing
+            the same clock: TotalEnergies' phase 1 targets Q4 2027 operation — just inside the deadline.
+            The model's ITC slider goes to 0% so you can see what that world looks like: at $52/MWh,
+            it is not pretty.
+          </p>
+          <p class="src">Sources: <a href="http://seia.org/initiatives/tax-policy/">SEIA tax policy page, updated Oct 2026</a>; Enphase and industry guidance on OBBBA deadlines, 2026. Adders exist beyond 30% — +10 points each for domestic content and energy-community siting — but none are in the base case.</p>
+        </div>
+        <div class="cols">
+          <div>
+            <h3>The credit, and the alternative</h3>
+            <p>
+              The 30% ITC (§48E) can be <strong>sold for cash</strong> under credit transferability at roughly
+              90–95¢ per dollar of credit — the model assumes a sale at 93¢ in year 1, which is how many
+              sponsors monetize it without a tax-equity partner. The alternative production tax credit (§45Y)
+              pays <strong>$31/MWh for 10 years</strong> in 2026; Berkeley Lab found the PTC beat the ITC for
+              54 of 75 recent projects, and a high-yield Wichita Falls tracker is exactly the profile where it can
+              win — but it faces the same OBBBA deadlines and needs project-specific modeling, so the proforma
+              uses the ITC. Depreciation adds a second, quieter benefit: solar is 5-year MACRS property and
+              OBBBA permanently restored <strong>100% bonus depreciation</strong> for property acquired after
+              January 19, 2025.
+            </p>
+            <p class="src">Sources: <a href="https://www.novoco.com/news/irs-establishes-2026-inflation-adjustment-factor-applicable-amounts-for-ptc">IRS 2026 PTC adjustment (Novogradac)</a>; <a href="http://seia.org/depreciation-solar-energy-property-macrs/">SEIA MACRS guidance</a>; Berkeley Lab 2024.</p>
+          </div>
+          <div>
+            <h3>How it's financed</h3>
+            <ul class="tight">
+              <li><strong>Debt cost:</strong> SOFR + 175–275 bps → ~5.75–7.0% all-in. Model: 6.25%.</li>
+              <li><strong>Structure:</strong> total leverage ~70–75% of capital when tax equity is counted; senior debt sized to a <strong>DSCR ≥ 1.30×</strong> on P50 production, tenor ~18 years.</li>
+              <li><strong>Tax equity</strong> (partnership flips) targets 6–8% yields and takes the credits plus depreciation.</li>
+              <li><strong>Sponsor targets:</strong> levered IRRs of 12–18% are quoted in industry guides, with recent core-project returns nearer 8–11%. <span class="flag">Directional</span> Treat these as aspirations, not observations — the model below shows what the sourced inputs actually produce.</li>
+            </ul>
+            <p class="src">Source: 2025–26 project-finance market references; corroborated against a generic 2025 project-finance model. Rate and structure figures are <span class="flag">single-source</span> in the underlying research.</p>
+          </div>
+        </div>
+        <div class="note-box">
+          <h3>The queue is shorter in Texas — the crowd is not</h3>
+          <p>
+            Nationally, the median project reaching operation in 2025 waited <strong>more than five years</strong>
+            from interconnection request to commercial operation. ERCOT is the outlier: studies can complete
+            in ~1 year and a realistic request-to-operation path is <strong>~3 years</strong>, because
+            connect-and-manage skips the network-upgrade studies that stall other grids. The catch is
+            volume and attrition: ERCOT's June 2026 queue held <strong>~434 GW of projects, ~152 GW of it
+            solar</strong> <span class="flag">Single-source tally</span>, and historically only ~29% of
+            ERCOT queue entrants have ever reached operation (solar ~22%). ERCOT did synchronize ~23 GW
+            in 2024–25, so the machine works — but a queue position near Wichita Falls still competes
+            with every data-center-driven project in North Texas, and no Oncor substation-level capacity
+            figure is public: that takes a transmission screening study.
+          </p>
+          <p class="src">Sources: Berkeley Lab “Queued Up” via <a href="https://pv-magazine-usa.com/2026/01/07/ercot-outperformed-on-interconnection-in-2024-likely-due-to-connect-and-manage/">pv magazine USA, Jan 7, 2026</a>; <a href="https://www.renewableenergyworld.com/energy-business/policy-and-regulation/why-texas-builds-and-everyone-else-waits/">Renewable Energy World, Sep 2026</a>; queue tally: ERCOT GIS analysis, Jun 2026 (single source).</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="sec-head"><span class="no">07 — The proforma</span><h2>1,000 acres, built out: the 30-year model</h2></div>
+        <p>
+          The base case below is assembled only from the figures in Sections 2–6: 1,000 acres near
+          Wichita Falls at 6.7 acres/MWdc (≈149 MWdc, ~115 MWac), tracking EPC at $1.06/W plus a
+          $75/kW ERCOT interconnection allowance, a $52/MWh PPA with a 2% escalator for 25 years
+          (the model keeps a 25-year term for comparability; ERCOT deals are often shorter — the
+          local Google deal is 15 years), and the 30% ITC sold at 93¢. Every input is a slider —
+          stress the PPA down to the sourced ERCOT P25 of $49 (or $44), the PILOT to zero relief, or
+          the ITC to zero and watch the returns. Fixed assumptions: 1.30 inverter loading ratio;
+          O&amp;M and other opex escalating 2.5%/yr; land lease escalating 2%/yr; inverter replacement
+          in year 13; 18-year level-payment debt; property tax at the Wichita County PILOT rate in
+          years 1–10 and the full unabated rate from year 11; pre-tax project cash flows; no
+          curtailment deduction and no terminal salvage value. One consequence to notice in the
+          table: at a $30/MWh merchant price under full property tax, years 26–30 run at negative
+          EBITDA — the model operates the plant anyway, but a real sponsor would recontract,
+          repower, or retire at PPA expiry rather than burn cash.
+        </p>
+
+        <div class="model-grid">
+          <div class="controls" id="controls">
+            <fieldset>
+              <legend>Site &amp; build</legend>
+              <div class="ctl">
+                <label>Land intensity <output id="o-acresPerMW"></output></label>
+                <input type="range" id="i-acresPerMW" min="5" max="8" step="0.1" />
+                <div class="hint">Acres per MWdc, all-in. Sourced range 5–8; tracking at the dense end.</div>
+              </div>
+              <div class="ctl">
+                <label>Build cost (EPC) <output id="o-capexW"></output></label>
+                <input type="range" id="i-capexW" min="0.85" max="1.30" step="0.01" />
+                <div class="hint">Single-axis tracking, Q2 2026 market: $1.06/W. Fixed-tilt: $0.95/W.</div>
+              </div>
+              <div class="ctl">
+                <label>Interconnection <output id="o-ixKW"></output></label>
+                <input type="range" id="i-ixKW" min="25" max="225" step="5" />
+                <div class="hint">Per kWdc. ERCOT connect-and-manage: no developer-funded network upgrades and no published $/kW benchmark — $75/kW is a connection allowance, not a quote.</div>
+              </div>
+              <div class="ctl">
+                <label>Specific yield, year 1 <output id="o-yield"></output></label>
+                <input type="range" id="i-yield" min="1650" max="2100" step="25" />
+                <div class="hint">kWh per kWdc, Wichita Falls tracking. Fixed-tilt Atlas yield 1,655; tracking estimated ~1,900.</div>
+              </div>
+              <div class="ctl">
+                <label>Degradation <output id="o-degr"></output></label>
+                <input type="range" id="i-degr" min="0.3" max="0.9" step="0.05" />
+                <div class="hint">Annual production decline. 2026 norms 0.45–0.55%; fleet data up to 0.9%.</div>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Revenue</legend>
+              <div class="ctl">
+                <label>PPA price <output id="o-ppa"></output></label>
+                <input type="range" id="i-ppa" min="35" max="80" step="0.5" />
+                <div class="hint">Base $52, just under the continental P25. Sourced ERCOT P25: $49 (Q4 2025), $44 (Q1 2025).</div>
+              </div>
+              <div class="ctl">
+                <label>PPA escalator <output id="o-ppaEsc"></output></label>
+                <input type="range" id="i-ppaEsc" min="0" max="3" step="0.25" />
+                <div class="hint">Fixed escalators commonly 2–5% where present; many deals are flat. 25-year term modeled (ERCOT deals often 10–15 years).</div>
+              </div>
+              <div class="ctl">
+                <label>Merchant price, years 26–30 <output id="o-merchant"></output></label>
+                <input type="range" id="i-merchant" min="15" max="60" step="1" />
+                <div class="hint">Nominal $/MWh in year 26, escalating 2%/yr. ERCOT real-time averaged $31.91 in 2024; solar capture is lower and volatile.</div>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Operating costs</legend>
+              <div class="ctl">
+                <label>O&amp;M <output id="o-omKW"></output></label>
+                <input type="range" id="i-omKW" min="10" max="25" step="0.5" />
+                <div class="hint">Per kWdc-year. Sourced range ~$10–20 (NREL modeled $20).</div>
+              </div>
+              <div class="ctl">
+                <label>Insurance + asset mgmt <output id="o-insAM"></output></label>
+                <input type="range" id="i-insAM" min="6" max="36" step="0.5" />
+                <div class="hint">Per kWac-year. Insurance $5–12 nationally plus asset management $3–6; base $18 loads for North Texas hail risk.</div>
+              </div>
+              <div class="ctl">
+                <label>Land lease <output id="o-landLease"></output></label>
+                <input type="range" id="i-landLease" min="300" max="1500" step="25" />
+                <div class="hint">Per acre-year on 1,000 acres. Texas typical ~$800; North Texas midpoint ~$800–900.</div>
+              </div>
+              <div class="ctl">
+                <label>Property tax — PILOT, years 1–10 <output id="o-pilotKW"></output></label>
+                <input type="range" id="i-pilotKW" min="0" max="15" step="0.1" />
+                <div class="hint">Per kWdc-year under a Chapter 312 PILOT. Wichita County precedent ≈ $2.0/kW (≈$2,006/MW/yr). Set equal to the full rate to model no abatement.</div>
+              </div>
+              <div class="ctl">
+                <label>Property tax — full, from year 11 <output id="o-fullTaxKW"></output></label>
+                <input type="range" id="i-fullTaxKW" min="0" max="20" step="0.1" />
+                <div class="hint">Per kWdc-year unabated. Texas proxy ≈ $14.3/kW (≈$14,300/MW/yr, single source). No Chapter 403 school relief for solar.</div>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Financing &amp; tax credits</legend>
+              <div class="ctl">
+                <label>Senior debt share <output id="o-debtPct"></output></label>
+                <input type="range" id="i-debtPct" min="25" max="60" step="1" />
+                <div class="hint">Remainder is sponsor equity (ITC proceeds arrive year 1). Market leverage incl. tax equity runs ~70–75%.</div>
+              </div>
+              <div class="ctl">
+                <label>Interest rate <output id="o-rate"></output></label>
+                <input type="range" id="i-rate" min="4.5" max="8.5" step="0.05" />
+                <div class="hint">All-in. Market: SOFR + 175–275 bps ≈ 5.75–7.0%. 18-year level payments.</div>
+              </div>
+              <div class="ctl">
+                <label>Investment tax credit <output id="o-itcRate"></output></label>
+                <input type="range" id="i-itcRate" min="0" max="50" step="1" />
+                <div class="hint">30% base with wage/apprenticeship compliance; adders can add +10–20 points. Set to 0 to model missing the 2027 deadline.</div>
+              </div>
+              <div class="ctl">
+                <label>ITC sale price <output id="o-itcXfer"></output></label>
+                <input type="range" id="i-itcXfer" min="85" max="98" step="1" />
+                <div class="hint">Transferability market: ~90–95¢ per $1 of credit.</div>
+              </div>
+              <div class="ctl">
+                <label>Depreciation benefit</label>
+                <select id="i-depr">
+                  <option value="no" selected>Not credited (sponsor has no tax appetite)</option>
+                  <option value="yes">Credited at 21% (100% bonus, year 1)</option>
+                </select>
+                <div class="hint">Simplification: 5-yr MACRS with 100% bonus on basis net of half the ITC. In flip structures this value goes to tax equity instead.</div>
+              </div>
+            </fieldset>
+            <button class="reset-btn" id="reset" type="button">Reset to base case</button>
+          </div>
+
+          <div class="outputs">
+            <div class="verdict" id="verdict">—</div>
+
+            <div class="cols" style="gap:26px">
+              <div>
+                <h3>Sources &amp; uses at closing</h3>
+                <table class="data">
+                  <tr><td>EPC (build cost)</td><td class="r" id="u-epc">—</td></tr>
+                  <tr><td>Interconnection &amp; network upgrades</td><td class="r" id="u-ix">—</td></tr>
+                  <tr class="total"><td>Total capital</td><td class="r" id="u-total">—</td></tr>
+                  <tr><td>Funded by senior debt</td><td class="r" id="u-debt">—</td></tr>
+                  <tr><td>Funded by sponsor equity</td><td class="r" id="u-equity">—</td></tr>
+                  <tr><td>ITC face value (memo)</td><td class="r" id="u-itc">—</td></tr>
+                  <tr><td>ITC cash proceeds, year 1 (memo)</td><td class="r" id="u-itcp">—</td></tr>
+                </table>
+              </div>
+              <div>
+                <h3>Year 1 operating snapshot</h3>
+                <table class="data">
+                  <tr><td>Generation</td><td class="r" id="y-gen">—</td></tr>
+                  <tr><td>Revenue</td><td class="r" id="y-rev">—</td></tr>
+                  <tr><td>Operating costs</td><td class="r" id="y-opex">—</td></tr>
+                  <tr><td>EBITDA</td><td class="r" id="y-ebitda">—</td></tr>
+                  <tr><td>Debt service</td><td class="r" id="y-ds">—</td></tr>
+                  <tr><td>Cash after debt service</td><td class="r" id="y-cfads">—</td></tr>
+                </table>
+              </div>
+            </div>
+
+            <div class="chart-box">
+              <h3>Cash flow by year — bars: sponsor cash flow · line: cumulative</h3>
+              <div class="legend">
+                <span><i style="background:var(--accent)"></i>Annual levered cash flow ($M)</span>
+                <span><i style="background:var(--green)"></i>Cumulative levered cash flow ($M)</span>
+              </div>
+              <div id="chart"></div>
+              <p class="src">Year 1 spikes because the ITC sale lands there. The year-11 step-down is the Chapter 312 PILOT expiring into full property tax; the year-13 dip is the inverter replacement; the year-19 step-up is the debt burning off; years 26–30 are the merchant tail after the PPA expires.</p>
+            </div>
+
+            <h3>PPA price sensitivity (all other inputs at base case)</h3>
+            <p class="src">Rows: $44 = ERCOT P25 Q1 2025 · $49 = ERCOT P25 Q4 2025 · $52 = base case · $52.65 = continental P25 Q2 2026 · $61.40 = continental average Q2 2026.</p>
+            <table class="data">
+              <thead>
+                <tr><th>PPA price</th><th class="r">Year-1 revenue</th><th class="r">Year-1 DSCR</th><th class="r">Unlevered IRR</th><th class="r">Sponsor levered IRR</th></tr>
+              </thead>
+              <tbody id="sens-body"></tbody>
+            </table>
+
+            <h3>The full 30 years</h3>
+            <div class="pf-table-wrap">
+              <table class="pf">
+                <thead>
+                  <tr>
+                    <th>Year</th><th>GWh</th><th class="opt">$/MWh</th><th>Revenue $M</th>
+                    <th>OpEx $M</th><th>EBITDA $M</th><th class="opt">Debt svc $M</th>
+                    <th class="opt">Credits &amp; capex $M</th><th>Levered CF $M</th><th class="opt">Cum. $M</th>
+                  </tr>
+                </thead>
+                <tbody id="pf-body"></tbody>
+              </table>
+            </div>
+            <button class="dl-btn" id="dl" type="button">Download the full proforma (CSV)</button>
+            <p class="src">“Credits &amp; capex” = ITC sale proceeds (year 1) less inverter replacement (year 13) and any depreciation benefit if credited. Levered cash flow is to the sponsor after senior debt service. This is a simplified teaching model, not investment advice: it excludes financing fees, debt-service reserves, working capital, curtailment (a real risk under ERCOT connect-and-manage), basis risk, hail losses above insurance, and end-of-life decommissioning cost (financial assurance required under Texas Utilities Code Ch. 302).</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="sec-head"><span class="no">08 — Open questions</span><h2>What the research could not verify</h2></div>
+        <ul class="risks">
+          <li><strong>ERCOT average PPA price.</strong> LevelTen publishes the ERCOT P25 ($49/MWh, Q4 2025) but not the ERCOT mean, and no ERCOT-specific P25 for Q1–Q2 2026 was published. The model's $52/MWh base case is a judgment anchored to those two points — the single most important number in the model.</li>
+          <li><strong>Property tax after the PILOT.</strong> The $14,300/MW/yr unabated figure is a single-source proxy from a Concho County project, not a Wichita County appraisal. The actual post-PILOT bill depends on the appraisal district and any renewal — get the county's figure before trusting years 11–30.</li>
+          <li><strong>ERCOT interconnection cost.</strong> No published $/kW figure exists for ERCOT connect-and-manage; the $75/kW in the model is an allowance for the physical connection, not a benchmark, and Oncor substation-level capacity near Wichita Falls requires a screening study.</li>
+          <li><strong>Solar capture price &amp; curtailment.</strong> Only daily Platts snapshots were found (~$25–69/MWh); no annual ERCOT solar capture rate, negative-price share, or curtailment rate could be verified. The model deducts none of these, which flatters merchant exposure.</li>
+          <li><strong>Site yield.</strong> The ~1,900 kWh/kWdc tracking yield is estimated from the Global Solar Atlas fixed-tilt yield (1,655) plus documented tracker gain, not a site production study (P50/P90 engineering report).</li>
+          <li><strong>Wichita County land values.</strong> No county-specific purchase price or lease rate was found; the page uses Texas / North Texas figures (~$800–900/acre lease; $3,100/acre USDA farm real estate).</li>
+          <li><strong>Component-level build cost.</strong> Only the module price ($0.33/W) and tracker premium ($0.15–0.35/W) are current and verified; the rest of the $1.06/W stack is not published at usable granularity for 2025–26.</li>
+          <li><strong>Return benchmarks.</strong> Quoted sponsor IRR targets (12–18%) and financing spreads rest partly on single or weak sources; the model's outputs — computed from the harder numbers above — land below those targets at ERCOT-realistic prices, which is itself the finding.</li>
+        </ul>
+      </section>
+
+      <section>
+        <div class="sec-head"><span class="no">09 — Sources</span><h2>Research base</h2></div>
+        <ul class="sources-list">
+          <li>Wood Mackenzie / SEIA pricing via pv magazine Global — <a href="https://now.solar/2026/09/25/u-s-solar-system-pricing-rises-for-utility-ci-projects-as-residential-costs-decline-pv-magazine-global/">US solar system pricing, Q2 2026</a></li>
+          <li>LevelTen Energy PPA index via pv magazine USA — <a href="https://pv-magazine-usa.com/2026/01/30/uncertainty-looms-as-solar-ppa-prices-climb-for-second-straight-quarter/">ERCOT P25 Q4 2025</a>, <a href="https://pv-magazine-usa.com/2025/04/24/solar-ppa-market-remains-stable-in-q1-2025/">ERCOT P25 Q1 2025</a>, <a href="https://pv-magazine-usa.com/2026/07/27/solar-ppa-prices-dip-in-q2-while-wind-climbs-as-july-4-tax-credit-deadline-looms-reports-levelten/">Q2 2026 continental</a></li>
+          <li>Global Solar Atlas v2.13 (World Bank / ESMAP / Solargis) — <a href="https://globalsolaratlas.info/detail?c=33.9125,-98.4939,11&s=33.912594,-98.493805&m=site">Wichita Falls site data</a>, read Oct 12, 2026</li>
+          <li>Potomac Economics / ERCOT — <a href="https://www.ercot.com/files/docs/2025/06/19/6.1-Independent-Market-Monitor-IMM-2024-State-of-the-Market-Report.pdf">2024 State of the Market (PDF)</a></li>
+          <li>DOE / NREL — <a href="https://www.energy.gov/cmei/systems/solar-photovoltaic-system-cost-benchmarks">Solar PV system cost benchmarks</a></li>
+          <li>Berkeley Lab — <a href="https://emp.lbl.gov/sites/default/files/2024-10/Utility-Scale%20Solar%202024_Executive_Summary.pdf">Utility-Scale Solar 2024, executive summary (PDF)</a> and “Queued Up” interconnection data via <a href="https://pv-magazine-usa.com/2026/01/07/ercot-outperformed-on-interconnection-in-2024-likely-due-to-connect-and-manage/">pv magazine USA, Jan 7, 2026</a></li>
+          <li>Beacon Journal — <a href="https://www.beaconjournal.com/story/news/local/2025/09/08/power-company-seeks-incentives-to-build-solar-farm-in-wichita-county/85997774007/">TotalEnergies solar project in Wichita County</a>, Sep 8, 2025; SolarQuarter — <a href="https://solarquarter.com/2026/02/10/totalenergies-signs-1-gw-15-year-solar-deal-with-google-to-power-texas-data-centers/">1 GW, 15-year Google PPA</a>, Feb 10, 2026</li>
+          <li>Wichita County Chapter 312 PILOT — <a href="https://citizenportal.ai/articles/7048155/Wichita-County/Texas/Wichita-County-authorizes-10-year-PILOT-with-Total-Energy-for-proposed-solar-project">Citizen Portal, Nov 2025</a>; KE Andrews — <a href="https://www.keatax.com/how-the-texas-jeti-act-shapes-manufacturing-energy-and-technology-investment/">Chapter 403 / JETI Act excludes solar</a>, May 2026</li>
+          <li>Texas land — OCI Energy via <a href="https://commercialobserver.com/2024/05/texas-solar-farm-development/">Commercial Observer, May 2024</a>; USDA NASS 2026 via <a href="https://agrilife.org/agecon/usda-2026-land-values-texas-agricultural-land-values-continue-to-rise/">Texas A&amp;M AgriLife</a></li>
+          <li>Texas Utilities Code — <a href="https://statutes.capitol.texas.gov/Docs/UT/htm/UT.302.htm">Chapter 302, solar facility agreements (HB 3228)</a></li>
+          <li>Hail &amp; insurance — BloombergNEF via <a href="https://www.energyconnects.com/news/renewables/2023/august/baseball-size-hail-makes-insuring-solar-and-wind-farms-pricier/">EnergyConnects, Aug 2023</a>; <a href="https://www.pv-magazine.com/2026/05/12/how-hail-is-rewriting-the-solar-insurance-rulebook/">pv magazine, May 12, 2026</a></li>
+          <li>SEIA — <a href="http://seia.org/initiatives/tax-policy/">Solar tax policy (ITC/PTC)</a> and <a href="http://seia.org/depreciation-solar-energy-property-macrs/">MACRS depreciation</a></li>
+          <li>IRS 2026 PTC amounts via Novogradac — <a href="https://www.novoco.com/news/irs-establishes-2026-inflation-adjustment-factor-applicable-amounts-for-ptc">inflation adjustment notice</a></li>
+          <li>pv-tech — <a href="https://www.pv-tech.org/to-track-or-not-to-track/">To track or not to track</a> (National Laboratory of the Rockies data)</li>
+          <li>Hero photo: aerial of a utility-scale solar farm via <a href="https://ccrenew.com/utility-scale-solar/">CC Renewables</a></li>
+        </ul>
+      </section>
+
+      <footer>
+        <p>Hypothetical model built October 12, 2026 from the public sources above. Figures marked as estimates or single-source are labeled where they appear; the ERCOT average PPA price, the ERCOT interconnection $/kW cost, the annual solar capture rate, and the exact site yield remain unverified. Nothing here is investment, tax, or legal advice — a real project near Wichita Falls needs a site-specific production study, an Oncor/ERCOT interconnection screening, a Wichita County Chapter 312 discussion, and tax counsel on the OBBBA deadlines.</p>
+      </footer>
+    </div>
+
+    <script>
+      (function () {
+        "use strict";
+        var ACRES = 1000, ILR = 1.30, PPA_TERM = 25, TENOR = 18, OPEX_ESC = 0.025,
+            LAND_ESC = 0.02, MERCH_ESC = 0.02, INV_YR = 13, INV_KWAC = 22, TAX_RATE = 0.21;
+
+        var DEFAULTS = {
+          acresPerMW: 6.7, capexW: 1.06, ixKW: 75, yield: 1900, degr: 0.5,
+          ppa: 52, ppaEsc: 2.0, merchant: 30,
+          omKW: 15, insAM: 18, landLease: 850, pilotKW: 2.0, fullTaxKW: 14.3,
+          debtPct: 40, rate: 6.25, itcRate: 30, itcXfer: 93, depr: "no"
+        };
+
+        var FMT = {
+          acresPerMW: function (v) { return v.toFixed(1) + " ac/MW"; },
+          capexW: function (v) { return "$" + v.toFixed(2) + "/W"; },
+          ixKW: function (v) { return "$" + Math.round(v) + "/kW"; },
+          yield: function (v) { return Math.round(v).toLocaleString("en-US") + " kWh/kW"; },
+          degr: function (v) { return v.toFixed(2) + "%/yr"; },
+          ppa: function (v) { return "$" + v.toFixed(2) + "/MWh"; },
+          ppaEsc: function (v) { return v.toFixed(2) + "%/yr"; },
+          merchant: function (v) { return "$" + Math.round(v) + "/MWh"; },
+          omKW: function (v) { return "$" + v.toFixed(1) + "/kWdc"; },
+          insAM: function (v) { return "$" + v.toFixed(1) + "/kWac"; },
+          landLease: function (v) { return "$" + Math.round(v) + "/acre"; },
+          pilotKW: function (v) { return "$" + v.toFixed(1) + "/kWdc"; },
+          fullTaxKW: function (v) { return "$" + v.toFixed(1) + "/kWdc"; },
+          debtPct: function (v) { return Math.round(v) + "%"; },
+          rate: function (v) { return v.toFixed(2) + "%"; },
+          itcRate: function (v) { return Math.round(v) + "%"; },
+          itcXfer: function (v) { return Math.round(v) + "¢ / $1"; }
+        };
+        var KEYS = Object.keys(FMT);
+
+        function $(id) { return document.getElementById(id); }
+
+        function getInputs() {
+          var o = {};
+          KEYS.forEach(function (k) { o[k] = parseFloat($("i-" + k).value); });
+          o.depr = $("i-depr").value;
+          return o;
+        }
+
+        function npv(rate, flows) {
+          var s = 0;
+          for (var t = 0; t < flows.length; t++) s += flows[t] / Math.pow(1 + rate, t);
+          return s;
+        }
+        function irr(flows) {
+          // Scan upward from a deeply negative rate and bisect the first
+          // positive-to-negative NPV crossing. (A naive NPV check at -95%
+          // fails when the merchant tail runs at a loss: at extreme negative
+          // rates the last years dominate the sum and flip its sign.)
+          var prevR = -0.5, prevV = npv(prevR, flows), r, v, lo, hi, mid, i;
+          for (r = -0.49; r <= 5.0001; r += 0.01) {
+            v = npv(r, flows);
+            if (prevV > 0 && v <= 0) {
+              lo = prevR; hi = r;
+              for (i = 0; i < 100; i++) {
+                mid = (lo + hi) / 2;
+                if (npv(mid, flows) > 0) lo = mid; else hi = mid;
+              }
+              return (lo + hi) / 2;
+            }
+            prevR = r; prevV = v;
+          }
+          return null; // no positive-to-negative crossing: never earns its cost of capital
+        }
+
+        function runModel(inp) {
+          var mwDC = ACRES / inp.acresPerMW;
+          var kWdc = mwDC * 1000, kWac = kWdc / ILR;
+          var epc = kWdc * inp.capexW / 1000;            // $M
+          var ix = kWdc * inp.ixKW / 1e6;                // $M
+          var capex = epc + ix;
+          var itcFace = capex * inp.itcRate / 100;
+          var itcProceeds = itcFace * inp.itcXfer / 100;
+          var deprBenefit = inp.depr === "yes" ? capex * (1 - 0.5 * inp.itcRate / 100) * TAX_RATE : 0;
+          var debt = capex * inp.debtPct / 100;
+          var equity = capex - debt;
+          var r = inp.rate / 100;
+          var ds = debt > 0 ? debt * r / (1 - Math.pow(1 + r, -TENOR)) : 0;
+          var invCost = kWac * INV_KWAC / 1e6;
+          var mwh1 = kWdc * inp.yield / 1000;
+
+          var years = [], uFlows = [-capex], lFlows = [-equity];
+          var cumU = -capex, paybackU = null, minDscr = Infinity, dscr1 = null;
+
+          for (var t = 1; t <= 30; t++) {
+            var mwh = mwh1 * Math.pow(1 - inp.degr / 100, t - 1);
+            var price = t <= PPA_TERM
+              ? inp.ppa * Math.pow(1 + inp.ppaEsc / 100, t - 1)
+              : inp.merchant * Math.pow(1 + MERCH_ESC, t - PPA_TERM - 1);
+            var rev = mwh * price / 1e6;
+            var om = kWdc * inp.omKW / 1e6 * Math.pow(1 + OPEX_ESC, t - 1);
+            var ins = kWac * inp.insAM / 1e6 * Math.pow(1 + OPEX_ESC, t - 1);
+            var land = ACRES * inp.landLease / 1e6 * Math.pow(1 + LAND_ESC, t - 1);
+            var taxRateKW = t <= 10 ? inp.pilotKW : inp.fullTaxKW;
+            var tax = kWdc * taxRateKW / 1e6 * Math.pow(1 + OPEX_ESC, t - 1);
+            var opex = om + ins + land + tax;
+            var ebitda = rev - opex;
+            var dsvc = t <= TENOR ? ds : 0;
+            var credits = (t === 1 ? itcProceeds + deprBenefit : 0) - (t === INV_YR ? invCost : 0);
+            var creditsU = (t === 1 ? itcProceeds : 0) - (t === INV_YR ? invCost : 0);
+            var lcf = ebitda - dsvc + credits;
+            var ucf = ebitda + creditsU;
+            uFlows.push(ucf); lFlows.push(lcf);
+            cumU += ucf;
+            if (paybackU === null && cumU >= 0) paybackU = t;
+            if (t <= TENOR && ds > 0) { var d = ebitda / ds; if (d < minDscr) minDscr = d; if (t === 1) dscr1 = d; }
+            years.push({ t: t, mwh: mwh, price: price, rev: rev, opex: opex, ebitda: ebitda, ds: dsvc, credits: credits, lcf: lcf });
+          }
+          var cumL = -equity;
+          years.forEach(function (y) { cumL += y.lcf; y.cumL = cumL; });
+
+          return {
+            mwDC: mwDC, mwAC: kWac / 1000, kWdc: kWdc, epc: epc, ix: ix, capex: capex,
+            itcFace: itcFace, itcProceeds: itcProceeds, deprBenefit: deprBenefit,
+            debt: debt, equity: equity, ds: ds, years: years,
+            uirr: irr(uFlows), lirr: irr(lFlows), dscr1: dscr1,
+            minDscr: minDscr === Infinity ? null : minDscr, paybackU: paybackU
+          };
+        }
+
+        function M(x) { return "$" + x.toFixed(1) + "M"; }
+        function P(x) { return x === null ? "neg." : (x * 100).toFixed(1) + "%"; }
+        function X(x) { return x === null ? "—" : x.toFixed(2) + "×"; }
+
+        function render() {
+          var inp = getInputs();
+          KEYS.forEach(function (k) { $("o-" + k).textContent = FMT[k](inp[k]); });
+          var m = runModel(inp);
+          var y1 = m.years[0];
+
+          // headline tiles
+          $("t-cap").textContent = Math.round(m.mwDC) + " MWdc";
+          $("t-cap-sub").textContent = "≈ " + Math.round(m.mwAC) + " MWac · 1,000 acres · ILR 1.30";
+          $("t-capex").textContent = M(m.capex);
+          $("t-capex-sub").textContent = "$" + (m.capex * 1e6 / m.kWdc / 1000).toFixed(2) + "/Wdc all-in · EPC " + M(m.epc) + " + grid " + M(m.ix);
+          $("t-rev").textContent = M(y1.rev);
+          $("t-rev-sub").textContent = Math.round(y1.mwh / 1000) + " GWh × $" + y1.price.toFixed(2) + "/MWh";
+          $("t-ebitda").textContent = M(y1.ebitda);
+          $("t-ebitda-sub").textContent = Math.round(y1.ebitda / y1.rev * 100) + "% margin · OpEx " + M(y1.opex);
+          $("t-uirr").textContent = P(m.uirr);
+          $("t-lirr").textContent = P(m.lirr);
+          $("t-lirr-sub").textContent = "debt " + Math.round(inp.debtPct) + "% at " + inp.rate.toFixed(2) + "% · equity " + M(m.equity);
+          $("t-dscr").textContent = X(m.dscr1);
+          $("t-payback").textContent = m.paybackU ? "Year " + m.paybackU : "> 30 yrs";
+
+          // sources & uses
+          $("u-epc").textContent = M(m.epc);
+          $("u-ix").textContent = M(m.ix);
+          $("u-total").textContent = M(m.capex);
+          $("u-debt").textContent = M(m.debt) + " (" + Math.round(inp.debtPct) + "%)";
+          $("u-equity").textContent = M(m.equity) + " (" + Math.round(100 - inp.debtPct) + "%)";
+          $("u-itc").textContent = M(m.itcFace) + " (" + Math.round(inp.itcRate) + "% of capital)";
+          $("u-itcp").textContent = M(m.itcProceeds) + (m.deprBenefit > 0 ? " · plus depreciation benefit " + M(m.deprBenefit) : "");
+
+          // year 1 snapshot
+          $("y-gen").textContent = Math.round(y1.mwh).toLocaleString("en-US") + " MWh";
+          $("y-rev").textContent = M(y1.rev);
+          $("y-opex").textContent = M(y1.opex);
+          $("y-ebitda").textContent = M(y1.ebitda);
+          $("y-ds").textContent = M(y1.ds);
+          $("y-cfads").textContent = M(y1.ebitda - y1.ds);
+
+          // verdict
+          var v = $("verdict");
+          var txt = "Base case at a $" + inp.ppa.toFixed(2) + "/MWh PPA: the project returns " + P(m.uirr) +
+            " unlevered and " + P(m.lirr) + " to the sponsor, with year-1 DSCR of " + X(m.dscr1) + ". ";
+          var bad = false;
+          if (m.minDscr !== null && m.minDscr < 1.30) {
+            txt += "Minimum DSCR of " + X(m.minDscr) + " is below the 1.30× lenders typically require on P50 production — at these terms the debt would be sized down, pushing more equity in. ";
+            bad = true;
+          }
+          if (m.lirr === null || m.lirr < 0.05) {
+            txt += "That is below any plausible return hurdle: at this price the deal does not pencil without a cheaper build, a richer contract, or full tax-equity value.";
+            bad = true;
+          } else if (m.lirr < 0.08) {
+            txt += "That is thin — below the 8–11% range of recent core-project returns and well below the 12–18% sponsor targets quoted in industry guides.";
+            bad = true;
+          } else if (m.lirr < 0.12) {
+            txt += "That sits in the 8–11% range of recent core-project returns — respectable infrastructure economics, though below the 12–18% sponsor targets quoted in industry guides.";
+          } else {
+            txt += "That reaches the 12–18% sponsor target range quoted in industry guides.";
+          }
+          if (inp.itcRate === 0) txt += " Note: the ITC is set to 0% — the post-deadline scenario.";
+          v.textContent = txt;
+          v.className = bad ? "verdict bad" : "verdict";
+
+          renderChart(m);
+          renderSensitivity(inp);
+          renderTable(m);
+          currentModel = m; currentInputs = inp;
+        }
+
+        function renderChart(m) {
+          var W = 720, H = 300, ml = 48, mr = 52, mt = 16, mb = 28;
+          var iw = W - ml - mr, ih = H - mt - mb;
+          var cfs = m.years.map(function (y) { return y.lcf; });
+          var maxB = Math.max.apply(null, cfs.concat([0]));
+          var minB = Math.min.apply(null, cfs.concat([0]));
+          var cum = [-m.equity];
+          m.years.forEach(function (y) { cum.push(cum[cum.length - 1] + y.lcf); });
+          var maxC = Math.max.apply(null, cum), minC = Math.min.apply(null, cum);
+          function bx(i) { return ml + iw * i / 30; }
+          function by(v) { return mt + ih * (maxB - v) / (maxB - minB); }
+          function cy(v) { return mt + ih * (maxC - v) / (maxC - minC); }
+          var s = '<svg viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="Bar chart of annual sponsor cash flow and cumulative cash flow over 30 years">';
+          // gridlines on bar scale
+          for (var g = 0; g <= 4; g++) {
+            var gv = minB + (maxB - minB) * g / 4, gy = by(gv);
+            s += '<line x1="' + ml + '" y1="' + gy + '" x2="' + (W - mr) + '" y2="' + gy + '" stroke="var(--line)" stroke-width="1"/>';
+            s += '<text x="' + (ml - 6) + '" y="' + (gy + 4) + '" text-anchor="end" font-size="11" fill="var(--muted)" font-family="Archivo, sans-serif">' + Math.round(gv) + "</text>";
+          }
+          // zero line for cumulative
+          if (minC < 0 && maxC > 0) {
+            s += '<line x1="' + ml + '" y1="' + cy(0) + '" x2="' + (W - mr) + '" y2="' + cy(0) + '" stroke="var(--green)" stroke-width="1" stroke-dasharray="4 3" opacity="0.55"/>';
+          }
+          s += '<text x="' + (W - mr + 6) + '" y="' + (cy(maxC) + 4) + '" font-size="11" fill="var(--green)" font-family="Archivo, sans-serif">' + Math.round(maxC) + "</text>";
+          s += '<text x="' + (W - mr + 6) + '" y="' + (cy(minC) + 4) + '" font-size="11" fill="var(--green)" font-family="Archivo, sans-serif">' + Math.round(minC) + "</text>";
+          // bars
+          var bw = iw / 30 * 0.68;
+          m.years.forEach(function (y, i) {
+            var x = bx(i) + iw / 30 * 0.16, yTop = by(Math.max(y.lcf, 0)), yBot = by(Math.min(y.lcf, 0));
+            s += '<rect x="' + x.toFixed(1) + '" y="' + yTop.toFixed(1) + '" width="' + bw.toFixed(1) + '" height="' + Math.max(yBot - yTop, 0.5).toFixed(1) + '" style="fill:' + (y.lcf < 0 ? "var(--bad)" : "var(--accent)") + '" opacity="0.88"/>';
+          });
+          // cumulative line
+          var path = "";
+          cum.forEach(function (v, i) { path += (i === 0 ? "M" : "L") + bx(i).toFixed(1) + " " + cy(v).toFixed(1) + " "; });
+          s += '<path d="' + path + '" fill="none" style="stroke:var(--green)" stroke-width="2.2"/>';
+          // x labels
+          [1, 5, 10, 15, 20, 25, 30].forEach(function (yr) {
+            s += '<text x="' + (bx(yr - 1) + iw / 60) + '" y="' + (H - 8) + '" text-anchor="middle" font-size="11" fill="var(--muted)" font-family="Archivo, sans-serif">Yr ' + yr + "</text>";
+          });
+          s += "</svg>";
+          $("chart").innerHTML = s;
+        }
+
+        function renderSensitivity(inp) {
+          var prices = [44, 49, 52, 52.65, 61.40];
+          var html = "";
+          prices.forEach(function (p) {
+            var over = {}; KEYS.forEach(function (k) { over[k] = inp[k]; });
+            over.ppa = p; over.depr = inp.depr;
+            var mm = runModel(over);
+            var isCur = Math.abs(p - inp.ppa) < 0.01;
+            html += "<tr" + (isCur ? ' style="font-weight:700"' : "") + "><td>$" + p.toFixed(2) + (isCur ? " · current" : "") + "</td>" +
+              '<td class="r">' + M(mm.years[0].rev) + "</td>" +
+              '<td class="r">' + X(mm.dscr1) + "</td>" +
+              '<td class="r">' + P(mm.uirr) + "</td>" +
+              '<td class="r">' + P(mm.lirr) + "</td></tr>";
+          });
+          $("sens-body").innerHTML = html;
+        }
+
+        function renderTable(m) {
+          var html = "";
+          m.years.forEach(function (y) {
+            html += "<tr" + (y.lcf < 0 ? ' class="neg"' : "") + "><td>" + y.t + (y.t <= PPA_TERM ? "" : " · merchant") + "</td>" +
+              "<td>" + (y.mwh / 1000).toFixed(0) + "</td>" +
+              '<td class="opt">' + y.price.toFixed(2) + "</td>" +
+              "<td>" + y.rev.toFixed(1) + "</td>" +
+              "<td>" + y.opex.toFixed(1) + "</td>" +
+              "<td>" + y.ebitda.toFixed(1) + "</td>" +
+              '<td class="opt">' + (y.ds ? y.ds.toFixed(1) : "—") + "</td>" +
+              '<td class="opt">' + (y.credits ? y.credits.toFixed(1) : "—") + "</td>" +
+              "<td>" + y.lcf.toFixed(1) + "</td>" +
+              '<td class="opt">' + y.cumL.toFixed(1) + "</td></tr>";
+          });
+          $("pf-body").innerHTML = html;
+        }
+
+        var currentModel = null, currentInputs = null;
+
+        $("dl").addEventListener("click", function () {
+          if (!currentModel) return;
+          var lines = ["Year,Generation (MWh),Avg price ($/MWh),Revenue ($M),OpEx ($M),EBITDA ($M),Debt service ($M),Credits & capex ($M),Sponsor levered CF ($M),Cumulative levered CF ($M)"];
+          currentModel.years.forEach(function (y) {
+            lines.push([y.t, Math.round(y.mwh), y.price.toFixed(2), y.rev.toFixed(2), y.opex.toFixed(2),
+              y.ebitda.toFixed(2), y.ds.toFixed(2), y.credits.toFixed(2), y.lcf.toFixed(2), y.cumL.toFixed(2)].join(","));
+          });
+          var blob = new Blob([lines.join("\n")], { type: "text/csv" });
+          var a = document.createElement("a");
+          a.href = URL.createObjectURL(blob);
+          a.download = "solar-farm-proforma-wichita-falls-1000-acre.csv";
+          document.body.appendChild(a); a.click();
+          setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 400);
+        });
+
+        $("reset").addEventListener("click", function () {
+          KEYS.forEach(function (k) { $("i-" + k).value = DEFAULTS[k]; });
+          $("i-depr").value = DEFAULTS.depr;
+          render();
+        });
+
+        KEYS.forEach(function (k) { $("i-" + k).addEventListener("input", render); });
+        $("i-depr").addEventListener("change", render);
+        KEYS.forEach(function (k) { $("i-" + k).value = DEFAULTS[k]; });
+        render();
+      })();
+    </script>
+  </body>
+</html>
