@@ -1,0 +1,160 @@
+<style>
+.mg-wrap{box-sizing:border-box;max-width:680px;margin:0 auto;padding:14px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;color:var(--hatch-widget-text);font-size:14px;line-height:1.45}
+.mg-wrap *{box-sizing:border-box}
+.mg-h{font-size:17px;font-weight:700;margin:0 0 2px}
+.mg-sub{color:var(--hatch-widget-muted);font-size:12.5px;margin:0 0 12px}
+.mg-sec{font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--hatch-widget-muted);margin:18px 0 8px}
+.mg-card{background:var(--hatch-widget-surface);border:1px solid var(--hatch-widget-border);border-radius:12px;padding:12px;box-shadow:var(--hatch-widget-shadow)}
+.mg-svg{width:100%;height:auto;display:block}
+.zone{cursor:pointer}
+.zone rect.zb{fill:rgba(46,125,50,.10);stroke:#2e7d32;stroke-width:1.5;rx:6}
+.zone:hover rect.zb{fill:rgba(46,125,50,.22)}
+.zone.sel rect.zb{fill:rgba(46,125,50,.30);stroke-width:2.5}
+.zone text{fill:var(--hatch-widget-text);font-size:11px;font-weight:600;text-anchor:middle;pointer-events:none}
+.zone .zd{font-size:9.5px;font-weight:400;fill:var(--hatch-widget-muted)}
+.mg-detail{margin-top:10px;min-height:64px;background:var(--hatch-widget-surface-muted);border:1px solid var(--hatch-widget-border);border-radius:10px;padding:10px 12px;font-size:13px}
+.mg-detail b{color:#2e7d32}
+.mg-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.mg-chip{background:var(--hatch-widget-surface);border:1px solid var(--hatch-widget-border);border-radius:999px;padding:5px 12px;font-size:12px}
+.mg-chip b{color:#2e7d32}
+/* timeline */
+.mg-tl{display:flex;width:100%;border-radius:10px;overflow:hidden;border:1px solid var(--hatch-widget-border);margin-top:6px}
+.mg-seg{padding:10px 8px;color:#fff;font-size:11.5px;text-align:center}
+.mg-seg b{display:block;font-size:12.5px}
+.mg-seg span{opacity:.92;font-size:10.5px}
+.s0{background:#5d8f5f;flex:1.1}.s1{background:#3e6b41;flex:3}.s2{background:#2e7d32;flex:6}.s3{background:#7a9e3f;flex:1.6}.s4{background:#9aa38f;flex:.9}
+.mg-tl-loc{display:flex;width:100%;margin-top:4px}
+.mg-tl-loc div{font-size:10px;color:var(--hatch-widget-muted);text-align:center;padding:0 4px}
+.mg-note{font-size:12.5px;color:var(--hatch-widget-muted);margin-top:10px}
+.mg-flow{display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-top:8px;font-size:12px}
+.mg-pill{background:rgba(46,125,50,.12);border:1px solid #2e7d32;color:var(--hatch-widget-text);border-radius:999px;padding:4px 10px;font-weight:600;font-size:11.5px}
+.mg-arrow{color:#2e7d32;font-weight:700}
+@media (max-width:480px){.mg-seg span{display:none}}
+</style>
+<div class="mg-wrap">
+<p class="mg-h">Microgreens grow room — 10&prime; &times; 12&prime; schematic</p>
+<p class="mg-sub">Three racks &middot; 60 tray slots &middot; ~30+ trays/week &middot; tap a zone for details</p>
+
+<div class="mg-sec">Floor plan (top-down)</div>
+<div class="mg-card">
+<svg class="mg-svg" viewBox="0 0 480 430" role="img" aria-label="Grow room floor plan">
+<!-- room -->
+<rect x="16" y="16" width="448" height="368" fill="none" stroke="var(--hatch-widget-border)" stroke-width="10"/>
+<rect x="24" y="24" width="432" height="352" fill="none" stroke="var(--hatch-widget-muted)" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="240" y="44" text-anchor="middle" font-size="10" fill="var(--hatch-widget-muted)">N wall &middot; 12 ft</text>
+<!-- Rack A -->
+<g class="zone" data-zone="racks"><rect class="zb" x="40" y="52" width="144" height="72"/><text x="112" y="82">Rack A</text><text class="zd" x="112" y="97">48&Prime;&times;24&Prime; &middot; 20 trays</text></g>
+<!-- Rack B -->
+<g class="zone" data-zone="racks"><rect class="zb" x="192" y="52" width="144" height="72"/><text x="264" y="82">Rack B</text><text class="zd" x="264" y="97">48&Prime;&times;24&Prime; &middot; 20 trays</text></g>
+<!-- Fridge NE -->
+<g class="zone" data-zone="fridge"><rect class="zb" x="384" y="52" width="72" height="72"/><text x="420" y="82">Fridge</text><text class="zd" x="420" y="97">38&deg;F</text></g>
+<!-- Rack C west wall -->
+<g class="zone" data-zone="racks"><rect class="zb" x="28" y="150" width="72" height="144"/><text x="64" y="216">Rack C</text><text class="zd" x="64" y="231">20 trays</text></g>
+<!-- Dehumidifier -->
+<g class="zone" data-zone="climate"><rect class="zb" x="212" y="196" width="56" height="56"/><text x="240" y="221" font-size="10">Dehum.</text><text class="zd" x="240" y="235">+ AC</text></g>
+<!-- airflow arrows -->
+<g stroke="#2e7d32" stroke-width="1.6" fill="none" opacity=".65">
+<path d="M150 240 q 40 -20 55 -5"/><path d="M200 235 l 8 -1 m -3 -5 l 5 5 l -6 4" stroke="#2e7d32" fill="none"/>
+<path d="M330 240 q -40 -20 -55 -5"/><path d="M280 235 l -8 -1 m 3 -5 l -5 5 l 6 4" stroke="#2e7d32" fill="none"/>
+</g>
+<text x="240" y="272" text-anchor="middle" font-size="10" fill="var(--hatch-widget-muted)">3&ndash;4 ft center aisle</text>
+<!-- Work table east -->
+<g class="zone" data-zone="worktable"><rect class="zb" x="384" y="150" width="72" height="150"/><text x="420" y="218">Work</text><text x="420" y="232">table</text><text class="zd" x="420" y="247">seed / harvest</text><text class="zd" x="420" y="260">/ pack</text></g>
+<!-- Sink -->
+<g class="zone" data-zone="sink"><rect class="zb" x="384" y="308" width="72" height="68"/><text x="420" y="338">Sink</text><text class="zd" x="420" y="352">water</text></g>
+<!-- Door south -->
+<g class="zone" data-zone="door"><rect x="252" y="376" width="108" height="8" fill="var(--hatch-widget-surface-muted)" stroke="var(--hatch-widget-muted)"/><text x="306" y="370" text-anchor="middle" font-size="10" fill="var(--hatch-widget-muted)">3 ft door</text><path d="M252 376 A 60 60 0 0 1 312 316" fill="none" stroke="var(--hatch-widget-muted)" stroke-dasharray="4 3"/></g>
+<text x="120" y="404" font-size="10" fill="var(--hatch-widget-muted)">S wall &middot; 10 ft deep</text>
+</svg>
+<div class="mg-detail" id="mg-detail"><b>Racks A&ndash;C</b> &mdash; 48&Prime;W &times; 24&Prime;D &times; 72&Prime;H wire shelving on casters, 5 tiers each. Bottom tier = blackout germination; upper 4 = growing under 3&times; 20W 6500K LED bars per shelf on a 14&ndash;16h timer, one USB fan per shelf.</div>
+<div class="mg-chips">
+<span class="mg-chip"><b>65&ndash;75&deg;F</b> grow temp</span>
+<span class="mg-chip"><b>RH &lt; 60%</b> or mold wins</span>
+<span class="mg-chip"><b>6500K &middot; 14&ndash;16 h/day</b></span>
+<span class="mg-chip"><b>38&deg;F</b> storage</span>
+</div>
+</div>
+
+<div class="mg-sec">One rack, side view</div>
+<div class="mg-card">
+<svg class="mg-svg" viewBox="0 0 340 330" role="img" aria-label="Rack cross section">
+<!-- uprights -->
+<rect x="40" y="14" width="8" height="290" fill="var(--hatch-widget-muted)"/>
+<rect x="252" y="14" width="8" height="290" fill="var(--hatch-widget-muted)"/>
+<!-- shelves + trays + lights -->
+<g>
+<rect x="40" y="44" width="220" height="6" fill="var(--hatch-widget-border)"/>
+<rect x="52" y="96" width="196" height="6" fill="var(--hatch-widget-border)"/>
+<rect x="52" y="150" width="196" height="6" fill="var(--hatch-widget-border)"/>
+<rect x="52" y="204" width="196" height="6" fill="var(--hatch-widget-border)"/>
+<rect x="52" y="258" width="196" height="6" fill="var(--hatch-widget-border)"/>
+<!-- light bars under shelves -->
+<g fill="#f4d35e"><rect x="70" y="102" width="160" height="5" rx="2"/><rect x="70" y="156" width="160" height="5" rx="2"/><rect x="70" y="210" width="160" height="5" rx="2"/><rect x="70" y="264" width="160" height="5" rx="2"/></g>
+<!-- trays on grow tiers -->
+<g fill="#2e7d32" opacity=".8"><rect x="60" y="82" width="180" height="14" rx="3"/><rect x="60" y="136" width="180" height="14" rx="3"/><rect x="60" y="190" width="180" height="14" rx="3"/><rect x="60" y="244" width="180" height="14" rx="3"/></g>
+<!-- germination tier: stacked trays -->
+<g fill="#3e6b41" opacity=".85"><rect x="70" y="272" width="160" height="10" rx="2"/><rect x="70" y="284" width="160" height="10" rx="2"/><rect x="70" y="296" width="160" height="10" rx="2"/></g>
+<rect x="70" y="264" width="160" height="8" fill="#5d8f5f" opacity=".5"/>
+<!-- fan -->
+<circle cx="292" cy="120" r="16" fill="none" stroke="#2e7d32" stroke-width="2"/><path d="M292 104 v32 M276 120 h32 M281 109 l22 22 M303 109 l-22 22" stroke="#2e7d32" stroke-width="1.6"/>
+<text x="292" y="148" text-anchor="middle" font-size="9" fill="var(--hatch-widget-muted)">fan</text>
+<!-- labels -->
+<text x="8" y="90" font-size="10" fill="var(--hatch-widget-text)" text-anchor="start">Tiers 2&ndash;5</text>
+<text x="8" y="103" font-size="9" fill="var(--hatch-widget-muted)">GROW</text>
+<text x="8" y="114" font-size="9" fill="var(--hatch-widget-muted)">lights 14&ndash;16h</text>
+<text x="8" y="292" font-size="10" fill="var(--hatch-widget-text)">Tier 1</text>
+<text x="8" y="305" font-size="9" fill="var(--hatch-widget-muted)">GERMINATION</text>
+<text x="8" y="316" font-size="9" fill="var(--hatch-widget-muted)">blackout + weight</text>
+<text x="150" y="322" text-anchor="middle" font-size="9" fill="var(--hatch-widget-muted)">72&Prime; tall &middot; 4 trays per shelf &middot; casters</text>
+</g>
+</svg>
+</div>
+
+<div class="mg-sec">The 10-day cycle, mapped to the room</div>
+<div class="mg-card">
+<div class="mg-tl">
+<div class="mg-seg s0"><b>Day 0</b><span>seed &amp; sow</span></div>
+<div class="mg-seg s1"><b>Days 1&ndash;3</b><span>blackout germination</span></div>
+<div class="mg-seg s2"><b>Days 4&ndash;9</b><span>under lights</span></div>
+<div class="mg-seg s3"><b>Day 9&ndash;10</b><span>harvest</span></div>
+<div class="mg-seg s4"><b>Day 10</b><span>sanitize</span></div>
+</div>
+<div class="mg-tl-loc">
+<div style="flex:1.1">work table</div><div style="flex:3">rack &middot; tier 1</div><div style="flex:6">rack &middot; tiers 2&ndash;5</div><div style="flex:1.6">work table</div><div style="flex:.9">sink</div>
+</div>
+<div class="mg-flow">
+<span class="mg-pill">Soak + sow</span><span class="mg-arrow">&rarr;</span>
+<span class="mg-pill">Stack weighted</span><span class="mg-arrow">&rarr;</span>
+<span class="mg-pill">Unstack &rarr; lights</span><span class="mg-arrow">&rarr;</span>
+<span class="mg-pill">Bottom-water daily</span><span class="mg-arrow">&rarr;</span>
+<span class="mg-pill">Cut &rarr; pack &rarr; fridge</span>
+</div>
+<p class="mg-note"><b style="color:var(--hatch-widget-text)">The stagger is the business:</b> sow a new batch every 2&ndash;3 days and the room harvests twice a week, every week &mdash; no feast-or-famine. Day 0 detail: soak big seeds (sunflower/pea) overnight, fill trays with moist coir, sow dense, mist, cover. Days 1&ndash;3: check daily, mist if dry. Days 4&ndash;9: 14&ndash;16h light, water from below only, fans always on. Harvest at target height, cut above the media, straight into the fridge &mdash; never wash.</p>
+</div>
+</div>
+<script>
+(function(){
+var D={
+racks:{t:"Racks A\u2013C",d:"48\u2033W \u00d7 24\u2033D \u00d7 72\u2033H wire shelving on casters, 5 tiers each \u2014 60 tray slots across the room. Bottom tier = blackout germination (stacked, weighted trays). Upper 4 tiers = growing: 3\u00d7 20W 6500K LED bars per shelf on a 14\u201316h timer, one USB fan per shelf, RH under 60%."},
+worktable:{t:"Work table",d:"Seeding + harvest + packing station. Sow and stack trays here, harvest with a sharp produce knife, pack clamshells, weigh and label. Keep sanitizer spray, scale, and labels within arm's reach \u2014 this is where trays start and finish."},
+sink:{t:"Sink / water",d:"Bottom-watering source: fill solid trays, let coir wick it up, dump excess. Rinse tools here. A utility tub works if there's no plumbed sink \u2014 just never water from above the canopy."},
+fridge:{t:"Cold storage",d:"Packed greens go straight to 38\u00b0F. Harvest \u2192 pack \u2192 fridge with no lingering. Deliveries load from here. A used commercial fridge is one of the best early upgrades."},
+climate:{t:"Climate control",d:"Dehumidifier + small AC hold 65\u201375\u00b0F and RH under 60%. In an Oklahoma summer this is non-negotiable \u2014 heat + humidity = damping-off and mold, the #1 crop killer."},
+door:{t:"Entry",d:"Keep a clear 3-ft path from fridge to door for delivery loads. Trays, media, and seed store along this path or under the work table."}};
+var el=document.getElementById("mg-detail");
+var zones=document.querySelectorAll(".zone");
+function select(z){
+var s=(window.hatchWidget&&window.hatchWidget.getState)?window.hatchWidget.getState({zone:"racks"}):{zone:"racks"};
+s.zone=z;
+if(window.hatchWidget&&window.hatchWidget.setState){window.hatchWidget.setState(s);}else{render(z);}}
+function render(z){
+zones.forEach(function(g){g.classList.toggle("sel",g.getAttribute("data-zone")===z);});
+var info=D[z]||D.racks;
+el.innerHTML="<b>"+info.t+"</b> &mdash; "+info.d;}
+zones.forEach(function(g){g.addEventListener("click",function(){select(g.getAttribute("data-zone"));});});
+if(window.hatchWidget){
+var st=window.hatchWidget.getState({zone:"racks"});render(st.zone||"racks");
+window.addEventListener("hatch-widget-state",function(e){if(e.detail&&e.detail.state){render(e.detail.state.zone||"racks");}});}
+else{render("racks");}
+})();
+</script>
