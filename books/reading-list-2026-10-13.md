@@ -1,6 +1,6 @@
 # Reading List — 2026-10-13
 
-126 titles: 26 supplied by contributor, 100 recommended. Recommendations avoid overtly political or advocacy works.
+126 titles: 26 initial selections and 100 additional recommendations. Recommendations avoid overtly political or advocacy works.
 
 ---
 
