@@ -9,6 +9,7 @@ captured October 12–13, 2026.
 |---|---|
 | `colorado-land-over-10ac.csv` | 999 unique listings, one row each |
 | `colorado-land-over-10ac.json` | Same 999 listings as a JSON array |
+| `colorado-land-10ac.html` | Interactive page: sortable/filterable table with click-through Realtor links, computed $/acre, city-cluster map, $/acre histogram, CSV export (open in a browser; needs internet for map tiles) |
 | `build.py` | Reproducible build: loads `raw/`, normalizes, dedupes, writes CSV + JSON |
 | `raw/` | The 13 raw per-range JSON chunk files as scraped |
 
