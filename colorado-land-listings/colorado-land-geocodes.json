@@ -1,0 +1,4923 @@
+{
+ "1404 N US Highway 287, Fort Collins, CO 80524": {
+  "kind": "road",
+  "lat": 40.65806,
+  "lon": -105.15627,
+  "matched": "US Hwy 287, 80524",
+  "score": 82
+ },
+ "6000 County Road 43 1/2, Hudson, CO 80649": {
+  "kind": "address",
+  "lat": 40.08798,
+  "lon": -104.65096,
+  "matched": "6000 CR 43 1/2, HUDSON, 80642",
+  "score": 88.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/000-County-Road-51A_Hayden_CO_81639_M98797-22739": {
+  "kind": "road",
+  "lat": 40.48289,
+  "lon": -107.2156,
+  "matched": "Co Rd 51A, 81639",
+  "score": 82.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/000000-Highway-131-Lot-2_Steamboat-Springs_CO_80487_M98846-47607": {
+  "kind": "address",
+  "lat": 40.47743,
+  "lon": -106.80541,
+  "matched": "131 Steamboat Blvd, 80487",
+  "score": 89.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/00027-County-Road-77_Calhan_CO_80808_M96475-21650": {
+  "kind": "road",
+  "lat": 39.24694,
+  "lon": -104.31029,
+  "matched": "Co Rd 77, 80808",
+  "score": 84.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/00032-County-Road-77_Calhan_CO_80808_M91348-68741": {
+  "kind": "road",
+  "lat": 39.24694,
+  "lon": -104.31029,
+  "matched": "Co Rd 77, 80808",
+  "score": 84.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/001-Seldom-Seen-Rd_Golden_CO_80403_M91476-21039": {
+  "kind": "road",
+  "lat": 39.80576,
+  "lon": -105.41212,
+  "matched": "Seldom Seen Rd, 80403",
+  "score": 86.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/003-Seldom-Seen-Rd-Lot-R003352_Black-Hawk_CO_80422_M90828-14532": {
+  "kind": "road",
+  "lat": 39.80576,
+  "lon": -105.41212,
+  "matched": "Seldom Seen Rd, 80403",
+  "score": 80.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/01-004-Parcel-3993-303_Montrose_CO_81401_M99361-58550": {
+  "kind": "road",
+  "lat": 38.39809,
+  "lon": -107.89579,
+  "matched": "Happy Canyon Rd, 81403",
+  "score": 84.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/01-County-Road-122_Ramah_CO_80832_M98698-29298": {
+  "kind": "road",
+  "lat": 39.3025,
+  "lon": -104.19465,
+  "matched": "Co Rd 122, 80832",
+  "score": 88.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/01-Mikita-Rd_Calhan_CO_80808_M96214-54633": {
+  "kind": "road",
+  "lat": 39.11718,
+  "lon": -104.27395,
+  "matched": "Mikita Rd, 80808",
+  "score": 84.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/10095-Wagner-Rd_Calhan_CO_80808_M98294-90076": {
+  "kind": "address",
+  "lat": 38.97702,
+  "lon": -104.16436,
+  "matched": "10095 WAGNER ROAD, CALHAN, 80808",
+  "score": 99.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/101-Lewis-Ln_Lyons_CO_80540_M97323-43472": {
+  "kind": "address",
+  "lat": 40.25264,
+  "lon": -105.26573,
+  "matched": "101 LEWIS LN, UNINCORPORATED, 80503",
+  "score": 95.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/10183-Rolling-Vista-Trl_Elizabeth_CO_80107_M91895-74558": {
+  "kind": "address",
+  "lat": 39.55858,
+  "lon": -104.4728,
+  "matched": "10183 ROLLING VISTA, Elizabeth, 80107",
+  "score": 96.9
+ },
+ "https://www.realtor.com/realestateandhomes-detail/10444-State-Highway-115_Florence_CO_81226_M92034-16353": {
+  "kind": "address",
+  "lat": 38.38647,
+  "lon": -105.0858,
+  "matched": "10444 STATE HWY 115, FLORENCE, 81226",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/10448-Bank-Statement_Leadville_CO_80461_M95712-99166": {
+  "kind": "address",
+  "lat": 39.19311,
+  "lon": -106.23246,
+  "matched": "10448 BANK STATEMENT, Leadville, 80461",
+  "score": 99.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/10515-Currier-Rd_Calhan_CO_80808_M93028-67721": {
+  "kind": "address",
+  "lat": 38.98508,
+  "lon": -104.2383,
+  "matched": "10515 CURRIER ROAD, CALHAN, 80808",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/1054-S-Interstate-25_Castle-Rock_CO_80104_M22190-85735": {
+  "kind": "address",
+  "lat": 39.34519,
+  "lon": -104.87173,
+  "matched": "1054 S INTERSTATE 25, CASTLE ROCK, 80104",
+  "score": 99.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/10555-Big-Sky-Trl_Elbert_CO_80106_M21429-92196": {
+  "kind": "address",
+  "lat": 39.182,
+  "lon": -104.69402,
+  "matched": "10555 BIG SKY TRL, ELBERT, 80106",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/10575-CO-82_Twin-Lakes_CO_81251_M91514-02934": {
+  "kind": "address",
+  "lat": 39.0707,
+  "lon": -106.4297,
+  "matched": "10575 HIGHWAY 82, Twin Lakes, 81251",
+  "score": 99.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/10655-Hardy-Rd_Colorado-Springs_CO_80908_M11471-01704": {
+  "kind": "address",
+  "lat": 39.08752,
+  "lon": -104.63143,
+  "matched": "10655 HARDY ROAD, FALCON, 80908",
+  "score": 98.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/10661-Spruce-Mountain-Rd_Larkspur_CO_80118_M14058-50085": {
+  "kind": "address",
+  "lat": 39.20606,
+  "lon": -104.89105,
+  "matched": "10661 SPRUCE MOUNTAIN RD, LARKSPUR, 80118",
+  "score": 99.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/10697-County-Road-43_Drake_CO_80515_M90997-17434": {
+  "kind": "address",
+  "lat": 40.46289,
+  "lon": -105.4072,
+  "matched": "10697 Co Rd 43, 80515",
+  "score": 97.6
+ },
+ "https://www.realtor.com/realestateandhomes-detail/108-Ginger-Quill-Ln_Breckenridge_CO_80424_M25310-49790": {
+  "kind": "road",
+  "lat": 39.56107,
+  "lon": -106.04892,
+  "matched": "Gingerquill Ln, 80424",
+  "score": 82
+ },
+ "https://www.realtor.com/realestateandhomes-detail/1094-N-Gantts-Fort-Ave_Pueblo_CO_81007_M12216-55447": {
+  "kind": "address",
+  "lat": 38.37649,
+  "lon": -104.73216,
+  "matched": "1094 N GANTTS FORT AVE, PUEBLO WEST, 81007",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/10985-E-US-Highway-24_Peyton_CO_80831_M13245-70498": {
+  "kind": "address",
+  "lat": 38.91687,
+  "lon": -104.62222,
+  "matched": "10985 EAST HIGHWAY 24, PEYTON, 80831",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/10AC-Icehouse-Rd_Fort-Garland_CO_81133_M92145-52439": {
+  "kind": "road",
+  "lat": 37.40451,
+  "lon": -105.37272,
+  "matched": "Icehouse Rd, 81133",
+  "score": 81.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/11173-S-Barney-Gulch-Rd_Conifer_CO_80433_M24909-48672": {
+  "kind": "address",
+  "lat": 39.51534,
+  "lon": -105.33304,
+  "matched": "11173 S BARNEY GULCH RD, CONIFER, 80433",
+  "score": 99.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/112-Platte-River-Dr-Lot-1_Fairplay_CO_80440_M91280-05884": {
+  "kind": "address",
+  "lat": 39.23747,
+  "lon": -106.02403,
+  "matched": "112 PLATTE RIVER DR, FAIRPLAY, 80440",
+  "score": 99.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/11256-N-County-Road-13_Wellington_CO_80549_M97772-65398": {
+  "kind": "address",
+  "lat": 40.74894,
+  "lon": -105.05703,
+  "matched": "11256 N Co Rd 13, 80549",
+  "score": 96.6
+ },
+ "https://www.realtor.com/realestateandhomes-detail/11298-Primero-Rnch_Trinidad_CO_81082_M92972-03891": {
+  "kind": "address",
+  "lat": 37.15421,
+  "lon": -104.76011,
+  "matched": "11298 PRIMERO RANCH RD, TRINIDAD, 81082",
+  "score": 99.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/11485-Road-4_Dove-Creek_CO_81324_M92363-29343": {
+  "kind": "address",
+  "lat": 37.73393,
+  "lon": -108.98241,
+  "matched": "11485 Road 4, Dove Creek, 81324",
+  "score": 99.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/115-US-Highway-84_Pagosa-Springs_CO_81147_M90542-83030": {
+  "kind": "road",
+  "lat": 37.18998,
+  "lon": -106.95197,
+  "matched": "US Hwy 84, 81147",
+  "score": 81.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/1151-Peninusla-Dr_Placerville_CO_81430_M99511-33575": {
+  "kind": "address",
+  "lat": 37.99739,
+  "lon": -108.12625,
+  "matched": "1151 PENINSULA DR, PLACERVILLE, 81430",
+  "score": 96.6
+ },
+ "https://www.realtor.com/realestateandhomes-detail/11701-County-Road-137_Simla_CO_80835_M22289-08871": {
+  "kind": "address",
+  "lat": 39.03664,
+  "lon": -104.03579,
+  "matched": "11701 COUNTY RD 137, Ramah, 80832",
+  "score": 95.9
+ },
+ "https://www.realtor.com/realestateandhomes-detail/11726-County-Road-102_Elbert_CO_80106_M91947-39426": {
+  "kind": "address",
+  "lat": 39.22949,
+  "lon": -104.44424,
+  "matched": "11726 COUNTY RD 102, Elbert, 80106",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/1177-County-Road-119A_Hesperus_CO_81326_M91102-74988": {
+  "kind": "address",
+  "lat": 37.18249,
+  "lon": -108.17144,
+  "matched": "1177 CR 119 A, Hesperus, 81326",
+  "score": 98.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/11799-Highway-13_Rifle_CO_81650_M92017-22795": {
+  "kind": "road",
+  "lat": 39.87929,
+  "lon": -107.95622,
+  "matched": "State Hwy 13, 81641",
+  "score": 81.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/11917-Flat-Top-Trl_Littleton_CO_80127_M93891-94344": {
+  "kind": "address",
+  "lat": 39.49842,
+  "lon": -105.16266,
+  "matched": "11917 FLAT TOP TRL, LITTLETON, 80127",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/11972-Haskell-Creek-Rd_Larkspur_CO_80118_M23284-83869": {
+  "kind": "address",
+  "lat": 39.18819,
+  "lon": -104.79514,
+  "matched": "11972 HASKEL CREEK RD, LARKSPUR, 80118",
+  "score": 97.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/11th-St_Blanca_CO_81123_M91718-19858": {
+  "kind": "road",
+  "lat": 37.48628,
+  "lon": -105.5827,
+  "matched": "11th St, 81123",
+  "score": 85.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/120-Antelope-Run_Monte-Vista_CO_81144_M20074-62901": {
+  "kind": "address",
+  "lat": 37.59256,
+  "lon": -106.21512,
+  "matched": "120 Antelope Run, 81144",
+  "score": 96.1
+ },
+ "https://www.realtor.com/realestateandhomes-detail/12101-Elk-Run-Rd_Trinidad_CO_81082_M99878-74992": {
+  "kind": "address",
+  "lat": 37.16361,
+  "lon": -104.74286,
+  "matched": "12101 ELK RUN RD, TRINIDAD, 81082",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/12155-Oil-Well-Rd_Calhan_CO_80808_M92945-57174": {
+  "kind": "address",
+  "lat": 39.00648,
+  "lon": -104.10838,
+  "matched": "12155 OIL WELL ROAD, CALHAN, 80808",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/12195-Road-26_Cortez_CO_81321_M98858-68637": {
+  "kind": "address",
+  "lat": 37.38854,
+  "lon": -108.57296,
+  "matched": "12195 Road 26, Cortez, 81321",
+  "score": 99.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/12201-S-Highway-67_Cripple-Creek_CO_80813_M92755-83160": {
+  "kind": "address",
+  "lat": 38.79427,
+  "lon": -105.12643,
+  "matched": "12201 HIGHWAY 67, CRIPPLE CREEK, 80813",
+  "score": 96.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/1231-Ranchland-Dr_Pagosa-Springs_CO_81147_M11835-29056": {
+  "kind": "road",
+  "lat": 37.18388,
+  "lon": -107.11734,
+  "matched": "Ranchland Dr, 81147",
+  "score": 81.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/1242-N-Faver-Dr_Castle-Rock_CO_80109_M92829-70772": {
+  "kind": "address",
+  "lat": 39.38231,
+  "lon": -104.91682,
+  "matched": "1242 FAVER DR, CASTLE ROCK, 80109",
+  "score": 97.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/12451-US24_Hartsel_CO_80449_M94102-39319": {
+  "kind": "address",
+  "lat": 39.02135,
+  "lon": -105.80254,
+  "matched": "12451 US Hwy 24, 80449",
+  "score": 95.0
+ },
+ "https://www.realtor.com/realestateandhomes-detail/12482-54-710-Rd_Molina_CO_81646_M94344-00695": {
+  "kind": "address",
+  "lat": 39.18861,
+  "lon": -108.04946,
+  "matched": "12482 54 7/10 RD, MOLINA, 81646",
+  "score": 99.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/12496A-County-Road-45_Center_CO_81125_M90207-58380": {
+  "kind": "road",
+  "lat": 37.85698,
+  "lon": -106.18338,
+  "matched": "Co Rd 45, 81125",
+  "score": 84.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/12580-County-Road-Z5_Rush_CO_80833_M90466-78968": {
+  "kind": "address",
+  "lat": 38.68201,
+  "lon": -103.88109,
+  "matched": "12580 Co Rd M, 81063",
+  "score": 88
+ },
+ "https://www.realtor.com/realestateandhomes-detail/1259-Chute-Rd_Golden_CO_80403_M95819-36351": {
+  "kind": "address",
+  "lat": 39.91712,
+  "lon": -105.32642,
+  "matched": "1259 CHUTE RD, UNINCORPORATED, 80403",
+  "score": 98.0
+ },
+ "https://www.realtor.com/realestateandhomes-detail/12672-N-75th-St_Longmont_CO_80503_M11367-99030": {
+  "kind": "address",
+  "lat": 40.20584,
+  "lon": -105.17561,
+  "matched": "12672 N 75TH ST, UNINCORPORATED, 80503",
+  "score": 96.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/1280-Antler-Ridge-Rd_Como_CO_80432_M97996-11038": {
+  "kind": "address",
+  "lat": 39.23187,
+  "lon": -105.80497,
+  "matched": "1280 ANTLER RIDGE RD, COMO, 80432",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/1281-Beard-Creek-Rd_Edwards_CO_81632_M93117-05374": {
+  "kind": "address",
+  "lat": 39.65941,
+  "lon": -106.59887,
+  "matched": "1281 Beard Creek Rd, 81632",
+  "score": 97
+ },
+ "https://www.realtor.com/realestateandhomes-detail/12830-Milne-Rd_Colorado-Springs_CO_80928_M97791-93845": {
+  "kind": "address",
+  "lat": 38.64546,
+  "lon": -104.47933,
+  "matched": "12830 MILNE ROAD, COLORADO SPRINGS, 80928",
+  "score": 99.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/1284-N-Ramah-Hwy_Yoder_CO_80864_M96901-52871": {
+  "kind": "address",
+  "lat": 38.84725,
+  "lon": -104.14773,
+  "matched": "1284 N Ramah Hwy, 80864",
+  "score": 97.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/1284-Red-Rock-Cir_Penrose_CO_81240_M17399-82976": {
+  "kind": "address",
+  "lat": 38.54715,
+  "lon": -105.04231,
+  "matched": "1284 RED ROCK CIRCLE, PENROSE, 81240",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/1289-Willow-Way_Jefferson_CO_80456_M26100-82723": {
+  "kind": "address",
+  "lat": 39.26569,
+  "lon": -105.65514,
+  "matched": "1289 WILLOW WAY, JEFFERSON, 80456",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/13325-Little-Bear-Cyn-Unit-22_Weston_CO_81091_M92986-57122": {
+  "kind": "address",
+  "lat": 37.17274,
+  "lon": -104.99481,
+  "matched": "13325 LITTLE BEAR CANYON, WESTON, 81091",
+  "score": 99.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/13490-Big-Pine-Ridge-Rd_Weston_CO_81091_M92864-43579": {
+  "kind": "address",
+  "lat": 37.18558,
+  "lon": -104.87081,
+  "matched": "13490 BIG PINE RIDGE DR, WESTON, 81091",
+  "score": 96.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/13500-Pine-Dr_Parker_CO_80138_M94746-97334": {
+  "kind": "address",
+  "lat": 39.55874,
+  "lon": -104.75561,
+  "matched": "13500 Pine Dr, 80138",
+  "score": 95.6
+ },
+ "https://www.realtor.com/realestateandhomes-detail/13565-Kunzite-Rd_Trinidad_CO_81082_M21340-46472": {
+  "kind": "address",
+  "lat": 37.18465,
+  "lon": -104.45994,
+  "matched": "13565 BAT MASTERSON DR, TRINIDAD, 81082",
+  "score": 92.9
+ },
+ "https://www.realtor.com/realestateandhomes-detail/13583-County-Road-96_Nunn_CO_80648_M94197-93159": {
+  "kind": "road",
+  "lat": 40.68342,
+  "lon": -104.88648,
+  "matched": "Co Rd 96, 80648",
+  "score": 86.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/1361-Hersch-Ave_Pagosa-Springs_CO_81147_M29022-01949": {
+  "kind": "address",
+  "lat": 37.22015,
+  "lon": -107.09346,
+  "matched": "1361 Hersch Ave, 81147",
+  "score": 95.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/13642-N-Log-Rd_Peyton_CO_80831_M90573-01017": {
+  "kind": "address",
+  "lat": 39.02872,
+  "lon": -104.42436,
+  "matched": "13642 LOG ROAD, PEYTON, 80831",
+  "score": 97.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/1371-Red-Mountain-Ranch-Upper-Loop_Crested-Butte_CO_81224_M21085-44920": {
+  "kind": "address",
+  "lat": 38.79265,
+  "lon": -106.89152,
+  "matched": "1371 Red Mountain Ranch Rd, 81224",
+  "score": 92.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/13864-N-Trail-Cir_Littleton_CO_80127_M91439-72247": {
+  "kind": "address",
+  "lat": 39.46531,
+  "lon": -105.16966,
+  "matched": "13864 NORTH TRAIL CIR, LITTLETON, 80127",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/13884-N-Trail-Cir_Littleton_CO_80127_M20568-30128": {
+  "kind": "address",
+  "lat": 39.46328,
+  "lon": -105.17318,
+  "matched": "13884 NORTH TRAIL CIR, LITTLETON, 80127",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/13885-Tomboy-Rd_Telluride_CO_81435_M15715-41375": {
+  "kind": "road",
+  "lat": 37.93985,
+  "lon": -107.80903,
+  "matched": "Tomboy Rd, 81435",
+  "score": 80.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/139-Eagle-Mountain-Rd_Del-Norte_CO_81132_M94323-62889": {
+  "kind": "address",
+  "lat": 37.72654,
+  "lon": -106.39011,
+  "matched": "139 EAGLE MOUNTAIN RD, DEL NORTE",
+  "score": 97.9
+ },
+ "https://www.realtor.com/realestateandhomes-detail/14-Rd_Gateway_CO_81522_M93985-31938": {
+  "kind": "road",
+  "lat": 38.52919,
+  "lon": -108.61511,
+  "matched": "Divide Rd, 81522",
+  "score": 85.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/1405-Highway-6_Gypsum_CO_81637_M22491-67422": {
+  "kind": "address",
+  "lat": 39.63714,
+  "lon": -107.09543,
+  "matched": "1405 HWY 6, GYPSUM AREA",
+  "score": 86.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/1420-Point-of-the-Pines-Dr_Colorado-Springs_CO_80919_M24908-12691": {
+  "kind": "address",
+  "lat": 38.90896,
+  "lon": -104.85317,
+  "matched": "1420 POINT OF THE PINES DRIVE, COLORADO SPRINGS, 80919",
+  "score": 99.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/1434-Blue-Mesa-Dr_Divide_CO_80814_M92512-01253": {
+  "kind": "address",
+  "lat": 38.94755,
+  "lon": -105.21695,
+  "matched": "1434 BLUE MESA DRIVE, DIVIDE, 80814",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/14430-Aiken-Ride-Vw_Colorado-Springs_CO_80926_M24666-36541": {
+  "kind": "address",
+  "lat": 38.6236,
+  "lon": -104.90535,
+  "matched": "14430 AIKEN RIDE VIEW, COLORADO SPRINGS, 80926",
+  "score": 99.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/144th-Lot-14_Bennett_CO_80102_M96064-83692": {
+  "kind": "address",
+  "lat": 39.75518,
+  "lon": -104.42814,
+  "matched": "14, 460 COLFAX AVE, BENNETT, 80102",
+  "score": 96.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/145-Bonanza-Rd_Cotopaxi_CO_81223_M90105-86870": {
+  "kind": "address",
+  "lat": 38.26405,
+  "lon": -105.4204,
+  "matched": "145 BONANZA ROAD, COTOPAXI, 81223",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/145-Nightingale-Ln_Cripple-Creek_CO_80813_M29288-61282": {
+  "kind": "address",
+  "lat": 38.81032,
+  "lon": -105.1727,
+  "matched": "145 NIGHTINGALE LANE, CRIPPLE CREEK, 80813",
+  "score": 99.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/14633-Rancho-Verde-Rd_Trinidad_CO_81082_M28824-36323": {
+  "kind": "address",
+  "lat": 37.22701,
+  "lon": -104.51415,
+  "matched": "14633 RANCHO VERDE RD, TRINIDAD, 81082",
+  "score": 99.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/14700-Arfsten-Rd_Larkspur_CO_80118_M92113-95112": {
+  "kind": "address",
+  "lat": 39.14312,
+  "lon": -104.75451,
+  "matched": "14700 ARFSTEN RD, LARKSPUR, 80118",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/148-Grand-Teton-Ct_Hartsel_CO_80449_M13344-26897": {
+  "kind": "address",
+  "lat": 39.12288,
+  "lon": -105.66595,
+  "matched": "148 Grand Teton Dr, 80449",
+  "score": 95.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/15-N-Reserve-Dr_Norwood_CO_81423_M95807-94723": {
+  "kind": "road",
+  "lat": 38.07089,
+  "lon": -108.25341,
+  "matched": "N Reserve Dr, 81423",
+  "score": 86.9
+ },
+ "https://www.realtor.com/realestateandhomes-detail/1501-County-Road-628_Gardner_CO_81040_M96603-72520": {
+  "kind": "road",
+  "lat": 37.86819,
+  "lon": -105.10721,
+  "matched": "Co Rd 628, 81040",
+  "score": 85.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/1528-Wapiti-Way_Whitewater_CO_81527_M21058-20902": {
+  "kind": "address",
+  "lat": 38.99772,
+  "lon": -108.45784,
+  "matched": "1528 WAPITI WAY, WHITEWATER, 81527",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/15385-County-Road-166-R122560_Kiowa_CO_80117_M95536-84327": {
+  "kind": "address",
+  "lat": 39.4639,
+  "lon": -104.37819,
+  "matched": "15385 COUNTY RD 166, Kiowa, 80117",
+  "score": 97
+ },
+ "https://www.realtor.com/realestateandhomes-detail/15575-Degroot-Rd_Colorado-Springs_CO_80928_M99863-70590": {
+  "kind": "address",
+  "lat": 38.60523,
+  "lon": -104.49568,
+  "matched": "15575 DEGROOT ROAD, COLORADO SPRINGS, 80928",
+  "score": 99.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/15590-Red-Mountain-Ln_Collbran_CO_81624_M98003-89325": {
+  "kind": "address",
+  "lat": 39.23469,
+  "lon": -107.94329,
+  "matched": "15590 RED MOUNTAIN LN, COLLBRAN, 81624",
+  "score": 99.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/16073-County-Road-55_Saguache_CO_81149_M99540-99566": {
+  "kind": "road",
+  "lat": 37.976,
+  "lon": -105.99762,
+  "matched": "Co Rd 55, 81149",
+  "score": 83.6
+ },
+ "https://www.realtor.com/realestateandhomes-detail/16280-Cochise-Trl_Pine_CO_80470_M20447-93229": {
+  "kind": "address",
+  "lat": 39.41903,
+  "lon": -105.3585,
+  "matched": "16280 COCHISE TRL, PINE, 80470",
+  "score": 99.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/163-Keechi-Rd_Hartsel_CO_80449_M92550-88900": {
+  "kind": "address",
+  "lat": 38.89512,
+  "lon": -105.74607,
+  "matched": "163 KEECHI RD, HARTSEL, 80449",
+  "score": 99.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/16590-Watkins-Rd_Hudson_CO_80642_M94448-54711": {
+  "kind": "address",
+  "lat": 39.99376,
+  "lon": -104.60286,
+  "matched": "16590 Watkins Rd, 80642",
+  "score": 95.9
+ },
+ "https://www.realtor.com/realestateandhomes-detail/1675-Chicago-Park-Rd_Pitkin_CO_81241_M19785-87023": {
+  "kind": "road",
+  "lat": 38.62396,
+  "lon": -106.53509,
+  "matched": "Chicago Park Rd, 81241",
+  "score": 86
+ },
+ "https://www.realtor.com/realestateandhomes-detail/16880-1688-Old-Pueblo-Rd_Fountain_CO_80817_M98835-19879": {
+  "kind": "road",
+  "lat": 38.61739,
+  "lon": -104.67302,
+  "matched": "Old Pueblo Rd, 80817",
+  "score": 86.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/17000-County-Road-698_Trinidad_CO_81082_M94245-11906": {
+  "kind": "address",
+  "lat": 37.23904,
+  "lon": -104.52731,
+  "matched": "17000 COUNTY RD 69.8, TRINIDAD, 81082",
+  "score": 99.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/17016-Icehouse-Ct_Pine_CO_80470_M18093-67516": {
+  "kind": "address",
+  "lat": 39.40403,
+  "lon": -105.33151,
+  "matched": "17016 ICEHOUSE CT, PINE, 80470",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/1725-Rd_Delta_CO_81416_M97419-44182": {
+  "kind": "road",
+  "lat": 38.75338,
+  "lon": -108.04117,
+  "matched": "1725 Rd, 81416",
+  "score": 86.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/17265-Warriors-Path-Dr_Peyton_CO_80831_M99146-99032": {
+  "kind": "address",
+  "lat": 39.08275,
+  "lon": -104.42596,
+  "matched": "17265 WARRIORS PATH DRIVE, PEYTON, 80831",
+  "score": 99.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/1738-Newton-Rd-21A_Pueblo_CO_81005_M93116-42048": {
+  "kind": "address",
+  "lat": 38.22257,
+  "lon": -104.9155,
+  "matched": "1738 Newton Rd, 81005",
+  "score": 97.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/1775-35-110-Rd_De-Beque_CO_81630_M96801-26519": {
+  "kind": "address",
+  "lat": 39.25076,
+  "lon": -108.38544,
+  "matched": "1775 35 1/10 RD, DEBEQUE, 81630",
+  "score": 98.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/1789-Joseph-Cir_Elizabeth_CO_80107_M96413-83142": {
+  "kind": "address",
+  "lat": 39.45736,
+  "lon": -104.62862,
+  "matched": "1789 JOSEPH, Elizabeth, 80107",
+  "score": 96.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/17905-Judge-Orr-Rd_Peyton_CO_80831_M95581-87067": {
+  "kind": "road",
+  "lat": 39.07273,
+  "lon": -104.47863,
+  "matched": "Peyton Hwy, 80831",
+  "score": 87.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/17th-St_Blanca_CO_81123_M95294-54033": {
+  "kind": "road",
+  "lat": 37.50886,
+  "lon": -105.57982,
+  "matched": "17th St, 81101",
+  "score": 82.6
+ },
+ "https://www.realtor.com/realestateandhomes-detail/18235-Black-Forest-Rd_Colorado-Springs_CO_80908_M91589-53827": {
+  "kind": "address",
+  "lat": 39.09672,
+  "lon": -104.69069,
+  "matched": "18235 BLACK FOREST ROAD, FALCON, 80908",
+  "score": 95.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/18677-State-Highway-7_Lyons_CO_80540_M96564-53667": {
+  "kind": "address",
+  "lat": 40.17807,
+  "lon": -105.45713,
+  "matched": "18677 STATE HIGHWAY 7, UNINCORPORATED, 80540",
+  "score": 97.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/18763-Brown-Rd_Colorado-Springs_CO_80908_M94400-90801": {
+  "kind": "address",
+  "lat": 39.10354,
+  "lon": -104.71757,
+  "matched": "18763 BROWN ROAD, MONUMENT, 80908",
+  "score": 95
+ },
+ "https://www.realtor.com/realestateandhomes-detail/18795-Brown-Rd_Colorado-Springs_CO_80908_M99470-10511": {
+  "kind": "address",
+  "lat": 39.10353,
+  "lon": -104.71628,
+  "matched": "18795 BROWN ROAD, MONUMENT, 80908",
+  "score": 95
+ },
+ "https://www.realtor.com/realestateandhomes-detail/1899-Spring-Valley-Rd_Bellvue_CO_80512_M16005-68030": {
+  "kind": "road",
+  "lat": 40.6149,
+  "lon": -105.30576,
+  "matched": "Spring Valley Rd, 80512",
+  "score": 85.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/19005-Lemesany-Rd_Calhan_CO_80808_M17042-72115": {
+  "kind": "road",
+  "lat": 39.09874,
+  "lon": -104.33118,
+  "matched": "Dzuris Rd, 80808",
+  "score": 86.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/195-Ten-High-Ln_Fairplay_CO_80440_M25765-94703": {
+  "kind": "address",
+  "lat": 39.26894,
+  "lon": -106.03212,
+  "matched": "195 TEN HIGH LN, FAIRPLAY, 80440",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/19515-Paradox-Trl_Montrose_CO_81403_M15618-19917": {
+  "kind": "address",
+  "lat": 38.39706,
+  "lon": -107.96157,
+  "matched": "19515 PARADOX TRL, MONTROSE, 81403",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/19518-Dauntless_Leadville_CO_81211_M90369-29054": {
+  "kind": "address",
+  "lat": 39.08925,
+  "lon": -106.44809,
+  "matched": "19518 DAUNTLESS & DAUNTLESS #2, Leadville, 80461",
+  "score": 94.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/1971-County-Road-27A_Cotopaxi_CO_81223_M14843-51635": {
+  "kind": "address",
+  "lat": 38.32501,
+  "lon": -105.48989,
+  "matched": "1971 COUNTY RD 27A, COTOPAXI, 81223",
+  "score": 99.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/1975-Big-Bear-Rd_Loveland_CO_80538_M92219-60867": {
+  "kind": "address",
+  "lat": 40.51726,
+  "lon": -105.28152,
+  "matched": "1975 Big Bear Rd, 80538",
+  "score": 95.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/1989-Spencer-Mountain-Rd_Bellvue_CO_80512_M23781-70465": {
+  "kind": "address",
+  "lat": 40.58553,
+  "lon": -105.37656,
+  "matched": "1989 Spencer Mountain, 80512",
+  "score": 95.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/200-County-Road-104_Hesperus_CO_81326_M17871-18677": {
+  "kind": "address",
+  "lat": 37.09737,
+  "lon": -108.17406,
+  "matched": "200 CR 104, Hesperus, 81326",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/2025-Granite-Rd_Bellvue_CO_80512_M96255-39126": {
+  "kind": "road",
+  "lat": 40.53753,
+  "lon": -105.39735,
+  "matched": "Granite Rd, 80512",
+  "score": 83.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/20370-S-Squirrel-Creek-Rd_Colorado-Springs_CO_80928_M96869-86901": {
+  "kind": "address",
+  "lat": 38.69466,
+  "lon": -104.44868,
+  "matched": "20370 SQUIRREL CREEK ROAD, COLORADO SPRINGS, 80928",
+  "score": 98.0
+ },
+ "https://www.realtor.com/realestateandhomes-detail/20400-US-Highway-285_Fairplay_CO_80440_M21103-67130": {
+  "kind": "address",
+  "lat": 39.19243,
+  "lon": -105.99646,
+  "matched": "20400 HIGHWAY 285, FAIRPLAY, 80440",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/2055-County-Road-67_Canon-City_CO_81212_M90918-44241": {
+  "kind": "road",
+  "lat": 38.49479,
+  "lon": -105.13068,
+  "matched": "Co Rd 67, 81212",
+  "score": 83.6
+ },
+ "https://www.realtor.com/realestateandhomes-detail/20651-Kit-Carson-Rd_Moffat_CO_81143_M20047-70276": {
+  "kind": "address",
+  "lat": 38.05141,
+  "lon": -105.93791,
+  "matched": "20651 KIT CARSON RD, MOFFAT",
+  "score": 97.6
+ },
+ "https://www.realtor.com/realestateandhomes-detail/20861-US-Highway-160_Bayfield_CO_81122_M28525-43167": {
+  "kind": "road",
+  "lat": 37.25316,
+  "lon": -107.57098,
+  "matched": "US Hwy 160, 81122",
+  "score": 82.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/209-County-Road-4253_Granby_CO_80446_M92593-95652": {
+  "kind": "address",
+  "lat": 40.20351,
+  "lon": -105.92957,
+  "matched": "209 COUNTY RD 4253, GRANBY, 80446",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/21052-Way-of-Peace_Deer-Trail_CO_80105_M99702-24252": {
+  "kind": "address",
+  "lat": 39.4613,
+  "lon": -104.28058,
+  "matched": "21052 WAY OF PEACE, Deer Trail, 80105",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/21103-Elkhorn-Rd_Como_CO_80432_M93050-07613": {
+  "kind": "address",
+  "lat": 39.29416,
+  "lon": -105.84108,
+  "matched": "21103 Elkhorn Rd, 80432",
+  "score": 97.6
+ },
+ "https://www.realtor.com/realestateandhomes-detail/21180-Steppe-Edge-Vw_Colorado-Springs_CO_80930_M90109-35331": {
+  "kind": "address",
+  "lat": 38.76023,
+  "lon": -104.43467,
+  "matched": "21180 STEPPE EDGE VIEW, COLORADO SPRINGS, 80930",
+  "score": 99.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/214-Pristine-Pl_Pagosa-Springs_CO_81147_M94323-62711": {
+  "kind": "road",
+  "lat": 37.18388,
+  "lon": -107.11734,
+  "matched": "Ranchland Dr, 81147",
+  "score": 81
+ },
+ "https://www.realtor.com/realestateandhomes-detail/21501-Highway-145_Dolores_CO_81323_M19745-65083": {
+  "kind": "road",
+  "lat": 37.40022,
+  "lon": -108.55454,
+  "matched": "State Hwy 145, 81323",
+  "score": 83.1
+ },
+ "https://www.realtor.com/realestateandhomes-detail/2153-Wrangler-Way_Durango_CO_81303_M18623-21349": {
+  "kind": "address",
+  "lat": 37.19213,
+  "lon": -107.74252,
+  "matched": "2153 Wrangler Wy, Durango, 81303",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/21538-Hamilton-Rd_Eckert_CO_81418_M99076-65574": {
+  "kind": "address",
+  "lat": 38.87459,
+  "lon": -107.95987,
+  "matched": "21538 HAMILTON RD, CEDAREDGE",
+  "score": 87.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/2155-Apple-Valley-Rd_Lyons_CO_80540_M93598-39220": {
+  "kind": "address",
+  "lat": 40.24666,
+  "lon": -105.29346,
+  "matched": "2155 APPLE VALLEY RD, UNINCORPORATED, 80540",
+  "score": 97.6
+ },
+ "https://www.realtor.com/realestateandhomes-detail/21650-Leona-Homestead-Vw_Colorado-Springs_CO_80930_M91518-31510": {
+  "kind": "address",
+  "lat": 38.77722,
+  "lon": -104.42513,
+  "matched": "21650 Leona Homestead Vw, 80930",
+  "score": 96.0
+ },
+ "https://www.realtor.com/realestateandhomes-detail/2175-Lope-Loop_Westcliffe_CO_81252_M91843-24415": {
+  "kind": "address",
+  "lat": 38.22641,
+  "lon": -105.48553,
+  "matched": "2175 Lope Loop, 81252",
+  "score": 94.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/2200-Meadowdale-Ln_Canon-City_CO_81212_M97878-68636": {
+  "kind": "address",
+  "lat": 38.47251,
+  "lon": -105.39564,
+  "matched": "2200 MEADOWDALE LANE, CANON CITY, 81212",
+  "score": 99.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/22000-P77-Rd_Cimarron_CO_81220_M94251-29672": {
+  "kind": "address",
+  "lat": 38.36755,
+  "lon": -107.58107,
+  "matched": "22000 P77 RD, CIMARRON, 81220",
+  "score": 99.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/22014-Coal-Mine-Dr_Trinidad_CO_81082_M99103-77265": {
+  "kind": "address",
+  "lat": 37.14366,
+  "lon": -104.75632,
+  "matched": "22014 COAL MINE DR, TRINIDAD, 81082",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/2203-Lakeside-Dr_Fairplay_CO_80440_M95554-84328": {
+  "kind": "address",
+  "lat": 39.24229,
+  "lon": -106.06782,
+  "matched": "2203 LAKESIDE DR, FAIRPLAY, 80440",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/222-and-224-Turkey-Ridge-Rnch_Walsenburg_CO_81089_M99423-99866": {
+  "kind": "address",
+  "lat": 37.86578,
+  "lon": -104.5773,
+  "matched": "224 Turkey Ridge Rd E, 81089",
+  "score": 84.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/22254-County-Road-55_Moffat_CO_81143_M91842-77767": {
+  "kind": "address",
+  "lat": 38.07664,
+  "lon": -105.98884,
+  "matched": "22254 COUNTY RD 55, MOFFAT",
+  "score": 97.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/2232-County-Road-5-Lots-234_Fairplay_CO_80440_M97384-56516": {
+  "kind": "address",
+  "lat": 39.13598,
+  "lon": -106.02172,
+  "matched": "2232 COUNTY RD 5, FAIRPLAY, 80440",
+  "score": 97.6
+ },
+ "https://www.realtor.com/realestateandhomes-detail/22424-Highway-65_Cedaredge_CO_81413_M95692-32221": {
+  "kind": "road",
+  "lat": 39.02391,
+  "lon": -108.00123,
+  "matched": "State Hwy 65, 81413",
+  "score": 81.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/2250-Charlford-Ln_Sedalia_CO_80135_M92977-23971": {
+  "kind": "address",
+  "lat": 39.41929,
+  "lon": -104.92532,
+  "matched": "2250 CHARLFORD LN, SEDALIA, 80135",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/22511-Resort-Creek-Rd_Foxton_CO_80433_M96951-11766": {
+  "kind": "address",
+  "lat": 39.44247,
+  "lon": -105.25407,
+  "matched": "22511 RESORT CREEK RD, CONIFER, 80433",
+  "score": 97.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/2269-Running-Bear_Cotopaxi_CO_81223_M90410-57824": {
+  "kind": "address",
+  "lat": 38.28983,
+  "lon": -105.67038,
+  "matched": "2269 RUNNING BEAR, COTOPAXI, 81223",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/22732-Road-18_Yellow-Jacket_CO_81335_M90382-11554": {
+  "kind": "address",
+  "lat": 37.54027,
+  "lon": -108.71932,
+  "matched": "22732 Road 18, Yellow Jacket, 81335",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/22822-County-Road-6-S_Alamosa_CO_81101_M95234-61469": {
+  "kind": "address",
+  "lat": 37.48905,
+  "lon": -105.62446,
+  "matched": "22822 COUNTY RD 6 S, ALAMOSA",
+  "score": 97.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/22995-Bar-10-Way_Calhan_CO_80808_M92056-52600": {
+  "kind": "address",
+  "lat": 38.78019,
+  "lon": -104.39914,
+  "matched": "22995 BAR 10 WAY, CALHAN, 80808",
+  "score": 99.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/23047-Big-Game-Trl-4_Conifer_CO_80433_M96024-85465": {
+  "kind": "address",
+  "lat": 39.47287,
+  "lon": -105.26063,
+  "matched": "23047 BIG GAME TRL, CONIFER, 80433",
+  "score": 99.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/231-Bareback-Ln_Durango_CO_81303_M17522-19106": {
+  "kind": "address",
+  "lat": 37.19059,
+  "lon": -107.74638,
+  "matched": "231 Bareback Ln, Durango, 81303",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/2315-Ridge-Rd_Nederland_CO_80466_M26784-25313": {
+  "kind": "address",
+  "lat": 39.98068,
+  "lon": -105.47015,
+  "matched": "2315 RIDGE RD, UNINCORPORATED, 80466",
+  "score": 95.9
+ },
+ "https://www.realtor.com/realestateandhomes-detail/2345-Legacy-Ranch-Rd_Evergreen_CO_80439_M91593-92808": {
+  "kind": "address",
+  "lat": 39.67144,
+  "lon": -105.30927,
+  "matched": "2345 LEGACY RANCH RD, EVERGREEN, 80439",
+  "score": 99.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/23630-Black-Hills-Dr_Trinidad_CO_M96892-61939": {
+  "kind": "address",
+  "lat": 37.33075,
+  "lon": -104.50241,
+  "matched": "23630 BLACK HILLS DR, TRINIDAD, 81082",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/23802-County-Road-46-Aa_Saguache_CO_81149_M97631-67521": {
+  "kind": "address",
+  "lat": 38.09943,
+  "lon": -106.15144,
+  "matched": "23802 COUNTY RD 46 AA, SAGUACHE",
+  "score": 97.9
+ },
+ "https://www.realtor.com/realestateandhomes-detail/23895-County-Road-144-Lot-1_Agate_CO_80101_M90629-54610": {
+  "kind": "address",
+  "lat": 39.37942,
+  "lon": -104.21875,
+  "matched": "23895 COUNTY RD 144, Agate, 80101",
+  "score": 99.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/24007-Timber-Ridge-Trl-8_Weston_CO_81091_M97344-18497": {
+  "kind": "address",
+  "lat": 37.34386,
+  "lon": -105.02378,
+  "matched": "24007 TIMBER RIDGE TRL AT CORDOVA PASS, WESTON, 81091",
+  "score": 87.9
+ },
+ "https://www.realtor.com/realestateandhomes-detail/2403-Wrangler-Way_Durango_CO_81303_M18622-84083": {
+  "kind": "address",
+  "lat": 37.19495,
+  "lon": -107.74189,
+  "matched": "2403 Wrangler Wy, Durango, 81303",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/24105-State-Highway-86_Ramah_CO_80832_M23668-97962": {
+  "kind": "address",
+  "lat": 39.27639,
+  "lon": -104.21536,
+  "matched": "24105 STATE HWY 86, Ramah, 80832",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/24950-Cave-Spring-Trl-1A_Elbert_CO_80106_M94119-94608": {
+  "kind": "address",
+  "lat": 39.22838,
+  "lon": -104.6492,
+  "matched": "24950 CAVE SPRING, Elbert, 80106",
+  "score": 96.9
+ },
+ "https://www.realtor.com/realestateandhomes-detail/24950-Cave-Spring-Trl_Elbert_CO_80106_M19518-90026": {
+  "kind": "address",
+  "lat": 39.22838,
+  "lon": -104.6492,
+  "matched": "24950 CAVE SPRING, Elbert, 80106",
+  "score": 96.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/25035-Murphy-Rd_Calhan_CO_80808_M97532-37708": {
+  "kind": "address",
+  "lat": 39.0369,
+  "lon": -104.36748,
+  "matched": "25035 MURPHY ROAD, CALHAN, 80808",
+  "score": 99.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/2511-Taylor-Ranch-Rd_Durango_CO_81301_M18597-23343": {
+  "kind": "address",
+  "lat": 37.33042,
+  "lon": -107.77859,
+  "matched": "2511 Taylor Ranch Rd, Durango, 81301",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/25450-Road-N_Cortez_CO_81321_M93255-68760": {
+  "kind": "address",
+  "lat": 37.40026,
+  "lon": -108.58292,
+  "matched": "25450 Road N, Cortez, 81321",
+  "score": 99.1
+ },
+ "https://www.realtor.com/realestateandhomes-detail/2615-Echo-Canyon-Ranch-Ln_Pagosa-Springs_CO_81147_M21555-13337": {
+  "kind": "road",
+  "lat": 37.19634,
+  "lon": -107.00039,
+  "matched": "Echo Canyon Ranch Ln, 81147",
+  "score": 83.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/26464-E-Jewell-Ave_Aurora_CO_80018_M91610-46998": {
+  "kind": "address",
+  "lat": 39.68067,
+  "lon": -104.67905,
+  "matched": "26464 E JEWELL AVE, AURORA, 80018",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/26545-Richmond-Hill-Rd_Conifer_CO_80433_M98097-89220": {
+  "kind": "address",
+  "lat": 39.48602,
+  "lon": -105.30107,
+  "matched": "26545 Richmond Hill Rd, 80433",
+  "score": 97.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/267-County-Road-1E_Montrose_CO_81403_M26391-71557": {
+  "kind": "address",
+  "lat": 38.29399,
+  "lon": -107.80214,
+  "matched": "267 COUNTY ROAD 1E, MONTROSE, 81403",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/27-Acres-Adjoining-Homestead-Subdivision_Almont_CO_81210_M97768-00931": {
+  "kind": "road",
+  "lat": 38.66006,
+  "lon": -106.84636,
+  "matched": "Lochleven Ln, 81210",
+  "score": 85.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/2700-Emma-Rd_Basalt_CO_81621_M92750-80693": {
+  "kind": "address",
+  "lat": 39.36357,
+  "lon": -107.07797,
+  "matched": "2700 EMMA RD, PITKIN COUNTY, 81621",
+  "score": 96.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/275-Logging-Trail-Rd_Durango_CO_81303_M26165-27318": {
+  "kind": "address",
+  "lat": 37.24792,
+  "lon": -107.9433,
+  "matched": "275 Logging Trail Rd, Durango, 81303",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/27933-Private-Road-139_Simla_CO_80835_M93901-06555": {
+  "kind": "address",
+  "lat": 39.27228,
+  "lon": -104.02553,
+  "matched": "27933 PRIVATE RD 139, Simla, 80835",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/2809-Vista-Grande-Dr_Como_CO_80432_M90330-40845": {
+  "kind": "address",
+  "lat": 39.12964,
+  "lon": -105.80527,
+  "matched": "2559 VISTA GRANDE DR, COMO, 80432",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/281-Deer-Ln_Guffey_CO_80820_M97809-58295": {
+  "kind": "address",
+  "lat": 38.74541,
+  "lon": -105.57966,
+  "matched": "281 Deer Ln, 80820",
+  "score": 96.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/2816-Running-Horse-Pl_Chromo_CO_81128_M98075-78500": {
+  "kind": "road",
+  "lat": 37.04511,
+  "lon": -106.77345,
+  "matched": "Running Horse Pl, 81128",
+  "score": 82.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/2832-County-Road-20_Longmont_CO_80504_M95437-60155": {
+  "kind": "address",
+  "lat": 40.12907,
+  "lon": -105.00213,
+  "matched": "2832 CR 20, LONGMONT, 80504",
+  "score": 94.9
+ },
+ "https://www.realtor.com/realestateandhomes-detail/2833-County-Road-117_Glenwood-Springs_CO_81601_M91701-83261": {
+  "kind": "address",
+  "lat": 39.48866,
+  "lon": -107.31387,
+  "matched": "2833 Cr 117, Glenwood Springs, 81601",
+  "score": 95.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/28750-County-Road-304_Buena-Vista_CO_81211_M92414-32690": {
+  "kind": "address",
+  "lat": 38.84515,
+  "lon": -106.11407,
+  "matched": "28750 Co Rd 304, 81211",
+  "score": 96.6
+ },
+ "https://www.realtor.com/realestateandhomes-detail/2879-County-Road-10_Ridgway_CO_81432_M99236-23672": {
+  "kind": "address",
+  "lat": 38.18198,
+  "lon": -107.69527,
+  "matched": "2879 COUNTY ROAD 10, RIDGWAY, 81432",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/28920-Sanborn-Rd_Yoder_CO_80864_M90136-60954": {
+  "kind": "address",
+  "lat": 38.79625,
+  "lon": -104.29339,
+  "matched": "28920 SANBORN ROAD, YODER, 80808",
+  "score": 98.6
+ },
+ "https://www.realtor.com/realestateandhomes-detail/29-McMurtrie-Rd_Cotopaxi_CO_81223_M28900-06660": {
+  "kind": "address",
+  "lat": 38.26763,
+  "lon": -105.55775,
+  "matched": "29 MCMURTRIE ROAD, COTOPAXI, 81223",
+  "score": 97.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/2904-Siloam-Rd_Beulah_CO_81023_M14868-99506": {
+  "kind": "address",
+  "lat": 38.18276,
+  "lon": -104.95645,
+  "matched": "2904 Siloam Rd, 81023",
+  "score": 95.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/2940-County-Road-5_Divide_CO_80814_M95146-92764": {
+  "kind": "address",
+  "lat": 38.98497,
+  "lon": -105.15516,
+  "matched": "2940 COUNTY ROAD 5, DIVIDE, 80814",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/29477-County-Road-8_Meeker_CO_81641_M92774-47513": {
+  "kind": "address",
+  "lat": 40.04591,
+  "lon": -107.47451,
+  "matched": "29477 Co Rd 8, 81641",
+  "score": 97.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/29545-State-Highway-67_Woodland-Park_CO_80863_M11404-63259": {
+  "kind": "address",
+  "lat": 39.0598,
+  "lon": -105.09227,
+  "matched": "29545 State Hwy 67, 80863",
+  "score": 95.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/2973-Driftwood-Rd_Westcliffe_CO_81252_M99867-51917": {
+  "kind": "road",
+  "lat": 38.18712,
+  "lon": -105.38198,
+  "matched": "Driftwood Rd, 81252",
+  "score": 82.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/2975-County-Road-8_Julesburg_CO_80737_M91615-10052": {
+  "kind": "road",
+  "lat": 40.7928,
+  "lon": -102.23083,
+  "matched": "Co Rd 8, 80737",
+  "score": 83.1
+ },
+ "https://www.realtor.com/realestateandhomes-detail/298-Steven-Rd_Canon-City_CO_81212_M16957-48732": {
+  "kind": "address",
+  "lat": 38.62631,
+  "lon": -105.60425,
+  "matched": "298 STEVEN ROAD, CANON CITY, 81212",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/29870-County-Road-16_Trinidad_CO_81082_M96568-51591": {
+  "kind": "address",
+  "lat": 37.10222,
+  "lon": -104.61926,
+  "matched": "29870 COUNTY RD 16, TRINIDAD, 81082",
+  "score": 99.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/2994-Vista-Grande-Ct_Como_CO_80432_M95920-91370": {
+  "kind": "address",
+  "lat": 39.13126,
+  "lon": -105.8078,
+  "matched": "2994 Vista Grande Dr, 80432",
+  "score": 89.9
+ },
+ "https://www.realtor.com/realestateandhomes-detail/29995-Darroll-Rd_Yoder_CO_80864_M95540-98288": {
+  "kind": "address",
+  "lat": 38.64063,
+  "lon": -104.27298,
+  "matched": "29995 DARROLL ROAD, YODER, 80864",
+  "score": 99.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/2A-Beaver-Pines-Loop_Norwood_CO_81423_M90601-93998": {
+  "kind": "address",
+  "lat": 38.04681,
+  "lon": -108.23273,
+  "matched": "2A Beaver Pines Loop, 81423",
+  "score": 95.9
+ },
+ "https://www.realtor.com/realestateandhomes-detail/3-Peyton-Hwy_Peyton_CO_80831_M97355-26695": {
+  "kind": "road",
+  "lat": 39.07273,
+  "lon": -104.47863,
+  "matched": "Peyton Hwy, 80831",
+  "score": 86.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/300-Shining-Star-Trl_Boulder_CO_80302_M15360-11187": {
+  "kind": "address",
+  "lat": 40.04271,
+  "lon": -105.40224,
+  "matched": "300 SHINING STAR TRL, UNINCORPORATED, 80302",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/300-Whipple-Way_Telluride_CO_81435_M29857-49103": {
+  "kind": "road",
+  "lat": 37.97945,
+  "lon": -107.94353,
+  "matched": "Whipple Way, 81435",
+  "score": 83.1
+ },
+ "https://www.realtor.com/realestateandhomes-detail/30005-County-Road-14_Steamboat-Springs_CO_80487_M90945-58924": {
+  "kind": "address",
+  "lat": 40.47743,
+  "lon": -106.80541,
+  "matched": "131 Steamboat Blvd, 80487",
+  "score": 88.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/301-Wilder-Mountain-Rd_Almont_CO_81210_M92643-95780": {
+  "kind": "address",
+  "lat": 38.71108,
+  "lon": -106.79218,
+  "matched": "301 WILDER MOUNTAIN RD, GUNNISON COUNTY, 81210",
+  "score": 97.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/304-Hazel-Ct_Canon-City_CO_81212_M92536-63511": {
+  "kind": "road",
+  "lat": 38.57301,
+  "lon": -105.53021,
+  "matched": "Hazel Ct, 81212",
+  "score": 81.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/30451-County-Road-361-Lot-3_Buena-Vista_CO_81211_M98790-19083": {
+  "kind": "address",
+  "lat": 38.85953,
+  "lon": -106.18363,
+  "matched": "30451 Co Rd 361, 81211",
+  "score": 96.9
+ },
+ "https://www.realtor.com/realestateandhomes-detail/30500-Magic-Dog-Cir_Kiowa_CO_80117_M29407-89746": {
+  "kind": "address",
+  "lat": 39.31134,
+  "lon": -104.34435,
+  "matched": "30500 MAGIC DOG, Kiowa, 80117",
+  "score": 96.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/30625-County-Road-14E_Steamboat-Springs_CO_80487_M98167-09763": {
+  "kind": "address",
+  "lat": 40.36435,
+  "lon": -106.84549,
+  "matched": "30625 County Road 14E, STEAMBOAT SPRINGS, 80487",
+  "score": 99.6
+ },
+ "https://www.realtor.com/realestateandhomes-detail/307-Natures-Way_Pagosa-Springs_CO_81147_M21406-44778": {
+  "kind": "address",
+  "lat": 37.19285,
+  "lon": -107.13873,
+  "matched": "307 Nature's Way Ct, 81147",
+  "score": 87.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/30800-E-168th-Ave_Hudson_CO_80642_M90432-77357": {
+  "kind": "address",
+  "lat": 39.99935,
+  "lon": -104.62629,
+  "matched": "30800 E 168th Ave",
+  "score": 94.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/3107-A-12-Rd-Unit-LAND-OTHER_Grand-Junction_CO_81503_M90062-63338": {
+  "kind": "address",
+  "lat": 39.02669,
+  "lon": -108.47775,
+  "matched": "3107 A 1/2 Rd, 81503",
+  "score": 93.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/31190-Lon-Vw_Yoder_CO_80864_M97488-14911": {
+  "kind": "address",
+  "lat": 38.60226,
+  "lon": -104.2518,
+  "matched": "31190 LON VIEW, YODER, 80864",
+  "score": 99.1
+ },
+ "https://www.realtor.com/realestateandhomes-detail/3130-County-Road-301_Durango_CO_81303_M97482-37851": {
+  "kind": "address",
+  "lat": 37.17047,
+  "lon": -107.8215,
+  "matched": "3130 Co Rd 301, 81303",
+  "score": 97.1
+ },
+ "https://www.realtor.com/realestateandhomes-detail/31572-Highway-9_Fairplay_CO_80440_M91732-42410": {
+  "kind": "road",
+  "lat": 39.08467,
+  "lon": -105.86821,
+  "matched": "State Hwy 9, 80440",
+  "score": 81.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/31861-E-Highway-160_Bayfield_CO_81122_M93529-32008": {
+  "kind": "address",
+  "lat": 37.28956,
+  "lon": -107.48298,
+  "matched": "31861E E E Hwy 160, Bayfield, 81122",
+  "score": 89.6
+ },
+ "https://www.realtor.com/realestateandhomes-detail/3197-N-70-Frontage-Rd_Clifton_CO_81520_M95348-79027": {
+  "kind": "road",
+  "lat": 39.09738,
+  "lon": -108.44851,
+  "matched": "Frontage Rd, 81520",
+  "score": 81.9
+ },
+ "https://www.realtor.com/realestateandhomes-detail/32-Tee-Ln_Hartsel_CO_80449_M98067-05418": {
+  "kind": "address",
+  "lat": 39.03426,
+  "lon": -105.61578,
+  "matched": "32 TEE LN, HARTSEL, 80449",
+  "score": 99.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/32394-E-120th-Ave_Hudson_CO_80642_M97702-10830": {
+  "kind": "address",
+  "lat": 39.91344,
+  "lon": -104.60177,
+  "matched": "32394 E 120th Ave, 80642",
+  "score": 97.0
+ },
+ "https://www.realtor.com/realestateandhomes-detail/3255-N-Rampart-Range-Rd_Littleton_CO_80125_M27095-87191": {
+  "kind": "address",
+  "lat": 39.40962,
+  "lon": -105.06037,
+  "matched": "3255 N RAMPART RANGE RD, LITTLETON, 80125",
+  "score": 99.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/326-Spring-Valley-Dr_Florissant_CO_80816_M99036-42656": {
+  "kind": "road",
+  "lat": 38.80493,
+  "lon": -105.29033,
+  "matched": "Spring Valley Dr, 80816",
+  "score": 86.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/3279-County-Road-237_Durango_CO_81301_M23249-49625": {
+  "kind": "address",
+  "lat": 37.28809,
+  "lon": -107.82955,
+  "matched": "3279 CR 237, Durango, 81301",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/33016-County-Road-95_Crook_CO_80726_M15731-12874": {
+  "kind": "address",
+  "lat": 40.92475,
+  "lon": -102.67326,
+  "matched": "33016 Co Rd 95, 80726",
+  "score": 97.6
+ },
+ "https://www.realtor.com/realestateandhomes-detail/33191-Elk-Park-Rd-Lot-C44_Trinidad_CO_81082_M99641-68493": {
+  "kind": "address",
+  "lat": 37.07728,
+  "lon": -104.54871,
+  "matched": "33191 ELK PARK RD, TRINIDAD, 81082",
+  "score": 99.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/3334-Cimarron-Dr_Hartsel_CO_80449_M27692-54306": {
+  "kind": "address",
+  "lat": 39.08898,
+  "lon": -105.80127,
+  "matched": "3334 CIMARRON DR, HARTSEL, 80449",
+  "score": 99.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/3334-Cimarron-Dr_Hartsel_CO_80449_M99917-46700": {
+  "kind": "address",
+  "lat": 39.08898,
+  "lon": -105.80127,
+  "matched": "3334 CIMARRON DR, HARTSEL, 80449",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/33400-Painted-Pony-Ln-Lot-4_Steamboat-Springs_CO_80487_M95945-69810": {
+  "kind": "address",
+  "lat": 40.40173,
+  "lon": -106.79893,
+  "matched": "33400 Painted Pony Ln, 80487",
+  "score": 94.9
+ },
+ "https://www.realtor.com/realestateandhomes-detail/33455-Fossinger-Rd_Yoder_CO_80864_M22206-54694": {
+  "kind": "address",
+  "lat": 38.75157,
+  "lon": -104.2081,
+  "matched": "33455 FOSSINGER ROAD, YODER, 80864",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/3375-Timbergate-Trl-4_Evergreen_CO_80439_M90844-28591": {
+  "kind": "address",
+  "lat": 39.65289,
+  "lon": -105.32722,
+  "matched": "3375 TIMBERGATE TRL, EVERGREEN, 80439",
+  "score": 99.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/33rd-St-Lot-1_Blanca_CO_81123_M93864-73261": {
+  "kind": "road",
+  "lat": 37.37039,
+  "lon": -105.59272,
+  "matched": "33th St, 81123",
+  "score": 81.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/3448-County-Road-352A_Canon-City_CO_81212_M11151-13431": {
+  "kind": "address",
+  "lat": 38.68435,
+  "lon": -105.41685,
+  "matched": "3448 COUNTY RD 352A, CANON CITY, 81212",
+  "score": 99.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/345-Ridge-Rd_Cotopaxi_CO_81223_M98562-05773": {
+  "kind": "address",
+  "lat": 38.27055,
+  "lon": -105.56221,
+  "matched": "345 RIDGEWAY ROAD, COTOPAXI, 81223",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/3471-40th-Ln_Avondale_CO_81022_M93581-98945": {
+  "kind": "address",
+  "lat": 38.15876,
+  "lon": -104.42346,
+  "matched": "3471 40th Ln, 81022",
+  "score": 96
+ },
+ "https://www.realtor.com/realestateandhomes-detail/34797-Powell-Mesa-Rd_Hotchkiss_CO_81419_M94412-80868": {
+  "kind": "address",
+  "lat": 38.8333,
+  "lon": -107.70958,
+  "matched": "34797 POWELL MESA RD, HOTCHKISS",
+  "score": 97.9
+ },
+ "https://www.realtor.com/realestateandhomes-detail/3489-Ute-Trce_Hartsel_CO_80449_M22891-33385": {
+  "kind": "road",
+  "lat": 39.12772,
+  "lon": -105.66525,
+  "matched": "Ute Trce, 80449",
+  "score": 81.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/354-Snowmass-Creek-Rd_Snowmass_CO_81654_M22447-35557": {
+  "kind": "address",
+  "lat": 39.32673,
+  "lon": -106.98337,
+  "matched": "354 SNOWMASS CREEK RD, PITKIN COUNTY, 81654",
+  "score": 97.0
+ },
+ "https://www.realtor.com/realestateandhomes-detail/35460-Rancho-Herrera-Vw_Yoder_CO_80864_M94662-00409": {
+  "kind": "address",
+  "lat": 38.8508,
+  "lon": -104.17201,
+  "matched": "35460 RANCHO HERRERA VIEW, YODER, 80864",
+  "score": 99.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/357-Taylor-Trl_Canon-City_CO_81212_M17763-25493": {
+  "kind": "address",
+  "lat": 38.6293,
+  "lon": -105.50852,
+  "matched": "357 TAYLOR TRAIL, CANON CITY, 81212",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/35800-Hanisch-Rd_Calhan_CO_80808_M96620-21909": {
+  "kind": "address",
+  "lat": 38.97055,
+  "lon": -104.16381,
+  "matched": "35800 HANISCH ROAD, CALHAN, 80808",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/3595-Overton-Rd_Pueblo_CO_81008_M22840-44125": {
+  "kind": "address",
+  "lat": 38.3896,
+  "lon": -104.60355,
+  "matched": "3595 OVERTON RD, PUEBLO, 81008",
+  "score": 99.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/3604-Timberlane-Dr_Craig_CO_81625_M92481-29671": {
+  "kind": "road",
+  "lat": 40.88493,
+  "lon": -107.40612,
+  "matched": "Timberlane Dr, 81625",
+  "score": 86.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/36060-Hanisch-Rd_Calhan_CO_80808_M94040-29454": {
+  "kind": "address",
+  "lat": 38.9705,
+  "lon": -104.15886,
+  "matched": "36060 HANISCH ROAD, CALHAN, 80808",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/361-Golden-Ridge-Dr_Ridgway_CO_81432_M99333-19762": {
+  "kind": "address",
+  "lat": 38.07731,
+  "lon": -107.72535,
+  "matched": "361 GOLDEN RIDGE DR, RIDGWAY, 81432",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/3665-Beaver-Brook-Canyon-Rd_Evergreen_CO_80439_M94354-63904": {
+  "kind": "address",
+  "lat": 39.71833,
+  "lon": -105.45366,
+  "matched": "3665 Beaver Brook Canyon RD, Evergreen, 80439",
+  "score": 99.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/3682-Powers-Rd_Fort-Garland_CO_81133_M20445-21298": {
+  "kind": "address",
+  "lat": 37.52821,
+  "lon": -105.21986,
+  "matched": "3682 Powers Rd, 81133",
+  "score": 95.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/369-Park-Mesa_Carbondale_CO_81623_M98164-15376": {
+  "kind": "address",
+  "lat": 39.44163,
+  "lon": -107.11136,
+  "matched": "369 Park Mesa, 81623",
+  "score": 95.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/369-Summit-Rd_Hartsel_CO_80449_M97533-43320": {
+  "kind": "road",
+  "lat": 39.07167,
+  "lon": -105.61336,
+  "matched": "Summit Rd, 80449",
+  "score": 83.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/37150-E-Jones-Rd_Yoder_CO_80864_M91517-50889": {
+  "kind": "address",
+  "lat": 38.89787,
+  "lon": -104.13548,
+  "matched": "37150 EAST JONES ROAD, YODER, 80833",
+  "score": 98.6
+ },
+ "https://www.realtor.com/realestateandhomes-detail/37300-Kunzite-Rd_Trinidad_CO_81082_M98825-04212": {
+  "kind": "address",
+  "lat": 37.18816,
+  "lon": -104.45689,
+  "matched": "37300 KUNZITE RD, TRINIDAD, 81082",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/376-Copeland_Guffey_CO_80820_M98541-80663": {
+  "kind": "address",
+  "lat": 38.76981,
+  "lon": -105.46512,
+  "matched": "376 COPELAND RD, GUFFEY, 80820",
+  "score": 99.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/380-13th-St_Penrose_CO_81240_M91248-06912": {
+  "kind": "address",
+  "lat": 38.40932,
+  "lon": -105.03441,
+  "matched": "380 13TH STREET, PENROSE, 81240",
+  "score": 99.1
+ },
+ "https://www.realtor.com/realestateandhomes-detail/380-Buck-Ridge-Rd_Canon-City_CO_81212_M95892-22818": {
+  "kind": "address",
+  "lat": 38.28556,
+  "lon": -105.28976,
+  "matched": "380 BUCK RIDGE, CANON CITY, 81212",
+  "score": 96.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/3802-Fourth-of-July-Rd_Nederland_CO_80466_M99587-54438": {
+  "kind": "address",
+  "lat": 39.98752,
+  "lon": -105.62504,
+  "matched": "3802 4th of July Rd, 80466",
+  "score": 95.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/38938-NF250_Antonito_CO_81120_M96849-62339": {
+  "kind": "address",
+  "lat": 37.13403,
+  "lon": -106.35479,
+  "matched": "250 NFS Rd 250, 81120",
+  "score": 92.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/39080-County-Road-21_Elizabeth_CO_80107_M99402-73329": {
+  "kind": "address",
+  "lat": 39.43532,
+  "lon": -104.57019,
+  "matched": "39080 COUNTY RD 21, Elizabeth, 80107",
+  "score": 99.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/39414-LA-Garita-Dr_Del-Norte_CO_81132_M94302-94072": {
+  "kind": "address",
+  "lat": 37.79689,
+  "lon": -106.28628,
+  "matched": "39414 La Garita Rd, 81132",
+  "score": 89.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/4-County-Road-51_Ault_CO_80610_M94572-03838": {
+  "kind": "road",
+  "lat": 40.75414,
+  "lon": -104.58141,
+  "matched": "Co Rd 51, 80610",
+  "score": 89.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/4-Roosevelt-Ridge-Rd_Black-Hawk_CO_80422_M97983-22096": {
+  "kind": "address",
+  "lat": 39.88202,
+  "lon": -105.48475,
+  "matched": "4 Roosevelt Rdg, 80422",
+  "score": 96.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/400-Forest-Service-Rd-550_Almont_CO_81210_M91157-71891": {
+  "kind": "address",
+  "lat": 38.81576,
+  "lon": -106.71266,
+  "matched": "400 FOREST SERVICE ROAD 550, GUNNISON COUNTY, 81210",
+  "score": 97.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/4030-Secret-Sub-Cyn-Div_Dove-Creek_CO_81324_M94581-57273": {
+  "kind": "road",
+  "lat": 37.73537,
+  "lon": -108.90784,
+  "matched": "Dove Crk",
+  "score": 81.9
+ },
+ "https://www.realtor.com/realestateandhomes-detail/404-Forest-Service-Rd-6802A_Gunnison_CO_81230_M97520-45825": {
+  "kind": "address",
+  "lat": 38.52624,
+  "lon": -106.52602,
+  "matched": "404 FOREST SERVICE ROAD 680.2A, GUNNISON COUNTY, 81230",
+  "score": 98.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/409-Wind-Dancer-Cir_Florissant_CO_80816_M92621-64853": {
+  "kind": "address",
+  "lat": 38.84562,
+  "lon": -105.24059,
+  "matched": "409 WIND DANCER CIRCLE, FLORISSANT, 80816",
+  "score": 99.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/40AC-County-Road-125_San-Luis_CO_81152_M92676-80556": {
+  "kind": "road",
+  "lat": 37.10213,
+  "lon": -105.55709,
+  "matched": "Rd 12, 81152",
+  "score": 84.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/410-Pearl-Creek-Rd_Red-Feather-Lakes_CO_80545_M22971-66109": {
+  "kind": "road",
+  "lat": 40.84417,
+  "lon": -105.67899,
+  "matched": "Pearl Creek Rd, 80545",
+  "score": 81.1
+ },
+ "https://www.realtor.com/realestateandhomes-detail/410-S44-Rd_Norwood_CO_81423_M29953-63716": {
+  "kind": "road",
+  "lat": 38.04036,
+  "lon": -108.25457,
+  "matched": "N Gurley Lake Dr, 81423",
+  "score": 88.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/412-Kootchie-Kootchie-Rd_Alma_CO_80420_M93180-86685": {
+  "kind": "address",
+  "lat": 39.27202,
+  "lon": -106.08172,
+  "matched": "412 KOOTCHIE KOOTCHIE RD, ALMA, 80420",
+  "score": 99.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/41583-Bijou-View-St-Lot-3_Agate_CO_80101_M95234-34029": {
+  "kind": "address",
+  "lat": 39.47009,
+  "lon": -103.98911,
+  "matched": "41583 BIJOU VIEW, Agate, 80101",
+  "score": 96.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/417-Andesite-Way_Hartsel_CO_80449_M93293-56133": {
+  "kind": "address",
+  "lat": 39.16648,
+  "lon": -105.72687,
+  "matched": "417 ANDESITE WAY, HARTSEL, 80449",
+  "score": 99.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/417-Kicking-Horse-Trl_Edwards_CO_81632_M19445-30844": {
+  "kind": "address",
+  "lat": 39.6193,
+  "lon": -106.72191,
+  "matched": "417 KICKING HORSE TRL, EDWARDS AREA",
+  "score": 95.1
+ },
+ "https://www.realtor.com/realestateandhomes-detail/41824-Undercliffe-Rd_Avondale_CO_81022_M20650-72779": {
+  "kind": "address",
+  "lat": 38.09757,
+  "lon": -104.41053,
+  "matched": "41824 UNDERCLIFF RD, AVONDALE, 81022",
+  "score": 97.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/420-Saddle-Horn-Way_Edwards_CO_81632_M13526-25118": {
+  "kind": "road",
+  "lat": 39.61601,
+  "lon": -106.62466,
+  "matched": "Saddlehorn Way, 81632",
+  "score": 85
+ },
+ "https://www.realtor.com/realestateandhomes-detail/422-Santa-Maria-Dr_Como_CO_80432_M94256-06535": {
+  "kind": "address",
+  "lat": 39.16725,
+  "lon": -105.80312,
+  "matched": "422 SANTA MARIA DR, COMO, 80432",
+  "score": 99.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/4250-Doe-Valley-Rd_Guffey_CO_80820_M99298-74897": {
+  "kind": "address",
+  "lat": 38.81002,
+  "lon": -105.35396,
+  "matched": "4250 DOE VALLEY RD, GUFFEY, 80820",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/4318-Green-Mile-Dr_Laporte_CO_80535_M21233-93796": {
+  "kind": "address",
+  "lat": 40.65188,
+  "lon": -105.1566,
+  "matched": "4318 Green Mile Dr, 80535",
+  "score": 96.9
+ },
+ "https://www.realtor.com/realestateandhomes-detail/433-Antler-Hill-Trl_Canon-City_CO_81212_M97590-98063": {
+  "kind": "address",
+  "lat": 38.62776,
+  "lon": -105.32633,
+  "matched": "433 ANTLER HILL TRAIL, CANON CITY, 81212",
+  "score": 99.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/43310-E-144th-Ave_Bennett_CO_80102_M93454-51743": {
+  "kind": "address",
+  "lat": 39.95567,
+  "lon": -104.42792,
+  "matched": "43310 E 144th Ave, 80102",
+  "score": 96.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/436-Fox-Farm-Rd_Larkspur_CO_80118_M97826-39275": {
+  "kind": "address",
+  "lat": 39.2126,
+  "lon": -104.89329,
+  "matched": "436 FOX FARM RD, LARKSPUR, 80118",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/4360-Highway-79_Bennett_CO_80102_M96436-95904": {
+  "kind": "address",
+  "lat": 39.7791,
+  "lon": -104.40964,
+  "matched": "4360 HWY 79",
+  "score": 95.0
+ },
+ "https://www.realtor.com/realestateandhomes-detail/44145-E-Iliff-Trl-1_Bennett_CO_80102_M98870-50907": {
+  "kind": "address",
+  "lat": 39.67276,
+  "lon": -104.4734,
+  "matched": "44145 E ILIFF TRL, BENNETT, 80102",
+  "score": 99.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/450-Desert-Rd_Whitewater_CO_81527_M94117-57303": {
+  "kind": "address",
+  "lat": 38.97631,
+  "lon": -108.44419,
+  "matched": "450 DESERT RD, WHITEWATER, 81527",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/45000-Highway-159_San-Luis_CO_81152_M96275-82012": {
+  "kind": "road",
+  "lat": 37.14772,
+  "lon": -105.52168,
+  "matched": "State Hwy 159, 81152",
+  "score": 83.1
+ },
+ "https://www.realtor.com/realestateandhomes-detail/4501-Lakota-Rd_Indian-Hills_CO_80454_M98885-81229": {
+  "kind": "road",
+  "lat": 39.64862,
+  "lon": -105.25546,
+  "matched": "Lakota Rd, 80454",
+  "score": 80.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/45115-Cottonwood-Ln_Deer-Trail_CO_80105_M17671-48719": {
+  "kind": "address",
+  "lat": 39.52414,
+  "lon": -104.12981,
+  "matched": "45115 COTTONWOOD, Deer Trail, 80105",
+  "score": 96.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/455-High-Llama-Ln_Durango_CO_81301_M18186-56275": {
+  "kind": "address",
+  "lat": 37.23783,
+  "lon": -107.83331,
+  "matched": "589 High Llama Ln, Durango, 81301",
+  "score": 97.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/45744-County-Road-648_Model_CO_81059_M97375-60850": {
+  "kind": "address",
+  "lat": 37.50056,
+  "lon": -104.32397,
+  "matched": "45744 COUNTY RD 64.8, MODEL, 81059",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/458-E-Beaver-Pines-Loop_Norwood_CO_81423_M99420-55362": {
+  "kind": "road",
+  "lat": 38.0534,
+  "lon": -108.22876,
+  "matched": "Beaver Pines Loop, 81423",
+  "score": 86.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/4625-Road-31_Dolores_CO_81323_M90362-32335": {
+  "kind": "address",
+  "lat": 37.82561,
+  "lon": -108.34631,
+  "matched": "4625 Road 31, #20, Cahone, 81320",
+  "score": 90.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/465-Oversteeg-Gulch-Rd_Crested-Butte_CO_81224_M92557-16821": {
+  "kind": "road",
+  "lat": 38.78537,
+  "lon": -106.90157,
+  "matched": "Oversteeg Gulch Rd, 81224",
+  "score": 86
+ },
+ "https://www.realtor.com/realestateandhomes-detail/47081-E-106th-Ave_Bennett_CO_80102_M16280-82707": {
+  "kind": "address",
+  "lat": 39.8868,
+  "lon": -104.43817,
+  "matched": "47081 E 106th Ave, 80102",
+  "score": 96.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/4730_Loveland_CO_80538_M95858-45747": {
+  "kind": "address",
+  "lat": 40.52642,
+  "lon": -105.30324,
+  "matched": "5125 Big Bear Rd, 80538",
+  "score": 95.1
+ },
+ "https://www.realtor.com/realestateandhomes-detail/47652-Rolling-Vista-Trl-5_Elizabeth_CO_80107_M94816-53181": {
+  "kind": "address",
+  "lat": 39.55908,
+  "lon": -104.46308,
+  "matched": "47652 ROLLING VISTA, Elizabeth, 80107",
+  "score": 95.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/47682-Knibbe-Ct_Parker_CO_80138_M99896-65442": {
+  "kind": "address",
+  "lat": 39.55795,
+  "lon": -104.64575,
+  "matched": "47682 KNIBBE Court, Parker, 80138",
+  "score": 99.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/4851-County-Road-516_Bayfield_CO_81122_M99528-24591": {
+  "kind": "address",
+  "lat": 37.20134,
+  "lon": -107.60531,
+  "matched": "4851 CR 516, Bayfield, 81122",
+  "score": 99.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/48686-State-Highway-14_Walden_CO_80480_M96117-89075": {
+  "kind": "address",
+  "lat": 40.62381,
+  "lon": -106.11544,
+  "matched": "48686 State Hwy 14, 80480",
+  "score": 97.0
+ },
+ "https://www.realtor.com/realestateandhomes-detail/4950-Little-Turkey-Creek-Rd_Colorado-Springs_CO_80926_M97454-32388": {
+  "kind": "address",
+  "lat": 38.67088,
+  "lon": -104.92285,
+  "matched": "4950 Little Turkey Creek Rd, 80926",
+  "score": 96.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/49600-E-Mississippi-Ave_Bennett_CO_80102_M27044-28380": {
+  "kind": "address",
+  "lat": 39.69435,
+  "lon": -104.40669,
+  "matched": "49600 E MISSISSIPPI AVE, BENNETT, 80102",
+  "score": 99.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/497-Ten-High-Ln_Fairplay_CO_80440_M94156-99788": {
+  "kind": "address",
+  "lat": 39.27269,
+  "lon": -106.03416,
+  "matched": "497 TEN HIGH LN, FAIRPLAY, 80440",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/50-Aspen-Dr_Tabernash_CO_80478_M91094-67842": {
+  "kind": "address",
+  "lat": 40.00317,
+  "lon": -105.90797,
+  "matched": "50 Aspen Ln, 80447",
+  "score": 82.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/500-Cottonwood-Dr_Cotopaxi_CO_81223_M28836-67444": {
+  "kind": "address",
+  "lat": 38.40469,
+  "lon": -105.49038,
+  "matched": "500 COTTONWOOD DRIVE, COTOPAXI, 81223",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/5295-Kulsa-Rd_Cascade_CO_80809_M99304-74328": {
+  "kind": "address",
+  "lat": 38.90932,
+  "lon": -104.98491,
+  "matched": "5295 KULSA ROAD, CASCADE, 80809",
+  "score": 99.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/5344-Antelope-Rd_Pueblo_CO_81008_M14902-53441": {
+  "kind": "address",
+  "lat": 38.49037,
+  "lon": -104.687,
+  "matched": "5344 Antelope Rd, 80817",
+  "score": 95.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/5347-Monitor-Lode-Claims_Leadville_CO_80461_M98124-18074": {
+  "kind": "address",
+  "lat": 39.26609,
+  "lon": -106.2403,
+  "matched": "5347 MONITOR LODE CLAIMS, Leadville, 80461",
+  "score": 99.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/5347-Monitor_Leadville_CO_80461_M90977-47437": {
+  "kind": "address",
+  "lat": 39.26609,
+  "lon": -106.2403,
+  "matched": "5347 MONITOR, Leadville, 80461",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/5350-N-Yoder-Rd_Calhan_CO_80808_M95021-75728": {
+  "kind": "address",
+  "lat": 38.90901,
+  "lon": -104.22233,
+  "matched": "5350 NORTH YODER ROAD, CALHAN, 80808",
+  "score": 99.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/54157-Bull-Basin-Rd_Mesa_CO_81643_M93828-99009": {
+  "kind": "address",
+  "lat": 39.12609,
+  "lon": -108.054,
+  "matched": "54157 BULL BASIN RD, MESA, 81643",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/54215-County-Road-21_Carr_CO_80612_M94810-65650": {
+  "kind": "address",
+  "lat": 40.78493,
+  "lon": -104.86775,
+  "matched": "54215 CR 21, CARR, 80612",
+  "score": 94.6
+ },
+ "https://www.realtor.com/realestateandhomes-detail/5561-Hidden-Spgs_Fort-Collins_CO_80526_M92249-04765": {
+  "kind": "address",
+  "lat": 40.50871,
+  "lon": -105.13474,
+  "matched": "5561 Hidden Springs Rd, 80526",
+  "score": 90.1
+ },
+ "https://www.realtor.com/realestateandhomes-detail/5637-County-Road-H_Wiggins_CO_80654_M91975-70604": {
+  "kind": "road",
+  "lat": 40.10253,
+  "lon": -104.03743,
+  "matched": "Co Rd H, 80654",
+  "score": 84.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/5644-Kiva-Ridge-Dr_Berthoud_CO_80513_M23638-64625": {
+  "kind": "address",
+  "lat": 40.33419,
+  "lon": -105.18204,
+  "matched": "5644 Kiva Ridge Dr, 80513",
+  "score": 96.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/5675-Antero-Dr_Fairplay_CO_80440_M96148-30575": {
+  "kind": "address",
+  "lat": 39.0141,
+  "lon": -105.91851,
+  "matched": "5675 Antero Dr, 80449",
+  "score": 94.6
+ },
+ "https://www.realtor.com/realestateandhomes-detail/57075-E-Maplewood-Pl_Strasburg_CO_80136_M26674-75607": {
+  "kind": "address",
+  "lat": 39.60625,
+  "lon": -104.32148,
+  "matched": "57075 E MAPLEWOOD PL, STRASBURG, 80136",
+  "score": 99.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/5725-Rd_Olathe_CO_81425_M91472-56012": {
+  "kind": "road",
+  "lat": 38.64233,
+  "lon": -108.01798,
+  "matched": "5725 Rd, 81425",
+  "score": 85.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/5771-Obenchain-Rd_Laporte_CO_80535_M13096-61001": {
+  "kind": "road",
+  "lat": 40.72853,
+  "lon": -105.21207,
+  "matched": "Obenchain Rd, 80535",
+  "score": 84.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/584-County-Road-331_Silt_CO_81652_M92097-46892": {
+  "kind": "road",
+  "lat": 39.40842,
+  "lon": -107.62467,
+  "matched": "Co Rd 331, 81652",
+  "score": 88.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/586-Cuesta-Dr_Cotopaxi_CO_81223_M97748-66091": {
+  "kind": "address",
+  "lat": 38.56448,
+  "lon": -105.66274,
+  "matched": "586 CUESTA DRIVE, COTOPAXI, 81223",
+  "score": 99.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/597-County-Road-4081_Granby_CO_80446_M20968-51914": {
+  "kind": "address",
+  "lat": 40.18364,
+  "lon": -105.99315,
+  "matched": "597 COUNTY RD 4081, GRANBY, 80446",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/6-Calhan-Highway_Calhan_CO_80808_M92544-60560": {
+  "kind": "address",
+  "lat": 38.83901,
+  "lon": -104.25913,
+  "matched": "6 S Calhan Hwy, 80864",
+  "score": 89.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/6-E-1st-St-Unit-36T41N_Creede_CO_81130_M98755-03590": {
+  "kind": "road",
+  "lat": 37.74463,
+  "lon": -107.0841,
+  "matched": "State Hwy 149, 81130",
+  "score": 86.9
+ },
+ "https://www.realtor.com/realestateandhomes-detail/60-Hill-Dr_Hartsel_CO_80449_M94443-73935": {
+  "kind": "address",
+  "lat": 38.87032,
+  "lon": -105.66642,
+  "matched": "60 HILL RD, HARTSEL, 80449",
+  "score": 99.1
+ },
+ "https://www.realtor.com/realestateandhomes-detail/6000-County-Road-43-12_Hudson_CO_80642_M98189-46744": {
+  "kind": "address",
+  "lat": 40.08798,
+  "lon": -104.65096,
+  "matched": "6000 CR 43 1/2, HUDSON, 80642",
+  "score": 94.9
+ },
+ "https://www.realtor.com/realestateandhomes-detail/6045-Reno-Rd_Pueblo_CO_81004_M99767-18479": {
+  "kind": "road",
+  "lat": 38.0882,
+  "lon": -104.64396,
+  "matched": "Reno Rd, 81004",
+  "score": 81.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/6060-Coyote-Ln_Peyton_CO_80831_M24949-62205": {
+  "kind": "address",
+  "lat": 38.91936,
+  "lon": -104.43682,
+  "matched": "6060 COYOTE LANE, PEYTON, 80831",
+  "score": 99.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/6179-84-County-Rd_Florence_CO_81226_M91306-80708": {
+  "kind": "address",
+  "lat": 38.29562,
+  "lon": -105.20583,
+  "matched": "6179 COUNTY RD 84, FLORENCE, 81226",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/623-Fender-Ln_El-Jebel_CO_81623_M27848-42444": {
+  "kind": "address",
+  "lat": 39.4217,
+  "lon": -107.10237,
+  "matched": "623 FENDER LN, EL JEBEL AREA",
+  "score": 95.6
+ },
+ "https://www.realtor.com/realestateandhomes-detail/62430-US-Highway-285_Bailey_CO_80421_M29604-05326": {
+  "kind": "address",
+  "lat": 39.42314,
+  "lon": -105.46652,
+  "matched": "62430 HIGHWAY 285, BAILEY, 80421",
+  "score": 95.9
+ },
+ "https://www.realtor.com/realestateandhomes-detail/6250-Highway-79_Bennett_CO_80102_M97122-57018": {
+  "kind": "road",
+  "lat": 39.745,
+  "lon": -104.42356,
+  "matched": "Co Hwy 79, 80102",
+  "score": 83.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/630-Sunnyside-Ranch-Dr_Telluride_CO_81435_M98737-83325": {
+  "kind": "address",
+  "lat": 37.96217,
+  "lon": -107.85964,
+  "matched": "630 Sunnyside Ranch Dr, 81435",
+  "score": 96.9
+ },
+ "https://www.realtor.com/realestateandhomes-detail/653-Summit-Gulch-Rd_Breckenridge_CO_80424_M25298-94546": {
+  "kind": "road",
+  "lat": 39.51913,
+  "lon": -105.95923,
+  "matched": "Summit Gulch Rd, 80424",
+  "score": 81.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/660-Rockwell-Renshaw-Rd_Fairplay_CO_80440_M99878-57147": {
+  "kind": "road",
+  "lat": 39.21941,
+  "lon": -106.0179,
+  "matched": "Rockwell Renshaw Rd, 80440",
+  "score": 84.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/6646-E-State-Highway-86_Franktown_CO_80116_M92563-70684": {
+  "kind": "address",
+  "lat": 39.39098,
+  "lon": -104.76352,
+  "matched": "6646 E STATE HIGHWAY 86, FRANKTOWN, 80116",
+  "score": 99.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/6710-Cowboy-Ranch-Vw_Peyton_CO_80831_M96261-21358": {
+  "kind": "address",
+  "lat": 38.92913,
+  "lon": -104.50363,
+  "matched": "6710 COWBOY RANCH VIEW, PEYTON, 80831",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/677-County-Road-81_Cripple-Creek_CO_80813_M93732-36712": {
+  "kind": "address",
+  "lat": 38.75003,
+  "lon": -105.1046,
+  "matched": "677 COUNTY ROAD 81, CRIPPLE CREEK, 80813",
+  "score": 99.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/6870-Bar-10-Rd_Calhan_CO_80808_M94505-92533": {
+  "kind": "address",
+  "lat": 38.73351,
+  "lon": -104.40542,
+  "matched": "6870 BAR 10 ROAD, COLORADO SPRINGS, 80928",
+  "score": 99.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/68900-E-Briarwood-Pl_Byers_CO_80103_M24500-44302": {
+  "kind": "address",
+  "lat": 39.5898,
+  "lon": -104.18482,
+  "matched": "68900 E BRIARWOOD PL, BYERS, 80103",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/6900-Rd_Montrose_CO_81401_M90761-19812": {
+  "kind": "road",
+  "lat": 38.45644,
+  "lon": -107.77537,
+  "matched": "6900 Rd, 81401",
+  "score": 83.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/695-Cutter-Ln_Boulder_CO_80302_M91396-85377": {
+  "kind": "address",
+  "lat": 40.0789,
+  "lon": -105.32604,
+  "matched": "695 CUTTER LN, UNINCORPORATED, 80302",
+  "score": 99.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/700-Looney-Ln_Alma_CO_80420_M15709-13418": {
+  "kind": "address",
+  "lat": 39.26341,
+  "lon": -106.05284,
+  "matched": "700 LOONEY LN, ALMA, 80420",
+  "score": 99.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/700-Looney-Ln_Alma_CO_80420_M95044-41555": {
+  "kind": "address",
+  "lat": 39.26341,
+  "lon": -106.05284,
+  "matched": "700 LOONEY LN, ALMA, 80420",
+  "score": 99.1
+ },
+ "https://www.realtor.com/realestateandhomes-detail/706-Bristlecone-Rd_Guffey_CO_80820_M96900-05113": {
+  "kind": "address",
+  "lat": 38.77172,
+  "lon": -105.45001,
+  "matched": "706 BRISTLECONE RD, GUFFEY, 80820",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/7070-County-Road-1_Cripple-Creek_CO_80813_M99577-16774": {
+  "kind": "address",
+  "lat": 38.80575,
+  "lon": -105.23257,
+  "matched": "7070 COUNTY ROAD 1, FLORISSANT, 80816",
+  "score": 94.0
+ },
+ "https://www.realtor.com/realestateandhomes-detail/710-Mc-Clure-Gulch-Rd_Cotopaxi_CO_81223_M93927-14645": {
+  "kind": "address",
+  "lat": 38.33044,
+  "lon": -105.40593,
+  "matched": "710 MCCLURE GULCH ROAD, COTOPAXI, 81223",
+  "score": 99.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/715-Lewsader-Rd_Alma_CO_80420_M93882-69346": {
+  "kind": "address",
+  "lat": 39.30244,
+  "lon": -106.07644,
+  "matched": "715 LEWSADER RD, ALMA, 80420",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/715-Lewsader-Rd_Alma_CO_80420_M95219-69162": {
+  "kind": "address",
+  "lat": 39.30244,
+  "lon": -106.07644,
+  "matched": "715 LEWSADER RD, ALMA, 80420",
+  "score": 99.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/7155-Pine-Bluff-Dr-W_Pueblo_CO_81004_M27939-41297": {
+  "kind": "address",
+  "lat": 38.02746,
+  "lon": -104.70501,
+  "matched": "7155 PINE BLUFF LN, PUEBLO, 81004",
+  "score": 94.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/717-Zane-Dr_Durango_CO_81303_M24431-94123": {
+  "kind": "address",
+  "lat": 37.23948,
+  "lon": -107.99521,
+  "matched": "717 Zane Dr, Durango, 81303",
+  "score": 99.1
+ },
+ "https://www.realtor.com/realestateandhomes-detail/73-Parelli-Institute_Pagosa-Springs_CO_81147_M97225-60792": {
+  "kind": "address",
+  "lat": 37.22666,
+  "lon": -107.11523,
+  "matched": "73 Parelli Institute Dr, 81147",
+  "score": 93.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/7400-S-Parker-Rd_Foxfield_CO_80016_M97117-83672": {
+  "kind": "address",
+  "lat": 39.58111,
+  "lon": -104.79362,
+  "matched": "7400 S Parker Rd, 80016",
+  "score": 95.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/7446-US-Highway-160_Hesperus_CO_81326_M91861-17091": {
+  "kind": "road",
+  "lat": 37.32165,
+  "lon": -108.09098,
+  "matched": "Hwy 160, 81326",
+  "score": 81.9
+ },
+ "https://www.realtor.com/realestateandhomes-detail/75-Deer-Ln_Guffey_CO_80820_M91853-05307": {
+  "kind": "address",
+  "lat": 38.7393,
+  "lon": -105.64473,
+  "matched": "75 DEER RUN, GUFFEY, 80820",
+  "score": 99.1
+ },
+ "https://www.realtor.com/realestateandhomes-detail/76-Snyder-Creek-Rd_Jefferson_CO_80456_M96735-36358": {
+  "kind": "address",
+  "lat": 39.36125,
+  "lon": -105.7647,
+  "matched": "76 SNYDER CREEK CT, JEFFERSON, 80456",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/765-Saddle-Horn-Way_Edwards_CO_81632_M13579-91414": {
+  "kind": "road",
+  "lat": 39.61601,
+  "lon": -106.62466,
+  "matched": "Saddlehorn Way, 81632",
+  "score": 85
+ },
+ "https://www.realtor.com/realestateandhomes-detail/774-Cougar-Dr_Boulder_CO_80302_M22600-83897": {
+  "kind": "address",
+  "lat": 39.96553,
+  "lon": -105.33145,
+  "matched": "774 COUGAR DR, UNINCORPORATED, 80302",
+  "score": 99.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/79-Weaver-Dr_Boulder_CO_80302_M28375-88153": {
+  "kind": "address",
+  "lat": 40.01817,
+  "lon": -105.35587,
+  "matched": "79 WEAVER DR, UNINCORPORATED, 80302",
+  "score": 99.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/794-Red-Mountain-Ranch-Lower-Loop_Crested-Butte_CO_81224_M92228-18053": {
+  "kind": "address",
+  "lat": 38.79841,
+  "lon": -106.9181,
+  "matched": "794 RED MOUNTAIN RANCH LOWER LOOP, CRESTED BUTTE, 81224",
+  "score": 99.6
+ },
+ "https://www.realtor.com/realestateandhomes-detail/7950-N-Peyton-Hwy_Peyton_CO_80831_M96664-80383": {
+  "kind": "address",
+  "lat": 38.94546,
+  "lon": -104.47977,
+  "matched": "7950 NORTH PEYTON HIGHWAY, PEYTON, 80831",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/8-Wolcott-Springs-Rd_Wolcott_CO_81655_M15971-82115": {
+  "kind": "address",
+  "lat": 39.67714,
+  "lon": -106.67455,
+  "matched": "1463 Wolcott Spring, 81655",
+  "score": 96.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/800-GCR-22313_Kremmling_CO_80459_M99464-44928": {
+  "kind": "address",
+  "lat": 40.10036,
+  "lon": -106.34479,
+  "matched": "800 COUNTY RD 22313, KREMMLING, 80459",
+  "score": 82.1
+ },
+ "https://www.realtor.com/realestateandhomes-detail/8034-State-Highway-131_Toponas_CO_80479_M92975-07864": {
+  "kind": "road",
+  "lat": 39.8034,
+  "lon": -106.67782,
+  "matched": "State Hwy 131",
+  "score": 83.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/8077-Drew-Hill-Rd_Golden_CO_80403_M26962-87807": {
+  "kind": "address",
+  "lat": 39.84278,
+  "lon": -105.33722,
+  "matched": "8077 DREW HILL RD, GOLDEN, 80403",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/816-Meadow-Way_Livermore_CO_80536_M96058-57504": {
+  "kind": "address",
+  "lat": 40.72472,
+  "lon": -105.37338,
+  "matched": "816 Deer Meadow Way, 80536",
+  "score": 89.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/8262-County-Road-160-6B_Salida_CO_81201_M92649-17376": {
+  "kind": "address",
+  "lat": 38.54341,
+  "lon": -106.02819,
+  "matched": "8262 Co Rd 160, 81201",
+  "score": 97.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/8305-Blue-Gill-Dr_Peyton_CO_80831_M96959-03492": {
+  "kind": "address",
+  "lat": 38.95261,
+  "lon": -104.57668,
+  "matched": "8305 BLUE GILL DRIVE, PEYTON, 80831",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/8335-Calhan-Hwy_Calhan_CO_80808_M91374-93145": {
+  "kind": "address",
+  "lat": 38.95071,
+  "lon": -104.25848,
+  "matched": "8335 SOUTH CALHAN HIGHWAY, RAMAH, 80808",
+  "score": 96.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/8524-Elk-Run_Tabernash_CO_80478_M91760-35329": {
+  "kind": "road",
+  "lat": 40.00826,
+  "lon": -105.86808,
+  "matched": "Tabernash, 80478",
+  "score": 82.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/8525-County-Road-225_Salida_CO_81201_M17104-40286": {
+  "kind": "road",
+  "lat": 38.53999,
+  "lon": -106.2474,
+  "matched": "Co Rd 225, 81201",
+  "score": 86
+ },
+ "https://www.realtor.com/realestateandhomes-detail/8529-S-Deer-Creek-Canyon-Rd_Littleton_CO_80127_M92398-51498": {
+  "kind": "address",
+  "lat": 39.55307,
+  "lon": -105.21063,
+  "matched": "8529 S DEER CREEK CANYON RD, LITTLETON, 80127",
+  "score": 97.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/8567-County-Road-3_Divide_CO_80814_M90897-49632": {
+  "kind": "address",
+  "lat": 39.04708,
+  "lon": -105.25652,
+  "matched": "8567 COUNTY ROAD 3, DIVIDE, 80814",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/8855-E-Parker-Rd_Parker_CO_80138_M97929-36548": {
+  "kind": "address",
+  "lat": 39.52469,
+  "lon": -104.72046,
+  "matched": "8855 E PARKER RD, PARKER, 80138",
+  "score": 99.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/8896-8250-Rd_Crawford_CO_81415_M13025-37673": {
+  "kind": "address",
+  "lat": 38.56224,
+  "lon": -107.54164,
+  "matched": "8896 8250 RD, MAHER, 81415",
+  "score": 96
+ },
+ "https://www.realtor.com/realestateandhomes-detail/9-County-Road-166_Deer-Trail_CO_80105_M95596-66234": {
+  "kind": "road",
+  "lat": 39.46203,
+  "lon": -104.21184,
+  "matched": "Co Rd 166, 80105",
+  "score": 83.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/9-State-Highway-9_Canon-City_CO_81212_M21864-77881": {
+  "kind": "address",
+  "lat": 38.63807,
+  "lon": -105.43686,
+  "matched": "2057 HORSE THIEF GULCH ROAD, CANON CITY, 81212",
+  "score": 99.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/90-Acres-County-Road-555_Gardner_CO_81040_M92849-92761": {
+  "kind": "road",
+  "lat": 37.76992,
+  "lon": -105.25236,
+  "matched": "Co Rd 555, 81040",
+  "score": 83.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/900-Conductor-Ct_Rye_CO_81069_M21382-20748": {
+  "kind": "address",
+  "lat": 37.9124,
+  "lon": -104.6207,
+  "matched": "900 CONDUCTOR CT, PUEBLO, 81069",
+  "score": 97.9
+ },
+ "https://www.realtor.com/realestateandhomes-detail/900-W-Highway-24_Woodland-Park_CO_80863_M98807-23083": {
+  "kind": "address",
+  "lat": 38.98678,
+  "lon": -105.06301,
+  "matched": "850 WEST HIGHWAY 24, WOODLAND PARK, 80863",
+  "score": 84.1
+ },
+ "https://www.realtor.com/realestateandhomes-detail/9040-Walker-Rd_Colorado-Springs_CO_80908_M98760-38970": {
+  "kind": "address",
+  "lat": 39.10437,
+  "lon": -104.65531,
+  "matched": "9040 WALKER ROAD, COLORADO SPRINGS, 80908",
+  "score": 99.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/9140-County-Road-54_Milliken_CO_80543_M91008-93341": {
+  "kind": "address",
+  "lat": 40.37789,
+  "lon": -104.88604,
+  "matched": "9140 Co Rd 54, 80543",
+  "score": 96.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/9266-Government-Springs-Rd_Montrose_CO_81403_M99364-45592": {
+  "kind": "road",
+  "lat": 38.35006,
+  "lon": -107.84637,
+  "matched": "Government Springs Rd, 81403",
+  "score": 87.1
+ },
+ "https://www.realtor.com/realestateandhomes-detail/9288-County-Road-Y_La-Jara_CO_81140_M96965-14701": {
+  "kind": "address",
+  "lat": 37.29805,
+  "lon": -106.08763,
+  "matched": "9288 Co Rd Y, 81140",
+  "score": 97.1
+ },
+ "https://www.realtor.com/realestateandhomes-detail/935-County-Road-2192_Granby_CO_80446_M91875-70660": {
+  "kind": "address",
+  "lat": 40.12157,
+  "lon": -106.00131,
+  "matched": "935 COUNTY RD 2192, GRANBY, 80446",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/9375-Red-Primrose-St-37_Franktown_CO_80116_M93721-89799": {
+  "kind": "address",
+  "lat": 39.41108,
+  "lon": -104.71287,
+  "matched": "9375 RED PRIMROSE ST, FRANKTOWN, 80116",
+  "score": 99.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/9400-Canal-Rd_Glade-Park_CO_81523_M98168-70349": {
+  "kind": "address",
+  "lat": 38.94993,
+  "lon": -108.87085,
+  "matched": "9400 CANAL RD, GLADE PARK, 81523",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/9489-S-Turkey-Creek-Rd_Morrison_CO_80465_M24771-36306": {
+  "kind": "address",
+  "lat": 39.54435,
+  "lon": -105.24224,
+  "matched": "9489 S TURKEY CREEK RD, MORRISON, 80465",
+  "score": 99.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/95-County-Road-541_Gardner_CO_81040_M90063-05210": {
+  "kind": "road",
+  "lat": 37.74982,
+  "lon": -105.10977,
+  "matched": "Co Rd 541, 81040",
+  "score": 88.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/957-Stringtown-Gulch-Rd_Bellvue_CO_80512_M18108-36539": {
+  "kind": "road",
+  "lat": 40.53,
+  "lon": -105.32565,
+  "matched": "Stringtown Gulch Rd",
+  "score": 84.9
+ },
+ "https://www.realtor.com/realestateandhomes-detail/962-Meath-Dr-Lot-7_Meeker_CO_81641_M92459-65673": {
+  "kind": "address",
+  "lat": 40.01746,
+  "lon": -107.76114,
+  "matched": "962 MEATH DR, RIOBLANCO, 81641",
+  "score": 98.1
+ },
+ "https://www.realtor.com/realestateandhomes-detail/9670-Boone-Rd_Yoder_CO_80864_M97919-24249": {
+  "kind": "address",
+  "lat": 38.69241,
+  "lon": -104.18306,
+  "matched": "9670 BOONE ROAD, YODER, 80864",
+  "score": 99.1
+ },
+ "https://www.realtor.com/realestateandhomes-detail/9746-County-Road-7_Longmont_CO_80504_M90877-75470": {
+  "kind": "address",
+  "lat": 40.14226,
+  "lon": -104.99543,
+  "matched": "9746 CR 7, LONGMONT, 80504",
+  "score": 94.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/9776-Arapahoe-Rd_Lafayette_CO_80026_M25011-02343": {
+  "kind": "address",
+  "lat": 40.01283,
+  "lon": -105.12461,
+  "matched": "9776 ARAPAHOE RD, UNINCORPORATED, 80026",
+  "score": 98.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/991-Purple-Sage-Rd_Durango_CO_81301_M92326-08726": {
+  "kind": "address",
+  "lat": 37.4581,
+  "lon": -107.76988,
+  "matched": "991 Purple Sage Rd, Durango, 81301",
+  "score": 97.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/996-Lower-Highlands-Rd_Crested-Butte_CO_81224_M26181-79429": {
+  "kind": "address",
+  "lat": 38.83317,
+  "lon": -106.90439,
+  "matched": "996 LOWER HIGHLANDS RD, CRESTED BUTTE, 81224",
+  "score": 99.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Address-Dr_Fort-Garland_CO_81133_M94073-14322": {
+  "kind": "road",
+  "lat": 37.55869,
+  "lon": -105.24052,
+  "matched": "Nordman Dr, 81133",
+  "score": 83.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Alexandra-Rd-Lot-6676_Fort-Garland_CO_81133_M93863-66690": {
+  "kind": "road",
+  "lat": 37.27857,
+  "lon": -105.28487,
+  "matched": "Alexandra Rd",
+  "score": 81.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Antero-Dr-Lot-203_Hartsel_CO_80449_M90869-47540": {
+  "kind": "road",
+  "lat": 39.01829,
+  "lon": -105.91858,
+  "matched": "Antero Dr, 80449",
+  "score": 81.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Badger-Rd_Hartsel_CO_80449_M91391-20898": {
+  "kind": "road",
+  "lat": 39.04972,
+  "lon": -105.87048,
+  "matched": "Badger Rd, 80449",
+  "score": 85.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Basalt-Rd_Blanca_CO_81123_M95534-35566": {
+  "kind": "road",
+  "lat": 37.40835,
+  "lon": -105.67302,
+  "matched": "Basalt",
+  "score": 80.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Bat-Masterson-Dr-Lot-21_Trinidad_CO_81082_M94396-87603": {
+  "kind": "road",
+  "lat": 37.19001,
+  "lon": -104.46672,
+  "matched": "Batmasterson Dr, 81082",
+  "score": 83.6
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Bear-Ridge-Rd-Lot-120_Walsenburg_CO_81089_M96466-32981": {
+  "kind": "road",
+  "lat": 37.81997,
+  "lon": -104.64012,
+  "matched": "Ridge Rd, 81089",
+  "score": 80
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Beaver-Creek-Ranch-Dr_Bayfield_CO_81122_M91038-49888": {
+  "kind": "road",
+  "lat": 37.28671,
+  "lon": -107.58212,
+  "matched": "Beaver Creek Ranch Dr, 81122",
+  "score": 85.6
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Beaver-Creek-Ranch-Dr_Bayfield_CO_81122_M98084-42074": {
+  "kind": "road",
+  "lat": 37.28671,
+  "lon": -107.58212,
+  "matched": "Beaver Creek Ranch Dr, 81122",
+  "score": 86.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Big-Buck-Trl-Lot-42_San-Luis_CO_81152_M96809-64022": {
+  "kind": "road",
+  "lat": 37.04827,
+  "lon": -105.46696,
+  "matched": "Big Buck Trl",
+  "score": 80.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Big-Springs-Rd-Parcel-6_Calhan_CO_80808_M94081-00502": {
+  "kind": "road",
+  "lat": 38.88218,
+  "lon": -104.31397,
+  "matched": "Big Springs Rd, 80808",
+  "score": 83.6
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Big-View-Dr-Lot-81_Trinidad_CO_81082_M99634-97500": {
+  "kind": "road",
+  "lat": 37.26795,
+  "lon": -104.57184,
+  "matched": "Big View Dr, 81082",
+  "score": 81.9
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Blackhorse-Dr-Lot-46_Pueblo_CO_81004_M94652-74657": {
+  "kind": "road",
+  "lat": 37.99692,
+  "lon": -104.665,
+  "matched": "Black Horse Dr, 81004",
+  "score": 88.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Bondurant-Rd_Colorado-City_CO_M98121-89466": {
+  "kind": "road",
+  "lat": 37.97466,
+  "lon": -104.84928,
+  "matched": "Bondurant Rd",
+  "score": 81.0
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Book-Rd_Yoder_CO_80864_M99205-52164": {
+  "kind": "road",
+  "lat": 38.81052,
+  "lon": -104.17594,
+  "matched": "Book Rd, 80864",
+  "score": 86.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Boone-Rd_Boone_CO_81025_M92219-77897": {
+  "kind": "road",
+  "lat": 38.41326,
+  "lon": -104.18511,
+  "matched": "Boone Rd, 81025",
+  "score": 87.1
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Bowie-Rd-Lot-131_Penrose_CO_81240_M98003-96707": {
+  "kind": "road",
+  "lat": 38.45679,
+  "lon": -104.97266,
+  "matched": "Bowie Rd, 81240",
+  "score": 80.6
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Bowie-Rd_Penrose_CO_81240_M93105-34760": {
+  "kind": "road",
+  "lat": 38.45679,
+  "lon": -104.97266,
+  "matched": "Bowie Rd, 81240",
+  "score": 85
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Brush_CO_80723_M92060-05565": {
+  "kind": "road",
+  "lat": 40.27602,
+  "lon": -103.65001,
+  "matched": "Co Rd T, 80723",
+  "score": 89.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Bs-Rd_Glade-Park_CO_81523_M99273-31451": {
+  "kind": "road",
+  "lat": 39.01916,
+  "lon": -108.80108,
+  "matched": "Bs Rd, 81523",
+  "score": 80.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Buckeye-Rd_Wellington_CO_80549_M90804-12177": {
+  "kind": "road",
+  "lat": 40.84144,
+  "lon": -105.0381,
+  "matched": "Buckeye Rd, 80549",
+  "score": 83.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Budd-Rd_Durango_CO_81303_M98543-51732": {
+  "kind": "road",
+  "lat": 37.14643,
+  "lon": -107.97817,
+  "matched": "Budd Rd, 81303",
+  "score": 84.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Butterfield-Rd_Hartsel_CO_80449_M99386-31629": {
+  "kind": "road",
+  "lat": 38.84483,
+  "lon": -105.82937,
+  "matched": "Butterfield Rd, 80449",
+  "score": 88.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/CO_80422_M28568-24777": {
+  "kind": "road",
+  "lat": 39.87922,
+  "lon": -105.48681,
+  "matched": "Roosevelt Rdg, 80422",
+  "score": 83.6
+ },
+ "https://www.realtor.com/realestateandhomes-detail/CO_80831_M25579-28653": {
+  "kind": "address",
+  "lat": 38.67088,
+  "lon": -104.92287,
+  "matched": "5110 Little Turkey Creek Rd, 80926",
+  "score": 96.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/CO_80916_M24018-58887": {
+  "kind": "address",
+  "lat": 38.81078,
+  "lon": -104.19854,
+  "matched": "33990 BOOK ROAD, YODER, 80864",
+  "score": 99.1
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Cahokia-Rd_Hartsel_CO_80449_M96031-86630": {
+  "kind": "road",
+  "lat": 38.91704,
+  "lon": -105.73445,
+  "matched": "Cahokia Rd, 80449",
+  "score": 86.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Campfire-Rd_Hartsel_CO_80449_M91849-16892": {
+  "kind": "road",
+  "lat": 38.91001,
+  "lon": -105.96117,
+  "matched": "Campfire Rd, 80449",
+  "score": 80.9
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Cap-Rock-Rds-Unit-4_Canon-City_CO_81212_M95572-39365": {
+  "kind": "road",
+  "lat": 38.63713,
+  "lon": -105.39427,
+  "matched": "Cap Rock Rd, 81212",
+  "score": 84.6
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Catchpole-Dr_Pagosa-Springs_CO_81147_M93495-39282": {
+  "kind": "road",
+  "lat": 37.19355,
+  "lon": -106.9304,
+  "matched": "Catchpole Dr, 81147",
+  "score": 83.1
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Cave-Spring-Trl_Elbert_CO_80106_M94737-71625": {
+  "kind": "road",
+  "lat": 39.2319,
+  "lon": -104.65457,
+  "matched": "Cave Spring Trl, 80106",
+  "score": 89.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Cedar-Rd_Olathe_CO_81425_M90186-03105": {
+  "kind": "road",
+  "lat": 38.62634,
+  "lon": -108.11887,
+  "matched": "Cedar Rd, 81416",
+  "score": 83.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Cedarwood-Rd_Rye_CO_81069_M12030-14342": {
+  "kind": "road",
+  "lat": 37.93734,
+  "lon": -104.69073,
+  "matched": "Cedarwood Rd, 81069",
+  "score": 91.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Charlies-Challenge-Rd_Pitkin_CO_81241_M23082-38066": {
+  "kind": "road",
+  "lat": 38.64091,
+  "lon": -106.52885,
+  "matched": "Charlie's Challenge, 81241",
+  "score": 81.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Cherokee-Trl-Lots-101112_Hartsel_CO_80449_M97674-53796": {
+  "kind": "road",
+  "lat": 39.1252,
+  "lon": -105.72739,
+  "matched": "Cherokee Trl, 80449",
+  "score": 81
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Chinook-Dr_Canon-City_CO_81212_M94155-71020": {
+  "kind": "road",
+  "lat": 38.26183,
+  "lon": -105.32815,
+  "matched": "Chinook Dr, 81212",
+  "score": 84.6
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Chris-Crossover-Dr-Lot-71_Canon-City_CO_81212_M99596-28702": {
+  "kind": "road",
+  "lat": 38.60926,
+  "lon": -105.48305,
+  "matched": "Chris Crossover, 81212",
+  "score": 84
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Chris-Crossover-Lot-71_Canon-City_CO_81212_M94980-08129": {
+  "kind": "road",
+  "lat": 38.60926,
+  "lon": -105.48305,
+  "matched": "Chris Crossover, 81212",
+  "score": 84
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Clear-Creek-Rd_Evergreen_CO_80439_M96239-39358": {
+  "kind": "road",
+  "lat": 39.73757,
+  "lon": -105.44939,
+  "matched": "Clear Creek Rd, 80439",
+  "score": 86.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Co-12_Cuchara_CO_81055_M95727-32604": {
+  "kind": "address",
+  "lat": 37.3799,
+  "lon": -105.09994,
+  "matched": "12 Cuchara Ave, 81055",
+  "score": 83.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Colorado-Land-Lot-238_Walsenburg_CO_81089_M93779-20623": {
+  "kind": "road",
+  "lat": 37.80554,
+  "lon": -104.69041,
+  "matched": "Co Rd 103, 81089",
+  "score": 86
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Colorado-Springs-Ave-Lots-11-12_Blanca_CO_81123_M91870-95054": {
+  "kind": "road",
+  "lat": 37.41712,
+  "lon": -105.59438,
+  "matched": "Colorado Springs Ave, 81123",
+  "score": 85.6
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Commerce-Rd_Ramah_CO_80832_M97234-87186": {
+  "kind": "road",
+  "lat": 39.12864,
+  "lon": -104.23312,
+  "matched": "Commerce Rd, 80832",
+  "score": 88.9
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Cottonwood-Dr_Alamosa_CO_81101_M95443-81735": {
+  "kind": "road",
+  "lat": 37.48108,
+  "lon": -105.87513,
+  "matched": "Cottonwood Dr, 81101",
+  "score": 87.9
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-1-Rd-K_Dove-Creek_CO_81324_M94566-87405": {
+  "kind": "road",
+  "lat": 37.73537,
+  "lon": -108.90784,
+  "matched": "Dove Crk",
+  "score": 83.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-109-Rd-Lot-14_Deer-Trail_CO_80105_M92990-43018": {
+  "kind": "road",
+  "lat": 39.52227,
+  "lon": -104.17684,
+  "matched": "Co Rd 109, 80105",
+  "score": 80.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-110-Rd-Lot-111_Walsenburg_CO_81089_M96662-34200": {
+  "kind": "road",
+  "lat": 37.83664,
+  "lon": -104.80912,
+  "matched": "Co Rd 110, 81089",
+  "score": 82.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-118-Rd-Lot-1_Elizabeth_CO_80107_M92385-74424": {
+  "kind": "road",
+  "lat": 39.28922,
+  "lon": -104.633,
+  "matched": "Co Rd 118, 80107",
+  "score": 80.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-124-Rd-Lot-4_Elizabeth_CO_80107_M92784-26769": {
+  "kind": "road",
+  "lat": 39.31059,
+  "lon": -104.57048,
+  "matched": "Co Rd 124, 80107",
+  "score": 80.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-21-Rd-Parcel-2_Carr_CO_80612_M93192-37546": {
+  "kind": "road",
+  "lat": 40.81592,
+  "lon": -104.86769,
+  "matched": "Co Rd 21, 80612",
+  "score": 81.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-335-Rd-Lot-3_New-Castle_CO_81647_M94909-42527": {
+  "kind": "road",
+  "lat": 39.54865,
+  "lon": -107.58564,
+  "matched": "Co Rd 335, 81647",
+  "score": 80.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-358-Rd-Lot-1_Westcliffe_CO_81252_M96737-22690": {
+  "kind": "road",
+  "lat": 38.11697,
+  "lon": -105.24192,
+  "matched": "Co Rd 358, 81252",
+  "score": 80.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-35_Ovid_CO_80744_M91701-28758": {
+  "kind": "road",
+  "lat": 40.83685,
+  "lon": -102.32482,
+  "matched": "Co Rd 35, 80744",
+  "score": 89.0
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-5-County-Rd-E-125_Antonito_CO_81120_M90399-19240": {
+  "kind": "address",
+  "lat": 37.17327,
+  "lon": -105.98657,
+  "matched": "125 Antonito St, 81148",
+  "score": 86.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-5-Rd-Lot-10_Ridgway_CO_81432_M93536-37990": {
+  "kind": "road",
+  "lat": 38.16778,
+  "lon": -107.75911,
+  "matched": "Co Rd 5, 81432",
+  "score": 87.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-521-Rd-Unit-31_Walsenburg_CO_81089_M97263-85014": {
+  "kind": "road",
+  "lat": 37.67417,
+  "lon": -104.86542,
+  "matched": "Co Rd 521, 81089",
+  "score": 82.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-541-Rd-Lot-95_Gardner_CO_81040_M97416-37032": {
+  "kind": "road",
+  "lat": 37.74982,
+  "lon": -105.10977,
+  "matched": "Co Rd 541, 81040",
+  "score": 81.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-634-2-Rd-Lot-3_Gardner_CO_81040_M13890-36114": {
+  "kind": "road",
+  "lat": 37.86464,
+  "lon": -105.22501,
+  "matched": "Co Rd 634.2, 81040",
+  "score": 82.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-Rd-E_Yuma_CO_80759_M92176-63981": {
+  "kind": "road",
+  "lat": 40.24271,
+  "lon": -102.73726,
+  "matched": "Co Rd E, 80759",
+  "score": 89.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-Rd-W_Akron_CO_80720_M96527-87020": {
+  "kind": "road",
+  "lat": 40.21761,
+  "lon": -103.32219,
+  "matched": "Co Rd W, 80720",
+  "score": 88.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-Rd-W_Eads_CO_81036_M92087-78382": {
+  "kind": "road",
+  "lat": 38.54108,
+  "lon": -102.55856,
+  "matched": "Co Rd W, 81036",
+  "score": 89.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-Rd-W_La-Jara_CO_81140_M96146-15328": {
+  "kind": "road",
+  "lat": 37.26893,
+  "lon": -106.00029,
+  "matched": "Co Rd W, 81140",
+  "score": 87.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-Road-100_Carbondale_CO_81623_M96477-77234": {
+  "kind": "road",
+  "lat": 39.39798,
+  "lon": -107.1755,
+  "matched": "Co Rd 100, 81623",
+  "score": 86
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-Road-109_Hesperus_CO_81326_M97476-87044": {
+  "kind": "road",
+  "lat": 37.08809,
+  "lon": -108.2909,
+  "matched": "Co Rd 109, 81326",
+  "score": 87.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-Road-124_Hesperus_CO_81326_M94951-60954": {
+  "kind": "road",
+  "lat": 37.34758,
+  "lon": -108.07445,
+  "matched": "Co Rd 124, 81326",
+  "score": 87.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-Road-130_Hesperus_CO_81326_M92910-58438": {
+  "kind": "road",
+  "lat": 37.14046,
+  "lon": -108.11015,
+  "matched": "Co Rd 130, 81326",
+  "score": 87.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-Road-15-Twin-Mountain-Rd_Del-Norte_CO_81132_M90346-33955": {
+  "kind": "road",
+  "lat": 37.70627,
+  "lon": -106.43232,
+  "matched": "Co Rd 15 & Twin Mountain Dr, 81132",
+  "score": 93.0
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-Road-15_Del-Norte_CO_81132_M91679-62853": {
+  "kind": "road",
+  "lat": 37.70326,
+  "lon": -106.49558,
+  "matched": "Co Rd 15, 81132",
+  "score": 87.0
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-Road-15_Florence_CO_81226_M94648-34166": {
+  "kind": "road",
+  "lat": 38.27768,
+  "lon": -105.17808,
+  "matched": "Co Rd 15, 81226",
+  "score": 87.0
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-Road-166_Deer-Trail_CO_80105_M98747-59100": {
+  "kind": "road",
+  "lat": 39.46203,
+  "lon": -104.21184,
+  "matched": "Co Rd 166, 80105",
+  "score": 86.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-Road-19_Fort-Collins_CO_80524_M90976-17704": {
+  "kind": "road",
+  "lat": 40.56504,
+  "lon": -104.88883,
+  "matched": "Co Rd 19, 80524",
+  "score": 84.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-Road-19_Fort-Lupton_CO_80621_M96877-50097": {
+  "kind": "road",
+  "lat": 40.04065,
+  "lon": -104.88625,
+  "matched": "Co Rd 19, 80621",
+  "score": 85.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-Road-23_Fort-Lupton_CO_80621_M99558-97045": {
+  "kind": "road",
+  "lat": 40.05086,
+  "lon": -104.84851,
+  "matched": "Co Rd 23, 80621",
+  "score": 85.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-Road-251_Westcliffe_CO_81252_M94825-08870": {
+  "kind": "road",
+  "lat": 38.14931,
+  "lon": -105.43478,
+  "matched": "Co Rd 251, 81252",
+  "score": 86
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-Road-28_Monte-Vista_CO_81144_M94251-20236": {
+  "kind": "road",
+  "lat": 37.48969,
+  "lon": -106.26587,
+  "matched": "Co Rd 28, 81144",
+  "score": 85.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-Road-2_Silverton_CO_81433_M95305-91762": {
+  "kind": "road",
+  "lat": 37.81916,
+  "lon": -107.64419,
+  "matched": "Co Rd 2, 81433",
+  "score": 85.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-Road-306_Parachute_CO_81635_M94857-09769": {
+  "kind": "road",
+  "lat": 39.38535,
+  "lon": -108.09561,
+  "matched": "Co Rd 306, 81635",
+  "score": 86.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-Road-310_Ignacio_CO_81137_M97485-63928": {
+  "kind": "road",
+  "lat": 37.10912,
+  "lon": -107.76868,
+  "matched": "Co Rd 310, 81137",
+  "score": 88.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-Road-313_Silt_CO_81652_M95438-46429": {
+  "kind": "road",
+  "lat": 39.43484,
+  "lon": -107.57996,
+  "matched": "Co Rd 313, 81647",
+  "score": 88.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-Road-317_Rifle_CO_81650_M91885-54928": {
+  "kind": "road",
+  "lat": 39.46109,
+  "lon": -107.83249,
+  "matched": "Co Rd 317, 81650",
+  "score": 90.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-Road-325_Rifle_CO_81650_M93800-66257": {
+  "kind": "road",
+  "lat": 39.45906,
+  "lon": -107.84683,
+  "matched": "Co Rd 325, 81650",
+  "score": 90.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-Road-38_Platteville_CO_80651_M92521-33963": {
+  "kind": "road",
+  "lat": 40.26109,
+  "lon": -104.74427,
+  "matched": "Co Rd 38, 80651",
+  "score": 84.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-Road-38_Platteville_CO_80651_M94722-28794": {
+  "kind": "road",
+  "lat": 40.26109,
+  "lon": -104.74427,
+  "matched": "Co Rd 38, 80651",
+  "score": 84.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-Road-396_Granite_CO_81228_M96591-94421": {
+  "kind": "road",
+  "lat": 39.04426,
+  "lon": -106.25579,
+  "matched": "Co Rd 396, 81228",
+  "score": 88.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-Road-39_Nunn_CO_80648_M93474-75216": {
+  "kind": "road",
+  "lat": 40.71058,
+  "lon": -104.69603,
+  "matched": "Co Rd 39, 80648",
+  "score": 90.9
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-Road-3_Wiggins_CO_80654_M91085-22731": {
+  "kind": "road",
+  "lat": 40.29127,
+  "lon": -104.09327,
+  "matched": "Co Rd 3, 80654",
+  "score": 87.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-Road-47-12_Hudson_CO_80642_M91275-74375": {
+  "kind": "road",
+  "lat": 40.13409,
+  "lon": -104.61357,
+  "matched": "Co Rd 47 1/2, 80642",
+  "score": 89.6
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-Road-47-12_Hudson_CO_80642_M92687-46845": {
+  "kind": "road",
+  "lat": 40.13409,
+  "lon": -104.61357,
+  "matched": "Co Rd 47 1/2, 80642",
+  "score": 89.6
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-Road-502_Bayfield_CO_81122_M92253-01026": {
+  "kind": "road",
+  "lat": 37.31604,
+  "lon": -107.67198,
+  "matched": "Co Rd 502, 81122",
+  "score": 87.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-Road-510_Durango_CO_81303_M90711-65273": {
+  "kind": "road",
+  "lat": 37.2217,
+  "lon": -107.73674,
+  "matched": "Co Rd 510, 81303",
+  "score": 88.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-Road-516_Bayfield_CO_81122_M92678-82680": {
+  "kind": "road",
+  "lat": 37.1986,
+  "lon": -107.61375,
+  "matched": "Co Rd 520, 81122",
+  "score": 87.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-Road-53_Maybell_CO_81640_M94701-74670": {
+  "kind": "road",
+  "lat": 40.465,
+  "lon": -107.97035,
+  "matched": "Co Rd 53, 81640",
+  "score": 87.9
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-Road-554_Gardner_CO_81040_M90791-07519": {
+  "kind": "road",
+  "lat": 37.75988,
+  "lon": -105.23688,
+  "matched": "Co Rd 554, 81040",
+  "score": 88.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-Road-5_Weldona_CO_80653_M90688-03361": {
+  "kind": "road",
+  "lat": 40.37631,
+  "lon": -104.05127,
+  "matched": "Co Rd 5, 80653",
+  "score": 87.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-Road-6-Anderson-S_Alamosa_CO_81101_M93832-98338": {
+  "kind": "road",
+  "lat": 37.4885,
+  "lon": -105.75735,
+  "matched": "Rd 6 S, 81101",
+  "score": 87.9
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-Road-616_Walsenburg_CO_81089_M98649-67652": {
+  "kind": "road",
+  "lat": 37.74159,
+  "lon": -104.96987,
+  "matched": "Co Rd 616, 81089",
+  "score": 86
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-Road-61_Kersey_CO_80644_M95153-71668": {
+  "kind": "road",
+  "lat": 40.33418,
+  "lon": -104.48959,
+  "matched": "Co Rd 61, 80644",
+  "score": 88.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-Road-627_Granby_CO_80446_M95009-57964": {
+  "kind": "road",
+  "lat": 40.13009,
+  "lon": -105.8843,
+  "matched": "Co Rd 627, 80446",
+  "score": 89.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-Road-63_Gill_CO_80624_M92033-92658": {
+  "kind": "road",
+  "lat": 40.47165,
+  "lon": -104.47032,
+  "matched": "Co Rd 63, 80624",
+  "score": 90.9
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-Road-71_Briggsdale_CO_80611_M97012-48144": {
+  "kind": "road",
+  "lat": 40.58118,
+  "lon": -104.39421,
+  "matched": "Co Rd 71, 80611",
+  "score": 85.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-Road-75_Roggen_CO_80652_M90327-20812": {
+  "kind": "road",
+  "lat": 40.05867,
+  "lon": -104.35788,
+  "matched": "Co Rd 75, 80652",
+  "score": 88.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-Road-77_Jefferson_CO_80456_M98956-81645": {
+  "kind": "road",
+  "lat": 39.3775,
+  "lon": -105.79959,
+  "matched": "Co Rd 77, 80456",
+  "score": 86.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-Road-84_Fort-Collins_CO_80524_M92206-72085": {
+  "kind": "road",
+  "lat": 40.59601,
+  "lon": -104.92879,
+  "matched": "Co Rd 84, 80524",
+  "score": 84.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-Road-86_Limon_CO_80828_M96060-50796": {
+  "kind": "road",
+  "lat": 39.17199,
+  "lon": -103.78038,
+  "matched": "Co Rd 86, 80828",
+  "score": 89.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-Road-86_Victor_CO_80860_M93857-24981": {
+  "kind": "road",
+  "lat": 38.67903,
+  "lon": -105.10146,
+  "matched": "Co Rd 86, 80860",
+  "score": 88.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-Road-9-S_Alamosa_CO_81101_M91089-38625": {
+  "kind": "road",
+  "lat": 37.44417,
+  "lon": -105.89362,
+  "matched": "Co Rd 9 S, 81101",
+  "score": 87.9
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-Road-96_Nunn_CO_80648_M97993-63863": {
+  "kind": "road",
+  "lat": 40.68342,
+  "lon": -104.88648,
+  "matched": "Co Rd 96, 80648",
+  "score": 90.9
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-Road-AA_La-Jara_CO_81140_M91260-03588": {
+  "kind": "road",
+  "lat": 37.32735,
+  "lon": -105.99379,
+  "matched": "Co Rd Aa, 81140",
+  "score": 88.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-Road-H_San-Luis_CO_81152_M97609-90341": {
+  "kind": "road",
+  "lat": 37.09793,
+  "lon": -105.60118,
+  "matched": "Co Rd H, 81152",
+  "score": 87.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-Road-LL_Fowler_CO_81039_M90758-43764": {
+  "kind": "road",
+  "lat": 38.12702,
+  "lon": -104.04974,
+  "matched": "Co Rd Ll, 81039",
+  "score": 88.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/County-Road-V_Walsh_CO_81090_M90454-04332": {
+  "kind": "road",
+  "lat": 37.26546,
+  "lon": -102.11401,
+  "matched": "Co Rd V, 81090",
+  "score": 89.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Coweta-Trl-Lot-1499_Hartsel_CO_80449_M95572-22743": {
+  "kind": "road",
+  "lat": 38.90514,
+  "lon": -105.7681,
+  "matched": "Coweta Trl, 80449",
+  "score": 81.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Cr-15_Del-Norte_CO_81132_M96772-75613": {
+  "kind": "road",
+  "lat": 37.70326,
+  "lon": -106.49558,
+  "matched": "Co Rd 15, 81132",
+  "score": 81.6
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Cr-31-31B_Ouray_CO_81427_M93289-33621": {
+  "kind": "road",
+  "lat": 37.91123,
+  "lon": -107.69962,
+  "matched": "Co Rd 31, 81427",
+  "score": 81.6
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Cr-361-Lot-3_Buena-Vista_CO_81211_M96461-68045": {
+  "kind": "road",
+  "lat": 38.90093,
+  "lon": -106.187,
+  "matched": "Co Rd 361, 81211",
+  "score": 80.9
+ },
+ "https://www.realtor.com/realestateandhomes-detail/DE-Oro-Way_Hesperus_CO_81326_M93333-30893": {
+  "kind": "road",
+  "lat": 37.26014,
+  "lon": -108.15807,
+  "matched": "De Oro Way, 81326",
+  "score": 84.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Davis-Rd_Peyton_CO_80831_M92737-12632": {
+  "kind": "road",
+  "lat": 38.86758,
+  "lon": -104.5606,
+  "matched": "Davis Rd, 80831",
+  "score": 86
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Diamond-Star-Ranch-Rd_Eagle_CO_81631_M96880-53072": {
+  "kind": "road",
+  "lat": 39.67476,
+  "lon": -106.77518,
+  "matched": "W Diamond Stat Ranch Rd, 81631",
+  "score": 81.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Divide-Rd_Gateway_CO_81522_M96411-75018": {
+  "kind": "road",
+  "lat": 38.52919,
+  "lon": -108.61511,
+  "matched": "Divide Rd, 81522",
+  "score": 85.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Doe-Valley-Rd_Guffey_CO_80820_M94441-82474": {
+  "kind": "road",
+  "lat": 38.78967,
+  "lon": -105.35258,
+  "matched": "Doe Valley Rd, 80820",
+  "score": 88.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Doe-Valley-Rd_Guffey_CO_80820_M97080-09890": {
+  "kind": "road",
+  "lat": 38.78967,
+  "lon": -105.35258,
+  "matched": "Doe Valley Rd, 80820",
+  "score": 88.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Doyle-Rd_Avondale_CO_81022_M98727-08467": {
+  "kind": "road",
+  "lat": 38.08309,
+  "lon": -104.43564,
+  "matched": "Doyle Rd, 81022",
+  "score": 84.1
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Drr-Last-Dollar-File-Rd-Lot-On_Telluride_CO_81435_M96144-72962": {
+  "kind": "road",
+  "lat": 37.96442,
+  "lon": -107.90494,
+  "matched": "Last Dollar Rd, 81435",
+  "score": 84.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/E-128th-Ave_Commerce-City_CO_80022_M95653-55154": {
+  "kind": "road",
+  "lat": 39.92874,
+  "lon": -104.69442,
+  "matched": "E 128th Ave, 80022",
+  "score": 82.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/E-136th-Ave_Hudson_CO_80642_M96534-11779": {
+  "kind": "road",
+  "lat": 39.94117,
+  "lon": -104.48952,
+  "matched": "E 136th Ave & N Schumaker Rd, 80642",
+  "score": 97.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/E-144th-Ave-Lot-2_Hudson_CO_80642_M90245-41022": {
+  "kind": "road",
+  "lat": 39.95613,
+  "lon": -104.52745,
+  "matched": "E 144th Ave & Manilla Rd, 80642",
+  "score": 80.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/E-144th-Ave_Hudson_CO_80642_M95006-39318": {
+  "kind": "road",
+  "lat": 39.95613,
+  "lon": -104.52745,
+  "matched": "E 144th Ave & Manilla Rd, 80642",
+  "score": 80.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/E-152nd-Ave_Keenesburg_CO_80643_M91002-56511": {
+  "kind": "road",
+  "lat": 39.9704,
+  "lon": -104.50869,
+  "matched": "E 152nd Ave & Peterson Rd",
+  "score": 94.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/E-County-Line-Rd_Monument_CO_80132_M95866-71466": {
+  "kind": "road",
+  "lat": 39.12983,
+  "lon": -104.87377,
+  "matched": "County Line Rd, 80132",
+  "score": 86.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/E-County-Line-Rd_Olney-Springs_CO_81062_M90267-29205": {
+  "kind": "road",
+  "lat": 38.33519,
+  "lon": -104.05549,
+  "matched": "E County Line Rd, 81062",
+  "score": 84.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/E-Highway-145-Lot-BV2_Telluride_CO_81435_M99527-54520": {
+  "kind": "road",
+  "lat": 37.96123,
+  "lon": -107.94747,
+  "matched": "State Hwy 145, 81435",
+  "score": 84.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/E-Oak-Grove-Rd_Montrose_CO_81401_M98906-77355": {
+  "kind": "road",
+  "lat": 38.45999,
+  "lon": -107.86691,
+  "matched": "E Oak Grove Rd, 81401",
+  "score": 86.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Eagle-Ranch-Rd-Lot-98_Pueblo_CO_81004_M91930-94342": {
+  "kind": "road",
+  "lat": 38.13971,
+  "lon": -104.71476,
+  "matched": "Eagle Ranch Rd, 81004",
+  "score": 84.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Eagles-Gate-Rd_Westcliffe_CO_81252_M98452-68262": {
+  "kind": "road",
+  "lat": 38.13318,
+  "lon": -105.26938,
+  "matched": "Eagles Gate Rd, 81252",
+  "score": 85.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/F-Rd_Delta_CO_81416_M93791-75714": {
+  "kind": "road",
+  "lat": 38.72647,
+  "lon": -108.00439,
+  "matched": "F Rd, 81416",
+  "score": 83.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Forest-Service-169-Rd_Red-Feather-Lakes_CO_80545_M91900-08156": {
+  "kind": "address",
+  "lat": 40.79373,
+  "lon": -105.21878,
+  "matched": "169 Red Feather Lakes Rd, 80536",
+  "score": 92.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Four-Mile-Cyn_Walsenburg_CO_81089_M96975-06062": {
+  "kind": "road",
+  "lat": 37.48424,
+  "lon": -104.71345,
+  "matched": "4 Mile Canyon",
+  "score": 82.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Fourmile-Creek-Rd_Hartsel_CO_80449_M94137-37041": {
+  "kind": "road",
+  "lat": 39.06524,
+  "lon": -105.8623,
+  "matched": "Four Mile Creek Rd, 80449",
+  "score": 89.1
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Gcr-5_Tabernash_CO_80478_M90787-76708": {
+  "kind": "address",
+  "lat": 40.01114,
+  "lon": -105.87789,
+  "matched": "5 Tabernash, 80478",
+  "score": 95.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Georges-Way_Alma_CO_80420_M90082-09726": {
+  "kind": "road",
+  "lat": 39.25649,
+  "lon": -106.07094,
+  "matched": "George's Way, 80420",
+  "score": 82.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Geronimo-Trl_Conifer_CO_80433_M96066-66754": {
+  "kind": "road",
+  "lat": 39.49934,
+  "lon": -105.28085,
+  "matched": "Geronimo Trl, 80433",
+  "score": 87.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Goodson-Rd_Peyton_CO_80831_M96696-97061": {
+  "kind": "road",
+  "lat": 38.99868,
+  "lon": -104.62608,
+  "matched": "Goodson Rd, 80908",
+  "score": 84.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Gordon-Creek-Ln_Livermore_CO_80536_M99309-20190": {
+  "kind": "road",
+  "lat": 40.73398,
+  "lon": -105.3237,
+  "matched": "Gordon Creek Ln, 80536",
+  "score": 86.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Governors-Ln-Lot-42_Estes-Park_CO_80517_M95265-83617": {
+  "kind": "road",
+  "lat": 40.34339,
+  "lon": -105.50164,
+  "matched": "Governors Ln, 80517",
+  "score": 82.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/H-Path_Cotopaxi_CO_81223_M94582-08445": {
+  "kind": "road",
+  "lat": 38.32522,
+  "lon": -105.51937,
+  "matched": "H Path, 81223",
+  "score": 82.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Harmony-Ln_Carbondale_CO_81623_M90879-15235": {
+  "kind": "road",
+  "lat": 39.41669,
+  "lon": -107.11391,
+  "matched": "Harmony Ln, 81623",
+  "score": 83.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Hidden-Valley-Dr-Lot-25_Pagosa-Springs_CO_81147_M97068-89796": {
+  "kind": "road",
+  "lat": 37.33144,
+  "lon": -107.04935,
+  "matched": "Hidden Valley Dr, 81147",
+  "score": 84.6
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Hidden-Wilderness-Rd_Idaho-Springs_CO_80452_M97407-17605": {
+  "kind": "road",
+  "lat": 39.73163,
+  "lon": -105.49737,
+  "matched": "Hidden Wilderness Rd",
+  "score": 85.9
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Highway-12_Trinidad_CO_81082_M92206-00890": {
+  "kind": "road",
+  "lat": 37.14896,
+  "lon": -104.61386,
+  "matched": "State Hwy 12, 81082",
+  "score": 85.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Highway-160-Lot-223_Fort-Garland_CO_81133_M97251-41692": {
+  "kind": "road",
+  "lat": 37.42762,
+  "lon": -105.41422,
+  "matched": "US Hwy 160, 81133",
+  "score": 80.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Highway-160_Durango_CO_81301_M92627-73124": {
+  "kind": "road",
+  "lat": 37.22974,
+  "lon": -107.78933,
+  "matched": "US Hwy 160, 81301",
+  "score": 83.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Highway-160_Fort-Garland_CO_81133_M97049-22600": {
+  "kind": "road",
+  "lat": 37.42762,
+  "lon": -105.41422,
+  "matched": "US Hwy 160, 81133",
+  "score": 83.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Highway-24_Hartsel_CO_80827_M93903-35241": {
+  "kind": "road",
+  "lat": 38.96733,
+  "lon": -105.33857,
+  "matched": "US Hwy 24, 80827",
+  "score": 86.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Highway-28524_Buena-Vista_CO_81211_M96605-67645": {
+  "kind": "road",
+  "lat": 38.88485,
+  "lon": -105.99055,
+  "matched": "US Hwy 285, 81211",
+  "score": 83.1
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Highway-50_Avondale_CO_81022_M96102-50040": {
+  "kind": "road",
+  "lat": 38.25257,
+  "lon": -104.35576,
+  "matched": "US Hwy 50, 81022",
+  "score": 85.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Highway-52-Lot-4_Keenesburg_CO_80643_M94097-32455": {
+  "kind": "road",
+  "lat": 40.07327,
+  "lon": -104.4472,
+  "matched": "State Hwy 52, 80643",
+  "score": 81.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Highway-71_Stoneham_CO_80754_M98961-65916": {
+  "kind": "road",
+  "lat": 40.58136,
+  "lon": -103.60058,
+  "matched": "State Hwy 71, 80754",
+  "score": 85.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Horse-Creek-Rd_Pueblo_CO_81004_M95800-05570": {
+  "kind": "road",
+  "lat": 38.02904,
+  "lon": -104.65206,
+  "matched": "Horse Creek Rd, 81004",
+  "score": 88.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Hubbard-Creek-Rd_Somerset_CO_81428_M97092-79561": {
+  "kind": "road",
+  "lat": 39.00632,
+  "lon": -107.52427,
+  "matched": "Hubbard Crk",
+  "score": 85.0
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Huerfano-Blvd_Walsenburg_CO_81089_M92141-58298": {
+  "kind": "road",
+  "lat": 37.62494,
+  "lon": -104.83327,
+  "matched": "Huerfano Blvd, 81089",
+  "score": 85.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Jones-Rd_Peyton_CO_80831_M99141-76597": {
+  "kind": "road",
+  "lat": 38.89643,
+  "lon": -104.49604,
+  "matched": "Jones Rd, 80831",
+  "score": 86
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Judge-Orr-Rd-Parcel-1_Calhan_CO_80808_M96507-03957": {
+  "kind": "road",
+  "lat": 38.95459,
+  "lon": -104.27958,
+  "matched": "Judge Orr Rd, 80808",
+  "score": 82.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Judge-Orr-Rd_Calhan_CO_80808_M99939-96421": {
+  "kind": "road",
+  "lat": 38.95459,
+  "lon": -104.27958,
+  "matched": "Judge Orr Rd, 80808",
+  "score": 87.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Kiowa-Bennett-Rd_Bennett_CO_80102_M96957-05783": {
+  "kind": "road",
+  "lat": 39.85684,
+  "lon": -104.41403,
+  "matched": "Kiowa Bennett Rd, 80102",
+  "score": 88.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Kk-Rd_Molina_CO_81646_M91490-17850": {
+  "kind": "road",
+  "lat": 39.18257,
+  "lon": -108.03693,
+  "matched": "Kk Rd, 81646",
+  "score": 83.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/La-Posta-Canyon-Rd_Durango_CO_81303_M91535-79756": {
+  "kind": "road",
+  "lat": 37.12827,
+  "lon": -107.91734,
+  "matched": "La Posta Canyon Rd, 81303",
+  "score": 89.1
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Lariat-Rd_Monte-Vista_CO_81144_M98571-12761": {
+  "kind": "road",
+  "lat": 37.57472,
+  "lon": -106.23047,
+  "matched": "Lariat Rd, 81144",
+  "score": 83.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Last-Dollar-Rd-Lot-4_Telluride_CO_81435_M97410-95550": {
+  "kind": "road",
+  "lat": 37.96442,
+  "lon": -107.90494,
+  "matched": "Last Dollar Rd, 81435",
+  "score": 86.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Lone-Cone-Rd_Norwood_CO_81423_M28978-53510": {
+  "kind": "address",
+  "lat": 38.10124,
+  "lon": -108.24866,
+  "matched": "9 GURLEY DR, NORWOOD, 81423",
+  "score": 93.0
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Longhorn-Trl-Lot-2_Model_CO_81059_M96695-57778": {
+  "kind": "road",
+  "lat": 37.63271,
+  "lon": -104.16476,
+  "matched": "Longhorn Trl, 81059",
+  "score": 85.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Lower-River-Rd_Snowmass_CO_81654_M90486-45487": {
+  "kind": "road",
+  "lat": 39.3178,
+  "lon": -106.93942,
+  "matched": "Lower River Rd, 81654",
+  "score": 87.0
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Mesa-View-Dr_Pueblo_CO_81004_M91784-41485": {
+  "kind": "road",
+  "lat": 38.03511,
+  "lon": -104.64567,
+  "matched": "Mesa View Dr, 81004",
+  "score": 87.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Molina_CO_81646_M90654-82516": {
+  "kind": "road",
+  "lat": 39.18257,
+  "lon": -108.03693,
+  "matched": "Kk Rd, 81646",
+  "score": 83.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Mountain-Pr_Colorado-Springs_CO_80928_M95113-57073": {
+  "kind": "road",
+  "lat": 38.60071,
+  "lon": -104.37084,
+  "matched": "Mountain Prairie Dr, 80928",
+  "score": 84.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Ms-Rd_Glade-Park_CO_81522_M96753-43198": {
+  "kind": "address",
+  "lat": 38.82582,
+  "lon": -108.81628,
+  "matched": "12951 MS RD, GATEWAY, 81522",
+  "score": 99.1
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Mystic-Mesa-Rd-Lot-1_Hotchkiss_CO_81419_M98511-09501": {
+  "kind": "road",
+  "lat": 38.83974,
+  "lon": -107.72043,
+  "matched": "Wolf Park Rd, 81419",
+  "score": 85.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/N-27th-Ln_Pueblo_CO_81001_M91939-87983": {
+  "kind": "road",
+  "lat": 38.28737,
+  "lon": -104.53458,
+  "matched": "N 27th Ln, 81001",
+  "score": 86
+ },
+ "https://www.realtor.com/realestateandhomes-detail/N-Melby-Ranch-Rd-Lot-8_San-Luis_CO_81152_M96019-98905": {
+  "kind": "road",
+  "lat": 37.16592,
+  "lon": -105.45212,
+  "matched": "N Melby Ranch Rd",
+  "score": 82.6
+ },
+ "https://www.realtor.com/realestateandhomes-detail/N-Turkey-Creek-Rd_Morrison_CO_80465_M98496-25758": {
+  "kind": "road",
+  "lat": 39.58844,
+  "lon": -105.2658,
+  "matched": "N Turkey Creek Rd, 80465",
+  "score": 87.9
+ },
+ "https://www.realtor.com/realestateandhomes-detail/N27th-Ln_Pueblo_CO_81001_M93723-47930": {
+  "kind": "road",
+  "lat": 38.28737,
+  "lon": -104.53458,
+  "matched": "N 27th Ln, 81001",
+  "score": 80.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/NA-NA-Lot-1_Parker_CO_80138_M97062-62147": {
+  "kind": "address",
+  "lat": 39.52072,
+  "lon": -104.75628,
+  "matched": "1, 10881 PINE DR, #1, PARKER, 80138",
+  "score": 80.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Needles-View-Pl_Pagosa-Springs_CO_81147_M13361-93190": {
+  "kind": "road",
+  "lat": 37.25845,
+  "lon": -106.87472,
+  "matched": "Needles View Pl, 81147",
+  "score": 82.0
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Northridge-Rd-Lot-24C_Weston_CO_81091_M94008-47270": {
+  "kind": "road",
+  "lat": 37.1904,
+  "lon": -104.91046,
+  "matched": "Northridge Rd, 81091",
+  "score": 83.6
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Oak-Creek-Rd-Lot-4_Eckert_CO_81418_M99896-67021": {
+  "kind": "road",
+  "lat": 38.8713,
+  "lon": -108.02548,
+  "matched": "Oak Creek Rd, 81418",
+  "score": 84.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Oak-Creek-Rd-Lot-5_Eckert_CO_81418_M91698-62996": {
+  "kind": "road",
+  "lat": 38.8713,
+  "lon": -108.02548,
+  "matched": "Oak Creek Rd, 81418",
+  "score": 84.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Ogden-Rd_Montrose_CO_81401_M29900-34686": {
+  "kind": "road",
+  "lat": 38.45082,
+  "lon": -107.8453,
+  "matched": "Ogden Rd, 81401",
+  "score": 84.1
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Old-Stage-Coach-Rd-Lot-73_San-Luis_CO_81152_M90900-90076": {
+  "kind": "road",
+  "lat": 37.02237,
+  "lon": -105.51547,
+  "matched": "Old Stage Coach Rd, 81152",
+  "score": 85.6
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Par-1-County-41-Rd_Elbert_CO_80106_M98634-29480": {
+  "kind": "road",
+  "lat": 39.23877,
+  "lon": -104.47789,
+  "matched": "Co Rd 41, 80106",
+  "score": 81.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Par-2-Walker-Rd_Colorado-Springs_CO_80908_M99418-87557": {
+  "kind": "road",
+  "lat": 39.09299,
+  "lon": -104.69077,
+  "matched": "Walker Rd, 80908",
+  "score": 80.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Par-34-Huerfano-Blvd_Walsenburg_CO_81089_M92570-39976": {
+  "kind": "road",
+  "lat": 37.62494,
+  "lon": -104.83327,
+  "matched": "Huerfano Blvd, 81089",
+  "score": 82.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Par-43-Black-Horse-Dr_Pueblo_CO_81004_M99467-02117": {
+  "kind": "road",
+  "lat": 37.99692,
+  "lon": -104.665,
+  "matched": "Black Horse Dr, 81004",
+  "score": 84.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Par-6-Bush-Rd_Avondale_CO_81022_M99096-92717": {
+  "kind": "road",
+  "lat": 38.14009,
+  "lon": -104.43767,
+  "matched": "Bush Rd, 81022",
+  "score": 80.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Par-78-Willow-Spring-Dr_Pueblo_CO_81004_M94110-30183": {
+  "kind": "road",
+  "lat": 38.00347,
+  "lon": -104.67709,
+  "matched": "Willow Spring Dr, 81004",
+  "score": 85.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Par-90-Railroad-Springs-Rd_Pueblo_CO_81004_M94973-89081": {
+  "kind": "road",
+  "lat": 37.95957,
+  "lon": -104.62947,
+  "matched": "Railroad Springs Rd, 81004",
+  "score": 87
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Parsons-Draw_Walden_CO_80480_M92875-80612": {
+  "kind": "road",
+  "lat": 40.96599,
+  "lon": -106.4007,
+  "matched": "Parsons Draw Rd",
+  "score": 86.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Penrith-Rd-Parcel-Six_Bennett_CO_80102_M98540-53468": {
+  "kind": "road",
+  "lat": 39.8976,
+  "lon": -104.4517,
+  "matched": "Penrith Rd, 80102",
+  "score": 80.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Peoria-Crossing-Rd_Bennett_CO_80102_M96272-49082": {
+  "kind": "road",
+  "lat": 39.97174,
+  "lon": -104.11355,
+  "matched": "Peoria Crossing Rd, 80654",
+  "score": 89.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Pine-Bluff-Dr_Pueblo_CO_81004_M28064-92092": {
+  "kind": "road",
+  "lat": 38.00882,
+  "lon": -104.73981,
+  "matched": "Pine Bluff Dr, 81004",
+  "score": 84.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Pine-Ridge-Trl_Craig_CO_81625_M94222-35695": {
+  "kind": "road",
+  "lat": 40.56325,
+  "lon": -107.64264,
+  "matched": "Pine Ridge Trl, 81625",
+  "score": 89.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Pinion-Ridge-Rd_Montrose_CO_81403_M92095-02621": {
+  "kind": "road",
+  "lat": 38.25748,
+  "lon": -107.74981,
+  "matched": "Ridge Rd, 81403",
+  "score": 80
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Ponderosa-Dr-Lot-21_Ridgway_CO_81432_M93118-24287": {
+  "kind": "road",
+  "lat": 38.18721,
+  "lon": -107.79573,
+  "matched": "Ponderosa Dr, 81432",
+  "score": 87.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Ponderosa-Dr_Ridgway_CO_81432_M94876-92990": {
+  "kind": "road",
+  "lat": 38.18721,
+  "lon": -107.79573,
+  "matched": "Ponderosa Dr, 81432",
+  "score": 87.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Ponderosa-Trl-Lot-19_Canon-City_CO_81212_M99650-18765": {
+  "kind": "road",
+  "lat": 38.28947,
+  "lon": -105.30993,
+  "matched": "Ponderosa Trl, 81212",
+  "score": 83.0
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Powers-Rd-Lot-377_Fort-Garland_CO_81133_M91230-44908": {
+  "kind": "road",
+  "lat": 37.54888,
+  "lon": -105.18361,
+  "matched": "Powers Rd, 81133",
+  "score": 82.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Powers-Rd_Colorado-Springs_CO_80928_M99264-49664": {
+  "kind": "road",
+  "lat": 38.62174,
+  "lon": -104.4693,
+  "matched": "Powers Rd, 80928",
+  "score": 80.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Railroad-Springs-Rd_Pueblo_CO_81004_M98738-07463": {
+  "kind": "road",
+  "lat": 37.95957,
+  "lon": -104.62947,
+  "matched": "Railroad Springs Rd, 81004",
+  "score": 90.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Ranch-Rd_Placerville_CO_81430_M92302-95311": {
+  "kind": "road",
+  "lat": 38.15208,
+  "lon": -107.97374,
+  "matched": "Ranch Rd, 81430",
+  "score": 81.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Raven-Gulch-Rd-Lot-I3_Morrison_CO_80465_M99198-35158": {
+  "kind": "road",
+  "lat": 39.61985,
+  "lon": -105.22579,
+  "matched": "Raven Gulch Rd, 80465",
+  "score": 83.6
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Rd-S-108_Alamosa_CO_81101_M93398-58677": {
+  "kind": "road",
+  "lat": 37.39683,
+  "lon": -105.89244,
+  "matched": "Rd S 108, 81101",
+  "score": 84.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Red-Creek-Springs-Rd-Lot-2_Pueblo_CO_81005_M99284-33017": {
+  "kind": "road",
+  "lat": 38.24524,
+  "lon": -104.67401,
+  "matched": "Red Creek Springs Rd",
+  "score": 84.9
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Red-Creek-Springs-Rd_Pueblo_CO_81005_M91468-37849": {
+  "kind": "road",
+  "lat": 38.24524,
+  "lon": -104.67401,
+  "matched": "Red Creek Springs Rd",
+  "score": 87.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Red-Creek-Springs-Rd_Pueblo_CO_81005_M96494-77176": {
+  "kind": "road",
+  "lat": 38.24524,
+  "lon": -104.67401,
+  "matched": "Red Creek Springs Rd",
+  "score": 87.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Red-Feather-Lake-Rd-13_Livermore_CO_80536_M97686-99495": {
+  "kind": "address",
+  "lat": 40.79433,
+  "lon": -105.21588,
+  "matched": "13 Red Feather Lakes Rd, 80536",
+  "score": 86.6
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Resolis-Rd_Matheson_CO_80830_M96537-11976": {
+  "kind": "road",
+  "lat": 39.27545,
+  "lon": -103.83585,
+  "matched": "Resolis Rd",
+  "score": 82.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Rist-Creek-Rd_Bellvue_CO_80512_M99158-11447": {
+  "kind": "road",
+  "lat": 40.63576,
+  "lon": -105.27571,
+  "matched": "Rist Creek Rd, 80512",
+  "score": 87.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Road-23_Lewis_CO_81327_M92445-48190": {
+  "kind": "road",
+  "lat": 37.49955,
+  "lon": -108.63107,
+  "matched": "Rd 23, 81327",
+  "score": 86.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Road-35-3_Mancos_CO_81328_M96069-33752": {
+  "kind": "road",
+  "lat": 37.43356,
+  "lon": -108.40695,
+  "matched": "Co Rd 35.3, 81328",
+  "score": 86
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Road-46_Mancos_CO_81328_M14740-18604": {
+  "kind": "road",
+  "lat": 37.32451,
+  "lon": -108.2215,
+  "matched": "Rd 46, 81328",
+  "score": 85.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Road-9-4_Dove-Creek_CO_81324_M98667-69392": {
+  "kind": "road",
+  "lat": 37.73537,
+  "lon": -108.90784,
+  "matched": "Dove Crk",
+  "score": 83.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Road-C_Dove-Creek_CO_81324_M99392-72428": {
+  "kind": "road",
+  "lat": 37.73537,
+  "lon": -108.90784,
+  "matched": "Dove Crk",
+  "score": 84.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Road-Cc_Pleasant-View_CO_81331_M90428-39311": {
+  "kind": "road",
+  "lat": 37.58832,
+  "lon": -108.62582,
+  "matched": "Rd CC, 81331",
+  "score": 80.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Road-L_Cortez_CO_81321_M94810-06895": {
+  "kind": "road",
+  "lat": 37.37105,
+  "lon": -108.6251,
+  "matched": "Rd L, 81321",
+  "score": 84.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Road-V-3_Lewis_CO_81327_M93847-69233": {
+  "kind": "road",
+  "lat": 37.48621,
+  "lon": -108.65331,
+  "matched": "Rd V, 81327",
+  "score": 84.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Road-X_Dolores_CO_81323_M99679-50906": {
+  "kind": "road",
+  "lat": 37.51585,
+  "lon": -108.59827,
+  "matched": "Rd X, 81323",
+  "score": 83.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Road_Larkspur_CO_80118_M98276-19420": {
+  "kind": "road",
+  "lat": 39.23036,
+  "lon": -104.89005,
+  "matched": "Larkspur Rd, 80118",
+  "score": 88.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Ryland-Rd_San-Luis_CO_81152_M98473-41805": {
+  "kind": "road",
+  "lat": 37.25645,
+  "lon": -105.27961,
+  "matched": "Ryland Rd",
+  "score": 83.0
+ },
+ "https://www.realtor.com/realestateandhomes-detail/S-County-Road-1-E_Monte-Vista_CO_81144_M96415-11572": {
+  "kind": "road",
+  "lat": 37.43007,
+  "lon": -106.13031,
+  "matched": "S Co Rd 1 E, 81144",
+  "score": 86
+ },
+ "https://www.realtor.com/realestateandhomes-detail/S-County-Road-116_Alamosa_CO_81101_M99605-12711": {
+  "kind": "road",
+  "lat": 37.44696,
+  "lon": -105.74621,
+  "matched": "S Co Rd 116",
+  "score": 86.0
+ },
+ "https://www.realtor.com/realestateandhomes-detail/S-Greenway-Ave_Pueblo-West_CO_81007_M94813-92678": {
+  "kind": "road",
+  "lat": 38.29642,
+  "lon": -104.74948,
+  "matched": "S Greenway Ave, 81007",
+  "score": 85.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/S-Highway-550_Durango_CO_81303_M98363-01218": {
+  "kind": "road",
+  "lat": 37.18392,
+  "lon": -107.85693,
+  "matched": "US Hwy 550, 81303",
+  "score": 86
+ },
+ "https://www.realtor.com/realestateandhomes-detail/S-Maxwell-Hill-Rd_Littleton_CO_80127_M95513-19509": {
+  "kind": "road",
+  "lat": 39.50083,
+  "lon": -105.17839,
+  "matched": "S Maxwell Hill Rd, 80127",
+  "score": 87.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/S-Rockcliff-Cir-Lot-11_Pagosa-Springs_CO_81147_M22399-92416": {
+  "kind": "road",
+  "lat": 37.08148,
+  "lon": -107.02506,
+  "matched": "S Rockcliff Cir, 81147",
+  "score": 82.0
+ },
+ "https://www.realtor.com/realestateandhomes-detail/S-Rockcliff-Cir-Lot-13_Pagosa-Springs_CO_81147_M94179-25560": {
+  "kind": "road",
+  "lat": 37.08148,
+  "lon": -107.02506,
+  "matched": "S Rockcliff Cir, 81147",
+  "score": 81.6
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Sage-Grouse-Rd-Lot-6_Placerville_CO_81430_M99054-07674": {
+  "kind": "road",
+  "lat": 38.09754,
+  "lon": -108.00139,
+  "matched": "Sage Grouse S",
+  "score": 81.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Sage-Grouse-S-Parcel-8_Placerville_CO_81430_M24749-04994": {
+  "kind": "road",
+  "lat": 38.09754,
+  "lon": -108.00139,
+  "matched": "Sage Grouse S",
+  "score": 81.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Saladay-Rd_Calhan_CO_80808_M99666-84222": {
+  "kind": "road",
+  "lat": 38.88903,
+  "lon": -104.36937,
+  "matched": "Saladay Rd, 80808",
+  "score": 87.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Salt-Ranch-Trl_Hartsel_CO_80449_M94523-18527": {
+  "kind": "road",
+  "lat": 39.05215,
+  "lon": -105.92793,
+  "matched": "Salt Ranch Trl, 80449",
+  "score": 87.9
+ },
+ "https://www.realtor.com/realestateandhomes-detail/San-Juan-Mesa-Trl_Segundo_CO_81082_M90604-45422": {
+  "kind": "road",
+  "lat": 37.12425,
+  "lon": -104.55405,
+  "matched": "Mesa Trl, 81082",
+  "score": 80
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Sawmill-Ln_Idaho-Springs_CO_80452_M93821-20725": {
+  "kind": "road",
+  "lat": 39.69367,
+  "lon": -105.49115,
+  "matched": "Sawmill Ln, 80452",
+  "score": 82.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Schulze-Ranch-Rd_Westcliffe_CO_81252_M91305-79406": {
+  "kind": "road",
+  "lat": 38.05637,
+  "lon": -105.28336,
+  "matched": "Schulze Ranch Rd, 81252",
+  "score": 86.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Shear-Rd_Yoder_CO_80864_M94626-05421": {
+  "kind": "road",
+  "lat": 38.69462,
+  "lon": -104.20985,
+  "matched": "Shear Rd, 80864",
+  "score": 87.1
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Siloam-Rd_Beulah_CO_81023_M92120-11048": {
+  "kind": "road",
+  "lat": 38.14324,
+  "lon": -104.9331,
+  "matched": "Siloam Rd, 81023",
+  "score": 86.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Sinton-Rd_Evergreen_CO_80439_M95649-33704": {
+  "kind": "road",
+  "lat": 39.67357,
+  "lon": -105.42865,
+  "matched": "Sinton Rd, 80439",
+  "score": 84.0
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Snowy-Trl_Conifer_CO_80433_M98242-49804": {
+  "kind": "road",
+  "lat": 39.52224,
+  "lon": -105.25011,
+  "matched": "Snowy Trl, 80433",
+  "score": 85.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Snowy-Way_Cotopaxi_CO_81223_M96674-41123": {
+  "kind": "road",
+  "lat": 38.37659,
+  "lon": -105.52833,
+  "matched": "Snowy Way, 81223",
+  "score": 84.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Spangle-Dr-Lot-416_Fort-Garland_CO_81133_M94722-61096": {
+  "kind": "road",
+  "lat": 37.53113,
+  "lon": -105.19268,
+  "matched": "Spangle Dr, 81133",
+  "score": 83.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Spencer-Mountain-Rd_Bellvue_CO_80512_M96310-12906": {
+  "kind": "road",
+  "lat": 40.58703,
+  "lon": -105.38251,
+  "matched": "Spencer Mountain, 80512",
+  "score": 87.6
+ },
+ "https://www.realtor.com/realestateandhomes-detail/State-Highway-114_Gunnison_CO_81230_M96688-50614": {
+  "kind": "road",
+  "lat": 38.48829,
+  "lon": -106.76545,
+  "matched": "State Hwy 114, 81230",
+  "score": 88.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/State-Highway-142_Manassa_CO_81141_M92438-38150": {
+  "kind": "road",
+  "lat": 37.1742,
+  "lon": -105.97794,
+  "matched": "State Hwy 142, 81141",
+  "score": 89.1
+ },
+ "https://www.realtor.com/realestateandhomes-detail/State-Highway-151_Chimney-Rock_CO_81147_M93223-95315": {
+  "kind": "road",
+  "lat": 37.12131,
+  "lon": -107.37135,
+  "matched": "State Hwy 151, 81147",
+  "score": 83.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Strasburg-Rd_Strasburg_CO_80136_M90207-86268": {
+  "kind": "road",
+  "lat": 39.87619,
+  "lon": -104.31965,
+  "matched": "Strasburg Rd, 80136",
+  "score": 85.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Stub-Ct_Livermore_CO_80536_M96760-53966": {
+  "kind": "road",
+  "lat": 40.98159,
+  "lon": -105.26043,
+  "matched": "Stub Ct, 80536",
+  "score": 82.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Summit-Dr-Lot-2_Bailey_CO_80421_M98889-74885": {
+  "kind": "road",
+  "lat": 39.43609,
+  "lon": -105.47702,
+  "matched": "Summit Dr, 80421",
+  "score": 83.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Sunlight-Mine-Ln_Telluride_CO_81435_M95366-06937": {
+  "kind": "road",
+  "lat": 37.8935,
+  "lon": -107.92717,
+  "matched": "Sunlight Mine Ln",
+  "score": 84.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Tahmoush-Ln-Lot-154_Fort-Garland_CO_81133_M98497-26478": {
+  "kind": "road",
+  "lat": 37.53161,
+  "lon": -105.28278,
+  "matched": "Tahmoush Ln, 81133",
+  "score": 80.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Tb-County-Road-554_Gardner_CO_81040_M99189-97255": {
+  "kind": "road",
+  "lat": 37.75988,
+  "lon": -105.23688,
+  "matched": "Co Rd 554, 81040",
+  "score": 86.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Tbd-Aspen-Government-Springs-Rd-Lot-1_Montrose_CO_81403_M94690-25550": {
+  "kind": "road",
+  "lat": 38.35006,
+  "lon": -107.84637,
+  "matched": "Government Springs Rd, 81403",
+  "score": 82.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Tbd-Cavanaugh-Rd_Hudson_CO_80642_M98138-54217": {
+  "kind": "road",
+  "lat": 40.18891,
+  "lon": -104.65922,
+  "matched": "Cavanaugh Rd, 80642",
+  "score": 85.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Tbd-Corral-N-Lot-36_Texas-Creek_CO_81223_M97579-65642": {
+  "kind": "road",
+  "lat": 38.27094,
+  "lon": -105.52292,
+  "matched": "Corral N, 81223",
+  "score": 82.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Tbd-County-Road-10_Mesita_CO_81152_M95901-15804": {
+  "kind": "road",
+  "lat": 37.10575,
+  "lon": -105.59333,
+  "matched": "Co Rd 10, 81152",
+  "score": 86.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Tbd-County-Road-116-Lot-1_Hesperus_CO_81326_M97986-71743": {
+  "kind": "road",
+  "lat": 37.19853,
+  "lon": -108.1608,
+  "matched": "Co Rd 116, 81326",
+  "score": 83
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Tbd-County-Road-25_Carr_CO_80612_M93155-59608": {
+  "kind": "road",
+  "lat": 40.78332,
+  "lon": -104.82951,
+  "matched": "Co Rd 25, 80612",
+  "score": 81.1
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Tbd-County-Road-25_Carr_CO_80612_M94174-47712": {
+  "kind": "road",
+  "lat": 40.78332,
+  "lon": -104.82951,
+  "matched": "Co Rd 25, 80612",
+  "score": 81.1
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Tbd-County-Road-27-98_Nunn_CO_80648_M94562-73832": {
+  "kind": "road",
+  "lat": 40.75404,
+  "lon": -104.81009,
+  "matched": "Co Rd 27, 80648",
+  "score": 86.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Tbd-County-Road-300-Lot-1_Parachute_CO_81635_M96651-87095": {
+  "kind": "road",
+  "lat": 39.45145,
+  "lon": -108.03737,
+  "matched": "Co Rd 300, 81635",
+  "score": 83.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Tbd-County-Road-30_Brush_CO_80723_M91338-95945": {
+  "kind": "road",
+  "lat": 40.29741,
+  "lon": -103.58405,
+  "matched": "Co Rd 30, 80723",
+  "score": 87.0
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Tbd-County-Road-37_Hamilton_CO_81638_M92728-61203": {
+  "kind": "road",
+  "lat": 40.33587,
+  "lon": -107.53302,
+  "matched": "Co Rd 37, 81638",
+  "score": 84.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Tbd-County-Road-43_Pierce_CO_80650_M93189-07819": {
+  "kind": "road",
+  "lat": 40.68921,
+  "lon": -104.65825,
+  "matched": "Co Rd 43, 80650",
+  "score": 80.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Tbd-County-Road-80_Hayden_CO_81639_M98272-98192": {
+  "kind": "road",
+  "lat": 40.55347,
+  "lon": -107.2154,
+  "matched": "Co Rd 80, 81639",
+  "score": 88.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Tbd-County-Road-854_Tabernash_CO_80478_M99466-51822": {
+  "kind": "address",
+  "lat": 40.01143,
+  "lon": -105.87333,
+  "matched": "854 Tabernash, 80478",
+  "score": 95.9
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Tbd-Eby-Creek-Rd_Eagle_CO_81631_M99939-56209": {
+  "kind": "road",
+  "lat": 39.69251,
+  "lon": -106.83228,
+  "matched": "Eby Creek Rd, 81631",
+  "score": 86
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Tbd-Hayden-Pkwy_Hayden_CO_81639_M97018-19748": {
+  "kind": "road",
+  "lat": 40.48722,
+  "lon": -107.24544,
+  "matched": "Hayden Pkwy",
+  "score": 81.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Tbd-Highway-119_Black-Hawk_CO_80422_M95064-74677": {
+  "kind": "road",
+  "lat": 39.80828,
+  "lon": -105.49749,
+  "matched": "State Hwy 119, 80422",
+  "score": 83.1
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Tbd-Highway-151_Ignacio_CO_81137_M91544-34817": {
+  "kind": "road",
+  "lat": 37.11333,
+  "lon": -107.59136,
+  "matched": "State Hwy 151, 81137",
+  "score": 84.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Tbd-Highway-184-Lot-1_Mancos_CO_81328_M95245-57477": {
+  "kind": "address",
+  "lat": 37.39612,
+  "lon": -108.36113,
+  "matched": "TBD Hwy 184, Mancos, 81328",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Tbd-Highway-184-Lot-2_Mancos_CO_81328_M94184-29049": {
+  "kind": "address",
+  "lat": 37.39612,
+  "lon": -108.36113,
+  "matched": "TBD Hwy 184, Mancos, 81328",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Tbd-Highway-184-Lot-3_Mancos_CO_81328_M92430-94214": {
+  "kind": "address",
+  "lat": 37.39612,
+  "lon": -108.36113,
+  "matched": "TBD Hwy 184, Mancos, 81328",
+  "score": 99.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Tbd-Highway-40_Tabernash_CO_80478_M29706-82503": {
+  "kind": "address",
+  "lat": 40.0112,
+  "lon": -105.87757,
+  "matched": "40 Tabernash, 80478",
+  "score": 96.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Tbd-I-76-Frontage-Rd_Keenesburg_CO_80643_M96851-29861": {
+  "kind": "road",
+  "lat": 40.00744,
+  "lon": -104.7073,
+  "matched": "I- 76 Frontage Rd",
+  "score": 81.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Tbd-Kiowa-Rd-Lot-23A_Salida_CO_81236_M98373-78379": {
+  "kind": "road",
+  "lat": 38.66007,
+  "lon": -106.12682,
+  "matched": "Kiowa Rd",
+  "score": 83.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Tbd-L12-County-Road-255_Westcliffe_CO_81252_M91183-42257": {
+  "kind": "road",
+  "lat": 38.19774,
+  "lon": -105.38597,
+  "matched": "Co Rd 255, 81252",
+  "score": 82.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Tbd-L1L19-County-Road-255_Westcliffe_CO_81252_M99147-43695": {
+  "kind": "road",
+  "lat": 38.19774,
+  "lon": -105.38597,
+  "matched": "Co Rd 255, 81252",
+  "score": 81.6
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Tbd-L2-County-Road-255_Westcliffe_CO_81252_M99791-32500": {
+  "kind": "road",
+  "lat": 38.19774,
+  "lon": -105.38597,
+  "matched": "Co Rd 255, 81252",
+  "score": 83
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Tbd-L3-County-Road-255_Westcliffe_CO_81252_M90668-26507": {
+  "kind": "road",
+  "lat": 38.19774,
+  "lon": -105.38597,
+  "matched": "Co Rd 255, 81252",
+  "score": 83
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Tbd-L7-County-Road-255_Westcliffe_CO_81252_M97392-24541": {
+  "kind": "road",
+  "lat": 38.19774,
+  "lon": -105.38597,
+  "matched": "Co Rd 255, 81252",
+  "score": 83
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Tbd-Routt-County-Road-46_Steamboat-Springs_CO_80487_M96136-09049": {
+  "kind": "road",
+  "lat": 40.52404,
+  "lon": -106.82339,
+  "matched": "Routt County Rd, 80487",
+  "score": 80.6
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Tbd-Shavano-Valley-Rd-Lot-1_Montrose_CO_81403_M91684-65354": {
+  "kind": "road",
+  "lat": 38.45822,
+  "lon": -107.99282,
+  "matched": "Shavano Valley Rd, 81403",
+  "score": 83.9
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Tbd-Stratton-Park-Rd-Lot-3_Bellvue_CO_80512_M99298-11789": {
+  "kind": "road",
+  "lat": 40.65369,
+  "lon": -105.32105,
+  "matched": "Stratton Park Rd, 80512",
+  "score": 88.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Tbd2-Hawthorne-St_Hayden_CO_81639_M92707-38095": {
+  "kind": "road",
+  "lat": 40.49549,
+  "lon": -107.24455,
+  "matched": "Hawthorne St, 81639",
+  "score": 85
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Tr-74-US-Highway-160_Walsenburg_CO_81089_M94080-90141": {
+  "kind": "address",
+  "lat": 37.63098,
+  "lon": -104.76949,
+  "matched": "74 US Hwy 160, 81089",
+  "score": 94.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Tract-10-English-Valley-Rnch_Del-Norte_CO_81132_M95272-34200": {
+  "kind": "address",
+  "lat": 37.70953,
+  "lon": -106.37035,
+  "matched": "122 ENGLISH VALLEY RD, DEL NORTE",
+  "score": 97.9
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Tract-103-Doe-Valley-Rd_Guffey_CO_80820_M95821-31283": {
+  "kind": "address",
+  "lat": 38.77815,
+  "lon": -105.36086,
+  "matched": "103 Doe Valley Rd, 80820",
+  "score": 95.9
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Tract-11-McClelland-Rd-Lot-11_Calhan_CO_80808_M93907-40655": {
+  "kind": "road",
+  "lat": 39.02646,
+  "lon": -104.40477,
+  "matched": "McClelland Rd, 80808",
+  "score": 81.1
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Tract-12-McClelland-Rd_Calhan_CO_80808_M92800-54988": {
+  "kind": "road",
+  "lat": 39.02646,
+  "lon": -104.40477,
+  "matched": "McClelland Rd, 80808",
+  "score": 83.6
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Tract-15-McClelland-Rd_Calhan_CO_80808_M93787-57240": {
+  "kind": "road",
+  "lat": 39.02646,
+  "lon": -104.40477,
+  "matched": "McClelland Rd, 80808",
+  "score": 83.6
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Tract-3-E-Oak-Grove-Rd_Montrose_CO_81401_M93962-73666": {
+  "kind": "road",
+  "lat": 38.45999,
+  "lon": -107.86691,
+  "matched": "E Oak Grove Rd, 81401",
+  "score": 82.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Tract-40-5950-Rd_Olathe_CO_81425_M28417-97217": {
+  "kind": "road",
+  "lat": 38.63561,
+  "lon": -107.96701,
+  "matched": "6000 Rd, 81425",
+  "score": 85.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Tract-5-Ln-10N_Hooper_CO_81136_M95366-72769": {
+  "kind": "address",
+  "lat": 37.71936,
+  "lon": -106.03846,
+  "matched": "5 Ln 10 N, 81125",
+  "score": 91.9
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Tract-7-McClelland-Rd-Lot-TRACT7_Calhan_CO_80808_M91527-64412": {
+  "kind": "road",
+  "lat": 39.02646,
+  "lon": -104.40477,
+  "matched": "McClelland Rd, 80808",
+  "score": 88.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Tract-7-Twin-Bluffs-Rd-Lot-2_Larkspur_CO_80118_M95156-78623": {
+  "kind": "road",
+  "lat": 39.19951,
+  "lon": -104.78362,
+  "matched": "Twin Bluffs Rd, 80118",
+  "score": 81.1
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Tract-9-McClelland-Rd_Calhan_CO_80808_M91022-40159": {
+  "kind": "road",
+  "lat": 39.02646,
+  "lon": -104.40477,
+  "matched": "McClelland Rd, 80808",
+  "score": 84.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Trout-Rd_Montrose_CO_81403_M93298-85591": {
+  "kind": "road",
+  "lat": 38.39258,
+  "lon": -107.81888,
+  "matched": "Trout Rd, 81403",
+  "score": 84.1
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Turkey-Ridge-Rnch-Lot-121_Walsenburg_CO_81089_M91019-82120": {
+  "kind": "road",
+  "lat": 37.84161,
+  "lon": -104.60856,
+  "matched": "Co Rd 122, 81089",
+  "score": 86
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Twin-Spruce-Rd_Golden_CO_80403_M99265-86781": {
+  "kind": "road",
+  "lat": 39.88294,
+  "lon": -105.36876,
+  "matched": "Twin Spruce Rd, 80403",
+  "score": 88.8
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Twinkle-Rd_Guffey_CO_80820_M97467-67299": {
+  "kind": "road",
+  "lat": 38.81586,
+  "lon": -105.35035,
+  "matched": "Twinkle Rd, 80820",
+  "score": 87.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/US-Highway-40_Kremmling_CO_80459_M90376-56662": {
+  "kind": "road",
+  "lat": 40.38944,
+  "lon": -106.64561,
+  "matched": "US Hwy 40, 80459",
+  "score": 85.7
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Uassigned-Juniper-Dr_Norwood_CO_81423_M99183-79168": {
+  "kind": "road",
+  "lat": 38.10911,
+  "lon": -108.29157,
+  "matched": "Juniper Dr, 81423",
+  "score": 80.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Usfs-Rd-613_Arboles_CO_81147_M95471-33069": {
+  "kind": "road",
+  "lat": 37.12714,
+  "lon": -107.37787,
+  "matched": "Usfs 613, 81147",
+  "score": 86.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/W-Beaver-Pines-Loop_Norwood_CO_81423_M93633-44381": {
+  "kind": "road",
+  "lat": 38.0534,
+  "lon": -108.22876,
+  "matched": "Beaver Pines Loop, 81423",
+  "score": 88.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/W-County-Road-24_Loveland_CO_80538_M98988-15282": {
+  "kind": "road",
+  "lat": 40.42197,
+  "lon": -105.1839,
+  "matched": "W Co Rd 24, 80538",
+  "score": 87.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/W-County-Road-72_Fort-Collins_CO_80524_M99275-71005": {
+  "kind": "road",
+  "lat": 40.77944,
+  "lon": -105.14668,
+  "matched": "W Co Rd 72, 80524",
+  "score": 85.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/W-Eisenhower-Blvd_Loveland_CO_80538_M99550-06456": {
+  "kind": "road",
+  "lat": 40.40736,
+  "lon": -105.13321,
+  "matched": "W Eisenhower Blvd, 80538",
+  "score": 88.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/W-Highway-160_Pagosa-Springs_CO_81147_M96784-96834": {
+  "kind": "road",
+  "lat": 37.29769,
+  "lon": -106.9719,
+  "matched": "US Hwy 160, 81147",
+  "score": 81.9
+ },
+ "https://www.realtor.com/realestateandhomes-detail/W-Ridge-Dr-Lot-80_Walsenburg_CO_81089_M97195-28754": {
+  "kind": "road",
+  "lat": 37.47779,
+  "lon": -104.71176,
+  "matched": "W Ridge Dr, 81089",
+  "score": 80.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Walking-Stick-Blvd_Pueblo_CO_81001_M96014-84881": {
+  "kind": "road",
+  "lat": 38.31302,
+  "lon": -104.5813,
+  "matched": "Walking Stick Blvd, 81001",
+  "score": 90.3
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Weld-County-49_Hudson_CO_80642_M96816-27843": {
+  "kind": "road",
+  "lat": 40.16866,
+  "lon": -104.60285,
+  "matched": "Co Rd 49, 80642",
+  "score": 83.2
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Whiteley-Rd_Placerville_CO_81430_M28703-01016": {
+  "kind": "road",
+  "lat": 37.93637,
+  "lon": -108.00724,
+  "matched": "Whiteley Rd",
+  "score": 81.1
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Wildhorn-Rd_Florissant_CO_80816_M90356-87489": {
+  "kind": "road",
+  "lat": 38.99425,
+  "lon": -105.27879,
+  "matched": "Wildhorn Rd, 80816",
+  "score": 84.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Wildhorn-Rd_Florissant_CO_80816_M96880-00208": {
+  "kind": "road",
+  "lat": 38.99425,
+  "lon": -105.27879,
+  "matched": "Wildhorn Rd, 80816",
+  "score": 84.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Willow-Creek-Ln_Fairplay_CO_80440_M95931-65873": {
+  "kind": "address",
+  "lat": 39.09109,
+  "lon": -106.03401,
+  "matched": "2662 WILLOW CREEK LN, FAIRPLAY, 80440",
+  "score": 99.5
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Wolfenberger-Rd-Lot-122_Rye_CO_81004_M97218-18181": {
+  "kind": "road",
+  "lat": 37.945,
+  "lon": -104.71587,
+  "matched": "Wolfenberger Rd, 81069",
+  "score": 84.4
+ },
+ "https://www.realtor.com/realestateandhomes-detail/Zercher-Rd_Beulah_CO_81023_M99649-57898": {
+  "kind": "road",
+  "lat": 38.05923,
+  "lon": -104.79324,
+  "matched": "Zercher Rd, 81023",
+  "score": 87.3
+ }
+}
