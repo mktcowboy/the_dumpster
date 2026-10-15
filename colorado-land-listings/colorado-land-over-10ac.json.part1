@@ -1,0 +1,3095 @@
+[
+ {
+  "title": "3448 County Road 352A, Canon City, CO 81212",
+  "price_usd": 275000,
+  "acres": 37.42,
+  "county": null,
+  "city": "Canon City",
+  "url": "https://www.realtor.com/realestateandhomes-detail/3448-County-Road-352A_Canon-City_CO_81212_M11151-13431",
+  "broker": "HomeSmart Preferred Realty (Canon City)"
+ },
+ {
+  "title": "717 Zane Dr, Durango, CO 81303",
+  "price_usd": 497000,
+  "acres": 35.0,
+  "county": null,
+  "city": "Durango",
+  "url": "https://www.realtor.com/realestateandhomes-detail/717-Zane-Dr_Durango_CO_81303_M24431-94123",
+  "broker": "KELLER WILLIAMS REALTY SOUTHWEST"
+ },
+ {
+  "title": "9489 S Turkey Creek Rd, Morrison, CO 80465",
+  "price_usd": 1300000,
+  "acres": 10.27,
+  "county": null,
+  "city": "Morrison",
+  "url": "https://www.realtor.com/realestateandhomes-detail/9489-S-Turkey-Creek-Rd_Morrison_CO_80465_M24771-36306",
+  "broker": "Jump Real Estate Llc"
+ },
+ {
+  "title": "Tbd L7 County Road 255, Westcliffe, CO 81252",
+  "price_usd": 185000,
+  "acres": 37.91,
+  "county": null,
+  "city": "Westcliffe",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Tbd-L7-County-Road-255_Westcliffe_CO_81252_M97392-24541",
+  "broker": "Homesmart Preferred Realty (Westcliffe)"
+ },
+ {
+  "title": "Patriot Cir, Westcliffe, CO 81252",
+  "price_usd": 162000,
+  "acres": 20.0,
+  "county": null,
+  "city": "Westcliffe",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Patriot-Cir_Westcliffe_CO_81252_M94225-57165",
+  "broker": "Blue Spruce Real Estate"
+ },
+ {
+  "title": "Rockcliff Cir Lot 16, Pagosa Springs, CO 81147",
+  "price_usd": 155000,
+  "acres": 35.26,
+  "county": null,
+  "city": "Pagosa Springs",
+  "url": "https://www.realtor.com/realestateandhomes-detail/S-Rockcliff-Cir_Pagosa-Springs_CO_81147_M18491-82276",
+  "broker": "Sherpa Real Estate"
+ },
+ {
+  "title": "Forest Service, Idaho Springs, CO 80425",
+  "price_usd": 190938,
+  "acres": 21.88,
+  "county": null,
+  "city": "Idaho Springs",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Forest-Service_Idaho-Springs_CO_80425_M94375-04949",
+  "broker": "Keller Williams Foothills Realty, Llc"
+ },
+ {
+  "title": "County Road 5, Ridgway, CO 81432",
+  "price_usd": 1850000,
+  "acres": 35.0,
+  "county": null,
+  "city": "Ridgway",
+  "url": "https://www.realtor.com/realestateandhomes-detail/County-5-Rd-Lot-10_Ridgway_CO_81432_M93536-37990",
+  "broker": "Vision Real Estate Investments"
+ },
+ {
+  "title": "Sage Grouse S, Placerville, CO 81430",
+  "price_usd": 559000,
+  "acres": 35.11,
+  "county": null,
+  "city": "Placerville",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Sage-Grouse-S-Parcel-8_Placerville_CO_81430_M24749-04994",
+  "broker": "LIV Sotheby's International Realty- MainSt"
+ },
+ {
+  "title": "458 E Beaver Pines Loop, Norwood, CO 81423",
+  "price_usd": 239000,
+  "acres": 37.22,
+  "county": null,
+  "city": "Norwood",
+  "url": "https://www.realtor.com/realestateandhomes-detail/458-E-Beaver-Pines-Loop_Norwood_CO_81423_M99420-55362",
+  "broker": "Telluride Properties Main St."
+ },
+ {
+  "title": "1404 N US Highway 287, Fort Collins, CO 80524",
+  "price_usd": 2900000,
+  "acres": 126.0,
+  "county": null,
+  "city": "Fort Collins",
+  "url": null,
+  "broker": "The Group- Mulberry"
+ },
+ {
+  "title": "County Road 502, Bayfield, CO 81122",
+  "price_usd": 900000,
+  "acres": 155.0,
+  "county": null,
+  "city": "Bayfield",
+  "url": "https://www.realtor.com/realestateandhomes-detail/County-Road-502_Bayfield_CO_81122_M92253-01026",
+  "broker": "The Wells Group of Durango, LLC"
+ },
+ {
+  "title": "8113 County Road 189, San Luis, CO 81152",
+  "price_usd": 84000,
+  "acres": 40.81,
+  "county": null,
+  "city": "San Luis",
+  "url": "https://www.realtor.com/realestateandhomes-detail/8113-County-Road-189_San-Luis_CO_81152_M94154-17011",
+  "broker": "Mountain Meadows Realty, Corp."
+ },
+ {
+  "title": "25035 Murphy Rd, Calhan, CO 80808",
+  "price_usd": 250000,
+  "acres": 39.94,
+  "county": null,
+  "city": "Calhan",
+  "url": "https://www.realtor.com/realestateandhomes-detail/25035-Murphy-Rd_Calhan_CO_80808_M97532-37708",
+  "broker": "LPT Realty LLC"
+ },
+ {
+  "title": "33455 Fossinger Rd, Yoder, CO 80864",
+  "price_usd": 189000,
+  "acres": 40.0,
+  "county": null,
+  "city": "Yoder",
+  "url": "https://www.realtor.com/realestateandhomes-detail/33455-Fossinger-Rd_Yoder_CO_80864_M22206-54694",
+  "broker": "Springs Home Finders LLC"
+ },
+ {
+  "title": "10905 W Highway 24, Green Mountain Falls, CO 80819",
+  "price_usd": 395000,
+  "acres": 23.84,
+  "county": null,
+  "city": "Green Mountain Falls",
+  "url": "https://www.realtor.com/realestateandhomes-detail/10905-W-Highway-24_Green-Mtn-Fls_CO_80819_M91961-22601",
+  "broker": "Remax Properties"
+ },
+ {
+  "title": "County Rd W, Akron, CO 80720",
+  "price_usd": 175000,
+  "acres": 160.0,
+  "county": null,
+  "city": "Akron",
+  "url": "https://www.realtor.com/realestateandhomes-detail/County-Rd-W_Akron_CO_80720_M96527-87020",
+  "broker": "HomeSmart"
+ },
+ {
+  "title": "8855 E Parker Rd, Parker, CO 80138",
+  "price_usd": 2300000,
+  "acres": null,
+  "county": null,
+  "city": "Parker",
+  "url": "https://www.realtor.com/realestateandhomes-detail/8855-E-Parker-Rd_Parker_CO_80138_M97929-36548",
+  "broker": "BRIGHTON MORTGAGE & REALTY"
+ },
+ {
+  "title": "Road V # 3, Lewis, CO 81327",
+  "price_usd": 165000,
+  "acres": 30.0,
+  "county": null,
+  "city": "Lewis",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Road-V-3_Lewis_CO_81327_M93847-69233",
+  "broker": "Regents Real Estate Group ERA Powered"
+ },
+ {
+  "title": "29736 State Highway 151, Chimney Rock, CO 81147",
+  "price_usd": 795000,
+  "acres": 160.0,
+  "county": null,
+  "city": "Chimney Rock",
+  "url": "https://www.realtor.com/realestateandhomes-detail/State-Highway-151_Chimney-Rock_CO_81147_M93223-95315",
+  "broker": "Sherpa Real Estate"
+ },
+ {
+  "title": "1504 County Road 43, Bailey, CO 80421",
+  "price_usd": 200000,
+  "acres": 14.81,
+  "county": null,
+  "city": "Bailey",
+  "url": "https://www.realtor.com/realestateandhomes-detail/1504-County-Road-43_Bailey_CO_80421_M28416-09146",
+  "broker": "Coldwell Banker Realty"
+ },
+ {
+  "title": "County Road 939, Tyrone, CO 80802",
+  "price_usd": 75000,
+  "acres": 13.61,
+  "county": null,
+  "city": "Tyrone",
+  "url": null,
+  "broker": "Real Broker, LLC DBA Real"
+ },
+ {
+  "title": "6000 County Road 43 1/2, Hudson, CO 80649",
+  "price_usd": 750000,
+  "acres": 50.51,
+  "county": null,
+  "city": "Hudson",
+  "url": null,
+  "broker": null
+ },
+ {
+  "title": "15575 Degroot Rd, Colorado Springs, CO 80928",
+  "price_usd": 79900,
+  "acres": 45.68,
+  "county": null,
+  "city": "Colorado Springs",
+  "url": "https://www.realtor.com/realestateandhomes-detail/15575-Degroot-Rd_Colorado-Springs_CO_80928_M99863-70590",
+  "broker": "The Platinum Group, REALTORS"
+ },
+ {
+  "title": "817 Far Vw, Pagosa Springs, CO 81147",
+  "price_usd": 225000,
+  "acres": 27.4,
+  "county": null,
+  "city": "Pagosa Springs",
+  "url": "https://www.realtor.com/realestateandhomes-detail/817-Far-Vw_Pagosa-Springs_CO_81147_M21513-44474",
+  "broker": "Sherpa Real Estate"
+ },
+ {
+  "title": "Big View Dr Lot 81, Trinidad, CO 81082",
+  "price_usd": 120000,
+  "acres": 40.75,
+  "county": null,
+  "city": "Trinidad",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Big-View-Dr-Lot-81_Trinidad_CO_81082_M99634-97500",
+  "broker": "Code Of The West Real Estate Llc"
+ },
+ {
+  "title": "6870 Bar 10 Rd, Colorado Springs, CO 80928",
+  "price_usd": 202500,
+  "acres": 35.02,
+  "county": null,
+  "city": "Colorado Springs",
+  "url": "https://www.realtor.com/realestateandhomes-detail/6870-Bar-10-Rd_Calhan_CO_80808_M94505-92533",
+  "broker": "Coldwell Banker Realty - Colorado Springs"
+ },
+ {
+  "title": "County Road 110, Silverton, CO 81433",
+  "price_usd": 29000,
+  "acres": 20.63,
+  "county": null,
+  "city": "Silverton",
+  "url": "https://www.realtor.com/realestateandhomes-detail/County-Road-110_Silverton_CO_81433_M94406-13459",
+  "broker": "R1 Colorado Durango"
+ },
+ {
+  "title": "11005300 High Mtn, Lake City, CO 81235",
+  "price_usd": 845000,
+  "acres": 19.31,
+  "county": null,
+  "city": "Lake City",
+  "url": "https://www.realtor.com/realestateandhomes-detail/11005300-High-Mtn_Lake-City_CO_81235_M95527-44708",
+  "broker": "Crystal Peak Properties"
+ },
+ {
+  "title": "5347 Monitor Lode Claims, Leadville, CO 80461",
+  "price_usd": 58000,
+  "acres": 58.37,
+  "county": null,
+  "city": "Leadville",
+  "url": "https://www.realtor.com/realestateandhomes-detail/5347-Monitor-Lode-Claims_Leadville_CO_80461_M98124-18074",
+  "broker": "Full Circle Real Estate Group"
+ },
+ {
+  "title": "Par 11 Pine Bluff Dr, Pueblo, CO 81004",
+  "price_usd": 89900,
+  "acres": 80.0,
+  "county": null,
+  "city": "Pueblo",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Pine-Bluff-Dr_Pueblo_CO_81004_M28064-92092",
+  "broker": "Remax Of Pueblo Inc"
+ },
+ {
+  "title": "Gene Spur, Walsenburg, CO 81089",
+  "price_usd": 229000,
+  "acres": 35.0,
+  "county": null,
+  "city": "Walsenburg",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Gene-Spur_Walsenburg_CO_81089_M93099-01627",
+  "broker": "Spanish Peaks Land Company, Inc"
+ },
+ {
+  "title": "22014 Coal Mine Dr, Trinidad, CO 81082",
+  "price_usd": 250000,
+  "acres": 70.84,
+  "county": null,
+  "city": "Trinidad",
+  "url": "https://www.realtor.com/realestateandhomes-detail/22014-Coal-Mine-Dr_Trinidad_CO_81082_M99103-77265",
+  "broker": "Keller Williams Performance Realty"
+ },
+ {
+  "title": "Montezuma Mining Claim # 1, Silverton, CO 81433",
+  "price_usd": 9195,
+  "acres": 10.32,
+  "county": null,
+  "city": "Silverton",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Montezuma-Mining-Claim-1_Silverton_CO_81433_M94539-55745",
+  "broker": "Steffens and Company Realty, Inc"
+ },
+ {
+  "title": "Highway 12, Trinidad, CO 81082",
+  "price_usd": 199000,
+  "acres": 67.0,
+  "county": null,
+  "city": "Trinidad",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Highway-12_Trinidad_CO_81082_M92206-00890",
+  "broker": "Whitetail Properties Real Estate, Llc"
+ },
+ {
+  "title": "Forest Service 734 Rd, Crested Butte, CO 81224",
+  "price_usd": 58000,
+  "acres": null,
+  "county": null,
+  "city": "Crested Butte",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Tbd-Forest-Service-Rd_Crested-Butte_CO_81224_M95375-35362",
+  "broker": "PREMIER MOUNTAIN PROPERTIES"
+ },
+ {
+  "title": "4950 Little Turkey Creek Rd, Colorado Springs, CO 80926",
+  "price_usd": 365000,
+  "acres": 40.0,
+  "county": null,
+  "city": "Colorado Springs",
+  "url": "https://www.realtor.com/realestateandhomes-detail/4950-Little-Turkey-Creek-Rd_Colorado-Springs_CO_80926_M97454-32388",
+  "broker": "Davidson Biga Realty, Inc."
+ },
+ {
+  "title": "3802 Fourth of July Rd, Nederland, CO 80466",
+  "price_usd": 35525,
+  "acres": 10.15,
+  "county": null,
+  "city": "Nederland",
+  "url": "https://www.realtor.com/realestateandhomes-detail/3802-Fourth-of-July-Rd_Nederland_CO_80466_M99587-54438",
+  "broker": "Appreciate Realty CO"
+ },
+ {
+  "title": "75 Deer Run, Guffey, CO 80820",
+  "price_usd": 238000,
+  "acres": 35.0,
+  "county": null,
+  "city": "Guffey",
+  "url": "https://www.realtor.com/realestateandhomes-detail/75-Deer-Ln_Guffey_CO_80820_M91853-05307",
+  "broker": "Saddle Up Realty Llc"
+ },
+ {
+  "title": "22424 Highway 65, Cedaredge, CO 81413",
+  "price_usd": 295000,
+  "acres": null,
+  "county": null,
+  "city": "Cedaredge",
+  "url": "https://www.realtor.com/realestateandhomes-detail/22424-Highway-65_Cedaredge_CO_81413_M95692-32221",
+  "broker": "Coldwell Banker Distinctive Properties"
+ },
+ {
+  "title": "7155 W Pine Bluff Dr, Pueblo, CO 81004",
+  "price_usd": 99900,
+  "acres": 45.3,
+  "county": null,
+  "city": "Pueblo",
+  "url": "https://www.realtor.com/realestateandhomes-detail/7155-Pine-Bluff-Dr-W_Pueblo_CO_81004_M27939-41297",
+  "broker": "Whitetail Properties Real Estate, Llc"
+ },
+ {
+  "title": "5110 Little Turkey Creek Rd, Colorado Springs, CO 80926",
+  "price_usd": 218500,
+  "acres": 20.0,
+  "county": null,
+  "city": "Colorado Springs",
+  "url": "https://www.realtor.com/realestateandhomes-detail/CO_80831_M25579-28653",
+  "broker": "EXIT Realty DTC, Cherry Creek, Pikes Peak"
+ },
+ {
+  "title": "County Road 710, Paonia, CO 81428",
+  "price_usd": 269000,
+  "acres": 44.5,
+  "county": null,
+  "city": "Paonia",
+  "url": "https://www.realtor.com/realestateandhomes-detail/County-Road-710_Paonia_CO_81428_M98920-12325",
+  "broker": "Needlerock Mountain Realty And Land, Llc"
+ },
+ {
+  "title": "307 Natures Way, Pagosa Springs, CO 81147",
+  "price_usd": 169000,
+  "acres": 35.0,
+  "county": null,
+  "city": "Pagosa Springs",
+  "url": "https://www.realtor.com/realestateandhomes-detail/307-Natures-Way_Pagosa-Springs_CO_81147_M21406-44778",
+  "broker": "Galles Properties"
+ },
+ {
+  "title": "Tbd County Road 10, Mesita, CO 81152",
+  "price_usd": 27000,
+  "acres": 80.0,
+  "county": null,
+  "city": "Mesita",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Tbd-County-Road-10_Mesita_CO_81152_M95901-15804",
+  "broker": "Hayden Outdoors Real Estate"
+ },
+ {
+  "title": "23802 County Road 46 Aa, Saguache, CO 81149",
+  "price_usd": 175000,
+  "acres": 40.0,
+  "county": null,
+  "city": "Saguache",
+  "url": "https://www.realtor.com/realestateandhomes-detail/23802-County-Road-46-Aa_Saguache_CO_81149_M97631-67521",
+  "broker": "FIRST COLORADO LAND OFFICE"
+ },
+ {
+  "title": "Tbd Highway 119, Black Hawk, CO 80422",
+  "price_usd": 29000,
+  "acres": 18.15,
+  "county": null,
+  "city": "Black Hawk",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Tbd-Highway-119_Black-Hawk_CO_80422_M95064-74677",
+  "broker": "Real Broker, LLC DBA Real"
+ },
+ {
+  "title": "300 Shining Star Trl, Boulder, CO 80302",
+  "price_usd": 325000,
+  "acres": 30.72,
+  "county": null,
+  "city": "Boulder",
+  "url": "https://www.realtor.com/realestateandhomes-detail/300-Shining-Star-Trl_Boulder_CO_80302_M15360-11187",
+  "broker": "Coldwell Banker Realty"
+ },
+ {
+  "title": "5637 County Road H, Wiggins, CO 80654",
+  "price_usd": 299000,
+  "acres": 40.65,
+  "county": null,
+  "city": "Wiggins",
+  "url": "https://www.realtor.com/realestateandhomes-detail/5637-County-Road-H_Wiggins_CO_80654_M91975-70604",
+  "broker": "Colorado Land Co. Llc"
+ },
+ {
+  "title": "145 Nightingale Ln, Cripple Creek, CO 80813",
+  "price_usd": 399900,
+  "acres": 10.06,
+  "county": null,
+  "city": "Cripple Creek",
+  "url": "https://www.realtor.com/realestateandhomes-detail/145-Nightingale-Ln_Cripple-Creek_CO_80813_M29288-61282",
+  "broker": "Pikes Peak Homes And Land Ltd"
+ },
+ {
+  "title": "Lot 237 Cl Unit Cc2 Unit CC2 and G Ranch Ln, Gardner, CO 81040",
+  "price_usd": 70000,
+  "acres": 35.0,
+  "county": null,
+  "city": "Gardner",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Lot-237-Cl-Unit-CC2_Gardner_CO_81040_M93155-08346",
+  "broker": "Bachman & Associates"
+ },
+ {
+  "title": "16400 County Road 500, Pagosa Springs, CO 81147",
+  "price_usd": 850000,
+  "acres": 206.0,
+  "county": null,
+  "city": "Pagosa Springs",
+  "url": "https://www.realtor.com/realestateandhomes-detail/16400-County-Road-500_Pagosa-Springs_CO_81147_M16280-55497",
+  "broker": "Sherpa Real Estate"
+ },
+ {
+  "title": "Tract 42 Wapiti Ridge Rd, Del Norte, CO 81132",
+  "price_usd": 36050,
+  "acres": 36.05,
+  "county": null,
+  "city": "Del Norte",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Wapiti-Ridge-Rd_Del-Norte_CO_81132_M99965-47309",
+  "broker": "Steffens and Company Realty, Inc"
+ },
+ {
+  "title": "12155 Oil Well Rd, Calhan, CO 80808",
+  "price_usd": 305000,
+  "acres": 60.0,
+  "county": null,
+  "city": "Calhan",
+  "url": "https://www.realtor.com/realestateandhomes-detail/12155-Oil-Well-Rd_Calhan_CO_80808_M92945-57174",
+  "broker": "Century 21 Altitude Real Estate, LLC"
+ },
+ {
+  "title": "Hidden Wilderness Rd, Evergreen, CO 80439",
+  "price_usd": 160000,
+  "acres": 37.84,
+  "county": null,
+  "city": "Evergreen",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Hidden-Wilderness-Rd_Idaho-Springs_CO_80452_M97407-17605",
+  "broker": "COMPASS"
+ },
+ {
+  "title": "Tbd Minnehaha Senators, Silverton, CO 81433",
+  "price_usd": 47000,
+  "acres": null,
+  "county": null,
+  "city": "Silverton",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Silverton_Silverton_CO_81433_M29884-69517",
+  "broker": "Karen Srebacic-Sites, Independent Broker"
+ },
+ {
+  "title": "12201 S Highway 67, Cripple Creek, CO 80813",
+  "price_usd": 179000,
+  "acres": 10.24,
+  "county": null,
+  "city": "Cripple Creek",
+  "url": "https://www.realtor.com/realestateandhomes-detail/12201-S-Highway-67_Cripple-Creek_CO_80813_M92755-83160",
+  "broker": "Your Neighborhood Realty, Inc."
+ },
+ {
+  "title": "Budd Rd, Durango, CO 81303",
+  "price_usd": 295000,
+  "acres": 160.0,
+  "county": null,
+  "city": "Durango",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Budd-Rd_Durango_CO_81303_M98543-51732",
+  "broker": "Coldwell Banker Mountain Properties"
+ },
+ {
+  "title": "14633 Rancho Verde Rd, Trinidad, CO 81082",
+  "price_usd": 65000,
+  "acres": 40.0,
+  "county": null,
+  "city": "Trinidad",
+  "url": "https://www.realtor.com/realestateandhomes-detail/14633-Rancho-Verde-Rd_Trinidad_CO_81082_M28824-36323",
+  "broker": "Exp Realty Llc"
+ },
+ {
+  "title": "State Highway 114, Gunnison, CO 81230",
+  "price_usd": 55000,
+  "acres": 10.29,
+  "county": null,
+  "city": "Gunnison",
+  "url": "https://www.realtor.com/realestateandhomes-detail/State-Highway-114_Gunnison_CO_81230_M96688-50614",
+  "broker": "THE CLARKE AGENCY REAL ESTATE"
+ },
+ {
+  "title": "F Rd, Delta, CO 81416",
+  "price_usd": 299000,
+  "acres": 21.32,
+  "county": null,
+  "city": "Delta",
+  "url": "https://www.realtor.com/realestateandhomes-detail/F-Rd_Delta_CO_81416_M93791-75714",
+  "broker": "Needlerock Mountain Realty And Land, Llc"
+ },
+ {
+  "title": "33191 Elk Park Rd Lot C44, Trinidad, CO 81082",
+  "price_usd": 230000,
+  "acres": 35.1,
+  "county": null,
+  "city": "Trinidad",
+  "url": "https://www.realtor.com/realestateandhomes-detail/33191-Elk-Park-Rd-Lot-C44_Trinidad_CO_81082_M99641-68493",
+  "broker": "Code Of The West Real Estate"
+ },
+ {
+  "title": "La Posta Canyon Rd, Durango, CO 81303",
+  "price_usd": 93000,
+  "acres": 40.0,
+  "county": null,
+  "city": "Durango",
+  "url": "https://www.realtor.com/realestateandhomes-detail/La-Posta-Canyon-Rd_Durango_CO_81303_M91535-79756",
+  "broker": "Coldwell Banker Mountain Properties"
+ },
+ {
+  "title": "County Road AA, La Jara, CO 81140",
+  "price_usd": 49800,
+  "acres": null,
+  "county": null,
+  "city": "La Jara",
+  "url": "https://www.realtor.com/realestateandhomes-detail/County-Road-AA_La-Jara_CO_81140_M91260-03588",
+  "broker": "Werner Realty, Inc."
+ },
+ {
+  "title": "7 Elk Mtn Lot 7, Saguache, CO 81149",
+  "price_usd": 179000,
+  "acres": 42.0,
+  "county": null,
+  "city": "Saguache",
+  "url": "https://www.realtor.com/realestateandhomes-detail/7-Elk-Mtn_Saguache_CO_81149_M90092-48338",
+  "broker": "FIRST COLORADO LAND OFFICE"
+ },
+ {
+  "title": "9288 County Road Y, La Jara, CO 81140",
+  "price_usd": 149900,
+  "acres": 80.0,
+  "county": null,
+  "city": "La Jara",
+  "url": "https://www.realtor.com/realestateandhomes-detail/9288-County-Road-Y_La-Jara_CO_81140_M96965-14701",
+  "broker": "Schulz Realty"
+ },
+ {
+  "title": "6250 Highway 79, Bennett, CO 80102",
+  "price_usd": 260000,
+  "acres": 40.0,
+  "county": null,
+  "city": "Bennett",
+  "url": "https://www.realtor.com/realestateandhomes-detail/6250-Highway-79_Bennett_CO_80102_M97122-57018",
+  "broker": "Keller Williams 1St Realty"
+ },
+ {
+  "title": "Highway # 285/24, Buena Vista, CO 81211",
+  "price_usd": 349500,
+  "acres": 15.73,
+  "county": null,
+  "city": "Buena Vista",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Highway-28524_Buena-Vista_CO_81211_M96605-67645",
+  "broker": "Summit Realty, Inc"
+ },
+ {
+  "title": "Government Spgs, Montrose, CO 81403",
+  "price_usd": 299000,
+  "acres": 30.0,
+  "county": null,
+  "city": "Montrose",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Government-Spgs_Montrose_CO_81403_M98103-98253",
+  "broker": "M4 Ranch Group, LLC"
+ },
+ {
+  "title": "Cr-31 # 31B, Ouray, CO 81427",
+  "price_usd": 425000,
+  "acres": 10.02,
+  "county": null,
+  "city": "Ouray",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Cr-31-31B_Ouray_CO_81427_M93289-33621",
+  "broker": "Telluride Properties Main St."
+ },
+ {
+  "title": "9400 Canal Rd, Glade Park, CO 81523",
+  "price_usd": 367500,
+  "acres": 40.0,
+  "county": null,
+  "city": "Glade Park",
+  "url": "https://www.realtor.com/realestateandhomes-detail/9400-Canal-Rd_Glade-Park_CO_81523_M98168-70349",
+  "broker": "United Country Real Colorado Properties"
+ },
+ {
+  "title": "404 Forest Service Rd # 6802A, Gunnison, CO 81230",
+  "price_usd": 550000,
+  "acres": 80.0,
+  "county": null,
+  "city": "Gunnison",
+  "url": "https://www.realtor.com/realestateandhomes-detail/404-Forest-Service-Rd-6802A_Gunnison_CO_81230_M97520-45825",
+  "broker": "Bluebird Real Estate, LLC"
+ },
+ {
+  "title": "10448 Bank Statement, Leadville, CO 80461",
+  "price_usd": 48000,
+  "acres": 10.24,
+  "county": null,
+  "city": "Leadville",
+  "url": "https://www.realtor.com/realestateandhomes-detail/10448-Bank-Statement_Leadville_CO_80461_M95712-99166",
+  "broker": "Aspen Leaf Realty"
+ },
+ {
+  "title": "Highway 160, Fort Garland, CO 81133",
+  "price_usd": 135000,
+  "acres": 45.54,
+  "county": null,
+  "city": "Fort Garland",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Highway-160_Fort-Garland_CO_81133_M97049-22600",
+  "broker": "Hayden Outdoors Real Estate"
+ },
+ {
+  "title": "Road # 51, Silverton, CO 81433",
+  "price_usd": 160000,
+  "acres": 25.04,
+  "county": null,
+  "city": "Silverton",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Road-51_Silverton_CO_81433_M90332-93243",
+  "broker": "The Wells Group of Durango, LLC"
+ },
+ {
+  "title": "400 Forest Service Rd # 550, Almont, CO 81210",
+  "price_usd": 50000,
+  "acres": 10.33,
+  "county": null,
+  "city": "Almont",
+  "url": "https://www.realtor.com/realestateandhomes-detail/400-Forest-Service-Rd-550_Almont_CO_81210_M91157-71891",
+  "broker": "Coldwell Banker Mountain Properties"
+ },
+ {
+  "title": "2A W Beaver Pines Loop, Norwood, CO 81423",
+  "price_usd": 220000,
+  "acres": 37.1,
+  "county": null,
+  "city": "Norwood",
+  "url": "https://www.realtor.com/realestateandhomes-detail/2A-Beaver-Pines-Loop_Norwood_CO_81423_M90601-93998",
+  "broker": "Pine Cone Realty"
+ },
+ {
+  "title": "12101 Elk Run Rd, Trinidad, CO 81082",
+  "price_usd": 99000,
+  "acres": 40.0,
+  "county": null,
+  "city": "Trinidad",
+  "url": "https://www.realtor.com/realestateandhomes-detail/12101-Elk-Run-Rd_Trinidad_CO_81082_M99878-74992",
+  "broker": "Bachman & Associates"
+ },
+ {
+  "title": "1231 Ranchland Drs, Pagosa Springs, CO 81147",
+  "price_usd": 272500,
+  "acres": null,
+  "county": null,
+  "city": "Pagosa Springs",
+  "url": "https://www.realtor.com/realestateandhomes-detail/1231-Ranchland-Dr_Pagosa-Springs_CO_81147_M11835-29056",
+  "broker": "Mountain & Meadow Real Estate of Southwest Colorado, LLC"
+ },
+ {
+  "title": "2025 Granite Rd, Bellvue, CO 80512",
+  "price_usd": 249000,
+  "acres": 40.96,
+  "county": null,
+  "city": "Bellvue",
+  "url": "https://www.realtor.com/realestateandhomes-detail/2025-Granite-Rd_Bellvue_CO_80512_M96255-39126",
+  "broker": "Continental West Realty"
+ },
+ {
+  "title": "County Road 38, Platteville, CO 80651",
+  "price_usd": 199000,
+  "acres": 35.0,
+  "county": null,
+  "city": "Platteville",
+  "url": "https://www.realtor.com/realestateandhomes-detail/County-Road-38_Platteville_CO_80651_M94722-28794",
+  "broker": "LoKation Real Estate-Longmont"
+ },
+ {
+  "title": "County Road 6 S, Alamosa, CO 81101",
+  "price_usd": 76000,
+  "acres": 39.94,
+  "county": null,
+  "city": "Alamosa",
+  "url": "https://www.realtor.com/realestateandhomes-detail/County-Road-6-Anderson-S_Alamosa_CO_81101_M93832-98338",
+  "broker": "Colorado Realty & Land Co."
+ },
+ {
+  "title": "45000 Highway 159, San Luis, CO 81152",
+  "price_usd": 395000,
+  "acres": 438.53,
+  "county": null,
+  "city": "San Luis",
+  "url": "https://www.realtor.com/realestateandhomes-detail/45000-Highway-159_San-Luis_CO_81152_M96275-82012",
+  "broker": null
+ },
+ {
+  "title": "5347 Monitor, Leadville, CO 80461",
+  "price_usd": 125000,
+  "acres": 41.32,
+  "county": null,
+  "city": "Leadville",
+  "url": "https://www.realtor.com/realestateandhomes-detail/5347-Monitor_Leadville_CO_80461_M90977-47437",
+  "broker": "Whitetail Properties Real Estate Llc"
+ },
+ {
+  "title": "111 Fs Rd # 7523B, Gunnison, CO 81231",
+  "price_usd": 49900,
+  "acres": 10.33,
+  "county": null,
+  "city": "Gunnison",
+  "url": "https://www.realtor.com/realestateandhomes-detail/111-Fs-Rd-7523B_Gunnison_CO_81231_M96875-41747",
+  "broker": "Keller Williams Preferred Realty"
+ },
+ {
+  "title": "3367 Ranchland Dr, Pagosa Springs, CO 81147",
+  "price_usd": 174000,
+  "acres": 35.11,
+  "county": null,
+  "city": "Pagosa Springs",
+  "url": "https://www.realtor.com/realestateandhomes-detail/214-Pristine-Pl_Pagosa-Springs_CO_81147_M94323-62711",
+  "broker": "Galles Properties"
+ },
+ {
+  "title": "County Road 38, Platteville, CO 80651",
+  "price_usd": 199000,
+  "acres": 35.0,
+  "county": null,
+  "city": "Platteville",
+  "url": "https://www.realtor.com/realestateandhomes-detail/County-Road-38_Platteville_CO_80651_M92521-33963",
+  "broker": "Colorado lifestyle Properties"
+ },
+ {
+  "title": "8525 County Road 225, Salida, CO 81201",
+  "price_usd": 475000,
+  "acres": 12.65,
+  "county": null,
+  "city": "Salida",
+  "url": "https://www.realtor.com/realestateandhomes-detail/8525-County-Road-225_Salida_CO_81201_M17104-40286",
+  "broker": "Colorado Mountain Realty"
+ },
+ {
+  "title": "Hubbard Crk, Paonia, CO 81428",
+  "price_usd": 200000,
+  "acres": 40.0,
+  "county": null,
+  "city": "Paonia",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Hubbard-Creek-Rd_Somerset_CO_81428_M97092-79561",
+  "broker": "M4 Ranch Group, LLC"
+ },
+ {
+  "title": "Pine Needles Rd Unit 1091, Weston, CO 81091",
+  "price_usd": 49500,
+  "acres": 15.0,
+  "county": null,
+  "city": "Weston",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Pine-Needles-Rd-Unit-1091_Weston_CO_81091_M91619-19522",
+  "broker": "Spanish Peaks Land Company, Inc"
+ },
+ {
+  "title": "County Road 325, Rifle, CO 81650",
+  "price_usd": 425000,
+  "acres": 79.17,
+  "county": null,
+  "city": "Rifle",
+  "url": "https://www.realtor.com/realestateandhomes-detail/County-Road-325_Rifle_CO_81650_M93800-66257",
+  "broker": "Coldwell Banker Mason Morse-Carbondale"
+ },
+ {
+  "title": "48686 Highway 14, Walden, CO 80480",
+  "price_usd": 350000,
+  "acres": 39.77,
+  "county": null,
+  "city": "Walden",
+  "url": "https://www.realtor.com/realestateandhomes-detail/48686-State-Highway-14_Walden_CO_80480_M96117-89075",
+  "broker": "Hayden Outdoors Real Estate"
+ },
+ {
+  "title": "2241 S Rockcliff Cir, Pagosa Springs, CO 81147",
+  "price_usd": 159000,
+  "acres": 35.63,
+  "county": null,
+  "city": "Pagosa Springs",
+  "url": "https://www.realtor.com/realestateandhomes-detail/S-Rockcliff-Cir-Lot-11_Pagosa-Springs_CO_81147_M22399-92416",
+  "broker": "Galles Properties"
+ },
+ {
+  "title": "101 Lewis Ln, Lyons, CO 80540",
+  "price_usd": 190000,
+  "acres": 10.03,
+  "county": null,
+  "city": "Lyons",
+  "url": "https://www.realtor.com/realestateandhomes-detail/101-Lewis-Ln_Lyons_CO_80540_M97323-43472",
+  "broker": "LoKation-Tucker Group Real Estate"
+ },
+ {
+  "title": "14700 Arfsten Rd, Larkspur, CO 80118",
+  "price_usd": 825000,
+  "acres": 40.92,
+  "county": null,
+  "city": "Larkspur",
+  "url": "https://www.realtor.com/realestateandhomes-detail/14700-Arfsten-Rd_Larkspur_CO_80118_M92113-95112",
+  "broker": "Remax inMotion"
+ },
+ {
+  "title": "County Road 70, Craig, CO 81625",
+  "price_usd": 115000,
+  "acres": 42.94,
+  "county": null,
+  "city": "Craig",
+  "url": "https://www.realtor.com/realestateandhomes-detail/County-70-Rd-Lot-13_Craig_CO_81625_M91054-14458",
+  "broker": "Country Living Realty"
+ },
+ {
+  "title": "2200 Meadowdale Ln, Canon City, CO 81212",
+  "price_usd": 145000,
+  "acres": 40.47,
+  "county": null,
+  "city": "Canon City",
+  "url": "https://www.realtor.com/realestateandhomes-detail/2200-Meadowdale-Ln_Canon-City_CO_81212_M97878-68636",
+  "broker": "Keller Williams Performance Realty"
+ },
+ {
+  "title": "Deter Winter Rd, Denver, CO 80229",
+  "price_usd": 195000,
+  "acres": 39.28,
+  "county": null,
+  "city": "Denver",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Deter-Winter-Rd_Denver_CO_80229_M94127-74972",
+  "broker": "Look East Realty"
+ },
+ {
+  "title": "2153 Acapulco Rd, Fort Garland, CO 81133",
+  "price_usd": 32000,
+  "acres": 10.34,
+  "county": null,
+  "city": "Fort Garland",
+  "url": "https://www.realtor.com/realestateandhomes-detail/2153-Acapulco-Rd_Fort-Garland_CO_81133_M18930-44932",
+  "broker": "Colorado Realty & Land Co."
+ },
+ {
+  "title": "Tbd-Highway 184 Lot 1, Mancos, CO 81328",
+  "price_usd": 298000,
+  "acres": 39.74,
+  "county": null,
+  "city": "Mancos",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Tbd-Highway-184-Lot-1_Mancos_CO_81328_M95245-57477",
+  "broker": "4 Corners Properties Inc."
+ },
+ {
+  "title": "Starkweather Rd Lot 6785, San Luis, CO 81152",
+  "price_usd": 26500,
+  "acres": 11.97,
+  "county": null,
+  "city": "San Luis",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Starkweather-Rd-Lot-6785_San-Luis_CO_81152_M94398-39322",
+  "broker": "FATHOM REALTY"
+ },
+ {
+  "title": "Alexandra Rd Lot 6676, Fort Garland, CO 81133",
+  "price_usd": 47000,
+  "acres": 15.12,
+  "county": null,
+  "city": "Fort Garland",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Alexandra-Rd-Lot-6676_Fort-Garland_CO_81133_M93863-66690",
+  "broker": "eXp Realty, LLC GUNN"
+ },
+ {
+  "title": "45115 Cottonwood Ln, Deer Trail, CO 80105",
+  "price_usd": 110000,
+  "acres": 35.11,
+  "county": null,
+  "city": "Deer Trail",
+  "url": "https://www.realtor.com/realestateandhomes-detail/45115-Cottonwood-Ln_Deer-Trail_CO_80105_M17671-48719",
+  "broker": "MEGASTAR REALTY"
+ },
+ {
+  "title": "3682 Powers Rd, Fort Garland, CO 81133",
+  "price_usd": 250000,
+  "acres": 42.5,
+  "county": null,
+  "city": "Fort Garland",
+  "url": "https://www.realtor.com/realestateandhomes-detail/3682-Powers-Rd_Fort-Garland_CO_81133_M20445-21298",
+  "broker": "Mountain Meadows Realty, Corp."
+ },
+ {
+  "title": "2973 Driftwood Rd, Westcliffe, CO 81252",
+  "price_usd": 45000,
+  "acres": 12.68,
+  "county": null,
+  "city": "Westcliffe",
+  "url": "https://www.realtor.com/realestateandhomes-detail/2973-Driftwood-Rd_Westcliffe_CO_81252_M99867-51917",
+  "broker": "8z Real Estate"
+ },
+ {
+  "title": "14717 County Road E5, Antonito, CO 81120",
+  "price_usd": 210000,
+  "acres": 37.41,
+  "county": null,
+  "city": "Antonito",
+  "url": "https://www.realtor.com/realestateandhomes-detail/14717-County-Road-E5_Antonito_CO_81120_M93627-66303",
+  "broker": "Mlh Realty, Llc"
+ },
+ {
+  "title": "Tbd County Road 4 Highland Mary Properties, Silverton, CO 81433",
+  "price_usd": 326712,
+  "acres": 162.94,
+  "county": null,
+  "city": "Silverton",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Tbd-County-Road-4-Highland-Mary-Properties_Silverton_CO_81433_M94975-61186",
+  "broker": "Karen Srebacic-Sites, Independent Broker"
+ },
+ {
+  "title": "Road 1 # K, Dove Creek, CO 81324",
+  "price_usd": 288000,
+  "acres": 240.0,
+  "county": null,
+  "city": "Dove Creek",
+  "url": "https://www.realtor.com/realestateandhomes-detail/County-1-Rd-K_Dove-Creek_CO_81324_M94566-87405",
+  "broker": "4 Corners Properties, Incor."
+ },
+ {
+  "title": "281 Deer Ln, Guffey, CO 80820",
+  "price_usd": 125000,
+  "acres": 16.2,
+  "county": null,
+  "city": "Guffey",
+  "url": "https://www.realtor.com/realestateandhomes-detail/281-Deer-Ln_Guffey_CO_80820_M97809-58295",
+  "broker": "Saddle Up Realty"
+ },
+ {
+  "title": "12830 Milne Rd, Colorado Springs, CO 80928",
+  "price_usd": 275000,
+  "acres": null,
+  "county": null,
+  "city": "Colorado Springs",
+  "url": "https://www.realtor.com/realestateandhomes-detail/12830-Milne-Rd_Colorado-Springs_CO_80928_M97791-93845",
+  "broker": "Five Star Realty"
+ },
+ {
+  "title": "236 County Road 23C, Walden, CO 80480",
+  "price_usd": 399000,
+  "acres": 160.0,
+  "county": null,
+  "city": "Walden",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Walden_CO_80480_M91577-13517",
+  "broker": "Silver Sage Real Estate"
+ },
+ {
+  "title": "Happy Canyon Rd, Montrose, CO 81401",
+  "price_usd": 155000,
+  "acres": 37.79,
+  "county": null,
+  "city": "Montrose",
+  "url": "https://www.realtor.com/realestateandhomes-detail/01-004-Parcel-3993-303_Montrose_CO_81401_M99361-58550",
+  "broker": "Norris-Phillips Real Estate, LLC"
+ },
+ {
+  "title": "Snow Cap Peaks Rd Lot 10, Alma, CO 80402",
+  "price_usd": 200000,
+  "acres": 46.33,
+  "county": null,
+  "city": "Alma",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Snow-Cap-Peaks-Rd-Lot-10_Alma_CO_80402_M93393-22941",
+  "broker": "FIRST COLORADO LAND OFFICE"
+ },
+ {
+  "title": "29545 Highway 67, Woodland Park, CO 80863",
+  "price_usd": 475000,
+  "acres": 51.46,
+  "county": null,
+  "city": "Woodland Park",
+  "url": "https://www.realtor.com/realestateandhomes-detail/29545-State-Highway-67_Woodland-Park_CO_80863_M11404-63259",
+  "broker": "Pink Realty, Inc."
+ },
+ {
+  "title": "677 County Road 81, Cripple Creek, CO 80813",
+  "price_usd": 45000,
+  "acres": 11.36,
+  "county": null,
+  "city": "Cripple Creek",
+  "url": "https://www.realtor.com/realestateandhomes-detail/677-County-Road-81_Cripple-Creek_CO_80813_M93732-36712",
+  "broker": "Keller Williams Realty Downtown"
+ },
+ {
+  "title": "1899 Spring Valley Rd, Bellvue, CO 80512",
+  "price_usd": 389000,
+  "acres": 51.98,
+  "county": null,
+  "city": "Bellvue",
+  "url": "https://www.realtor.com/realestateandhomes-detail/1899-Spring-Valley-Rd_Bellvue_CO_80512_M16005-68030",
+  "broker": "The Group - Harmony"
+ },
+ {
+  "title": "County 35, Ovid, CO 80744",
+  "price_usd": 159000,
+  "acres": 82.0,
+  "county": null,
+  "city": "Ovid",
+  "url": "https://www.realtor.com/realestateandhomes-detail/County-35_Ovid_CO_80744_M91701-28758",
+  "broker": "Great Plains Land Company LLC"
+ },
+ {
+  "title": "Silver Spurs Rnch Lot 165, Walsenburg, CO 81089",
+  "price_usd": 69000,
+  "acres": 35.0,
+  "county": null,
+  "city": "Walsenburg",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Silver-Spurs-Rnch-Lot-165_Walsenburg_CO_81089_M93028-25172",
+  "broker": "Code Of The West Real Estate"
+ },
+ {
+  "title": "19518 Dauntless and Dauntless, Leadville, CO 81211",
+  "price_usd": 79000,
+  "acres": 41.18,
+  "county": null,
+  "city": "Leadville",
+  "url": "https://www.realtor.com/realestateandhomes-detail/19518-Dauntless_Leadville_CO_81211_M90369-29054",
+  "broker": "Aspen Leaf Realty"
+ },
+ {
+  "title": "Road # 23, Lewis, CO 81327",
+  "price_usd": 155952,
+  "acres": 86.64,
+  "county": null,
+  "city": "Lewis",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Road-23_Lewis_CO_81327_M92445-48190",
+  "broker": "Century 21 West Slope Realty"
+ },
+ {
+  "title": "1434 Blue Mesa Dr, Divide, CO 80814",
+  "price_usd": 400000,
+  "acres": 35.0,
+  "county": null,
+  "city": "Divide",
+  "url": "https://www.realtor.com/realestateandhomes-detail/1434-Blue-Mesa-Dr_Divide_CO_80814_M92512-01253",
+  "broker": "Buy Smart Colorado"
+ },
+ {
+  "title": "County Road 317, Rifle, CO 81650",
+  "price_usd": 150000,
+  "acres": 35.28,
+  "county": null,
+  "city": "Rifle",
+  "url": "https://www.realtor.com/realestateandhomes-detail/County-Road-317_Rifle_CO_81650_M91885-54928",
+  "broker": "Exp Realty LLC"
+ },
+ {
+  "title": "22822 County Road 6 S, Alamosa, CO 81101",
+  "price_usd": 189000,
+  "acres": 40.0,
+  "county": null,
+  "city": "Alamosa",
+  "url": "https://www.realtor.com/realestateandhomes-detail/22822-County-Road-6-S_Alamosa_CO_81101_M95234-61469",
+  "broker": "Colorado Realty & Land Co."
+ },
+ {
+  "title": "County Road 313, Silt, CO 81652",
+  "price_usd": 299900,
+  "acres": 40.23,
+  "county": null,
+  "city": "Silt",
+  "url": "https://www.realtor.com/realestateandhomes-detail/County-Road-313_Silt_CO_81652_M95438-46429",
+  "broker": "Keller Williams Colorado West Realty, LLC"
+ },
+ {
+  "title": "433 Antler Hill Trl, Canon City, CO 81212",
+  "price_usd": 292000,
+  "acres": 36.1,
+  "county": null,
+  "city": "Canon City",
+  "url": "https://www.realtor.com/realestateandhomes-detail/433-Antler-Hill-Trl_Canon-City_CO_81212_M97590-98063",
+  "broker": "Saddle Up Realty"
+ },
+ {
+  "title": "County Road 520, Bayfield, CO 81122",
+  "price_usd": 300000,
+  "acres": 10.0,
+  "county": null,
+  "city": "Bayfield",
+  "url": "https://www.realtor.com/realestateandhomes-detail/County-Road-516_Bayfield_CO_81122_M92678-82680",
+  "broker": "Coldwell Banker Mountain Properties"
+ },
+ {
+  "title": "10183 Rolling Vista Trl, Elizabeth, CO 80107",
+  "price_usd": 299999,
+  "acres": 35.05,
+  "county": null,
+  "city": "Elizabeth",
+  "url": "https://www.realtor.com/realestateandhomes-detail/10183-Rolling-Vista-Trl_Elizabeth_CO_80107_M91895-74558",
+  "broker": "Rex Homes Llc"
+ },
+ {
+  "title": "Frank Adams Lode Claim, Lake City, CO 81235",
+  "price_usd": 29500,
+  "acres": 10.33,
+  "county": null,
+  "city": "Lake City",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Frank-Adams-Lode-Claim_Lake-City_CO_81235_M90180-21348",
+  "broker": "Great Plains Land Company LLC"
+ },
+ {
+  "title": "County Road 28, Monte Vista, CO 81144",
+  "price_usd": 335000,
+  "acres": 157.0,
+  "county": null,
+  "city": "Monte Vista",
+  "url": "https://www.realtor.com/realestateandhomes-detail/County-Road-28_Monte-Vista_CO_81144_M94251-20236",
+  "broker": "Team Murphy Realty"
+ },
+ {
+  "title": "68900 E Briarwood Pl, Byers, CO 80103",
+  "price_usd": 365000,
+  "acres": 44.5,
+  "county": null,
+  "city": "Byers",
+  "url": "https://www.realtor.com/realestateandhomes-detail/68900-E-Briarwood-Pl_Byers_CO_80103_M24500-44302",
+  "broker": "iGo Realty"
+ },
+ {
+  "title": "2904 Siloam Rd, Beulah, CO 81023",
+  "price_usd": 234900,
+  "acres": 40.0,
+  "county": null,
+  "city": "Beulah",
+  "url": "https://www.realtor.com/realestateandhomes-detail/2904-Siloam-Rd_Beulah_CO_81023_M14868-99506",
+  "broker": "Real Broker, LLC DBA Real"
+ },
+ {
+  "title": "518 Cebolla River Rd, Gunnison, CO 81230",
+  "price_usd": 485000,
+  "acres": 35.0,
+  "county": null,
+  "city": "Gunnison",
+  "url": "https://www.realtor.com/realestateandhomes-detail/518-Cebolla-River-Rd_Gunnison_CO_81230_M93817-50664",
+  "broker": "M4 Ranch Group, LLC"
+ },
+ {
+  "title": "Powers Rd Lot 377, Fort Garland, CO 81133",
+  "price_usd": 90000,
+  "acres": 41.3,
+  "county": null,
+  "city": "Fort Garland",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Powers-Rd-Lot-377_Fort-Garland_CO_81133_M91230-44908",
+  "broker": "Mountain Meadows Realty, Corp."
+ },
+ {
+  "title": "Penrose, CO 81240",
+  "price_usd": 175000,
+  "acres": null,
+  "county": null,
+  "city": "Penrose",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Penrose_CO_81240_M98469-34928",
+  "broker": "Redfin Corporation"
+ },
+ {
+  "title": "13884 N Trail Cir, Littleton, CO 80127",
+  "price_usd": 479000,
+  "acres": 37.24,
+  "county": null,
+  "city": "Littleton",
+  "url": "https://www.realtor.com/realestateandhomes-detail/13884-N-Trail-Cir_Littleton_CO_80127_M20568-30128",
+  "broker": "Keller Williams Foothills Realty"
+ },
+ {
+  "title": "12195 Road 26, Cortez, CO 81321",
+  "price_usd": 215000,
+  "acres": 13.26,
+  "county": null,
+  "city": "Cortez",
+  "url": "https://www.realtor.com/realestateandhomes-detail/12195-Road-26_Cortez_CO_81321_M98858-68637",
+  "broker": "United Country Blue Sky Homes And Land"
+ },
+ {
+  "title": "13885 Tomboy Rd, Telluride, CO 81435",
+  "price_usd": 649000,
+  "acres": 12.0,
+  "county": null,
+  "city": "Telluride",
+  "url": "https://www.realtor.com/realestateandhomes-detail/13885-Tomboy-Rd_Telluride_CO_81435_M15715-41375",
+  "broker": "Coldwell Banker Distinctive Properties-Tell"
+ },
+ {
+  "title": "County Road 361, Ouray, CO 81427",
+  "price_usd": 1035000,
+  "acres": 11.58,
+  "county": null,
+  "city": "Ouray",
+  "url": "https://www.realtor.com/realestateandhomes-detail/County-Road-361_Ouray_CO_81427_M98544-30887",
+  "broker": "Keller Williams Realty Southwest Associates, LLC - Montrose"
+ },
+ {
+  "title": "S Fork Rd, Rifle, CO 81650",
+  "price_usd": 225000,
+  "acres": 35.04,
+  "county": null,
+  "city": "Rifle",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Wild-Acres-Lots-5-6_Rifle_CO_81650_M90238-82490",
+  "broker": "Cheryl&Co. Real Estate, Llc"
+ },
+ {
+  "title": "37801 Highway 318, Craig, CO 81625",
+  "price_usd": 80000,
+  "acres": 54.75,
+  "county": null,
+  "city": "Craig",
+  "url": "https://www.realtor.com/realestateandhomes-detail/37801-Highway-318_Craig_CO_81625_M93396-92411",
+  "broker": "Country Living Realty"
+ },
+ {
+  "title": "14 Ghost River Rnch Lot 14, Rye, CO 81069",
+  "price_usd": 89990,
+  "acres": 35.1,
+  "county": null,
+  "city": "Rye",
+  "url": "https://www.realtor.com/realestateandhomes-detail/14-Ghost-River-Rnch_Walsenburg_CO_80189_M96242-88610",
+  "broker": "Real Broker, LLC DBA Real"
+ },
+ {
+  "title": "4625 Road 31 Lot 20, Dolores, CO 81323",
+  "price_usd": 125000,
+  "acres": 35.14,
+  "county": null,
+  "city": "Dolores",
+  "url": "https://www.realtor.com/realestateandhomes-detail/4625-Road-31_Dolores_CO_81323_M90362-32335",
+  "broker": "Century 21 West Slope Realty"
+ },
+ {
+  "title": "29995 Darroll Rd, Yoder, CO 80864",
+  "price_usd": null,
+  "acres": 46.13,
+  "county": null,
+  "city": "Yoder",
+  "url": "https://www.realtor.com/realestateandhomes-detail/29995-Darroll-Rd_Yoder_CO_80864_M95540-98288",
+  "broker": "Realty One Group Premier"
+ },
+ {
+  "title": "Powers Rd, Colorado Springs, CO 80928",
+  "price_usd": 105000,
+  "acres": 39.97,
+  "county": null,
+  "city": "Colorado Springs",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Powers-Rd_Colorado-Springs_CO_80928_M99264-49664",
+  "broker": "Coldwell Banker Realty"
+ },
+ {
+  "title": "8340 County Road 542, Pagosa Springs, CO 81147",
+  "price_usd": 490000,
+  "acres": 78.46,
+  "county": null,
+  "city": "Pagosa Springs",
+  "url": "https://www.realtor.com/realestateandhomes-detail/8340-County-Road-542_Pagosa-Springs_CO_81147_M22513-01392",
+  "broker": "EXIT Realty Home & Ranch - Pagosa Springs, CO"
+ },
+ {
+  "title": "Alvin, Fairplay, CO 80440",
+  "price_usd": 93500,
+  "acres": 25.17,
+  "county": null,
+  "city": "Fairplay",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Alvin-Silver-Cave-Little-Ida_Fairplay_CO_80440_M97742-80237",
+  "broker": "JEFFERSON REAL ESTATE"
+ },
+ {
+  "title": "Road X, Dolores, CO 81323",
+  "price_usd": 249000,
+  "acres": 59.58,
+  "county": null,
+  "city": "Dolores",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Road-X_Dolores_CO_81323_M99679-50906",
+  "broker": "The Wells Group of Durango, LLC"
+ },
+ {
+  "title": "County Road 5, Weldona, CO 80653",
+  "price_usd": 275000,
+  "acres": 26.64,
+  "county": null,
+  "city": "Weldona",
+  "url": "https://www.realtor.com/realestateandhomes-detail/County-Road-5_Weldona_CO_80653_M90688-03361",
+  "broker": "Berkshire Hathaway HS Rocky Mountain, REALTORS\u00ae - Greeley/Fort Collins"
+ },
+ {
+  "title": "5350 N Yoder Rd, Calhan, CO 80808",
+  "price_usd": 186000,
+  "acres": 40.0,
+  "county": null,
+  "city": "Calhan",
+  "url": "https://www.realtor.com/realestateandhomes-detail/5350-N-Yoder-Rd_Calhan_CO_80808_M95021-75728",
+  "broker": "Keller Williams Clients' Choice Realty"
+ },
+ {
+  "title": "33rd St Lot 1, Blanca, CO 81123",
+  "price_usd": 9000,
+  "acres": 11.02,
+  "county": null,
+  "city": "Blanca",
+  "url": "https://www.realtor.com/realestateandhomes-detail/33rd-St-Lot-1_Blanca_CO_81123_M93864-73261",
+  "broker": "Werner Realty, Inc."
+ },
+ {
+  "title": "63001 Cc County Rd, CO 81143",
+  "price_usd": 399000,
+  "acres": 62.03,
+  "county": null,
+  "city": "Moffat",
+  "url": "https://www.realtor.com/realestateandhomes-detail/63001-County-Road-CC_Moffat_CO_81143_M91968-77545",
+  "broker": "PARADISE REALTY"
+ },
+ {
+  "title": "21493 County Road P 6, Chama, CO 81126",
+  "price_usd": 135000,
+  "acres": 29.99,
+  "county": null,
+  "city": "Chama",
+  "url": "https://www.realtor.com/realestateandhomes-detail/21493-County-Road-P6_Chama_CO_81126_M94574-71705",
+  "broker": "Brackendale Realty Llc"
+ },
+ {
+  "title": "Spangle Dr Lot 416, Fort Garland, CO 81133",
+  "price_usd": 120000,
+  "acres": 42.4,
+  "county": null,
+  "city": "Fort Garland",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Spangle-Dr-Lot-416_Fort-Garland_CO_81133_M94722-61096",
+  "broker": "Mountain Meadows Realty, Corp."
+ },
+ {
+  "title": "900 Conductor Ct, Rye, CO 81069",
+  "price_usd": 168900,
+  "acres": 35.08,
+  "county": null,
+  "city": "Rye",
+  "url": "https://www.realtor.com/realestateandhomes-detail/900-Conductor-Ct_Rye_CO_81069_M21382-20748",
+  "broker": "Remax Associates"
+ },
+ {
+  "title": "39414 LA Garita Dr, Del Norte, CO 81132",
+  "price_usd": 140000,
+  "acres": 10.0,
+  "county": null,
+  "city": "Del Norte",
+  "url": "https://www.realtor.com/realestateandhomes-detail/39414-LA-Garita-Dr_Del-Norte_CO_81132_M94302-94072",
+  "broker": "Roberts Group Real Estate"
+ },
+ {
+  "title": "17265 Warriors Path Dr, Peyton, CO 80831",
+  "price_usd": 225000,
+  "acres": 15.77,
+  "county": null,
+  "city": "Peyton",
+  "url": "https://www.realtor.com/realestateandhomes-detail/17265-Warriors-Path-Dr_Peyton_CO_80831_M99146-99032",
+  "broker": "Rocky Mountain Ranch & Land"
+ },
+ {
+  "title": "Phillips Rd Lot 6644, San Luis, CO 81152",
+  "price_usd": 32500,
+  "acres": 16.94,
+  "county": null,
+  "city": "San Luis",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Phillips-Rd-Lot-6644_San-Luis_CO_81152_M98186-67581",
+  "broker": "Mountain Meadows Realty, Corp."
+ },
+ {
+  "title": "Raptor Pl, Pagosa Springs, CO 81147",
+  "price_usd": 1200000,
+  "acres": 100.0,
+  "county": null,
+  "city": "Pagosa Springs",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Raptor-Pl_Pagosa-Springs_CO_81147_M96420-57241",
+  "broker": "Jann C Pitcher Real Estate"
+ },
+ {
+  "title": "Mountain Ridge Ln Lot 6, San Luis, CO 81152",
+  "price_usd": 89900,
+  "acres": 70.04,
+  "county": null,
+  "city": "San Luis",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Mountain-Ridge-Ln-Lot-6_San-Luis_CO_81152_M92260-30825",
+  "broker": "Mlh Realty, Llc"
+ },
+ {
+  "title": "US Highway 84 # 115, Pagosa Springs, CO 81147",
+  "price_usd": 145000,
+  "acres": 10.0,
+  "county": null,
+  "city": "Pagosa Springs",
+  "url": "https://www.realtor.com/realestateandhomes-detail/115-US-Highway-84_Pagosa-Springs_CO_81147_M90542-83030",
+  "broker": "Sherpa Real Estate"
+ },
+ {
+  "title": "Par 78 Willow Spring Dr, Pueblo, CO 81004",
+  "price_usd": 68900,
+  "acres": 44.7,
+  "county": null,
+  "city": "Pueblo",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Par-78-Willow-Spring-Dr_Pueblo_CO_81004_M94110-30183",
+  "broker": "Colorado Land & Homes"
+ },
+ {
+  "title": "S Highway 550, Durango, CO 81303",
+  "price_usd": 397000,
+  "acres": 18.04,
+  "county": null,
+  "city": "Durango",
+  "url": "https://www.realtor.com/realestateandhomes-detail/S-Highway-550_Durango_CO_81303_M98363-01218",
+  "broker": "Coldwell Banker Mountain Properties"
+ },
+ {
+  "title": "Silver Spurs Filing Rnch Units 82 & 4, Walsenburg, CO 81089",
+  "price_usd": 99000,
+  "acres": 36.3,
+  "county": null,
+  "city": "Walsenburg",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Silver-Spur-Rd-Lot-82_Walsenburg_CO_81089_M20601-36614",
+  "broker": "Bachman & Associates"
+ },
+ {
+  "title": "47081 E 106th Ave, Bennett, CO 80102",
+  "price_usd": 330000,
+  "acres": 37.4,
+  "county": null,
+  "city": "Bennett",
+  "url": "https://www.realtor.com/realestateandhomes-detail/47081-E-106th-Ave_Bennett_CO_80102_M16280-82707",
+  "broker": "Keller Williams Preferred Realty"
+ },
+ {
+  "title": "29477 County Road 8, Meeker, CO 81641",
+  "price_usd": 549000,
+  "acres": 29.0,
+  "county": null,
+  "city": "Meeker",
+  "url": "https://www.realtor.com/realestateandhomes-detail/29477-County-Road-8_Meeker_CO_81641_M92774-47513",
+  "broker": "Streamline Realty, LLC"
+ },
+ {
+  "title": "4730 and 5125 Big Bear Rd, Loveland, CO 80538",
+  "price_usd": 625000,
+  "acres": 95.04,
+  "county": null,
+  "city": "Loveland",
+  "url": "https://www.realtor.com/realestateandhomes-detail/4730_Loveland_CO_80538_M95858-45747",
+  "broker": "Hayden Outdoors Real Estate"
+ },
+ {
+  "title": "28920 Sanborn Rd, Yoder, CO 80864",
+  "price_usd": 96000,
+  "acres": 40.0,
+  "county": null,
+  "city": "Yoder",
+  "url": "https://www.realtor.com/realestateandhomes-detail/28920-Sanborn-Rd_Yoder_CO_80864_M90136-60954",
+  "broker": "All American Realty Ltd"
+ },
+ {
+  "title": "W Highway 160, Pagosa Springs, CO 81147",
+  "price_usd": 550000,
+  "acres": 77.78,
+  "county": null,
+  "city": "Pagosa Springs",
+  "url": "https://www.realtor.com/realestateandhomes-detail/W-Highway-160_Pagosa-Springs_CO_81147_M96784-96834",
+  "broker": "Jann C Pitcher Real Estate"
+ },
+ {
+  "title": "15590 Red Mountain Ln, Collbran, CO 81624",
+  "price_usd": 285000,
+  "acres": 42.0,
+  "county": null,
+  "city": "Collbran",
+  "url": "https://www.realtor.com/realestateandhomes-detail/15590-Red-Mountain-Ln_Collbran_CO_81624_M98003-89325",
+  "broker": "Hayden Outdoors Real Estate"
+ },
+ {
+  "title": "2940 County Road 5, Divide, CO 80814",
+  "price_usd": 795000,
+  "acres": 26.35,
+  "county": null,
+  "city": "Divide",
+  "url": "https://www.realtor.com/realestateandhomes-detail/2940-County-Road-5_Divide_CO_80814_M95146-92764",
+  "broker": "True West Properties"
+ },
+ {
+  "title": "2816 Running Horse Pl, Pagosa Springs, CO 81128",
+  "price_usd": 250000,
+  "acres": 35.31,
+  "county": null,
+  "city": "Pagosa Springs",
+  "url": "https://www.realtor.com/realestateandhomes-detail/2816-Running-Horse-Pl_Chromo_CO_81128_M98075-78500",
+  "broker": "Best Of Pagosa Springs"
+ },
+ {
+  "title": "County Road 47 1/2, Hudson, CO 80642",
+  "price_usd": 215000,
+  "acres": 12.0,
+  "county": null,
+  "city": "Hudson",
+  "url": "https://www.realtor.com/realestateandhomes-detail/County-Road-47-12_Hudson_CO_80642_M92687-46845",
+  "broker": "3T Realty, LLC"
+ },
+ {
+  "title": "Stub Ct, Livermore, CO 80536",
+  "price_usd": 245000,
+  "acres": 35.0,
+  "county": null,
+  "city": "Livermore",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Stub-Ct_Livermore_CO_80536_M96760-53966",
+  "broker": "LIV Sotheby's International Realty"
+ },
+ {
+  "title": "Weld County Road 93, Orchard, CO 80649",
+  "price_usd": 75000,
+  "acres": 40.0,
+  "county": null,
+  "city": "Orchard",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Weld-County-Road-93_Orchard_CO_80649_M93370-83621",
+  "broker": "eXp Realty - Hub"
+ },
+ {
+  "title": "11575 Ranch Pl, Alamosa, CO 81101",
+  "price_usd": 20000,
+  "acres": 35.07,
+  "county": null,
+  "city": "Alamosa",
+  "url": "https://www.realtor.com/realestateandhomes-detail/11575-Ranch-Pl_Alamosa_CO_81101_M97775-08071",
+  "broker": "Mountain Meadows Realty, Corp."
+ },
+ {
+  "title": "700 Looney Ln, Alma, CO 80420",
+  "price_usd": 595000,
+  "acres": 39.31,
+  "county": null,
+  "city": "Alma",
+  "url": "https://www.realtor.com/realestateandhomes-detail/700-Looney-Ln_Alma_CO_80420_M95044-41555",
+  "broker": "Christie's International Real Estate Colorado- Summit Colorado"
+ },
+ {
+  "title": "Cedar Tract Rdg # 3, Salida, CO 81201",
+  "price_usd": 425000,
+  "acres": 36.85,
+  "county": null,
+  "city": "Salida",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Cedar-Tract-Rdg-3_Salida_CO_81201_M92856-98276",
+  "broker": "Hayden Outdoors Real Estate"
+ },
+ {
+  "title": "County 109 Rd Lot 14, Deer Trail, CO 80105",
+  "price_usd": 183300,
+  "acres": 94.0,
+  "county": null,
+  "city": "Deer Trail",
+  "url": "https://www.realtor.com/realestateandhomes-detail/County-109-Rd-Lot-14_Deer-Trail_CO_80105_M92990-43018",
+  "broker": null
+ },
+ {
+  "title": "1675 Chicago Park Rd, Pitkin, CO 81241",
+  "price_usd": 149000,
+  "acres": 10.33,
+  "county": null,
+  "city": "Pitkin",
+  "url": "https://www.realtor.com/realestateandhomes-detail/1675-Chicago-Park-Rd_Pitkin_CO_81241_M19785-87023",
+  "broker": "Pitkin Colorado Real Estate"
+ },
+ {
+  "title": "Turkey Ridge Rnch Lot 232, Walsenburg, CO 81089",
+  "price_usd": 50000,
+  "acres": 109.0,
+  "county": null,
+  "city": "Walsenburg",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Turkey-Ridge-Rnch-Lot-232_Walsenburg_CO_81089_M96215-85153",
+  "broker": "Code Of The West Real Estate"
+ },
+ {
+  "title": "6 Calhan Highway, Calhan, CO 80808",
+  "price_usd": 110000,
+  "acres": 35.0,
+  "county": null,
+  "city": "Calhan",
+  "url": "https://www.realtor.com/realestateandhomes-detail/6-Calhan-Highway_Calhan_CO_80808_M92544-60560",
+  "broker": "Hayden Outdoors Real Estate"
+ },
+ {
+  "title": "22254 County Road 55, Moffat, CO 81143",
+  "price_usd": 100000,
+  "acres": 40.0,
+  "county": null,
+  "city": "Moffat",
+  "url": "https://www.realtor.com/realestateandhomes-detail/22254-County-Road-55_Moffat_CO_81143_M91842-77767",
+  "broker": "LPT Realty"
+ },
+ {
+  "title": "1259 Chute Rd, Golden, CO 80403",
+  "price_usd": 299000,
+  "acres": null,
+  "county": null,
+  "city": "Golden",
+  "url": "https://www.realtor.com/realestateandhomes-detail/1259-Chute-Rd_Golden_CO_80403_M95819-36351",
+  "broker": "Worth Clark Realty"
+ },
+ {
+  "title": "Old Stage Coach Rd Lot 73, San Luis, CO 81152",
+  "price_usd": 25000,
+  "acres": 36.6,
+  "county": null,
+  "city": "San Luis",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Old-Stage-Coach-Rd-Lot-73_San-Luis_CO_81152_M90900-90076",
+  "broker": "Brackendale Realty Llc"
+ },
+ {
+  "title": "Davis Rd, Peyton, CO 80831",
+  "price_usd": 300000,
+  "acres": 40.0,
+  "county": null,
+  "city": "Peyton",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Davis-Rd_Peyton_CO_80831_M92737-12632",
+  "broker": "Real Broker, LLC DBA Real"
+ },
+ {
+  "title": "County Road 47 1/2, Hudson, CO 80642",
+  "price_usd": 295000,
+  "acres": 35.0,
+  "county": null,
+  "city": "Hudson",
+  "url": "https://www.realtor.com/realestateandhomes-detail/County-Road-47-12_Hudson_CO_80642_M91275-74375",
+  "broker": "3T Realty, LLC"
+ },
+ {
+  "title": "County Road 124, Hesperus, CO 81326",
+  "price_usd": 40000,
+  "acres": 20.0,
+  "county": null,
+  "city": "Hesperus",
+  "url": "https://www.realtor.com/realestateandhomes-detail/County-Road-124_Hesperus_CO_81326_M94951-60954",
+  "broker": "The Wells Group of Durango, LLC"
+ },
+ {
+  "title": "Big Bull Group County Rd # 20A, Silverton, CO 81433",
+  "price_usd": 420000,
+  "acres": 108.24,
+  "county": null,
+  "city": "Silverton",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Big-Bull-Group-County-Rd-20A_Silverton_CO_81433_M96309-53847",
+  "broker": "Silverton Realty, Inc."
+ },
+ {
+  "title": "27 Ghost Mine Rnch, Del Norte, CO 81132",
+  "price_usd": 179900,
+  "acres": 86.6,
+  "county": null,
+  "city": "Del Norte",
+  "url": "https://www.realtor.com/realestateandhomes-detail/27-Ghost-Mine-Rnch_Del-Norte_CO_81132_M97038-92214",
+  "broker": "Steffens and Company Realty, Inc"
+ },
+ {
+  "title": "2nd, San Luis, CO 81152",
+  "price_usd": null,
+  "acres": 10.0,
+  "county": null,
+  "city": "San Luis",
+  "url": "https://www.realtor.com/realestateandhomes-detail/2nd_San-Luis_CO_81152_M97868-42380",
+  "broker": "Homesmart Realty Group"
+ },
+ {
+  "title": "36700 Aspen Blf Lot 26, Hayden, CO 81639",
+  "price_usd": 165950,
+  "acres": 35.99,
+  "county": null,
+  "city": "Hayden",
+  "url": "https://www.realtor.com/realestateandhomes-detail/36700-Aspen-Bluff-Ter_Hayden_CO_81639_M17977-32684",
+  "broker": "The Group Real Estate LLC"
+ },
+ {
+  "title": "3334 Cimarron Dr, Hartsel, CO 80449",
+  "price_usd": 45000,
+  "acres": 35.0,
+  "county": null,
+  "city": "Hartsel",
+  "url": "https://www.realtor.com/realestateandhomes-detail/3334-Cimarron-Dr_Hartsel_CO_80449_M99917-46700",
+  "broker": "JEFFERSON REAL ESTATE"
+ },
+ {
+  "title": "E 128th Ave, Commerce City, CO 80022",
+  "price_usd": 600000,
+  "acres": null,
+  "county": null,
+  "city": "Commerce City",
+  "url": "https://www.realtor.com/realestateandhomes-detail/E-128th-Ave_Commerce-City_CO_80022_M95653-55154",
+  "broker": "Hayden Outdoors Real Estate"
+ },
+ {
+  "title": "2540 Usfs Rd # 503, Creede, CO 81130",
+  "price_usd": 350000,
+  "acres": 10.26,
+  "county": null,
+  "city": "Creede",
+  "url": "https://www.realtor.com/realestateandhomes-detail/2540-Usfs-503-Rd_Creede_CO_81130_M96086-10079",
+  "broker": "SCOUT RE, LLC"
+ },
+ {
+  "title": "County Road 382, Pagosa Springs, CO 81128",
+  "price_usd": 9990000,
+  "acres": 931.71,
+  "county": null,
+  "city": "Pagosa Springs",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Albert-Pl_Pagosa-Springs_CO_81128_M97152-57232",
+  "broker": "The Wells Group of Durango, LLC"
+ },
+ {
+  "title": "Tbd County Road 30, Brush, CO 80723",
+  "price_usd": 95000,
+  "acres": 40.28,
+  "county": null,
+  "city": "Brush",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Tbd-County-Road-30_Brush_CO_80723_M91338-95945",
+  "broker": "Cornerstone Brokers, LLC"
+ },
+ {
+  "title": "33016 County Road 95, Crook, CO 80726",
+  "price_usd": 899000,
+  "acres": 42.84,
+  "county": null,
+  "city": "Crook",
+  "url": "https://www.realtor.com/realestateandhomes-detail/33016-County-Road-95_Crook_CO_80726_M15731-12874",
+  "broker": "Hayden Outdoors Real Estate"
+ },
+ {
+  "title": "145 Bonanza Rd, Cotopaxi, CO 81223",
+  "price_usd": 114958,
+  "acres": 11.13,
+  "county": null,
+  "city": "Cotopaxi",
+  "url": "https://www.realtor.com/realestateandhomes-detail/145-Bonanza-Rd_Cotopaxi_CO_81223_M90105-86870",
+  "broker": "RE MAX Royal Gorge"
+ },
+ {
+  "title": "1 and 2 Forest Service Rd # 380, Platoro, CO 81120",
+  "price_usd": 225000,
+  "acres": 17.45,
+  "county": null,
+  "city": "Platoro",
+  "url": "https://www.realtor.com/realestateandhomes-detail/1-and-2-Forest-Service-Rd-380_Platoro_CO_81120_M93402-28229",
+  "broker": "Best Of Pagosa Springs"
+ },
+ {
+  "title": "47682 Knibbe Ct, Parker, CO 80138",
+  "price_usd": 850000,
+  "acres": 10.43,
+  "county": null,
+  "city": "Parker",
+  "url": "https://www.realtor.com/realestateandhomes-detail/47682-Knibbe-Ct_Parker_CO_80138_M99896-65442",
+  "broker": "Keller Williams Dtc"
+ },
+ {
+  "title": "24007 Timber Ridge Trl Unit 8, Weston, CO 81091",
+  "price_usd": 279000,
+  "acres": 35.11,
+  "county": null,
+  "city": "Weston",
+  "url": "https://www.realtor.com/realestateandhomes-detail/24007-Timber-Ridge-Trl-8_Weston_CO_81091_M97344-18497",
+  "broker": "Whitetail Properties Real Estate, Llc"
+ },
+ {
+  "title": "4851 County Road 516, Bayfield, CO 81122",
+  "price_usd": 560000,
+  "acres": 16.0,
+  "county": null,
+  "city": "Bayfield",
+  "url": "https://www.realtor.com/realestateandhomes-detail/4851-County-Road-516_Bayfield_CO_81122_M99528-24591",
+  "broker": "Coldwell Banker Mountain Properties"
+ },
+ {
+  "title": "Peyton Hwy, Colorado Springs, CO 80928",
+  "price_usd": 399900,
+  "acres": 148.48,
+  "county": null,
+  "city": "Colorado Springs",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Milne-Rd_Colorado-Springs_CO_80928_M98685-95156",
+  "broker": "LIV Sotheby's International Realty CO Springs"
+ },
+ {
+  "title": "37401 160 Pkwy, Trinidad, CO 81082",
+  "price_usd": 350000,
+  "acres": 52.92,
+  "county": null,
+  "city": "Trinidad",
+  "url": "https://www.realtor.com/realestateandhomes-detail/37401-160-Pkwy_Trinidad_CO_81082_M91422-49358",
+  "broker": "Authentic Colorado Properties, LLC dba Colorado Land Properties"
+ },
+ {
+  "title": "5989 GCR 5, Tabernash, CO 80478",
+  "price_usd": 499000,
+  "acres": 12.0,
+  "county": null,
+  "city": "Tabernash",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Gcr-5_Tabernash_CO_80478_M90787-76708",
+  "broker": "Coldwell Banker Mtn Properties"
+ },
+ {
+  "title": "Tallahassee Trl, Canon City, CO 81212",
+  "price_usd": 299000,
+  "acres": 120.0,
+  "county": null,
+  "city": "Canon City",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Tallahassee-Trl_Canon-City_CO_81212_M93725-78600",
+  "broker": "Whitetail Properties Real Estate, Llc"
+ },
+ {
+  "title": "14454 CO 159, San Luis, CO 81152",
+  "price_usd": 225000,
+  "acres": 54.0,
+  "county": null,
+  "city": "San Luis",
+  "url": "https://www.realtor.com/realestateandhomes-detail/14454-CO-159_San-Luis_CO_81152_M91344-01500",
+  "broker": "FATHOM REALTY"
+ },
+ {
+  "title": "37150 E Jones Rd, Yoder, CO 80864",
+  "price_usd": 179900,
+  "acres": 80.0,
+  "county": null,
+  "city": "Yoder",
+  "url": "https://www.realtor.com/realestateandhomes-detail/37150-E-Jones-Rd_Yoder_CO_80864_M91517-50889",
+  "broker": "The Platinum Group, REALTORS"
+ },
+ {
+  "title": "10575 CO 82, Twin Lakes, CO 81251",
+  "price_usd": 1479999,
+  "acres": 21.83,
+  "county": null,
+  "city": "Twin Lakes",
+  "url": "https://www.realtor.com/realestateandhomes-detail/10575-CO-82_Twin-Lakes_CO_81251_M91514-02934",
+  "broker": "PAFFRATH & THOMAS REAL ESTATE"
+ },
+ {
+  "title": "Erie Mine Rd, White Pine, CO 81248",
+  "price_usd": 29000,
+  "acres": 10.33,
+  "county": null,
+  "city": "White Pine",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Erie-Mine-Rd_White-Pine_CO_81248_M98290-98752",
+  "broker": "Whitetail Properties Real Estate LLC"
+ },
+ {
+  "title": "Highway 160 Lot 223, Fort Garland, CO 81133",
+  "price_usd": 84500,
+  "acres": 42.6,
+  "county": null,
+  "city": "Fort Garland",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Highway-160-Lot-223_Fort-Garland_CO_81133_M97251-41692",
+  "broker": "Mountain Meadows Realty, Corp."
+ },
+ {
+  "title": "2153 Wrangler Way, Durango, CO 81303",
+  "price_usd": 349000,
+  "acres": 10.23,
+  "county": null,
+  "city": "Durango",
+  "url": "https://www.realtor.com/realestateandhomes-detail/2153-Wrangler-Way_Durango_CO_81303_M18623-21349",
+  "broker": "Hayden Outdoors Real Estate"
+ },
+ {
+  "title": "Majors Rnch Lot 31B, Walsenburg, CO 81089",
+  "price_usd": 150000,
+  "acres": 98.11,
+  "county": null,
+  "city": "Walsenburg",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Majors-Rnch-Lot-31B_Walsenburg_CO_81089_M95370-27239",
+  "broker": "Exp Realty Llc"
+ },
+ {
+  "title": "Bear Paw Ln Lot 5, Glenwood Springs, CO 81601",
+  "price_usd": 250000,
+  "acres": 35.0,
+  "county": null,
+  "city": "Glenwood Springs",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Bear-Paw-Ln-Lot-5_Glenwood-Springs_CO_81601_M96692-39646",
+  "broker": "Vicki Lee Green Realtors Llc"
+ },
+ {
+  "title": "1961 Fools Gold Rd, Idaho Springs, CO 80452",
+  "price_usd": 110000,
+  "acres": 17.16,
+  "county": null,
+  "city": "Idaho Springs",
+  "url": "https://www.realtor.com/realestateandhomes-detail/1961-Fools-Gold-Rd_Idaho-Springs_CO_80452_M90052-96641",
+  "broker": "COMPASS"
+ },
+ {
+  "title": "7197H S M, Leadville, CO 80461",
+  "price_usd": 274999,
+  "acres": 40.8,
+  "county": null,
+  "city": "Leadville",
+  "url": "https://www.realtor.com/realestateandhomes-detail/7197H-S-M_Leadville_CO_80461_M95379-87974",
+  "broker": "Whitetail Properties Real Estate Llc"
+ },
+ {
+  "title": "Tdb Lochleven Ln, Almont, CO 81210",
+  "price_usd": 150000,
+  "acres": 27.0,
+  "county": null,
+  "city": "Almont",
+  "url": "https://www.realtor.com/realestateandhomes-detail/27-Acres-Adjoining-Homestead-Subdivision_Almont_CO_81210_M97768-00931",
+  "broker": "Coldwell Banker Mountain Properties"
+ },
+ {
+  "title": "County Road 23, Fort Lupton, CO 80621",
+  "price_usd": 600000,
+  "acres": 35.6,
+  "county": null,
+  "city": "Fort Lupton",
+  "url": "https://www.realtor.com/realestateandhomes-detail/County-Road-23_Fort-Lupton_CO_80621_M99558-97045",
+  "broker": "August Real Estate Ltd"
+ },
+ {
+  "title": "Routt County Road 46 Lot 7-8, Steamboat Springs, CO 80487",
+  "price_usd": 398000,
+  "acres": 35.0,
+  "county": null,
+  "city": "Steamboat Springs",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Tbd-Routt-County-Road-46_Steamboat-Springs_CO_80487_M96136-09049",
+  "broker": "Mossy Oak Properties Ranch Realty LLC"
+ },
+ {
+  "title": "54215 County Road 21, Carr, CO 80612",
+  "price_usd": 399900,
+  "acres": 54.77,
+  "county": null,
+  "city": "Carr",
+  "url": "https://www.realtor.com/realestateandhomes-detail/54215-County-Road-21_Carr_CO_80612_M94810-65650",
+  "broker": "Coldwell Banker Realty"
+ },
+ {
+  "title": "W County Road 72, Fort Collins, CO 80524",
+  "price_usd": 450000,
+  "acres": 82.45,
+  "county": null,
+  "city": "Fort Collins",
+  "url": "https://www.realtor.com/realestateandhomes-detail/W-County-Road-72_Fort-Collins_CO_80524_M99275-71005",
+  "broker": "At Home Realty"
+ },
+ {
+  "title": "Tr 8R Saddle Mtn Rnch, Sanford, CO 81151",
+  "price_usd": 365000,
+  "acres": 40.35,
+  "county": null,
+  "city": "Sanford",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Tr-8R-Saddle-Mtn-Rnch_Sanford_CO_81151_M94072-37753",
+  "broker": "Hayden Outdoors Real Estate"
+ },
+ {
+  "title": "Whitewater, CO 81527",
+  "price_usd": 60000,
+  "acres": 60.0,
+  "county": null,
+  "city": "Whitewater",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Whitewater_CO_81527_M15776-73686",
+  "broker": "United Country Real Colorado Properties"
+ },
+ {
+  "title": "304 Hazel Ct, Canon City, CO 81212",
+  "price_usd": 160000,
+  "acres": 38.2,
+  "county": null,
+  "city": "Canon City",
+  "url": "https://www.realtor.com/realestateandhomes-detail/304-Hazel-Ct_Canon-City_CO_81212_M92536-63511",
+  "broker": "Rocky Mountain Realty"
+ },
+ {
+  "title": "1775 35 1/10 Rd, De Beque, CO 81630",
+  "price_usd": 300000,
+  "acres": 71.73,
+  "county": null,
+  "city": "De Beque",
+  "url": "https://www.realtor.com/realestateandhomes-detail/1775-35-110-Rd_De-Beque_CO_81630_M96801-26519",
+  "broker": null
+ },
+ {
+  "title": "Bowie Rd, Penrose, CO 81240",
+  "price_usd": 68000,
+  "acres": 40.77,
+  "county": null,
+  "city": "Penrose",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Bowie-Rd_Penrose_CO_81240_M93105-34760",
+  "broker": "Remax Properties"
+ },
+ {
+  "title": "County Road 109, Hesperus, CO 81326",
+  "price_usd": 90000,
+  "acres": 20.0,
+  "county": null,
+  "city": "Hesperus",
+  "url": "https://www.realtor.com/realestateandhomes-detail/County-Road-109_Hesperus_CO_81326_M97476-87044",
+  "broker": "Berkshire Hathaway HomeServices Colorado Properties"
+ },
+ {
+  "title": "Road 9 # 4, Dove Creek, CO 81324",
+  "price_usd": 75000,
+  "acres": 39.93,
+  "county": null,
+  "city": "Dove Creek",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Road-9-4_Dove-Creek_CO_81324_M98667-69392",
+  "broker": "Century 21 West Slope Realty"
+ },
+ {
+  "title": "9175 Prospect Way Rd, Byers, CO 80103",
+  "price_usd": 98500,
+  "acres": 38.55,
+  "county": null,
+  "city": "Byers",
+  "url": "https://www.realtor.com/realestateandhomes-detail/9175-Prospect-Way-Rd_Byers_CO_80103_M92243-55953",
+  "broker": "Home And Land Realty"
+ },
+ {
+  "title": "County Rd, Wiggins, CO 80654",
+  "price_usd": 190000,
+  "acres": 35.5,
+  "county": null,
+  "city": "Wiggins",
+  "url": "https://www.realtor.com/realestateandhomes-detail/County-Rd_Wiggins_CO_80654_M96111-52048",
+  "broker": "Power Of 3 Real Estate"
+ },
+ {
+  "title": "Silvermine Dr, Durango, CO 81303",
+  "price_usd": 1950000,
+  "acres": 176.8,
+  "county": null,
+  "city": "Durango",
+  "url": "https://www.realtor.com/realestateandhomes-detail/County-Road-211_Durango_CO_81303_M27344-47763",
+  "broker": "Exp Realty, Llc"
+ },
+ {
+  "title": "5771 Obenchain Rd, Laporte, CO 80535",
+  "price_usd": 325000,
+  "acres": 40.0,
+  "county": null,
+  "city": "Laporte",
+  "url": "https://www.realtor.com/realestateandhomes-detail/5771-Obenchain-Rd_Laporte_CO_80535_M13096-61001",
+  "broker": "The Group - Harmony"
+ },
+ {
+  "title": "Ponderosa Dr, Ridgway, CO 81432",
+  "price_usd": 450000,
+  "acres": 37.2,
+  "county": null,
+  "city": "Ridgway",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Ponderosa-Dr_Ridgway_CO_81432_M94876-92990",
+  "broker": "Telluride Properties Main St."
+ },
+ {
+  "title": "3420 Currant Pkwy, Trinidad, CO 81082",
+  "price_usd": 175000,
+  "acres": 35.22,
+  "county": null,
+  "city": "Trinidad",
+  "url": "https://www.realtor.com/realestateandhomes-detail/3420-Currant-Ct_Trinidad_CO_81082_M92767-74544",
+  "broker": "Authentic Colorado Properties, LLC dba Colorado Land Properties"
+ },
+ {
+  "title": "1859 County Road 917, Pagosa Springs, CO 81147",
+  "price_usd": 290000,
+  "acres": 36.25,
+  "county": null,
+  "city": "Pagosa Springs",
+  "url": "https://www.realtor.com/realestateandhomes-detail/1859-County-Road-917_Pagosa-Springs_CO_81147_M99334-42471",
+  "broker": "Remax Eagle's Nest"
+ },
+ {
+  "title": "586 Cuesta Dr, Cotopaxi, CO 81223",
+  "price_usd": 575000,
+  "acres": 80.0,
+  "county": null,
+  "city": "Cotopaxi",
+  "url": "https://www.realtor.com/realestateandhomes-detail/586-Cuesta-Dr_Cotopaxi_CO_81223_M97748-66091",
+  "broker": "Your Castle Real Estate"
+ },
+ {
+  "title": "E 144th Ave Lot 3 and Manila Rd, Hudson, CO 80642",
+  "price_usd": 550000,
+  "acres": 42.59,
+  "county": null,
+  "city": "Hudson",
+  "url": "https://www.realtor.com/realestateandhomes-detail/E-144th-Ave_Hudson_CO_80642_M95006-39318",
+  "broker": "LoKation"
+ },
+ {
+  "title": "County C Rd Lot 30, Dove Creek, CO 81324",
+  "price_usd": null,
+  "acres": 40.49,
+  "county": null,
+  "city": "Dove Creek",
+  "url": "https://www.realtor.com/realestateandhomes-detail/4030-Secret-Sub-Cyn-Div_Dove-Creek_CO_81324_M94581-57273",
+  "broker": "United Country Blue Sky Homes And Land"
+ },
+ {
+  "title": "6168 Hoadley Rd, Fort Garland, CO 81133",
+  "price_usd": null,
+  "acres": 32.0,
+  "county": null,
+  "city": "Fort Garland",
+  "url": "https://www.realtor.com/realestateandhomes-detail/6168-Hoadley-Rd_Fort-Garland_CO_81133_M93771-54729",
+  "broker": "Sunset 5280"
+ },
+ {
+  "title": "E County Line Rd, Monument, CO 80132",
+  "price_usd": 1999900,
+  "acres": 43.4,
+  "county": null,
+  "city": "Monument",
+  "url": "https://www.realtor.com/realestateandhomes-detail/E-County-Line-Rd_Monument_CO_80132_M95866-71466",
+  "broker": "Remax Properties"
+ },
+ {
+  "title": "4250 Doe Valley Rd, Guffey, CO 80820",
+  "price_usd": 158000,
+  "acres": 19.85,
+  "county": null,
+  "city": "Guffey",
+  "url": "https://www.realtor.com/realestateandhomes-detail/4250-Doe-Valley-Rd_Guffey_CO_80820_M99298-74897",
+  "broker": "The Cutting Edge, REALTORS"
+ },
+ {
+  "title": "Road # 46, Mancos, CO 81328",
+  "price_usd": 285000,
+  "acres": 35.1,
+  "county": null,
+  "city": "Mancos",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Road-46_Mancos_CO_81328_M14740-18604",
+  "broker": "Remax Pinnacle"
+ },
+ {
+  "title": "11256 N County Road 13, Wellington, CO 80549",
+  "price_usd": 590000,
+  "acres": 35.06,
+  "county": null,
+  "city": "Wellington",
+  "url": "https://www.realtor.com/realestateandhomes-detail/11256-N-County-Road-13_Wellington_CO_80549_M97772-65398",
+  "broker": "C3 Real Estate Solutions"
+ },
+ {
+  "title": "39080 County Road 21, Elizabeth, CO 80107",
+  "price_usd": 329900,
+  "acres": 10.38,
+  "county": null,
+  "city": "Elizabeth",
+  "url": "https://www.realtor.com/realestateandhomes-detail/39080-County-Road-21_Elizabeth_CO_80107_M99402-73329",
+  "broker": "Remax Professionals"
+ },
+ {
+  "title": "Geronimo Trl, Conifer, CO 80433",
+  "price_usd": 588000,
+  "acres": 12.47,
+  "county": null,
+  "city": "Conifer",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Geronimo-Trl_Conifer_CO_80433_M96066-66754",
+  "broker": "The McWilliams Group Real Estate"
+ },
+ {
+  "title": "Timber Ridge Trl, Weston, CO 81091",
+  "price_usd": 199000,
+  "acres": 35.0,
+  "county": null,
+  "city": "Weston",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Timber-Ridge-Trl_Weston_CO_81091_M98580-08000",
+  "broker": "Spanish Peaks Land Company, Inc"
+ },
+ {
+  "title": "Kiowa-Bennett Rd, Bennett, CO 80102",
+  "price_usd": 365000,
+  "acres": 39.5,
+  "county": null,
+  "city": "Bennett",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Kiowa-Bennett-Rd_Bennett_CO_80102_M96957-05783",
+  "broker": "Great Plains Land Company LLC"
+ },
+ {
+  "title": "County Road U, Walsh, CO 81090",
+  "price_usd": 179000,
+  "acres": 200.0,
+  "county": null,
+  "city": "Walsh",
+  "url": "https://www.realtor.com/realestateandhomes-detail/County-Road-U_Walsh_CO_81090_M99592-68930",
+  "broker": "Great Plains Land Company LLC"
+ },
+ {
+  "title": "1281 Beard Creek Rd, Edwards, CO 81632",
+  "price_usd": 7500000,
+  "acres": 105.03,
+  "county": null,
+  "city": "Edwards",
+  "url": "https://www.realtor.com/realestateandhomes-detail/1281-Beard-Creek-Rd_Edwards_CO_81632_M93117-05374",
+  "broker": "COMPASS"
+ },
+ {
+  "title": "991 Purple Sage, Durango, CO 81301",
+  "price_usd": 685000,
+  "acres": 35.32,
+  "county": null,
+  "city": "Durango",
+  "url": "https://www.realtor.com/realestateandhomes-detail/991-Purple-Sage-Rd_Durango_CO_81301_M92326-08726",
+  "broker": "Telluride Properties"
+ },
+ {
+  "title": "Spencer Mountain Rd, Bellvue, CO 80512",
+  "price_usd": 245000,
+  "acres": 40.0,
+  "county": null,
+  "city": "Bellvue",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Spencer-Mountain-Rd_Bellvue_CO_80512_M96310-12906",
+  "broker": "Remax Alliance"
+ },
+ {
+  "title": "Craven Lot 1, Elbert, CO 80106",
+  "price_usd": 189900,
+  "acres": 10.0,
+  "county": null,
+  "city": "Elbert",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Craven-Lot-1_Elbert_CO_80106_M95738-21516",
+  "broker": "Remax Alliance"
+ },
+ {
+  "title": "Spanish Highlands Filing 4 Lot 210 Lots 210,211,212, Boncarbo, CO 81024",
+  "price_usd": 130000,
+  "acres": 19.55,
+  "county": null,
+  "city": "Boncarbo",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Spanish-Highlands-Filing-4-Lot-210-Lots-210211212_Boncarbo_CO_81024_M91631-70740",
+  "broker": "Code Of The West Real Estate"
+ },
+ {
+  "title": "653 Summit Gulch Rd Lot 1, Breckenridge, CO 80424",
+  "price_usd": 3500000,
+  "acres": 34.25,
+  "county": null,
+  "city": "Breckenridge",
+  "url": "https://www.realtor.com/realestateandhomes-detail/653-Summit-Gulch-Rd_Breckenridge_CO_80424_M25298-94546",
+  "broker": "Liv Sotheby's International Realty"
+ },
+ {
+  "title": "Tbd County Road 300 # 1 & 2, Parachute, CO 81635",
+  "price_usd": 799000,
+  "acres": 70.06,
+  "county": null,
+  "city": "Parachute",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Tbd-County-Road-300-Lot-1_Parachute_CO_81635_M96651-87095",
+  "broker": "Remax Country"
+ },
+ {
+  "title": "8896 8250 Rd, Crawford, CO 81415",
+  "price_usd": 255000,
+  "acres": 35.0,
+  "county": null,
+  "city": "Crawford",
+  "url": "https://www.realtor.com/realestateandhomes-detail/8896-8250-Rd_Crawford_CO_81415_M13025-37673",
+  "broker": "Needlerock Mountain Realty And Land, Llc"
+ },
+ {
+  "title": "409 Wind Dancer Cir, Florissant, CO 80816",
+  "price_usd": 375000,
+  "acres": null,
+  "county": null,
+  "city": "Florissant",
+  "url": "https://www.realtor.com/realestateandhomes-detail/409-Wind-Dancer-Cir_Florissant_CO_80816_M92621-64853",
+  "broker": "Arrowhead Land Company"
+ },
+ {
+  "title": "County 5 County Rd E # 125, Antonito, CO 81120",
+  "price_usd": 156000,
+  "acres": 61.1,
+  "county": null,
+  "city": "Antonito",
+  "url": "https://www.realtor.com/realestateandhomes-detail/County-5-County-Rd-E-125_Antonito_CO_81120_M90399-19240",
+  "broker": "Berkshire Hathaway HomeServices Colorado Properties"
+ },
+ {
+  "title": "Diamond Star Ranch Rd, Eagle, CO 81631",
+  "price_usd": 2000000,
+  "acres": 178.28,
+  "county": null,
+  "city": "Eagle",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Diamond-Star-Ranch-Rd_Eagle_CO_81631_M96880-53072",
+  "broker": "Colorado Realty & Land Co."
+ },
+ {
+  "title": "County Road H, San Luis, CO 81152",
+  "price_usd": 175000,
+  "acres": 240.0,
+  "county": null,
+  "city": "San Luis",
+  "url": "https://www.realtor.com/realestateandhomes-detail/County-Road-H_San-Luis_CO_81152_M97609-90341",
+  "broker": "LIV Sothebys International Realty- Breckenridge"
+ },
+ {
+  "title": "597 County Road 4081, Granby, CO 80446",
+  "price_usd": 594000,
+  "acres": 55.97,
+  "county": null,
+  "city": "Granby",
+  "url": "https://www.realtor.com/realestateandhomes-detail/597-County-Road-4081_Granby_CO_80446_M20968-51914",
+  "broker": "The Wells Group of Durango, LLC"
+ },
+ {
+  "title": "Road 35 # 3, Mancos, CO 81328",
+  "price_usd": 225000,
+  "acres": 35.97,
+  "county": null,
+  "city": "Mancos",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Road-35-3_Mancos_CO_81328_M96069-33752",
+  "broker": "The Wells Group of Durango, LLC"
+ },
+ {
+  "title": "11799 Highway 13, Rifle, CO 81650",
+  "price_usd": 4880000,
+  "acres": 1273.0,
+  "county": null,
+  "city": "Rifle",
+  "url": "https://www.realtor.com/realestateandhomes-detail/11799-Highway-13_Rifle_CO_81650_M92017-22795",
+  "broker": "SORREL PROPERTIES"
+ },
+ {
+  "title": "County Road 53, Maybell, CO 81640",
+  "price_usd": 6995000,
+  "acres": 5899.0,
+  "county": null,
+  "city": "Maybell",
+  "url": "https://www.realtor.com/realestateandhomes-detail/County-Road-53_Maybell_CO_81640_M94701-74670",
+  "broker": "Hayden Outdoors"
+ },
+ {
+  "title": "E County Line Rd, Olney Springs, CO 81062",
+  "price_usd": 40000,
+  "acres": 40.0,
+  "county": null,
+  "city": "Olney Springs",
+  "url": "https://www.realtor.com/realestateandhomes-detail/E-County-Line-Rd_Olney-Springs_CO_81062_M90267-29205",
+  "broker": "Keller Williams Performance Realty"
+ },
+ {
+  "title": "Nordman Dr, Fort Garland, CO 81133",
+  "price_usd": 120000,
+  "acres": 44.11,
+  "county": null,
+  "city": "Fort Garland",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Address-Dr_Fort-Garland_CO_81133_M94073-14322",
+  "broker": "Steffens and Company Realty, Inc"
+ },
+ {
+  "title": "Tbd County Road 116 Lot 1, Hesperus, CO 81326",
+  "price_usd": 129000,
+  "acres": 40.69,
+  "county": null,
+  "city": "Hesperus",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Tbd-County-Road-116-Lot-1_Hesperus_CO_81326_M97986-71743",
+  "broker": "KELLER WILLIAMS REALTY SOUTHWEST"
+ },
+ {
+  "title": "Beaver Creek Ranch Dr Lot 8, Bayfield, CO 81122",
+  "price_usd": 348000,
+  "acres": 37.0,
+  "county": null,
+  "city": "Bayfield",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Beaver-Creek-Ranch-Dr_Bayfield_CO_81122_M98084-42074",
+  "broker": "Whitetail Properties Real Estate LLC"
+ },
+ {
+  "title": "County 634 2 Rd Lot 3, Gardner, CO 81040",
+  "price_usd": 165000,
+  "acres": 35.89,
+  "county": null,
+  "city": "Gardner",
+  "url": "https://www.realtor.com/realestateandhomes-detail/County-634-2-Rd-Lot-3_Gardner_CO_81040_M13890-36114",
+  "broker": "Great Western Ranch and Land, LLC"
+ },
+ {
+  "title": "6900 Rd, Montrose, CO 81401",
+  "price_usd": 549900,
+  "acres": 38.3,
+  "county": null,
+  "city": "Montrose",
+  "url": "https://www.realtor.com/realestateandhomes-detail/6900-Rd_Montrose_CO_81401_M90761-19812",
+  "broker": "Norris-Phillips Real Estate, LLC"
+ },
+ {
+  "title": "Tract 1 Bowling/Cobb Division of Land, Saguache, CO 81143",
+  "price_usd": 90000,
+  "acres": 45.51,
+  "county": null,
+  "city": "Saguache",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Tract-1-BowlingCobb-Division-of-Land_Saguache_CO_81143_M90938-12575",
+  "broker": "LPT Realty"
+ },
+ {
+  "title": "Sunrise Dr, Aguilar, CO 81020",
+  "price_usd": 225000,
+  "acres": 73.87,
+  "county": null,
+  "city": "Aguilar",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Sunrise-Dr_Aguilar_CO_81020_M92301-97238",
+  "broker": "Code Of The West Real Estate Llc"
+ },
+ {
+  "title": "6201 and 6245 Highway 96, Westcliffe, CO 81252",
+  "price_usd": 499000,
+  "acres": 121.43,
+  "county": null,
+  "city": "Westcliffe",
+  "url": "https://www.realtor.com/realestateandhomes-detail/6201_Westcliffe_CO_81252_M96681-96452",
+  "broker": "Hayden Outdoors Real Estate"
+ },
+ {
+  "title": "Osceola, Almont, CO 81210",
+  "price_usd": 40000,
+  "acres": 10.33,
+  "county": null,
+  "city": "Almont",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Osceola_Almont_CO_81210_M99269-48165",
+  "broker": "Berkshire Hathaway Homeservices Today Realty & Associates"
+ },
+ {
+  "title": "County 51 Rd # 51A, Silverton, CO 81433",
+  "price_usd": 199000,
+  "acres": 30.13,
+  "county": null,
+  "city": "Silverton",
+  "url": "https://www.realtor.com/realestateandhomes-detail/County-51-Rd-51A_Silverton_CO_81433_M25775-38243",
+  "broker": "The Wells Group of Durango, LLC"
+ },
+ {
+  "title": "13583 County Road 96, Nunn, CO 80648",
+  "price_usd": 459900,
+  "acres": 42.32,
+  "county": null,
+  "city": "Nunn",
+  "url": "https://www.realtor.com/realestateandhomes-detail/13583-County-Road-96_Nunn_CO_80648_M94197-93159",
+  "broker": "The Group - Harmony"
+ },
+ {
+  "title": "Little Boss, White Pine, CO 81230",
+  "price_usd": 12000,
+  "acres": 10.19,
+  "county": null,
+  "city": "White Pine",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Little-Boss_White-Pine_CO_81230_M93648-03033",
+  "broker": "Berkshire Hathaway Homeservices Today Realty & Associates"
+ },
+ {
+  "title": "369 Park Mesa, Carbondale, CO 81623",
+  "price_usd": 1650000,
+  "acres": 44.8,
+  "county": null,
+  "city": "Carbondale",
+  "url": "https://www.realtor.com/realestateandhomes-detail/369-Park-Mesa_Carbondale_CO_81623_M98164-15376",
+  "broker": "Rivers and Mountains Real Estate"
+ },
+ {
+  "title": "County Road LL, Fowler, CO 81039",
+  "price_usd": 4888000,
+  "acres": 350.0,
+  "county": null,
+  "city": "Fowler",
+  "url": "https://www.realtor.com/realestateandhomes-detail/County-Road-LL_Fowler_CO_81039_M90758-43764",
+  "broker": "Farm and Ranch Realty Inc"
+ },
+ {
+  "title": "231 Bareback Ln, Durango, CO 81303",
+  "price_usd": 895000,
+  "acres": 35.07,
+  "county": null,
+  "city": "Durango",
+  "url": "https://www.realtor.com/realestateandhomes-detail/231-Bareback-Ln_Durango_CO_81303_M17522-19106",
+  "broker": "Regents Real Estate Group ERA Powered"
+ },
+ {
+  "title": "4 Handle Rd Lot Iron, Penrose, CO 81240",
+  "price_usd": 179000,
+  "acres": 36.17,
+  "county": null,
+  "city": "Penrose",
+  "url": "https://www.realtor.com/realestateandhomes-detail/4-Handle-Rd-Lot-Iron_Penrose_CO_81240_M91191-79221",
+  "broker": "HomeSmart Preferred Realty (Canon City)"
+ },
+ {
+  "title": "County Road 63, Gill, CO 80624",
+  "price_usd": 1120000,
+  "acres": 160.0,
+  "county": null,
+  "city": "Gill",
+  "url": "https://www.realtor.com/realestateandhomes-detail/County-Road-63_Gill_CO_80624_M92033-92658",
+  "broker": "Agprofessionals, Llc"
+ },
+ {
+  "title": "996 Lower Highlands Rd, Crested Butte, CO 81224",
+  "price_usd": 699000,
+  "acres": 15.41,
+  "county": null,
+  "city": "Crested Butte",
+  "url": "https://www.realtor.com/realestateandhomes-detail/996-Lower-Highlands-Rd_Crested-Butte_CO_81224_M26181-79429",
+  "broker": "Berkshire Hathaway Homeservices Today Realty & Associates"
+ },
+ {
+  "title": "Tyrone Hills Rnch Lot 167, Walsenburg, CO 81089",
+  "price_usd": 24999,
+  "acres": 40.0,
+  "county": null,
+  "city": "Walsenburg",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Tyrone-Hills-Rnch-Lot-167_Walsenburg_CO_81089_M91461-47307",
+  "broker": "Code Of The West Real Estate"
+ },
+ {
+  "title": "300 Whipple Way, Telluride, CO 81435",
+  "price_usd": 2950000,
+  "acres": 35.34,
+  "county": null,
+  "city": "Telluride",
+  "url": "https://www.realtor.com/realestateandhomes-detail/300-Whipple-Way_Telluride_CO_81435_M29857-49103",
+  "broker": "Telluride Properties"
+ },
+ {
+  "title": "County Road 108, Eaton, CO 80615",
+  "price_usd": 130000,
+  "acres": 40.01,
+  "county": null,
+  "city": "Eaton",
+  "url": "https://www.realtor.com/realestateandhomes-detail/County-Road-108_Eaton_CO_80615_M96815-52488",
+  "broker": "Price & Co. Real Estate"
+ },
+ {
+  "title": "Cimarron Dr, Weston, CO 81091",
+  "price_usd": 168000,
+  "acres": 35.0,
+  "county": null,
+  "city": "Weston",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Cimarron-Dr_Weston_CO_81091_M99817-63546",
+  "broker": "National Land Realty, Holyoke, CO"
+ },
+ {
+  "title": "436 Fox Farm Rd, Larkspur, CO 80118",
+  "price_usd": 5249000,
+  "acres": 76.57,
+  "county": null,
+  "city": "Larkspur",
+  "url": "https://www.realtor.com/realestateandhomes-detail/436-Fox-Farm-Rd_Larkspur_CO_80118_M97826-39275",
+  "broker": "Whitetail Properties Real Estate Llc"
+ },
+ {
+  "title": "Pcs25427 Yuma Rd Lot 6231, Hartsel, CO 80449",
+  "price_usd": 69000,
+  "acres": 12.83,
+  "county": null,
+  "city": "Hartsel",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Pcs25427-Yuma-Rd-Lot-6231_Hartsel_CO_80449_M93333-73848",
+  "broker": "Christie's International Real Estate Colorado- Summit Colorado"
+ },
+ {
+  "title": "Peoria Crossing Rd, Wiggins, CO 80654",
+  "price_usd": 150000,
+  "acres": 37.94,
+  "county": null,
+  "city": "Wiggins",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Peoria-Crossing-Rd_Bennett_CO_80102_M96272-49082",
+  "broker": "Orr Land Co"
+ },
+ {
+  "title": "Leadville Land, Leadville, CO 80461",
+  "price_usd": 500000,
+  "acres": 110.62,
+  "county": null,
+  "city": "Leadville",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Leadville-Land_Leadville_CO_80461_M92796-40327",
+  "broker": "Remax Northwest Inc"
+ },
+ {
+  "title": "120 Antelope Run, Monte Vista, CO 81144",
+  "price_usd": 69900,
+  "acres": 35.42,
+  "county": null,
+  "city": "Monte Vista",
+  "url": "https://www.realtor.com/realestateandhomes-detail/120-Antelope-Run_Monte-Vista_CO_81144_M20074-62901",
+  "broker": "Caldera Creek"
+ },
+ {
+  "title": "169 County Rd, Matheson, CO 80830",
+  "price_usd": 160000,
+  "acres": 98.88,
+  "county": null,
+  "city": "Matheson",
+  "url": "https://www.realtor.com/realestateandhomes-detail/169-County-Rd_Matheson_CO_80830_M96195-87669",
+  "broker": "Keller Williams Clients' Choice Realty"
+ },
+ {
+  "title": "21103 Elkhorn Rd, Como, CO 80432",
+  "price_usd": 8000000,
+  "acres": 2420.0,
+  "county": null,
+  "city": "Como",
+  "url": "https://www.realtor.com/realestateandhomes-detail/21103-Elkhorn-Rd_Como_CO_80432_M93050-07613",
+  "broker": "Confluence Land Company"
+ },
+ {
+  "title": "5725 Rd, Olathe, CO 81425",
+  "price_usd": 995000,
+  "acres": 122.0,
+  "county": null,
+  "city": "Olathe",
+  "url": "https://www.realtor.com/realestateandhomes-detail/5725-Rd_Olathe_CO_81425_M91472-56012",
+  "broker": "Remax Alpine View"
+ },
+ {
+  "title": "E 136th Ave and N Schumaker Rd, Hudson, CO 80642",
+  "price_usd": 900000,
+  "acres": 160.0,
+  "county": null,
+  "city": "Hudson",
+  "url": "https://www.realtor.com/realestateandhomes-detail/E-136th-Ave_Hudson_CO_80642_M96534-11779",
+  "broker": "LoKation"
+ },
+ {
+  "title": "79 Weaver Dr, Boulder, CO 80302",
+  "price_usd": 2800000,
+  "acres": 74.51,
+  "county": null,
+  "city": "Boulder",
+  "url": "https://www.realtor.com/realestateandhomes-detail/79-Weaver-Dr_Boulder_CO_80302_M28375-88153",
+  "broker": "Coldwell Banker Realty"
+ },
+ {
+  "title": "9670 Boone Rd, Yoder, CO 80864",
+  "price_usd": 150000,
+  "acres": 41.67,
+  "county": null,
+  "city": "Yoder",
+  "url": "https://www.realtor.com/realestateandhomes-detail/9670-Boone-Rd_Yoder_CO_80864_M97919-24249",
+  "broker": "Realty One Group Premier"
+ },
+ {
+  "title": "18677 State Highway 7, Lyons, CO 80540",
+  "price_usd": 750000,
+  "acres": 40.0,
+  "county": null,
+  "city": "Lyons",
+  "url": "https://www.realtor.com/realestateandhomes-detail/18677-State-Highway-7_Lyons_CO_80540_M96564-53667",
+  "broker": "RE/MAX Nexus"
+ },
+ {
+  "title": "2232 County Road 5 Lots 2,3,4, Fairplay, CO 80440",
+  "price_usd": 499000,
+  "acres": 108.17,
+  "county": null,
+  "city": "Fairplay",
+  "url": "https://www.realtor.com/realestateandhomes-detail/2232-County-Road-5-Lots-234_Fairplay_CO_80440_M97384-56516",
+  "broker": "RE/MAX Properties of the Summit - Breckenridge, Colorado"
+ },
+ {
+  "title": "584 County Road 331, Silt, CO 81652",
+  "price_usd": 5000000,
+  "acres": 677.0,
+  "county": null,
+  "city": "Silt",
+  "url": "https://www.realtor.com/realestateandhomes-detail/584-County-Road-331_Silt_CO_81652_M92097-46892",
+  "broker": "Hayden Outdoors"
+ },
+ {
+  "title": "County Road 129, Bennett, CO 80102",
+  "price_usd": 240000,
+  "acres": 35.0,
+  "county": null,
+  "city": "Bennett",
+  "url": "https://www.realtor.com/realestateandhomes-detail/County-Road-129_Bennett_CO_80102_M97423-75798",
+  "broker": "MEGASTAR REALTY"
+ },
+ {
+  "title": "Chris Crossover Lot 71, Canon City, CO 81212",
+  "price_usd": 145000,
+  "acres": 37.28,
+  "county": null,
+  "city": "Canon City",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Chris-Crossover-Dr-Lot-71_Canon-City_CO_81212_M99596-28702",
+  "broker": "HomeSmart Preferred Realty (Canon City)"
+ },
+ {
+  "title": "60 Hill Rd, Hartsel, CO 80449",
+  "price_usd": 185000,
+  "acres": 38.8,
+  "county": null,
+  "city": "Hartsel",
+  "url": "https://www.realtor.com/realestateandhomes-detail/60-Hill-Dr_Hartsel_CO_80449_M94443-73935",
+  "broker": "Mossy Oak Properties Colorado Mountain Realty"
+ },
+ {
+  "title": "Twin Lakes Rnch Lots 81A & 101, Walsenburg, CO 81089",
+  "price_usd": 128000,
+  "acres": 80.0,
+  "county": null,
+  "city": "Walsenburg",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Twin-Lakes-Rnch-Lots-81A-101_Walsenburg_CO_81089_M91407-30357",
+  "broker": "Code Of The West Real Estate"
+ },
+ {
+  "title": "County Road 130, Hesperus, CO 81326",
+  "price_usd": 350000,
+  "acres": 155.0,
+  "county": null,
+  "city": "Hesperus",
+  "url": "https://www.realtor.com/realestateandhomes-detail/County-Road-130_Hesperus_CO_81326_M92910-58438",
+  "broker": "The Wells Group of Durango, LLC"
+ },
+ {
+  "title": "3604 Timberlane Dr, Craig, CO 81625",
+  "price_usd": 69900,
+  "acres": 10.0,
+  "county": null,
+  "city": "Craig",
+  "url": "https://www.realtor.com/realestateandhomes-detail/3604-Timberlane-Dr_Craig_CO_81625_M92481-29671",
+  "broker": "Brass Key Realty, Ltd."
+ },
+ {
+  "title": "38100 Painted Rock Way Lots 1 & 18, Hayden, CO 81639",
+  "price_usd": 750000,
+  "acres": 100.45,
+  "county": null,
+  "city": "Hayden",
+  "url": "https://www.realtor.com/realestateandhomes-detail/38100-Painted-Rock-Way_Hayden_CO_81639_M97191-58280",
+  "broker": "Steamboat Sotheby's International Realty"
+ },
+ {
+  "title": "County Road 554, Gardner, CO 81040",
+  "price_usd": 1200000,
+  "acres": 114.0,
+  "county": null,
+  "city": "Gardner",
+  "url": "https://www.realtor.com/realestateandhomes-detail/County-Road-554_Gardner_CO_81040_M90791-07519",
+  "broker": "Code Of The West Real Estate Llc"
+ },
+ {
+  "title": "County Road 2, Silverton, CO 81433",
+  "price_usd": 225000,
+  "acres": 93.02,
+  "county": null,
+  "city": "Silverton",
+  "url": "https://www.realtor.com/realestateandhomes-detail/County-Road-2_Silverton_CO_81433_M95305-91762",
+  "broker": "KELLER WILLIAMS REALTY SOUTHWEST"
+ },
+ {
+  "title": "10555 Big Sky Trl, Elbert, CO 80106",
+  "price_usd": 1550000,
+  "acres": 35.05,
+  "county": null,
+  "city": "Elbert",
+  "url": "https://www.realtor.com/realestateandhomes-detail/10555-Big-Sky-Trl_Elbert_CO_80106_M21429-92196",
+  "broker": "M4 Ranch Group, LLC"
+ },
+ {
+  "title": "12580 County Road Z5, Rush, CO 80833",
+  "price_usd": 375000,
+  "acres": 40.0,
+  "county": null,
+  "city": "Rush",
+  "url": "https://www.realtor.com/realestateandhomes-detail/12580-County-Road-Z5_Rush_CO_80833_M90466-78968",
+  "broker": "Coldwell Banker Beyond"
+ },
+ {
+  "title": "16590 Watkins Rd, Hudson, CO 80642",
+  "price_usd": 1300000,
+  "acres": 41.78,
+  "county": null,
+  "city": "Hudson",
+  "url": "https://www.realtor.com/realestateandhomes-detail/16590-Watkins-Rd_Hudson_CO_80642_M94448-54711",
+  "broker": "DNVR Realty & Financing LLC"
+ },
+ {
+  "title": "Tbd Highway 151, Ignacio, CO 81137",
+  "price_usd": 240000,
+  "acres": 37.9,
+  "county": null,
+  "city": "Ignacio",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Tbd-Highway-151_Ignacio_CO_81137_M91544-34817",
+  "broker": "Hayden Outdoors Real Estate"
+ },
+ {
+  "title": "Spanish Peaks Trl, La Veta, CO 81055",
+  "price_usd": 275000,
+  "acres": 35.1,
+  "county": null,
+  "city": "La Veta",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Spanish-Peaks-Trl_La-Veta_CO_81055_M91538-09467",
+  "broker": "Fay Ranches Inc"
+ },
+ {
+  "title": "Wolfenberger Rd Lot 122, Rye, CO 81004",
+  "price_usd": 74999,
+  "acres": 59.29,
+  "county": null,
+  "city": "Rye",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Wolfenberger-Rd-Lot-122_Rye_CO_81004_M97218-18181",
+  "broker": "Whitetail Properties Real Estate Llc"
+ },
+ {
+  "title": "Doyle Rd, Avondale, CO 81022",
+  "price_usd": 349000,
+  "acres": 583.0,
+  "county": null,
+  "city": "Avondale",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Doyle-Rd_Avondale_CO_81022_M98727-08467",
+  "broker": "eXp Realty, LLC OTH"
+ },
+ {
+  "title": "93 Blackhawk Rnch, Walsenburg, CO 81089",
+  "price_usd": 160000,
+  "acres": 35.05,
+  "county": null,
+  "city": "Walsenburg",
+  "url": "https://www.realtor.com/realestateandhomes-detail/93-Blawkhawk-Rnch_Walsenburg_CO_81089_M95704-31751",
+  "broker": "Century 21 West Slope Realty"
+ },
+ {
+  "title": "Road L, Cortez, CO 81321",
+  "price_usd": 359000,
+  "acres": 28.0,
+  "county": null,
+  "city": "Cortez",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Road-L_Cortez_CO_81321_M94810-06895",
+  "broker": "Whitetail Properties Real Estate LLC"
+ },
+ {
+  "title": "11485 County Road 4, Dove Creek, CO 81324",
+  "price_usd": 259000,
+  "acres": 160.0,
+  "county": null,
+  "city": "Dove Creek",
+  "url": "https://www.realtor.com/realestateandhomes-detail/11485-Road-4_Dove-Creek_CO_81324_M92363-29343",
+  "broker": "Hayden Outdoors Real Estate"
+ },
+ {
+  "title": "Red Creek Springs Rd Lot 2, Pueblo, CO 81005",
+  "price_usd": 90000,
+  "acres": 40.0,
+  "county": null,
+  "city": "Pueblo",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Red-Creek-Springs-Rd-Lot-2_Pueblo_CO_81005_M99284-33017",
+  "broker": "Werner Realty, Inc."
+ },
+ {
+  "title": "16th St N, San Luis, CO 81152",
+  "price_usd": 28499,
+  "acres": null,
+  "county": null,
+  "city": "San Luis",
+  "url": "https://www.realtor.com/realestateandhomes-detail/16th-St-N_San-Luis_CO_81152_M98449-65639",
+  "broker": "Re/Max Real Estate Group Llc"
+ },
+ {
+  "title": "County Road 133, Simla, CO 80835",
+  "price_usd": 70000,
+  "acres": 35.55,
+  "county": null,
+  "city": "Simla",
+  "url": "https://www.realtor.com/realestateandhomes-detail/County-Road-133_Simla_CO_80835_M98682-90818",
+  "broker": null
+ },
+ {
+  "title": "2975 County Road 8, Julesburg, CO 80737",
+  "price_usd": 2250000,
+  "acres": 315.82,
+  "county": null,
+  "city": "Julesburg",
+  "url": "https://www.realtor.com/realestateandhomes-detail/2975-County-Road-8_Julesburg_CO_80737_M91615-10052",
+  "broker": "American Legacy Land Company"
+ },
+ {
+  "title": "Parcel G, Bennett, CO 80102",
+  "price_usd": 285000,
+  "acres": 39.1,
+  "county": null,
+  "city": "Bennett",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Parcel-G_Bennett_CO_80102_M93565-32956",
+  "broker": "Look East Realty"
+ },
+ {
+  "title": "Bat Masterson Dr Lot 21, Trinidad, CO 81082",
+  "price_usd": 177700,
+  "acres": 35.51,
+  "county": null,
+  "city": "Trinidad",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Bat-Masterson-Dr-Lot-21_Trinidad_CO_81082_M94396-87603",
+  "broker": "EXIT Silver Thread Realty"
+ },
+ {
+  "title": "2403 Wrangler Way, Durango, CO 81303",
+  "price_usd": 349000,
+  "acres": 10.09,
+  "county": null,
+  "city": "Durango",
+  "url": "https://www.realtor.com/realestateandhomes-detail/2403-Wrangler-Way_Durango_CO_81303_M18622-84083",
+  "broker": "Hayden Outdoors Real Estate"
+ },
+ {
+  "title": "425 and Lakeside Dr, Pagosa Springs, CO 81147",
+  "price_usd": 1500000,
+  "acres": 20.0,
+  "county": null,
+  "city": "Pagosa Springs",
+  "url": "https://www.realtor.com/realestateandhomes-detail/425-Lakeside-Dr_Pagosa-Springs_CO_81147_M96812-46552",
+  "broker": "Galles Properties"
+ },
+ {
+  "title": "County 358 Rd Lot 1, Westcliffe, CO 81252",
+  "price_usd": 479000,
+  "acres": 132.25,
+  "county": null,
+  "city": "Westcliffe",
+  "url": "https://www.realtor.com/realestateandhomes-detail/County-358-Rd-Lot-1_Westcliffe_CO_81252_M96737-22690",
+  "broker": "eXp Realty, LLC"
+ },
+ {
+  "title": "12672 N 75th St, Longmont, CO 80503",
+  "price_usd": 2875000,
+  "acres": 35.43,
+  "county": null,
+  "city": "Longmont",
+  "url": "https://www.realtor.com/realestateandhomes-detail/12672-N-75th-St_Longmont_CO_80503_M11367-99030",
+  "broker": "Kl Realty"
+ },
+ {
+  "title": "35800 Hanisch Rd, Calhan, CO 80808",
+  "price_usd": 90000,
+  "acres": 36.88,
+  "county": null,
+  "city": "Calhan",
+  "url": "https://www.realtor.com/realestateandhomes-detail/35800-Hanisch-Rd_Calhan_CO_80808_M96620-21909",
+  "broker": null
+ },
+ {
+  "title": "73 Parelli Institute, Pagosa Springs, CO 81147",
+  "price_usd": 1295000,
+  "acres": 107.08,
+  "county": null,
+  "city": "Pagosa Springs",
+  "url": "https://www.realtor.com/realestateandhomes-detail/73-Parelli-Institute_Pagosa-Springs_CO_81147_M97225-60792",
+  "broker": "Fay Ranches Inc"
+ },
+ {
+  "title": "37300 Kunzite Rd, Trinidad, CO 81082",
+  "price_usd": 72900,
+  "acres": 35.0,
+  "county": null,
+  "city": "Trinidad",
+  "url": "https://www.realtor.com/realestateandhomes-detail/37300-Kunzite-Rd_Trinidad_CO_81082_M98825-04212",
+  "broker": "eXp Realty, LLC"
+ },
+ {
+  "title": "Weld County # 49, Hudson, CO 80642",
+  "price_usd": 650000,
+  "acres": 37.27,
+  "county": null,
+  "city": "Hudson",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Weld-County-49_Hudson_CO_80642_M96816-27843",
+  "broker": "Day And Company Inc"
+ },
+ {
+  "title": "County Road 616, Walsenburg, CO 81089",
+  "price_usd": 1680000,
+  "acres": 1120.0,
+  "county": null,
+  "city": "Walsenburg",
+  "url": "https://www.realtor.com/realestateandhomes-detail/County-Road-616_Walsenburg_CO_81089_M98649-67652",
+  "broker": "Code of the West Real Estate LLC"
+ },
+ {
+  "title": "Twinkle Rd, Guffey, CO 80820",
+  "price_usd": 249000,
+  "acres": 30.0,
+  "county": null,
+  "city": "Guffey",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Twinkle-Rd_Guffey_CO_80820_M97467-67299",
+  "broker": "Legacy Real Estate Partners"
+ },
+ {
+  "title": "Bs Rd, Glade Park, CO 81523",
+  "price_usd": 608000,
+  "acres": 118.69,
+  "county": null,
+  "city": "Glade Park",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Bs-Rd_Glade-Park_CO_81523_M99273-31451",
+  "broker": "KW Colorado West Realty"
+ },
+ {
+  "title": "76 Snyder Creek Ct, Jefferson, CO 80456",
+  "price_usd": 520000,
+  "acres": 90.0,
+  "county": null,
+  "city": "Jefferson",
+  "url": "https://www.realtor.com/realestateandhomes-detail/76-Snyder-Creek-Rd_Jefferson_CO_80456_M96735-36358",
+  "broker": "Hayden Outdoors Real Estate"
+ },
+ {
+  "title": "267 County Road 1E, Montrose, CO 81403",
+  "price_usd": 375000,
+  "acres": 40.0,
+  "county": null,
+  "city": "Montrose",
+  "url": "https://www.realtor.com/realestateandhomes-detail/267-County-Road-1E_Montrose_CO_81403_M26391-71557",
+  "broker": "Ridgway Real Estate"
+ },
+ {
+  "title": "Sinton Rd, Evergreen, CO 80439",
+  "price_usd": 900000,
+  "acres": null,
+  "county": null,
+  "city": "Evergreen",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Sinton-Rd_Evergreen_CO_80439_M95649-33704",
+  "broker": "COMPASS"
+ },
+ {
+  "title": "Road C, Dove Creek, CO 81324",
+  "price_usd": 100000,
+  "acres": 40.25,
+  "county": null,
+  "city": "Dove Creek",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Road-C_Dove-Creek_CO_81324_M99392-72428",
+  "broker": "United Country Blue Sky Homes And Land"
+ },
+ {
+  "title": "12496A County Road 45, Center, CO 81125",
+  "price_usd": 160000,
+  "acres": 160.0,
+  "county": null,
+  "city": "Center",
+  "url": "https://www.realtor.com/realestateandhomes-detail/12496A-County-Road-45_Center_CO_81125_M90207-58380",
+  "broker": "FIRST COLORADO LAND OFFICE"
+ },
+ {
+  "title": "Mesa View Dr, Pueblo, CO 81004",
+  "price_usd": 179999,
+  "acres": 200.3,
+  "county": null,
+  "city": "Pueblo",
+  "url": "https://www.realtor.com/realestateandhomes-detail/Mesa-View-Dr_Pueblo_CO_81004_M91784-41485",
+  "broker": "Whitetail Properties Real Estate, Llc"
+ },
+ {
+  "title": "8567 County Road 3, Divide, CO 80814",
+  "price_usd": 2500000,
+  "acres": 240.0,
+  "county": null,
+  "city": "Divide",
+  "url": "https://www.realtor.c

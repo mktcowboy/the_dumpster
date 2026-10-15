@@ -1,0 +1,3531 @@
+[
+ {
+  "date": "2007-01-10",
+  "added_t": "AVB",
+  "added_n": "AvalonBay Communities",
+  "removed_t": "SBL",
+  "removed_n": "Symbol Technologies",
+  "reason": "Symbol Technologies was acquired by Motorola.",
+  "src": "https://www.marketwatch.com/story/avalonbay-tapped-as-reit-no-12-in-the-sp-500"
+ },
+ {
+  "date": "2007-03-30",
+  "added_t": "KFT",
+  "added_n": "Kraft Foods",
+  "removed_t": "TSG",
+  "removed_n": "Sabre Corporation",
+  "reason": "Sabre was acquired.",
+  "src": "https://www.cnbc.com/2007/03/23/kraft-replaces-sabre-in-sp-500-kodak-in-sp-100.html"
+ },
+ {
+  "date": "2007-07-02",
+  "added_t": "DFS",
+  "added_n": "Discover Financial",
+  "removed_t": "ADCT",
+  "removed_n": "ADC Telecommunications",
+  "reason": "Discover Financial Services was listed on New York Stock Exchange.",
+  "src": "https://www.reuters.com/article/markets/tyco-spin-offs-discover-to-join-sp-500-idUSN21420089/"
+ },
+ {
+  "date": "2007-08-24",
+  "added_t": "LUK",
+  "added_n": "Leucadia National",
+  "removed_t": "KSE",
+  "removed_n": "KeySpan",
+  "reason": "KeySpan was acquired by National Grid plc.",
+  "src": "https://www.reuters.com/article/sp500-changes/leucadia-to-replace-keyspan-in-sp-500-idUKN1642868720070816/"
+ },
+ {
+  "date": "2007-09-26",
+  "added_t": "ICE",
+  "added_n": "Intercontinental Exchange",
+  "removed_t": "FDC",
+  "removed_n": "First Data",
+  "reason": "FDC was acquired by KKR.",
+  "src": "https://media.corporate-ir.net/media_files/irol/21/215054/092707.pdf"
+ },
+ {
+  "date": "2007-09-27",
+  "added_t": "TSO",
+  "added_n": "Tesoro Corporation",
+  "removed_t": "MXIM",
+  "removed_n": "Maxim Integrated Products",
+  "reason": "MXIM was delisted from NASDAQ exchange.",
+  "src": null
+ },
+ {
+  "date": "2007-10-01",
+  "added_t": "TDC",
+  "added_n": "Teradata",
+  "removed_t": "NCR",
+  "removed_n": "NCR Corporation",
+  "reason": "NCR Corporation completed the corporate spin-off of Teradata.",
+  "src": null
+ },
+ {
+  "date": "2007-10-02",
+  "added_t": "EXPE",
+  "added_n": "Expedia",
+  "removed_t": "SLR",
+  "removed_n": "Solectron",
+  "reason": "Solectron was acquired by Flextronics.",
+  "src": null
+ },
+ {
+  "date": "2007-10-26",
+  "added_t": "JEC",
+  "added_n": "Jacobs Engineering Group",
+  "removed_t": "AV",
+  "removed_n": "Avaya",
+  "reason": "Avaya was acquired.",
+  "src": "https://www.marketwatch.com/story/jacobs-engineering-to-replace-avaya-in-sp-500-thursday"
+ },
+ {
+  "date": "2007-12-13",
+  "added_t": "GME",
+  "added_n": "GameStop",
+  "removed_t": "DJ",
+  "removed_n": "Dow Jones",
+  "reason": "Dow Jones was acquired by News Corporation.",
+  "src": "https://www.nytimes.com/2007/12/17/technology/17gamestop.html"
+ },
+ {
+  "date": "2007-12-20",
+  "added_t": "RRC",
+  "added_n": "Range Resources",
+  "removed_t": "TRB",
+  "removed_n": "Tribune Media",
+  "reason": "Tribune was acquired.",
+  "src": "https://www.marketwatch.com/story/range-resources-to-replace-tribune-co-on-sp-500"
+ },
+ {
+  "date": "2008-06-10",
+  "added_t": "LO",
+  "added_n": "Lorillard Tobacco Company",
+  "removed_t": "ABK",
+  "removed_n": "Ambac Financial",
+  "reason": "Market capitalization changes.",
+  "src": "https://jp.reuters.com/article/lorillard-to-replace-ambac-in-sp-500-index-idUSN03417711/"
+ },
+ {
+  "date": "2008-06-23",
+  "added_t": "COG",
+  "added_n": "Cabot Oil & Gas",
+  "removed_t": "BC",
+  "removed_n": "Brunswick",
+  "reason": "Market capitalization changes.",
+  "src": "https://www.bloomberg.com/news/articles/2008-06-12/massey-energy-cabot-oil-gas-to-join-s-p-500-index-s-p-says"
+ },
+ {
+  "date": "2008-06-23",
+  "added_t": "MEE",
+  "added_n": "Massey Energy",
+  "removed_t": "OMX",
+  "removed_n": "OfficeMax",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2008-07-01",
+  "added_t": "AKS",
+  "added_n": "AK Steel",
+  "removed_t": "CFC",
+  "removed_n": "Countrywide Financial Corp",
+  "reason": "Market capitalization changes.",
+  "src": "https://www.reuters.com/article/sandp-aksteel/ak-steel-to-replace-countrywide-on-sp-500-index-idUSWNAS944120080626/"
+ },
+ {
+  "date": "2008-09-12",
+  "added_t": "CRM",
+  "added_n": "Salesforce",
+  "removed_t": "FRE",
+  "removed_n": "Freddie Mac",
+  "reason": "Market capitalization changes.",
+  "src": "https://www.barrons.com/articles/BL-TB-8680"
+ },
+ {
+  "date": "2008-09-12",
+  "added_t": "FAST",
+  "added_n": "Fastenal",
+  "removed_t": "FNM",
+  "removed_n": "Fannie Mae",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2008-09-16",
+  "added_t": "HRS",
+  "added_n": "Harris Corporation",
+  "removed_t": "LEH",
+  "removed_n": "Lehman Brothers",
+  "reason": "Lehman Brothers filed for bankruptcy.",
+  "src": "https://www.wsj.com/articles/SB122153819736141943"
+ },
+ {
+  "date": "2008-12-31",
+  "added_t": "OI",
+  "added_n": "Owens-Illinois",
+  "removed_t": "WB",
+  "removed_n": "Wachovia Bank",
+  "reason": "Wachovia Bank was acquired by Wells Fargo.",
+  "src": "https://www.toledoblade.com/local/2008/12/25/Owens-Illinois-Inc-headed-back-to-S-P-500-stock-index/stories/200812250071"
+ },
+ {
+  "date": "2009-03-03",
+  "added_t": "HRL",
+  "added_n": "Hormel Foods",
+  "removed_t": "ACAS",
+  "removed_n": "American Capital",
+  "reason": "Market capitalization changes.",
+  "src": "https://www.marketwatch.com/story/hormel-ventas-new-additions-sp-500"
+ },
+ {
+  "date": "2009-03-03",
+  "added_t": "VTR",
+  "added_n": "Ventas",
+  "removed_t": "JNY",
+  "removed_n": "Jones Apparel Group",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2009-06-05",
+  "added_t": "FTI",
+  "added_n": "FMC Technologies",
+  "removed_t": "COV",
+  "removed_n": "Covidien",
+  "reason": "Covidien moved its place of incorporation to Ireland, making it ineligible for inclusion in the index.",
+  "src": null
+ },
+ {
+  "date": "2009-06-25",
+  "added_t": "",
+  "added_n": "",
+  "removed_t": "TEL",
+  "removed_n": "TE Connectivity",
+  "reason": "Tyco Electronics was removed because it was reincorporating in Switzerland, making it ineligible for inclusion.",
+  "src": null
+ },
+ {
+  "date": "2009-06-29",
+  "added_t": "PCS",
+  "added_n": "MetroPCS",
+  "removed_t": "",
+  "removed_n": "",
+  "reason": "",
+  "src": "https://www.rttnews.com/985877/metropcs-communications-to-replace-tyco-electronics-in-s-p-500-quick-facts.aspx"
+ },
+ {
+  "date": "2009-08-19",
+  "added_t": "FMC",
+  "added_n": "FMC Corporation",
+  "removed_t": "CTX",
+  "removed_n": "Centex Corp.",
+  "reason": "Centex was acquired by Pulte Homes.",
+  "src": "https://www.sandiegouniontribune.com/2009/08/11/sp-adding-fmc-to-sp-500-replacing-centex/"
+ },
+ {
+  "date": "2009-09-28",
+  "added_t": "ARG",
+  "added_n": "Airgas",
+  "removed_t": "CBE",
+  "removed_n": "Cooper Industries",
+  "reason": "Cooper redomesticated to Ireland.",
+  "src": "https://www.bloomberg.com/news/articles/2009-08-28/airgas-to-replace-cooper-industries-in-s-p-500-index"
+ },
+ {
+  "date": "2009-11-03",
+  "added_t": "PCLN",
+  "added_n": "Priceline.com",
+  "removed_t": "SGP",
+  "removed_n": "Schering-Plough",
+  "reason": "Schering-Plough was acquired by Merck & Co.",
+  "src": "https://www.bloomberg.com/news/articles/2009-10-29/priceline-com-to-replace-schering-plough-in-s-p-500"
+ },
+ {
+  "date": "2009-12-18",
+  "added_t": "CLF",
+  "added_n": "Cliffs Natural Resources",
+  "removed_t": "KBH",
+  "removed_n": "KB Home",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2009-12-18",
+  "added_t": "MJN",
+  "added_n": "Mead Johnson Nutrition",
+  "removed_t": "DYN",
+  "removed_n": "Dynegy",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2009-12-18",
+  "added_t": "ROST",
+  "added_n": "Ross Stores",
+  "removed_t": "MBI",
+  "removed_n": "MBIA",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2009-12-18",
+  "added_t": "SAI",
+  "added_n": "SAIC",
+  "removed_t": "CVG",
+  "removed_n": "Convergys",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2009-12-18",
+  "added_t": "V",
+  "added_n": "Visa",
+  "removed_t": "CIEN",
+  "removed_n": "Ciena",
+  "reason": "Market capitalization changes.",
+  "src": "https://www.brecorder.com/news/3709752/standard--poors-adding-five-companies-to-sp-500-index-20091213995856"
+ },
+ {
+  "date": "2010-02-16",
+  "added_t": "BRK.B",
+  "added_n": "Berkshire Hathaway",
+  "removed_t": "BNI",
+  "removed_n": "Burlington Northern Santa Fe",
+  "reason": "Berkshire Hathaway acquired Burlington Northern Santa Fe.",
+  "src": "https://www.reuters.com/article/idUSTRE60P6OO20100126/",
+  "src_note": "Patched Oct 14, 2026: missing from Wikipedia table; verified via Reuters/S&P announcement."
+ },
+ {
+  "date": "2010-02-26",
+  "added_t": "HP",
+  "added_n": "Helmerich & Payne",
+  "removed_t": "RX",
+  "removed_n": "IMS Health",
+  "reason": "IMS was acquired by affiliates of TPG Capital",
+  "src": "https://www.wsj.com/articles/SB10001424052748703494404575081932713252238"
+ },
+ {
+  "date": "2010-04-29",
+  "added_t": "CERN",
+  "added_n": "Cerner",
+  "removed_t": "BJS",
+  "removed_n": "BJ Services",
+  "reason": "BJ Services was acquired by Baker Hughes.",
+  "src": "https://www.wsj.com/articles/SB10001424052748703523204575130140773409572"
+ },
+ {
+  "date": "2010-06-28",
+  "added_t": "KMX",
+  "added_n": "CarMax",
+  "removed_t": "XTO",
+  "removed_n": "XTO Energy",
+  "reason": "XTO was acquired by ExxonMobil.",
+  "src": "http://www.marketwatch.com/story/carmax-replacing-xto-energy-on-the-sp-500-2010-06-22"
+ },
+ {
+  "date": "2010-06-30",
+  "added_t": "QEP",
+  "added_n": "QEP Resources",
+  "removed_t": "STR",
+  "removed_n": "Questar",
+  "reason": "Company split. QEP retained, but ticker changed.",
+  "src": "https://www.marketwatch.com/story/qep-resources-to-replace-questar-on-sp-500-2010-06-23-1828430"
+ },
+ {
+  "date": "2010-07-14",
+  "added_t": "CB",
+  "added_n": "Chubb",
+  "removed_t": "MIL",
+  "removed_n": "Millipore",
+  "reason": "Millipore was acquired by Merck KGaA.",
+  "src": "http://www.marketwatch.com/story/reinsurer-ace-to-replace-millipore-in-sp-500-2010-07-08"
+ },
+ {
+  "date": "2010-08-26",
+  "added_t": "TYC",
+  "added_n": "Tyco International",
+  "removed_t": "SII",
+  "removed_n": "Smith International",
+  "reason": "Smith was acquired by Schlumberger.",
+  "src": "http://www.marketwatch.com/story/tyco-international-to-replace-smith-on-sp-500-2010-08-19"
+ },
+ {
+  "date": "2010-11-17",
+  "added_t": "IR",
+  "added_n": "Ingersoll-Rand",
+  "removed_t": "PTV",
+  "removed_n": "Pactiv",
+  "reason": "Reynolds Group Holdings acquired Pactiv.",
+  "src": "https://www.marketwatch.com/story/ingersoll-rand-replacing-pactiv-in-sp-500-2010-11-10"
+ },
+ {
+  "date": "2010-12-17",
+  "added_t": "CVC",
+  "added_n": "Cablevision",
+  "removed_t": "KG",
+  "removed_n": "King Pharmaceuticals",
+  "reason": "King was acquired by Pfizer.",
+  "src": "https://www.prnewswire.com/news-releases/standard--poors-announces-changes-to-us-indices-111631204.html"
+ },
+ {
+  "date": "2010-12-17",
+  "added_t": "FFIV",
+  "added_n": "F5 Networks",
+  "removed_t": "EK",
+  "removed_n": "Eastman Kodak",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2010-12-17",
+  "added_t": "NFLX",
+  "added_n": "Netflix",
+  "removed_t": "ODP",
+  "removed_n": "Office Depot",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2010-12-17",
+  "added_t": "NFX",
+  "added_n": "Newfield Exploration",
+  "removed_t": "NYT",
+  "removed_n": "The New York Times Company",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2011-01-03",
+  "added_t": "MMI",
+  "added_n": "Motorola Mobility",
+  "removed_t": "MDP",
+  "removed_n": "Meredith Corp",
+  "reason": "Motorola completed the corporate spin-off of Motorola Mobility.",
+  "src": "https://www.reuters.com/article/technology/s-p-says-adding-motorola-mobility-to-s-p-500-index-idUSN22112398/"
+ },
+ {
+  "date": "2011-02-25",
+  "added_t": "JOYG",
+  "added_n": "Joy Global",
+  "removed_t": "AYE",
+  "removed_n": "Allegheny Energy",
+  "reason": "Alleghany was acquired by First Energy.",
+  "src": "https://www.marketwatch.com/story/joy-global-to-replace-allegheny-energy-in-sp-500-2011-02-16-185520"
+ },
+ {
+  "date": "2011-02-28",
+  "added_t": "COV",
+  "added_n": "Covidien",
+  "removed_t": "MFE",
+  "removed_n": "McAfee",
+  "reason": "McAfee was acquired by Intel.",
+  "src": "https://www.wsj.com/articles/SB10001424052748704721104576106552693451710"
+ },
+ {
+  "date": "2011-03-31",
+  "added_t": "EW",
+  "added_n": "Edwards Lifesciences",
+  "removed_t": "Q",
+  "removed_n": "Qwest Communications",
+  "reason": "Qwest was acquired by CenturyLink.",
+  "src": "https://www.forbes.com/2011/03/25/sp-says-edwards-life-sciences-to-replace-qwest-in-sp-500-marketnewsvideo.html"
+ },
+ {
+  "date": "2011-04-01",
+  "added_t": "BLK",
+  "added_n": "BlackRock",
+  "removed_t": "GENZ",
+  "removed_n": "Genzyme",
+  "reason": "Genzyme was acquired by Sanofi Aventis.",
+  "src": "https://www.prnewswire.com/news-releases/standard--poors-announces-change-to-us-index-118873854.html"
+ },
+ {
+  "date": "2011-04-27",
+  "added_t": "CMG",
+  "added_n": "Chipotle Mexican Grill",
+  "removed_t": "NOVL",
+  "removed_n": "Novell",
+  "reason": "Novell was acquired by private equity firms.",
+  "src": "http://www.standardandpoors.com/indices/articles/en/us/?assetID=1245303080455"
+ },
+ {
+  "date": "2011-06-01",
+  "added_t": "ANR",
+  "added_n": "Alpha Natural Resources",
+  "removed_t": "MEE",
+  "removed_n": "Massey Energy",
+  "reason": "Alpha Natural Resources acquired Massey Energy.",
+  "src": "https://www.bloomberg.com/news/articles/2011-05-24/alpha-natural-to-replace-massey-energy-in-s-p-500"
+ },
+ {
+  "date": "2011-06-30",
+  "added_t": "MPC",
+  "added_n": "Marathon Oil",
+  "removed_t": "RSH",
+  "removed_n": "RadioShack",
+  "reason": "Market capitalization changes.",
+  "src": "http://www.standardandpoors.com/indices/articles/en/us/?articleType=PDF&assetID=1245307628841"
+ },
+ {
+  "date": "2011-07-05",
+  "added_t": "ACN",
+  "added_n": "Accenture",
+  "removed_t": "MI",
+  "removed_n": "Marshall & Ilsley",
+  "reason": "Marshall & Ilsley was acquired by Bank of Montreal.",
+  "src": "https://www.marketwatch.com/story/accenture-to-replace-marshall-ilsley-on-sp-500-2011-06-27"
+ },
+ {
+  "date": "2011-09-23",
+  "added_t": "MOS",
+  "added_n": "The Mosaic Company",
+  "removed_t": "NSM",
+  "removed_n": "National Semiconductor",
+  "reason": "National Semi was acquired by Texas Instruments.",
+  "src": "https://www.forbes.com/2011/09/22/mosaic-to-replace-national-semi-in-sp-500-marketnewsvideo.html"
+ },
+ {
+  "date": "2011-10-14",
+  "added_t": "TEL",
+  "added_n": "TE Connectivity",
+  "removed_t": "CEPH",
+  "removed_n": "Cephalon",
+  "reason": "Cephalon was acquired by Teva Pharmaceutical Industries.",
+  "src": "https://www.forbes.com/2011/10/12/te-connectivity-to-replace-cephalon-in-sp-500-marketnewsvideo.html"
+ },
+ {
+  "date": "2011-10-31",
+  "added_t": "XYL",
+  "added_n": "Xylem",
+  "removed_t": "ITT |",
+  "removed_n": "ITT",
+  "reason": "ITT Corp. completed the corporate spin-off of Xylem.",
+  "src": "https://www.bloomberg.com/news/articles/2011-10-24/xylem-to-replace-itt-in-s-p-500-index-exelis-to-join-midcap-400"
+ },
+ {
+  "date": "2011-11-18",
+  "added_t": "CBE",
+  "added_n": "Cooper Industries",
+  "removed_t": "JNS",
+  "removed_n": "Janus Capital Group",
+  "reason": "Market capitalization changes.",
+  "src": "http://www.standardandpoors.com/indices/articles/en/us/?articleType=PDF&assetID=1245324449943"
+ },
+ {
+  "date": "2011-12-12",
+  "added_t": "GAS",
+  "added_n": "AGL Resources.",
+  "removed_t": "GAS",
+  "removed_n": "Nicor Gas",
+  "reason": "Nicor was acquired by AGL, which retained the GAS ticker.",
+  "src": "https://southerncompany.mediaroom.com/2011-12-09-AGL-Resources-Completes-Nicor-Merger"
+ },
+ {
+  "date": "2011-12-16",
+  "added_t": "BWA",
+  "added_n": "BorgWarner",
+  "removed_t": "AKS",
+  "removed_n": "AK Steel",
+  "reason": "Market capitalization changes.",
+  "src": "http://www.standardandpoors.com/indices/articles/en/us/?articleType=PDF&assetID=1245325539523"
+ },
+ {
+  "date": "2011-12-16",
+  "added_t": "DLTR",
+  "added_n": "Dollar Tree",
+  "removed_t": "WFR",
+  "removed_n": "MEMC Electronic Materials",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2011-12-16",
+  "added_t": "PRGO",
+  "added_n": "Perrigo",
+  "removed_t": "MWW",
+  "removed_n": "Monster Worldwide",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2011-12-20",
+  "added_t": "TRIP",
+  "added_n": "TripAdvisor",
+  "removed_t": "TLAB",
+  "removed_n": "Tellabs",
+  "reason": "Expedia completed the corporate spin-off of TripAdvisor.",
+  "src": "http://www.standardandpoors.com/indices/articles/en/us/?articleType=PDF&assetID=1245325881852"
+ },
+ {
+  "date": "2011-12-31",
+  "added_t": "WPX",
+  "added_n": "WPX Energy",
+  "removed_t": "CPWR",
+  "removed_n": "Compuware",
+  "reason": "Market capitalization changes.",
+  "src": "https://www.prnewswire.com/news-releases/sp-indices-announces-changes-to-us-indices-136108648.html"
+ },
+ {
+  "date": "2012-03-13",
+  "added_t": "CCI",
+  "added_n": "Crown Castle",
+  "removed_t": "CEG",
+  "removed_n": "Constellation Energy Group",
+  "reason": "Constellation was acquired by Exelon",
+  "src": "https://press.spglobal.com/2012-03-07-S-P-Indices-Announces-Change-to-U-S-Index"
+ },
+ {
+  "date": "2012-04-03",
+  "added_t": "FOSL",
+  "added_n": "Fossil Group",
+  "removed_t": "MHS",
+  "removed_n": "Medco Health Solutions",
+  "reason": "Medco was acquired by Express Scripts.",
+  "src": "https://www.dallasnews.com/business/2012/04/03/richardson-based-fossil-added-to-the-elite-club-sp-500/"
+ },
+ {
+  "date": "2012-04-23",
+  "added_t": "PSX",
+  "added_n": "Phillips 66",
+  "removed_t": "SVU",
+  "removed_n": "Supervalu",
+  "reason": "ConocoPhillips completed the corporate spin-off of Phillips 66.",
+  "src": "https://press.spglobal.com/2012-04-23-S-P-Indices-Announces-Changes-to-U-S-Indices"
+ },
+ {
+  "date": "2012-05-17",
+  "added_t": "KMI",
+  "added_n": "Kinder Morgan",
+  "removed_t": "EP",
+  "removed_n": "El Paso Corporation",
+  "reason": "El Paso was acquired by Kinder Morgan.",
+  "src": "https://press.spglobal.com/2012-05-17-S-P-Indices-Announces-Change-to-U-S-Index"
+ },
+ {
+  "date": "2012-05-21",
+  "added_t": "ALXN",
+  "added_n": "Alexion Pharmaceuticals",
+  "removed_t": "MMI",
+  "removed_n": "Motorola Mobility",
+  "reason": "Motorola Mobility was acquired by Google.",
+  "src": "https://press.spglobal.com/2012-05-21-S-P-Indices-Announces-Change-to-U-S-Index"
+ },
+ {
+  "date": "2012-06-05",
+  "added_t": "LRCX",
+  "added_n": "Lam Research",
+  "removed_t": "NVLS",
+  "removed_n": "Novellus Systems",
+  "reason": "Novellus Systems was acquired by Lam Research.",
+  "src": "https://press.spglobal.com/2012-05-10-S-P-Indices-Announces-Changes-to-U-S-Indices"
+ },
+ {
+  "date": "2012-06-29",
+  "added_t": "MNST",
+  "added_n": "Monster Beverage",
+  "removed_t": "SLE",
+  "removed_n": "Sara Lee Corporation",
+  "reason": "Split up of Sara Lee.",
+  "src": "https://press.spglobal.com/2012-06-21-S-P-Indices-Announces-Changes-to-U-S-Indices"
+ },
+ {
+  "date": "2012-07-02",
+  "added_t": "STX",
+  "added_n": "Seagate Technology",
+  "removed_t": "PGN",
+  "removed_n": "Progress Energy",
+  "reason": "Progress Energy was acquired by Duke Energy.",
+  "src": "https://press.spglobal.com/2012-06-25-S-P-Indices-Announces-Change-to-U-S-Index"
+ },
+ {
+  "date": "2012-07-31",
+  "added_t": "ESV",
+  "added_n": "Ensco plc",
+  "removed_t": "GR",
+  "removed_n": "Goodrich Corporation",
+  "reason": "Goodrich was acquired by United Technologies.",
+  "src": "https://press.spglobal.com/2012-07-26-Ensco-plc-Set-to-Join-the-S-P-500"
+ },
+ {
+  "date": "2012-09-05",
+  "added_t": "LYB",
+  "added_n": "LyondellBasell",
+  "removed_t": "SHLD",
+  "removed_n": "Sears Holdings",
+  "reason": "SHLD below public float threshold.",
+  "src": "https://press.spglobal.com/2012-08-29-LyondellBasell-Industries-Set-to-Join-the-S-P-500"
+ },
+ {
+  "date": "2012-10-01",
+  "added_t": "ADT",
+  "added_n": "ADT",
+  "removed_t": "LXK",
+  "removed_n": "Lexmark",
+  "reason": "Tyco completed the corporate spin-off of ADT.",
+  "src": "https://press.spglobal.com/2012-09-24-ADT-Pentair-Set-to-Join-the-S-P-500-Lexmark-DeVry-to-Join-the-S-P-MidCap-400-and-MarketAxess-to-Join-the-S-P-SmallCap-600"
+ },
+ {
+  "date": "2012-10-01",
+  "added_t": "PNR",
+  "added_n": "Pentair",
+  "removed_t": "DV",
+  "removed_n": "DeVry",
+  "reason": "Tyco spin-off merged with Pentair.",
+  "src": null
+ },
+ {
+  "date": "2012-10-02",
+  "added_t": "KRFT",
+  "added_n": "Kraft Foods",
+  "removed_t": "ANR",
+  "removed_n": "Alpha Natural Resources",
+  "reason": "Kraft split into two companies.",
+  "src": "http://www.standardandpoors.com/indices/articles/en/us/?assetID=1245341064105"
+ },
+ {
+  "date": "2012-10-02",
+  "added_t": "MDLZ",
+  "added_n": "Mondelez",
+  "removed_t": "KFT",
+  "removed_n": "Kraft Foods",
+  "reason": "Old Kraft Foods was renamed Mondelez.",
+  "src": "https://press.spglobal.com/2012-09-25-Kraft-Foods-Group-Set-to-Join-the-S-P-500-Alpha-Natural-Resources-InterDigital-Genesee-Wyoming-to-Join-the-S-P-MidCap-400-and-Korn-Ferry-to-Join-the-S-P-SmallCap-600"
+ },
+ {
+  "date": "2012-10-10",
+  "added_t": "PETM",
+  "added_n": "PetSmart",
+  "removed_t": "SUN",
+  "removed_n": "Sunoco",
+  "reason": "Sunoco was acquired by Energy Transfer Partners (ETP)",
+  "src": "http://www.standardandpoors.com/indices/articles/en/us/?assetID=1245341391586"
+ },
+ {
+  "date": "2012-12-03",
+  "added_t": "DG",
+  "added_n": "Dollar General",
+  "removed_t": "CBE",
+  "removed_n": "Cooper Industries",
+  "reason": "Cooper was acquired by Eaton Corp. (ETN)",
+  "src": "http://www.standardandpoors.com/indices/articles/en/us/?assetID=1245343856827"
+ },
+ {
+  "date": "2012-12-11",
+  "added_t": "GRMN",
+  "added_n": "Garmin",
+  "removed_t": "RRD",
+  "removed_n": "RR Donnelley",
+  "reason": "Market capitalization changes.",
+  "src": "http://www.standardandpoors.com/indices/articles/en/us/?assetID=1245344431098"
+ },
+ {
+  "date": "2012-12-21",
+  "added_t": "DLPH",
+  "added_n": "Delphi Automotive",
+  "removed_t": "TIE",
+  "removed_n": "Titanium Metals",
+  "reason": "TIE was acquired by Precision Cast Parts.",
+  "src": "http://www.standardandpoors.com/indices/articles/en/us/?assetID=1245345188426"
+ },
+ {
+  "date": "2013-01-02",
+  "added_t": "ABBV",
+  "added_n": "AbbVie",
+  "removed_t": "FII",
+  "removed_n": "Federated Investors",
+  "reason": "Abbott Labs completed the corporate spin-off of AbbVie.",
+  "src": "http://www.standardandpoors.com/indices/articles/en/us/?assetID=1245345385447"
+ },
+ {
+  "date": "2013-02-15",
+  "added_t": "PVH",
+  "added_n": "PVH",
+  "removed_t": "BIG",
+  "removed_n": "Big Lots",
+  "reason": "Market capitalization changes.",
+  "src": "http://www.standardandpoors.com/indices/articles/en/us/?assetID=1245347280028"
+ },
+ {
+  "date": "2013-04-30",
+  "added_t": "REGN",
+  "added_n": "Regeneron Pharmaceuticals",
+  "removed_t": "PCS",
+  "removed_n": "MetroPCS",
+  "reason": "A majority of MetroPCS was acquired by T-Mobile.",
+  "src": "http://www.standardandpoors.com/indices/articles/en/us/?assetID=1245350692387"
+ },
+ {
+  "date": "2013-05-08",
+  "added_t": "MAC",
+  "added_n": "Macerich",
+  "removed_t": "CVH",
+  "removed_n": "Coventry Health Care",
+  "reason": "CVH was acquired by Aetna.",
+  "src": "https://www.spindices.com/ids_spice_data/idsfiles/11700_3dmaccor546.pdf"
+ },
+ {
+  "date": "2013-05-23",
+  "added_t": "KSU",
+  "added_n": "Kansas City Southern",
+  "removed_t": "DF",
+  "removed_n": "Dean Foods",
+  "reason": "DF was too small after spinoff of White Wave Foods.",
+  "src": "http://www.spindices.com/ids_spice_data/idsfiles/11854_whitewavekansasdeanspin.pdf"
+ },
+ {
+  "date": "2013-06-06",
+  "added_t": "GM",
+  "added_n": "General Motors",
+  "removed_t": "HNZ",
+  "removed_n": "Heinz",
+  "reason": "HNZ was acquired by a consortium.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/12152_sp100heinzmotoraig.pdf"
+ },
+ {
+  "date": "2013-06-21",
+  "added_t": "ZTS",
+  "added_n": "Zoetis",
+  "removed_t": "FHN",
+  "removed_n": "First Horizon",
+  "reason": "Pfizer completed the corporate spin-off of Zoetis.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/12291_zoetissplitoff.pdf"
+ },
+ {
+  "date": "2013-07-01",
+  "added_t": "NWSA",
+  "added_n": "21st Century Fox",
+  "removed_t": "APOL",
+  "removed_n": "Apollo Education Group",
+  "reason": "Market capitalization changes.",
+  "src": "http://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/12413_spinnewsrodt54.pdf"
+ },
+ {
+  "date": "2013-07-08",
+  "added_t": "NLSN",
+  "added_n": "Nielsen Holdings",
+  "removed_t": "S",
+  "removed_n": "Sprint Nextel",
+  "reason": "Softbank consortium purchase resulted in public float below 50%.",
+  "src": "http://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/12558_sprintniel.pdf"
+ },
+ {
+  "date": "2013-09-10",
+  "added_t": "DAL",
+  "added_n": "Delta Air Lines",
+  "removed_t": "BMC",
+  "removed_n": "BMC Software",
+  "reason": "BMC was acquired by a consortium.",
+  "src": "http://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/43130_flybabyfly.pdf"
+ },
+ {
+  "date": "2013-09-20",
+  "added_t": "AME",
+  "added_n": "Ametek",
+  "removed_t": "SAI",
+  "removed_n": "SAIC",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2013-09-20",
+  "added_t": "VRTX",
+  "added_n": "Vertex Pharmaceuticals",
+  "removed_t": "AMD",
+  "removed_n": "Advanced Micro Devices",
+  "reason": "Market capitalization changes.",
+  "src": "http://www.spice-indices.com//idpfiles/spice-assets/resources/public/documents/46135_aashufspinsept2013vrtxamesaiamd.pdf"
+ },
+ {
+  "date": "2013-10-29",
+  "added_t": "RIG",
+  "added_n": "Transocean",
+  "removed_t": "DELL",
+  "removed_n": "Dell",
+  "reason": "Founder Michael Dell and Silver Lake Partners acquired Dell.",
+  "src": "http://www.prnewswire.com/news-releases/transocean-set-to-join-the-sp-500-228685521.html"
+ },
+ {
+  "date": "2013-11-13",
+  "added_t": "KORS",
+  "added_n": "Michael Kors",
+  "removed_t": "NYX",
+  "removed_n": "NYSE Euronext",
+  "reason": "ICE Exchange acquired NYSE Euronext.",
+  "src": "https://abcnews.go.com/Business/wireStory/ice-closes-11b-acquisition-nyse-euronext-20874378"
+ },
+ {
+  "date": "2013-12-02",
+  "added_t": "ALLE",
+  "added_n": "Allegion",
+  "removed_t": "JCP",
+  "removed_n": "JCPenney",
+  "reason": "Ingersoll Rand completed the corporate spin-off of Allegion.",
+  "src": "https://www.bloomberg.com/news/2013-11-22/j-c-penney-will-be-replaced-by-allegion-in-s-p-500-after-drop.html"
+ },
+ {
+  "date": "2013-12-10",
+  "added_t": "GGP",
+  "added_n": "General Growth Properties",
+  "removed_t": "MOLX",
+  "removed_n": "Molex",
+  "reason": "MOLX was acquired by Koch Industries.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/65942_genprop5molx.pdf"
+ },
+ {
+  "date": "2013-12-23",
+  "added_t": "ADS",
+  "added_n": "Alliance Data Systems",
+  "removed_t": "ANF",
+  "removed_n": "Abercrombie & Fitch",
+  "reason": "Market capitalization changes.",
+  "src": "http://www.spindices.com/documents/indexnews/announcements/20131211/67155_fbshuf252426100.pdf"
+ },
+ {
+  "date": "2013-12-23",
+  "added_t": "FB",
+  "added_n": "Facebook",
+  "removed_t": "TER",
+  "removed_n": "Teradyne",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2013-12-23",
+  "added_t": "MHK",
+  "added_n": "Mohawk Industries",
+  "removed_t": "JDSU",
+  "removed_n": "JDS Uniphase",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2014-01-24",
+  "added_t": "TSCO",
+  "added_n": "Tractor Supply",
+  "removed_t": "LIFE",
+  "removed_n": "Life Technologies",
+  "reason": "Life Technologies was acquired by Thermo Fisher Scientific.",
+  "src": "https://www.bloomberg.com/article/2014-01-16/aBDguLEybT1Q.html"
+ },
+ {
+  "date": "2014-03-21",
+  "added_t": "GMCR",
+  "added_n": "Keurig Green Mountain",
+  "removed_t": "WPX",
+  "removed_n": "WPX Energy",
+  "reason": "Market capitalization changes.",
+  "src": "https://www.bloomberg.com/news/2014-03-14/keurig-green-mountain-to-replace-wpx-energy-in-s-p-500-index.html"
+ },
+ {
+  "date": "2014-04-02",
+  "added_t": "ESS",
+  "added_n": "Essex Property Trust",
+  "removed_t": "CLF",
+  "removed_n": "Cliffs Natural Resources",
+  "reason": "Market capitalization changes.",
+  "src": "https://www.bloomberg.com/article/2014-03-26/amgBgzXHdIGc.html"
+ },
+ {
+  "date": "2014-04-03",
+  "added_t": "GOOGL",
+  "added_n": "Google",
+  "removed_t": "",
+  "removed_n": "",
+  "reason": "Google Class C share distribution.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/81745_multisharecgoogle2.pdf"
+ },
+ {
+  "date": "2014-05-01",
+  "added_t": "NAVI",
+  "added_n": "Navient",
+  "removed_t": "SLM",
+  "removed_n": "SLM Corporation",
+  "reason": "SLM completed the corporate spin-off of Navient.",
+  "src": null
+ },
+ {
+  "date": "2014-05-01",
+  "added_t": "UA",
+  "added_n": "Under Armour",
+  "removed_t": "BEAM",
+  "removed_n": "Suntory Global Spirits",
+  "reason": "Beam was acquired by Suntory.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/88734_updatedspinsallie5beamunderpol6.pdf"
+ },
+ {
+  "date": "2014-05-08",
+  "added_t": "AVGO",
+  "added_n": "Avago Technologies",
+  "removed_t": "LSI",
+  "removed_n": "LSI Corporation",
+  "reason": "Avago acquired LSI.",
+  "src": "https://www.bloomberg.com/bb/newsarchive/a6xty1RCs9wY.html"
+ },
+ {
+  "date": "2014-06-20",
+  "added_t": "XEC",
+  "added_n": "Cimarex Energy",
+  "removed_t": "IGT",
+  "removed_n": "International Game Technology",
+  "reason": "Market capitalization changes.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/96179_1gamexeclivearrisbrinkmasimo6menjoe.pdf"
+ },
+ {
+  "date": "2014-07-01",
+  "added_t": "AMG",
+  "added_n": "Affiliated Managers Group",
+  "removed_t": "FRX",
+  "removed_n": "Forest Laboratories",
+  "reason": "Actavis acquired Forest Laboratories.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/98159_treesmanager3spintracker.pdf"
+ },
+ {
+  "date": "2014-07-02",
+  "added_t": "MLM",
+  "added_n": "Martin Marietta",
+  "removed_t": "X",
+  "removed_n": "United States Steel",
+  "reason": "Market capitalization changes.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/98965_500martinxdepo.pdf"
+ },
+ {
+  "date": "2014-08-06",
+  "added_t": "DISCK",
+  "added_n": "Discovery Communications",
+  "removed_t": "",
+  "removed_n": "",
+  "reason": "Class C share distribution.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/103766_multidiscovery1.pdf"
+ },
+ {
+  "date": "2014-08-18",
+  "added_t": "MNK",
+  "added_n": "Mallinckrodt",
+  "removed_t": "RDC",
+  "removed_n": "Rowan Companies",
+  "reason": "Market capitalization changes.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/106159_qcormallingulf546.pdf"
+ },
+ {
+  "date": "2014-09-20",
+  "added_t": "UHS",
+  "added_n": "Universal Health Services",
+  "removed_t": "GHC",
+  "removed_n": "Graham Holdings",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2014-09-20",
+  "added_t": "URI",
+  "added_n": "United Rentals",
+  "removed_t": "BTU",
+  "removed_n": "Peabody Energy",
+  "reason": "Market capitalization changes.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/110952_fall4cgnx6wabc5uhs4btu5uri4ghc.pdf"
+ },
+ {
+  "date": "2014-11-05",
+  "added_t": "LVLT",
+  "added_n": "Level 3 Communications",
+  "removed_t": "JBL",
+  "removed_n": "Jabil Circuit",
+  "reason": "Market capitalization changes.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/118367_alevel3jbl54twtc.pdf"
+ },
+ {
+  "date": "2014-12-05",
+  "added_t": "RCL",
+  "added_n": "Royal Caribbean Cruises",
+  "removed_t": "BMS",
+  "removed_n": "Bemis Company",
+  "reason": "Market capitalization changes.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/123164_royalconcurtibco456.pdf"
+ },
+ {
+  "date": "2015-01-27",
+  "added_t": "ENDP",
+  "added_n": "Endo International",
+  "removed_t": "COV",
+  "removed_n": "Covidien",
+  "reason": "Covidien was acquired by Medtronic.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/134545_endocovidienbrew546.pdf"
+ },
+ {
+  "date": "2015-01-27",
+  "added_t": "HCA",
+  "added_n": "HCA Holdings",
+  "removed_t": "SWY",
+  "removed_n": "Safeway",
+  "reason": "Safeway was acquired by a private equity consortium.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/135155_safeway1hca5.pdf"
+ },
+ {
+  "date": "2015-03-12",
+  "added_t": "SWKS",
+  "added_n": "Skyworks",
+  "removed_t": "PETM",
+  "removed_n": "PetSmart",
+  "reason": "PetSmart was acquired by private equity consortium.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/152351_petskyjet546.pdf"
+ },
+ {
+  "date": "2015-03-18",
+  "added_t": "HSIC",
+  "added_n": "Henry Schein",
+  "removed_t": "CFN",
+  "removed_n": "Carefusion",
+  "reason": "Carefusion was acquired by Becton Dickinson.",
+  "src": null
+ },
+ {
+  "date": "2015-03-23",
+  "added_t": "AAL",
+  "added_n": "American Airlines Group",
+  "removed_t": "AGN",
+  "removed_n": "Allergan",
+  "reason": "Allergan was acquired by Actavis (and changed its name to Allergan).",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/155946_americanair1agn5.pdf"
+ },
+ {
+  "date": "2015-03-23",
+  "added_t": "EQIX",
+  "added_n": "Equinix",
+  "removed_t": "DNR",
+  "removed_n": "Denbury Resources",
+  "reason": "Market capitalization changes.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/155157_5100celgkmiactdnrnbravpeqixslghbi.pdf"
+ },
+ {
+  "date": "2015-03-23",
+  "added_t": "HBI",
+  "added_n": "Hanesbrands",
+  "removed_t": "AVP",
+  "removed_n": "Avon Products",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2015-03-23",
+  "added_t": "SLG",
+  "added_n": "SL Green Realty",
+  "removed_t": "NBR",
+  "removed_n": "Nabors Industries",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2015-04-07",
+  "added_t": "O",
+  "added_n": "Realty Income Corporation",
+  "removed_t": "WIN",
+  "removed_n": "Windstream Communications",
+  "reason": "Market capitalization changes.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/161552_game4win500odeiecho6cjes.pdf"
+ },
+ {
+  "date": "2015-06-11",
+  "added_t": "QRVO",
+  "added_n": "Qorvo",
+  "removed_t": "LO",
+  "removed_n": "Lorillard Tobacco Company",
+  "reason": "Lorillard was acquired.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/193151_qorvo5lowisdom4.pdf"
+ },
+ {
+  "date": "2015-07-01",
+  "added_t": "BXLT",
+  "added_n": "Baxalta",
+  "removed_t": "QEP",
+  "removed_n": "QEP Resources",
+  "reason": "Baxter completed the corporate spin-off of Baxalta.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/196557_rockzep46.pdf"
+ },
+ {
+  "date": "2015-07-01",
+  "added_t": "JBHT",
+  "added_n": "J.B. Hunt",
+  "removed_t": "TEG",
+  "removed_n": "Integrys Energy Group",
+  "reason": "Integrys was acquired.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/200150_integrys5jbhtmohmyrg46.pdf"
+ },
+ {
+  "date": "2015-07-02",
+  "added_t": "CPGX",
+  "added_n": "Columbia Pipeline Group",
+  "removed_t": "ATI",
+  "removed_n": "Allegheny Technologies",
+  "reason": "Spin off of Columbia Pipeline.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/197980_spingcimasaolghcddnienrsummer546.pdf"
+ },
+ {
+  "date": "2015-07-06",
+  "added_t": "KHC",
+  "added_n": "Kraft Heinz",
+  "removed_t": "KRFT",
+  "removed_n": "Kraft Foods",
+  "reason": "Kraft merged with Heinz.",
+  "src": null
+ },
+ {
+  "date": "2015-07-08",
+  "added_t": "AAP",
+  "added_n": "Advance Auto Parts",
+  "removed_t": "FDO",
+  "removed_n": "Family Dollar",
+  "reason": "Family Dollar was acquired.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/204357_dollarjackcontact546.pdf"
+ },
+ {
+  "date": "2015-07-20",
+  "added_t": "PYPL",
+  "added_n": "PayPal",
+  "removed_t": "NE",
+  "removed_n": "Noble Corporation",
+  "reason": "eBay completed the corporate spin-off of PayPal.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/206958_ebaypalswiftroserti654.pdf"
+ },
+ {
+  "date": "2015-07-29",
+  "added_t": "SIG",
+  "added_n": "Signet Jewelers",
+  "removed_t": "DTV",
+  "removed_n": "DirecTV",
+  "reason": "DirecTV was acquired by AT&T.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/212159_bookspinlitesusq64.pdf"
+ },
+ {
+  "date": "2015-08-28",
+  "added_t": "ATVI",
+  "added_n": "Activision Blizzard",
+  "removed_t": "PLL",
+  "removed_n": "Pall Corporation",
+  "reason": "Pall was acquired.",
+  "src": null
+ },
+ {
+  "date": "2015-09-02",
+  "added_t": "UAL",
+  "added_n": "United Continental Holdings",
+  "removed_t": "HSP",
+  "removed_n": "Hospira",
+  "reason": "Hospira was acquired.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/228146_airlinefreezing500.pdf"
+ },
+ {
+  "date": "2015-09-18",
+  "added_t": "CMCSK",
+  "added_n": "Comcast Class K Special",
+  "removed_t": "",
+  "removed_n": "",
+  "reason": "Share class methodology change.",
+  "src": null
+ },
+ {
+  "date": "2015-09-18",
+  "added_t": "FOX",
+  "added_n": "Twenty-First Century Fox Class B",
+  "removed_t": "",
+  "removed_n": "",
+  "reason": "Share class methodology change.",
+  "src": null
+ },
+ {
+  "date": "2015-09-18",
+  "added_t": "NWS",
+  "added_n": "News Corporation Class B",
+  "removed_t": "",
+  "removed_n": "",
+  "reason": "Share class methodology change.",
+  "src": null
+ },
+ {
+  "date": "2015-10-07",
+  "added_t": "VRSK",
+  "added_n": "Verisk Analytics",
+  "removed_t": "JOY",
+  "removed_n": "Joy Global",
+  "reason": "Market capitalization changes.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/242147_4thorverisk5.pdf"
+ },
+ {
+  "date": "2015-11-02",
+  "added_t": "HPE",
+  "added_n": "Hewlett Packard Enterprise",
+  "removed_t": "HCBK",
+  "removed_n": "Hudson City Bancorp",
+  "reason": "HPQ completed the corporate spin-off of Hewlett Packard Enterprise.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/253375_bbz2hpspinzerohudsonexterranspin6451.pdf"
+ },
+ {
+  "date": "2015-11-18",
+  "added_t": "SYF",
+  "added_n": "Synchrony Financial",
+  "removed_t": "GNW",
+  "removed_n": "Genworth Financial",
+  "reason": "GE completed the corporate spin-off of Synchrony Financial.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/259953_split0ffsyf5ge4rovi4virginia.pdf"
+ },
+ {
+  "date": "2015-11-19",
+  "added_t": "ILMN",
+  "added_n": "Illumina",
+  "removed_t": "SIAL",
+  "removed_n": "Sigma-Aldrich",
+  "reason": "Sigma-Aldrich was acquired by Merck KGaA.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/261545_illumin5sigma.pdf"
+ },
+ {
+  "date": "2015-12-01",
+  "added_t": "CSRA",
+  "added_n": "CSRA",
+  "removed_t": "CSC",
+  "removed_n": "Computer Sciences Corporation",
+  "reason": "CSC completed the corporate spin-off off CSRA.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/265783_csracscspinzeropsem645.pdf"
+ },
+ {
+  "date": "2015-12-15",
+  "added_t": "",
+  "added_n": "",
+  "removed_t": "CMCSK",
+  "removed_n": "Comcast Series K",
+  "reason": "CMCSK shares were no longer listed.",
+  "src": "https://www.sec.gov/Archives/edgar/data/1166691/000095010315009516/dp61838_8k.htm"
+ },
+ {
+  "date": "2015-12-29",
+  "added_t": "CHD",
+  "added_n": "Church & Dwight",
+  "removed_t": "ALTR",
+  "removed_n": "Altera",
+  "reason": "Altera was acquired by Intel.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/280955_5churchsyngreen64.pdf"
+ },
+ {
+  "date": "2016-01-05",
+  "added_t": "WLTW",
+  "added_n": "Willis Towers Watson",
+  "removed_t": "FOSL",
+  "removed_n": "Fossil Group",
+  "reason": "Willis Holdings merged with Towers Watson and was renamed Willis Towers Watson.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/282746_williswatglobaladept4256domfloat.pdf"
+ },
+ {
+  "date": "2016-01-19",
+  "added_t": "EXR",
+  "added_n": "Extra Space Storage",
+  "removed_t": "ACE",
+  "removed_n": "Chubb",
+  "reason": "ACE Ltd acquired Chubb and retained the CB ticker.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/290355_chubbaceextraspacement5546epr.pdf"
+ },
+ {
+  "date": "2016-02-01",
+  "added_t": "CFG",
+  "added_n": "Citizens",
+  "removed_t": "PCP",
+  "removed_n": "Precision Castparts Corporation",
+  "reason": "",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/295550_precisioncfg5mdaszltq66peprmaxsoo.pdf"
+ },
+ {
+  "date": "2016-02-01",
+  "added_t": "FRT",
+  "added_n": "Federal Realty Investment Trust",
+  "removed_t": "BRCM",
+  "removed_n": "Broadcom Corporation",
+  "reason": "",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/293975_soofrtbrcmcwcray5poolabg462ann.pdf"
+ },
+ {
+  "date": "2016-02-22",
+  "added_t": "CXO",
+  "added_n": "Concho Resources",
+  "removed_t": "PCL",
+  "removed_n": "Plum Creek Timber",
+  "reason": "Weyerhaeuser acquired Plum Creek Timber.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/305547_conch5plum.pdf"
+ },
+ {
+  "date": "2016-03-04",
+  "added_t": "AWK",
+  "added_n": "American Water Works",
+  "removed_t": "CNX",
+  "removed_n": "Consol Energy",
+  "reason": "",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/312347_524slhcnxawk.pdf"
+ },
+ {
+  "date": "2016-03-07",
+  "added_t": "UDR",
+  "added_n": "UDR",
+  "removed_t": "GMCR",
+  "removed_n": "Keurig Green Mountain",
+  "reason": "JAB Holding Company acquired Keurig Green Mountain.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/313547_gmcrudrhr546prlb.pdf"
+ },
+ {
+  "date": "2016-03-30",
+  "added_t": "CNC",
+  "added_n": "Centene Corporation",
+  "removed_t": "ESV",
+  "removed_n": "Ensco",
+  "reason": "Centene acquired Health Net.",
+  "src": null
+ },
+ {
+  "date": "2016-03-30",
+  "added_t": "HOLX",
+  "added_n": "Hologic",
+  "removed_t": "POM",
+  "removed_n": "Pepco Holdings",
+  "reason": "Exelon acquired Pepco.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/323162_healthnetfirsten524pom425holxmigr46.pdf"
+ },
+ {
+  "date": "2016-04-04",
+  "added_t": "FL",
+  "added_n": "Foot Locker",
+  "removed_t": "CAM",
+  "removed_n": "Cameron International",
+  "reason": "Schlumberger acquired Cameron.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/323362_footcam5dctindustrial4.pdf"
+ },
+ {
+  "date": "2016-04-08",
+  "added_t": "UA",
+  "added_n": "Under Armour (Class C)",
+  "removed_t": "",
+  "removed_n": "",
+  "reason": "Under Armour distribution of second class of stock.",
+  "src": null
+ },
+ {
+  "date": "2016-04-18",
+  "added_t": "ULTA",
+  "added_n": "Ulta Beauty",
+  "removed_t": "THC",
+  "removed_n": "Tenet Healthcare",
+  "reason": "",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/329544_ulta5tenet24jah.pdf"
+ },
+ {
+  "date": "2016-04-25",
+  "added_t": "GPN",
+  "added_n": "Global Payments",
+  "removed_t": "GME",
+  "removed_n": "GameStop",
+  "reason": "Global Payments acquired Heartland Payment Systems.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/333750_globalpaykrispygame54622.pdf"
+ },
+ {
+  "date": "2016-05-03",
+  "added_t": "AYI",
+  "added_n": "Acuity Brands",
+  "removed_t": "ADT",
+  "removed_n": "ADT",
+  "reason": "ADT was acquired by Apollo.",
+  "src": "http://www.spindices.com/documents/indexnews/announcements/337754_ayivsatlablopb5466.pdf"
+ },
+ {
+  "date": "2016-05-13",
+  "added_t": "ALK",
+  "added_n": "Alaska Air Group",
+  "removed_t": "SNDK",
+  "removed_n": "SanDisk",
+  "reason": "Sandisk was acquired by Western Digital.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/345162_alaskatotexascavs.pdf"
+ },
+ {
+  "date": "2016-05-18",
+  "added_t": "DLR",
+  "added_n": "Digital Realty",
+  "removed_t": "TWC",
+  "removed_n": "Time Warner Cable",
+  "reason": "Time Warner Cable was acquired by Charter.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/346753_ntdigitalcable5.pdf"
+ },
+ {
+  "date": "2016-05-23",
+  "added_t": "LKQ",
+  "added_n": "LKQ Corporation",
+  "removed_t": "ARG",
+  "removed_n": "Airgas",
+  "reason": "Airgas was acquired by Air Liquide.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/348544_lkqairgas465.pdf"
+ },
+ {
+  "date": "2016-05-31",
+  "added_t": "AJG",
+  "added_n": "Arthur J. Gallagher & Co.",
+  "removed_t": "CCE",
+  "removed_n": "Coca-Cola Enterprises",
+  "reason": "Coca-Cola Enterprises merged with European bottlers.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/351348_cceajgedraxl546.pdf"
+ },
+ {
+  "date": "2016-06-03",
+  "added_t": "TDG",
+  "added_n": "TransDigm Group",
+  "removed_t": "BXLT",
+  "removed_n": "Baxalta",
+  "reason": "SHPG acquired Baxalta.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/352950_tdgheletisibrcdmdc54466.pdf"
+ },
+ {
+  "date": "2016-06-22",
+  "added_t": "FBHS",
+  "added_n": "Fortune Brands Home & Security",
+  "removed_t": "CVC",
+  "removed_n": "Cablevision Systems",
+  "reason": "Cablevision Systems was acquired by Altice.",
+  "src": "http://www.spindices.com/documents/indexnews/announcements/20160621-364753/364753_cablehorse45mi.pdf"
+ },
+ {
+  "date": "2016-07-01",
+  "added_t": "ALB",
+  "added_n": "Albemarle Corporation",
+  "removed_t": "TE",
+  "removed_n": "TECO Energy",
+  "reason": "TECO Energy was acquired by EMA.",
+  "src": null
+ },
+ {
+  "date": "2016-07-01",
+  "added_t": "LNT",
+  "added_n": "Alliant Energy Corp",
+  "removed_t": "GAS",
+  "removed_n": "AGL Resources",
+  "reason": "AGL Resources was acquired by Southern Company.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/369149_1lntswxsstk546.pdfe"
+ },
+ {
+  "date": "2016-07-05",
+  "added_t": "FTV",
+  "added_n": "Fortive Corp",
+  "removed_t": "CPGX",
+  "removed_n": "Columbia Pipeline Group",
+  "reason": "CPGX was acquired by TRP.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/365754_tecocolumbiaspindhr.pdf"
+ },
+ {
+  "date": "2016-09-06",
+  "added_t": "MTD",
+  "added_n": "Mettler Toledo",
+  "removed_t": "TYC",
+  "removed_n": "Tyco International",
+  "reason": "TYC acquired JCI and retained JCI ticker.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/393354_mtdmpwrwcicnls5466.pdf"
+ },
+ {
+  "date": "2016-09-08",
+  "added_t": "CHTR",
+  "added_n": "Charter Communications",
+  "removed_t": "EMC",
+  "removed_n": "EMC Corporation",
+  "reason": "Dell acquired EMC.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/396552_emc15.pdf"
+ },
+ {
+  "date": "2016-09-22",
+  "added_t": "COO",
+  "added_n": "The Cooper Companies",
+  "removed_t": "HOT",
+  "removed_n": "Starwood Hotels and Resorts",
+  "reason": "MAR acquired Starwood Hotels",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/406345_hot5coopernorththermonuvafox.pdf"
+ },
+ {
+  "date": "2016-09-30",
+  "added_t": "COTY",
+  "added_n": "Coty",
+  "removed_t": "DO",
+  "removed_n": "Diamond Offshore Drilling",
+  "reason": "Siris Capital Group acquired Polycom.",
+  "src": "https://press.spglobal.com/2016-09-27-Coty-Set-to-Join-the-S-P-500-Diamond-Offshore-Drilling-to-Join-S-P-MidCap-400-Tile-Shop-to-Join-S-P-SmallCap-600"
+ },
+ {
+  "date": "2016-11-01",
+  "added_t": "ARNC",
+  "added_n": "Arconic",
+  "removed_t": "AA",
+  "removed_n": "Alcoa",
+  "reason": "Alcoa completed the corporate spin-off off Arconic.",
+  "src": null
+ },
+ {
+  "date": "2016-12-02",
+  "added_t": "EVHC",
+  "added_n": "Envision Healthcare",
+  "removed_t": "LM",
+  "removed_n": "Legg Mason",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2016-12-02",
+  "added_t": "MAA",
+  "added_n": "Mid-America Apartments",
+  "removed_t": "OI",
+  "removed_n": "Owens-Illinois",
+  "reason": "Market capitalization changes.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/444551_midamericaam5pzza4wing6.pdf"
+ },
+ {
+  "date": "2017-01-05",
+  "added_t": "IDXX",
+  "added_n": "Idexx Laboratories",
+  "removed_t": "STJ",
+  "removed_n": "St Jude Medical",
+  "reason": "Abbott Laboratories acquired St. Jude Medical.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/465757_idxx5cc4shak6.pdf"
+ },
+ {
+  "date": "2017-02-28",
+  "added_t": "INCY",
+  "added_n": "Incyte",
+  "removed_t": "SE",
+  "removed_n": "Spectra Energy",
+  "reason": "SE was acquired by ENB",
+  "src": null
+ },
+ {
+  "date": "2017-03-01",
+  "added_t": "CBOE",
+  "added_n": "Cboe Holdings",
+  "removed_t": "PBI",
+  "removed_n": "Pitney Bowes",
+  "reason": "CBOE acquired BATS.",
+  "src": null
+ },
+ {
+  "date": "2017-03-02",
+  "added_t": "REG",
+  "added_n": "Regency Centers",
+  "removed_t": "ENDP",
+  "removed_n": "Endo International",
+  "reason": "Regency Centers acquired EQY.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/489183_5specincycboebatsclareqydds4.pdf"
+ },
+ {
+  "date": "2017-03-13",
+  "added_t": "DISH",
+  "added_n": "Dish Network",
+  "removed_t": "LLTC",
+  "removed_n": "Linear Technology",
+  "reason": "Analog Devices acquired Linear Technology.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/493956_lineardish5.pdf"
+ },
+ {
+  "date": "2017-03-16",
+  "added_t": "SNPS",
+  "added_n": "Synopsys",
+  "removed_t": "HAR",
+  "removed_n": "Harman International",
+  "reason": "Samsung Electronics acquired Harman International Industries.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/497559_snpsgeocokeofix5466.pdf"
+ },
+ {
+  "date": "2017-03-20",
+  "added_t": "AMD",
+  "added_n": "Advanced Micro Devices",
+  "removed_t": "URBN",
+  "removed_n": "Urban Outfitters",
+  "reason": "Market capitalization changes.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/496757_mktcapupiposhuffspri17.pdf"
+ },
+ {
+  "date": "2017-03-20",
+  "added_t": "ARE",
+  "added_n": "Alexandria Real Estate Equities",
+  "removed_t": "FSLR",
+  "removed_n": "First Solar",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2017-03-20",
+  "added_t": "RJF",
+  "added_n": "Raymond James Financial",
+  "removed_t": "FTR",
+  "removed_n": "Frontier Communications",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2017-04-04",
+  "added_t": "DXC",
+  "added_n": "DXC Technology",
+  "removed_t": "SWN",
+  "removed_n": "Southwestern Energy",
+  "reason": "HPE completed the corporate spin-off of Everett, merged with CSC to form DXC Technology.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/504361_cscswn54.pdf"
+ },
+ {
+  "date": "2017-04-05",
+  "added_t": "IT",
+  "added_n": "Gartner",
+  "removed_t": "DNB",
+  "removed_n": "Dun & Bradstreet",
+  "reason": "Gartner acquired CEB.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/505361_mentit5cebhskadnb46.pdf"
+ },
+ {
+  "date": "2017-06-02",
+  "added_t": "INFO",
+  "added_n": "IHS Markit",
+  "removed_t": "TGNA",
+  "removed_n": "Tegna",
+  "reason": "TGNA completed the corporate spin-off of Cars.com.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/530961_info5tgnacars4jcptime6.pdf"
+ },
+ {
+  "date": "2017-06-19",
+  "added_t": "ALGN",
+  "added_n": "Align Technology",
+  "removed_t": "TDC",
+  "removed_n": "Teradata",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2017-06-19",
+  "added_t": "ANSS",
+  "added_n": "Ansys",
+  "removed_t": "R",
+  "removed_n": "Ryder System",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2017-06-19",
+  "added_t": "HLT",
+  "added_n": "Hilton",
+  "removed_t": "YHOO",
+  "removed_n": "Yahoo!",
+  "reason": "Verizon acquired Yahoo operations; remainder of Yahoo became Altaba.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/538160_yhoohlt5anssalgnrydertera.pdf"
+ },
+ {
+  "date": "2017-06-19",
+  "added_t": "RE",
+  "added_n": "Everest Re",
+  "removed_t": "MJN",
+  "removed_n": "Mead Johnson",
+  "reason": "Reckitt Benckiser acquired Mead Johnson Nutrition.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/539353_everpinneast546.pdf"
+ },
+ {
+  "date": "2017-07-07",
+  "added_t": "BKR",
+  "added_n": "Baker Hughes",
+  "removed_t": "BHI",
+  "removed_n": "Baker Hughes",
+  "reason": "Baker Hughes merged with GE Oil & Gas to form a new company.",
+  "src": "https://investors.bakerhughes.com/news-releases/news-release-details/baker-hughes-stockholders-approve-combination-ge-oil-gas"
+ },
+ {
+  "date": "2017-07-26",
+  "added_t": "AOS",
+  "added_n": "A. O. Smith",
+  "removed_t": "BBBY",
+  "removed_n": "Bed Bath & Beyond",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2017-07-26",
+  "added_t": "DRE",
+  "added_n": "Duke Realty",
+  "removed_t": "RIG",
+  "removed_n": "Transocean",
+  "reason": "Market capitalization changes.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/555951_reynoldsamerican54shuffle.pdf"
+ },
+ {
+  "date": "2017-07-26",
+  "added_t": "MGM",
+  "added_n": "MGM Resorts International",
+  "removed_t": "RAI",
+  "removed_n": "Reynolds American",
+  "reason": "British American Tobacco (NYSE MKT:BTI) acquired Reynolds American.",
+  "src": null
+ },
+ {
+  "date": "2017-07-26",
+  "added_t": "PKG",
+  "added_n": "Packaging Corporation of America",
+  "removed_t": "MUR",
+  "removed_n": "Murphy Oil",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2017-07-26",
+  "added_t": "RMD",
+  "added_n": "ResMed",
+  "removed_t": "MNK",
+  "removed_n": "Mallinckrodt",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2017-08-08",
+  "added_t": "BHF",
+  "added_n": "Brighthouse Financial",
+  "removed_t": "AN",
+  "removed_n": "AutoNation",
+  "reason": "MetLife completed the corporate spin-off of Brighthouse Financial.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/560953_spinmetnoganfcn546.pdf"
+ },
+ {
+  "date": "2017-08-29",
+  "added_t": "Q",
+  "added_n": "QuintilesIMS",
+  "removed_t": "WFM",
+  "removed_n": "Whole Foods Market",
+  "reason": "Amazon acquired Whole Foods Market.",
+  "src": null
+ },
+ {
+  "date": "2017-09-01",
+  "added_t": "DWDP",
+  "added_n": "DuPont",
+  "removed_t": "DOW",
+  "removed_n": "Dow Chemical Company",
+  "reason": "The Dow Chemical Company renamed to DowDuPont Inc.",
+  "src": null
+ },
+ {
+  "date": "2017-09-01",
+  "added_t": "SBAC",
+  "added_n": "SBA Communications",
+  "removed_t": "DD",
+  "removed_n": "DuPont",
+  "reason": "The Dow Chemical Company acquired DuPont.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/572951_500dowdupont1chartsbacwfm.pdf"
+ },
+ {
+  "date": "2017-09-18",
+  "added_t": "CDNS",
+  "added_n": "Cadence Design Systems",
+  "removed_t": "SPLS",
+  "removed_n": "Staples",
+  "reason": "Sycamore Partners acquired Staples.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/580952_spls5cadencewoofbrinkwebrebal64.pdf"
+ },
+ {
+  "date": "2017-10-13",
+  "added_t": "NCLH",
+  "added_n": "Norwegian Cruise Line Holdings",
+  "removed_t": "LVLT",
+  "removed_n": "Level 3 Communications",
+  "reason": "CenturyLink acquired Level 3 Communications.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/593950_cruise5century6pacific.pdf"
+ },
+ {
+  "date": "2017-11-15",
+  "added_t": "IQV",
+  "added_n": "IQVIA",
+  "removed_t": "Q",
+  "removed_n": "QuintilesIMS",
+  "reason": "QuintilesIMS changed its name to IQVIA and ticker symbol from Q to IQV.",
+  "src": "https://s201.q4cdn.com/580005511/files/doc_financials/2017/q4/IQVIA-2017-10K-Filed.pdf"
+ },
+ {
+  "date": "2018-01-03",
+  "added_t": "HII",
+  "added_n": "Huntington Ingalls Industries",
+  "removed_t": "BCR",
+  "removed_n": "CR Bard",
+  "reason": "Becton Dickinson acquired CR Bard.",
+  "src": "https://press.spglobal.com/2017-12-28-Huntington-Ingalls-Industries-Set-to-Join-S-P-500-Scientific-Games-to-Join-S-P-MidCap-400-and-Ultra-Clean-Holdings-to-Join-S-P-SmallCap-600"
+ },
+ {
+  "date": "2018-03-07",
+  "added_t": "IPGP",
+  "added_n": "IPG Photonics",
+  "removed_t": "SNI",
+  "removed_n": "Scripps Networks Interactive",
+  "reason": "Discovery Communications acquired Scripps Networks Interactive.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/671577_ipgalenymtgnl5466.pdf"
+ },
+ {
+  "date": "2018-03-19",
+  "added_t": "NKTR",
+  "added_n": "Nektar Therapeutics",
+  "removed_t": "CHK",
+  "removed_n": "Chesapeake Energy",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2018-03-19",
+  "added_t": "SIVB",
+  "added_n": "SVB Financial Group",
+  "removed_t": "PDCO",
+  "removed_n": "Patterson Companies",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2018-03-19",
+  "added_t": "TTWO",
+  "added_n": "Take-Two Interactive",
+  "removed_t": "SIG",
+  "removed_n": "Signet Jewelers",
+  "reason": "Market capitalization changes.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/675150_idesshuf18nktr.pdf"
+ },
+ {
+  "date": "2018-04-04",
+  "added_t": "MSCI",
+  "added_n": "MSCI",
+  "removed_t": "CSRA",
+  "removed_n": "CSRA",
+  "reason": "General Dynamics acquired CSRA.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/684554_mscs6genlum4energ5.pdf"
+ },
+ {
+  "date": "2018-05-31",
+  "added_t": "ABMD",
+  "added_n": "Abiomed",
+  "removed_t": "WYN",
+  "removed_n": "Wyndham Worldwide",
+  "reason": "Wyndham Worldwide completed the corporate spin-off of Wyndham Hotels & Resorts.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/714752_spinwyndxccmicro54.pdf"
+ },
+ {
+  "date": "2018-06-05",
+  "added_t": "EVRG",
+  "added_n": "Evergy",
+  "removed_t": "NAVI",
+  "removed_n": "Navient",
+  "reason": "Westar Energy acquired Great Plains Energy and changed name to Evergy.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/717364_renav4inte6ambgreat.pdf"
+ },
+ {
+  "date": "2018-06-07",
+  "added_t": "TWTR",
+  "added_n": "Twitter",
+  "removed_t": "MON",
+  "removed_n": "Monsanto",
+  "reason": "Bayer acquired Monsanto.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/719152_nflx1twtr5rgnx6.pdf"
+ },
+ {
+  "date": "2018-06-18",
+  "added_t": "BR",
+  "added_n": "Broadridge Financial Solutions",
+  "removed_t": "RRC",
+  "removed_n": "Range Resources",
+  "reason": "Market capitalization changes.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/722756_1hollybroadshuf252426finl.pdf"
+ },
+ {
+  "date": "2018-06-18",
+  "added_t": "HFC",
+  "added_n": "HollyFrontier",
+  "removed_t": "AYI",
+  "removed_n": "Acuity Brands",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2018-06-20",
+  "added_t": "FLT",
+  "added_n": "FleetCor Technologies",
+  "removed_t": "TWX",
+  "removed_n": "Time Warner",
+  "reason": "AT&T acquired Time Warner.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/727360_time1fleet5nvid14.pdf"
+ },
+ {
+  "date": "2018-07-02",
+  "added_t": "CPRT",
+  "added_n": "Copart",
+  "removed_t": "DPS",
+  "removed_n": "Dr Pepper Snapple Group",
+  "reason": "DPS was acquired by Keurig Green Mountain.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/731759_june25drpepperclarifications.pdf"
+ },
+ {
+  "date": "2018-08-28",
+  "added_t": "ANET",
+  "added_n": "Arista Networks",
+  "removed_t": "GGP",
+  "removed_n": "GGP Inc.",
+  "reason": "GGP was acquired by Brookfield Property Partners.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20180823-764552/764552_ichor5arista6micro.pdf"
+ },
+ {
+  "date": "2018-09-14",
+  "added_t": "WCG",
+  "added_n": "WellCare",
+  "removed_t": "XL",
+  "removed_n": "XL Group",
+  "reason": "XL was acquired by Axa.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20180911-776955/776955_health54energy8.pdf"
+ },
+ {
+  "date": "2018-10-01",
+  "added_t": "ROL",
+  "added_n": "Rollins",
+  "removed_t": "ANDV",
+  "removed_n": "Andeavor",
+  "reason": "ANDV was acquired by Marathon Petroleum.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20180925-786958/786958_rollininvandamotion.pdf"
+ },
+ {
+  "date": "2018-10-11",
+  "added_t": "FTNT",
+  "added_n": "Fortinet",
+  "removed_t": "EVHC",
+  "removed_n": "Envision Healthcare",
+  "reason": "EVHC was acquired by KKR.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20181004-794361/794361_pennchefftntasgnvbtx546vv.pdf"
+ },
+ {
+  "date": "2018-11-06",
+  "added_t": "KEYS",
+  "added_n": "Keysight",
+  "removed_t": "CA",
+  "removed_n": "CA Technologies",
+  "reason": "CA was acquired by Broadcom.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/808381_acammilgndkeys-5426.pdf"
+ },
+ {
+  "date": "2018-11-13",
+  "added_t": "JKHY",
+  "added_n": "Jack Henry & Associates",
+  "removed_t": "EQT",
+  "removed_n": "EQT Corporation",
+  "reason": "EQT completed the corporate spin-off of ETRN.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/813582_eqtspinb46superiorflotek.pdf"
+ },
+ {
+  "date": "2018-12-03",
+  "added_t": "FANG",
+  "added_n": "Diamondback Energy",
+  "removed_t": "SRCL",
+  "removed_n": "Stericycle",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2018-12-03",
+  "added_t": "LW",
+  "added_n": "Lamb Weston",
+  "removed_t": "COL",
+  "removed_n": "Rockwell Collins",
+  "reason": "UTX acquired Rockwell Collins.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/822558_5lambrockdiamondpebblecvs46.pdf"
+ },
+ {
+  "date": "2018-12-03",
+  "added_t": "MXIM",
+  "added_n": "Maxim Integrated",
+  "removed_t": "AET",
+  "removed_n": "Aetna",
+  "reason": "CVS acquired Aetna.",
+  "src": null
+ },
+ {
+  "date": "2018-12-24",
+  "added_t": "CE",
+  "added_n": "Celanese",
+  "removed_t": "ESRX",
+  "removed_n": "Express Scripts",
+  "reason": "Cigna acquired Express Scripts.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/839558_celscript5.pdf"
+ },
+ {
+  "date": "2019-01-02",
+  "added_t": "FRC",
+  "added_n": "First Republic Bank",
+  "removed_t": "SCG",
+  "removed_n": "SCANA",
+  "reason": "Dominion Energy acquired SCANA.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/845559_firstrepscan5.pdf"
+ },
+ {
+  "date": "2019-01-18",
+  "added_t": "TFX",
+  "added_n": "Teleflex",
+  "removed_t": "PCG",
+  "removed_n": "Pacific Gas & Electric Company",
+  "reason": "Pacific Gas & Electric Company filed for bankruptcy.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/856358_pcg456.pdf"
+ },
+ {
+  "date": "2019-02-15",
+  "added_t": "ATO",
+  "added_n": "Atmos Energy",
+  "removed_t": "NFX",
+  "removed_n": "Newfield Exploration",
+  "reason": "Encana acquired Newfield Exploration.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/870958_newfieldencana5.pdf"
+ },
+ {
+  "date": "2019-02-27",
+  "added_t": "WAB",
+  "added_n": "Wabtec",
+  "removed_t": "GT",
+  "removed_n": "The Goodyear Tire & Rubber Company",
+  "reason": "Wabtec acquired GE transportation business",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/878161_ge5wabtec4goodyear.pdf"
+ },
+ {
+  "date": "2019-03-19",
+  "added_t": "FOX",
+  "added_n": "Fox Corporation",
+  "removed_t": "FOX",
+  "removed_n": "21st Century Fox",
+  "reason": "21st Century Fox merged with Disney and some parts spun off as Fox Corporation.",
+  "src": null
+ },
+ {
+  "date": "2019-03-19",
+  "added_t": "FOXA",
+  "added_n": "Fox Corporation",
+  "removed_t": "FOXA",
+  "removed_n": "21st Century Fox",
+  "reason": "21st Century Fox merged with Disney and some parts spun off as Fox Corporation.",
+  "src": "https://press.spglobal.com/2019-03-14-Fox-Set-to-Join-S-P-500-Adobe-to-Join-S-P-100"
+ },
+ {
+  "date": "2019-04-02",
+  "added_t": "DOW",
+  "added_n": "Dow",
+  "removed_t": "BHF",
+  "removed_n": "Brighthouse Financial",
+  "reason": "DowDuPont completed the corporate spin-off of Dow Inc.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/898958_1dowspin100trex400.pdf"
+ },
+ {
+  "date": "2019-06-03",
+  "added_t": "CTVA",
+  "added_n": "Corteva",
+  "removed_t": "FLR",
+  "removed_n": "Fluor Corporation",
+  "reason": "DowDuPont completed the corporate spin-off of Corteva.",
+  "src": "https://www.spice-indices.com/idpfiles/spice-assets/resources/public/documents/936758_correcteddwdpspin5blmn6.pdf"
+ },
+ {
+  "date": "2019-06-03",
+  "added_t": "DD",
+  "added_n": "DuPont",
+  "removed_t": "DWDP",
+  "removed_n": "DuPont",
+  "reason": "DWDP changed to DD after spinning off Corteva.",
+  "src": null
+ },
+ {
+  "date": "2019-06-07",
+  "added_t": "BMS",
+  "added_n": "Bemis",
+  "removed_t": "MAT",
+  "removed_n": "Mattel",
+  "reason": "Merger of Bemis and Amcor; Bemis was the surviving entity.",
+  "src": null
+ },
+ {
+  "date": "2019-06-11",
+  "added_t": "AMCR",
+  "added_n": "Amcor",
+  "removed_t": "BMS",
+  "removed_n": "Bemis",
+  "reason": "BMS changed to AMCR post merger with Amcor; subsequently renamed to Amcor.",
+  "src": "https://www.nyse.com/trader-update/history#110000134831"
+ },
+ {
+  "date": "2019-07-01",
+  "added_t": "MKTX",
+  "added_n": "MarketAxess",
+  "removed_t": "LLL",
+  "removed_n": "L3 Technologies",
+  "reason": "L3 was acquired by Harris Corporation.",
+  "src": "https://www.spindices.com/documents/indexnews/announcements/20190624-948566/948566_mktxaaxnmlab546usna6xncr6.pdf"
+ },
+ {
+  "date": "2019-07-15",
+  "added_t": "TMUS",
+  "added_n": "T-Mobile US",
+  "removed_t": "RHT",
+  "removed_n": "Red Hat",
+  "reason": "IBM acquired Red Hat.",
+  "src": "https://www.spindices.com/documents/indexnews/announcements/20190709-957359/957359_hat5mobile.pdf"
+ },
+ {
+  "date": "2019-08-09",
+  "added_t": "IEX",
+  "added_n": "IDEX Corporation",
+  "removed_t": "FL",
+  "removed_n": "Foot Locker",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2019-08-09",
+  "added_t": "LDOS",
+  "added_n": "Leidos",
+  "removed_t": "APC",
+  "removed_n": "Anadarko Petroleum",
+  "reason": "Occidental Petroleum acquired Anadarko Petroleum.",
+  "src": "https://www.spindices.com/documents/indexnews/announcements/20190801-969367/969367_1leidos546foot6fizz6.pdf"
+ },
+ {
+  "date": "2019-09-23",
+  "added_t": "CDW",
+  "added_n": "CDW",
+  "removed_t": "TSS",
+  "removed_n": "TSYS",
+  "reason": "Global Payments acquired TSS.",
+  "src": "https://www.spindices.com/documents/indexnews/announcements//20190917-998359/998359_totalsystemstss5cdw.pdf"
+ },
+ {
+  "date": "2019-09-26",
+  "added_t": "NVR",
+  "added_n": "NVR",
+  "removed_t": "JEF",
+  "removed_n": "Jefferies Financial Group",
+  "reason": "SPB completed the corporate spin-off of Jefferies Financial Group.",
+  "src": "https://www.spindices.com/documents/indexnews/announcements/20190920-1000559/1000559_4jefferies5vicallon6finisar4smart2nvr.pdf"
+ },
+ {
+  "date": "2019-10-03",
+  "added_t": "LVS",
+  "added_n": "Las Vegas Sands",
+  "removed_t": "NKTR",
+  "removed_n": "Nektar Therapeutics",
+  "reason": "Market capitalization changes.",
+  "src": "https://www.spindices.com/documents/indexnews/announcements/20190926-1004359/1004359_4sands6pennantnektar5.pdf"
+ },
+ {
+  "date": "2019-11-21",
+  "added_t": "NOW",
+  "added_n": "ServiceNow",
+  "removed_t": "CELG",
+  "removed_n": "Celgene",
+  "reason": "Bristol-Myers Squibb acquired Celgene.",
+  "src": "https://www.spindices.com/documents/indexnews/announcements/20191118-1035566/1035566_Thermo1Service5.pdf"
+ },
+ {
+  "date": "2019-12-05",
+  "added_t": "WRB",
+  "added_n": "W. R. Berkley Corporation",
+  "removed_t": "VIAB",
+  "removed_n": "Viacom",
+  "reason": "CBS acquired Viacom to form ViacomCBS.",
+  "src": "https://www.spindices.com/documents/indexnews/announcements/20191127-1041559/1041559_BerkleyRJoe546.pdf"
+ },
+ {
+  "date": "2019-12-09",
+  "added_t": "ODFL",
+  "added_n": "Old Dominion Freight Line",
+  "removed_t": "STI",
+  "removed_n": "SunTrust Banks",
+  "reason": "BB&T acquired SunTrust to form Truist Financial.",
+  "src": "https://www.spindices.com/documents/indexnews/announcements/20191202-1042569/1042569_14Dominion5Ready6Cabot4Logistics.pdf"
+ },
+ {
+  "date": "2019-12-23",
+  "added_t": "LYV",
+  "added_n": "Live Nation Entertainment",
+  "removed_t": "AMG",
+  "removed_n": "Affiliated Managers Group",
+  "reason": "Market capitalization changes.",
+  "src": "https://www.spindices.com/documents/indexnews/announcements/20191213-1051561/1051561_migradec34253624lopeleaUntFtr.pdf"
+ },
+ {
+  "date": "2019-12-23",
+  "added_t": "STE",
+  "added_n": "Steris",
+  "removed_t": "MAC",
+  "removed_n": "Macerich",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2019-12-23",
+  "added_t": "ZBRA",
+  "added_n": "Zebra Technologies",
+  "removed_t": "TRIP",
+  "removed_n": "TripAdvisor",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2020-01-28",
+  "added_t": "PAYC",
+  "added_n": "Paycom",
+  "removed_t": "WCG",
+  "removed_n": "WellCare",
+  "reason": "Centene acquired Wellcare.",
+  "src": "https://www.spindices.com/documents/indexnews/announcements/20200122-1077359/1077359_5payc.pdf"
+ },
+ {
+  "date": "2020-03-02",
+  "added_t": "IR",
+  "added_n": "Ingersoll Rand",
+  "removed_t": "XEC",
+  "removed_n": "Cimarex Energy",
+  "reason": "Gardner Denver acquired Ingersoll Rand's industrial businesses then changed its name to the \"new\" Ingersoll Rand Inc.",
+  "src": "https://www.spindices.com/documents/indexnews/announcements/20200227-1098962/1098962_Final5Ingersol4Cimar.pdf"
+ },
+ {
+  "date": "2020-04-01",
+  "added_t": "HWM",
+  "added_n": "Howmet Aerospace",
+  "removed_t": "ARNC",
+  "removed_n": "Arconic",
+  "reason": "Arconic separated into 2 companies - Howmet remained in the index.",
+  "src": "https://www.howmet.com/press-release/2020-05-05/howmet-aerospace-formerly-arconic-inc-reports-full-first-quarter-2020-financial-results/"
+ },
+ {
+  "date": "2020-04-03",
+  "added_t": "CARR",
+  "added_n": "Carrier",
+  "removed_t": "",
+  "removed_n": "",
+  "reason": "United Technologies completed the corporate spin-off of Otis and Carrier and acquired Raytheon Company.",
+  "src": null
+ },
+ {
+  "date": "2020-04-03",
+  "added_t": "OTIS",
+  "added_n": "Otis Worldwide",
+  "removed_t": "",
+  "removed_n": "",
+  "reason": "United Technologies corporate spin-off of Otis and Carrier and acquired Raytheon Company.",
+  "src": null
+ },
+ {
+  "date": "2020-04-06",
+  "added_t": "",
+  "added_n": "",
+  "removed_t": "M",
+  "removed_n": "Macy's",
+  "reason": "Market capitalization changes.",
+  "src": "https://www.spindices.com/documents/indexnews/announcements/20200331-1119193/1119193_1utxspinrtn15otiscarrier.pdf"
+ },
+ {
+  "date": "2020-04-06",
+  "added_t": "",
+  "added_n": "",
+  "removed_t": "RTN",
+  "removed_n": "Raytheon Company",
+  "reason": "United Technologies corporate spin-off of Otis and Carrier and acquired Raytheon Company.",
+  "src": null
+ },
+ {
+  "date": "2020-05-12",
+  "added_t": "DPZ",
+  "added_n": "Domino's Pizza",
+  "removed_t": "CPRI",
+  "removed_n": "Capri Holdings",
+  "reason": "Market capitalization changes.",
+  "src": "https://www.spindices.com/documents/indexnews/announcements/20200506-1138565/1138565_dexdomino456capristor.pdf"
+ },
+ {
+  "date": "2020-05-12",
+  "added_t": "DXCM",
+  "added_n": "Dexcom",
+  "removed_t": "AGN",
+  "removed_n": "Allergan",
+  "reason": "Allergan was acquired by AbbVie.",
+  "src": null
+ },
+ {
+  "date": "2020-05-22",
+  "added_t": "WST",
+  "added_n": "West Pharmaceutical Services",
+  "removed_t": "HP",
+  "removed_n": "Helmerich & Payne",
+  "reason": "Market capitalization changes.",
+  "src": "https://www.spindices.com/documents/indexnews/announcements/20200518-1145759/1145759_jcpenney6helmer.pdf"
+ },
+ {
+  "date": "2020-06-22",
+  "added_t": "BIO",
+  "added_n": "Bio-Rad Laboratories",
+  "removed_t": "ADS",
+  "removed_n": "Alliance Data Systems",
+  "reason": "Market capitalization changes.",
+  "src": "https://www.spindices.com/documents/indexnews/announcements/20200612-1164959/1164959_correctedjune2020migrshuf.pdf"
+ },
+ {
+  "date": "2020-06-22",
+  "added_t": "TDY",
+  "added_n": "Teledyne",
+  "removed_t": "HOG",
+  "removed_n": "Harley-Davidson",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2020-06-22",
+  "added_t": "TYL",
+  "added_n": "Tyler Technologies",
+  "removed_t": "JWN",
+  "removed_n": "Nordstrom",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2020-09-21",
+  "added_t": "CTLT",
+  "added_n": "Catalent",
+  "removed_t": "KSS",
+  "removed_n": "Kohl's",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2020-09-21",
+  "added_t": "ETSY",
+  "added_n": "Etsy",
+  "removed_t": "HRB",
+  "removed_n": "H&R Block",
+  "reason": "Market capitalization changes.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20200904-1214656/1214656_finalmigraseptetsyctltter30.pdf"
+ },
+ {
+  "date": "2020-09-21",
+  "added_t": "TER",
+  "added_n": "Teradyne",
+  "removed_t": "COTY",
+  "removed_n": "Coty",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2020-10-07",
+  "added_t": "POOL",
+  "added_n": "Pool Corporation",
+  "removed_t": "ETFC",
+  "removed_n": "E-Trade",
+  "reason": "Morgan Stanley acquired E*Trade.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20201001-1231161/1231161_dlph400etfc500.pdf"
+ },
+ {
+  "date": "2020-10-09",
+  "added_t": "VNT",
+  "added_n": "Vontier",
+  "removed_t": "",
+  "removed_n": "",
+  "reason": "Fortive completed the corporate spin-off of Vontier.",
+  "src": null
+ },
+ {
+  "date": "2020-10-12",
+  "added_t": "",
+  "added_n": "",
+  "removed_t": "NBL",
+  "removed_n": "Noble Energy",
+  "reason": "Chevron acquired Noble Energy.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20201005-1233159/1233159_ftvspin5nbl.pdf"
+ },
+ {
+  "date": "2020-12-21",
+  "added_t": "TSLA",
+  "added_n": "Tesla",
+  "removed_t": "AIV",
+  "removed_n": "Aimco",
+  "reason": "Aimco completed the corporate spin-off of Apartment Income REIT.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20201211-1277389/1277389_tes15aircaivspindnkn4.pdf"
+ },
+ {
+  "date": "2021-01-07",
+  "added_t": "ENPH",
+  "added_n": "Enphase Energy",
+  "removed_t": "TIF",
+  "removed_n": "Tiffany & Co",
+  "reason": "LVMH Moet Hennessy-Louis Vuitton SE acquired Tiffany & Co.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20201230-1289571/1289571_6enphase4brooks5elf5capri4.pdf"
+ },
+ {
+  "date": "2021-01-21",
+  "added_t": "TRMB",
+  "added_n": "Trimble",
+  "removed_t": "CXO",
+  "removed_n": "Concho Resources",
+  "reason": "ConocoPhillips acquired Concho Resources.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20210115-1298164/1298164_6hilltop45trimbleyeti66.pdf"
+ },
+ {
+  "date": "2021-02-12",
+  "added_t": "MPWR",
+  "added_n": "Monolithic Power Systems",
+  "removed_t": "FTI",
+  "removed_n": "TechnipFMC",
+  "reason": "Corporate spin-off of Technip Energies.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20210208-1312961/1312961_technipfmc20210208.pdf"
+ },
+ {
+  "date": "2021-03-22",
+  "added_t": "CZR",
+  "added_n": "Caesars Entertainment",
+  "removed_t": "VNT",
+  "removed_n": "Vontier",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2021-03-22",
+  "added_t": "GNRC",
+  "added_n": "Generac Holdings",
+  "removed_t": "XRX",
+  "removed_n": "Xerox",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2021-03-22",
+  "added_t": "NXPI",
+  "added_n": "NXP",
+  "removed_t": "FLS",
+  "removed_n": "Flowserve",
+  "reason": "Market capitalization changes.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20210312-1336360/1336360_march2021-5146-shuf-pr.pdf"
+ },
+ {
+  "date": "2021-03-22",
+  "added_t": "PENN",
+  "added_n": "Penn National Gaming",
+  "removed_t": "SLG",
+  "removed_n": "SL Green Realty",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2021-04-20",
+  "added_t": "PTC",
+  "added_n": "PTC",
+  "removed_t": "VAR",
+  "removed_n": "Varian Medical Systems",
+  "reason": "Siemens Healthineers acquired Varian Medical Systems.",
+  "src": "https://www.spglobal.com/spdji/en//documents/indexnews/announcements/20210415-1358567/1358567_5var-6egov-pr.pdf"
+ },
+ {
+  "date": "2021-05-14",
+  "added_t": "CRL",
+  "added_n": "Charles River Laboratories",
+  "removed_t": "FLIR",
+  "removed_n": "FLIR Systems",
+  "reason": "Teledyne Technologies acquired FLIR Systems.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20210510-1372967/1372967_5flir-6aegn.pdf"
+ },
+ {
+  "date": "2021-06-03",
+  "added_t": "OGN",
+  "added_n": "Organon & Co.",
+  "removed_t": "",
+  "removed_n": "",
+  "reason": "Merck completed the corporate spin-off of Organon.",
+  "src": null
+ },
+ {
+  "date": "2021-06-04",
+  "added_t": "",
+  "added_n": "",
+  "removed_t": "HFC",
+  "removed_n": "HollyFrontier",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2021-07-21",
+  "added_t": "MRNA",
+  "added_n": "Moderna",
+  "removed_t": "ALXN",
+  "removed_n": "Alexion Pharmaceuticals",
+  "reason": "AstraZeneca acquired Alexion Pharmaceuticals.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20210715-1419561/1419561_5alxn.pdf"
+ },
+ {
+  "date": "2021-08-30",
+  "added_t": "TECH",
+  "added_n": "Bio-Techne",
+  "removed_t": "MXIM",
+  "removed_n": "Maxim Integrated",
+  "reason": "Analog Devices acquired Maxim Integrated Products.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20210824-1442797/1442797_5mxim6uscr6syke.pdf"
+ },
+ {
+  "date": "2021-09-20",
+  "added_t": "BRO",
+  "added_n": "Brown & Brown",
+  "removed_t": "NOV",
+  "removed_n": "Nov",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2021-09-20",
+  "added_t": "CDAY",
+  "added_n": "Ceridian",
+  "removed_t": "UNM",
+  "removed_n": "Unum",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2021-09-20",
+  "added_t": "MTCH",
+  "added_n": "Match Group",
+  "removed_t": "PRGO",
+  "removed_n": "Perrigo",
+  "reason": "Market capitalization changes.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20210903-1443045/1443045_sept2021-546-shuf-rebal.pdf"
+ },
+ {
+  "date": "2021-12-14",
+  "added_t": "EPAM",
+  "added_n": "EPAM Systems",
+  "removed_t": "KSU",
+  "removed_n": "Kansas City Southern",
+  "reason": "Canadian Pacific acquired Kansas City Southern.",
+  "src": "https://www.spglobal.com/spdji/en/documents/index-news-and-announcements-lls/5ksu.pdf"
+ },
+ {
+  "date": "2021-12-20",
+  "added_t": "FDS",
+  "added_n": "FactSet",
+  "removed_t": "WU",
+  "removed_n": "Western Union",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2021-12-20",
+  "added_t": "SBNY",
+  "added_n": "Signature Bank",
+  "removed_t": "LEG",
+  "removed_n": "Leggett & Platt",
+  "reason": "Market capitalization changes.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20211203-1445690/1445690_5shuffle64pr.pdf"
+ },
+ {
+  "date": "2021-12-20",
+  "added_t": "SEDG",
+  "added_n": "SolarEdge",
+  "removed_t": "HBI",
+  "removed_n": "Hanesbrands",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2022-01-10",
+  "added_t": "WTW",
+  "added_n": "Willis Towers Watson",
+  "removed_t": "WLTW",
+  "removed_n": "Willis Towers Watson",
+  "reason": "Willis Towers Watson changed its ticker symbol from WLTW to WTW.",
+  "src": "https://www.sec.gov/Archives/edgar/data/1140536/000119312522004045/d267396d8k.htm"
+ },
+ {
+  "date": "2022-02-02",
+  "added_t": "CEG",
+  "added_n": "Constellation Energy",
+  "removed_t": "",
+  "removed_n": "",
+  "reason": "Exelon completed the corporate spin-off of Constellation Energy.",
+  "src": null
+ },
+ {
+  "date": "2022-02-03",
+  "added_t": "",
+  "added_n": "",
+  "removed_t": "GPS",
+  "removed_n": "Gap",
+  "reason": "Market capitalization changes.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20210527-1385972/1385972_5-mrk.pdf"
+ },
+ {
+  "date": "2022-02-15",
+  "added_t": "NDSN",
+  "added_n": "Nordson Corporation",
+  "removed_t": "XLNX",
+  "removed_n": "Xilinx",
+  "reason": "Advanced Micro Devices acquired Xilinx.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20220210-1449702/1449702_xlnx5.pdf"
+ },
+ {
+  "date": "2022-03-02",
+  "added_t": "MOH",
+  "added_n": "Molina Healthcare",
+  "removed_t": "INFO",
+  "removed_n": "IHS Markit",
+  "reason": "S&P Global acquired IHS Markit.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20220225-1450148/1450148_info5.pdf"
+ },
+ {
+  "date": "2022-04-04",
+  "added_t": "CPT",
+  "added_n": "Camden Property Trust",
+  "removed_t": "PBCT",
+  "removed_n": "People's United Financial",
+  "reason": "M&T Bank acquired People's United Financial.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20220329-451101/1451101_pbct5.pdf"
+ },
+ {
+  "date": "2022-04-11",
+  "added_t": "",
+  "added_n": "",
+  "removed_t": "DISCK",
+  "removed_n": "Discovery, Inc.",
+  "reason": "WarnerMedia and Discovery merged to create Warner Bros. Discovery.",
+  "src": null
+ },
+ {
+  "date": "2022-04-11",
+  "added_t": "WBD",
+  "added_n": "Warner Bros. Discovery",
+  "removed_t": "DISCA",
+  "removed_n": "Discovery, Inc.",
+  "reason": "WarnerMedia and Discovery merged to create Warner Bros. Discovery.",
+  "src": "https://press.spglobal.com/2022-04-07-S-P-Dow-Jones-Indices-Announces-Treatment-of-AT-T-Transaction-with-Discovery"
+ },
+ {
+  "date": "2022-06-08",
+  "added_t": "VICI",
+  "added_n": "Vici Properties",
+  "removed_t": "CERN",
+  "removed_n": "Cerner",
+  "reason": "Oracle acquired Cerner.",
+  "src": null
+ },
+ {
+  "date": "2022-06-21",
+  "added_t": "",
+  "added_n": "",
+  "removed_t": "UA",
+  "removed_n": "Under Armour (Class C)",
+  "reason": "Market capitalization changes.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20220603-1453030/1453030_shufcernjune2022-546.pdf"
+ },
+ {
+  "date": "2022-06-21",
+  "added_t": "KDP",
+  "added_n": "Keurig Dr Pepper",
+  "removed_t": "UAA",
+  "removed_n": "Under Armour (Class A)",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2022-06-21",
+  "added_t": "ON",
+  "added_n": "ON Semiconductor",
+  "removed_t": "IPGP",
+  "removed_n": "IPG Photonics",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2022-09-19",
+  "added_t": "CSGP",
+  "added_n": "CoStar Group",
+  "removed_t": "PVH",
+  "removed_n": "PVH",
+  "reason": "Market capitalization changes.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20220902-1455498/1455498_100amdshuffsept2022-546.pdf"
+ },
+ {
+  "date": "2022-09-19",
+  "added_t": "INVH",
+  "added_n": "Invitation Homes",
+  "removed_t": "PENN",
+  "removed_n": "Penn Entertainment",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2022-10-03",
+  "added_t": "EQT",
+  "added_n": "EQT Corporation",
+  "removed_t": "DRE",
+  "removed_n": "Duke Realty",
+  "reason": "Prologis acquired Duke Realty.",
+  "src": null
+ },
+ {
+  "date": "2022-10-03",
+  "added_t": "PCG",
+  "added_n": "PG&E",
+  "removed_t": "CTXS",
+  "removed_n": "Citrix Systems",
+  "reason": "Vista Equity Partners acquired Citrix Systems.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20220923-1456105/1456105_6gcp6xper6abtx5ctxs5dre.pdf"
+ },
+ {
+  "date": "2022-10-12",
+  "added_t": "TRGP",
+  "added_n": "Targa Resources",
+  "removed_t": "NLSN",
+  "removed_n": "Nielsen Holdings",
+  "reason": "Elliott Investment Management acquired Nielsen Holdings.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20221006-1456477/1456477_5nlsn.pdf"
+ },
+ {
+  "date": "2022-11-01",
+  "added_t": "ACGL",
+  "added_n": "Arch Capital Group",
+  "removed_t": "TWTR",
+  "removed_n": "Twitter",
+  "reason": "Elon Musk acquired Twitter.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20221027-1457121/1457121_5twtr-4xpo.pdf"
+ },
+ {
+  "date": "2022-12-15",
+  "added_t": "MBC",
+  "added_n": "MasterBrand",
+  "removed_t": "",
+  "removed_n": "",
+  "reason": "Fortune Brands Home & Security completed the corporate spin-off of MasterBrand.",
+  "src": null
+ },
+ {
+  "date": "2022-12-19",
+  "added_t": "",
+  "added_n": "",
+  "removed_t": "MBC",
+  "removed_n": "MasterBrand",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2022-12-19",
+  "added_t": "FSLR",
+  "added_n": "First Solar",
+  "removed_t": "FBHS",
+  "removed_n": "Fortune Brands Home & Security",
+  "reason": "Market capitalization changes.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20221212-1460145/1460145_5fbhs.pdf"
+ },
+ {
+  "date": "2022-12-22",
+  "added_t": "STLD",
+  "added_n": "Steel Dynamics",
+  "removed_t": "ABMD",
+  "removed_n": "Abiomed",
+  "reason": "Johnson & Johnson acquired Abiomed.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20221219-1460299/1460299_5abmd.pdf"
+ },
+ {
+  "date": "2023-01-04",
+  "added_t": "GEHC",
+  "added_n": "GE HealthCare",
+  "removed_t": "",
+  "removed_n": "",
+  "reason": "General Electric completed the corporate spin-off of GE HealthCare.",
+  "src": null
+ },
+ {
+  "date": "2023-01-05",
+  "added_t": "",
+  "added_n": "",
+  "removed_t": "VNO",
+  "removed_n": "Vornado Realty Trust",
+  "reason": "Market capitalization changes.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20221228-1460542/1460542_ge5spingehc.pdf"
+ },
+ {
+  "date": "2023-03-15",
+  "added_t": "BG",
+  "added_n": "Bunge Global",
+  "removed_t": "SBNY",
+  "removed_n": "Signature Bank",
+  "reason": "The FDIC placed Signature Bank into FDIC Receivership.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20230313-1463166/1463166_5-sbny.pdf"
+ },
+ {
+  "date": "2023-03-15",
+  "added_t": "PODD",
+  "added_n": "Insulet",
+  "removed_t": "SIVB",
+  "removed_n": "SVB Financial Group",
+  "reason": "The FDIC placed SVB's main subsidiary, Silicon Valley Bank, into receivership.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20230310-1461992/1461992_sivb-5.pdf"
+ },
+ {
+  "date": "2023-03-20",
+  "added_t": "FICO",
+  "added_n": "Fair Isaac",
+  "removed_t": "LUMN",
+  "removed_n": "Lumen Technologies",
+  "reason": "Market capitalization changes.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20230303-1461866/1461866_shufflemarch2023.pdf"
+ },
+ {
+  "date": "2023-05-04",
+  "added_t": "AXON",
+  "added_n": "Axon Enterprise",
+  "removed_t": "FRC",
+  "removed_n": "First Republic Bank",
+  "reason": "The Federal Deposit Insurance Corporation (FDIC) placed First Republic Bank into receivership.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20230501-1463787/1463787_frc5.pdf"
+ },
+ {
+  "date": "2023-06-20",
+  "added_t": "PANW",
+  "added_n": "Palo Alto Networks",
+  "removed_t": "DISH",
+  "removed_n": "Dish Network",
+  "reason": "Market capitalization changes.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20230602-1464356/1464356_shufjun23.pdf"
+ },
+ {
+  "date": "2023-08-25",
+  "added_t": "KVUE",
+  "added_n": "Kenvue",
+  "removed_t": "AAP",
+  "removed_n": "Advance Auto Parts",
+  "reason": "Johnson & Johnson offered to exchange the shares of Kenvue held for shares of Johnson & Johnson in a split-off exchange offer.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20230821-1465675/1465675_5jnj6.pdf"
+ },
+ {
+  "date": "2023-09-18",
+  "added_t": "ABNB",
+  "added_n": "Airbnb",
+  "removed_t": "NWL",
+  "removed_n": "Newell Brands",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2023-09-18",
+  "added_t": "BX",
+  "added_n": "Blackstone",
+  "removed_t": "LNC",
+  "removed_n": "Lincoln National Corporation",
+  "reason": "Market capitalization changes.",
+  "src": "https://press.spglobal.com/2023-09-01-Blackstone-and-Airbnb-Set-to-Join-S-P-500-Others-to-Join-S-P-100,-S-P-MidCap-400-and-S-P-SmallCap-600"
+ },
+ {
+  "date": "2023-10-02",
+  "added_t": "VLTO",
+  "added_n": "Veralto",
+  "removed_t": "",
+  "removed_n": "",
+  "reason": "Danaher Corporation completed the corporate spin-off of Veralto.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20230928-1466640/1466640_554-k-dhr-armk.pdf"
+ },
+ {
+  "date": "2023-10-03",
+  "added_t": "",
+  "added_n": "",
+  "removed_t": "DXC",
+  "removed_n": "DXC Technology",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2023-10-18",
+  "added_t": "HUBB",
+  "added_n": "Hubbell",
+  "removed_t": "OGN",
+  "removed_n": "Organon & Co.",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2023-10-18",
+  "added_t": "LULU",
+  "added_n": "Lululemon Athletica",
+  "removed_t": "ATVI",
+  "removed_n": "Activision Blizzard",
+  "reason": "Acquisition of Activision Blizzard by Microsoft.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20231013-1466909/1466909_5atvi.pdf"
+ },
+ {
+  "date": "2023-12-18",
+  "added_t": "BLDR",
+  "added_n": "Builders FirstSource",
+  "removed_t": "SEDG",
+  "removed_n": "SolarEdge",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2023-12-18",
+  "added_t": "JBL",
+  "added_n": "Jabil",
+  "removed_t": "ALK",
+  "removed_n": "Alaska Air Group",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2023-12-18",
+  "added_t": "UBER",
+  "added_n": "Uber",
+  "removed_t": "SEE",
+  "removed_n": "Sealed Air",
+  "reason": "Market capitalization changes.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20231201-1467851/1467851_dec2023shuf.pdf"
+ },
+ {
+  "date": "2024-02-01",
+  "added_t": "DAY",
+  "added_n": "Dayforce",
+  "removed_t": "CDAY",
+  "removed_n": "Ceridian",
+  "reason": "Ceridian changed its ticker symbol from CDAY to DAY.",
+  "src": "https://www.dayforce.com/who-we-are/newsroom/ceridian-to-change-ticker-symbol-to-day-on-nyse-and-tsx-effective-february-1"
+ },
+ {
+  "date": "2024-03-18",
+  "added_t": "DECK",
+  "added_n": "Deckers Brands",
+  "removed_t": "ZION",
+  "removed_n": "Zions Bancorporation",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2024-03-18",
+  "added_t": "SMCI",
+  "added_n": "Supermicro",
+  "removed_t": "WHR",
+  "removed_n": "Whirlpool Corporation",
+  "reason": "Market capitalization changes.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20240301-1470916/1470916_mar2024shuf.pdf"
+ },
+ {
+  "date": "2024-04-01",
+  "added_t": "SOLV",
+  "added_n": "Solventum",
+  "removed_t": "",
+  "removed_n": "",
+  "reason": "3M completed the corporate spin-off of Solventum.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20240327-1471355/1471355_5gemmm.pdf"
+ },
+ {
+  "date": "2024-04-02",
+  "added_t": "GEV",
+  "added_n": "GE Vernova",
+  "removed_t": "",
+  "removed_n": "",
+  "reason": "General Electric completed the corporate spin-off of GE Vernova.",
+  "src": null
+ },
+ {
+  "date": "2024-04-03",
+  "added_t": "",
+  "added_n": "",
+  "removed_t": "VFC",
+  "removed_n": "VF Corporation",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2024-04-03",
+  "added_t": "",
+  "added_n": "",
+  "removed_t": "XRAY",
+  "removed_n": "Dentsply Sirona",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2024-05-08",
+  "added_t": "VST",
+  "added_n": "Vistra",
+  "removed_t": "PXD",
+  "removed_n": "Pioneer Natural Resources",
+  "reason": "ExxonMobil acquired Pioneer Natural Resources.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20240503-1472096/1472096_5pxd.pdf"
+ },
+ {
+  "date": "2024-06-24",
+  "added_t": "CRWD",
+  "added_n": "CrowdStrike",
+  "removed_t": "CMA",
+  "removed_n": "Comerica",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2024-06-24",
+  "added_t": "GDDY",
+  "added_n": "GoDaddy",
+  "removed_t": "ILMN",
+  "removed_n": "Illumina, Inc.",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2024-06-24",
+  "added_t": "KKR",
+  "added_n": "KKR",
+  "removed_t": "RHI",
+  "removed_n": "Robert Half",
+  "reason": "Market capitalization changes.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20240607-1472747/1472747_finaljuneshuffle546.pdf"
+ },
+ {
+  "date": "2024-09-23",
+  "added_t": "DELL",
+  "added_n": "Dell Technologies",
+  "removed_t": "ETSY",
+  "removed_n": "Etsy",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2024-09-23",
+  "added_t": "ERIE",
+  "added_n": "Erie Indemnity",
+  "removed_t": "BIO",
+  "removed_n": "Bio-Rad Laboratories",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2024-09-23",
+  "added_t": "PLTR",
+  "added_n": "Palantir Technologies",
+  "removed_t": "AAL",
+  "removed_n": "American Airlines Group",
+  "reason": "Market capitalization changes.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20240906-1474143/1474143_septembershuffle546.pdf"
+ },
+ {
+  "date": "2024-09-30",
+  "added_t": "AMTM",
+  "added_n": "Amentum",
+  "removed_t": "",
+  "removed_n": "",
+  "reason": "Jacobs Solutions completed the corporate spin-off of its Critical Mission Solutions and Cyber Intelligence business, which merged with private Amentum to create newly publicly traded Amentum Holdings.",
+  "src": null
+ },
+ {
+  "date": "2024-10-01",
+  "added_t": "",
+  "added_n": "",
+  "removed_t": "BBWI",
+  "removed_n": "Bath & Body Works, Inc.",
+  "reason": "Market capitalization changes.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20240924-1474558/1474558_jacobs56.pdf"
+ },
+ {
+  "date": "2024-11-26",
+  "added_t": "TPL",
+  "added_n": "Texas Pacific Land Corporation",
+  "removed_t": "MRO",
+  "removed_n": "Marathon Oil",
+  "reason": "ConocoPhillips acquired Marathon Oil.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20241121-1475569/1475569_5-mro.pdf"
+ },
+ {
+  "date": "2024-12-23",
+  "added_t": "APO",
+  "added_n": "Apollo Global Management",
+  "removed_t": "QRVO",
+  "removed_n": "Qorvo",
+  "reason": "Market capitalization changes.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20241206-1475790/1475790_dec2024apowday.pdf"
+ },
+ {
+  "date": "2024-12-23",
+  "added_t": "LII",
+  "added_n": "Lennox International",
+  "removed_t": "CTLT",
+  "removed_n": "Catalent",
+  "reason": "Novo Holdings A/S acquired Catalent.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20241218-1475819/1475819_ctlt5.pdf"
+ },
+ {
+  "date": "2024-12-23",
+  "added_t": "WDAY",
+  "added_n": "Workday, Inc.",
+  "removed_t": "AMTM",
+  "removed_n": "Amentum",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2025-03-24",
+  "added_t": "DASH",
+  "added_n": "DoorDash",
+  "removed_t": "BWA",
+  "removed_n": "BorgWarner",
+  "reason": "Market capitalization changes.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20250307-1477251/1477251_march2025rebalance1500.pdf"
+ },
+ {
+  "date": "2025-03-24",
+  "added_t": "EXE",
+  "added_n": "Expand Energy",
+  "removed_t": "FMC",
+  "removed_n": "FMC Corporation",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2025-03-24",
+  "added_t": "TKO",
+  "added_n": "TKO Group Holdings",
+  "removed_t": "TFX",
+  "removed_n": "Teleflex",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2025-03-24",
+  "added_t": "WSM",
+  "added_n": "Williams-Sonoma, Inc.",
+  "removed_t": "CE",
+  "removed_n": "Celanese",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2025-05-19",
+  "added_t": "COIN",
+  "added_n": "Coinbase",
+  "removed_t": "DFS",
+  "removed_n": "Discover Financial",
+  "reason": "Capital One acquired Discover Financial.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20250512-1478052/1478052_dfs5.pdf"
+ },
+ {
+  "date": "2025-07-09",
+  "added_t": "DDOG",
+  "added_n": "Datadog",
+  "removed_t": "JNPR",
+  "removed_n": "Juniper Networks",
+  "reason": "Hewlett Packard Enterprise acquired Juniper Networks.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20250702-1478699/1478699_jnpr5.pdf"
+ },
+ {
+  "date": "2025-07-18",
+  "added_t": "TTD",
+  "added_n": "The Trade Desk",
+  "removed_t": "ANSS",
+  "removed_n": "Ansys",
+  "reason": "Synopsys acquired Ansys.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20250714-1478894/1478894_5-anss.pdf"
+ },
+ {
+  "date": "2025-07-23",
+  "added_t": "XYZ",
+  "added_n": "Block, Inc.",
+  "removed_t": "HES",
+  "removed_n": "Hess Corporation",
+  "reason": "Chevron acquired Hess.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20250718-1478910/1478910_hes5.pdf"
+ },
+ {
+  "date": "2025-08-28",
+  "added_t": "IBKR",
+  "added_n": "Interactive Brokers",
+  "removed_t": "WBA",
+  "removed_n": "Walgreens Boots Alliance",
+  "reason": "Sycamore Partners acquired Walgreen Boots Alliance.",
+  "src": "https://press.spglobal.com/2025-08-25-Interactive-Brokers-Group-Set-to-Join-S-P-500,-Talen-Energy-to-Join-S-P-MidCap-400-and-Kinetik-Holdings-to-Join-S-P-SmallCap-600"
+ },
+ {
+  "date": "2025-09-22",
+  "added_t": "APP",
+  "added_n": "AppLovin",
+  "removed_t": "MKTX",
+  "removed_n": "MarketAxess",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2025-09-22",
+  "added_t": "EME",
+  "added_n": "Emcor",
+  "removed_t": "ENPH",
+  "removed_n": "Enphase Energy",
+  "reason": "Market capitalization changes.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20250905-1479730/1479730_sept2025-1500rebalance.pdf"
+ },
+ {
+  "date": "2025-09-22",
+  "added_t": "HOOD",
+  "added_n": "Robinhood Markets",
+  "removed_t": "CZR",
+  "removed_n": "Caesars Entertainment",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2025-10-30",
+  "added_t": "SOLS",
+  "added_n": "Solstice Advanced Materials",
+  "removed_t": "",
+  "removed_n": "",
+  "reason": "Honeywell International completed the corporate spin-off of Solstice Advanced Materials.",
+  "src": null
+ },
+ {
+  "date": "2025-10-31",
+  "added_t": "",
+  "added_n": "",
+  "removed_t": "KMX",
+  "removed_n": "CarMax",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2025-11-03",
+  "added_t": "Q",
+  "added_n": "Qnity Electronics",
+  "removed_t": "",
+  "removed_n": "",
+  "reason": "Dupont completed the corporate spin-off of Qnity Electronics.",
+  "src": null
+ },
+ {
+  "date": "2025-11-04",
+  "added_t": "",
+  "added_n": "",
+  "removed_t": "EMN",
+  "removed_n": "Eastman Chemical Co.",
+  "reason": "Market capitalization changes.",
+  "src": "https://press.spglobal.com/2025-10-27-Solstice-Advance-Materials-and-Qnity-Electronics-Set-to-Join-S-P-500-Others-to-Join-S-P-SmallCap-600"
+ },
+ {
+  "date": "2025-11-28",
+  "added_t": "SNDK",
+  "added_n": "Sandisk",
+  "removed_t": "IPG",
+  "removed_n": "Interpublic Group",
+  "reason": "Omnicom Group acquired (The) Interpublic Group.",
+  "src": "https://press.spglobal.com/2025-11-24-Sandisk-Set-to-Join-S-P-500-Upwork,-First-Interstate-BancSystem,-PTC-Therapeutics-to-Join-S-P-SmallCap-600"
+ },
+ {
+  "date": "2025-12-11",
+  "added_t": "ARES",
+  "added_n": "Ares Management",
+  "removed_t": "K",
+  "removed_n": "Kellanova",
+  "reason": "Mars Inc. acquired Kellanova.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20251208-1481001/1481001_56-k-hsii-vtle.pdf"
+ },
+ {
+  "date": "2025-12-22",
+  "added_t": "CRH",
+  "added_n": "CRH",
+  "removed_t": "LKQ",
+  "removed_n": "LKQ Corporation",
+  "reason": "Market capitalization changes.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20251205-1480992/1480992_december2025rebalance.pdf"
+ },
+ {
+  "date": "2025-12-22",
+  "added_t": "CVNA",
+  "added_n": "Carvana",
+  "removed_t": "SOLS",
+  "removed_n": "Solstice Advanced Materials",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2025-12-22",
+  "added_t": "FIX",
+  "added_n": "Comfort Systems USA",
+  "removed_t": "MHK",
+  "removed_n": "Mohawk Industries",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2026-02-09",
+  "added_t": "CIEN",
+  "added_n": "Ciena",
+  "removed_t": "DAY",
+  "removed_n": "Dayforce",
+  "reason": "Thoma Bravo L.P. acquired Dayforce.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20260204-1482028/1482028_day5dvax6.pdf"
+ },
+ {
+  "date": "2026-03-23",
+  "added_t": "COHR",
+  "added_n": "Coherent Corp.",
+  "removed_t": "LW",
+  "removed_n": "Lamb Weston",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2026-03-23",
+  "added_t": "LITE",
+  "added_n": "Lumentum",
+  "removed_t": "MOH",
+  "removed_n": "Molina Healthcare",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2026-03-23",
+  "added_t": "SATS",
+  "added_n": "EchoStar",
+  "removed_t": "PAYC",
+  "removed_n": "Paycom",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2026-03-23",
+  "added_t": "VRT",
+  "added_n": "Vertiv",
+  "removed_t": "MTCH",
+  "removed_n": "Match Group",
+  "reason": "Market capitalization changes.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20260306-1482263/1482263_march2026rebalance1546.pdf"
+ },
+ {
+  "date": "2026-04-09",
+  "added_t": "CASY",
+  "added_n": "Casey's",
+  "removed_t": "HOLX",
+  "removed_n": "Hologic",
+  "reason": "Blackstone Inc. and TPG Inc. acquired Hologic.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20260406-1482697/1482697_5holx.pdf"
+ },
+ {
+  "date": "2026-05-07",
+  "added_t": "VEEV",
+  "added_n": "Veeva Systems",
+  "removed_t": "CTRA",
+  "removed_n": "Coterra Energy",
+  "reason": "Devon Energy acquired Coterra Energy.",
+  "src": "https://press.spglobal.com/2026-04-30-Veeva-Systems-Set-to-Join-S-P-500"
+ },
+ {
+  "date": "2026-06-01",
+  "added_t": "FDXF",
+  "added_n": "FedEx Freight",
+  "removed_t": "",
+  "removed_n": "",
+  "reason": "FedEx Corp. completed the corporate spin-off of FedEx Freight Holding.",
+  "src": null
+ },
+ {
+  "date": "2026-06-02",
+  "added_t": "",
+  "added_n": "",
+  "removed_t": "EPAM",
+  "removed_n": "EPAM Systems",
+  "reason": "Market capitalization changes.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20260527-1483532/1483532_fdx-amwd-56.pdf"
+ },
+ {
+  "date": "2026-06-22",
+  "added_t": "FLEX",
+  "added_n": "Flex Ltd.",
+  "removed_t": "CPB",
+  "removed_n": "Campbell's",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2026-06-22",
+  "added_t": "MRVL",
+  "added_n": "Marvell Technology",
+  "removed_t": "POOL",
+  "removed_n": "Pool Corporation",
+  "reason": "Market capitalization changes.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20260605-1483743/1483743_shuffle546-june2026.pdf"
+ },
+ {
+  "date": "2026-06-29",
+  "added_t": "HONA",
+  "added_n": "Honeywell Aerospace",
+  "removed_t": "",
+  "removed_n": "",
+  "reason": "Honeywell completed the corporate spin-off of Honeywell Aerospace.",
+  "src": null
+ },
+ {
+  "date": "2026-06-30",
+  "added_t": "",
+  "added_n": "",
+  "removed_t": "CAG",
+  "removed_n": "Conagra Brands",
+  "reason": "Market capitalization changes.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20260623-1484127/1484127_hon-jhg-bld-ari-1546.pdf"
+ },
+ {
+  "date": "2026-08-05",
+  "added_t": "FERG",
+  "added_n": "Ferguson Enterprises",
+  "removed_t": "EA",
+  "removed_n": "Electronic Arts",
+  "reason": "An investor consortium comprising Saudi Arabia's Public Investment Fund (PIF), Silver Lake, and Affinity Partners acquired Electronic Arts.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20260731-1484374/1484374_ea5-rezi6.pdf"
+ },
+ {
+  "date": "2026-08-18",
+  "added_t": "RDDT",
+  "added_n": "Reddit",
+  "removed_t": "AVB",
+  "removed_n": "AvalonBay Communities",
+  "reason": "Equity Residential (now Vivmark Residential) acquired AvalonBay Communities.",
+  "src": "https://press.spglobal.com/2026-08-13-Reddit-Set-to-Join-S-P-500-and-Sun-Communities-to-Join-S-P-MidCap-400"
+ },
+ {
+  "date": "2026-09-21",
+  "added_t": "BE",
+  "added_n": "Bloom Energy",
+  "removed_t": "TAP",
+  "removed_n": "Molson Coors",
+  "reason": "Market capitalization changes.",
+  "src": "https://www.spglobal.com/spdji/en/documents/indexnews/announcements/20260904-1484999/1484999_shuffle5461-sept2026.pdf"
+ },
+ {
+  "date": "2026-09-21",
+  "added_t": "ILMN",
+  "added_n": "Illumina, Inc.",
+  "removed_t": "BLDR",
+  "removed_n": "Builders FirstSource",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2026-09-21",
+  "added_t": "P",
+  "added_n": "Everpure",
+  "removed_t": "TTD",
+  "removed_n": "The Trade Desk",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2026-10-01",
+  "added_t": "VYLR",
+  "added_n": "Vylor",
+  "removed_t": "",
+  "removed_n": "",
+  "reason": "Corteva completed the corporate spin-off of Vylor",
+  "src": null
+ },
+ {
+  "date": "2026-10-06",
+  "added_t": "",
+  "added_n": "",
+  "removed_t": "CTVA",
+  "removed_n": "Corteva",
+  "reason": "Market capitalization changes.",
+  "src": null
+ },
+ {
+  "date": "2026-10-06",
+  "added_t": "TWLO",
+  "added_n": "Twilio",
+  "removed_t": "WBD",
+  "removed_n": "Warner Bros. Discovery",
+  "reason": "Paramount Skydance acquired Warner Bros. Discovery",
+  "src": "https://press.spglobal.com/2026-10-01-Vylor-Added-to-the-S-P-500-Twilio-Set-to-Join-S-P-500-Others-to-Join-S-P-MidCap-400-and-S-P-SmallCap-600"
+ }
+]
