@@ -9,8 +9,10 @@ captured October 12–13, 2026.
 |---|---|
 | `colorado-land-over-10ac.csv` | 999 unique listings, one row each |
 | `colorado-land-over-10ac.json` | Same 999 listings as a JSON array |
-| `colorado-land-10ac.html` | Interactive page: sortable/filterable table with click-through Realtor links, computed $/acre, city-cluster map, $/acre histogram, CSV export (open in a browser; needs internet for map tiles) |
+| `colorado-land-10ac.html` | Interactive page: map with one dot per listing, colored by $/acre and sized by acreage (hover for the $/acre tag, acres, price and county; from zoom 12 each dot becomes a circle with the parcel's real area; topo or satellite; county lines), filters that drive both map and table, sortable table with click-through Realtor links and a "Map" jump per row, $/acre histogram, CSV export (open in a browser; needs internet for map tiles) |
+| `colorado-land-geocodes.json` | Map position for 703 listings, keyed by detail URL (title when no URL) |
 | `build.py` | Reproducible build: loads `raw/`, normalizes, dedupes, writes CSV + JSON |
+| `geocode.py` | Geocodes listing titles with the State of Colorado address locator, writes `colorado-land-geocodes.json` |
 | `raw/` | The 13 raw per-range JSON chunk files as scraped |
 
 ## Reassembly
@@ -75,6 +77,24 @@ captures' records that were superseded by full re-captures (matched by title:
 17 records), normalizes types, dedupes by URL (fallback: title + price when
 the URL is null), and writes the CSV and JSON. The audit summary prints to
 stdout.
+
+## Map positions
+
+`python3 geocode.py` sends each listing title to the State of Colorado's public
+address locator (OIT, `gis.colorado.gov` `PA_Composite_Pro`, built on statewide
+address points). Results, out of 999:
+
+| Placement | Count | Meaning |
+|---|---|---|
+| address | 321 | Matched an address point or range |
+| road | 382 | Only the road matched ("County Road 502, Bayfield"); somewhere on that road in that ZIP |
+| city | 292 | No usable match; the page puts these at the city and draws them hollow |
+| none | 4 | No city either; not on the map |
+
+Matches scoring under 80 or landing more than 60 km from the listing's city are
+rejected. The US Census geocoder was tried first and placed only 178, because
+rural address ranges are thin in its data. County in map popups comes from a
+point-in-polygon test against embedded 2010 Census county outlines.
 
 ## Source
 
