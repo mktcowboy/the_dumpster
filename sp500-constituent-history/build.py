@@ -89,6 +89,14 @@ page = """<!DOCTYPE html>
   .nm{color:var(--gray); font-size:12.5px;}
   .rsn{color:#3a3f46; font-size:13px;}
   .more{color:var(--navy); cursor:pointer; font-size:12.5px; white-space:nowrap;}
+  .srclink{font-size:12px; color:var(--navy); white-space:nowrap;}
+  .srclink a{color:var(--navy);}
+  .sources{margin-top:6px; font-size:13.5px;}
+  .src-row{display:flex; gap:14px; padding:12px 0; border-bottom:1px solid var(--line);}
+  .src-n{flex:0 0 26px; height:26px; border:1px solid var(--navy); color:var(--navy); border-radius:50%;
+         display:flex; align-items:center; justify-content:center; font-size:13px; font-weight:700;}
+  .src-row a{color:var(--navy);}
+  .fine{font-size:12.5px; color:var(--gray); margin-top:12px;}
   footer{margin-top:44px; border-top:1px solid var(--line); padding-top:14px; font-size:12.5px; color:var(--gray);}
   footer p{margin:6px 0;}
   @media (max-width:700px){ .stat{flex:1 1 45%;} canvas{height:320px;} }
@@ -131,25 +139,59 @@ page = """<!DOCTYPE html>
   <select id="yr"><option value="all">All years</option>""" + year_opts + """</select>
   <input id="q" type="text" placeholder="Search ticker, company, or reason&hellip;">
   <button id="sort" style="font-size:14px;padding:8px 12px;border:1px solid var(--line);background:#fff;cursor:pointer;">Newest first</button>
+  <button id="csv" style="font-size:14px;padding:8px 12px;border:1px solid var(--line);background:#fff;cursor:pointer;">Download CSV</button>
   <span class="count" id="count"></span>
 </div>
 <table>
   <thead><tr>
-    <th id="th-date">Effective date &#8597;</th><th>Added</th><th>Removed</th><th>Reason</th>
+    <th id="th-date">Effective date &#8597;</th><th>Added</th><th>Removed</th><th>Reason</th><th>Source</th>
   </tr></thead>
   <tbody id="rows"></tbody>
 </table>
 
+<h2>Data sources &amp; methodology</h2>
+<div class="sources">
+  <div class="src-row">
+    <div class="src-n">1</div>
+    <div><strong>Change log</strong> &mdash; Wikipedia, &ldquo;Historical components of the S&amp;P 500&rdquo;.
+      <a href="https://en.wikipedia.org/wiki/Historical_components_of_the_S%26P_500">Live article</a> &middot;
+      <a href="https://en.wikipedia.org/w/index.php?title=Historical_components_of_the_S%26P_500&oldid=1379179365">Permanent revision (Oct 8, 2026)</a> &middot; retrieved Oct 14, 2026.
+      392 events, Jan 2007&ndash;Oct 2026. Each row carries its own citation: 270 link to the row&rsquo;s original reference
+      (mostly S&amp;P Dow Jones Indices announcements); the rest cite the Wikipedia table itself.
+      Dates are effective dates as published; announcement and effective dates can differ by a day.</div>
+  </div>
+  <div class="src-row">
+    <div class="src-n">2</div>
+    <div><strong>Prices</strong> &mdash; SPY monthly closes, <a href="https://finance.yahoo.com/quote/SPY">Yahoo Finance</a>,
+      retrieved Oct 14, 2026. 240 months, Nov 2006&ndash;Oct 2026 (unadjusted closes).</div>
+  </div>
+  <div class="src-row">
+    <div class="src-n">3</div>
+    <div><strong>Corrections applied Oct 14, 2026</strong> &mdash;
+      (a) Added the missing 2010-02-16 swap: Berkshire Hathaway (BRK.B) replaced Burlington Northern Santa Fe (BNI),
+      which Berkshire acquired &mdash; <a href="https://www.reuters.com/article/idUSTRE60P6OO20100126/">Reuters, Jan 26 2010</a>;
+      (b) fixed ticker artifacts on the 2013-12-02 Allegion/JCPenney row.</div>
+  </div>
+  <div class="src-row">
+    <div class="src-n">4</div>
+    <div><strong>Completeness audit.</strong> Every current constituent&rsquo;s &ldquo;Date added&rdquo; was checked against the log:
+      all 49 apparent misses resolved as ticker renames (EG=RE, META=FB, CPAY=FLT, TT=IR, SATS&rarr;ECHO, WRK&rarr;SW,
+      DLPH&rarr;APTV) or erroneous &ldquo;Date added&rdquo; values with no S&amp;P announcement (D, SRE, TROW, HUM, AKAM).
+      The widely reported GE/Walgreens 2018 swap was Dow Jones Industrial Average only, not S&amp;P 500. No other gaps found.</div>
+  </div>
+  <p class="fine"><strong>Limitations.</strong> Wikipedia&rsquo;s table is community-maintained and thinner for 2007&ndash;2010;
+    a few early entries may be missing. One-sided rows (empty Added or Removed) reflect spin-offs or corporate actions
+    recorded as single-sided changes. S&amp;P occasionally swaps several pairs on one date (quarterly rebalances).</p>
+</div>
+
 <footer>
-  <p><strong>Sources.</strong> Change log compiled from the Wikipedia article &ldquo;Historical components of the S&amp;P 500&rdquo; (effective dates as published; announcement vs. effective dates can differ by a day). SPY monthly closes from Yahoo Finance.</p>
-  <p><strong>Coverage.</strong> Wikipedia&rsquo;s table is community-maintained and essentially complete for recent years; a handful of early-2000s entries may be missing. S&amp;P occasionally swaps more than one pair on a single date (e.g., quarterly rebalances).</p>
-  <p><strong>Note.</strong> A row with an empty &ldquo;Added&rdquo; or &ldquo;Removed&rdquo; cell reflects a spin-off or other corporate action recorded as a one-sided index change.</p>
+  <p>Built Oct 14, 2026. Change data: Wikipedia (CC BY-SA). Prices: Yahoo Finance.</p>
 </footer>
 </div>
 
+<script src="events.js"></script>
 <script>
 const SPY = __SPY__;
-const EVENTS = __EVENTS__;
 const esc = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 
 // ---- group events by date
@@ -284,7 +326,6 @@ cv.addEventListener('click', e => {
     document.getElementById('yr').value = best.date.slice(0,4);
     document.getElementById('q').value = best.date;
     zoomYear = best.date.slice(0,4);
-    render(); draw();
     document.getElementById('rows').scrollIntoView({behavior:'smooth', block:'start'});
   }
 });
@@ -301,6 +342,15 @@ function filtered(){
   rows.sort((a,b)=> desc ? (a.date<b.date?1:-1) : (a.date>b.date?1:-1));
   return rows;
 }
+const WIKI_URL = 'https://en.wikipedia.org/wiki/Historical_components_of_the_S%26P_500';
+function srcCell(e){
+  if (e.src){
+    const dom = e.src.replace(/^https?:\/\/(www\.)/,'').replace(/^https?:\/\//,'').split('/')[0];
+    const note = e.src_note ? ' title="'+esc(e.src_note)+'"' : '';
+    return '<span class="srclink"><a href="'+esc(e.src)+'"'+note+'>'+esc(dom)+'</a></span>';
+  }
+  return '<span class="srclink"><a href="'+WIKI_URL+'">wikipedia</a></span>';
+}
 function render(){
   const rows = filtered();
   const tb = document.getElementById('rows');
@@ -311,7 +361,7 @@ function render(){
     return '<tr><td class="date">'+fmtDate(e.date)+'</td>'+
       '<td>'+(e.added_t?'<span class="tk a">'+esc(e.added_t)+'</span> <span class="nm">'+esc(e.added_n)+'</span>':'<span class="nm">&mdash;</span>')+'</td>'+
       '<td>'+(e.removed_t?'<span class="tk r">'+esc(e.removed_t)+'</span> <span class="nm">'+esc(e.removed_n)+'</span>':'<span class="nm">&mdash;</span>')+'</td>'+
-      '<td class="rsn">'+rsn+'</td></tr>';
+      '<td class="rsn">'+rsn+'</td><td>'+srcCell(e)+'</td></tr>';
   }).join('');
   document.getElementById('count').textContent = rows.length + ' of ' + EVENTS.length + ' events';
   tb.querySelectorAll('.more').forEach(m => m.addEventListener('click', () => {
@@ -333,14 +383,24 @@ document.getElementById('th-date').addEventListener('click', () => {
   document.getElementById('sort').textContent = desc ? 'Newest first' : 'Oldest first';
   render();
 });
+document.getElementById('csv').addEventListener('click', () => {
+  const q = v => '"'+String(v==null?'':v).replace(/"/g,'""')+'"';
+  const lines = ['date,added_ticker,added_name,removed_ticker,removed_name,reason,source_url'];
+  EVENTS.forEach(e => lines.push([e.date,e.added_t,e.added_n,e.removed_t,e.removed_n,e.reason,e.src||''].map(q).join(',')));
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([lines.join('\\n')], {type:'text/csv'}));
+  a.download = 'sp500-constituent-changes-2007-2026.csv'; a.click();
+  setTimeout(()=>URL.revokeObjectURL(a.href), 4000);
+});
 render(); draw();
 </script>
 </body>
 </html>
 """
 
-page = page.replace('__SPY__', spy_json).replace('__EVENTS__', ev_json)
+page = page.replace('__SPY__', spy_json)
 open('index.html','w').write(page)
+open('events.js','w').write('var EVENTS = ' + ev_json + ';')
 import os
-print("index.html bytes:", os.path.getsize('index.html'))
+print("index.html bytes:", os.path.getsize('index.html'), "| events.js bytes:", os.path.getsize('events.js'))
 print("events:", len(EV), "| spy pts:", len(SPY))
