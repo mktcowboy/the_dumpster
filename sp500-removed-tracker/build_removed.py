@@ -5,6 +5,11 @@ import json, datetime
 REMOVED = json.load(open('removed_list.json'))
 PRICES = json.load(open('removed_prices.json'))
 SPY = json.load(open('spy_monthly.json'))  # [{'d': iso, 'c': close}]
+EV = json.load(open('changes_20yr.json'))
+SRC = {}
+for e in EV:
+    if e['removed_t']:
+        SRC.setdefault((e['date'], e['removed_t']), e.get('src'))
 
 spy_dates = [p['d'] for p in SPY]
 spy_close = [p['c'] for p in SPY]
@@ -19,13 +24,19 @@ def spy_rebased(rem_date):
 
 records = []
 no_data = []
+REUSE_DAYS = 365
 for r in REMOVED:
     t = r['ticker']
     pts = PRICES.get(t)
-    if not pts:
+    rem_d = datetime.date.fromisoformat(r['removed'])
+    # ticker-reuse guard: if the earliest price bar starts >1yr after the
+    # removal, the data belongs to a different company reusing the ticker
+    reused = bool(pts) and (datetime.date.fromisoformat(pts[0][0]) - rem_d).days > REUSE_DAYS
+    if not pts or reused:
         no_data.append(t)
         records.append({'t': t, 'n': r['name'], 'rem': r['removed'], 'add': r['added'],
-                        'reason': r['reason'], 'data': None})
+                        'reason': r['reason'], 'src': SRC.get((r['removed'], t)),
+                        'reused': bool(reused), 'data': None})
         continue
     dates = [p[0] for p in pts]
     closes = [p[1] for p in pts]
@@ -39,7 +50,7 @@ for r in REMOVED:
     if bi is None:
         no_data.append(t)
         records.append({'t': t, 'n': r['name'], 'rem': r['removed'], 'add': r['added'],
-                        'reason': r['reason'], 'data': None})
+                        'reason': r['reason'], 'src': SRC.get((r['removed'], t)), 'data': None})
         continue
     base = closes[bi]
     last = closes[-1]
@@ -52,6 +63,7 @@ for r in REMOVED:
     status = 'trading' if dates[-1] >= '2026-09-01' else 'delisted ' + dates[-1]
     records.append({
         't': t, 'n': r['name'], 'rem': r['removed'], 'add': r['added'], 'reason': r['reason'],
+        'src': SRC.get((r['removed'], t)),
         'px': [[d, c] for d, c in zip(dates, closes)],
         'bi': bi, 'base': base, 'last': last, 'lastd': dates[-1],
         'tot': round(tot * 100, 2), 'ann': round(ann * 100, 2),
@@ -148,6 +160,16 @@ page = """<!DOCTYPE html>
   .legend{display:flex; gap:22px; font-size:13px; color:var(--gray); padding:10px 4px 0; flex-wrap:wrap;}
   .sw{display:inline-block; width:22px; height:3px; vertical-align:middle; margin-right:7px;}
   .warn{background:#fdf6ec; border:1px solid #e8c87a; padding:10px 14px; font-size:13px; margin:14px 0; color:#6b4e12;}
+  .srclink{font-size:12px; color:var(--navy); white-space:nowrap;}
+  .srclink a{color:var(--navy);}
+  .sources{margin-top:6px; font-size:13.5px;}
+  .src-row{display:flex; gap:14px; padding:12px 0; border-bottom:1px solid var(--line);}
+  .src-n{flex:0 0 26px; height:26px; border:1px solid var(--navy); color:var(--navy); border-radius:50%;
+         display:flex; align-items:center; justify-content:center; font-size:13px; font-weight:700;}
+  .src-row a{color:var(--navy);}
+  .fine{font-size:12.5px; color:var(--gray); margin-top:12px;}
+  .dsrc{font-size:13px; color:var(--gray); margin:2px 0 0;}
+  .dsrc a{color:var(--navy);}
   footer{margin-top:44px; border-top:1px solid var(--line); padding-top:14px; font-size:12.5px; color:var(--gray);}
   footer p{margin:6px 0;}
   @media (max-width:700px){ .stat{flex:1 1 45%;} canvas{height:300px;} }
@@ -177,10 +199,11 @@ page = """<!DOCTYPE html>
       <option value="ret-d">Return since removal &darr;</option><option value="ret-a">Return since removal &uarr;</option>
       <option value="exc-d">Excess vs SPY &darr;</option><option value="name">Name A&ndash;Z</option>
     </select>
+    <button id="csv" style="font-size:14px;padding:8px 12px;border:1px solid var(--line);background:#fff;cursor:pointer;">Download CSV</button>
     <span class="count" id="count"></span>
   </div>
   <table><thead><tr>
-    <th>Ticker</th><th>Company</th><th>Removed</th><th>Return since removal</th><th>vs SPY</th><th>Status</th>
+    <th>Ticker</th><th>Company</th><th>Removed</th><th>Return since removal</th><th>vs SPY</th><th>Status</th><th>Source</th>
   </tr></thead><tbody id="rows"></tbody></table>
 </div>
 
@@ -190,6 +213,7 @@ page = """<!DOCTYPE html>
     <h2 id="d-title"></h2>
     <p class="meta" id="d-meta"></p>
     <p class="reason" id="d-reason"></p>
+    <p class="dsrc" id="d-src"></p>
   </div>
   <div id="d-warn"></div>
   <div class="cards" id="d-cards"></div>
@@ -202,10 +226,43 @@ page = """<!DOCTYPE html>
   </div>
 </div>
 
+<h2>Data sources &amp; methodology</h2>
+<div class="sources">
+  <div class="src-row">
+    <div class="src-n">1</div>
+    <div><strong>Removal log</strong> &mdash; Wikipedia, &ldquo;Historical components of the S&amp;P 500&rdquo;.
+      <a href="https://en.wikipedia.org/wiki/Historical_components_of_the_S%26P_500">Live article</a> &middot;
+      <a href="https://en.wikipedia.org/w/index.php?title=Historical_components_of_the_S%26P_500&oldid=1379179365">Permanent revision (Oct 8, 2026)</a> &middot; retrieved Oct 14, 2026.
+      362 distinct tickers removed, Jan 2007&ndash;Oct 2026. Each removal links to its own citation where the
+      Wikipedia row had one (mostly S&amp;P Dow Jones Indices announcements).</div>
+  </div>
+  <div class="src-row">
+    <div class="src-n">2</div>
+    <div><strong>Prices</strong> &mdash; monthly closes for each removed ticker plus SPY,
+      <a href="https://finance.yahoo.com/">Yahoo Finance</a>, retrieved Oct 14, 2026.
+      164 tickers have history; 198 delisted (acquired/bankrupt) tickers have none and show the removal record only.</div>
+  </div>
+  <div class="src-row">
+    <div class="src-n">3</div>
+    <div><strong>Corrections applied Oct 14, 2026</strong> &mdash;
+      added the missing 2010-02-16 swap: Berkshire Hathaway (BRK.B) replaced Burlington Northern Santa Fe (BNI),
+      which Berkshire acquired &mdash; <a href="https://www.reuters.com/article/idUSTRE60P6OO20100126/">Reuters, Jan 26 2010</a>;
+      fixed ticker artifacts on the 2013-12-02 Allegion/JCPenney row.</div>
+  </div>
+  <div class="src-row">
+    <div class="src-n">4</div>
+    <div><strong>Method.</strong> Returns are price returns (exclude dividends), rebased to 100 on the first month-end
+      on/after the removal date, running to the latest available price. Annualized = geometric mean over elapsed months.
+      &ldquo;Still trading&rdquo; means price data reaches Sep 2026 or later.</div>
+  </div>
+  <p class="fine"><strong>Limitations.</strong> Wikipedia&rsquo;s table is community-maintained and thinner for 2007&ndash;2010.
+    Completeness was audited against current constituents&rsquo; &ldquo;Date added&rdquo; values: all apparent misses resolved as
+    ticker renames or erroneous dates; the GE/Walgreens 2018 swap was Dow Jones Industrial Average only. See the
+    <a href="https://github.com/redacted/the_dumpster/tree/main/sp500-removed-tracker">dumpster README</a> for the full audit.</p>
+</div>
+
 <footer>
-  <p><strong>Sources.</strong> Removal dates, names and reasons: Wikipedia, &ldquo;Historical components of the S&amp;P 500&rdquo; (retrieved 2026-10-14). Prices: monthly closes, Yahoo Finance.</p>
-  <p><strong>Method.</strong> Returns are price returns (exclude dividends), rebased to 100 on the first month-end on/after the removal date. &ldquo;Since removal&rdquo; runs to the latest available price. Annualized = geometric mean over elapsed months.</p>
-  <p><strong>Coverage.</strong> Tickers delisted after acquisition or bankruptcy (e.g., Lehman, Symbol Technologies) generally have no Yahoo price history and show as &ldquo;no data&rdquo;. A few still-listed tickers may fail to load for the same reason.</p>
+  <p>Built Oct 14, 2026. Change data: Wikipedia (CC BY-SA). Prices: Yahoo Finance.</p>
 </footer>
 </div>
 __SCRIPTS__
@@ -225,6 +282,14 @@ function passFilter(r){
   if (f==='dead') return !r.px || r.status!=='trading';
   return true;
 }
+const WIKI_URL = 'https://en.wikipedia.org/wiki/Historical_components_of_the_S%26P_500';
+function srcCell(r){
+  if (r.src){
+    const dom = r.src.replace(/^https?:\/\/(www\.)?/,'').split('/')[0];
+    return '<span class="srclink"><a href="'+esc(r.src)+'">'+esc(dom)+'</a></span>';
+  }
+  return '<span class="srclink"><a href="'+WIKI_URL+'">wikipedia</a></span>';
+}
 function renderList(){
   const q = document.getElementById('q').value.trim().toLowerCase();
   const s = document.getElementById('sort').value;
@@ -236,13 +301,13 @@ function renderList(){
   }[s];
   rows.sort(key);
   rowsEl.innerHTML = rows.map(r => {
-    const st = !r.px ? '<span class="pill">no data</span>'
+    const st = !r.px ? (r.reused ? '<span class="pill">ticker reused</span>' : '<span class="pill">no data</span>')
       : r.status==='trading' ? '<span class="pill live">still trading</span>'
       : '<span class="pill">delisted '+esc(r.status.slice(9))+'</span>';
     return '<tr class="rowlink" data-t="'+esc(r.t)+'"><td><span class="tk">'+esc(r.t)+'</span></td>'+
       '<td><span class="nm">'+esc(r.n)+'</span></td>'+
       '<td class="date">'+fmtD(r.rem)+'</td>'+
-      '<td>'+sgn(r.tot)+'</td><td>'+sgn(r.exc,' pp')+'</td><td>'+st+'</td></tr>';
+      '<td>'+sgn(r.tot)+'</td><td>'+sgn(r.exc,' pp')+'</td><td>'+st+'</td><td>'+srcCell(r)+'</td></tr>';
   }).join('');
   document.getElementById('count').textContent = rows.length + ' of ' + RD.length + ' stocks';
   rowsEl.querySelectorAll('tr.rowlink').forEach(tr =>
@@ -274,10 +339,15 @@ function openDetail(t){
   document.getElementById('d-meta').textContent =
     'Removed '+fmtD(D.rem)+(D.add ? '  ·  Added '+fmtD(D.add) : '  ·  Added before 2007 (outside log window)');
   document.getElementById('d-reason').textContent = D.reason;
+  document.getElementById('d-src').innerHTML = 'Source: ' + (D.src
+    ? '<a href="'+esc(D.src)+'">'+esc(D.src.replace(/^https?:\/\/(www\.)?/,'').split('/')[0])+'</a>'
+    : '<a href="'+WIKI_URL+'">Wikipedia change log</a>');
   document.getElementById('lg-t').textContent = D.t;
   const w = document.getElementById('d-warn');
   if (!D.px){
-    w.innerHTML = '<div class="warn">No Yahoo price history for '+esc(D.t)+' &mdash; the ticker was almost certainly delisted (acquired or bankrupt). The removal record above is complete.</div>';
+    w.innerHTML = D.reused
+      ? '<div class="warn">The ticker '+esc(D.t)+' was later reused by a different company, so there is no clean price history for '+esc(D.n)+' after removal. The removal record above is complete.</div>'
+      : '<div class="warn">No Yahoo price history for '+esc(D.t)+' &mdash; the ticker was almost certainly delisted (acquired or bankrupt). The removal record above is complete.</div>';
     document.getElementById('d-cards').innerHTML=''; drawEmpty(); window.scrollTo(0,0); return;
   }
   w.innerHTML = D.status!=='trading'
@@ -375,6 +445,17 @@ cv.addEventListener('mousemove', e=>{
 });
 cv.addEventListener('mouseleave', ()=>tip.style.display='none');
 window.addEventListener('resize', ()=>{ if(D&&D.px) draw(); });
+document.getElementById('csv').addEventListener('click', () => {
+  const q = v => '"'+String(v==null?'':v).replace(/"/g,'""')+'"';
+  const lines = ['ticker,company,removed_date,added_date,reason,return_since_removal_pct,annualized_pct,spy_return_pct,excess_vs_spy_pp,status,source_url'];
+  RD.forEach(r => lines.push([r.t,r.n,r.rem,r.add||'',r.reason,
+    r.tot==null?'':r.tot, r.ann==null?'':r.ann, r.spy_tot==null?'':r.spy_tot, r.exc==null?'':r.exc,
+    !r.px?'no price data':r.status, r.src||''].map(q).join(',')));
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([lines.join('\\n')], {type:'text/csv'}));
+  a.download = 'sp500-removed-stocks.csv'; a.click();
+  setTimeout(()=>URL.revokeObjectURL(a.href), 4000);
+});
 renderList();
 </script>
 </body>

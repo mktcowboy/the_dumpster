@@ -23,9 +23,11 @@ performance stats since removal.
 ## Stats (Oct 14, 2026)
 
 - 362 distinct tickers removed since Jan 2007
-- 164 with Yahoo price history; 198 delisted with no data (acquired/bankrupt —
-  shown as "no data" rows with the removal record intact)
-- Median price return since removal: +2.1%; only 33 of 164 beat SPY over
+- 126 with Yahoo price history; 198 delisted with no data (acquired/bankrupt)
+  and 38 whose tickers were later reused by a different company (flagged
+  "ticker reused" — their price data belongs to the new company, so it is
+  excluded rather than shown)
+- Median price return since removal: +8.5%; only 30 of 126 beat SPY over
   their post-removal window (price returns, ex-dividends)
 
 ## Method
