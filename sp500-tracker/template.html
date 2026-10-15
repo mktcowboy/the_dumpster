@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>S&amp;P 500 Tracker — Constituents &amp; Removed Stocks</title>
+  <style>/*__STYLES__*/</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="eyebrow">INDEX MEMBERSHIP · 2007–2026</p>
+    <h1>S&amp;P 500 Tracker</h1>
+    <p class="sub">Explore constituent changes, open any ticker, and compare its performance with other stocks and SPY.</p>
+  </header>
+  <nav class="tabs" aria-label="Tracker views">
+    <button id="tab-changes" class="active" aria-pressed="true" data-view="changes">Constituent changes</button>
+    <button id="tab-removed" aria-pressed="false" data-view="removed">Removed stocks</button>
+    <button id="tab-stocks" aria-pressed="false" data-view="stocks">All tickers in log</button>
+  </nav>
+  <main>
+    <section id="overview">
+      <div class="stats" id="stats"></div>
+      <div id="history">
+        <h2>SPY &amp; index changes</h2>
+        <div class="chartbox"><canvas id="history-chart" aria-label="SPY monthly prices with index change markers"></canvas><div class="tooltip" id="history-tip"></div></div>
+        <div class="legend"><span><i style="background:#14324f"></i>SPY monthly close</span><span><i style="background:#1f5fa8"></i>Net additions</span><span><i style="background:#b3372f"></i>Net removals</span><span><i style="background:#929ba7"></i>Balanced change</span></div>
+        <p class="hint">Hover for changes and prices. Click a marker to filter that day. Select a year to zoom.</p>
+        <h2>Additions &amp; removals by year</h2>
+        <div id="year-bars" class="year-bars"></div>
+      </div>
+      <h2 id="table-title">Constituent change log</h2>
+      <div class="controls">
+        <input id="search" type="search" placeholder="Search ticker, company, reason, or date…" aria-label="Search records">
+        <select id="year" aria-label="Filter year"><option value="all">All years</option></select>
+        <select id="coverage" aria-label="Filter price coverage" hidden><option value="all">All price coverage</option><option value="available">With price history</option><option value="unavailable">Without usable history</option></select>
+        <select id="sort" aria-label="Sort records"><option value="newest">Newest first</option><option value="oldest">Oldest first</option><option value="ticker">Ticker A–Z</option><option value="return-high" data-stock-sort>Highest return</option><option value="return-low" data-stock-sort>Lowest return</option><option value="excess" data-stock-sort>Best vs SPY</option></select>
+        <button id="csv">Download CSV</button>
+        <span class="count" id="count" aria-live="polite"></span>
+      </div>
+      <p class="hint" id="table-hint">Click an added or removed ticker to open its chart and comparison tools.</p>
+      <div class="table-wrap"><table><thead id="table-head"></thead><tbody id="rows"></tbody></table></div>
+    </section>
+    <section id="detail" hidden>
+      <button id="back">← Back to records</button>
+      <div class="detail-heading"><p class="eyebrow" id="detail-context"></p><h2 id="detail-title"></h2><p class="sub" id="detail-meta"></p><p id="detail-reason"></p><p class="source" id="detail-source"></p></div>
+      <div class="compare-controls">
+        <div><label for="compare">Compare with</label><div class="compare-add"><select id="compare"></select><button id="add-compare">Add stock</button></div></div>
+        <div><label for="baseline">Start at</label><select id="baseline"><option value="event">Index event</option><option value="history">Full available history</option></select></div>
+        <div><label for="horizon">Period</label><select id="horizon"><option value="all">Latest available</option><option value="12">1 year</option><option value="36">3 years</option><option value="60">5 years</option></select></div>
+        <label class="checkbox"><input id="include-spy" type="checkbox" checked>Include SPY</label>
+      </div>
+      <div id="compare-chips" class="chips"></div>
+      <div id="detail-notes" aria-live="polite"></div>
+      <p id="comparison-window" class="hint"></p>
+      <div class="chartbox"><canvas id="detail-chart" aria-label="Stock comparison chart rebased to 100"></canvas><div class="tooltip" id="detail-tip"></div></div>
+      <div id="detail-legend" class="legend"></div>
+      <div class="table-wrap"><table><thead><tr><th>Series</th><th>Price return</th><th>Annualized</th><th>vs SPY</th><th>Start close</th><th>End close</th></tr></thead><tbody id="performance"></tbody></table></div>
+      <p class="hint">All compared series start at 100 on the same month and use the same end month. Returns exclude dividends. The period begins at the selected start; it is not a trailing window.</p>
+      <h2>Membership events for this ticker</h2>
+      <div class="table-wrap"><table><thead><tr><th>Effective date</th><th>Action</th><th>Company</th><th>Reason</th><th>Source</th></tr></thead><tbody id="ticker-events"></tbody></table></div>
+    </section>
+  </main>
+  <details class="methodology">
+    <summary>Data sources &amp; methodology</summary>
+    <p>Membership: <a href="https://en.wikipedia.org/wiki/Historical_components_of_the_S%26P_500">Historical components of the S&amp;P 500</a>, retrieved October 14, 2026; <a href="https://en.wikipedia.org/w/index.php?title=Historical_components_of_the_S%26P_500&amp;oldid=1379179365">archived revision</a>. Original row citations are preserved. The log records turnover, not a complete membership roster.</p>
+    <p>Prices: cached monthly unadjusted closes from <a href="https://finance.yahoo.com/">Yahoo Finance</a>. The latest month may be incomplete. A monthly bar is labeled by its month; the event baseline uses the event month or the first common month afterward. It is not an exact trade at the event date. Returns and annualized returns are calculated from the common comparison window. Annualization uses elapsed calendar months.</p>
+    <p>A price history beginning more than a year after a ticker’s earliest recorded event is excluded as possible ticker reuse. Missing history does not establish that a company is bankrupt or delisted. Ticker renames and separate membership spells remain separate log events; unknown addition dates remain unknown.</p>
+    <p>Corrections preserved: Berkshire Hathaway/Burlington Northern Santa Fe, February 16, 2010 (<a href="https://www.reuters.com/article/idUSTRE60P6OO20100126/">Reuters</a>), and Allegion/JCPenney ticker artifacts, December 2, 2013. Wikipedia coverage is thinner in early years; one-sided entries reflect corporate actions. The earlier audit reported 49 apparent addition-date mismatches resolved as ticker renames or questionable source dates.</p>
+    <p>Use the source links to inspect individual events. This page includes the saved snapshot and does not automatically refresh prices. Change data: Wikipedia, CC BY-SA.</p>
+  </details>
+  <footer>One tracker · constituent changes and removed-stock performance · <a href="README.md">Project notes</a></footer>
+</div>
+<script>
+/*__DATA__*/
+/*__APP__*/
+</script>
+</body>
+</html>
