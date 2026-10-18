@@ -1,0 +1,432 @@
+[
+ {
+  "county": "Falls",
+  "slug": "Falls-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Falls-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Limestone",
+  "slug": "Limestone-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Limestone-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Coryell",
+  "slug": "Coryell-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Coryell-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Bell",
+  "slug": "Bell-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Bell-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Madison",
+  "slug": "Madison-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Madison-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Lavaca",
+  "slug": "Lavaca-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Lavaca-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Comal",
+  "slug": "Comal-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Comal-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Hill",
+  "slug": "Hill-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Hill-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Williamson",
+  "slug": "Williamson-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Williamson-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Ellis",
+  "slug": "Ellis-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Ellis-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Gonzales",
+  "slug": "Gonzales-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Gonzales-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Fayette",
+  "slug": "Fayette-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Fayette-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Caldwell",
+  "slug": "Caldwell-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Caldwell-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Travis",
+  "slug": "Travis-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Travis-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Montgomery",
+  "slug": "Montgomery-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Montgomery-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Bastrop",
+  "slug": "Bastrop-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Bastrop-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "McLennan",
+  "slug": "McLennan-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/McLennan-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Washington",
+  "slug": "Washington-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Washington-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Leon",
+  "slug": "Leon-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Leon-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Brazos",
+  "slug": "Brazos-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Brazos-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Burleson",
+  "slug": "Burleson-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Burleson-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Lee",
+  "slug": "Lee-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Lee-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Robertson",
+  "slug": "Robertson-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Robertson-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Austin",
+  "slug": "Austin-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Austin-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Hays",
+  "slug": "Hays-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Hays-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Dallas",
+  "slug": "Dallas-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Dallas-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Harris",
+  "slug": "Harris-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Harris-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Navarro",
+  "slug": "Navarro-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Navarro-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Waller",
+  "slug": "Waller-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Waller-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Grimes",
+  "slug": "Grimes-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Grimes-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Colorado",
+  "slug": "Colorado-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Colorado-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Freestone",
+  "slug": "Freestone-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Freestone-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Guadalupe",
+  "slug": "Guadalupe-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Guadalupe-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Fort Bend",
+  "slug": "Fort-Bend-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Fort-Bend-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Milam",
+  "slug": "Milam-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Milam-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Bexar",
+  "slug": "Bexar-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Bexar-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Bosque",
+  "slug": "Bosque-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Bosque-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Walker",
+  "slug": "Walker-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Walker-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Wharton",
+  "slug": "Wharton-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Wharton-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Henderson",
+  "slug": "Henderson-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Henderson-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Blanco",
+  "slug": "Blanco-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Blanco-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Kaufman",
+  "slug": "Kaufman-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Kaufman-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Burnet",
+  "slug": "Burnet-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Burnet-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Tarrant",
+  "slug": "Tarrant-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Tarrant-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Wilson",
+  "slug": "Wilson-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Wilson-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Brazoria",
+  "slug": "Brazoria-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Brazoria-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Lampasas",
+  "slug": "Lampasas-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Lampasas-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Rockwall",
+  "slug": "Rockwall-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Rockwall-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Houston",
+  "slug": "Houston-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Houston-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Galveston",
+  "slug": "Galveston-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Galveston-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Medina",
+  "slug": "Medina-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Medina-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "San Jacinto",
+  "slug": "San-Jacinto-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/San-Jacinto-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Denton",
+  "slug": "Denton-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Denton-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Kendall",
+  "slug": "Kendall-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Kendall-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Johnson",
+  "slug": "Johnson-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Johnson-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Anderson",
+  "slug": "Anderson-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Anderson-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Llano",
+  "slug": "Llano-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Llano-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Hamilton",
+  "slug": "Hamilton-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Hamilton-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Atascosa",
+  "slug": "Atascosa-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Atascosa-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Bandera",
+  "slug": "Bandera-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Bandera-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Chambers",
+  "slug": "Chambers-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Chambers-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Liberty",
+  "slug": "Liberty-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Liberty-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Trinity",
+  "slug": "Trinity-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Trinity-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "DeWitt",
+  "slug": "DeWitt-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/DeWitt-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Hunt",
+  "slug": "Hunt-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Hunt-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Collin",
+  "slug": "Collin-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Collin-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Matagorda",
+  "slug": "Matagorda-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Matagorda-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Kerr",
+  "slug": "Kerr-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Kerr-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Jackson",
+  "slug": "Jackson-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Jackson-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Polk",
+  "slug": "Polk-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Polk-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Wise",
+  "slug": "Wise-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Wise-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Parker",
+  "slug": "Parker-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Parker-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Somervell",
+  "slug": "Somervell-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Somervell-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Karnes",
+  "slug": "Karnes-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Karnes-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "San Saba",
+  "slug": "San-Saba-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/San-Saba-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Van Zandt",
+  "slug": "Van-Zandt-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Van-Zandt-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Gillespie",
+  "slug": "Gillespie-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Gillespie-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Erath",
+  "slug": "Erath-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Erath-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Hood",
+  "slug": "Hood-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Hood-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Victoria",
+  "slug": "Victoria-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Victoria-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Comanche",
+  "slug": "Comanche-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Comanche-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Goliad",
+  "slug": "Goliad-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Goliad-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Fannin",
+  "slug": "Fannin-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Fannin-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Grayson",
+  "slug": "Grayson-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Grayson-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Cherokee",
+  "slug": "Cherokee-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Cherokee-County_TX/type-land/lot-sqft-217800"
+ },
+ {
+  "county": "Rains",
+  "slug": "Rains-County_TX",
+  "url": "https://www.realtor.com/realestateandhomes-search/Rains-County_TX/type-land/lot-sqft-217800"
+ }
+]
