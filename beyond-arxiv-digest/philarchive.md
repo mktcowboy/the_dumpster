@@ -1,3 +1,7 @@
+---
+checked: 17 of 20 list a journal, encyclopedia or edited volume on PhilArchive (shown on each card); 3 are manuscripts. Spot-checks against publishers (Oct 18, 2026): #2 (in press at *Mind*) and #3 (SEP) confirmed; #1 and #7 could not yet be confirmed outside PhilArchive's own records.
+---
+
 # Philosophy — PhilArchive Top 20 (scout report, received Oct 18, 2026)
 
 ## Stats hunt: the verdict
@@ -12,7 +16,11 @@ No public stats source exists for PhilArchive/PhilPapers. Checked: 6 web-search 
 ## Top 20 (uploaded Oct 12–18, 2026)
 1. [The Limits of Reasonable Disagreement](https://philarchive.org/rec/TAYTLO-7) — Anthony Taylor — Oct 15 — *The Philosophical Review* 135(4), 2026. New defense of political liberalism: reinterprets the "reasonable acceptability" test so liberal principles survive the too-little-overlap objection.
 2. [Probability for Trivalent Conditionals](https://philarchive.org/rec/GRPFTW) — Paul Égré, Lorenzo Rossi & Jan Sprenger — Oct 14 — *Mind*, 2026. Unified trivalent theory of conditionals; derives Stalnaker's Thesis in full generality; turns Bayesian updating on conditionals into material-conditional updating.
+   - corroboration: listed as in press at *Mind* in the [University of Turin repository](https://iris.unito.it/handle/2318/2142754); companion paper in the Australasian Journal of Philosophy (2025)
+   - flag: first circulated Jul 2022 (arXiv)
 3. [A Priorism in Moral Epistemology](https://philarchive.org/rec/CHUAPI) — Elijah Chudnoff — Oct 17 — *Stanford Encyclopedia of Philosophy*, forthcoming. Authoritative SEP survey on whether moral judgments can be justified by reason alone.
+   - corroboration: live in the [Stanford Encyclopedia](https://plato.stanford.edu/entries/moral-epistemology-a-priori/)
+   - flag: revision of a 2019 entry
 4. [Solving the puzzle of forever fitting emotions: justifying and requiring reasons](https://philarchive.org/rec/FANSTP) — Ning Fan — Oct 17 — *Philosophical Studies*, forthcoming. Dissolves the "forever fitting emotions" puzzle by splitting reasons into justifying vs. requiring roles.
 5. [The Plurality of Ethical Norms on Belief](https://philarchive.org/rec/QUATPO-6) — Z. Quanbeck — Oct 14 — *Oxford Studies in Normative Ethics*, forthcoming. Against Kantian respect-monism in the ethics of belief; norms on belief come from many sources with different strengths.
 6. [Agent-Relative Prerogatives to Harm Enemies](https://philarchive.org/rec/LANAPT-5) — Benjamin Lange — Oct 14 — *Oxford Studies in Normative Ethics* vol. 17, forthcoming. Defends permissions to harm enemies in protective contexts grounded in "negative partiality."

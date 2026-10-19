@@ -1,3 +1,7 @@
+---
+checked: all 5 are NBER working papers; 3 have independent coverage and 2 have contrasting findings worth reading alongside (Oct 18, 2026). #5 first circulated in Jan 2024. Four more verified NBER papers from the window are listed under Notable elsewhere.
+---
+
 # Economics — SSRN Top Papers, Sep 18 – Oct 18, 2026 (scout report, received Oct 18, 2026)
 
 ## The stats question (user asked explicitly)
@@ -8,10 +12,19 @@ Candidates drawn from NBER's weekly working-paper releases covering Sep 18–Oct
 
 ## Verified SSRN economics papers, Sep 18 – Oct 18, 2026
 1. [The Early Impacts of AI on Employment Among Recent College Graduates](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7502823) — Robert Fairlie, Jane Wu — posted 23 Sep 2026. Using June–August 2026 CPS microdata, finds no AI-driven spike in unemployment among recent college grads versus prior summers or older cohorts — the first empirical test of the "AI is killing entry-level jobs" claim. (Download stats not rendered on the page.)
+   - corroboration: [NBER w35796](https://www.nber.org/papers/w35796); coverage: [UCLA Anderson Review](https://anderson-review.ucla.edu/for-new-college-grads-the-ai-jobpocalypse-didnt-arrive/) · [TaxProf Blog](https://taxprofblog.aals.org/2026/09/29/early-evidence-on-ai-and-college-grad-employment/)
+   - related: counterpoint: Orr, Tucker & Warren find early-career losses in the most AI-exposed majors ([summary](https://aleximas.substack.com/p/has-ai-impacted-the-labor-market))
 2. [Does Remote Work Increase Fertility?](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7549461) — Andrew C. Johnston — posted 1 Oct 2026 — 145 downloads, 350 abstract views. Contrary to popular intuition, a 1-SD increase in teleworkability reduced birth rates 2% among married women while raising their full-time employment 1.3% — remote work raises the opportunity cost of children.
+   - corroboration: [NBER w35881](https://www.nber.org/papers/w35881), promoted by [NBER](https://x.com/nberpubs/status/2110415893050122661)
+   - related: contrasting survey evidence: [Remote work can blunt the fertility decline](https://cepr.org/voxeu/columns/remote-work-can-blunt-fertility-decline) (VoxEU)
 3. [Industrial Policy via the IPO Market](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7546843) — Zhiguo He, Yiming Qian, Xi Sun, Wang Renxuan — posted 1 Oct 2026 — 103 downloads. China's state uses IPO access as industrial policy: policy-favored industries saw 287% more IPOs and 148% higher proceeds than non-favored ones (2002–2022), with a persistent valuation premium after listing.
+   - corroboration: [NBER w35889](https://www.nber.org/papers/w35889); presented at a [University of Macau seminar](https://fba.um.edu.mo/fba-seminar-series-26-058/)
 4. [Taxing Entrepreneurial Wealth: Evidence from Norway, 2021-2025](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7534880) — Marius A.K. Ring — posted 1 Oct 2026. Norway's wealth-tax hikes pushed at most ~100 ultra-rich emigrants (top 0.1%, 2022–23) yet revenues still rose ~71.5% vs. 75% without outmigration; taxed owners' firms invested and paid out no differently — short-run costs of wealth taxation look smaller than the public debate implies. (Page fetch timed out, so download stats unavailable; URL/title/date confirmed via SSRN's indexed content.)
+   - corroboration: [NBER w35854](https://www.nber.org/papers/w35854); coverage: [TaxProf Blog](https://taxprofblog.aals.org/2026/10/06/taxing-entrepreneurial-wealth-evidence-from-norway/)
+   - related: contrasting estimate: [Blandhol, “Curbing Tax Flight?”](https://cblandhol.github.io/JMP/blandhol_JMP.pdf) finds a sharp rise in out-migration in the reform year
 5. [Beveridgean Phillips Curve](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7535352) — Pascal Michaillat, Emmanuel Saez — posted 28 Sep 2026 — 4 downloads, 30 views. A directed-search Phillips curve delivering the "divine coincidence" (inflation on target when unemployment is at its efficient level), convex so inflation reacts more when labor markets are tight — implies the Fed's dual mandate is internally consistent and a soft landing is possible.
+   - corroboration: [NBER w35804](https://www.nber.org/papers/w35804)
+   - flag: first circulated Jan 2024 (arXiv)
 
 ## Near-misses (excluded — no verified SSRN URL, but real and in-window; candidates for a retry once search indexing catches up)
 - Beaman / Jayachandran / Sharma, "The City Through Her Eyes" (India public-space harassment; SSRN page exists per the author's SSRN page but posted date unconfirmed and Downloads: 0)

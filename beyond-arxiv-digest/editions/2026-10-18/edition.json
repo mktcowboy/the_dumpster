@@ -1,0 +1,12 @@
+{
+ "daterange": "September 18 \u2013 October 18, 2026",
+ "compiled": "Oct 18, 2026",
+ "papers": {
+  "psychology": 20,
+  "sociology": 20,
+  "economics": 5,
+  "philosophy": 20,
+  "cryptography": 20,
+  "chemistry": 20
+ }
+}
