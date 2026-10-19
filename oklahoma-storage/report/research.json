@@ -1,0 +1,1230 @@
+{
+  "as_of": "2026-10-19",
+  "sources": {
+    "census_ok": {
+      "title": "Census QuickFacts: Oklahoma",
+      "url": "https://www.census.gov/quickfacts/OK",
+      "kind": "Primary source",
+      "reviewed": "2026-10-19",
+      "published": null,
+      "note": ""
+    },
+    "census_okc": {
+      "title": "Census QuickFacts: Oklahoma City",
+      "url": "https://www.census.gov/quickfacts/oklahomacitycityoklahoma",
+      "kind": "Primary source",
+      "reviewed": "2026-10-19",
+      "published": null,
+      "note": ""
+    },
+    "census_tulsa": {
+      "title": "Census QuickFacts: Tulsa",
+      "url": "https://www.census.gov/quickfacts/tulsacityoklahoma",
+      "kind": "Primary source",
+      "reviewed": "2026-10-19",
+      "published": null,
+      "note": ""
+    },
+    "yardi": {
+      "title": "Yardi: September 2026 national storage update",
+      "url": "https://www.yardi.com/blog/matrix-monthly-self-storage-report-2026/",
+      "kind": "Primary source",
+      "reviewed": "2026-10-19",
+      "published": "2026-09-29",
+      "note": ""
+    },
+    "psa": {
+      "title": "Public Storage closes NSA acquisition",
+      "url": "https://investors.publicstorage.com/news-events/press-releases/news-details/2026/Public-Storage-Announces-Closing-of-National-Storage-Affiliates-Acquisition/default.aspx",
+      "kind": "Primary source",
+      "reviewed": "2026-10-19",
+      "published": "2026-07-22",
+      "note": ""
+    },
+    "exr": {
+      "title": "Extra Space company information",
+      "url": "https://www.extraspace.com/self-storage/faq/company-information/",
+      "kind": "Primary source",
+      "reviewed": "2026-10-19",
+      "published": null,
+      "note": ""
+    },
+    "life": {
+      "title": "Extra Space / Life Storage merger",
+      "url": "https://annualreport.extraspace.com/annualreport/2023/merger.html",
+      "kind": "Primary source",
+      "reviewed": "2026-10-19",
+      "published": "2023 annual report",
+      "note": ""
+    },
+    "cube": {
+      "title": "CubeSmart investor overview",
+      "url": "https://investors.cubesmart.com/overview/default.aspx",
+      "kind": "Primary source",
+      "reviewed": "2026-10-19",
+      "published": null,
+      "note": ""
+    },
+    "sma": {
+      "title": "SmartStop NYSE announcement",
+      "url": "https://investors.smartstopselfstorage.com/news-and-events/press-releases/press-releases-details/2026/SmartStop-to-Ring-Opening-Bell-at-the-New-York-Stock-Exchange-on-April-2/default.aspx",
+      "kind": "Primary source",
+      "reviewed": "2026-10-19",
+      "published": "2026-04-01",
+      "note": ""
+    },
+    "self": {
+      "title": "Global Self Storage investor overview",
+      "url": "https://ir.globalselfstorage.us/",
+      "kind": "Primary source",
+      "reviewed": "2026-10-19",
+      "published": null,
+      "note": ""
+    },
+    "self_sec": {
+      "title": "Global Self Storage 2025 Form 10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1031235/000119312526124051/self-20251231.htm",
+      "kind": "Primary source",
+      "reviewed": "2026-10-19",
+      "published": "2026",
+      "note": ""
+    },
+    "uhaul": {
+      "title": "U-Haul Holding Company investor overview",
+      "url": "https://investors.uhaul.com/",
+      "kind": "Primary source",
+      "reviewed": "2026-10-19",
+      "published": null,
+      "note": ""
+    },
+    "sparebox": {
+      "title": "SpareBox discloses investment-fund joint venture",
+      "url": "https://www.spareboxstorage.com/blog/sparebox-storage-appoints-industry-veteran-kate-matheny-chief-executive-officer",
+      "kind": "Primary source",
+      "reviewed": "2026-10-19",
+      "published": "2023-09-05",
+      "note": "Historical sponsor disclosure; current cap table not independently confirmed."
+    },
+    "prime": {
+      "title": "Prime Group Holdings corporate overview",
+      "url": "https://www.goprimegroup.com/",
+      "kind": "Primary source",
+      "reviewed": "2026-10-19",
+      "published": null,
+      "note": ""
+    },
+    "morningstar": {
+      "title": "Morningstar company and Blue Doors funds",
+      "url": "https://www.morningstarstorage.com/company-info",
+      "kind": "Primary source",
+      "reviewed": "2026-10-19",
+      "published": null,
+      "note": ""
+    },
+    "devon": {
+      "title": "Devon / Inland alliance brochure",
+      "url": "https://www.devonselfstorage.com/wp-content/uploads/2026/01/Devon_TriFold_pages-1.pdf",
+      "kind": "Primary source",
+      "reviewed": "2026-10-19",
+      "published": "2026-01",
+      "note": ""
+    },
+    "clearhome": {
+      "title": "VanWest Partners: ClearHome operating company",
+      "url": "https://www.vanwestpartners.com/about",
+      "kind": "Primary source",
+      "reviewed": "2026-10-19",
+      "published": null,
+      "note": ""
+    },
+    "ko": {
+      "title": "KO Storage: family-owned business",
+      "url": "https://www.kostorage.com/about-us",
+      "kind": "Primary source",
+      "reviewed": "2026-10-19",
+      "published": null,
+      "note": ""
+    },
+    "arbor": {
+      "title": "Arborstone owner and third-party manager",
+      "url": "https://www.arborstonestorage.com/third-party-management/faqs/",
+      "kind": "Primary source",
+      "reviewed": "2026-10-19",
+      "published": null,
+      "note": ""
+    },
+    "click": {
+      "title": "Click Storage about page",
+      "url": "https://click4storage.com/about/",
+      "kind": "Primary source",
+      "reviewed": "2026-10-19",
+      "published": null,
+      "note": ""
+    },
+    "attic": {
+      "title": "Attic Storage regional platform",
+      "url": "https://www.attic-storage.com/",
+      "kind": "Primary source",
+      "reviewed": "2026-10-19",
+      "published": null,
+      "note": ""
+    },
+    "storelocal": {
+      "title": "Storelocal brand program and retained ownership",
+      "url": "https://members.storelocal.com/brand",
+      "kind": "Primary source",
+      "reviewed": "2026-10-19",
+      "published": null,
+      "note": ""
+    },
+    "storagerus": {
+      "title": "Storage R Us official locations",
+      "url": "https://www.storage-r-us.net/",
+      "kind": "Primary source",
+      "reviewed": "2026-10-19",
+      "published": null,
+      "note": ""
+    },
+    "storagerus_family": {
+      "title": "Storage R Us family ownership statement",
+      "url": "https://www.storage-r-us.net/boat-rv-vehicle-storage-in-oklahoma/",
+      "kind": "Primary source",
+      "reviewed": "2026-10-19",
+      "published": null,
+      "note": ""
+    },
+    "just": {
+      "title": "DealPoint Merrill launches JustStorage",
+      "url": "https://www.prlog.org/13010423-dealpoint-merrill-elevates-storage-operations-with-the-launch-of-their-juststorage-brand.html",
+      "kind": "Company-issued press release",
+      "reviewed": "2026-10-19",
+      "published": "2024-03",
+      "note": ""
+    },
+    "exr_okc": {
+      "title": "Extra Space advertised regional price summary: Oklahoma City",
+      "url": "https://www.extraspace.com/storage/facilities/us/oklahoma/oklahoma_city/",
+      "kind": "Primary source",
+      "reviewed": "2026-10-19",
+      "published": null,
+      "note": "Dynamic page; values are the opened-page snapshot, not conflicting search snippets. Geography is near-city operator catchment, not municipal boundaries."
+    },
+    "exr_tulsa": {
+      "title": "Extra Space advertised regional price summary: Tulsa",
+      "url": "https://www.extraspace.com/storage/facilities/us/oklahoma/tulsa/",
+      "kind": "Primary source",
+      "reviewed": "2026-10-19",
+      "published": null,
+      "note": "Dynamic page; values are the opened-page snapshot, not conflicting search snippets. Geography is near-city operator catchment, not municipal boundaries."
+    },
+    "ko_lawton": {
+      "title": "KO Lawton advertised unit rates",
+      "url": "https://www.kostorage.com/storage-locations/oklahoma/lawton/10x10-storage-units",
+      "kind": "Indexed operator page",
+      "reviewed": "2026-10-19",
+      "published": null,
+      "note": "Indexed result contains prices; opened text omitted dynamic rate cards. Recheck before reliance."
+    },
+    "ko_ba": {
+      "title": "KO Broken Arrow advertised drive-up rates",
+      "url": "https://www.kostorage.com/storage-locations/oklahoma/tulsa/drive-up-storage-units",
+      "kind": "Indexed operator page",
+      "reviewed": "2026-10-19",
+      "published": null,
+      "note": "Indexed operator cards; no checkout verification."
+    },
+    "ez": {
+      "title": "EZ Storage Stillwater rental page",
+      "url": "https://www.ezstoragestillwater.com/pages/rent",
+      "kind": "Primary source",
+      "reviewed": "2026-10-19",
+      "published": null,
+      "note": ""
+    },
+    "durant": {
+      "title": "Durant Self Storage posted unit prices",
+      "url": "https://durantselfstoragellc.com/",
+      "kind": "Primary source",
+      "reviewed": "2026-10-19",
+      "published": null,
+      "note": "Page lists dollar amounts without an explicit billing period; do not assume monthly until confirmed."
+    },
+    "enid_quote": {
+      "title": "SpareBox W Chestnut Enid advertised 10x10",
+      "url": "https://www.selfstorage.com/self-storage/oklahoma/enid/",
+      "kind": "Marketplace indexed listing",
+      "reviewed": "2026-10-19",
+      "published": null,
+      "note": "Search-index observation, not operator checkout; rate may be stale."
+    },
+    "allied": {
+      "title": "Allied Tower offering \u2014 Marcus & Millichap",
+      "url": "https://www.marcusmillichap.com/properties/302359/allied-tower-self-storage",
+      "kind": "Primary source",
+      "reviewed": "2026-10-19",
+      "published": null,
+      "note": ""
+    },
+    "payless": {
+      "title": "Payless offering \u2014 Argus",
+      "url": "https://argus-selfstorage.com/properties/oklahoma/payless-self-storage/",
+      "kind": "Primary source",
+      "reviewed": "2026-10-19",
+      "published": null,
+      "note": ""
+    },
+    "shawnee": {
+      "title": "Shawnee two-property offering \u2014 Argus",
+      "url": "https://argus-selfstorage.com/properties/oklahoma/2-property-portfolio-shawnee-ok/",
+      "kind": "Primary source",
+      "reviewed": "2026-10-19",
+      "published": null,
+      "note": ""
+    },
+    "wolverine": {
+      "title": "Wolverine offering \u2014 Argus",
+      "url": "https://argus-selfstorage.com/properties/oklahoma/wolverine-storage/",
+      "kind": "Primary source",
+      "reviewed": "2026-10-19",
+      "published": null,
+      "note": ""
+    },
+    "smartlock": {
+      "title": "Smartlock Spencer offering \u2014 Argus",
+      "url": "https://argus-selfstorage.com/properties/oklahoma/smartlock-self-storage-spencer-ok/",
+      "kind": "Primary source",
+      "reviewed": "2026-10-19",
+      "published": null,
+      "note": ""
+    },
+    "smartlock_operator": {
+      "title": "Smartlock Spencer operator address",
+      "url": "https://www.smartlockselfstorage.com/storage-units/oklahoma/spencer/smartlock-self-storage-r-spencer-3501348/",
+      "kind": "Primary source",
+      "reviewed": "2026-10-19",
+      "published": null,
+      "note": ""
+    },
+    "blanchard": {
+      "title": "Blanchard Mini Storage marketplace listing",
+      "url": "https://www.crexi.com/properties/2449611/oklahoma-blanchard-mini-storage",
+      "kind": "Indexed marketplace listing",
+      "reviewed": "2026-10-19",
+      "published": null,
+      "note": "Indexed page only; direct marketplace access restricted. Availability and price require re-confirmation."
+    },
+    "crexi": {
+      "title": "Oklahoma storage listings \u2014 Crexi",
+      "url": "https://www.crexi.com/properties/OK/Self-Storage",
+      "kind": "Indexed marketplace category",
+      "reviewed": "2026-10-19",
+      "published": null,
+      "note": "Category indexed approximately three months before review; direct access returned 403. Leads can be stale or misclassified. No statewide pricing statistic derived."
+    },
+    "locked": {
+      "title": "Locked Up Stillwater sale announcement \u2014 Argus",
+      "url": "https://argus-selfstorage.com/argus-self-storage-advisors-announces-the-sale-of-locked-up-self-storage-in-stillwater-oklahoma/",
+      "kind": "Primary source",
+      "reviewed": "2026-10-19",
+      "published": "2026-10-07",
+      "note": ""
+    },
+    "nsa_brands": {
+      "title": "NSA Q1 2026 Form 10-Q: corporate operating brands",
+      "url": "https://www.sec.gov/Archives/edgar/data/1618563/000162828026030519/nsa-20260331.htm",
+      "kind": "Primary SEC filing",
+      "reviewed": "2026-10-19",
+      "published": "2026 Q1",
+      "note": "Establishes SecurCare affiliation before the Public Storage transaction."
+    }
+  },
+  "companies": {
+    "Public Storage": {
+      "category": "Public REIT",
+      "parent": "Public Storage",
+      "ownership_note": "Parent includes former NSA following the July 22, 2026 closing. SecurCare legacy labels are aggregated here at platform level. A brand or management relationship does not prove fee-simple ownership of each property. Rebrand duplicates remain in raw records.",
+      "sources": [
+        "psa",
+        "nsa_brands"
+      ],
+      "ticker": "NYSE: PSA",
+      "private_capital": "Not established"
+    },
+    "Extra Space Storage": {
+      "category": "Public REIT",
+      "parent": "Extra Space Storage Inc.",
+      "ownership_note": "Life Storage joined Extra Space in July 2023. Branded facilities may be owned, joint-venture or third-party managed; individual property ownership has not been established.",
+      "sources": [
+        "exr",
+        "life"
+      ],
+      "ticker": "NYSE: EXR",
+      "private_capital": "Not established"
+    },
+    "CubeSmart": {
+      "category": "Public REIT",
+      "parent": "CubeSmart",
+      "ownership_note": "Public REIT and management platform. Directory affiliation does not establish whether these Oklahoma facilities are owned or managed.",
+      "sources": [
+        "cube"
+      ],
+      "ticker": "NYSE: CUBE",
+      "private_capital": "Not established"
+    },
+    "SmartStop Self Storage": {
+      "category": "Public REIT",
+      "parent": "SmartStop Self Storage REIT, Inc.",
+      "ownership_note": "Public REIT as of this edition; do not classify the platform as a private non-traded REIT. Facility ownership versus management requires property-level confirmation.",
+      "sources": [
+        "sma"
+      ],
+      "ticker": "NYSE: SMA",
+      "private_capital": "Not established"
+    },
+    "Global Self Storage": {
+      "category": "Public REIT",
+      "parent": "Global Self Storage, Inc.",
+      "ownership_note": "Corporate REIT classification is confirmed. The Edmond directory listing requires separate verification against the current property portfolio; do not treat this raw brand match as confirmed ownership.",
+      "sources": [
+        "self",
+        "self_sec"
+      ],
+      "ticker": "NASDAQ: SELF",
+      "private_capital": "Not established"
+    },
+    "U-Haul": {
+      "category": "Public company (non-REIT)",
+      "parent": "U-Haul Holding Company",
+      "ownership_note": "Public operating company. U-Haul dealer, affiliate and storage-management relationships must not be confused with owned real estate; directory assignments are retained as affiliation records.",
+      "sources": [
+        "uhaul"
+      ],
+      "ticker": "NYSE: UHAL / UHAL.B",
+      "private_capital": "Not established"
+    },
+    "SpareBox Storage": {
+      "category": "Institutional private capital",
+      "parent": "Davidson Kempner-advised funds / Rizk Ventures",
+      "ownership_note": "Company disclosure identifies a fund-backed joint venture. This is institutional private capital; do not equate it automatically with a conventional buyout PE structure. Sponsor evidence dates to 2023.",
+      "sources": [
+        "sparebox"
+      ],
+      "ticker": "",
+      "private_capital": "Fund-backed JV disclosed; current ownership not independently re-confirmed"
+    },
+    "Prime Storage": {
+      "category": "Private equity platform",
+      "parent": "Prime Group Holdings",
+      "ownership_note": "Prime identifies itself as a vertically integrated real-estate private-equity company. Asset-level ownership may sit in funds or joint ventures.",
+      "sources": [
+        "prime"
+      ],
+      "ticker": "",
+      "private_capital": "Confirmed real-estate PE platform"
+    },
+    "Morningstar Storage": {
+      "category": "Private equity platform",
+      "parent": "Morningstar Properties / Blue Doors Storage Funds",
+      "ownership_note": "Morningstar identifies Blue Doors Storage Funds as its private-equity investment vehicles.",
+      "sources": [
+        "morningstar"
+      ],
+      "ticker": "",
+      "private_capital": "Confirmed private-equity fund vehicles"
+    },
+    "Devon Self Storage": {
+      "category": "Institutional private capital",
+      "parent": "The Inland Real Estate Group",
+      "ownership_note": "Devon states that Inland acquired a majority interest in early 2024. This classifies the operating platform, not the fund or legal owner of each facility.",
+      "sources": [
+        "devon"
+      ],
+      "ticker": "",
+      "private_capital": "Inland majority investment; property-level fund structure unverified"
+    },
+    "ClearHome Storage": {
+      "category": "Institutional private capital",
+      "parent": "VanWest Partners",
+      "ownership_note": "VanWest identifies ClearHome as its vertically integrated operations company. Real-estate investment sponsorship is evidenced; a specific outside PE owner is not established.",
+      "sources": [
+        "clearhome"
+      ],
+      "ticker": "",
+      "private_capital": "Private real-estate investment platform"
+    },
+    "JustStorage": {
+      "category": "Institutional private capital",
+      "parent": "DealPoint Merrill",
+      "ownership_note": "Company-issued release identifies JustStorage as DealPoint Merrill\u2019s operating brand. Specific property owner and outside PE sponsorship remain unverified.",
+      "sources": [
+        "just"
+      ],
+      "ticker": "",
+      "private_capital": "Private real-estate sponsor; outside PE backing not established"
+    },
+    "KO Storage": {
+      "category": "Private / family-owned",
+      "parent": "KO Storage",
+      "ownership_note": "Official company page describes KO as family owned. Scale alone is not evidence of a PE sponsor.",
+      "sources": [
+        "ko"
+      ],
+      "ticker": "",
+      "private_capital": "Not established"
+    },
+    "Storage R Us": {
+      "category": "Private / family-owned",
+      "parent": "Storage R Us",
+      "ownership_note": "Official materials describe family ownership and eight Oklahoma locations. This report preserves only locations present in the supplied directory; missing official locations are a coverage gap.",
+      "sources": [
+        "storagerus",
+        "storagerus_family"
+      ],
+      "ticker": "",
+      "private_capital": "Not established"
+    },
+    "Arborstone Storage": {
+      "category": "Regional operator; capital unverified",
+      "parent": "Arborstone Storage",
+      "ownership_note": "Official site confirms both ownership and third-party management. Shared brand and operator website support aggregation, but not a claim that all properties share a legal owner.",
+      "sources": [
+        "arbor"
+      ],
+      "ticker": "",
+      "private_capital": "Not established"
+    },
+    "Click Storage": {
+      "category": "Regional operator; capital unverified",
+      "parent": "Click Storage",
+      "ownership_note": "Company website supports an operating brand. No specific PE sponsor or listed REIT parent established by the sources reviewed.",
+      "sources": [
+        "click"
+      ],
+      "ticker": "",
+      "private_capital": "Not established"
+    },
+    "Attic Storage": {
+      "category": "Regional operator; capital unverified",
+      "parent": "Attic Storage",
+      "ownership_note": "Official website describes a regional platform across Oklahoma, Kansas and Missouri. Beneficial ownership and sponsor structure remain unverified.",
+      "sources": [
+        "attic"
+      ],
+      "ticker": "",
+      "private_capital": "Not established"
+    },
+    "Storelocal": {
+      "category": "Brand network / separate owners",
+      "parent": "Storelocal brand program",
+      "ownership_note": "Members can retain individual ownership. This is a brand-network profile, not a consolidated ownership portfolio.",
+      "sources": [
+        "storelocal"
+      ],
+      "ticker": "",
+      "private_capital": "Not established"
+    }
+  },
+  "rates": [
+    {
+      "company": "KO Storage",
+      "facility": "KO Storage - NW Fort Sill Blvd",
+      "city": "Lawton",
+      "address": "2408 NW Fort Sill Blvd",
+      "size": "5x5",
+      "price": 20,
+      "period": "month",
+      "product": "Drive-up; climate not stated",
+      "source": "ko_lawton",
+      "promotion": "75% off first month",
+      "basis": "Indexed operator web rate",
+      "observed": "2026-10-19",
+      "fees": "Taxes, insurance/protection, admin and lock fees not captured; all-in price unavailable"
+    },
+    {
+      "company": "KO Storage",
+      "facility": "KO Storage - NW Fort Sill Blvd",
+      "city": "Lawton",
+      "address": "2408 NW Fort Sill Blvd",
+      "size": "5x10",
+      "price": 23,
+      "period": "month",
+      "product": "Drive-up; climate not stated",
+      "source": "ko_lawton",
+      "promotion": "50% off first month",
+      "basis": "Indexed operator web rate",
+      "observed": "2026-10-19",
+      "fees": "Taxes, insurance/protection, admin and lock fees not captured; all-in price unavailable"
+    },
+    {
+      "company": "KO Storage",
+      "facility": "KO Storage - NW Fort Sill Blvd",
+      "city": "Lawton",
+      "address": "2408 NW Fort Sill Blvd",
+      "size": "10x10",
+      "price": 32,
+      "period": "month",
+      "product": "Drive-up; climate not stated",
+      "source": "ko_lawton",
+      "promotion": "50% off first month",
+      "basis": "Indexed operator web rate",
+      "observed": "2026-10-19",
+      "fees": "Taxes, insurance/protection, admin and lock fees not captured; all-in price unavailable"
+    },
+    {
+      "company": "KO Storage",
+      "facility": "KO Storage - SE Park Ave",
+      "city": "Lawton",
+      "address": "221 SE Park Ave",
+      "size": "5x5",
+      "price": 24,
+      "period": "month",
+      "product": "Climate controlled",
+      "source": "ko_lawton",
+      "promotion": "50% off first 2 months on 5x10",
+      "basis": "Indexed operator web rate",
+      "observed": "2026-10-19",
+      "fees": "Taxes, insurance/protection, admin and lock fees not captured; all-in price unavailable"
+    },
+    {
+      "company": "KO Storage",
+      "facility": "KO Storage - SE Park Ave",
+      "city": "Lawton",
+      "address": "221 SE Park Ave",
+      "size": "5x10",
+      "price": 32,
+      "period": "month",
+      "product": "Climate controlled",
+      "source": "ko_lawton",
+      "promotion": "50% off first 2 months on 5x10",
+      "basis": "Indexed operator web rate",
+      "observed": "2026-10-19",
+      "fees": "Taxes, insurance/protection, admin and lock fees not captured; all-in price unavailable"
+    },
+    {
+      "company": "KO Storage",
+      "facility": "KO Storage - SW A Ave",
+      "city": "Lawton",
+      "address": "2105 SW A Ave",
+      "size": "10x20",
+      "price": 19,
+      "period": "month",
+      "product": "Uncovered parking",
+      "source": "ko_lawton",
+      "promotion": "75% off first month",
+      "basis": "Indexed operator web rate",
+      "observed": "2026-10-19",
+      "fees": "Taxes, insurance/protection, admin and lock fees not captured; all-in price unavailable"
+    },
+    {
+      "company": "KO Storage",
+      "facility": "KO Storage - N 9th St",
+      "city": "Broken Arrow",
+      "address": "2300 N 9th St",
+      "size": "10x5",
+      "price": 49,
+      "period": "month",
+      "product": "Drive-up; climate not stated",
+      "source": "ko_ba",
+      "promotion": "25% off first 2 months on 10x10",
+      "basis": "Indexed operator web rate",
+      "observed": "2026-10-19",
+      "fees": "Taxes, insurance/protection, admin and lock fees not captured; all-in price unavailable"
+    },
+    {
+      "company": "KO Storage",
+      "facility": "KO Storage - N 9th St",
+      "city": "Broken Arrow",
+      "address": "2300 N 9th St",
+      "size": "10x10",
+      "price": 64,
+      "period": "month",
+      "product": "Drive-up; climate not stated",
+      "source": "ko_ba",
+      "promotion": "25% off first 2 months on 10x10",
+      "basis": "Indexed operator web rate",
+      "observed": "2026-10-19",
+      "fees": "Taxes, insurance/protection, admin and lock fees not captured; all-in price unavailable"
+    },
+    {
+      "company": "KO Storage",
+      "facility": "KO Storage - N Birch Ave",
+      "city": "Broken Arrow",
+      "address": "1200 N Birch Ave",
+      "size": "5x10",
+      "price": 34,
+      "period": "month",
+      "product": "Drive-up; climate not stated",
+      "source": "ko_ba",
+      "promotion": "50% off first month on 5x10",
+      "basis": "Indexed operator web rate",
+      "observed": "2026-10-19",
+      "fees": "Taxes, insurance/protection, admin and lock fees not captured; all-in price unavailable"
+    },
+    {
+      "company": "KO Storage",
+      "facility": "KO Storage - N Birch Ave",
+      "city": "Broken Arrow",
+      "address": "1200 N Birch Ave",
+      "size": "10x10",
+      "price": 59,
+      "period": "month",
+      "product": "Drive-up; climate not stated",
+      "source": "ko_ba",
+      "promotion": "50% off first month on 5x10",
+      "basis": "Indexed operator web rate",
+      "observed": "2026-10-19",
+      "fees": "Taxes, insurance/protection, admin and lock fees not captured; all-in price unavailable"
+    },
+    {
+      "company": "KO Storage",
+      "facility": "KO Storage - N Birch Ave",
+      "city": "Broken Arrow",
+      "address": "1200 N Birch Ave",
+      "size": "10x15",
+      "price": 114,
+      "period": "month",
+      "product": "Drive-up; climate not stated",
+      "source": "ko_ba",
+      "promotion": "50% off first month on 5x10",
+      "basis": "Indexed operator web rate",
+      "observed": "2026-10-19",
+      "fees": "Taxes, insurance/protection, admin and lock fees not captured; all-in price unavailable"
+    },
+    {
+      "company": "EZ Storage",
+      "facility": "EZ Storage",
+      "city": "Stillwater",
+      "address": "1101 E 6th Ave",
+      "size": "5x10",
+      "price": 55,
+      "period": "month",
+      "product": "Self-storage; climate not stated",
+      "source": "ez",
+      "promotion": "",
+      "basis": "Published rental page",
+      "observed": "2026-10-19",
+      "fees": "Taxes, insurance/protection, admin and lock fees not captured; all-in price unavailable"
+    },
+    {
+      "company": "EZ Storage",
+      "facility": "EZ Storage",
+      "city": "Stillwater",
+      "address": "1101 E 6th Ave",
+      "size": "10x10",
+      "price": 65,
+      "period": "month",
+      "product": "Self-storage; climate not stated",
+      "source": "ez",
+      "promotion": "",
+      "basis": "Published rental page",
+      "observed": "2026-10-19",
+      "fees": "Taxes, insurance/protection, admin and lock fees not captured; all-in price unavailable"
+    },
+    {
+      "company": "EZ Storage",
+      "facility": "EZ Storage",
+      "city": "Stillwater",
+      "address": "1101 E 6th Ave",
+      "size": "10x10",
+      "price": 50,
+      "period": "month",
+      "product": "Fenced outdoor parking",
+      "source": "ez",
+      "promotion": "",
+      "basis": "Published rental page",
+      "observed": "2026-10-19",
+      "fees": "Taxes, insurance/protection, admin and lock fees not captured; all-in price unavailable"
+    },
+    {
+      "company": "Durant Self Storage",
+      "facility": "Durant Self Storage",
+      "city": "Durant",
+      "address": "1903 N 1st Ave",
+      "size": "5x12",
+      "price": 50,
+      "period": "not stated",
+      "product": "Self-storage; climate not stated",
+      "source": "durant",
+      "promotion": "",
+      "basis": "Published rental page",
+      "observed": "2026-10-19",
+      "fees": "Taxes, insurance/protection, admin and lock fees not captured; all-in price unavailable"
+    },
+    {
+      "company": "Durant Self Storage",
+      "facility": "Durant Self Storage",
+      "city": "Durant",
+      "address": "1903 N 1st Ave",
+      "size": "10x10",
+      "price": 65,
+      "period": "not stated",
+      "product": "Self-storage; climate not stated",
+      "source": "durant",
+      "promotion": "",
+      "basis": "Published rental page",
+      "observed": "2026-10-19",
+      "fees": "Taxes, insurance/protection, admin and lock fees not captured; all-in price unavailable"
+    },
+    {
+      "company": "Durant Self Storage",
+      "facility": "Durant Self Storage",
+      "city": "Durant",
+      "address": "1903 N 1st Ave",
+      "size": "10x12",
+      "price": 70,
+      "period": "not stated",
+      "product": "Self-storage; climate not stated",
+      "source": "durant",
+      "promotion": "",
+      "basis": "Published rental page",
+      "observed": "2026-10-19",
+      "fees": "Taxes, insurance/protection, admin and lock fees not captured; all-in price unavailable"
+    },
+    {
+      "company": "Durant Self Storage",
+      "facility": "Durant Self Storage",
+      "city": "Durant",
+      "address": "1903 N 1st Ave",
+      "size": "20x22",
+      "price": 175,
+      "period": "not stated",
+      "product": "Self-storage; climate not stated",
+      "source": "durant",
+      "promotion": "",
+      "basis": "Published rental page",
+      "observed": "2026-10-19",
+      "fees": "Taxes, insurance/protection, admin and lock fees not captured; all-in price unavailable"
+    },
+    {
+      "company": "Durant Self Storage",
+      "facility": "Durant Self Storage",
+      "city": "Durant",
+      "address": "1903 N 1st Ave",
+      "size": "8x20",
+      "price": 70,
+      "period": "not stated",
+      "product": "Self-storage; climate not stated",
+      "source": "durant",
+      "promotion": "",
+      "basis": "Published rental page",
+      "observed": "2026-10-19",
+      "fees": "Taxes, insurance/protection, admin and lock fees not captured; all-in price unavailable"
+    },
+    {
+      "company": "Durant Self Storage",
+      "facility": "Durant Self Storage",
+      "city": "Durant",
+      "address": "1903 N 1st Ave",
+      "size": "10x20",
+      "price": 120,
+      "period": "not stated",
+      "product": "Self-storage; climate not stated",
+      "source": "durant",
+      "promotion": "",
+      "basis": "Published rental page",
+      "observed": "2026-10-19",
+      "fees": "Taxes, insurance/protection, admin and lock fees not captured; all-in price unavailable"
+    },
+    {
+      "company": "Durant Self Storage",
+      "facility": "Durant Self Storage",
+      "city": "Durant",
+      "address": "1903 N 1st Ave",
+      "size": "12x22",
+      "price": 140,
+      "period": "not stated",
+      "product": "Self-storage; climate not stated",
+      "source": "durant",
+      "promotion": "",
+      "basis": "Published rental page",
+      "observed": "2026-10-19",
+      "fees": "Taxes, insurance/protection, admin and lock fees not captured; all-in price unavailable"
+    },
+    {
+      "company": "SpareBox Storage",
+      "facility": "SpareBox Storage - W Chestnut Ave",
+      "city": "Enid",
+      "address": "W Chestnut Ave (street number not captured)",
+      "size": "10x10",
+      "price": 64,
+      "period": "month",
+      "product": "Self-storage; climate not stated",
+      "source": "enid_quote",
+      "promotion": "",
+      "basis": "Indexed marketplace rate",
+      "observed": "2026-10-19",
+      "fees": "Taxes, insurance/protection, admin and lock fees not captured; all-in price unavailable"
+    }
+  ],
+  "sales": [
+    {
+      "name": "Allied Tower Self Storage",
+      "city": "Edmond",
+      "address": "1412 N Kelly Ave",
+      "asking_price": 9000000,
+      "rsf": 67234,
+      "units": 508,
+      "source": "allied",
+      "status": "Published broker offering",
+      "note": "Broker occupancy as of August 2026. Cap rate is advertised; underlying NOI not independently verified.",
+      "cap_rate": 6.25,
+      "physical_occupancy": 91,
+      "economic_occupancy": 88,
+      "deadline": null,
+      "property_count": 1,
+      "observed": "2026-10-19"
+    },
+    {
+      "name": "Payless Self Storage",
+      "city": "Oklahoma City",
+      "address": "NW Expressway; street number not captured",
+      "asking_price": 6900000,
+      "rsf": 98120,
+      "units": 230,
+      "source": "payless",
+      "status": "Published broker offering",
+      "note": "Mixed storage, parking, retail and warehouse. Broker RSF denominator may include non-standard storage areas; do not compare blindly with enclosed NRSF.",
+      "cap_rate": null,
+      "physical_occupancy": 79,
+      "economic_occupancy": 76,
+      "deadline": null,
+      "property_count": 1,
+      "observed": "2026-10-19"
+    },
+    {
+      "name": "Bryan Street + Independence Street portfolio",
+      "city": "Shawnee",
+      "address": "526 N Bryan Ave; 909 E Independence St",
+      "asking_price": 6000000,
+      "rsf": 78840,
+      "units": 550,
+      "source": "shawnee",
+      "status": "Published broker offering",
+      "note": "519 enclosed units / 78,840 enclosed RSF plus 31 parking spaces / 8,850 SF. 550 includes parking. Asking price / RSF uses enclosed area only; offer deadline is broker-published.",
+      "cap_rate": null,
+      "physical_occupancy": null,
+      "economic_occupancy": null,
+      "deadline": "2026-10-20",
+      "property_count": 2,
+      "observed": "2026-10-19"
+    },
+    {
+      "name": "Wolverine Storage",
+      "city": "Shawnee",
+      "address": "8331 N Harrison St",
+      "asking_price": 5500000,
+      "rsf": 60200,
+      "units": 346,
+      "source": "wolverine",
+      "status": "Published broker offering",
+      "note": "Built 2017\u20132023; broker describes expansion land. Expansion entitlement and costs not verified.",
+      "cap_rate": null,
+      "physical_occupancy": 69.4,
+      "economic_occupancy": null,
+      "deadline": null,
+      "property_count": 1,
+      "observed": "2026-10-19"
+    },
+    {
+      "name": "Smartlock Self Storage - Spencer",
+      "city": "Spencer",
+      "address": "3750 Spencer Rd / 8505 NE 36th St",
+      "asking_price": 700000,
+      "rsf": 14061,
+      "units": 157,
+      "source": "smartlock",
+      "status": "Published broker offering",
+      "note": "2023 climate-controlled conversion. Also offered in a multi-state portfolio; count the Oklahoma asset once. Address comes from operator page and requires parcel reconciliation.",
+      "cap_rate": null,
+      "physical_occupancy": null,
+      "economic_occupancy": null,
+      "deadline": null,
+      "property_count": 1,
+      "observed": "2026-10-19"
+    },
+    {
+      "name": "Blanchard Mini Storage",
+      "city": "Blanchard",
+      "address": "520 W Veterans Memorial Hwy",
+      "asking_price": 1200000,
+      "rsf": null,
+      "units": null,
+      "source": "blanchard",
+      "status": "Unverified listing lead",
+      "note": "Indexed asking price. Marketing occupancy claim not adopted as a verified statistic.",
+      "cap_rate": null,
+      "physical_occupancy": null,
+      "economic_occupancy": null,
+      "deadline": null,
+      "property_count": 1,
+      "observed": "2026-10-19"
+    },
+    {
+      "name": "Triple T Mini Storage",
+      "city": "Collinsville",
+      "address": "10005 E 126th St N",
+      "asking_price": 4000000,
+      "rsf": null,
+      "units": 526,
+      "source": "crexi",
+      "status": "Unverified listing lead",
+      "note": "Category-index lead only. Size, offering scope, active status and asking price require property-specific confirmation.",
+      "cap_rate": null,
+      "physical_occupancy": null,
+      "economic_occupancy": null,
+      "deadline": null,
+      "property_count": 1,
+      "observed": "2026-10-19"
+    },
+    {
+      "name": "6240 U.S. Highway 277",
+      "city": "Elgin",
+      "address": "6240 US-277",
+      "asking_price": 2195000,
+      "rsf": null,
+      "units": 321,
+      "source": "crexi",
+      "status": "Unverified listing lead",
+      "note": "Category-index lead only. Size, offering scope, active status and asking price require property-specific confirmation.",
+      "cap_rate": null,
+      "physical_occupancy": null,
+      "economic_occupancy": null,
+      "deadline": null,
+      "property_count": 1,
+      "observed": "2026-10-19"
+    },
+    {
+      "name": "3650 Classen Boulevard",
+      "city": "Norman",
+      "address": "3650 Classen Blvd",
+      "asking_price": 2995000,
+      "rsf": null,
+      "units": null,
+      "source": "crexi",
+      "status": "Unverified listing lead",
+      "note": "Category-index lead only. Size, offering scope, active status and asking price require property-specific confirmation.",
+      "cap_rate": null,
+      "physical_occupancy": null,
+      "economic_occupancy": null,
+      "deadline": null,
+      "property_count": 1,
+      "observed": "2026-10-19"
+    },
+    {
+      "name": "Mustang Storage",
+      "city": "Mustang",
+      "address": "721 N Clear Springs Rd",
+      "asking_price": 4791600,
+      "rsf": null,
+      "units": null,
+      "source": "crexi",
+      "status": "Unverified listing lead",
+      "note": "Category-index lead only. Size, offering scope, active status and asking price require property-specific confirmation.",
+      "cap_rate": null,
+      "physical_occupancy": null,
+      "economic_occupancy": null,
+      "deadline": null,
+      "property_count": 1,
+      "observed": "2026-10-19"
+    },
+    {
+      "name": "305 S Czech Hall Rd Storage",
+      "city": "Mustang",
+      "address": "305 S Czech Hall Rd",
+      "asking_price": 999999,
+      "rsf": null,
+      "units": null,
+      "source": "crexi",
+      "status": "Unverified listing lead",
+      "note": "Category-index lead only. Size, offering scope, active status and asking price require property-specific confirmation.",
+      "cap_rate": null,
+      "physical_occupancy": null,
+      "economic_occupancy": null,
+      "deadline": null,
+      "property_count": 1,
+      "observed": "2026-10-19"
+    },
+    {
+      "name": "Broken Bow Self-Storage",
+      "city": "Broken Bow",
+      "address": "21 Pinyon Rd",
+      "asking_price": 1600000,
+      "rsf": null,
+      "units": null,
+      "source": "crexi",
+      "status": "Unverified listing lead",
+      "note": "Category-index lead only. Size, offering scope, active status and asking price require property-specific confirmation.",
+      "cap_rate": null,
+      "physical_occupancy": null,
+      "economic_occupancy": null,
+      "deadline": null,
+      "property_count": 1,
+      "observed": "2026-10-19"
+    },
+    {
+      "name": "Dennis\u2019s Storage",
+      "city": "Wagoner",
+      "address": "34147 E 700 Rd",
+      "asking_price": 295000,
+      "rsf": null,
+      "units": null,
+      "source": "crexi",
+      "status": "Unverified listing lead",
+      "note": "Category-index lead only. Size, offering scope, active status and asking price require property-specific confirmation.",
+      "cap_rate": null,
+      "physical_occupancy": null,
+      "economic_occupancy": null,
+      "deadline": null,
+      "property_count": 1,
+      "observed": "2026-10-19"
+    },
+    {
+      "name": "Cyril Storage Units",
+      "city": "Cyril",
+      "address": "Hwy 277; multiple properties",
+      "asking_price": 1599000,
+      "rsf": null,
+      "units": null,
+      "source": "crexi",
+      "status": "Unverified listing lead",
+      "note": "Category-index lead only. Size, offering scope, active status and asking price require property-specific confirmation.",
+      "cap_rate": null,
+      "physical_occupancy": null,
+      "economic_occupancy": null,
+      "deadline": null,
+      "property_count": 1,
+      "observed": "2026-10-19"
+    },
+    {
+      "name": "Locked Up Self Storage",
+      "city": "Stillwater",
+      "address": "1730 N Jardot Rd",
+      "asking_price": null,
+      "rsf": 42115,
+      "units": 227,
+      "source": "locked",
+      "status": "Closed sale",
+      "note": "Sale announced October 7, 2026; consideration undisclosed. Excluded from active offering totals.",
+      "cap_rate": null,
+      "physical_occupancy": null,
+      "economic_occupancy": null,
+      "deadline": null,
+      "property_count": 1,
+      "observed": "2026-10-19"
+    }
+  ],
+  "benchmarks": [
+    {
+      "city": "Oklahoma City",
+      "company": "Extra Space Storage",
+      "size": "5x5",
+      "monthly": 16,
+      "basis": "Operator-published regional average; mixed amenities",
+      "source": "exr_okc"
+    },
+    {
+      "city": "Oklahoma City",
+      "company": "Extra Space Storage",
+      "size": "5x10",
+      "monthly": 28,
+      "basis": "Operator-published regional average; mixed amenities",
+      "source": "exr_okc"
+    },
+    {
+      "city": "Oklahoma City",
+      "company": "Extra Space Storage",
+      "size": "10x10",
+      "monthly": 54,
+      "basis": "Operator-published regional average; mixed amenities",
+      "source": "exr_okc"
+    },
+    {
+      "city": "Oklahoma City",
+      "company": "Extra Space Storage",
+      "size": "10x15",
+      "monthly": 67,
+      "basis": "Operator-published regional average; mixed amenities",
+      "source": "exr_okc"
+    },
+    {
+      "city": "Oklahoma City",
+      "company": "Extra Space Storage",
+      "size": "10x20",
+      "monthly": 88,
+      "basis": "Operator-published regional average; mixed amenities",
+      "source": "exr_okc"
+    },
+    {
+      "city": "Tulsa",
+      "company": "Extra Space Storage",
+      "size": "5x5",
+      "monthly": 29,
+      "basis": "Operator-published regional average; mixed amenities",
+      "source": "exr_tulsa"
+    },
+    {
+      "city": "Tulsa",
+      "company": "Extra Space Storage",
+      "size": "5x10",
+      "monthly": 48,
+      "basis": "Operator-published regional average; mixed amenities",
+      "source": "exr_tulsa"
+    },
+    {
+      "city": "Tulsa",
+      "company": "Extra Space Storage",
+      "size": "10x10",
+      "monthly": 88,
+      "basis": "Operator-published regional average; mixed amenities",
+      "source": "exr_tulsa"
+    },
+    {
+      "city": "Tulsa",
+      "company": "Extra Space Storage",
+      "size": "10x15",
+      "monthly": 111,
+      "basis": "Operator-published regional average; mixed amenities",
+      "source": "exr_tulsa"
+    },
+    {
+      "city": "Tulsa",
+      "company": "Extra Space Storage",
+      "size": "10x20",
+      "monthly": 153,
+      "basis": "Operator-published regional average; mixed amenities",
+      "source": "exr_tulsa"
+    }
+  ],
+  "demographics": [
+    {
+      "geography": "Oklahoma",
+      "population_2025": 4123288,
+      "growth_2020_2025_pct": 4.1,
+      "households_2020_2024": 1562389,
+      "median_household_income_2024_dollars": 65039,
+      "owner_occupied_pct": 65.8,
+      "same_house_one_year_pct": 85.6,
+      "source": "census_ok"
+    },
+    {
+      "geography": "Oklahoma City city",
+      "population_2025": 719849,
+      "growth_2020_2025_pct": 5.7,
+      "households_2020_2024": 280065,
+      "median_household_income_2024_dollars": 68656,
+      "owner_occupied_pct": 58.6,
+      "same_house_one_year_pct": 83.6,
+      "source": "census_okc"
+    },
+    {
+      "geography": "Tulsa city",
+      "population_2025": 416209,
+      "growth_2020_2025_pct": 0.8,
+      "households_2020_2024": 172909,
+      "median_household_income_2024_dollars": 59838,
+      "owner_occupied_pct": 51.9,
+      "same_house_one_year_pct": 82.8,
+      "source": "census_tulsa"
+    }
+  ]
+}
