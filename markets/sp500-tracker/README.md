@@ -27,16 +27,16 @@ Comparisons use only months shared by every selected series. All lines start at 
 From the repository root:
 
 ```sh
-python3 sp500-tracker/build.py
+python3 markets/sp500-tracker/build.py
 ```
 
 To download missing histories, or refresh the entire cache, then rebuild:
 
 ```sh
-python3 sp500-tracker/fetch_prices.py
-python3 sp500-tracker/build.py
+python3 markets/sp500-tracker/fetch_prices.py
+python3 markets/sp500-tracker/build.py
 # Optional full refresh:
-python3 sp500-tracker/fetch_prices.py --refresh
+python3 markets/sp500-tracker/fetch_prices.py --refresh
 ```
 
 Only the downloader needs internet access. It uses the Python standard library, preserves available histories on request failures, and saves progress in batches. The build never downloads data. Price download dates are recorded in UTC; the overview retains its original SPY snapshot.
