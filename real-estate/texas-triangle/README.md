@@ -49,7 +49,7 @@ data/counties_target.json ──► scrape.py ──► data/raw/YYYY-MM-DD/<Cou
 | 3 | `build_page.py` | Builds the self-contained HTML page. Every filter drives the map, stats, $/acre histogram and table together. Leaflet is inlined from `vendor/`, so only the map tiles need network. |
 | setup | `select_counties.py` | Picks the counties that touch the triangle or its ring and writes them to `data/counties_target.json`. Re-run it only if you change the triangle or the ring width. |
 | shared | `geo.py` | Triangle vertices, `BUFFER_MI`, point-in-polygon and distance-to-edge. |
-| shared | `privacy_filter.py` | Drops any listing whose text matches the repo's privacy blocklist (`../scripts/check_privacy.py`), so a coincidental address never lands in a committed file. One listing was dropped in the 2026-10-18 snapshot. |
+| shared | `privacy_filter.py` | Drops any listing whose text matches the repo's privacy blocklist (`../../scripts/check_privacy.py`), so a coincidental address never lands in a committed file. One listing was dropped in the 2026-10-18 snapshot. |
 
 You can run the steps one at a time (use `.venv/bin/python` after the first `update.sh`):
 
@@ -104,7 +104,7 @@ You can run the steps one at a time (use `.venv/bin/python` after the first `upd
 Opening the HTML file directly works. To serve it locally instead:
 
 ```bash
-python3 -m http.server 8765 --directory texas-triangle-land
+python3 -m http.server 8765 --directory real-estate/texas-triangle
 ```
 
 Then visit http://localhost:8765/texas-triangle-land.html.

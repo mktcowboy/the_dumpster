@@ -5,7 +5,7 @@ that such words never land in committed files, so those rows are skipped. Values
 """
 import hashlib, os, re, sys
 
-_SCRIPTS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "scripts")
+_SCRIPTS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "scripts")
 try:
     sys.path.insert(0, _SCRIPTS)
     from check_privacy import BLOCKED
