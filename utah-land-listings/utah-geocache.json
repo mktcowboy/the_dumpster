@@ -1,19 +1,406 @@
 {
  "address": {
+  "0240 Parcel 15-0075|84764|Bryce": null,
+  "0240 Parcel 15-0075|84764|Bryce Canyon": null,
+  "1 Emigrant Trl Rd|84329|Park Valley": null,
+  "1 Gravel Pit|84647|Mount Pleasant": null,
+  "1 Highway 39|84317|Huntsville": null,
+  "1 Jail Rock Rd|84532|Moab": null,
+  "1 Mineral Springs Rd|84755|Mount Carmel": null,
+  "1 N Bug Pt|84535|Monticello": null,
+  "1 N Pigeon Hollow Rd N|84662|Spring City": null,
+  "1 N See Directions|84005|Eagle Mountain": null,
+  "1 Phase 2 Joe Wilson Dr|84532|Moab": null,
+  "1 Pink Cliffs Rd E|84729|Glendale": null,
+  "1 S Creek Rd|84535|Monticello": null,
+  "1 S Wildcat|84737|Hurricane": null,
+  "1 Tax Id 05 # 072-0096|84337|Tremonton": null,
+  "1 Unit 4-231|84730|Glenwood": null,
   "10 Ac N Lund|84721|Cedar City": null,
+  "10 Acre Feet Water Rights|84753|Hamiltons Fort": null,
+  "10 Acres|84756|Newcastle": null,
+  "10 E Hollow Rd Unit 10|84662|Spring City": null,
+  "10 S Saratoga Rd E|84045|Saratoga Springs": null,
+  "100 S Pearson Cutoff Rd|84535|Monticello": null,
+  "100 W 201 S|84734|Hanksville": null,
+  "1000 E Tbd Mink Farm Rd|84701|Richfield": null,
+  "1000 S 2500 E|84624|Delta": null,
+  "1000 S Foothill Blvd|84624|Delta": null,
+  "1000 W 1500 N|84302|Brigham City": null,
+  "10000 S 7000 W|84624|Delta": null,
+  "10000 W 10400 N|84337|Bothwell": null,
+  "1010 W Grandview Dr Unit 9|84735|Hatch": [
+   37.64009,
+   -112.45739
+  ],
+  "10200 W 17700 S|84631|Fillmore": null,
+  "1045 W Grandview Dr Unit 6|84735|Hatch": [
+   37.63922,
+   -112.45832
+  ],
+  "1058 S 2450 W Unit 16|84651|Payson": [
+   40.02736,
+   -111.77978
+  ],
+  "106 Acre|84714|Beryl": null,
+  "11 Country Rd Unit 11|84021|Duchesne": null,
+  "11 N 0011-0928 E Unit 11928|84021|Duchesne": null,
+  "11.48 Ac W Kanarraville|84742|Kanarraville": null,
+  "1100 N Highway 89|84627|Ephraim": null,
+  "112 S Cottontail Ave|84530|La Sal": null,
+  "113 Otter Creek Rd|84038|Laketown": null,
+  "1155 N 100 W|84325|Mendon": null,
+  "1155 N Big Hollow Rd W Unit 3|84069|Rush Valley": null,
+  "117 Echo Crk Unit 117|84024|Echo": null,
+  "11800 N 1000 W|84636|Holden": null,
+  "12.25 Af Water Rights|84770|Saint George": null,
+  "1200 E Old Highway 10|84654|Salina": null,
+  "1200 S Divario Canyon Dr W|84770|Saint George": null,
+  "1215 Harmony Way|84005|Eagle Mountain": null,
+  "122 Sundance W Unit 61|84021|Duchesne": null,
+  "1225 N Highway 23 W|84338|Trenton": null,
+  "123 E Tbd 5000 Rd N|84759|Panguitch": null,
+  "123 Tbd Beaver Creek Rd|84526|Helper": null,
+  "123 Tbd Forest Service Rd # 640AS|84654|Gooseberry": null,
+  "123 Tbd Monroe Canyon Rd|84754|Monroe": null,
+  "123 Tbd W County Road 1875|84754|Monroe": null,
+  "123 Teasdale Powerline Rd|84773|Teasdale": null,
+  "12345 N Tbd Sevier Valley Canal Rd|84701|Richfield": null,
+  "12345 S Tbd Highway 89|84766|Sevier": null,
+  "1280 S 1100 E|84759|Panguitch": null,
+  "12800 W Crooked Cyn Rd S|84626|Elberta": null,
+  "1290 Echo Rd|84017|Coalville": null,
+  "13.18 Ac N Interchange Unit 417854|84720|Cedar City": null,
+  "1300 E 200 S|84647|Mount Pleasant": null,
+  "13000 N 25640 E|84623|Chester": null,
   "13000 W 5000 S Unit 8|84021|Arcadia": null,
+  "1310 UT 14|84721|Cedar City": null,
+  "1331 S Lowry Hill Rd|84642|Manti": null,
+  "1348 E Cassity Dr S|84074|Tooele": null,
   "13875 S Leland Bench|84052|Myton": null,
+  "13900 Dirty Head Rd|84305|Clarkston": null,
+  "14 Lot14 Unit 14|84716|Boulder": null,
+  "1400 W 1100 N|84652|Redmond": null,
+  "14020 Aspen Ridge Cir Unit 14020|84017|Coalville": null,
+  "145K Forest Meadow Rd|84017|Coalville": null,
+  "1472 W Davis Dr|84302|Perry": null,
+  "14900 N 6800 E Units 4 & 5|84623|Chester": null,
   "15 Acres Tax Id # 265543|84714|Beryl": null,
-  "4000 W Thermal Rd|84752|Minersville": null
+  "1500 N 650 W|84639|Levan": null,
+  "1565 S 1200 W|84754|Monroe": null,
+  "1599 S Highway 191|84535|Monticello": null,
+  "160 Highway 257|84631|Fillmore": null,
+  "160 Highway 257|84751|Milford": null,
+  "160acre|84714|Beryl": null,
+  "16408 N Beaver Dam Rd|84306|Beaverdam": null,
+  "165 E 1600 S|84302|Perry": null,
+  "16500 N 8500 E|84647|Mount Pleasant": null,
+  "1667 N 6400 W|84325|Mendon": null,
+  "167 Lewis Vw Unit LSV1|84017|Wanship": null,
+  "16800 W 2500 S|84624|Delta": null,
+  "16875 E Racetrack Rd|84646|Moroni": null,
+  "17 N Big Hollow Dr Unit 17|84629|Indianola": null,
+  "17000 W 2500 S|84624|Delta": null,
+  "17104 S Alta Dr E Unit D81|84660|Spanish Fork": null,
+  "178 Skyline Rd Unit 178|84017|Coalville": null,
+  "18.5 Acres W 0 5 Af of Water|84714|Beryl": null,
+  "180 N Woodland Hills Dr E|84653|Salem": null,
+  "1800 E 1000 S|84624|Delta": null,
+  "1800 S 1600 W|84321|Logan": null,
+  "18000 W Hwy # 50/6|84624|Delta": null,
+  "1810 E Old US Highway 91|84021|Enoch": null,
+  "18687 W Smiley Rd Unit 33|84021|Duchesne": null,
+  "1885 W 3400 N|84335|Benson": null,
+  "1890 W Elk Rd Unit 140|84017|Wanship": null,
+  "1925 S Bear Lake Blvd|84028|Garden City": null,
+  "19250 N 1100 W|84647|Mount Pleasant": null,
+  "1955 W Mammoth Creek Rd|84735|Hatch": null,
+  "1A Unit 1|84027|Fruitland": null,
+  "2 E Hollow Rd Unit 2|84662|Spring City": null,
+  "2 Mineral Springs Rd|84755|Mount Carmel": null,
+  "2 S Remuda Run Dr Unit 2|84032|Heber City": null,
+  "2 W 1100 S|84662|Spring City": null,
+  "20 Acres E-0554 # 0003-0000|84714|Lund": null,
+  "20.02 Ac W/Well and Water|84714|Beryl": null,
+  "20.22 Acres Center St|84725|Enterprise": null,
+  "20.92 Acre Iron Springs Rd|84720|Cedar City": null,
+  "20.92 Acres Iron Springs Rd|84720|Cedar City": null,
+  "200 W 880 S|84648|Nephi": null,
+  "2000 E 10500 N|84624|Delta": null,
+  "2000 N 3000 W|84721|Cedar City": null,
+  "2000 N 500 W|84656|Scipio": null,
+  "2000 S Old River Bed Rd|84022|Dugway": null,
+  "201 E Brookshire Dr N|84045|Saratoga Springs": null,
+  "201 Hidden Canyon Dr Unit 201|84741|Kanab": null,
+  "2035 E Maple Leaf Dr|84320|Cove": null,
+  "2070 E 123 Tbd N|84701|Richfield": null,
+  "2070 E N|84701|Richfield": null,
+  "2070 E Rd N|84701|Richfield": null,
+  "2070 E Tbd 1550 N|84701|Richfield": null,
+  "208 W 3600 N|84318|Hyde Park": null,
+  "2090 County Road Lot 1|84755|Mount Carmel": null,
+  "21 Old Highway 89|84662|Spring City": null,
+  "2100 N 6500 W|84066|Roosevelt": null,
+  "2110 W Frontage Rd|84340|Willard": null,
+  "2155 N Cedar Mountain Rd|84631|Fillmore": null,
+  "21845 W Cemetery Rd|84629|Fairview": null,
+  "22.74 Ac in Kanarraville|84742|Kanarraville": null,
+  "2200 W 1130 S|84651|Payson": null,
+  "2220 N Long St|84525|Green River": null,
+  "2223 E Maple Leaf Dr|84320|Cove": null,
+  "23 Old Dam Rd Unit 23|84639|Levan": null,
+  "2362 N 11900 W|84720|Cedar City": null,
+  "24 Old Dam Rd Unit 24|84639|Levan": null,
+  "24.84 Acres on Westview Dr|84721|Cedar City": null,
+  "240 Acres|84729|Glendale": null,
+  "240 S Droubay E|84074|Tooele": null,
+  "24600 N 1300 W|84751|Milford": null,
+  "25 Stansbury Agricultural Propert Unit 25|84029|Grantsville": null,
+  "250 W Erda Way|84074|Erda": null,
+  "2500 N 5100 W|84404|Plain City": null,
+  "2500 W 4750 S|84644|Meadow": null,
+  "2500 W 5600 S|84624|Deseret": null,
+  "2510 N 400 E|84074|Tooele": null,
+  "253.26 Acres S West of Kanarra|84742|Kanarraville": null,
+  "2610 N Long St|84525|Green River": null,
+  "2625 W Highway 155|84518|Cleveland": null,
+  "26333 S 9600 E|84647|Mount Pleasant": null,
+  "2650 W Taylor Mtn Rd Unit Remark|84078|Vernal": null,
+  "26606 and 26607 Tbd|84662|Spring City": null,
+  "26750 W 4050 S|84021|Duchesne": null,
+  "2705 E Canyon Rd|84335|Smithfield": null,
+  "275 E 630 St N|84775|Torrey": null,
+  "2759 E Canyon Rd|84335|Smithfield": null,
+  "2800 S Mustang Rd|84511|Blanding": null,
+  "2855 E Canyon Rd|84335|Smithfield": null,
+  "2866 S 300 W|84501|Price": null,
+  "29 Scare Cyn Unit 29|84328|Paradise": null,
+  "2900 W State St|84737|Hurricane": null,
+  "29010 N 8000 E Unit 77|84629|Fairview": null,
+  "2955 W 1900 N|84404|Plain City": null,
+  "3 E Hollow Rd Unit 3|84662|Spring City": null,
+  "3 Mineral Springs Rd|84755|Mount Carmel": null,
+  "3 N Gravel Pit Rd E|84647|Mount Pleasant": null,
+  "300 E Sky Crest Dr S Unit 300|84629|Indianola": null,
+  "3000 E Canyon Rd|84335|Smithfield": null,
+  "3000 N Sweetwater|84005|Eagle Mountain": null,
+  "3000 W 6200 N|84335|Amalga": null,
+  "302 Resovoir Rd|84667|Wales": null,
+  "310 Acres Tax Account # 153483|84742|Kanarraville": null,
+  "3105 E Canyon Rd|84335|Smithfield": null,
+  "318 89acre|84714|Beryl": null,
+  "320 N 5400 W|84325|Mendon": null,
+  "320acre|84714|Beryl": null,
+  "321 Ac Ne of Lund Units 1 & 2|84530|La Sal": null,
+  "321 Acres Ne of Lund Lots 1 & 2|84714|Lund": null,
+  "325 W 2700 S|84701|Richfield": null,
+  "325 W 2750 S|84701|Richfield": null,
+  "3280 N 400 W|84074|Tooele": null,
+  "3300 W 5400 S|84339|Wellsville": null,
+  "3344 E 5300 S|84078|Vernal": null,
+  "33550 N 10900 E|84629|Indianola": null,
+  "3366 Thompson Canyon Rd N Unit B|84540|Thompson": null,
+  "34.81 Ac Highway 56 B-1928 # 0000-0000|84720|Cedar City": null,
+  "345 W Landslide Rd|84711|Annabella": null,
+  "347 E N Old Summit Rd|84535|Monticello": null,
+  "35 Acres W Coronado|84532|Moab": null,
+  "350 W Antelope Springs Rd|84756|Newcastle": null,
+  "3500 W 5000 S Unit 3|84029|Grantsville": null,
+  "356 S Eastland Rd|84535|Monticello": null,
+  "36250 N 10750 E|84629|Indianola": null,
+  "3678 Shurtz Cyn S Unit 3|84720|Cedar City": null,
+  "3688 W 4000 N|84714|Beryl": null,
+  "375 S 800 W|84335|Smithfield": null,
+  "3750 Coal Crk|84542|Wellington": null,
+  "3768 N Coal Creek Rd|84542|Wellington": null,
+  "38 Broken Branch Rd Unit 38|84741|Kanab": null,
+  "3811 E Beaux Ct|84060|Park City": null,
+  "3825 W 5200 Rd N|84714|Beryl": null,
+  "39 Upper Lick Rd Unit 39|84741|Kanab": null,
+  "4 E Hollow Rd Unit 4|84662|Spring City": null,
+  "4 Mineral Springs Rd|84755|Mount Carmel": null,
+  "4 Moondance Unit 4|84021|Duchesne": null,
+  "40 Sunridge|84317|Huntsville": null,
+  "400 N Highway 28 W|84639|Levan": null,
+  "4000 Ant Flat Rd Unit 53|84328|Avon": null,
+  "4000 E Racetrack Rd N Unit 61-62|84646|Moroni": null,
+  "4000 W Thermal Rd|84752|Minersville": null,
+  "40300 W Highway 30|84336|Snowville": null,
+  "4046 E Old Harley Dome Highway 3938|84515|Cisco": null,
+  "405 E 500 S|84631|Fillmore": null,
+  "412 S Eastland Rd|84535|Monticello": null,
+  "4166 W 3600 N|84404|Plain City": null,
+  "42424 Kokopelli Trl|84515|Cisco": null,
+  "4250 W 8550 N|84631|Fillmore": null,
+  "435 S Tbd E Berry Ln|84746|Leeds": null,
+  "444 S 600 W|84655|Genola": null,
+  "45 S 1200 W|84302|Brigham City": null,
+  "450 W Landslide Rd|84711|Annabella": null,
+  "4500 N 95000 W|84635|Abraham": null,
+  "4575 W 2350 N|84404|Plain City": null,
+  "463 S 300 E|84645|Mona": null,
+  "4700 W 600 N|84721|Cedar City": null,
+  "4769 E Lake Creek Rd|84032|Heber City": [
+   40.50586,
+   -111.33313
+  ],
+  "4900 W Midvalley Rd|84721|Cedar City": null,
+  "5 Mineral Springs Rd|84755|Mount Carmel": null,
+  "5 N Gravel Pit Rd E|84647|Mount Pleasant": null,
+  "5 S Richardson Rd|84535|Monticello": null,
+  "50 Acres Highway 56|84720|Cedar City": null,
+  "50 N 1900 E|84010|Bountiful": null,
+  "500 E 6200 N|84756|Newcastle": null,
+  "5028 S Ridgedale Dr E|84415|Ogden": null,
+  "53 S High Sierra Dr|84651|Elk Ridge": null,
+  "55 Browns Cyn Unit 55|84061|Peoa": null,
+  "5500 E 8000 E|84660|Benjamin": null,
+  "5565 E Big Hollow Rd S|84629|Fairview": null,
+  "56 Aspen Hollow Rd Unit 56|84036|Woodland": null,
+  "5602 S 9500 E|84035|Jensen": null,
+  "59.39 Acs Dalton Wash Rd|84779|Virgin": null,
+  "590 N 6700 W|84404|West Warren": null,
+  "5929 W 350 S|84066|Roosevelt": null,
+  "6 Gravel Pit|84647|Mount Pleasant": null,
+  "600 N 5600 W|84325|Mendon": null,
+  "6000 N 150 73 Acres|84721|Enoch": null,
+  "6000 W 200 S|84624|Delta": null,
+  "608 Highway 91|84318|Hyde Park": null,
+  "6100 W 200 S|84720|Cedar City": null,
+  "6115 S 1800 W Unit 2|84319|Hyrum": null,
+  "6150 S 1800 W|84319|Hyrum": null,
+  "6154 N 300 E|84756|Newcastle": null,
+  "6177 S 3000 W|84624|Delta": null,
+  "6200 S 3000 W|84624|Deseret": null,
+  "6350 W 9000 N|84327|Newton": null,
+  "6400 N 1600 W|84714|Beryl": null,
+  "6400 N 775 W|84721|Enoch": null,
+  "6400 S 2633 W Unit 5|84339|Wellsville": null,
+  "6500 S Center Miller Creek Rd E|84542|Wellington": null,
+  "68 Acres N Johns Valley Rd|84717|Bryce Canyon": null,
+  "685 E 1000 N|84066|Roosevelt": null,
+  "690.65 Acres Coal Pits Rd|84779|Virgin": null,
+  "6950 W Center St|84325|Petersboro": null,
+  "7 S 18150 Rd W|84013|Fairfield": null,
+  "700 E 725 N|84734|Hanksville": null,
+  "700 N Crescent Rd|84066|Roosevelt": null,
+  "700 N Spring Canyon Dr|84526|Helper": null,
+  "700 S Hillside Dr E|84651|Elk Ridge": null,
+  "700 W Logan Rd|84028|Garden City": null,
+  "700 W Main St N|84763|Rockville": null,
+  "705 S First Light Dr|84028|Garden City": null,
+  "7300 W 8600 N|84327|Newton": null,
+  "75 E 3000 N|84721|Cedar City": null,
+  "750 S Divario Canyon Dr W Unit PA7|84770|Saint George": null,
+  "7500 S 6700 E|84634|Gunnison": null,
+  "7700 W 2400 S Unit 1|84720|Cedar City": null,
+  "78 Plat D Unit D78|84660|Spanish Fork": null,
+  "8 E Hollow Rd Unit 8|84662|Spring City": null,
+  "80 Ac Shoppmann Rd|84714|Lund": null,
+  "80 Acres|84714|Beryl": null,
+  "800 S 5300 W|84720|Cedar City": null,
+  "800 S Divario Canyon Dr E|84770|Saint George": null,
+  "800 W 1750 N|84635|Hinckley": null,
+  "8300 W 8200 N|84327|Newton": null,
+  "835 N|84744|Koosharem": null,
+  "8400 W 8200 N|84327|Newton": null,
+  "850 W 15900 N|84624|Delta": null,
+  "8600 S Lower Red Creek Rd|84027|Fruitland": null,
+  "877 W Champion Dr|84029|Grantsville": null,
+  "8800 W 24600 N|84331|Portage": null,
+  "8812 W Sunrise Dr S Unit 26|84628|Eureka": null,
+  "8875 N 8000 W|84624|Delta": null,
+  "8998 W Sahara Dr S Unit 17|84628|Eureka": null,
+  "9 E Hollow Rd Unit 9|84662|Spring City": null,
+  "91.83 Acres | Rainbow Cyn|84720|Cedar City": null,
+  "9354 S N Little Cottonwood Rd|84092|Sandy": null,
+  "950 E 700 S|84655|Santaquin": null,
+  "950 W Main St N|84763|Rockville": null,
+  "9800 N 2400 W|84714|Beryl": null,
+  "999 Highway 39|84317|Huntsville": null,
+  "9999 E Baxter Sawmill Rd|84319|Hyrum": null
  },
  "city": {
+  "Abraham|84635": [
+   39.39662,
+   -112.71801
+  ],
+  "Alton|84710": [
+   37.43894,
+   -112.48392
+  ],
+  "Amalga|84335": [
+   41.85021,
+   -111.893
+  ],
+  "Annabella|84711": [
+   38.70914,
+   -112.05992
+  ],
   "Arcadia|84021": [
    40.22246,
    -110.23738
   ],
+  "Avon|84328": [
+   41.53285,
+   -111.81342
+  ],
+  "Ballard|84066": [
+   40.2894,
+   -109.9432
+  ],
+  "Beaverdam|84306": [
+   41.81947,
+   -112.06011
+  ],
+  "Benjamin|84660": [
+   40.09829,
+   -111.73132
+  ],
+  "Benson|84335": [
+   41.78748,
+   -111.93023
+  ],
   "Beryl|84714": [
    37.89564,
    -113.66204
+  ],
+  "Blanding|84511": [
+   37.62396,
+   -109.47802
+  ],
+  "Bothwell|84337": [
+   41.71715,
+   -112.25884
+  ],
+  "Boulder|84716": [
+   37.90824,
+   -111.42306
+  ],
+  "Bountiful|84010": [
+   40.88946,
+   -111.88048
+  ],
+  "Brian Head|84719": [
+   37.69276,
+   -112.85078
+  ],
+  "Bridgeland|84021": [
+   40.16301,
+   -110.23432
+  ],
+  "Brigham City|84302": [
+   41.51104,
+   -112.0155
+  ],
+  "Bryce Canyon|84717": null,
+  "Bryce Canyon|84764": [
+   37.66411,
+   -112.16239
+  ],
+  "Bryce|84764": [
+   37.67411,
+   -112.1565
   ],
   "Cedar City|84720": [
    37.67742,
@@ -23,41 +410,673 @@
    37.67742,
    -113.06183
   ],
+  "Cedar Fort|84013": [
+   40.32722,
+   -112.10685
+  ],
+  "Cedar Valley|84013": [
+   40.26119,
+   -112.09019
+  ],
+  "Centerville|84014": [
+   40.918,
+   -111.87216
+  ],
+  "Chester|84623": [
+   39.47544,
+   -111.56319
+  ],
+  "Cisco|84515": [
+   38.96999,
+   -109.32067
+  ],
+  "Clarkston|84305": [
+   41.92014,
+   -112.05004
+  ],
+  "Cleveland|84518": [
+   39.34892,
+   -110.8517
+  ],
+  "Coalville|84017": [
+   40.91773,
+   -111.39936
+  ],
+  "Cove Fort|84631": [
+   38.60161,
+   -112.58175
+  ],
+  "Cove|84320": [
+   38.59469,
+   -112.24937
+  ],
+  "Dammeron Valley|84783": [
+   37.30519,
+   -113.67019
+  ],
+  "Daniel|84032": [
+   40.47089,
+   -111.41457
+  ],
+  "Delta|84624": [
+   39.35218,
+   -112.57717
+  ],
+  "Deseret|84624": [
+   39.28689,
+   -112.65292
+  ],
+  "Deweyville|84309": [
+   41.71048,
+   -112.09023
+  ],
   "Duchesne|84021": [
    40.16329,
    -110.40293
+  ],
+  "Duck Creek Village|84762": [
+   37.52359,
+   -112.66299
+  ],
+  "Dugway|84022": [
+   40.2215,
+   -112.74484
+  ],
+  "Eagle Mountain|84005": [
+   40.30935,
+   -112.01198
+  ],
+  "Eagle Mountain|84013": [
+   40.30935,
+   -112.01198
+  ],
+  "Echo|84024": [
+   40.97773,
+   -111.44243
+  ],
+  "Eden|84310": [
+   41.30447,
+   -111.8263
+  ],
+  "Elberta|84626": [
+   39.95334,
+   -111.9559
+  ],
+  "Elk Ridge|84651": [
+   40.01134,
+   -111.67687
+  ],
+  "Elmo|84521": [
+   39.38969,
+   -110.81516
+  ],
+  "Enoch|84021": [
+   37.76451,
+   -113.04435
+  ],
+  "Enoch|84721": [
+   37.76451,
+   -113.04435
+  ],
+  "Enterprise|84725": [
+   37.57359,
+   -113.71913
+  ],
+  "Ephraim|84627": [
+   39.35968,
+   -111.5863
+  ],
+  "Erda|84074": [
+   40.61272,
+   -112.30439
   ],
   "Etna|84313": [
    41.67159,
    -113.95446
   ],
+  "Eureka|84628": [
+   39.95409,
+   -112.12019
+  ],
+  "Fairfield|84013": [
+   40.26217,
+   -112.093
+  ],
+  "Fairview|84629": [
+   39.62635,
+   -111.43963
+  ],
+  "Fillmore|84631": [
+   38.96881,
+   -112.32359
+  ],
+  "Fountain Green|84632": [
+   39.62996,
+   -111.6352
+  ],
   "Fruitland|84027": [
    40.21273,
    -110.83961
+  ],
+  "Garden City|84028": [
+   41.94688,
+   -111.39354
+  ],
+  "Garrison|84728": [
+   38.93439,
+   -114.03304
+  ],
+  "Genola|84655": [
+   39.99634,
+   -111.84327
+  ],
+  "Glendale|84729": [
+   37.31776,
+   -112.59715
+  ],
+  "Glenwood|84730": [
+   38.7633,
+   -111.9902
+  ],
+  "Gold Hill|84083": [
+   40.16633,
+   -113.83055
+  ],
+  "Gooseberry|84654": [
+   38.9334,
+   -111.82025
+  ],
+  "Goshen|84633": [
+   39.95301,
+   -111.90077
+  ],
+  "Grantsville|84029": [
+   40.60008,
+   -112.46353
+  ],
+  "Green River|84525": [
+   38.99523,
+   -110.16173
   ],
   "Grouse Creek|84313": [
    41.70963,
    -113.88272
   ],
+  "Gunnison|84634": [
+   39.15524,
+   -111.81826
+  ],
+  "Hamiltons Fort|84753": [
+   37.62841,
+   -113.13171
+  ],
+  "Hanksville|84734": [
+   38.37378,
+   -110.7064
+  ],
+  "Hatch|84735": [
+   37.6497,
+   -112.43437
+  ],
+  "Heber City|84032": [
+   40.50646,
+   -111.4133
+  ],
+  "Helper|84526": [
+   39.68413,
+   -110.85461
+  ],
+  "Hinckley|84635": [
+   39.32496,
+   -112.67106
+  ],
+  "Holden|84636": [
+   39.09885,
+   -112.27077
+  ],
+  "Hoytsville|84017": [
+   40.87408,
+   -111.38077
+  ],
+  "Huntsville|84317": [
+   41.26101,
+   -111.76883
+  ],
+  "Hurricane|84737": [
+   37.17503,
+   -113.28989
+  ],
+  "Hyde Park|84318": [
+   41.79897,
+   -111.81914
+  ],
+  "Hyrum|84319": [
+   41.63412,
+   -111.85519
+  ],
   "Indianola|84629": [
    39.80302,
    -111.4888
+  ],
+  "Jensen|84035": [
+   40.36968,
+   -109.33485
+  ],
+  "Joseph|84739": [
+   38.62448,
+   -112.21818
+  ],
+  "Junction|84740": [
+   38.23748,
+   -112.21993
+  ],
+  "Kamas|84036": [
+   40.64296,
+   -111.28052
+  ],
+  "Kanab|84741": [
+   37.04817,
+   -112.52852
+  ],
+  "Kanarraville|84742": [
+   37.53731,
+   -113.18297
+  ],
+  "Kanosh|84637": [
+   38.80136,
+   -112.43744
+  ],
+  "Koosharem|84744": [
+   38.51026,
+   -111.8813
+  ],
+  "La Sal|84530": [
+   38.31221,
+   -109.24817
+  ],
+  "Laketown|84038": [
+   41.82549,
+   -111.32243
+  ],
+  "Leeds|84746": [
+   37.2354,
+   -113.36142
+  ],
+  "Levan|84639": [
+   39.55857,
+   -111.86187
+  ],
+  "Lewiston|84320": [
+   41.97576,
+   -111.85634
+  ],
+  "Logan|84321": [
+   41.73131,
+   -111.83491
+  ],
+  "Logan|84341": [
+   41.73131,
+   -111.83491
+  ],
+  "Lucin|88104": [
+   41.34826,
+   -113.90501
+  ],
+  "Lund|84714": [
+   38.00747,
+   -113.43163
+  ],
+  "Manti|84642": [
+   39.2683,
+   -111.63686
+  ],
+  "Mapleton|84664": [
+   40.13023,
+   -111.57853
+  ],
+  "Meadowville|84038": [
+   41.84491,
+   -111.39813
+  ],
+  "Meadow|84644": [
+   38.88605,
+   -112.40817
+  ],
+  "Mendon|84325": [
+   41.70993,
+   -111.97773
+  ],
+  "Midway|84049": [
+   40.51254,
+   -111.47488
+  ],
+  "Milford|84751": [
+   38.39691,
+   -113.01079
   ],
   "Minersville|84752": [
    38.2141,
    -112.92365
   ],
+  "Moab|84532": [
+   38.57381,
+   -109.54621
+  ],
+  "Mona|84645": [
+   39.81607,
+   -111.85549
+  ],
+  "Monroe|84754": [
+   38.63215,
+   -112.12133
+  ],
+  "Monticello|84535": [
+   37.87506,
+   -109.34031
+  ],
+  "Moroni|84646": [
+   39.52494,
+   -111.59041
+  ],
+  "Mount Carmel|84755": [
+   37.24721,
+   -112.66438
+  ],
+  "Mount Pleasant|84647": [
+   39.54691,
+   -111.45547
+  ],
   "Myton|84052": [
    40.1944,
    -110.06182
+  ],
+  "Neola|84053": [
+   40.43329,
+   -110.02988
+  ],
+  "Nephi|84648": [
+   39.71023,
+   -111.83632
+  ],
+  "New Harmony|84757": [
+   37.47942,
+   -113.30967
+  ],
+  "Newcastle|84756": [
+   37.66664,
+   -113.54941
+  ],
+  "Newton|84327": [
+   41.8627,
+   -111.99078
+  ],
+  "None|84629": [
+   39.62732,
+   -111.43906
+  ],
+  "North Fork Rd|84762": [
+   37.52443,
+   -112.66519
+  ],
+  "Ogden|84415": [
+   41.223,
+   -111.97384
+  ],
+  "Ophir|84071": [
+   40.36957,
+   -112.25532
+  ],
+  "Palmyra|84660": [
+   40.14023,
+   -111.69881
+  ],
+  "Panguitch|84759": [
+   37.82282,
+   -112.43576
+  ],
+  "Paradise|84328": [
+   41.56882,
+   -111.838
+  ],
+  "Park City|84060": [
+   40.64609,
+   -111.498
   ],
   "Park Valley|84329": [
    41.81754,
    -113.32853
   ],
+  "Payson|84651": [
+   40.0444,
+   -111.73215
+  ],
+  "Peoa|84061": [
+   40.72467,
+   -111.34186
+  ],
+  "Perry|84302": [
+   41.46494,
+   -112.03244
+  ],
+  "Petersboro|84325": [
+   41.7691,
+   -111.98161
+  ],
+  "Pinto|84756": [
+   37.53784,
+   -113.51669
+  ],
+  "Plain City|84404": [
+   41.29828,
+   -112.07952
+  ],
+  "Pleasant Grove|84062": [
+   40.36403,
+   -111.73869
+  ],
+  "Pleasant View|84414": [
+   41.31992,
+   -111.98879
+  ],
+  "Portage|84331": [
+   41.97573,
+   -112.24194
+  ],
+  "Price|84501": [
+   39.59941,
+   -110.81071
+  ],
+  "Redmond|84652": [
+   39.00602,
+   -111.86188
+  ],
+  "Richfield|84701": [
+   38.76943,
+   -112.08471
+  ],
+  "Richmond|84333": [
+   41.92271,
+   -111.81356
+  ],
+  "Rockville|84763": [
+   37.16109,
+   -113.03827
+  ],
   "Roosevelt|84066": [
    40.2994,
    -109.98876
+  ],
+  "Rush Valley|84069": [
+   40.35333,
+   -112.45278
+  ],
+  "Saint George|84770": [
+   37.11365,
+   -113.59971
+  ],
+  "Saint George|84790": [
+   37.08322,
+   -113.55252
+  ],
+  "Salem|84653": [
+   40.05291,
+   -111.67366
+  ],
+  "Salina|84654": [
+   38.95774,
+   -111.85998
+  ],
+  "Sandy|84092": [
+   40.57105,
+   -111.89538
+  ],
+  "Santaquin|84655": [
+   39.97551,
+   -111.78521
+  ],
+  "Saratoga Springs|84043": [
+   40.38628,
+   -111.91302
+  ],
+  "Saratoga Springs|84045": [
+   40.38628,
+   -111.91302
+  ],
+  "Scipio|84656": [
+   39.24552,
+   -112.1043
+  ],
+  "Sevier|84766": [
+   38.58636,
+   -112.25826
+  ],
+  "Smithfield|84335": [
+   41.83843,
+   -111.8328
+  ],
+  "Snowville|84336": [
+   41.96541,
+   -112.71034
+  ],
+  "Spanish Fork|84660": [
+   40.11501,
+   -111.65478
+  ],
+  "Spring City|84662": [
+   39.48246,
+   -111.49602
+  ],
+  "Springdale|84767": [
+   37.18887,
+   -112.99855
+  ],
+  "Springville|84663": [
+   40.16524,
+   -111.61147
+  ],
+  "Stockton|84071": [
+   40.45318,
+   -112.36104
+  ],
+  "Summit|84772": [
+   37.80118,
+   -112.93633
+  ],
+  "Syracuse|84075": [
+   41.08959,
+   -112.06389
+  ],
+  "Teasdale|84773": [
+   38.2855,
+   -111.47669
+  ],
+  "Terra|84022": [
+   40.32073,
+   -112.62657
+  ],
+  "Thompson|84540": [
+   38.97108,
+   -109.71373
+  ],
+  "Tooele|84074": [
+   40.53078,
+   -112.29828
+  ],
+  "Toquerville|84774": [
+   37.25182,
+   -113.2854
+  ],
+  "Torrey|84775": [
+   38.29974,
+   -111.42047
+  ],
+  "Tremonton|84337": [
+   41.71208,
+   -112.16578
+  ],
+  "Trenton|84338": [
+   41.91812,
+   -111.94271
+  ],
+  "Upalco|84007": [
+   40.27801,
+   -110.21821
+  ],
+  "Vernal|84078": [
+   40.45568,
+   -109.52847
+  ],
+  "Vernon|84080": [
+   40.09217,
+   -112.43356
+  ],
+  "Veyo|84782": [
+   37.33862,
+   -113.69229
+  ],
+  "Virgin|84779": [
+   37.2019,
+   -113.18785
+  ],
+  "Wales|84667": [
+   39.48691,
+   -111.6352
+  ],
+  "Wanship|84017": [
+   40.81176,
+   -111.40734
+  ],
+  "Washington|84780": [
+   37.13054,
+   -113.50829
+  ],
+  "Wellington|84542": [
+   39.54247,
+   -110.73543
+  ],
+  "Wellsville|84339": [
+   41.63854,
+   -111.93383
+  ],
+  "Wendover|84083": [
+   40.7376,
+   -114.03142
+  ],
+  "West Warren|84404": [
+   41.26672,
+   -111.96271
+  ],
+  "Willard|84340": [
+   41.40855,
+   -112.03819
+  ],
+  "Woodland|84036": [
+   40.58134,
+   -111.22712
+  ],
+  "Woodruff|84086": [
+   41.52224,
+   -111.16258
   ]
  }
 }
