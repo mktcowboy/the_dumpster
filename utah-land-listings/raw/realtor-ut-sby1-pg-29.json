@@ -1,0 +1,12 @@
+{"page": 29, "captured": "2026-10-16", "site_total": 1184,
+ "fields": ["id", "slug", "price", "lot_sqft", "line", "city", "zip", "lat", "lon", "fips", "broker", "pending", "list_date"],
+ "rows": [
+["9976558932","N-Highway-17_Toquerville_UT_84774_M99765-58932",30000000,775368,"N Highway 17","Toquerville","84774",null,null,"49053","White Crow Real Estate",false,"2026-10-13"],
+["9821452066","3260-Deer-Hvn_Park-City_UT_84098_M98214-52066",30000000,43516440,"3260 Deer Hvn","Park City","84098",40.785906,-111.433292,"49043","Kw Park City Keller Williams",false,"2026-06-04"],
+["9373540575","2582-S-Westview-Dr_Cedar-City_UT_84720_M93735-40575",30000000,8484181,"2582 S Westview Dr","Cedar City","84720",37.631406,-113.138379,"49021","LRG Collective",false,"2026-05-13"],
+["9290529140","2582-S-Westview-Dr-Unit-194_Cedar-City_UT_84720_M92905-29140",30000000,8481568,"2582 S Westview Acres 165 Af Water Dr Unit 194","Cedar City","84720",37.630348,-113.134918,"49021","LRG Collective",false,"2025-07-11"],
+["2148661969","8282-S-Wasatch-Blvd_Cottonwood-Heights_UT_84121_M21486-61969",30500000,1219680,"8282 S Wasatch Blvd","Cottonwood Heights","84121",40.601459,-111.800676,"49035","CBRE Inc.",false,"2026-09-30"],
+["9748980026","518-Acres-1384-Af-Water_Cedar-City_UT_84721_M97489-80026",33600000,22565387,"2000 N 3000 W","Cedar City","84721",null,null,"49021","ERA Realty Center",false,"2026-09-24"],
+["9907004950","Goshen_UT_84633_M99070-04950",47551000,25891193,null,"Goshen","84633",null,null,"49049","Stengel Realty, LLC",false,"2025-11-04"],
+["1898432354","5155-S-Highway-66_Morgan_UT_84050_M18984-32354",47625000,276518880,"5155 E Canyon Rd","Morgan","84050",40.941028,-111.644797,"49029","Swan Land Company",false,"2026-04-02"]
+]}
