@@ -6,3 +6,4 @@ Thumbs.db
 *.key
 __pycache__/
 node_modules/
+.browser-profile/

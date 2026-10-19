@@ -27,6 +27,7 @@ import os
 import re
 import statistics
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 
@@ -79,10 +80,25 @@ def load_cache():
     return {"address": {}, "city": {}}
 
 
+class LookupFailed(Exception):
+    """The service kept failing; the listing is skipped this run and not cached, so a rerun retries it."""
+
+
 def get_json(url, headers=None):
     req = urllib.request.Request(url, headers=headers or {})
-    with urllib.request.urlopen(req, timeout=60) as r:
-        return json.load(r)
+    for attempt in range(4):
+        try:
+            with urllib.request.urlopen(req, timeout=60) as r:
+                return json.load(r)
+        except (urllib.error.URLError, TimeoutError, json.JSONDecodeError) as e:
+            last = e
+            time.sleep(3 * (attempt + 1))  # UGRC and Nominatim both return 5xx under load
+    raise LookupFailed(f"{url[:80]}: {last}")
+
+
+def save_cache(cache):
+    with open(CACHE, "w") as fh:
+        json.dump(cache, fh, indent=1, sort_keys=True)
 
 
 def norm_addr(s):
@@ -111,10 +127,12 @@ def ugrc_address(line, zip5, city):
 
 
 def city_point(city, zip5):
-    q = urllib.parse.urlencode({"city": city, "state": "Utah", "country": "USA", "format": "jsonv2",
-                                "limit": 1, "addressdetails": 1})
-    d = get_json(NOMINATIM + "?" + q, {"User-Agent": UA})
-    time.sleep(1.1)  # Nominatim usage policy: at most one request per second
+    d = []
+    if city:
+        q = urllib.parse.urlencode({"city": city, "state": "Utah", "country": "USA", "format": "jsonv2",
+                                    "limit": 1, "addressdetails": 1})
+        d = get_json(NOMINATIM + "?" + q, {"User-Agent": UA})
+        time.sleep(1.1)  # Nominatim usage policy: at most one request per second
     if not d and zip5:
         q = urllib.parse.urlencode({"postalcode": zip5, "country": "USA", "format": "jsonv2", "limit": 1,
                                     "addressdetails": 1})
@@ -126,8 +144,10 @@ def city_point(city, zip5):
 
 def place_all(rows):
     cache = load_cache()
-    tally = {"realtor": 0, "address": 0, "city": 0, "none": 0}
-    for r in rows:
+    tally = {"realtor": 0, "address": 0, "city": 0, "none": 0, "lookup failed": 0}
+    for n, r in enumerate(rows):
+        if n % 25 == 0:
+            save_cache(cache)  # keep finished lookups if a later one dies
         if r["lat"] is not None and r["lon"] is not None:
             r["gk"] = "realtor"
         else:
@@ -135,22 +155,27 @@ def place_all(rows):
             if r["line"] and re.match(r"\d", r["line"]):
                 key = f'{r["line"]}|{r["zip"]}|{r["city"]}'
                 if key not in cache["address"]:
-                    cache["address"][key] = ugrc_address(r["line"], r["zip"], r["city"])
-                hit = cache["address"][key]
+                    try:
+                        cache["address"][key] = ugrc_address(r["line"], r["zip"], r["city"])
+                    except LookupFailed:
+                        tally["lookup failed"] += 1
+                hit = cache["address"].get(key)
             if hit:
                 r["lat"], r["lon"], r["gk"] = hit[0], hit[1], "address"
             else:
                 key = f'{r["city"]}|{r["zip"]}'
                 if key not in cache["city"]:
-                    cache["city"][key] = city_point(r["city"], r["zip"]) if r["city"] else None
-                hit = cache["city"][key]
+                    try:
+                        cache["city"][key] = city_point(r["city"], r["zip"]) if r["city"] or r["zip"] else None
+                    except LookupFailed:
+                        tally["lookup failed"] += 1
+                hit = cache["city"].get(key)
                 if hit:
                     r["lat"], r["lon"], r["gk"] = hit[0], hit[1], "city"
                 else:
                     r["gk"] = None
         tally[r["gk"] or "none"] += 1
-    with open(CACHE, "w") as fh:
-        json.dump(cache, fh, indent=1, sort_keys=True)
+    save_cache(cache)
     return tally
 
 
@@ -210,7 +235,7 @@ def main():
         acres = round(r["lot_sqft"] / 43560, 2) if r["lot_sqft"] else None
         place = ", ".join(x for x in [r["line"], r["city"]] if x)
         r.update({
-            "title": f"{place}, UT {r['zip'] or ''}".strip(),
+            "title": (f"{place}, " if place else "") + f"UT {r['zip'] or ''}".strip(),
             "acres": acres,
             "ppa": round(r["price"] / acres) if r["price"] and acres else None,
             "county": county_name.get(r["fips"]),
