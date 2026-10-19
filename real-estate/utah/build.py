@@ -42,7 +42,7 @@ OUT_HTML = os.path.join(HERE, "utah-land-10ac.html")
 UGRC = ("https://services1.arcgis.com/99lidPhWCzftIe9K/ArcGIS/rest/services/"
         "UtahAddressPoints/FeatureServer/0/query")
 NOMINATIM = "https://nominatim.openstreetmap.org/search"
-UA = "utah-land-listings/build.py (personal research project)"
+UA = "land-listings-build/1.0"
 FIELDS = ["id", "slug", "price", "lot_sqft", "line", "city", "zip", "lat", "lon",
           "fips", "broker", "pending", "list_date"]
 CSV_FIELDS = ["title", "price_usd", "acres", "price_per_acre", "county", "city", "zip",
