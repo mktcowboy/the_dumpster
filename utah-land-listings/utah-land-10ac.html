@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Utah Land — 10+ Acres · 42 Listings</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<style>
+  :root { --ink:#1a1a1a; --muted:#5c5c5c; --hair:#e3e0d8; --paper:#fbfaf7; --navy:#23406b; --accent:#8a6d3b; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink);
+         font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+         font-variant-numeric:tabular-nums; }
+  .wrap { max-width:1180px; margin:0 auto; padding:28px 22px 60px; }
+  h1 { font-family:Georgia,"Times New Roman",serif; font-weight:400; font-size:34px; margin:0 0 6px; letter-spacing:.2px; }
+  .sub { color:var(--muted); font-size:14px; margin:0 0 4px; }
+  .caveat { font-size:12.5px; color:var(--muted); border-top:1px solid var(--hair); border-bottom:1px solid var(--hair);
+             padding:10px 0; margin:16px 0 22px; line-height:1.55; }
+  .stats { display:grid; grid-template-columns:repeat(4,1fr); gap:0; border:1px solid var(--hair); background:#fff; margin-bottom:22px; }
+  .stat { padding:16px 18px; border-left:1px solid var(--hair); }
+  .stat:first-child { border-left:none; }
+  .stat .k { font-size:11px; text-transform:uppercase; letter-spacing:1.2px; color:var(--muted); margin-bottom:6px; }
+  .stat .v { font-family:Georgia,serif; font-size:26px; }
+  .stat .d { font-size:12px; color:var(--muted); margin-top:4px; }
+  h2 { font-family:Georgia,serif; font-weight:400; font-size:21px; margin:30px 0 10px; }
+  #map { height:600px; border:1px solid var(--hair); background:#eef0ee; }
+  #mapcount { font-size:12.5px; color:var(--muted); }
+  .pill { display:inline-block; padding:2px 6px; border-radius:10px; font:600 11px/1.35 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+          white-space:nowrap; border:1.5px solid #fff; box-shadow:0 1px 3px rgba(0,0,0,.35); }
+  .pill.light { color:#0d2340; } .pill.dark { color:#fff; }
+  .pill.approx { border-style:dashed; border-color:#0d366b; }
+  .tagtip { padding:0; background:none; border:none; box-shadow:none; }
+  .tagtip::before { display:none; }
+  .hov { background:#fff; border-radius:4px; box-shadow:0 2px 8px rgba(0,0,0,.25); padding:7px 10px 6px; font-size:12px;
+         line-height:1.45; color:var(--ink); white-space:normal; width:240px; }
+  .hov .pill { font-size:12.5px; padding:3px 8px; box-shadow:none; }
+  .hov-t { font-weight:600; margin:5px 0 2px; }
+  .hov-k { display:flex; flex-wrap:wrap; gap:2px 12px; }
+  .hov-n { color:var(--muted); font-size:11px; }
+  .maphead { display:flex; flex-wrap:wrap; justify-content:space-between; align-items:baseline; gap:6px 18px; margin:14px 0 8px; }
+  #mapcount { margin:0; }
+  .legend { display:flex; flex-wrap:wrap; align-items:center; gap:4px 14px; font-size:12px; color:var(--ink); }
+  .legend .lg-h { font-size:11px; text-transform:uppercase; letter-spacing:1px; color:var(--muted); }
+  .legend i { display:inline-block; width:11px; height:11px; border-radius:50%; margin-right:6px; vertical-align:-1px;
+              border:1.5px solid #fff; box-shadow:0 0 0 1px rgba(0,0,0,.18); }
+  .legend i.hollow { background:rgba(42,120,214,.25); border-color:#2a78d6; box-shadow:none; }
+  .legend i.sz { background:#bcc7d6; border:1.5px solid #fff; box-shadow:0 0 0 1px rgba(0,0,0,.18); vertical-align:middle; }
+  .legend .lg-break { flex-basis:100%; height:0; }
+  .pop { font-size:12.5px; min-width:210px; }
+  .pop-t { font-weight:600; margin-bottom:6px; line-height:1.35; }
+  .pop-k { border:none; background:none; font-size:12.5px; width:100%; }
+  .pop-k td { padding:1px 0; border:none; }
+  .pop-k td:first-child { color:var(--muted); padding-right:12px; white-space:nowrap; }
+  .pop-k tr:hover td { background:none; }
+  .pop-n { margin-top:6px; font-size:11px; color:var(--muted); }
+  .ctip { font-size:11.5px; }
+  td.pin { width:1%; padding-left:4px; padding-right:4px; }
+  .pinbtn { border:1px solid #cfcabf; background:#fff; color:var(--navy); border-radius:2px; font-size:11px;
+            padding:2px 7px; cursor:pointer; white-space:nowrap; }
+  .pinbtn:hover { border-color:var(--navy); }
+  .mapnote { font-size:12px; color:var(--muted); margin-top:6px; }
+  .hist { border:1px solid var(--hair); background:#fff; padding:14px 14px 6px; }
+  .filters { display:grid; grid-template-columns:repeat(4,1fr); gap:10px 14px; border:1px solid var(--hair);
+              background:#fff; padding:16px; margin-bottom:6px; }
+  .filters label { font-size:11px; text-transform:uppercase; letter-spacing:1px; color:var(--muted); display:block; margin-bottom:5px; }
+  .filters input, .filters select { width:100%; padding:8px 9px; font-size:13.5px; border:1px solid #cfcabf;
+              border-radius:2px; background:#fff; font-variant-numeric:tabular-nums; }
+  .frow2 { display:flex; gap:10px; align-items:center; margin:12px 0; }
+  .btn { padding:9px 16px; font-size:13px; border:1px solid var(--navy); background:var(--navy); color:#fff;
+          border-radius:2px; cursor:pointer; }
+  .btn.ghost { background:#fff; color:var(--navy); }
+  #count { font-size:13px; color:var(--muted); }
+  table { width:100%; border-collapse:collapse; background:#fff; border:1px solid var(--hair); font-size:13.5px; }
+  th { text-align:left; font-size:11px; text-transform:uppercase; letter-spacing:1px; color:var(--muted);
+       padding:11px 10px; border-bottom:2px solid var(--hair); cursor:pointer; white-space:nowrap; user-select:none; }
+  th .arr { color:var(--navy); }
+  td { padding:9px 10px; border-bottom:1px solid var(--hair); vertical-align:top; }
+  tr:hover td { background:#f4f2ec; }
+  td.num, th.num { text-align:right; white-space:nowrap; }
+  a { color:var(--navy); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  .tablewrap { overflow-x:auto; }
+  .foot { margin-top:34px; padding-top:14px; border-top:1px solid var(--hair); font-size:12.5px; color:var(--muted); line-height:1.6; }
+  @media (max-width:760px) { .stats { grid-template-columns:repeat(2,1fr); } .filters { grid-template-columns:repeat(2,1fr); } #map { height:460px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Utah Land &mdash; 10+ Acres</h1>
+  <p class="sub">42 for-sale listings &middot; Realtor.com snapshot, October 16, 2026</p>
+  <div class="caveat"><b>Partial build: 42 of the 1,184 listings Realtor.com reports.</b> The rest were collected but are not on disk yet; rerun <code>build.py</code> once they are. The site&rsquo;s acreage filter is inclusive (10+), so 14 listings sit at exactly 10.0 acres. A few listings carry the site&rsquo;s own oddities (a $1 price, a water right listed as 100,000 acres); values are reproduced as listed, not corrected.</div>
+
+  <div class="stats">
+    <div class="stat"><div class="k">Listings</div><div class="v">42</div><div class="d">unique, deduped by Realtor property id</div></div>
+    <div class="stat"><div class="k">Median price</div><div class="v">$19,750</div><div class="d">mean $18,839 &middot; range $1&ndash;$29,500</div></div>
+    <div class="stat"><div class="k">Median $/acre</div><div class="v">$1,188</div><div class="d">mean $1,214</div></div>
+    <div class="stat"><div class="k">Median acres</div><div class="v">16.6</div><div class="d">range 10.0&ndash;100,000.0</div></div>
+  </div>
+
+  <h2>Price per acre distribution</h2>
+  <div class="hist"><svg viewBox="0 0 760 190" width="100%" role="img" aria-label="Price per acre distribution"><line x1="34" y1="164" x2="726" y2="164" stroke="#999"/><rect x="36.0" y="89.0" width="49.1" height="75.0" fill="#23406b" opacity="0.85"><title>&lt;$250: 6 listings</title></rect><text x="60.5" y="178" font-size="8.5" text-anchor="middle" fill="#666">&lt;$250</text><text x="60.5" y="85.0" font-size="8.5" text-anchor="middle" fill="#333">6</text><rect x="89.1" y="101.5" width="49.1" height="62.5" fill="#23406b" opacity="0.85"><title>$250–500: 5 listings</title></rect><text x="113.6" y="178" font-size="8.5" text-anchor="middle" fill="#666">$250–500</text><text x="113.6" y="97.5" font-size="8.5" text-anchor="middle" fill="#333">5</text><rect x="142.2" y="51.5" width="49.1" height="112.5" fill="#23406b" opacity="0.85"><title>$500–1k: 9 listings</title></rect><text x="166.7" y="178" font-size="8.5" text-anchor="middle" fill="#666">$500–1k</text><text x="166.7" y="47.5" font-size="8.5" text-anchor="middle" fill="#333">9</text><rect x="195.2" y="14.0" width="49.1" height="150.0" fill="#23406b" opacity="0.85"><title>$1k–2k: 12 listings</title></rect><text x="219.8" y="178" font-size="8.5" text-anchor="middle" fill="#666">$1k–2k</text><text x="219.8" y="10.0" font-size="8.5" text-anchor="middle" fill="#333">12</text><rect x="248.3" y="39.0" width="49.1" height="125.0" fill="#23406b" opacity="0.85"><title>$2k–4k: 10 listings</title></rect><text x="272.8" y="178" font-size="8.5" text-anchor="middle" fill="#666">$2k–4k</text><text x="272.8" y="35.0" font-size="8.5" text-anchor="middle" fill="#333">10</text><rect x="301.4" y="164.0" width="49.1" height="0.0" fill="#23406b" opacity="0.85"><title>$4k–8k: 0 listings</title></rect><text x="325.9" y="178" font-size="8.5" text-anchor="middle" fill="#666">$4k–8k</text><rect x="354.5" y="164.0" width="49.1" height="0.0" fill="#23406b" opacity="0.85"><title>$8k–16k: 0 listings</title></rect><text x="379.0" y="178" font-size="8.5" text-anchor="middle" fill="#666">$8k–16k</text><rect x="407.5" y="164.0" width="49.1" height="0.0" fill="#23406b" opacity="0.85"><title>$16k–32k: 0 listings</title></rect><text x="432.1" y="178" font-size="8.5" text-anchor="middle" fill="#666">$16k–32k</text><rect x="460.6" y="164.0" width="49.1" height="0.0" fill="#23406b" opacity="0.85"><title>$32k–64k: 0 listings</title></rect><text x="485.2" y="178" font-size="8.5" text-anchor="middle" fill="#666">$32k–64k</text><rect x="513.7" y="164.0" width="49.1" height="0.0" fill="#23406b" opacity="0.85"><title>$64k–128k: 0 listings</title></rect><text x="538.2" y="178" font-size="8.5" text-anchor="middle" fill="#666">$64k–128k</text><rect x="566.8" y="164.0" width="49.1" height="0.0" fill="#23406b" opacity="0.85"><title>$128k–256k: 0 listings</title></rect><text x="591.3" y="178" font-size="8.5" text-anchor="middle" fill="#666">$128k–256k</text><rect x="619.8" y="164.0" width="49.1" height="0.0" fill="#23406b" opacity="0.85"><title>$256k–512k: 0 listings</title></rect><text x="644.4" y="178" font-size="8.5" text-anchor="middle" fill="#666">$256k–512k</text><rect x="672.9" y="164.0" width="49.1" height="0.0" fill="#23406b" opacity="0.85"><title>&gt;$512k: 0 listings</title></rect><text x="697.5" y="178" font-size="8.5" text-anchor="middle" fill="#666">&gt;$512k</text></svg></div>
+
+  <h2>Find land</h2>
+  <div class="filters">
+    <div><label>Search</label><input id="f_q" type="text" placeholder="title, broker&hellip;"></div>
+    <div><label>County</label><select id="f_region"><option value="">All counties</option><option value="Beaver">Beaver</option><option value="Box Elder">Box Elder</option><option value="Duchesne">Duchesne</option><option value="Iron">Iron</option><option value="Uintah">Uintah</option><option value="Utah">Utah</option><option value="Washington">Washington</option></select></div>
+    <div><label>City</label><select id="f_city"><option value="">All cities</option></select></div>
+    <div><label>Broker</label><select id="f_broker"><option value="">All brokers</option></select></div>
+    <div><label>Min price</label><input id="f_pmin" type="number" min="0" placeholder="0"></div>
+    <div><label>Max price</label><input id="f_pmax" type="number" min="0" placeholder="no max"></div>
+    <div><label>Min acres</label><input id="f_amin" type="number" min="0" step="0.1" placeholder="10"></div>
+    <div><label>Max $/acre</label><input id="f_ppa" type="number" min="0" placeholder="no max"></div>
+  </div>
+  <div class="frow2">
+    <button class="btn" id="dl">Download filtered CSV</button>
+    <button class="btn ghost" id="reset">Reset</button>
+    <span id="count"></span>
+  </div>
+  <div class="maphead"><div id="legend" class="legend"></div><p id="mapcount"></p></div>
+  <div id="map"></div>
+  <p class="mapnote">One dot per listing: color is price per acre, size is acreage. Hover a dot for its $/acre and key numbers (tap on a phone); click for details and the Realtor.com link. From zoom level 12 each dot becomes a circle with the parcel&rsquo;s real area; the true boundary isn&rsquo;t known. Filters above update the map and the table. 15 listings use Realtor.com&rsquo;s own map pin or a UGRC address point; 27 sit at their city and are drawn hollow. Click &ldquo;Map&rdquo; on any table row to jump to that listing.</p>
+
+  <h2>Listings</h2>
+  <div class="tablewrap"><table>
+    <thead><tr>
+      <th data-k="title">Listing <span class="arr"></span></th><th data-k="price" class="num">Price <span class="arr"></span></th>
+      <th data-k="acres" class="num">Acres <span class="arr"></span></th><th data-k="ppa" class="num">$/acre <span class="arr"></span></th>
+      <th data-k="city">City <span class="arr"></span></th><th data-k="broker">Broker <span class="arr"></span></th><th></th>
+    </tr></thead>
+    <tbody id="rows"></tbody>
+  </table></div>
+
+  <div class="foot">
+    Source: Realtor.com search (Utah statewide, Land, 10+ acre lot filter, for sale), &ldquo;Lowest price&rdquo; sort. County from Realtor.com&rsquo;s county code. Positions: Realtor.com map pins, UGRC Utah address points, or OpenStreetMap city positions. County outlines: US Census 2010 cartographic boundaries. Built October 2026.
+  </div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+const DATA = [{"title":"4375 S Pioneer Rd, Saint George, UT 84790","price":1,"acres":11.85,"ppa":0,"city":"Saint George","broker":"WHITE CROW REAL ESTATE","url":"https://www.realtor.com/realestateandhomes-detail/4375-S-Pioneer-Rd_St-George_UT_84790_M93684-09303","region":"Washington","county":"Washington","la":37.03249,"lo":-113.603951,"gk":"realtor"},{"title":"N Highway 17, Toquerville, UT 84774","price":16,"acres":17.8,"ppa":1,"city":"Toquerville","broker":"WHITE CROW REAL ESTATE","url":"https://www.realtor.com/realestateandhomes-detail/N-Highway-17_Toquerville_UT_84774_M91147-62470","region":"Washington","county":"Washington","la":37.288003,"lo":-113.307443,"gk":"realtor"},{"title":"Grouse Creek, UT 84313","price":5800,"acres":40.0,"ppa":145,"city":"Grouse Creek","broker":"Local Utah Realty","url":"https://www.realtor.com/realestateandhomes-detail/Grouse-Creek_UT_84313_M99421-46565","region":"Box Elder","county":"Box Elder","la":41.70963,"lo":-113.88272,"gk":"city"},{"title":"Indianola, UT 84629","price":6000,"acres":200.0,"ppa":30,"city":"Indianola","broker":"Equity Real Estate - Utah","url":"https://www.realtor.com/realestateandhomes-detail/Indianola_UT_84629_M92866-32692","region":"Utah","county":"Utah","la":39.80302,"lo":-111.4888,"gk":"city"},{"title":"5288 S 2500 E, Ballard, UT 84066","price":9000,"acres":10.0,"ppa":900,"city":"Ballard","broker":"Priority First Real Estate Professionals, Co","url":"https://www.realtor.com/realestateandhomes-detail/5288-S-2500-E_Ballard_UT_84066_M90468-35358","region":"Uintah","county":"Uintah","la":40.22565,"lo":-109.955131,"gk":"realtor"},{"title":"20 Acres-0001-0005 Unit E1522, Beryl, UT 84714","price":12900,"acres":20.0,"ppa":645,"city":"Beryl","broker":"KW SG KELLER WILLIAMS REALTY PRADO","url":"https://www.realtor.com/realestateandhomes-detail/20-Acres-0001-0005-Unit-E1522_Beryl_UT_84714_M98943-28754","region":"Iron","county":"Iron","la":37.880372,"lo":-113.700359,"gk":"realtor"},{"title":"E-1522 # 0001-0005, Beryl, UT 84714","price":12900,"acres":20.0,"ppa":645,"city":"Beryl","broker":"Kw St George Keller Williams Realty","url":"https://www.realtor.com/realestateandhomes-detail/0001-0005-Unit-E1522_Beryl_UT_84714_M94536-45863","region":"Iron","county":"Iron","la":37.880289,"lo":-113.699829,"gk":"realtor"},{"title":"Indianola, UT 84629","price":15000,"acres":71.38,"ppa":210,"city":"Indianola","broker":"Equity Real Estate - Utah","url":"https://www.realtor.com/realestateandhomes-detail/Indianola_UT_84629_M97724-75307","region":"Utah","county":"Utah","la":39.80302,"lo":-111.4888,"gk":"city"},{"title":"Rd, Indianola, UT 84629","price":15000,"acres":37.08,"ppa":405,"city":"Indianola","broker":"Equity Real Estate - Utah","url":"https://www.realtor.com/realestateandhomes-detail/Rd_Indianola_UT_84629_M94784-63298","region":"Utah","county":"Utah","la":39.80302,"lo":-111.4888,"gk":"city"},{"title":"13875 S Leland Bench, Myton, UT 84052","price":15000,"acres":10.0,"ppa":1500,"city":"Myton","broker":"Edge Real Estate LLC","url":"https://www.realtor.com/realestateandhomes-detail/13875-S-Leland-Bench_Myton_UT_84052_M96189-09640","region":"Duchesne","county":"Duchesne","la":40.1944,"lo":-110.06182,"gk":"city"},{"title":"Park Valley, UT 84329","price":15000,"acres":40.0,"ppa":375,"city":"Park Valley","broker":"Utah Real Estate","url":"https://www.realtor.com/realestateandhomes-detail/Park-Valley_UT_84329_M91606-13934","region":"Box Elder","county":"Box Elder","la":41.81754,"lo":-113.32853,"gk":"city"},{"title":"147.9141 Acre Water Right Ft # 73-1201, Cedar City, UT 84721","price":16000,"acres":100000.0,"ppa":0,"city":"Cedar City","broker":"D&B Real Estate Cedar City","url":"https://www.realtor.com/realestateandhomes-detail/1479141-Acre-Water-Right-Ft-73-1201_Cedar-City_UT_84721_M98014-25879","region":"Iron","county":"Iron","la":37.685549,"lo":-113.088805,"gk":"realtor"},{"title":"10 Ac N Lund, Cedar City, UT 84721","price":17500,"acres":10.0,"ppa":1750,"city":"Cedar City","broker":"D&B Real Estate Cedar City","url":"https://www.realtor.com/realestateandhomes-detail/10-Ac-N-Lund_Cedar-City_UT_84721_M98932-14084","region":"Iron","county":"Iron","la":37.67742,"lo":-113.06183,"gk":"city"},{"title":"N Lund, Cedar City, UT 84720","price":17500,"acres":10.0,"ppa":1750,"city":"Cedar City","broker":"D&B Real Estate Cedar City","url":"https://www.realtor.com/realestateandhomes-detail/N-Lund_Cedar-City_UT_84720_M90832-83054","region":"Iron","county":"Iron","la":37.67742,"lo":-113.06183,"gk":"city"},{"title":"Duchesne, UT 84021","price":18000,"acres":10.0,"ppa":1800,"city":"Duchesne","broker":"Freedom Realty Corp.","url":"https://www.realtor.com/realestateandhomes-detail/Duchesne_UT_84021_M98409-45115","region":"Duchesne","county":"Duchesne","la":40.16329,"lo":-110.40293,"gk":"city"},{"title":"Beryl, UT 84714","price":18000,"acres":20.0,"ppa":900,"city":"Beryl","broker":"ERA Realty Center","url":"https://www.realtor.com/realestateandhomes-detail/Beryl_UT_84714_M97252-08223","region":"Iron","county":"Iron","la":37.89564,"lo":-113.66204,"gk":"city"},{"title":"20 Acres Beryl, Beryl, UT 84714","price":18000,"acres":20.0,"ppa":900,"city":"Beryl","broker":"ERA Realty Center","url":"https://www.realtor.com/realestateandhomes-detail/20-Acres-Beryl_Beryl_UT_84714_M98944-05294","region":"Iron","county":"Iron","la":37.833818,"lo":-113.538768,"gk":"realtor"},{"title":"Duchesne, UT 84021","price":18000,"acres":10.62,"ppa":1695,"city":"Duchesne","broker":"Western Land Realty, Inc","url":"https://www.realtor.com/realestateandhomes-detail/Duchesne_UT_84021_M98552-74301","region":"Duchesne","county":"Duchesne","la":40.16329,"lo":-110.40293,"gk":"city"},{"title":"15 Acres Tax Id # 265543, Beryl, UT 84714","price":19000,"acres":15.0,"ppa":1267,"city":"Beryl","broker":"ERA Realty Center","url":"https://www.realtor.com/realestateandhomes-detail/15-Acres-Tax-Id-265543_Beryl_UT_84714_M98297-26350","region":"Iron","county":"Iron","la":37.89564,"lo":-113.66204,"gk":"city"},{"title":"Beryl, UT 84714","price":19225,"acres":15.38,"ppa":1250,"city":"Beryl","broker":"Century 21 Everest St George","url":"https://www.realtor.com/realestateandhomes-detail/1538-Acres_Beryl_UT_84714_M97910-19494","region":"Unknown","county":null,"la":37.89564,"lo":-113.66204,"gk":"city"},{"title":"2000 S 1000 W, Milford, UT 84751","price":19500,"acres":11.54,"ppa":1690,"city":"Milford","broker":"ERA Brokers Consolidated","url":"https://www.realtor.com/realestateandhomes-detail/2000-S-1000-W_Milford_UT_84751_M93050-94479","region":"Beaver","county":"Beaver","la":38.367661,"lo":-113.033154,"gk":"realtor"},{"title":"Duchesne, UT 84021","price":19999,"acres":10.8,"ppa":1852,"city":"Duchesne","broker":"Freedom Realty Corp.","url":"https://www.realtor.com/realestateandhomes-detail/Arcadia_UT_84021_M90269-15050","region":"Unknown","county":null,"la":40.16329,"lo":-110.40293,"gk":"city"},{"title":"Etna, UT 84313","price":20000,"acres":50.0,"ppa":400,"city":"Etna","broker":"Mad About Real Estate","url":"https://www.realtor.com/realestateandhomes-detail/Etna_UT_84313_M95685-29112","region":"Unknown","county":null,"la":41.67159,"lo":-113.95446,"gk":"city"},{"title":"4000 W Thermal Rd, Minersville, UT 84752","price":20000,"acres":10.0,"ppa":2000,"city":"Minersville","broker":"Exp Realty, LLC (Cedar City)","url":"https://www.realtor.com/realestateandhomes-detail/4000-W-Thermal-Rd_Minersville_UT_84752_M98106-00399","region":"Beaver","county":"Beaver","la":38.2141,"lo":-112.92365,"gk":"city"},{"title":"4000 W Thermal Rd, Milford, UT 84751","price":20000,"acres":10.0,"ppa":2000,"city":"Milford","broker":"Exp Realty, LLC (Cedar City)","url":"https://www.realtor.com/realestateandhomes-detail/4000-W-Thermal-Rd_Milford_UT_84751_M99550-96617","region":"Beaver","county":"Beaver","la":38.395287,"lo":-113.014356,"gk":"realtor"},{"title":"Etna, UT 84313","price":20000,"acres":50.0,"ppa":400,"city":"Etna","broker":"Stengel Realty, LLC","url":"https://www.realtor.com/realestateandhomes-detail/Etna_UT_84313_M99671-41597","region":"Unknown","county":null,"la":41.67159,"lo":-113.95446,"gk":"city"},{"title":"Unit 35, Park Valley, UT 84329","price":20000,"acres":10.0,"ppa":2000,"city":"Park Valley","broker":"KW Utah Realtors Keller Williams (Brickyard)","url":"https://www.realtor.com/realestateandhomes-detail/Unit-35_Park-Valley_UT_84329_M94233-99619","region":"Box Elder","county":"Box Elder","la":41.81754,"lo":-113.32853,"gk":"city"},{"title":"Grouse Creek, UT 84313","price":20000,"acres":61.25,"ppa":327,"city":"Grouse Creek","broker":"Remax Community-Valley","url":"https://www.realtor.com/realestateandhomes-detail/Grouse-Creek_UT_84313_M91652-26626","region":"Unknown","county":null,"la":41.70963,"lo":-113.88272,"gk":"city"},{"title":"20 Acres, Beryl, UT 84714","price":22500,"acres":20.0,"ppa":1125,"city":"Beryl","broker":"ERA Realty Center","url":"https://www.realtor.com/realestateandhomes-detail/20-Acres_Beryl_UT_84714_M95974-08794","region":"Iron","county":"Iron","la":37.824769,"lo":-113.634829,"gk":"realtor"},{"title":"15980 N 62400 W Unit 17, Park Valley, UT 84329","price":23999,"acres":10.0,"ppa":2400,"city":"Park Valley","broker":"Realtypath LLC (South Valley)","url":"https://www.realtor.com/realestateandhomes-detail/15980-N-62400-W-17_Park-Valley_UT_84329_M91384-49118","region":"Box Elder","county":"Box Elder","la":41.785748,"lo":-113.530502,"gk":"realtor"},{"title":"7600 N 1400 E, Beryl, UT 84714","price":24900,"acres":40.0,"ppa":622,"city":"Beryl","broker":"ERA Realty Center","url":"https://www.realtor.com/realestateandhomes-detail/7600-N-1400-E_Beryl_UT_84714_M98786-15887","region":"Iron","county":"Iron","la":37.809888,"lo":-113.512163,"gk":"realtor"},{"title":"Roosevelt, UT 84066","price":25000,"acres":10.0,"ppa":2500,"city":"Roosevelt","broker":"Western Land Realty, Inc","url":"https://www.realtor.com/realestateandhomes-detail/Roosevelt_UT_84066_M93858-39003","region":"Duchesne","county":"Duchesne","la":40.2994,"lo":-109.98876,"gk":"city"},{"title":"Duchesne, UT 84021","price":25000,"acres":12.5,"ppa":2000,"city":"Duchesne","broker":"Freedom Realty Corp.","url":"https://www.realtor.com/realestateandhomes-detail/Duchesne_UT_84021_M23912-56956","region":"Unknown","county":null,"la":40.16329,"lo":-110.40293,"gk":"city"},{"title":"Beryl, UT 84714","price":25000,"acres":10.0,"ppa":2500,"city":"Beryl","broker":"ERA Realty Center","url":"https://www.realtor.com/realestateandhomes-detail/Beryl_UT_84714_M90183-76384","region":"Iron","county":"Iron","la":37.89564,"lo":-113.66204,"gk":"city"},{"title":"10 Acre Beryl Parcel Near, Beryl, UT 84714","price":25000,"acres":10.0,"ppa":2500,"city":"Beryl","broker":"ERA Realty Center","url":"https://www.realtor.com/realestateandhomes-detail/10-Acres-Near-Beryl_Beryl_UT_84714_M12129-55207","region":"Iron","county":"Iron","la":37.789998,"lo":-113.672848,"gk":"realtor"},{"title":"Beryl, UT 84714","price":25000,"acres":40.0,"ppa":625,"city":"Beryl","broker":"KW Ascend Keller Williams Realty","url":"https://www.realtor.com/realestateandhomes-detail/Beryl_UT_84714_M96625-60533","region":"Iron","county":"Iron","la":37.89564,"lo":-113.66204,"gk":"city"},{"title":"40ACRES 0000-0000 # E0721, Beryl, UT 84714","price":25000,"acres":40.0,"ppa":625,"city":"Beryl","broker":"KW SG KELLER WILLIAMS REALTY PRADO","url":"https://www.realtor.com/realestateandhomes-detail/40ACRES-0000-0000-E0721_Lund_UT_84714_M94440-17008","region":"Iron","county":"Iron","la":38.021701,"lo":-113.420238,"gk":"realtor"},{"title":"13000 W 5000 S Unit 8, Arcadia, UT 84021","price":26000,"acres":20.0,"ppa":1300,"city":"Arcadia","broker":"Equity Real Estate - Utah","url":"https://www.realtor.com/realestateandhomes-detail/Unit-8_Arcadia_UT_84021_M96969-03016","region":"Unknown","county":null,"la":40.22246,"lo":-110.23738,"gk":"city"},{"title":"1175 N # 5200, Beryl, UT 84714","price":28999,"acres":20.0,"ppa":1450,"city":"Beryl","broker":"Platlabs, LLC","url":"https://www.realtor.com/realestateandhomes-detail/1175-N-5200_Beryl_UT_84714_M94484-42936","region":"Iron","county":"Iron","la":37.801206,"lo":-113.62654,"gk":"realtor"},{"title":"Fruitland, UT 84027","price":29000,"acres":10.0,"ppa":2900,"city":"Fruitland","broker":"Western Land Realty, Inc","url":"https://www.realtor.com/realestateandhomes-detail/Fruitland_UT_84027_M90085-50567","region":"Duchesne","county":"Duchesne","la":40.21273,"lo":-110.83961,"gk":"city"},{"title":"Grouse Creek, UT 84313","price":29000,"acres":45.54,"ppa":637,"city":"Grouse Creek","broker":"Omada Real Estate","url":"https://www.realtor.com/realestateandhomes-detail/Grouse-Creek_UT_84313_M95046-70885","region":"Box Elder","county":"Box Elder","la":41.70963,"lo":-113.88272,"gk":"city"},{"title":"Unit 135, Fruitland, UT 84027","price":29500,"acres":10.0,"ppa":2950,"city":"Fruitland","broker":"Equity Real Estate - Premier Elite Branch","url":"https://www.realtor.com/realestateandhomes-detail/Unit-135_Fruitland_UT_84027_M95197-64539","region":"Unknown","county":null,"la":40.21273,"lo":-110.83961,"gk":"city"}];
+/* Utah county outlines (US Census 2010 cartographic boundaries via plotly/datasets), 4-decimal coords */
+const COUNTIES = {"type":"FeatureCollection","features":[{"type":"Feature","properties":{"n":"Beaver","fips":"49001"},"geometry":{"type":"Polygon","coordinates":[[[-112.5185,38.5099],[-112.3354,38.333],[-112.3569,38.2248],[-112.4438,38.1499],[-112.4621,38.1499],[-112.4787,38.1473],[-113.4716,38.1487],[-114.0499,38.1486],[-114.0501,38.4045],[-114.0501,38.4047],[-114.0498,38.5438],[-114.0499,38.5478],[-114.0502,38.5729],[-112.9194,38.5765],[-112.9193,38.5747],[-112.5152,38.5737],[-112.5152,38.5723],[-112.5189,38.5674],[-112.5157,38.5566],[-112.5178,38.554],[-112.516,38.529],[-112.5224,38.519],[-112.5185,38.5099]]]}},{"type":"Feature","properties":{"n":"Box Elder","fips":"49003"},"geometry":{"type":"Polygon","coordinates":[[[-111.8855,41.4264],[-111.9591,41.4337],[-112.0284,41.3364],[-112.2379,41.3367],[-112.4934,41.0767],[-112.7993,41.0002],[-114.0421,40.9999],[-114.0399,41.742],[-114.0412,41.8506],[-114.0411,41.8506],[-114.0417,41.9937],[-113.8933,41.9881],[-113.7961,41.9891],[-113.7645,41.9895],[-113.4316,41.9938],[-113.4022,41.9942],[-113.3965,41.9943],[-113.0008,41.9982],[-113.0008,41.9982],[-112.9792,41.9983],[-112.9096,41.9988],[-112.8824,41.9989],[-112.8806,41.9989],[-112.8331,41.9993],[-112.8331,41.9993],[-112.7885,41.9997],[-112.7094,42.0003],[-112.648,42.0003],[-112.4508,42.001],[-112.4506,42.0011],[-112.3862,42.0011],[-112.2649,42.001],[-112.2391,42.0012],[-112.164,41.9967],[-112.0527,41.866],[-112.0518,41.6998],[-111.9821,41.534],[-111.9166,41.5386],[-111.8855,41.4264]]]}},{"type":"Feature","properties":{"n":"Cache","fips":"49005"},"geometry":{"type":"Polygon","coordinates":[[[-111.8855,41.4264],[-111.9166,41.5386],[-111.9821,41.534],[-112.0518,41.6998],[-112.0527,41.866],[-112.164,41.9967],[-112.1095,41.9971],[-111.9158,41.9985],[-111.9156,41.9985],[-111.8765,41.9985],[-111.5073,41.9995],[-111.4713,41.9282],[-111.4269,41.6779],[-111.4429,41.5314],[-111.5108,41.4231],[-111.6666,41.4288],[-111.7265,41.3758],[-111.8855,41.4264]]]}},{"type":"Feature","properties":{"n":"Carbon","fips":"49007"},"geometry":{"type":"Polygon","coordinates":[[[-109.9676,39.806],[-109.8847,39.8057],[-109.9937,39.7028],[-110.038,39.5667],[-110.0241,39.469],[-111.0812,39.4675],[-111.132,39.6138],[-111.1591,39.5959],[-111.2474,39.7046],[-111.2475,39.8133],[-110.8579,39.8124],[-109.9676,39.806]]]}},{"type":"Feature","properties":{"n":"Daggett","fips":"49009"},"geometry":{"type":"Polygon","coordinates":[[[-110.0007,40.9974],[-109.9998,40.9973],[-109.8553,40.9976],[-109.8543,40.9977],[-109.7154,40.9982],[-109.7139,40.9983],[-109.6764,40.9984],[-109.2074,41.0015],[-109.0501,41.0007],[-109.0483,40.6626],[-109.1611,40.6838],[-109.1636,40.7859],[-109.2024,40.7858],[-109.2033,40.8586],[-109.3945,40.8581],[-109.3944,40.7909],[-109.4803,40.7399],[-109.5255,40.8264],[-109.8702,40.7638],[-109.9775,40.8098],[-109.9876,40.8076],[-109.9937,40.8152],[-110.0007,40.8137],[-110.0007,40.9974]]]}},{"type":"Feature","properties":{"n":"Davis","fips":"49011"},"geometry":{"type":"Polygon","coordinates":[[[-111.7386,40.8611],[-111.9159,40.822],[-112.0066,40.9218],[-112.2635,40.7734],[-112.4934,41.0767],[-112.1896,41.1527],[-111.8563,41.1391],[-111.8152,40.9575],[-111.7386,40.8611]]]}},{"type":"Feature","properties":{"n":"Duchesne","fips":"49013"},"geometry":{"type":"Polygon","coordinates":[[[-110.8579,39.8124],[-110.8573,39.8989],[-110.8919,39.8991],[-110.9019,40.6782],[-110.8931,40.7273],[-110.375,40.7882],[-110.2943,40.8342],[-110.0007,40.8137],[-109.9937,40.8152],[-109.9876,40.8076],[-109.9775,40.8098],[-109.9737,40.0399],[-109.9676,39.806],[-110.8579,39.8124]]]}},{"type":"Feature","properties":{"n":"Emery","fips":"49015"},"geometry":{"type":"Polygon","coordinates":[[[-110.0254,38.5],[-111.3059,38.5],[-111.3058,38.5102],[-111.2994,39.0323],[-111.3012,39.4673],[-111.2473,39.4672],[-111.2474,39.7046],[-111.1591,39.5959],[-111.132,39.6138],[-111.0812,39.4675],[-110.0241,39.469],[-110.0248,39.4676],[-110.0241,39.4617],[-110.0106,39.4163],[-110.0773,39.2759],[-110.0546,39.2283],[-110.0988,39.1895],[-110.1505,38.9987],[-110.0977,39.0016],[-110.0056,38.9499],[-110.15,38.9807],[-110.1793,38.9072],[-110.0839,38.752],[-110.1135,38.7065],[-110.0363,38.6523],[-110.0559,38.605],[-109.9969,38.6088],[-110.0579,38.5837],[-109.9943,38.5271],[-110.0254,38.5]]]}},{"type":"Feature","properties":{"n":"Garfield","fips":"49017"},"geometry":{"type":"Polygon","coordinates":[[[-111.8428,38.1513],[-111.4144,38.1501],[-110.6874,38.1514],[-109.9279,38.1519],[-110.283,37.8662],[-110.305,37.8905],[-110.4046,37.8799],[-110.4281,37.779],[-110.4977,37.6522],[-110.6464,37.5411],[-111.8532,37.5356],[-112.3613,37.5364],[-112.3612,37.5431],[-112.6832,37.5432],[-112.6892,37.8058],[-112.5786,37.8045],[-112.5884,37.8904],[-112.4682,37.8905],[-112.4787,38.1473],[-112.4621,38.1499],[-112.4438,38.1499],[-111.8428,38.1513]]]}},{"type":"Feature","properties":{"n":"Grand","fips":"49019"},"geometry":{"type":"Polygon","coordinates":[[[-110.0254,38.5],[-109.9943,38.5271],[-110.0579,38.5837],[-109.9969,38.6088],[-110.0559,38.605],[-110.0363,38.6523],[-110.1135,38.7065],[-110.0839,38.752],[-110.1793,38.9072],[-110.15,38.9807],[-110.0056,38.9499],[-110.0977,39.0016],[-110.1505,38.9987],[-110.0988,39.1895],[-110.0546,39.2283],[-110.0773,39.2759],[-110.0106,39.4163],[-110.0241,39.4617],[-109.107,39.462],[-109.0514,39.4977],[-109.0514,39.3667],[-109.0515,39.125],[-109.0533,38.9429],[-109.0532,38.9425],[-109.0538,38.9053],[-109.0539,38.9044],[-109.0595,38.7199],[-109.06,38.5],[-110.0254,38.5]]]}},{"type":"Feature","properties":{"n":"Iron","fips":"49021"},"geometry":{"type":"Polygon","coordinates":[[[-112.6832,37.5432],[-112.9012,37.5434],[-112.901,37.4997],[-113.037,37.4986],[-113.0369,37.4746],[-113.1463,37.4741],[-113.2537,37.4822],[-113.2532,37.5289],[-113.4744,37.529],[-113.475,37.6183],[-114.0525,37.6048],[-114.0517,37.746],[-114.0518,37.7462],[-114.0517,37.747],[-114.0511,37.7563],[-114.0485,37.8099],[-114.0504,38.0],[-114.0499,38.1486],[-113.4716,38.1487],[-112.4787,38.1473],[-112.4682,37.8905],[-112.5884,37.8904],[-112.5786,37.8045],[-112.6892,37.8058],[-112.6832,37.5432]]]}},{"type":"Feature","properties":{"n":"Juab","fips":"49023"},"geometry":{"type":"Polygon","coordinates":[[[-112.1797,40.0116],[-112.0534,39.8932],[-112.0713,39.7779],[-111.972,39.8067],[-111.9094,39.8945],[-111.7948,39.9312],[-111.7342,39.8539],[-111.7662,39.8106],[-111.6406,39.813],[-111.5851,39.7401],[-111.7186,39.6946],[-111.7132,39.4601],[-111.7471,39.3828],[-111.9225,39.3815],[-112.0157,39.3145],[-112.1956,39.3296],[-112.2204,39.5541],[-112.3543,39.5539],[-112.4621,39.5524],[-113.8156,39.5526],[-113.8157,39.5441],[-114.0477,39.5427],[-114.0471,39.906],[-112.3419,39.9042],[-112.3318,39.9527],[-112.2699,39.9389],[-112.1797,40.0116]]]}},{"type":"Feature","properties":{"n":"Kane","fips":"49025"},"geometry":{"type":"Polygon","coordinates":[[[-110.6464,37.5411],[-110.6391,37.4871],[-110.7192,37.4814],[-110.6992,37.4307],[-110.7361,37.3452],[-110.7778,37.323],[-110.8698,37.3487],[-110.8995,37.1762],[-110.9583,37.1244],[-111.0577,37.0994],[-111.1783,37.1026],[-111.2475,37.0216],[-111.2688,37.0542],[-111.3149,37.0121],[-111.4128,37.0015],[-112.3577,37.001],[-112.3689,37.0011],[-112.5345,37.0007],[-112.5386,37.0007],[-112.5404,37.0007],[-112.5451,37.0007],[-112.559,37.0007],[-112.6098,37.0008],[-112.8994,37.0003],[-112.901,37.4997],[-112.9012,37.5434],[-112.6832,37.5432],[-112.3612,37.5431],[-112.3613,37.5364],[-111.8532,37.5356],[-110.6464,37.5411]]]}},{"type":"Feature","properties":{"n":"Millard","fips":"49027"},"geometry":{"type":"Polygon","coordinates":[[[-112.3543,39.5539],[-112.2204,39.5541],[-112.1956,39.3296],[-112.0157,39.3145],[-112.0142,39.0454],[-112.0653,38.9577],[-112.1322,38.9567],[-112.2248,38.8651],[-112.2187,38.7277],[-112.3098,38.6762],[-112.4478,38.6812],[-112.5152,38.5723],[-112.5152,38.5737],[-112.9193,38.5747],[-112.9194,38.5765],[-114.0502,38.5729],[-114.0499,38.6774],[-114.0477,39.5427],[-113.8157,39.5441],[-113.8156,39.5526],[-112.4621,39.5524],[-112.3543,39.5539]]]}},{"type":"Feature","properties":{"n":"Morgan","fips":"49029"},"geometry":{"type":"Polygon","coordinates":[[[-111.2648,41.1443],[-111.5086,41.0628],[-111.593,40.993],[-111.4796,40.8584],[-111.5196,40.7918],[-111.641,40.7991],[-111.7386,40.8611],[-111.8152,40.9575],[-111.8563,41.1391],[-111.8584,41.1974],[-111.6782,41.181],[-111.5959,41.2391],[-111.4966,41.2269],[-111.4206,41.3614],[-111.3317,41.3574],[-111.2214,41.2129],[-111.2648,41.1443]]]}},{"type":"Feature","properties":{"n":"Piute","fips":"49031"},"geometry":{"type":"Polygon","coordinates":[[[-112.5185,38.5099],[-111.7667,38.502],[-111.8489,38.425],[-111.8428,38.1513],[-112.4438,38.1499],[-112.3569,38.2248],[-112.3354,38.333],[-112.5185,38.5099]]]}},{"type":"Feature","properties":{"n":"Rich","fips":"49033"},"geometry":{"type":"Polygon","coordinates":[[[-111.0467,42.0016],[-111.0464,41.5798],[-111.0463,41.3777],[-111.0466,41.3607],[-111.0466,41.2517],[-111.2648,41.1443],[-111.2214,41.2129],[-111.3317,41.3574],[-111.4206,41.3614],[-111.5108,41.4231],[-111.4429,41.5314],[-111.4269,41.6779],[-111.4713,41.9282],[-111.5073,41.9995],[-111.4255,42.0008],[-111.4209,42.0008],[-111.4159,42.0007],[-111.0467,42.0016]]]}},{"type":"Feature","properties":{"n":"Salt Lake","fips":"49035"},"geometry":{"type":"Polygon","coordinates":[[[-111.9138,40.4525],[-111.9191,40.4432],[-111.9316,40.4335],[-111.9782,40.4173],[-112.1732,40.4669],[-112.1755,40.6045],[-112.2227,40.7221],[-112.2274,40.7252],[-112.2635,40.7734],[-112.0066,40.9218],[-111.9159,40.822],[-111.7386,40.8611],[-111.641,40.7991],[-111.5531,40.6094],[-111.5645,40.5848],[-111.5939,40.5771],[-111.9138,40.4525]]]}},{"type":"Feature","properties":{"n":"San Juan","fips":"49037"},"geometry":{"type":"Polygon","coordinates":[[[-109.0431,37.9743],[-109.0421,37.8812],[-109.0417,37.8421],[-109.0418,37.8358],[-109.0418,37.7132],[-109.0417,37.7112],[-109.0421,37.6238],[-109.0421,37.6177],[-109.0418,37.6042],[-109.0419,37.5307],[-109.0419,37.5307],[-109.0431,37.4852],[-109.0458,37.375],[-109.0452,37.1121],[-109.0452,37.112],[-109.0452,37.1095],[-109.0452,37.0963],[-109.045,37.0864],[-109.0451,37.0747],[-109.0452,37.0727],[-109.0452,36.9991],[-109.1812,36.9993],[-109.2338,36.9993],[-109.2469,36.9993],[-109.2634,36.9993],[-109.2682,36.9992],[-109.2701,36.9993],[-109.378,36.9991],[-109.3812,36.9991],[-110.0007,36.998],[-110.3311,36.9982],[-110.4953,37.0039],[-110.7507,37.0032],[-111.1899,37.001],[-111.4055,37.0015],[-111.4059,37.0015],[-111.4128,37.0015],[-111.3149,37.0121],[-111.2688,37.0542],[-111.2475,37.0216],[-111.1783,37.1026],[-111.0577,37.0994],[-110.9583,37.1244],[-110.8995,37.1762],[-110.8698,37.3487],[-110.7778,37.323],[-110.7361,37.3452],[-110.6992,37.4307],[-110.7192,37.4814],[-110.6391,37.4871],[-110.6464,37.5411],[-110.4977,37.6522],[-110.4281,37.779],[-110.4046,37.8799],[-110.305,37.8905],[-110.283,37.8662],[-109.9279,38.1519],[-109.8873,38.1902],[-110.0151,38.3646],[-110.0254,38.5],[-109.06,38.5],[-109.0601,38.2755],[-109.0421,38.1555],[-109.0421,38.153],[-109.0428,37.9993],[-109.0428,37.9971],[-109.0431,37.9743]]]}},{"type":"Feature","properties":{"n":"Sanpete","fips":"49039"},"geometry":{"type":"Polygon","coordinates":[[[-112.0142,39.0454],[-112.0157,39.3145],[-111.9225,39.3815],[-111.7471,39.3828],[-111.7132,39.4601],[-111.7186,39.6946],[-111.5851,39.7401],[-111.6406,39.813],[-111.2475,39.8133],[-111.2474,39.7046],[-111.2473,39.4672],[-111.3012,39.4673],[-111.2994,39.0323],[-111.8535,39.033],[-112.0142,39.0454]]]}},{"type":"Feature","properties":{"n":"Sevier","fips":"49041"},"geometry":{"type":"Polygon","coordinates":[[[-111.3058,38.5102],[-111.7562,38.51],[-111.7667,38.502],[-112.5185,38.5099],[-112.5224,38.519],[-112.516,38.529],[-112.5178,38.554],[-112.5157,38.5566],[-112.5189,38.5674],[-112.5152,38.5723],[-112.4478,38.6812],[-112.3098,38.6762],[-112.2187,38.7277],[-112.2248,38.8651],[-112.1322,38.9567],[-112.0653,38.9577],[-112.0142,39.0454],[-111.8535,39.033],[-111.2994,39.0323],[-111.3058,38.5102]]]}},{"type":"Feature","properties":{"n":"Summit","fips":"49043"},"geometry":{"type":"Polygon","coordinates":[[[-111.0466,41.2517],[-111.0467,40.998],[-110.5007,40.9947],[-110.0485,40.9971],[-110.0007,40.9974],[-110.0007,40.8137],[-110.2943,40.8342],[-110.375,40.7882],[-110.8931,40.7273],[-110.9019,40.6782],[-111.0244,40.5775],[-111.1514,40.5484],[-111.3749,40.6327],[-111.3937,40.6904],[-111.4896,40.5992],[-111.5531,40.6094],[-111.641,40.7991],[-111.5196,40.7918],[-111.4796,40.8584],[-111.593,40.993],[-111.5086,41.0628],[-111.2648,41.1443],[-111.0466,41.2517]]]}},{"type":"Feature","properties":{"n":"Tooele","fips":"49045"},"geometry":{"type":"Polygon","coordinates":[[[-112.2227,40.7221],[-112.1755,40.6045],[-112.1732,40.4669],[-112.2122,40.4592],[-112.1796,40.2321],[-112.1452,40.1712],[-112.1797,40.0116],[-112.2699,39.9389],[-112.3318,39.9527],[-112.3419,39.9042],[-114.0471,39.906],[-114.0466,40.1169],[-114.0455,40.4945],[-114.0456,40.4958],[-114.0453,40.5066],[-114.0435,40.7263],[-114.0438,40.7587],[-114.0438,40.7592],[-114.0421,40.9999],[-112.7993,41.0002],[-112.4934,41.0767],[-112.2635,40.7734],[-112.2274,40.7252],[-112.2227,40.7221]]]}},{"type":"Feature","properties":{"n":"Uintah","fips":"49047"},"geometry":{"type":"Polygon","coordinates":[[[-110.0241,39.4617],[-110.0248,39.4676],[-110.0241,39.469],[-110.038,39.5667],[-109.9937,39.7028],[-109.8847,39.8057],[-109.9676,39.806],[-109.9737,40.0399],[-109.9775,40.8098],[-109.8702,40.7638],[-109.5255,40.8264],[-109.4803,40.7399],[-109.3944,40.7909],[-109.3945,40.8581],[-109.2033,40.8586],[-109.2024,40.7858],[-109.1636,40.7859],[-109.1611,40.6838],[-109.0483,40.6626],[-109.0482,40.6536],[-109.0501,40.5404],[-109.05,40.5399],[-109.0509,40.2227],[-109.051,40.1808],[-109.0509,40.1807],[-109.0508,40.0596],[-109.0509,40.0589],[-109.0512,39.6605],[-109.0514,39.4977],[-109.107,39.462],[-110.0241,39.4617]]]}},{"type":"Feature","properties":{"n":"Utah","fips":"49049"},"geometry":{"type":"Polygon","coordinates":[[[-111.9138,40.4525],[-111.5939,40.5771],[-111.6117,40.4315],[-111.5552,40.3627],[-111.4803,40.3622],[-111.4265,40.2869],[-111.3148,40.2876],[-111.2788,40.2587],[-111.2255,40.1673],[-111.2462,40.0475],[-111.2058,40.0474],[-111.0831,39.9432],[-111.0825,39.9002],[-110.8919,39.8991],[-110.8573,39.8989],[-110.8579,39.8124],[-111.2475,39.8133],[-111.6406,39.813],[-111.7662,39.8106],[-111.7342,39.8539],[-111.7948,39.9312],[-111.9094,39.8945],[-111.972,39.8067],[-112.0713,39.7779],[-112.0534,39.8932],[-112.1797,40.0116],[-112.1452,40.1712],[-112.1796,40.2321],[-112.2122,40.4592],[-112.1732,40.4669],[-111.9782,40.4173],[-111.9316,40.4335],[-111.9191,40.4432],[-111.9138,40.4525]]]}},{"type":"Feature","properties":{"n":"Wasatch","fips":"49051"},"geometry":{"type":"Polygon","coordinates":[[[-111.6117,40.4315],[-111.5939,40.5771],[-111.5645,40.5848],[-111.5531,40.6094],[-111.4896,40.5992],[-111.3937,40.6904],[-111.3749,40.6327],[-111.1514,40.5484],[-111.0244,40.5775],[-110.9019,40.6782],[-110.8919,39.8991],[-111.0825,39.9002],[-111.0831,39.9432],[-111.2058,40.0474],[-111.2462,40.0475],[-111.2255,40.1673],[-111.2788,40.2587],[-111.3148,40.2876],[-111.4265,40.2869],[-111.4803,40.3622],[-111.5552,40.3627],[-111.6117,40.4315]]]}},{"type":"Feature","properties":{"n":"Washington","fips":"49053"},"geometry":{"type":"Polygon","coordinates":[[[-112.8994,37.0003],[-112.9665,37.0002],[-113.9659,37.0],[-113.9659,37.0],[-114.0506,37.0004],[-114.0517,37.0884],[-114.0518,37.091],[-114.052,37.2838],[-114.052,37.2845],[-114.0518,37.293],[-114.0518,37.2935],[-114.0519,37.3705],[-114.0519,37.3707],[-114.0527,37.492],[-114.0527,37.5025],[-114.0527,37.5173],[-114.0527,37.5179],[-114.0525,37.6048],[-113.475,37.6183],[-113.4744,37.529],[-113.2532,37.5289],[-113.2537,37.4822],[-113.1463,37.4741],[-113.0369,37.4746],[-113.037,37.4986],[-112.901,37.4997],[-112.8994,37.0003]]]}},{"type":"Feature","properties":{"n":"Wayne","fips":"49055"},"geometry":{"type":"Polygon","coordinates":[[[-109.9279,38.1519],[-110.6874,38.1514],[-111.4144,38.1501],[-111.8428,38.1513],[-111.8489,38.425],[-111.7667,38.502],[-111.7562,38.51],[-111.3058,38.5102],[-111.3059,38.5],[-110.0254,38.5],[-110.0151,38.3646],[-109.8873,38.1902],[-109.9279,38.1519]]]}},{"type":"Feature","properties":{"n":"Weber","fips":"49057"},"geometry":{"type":"Polygon","coordinates":[[[-111.8855,41.4264],[-111.7265,41.3758],[-111.6666,41.4288],[-111.5108,41.4231],[-111.4206,41.3614],[-111.4966,41.2269],[-111.5959,41.2391],[-111.6782,41.181],[-111.8584,41.1974],[-111.8563,41.1391],[-112.1896,41.1527],[-112.4934,41.0767],[-112.2379,41.3367],[-112.0284,41.3364],[-111.9591,41.4337],[-111.8855,41.4264]]]}}]};
+
+const $ = id => document.getElementById(id);
+const money = n => n == null ? "\u2014" : "$" + Math.round(n).toLocaleString("en-US");
+const ac = n => n == null ? "\u2014" : Number(n.toFixed(1)).toLocaleString("en-US");
+
+function boot() {
+try {
+  /* populate city/broker dropdowns from data */
+  {
+    const fc = $("f_city"), fb = $("f_broker");
+    [...new Set(DATA.map(r => r.city).filter(Boolean))].sort().forEach(c => {
+      const o = document.createElement("option"); o.value = c; o.textContent = c; fc.appendChild(o);
+    });
+    [...new Set(DATA.map(r => r.broker).filter(Boolean))].sort().forEach(b => {
+      const o = document.createElement("option"); o.value = b; o.textContent = b; fb.appendChild(o);
+    });
+  }
+} catch (e) {
+  document.querySelector(".wrap").insertAdjacentHTML("afterbegin",
+    '<p style="color:#900;padding:12px">Listing filters could not be built in this browser.</p>');
+  return;
+}
+
+DATA.forEach((r, i) => r.i = i);
+
+/* ---------- map ---------- */
+/* $/acre bins: one-hue ordinal ramp, light = cheap, dark = expensive */
+const PPA_BINS = [
+  { max: 2000,     color: "#86b6ef", label: "under $2k" },
+  { max: 5000,     color: "#5598e7", label: "$2k–$5k" },
+  { max: 10000,    color: "#2a78d6", label: "$5k–$10k" },
+  { max: 25000,    color: "#1c5cab", label: "$10k–$25k" },
+  { max: Infinity, color: "#0d366b", label: "$25k and up" },
+];
+const NO_PPA = "#9a9890";
+const ppaColor = v => v == null ? NO_PPA : PPA_BINS.find(b => v < b.max).color;
+const PLACE = {
+  realtor: "Placed at Realtor.com's map pin for the listing",
+  address: "Placed at the listed address",
+  road: "Placed on the listed road (exact spot unknown)",
+  city: "Approximate: placed at the city, address not found",
+};
+let map = null, dotLayer = null, areaLayer = null;
+
+/* county name for a point: ray casting over the embedded outlines */
+function inRing(pt, ring) {
+  let inside = false;
+  for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+    const [xi, yi] = ring[i], [xj, yj] = ring[j];
+    if ((yi > pt[1]) !== (yj > pt[1]) && pt[0] < (xj - xi) * (pt[1] - yi) / (yj - yi) + xi) inside = !inside;
+  }
+  return inside;
+}
+function countyAt(lat, lon) {
+  for (const f of COUNTIES.features) {
+    const polys = f.geometry.type === "Polygon" ? [f.geometry.coordinates] : f.geometry.coordinates;
+    if (polys.some(p => inRing([lon, lat], p[0]) && !p.slice(1).some(h => inRing([lon, lat], h)))) return f.properties.n;
+  }
+  return null;
+}
+
+function popupHtml(r) {
+  const head = r.url ? '<a href="' + esc(r.url) + '" target="_blank" rel="noopener">' + esc(r.title) + "</a>" : esc(r.title);
+  return '<div class="pop"><div class="pop-t">' + head + "</div>" +
+    '<table class="pop-k">' +
+    "<tr><td>Price</td><td>" + money(r.price) + "</td></tr>" +
+    "<tr><td>Acres</td><td>" + ac(r.acres) + "</td></tr>" +
+    "<tr><td>$/acre</td><td>" + money(r.ppa) + "</td></tr>" +
+    (r.county ? "<tr><td>County</td><td>" + esc(r.county) + (r.gk === "city" ? " (approx.)" : "") + "</td></tr>" : "") +
+    (r.broker ? "<tr><td>Broker</td><td>" + esc(r.broker) + "</td></tr>" : "") +
+    '</table><div class="pop-n">' + PLACE[r.gk] + "</div></div>";
+}
+
+try {
+  const esri = (svc, opts) => L.tileLayer(
+    "https://server.arcgisonline.com/ArcGIS/rest/services/" + svc + "/MapServer/tile/{z}/{y}/{x}",
+    Object.assign({ maxZoom: 17, maxNativeZoom: 17 }, opts));
+  const topo = esri("World_Topo_Map", { attribution: "Tiles &copy; Esri &mdash; Esri, HERE, Garmin, USGS, NGA, EPA, USDA, NPS" });
+  const satellite = L.layerGroup([
+    esri("World_Imagery", { attribution: "Imagery &copy; Esri, Maxar, Earthstar Geographics" }),
+    esri("Reference/World_Boundaries_and_Places", {}),
+  ]);
+  map = L.map("map", { zoomSnap: 0.25, maxZoom: 17, preferCanvas: true, layers: [topo] });
+
+  const counties = L.geoJSON(COUNTIES, {
+    style: { color: "#3d3a33", weight: 1, opacity: 0.6, fill: true, fillOpacity: 0, dashArray: "4 3" },
+    onEachFeature: (f, l) => l.bindTooltip(f.properties.n + " County", { sticky: true, className: "ctip" }),
+  }).addTo(map);
+  /* County lines read white on imagery */
+  map.on("baselayerchange", e => counties.setStyle({ color: e.layer === satellite ? "#ffffff" : "#3d3a33" }));
+
+  dotLayer = L.layerGroup();
+  areaLayer = L.layerGroup();
+
+  for (const r of DATA) {
+    if (r.la == null) continue;
+    r.county = r.county || countyAt(r.la, r.lo);
+    const approx = r.gk === "city", c = ppaColor(r.ppa);
+    const base = { weight: 1.5, color: approx ? c : "#ffffff", fillColor: c, fillOpacity: approx ? 0.25 : 0.85 };
+    r.marker = L.circleMarker([r.la, r.lo], Object.assign({ radius: dotRadius(r.acres) }, base));
+    /* true-scale circle with the parcel's real area, for close zoom */
+    r.area = L.circle([r.la, r.lo], Object.assign({}, base,
+      { radius: Math.sqrt((r.acres || 10) * 4046.86 / Math.PI), color: c, weight: 2, fillOpacity: approx ? 0.12 : 0.4 }));
+    for (const [layer, style] of [[r.marker, base], [r.area, r.area.options]]) {
+      const rest = { weight: style.weight, color: style.color };
+      layer.bindPopup(() => popupHtml(r), { maxWidth: 300 })
+        .bindTooltip(() => hoverHtml(r), layer === r.marker
+          ? { direction: "top", offset: [0, -dotRadius(r.acres)], className: "tagtip", opacity: 1 }
+          : { direction: "top", sticky: true, offset: [0, -10], className: "tagtip", opacity: 1 })
+        .on("mouseover", () => { layer.setStyle({ weight: 3, color: "#0d2340" }); layer.bringToFront(); })
+        .on("mouseout", () => layer.setStyle(rest));
+    }
+  }
+
+  L.control.layers({ "Topo": topo, "Satellite": satellite }, { "County lines": counties },
+    { position: "topright", collapsed: window.innerWidth < 760 }).addTo(map);
+  L.control.scale({ imperial: true, metric: false }).addTo(map);
+
+  const sizeKey = [[10, "10 ac"], [160, "160 ac"], [640, "640 ac (1 sq mi)"]].map(([a, t]) => {
+    const d = 2 * dotRadius(a);
+    return '<span><i class="sz" style="width:' + d + "px;height:" + d + 'px"></i>' + t + "</span>";
+  }).join("");
+  $("legend").innerHTML = '<span class="lg-h">Price per acre</span>' +
+    PPA_BINS.map(b => '<span><i style="background:' + b.color + '"></i>' + b.label + "</span>").join("") +
+    '<span><i style="background:' + NO_PPA + '"></i>no price or acres</span>' +
+    '<span><i class="hollow"></i>approximate (city only)</span>' +
+    '<span class="lg-break"></span><span class="lg-h">Size</span>' + sizeKey + '<span class="lg-h">largest size from 1,200 ac up</span>';
+
+  const home = L.latLngBounds(DATA.filter(r => r.la != null).map(r => [r.la, r.lo]));
+  const el = $("map");
+  /* a map built while its container has no size (hidden tab or pane) fits once it gets one */
+  let fitted = el.clientWidth > 0;
+  if (fitted) map.fitBounds(home, { padding: [8, 8] }); else map.setView([39, -105.5], 7);
+  new ResizeObserver(() => {
+    if (!el.clientWidth) return;
+    map.invalidateSize();
+    if (!fitted) { fitted = true; map.fitBounds(home, { padding: [8, 8] }); }
+  }).observe(el);
+  map.on("zoomend", drawDots);
+} catch (err) {
+  map = null;
+  document.getElementById("map").innerHTML =
+    '<p style="padding:40px;color:#666">Map unavailable offline &mdash; the table below works fully.</p>';
+}
+
+/* ---------- acreage footprints ---------- */
+const TRUE_SCALE_ZOOM = 12; /* from here in, dots become circles with the parcel's real area */
+let mapRows = [];
+
+/* dot size grows with acreage (square root, so area tracks acres), capped so ranches don't cover a county;
+   narrow maps (phones) shrink every dot so the state view isn't one solid mass */
+function dotScale() { const w = document.getElementById("map").clientWidth; return w ? Math.max(0.55, Math.min(1, w / 900)) : 1; }
+function dotRadius(acres) { return Math.min(22, 3 + Math.sqrt(acres || 10) * 0.55) * dotScale(); }
+const shortMoney = n => n >= 1e6 ? "$" + (n / 1e6).toFixed(1) + "M" : n >= 1e4 ? "$" + Math.round(n / 1e3) + "k" :
+  n >= 1e3 ? "$" + (n / 1e3).toFixed(1) + "k" : "$" + n;
+function tagHtml(r) {
+  const b = r.ppa == null ? null : PPA_BINS.find(x => r.ppa < x.max);
+  const dark = !b || b.max > 5000;
+  return '<span class="pill ' + (dark ? "dark" : "light") + (r.gk === "city" ? " approx" : "") +
+    '" style="background:' + ppaColor(r.ppa) + '">' + (r.ppa == null ? "n/a" : shortMoney(r.ppa) + "/ac") + "</span>";
+}
+/* hover card: the $/acre tag plus the listing's key numbers */
+function hoverHtml(r) {
+  return '<div class="hov">' + tagHtml(r) +
+    '<div class="hov-t">' + esc(r.title) + "</div>" +
+    '<div class="hov-k"><span>' + ac(r.acres) + " ac</span><span>" + money(r.price) + "</span>" +
+    (r.county ? "<span>" + esc(r.county) + " Co.</span>" : "") + "</div>" +
+    (r.gk === "city" ? '<div class="hov-n">approximate: placed at the city</div>' : "") +
+    '<div class="hov-n">' + (TOUCH ? "tap" : "click") + " for details and link</div></div>";
+}
+const TOUCH = window.matchMedia("(hover: none)").matches;
+
+function drawDots() {
+  if (!map) return;
+  const close = map.getZoom() >= TRUE_SCALE_ZOOM;
+  dotLayer.clearLayers();
+  areaLayer.clearLayers();
+  /* biggest first, so small parcels sit on top and stay clickable */
+  const order = [...mapRows].sort((a, b) => (b.acres || 0) - (a.acres || 0));
+  if (!close) order.forEach(r => r.marker.setRadius(dotRadius(r.acres)));
+  order.forEach(r => (close ? areaLayer : dotLayer).addLayer(close ? r.area : r.marker));
+  (close ? areaLayer : dotLayer).addTo(map);
+  map.removeLayer(close ? dotLayer : areaLayer);
+}
+
+/* show the filtered listings on the map */
+function paintMap(rows) {
+  if (!map) return;
+  mapRows = rows.filter(r => r.marker);
+  drawDots();
+  const placed = rows.filter(r => r.gk && r.gk !== "city").length;  /* realtor pin, address or road */
+  $("mapcount").textContent = mapRows.length.toLocaleString() + " on map · " +
+    placed.toLocaleString() + " at a listing or address point, " +
+    (mapRows.length - placed).toLocaleString() + " approximate";
+}
+
+/* ---------- table ---------- */
+let sortK = "price", sortDir = -1;
+const ths = document.querySelectorAll("th[data-k]");
+function paintArrows() {
+  ths.forEach(th => th.querySelector(".arr").textContent =
+    th.dataset.k === sortK ? (sortDir === 1 ? "\u25b2" : "\u25bc") : "");
+}
+ths.forEach(th => th.addEventListener("click", () => {
+  const k = th.dataset.k;
+  if (sortK === k) sortDir *= -1; else { sortK = k; sortDir = (k === "title" || k === "city" || k === "broker") ? 1 : -1; }
+  apply();
+}));
+
+function filtered() {
+  const q = $("f_q").value.trim().toLowerCase(),
+        rg = $("f_region").value, ct = $("f_city").value, br = $("f_broker").value,
+        pmin = parseFloat($("f_pmin").value) || 0, pmax = parseFloat($("f_pmax").value) || Infinity,
+        amin = parseFloat($("f_amin").value) || 0, ppamax = parseFloat($("f_ppa").value) || Infinity;
+  return DATA.filter(r =>
+    (!q || (r.title + " " + (r.broker||"")).toLowerCase().includes(q)) &&
+    (!rg || r.region === rg) && (!ct || r.city === ct) && (!br || r.broker === br) &&
+    (r.price == null || (r.price >= pmin && r.price <= pmax)) &&
+    (r.acres == null || r.acres >= amin) &&
+    (r.ppa == null || r.ppa <= ppamax));
+}
+function cmp(a, b) {
+  let x = a[sortK], y = b[sortK];
+  if (x == null) return 1; if (y == null) return -1;
+  return (x < y ? -1 : x > y ? 1 : 0) * sortDir;
+}
+function esc(s) {
+  return String(s == null ? "" : s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+}
+function apply() {
+  const rows = filtered().sort(cmp);
+  $("count").textContent = rows.length.toLocaleString() + " of " + DATA.length.toLocaleString() + " listings";
+  $("rows").innerHTML = rows.map(r =>
+    '<tr data-i="' + r.i + '"><td>' + (r.url ? '<a href="' + esc(r.url) + '">' + esc(r.title) + "</a>" : esc(r.title)) + "</td>" +
+    '<td class="num">' + money(r.price) + "</td>" +
+    '<td class="num">' + ac(r.acres) + "</td>" +
+    '<td class="num">' + money(r.ppa) + "</td>" +
+    "<td>" + esc(r.city) + "</td><td>" + esc(r.broker) + "</td>" +
+    '<td class="pin">' + (r.marker ? '<button class="pinbtn" type="button">Map</button>' : "") + "</td></tr>").join("");
+  paintArrows();
+  paintMap(rows);
+}
+["f_q","f_region","f_city","f_broker","f_pmin","f_pmax","f_amin","f_ppa"].forEach(id =>
+  $(id).addEventListener("input", apply));
+$("reset").addEventListener("click", () => {
+  ["f_q","f_pmin","f_pmax","f_amin","f_ppa"].forEach(id => $(id).value = "");
+  ["f_region","f_city","f_broker"].forEach(id => $(id).value = "");
+  apply();
+});
+$("dl").addEventListener("click", () => {
+  const rows = filtered().sort(cmp);
+  const q = s => '"' + String(s == null ? "" : s).replace(/"/g, '""') + '"';
+  const csv = "title,price_usd,acres,price_per_acre,city,region,broker,url\n" +
+    rows.map(r => [q(r.title), r.price ?? "", r.acres ?? "", r.ppa ?? "", q(r.city), q(r.region), q(r.broker), q(r.url)].join(",")).join("\n");
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([csv], {type:"text/csv"}));
+  a.download = "utah-land-filtered.csv"; a.click();
+});
+$("rows").addEventListener("click", e => {
+  if (!e.target.closest(".pinbtn") || !map) return;
+  const r = DATA[+e.target.closest("tr").dataset.i];
+  $("map").scrollIntoView({ behavior: "smooth", block: "center" });
+  const z = Math.max(map.getZoom(), 13);
+  map.setView(r.marker.getLatLng(), z, { animate: false });
+  (z >= TRUE_SCALE_ZOOM ? r.area : r.marker).openPopup();
+});
+paintArrows(); apply();
+}
+boot();
+</script>
+</body>
+</html>
