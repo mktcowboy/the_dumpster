@@ -1,0 +1,899 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="data:," />
+    <title>Microgreens Business Data</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,650;6..72,800&family=Libre+Franklin:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #fbfbf8;
+        --surface: #ffffff;
+        --surface2: #f2f4ee;
+        --ink: #1a241c;
+        --ink2: #45544a;
+        --ink3: #6d7d71;
+        --line: #dde3d8;
+        --accent: #2e6b34;
+        --accent-ink: #245a2b;
+        --accent-soft: #e4efe1;
+        --warn: #9a5b13;
+        --warn-soft: #f7ecd9;
+        --bad: #a33327;
+        --bad-soft: #f9e7e3;
+        --chip: #eef1ea;
+        --shadow: 0 1px 2px rgba(26,36,28,.06), 0 4px 14px rgba(26,36,28,.05);
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #10150f;
+          --surface: #171e16;
+          --surface2: #1d261c;
+          --ink: #e8ede4;
+          --ink2: #b3c0ae;
+          --ink3: #84937f;
+          --line: #2c382a;
+          --accent: #7cc488;
+          --accent-ink: #93d69e;
+          --accent-soft: #22331f;
+          --warn: #e0a44e;
+          --warn-soft: #33270f;
+          --bad: #e08a7d;
+          --bad-soft: #38201b;
+          --chip: #232d21;
+          --shadow: 0 1px 2px rgba(0,0,0,.4), 0 4px 14px rgba(0,0,0,.3);
+        }
+      }
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: "Libre Franklin", system-ui, -apple-system, "Segoe UI", sans-serif;
+        font-size: 16px;
+        line-height: 1.55;
+        -webkit-font-smoothing: antialiased;
+      }
+      a { color: var(--accent-ink); text-decoration: underline; text-underline-offset: 2px; text-decoration-thickness: 1px; }
+      a:hover { text-decoration-thickness: 2px; }
+      .wrap { max-width: 1180px; margin: 0 auto; padding: 0 20px 80px; }
+
+      /* ---------- header ---------- */
+      header.hero { padding: 44px 0 8px; }
+      .hero h1 {
+        font-family: "Newsreader", Georgia, serif;
+        font-weight: 800;
+        font-size: clamp(34px, 6vw, 56px);
+        line-height: 1.04;
+        letter-spacing: -0.01em;
+        margin: 0 0 14px;
+        max-width: 16em;
+      }
+      .hero .lede { font-size: clamp(16px, 2.4vw, 19px); color: var(--ink2); max-width: 62ch; margin: 0 0 20px; }
+      .method {
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        padding: 16px 18px;
+        box-shadow: var(--shadow);
+        font-size: 14px;
+        color: var(--ink2);
+        max-width: 860px;
+      }
+      .method strong { color: var(--ink); }
+      .method p { margin: 0 0 8px; }
+      .method p:last-child { margin-bottom: 0; }
+
+      /* ---------- flags ---------- */
+      .flag {
+        display: inline-block;
+        font-family: "IBM Plex Mono", ui-monospace, monospace;
+        font-size: 10.5px;
+        font-weight: 600;
+        letter-spacing: .02em;
+        padding: 1px 6px;
+        border-radius: 4px;
+        background: var(--chip);
+        color: var(--ink2);
+        white-space: nowrap;
+        vertical-align: 1px;
+      }
+      .flag.study { background: var(--accent-soft); color: var(--accent-ink); }
+      .flag.warnf { background: var(--warn-soft); color: var(--warn); }
+      .legend { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 10px; font-size: 12.5px; color: var(--ink3); }
+      .legend span { display: inline-flex; align-items: center; gap: 5px; }
+
+      /* ---------- layout ---------- */
+      .layout { display: grid; grid-template-columns: 1fr; gap: 0; }
+      @media (min-width: 1020px) {
+        .layout { grid-template-columns: 208px minmax(0,1fr); gap: 44px; }
+      }
+      nav.toc { display: none; }
+      @media (min-width: 1020px) {
+        nav.toc { display: block; position: sticky; top: 24px; align-self: start; padding-top: 40px; }
+        nav.toc a {
+          display: block; padding: 5px 0; font-size: 13.5px; font-weight: 500;
+          color: var(--ink2); text-decoration: none; border-left: 2px solid var(--line); padding-left: 12px;
+        }
+        nav.toc a:hover { color: var(--accent-ink); border-left-color: var(--accent); }
+        nav.toc .toc-head { font-size: 11px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: var(--ink3); padding-left: 14px; margin-bottom: 8px; }
+      }
+      .toc-mobile { display: flex; flex-wrap: wrap; gap: 8px; margin: 22px 0 4px; }
+      .toc-mobile a {
+        font-size: 13px; font-weight: 600; text-decoration: none; color: var(--ink2);
+        background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: 6px 12px;
+      }
+      @media (min-width: 1020px) { .toc-mobile { display: none; } }
+
+      section { padding-top: 42px; }
+      section > h2 {
+        font-family: "Newsreader", Georgia, serif;
+        font-weight: 650; font-size: clamp(25px, 3.6vw, 33px); line-height: 1.15;
+        margin: 0 0 6px; letter-spacing: -0.005em;
+      }
+      section > .sub { color: var(--ink2); max-width: 68ch; margin: 0 0 18px; }
+      h3 { font-size: 17px; font-weight: 700; margin: 26px 0 8px; }
+      p { max-width: 72ch; }
+      .grade {
+        display: inline-flex; align-items: center; gap: 7px;
+        font-size: 13px; font-weight: 600; color: var(--ink2);
+        background: var(--surface2); border: 1px solid var(--line);
+        border-radius: 8px; padding: 7px 12px; margin: 4px 0 18px;
+      }
+      .grade b { font-family: "IBM Plex Mono", monospace; color: var(--accent-ink); font-size: 14px; }
+
+      /* ---------- stat strip ---------- */
+      .stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 26px; }
+      @media (min-width: 760px) { .stats { grid-template-columns: repeat(4, 1fr); } }
+      .stat { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px; box-shadow: var(--shadow); }
+      .stat .n { font-family: "Newsreader", Georgia, serif; font-weight: 800; font-size: clamp(24px, 3.4vw, 32px); line-height: 1.05; }
+      .stat .n small { font-size: .55em; font-weight: 650; color: var(--ink2); }
+      .stat .l { font-size: 12.5px; color: var(--ink2); margin-top: 6px; line-height: 1.4; }
+
+      /* ---------- tables ---------- */
+      .tbl { width: 100%; border-collapse: collapse; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; box-shadow: var(--shadow); font-size: 14.5px; }
+      .tbl caption { text-align: left; font-size: 13px; color: var(--ink3); padding: 0 0 8px; caption-side: top; }
+      .tbl th, .tbl td { padding: 10px 14px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); }
+      .tbl thead th { background: var(--surface2); font-size: 12px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: var(--ink2); }
+      .tbl tbody tr:last-child td { border-bottom: none; }
+      .tbl td.num, .tbl th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+      .tbl td.num { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 13.5px; }
+      .tbl td:first-child { font-weight: 600; }
+      .tbl .note { color: var(--ink2); font-weight: 400; font-size: 13.5px; }
+      @media (max-width: 640px) {
+        .tbl, .tbl tbody, .tbl tr, .tbl td { display: block; width: 100%; }
+        .tbl thead { display: none; }
+        .tbl tr { border-bottom: 1px solid var(--line); padding: 8px 0; }
+        .tbl tbody tr:last-child { border-bottom: none; }
+        .tbl td { border-bottom: none; padding: 3px 14px; }
+        .tbl td.num { text-align: left; }
+        .tbl td::before { content: attr(data-l); display: block; font-size: 10.5px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--ink3); margin-bottom: 1px; }
+        .tbl td:first-child::before { display: none; }
+      }
+
+      /* ---------- chart ---------- */
+      .chart-card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; box-shadow: var(--shadow); padding: 20px 20px 12px; margin: 6px 0 18px; }
+      .chart-card h4 { margin: 0 0 2px; font-size: 15px; font-weight: 700; }
+      .chart-card .cap { font-size: 13px; color: var(--ink2); margin: 0 0 14px; }
+      .chart-card svg { width: 100%; height: auto; display: block; }
+      .chart-card .src { font-size: 12px; color: var(--ink3); margin-top: 10px; }
+
+      /* ---------- callouts / lists ---------- */
+      .callout { border-radius: 10px; padding: 16px 18px; margin: 18px 0; font-size: 15px; max-width: 76ch; }
+      .callout p { margin: 0 0 8px; } .callout p:last-child { margin: 0; }
+      .callout.warn { background: var(--warn-soft); border: 1px solid var(--warn); }
+      .callout.bad { background: var(--bad-soft); border: 1px solid var(--bad); }
+      .callout.good { background: var(--accent-soft); border: 1px solid var(--accent); }
+      .callout .ct { font-weight: 700; font-size: 13px; letter-spacing: .04em; text-transform: uppercase; margin-bottom: 6px; }
+      ul.tight { margin: 8px 0 8px 20px; padding: 0; max-width: 72ch; }
+      ul.tight li { margin-bottom: 7px; }
+      .cards { display: grid; grid-template-columns: 1fr; gap: 12px; margin: 14px 0; }
+      @media (min-width: 700px) { .cards { grid-template-columns: 1fr 1fr; } }
+      .card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; box-shadow: var(--shadow); }
+      .card h4 { margin: 0 0 6px; font-size: 15.5px; }
+      .card p { margin: 0 0 8px; font-size: 14.5px; color: var(--ink2); }
+      .card p:last-child { margin: 0; }
+      .card .big { font-family: "Newsreader", Georgia, serif; font-weight: 800; font-size: 26px; color: var(--ink); }
+
+      .risk { display: grid; grid-template-columns: 34px 1fr; gap: 12px; padding: 14px 0; border-bottom: 1px solid var(--line); }
+      .risk:last-child { border-bottom: none; }
+      .risk .rn { font-family: "IBM Plex Mono", monospace; font-weight: 600; font-size: 15px; color: var(--bad); padding-top: 2px; }
+      .risk h4 { margin: 0 0 4px; font-size: 15.5px; }
+      .risk p { margin: 0; font-size: 14.5px; color: var(--ink2); max-width: 70ch; }
+
+      /* ---------- calculator ---------- */
+      .calc { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; box-shadow: var(--shadow); padding: 20px; margin: 14px 0 8px; }
+      .calc-grid { display: grid; grid-template-columns: 1fr; gap: 22px; }
+      @media (min-width: 820px) { .calc-grid { grid-template-columns: 1fr 1fr; } }
+      .field { margin-bottom: 14px; }
+      .field label { display: flex; justify-content: space-between; font-size: 13.5px; font-weight: 600; margin-bottom: 5px; }
+      .field label output { font-family: "IBM Plex Mono", monospace; font-weight: 600; color: var(--accent-ink); }
+      .field input[type="range"] { width: 100%; accent-color: var(--accent); }
+      .field .hint { font-size: 12px; color: var(--ink3); margin-top: 2px; }
+      .calc-out { background: var(--surface2); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; }
+      .calc-out .row { display: flex; justify-content: space-between; align-items: baseline; padding: 7px 0; border-bottom: 1px dashed var(--line); font-size: 14.5px; }
+      .calc-out .row:last-child { border-bottom: none; }
+      .calc-out .row b { font-family: "IBM Plex Mono", monospace; font-weight: 600; font-size: 15px; white-space: nowrap; }
+      .calc-out .row.total { font-size: 16px; }
+      .calc-out .row.total b { font-size: 19px; color: var(--accent-ink); }
+      .calc-out .neg b { color: var(--bad); }
+
+      footer { margin-top: 60px; border-top: 1px solid var(--line); padding-top: 18px; font-size: 13px; color: var(--ink3); }
+      .src-list { font-size: 14px; }
+      .src-list li { margin-bottom: 9px; max-width: 76ch; }
+      @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="hero">
+        <h1>Microgreens, by the numbers — no USDA, no vendor hype</h1>
+        <p class="lede">Market size, pricing, per-tray costs, equipment prices, Oklahoma rules, and real grower economics for a rack-based operation selling living trays and cut greens to upscale restaurants in Oklahoma City and Cleveland County. Every figure is tagged with what kind of source it came from, and every hedge the research attached to a number is carried with it.</p>
+        <div class="method">
+          <p><strong>How to read this page.</strong> Research compiled October 19, 2026 from non-USDA sources only — per the brief, no usda.gov material and no USDA-funded reports were used as evidence (two were found and deliberately excluded; see <a href="#open">Open questions</a>). Nothing here was verified live in a browser session; vendor prices were read from web indexes and product feeds, so confirm before purchasing.</p>
+          <p style="margin-bottom:0"><strong>Reliability flags</strong> ride along with the numbers:</p>
+          <div class="legend">
+            <span><span class="flag study">study</span> peer-reviewed / conference</span>
+            <span><span class="flag">market-research estimate</span> syndicated firms — scopes differ</span>
+            <span><span class="flag">industry article</span> trade press / grower guides</span>
+            <span><span class="flag">anecdote</span> grower case studies &amp; forums</span>
+            <span><span class="flag">vendor</span> seller pricing</span>
+            <span><span class="flag">author's calc</span> arithmetic from cited prices</span>
+          </div>
+        </div>
+        <div class="stats">
+          <div class="stat">
+            <div class="n">$3.0–3.5B</div>
+            <div class="l">Global market, 2025 — firm estimates for the same year actually span $1.02B–$4.10B depending on what's counted <span class="flag">market-research estimate</span></div>
+          </div>
+          <div class="stat">
+            <div class="n">$20–35<small> /lb</small></div>
+            <div class="l">Wholesale price band to restaurants <span class="flag">industry article</span></div>
+          </div>
+          <div class="stat">
+            <div class="n">$26<small> /flat</small></div>
+            <div class="l">What OKC's incumbent grower charges restaurants for live microgreens, delivery included <span class="flag">anecdote</span></div>
+          </div>
+          <div class="stat">
+            <div class="n">$1.25–5.25</div>
+            <div class="l">Input cost per 10×20 tray before labor — labor is the swing cost <span class="flag">industry article</span></div>
+          </div>
+        </div>
+      </header>
+
+      <div class="toc-mobile">
+        <a href="#market">Market</a><a href="#pricing">Pricing</a><a href="#costs">Costs</a><a href="#calc">Calculator</a><a href="#capex">Startup</a><a href="#competition">Competition</a><a href="#oklahoma">Oklahoma</a><a href="#channels">Channels</a><a href="#equipment">Equipment</a><a href="#risks">Risks</a><a href="#profit">Profitability</a><a href="#open">Open questions</a><a href="#sources">Sources</a>
+      </div>
+
+      <div class="layout">
+        <nav class="toc" aria-label="Sections">
+          <div class="toc-head">Contents</div>
+          <a href="#market">1 · Market size</a>
+          <a href="#pricing">2 · Pricing</a>
+          <a href="#costs">3 · Unit economics</a>
+          <a href="#calc">Calculator</a>
+          <a href="#capex">4 · Startup capex</a>
+          <a href="#competition">5 · Competition</a>
+          <a href="#oklahoma">6 · Oklahoma</a>
+          <a href="#channels">7 · Sales channels</a>
+          <a href="#equipment">8 · Equipment &amp; inputs</a>
+          <a href="#risks">9 · Risks</a>
+          <a href="#profit">10 · Profitability</a>
+          <a href="#open">Open questions</a>
+          <a href="#sources">Sources</a>
+        </nav>
+        <main>
+          <!-- ============ 1 MARKET ============ -->
+          <section id="market">
+            <h2>1 · Market size and growth</h2>
+            <p class="sub">The global microgreens market is on the order of <strong>$3.0–3.5 billion in 2025</strong>, growing at roughly <strong>11–12% CAGR</strong> toward <strong>$8+ billion by ~2033</strong>. The direction is consistent across firms; the absolute values are not — estimates for the same year range from <strong>$1.02B to $4.10B</strong> depending on whether sprouts, baby greens, seed kits, and cosmetics are counted, and whether value is measured at farm gate or retail (retail runs 2–3× farm gate at $25–50/lb). <span class="flag">market-research estimate</span></p>
+            <div class="grade">Reliability <b>B−</b> — strong agreement on growth direction; absolute values are methodology-dependent, and Grand View Research specifically has a documented inflation bias. Don't budget against any firm's TAM; use local demand evidence instead.</div>
+
+            <div class="chart-card">
+              <h4>What six firms say the market was worth in 2025</h4>
+              <p class="cap">Global microgreens market size, US$ billions. Same product, same year, six answers — the spread is the story. IMARC's figure is a 2024 base year, the lowest of the set.</p>
+              <svg viewBox="0 0 720 300" role="img" aria-label="Bar chart of 2025 global microgreens market estimates by research firm: SkyQuest 3.53 billion, Research and Markets 3.36, Grand View Research 3.3, Mordor Intelligence about 3.0, The Business Research Company 2.4, IMARC 2.29 for 2024.">
+                <!-- axis: 0 to 4.0 $B, plot x from 190 to 690 (125 px per $B) -->
+                <g font-family="IBM Plex Mono, monospace" font-size="11" fill="var(--ink3)">
+                  <line x1="190" y1="252" x2="690" y2="252" stroke="var(--line)" stroke-width="1"/>
+                  <line x1="190" y1="18" x2="190" y2="252" stroke="var(--line)" stroke-width="1" stroke-dasharray="2 3"/>
+                  <line x1="315" y1="18" x2="315" y2="252" stroke="var(--line)" stroke-width="1" stroke-dasharray="2 3"/>
+                  <line x1="440" y1="18" x2="440" y2="252" stroke="var(--line)" stroke-width="1" stroke-dasharray="2 3"/>
+                  <line x1="565" y1="18" x2="565" y2="252" stroke="var(--line)" stroke-width="1" stroke-dasharray="2 3"/>
+                  <line x1="690" y1="18" x2="690" y2="252" stroke="var(--line)" stroke-width="1" stroke-dasharray="2 3"/>
+                  <text x="190" y="270" text-anchor="middle">$0</text>
+                  <text x="315" y="270" text-anchor="middle">$1B</text>
+                  <text x="440" y="270" text-anchor="middle">$2B</text>
+                  <text x="565" y="270" text-anchor="middle">$3B</text>
+                  <text x="690" y="270" text-anchor="middle">$4B</text>
+                </g>
+                <g font-family="Libre Franklin, sans-serif" font-size="13" fill="var(--ink)">
+                  <!-- SkyQuest 3.53 -> w=441 -->
+                  <text x="182" y="41" text-anchor="end" font-weight="600">SkyQuest</text>
+                  <rect x="190" y="26" width="441" height="24" rx="3" fill="var(--accent)"/>
+                  <text x="639" y="42" font-family="IBM Plex Mono, monospace" font-size="12.5" font-weight="600">$3.53B</text>
+                  <!-- R&M 3.36 -> w=420 -->
+                  <text x="182" y="79" text-anchor="end" font-weight="600">Research and Markets</text>
+                  <rect x="190" y="64" width="420" height="24" rx="3" fill="var(--accent)"/>
+                  <text x="618" y="80" font-family="IBM Plex Mono, monospace" font-size="12.5" font-weight="600">$3.36B</text>
+                  <!-- GVR 3.30 -> w=413 -->
+                  <text x="182" y="117" text-anchor="end" font-weight="600">Grand View Research</text>
+                  <rect x="190" y="102" width="413" height="24" rx="3" fill="var(--accent)"/>
+                  <text x="611" y="118" font-family="IBM Plex Mono, monospace" font-size="12.5" font-weight="600">$3.30B</text>
+                  <!-- Mordor 3.00 -> w=375 -->
+                  <text x="182" y="155" text-anchor="end" font-weight="600">Mordor Intelligence</text>
+                  <rect x="190" y="140" width="375" height="24" rx="3" fill="var(--accent)" opacity="0.75"/>
+                  <text x="573" y="156" font-family="IBM Plex Mono, monospace" font-size="12.5" font-weight="600">~$3.0B</text>
+                  <!-- TBRC 2.40 -> w=300 -->
+                  <text x="182" y="193" text-anchor="end" font-weight="600">Business Research Co.</text>
+                  <rect x="190" y="178" width="300" height="24" rx="3" fill="var(--accent)" opacity="0.55"/>
+                  <text x="498" y="194" font-family="IBM Plex Mono, monospace" font-size="12.5" font-weight="600">$2.40B</text>
+                  <!-- IMARC 2.29 (2024) -> w=286 -->
+                  <text x="182" y="231" text-anchor="end" font-weight="600">IMARC (2024 base)</text>
+                  <rect x="190" y="216" width="286" height="24" rx="3" fill="var(--accent)" opacity="0.4"/>
+                  <text x="484" y="232" font-family="IBM Plex Mono, monospace" font-size="12.5" font-weight="600">$2.29B</text>
+                </g>
+              </svg>
+              <p class="src">Source: firm figures as compiled in <a href="https://microgreensworld.com/microgreens-trends-market-analysis-growth-forecast/">microgreensworld's industry analysis</a> and the firms' own report pages, read 2026-10-19. <span class="flag">market-research estimate</span></p>
+            </div>
+
+            <table class="tbl">
+              <caption>Firm-by-firm comparison — all figures <span class="flag">market-research estimate</span></caption>
+              <thead><tr><th>Firm</th><th class="num">2025 value</th><th>Forecast</th><th class="num">CAGR</th><th>Notes</th></tr></thead>
+              <tbody>
+                <tr>
+                  <td><a href="https://www.grandviewresearch.com/industry-analysis/microgreens-market-report">Grand View Research</a><span class="note"> (updated 2026-10-16)</span></td>
+                  <td class="num" data-l="2025 value">$3.3B</td>
+                  <td data-l="Forecast">$3.7B (2026) → $8.0B by 2033</td>
+                  <td class="num" data-l="CAGR">11.9%</td>
+                  <td class="note" data-l="Notes">Largest single cited firm; criticized for inflated projections and broad category definitions (microgreensworld citing IPVM 2023). An older GVR edition cited $6.12B by 2030 at the same 11.9% — editions move around.</td>
+                </tr>
+                <tr>
+                  <td>Mordor Intelligence<span class="note"> (Jan 2026)</span></td>
+                  <td class="num" data-l="2025 value">~$3.0B</td>
+                  <td data-l="Forecast">$5.71B by 2031</td>
+                  <td class="num" data-l="CAGR">11.32%</td>
+                  <td class="note" data-l="Notes">Most transparent on scope exclusions, per microgreensworld.</td>
+                </tr>
+                <tr>
+                  <td>The Business Research Company<span class="note"> (2026)</span></td>
+                  <td class="num" data-l="2025 value">$2.4B</td>
+                  <td data-l="Forecast">$4.4B by 2030</td>
+                  <td class="num" data-l="CAGR">13.1%</td>
+                  <td class="note" data-l="Notes">Highest growth rate of the set, from the second-lowest base.</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.skyquestt.com/report/microgreens-market">SkyQuest</a></td>
+                  <td class="num" data-l="2025 value">$3.53B</td>
+                  <td data-l="Forecast">$8.19B by 2033</td>
+                  <td class="num" data-l="CAGR">11.1%</td>
+                  <td class="note" data-l="Notes">Highest 2025 base in this set.</td>
+                </tr>
+                <tr>
+                  <td><a href="https://www.researchandmarkets.com/reports/5973893/">Research and Markets / 360iResearch</a></td>
+                  <td class="num" data-l="2025 value">$3.36B</td>
+                  <td data-l="Forecast">$7.44B by 2032</td>
+                  <td class="num" data-l="CAGR">11.91%</td>
+                  <td class="note" data-l="Notes">Listing aggregates a 360iResearch report.</td>
+                </tr>
+                <tr>
+                  <td>IMARC-style report<span class="note"> (via Research and Markets)</span></td>
+                  <td class="num" data-l="2025 value">$2.29B (2024)</td>
+                  <td data-l="Forecast">$5.99B by 2034</td>
+                  <td class="num" data-l="CAGR">10.10%</td>
+                  <td class="note" data-l="Notes">Lowest base, longest horizon.</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3>Structure underneath the headline</h3>
+            <ul class="tight">
+              <li><strong>North America was 28.5% of 2025 revenue (~$940M implied)</strong>; Europe was largest at 36.0%. The U.S. is projected to lead by country revenue by 2033. <span class="flag">market-research estimate</span> (GVR)</li>
+              <li>Commercial greenhouses = 43.9% of 2025 revenue; <strong>indoor vertical farms are the fastest-growing segment</strong>; retail stores = 40.4% of distribution. <span class="flag">market-research estimate</span> (GVR)</li>
+              <li>Largest produce segment in 2025: radish per GVR, broccoli per SkyQuest — the firms disagree even inside their own taxonomies.</li>
+              <li>Demand drivers cited consistently: vertical-farming adoption, restaurant/foodservice use, nutrient-density and health trends, farm-to-table / local provenance demand.</li>
+            </ul>
+          </section>
+
+          <!-- ============ 2 PRICING ============ -->
+          <section id="pricing">
+            <h2>2 · Pricing benchmarks</h2>
+            <p class="sub">Multiple independent industry sources converge on the same current bands, which is why this section grades higher than most of the page. The trend story is much weaker — there is no longitudinal wholesale price series anywhere public.</p>
+            <div class="grade">Reliability <b>B</b> for current price bands · <b>C</b> for trend claims (anecdotal, no time series)</div>
+
+            <table class="tbl">
+              <caption>What growers actually charge, by channel</caption>
+              <thead><tr><th>Channel / product</th><th class="num">Price</th><th>Source</th></tr></thead>
+              <tbody>
+                <tr><td>Wholesale to restaurants</td><td class="num" data-l="Price">$20–35 /lb</td><td class="note" data-l="Source"><a href="https://cultivationag.com/10-most-common-questions-about-microgreens-and-their-profitability/">cultivationag</a> <span class="flag">industry article</span></td></tr>
+                <tr><td>Wholesale per tray — grower rule of thumb minimum</td><td class="num" data-l="Price">$25–40+ /tray</td><td class="note" data-l="Source"><a href="https://onthegrow.net/blogs/microgreens/a-complete-guide-to-selling-microgreens-starting-a-microgreens-business">onthegrow</a> <span class="flag">industry article</span></td></tr>
+                <tr><td><strong>Oklahoma City:</strong> live microgreens to restaurants, delivery included</td><td class="num" data-l="Price">$26 /flat</td><td class="note" data-l="Source">CommonWealth Urban Farms (OKC), reported by <a href="https://microgreensguru.com/selling-microgreens/oklahoma/">microgreensguru</a> <span class="flag">anecdote</span></td></tr>
+                <tr><td>Break-even tray price at a $30/hr labor target (0.5 hr/tray all-in, $5/tray overhead)</td><td class="num" data-l="Price">~$20 /tray needed</td><td class="note" data-l="Source"><a href="https://microgreensfarmer.com/?p=172">microgreensfarmer</a>, veteran grower blog math <span class="flag">anecdote</span></td></tr>
+                <tr><td>Home-delivery subscription pricing</td><td class="num" data-l="Price">~$26 /tray</td><td class="note" data-l="Source"><a href="https://microgreensfarmer.com/?p=172">microgreensfarmer</a> <span class="flag">anecdote</span></td></tr>
+                <tr><td>Industry average wholesale</td><td class="num" data-l="Price">$25–30 /lb <span class="note">(≈$18.75 per 12-oz tray)</span></td><td class="note" data-l="Source"><a href="https://toddsseeds.com/microgreens-business-the-ultimate-plan/amp/">Todd's Seeds</a> <span class="flag">industry article</span></td></tr>
+                <tr><td>Retail / farmers market</td><td class="num" data-l="Price">$3–6 /oz <span class="note">($48–96/lb)</span></td><td class="note" data-l="Source"><a href="https://cultivationag.com/10-most-common-questions-about-microgreens-and-their-profitability/">cultivationag</a> <span class="flag">industry article</span></td></tr>
+                <tr><td>Retail, common varieties</td><td class="num" data-l="Price">$2–4 /oz <span class="note">($25–50/lb)</span></td><td class="note" data-l="Source"><a href="https://onthegrow.net/blogs/microgreens/a-complete-guide-to-selling-microgreens-starting-a-microgreens-business">onthegrow</a> <span class="flag">industry article</span></td></tr>
+                <tr><td>Grocery benchmark — Whole Foods, per 1.75 oz (50 g) pack</td><td class="num" data-l="Price">$3.49–4.49 <span class="note">(≈$2.00–2.57/oz, ~$32–41/lb)</span></td><td class="note" data-l="Source"><a href="https://microgreensworld.com/how-to-price-your-microgreens/">microgreensworld</a> <span class="flag">industry article</span></td></tr>
+                <tr><td><strong>Oklahoma DTC:</strong> Teeny Greeny (Broken Arrow) — three 2-oz containers</td><td class="num" data-l="Price">$20 <span class="note">($3.33/oz; extra 2-oz $7 = $3.50/oz)</span></td><td class="note" data-l="Source"><a href="https://teenygreenymicrogreens.com/">teenygreenymicrogreens.com</a> <span class="flag">vendor</span></td></tr>
+                <tr><td>Teeny Greeny live 10×10 tray (DTC)</td><td class="num" data-l="Price">$10 /tray</td><td class="note" data-l="Source"><a href="https://teenygreenymicrogreens.com/">teenygreenymicrogreens.com</a> <span class="flag">vendor</span></td></tr>
+              </tbody>
+            </table>
+
+            <h3>The variety price ladder</h3>
+            <table class="tbl">
+              <thead><tr><th>Variety group</th><th class="num">Retail</th><th class="num">Wholesale</th><th>Notes</th></tr></thead>
+              <tbody>
+                <tr><td>Workhorses — radish, broccoli, pea shoots, sunflower</td><td class="num" data-l="Retail">$2–4 /oz</td><td class="num" data-l="Wholesale">$20–35 /lb · $20–26 /living tray</td><td class="note" data-l="Notes">Pea and sunflower yield 10–16+ oz per tray (heavy yielders reported up to 14–27 oz), so their per-tray economics can beat radish despite lower per-ounce prices.</td></tr>
+                <tr><td>Cilantro</td><td class="num" data-l="Retail">$7–10 /small pkg</td><td class="num" data-l="Wholesale">$30–40 /lb</td><td class="note" data-l="Notes">Premium price, but a 3+ week grow cycle and high failure risk. <span class="flag">industry article</span> (<a href="https://www.farmstandapp.com/224828/6-microgreen-profit-margins-analysis-on-a-homestead-budget/">farmstandapp</a>)</td></tr>
+                <tr><td>Specialty — amaranth, nasturtium, shiso, red-veined sorrel</td><td class="num" data-l="Retail">$4–8+ /oz</td><td class="num" data-l="Wholesale">—</td><td class="note" data-l="Notes">Where pricing leverage lives: chefs who can only source these from one local supplier pay what that supplier asks. <span class="flag">industry article</span></td></tr>
+                <tr><td>Basil</td><td class="num" data-l="Retail">premium</td><td class="num" data-l="Wholesale">—</td><td class="note" data-l="Notes">Most expensive seed input at $30–60/lb (small seeding rate) — must be priced as a premium product. <span class="flag">industry article</span></td></tr>
+              </tbody>
+            </table>
+
+            <h3>Living trays vs. cut greens</h3>
+            <p>Living-tray sales — restaurants cutting to order, or DTC at $10 per 10×10 tray — avoid harvest labor, packaging, and shelf-life risk entirely. Cut greens in clamshells command the $3–6/oz retail band but add packaging cost (~$0.30–0.80/tray) and waste exposure. <span class="flag">industry article</span></p>
+
+            <div class="callout warn">
+              <div class="ct">Are prices falling? Unknown — grade C</div>
+              <p>Evidence is thin and mixed. Onthegrow (2026) states "pricing has generally increased due to rising input costs." SPIN-Farming-era grower anecdotes (~2014) show $2/oz retail versus $2–4/oz today — meaning <strong>nominal retail prices have held roughly flat to slightly up over a decade, so real (inflation-adjusted) prices have declined</strong>. Saturation and competition are flagged specifically "in some urban areas." Treat price compression as a reported risk, not a measured trend — no longitudinal wholesale price series was found.</p>
+            </div>
+          </section>
+
+          <!-- ============ 3 COSTS ============ -->
+          <section id="costs">
+            <h2>3 · Cost structure and unit economics</h2>
+            <p class="sub">Inputs are cheap and well-documented. Labor is the swing cost, and waste is the silent margin killer. Oklahoma's cheap electricity is a genuine local advantage.</p>
+            <div class="grade">Reliability <b>B</b> for input bands (multiple converging industry sources) · <b>C+</b> for margin figures (no independently audited data; labor assumptions dominate)</div>
+
+            <table class="tbl">
+              <caption>Cost per 10×20 tray, two independent breakdowns <span class="flag">industry article</span></caption>
+              <thead><tr><th>Line item</th><th class="num">cultivationag</th><th class="num">farmcitystate</th></tr></thead>
+              <tbody>
+                <tr><td>Seed</td><td class="num" data-l="cultivationag">$0.50–3.00</td><td class="num" data-l="farmcitystate">$1.50–6.00</td></tr>
+                <tr><td>Growing medium</td><td class="num" data-l="cultivationag">$0.25–0.75</td><td class="num" data-l="farmcitystate">$0.75–1.50</td></tr>
+                <tr><td>Water + electricity (+ packaging, cultivationag)</td><td class="num" data-l="cultivationag">$0.50–1.50</td><td class="num" data-l="farmcitystate">$0.20–0.80</td></tr>
+                <tr><td>Packaging + labels</td><td class="num" data-l="cultivationag">incl. above</td><td class="num" data-l="farmcitystate">$0.30–0.80</td></tr>
+                <tr><td><strong>Total before labor</strong></td><td class="num" data-l="cultivationag"><strong>$1.25–5.25 /tray</strong></td><td class="num" data-l="farmcitystate">—</td></tr>
+                <tr><td>Labor</td><td class="num" data-l="cultivationag">see below</td><td class="num" data-l="farmcitystate">10–20 min /tray</td></tr>
+              </tbody>
+            </table>
+
+            <h3>Yields per 10×20 tray <span class="flag">industry article</span></h3>
+            <table class="tbl">
+              <thead><tr><th>Crop</th><th class="num">Yield</th><th>Crop</th><th class="num">Yield</th></tr></thead>
+              <tbody>
+                <tr><td>Radish</td><td class="num" data-l="Yield">8–12 oz</td><td>Pea shoots</td><td class="num" data-l="Yield">10–16 oz</td></tr>
+                <tr><td>Broccoli</td><td class="num" data-l="Yield">5–8 oz</td><td>Sunflower</td><td class="num" data-l="Yield">8–16 oz</td></tr>
+              </tbody>
+            </table>
+            <p style="font-size:13.5px;color:var(--ink2)">Source: <a href="https://farmcitystate.com/how-to-grow-and-sell-microgreens/">farmcitystate</a>. Yield is why pea and sunflower can out-earn higher-priced crops per tray.</p>
+
+            <h3>Seed cost — the unit that matters is per tray, not per pound</h3>
+            <ul class="tight">
+              <li><strong>True Leaf Market radish (Red Rat's Tail):</strong> 1 lb $19.18 · 5 lb $60.71 (<strong>$12.14/lb</strong>) · 25 lb $231.14 (<strong>$9.25/lb</strong>). At ~1 oz seed per tray: <strong>$0.76–1.20/tray</strong>. <span class="flag">vendor</span> prices read from the store's Shopify product feed, Oct 2026; per-tray figure <span class="flag">author's calc</span></li>
+              <li><strong>Bulk bands:</strong> basic brassicas (radish, broccoli) $8–15/lb; pea/sunflower $10–18/lb; organic certification adds $3–7/lb; 5–10 lb bags cut unit price 15–25%. True Leaf Market overall $9–16/lb vs. Johnny's Selected Seeds $12–19/lb. <span class="flag">industry article</span></li>
+              <li><strong>Sunflower</strong> seed runs $2–4/lb at ~2 oz/tray — very low cost per tray. <strong>Peas</strong> need heavy seeding (~8 oz/tray), so at $10–18/lb seed they cost <strong>$5–9/tray</strong> — cheap per pound of output, expensive per tray. <span class="flag">industry article</span> + <span class="flag">author's calc</span></li>
+              <li><strong>Basil</strong> seed $30–60/lb at a small seeding rate. Specialty outliers exist — marigold seed up to $350/lb (Todd's Seeds). Variety selection drives seed cost more than anything else.</li>
+            </ul>
+
+            <h3>Electricity — Oklahoma's edge</h3>
+            <p>A 45W LED panel at 16 hrs/day uses 0.72 kWh/day <span class="flag">industry article</span>. Oklahoma's average residential rate was <strong>13.13¢/kWh in 2025</strong> and <strong>14.35¢/kWh in July 2026</strong> (EIA data via <a href="https://www.priceofelectricity.com/electricity-price-history/oklahoma">priceofelectricity.com</a>) — among the 10 lowest states. So one 4-ft shelf (2× 20W Barrina-type bars ≈ 40W) at 14¢/kWh, 16 hrs/day costs ≈ <strong>$0.09/day ≈ $2.70/month</strong>; a 10-shelf operation ≈ <strong>$25–30/month</strong>, consistent with cultivationag's estimate. Per tray, electricity is <strong>$0.15–0.30</strong> — small. Fans and dehumidification add on top. <span class="flag">author's calc</span></p>
+
+            <h3>Growing media</h3>
+            <ul class="tight">
+              <li>Loose coco coir brick $8–15 (expands to ~10L) ≈ <strong>$0.90/tray</strong>; pre-cut coco pads <strong>$1.50–3.00/tray</strong>. <span class="flag">industry article</span></li>
+              <li>Hemp mats (Terrafibre) $38.99 per 10-pack of 10×20 = <strong>$3.90/tray</strong> — the premium, compostable option. <span class="flag">vendor</span> (<a href="https://www.westcoastseeds.com/products/terrafibre-hemp-grow-mat-10-x-20">westcoastseeds.com</a>)</li>
+              <li>Soil/potting mix is cheapest but heavier and messier for living-tray sales.</li>
+            </ul>
+
+            <div class="callout warn">
+              <div class="ct">Labor and waste decide the margin</div>
+              <p><strong>Labor:</strong> 100 trays/week ≈ <strong>10–15 hours</strong> for an experienced grower; at $20/hr that's $200–300/week of implicit labor (<a href="https://cultivationag.com/10-most-common-questions-about-microgreens-and-their-profitability/">cultivationag</a>). A single 24-tray rack is manageable by one person "but only with a system" (onthegrow).</p>
+              <p><strong>Waste:</strong> 20% unsold drops margin from ~70% to ~55%; 30% waste → ~45%. <span class="flag warnf">flag</span> This figure comes via speedcalcs citing a Farmzz 2026 cost model, and speedcalcs leans on a USDA-funded enterprise budget that this research excluded — treat as directional only.</p>
+            </div>
+          </section>
+
+          <!-- ============ CALCULATOR ============ -->
+          <section id="calc">
+            <h2>Per-tray economics calculator</h2>
+            <p class="sub">The report's own numbers, made adjustable. Defaults sit inside the researched bands: $26/tray is the OKC incumbent's actual restaurant price; input defaults are the midpoints of the two per-tray breakdowns above; 15 minutes of labor per tray is the midpoint of the 10–20 minute band. Move anything — the outputs are arithmetic, not promises.</p>
+            <div class="calc">
+              <div class="calc-grid">
+                <div>
+                  <div class="field">
+                    <label for="c-price">Price per tray <output id="o-price">$26</output></label>
+                    <input type="range" id="c-price" min="10" max="45" step="1" value="26" />
+                    <div class="hint">Researched band: $20–26 per living tray wholesale; $25–40+ rule-of-thumb minimum</div>
+                  </div>
+                  <div class="field">
+                    <label for="c-trays">Trays per week <output id="o-trays">50</output></label>
+                    <input type="range" id="c-trays" min="5" max="300" step="5" value="50" />
+                    <div class="hint">10/wk = side income · 100–300/wk = full-time territory</div>
+                  </div>
+                  <div class="field">
+                    <label for="c-inputs">Inputs per tray (seed + media + utilities + packaging) <output id="o-inputs">$3.25</output></label>
+                    <input type="range" id="c-inputs" min="1" max="9" step="0.25" value="3.25" />
+                    <div class="hint">Researched band $1.25–5.25 before labor; heavy-seeded peas run $5–9 in seed alone</div>
+                  </div>
+                  <div class="field">
+                    <label for="c-labor">Labor minutes per tray <output id="o-labor">15 min</output></label>
+                    <input type="range" id="c-labor" min="5" max="40" step="1" value="15" />
+                    <div class="hint">Researched band 10–20 min/tray; one veteran's all-in figure is 30 min</div>
+                  </div>
+                  <div class="field">
+                    <label for="c-wage">Your time valued at <output id="o-wage">$20/hr</output></label>
+                    <input type="range" id="c-wage" min="0" max="40" step="1" value="20" />
+                    <div class="hint">Set to $0 to see the "materials-only" margin most grower blogs quote</div>
+                  </div>
+                  <div class="field">
+                    <label for="c-waste">Unsold / wasted trays <output id="o-waste">10%</output></label>
+                    <input type="range" id="c-waste" min="0" max="40" step="1" value="10" />
+                    <div class="hint">Costs are incurred on every tray seeded; revenue only on trays sold</div>
+                  </div>
+                </div>
+                <div class="calc-out" aria-live="polite">
+                  <div class="row"><span>Revenue per sold tray</span><b id="r-rev">$26.00</b></div>
+                  <div class="row"><span>Full cost per tray (inputs + labor)</span><b id="r-cost">$8.25</b></div>
+                  <div class="row"><span>Net per tray seeded (after waste)</span><b id="r-net">$15.15</b></div>
+                  <div class="row"><span>Net margin</span><b id="r-margin">65%</b></div>
+                  <div class="row"><span>Weekly revenue</span><b id="r-wrev">$1,170</b></div>
+                  <div class="row"><span>Weekly labor</span><b id="r-hrs">12.5 hrs</b></div>
+                  <div class="row total"><span>Monthly net (after valuing your labor)</span><b id="r-mnet">$3,283</b></div>
+                  <p style="font-size:12.5px;color:var(--ink3);margin:10px 0 0">Monthly = weekly × 52/12. Excludes rent, insurance (~$500–1,000/yr), delivery fuel, and capex recovery — see Startup and Risks. Compare against the reported benchmarks in §10 before believing any setting of these sliders.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- ============ 4 CAPEX ============ -->
+          <section id="capex">
+            <h2>4 · Startup cost tiers</h2>
+            <p class="sub">Barriers to entry are near zero — $300 starts an operation. The tiers below are what growers report actually spending at each scale. <span class="flag">industry article</span></p>
+            <div class="cards">
+              <div class="card">
+                <h4>Starter — 10 trays/week</h4>
+                <div class="big">$275–515</div>
+                <p>Used/new wire shelf $40–80, lights, 20–30 trays, coir, seeds, scale and sprayer. (<a href="https://fernandshelf.com/microgreens-startup-cost/">fernandshelf</a>)</p>
+              </div>
+              <div class="card">
+                <h4>Professional — restaurant accounts</h4>
+                <div class="big">$1,500–5,000</div>
+                <p>Metro wire rack $150–300, LED $60–150/shelf, commercial trays $3–5/pair, stainless table. (<a href="https://cultivationag.com/10-most-common-questions-about-microgreens-and-their-profitability/">cultivationag</a>)</p>
+              </div>
+            </div>
+            <table class="tbl">
+              <caption>Commercial tier — 150–300 trays/cycle, 150–300 lb/wk, 200–400 sq ft (<a href="https://fernandshelf.com/microgreens-startup-cost/">fernandshelf</a>) <span class="flag">industry article</span></caption>
+              <thead><tr><th>Item</th><th class="num">Cost</th></tr></thead>
+              <tbody>
+                <tr><td>150–300 commercial 1020 trays</td><td class="num" data-l="Cost">$1,200–2,400</td></tr>
+                <tr><td>Multi-tier rack system</td><td class="num" data-l="Cost">$1,000–2,000</td></tr>
+                <tr><td>LED array</td><td class="num" data-l="Cost">$600–1,200</td></tr>
+                <tr><td>Misting / irrigation</td><td class="num" data-l="Cost">$300–600</td></tr>
+                <tr><td>Bulk seeds</td><td class="num" data-l="Cost">$400–800</td></tr>
+                <tr><td>Heat sealer + packaging</td><td class="num" data-l="Cost">$200–400</td></tr>
+                <tr><td>Insurance + licenses</td><td class="num" data-l="Cost">$300–800</td></tr>
+                <tr><td><strong>Total</strong></td><td class="num" data-l="Cost"><strong>$3,000–6,000</strong></td></tr>
+              </tbody>
+            </table>
+            <div class="callout warn">
+              <div class="ct">Don't skip dehumidification</div>
+              <p>Bootstrap Farmer recommends keeping indoor grow-space humidity <strong>below 60% (ideal 40–50%)</strong> — a small dehumidifier is near-mandatory in an Oklahoma summer, plus fans and HVAC margin. Budget a small-room dehumidifier and get local quotes; no researched price was confirmed for this line item (see <a href="#open">Open questions</a>). <span class="flag">vendor</span> guidance</p>
+            </div>
+          </section>
+
+          <!-- ============ 5 COMPETITION ============ -->
+          <section id="competition">
+            <h2>5 · Competitive landscape</h2>
+            <p class="sub">The billion-dollar indoor farms mostly failed on unit economics and capex, not on growing — and their failure doesn't clear the field for a rack grower, because they were never selling the same product. Big-farm supply and local chef supply are different businesses.</p>
+            <div class="grade">Reliability <b>A−</b> for the bankruptcy/consolidation facts (multiple business-press sources) · <b>B</b> for small-grower strategy (industry consensus, anecdotal)</div>
+
+            <table class="tbl">
+              <caption>The vertical-farm shakeout</caption>
+              <thead><tr><th>Company</th><th>What happened</th></tr></thead>
+              <tbody>
+                <tr><td>AeroFarms</td><td class="note" data-l="What happened">Leading U.S. retail microgreens supplier (~70% of U.S. retail microgreens per securities.io). Chapter 11 June 2023 (~$238M raised); emerged Sept 2023; closed its 140,000-sq-ft Danville, VA facility Dec 2025 after its largest investor withdrew; <strong>acquired by Palm Ventures April 2026</strong> (announced June 11, 2026) with new CEO Gustavo Burger (ex-Kraft Heinz/AB InBev). Sources: <a href="http://www.newaginternational.com/cea-and-greenhouse/palm-ventures-acquires-aerofarms-providing-lifeline-after-bankruptcy-and-funding-turmoil/">New AG International</a>, <a href="https://www.securities.io/best-vertical-farming-startups/">securities.io</a></td></tr>
+                <tr><td>Plenty</td><td class="note" data-l="What happened">~$1B raised. Chapter 11 March 2025 (&gt;$100M liabilities); emerged, closed farms, and pivoted its sole remaining (Virginia) farm to <strong>strawberries in partnership with Driscoll's</strong>. (<a href="https://www.cbinsights.com/company/vertical-harvest-1">CB Insights</a>)</td></tr>
+                <tr><td>Bowery Farming</td><td class="note" data-l="What happened">$700M raised, $2.3B peak valuation; halted operations late 2024, assets liquidated.</td></tr>
+                <tr><td>AppHarvest · Fifth Season · Kalera</td><td class="note" data-l="What happened">AppHarvest Chapter 11 July 2023 ($341M liabilities); Fifth Season shut 2023; Kalera Chapter 11 2023. A 2025 industry compilation counted <strong>14 indoor-farming bankruptcies/closures worldwide</strong> (method not public). (<a href="https://foodlore.blog/why-vertical-farms-go-bankrupt/">foodlore.blog</a>)</td></tr>
+                <tr><td>Consolidation</td><td class="note" data-l="What happened"><strong>80 Acres Farms merged with Soli Organic</strong> → 17,000+ retail locations, 7 vertical farms, 15–20M lb/yr capacity. BrightFarms folded into Cox Farms (with Mucci Farms) in 2024. VC funding in indoor farming fell to <strong>$57M across 5 deals as of mid-2025</strong> (WSJ via <a href="https://globalaginvesting.com/ma-80-acres-farms-soli-organic-deal-signals-next-phase-of-indoor-farming-consolidation/">Global AgInvesting</a>).</td></tr>
+              </tbody>
+            </table>
+            <p>GVR's named key players in microgreens: AeroFarms, Fresh Origins, Gotham Greens, Good Leaf Farms, Living Earth Farms, Farmbox Greens, Chef's Garden, Bowery Farming, Teshuva, Madar Farms, Metro Microgreens. <span class="flag">market-research estimate</span></p>
+
+            <h3>How small rack growers actually compete</h3>
+            <p>The shared failure mode of the big farms (verticalfarmdaily quoting IGS/McWin): vertical farms replace free inputs — sunlight, rain — with expensive ones — electricity, engineering. It only pencils out for crops worth enough per kg, and most food is not. <strong>Microgreens are one of the few crops that clear the bar.</strong></p>
+            <ul class="tight">
+              <li><strong>Living trays cut to order</strong> — a freshness no national shipper can match. As microgreensworld puts it: "80 Acres Farms supplying 17,000 Walmart locations does not compete with a grower supplying 20 Atlanta restaurants with same-day delivery." <span class="flag">industry article</span></li>
+              <li><strong>Specialty varieties with no local competition</strong> (shiso, popcorn shoots, sorrel) = pricing leverage.</li>
+              <li>Hyperlocal story, direct chef relationships, and no corporate buyer approval gauntlet.</li>
+              <li>Entry costs ~$300, so the moat is <strong>route density, reliability, and relationships</strong> — not technology.</li>
+              <li>Saturation risk is real in dense urban markets, but less so in mid-size metros where supply still lags chef demand (cultivationag).</li>
+            </ul>
+          </section>
+
+          <!-- ============ 6 OKLAHOMA ============ -->
+          <section id="oklahoma">
+            <h2>6 · Oklahoma: rules, competitors, buyers</h2>
+            <p class="sub">The legal picture comes from <a href="https://microgreensguru.com/selling-microgreens/oklahoma/">microgreensguru's Oklahoma analysis</a>, which cites Oklahoma statutes (63 O.S. §1-1118), the ODAFF grower guide <em>Bringing Farm to Market</em>, and tax code directly. It's a secondary legal explainer, not the agencies themselves — confirm with ODAFF before acting on it.</p>
+            <div class="grade">Reliability <b>A−</b> for the legal analysis (statute + agency-guide citations, via a secondary source) · <b>B</b> for competitor and market facts (growers' own sites and newsletters)</div>
+
+            <h3>The rules that matter</h3>
+            <ul class="tight">
+              <li><strong>No license needed for your own raw microgreens.</strong> 63 O.S. §1-1118(A)(1) exempts a produce stand offering "only whole, uncut and unprocessed" produce. ODAFF's guide explicitly treats microgreens grown in soil/substrate and <strong>harvested above the soil line as produce, not sprouts</strong> — covering both harvested leaves and live trays. The harvest cut does not end the exemption in Oklahoma (other states reach the opposite answer on similar wording).</li>
+              <li><strong>Live trays must travel and sell in a tray, not a bag</strong>, so water/soil don't contact leaves (ODAFF).</li>
+              <li><strong>Not sprouts:</strong> because roots stay behind in the medium, microgreens sit outside the federal sprout rule — but worker-hygiene and water controls can still apply above the federal coverage floor of <strong>$34,324</strong> three-year-average produce sales (2023–25). ODAFF pages still show the old $25,000 figure.</li>
+              <li><strong>Cottage food law is the wrong tool.</strong> The Homemade Food Freedom Act ($75,000 cap) — becoming the <strong>Local Food Freedom Act at $250,000 effective November 1, 2026</strong> (HB 3720, signed May 5, 2026) — does not apply to raw produce at all.</li>
+              <li><strong>Processing changes everything:</strong> washing/packaging beyond raw produce, salads, or prepared foods triggers OSDH food-establishment rules — plan review <strong>$425</strong>, application, pre-licensure inspection.</li>
+              <li><strong>Insurance:</strong> no Oklahoma law requires product liability for an owner-only raw grower, but product eaten raw makes it strongly advisable — and grocery/restaurant contracts set the real requirements (certificates, additional-insured, lot traceability). No universal state dollar limit is published.</li>
+              <li><strong>Zoning is the real gate:</strong> Oklahoma City limits home occupations (no on-premises shop/store sales as of right) — check city/county planning before producing in a residence. Business entity: Secretary of State registration $100 + fee; LLC annual filing $25.</li>
+              <li><strong>Contacts:</strong> OSDH Consumer Health 405-426-8250 · ODAFF Food Safety 405-522-6119 (also the number for free ODAFF on-farm readiness reviews).</li>
+            </ul>
+            <div class="callout warn">
+              <div class="ct">The tax trap</div>
+              <p>Oklahoma's Agricultural Exemption Permit (68 O.S. 1358.1) exempts farm input purchases — but <strong>OAC 710:65 lists commercial greenhouses among activities that do NOT qualify as farming</strong>. An indoor rack grower should get a written Tax Commission determination before assuming seeds, trays, lights, and media are exempt. Separately: direct-to-consumer produce sales are exempt from <em>state</em> sales tax (effective Aug 29, 2024; local taxes may still apply), and a sales/use tax permit costs $20 + handling.</p>
+            </div>
+
+            <h3>Documented local competitors</h3>
+            <table class="tbl">
+              <thead><tr><th>Grower</th><th>What they're doing</th></tr></thead>
+              <tbody>
+                <tr><td><a href="http://commonwealthurbanfarms.com/">CommonWealth Urban Farms</a><span class="note"> — OKC, 3310 N Olie Ave</span></td><td class="note" data-l="What they're doing">Supplies live microgreens to OKC restaurants at <strong>$26/flat including delivery</strong>. Chef customers include <strong>The Red Cup</strong> and <strong>Elemental Coffee</strong> (Midtown). Also runs garden-school microgreens classes. This is the price to beat in OKC.</td></tr>
+                <tr><td>Abundant Microgreens<span class="note"> — Tulsa</span></td><td class="note" data-l="What they're doing">7 years operating; reported 17+ varieties, 10 restaurants, 5 retail outlets, 2 farmers markets. <strong>Stepped back from Saturday farmers markets after June 2024</strong> (personal/professional changes) but continues vendor partners and home delivery in Tulsa/Broken Arrow/Owasso — a possible opening in the Tulsa market-day channel. (<a href="https://us15.campaign-archive.com/?u=a0daa5700e79be99115eda80e&id=cc068641b4">newsletter</a>)</td></tr>
+                <tr><td><a href="https://teenygreenymicrogreens.com/">Teeny Greeny</a><span class="note"> — Broken Arrow, since 2023</span></td><td class="note" data-l="What they're doing">Home delivery + standing weekly restaurant orders within 30 miles of Broken Arrow; Rose District Farmers Market on Saturdays.</td></tr>
+                <tr><td><a href="http://scissortailfarms.com/category/press/">Scissortail Farms</a><span class="note"> — W. Tulsa</span></td><td class="note" data-l="What they're doing">Aeroponic leafy greens — an adjacent competitor, not microgreens-specific. Supplies restaurants (Doc's, Stonehorse Café, Tallgrass Prairie Table, La Villa at Philbrook) and Reasor's grocery.</td></tr>
+              </tbody>
+            </table>
+
+            <h3>The demand side</h3>
+            <p>Oklahoma: <strong>4,123,288 residents</strong> (July 2025) and <strong>$12.057B in food service sales</strong> (2022) — a substantial restaurant channel, though that proves nothing about any single restaurant's demand. <span class="flag">anecdote</span> via microgreensguru</p>
+            <div class="cards">
+              <div class="card">
+                <h4>Farmers markets — OKC metro &amp; Norman</h4>
+                <p><strong>OKC Farmers Public Market</strong> — 311 S Klein, Sat 9–2, operating since 1928.<br>
+                <strong>Scissortail Park Farmers Market</strong> — Sat 9–1, Apr–Oct, Oklahoma-grown only.<br>
+                <strong>Wheeler District</strong> — Fri 6–9pm, May–Oct.<br>
+                <strong>Midtown Farmers Market</strong> — noted for microgreens/kombucha.<br>
+                <strong>Paseo Farmers Market</strong> — year-round neighborhood market.<br>
+                <strong>Norman Farm Market</strong> — 615 E Robinson St, Norman (Cleveland County), Tue/Thu/Sat Apr–Oct.<br>
+                <strong>Urban Agrarian</strong> — daily local-food grocery sourcing from 60+ Oklahoma farmers; a wholesale/consignment prospect.<br>
+                Stall costs are market-set; examples statewide run $10–40/yr or $5–15/day.</p>
+              </div>
+              <div class="card">
+                <h4>Upscale restaurant targets</h4>
+                <p><strong>Cleveland County / Norman:</strong> Juliette Oyster Bar &amp; Steakhouse (121 E Main) · Ranch Steakhouse (2120 24th Ave NW — fine dining, OpenTable Diners' Choice) · Benvenuti's Ristorante (105 W Main) · Rally Kitchen + Bar (Noun Hotel).</p>
+                <p><strong>OKC kitchens already buying local greens:</strong> The Red Cup, Elemental Coffee, Scratch Kitchen &amp; Cocktails (Paseo), Kam's Kookery, CousCous Cafe (via CommonWealth's Basilmania event).</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- ============ 7 CHANNELS ============ -->
+          <section id="channels">
+            <h2>7 · Sales channels and customer economics</h2>
+            <p class="sub">Restaurants are the steady base; farmers markets carry the best margins and the most labor; grocery is a volume game with the thinnest margin and the heaviest setup. Channel figures are industry rules of thumb — no hard local data backs them.</p>
+            <div class="grade">Reliability <b>C</b> for channel economics — <a href="https://savedelete.com/read/microgreens.html">savedelete</a> <span class="flag">industry article</span>, uncorroborated locally</div>
+
+            <table class="tbl">
+              <thead><tr><th>Channel</th><th class="num">Margin</th><th>Volume</th><th>Notes</th></tr></thead>
+              <tbody>
+                <tr><td>Restaurants (direct wholesale)</td><td class="num" data-l="Margin">60–70%</td><td class="note" data-l="Volume">5–20 lb/wk per account at $20–35/lb → <strong>$400–2,800/month per account</strong></td><td class="note" data-l="Notes">Steady recurring revenue. Approach steakhouses, sushi, farm-to-table, tasting menus; avoid large chains (corporate approval gauntlet).</td></tr>
+                <tr><td>Farmers markets</td><td class="num" data-l="Margin">75–85%</td><td class="note" data-l="Volume">10–30 lb per market day; 80–200 clamshells at $4–8</td><td class="note" data-l="Notes">High effort, brand building. Living-tray display + toothpick samples; mixed clamshells at a +$1 premium.</td></tr>
+                <tr><td>CSA / subscription</td><td class="num" data-l="Margin">70–80%</td><td class="note" data-l="Volume">Typically <strong>$25–50/month</strong> for two weekly clamshells</td><td class="note" data-l="Notes">Predictable per subscriber; weekly cycle fits production; profitable within ~10 mi delivery.</td></tr>
+                <tr><td>Grocery / retail wholesale</td><td class="num" data-l="Margin">30–45%</td><td class="note" data-l="Volume">50–200 lb/wk per store</td><td class="note" data-l="Notes">High setup (compliance, UPC, packaging, payment terms); low ongoing labor.</td></tr>
+              </tbody>
+            </table>
+
+            <h3>Account math</h3>
+            <ul class="tight">
+              <li><strong>3 restaurant accounts × 10 lb/wk × $28/lb = $840/wk ≈ $3,360/month revenue</strong> before expenses — viable part-time income. <span class="flag">industry article</span> (cultivationag)</li>
+              <li>At the OKC incumbent's $26/flat, an account taking 4 flats/wk is worth $104/wk ≈ <strong>$5,400/yr per account</strong>. <span class="flag">author's calc</span></li>
+            </ul>
+
+            <h3>Customer acquisition — what growers report working</h3>
+            <ul class="tight">
+              <li>Free sample drop-offs to chefs (pea shoots + sunflower + radish), a one-page spec sheet (crops, flavor notes, shelf life, pack sizes, prices), follow up in 3 days. <strong>Reliability beats variety</strong> — on-time weekly delivery wins accounts. <span class="flag">anecdote</span></li>
+              <li>"Chef boxes" and free samples of new varieties with a feedback loop — microgreensfarmer runs a <a href="https://microgreensfarmer.com/20-ways-to-add-more-value-and-sell-more-microgreens/">4-question Google Form</a> after 30 days, then yearly.</li>
+              <li>Farmers market → subscription conversion via a clipboard email list; Instagram/TikTok harvest content; living-tray cut-to-order displays.</li>
+              <li>The selling edge to lead with: <strong>same-day cut vs. shipped-in greens</strong> — "I cut the microgreens on the same day and deliver them fresh — that is your biggest strength" (grower quoted in a Mumbai market guide).</li>
+            </ul>
+
+            <div class="callout warn">
+              <div class="ct">Two honest gaps</div>
+              <p><strong>Churn:</strong> no published churn or retention data for microgreens restaurant accounts exists. Growers consistently say accounts are lost on missed deliveries and quality slips, and kept via consistency, feedback loops, and seasonal variety rotations — directional and anecdotal, not measured.</p>
+              <p><strong>Grocery consignment:</strong> no Oklahoma-specific consignment terms or fee schedules were located. Buyers commonly require a supplier agreement, certificate of product and general liability insurance, a UPC and price file, case and lot traceability, delivery temperature expectations, product specifications, payment terms, and a recall procedure — get the buyer's vendor manual before pricing.</p>
+            </div>
+          </section>
+
+          <!-- ============ 8 EQUIPMENT ============ -->
+          <section id="equipment">
+            <h2>8 · Equipment and inputs</h2>
+            <p class="sub">The working kit is unglamorous: wire racks, 4-ft LED bars, heavy-duty trays, bulk seed. A few exact SKUs still need live confirmation — flagged where they do.</p>
+            <div class="grade">Reliability <b>B</b> — vendor prices plus converging industry guides</div>
+
+            <table class="tbl">
+              <thead><tr><th>Item</th><th class="num">Price</th><th>Notes</th></tr></thead>
+              <tbody>
+                <tr><td>Grow rack — standard 4-tier chrome wire shelving, 48″×18″×72″</td><td class="num" data-l="Price">$60–80</td><td class="note" data-l="Notes">Hardware-store price (fernandshelf). Holds roughly 4–8 10×20 trays per shelf (16–32/rack); onthegrow's professional build runs 24 trays/rack. Add locking casters for cleaning.</td></tr>
+                <tr><td>Grow rack — heavier metro-style unit</td><td class="num" data-l="Price">$150–300</td><td class="note" data-l="Notes">cultivationag.</td></tr>
+                <tr><td>LED — Barrina T5-style 4-ft bars</td><td class="num" data-l="Price">8-pack ~$58</td><td class="note" data-l="Notes">The widely used value option: 4×20W packs, 5000–6500K. Onthegrow: "at least 20W per 4-ft light, daisy-chainable"; 8-pack price per a pulserevops review. Plan <strong>2 bars per 48″ shelf</strong>. Higher-output units (Spider Farmer SF-1000, Mars Hydro TS 600) are considered overkill for a single rack.</td></tr>
+                <tr><td>1020 trays — cheap thin nursery flats</td><td class="num" data-l="Price">$0.50–1.50 /tray</td><td class="note" data-l="Notes">Crack within a season.</td></tr>
+                <tr><td>1020 trays — heavy-duty reusable polypropylene, bulk</td><td class="num" data-l="Price">~$1.30–2.10 /tray</td><td class="note" data-l="Notes">Alibaba sourcing guide lists Johnny's Selected Seeds 1020 (PP, 16 holes) at $2.10 and Bootstrap Farmer heavy-duty at $1.30; accio wholesale lists Bootstrap Farmer Microgreen 1020 at $1.16/tray in bulk. Bootstrap's shallow (1.25″) extra-strength trays are the industry "buy-it-once" standard — better airflow, easier harvest. Nest a holed tray inside a solid tray for bottom watering. <span class="flag warnf">confirm</span> exact current 10-pack pricing on bootstrapfarmer.com before ordering — it wasn't reachable in the research window.</td></tr>
+                <tr><td>Seed — True Leaf Market</td><td class="num" data-l="Price">$9–16 /lb overall</td><td class="note" data-l="Notes">Industry standard per multiple grower sources. Radish detail in §3. Small bags $8–15 for starting out.</td></tr>
+                <tr><td>Seed — Johnny's Selected Seeds</td><td class="num" data-l="Price">$12–19 /lb</td><td class="note" data-l="Notes">Commercial-grade germination data (industry comparison).</td></tr>
+                <tr><td>Seed — Mountain Valley / Everwilde (organic radish, 1-lb qty)</td><td class="num" data-l="Price">~$48–57 /lb</td><td class="note" data-l="Notes">everwilde.com — buy bulk for production instead.</td></tr>
+                <tr><td>Packaging — clamshells</td><td class="num" data-l="Price">~$0.30 /sleeve · $30 /100 starter</td><td class="note" data-l="Notes">Labels ~$0.60 each (industry bands; farmstandapp for the 100-pack).</td></tr>
+                <tr><td>Fans / airflow</td><td class="num" data-l="Price">—</td><td class="note" data-l="Notes">Non-negotiable per onthegrow: small clip/rack fans per shelf to break up microclimates. Bootstrap Farmer sells rack fans sized for grow racks.</td></tr>
+              </tbody>
+            </table>
+            <p>Some growers run a light fertilizer; many run none — seed reserves carry the crop. Growing media options and per-tray costs are in <a href="#costs">§3</a>.</p>
+          </section>
+
+          <!-- ============ 9 RISKS ============ -->
+          <section id="risks">
+            <h2>9 · Risks and failure modes</h2>
+            <p class="sub">Ranked roughly by how often growers report them and how fast they kill margin.</p>
+            <div class="grade">Reliability <b>B</b> — grower consensus plus one peer-reviewed shelf-life paper; insurance figures are industry rules of thumb</div>
+
+            <div class="risk"><div class="rn">01</div><div>
+              <h4>Mold and damping-off — the #1 reported crop killer</h4>
+              <p><em>Pythium</em> and surface molds thrive on overwatering, poor airflow, and domes left on too long. Prevention consensus: bottom-water (dump standing water), fans on every rack, room humidity &lt;60% (ideal 40–50%), fresh medium each cycle, sanitized trays (H₂O₂ or vinegar), domes off at germination. <strong>If mold covers &gt;25% of a tray or stems collapse — compost the whole tray; do not sell or "clean" it.</strong> Seed pre-soaks in dilute food-grade H₂O₂ are debated (some growers report harm to beneficial microbes); process hygiene matters more than any spray. Most vulnerable: sunflower, peas, amaranth, some brassicas. (onthegrow mold guide; Bootstrap Farmer; farmstandapp)</p>
+            </div></div>
+            <div class="risk"><div class="rn">02</div><div>
+              <h4>Shelf-life logistics</h4>
+              <p>Cut microgreens are highly perishable. <span class="flag study">study</span> Berba &amp; Uchanski (Journal of Young Investigators): <strong>14 days (arugula, red cabbage) to 21 days (radish) at 4°C; only 7 days at 10°C</strong>. Mustard microgreens (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9966302/">MDPI Foods 2023</a>): 14 days at 5°C, <strong>1 day at 20–25°C</strong>. Store dry and unwashed; wash immediately before use. The cold chain (harvest → cooler → delivery) is a hard requirement for cut greens — living trays sidestep it entirely.</p>
+            </div></div>
+            <div class="risk"><div class="rn">03</div><div>
+              <h4>Price compression and saturation</h4>
+              <p>Near-zero entry barriers (~$300) mean any restaurant corridor can sprout competitors; documented in some urban markets. Defense: same-day freshness, living trays, specialty varieties, route density (§2, §5).</p>
+            </div></div>
+            <div class="risk"><div class="rn">04</div><div>
+              <h4>The labor scaling trap</h4>
+              <p>At 100 trays/wk you're at 10–15 hrs of experienced labor. The jump to 150–300 trays/cycle demands irrigation automation, 20–30 hrs/wk, and usually hired help — this is where margins compress and burnout hits. (fernandshelf; cultivationag)</p>
+            </div></div>
+            <div class="risk"><div class="rn">05</div><div>
+              <h4>Restaurant demand seasonality</h4>
+              <p>Summer patio/heat patterns and holiday closures create order dips. Diversified channels (markets, subscriptions) smooth revenue. <span class="flag">anecdote</span> consensus</p>
+            </div></div>
+            <div class="risk"><div class="rn">06</div><div>
+              <h4>Food-safety liability</h4>
+              <p>Eaten raw, no kill step. No Oklahoma insurance mandate for owner-only raw growers, but buyers will require certificates. Industry rules of thumb: <strong>general liability from ~$500/yr; product liability $700–1,000/yr for $1–2M limits</strong> (farmstandapp; urbanaglaw.org); ~$1,000/yr per $1M coverage (Produce News quoting Western Growers). Workers' comp applies once you hire in Oklahoma.</p>
+            </div></div>
+            <div class="risk"><div class="rn">07</div><div>
+              <h4>The processing-line trap (Oklahoma-specific)</h4>
+              <p>The day you wash and seal retail packs beyond raw-produce handling, you acquire a license, a $425 plan review, and inspections you didn't have before. (§6)</p>
+            </div></div>
+            <div class="risk"><div class="rn">08</div><div>
+              <h4>Failure is usually financial, not horticultural</h4>
+              <p>The vertical-farm graveyard (§5) is the macro version — Plenty, Bowery, AeroFarms, and AppHarvest all failed on unit economics and capex. At small scale, Tulsa's Abundant Microgreens <strong>stepped back from farmers markets in 2024</strong> after 7 years while keeping wholesale and delivery — a real local example of channel retrenchment.</p>
+            </div></div>
+          </section>
+
+          <!-- ============ 10 PROFITABILITY ============ -->
+          <section id="profit">
+            <h2>10 · Profitability benchmarks</h2>
+            <p class="sub">The weakest data on this page, stated plainly: <strong>no audited financials exist for small microgreens growers.</strong> Everything below is anecdotes and industry estimates. Treat the ranges as planning bands, and run your own numbers — seed rate × yield × local price — before committing.</p>
+            <div class="grade">Reliability <b>C+</b> — the most anecdote-dependent section; no grower P&amp;Ls are public</div>
+
+            <table class="tbl">
+              <thead><tr><th>Scale</th><th>Reported numbers</th><th>Flag</th></tr></thead>
+              <tbody>
+                <tr><td>Small / DIY — 10 trays/wk</td><td class="note" data-l="Reported numbers">10 trays/wk × ~1 lb/tray at $25/lb wholesale = <strong>$250/wk revenue, ~$200/wk net after materials</strong> → ~$800/month side income (fernandshelf). Nordic Hydro (Sweden): ~€10,000 first-year sales on a small home setup, <strong>~50% margin</strong>, 1–2 hrs/day.</td><td data-l="Flag"><span class="flag">anecdote</span></td></tr>
+                <tr><td>Mid-scale restaurant supplier</td><td class="note" data-l="Reported numbers">3 accounts × 10 lb/wk × $28/lb = $840/wk ≈ <strong>$3,360/month revenue</strong> (cultivationag). Another grower report: 50 trays/wk at $25–40/tray ≈ <strong>$78,000/yr revenue</strong>, needing 10–20 standing restaurant accounts (selfsufficientprojects).</td><td data-l="Flag"><span class="flag">industry article</span> <span class="flag">anecdote</span></td></tr>
+                <tr><td>Larger small farm</td><td class="note" data-l="Reported numbers">Chinampas Farm (Bellevue, WA, via GroCycle 2019): up to 600 lb/mo at ~$20/lb = <strong>$12,000/mo revenue</strong> across 3 channels — revenue, not profit.</td><td data-l="Flag"><span class="flag">anecdote</span></td></tr>
+                <tr><td>Net margin ranges</td><td class="note" data-l="Reported numbers">Industry articles cite <strong>40–65% net</strong> after labor/utilities/packaging for 200–300 tray/wk direct sellers (cultivationag citing Cornell Small Farms Program 2024 — <span class="flag warnf">flag</span> secondary citation, original not verified). Analyses built on the excluded USDA-funded budget report 18–32% per-tray net — directional only.</td><td data-l="Flag"><span class="flag">industry article</span></td></tr>
+                <tr><td>Per-rack model</td><td class="note" data-l="Reported numbers">One 4-tier rack ≈ 24 trays capacity; at 2 cycles/month ≈ 48 tray-harvests/month; at $20–26/tray wholesale → <strong>$960–1,250 gross/month per rack</strong> before labor — consistent with the side-income figures above at smaller utilization.</td><td data-l="Flag"><span class="flag">author's calc</span></td></tr>
+              </tbody>
+            </table>
+
+            <h3>What "making a living" actually requires</h3>
+            <p>Side income starts at ~10 trays/wk (a few hundred dollars a month). A <strong>full-time living needs roughly 100–300 trays/wk (100–300 lb/wk) across 10–20+ restaurant accounts plus markets and subscriptions</strong> — $3,000–8,000+/month revenue at 40–60% net → <strong>$1,500–4,000+/month net</strong>, at 20–30 hrs/wk of labor at 150–300 trays/cycle. Labor by scale: 10 trays/wk ≈ a few hrs/wk (30 min/day checks + 2–4 hrs seeding/packing + 1–2 hrs delivery); 100 trays/wk ≈ 10–15 hrs; commercial scale ≈ 20–30 hrs/wk; one full-time grower (Nordic Hydro) reported 8–12 hrs/day at large scale. <span class="flag">industry article</span> <span class="flag">anecdote</span></p>
+          </section>
+
+          <!-- ============ OPEN QUESTIONS ============ -->
+          <section id="open">
+            <h2>Open questions — what the research could not verify</h2>
+            <ul class="tight">
+              <li><strong>USDA-funded sources were excluded per the brief.</strong> The University of Missouri Extension microgreens enterprise budget (g693, 2024 — USDA Farm Service Agency funded) and the SARE grant final report FNE20-966 (SARE is USDA NIFA-funded) contained the most detailed small-scale enterprise budgets found. Their headline numbers (18–32% net margins per tray; $2,326 startup recovered in year one) circulate in secondary articles — several of which (speedcalcs, uaorganic, homesteadingalliance) build directly on the Missouri budget — but they were <strong>not used as evidence</strong> anywhere on this page.</li>
+              <li><strong>No longitudinal wholesale price series exists publicly</strong> — "price compression" is a reported risk, not a measured trend.</li>
+              <li><strong>No published churn/retention data</strong> for restaurant microgreens accounts, and <strong>no Oklahoma grocery consignment fee schedules</strong> were found.</li>
+              <li><strong>No audited small-grower P&amp;Ls</strong> — profitability benchmarks are anecdotes and industry estimates.</li>
+              <li><strong>Live price verification failed</strong> — the research browser was unavailable, so vendor prices (Bootstrap Farmer tray 10-packs, Johnny's seed SKUs) are index-sourced. Confirm before purchasing. <strong>Local HVAC/dehumidification quotes for an Oklahoma grow room are an open item.</strong></li>
+              <li><strong>Legal/tax:</strong> the Oklahoma analysis is a secondary legal explainer — confirm licensing, the agricultural-exemption determination, and zoning with ODAFF (405-522-6119), the Tax Commission, and city/county planning before investing.</li>
+            </ul>
+          </section>
+
+          <!-- ============ SOURCES ============ -->
+          <section id="sources">
+            <h2>Sources</h2>
+            <p class="sub">All read October 19, 2026 via web index. The ten most useful primary sources first, then the full list by topic.</p>
+            <h3>Top 10</h3>
+            <ol class="src-list">
+              <li><a href="https://microgreensguru.com/selling-microgreens/oklahoma/">microgreensguru — "Do You Need a License to Sell Microgreens in Oklahoma?"</a> The single best Oklahoma-specific source: statute (63 O.S. 1-1118), ODAFF's <em>Bringing Farm to Market</em> guide applied, tax traps, agency phone numbers.</li>
+              <li><a href="https://microgreensworld.com/microgreens-trends-market-analysis-growth-forecast/">microgreensworld — "Microgreens Market Size and Forecast 2026–2032"</a> Compares 9 research firms' estimates and explains why they differ — the honest market-size source.</li>
+              <li><a href="https://www.grandviewresearch.com/industry-analysis/microgreens-market-report">Grand View Research — Microgreens Market Report</a> (updated 2026-10-16). The most-cited firm estimate ($3.3B 2025 → $8.0B 2033, 11.9% CAGR) with segment detail.</li>
+              <li><a href="https://cultivationag.com/10-most-common-questions-about-microgreens-and-their-profitability/">cultivationag — "10 Most Common Questions About Microgreens And Their Profitability"</a> Best consolidated unit-economics primer: per-tray costs, yields, wholesale/retail bands, labor hours, startup tiers.</li>
+              <li><a href="https://onthegrow.net/blogs/microgreens/professional-microgreens-grow-rack-setup-step-by-step-build-guide">onthegrow — Professional Microgreens Grow Rack Setup</a> and <a href="https://onthegrow.net/blogs/microgreens/microgreens-mold-prevention-identification-complete-guide">mold/damping-off guide</a>. The most operationally detailed grower-operated source.</li>
+              <li><a href="https://peer.asee.org/a-preliminary-study-on-the-technoeconomic-feasibility-of-industrial-scale-microgreens-production.pdf">ASEE 2022 — "A Preliminary Study on the Technoeconomic Feasibility of Industrial-scale Microgreens Production"</a> Peer-reviewed techno-economic analysis (broccoli microgreens, indoor systems).</li>
+              <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9966302/">MDPI Foods 2023 — "Effect of Storage Temperature on Storage Life and Sensory Attributes of Packaged Mustard Microgreens"</a> (PMC9966302). Peer-reviewed shelf-life data.</li>
+              <li><a href="http://www.newaginternational.com/cea-and-greenhouse/palm-ventures-acquires-aerofarms-providing-lifeline-after-bankruptcy-and-funding-turmoil/">New AG International — "Palm Ventures acquires AeroFarms"</a> (June 2026). Best current account of the vertical-farming shakeout's flagship case.</li>
+              <li><a href="https://microgreensfarmer.com/?p=172">microgreensfarmer</a> — veteran grower's pricing methodology ($/tray derived from labor targets) and chef-relationship playbook.</li>
+              <li><a href="https://fernandshelf.com/microgreens-startup-cost/">fernandshelf — "How Much Does It Cost to Start a Microgreens Business? (2026)"</a> Itemized capex tiers from $300 to $6,000.</li>
+            </ol>
+            <h3>Full source list, by topic</h3>
+            <ul class="tight src-list">
+              <li><strong>Market:</strong> <a href="https://www.grandviewresearch.com/industry-analysis/microgreens-market-report">grandviewresearch.com</a> · <a href="https://microgreensworld.com/microgreens-trends-market-analysis-growth-forecast/">microgreensworld (market analysis)</a> · <a href="https://microgreensworld.com/how-to-price-your-microgreens/">microgreensworld (pricing)</a> · <a href="http://www.skyquestt.com/report/microgreens-market">skyquestt.com</a> · <a href="https://www.researchandmarkets.com/reports/5973893/">researchandmarkets.com</a></li>
+              <li><strong>Unit economics:</strong> <a href="https://cultivationag.com/10-most-common-questions-about-microgreens-and-their-profitability/">cultivationag</a> · <a href="https://farmcitystate.com/how-to-grow-and-sell-microgreens/">farmcitystate</a> · <a href="https://onthegrow.net/blogs/microgreens/a-complete-guide-to-selling-microgreens-starting-a-microgreens-business">onthegrow (selling guide)</a> · <a href="https://fernandshelf.com/microgreens-startup-cost/">fernandshelf</a> · <a href="https://www.farmstandapp.com/224828/6-microgreen-profit-margins-analysis-on-a-homestead-budget/">farmstandapp (margins)</a> · <a href="https://toddsseeds.com/microgreens-business-the-ultimate-plan/amp/">toddsseeds</a> · islandmicrogreens · <span class="flag warnf">flagged derivative of excluded source:</span> <a href="https://speedcalcs.com/2026/07/is-microgreens-farming-profitable.html">speedcalcs</a>, homesteadingalliance</li>
+              <li><strong>Competitive:</strong> <a href="http://www.newaginternational.com/cea-and-greenhouse/palm-ventures-acquires-aerofarms-providing-lifeline-after-bankruptcy-and-funding-turmoil/">newaginternational</a> · <a href="https://www.cbinsights.com/company/vertical-harvest-1">cbinsights (Plenty)</a> · <a href="https://www.securities.io/best-vertical-farming-startups/">securities.io</a> · <a href="https://foodlore.blog/why-vertical-farms-go-bankrupt/">foodlore.blog</a> · <a href="https://indoor.ag/indoor-farming-leaders-unite-to-build-a-national-powerhouse/">indoor.ag (80 Acres/Soli)</a> · <a href="https://globalaginvesting.com/ma-80-acres-farms-soli-organic-deal-signals-next-phase-of-indoor-farming-consolidation/">globalaginvesting</a></li>
+              <li><strong>Oklahoma:</strong> <a href="https://microgreensguru.com/selling-microgreens/oklahoma/">microgreensguru (Oklahoma)</a> · <a href="https://law.justia.com/codes/oklahoma/2023/title-63/section-63-1-1118v2/">63 O.S. §1-1118 (Justia)</a> · <a href="http://commonwealthurbanfarms.com/">commonwealthurbanfarms.com</a> · <a href="https://teenygreenymicrogreens.com/">teenygreenymicrogreens.com</a> · <a href="http://scissortailfarms.com/category/press/">scissortailfarms.com</a> · <a href="https://us15.campaign-archive.com/?u=a0daa5700e79be99115eda80e&id=cc068641b4">Abundant Microgreens newsletter</a> · <a href="https://www.priceofelectricity.com/electricity-price-history/oklahoma">priceofelectricity.com (Oklahoma rates)</a></li>
+              <li><strong>Sales:</strong> <a href="https://savedelete.com/read/microgreens.html">savedelete</a> · <a href="https://microgreensfarmer.com/?p=172">microgreensfarmer (pricing)</a> · <a href="https://microgreensfarmer.com/20-ways-to-add-more-value-and-sell-more-microgreens/">microgreensfarmer (value-add)</a> · epicplantation · microgreenscorner</li>
+              <li><strong>Equipment &amp; inputs:</strong> <a href="https://www.bootstrapfarmer.com/collections/seed-starting-equipment?page=2">bootstrapfarmer.com</a> · <a href="https://store.trueleafmarket.com/">store.trueleafmarket.com</a> (product feeds) · <a href="https://www.westcoastseeds.com/products/terrafibre-hemp-grow-mat-10-x-20">westcoastseeds (Terrafibre)</a> · <a href="https://onthegrow.net/blogs/microgreens/professional-microgreens-grow-rack-setup-step-by-step-build-guide">onthegrow (rack build)</a> · pulserevops (light reviews)</li>
+              <li><strong>Risks &amp; food safety:</strong> <a href="https://onthegrow.net/blogs/microgreens/microgreens-mold-prevention-identification-complete-guide">onthegrow (mold)</a> · <a href="https://www.bootstrapfarmer.com/blogs/microgreens/microgreens-how-to-combat-and-prevent-mold">Bootstrap Farmer (mold)</a> · <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9966302/">PMC9966302 (mustard shelf life)</a> · jyi.org (Berba &amp; Uchanski postharvest) · farmstandapp (insurance) · urbanaglaw.org · theproducenews.com</li>
+              <li><strong>Studies:</strong> <a href="https://peer.asee.org/a-preliminary-study-on-the-technoeconomic-feasibility-of-industrial-scale-microgreens-production.pdf">ASEE 2022 techno-economic study</a> · <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10345114/">PMC10345114 (LCA of microgreen production)</a> · <a href="https://www.mdpi.com/2223-7747/15/4/635">MDPI Plants (seed density, 2026)</a></li>
+            </ul>
+          </section>
+
+          <footer>
+            Compiled October 19, 2026, for a rack-based microgreens operation in Oklahoma City / Cleveland County, OK. All figures are as reported by the sources linked on this page, with each source's reliability flag and caveats carried alongside. No USDA sources were used, per the brief. Vendor prices are index-sourced snapshots, not live quotes — confirm before purchasing, and confirm licensing, tax, and zoning with ODAFF, the Oklahoma Tax Commission, and city/county planning before investing.
+          </footer>
+        </main>
+      </div>
+    </div>
+
+    <script>
+      (function () {
+        var ids = ["price", "trays", "inputs", "labor", "wage", "waste"];
+        var els = {}, outs = {};
+        ids.forEach(function (id) {
+          els[id] = document.getElementById("c-" + id);
+          outs[id] = document.getElementById("o-" + id);
+        });
+        function money(n, dec) {
+          var s = Math.abs(n).toFixed(dec == null ? 0 : dec);
+          s = s.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+          return (n < 0 ? "-$" : "$") + s;
+        }
+        function calc() {
+          var price = +els.price.value, trays = +els.trays.value,
+              inputs = +els.inputs.value, laborMin = +els.labor.value,
+              wage = +els.wage.value, waste = +els.waste.value;
+          outs.price.textContent = money(price);
+          outs.trays.textContent = trays;
+          outs.inputs.textContent = money(inputs, 2);
+          outs.labor.textContent = laborMin + " min";
+          outs.wage.textContent = money(wage) + "/hr";
+          outs.waste.textContent = waste + "%";
+
+          var laborCost = laborMin / 60 * wage;
+          var costPerTray = inputs + laborCost;
+          var sold = trays * (1 - waste / 100);
+          var wRev = sold * price;
+          var wCost = trays * costPerTray;
+          var wNet = wRev - wCost;
+          var netPerSeeded = trays ? wNet / trays : 0;
+          var margin = wRev ? (wNet / wRev * 100) : 0;
+          var hrs = trays * laborMin / 60;
+          var mNet = wNet * 52 / 12;
+
+          document.getElementById("r-rev").textContent = money(price, 2);
+          document.getElementById("r-cost").textContent = money(costPerTray, 2);
+          var netEl = document.getElementById("r-net");
+          netEl.textContent = money(netPerSeeded, 2);
+          netEl.parentElement.classList.toggle("neg", netPerSeeded < 0);
+          document.getElementById("r-margin").textContent = Math.round(margin) + "%";
+          document.getElementById("r-wrev").textContent = money(wRev);
+          document.getElementById("r-hrs").textContent = (Math.round(hrs * 10) / 10) + " hrs";
+          var mEl = document.getElementById("r-mnet");
+          mEl.textContent = money(mNet);
+          mEl.parentElement.classList.toggle("neg", mNet < 0);
+        }
+        ids.forEach(function (id) { els[id].addEventListener("input", calc); });
+        calc();
+      })();
+    </script>
+  </body>
+</html>
