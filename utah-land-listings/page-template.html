@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{TITLE}}</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<style>
+  :root { --ink:#1a1a1a; --muted:#5c5c5c; --hair:#e3e0d8; --paper:#fbfaf7; --navy:#23406b; --accent:#8a6d3b; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink);
+         font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+         font-variant-numeric:tabular-nums; }
+  .wrap { max-width:1180px; margin:0 auto; padding:28px 22px 60px; }
+  h1 { font-family:Georgia,"Times New Roman",serif; font-weight:400; font-size:34px; margin:0 0 6px; letter-spacing:.2px; }
+  .sub { color:var(--muted); font-size:14px; margin:0 0 4px; }
+  .caveat { font-size:12.5px; color:var(--muted); border-top:1px solid var(--hair); border-bottom:1px solid var(--hair);
+             padding:10px 0; margin:16px 0 22px; line-height:1.55; }
+  .stats { display:grid; grid-template-columns:repeat(4,1fr); gap:0; border:1px solid var(--hair); background:#fff; margin-bottom:22px; }
+  .stat { padding:16px 18px; border-left:1px solid var(--hair); }
+  .stat:first-child { border-left:none; }
+  .stat .k { font-size:11px; text-transform:uppercase; letter-spacing:1.2px; color:var(--muted); margin-bottom:6px; }
+  .stat .v { font-family:Georgia,serif; font-size:26px; }
+  .stat .d { font-size:12px; color:var(--muted); margin-top:4px; }
+  h2 { font-family:Georgia,serif; font-weight:400; font-size:21px; margin:30px 0 10px; }
+  #map { height:600px; border:1px solid var(--hair); background:#eef0ee; }
+  #mapcount { font-size:12.5px; color:var(--muted); }
+  .pill { display:inline-block; padding:2px 6px; border-radius:10px; font:600 11px/1.35 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+          white-space:nowrap; border:1.5px solid #fff; box-shadow:0 1px 3px rgba(0,0,0,.35); }
+  .pill.light { color:#0d2340; } .pill.dark { color:#fff; }
+  .pill.approx { border-style:dashed; border-color:#0d366b; }
+  .tagtip { padding:0; background:none; border:none; box-shadow:none; }
+  .tagtip::before { display:none; }
+  .hov { background:#fff; border-radius:4px; box-shadow:0 2px 8px rgba(0,0,0,.25); padding:7px 10px 6px; font-size:12px;
+         line-height:1.45; color:var(--ink); white-space:normal; width:240px; }
+  .hov .pill { font-size:12.5px; padding:3px 8px; box-shadow:none; }
+  .hov-t { font-weight:600; margin:5px 0 2px; }
+  .hov-k { display:flex; flex-wrap:wrap; gap:2px 12px; }
+  .hov-n { color:var(--muted); font-size:11px; }
+  .maphead { display:flex; flex-wrap:wrap; justify-content:space-between; align-items:baseline; gap:6px 18px; margin:14px 0 8px; }
+  #mapcount { margin:0; }
+  .legend { display:flex; flex-wrap:wrap; align-items:center; gap:4px 14px; font-size:12px; color:var(--ink); }
+  .legend .lg-h { font-size:11px; text-transform:uppercase; letter-spacing:1px; color:var(--muted); }
+  .legend i { display:inline-block; width:11px; height:11px; border-radius:50%; margin-right:6px; vertical-align:-1px;
+              border:1.5px solid #fff; box-shadow:0 0 0 1px rgba(0,0,0,.18); }
+  .legend i.hollow { background:rgba(42,120,214,.25); border-color:#2a78d6; box-shadow:none; }
+  .legend i.sz { background:#bcc7d6; border:1.5px solid #fff; box-shadow:0 0 0 1px rgba(0,0,0,.18); vertical-align:middle; }
+  .legend .lg-break { flex-basis:100%; height:0; }
+  .pop { font-size:12.5px; min-width:210px; }
+  .pop-t { font-weight:600; margin-bottom:6px; line-height:1.35; }
+  .pop-k { border:none; background:none; font-size:12.5px; width:100%; }
+  .pop-k td { padding:1px 0; border:none; }
+  .pop-k td:first-child { color:var(--muted); padding-right:12px; white-space:nowrap; }
+  .pop-k tr:hover td { background:none; }
+  .pop-n { margin-top:6px; font-size:11px; color:var(--muted); }
+  .ctip { font-size:11.5px; }
+  td.pin { width:1%; padding-left:4px; padding-right:4px; }
+  .pinbtn { border:1px solid #cfcabf; background:#fff; color:var(--navy); border-radius:2px; font-size:11px;
+            padding:2px 7px; cursor:pointer; white-space:nowrap; }
+  .pinbtn:hover { border-color:var(--navy); }
+  .mapnote { font-size:12px; color:var(--muted); margin-top:6px; }
+  .hist { border:1px solid var(--hair); background:#fff; padding:14px 14px 6px; }
+  .filters { display:grid; grid-template-columns:repeat(4,1fr); gap:10px 14px; border:1px solid var(--hair);
+              background:#fff; padding:16px; margin-bottom:6px; }
+  .filters label { font-size:11px; text-transform:uppercase; letter-spacing:1px; color:var(--muted); display:block; margin-bottom:5px; }
+  .filters input, .filters select { width:100%; padding:8px 9px; font-size:13.5px; border:1px solid #cfcabf;
+              border-radius:2px; background:#fff; font-variant-numeric:tabular-nums; }
+  .frow2 { display:flex; gap:10px; align-items:center; margin:12px 0; }
+  .btn { padding:9px 16px; font-size:13px; border:1px solid var(--navy); background:var(--navy); color:#fff;
+          border-radius:2px; cursor:pointer; }
+  .btn.ghost { background:#fff; color:var(--navy); }
+  #count { font-size:13px; color:var(--muted); }
+  table { width:100%; border-collapse:collapse; background:#fff; border:1px solid var(--hair); font-size:13.5px; }
+  th { text-align:left; font-size:11px; text-transform:uppercase; letter-spacing:1px; color:var(--muted);
+       padding:11px 10px; border-bottom:2px solid var(--hair); cursor:pointer; white-space:nowrap; user-select:none; }
+  th .arr { color:var(--navy); }
+  td { padding:9px 10px; border-bottom:1px solid var(--hair); vertical-align:top; }
+  tr:hover td { background:#f4f2ec; }
+  td.num, th.num { text-align:right; white-space:nowrap; }
+  a { color:var(--navy); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  .tablewrap { overflow-x:auto; }
+  .foot { margin-top:34px; padding-top:14px; border-top:1px solid var(--hair); font-size:12.5px; color:var(--muted); line-height:1.6; }
+  @media (max-width:760px) { .stats { grid-template-columns:repeat(2,1fr); } .filters { grid-template-columns:repeat(2,1fr); } #map { height:460px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>{{H1}}</h1>
+  <p class="sub">{{SUB}}</p>
+  <div class="caveat">{{CAVEAT}}</div>
+
+  <div class="stats">
+{{STATS}}
+  </div>
+
+  <h2>Price per acre distribution</h2>
+  <div class="hist">{{HIST}}</div>
+
+  <h2>Find land</h2>
+  <div class="filters">
+    <div><label>Search</label><input id="f_q" type="text" placeholder="title, broker&hellip;"></div>
+    <div><label>County</label><select id="f_region"><option value="">All counties</option>{{REGION_OPTIONS}}</select></div>
+    <div><label>City</label><select id="f_city"><option value="">All cities</option></select></div>
+    <div><label>Broker</label><select id="f_broker"><option value="">All brokers</option></select></div>
+    <div><label>Min price</label><input id="f_pmin" type="number" min="0" placeholder="0"></div>
+    <div><label>Max price</label><input id="f_pmax" type="number" min="0" placeholder="no max"></div>
+    <div><label>Min acres</label><input id="f_amin" type="number" min="0" step="0.1" placeholder="10"></div>
+    <div><label>Max $/acre</label><input id="f_ppa" type="number" min="0" placeholder="no max"></div>
+  </div>
+  <div class="frow2">
+    <button class="btn" id="dl">Download filtered CSV</button>
+    <button class="btn ghost" id="reset">Reset</button>
+    <span id="count"></span>
+  </div>
+  <div class="maphead"><div id="legend" class="legend"></div><p id="mapcount"></p></div>
+  <div id="map"></div>
+  <p class="mapnote">{{MAPNOTE}}</p>
+
+  <h2>Listings</h2>
+  <div class="tablewrap"><table>
+    <thead><tr>
+      <th data-k="title">Listing <span class="arr"></span></th><th data-k="price" class="num">Price <span class="arr"></span></th>
+      <th data-k="acres" class="num">Acres <span class="arr"></span></th><th data-k="ppa" class="num">$/acre <span class="arr"></span></th>
+      <th data-k="city">City <span class="arr"></span></th><th data-k="broker">Broker <span class="arr"></span></th><th></th>
+    </tr></thead>
+    <tbody id="rows"></tbody>
+  </table></div>
+
+  <div class="foot">
+    {{FOOT}}
+  </div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+const DATA = {{DATA}};
+/* {{COUNTY_SOURCE}} */
+const COUNTIES = {{COUNTIES}};
+
+const $ = id => document.getElementById(id);
+const money = n => n == null ? "\u2014" : "$" + Math.round(n).toLocaleString("en-US");
+const ac = n => n == null ? "\u2014" : Number(n.toFixed(1)).toLocaleString("en-US");
+
+function boot() {
+try {
+  /* populate city/broker dropdowns from data */
+  {
+    const fc = $("f_city"), fb = $("f_broker");
+    [...new Set(DATA.map(r => r.city).filter(Boolean))].sort().forEach(c => {
+      const o = document.createElement("option"); o.value = c; o.textContent = c; fc.appendChild(o);
+    });
+    [...new Set(DATA.map(r => r.broker).filter(Boolean))].sort().forEach(b => {
+      const o = document.createElement("option"); o.value = b; o.textContent = b; fb.appendChild(o);
+    });
+  }
+} catch (e) {
+  document.querySelector(".wrap").insertAdjacentHTML("afterbegin",
+    '<p style="color:#900;padding:12px">Listing filters could not be built in this browser.</p>');
+  return;
+}
+
+DATA.forEach((r, i) => r.i = i);
+
+/* ---------- map ---------- */
+/* $/acre bins: one-hue ordinal ramp, light = cheap, dark = expensive */
+const PPA_BINS = [
+  { max: 2000,     color: "#86b6ef", label: "under $2k" },
+  { max: 5000,     color: "#5598e7", label: "$2k–$5k" },
+  { max: 10000,    color: "#2a78d6", label: "$5k–$10k" },
+  { max: 25000,    color: "#1c5cab", label: "$10k–$25k" },
+  { max: Infinity, color: "#0d366b", label: "$25k and up" },
+];
+const NO_PPA = "#9a9890";
+const ppaColor = v => v == null ? NO_PPA : PPA_BINS.find(b => v < b.max).color;
+const PLACE = {
+  realtor: "Placed at Realtor.com's map pin for the listing",
+  address: "Placed at the listed address",
+  road: "Placed on the listed road (exact spot unknown)",
+  city: "Approximate: placed at the city, address not found",
+};
+let map = null, dotLayer = null, areaLayer = null;
+
+/* county name for a point: ray casting over the embedded outlines */
+function inRing(pt, ring) {
+  let inside = false;
+  for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+    const [xi, yi] = ring[i], [xj, yj] = ring[j];
+    if ((yi > pt[1]) !== (yj > pt[1]) && pt[0] < (xj - xi) * (pt[1] - yi) / (yj - yi) + xi) inside = !inside;
+  }
+  return inside;
+}
+function countyAt(lat, lon) {
+  for (const f of COUNTIES.features) {
+    const polys = f.geometry.type === "Polygon" ? [f.geometry.coordinates] : f.geometry.coordinates;
+    if (polys.some(p => inRing([lon, lat], p[0]) && !p.slice(1).some(h => inRing([lon, lat], h)))) return f.properties.n;
+  }
+  return null;
+}
+
+function popupHtml(r) {
+  const head = r.url ? '<a href="' + esc(r.url) + '" target="_blank" rel="noopener">' + esc(r.title) + "</a>" : esc(r.title);
+  return '<div class="pop"><div class="pop-t">' + head + "</div>" +
+    '<table class="pop-k">' +
+    "<tr><td>Price</td><td>" + money(r.price) + "</td></tr>" +
+    "<tr><td>Acres</td><td>" + ac(r.acres) + "</td></tr>" +
+    "<tr><td>$/acre</td><td>" + money(r.ppa) + "</td></tr>" +
+    (r.county ? "<tr><td>County</td><td>" + esc(r.county) + (r.gk === "city" ? " (approx.)" : "") + "</td></tr>" : "") +
+    (r.broker ? "<tr><td>Broker</td><td>" + esc(r.broker) + "</td></tr>" : "") +
+    '</table><div class="pop-n">' + PLACE[r.gk] + "</div></div>";
+}
+
+try {
+  const esri = (svc, opts) => L.tileLayer(
+    "https://server.arcgisonline.com/ArcGIS/rest/services/" + svc + "/MapServer/tile/{z}/{y}/{x}",
+    Object.assign({ maxZoom: 17, maxNativeZoom: 17 }, opts));
+  const topo = esri("World_Topo_Map", { attribution: "Tiles &copy; Esri &mdash; Esri, HERE, Garmin, USGS, NGA, EPA, USDA, NPS" });
+  const satellite = L.layerGroup([
+    esri("World_Imagery", { attribution: "Imagery &copy; Esri, Maxar, Earthstar Geographics" }),
+    esri("Reference/World_Boundaries_and_Places", {}),
+  ]);
+  map = L.map("map", { zoomSnap: 0.25, maxZoom: 17, preferCanvas: true, layers: [topo] });
+
+  const counties = L.geoJSON(COUNTIES, {
+    style: { color: "#3d3a33", weight: 1, opacity: 0.6, fill: true, fillOpacity: 0, dashArray: "4 3" },
+    onEachFeature: (f, l) => l.bindTooltip(f.properties.n + " County", { sticky: true, className: "ctip" }),
+  }).addTo(map);
+  /* County lines read white on imagery */
+  map.on("baselayerchange", e => counties.setStyle({ color: e.layer === satellite ? "#ffffff" : "#3d3a33" }));
+
+  dotLayer = L.layerGroup();
+  areaLayer = L.layerGroup();
+
+  for (const r of DATA) {
+    if (r.la == null) continue;
+    r.county = r.county || countyAt(r.la, r.lo);
+    const approx = r.gk === "city", c = ppaColor(r.ppa);
+    const base = { weight: 1.5, color: approx ? c : "#ffffff", fillColor: c, fillOpacity: approx ? 0.25 : 0.85 };
+    r.marker = L.circleMarker([r.la, r.lo], Object.assign({ radius: dotRadius(r.acres) }, base));
+    /* true-scale circle with the parcel's real area, for close zoom */
+    r.area = L.circle([r.la, r.lo], Object.assign({}, base,
+      { radius: Math.sqrt((r.acres || 10) * 4046.86 / Math.PI), color: c, weight: 2, fillOpacity: approx ? 0.12 : 0.4 }));
+    for (const [layer, style] of [[r.marker, base], [r.area, r.area.options]]) {
+      const rest = { weight: style.weight, color: style.color };
+      layer.bindPopup(() => popupHtml(r), { maxWidth: 300 })
+        .bindTooltip(() => hoverHtml(r), layer === r.marker
+          ? { direction: "top", offset: [0, -dotRadius(r.acres)], className: "tagtip", opacity: 1 }
+          : { direction: "top", sticky: true, offset: [0, -10], className: "tagtip", opacity: 1 })
+        .on("mouseover", () => { layer.setStyle({ weight: 3, color: "#0d2340" }); layer.bringToFront(); })
+        .on("mouseout", () => layer.setStyle(rest));
+    }
+  }
+
+  L.control.layers({ "Topo": topo, "Satellite": satellite }, { "County lines": counties },
+    { position: "topright", collapsed: window.innerWidth < 760 }).addTo(map);
+  L.control.scale({ imperial: true, metric: false }).addTo(map);
+
+  const sizeKey = [[10, "10 ac"], [160, "160 ac"], [640, "640 ac (1 sq mi)"]].map(([a, t]) => {
+    const d = 2 * dotRadius(a);
+    return '<span><i class="sz" style="width:' + d + "px;height:" + d + 'px"></i>' + t + "</span>";
+  }).join("");
+  $("legend").innerHTML = '<span class="lg-h">Price per acre</span>' +
+    PPA_BINS.map(b => '<span><i style="background:' + b.color + '"></i>' + b.label + "</span>").join("") +
+    '<span><i style="background:' + NO_PPA + '"></i>no price or acres</span>' +
+    '<span><i class="hollow"></i>approximate (city only)</span>' +
+    '<span class="lg-break"></span><span class="lg-h">Size</span>' + sizeKey + '<span class="lg-h">largest size from 1,200 ac up</span>';
+
+  const home = L.latLngBounds(DATA.filter(r => r.la != null).map(r => [r.la, r.lo]));
+  const el = $("map");
+  /* a map built while its container has no size (hidden tab or pane) fits once it gets one */
+  let fitted = el.clientWidth > 0;
+  if (fitted) map.fitBounds(home, { padding: [8, 8] }); else map.setView([39, -105.5], 7);
+  new ResizeObserver(() => {
+    if (!el.clientWidth) return;
+    map.invalidateSize();
+    if (!fitted) { fitted = true; map.fitBounds(home, { padding: [8, 8] }); }
+  }).observe(el);
+  map.on("zoomend", drawDots);
+} catch (err) {
+  map = null;
+  document.getElementById("map").innerHTML =
+    '<p style="padding:40px;color:#666">Map unavailable offline &mdash; the table below works fully.</p>';
+}
+
+/* ---------- acreage footprints ---------- */
+const TRUE_SCALE_ZOOM = 12; /* from here in, dots become circles with the parcel's real area */
+let mapRows = [];
+
+/* dot size grows with acreage (square root, so area tracks acres), capped so ranches don't cover a county;
+   narrow maps (phones) shrink every dot so the state view isn't one solid mass */
+function dotScale() { const w = document.getElementById("map").clientWidth; return w ? Math.max(0.55, Math.min(1, w / 900)) : 1; }
+function dotRadius(acres) { return Math.min(22, 3 + Math.sqrt(acres || 10) * 0.55) * dotScale(); }
+const shortMoney = n => n >= 1e6 ? "$" + (n / 1e6).toFixed(1) + "M" : n >= 1e4 ? "$" + Math.round(n / 1e3) + "k" :
+  n >= 1e3 ? "$" + (n / 1e3).toFixed(1) + "k" : "$" + n;
+function tagHtml(r) {
+  const b = r.ppa == null ? null : PPA_BINS.find(x => r.ppa < x.max);
+  const dark = !b || b.max > 5000;
+  return '<span class="pill ' + (dark ? "dark" : "light") + (r.gk === "city" ? " approx" : "") +
+    '" style="background:' + ppaColor(r.ppa) + '">' + (r.ppa == null ? "n/a" : shortMoney(r.ppa) + "/ac") + "</span>";
+}
+/* hover card: the $/acre tag plus the listing's key numbers */
+function hoverHtml(r) {
+  return '<div class="hov">' + tagHtml(r) +
+    '<div class="hov-t">' + esc(r.title) + "</div>" +
+    '<div class="hov-k"><span>' + ac(r.acres) + " ac</span><span>" + money(r.price) + "</span>" +
+    (r.county ? "<span>" + esc(r.county) + " Co.</span>" : "") + "</div>" +
+    (r.gk === "city" ? '<div class="hov-n">approximate: placed at the city</div>' : "") +
+    '<div class="hov-n">' + (TOUCH ? "tap" : "click") + " for details and link</div></div>";
+}
+const TOUCH = window.matchMedia("(hover: none)").matches;
+
+function drawDots() {
+  if (!map) return;
+  const close = map.getZoom() >= TRUE_SCALE_ZOOM;
+  dotLayer.clearLayers();
+  areaLayer.clearLayers();
+  /* biggest first, so small parcels sit on top and stay clickable */
+  const order = [...mapRows].sort((a, b) => (b.acres || 0) - (a.acres || 0));
+  if (!close) order.forEach(r => r.marker.setRadius(dotRadius(r.acres)));
+  order.forEach(r => (close ? areaLayer : dotLayer).addLayer(close ? r.area : r.marker));
+  (close ? areaLayer : dotLayer).addTo(map);
+  map.removeLayer(close ? dotLayer : areaLayer);
+}
+
+/* show the filtered listings on the map */
+function paintMap(rows) {
+  if (!map) return;
+  mapRows = rows.filter(r => r.marker);
+  drawDots();
+  const placed = rows.filter(r => r.gk && r.gk !== "city").length;  /* realtor pin, address or road */
+  $("mapcount").textContent = mapRows.length.toLocaleString() + " on map · " +
+    placed.toLocaleString() + " at a listing or address point, " +
+    (mapRows.length - placed).toLocaleString() + " approximate";
+}
+
+/* ---------- table ---------- */
+let sortK = "price", sortDir = -1;
+const ths = document.querySelectorAll("th[data-k]");
+function paintArrows() {
+  ths.forEach(th => th.querySelector(".arr").textContent =
+    th.dataset.k === sortK ? (sortDir === 1 ? "\u25b2" : "\u25bc") : "");
+}
+ths.forEach(th => th.addEventListener("click", () => {
+  const k = th.dataset.k;
+  if (sortK === k) sortDir *= -1; else { sortK = k; sortDir = (k === "title" || k === "city" || k === "broker") ? 1 : -1; }
+  apply();
+}));
+
+function filtered() {
+  const q = $("f_q").value.trim().toLowerCase(),
+        rg = $("f_region").value, ct = $("f_city").value, br = $("f_broker").value,
+        pmin = parseFloat($("f_pmin").value) || 0, pmax = parseFloat($("f_pmax").value) || Infinity,
+        amin = parseFloat($("f_amin").value) || 0, ppamax = parseFloat($("f_ppa").value) || Infinity;
+  return DATA.filter(r =>
+    (!q || (r.title + " " + (r.broker||"")).toLowerCase().includes(q)) &&
+    (!rg || r.region === rg) && (!ct || r.city === ct) && (!br || r.broker === br) &&
+    (r.price == null || (r.price >= pmin && r.price <= pmax)) &&
+    (r.acres == null || r.acres >= amin) &&
+    (r.ppa == null || r.ppa <= ppamax));
+}
+function cmp(a, b) {
+  let x = a[sortK], y = b[sortK];
+  if (x == null) return 1; if (y == null) return -1;
+  return (x < y ? -1 : x > y ? 1 : 0) * sortDir;
+}
+function esc(s) {
+  return String(s == null ? "" : s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+}
+function apply() {
+  const rows = filtered().sort(cmp);
+  $("count").textContent = rows.length.toLocaleString() + " of " + DATA.length.toLocaleString() + " listings";
+  $("rows").innerHTML = rows.map(r =>
+    '<tr data-i="' + r.i + '"><td>' + (r.url ? '<a href="' + esc(r.url) + '">' + esc(r.title) + "</a>" : esc(r.title)) + "</td>" +
+    '<td class="num">' + money(r.price) + "</td>" +
+    '<td class="num">' + ac(r.acres) + "</td>" +
+    '<td class="num">' + money(r.ppa) + "</td>" +
+    "<td>" + esc(r.city) + "</td><td>" + esc(r.broker) + "</td>" +
+    '<td class="pin">' + (r.marker ? '<button class="pinbtn" type="button">Map</button>' : "") + "</td></tr>").join("");
+  paintArrows();
+  paintMap(rows);
+}
+["f_q","f_region","f_city","f_broker","f_pmin","f_pmax","f_amin","f_ppa"].forEach(id =>
+  $(id).addEventListener("input", apply));
+$("reset").addEventListener("click", () => {
+  ["f_q","f_pmin","f_pmax","f_amin","f_ppa"].forEach(id => $(id).value = "");
+  ["f_region","f_city","f_broker"].forEach(id => $(id).value = "");
+  apply();
+});
+$("dl").addEventListener("click", () => {
+  const rows = filtered().sort(cmp);
+  const q = s => '"' + String(s == null ? "" : s).replace(/"/g, '""') + '"';
+  const csv = "title,price_usd,acres,price_per_acre,city,region,broker,url\n" +
+    rows.map(r => [q(r.title), r.price ?? "", r.acres ?? "", r.ppa ?? "", q(r.city), q(r.region), q(r.broker), q(r.url)].join(",")).join("\n");
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([csv], {type:"text/csv"}));
+  a.download = "{{CSV_NAME}}"; a.click();
+});
+$("rows").addEventListener("click", e => {
+  if (!e.target.closest(".pinbtn") || !map) return;
+  const r = DATA[+e.target.closest("tr").dataset.i];
+  $("map").scrollIntoView({ behavior: "smooth", block: "center" });
+  const z = Math.max(map.getZoom(), 13);
+  map.setView(r.marker.getLatLng(), z, { animate: false });
+  (z >= TRUE_SCALE_ZOOM ? r.area : r.marker).openPopup();
+});
+paintArrows(); apply();
+}
+boot();
+</script>
+</body>
+</html>
