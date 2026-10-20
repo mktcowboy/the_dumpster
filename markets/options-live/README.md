@@ -94,12 +94,17 @@ Each row opens a detail drawer with:
 - Call/put volume, total volume, and volume-to-OI ratios
 - The top 12 strikes by combined OI, with tags
 
-The **Chart & chain** tab fetches the complete chain on demand and adds:
+The **Chart & chain** tab fetches the primary chain and the open-interest
+series for every listed expiry on demand, then adds:
 
 - A **price and open interest chart**: daily OHLC candles (1M, 3M, or 6M) with
-  current call and put open interest by strike on the same price axis. Spot and
-  max pain are marked. History comes from Yahoo Finance with a Nasdaq fallback.
-- A modeled payout curve by settlement.
+  current call and put open interest by strike on the same price axis. Expiry
+  chips overlay up to three expirations at once (the primary expiry starts
+  selected); call bars extend right, put bars left, and each expiry keeps its
+  color across ranges. Spot and the primary expiry's max pain are marked.
+  History comes from Yahoo Finance with a Nasdaq fallback.
+- A modeled payout curve by settlement. The payout and full chain table always
+  use the primary expiry, even when additional OI overlays are selected.
 - The top 12 strikes by today's volume, including each strike's Vol/OI.
 - The complete strike-by-strike chain table. Max pain and the two OI walls are
   highlighted.
@@ -115,7 +120,7 @@ error above it.
 | `GET /` | Dashboard |
 | `GET /api/snapshot` | Cached universe snapshot, refresh status, and market-open flag |
 | `GET /api/ticker?symbol=AAPL` | Load or return one ticker |
-| `GET /api/chain?symbol=AAPL` | Full chain, metrics, payout inputs, and 6 months of daily OHLC |
+| `GET /api/chain?symbol=AAPL` | Primary chain, all-expiry OI series (`expiry_series`), metrics, payout inputs, and 6 months of daily OHLC |
 | `POST /api/refresh` | Start a background refresh |
 
 ## Files
@@ -138,7 +143,10 @@ error above it.
   requested when a detail panel opens; the rest of the dashboard does not depend
   on it.
 - The price chart uses the underlying's daily OHLC. OI bars are the current
-  snapshot by strike; the delayed feed does not provide historical OI.
+  snapshot by strike for the selected expiries; the delayed feed does not
+  provide historical OI. The `/api/chain` response builds OI series for every
+  listed expiry from a single Cboe payload, so the payload is larger than the
+  primary chain alone.
 - A full refresh makes 101 Cboe requests. The default 15-minute interval,
   market-hours/idle gating, and 0.65-second throttle are deliberate; lowering
   them will hit rate limits.
