@@ -1,0 +1,1508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#06090f">
+<title>SPY × QQQ Max Pain — Friday, October 23, 2026</title>
+<meta name="description" content="A data-driven max-pain map for SPY and QQQ options expiring Friday, October 23, 2026, built from Yahoo Finance option chains as of the October 19 close.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23ffca62'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='monospace' font-size='24' font-weight='700' fill='%23171006'%3EMP%3C/text%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#06090f;
+  --bg-2:#090e17;
+  --panel:#0c1420;
+  --panel-2:#0f1927;
+  --panel-3:#111d2d;
+  --text:#eef3fa;
+  --muted:#93a4bb;
+  --dim:#64758c;
+  --line:rgba(158,181,211,.16);
+  --line-soft:rgba(158,181,211,.09);
+  --spy:#3bd8b6;
+  --spy-soft:rgba(59,216,182,.10);
+  --qqq:#86a5ff;
+  --qqq-soft:rgba(134,165,255,.10);
+  --call:#3bd8b6;
+  --put:#ff7582;
+  --pin:#ffca62;
+  --pin-soft:rgba(255,202,98,.10);
+  --up:#47dfa1;
+  --down:#ff7d89;
+  --mono:"SFMono-Regular","Cascadia Code","Roboto Mono",Consolas,monospace;
+  --sans:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --radius:20px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:var(--sans);
+  font-variant-numeric:tabular-nums;
+  line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:-2;
+  pointer-events:none;
+  background:
+    radial-gradient(800px 560px at 8% -10%,rgba(59,216,182,.11),transparent 64%),
+    radial-gradient(900px 600px at 94% 4%,rgba(134,165,255,.12),transparent 66%),
+    radial-gradient(780px 620px at 52% 108%,rgba(255,202,98,.05),transparent 62%),
+    linear-gradient(180deg,#06090f 0%,#070b12 55%,#06090e 100%);
+}
+body::after{
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:-1;
+  pointer-events:none;
+  opacity:.33;
+  background-image:
+    linear-gradient(rgba(149,173,206,.035) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(149,173,206,.035) 1px,transparent 1px);
+  background-size:76px 76px;
+  mask-image:linear-gradient(to bottom,#000 0%,rgba(0,0,0,.7) 44%,transparent 92%);
+  -webkit-mask-image:linear-gradient(to bottom,#000 0%,rgba(0,0,0,.7) 44%,transparent 92%);
+}
+a{color:inherit;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.2)}
+a:hover{color:var(--pin)}
+::selection{background:rgba(255,202,98,.25);color:#fff}
+.wrap{max-width:1240px;margin:0 auto;padding:0 28px}
+.mono{font-family:var(--mono)}
+.up{color:var(--up)}
+.down{color:var(--down)}
+.amber{color:var(--pin)}
+.muted{color:var(--muted)}
+.dim{color:var(--dim)}
+.small{font-size:12px}
+.mt0{margin-top:0}
+.mb0{margin-bottom:0}
+
+/* top bar */
+.topbar{
+  display:flex;align-items:center;justify-content:space-between;gap:20px;
+  padding:22px 0 20px;border-bottom:1px solid var(--line-soft);
+}
+.brand{display:flex;align-items:center;gap:12px;font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+.brand .mark{
+  width:34px;height:34px;border-radius:10px;display:grid;place-items:center;
+  background:linear-gradient(145deg,var(--pin),#f1a83f);color:#171006;
+  font-family:var(--mono);font-size:13px;letter-spacing:-.08em;font-weight:800;
+  box-shadow:0 0 0 1px rgba(255,202,98,.2),0 10px 30px rgba(255,180,60,.12);
+}
+.brand .brand-sub{display:block;color:var(--dim);font-size:9px;letter-spacing:.13em;margin-top:2px;font-weight:500}
+.top-meta{display:flex;align-items:center;gap:9px;flex-wrap:wrap;justify-content:flex-end}
+.chip{
+  display:inline-flex;align-items:center;gap:7px;
+  padding:6px 10px;border:1px solid var(--line);border-radius:999px;
+  color:var(--muted);font-family:var(--mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;
+  background:rgba(255,255,255,.017);
+}
+.chip .dot{width:5px;height:5px;border-radius:50%;background:var(--spy);box-shadow:0 0 9px var(--spy)}
+.chip.amber-chip .dot{background:var(--pin);box-shadow:0 0 9px var(--pin)}
+
+/* hierarchy */
+.eyebrow{
+  display:flex;align-items:center;gap:11px;
+  font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);
+}
+.eyebrow::before{content:"";width:26px;height:1px;background:var(--muted);opacity:.65}
+h1,h2,h3,h4,p{margin-top:0}
+h1{font-weight:640;letter-spacing:-.065em;line-height:.93;margin:20px 0 23px}
+h1 em{font-style:normal;color:var(--pin)}
+h2{font-weight:620;letter-spacing:-.045em;line-height:1.03;margin:14px 0 16px}
+h3{font-weight:620;letter-spacing:-.02em;line-height:1.2;margin:0}
+.lead{font-size:16px;line-height:1.7;color:#b9c7da;max-width:780px}
+.section{padding:66px 0;border-top:1px solid var(--line-soft)}
+.section-head{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(280px,.58fr);gap:46px;align-items:end;margin-bottom:28px}
+.section-head h2{font-size:clamp(34px,4.4vw,56px)}
+.section-head .lead{font-size:15px;max-width:710px;margin-bottom:0}
+.section-side{color:var(--muted);font-size:13px;line-height:1.65;border-left:1px solid var(--line);padding-left:20px}
+.section-side strong{color:var(--text);font-weight:570}
+.section-num{font-family:var(--mono);font-size:10px;letter-spacing:.18em;color:var(--dim);text-transform:uppercase}
+
+/* hero */
+.hero{display:grid;grid-template-columns:minmax(0,1.33fr) minmax(295px,.67fr);gap:56px;align-items:end;padding:74px 0 38px}
+.hero h1{font-size:clamp(50px,7.1vw,94px);max-width:9.5ch}
+.hero .dek{font-size:17px;line-height:1.72;color:#bac8db;max-width:680px;margin-bottom:0}
+.hero-read{
+  border-left:1px solid var(--line);padding:5px 0 4px 26px;align-self:stretch;
+  display:flex;flex-direction:column;justify-content:flex-end;
+}
+.hero-read .read-label{font-family:var(--mono);font-size:10px;letter-spacing:.16em;color:var(--dim);text-transform:uppercase;margin-bottom:18px}
+.read-line{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px solid var(--line-soft)}
+.read-line:last-of-type{border-bottom:0}
+.read-line .asset{font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--muted);padding-top:2px}
+.read-line .read-val{text-align:right;font-size:14px;line-height:1.4}
+.read-line .read-val strong{display:block;font-weight:600;color:var(--text)}
+.read-line .read-val span{display:block;color:var(--dim);font-family:var(--mono);font-size:10px;margin-top:2px}
+.hero-read .read-foot{font-size:11.5px;line-height:1.55;color:var(--dim);margin-top:17px}
+.hero-stats{display:flex;flex-wrap:wrap;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:16px 0;margin-top:38px}
+.hero-stat{flex:1 1 155px;padding:0 20px;border-right:1px solid var(--line-soft)}
+.hero-stat:first-child{padding-left:0}
+.hero-stat:last-child{border-right:0;padding-right:0}
+.hero-stat .k{font-family:var(--mono);font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin-bottom:5px}
+.hero-stat .v{font-size:13px;color:#d5e1f1;font-weight:560}
+.hero-stat .v small{font-family:var(--mono);font-weight:400;color:var(--dim);font-size:10px;margin-left:5px}
+
+/* snapshots */
+.snapshot-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;padding:10px 0 68px}
+.snapshot{
+  --accent:var(--spy);--accent-soft:var(--spy-soft);
+  position:relative;padding:26px 26px 22px;border:1px solid var(--line);border-radius:24px;
+  background:
+    radial-gradient(550px 300px at 105% -10%,var(--accent-soft),transparent 68%),
+    linear-gradient(165deg,rgba(255,255,255,.036),rgba(255,255,255,0) 43%),
+    rgba(12,20,32,.84);
+  overflow:hidden;
+  box-shadow:0 22px 65px rgba(0,0,0,.17);
+}
+.snapshot::before{content:"";position:absolute;inset:0 0 auto;height:2px;background:linear-gradient(90deg,var(--accent),transparent 72%);opacity:.85}
+.snapshot.qqq{--accent:var(--qqq);--accent-soft:var(--qqq-soft)}
+.snap-top{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.sym-lock{display:flex;align-items:center;gap:10px}
+.sym-badge{
+  display:inline-grid;place-items:center;min-width:52px;height:29px;padding:0 9px;border-radius:8px;
+  border:1px solid color-mix(in srgb,var(--accent) 35%,transparent);
+  background:var(--accent-soft);color:var(--accent);
+  font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.08em;
+}
+.sym-name{font-size:11px;color:var(--muted);line-height:1.35}
+.sym-name b{display:block;color:var(--text);font-size:12px;font-weight:600}
+.chg-pill{
+  display:inline-flex;align-items:center;gap:7px;padding:5px 9px;border-radius:8px;
+  border:1px solid rgba(71,223,161,.18);background:rgba(71,223,161,.07);
+  color:var(--up);font-family:var(--mono);font-size:11px;
+}
+.chg-pill.down{border-color:rgba(255,125,137,.2);background:rgba(255,125,137,.07);color:var(--down)}
+.price-line{display:flex;align-items:flex-end;gap:12px;margin-top:23px}
+.price{font-size:clamp(38px,4vw,52px);letter-spacing:-.055em;line-height:.92;font-weight:620}
+.price sup{font-size:16px;vertical-align:top;letter-spacing:0;color:var(--muted);top:4px;position:relative;margin-right:1px}
+.price-sub{font-family:var(--mono);font-size:10px;color:var(--dim);padding-bottom:5px}
+.pin-summary{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;margin-top:27px}
+.pin-number{font-size:clamp(42px,5vw,62px);letter-spacing:-.06em;line-height:.92;color:var(--pin);font-weight:600}
+.pin-number small{font-size:13px;color:var(--dim);letter-spacing:0;font-family:var(--mono);font-weight:400;margin-left:6px}
+.pin-label{font-family:var(--mono);font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);margin-bottom:7px}
+.pin-gap{font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:7px}
+.conf{
+  display:inline-flex;flex-direction:column;align-items:flex-end;gap:5px;
+  font-family:var(--mono);font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);
+}
+.conf b{
+  display:inline-flex;align-items:center;gap:6px;padding:5px 9px;border-radius:999px;font-size:9px;letter-spacing:.12em;
+  border:1px solid rgba(71,223,161,.23);background:rgba(71,223,161,.08);color:var(--up);font-weight:600;
+}
+.conf.moderate b{border-color:rgba(255,202,98,.25);background:var(--pin-soft);color:var(--pin)}
+.conf b::before{content:"";width:5px;height:5px;border-radius:50%;background:currentColor;box-shadow:0 0 8px currentColor}
+.range-wrap{margin:23px 0 18px}
+.range-wrap svg{width:100%;height:auto;display:block}
+.range-caption{display:flex;justify-content:space-between;gap:12px;font-size:10px;color:var(--dim);font-family:var(--mono);margin-top:4px}
+.range-caption span:last-child{text-align:right}
+.snap-band{
+  display:grid;grid-template-columns:1.2fr .8fr;gap:1px;background:var(--line-soft);
+  border:1px solid var(--line-soft);border-radius:13px;overflow:hidden;margin-bottom:16px;
+}
+.snap-band>div{background:rgba(10,17,27,.55);padding:11px 13px}
+.snap-band .k{font-family:var(--mono);font-size:8.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--dim);margin-bottom:3px}
+.snap-band .v{font-size:13px;color:#d7e3f2}
+.snap-band .v em{font-family:var(--mono);font-style:normal;font-size:10px;color:var(--dim);margin-left:4px}
+.stat-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line-soft);border:1px solid var(--line-soft);border-radius:13px;overflow:hidden}
+.stat{background:rgba(10,17,27,.55);padding:11px 13px}
+.stat .k{font-family:var(--mono);font-size:8.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);margin-bottom:3px}
+.stat .v{font-size:13px;color:#d7e3f2}
+.stat .v small{font-family:var(--mono);font-size:9px;color:var(--dim);margin-left:3px}
+.snap-foot{display:flex;justify-content:space-between;gap:15px;color:var(--dim);font-size:10.5px;line-height:1.45;margin-top:15px;font-family:var(--mono)}
+.snap-foot span:last-child{text-align:right}
+
+/* cards */
+.card{
+  background:linear-gradient(160deg,rgba(255,255,255,.025),rgba(255,255,255,0) 42%),rgba(12,20,32,.77);
+  border:1px solid var(--line);border-radius:var(--radius);padding:22px;
+  box-shadow:0 18px 50px rgba(0,0,0,.12);
+}
+.card-head{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;margin-bottom:16px}
+.card h3{font-size:16px;margin-bottom:5px}
+.card .sub{font-size:11px;color:var(--dim);line-height:1.45;max-width:520px}
+.card .kicker{font-family:var(--mono);font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin-bottom:7px}
+.card-link{font-family:var(--mono);font-size:9px;color:var(--accent,var(--muted));white-space:nowrap;border:1px solid var(--line);padding:4px 7px;border-radius:5px}
+.chart-card{--accent:var(--spy)}
+.chart-card.qqq{--accent:var(--qqq)}
+.chart-legend{display:flex;flex-wrap:wrap;gap:12px;margin:6px 0 9px;font-family:var(--mono);font-size:9px;color:var(--dim)}
+.legend-item{display:inline-flex;align-items:center;gap:6px}
+.legend-line{width:16px;height:2px;border-radius:2px;display:inline-block}
+.legend-line.total{background:#eef3fa}
+.legend-line.call{background:var(--call)}
+.legend-line.put{background:var(--put)}
+.legend-line.spot{background:#fff;height:1px;border-top:1px dashed rgba(255,255,255,.8)}
+.legend-line.pin{background:var(--pin);height:1px;border-top:1px solid var(--pin)}
+.legend-line.band{background:rgba(255,255,255,.16);height:7px;border-radius:2px}
+.chart svg{width:100%;height:auto;display:block;overflow:visible}
+.chart-note{font-size:10px;color:var(--dim);line-height:1.5;margin-top:9px;display:flex;justify-content:space-between;gap:12px}
+.chart-note .right{text-align:right}
+
+/* tables */
+.table-wrap{border:1px solid var(--line);border-radius:18px;overflow:auto;background:rgba(12,20,32,.68)}
+.data-table{width:100%;border-collapse:collapse;font-size:12.5px;min-width:700px}
+.data-table thead th{
+  text-align:left;padding:12px 15px;background:rgba(255,255,255,.022);
+  color:var(--dim);font-family:var(--mono);font-size:9px;letter-spacing:.12em;text-transform:uppercase;
+  border-bottom:1px solid var(--line);font-weight:500;white-space:nowrap;
+}
+.data-table td{padding:11px 15px;border-bottom:1px solid var(--line-soft);vertical-align:middle}
+.data-table tbody tr:last-child td{border-bottom:0}
+.data-table tbody tr:hover{background:rgba(255,255,255,.022)}
+.data-table .metric{color:var(--muted)}
+.data-table .num{font-family:var(--mono);font-size:11.5px;white-space:nowrap}
+.data-table .note{color:var(--dim);font-size:10.5px}
+.data-table .spy-col{color:var(--spy)}
+.data-table .qqq-col{color:var(--qqq)}
+.data-table tr.highlight td{background:rgba(255,202,98,.035)}
+.data-table tr.subhead td{padding:9px 15px;background:rgba(255,255,255,.017);color:var(--dim);font-family:var(--mono);font-size:8.5px;letter-spacing:.14em;text-transform:uppercase}
+.badge{
+  display:inline-flex;align-items:center;gap:5px;padding:2px 6px;border-radius:4px;border:1px solid var(--line);
+  font-family:var(--mono);font-size:8px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);white-space:nowrap;
+}
+.badge.pin{border-color:rgba(255,202,98,.25);background:var(--pin-soft);color:var(--pin)}
+.badge.call{border-color:rgba(59,216,182,.22);background:rgba(59,216,182,.07);color:var(--spy)}
+.badge.put{border-color:rgba(255,117,130,.22);background:rgba(255,117,130,.06);color:var(--put)}
+.badge.spot{border-color:rgba(255,255,255,.18);color:#dce7f6}
+
+/* cross-asset takeaways */
+.read-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:18px}
+.read-card{position:relative;padding:20px;border:1px solid var(--line);border-radius:17px;background:rgba(12,20,32,.64);overflow:hidden}
+.read-card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--bar,var(--pin));opacity:.8}
+.read-card .num{font-family:var(--mono);font-size:9px;letter-spacing:.14em;color:var(--dim);margin-bottom:13px}
+.read-card h3{font-size:17px;margin-bottom:9px}
+.read-card p{font-size:12.5px;line-height:1.65;color:var(--muted);margin-bottom:0}
+.read-card p strong{color:var(--text);font-weight:560}
+
+/* ticker sections */
+.ticker-section{padding:74px 0 70px;border-top:1px solid var(--line)}
+.ticker-section.spy{--accent:var(--spy);--accent-soft:var(--spy-soft)}
+.ticker-section.qqq{--accent:var(--qqq);--accent-soft:var(--qqq-soft)}
+.ticker-head{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(280px,.62fr);gap:50px;align-items:end;margin-bottom:29px}
+.ticker-title-line{display:flex;align-items:center;gap:15px;margin-bottom:14px}
+.ticker-large{
+  display:inline-grid;place-items:center;height:36px;padding:0 13px;border-radius:9px;
+  border:1px solid color-mix(in srgb,var(--accent) 38%,transparent);background:var(--accent-soft);color:var(--accent);
+  font-family:var(--mono);font-size:13px;font-weight:700;letter-spacing:.12em;
+}
+.ticker-name{font-size:12px;color:var(--dim);font-family:var(--mono);letter-spacing:.03em}
+.ticker-head h2{font-size:clamp(38px,5vw,64px);margin:0 0 15px}
+.ticker-head h2 em{font-style:normal;color:var(--accent)}
+.ticker-head .lead{font-size:15px;line-height:1.72;max-width:760px;margin-bottom:0}
+.ticker-side{border-left:1px solid var(--line);padding-left:22px;display:flex;flex-direction:column;gap:12px}
+.tside-row{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line-soft);padding-bottom:9px}
+.tside-row:last-child{border-bottom:0;padding-bottom:0}
+.tside-row .k{font-family:var(--mono);font-size:9px;letter-spacing:.11em;text-transform:uppercase;color:var(--dim)}
+.tside-row .v{font-family:var(--mono);font-size:11px;color:#dce7f6;text-align:right}
+.chart-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.metrics-strip{
+  display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:1px;background:var(--line-soft);
+  border:1px solid var(--line-soft);border-radius:15px;overflow:hidden;margin:16px 0;
+}
+.metric{background:rgba(10,17,27,.65);padding:14px 15px 13px}
+.metric .k{font-family:var(--mono);font-size:8px;letter-spacing:.11em;text-transform:uppercase;color:var(--dim);line-height:1.3;margin-bottom:5px;min-height:20px}
+.metric .v{font-family:var(--mono);font-size:14px;color:#dce7f6;line-height:1.2}
+.metric .v small{font-size:9px;color:var(--dim);margin-left:3px}
+.metric .v.amber{color:var(--pin)}
+.info-grid{display:grid;grid-template-columns:1.14fr .98fr .88fr;gap:16px;margin-top:16px}
+.info-grid.two{grid-template-columns:1fr 1fr}
+.info-grid .card{min-width:0}
+.gex-number{font-size:35px;letter-spacing:-.04em;line-height:1;color:var(--put);margin:3px 0 5px;font-weight:590}
+.gex-number small{font-family:var(--mono);font-size:10px;color:var(--dim);letter-spacing:0;margin-left:5px;font-weight:400}
+.gex-stats{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line-soft);border:1px solid var(--line-soft);border-radius:10px;overflow:hidden;margin:15px 0 13px}
+.gex-stat{background:rgba(10,17,27,.55);padding:9px 10px}
+.gex-stat .k{font-family:var(--mono);font-size:8px;color:var(--dim);text-transform:uppercase;letter-spacing:.09em;margin-bottom:2px}
+.gex-stat .v{font-family:var(--mono);font-size:11.5px;color:#dce7f6}
+.gamma-nodes{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-top:13px}
+.gamma-node-col .k{font-family:var(--mono);font-size:8px;color:var(--dim);letter-spacing:.1em;text-transform:uppercase;margin-bottom:6px}
+.node-row{display:flex;justify-content:space-between;gap:10px;font-family:var(--mono);font-size:10px;padding:4px 0;border-bottom:1px solid var(--line-soft)}
+.node-row:last-child{border-bottom:0}
+.node-row .pos{color:var(--up)}.node-row .neg{color:var(--put)}
+.gex-note{font-size:10px;color:var(--dim);line-height:1.55;margin:13px 0 0}
+.method-mini{display:flex;flex-direction:column;gap:1px;background:var(--line-soft);border:1px solid var(--line-soft);border-radius:11px;overflow:hidden;margin-top:5px}
+.method-row{display:flex;justify-content:space-between;align-items:center;gap:12px;background:rgba(10,17,27,.55);padding:9px 11px}
+.method-row .name{font-size:10.5px;color:var(--muted)}
+.method-row .val{font-family:var(--mono);font-size:12px;color:#dce7f6;white-space:nowrap}
+.method-row .val small{font-family:var(--mono);color:var(--dim);font-size:9px;margin-left:4px}
+.method-row.pinrow{background:rgba(255,202,98,.045)}
+.method-row.pinrow .name,.method-row.pinrow .val{color:var(--pin)}
+.flow-list{list-style:none;padding:0;margin:7px 0 0}
+.flow-list li{position:relative;padding:7px 0 7px 14px;border-bottom:1px solid var(--line-soft);font-size:11px;color:var(--muted);line-height:1.5}
+.flow-list li:last-child{border-bottom:0}
+.flow-list li::before{content:"";position:absolute;left:0;top:14px;width:4px;height:4px;border-radius:50%;background:var(--accent)}
+.flow-list strong{color:var(--text);font-weight:560}
+.pin-banner{
+  margin-top:16px;border:1px solid rgba(255,202,98,.15);background:linear-gradient(90deg,rgba(255,202,98,.055),rgba(255,202,98,.012));
+  border-radius:12px;padding:11px 13px;display:flex;align-items:flex-start;gap:9px;font-size:11px;color:#c8d4e5;line-height:1.5;
+}
+.pin-banner .icon{color:var(--pin);font-family:var(--mono);font-size:10px;padding-top:1px}
+.level-table{width:100%;border-collapse:collapse;font-size:11px}
+.level-table td{padding:7px 0;border-bottom:1px solid var(--line-soft);vertical-align:middle}
+.level-table tr:last-child td{border-bottom:0}
+.level-table .lvl{font-family:var(--mono);font-weight:600;font-size:11.5px;color:#e6edf7;width:72px}
+.level-table .lbl{color:var(--muted);font-size:10.5px;line-height:1.4}
+.level-table .dst{text-align:right;font-family:var(--mono);font-size:10px;color:var(--dim);white-space:nowrap;width:62px}
+.level-table .tag{display:inline-block;margin-left:4px;font-family:var(--mono);font-size:7.5px;text-transform:uppercase;letter-spacing:.04em;padding:1px 4px;border-radius:3px;vertical-align:1px}
+.level-table .tag.pin{background:var(--pin-soft);color:var(--pin)}
+.level-table .tag.spot{background:rgba(255,255,255,.07);color:#e6edf7}
+.level-table .tag.wall{background:rgba(255,255,255,.035);color:var(--dim)}
+.level-table tr.spot-row .lvl,.level-table tr.spot-row .lbl{color:#fff}
+.level-table tr.pin-row .lvl{color:var(--pin)}
+.level-table tr.gamma-row .lvl{color:#a9bddf}
+.level-table .dot{display:inline-block;width:5px;height:5px;border-radius:50%;margin-right:6px;vertical-align:1px;background:var(--dim)}
+.level-table .dot.pin{background:var(--pin);box-shadow:0 0 7px rgba(255,202,98,.6)}
+.level-table .dot.spot{background:#fff}
+.level-table .dot.gamma{background:#a9bddf}
+.scenarios{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:16px}
+.scenario{padding:18px;border:1px solid var(--line);border-radius:16px;background:rgba(12,20,32,.55)}
+.scenario.base{background:linear-gradient(145deg,rgba(255,202,98,.055),rgba(12,20,32,.55));border-color:rgba(255,202,98,.16)}
+.scenario.bull{border-color:rgba(59,216,182,.14)}
+.scenario.bear{border-color:rgba(255,117,130,.14)}
+.scenario .case{font-family:var(--mono);font-size:8.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin-bottom:7px}
+.scenario .trigger{font-size:12px;color:#e1eaf5;font-weight:570;margin-bottom:5px}
+.scenario .desc{font-size:10.5px;color:var(--muted);line-height:1.5;margin:0}
+.scenario .desc b{color:var(--text);font-weight:550}
+.chart-wide{margin-top:16px}
+.table-section{margin-top:16px}
+.section-foot{display:flex;justify-content:space-between;gap:20px;margin-top:14px;color:var(--dim);font-size:10px;line-height:1.5;font-family:var(--mono)}
+.section-foot span:last-child{text-align:right}
+
+/* catalysts / context */
+.timeline{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.event{position:relative;padding:18px;border:1px solid var(--line);border-radius:16px;background:rgba(12,20,32,.6);min-height:155px}
+.event::before{content:"";position:absolute;left:18px;right:18px;top:0;height:1px;background:linear-gradient(90deg,var(--event-color,var(--pin)),transparent 85%)}
+.event .day{font-family:var(--mono);font-size:9px;letter-spacing:.13em;text-transform:uppercase;color:var(--dim);display:flex;justify-content:space-between;gap:8px}
+.event .date{color:var(--muted)}
+.event .event-title{font-size:16px;font-weight:600;margin:14px 0 5px;letter-spacing:-.02em}
+.event .event-sub{font-family:var(--mono);font-size:9px;letter-spacing:.03em;color:var(--event-color,var(--pin));margin-bottom:10px}
+.event p{font-size:10.5px;line-height:1.55;color:var(--muted);margin:0}
+.event.fomc{--event-color:#a9bddf}
+.event.data{--event-color:var(--pin)}
+.event.earn{--event-color:var(--qqq)}
+.event.expiry{--event-color:var(--put)}
+.vol-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:16px;margin-top:16px}
+.term-table{width:100%;border-collapse:collapse;font-size:11px}
+.term-table th{font-family:var(--mono);font-size:8px;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);font-weight:500;padding:0 0 9px;text-align:left}
+.term-table th:not(:first-child){text-align:right}
+.term-table td{padding:8px 0;border-top:1px solid var(--line-soft);vertical-align:middle}
+.term-table .exp{font-family:var(--mono);font-size:10.5px;color:#dfe8f5;white-space:nowrap}
+.term-table .dte{font-family:var(--mono);font-size:9px;color:var(--dim);white-space:nowrap;padding-left:10px}
+.term-table .bar-cell{width:30%;padding-left:16px;text-align:right!important}
+.term-bar-row{display:flex;align-items:center;justify-content:flex-end;gap:8px}
+.term-bar{height:4px;border-radius:4px;background:var(--spy);opacity:.75;min-width:3px}
+.term-bar.qqq{background:var(--qqq)}
+.term-val{font-family:var(--mono);font-size:10px;color:#dce7f6;min-width:34px;text-align:right}
+.term-note{font-size:10px;color:var(--dim);line-height:1.55;margin:13px 0 0}
+.context-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:16px}
+.context-card{padding:17px;border:1px solid var(--line);border-radius:15px;background:rgba(12,20,32,.56)}
+.context-card .k{font-family:var(--mono);font-size:8.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);margin-bottom:9px}
+.context-card .big{font-size:22px;letter-spacing:-.035em;font-weight:570;line-height:1.05;margin-bottom:7px}
+.context-card .big small{font-family:var(--mono);font-size:9px;color:var(--muted);letter-spacing:0;font-weight:400;margin-left:4px}
+.context-card p{font-size:10px;color:var(--muted);line-height:1.5;margin:0}
+.context-card p b{color:#dce7f6;font-weight:550}
+.split-note{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:16px}
+.quote-block{border-left:2px solid var(--pin);padding:2px 0 2px 16px;font-size:13px;line-height:1.7;color:#c3d0e2}
+.quote-block b{color:var(--pin);font-weight:580}
+
+/* methodology */
+.method-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:16px}
+.formula{font-family:var(--mono);font-size:10.5px;line-height:1.8;color:#c8d6e8;background:rgba(4,8,14,.58);border:1px solid var(--line-soft);border-radius:10px;padding:13px 14px;overflow:auto;white-space:pre-wrap}
+.bullets{list-style:none;padding:0;margin:4px 0 0}
+.bullets li{position:relative;padding:7px 0 7px 15px;border-bottom:1px solid var(--line-soft);font-size:11px;line-height:1.55;color:var(--muted)}
+.bullets li:last-child{border-bottom:0}
+.bullets li::before{content:"";position:absolute;left:0;top:13px;width:4px;height:4px;border-radius:50%;background:var(--dim)}
+.bullets strong{color:#dce7f6;font-weight:550}
+.footnote{font-size:10px;color:var(--dim);line-height:1.65}
+.footer{padding:34px 0 52px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:24px;align-items:flex-start}
+.footer .brand{opacity:.8}
+.footer .legal{max-width:650px;font-size:10px;color:var(--dim);line-height:1.6;text-align:right}
+.footer .legal b{color:var(--muted);font-weight:550}
+
+/* reveal */
+@keyframes rise{from{opacity:0;transform:translateY(9px)}to{opacity:1;transform:translateY(0)}}
+.hero,.snapshot,.section-head,.read-card,.ticker-head,.chart-grid,.metrics-strip,.info-grid,.scenarios,.timeline,.vol-grid,.context-grid,.method-grid{animation:rise .55s cubic-bezier(.2,.8,.2,1) both}
+.snapshot:nth-child(2){animation-delay:.06s}
+.read-card:nth-child(2){animation-delay:.04s}
+.read-card:nth-child(3){animation-delay:.08s}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;scroll-behavior:auto!important}}
+
+/* responsive */
+@media (max-width:1080px){
+  .hero{grid-template-columns:1fr;gap:38px;padding-top:58px}
+  .hero h1{max-width:11ch}
+  .hero-read{border-left:0;border-top:1px solid var(--line);padding:20px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:0 26px}
+  .hero-read .read-label{grid-column:1/-1;margin-bottom:4px}
+  .hero-read .read-foot{grid-column:1/-1;margin-top:13px}
+  .section-head,.ticker-head{grid-template-columns:1fr;gap:20px}
+  .section-side{border-left:0;border-top:1px solid var(--line);padding:13px 0 0}
+  .info-grid{grid-template-columns:1fr 1fr}
+  .info-grid .card:first-child{grid-column:1/-1}
+  .chart-grid{grid-template-columns:1fr}
+  .metrics-strip{grid-template-columns:repeat(3,1fr)}
+  .timeline{grid-template-columns:repeat(2,1fr)}
+  .context-grid{grid-template-columns:repeat(2,1fr)}
+  .vol-grid{grid-template-columns:1fr}
+  .method-grid{grid-template-columns:1fr}
+  .ticker-side{display:grid;grid-template-columns:1fr 1fr;border-left:0;border-top:1px solid var(--line);padding:14px 0 0;gap:0 18px}
+  .tside-row{border-bottom:0;padding:5px 0}
+  .read-grid{grid-template-columns:1fr}
+}
+@media (max-width:760px){
+  .wrap{padding:0 17px}
+  .topbar{padding:17px 0}
+  .top-meta .chip:nth-child(3){display:none}
+  .hero{padding:42px 0 30px}
+  .hero h1{font-size:clamp(45px,13.5vw,70px)}
+  .hero .dek{font-size:15px}
+  .hero-read{grid-template-columns:1fr}
+  .hero-read .read-label,.hero-read .read-foot{grid-column:auto}
+  .hero-stats{padding:4px 0;margin-top:27px}
+  .hero-stat{flex-basis:50%;padding:11px 12px!important;border-right:0;border-bottom:1px solid var(--line-soft)}
+  .hero-stat:nth-child(odd){border-right:1px solid var(--line-soft)}
+  .hero-stat:first-child{padding-left:12px}
+  .snapshot-grid{grid-template-columns:1fr;padding-bottom:48px}
+  .snapshot{padding:20px 18px 18px;border-radius:19px}
+  .pin-summary{margin-top:22px}
+  .snap-band{grid-template-columns:1fr 1fr}
+  .snap-foot{display:block}
+  .snap-foot span{display:block;text-align:left!important;margin-top:3px}
+  .section{padding:49px 0}
+  .section-head h2,.ticker-head h2{font-size:34px}
+  .section-head{gap:14px}
+  .ticker-section{padding:50px 0}
+  .ticker-title-line{align-items:flex-start;flex-direction:column;gap:8px}
+  .ticker_head h2{font-size:36px}
+  .ticker-side{grid-template-columns:1fr}
+  .metrics-strip{grid-template-columns:repeat(2,1fr)}
+  .metric .k{min-height:0}
+  .info-grid{grid-template-columns:1fr}
+  .info-grid .card:first-child{grid-column:auto}
+  .scenarios{grid-template-columns:1fr}
+  .timeline{grid-template-columns:1fr}
+  .context-grid{grid-template-columns:1fr 1fr}
+  .split-note{grid-template-columns:1fr}
+  .footer{display:block}
+  .footer .legal{text-align:left;margin-top:16px}
+  .data-table{font-size:11px;min-width:650px}
+  .data-table td,.data-table thead th{padding:9px 10px}
+  .section-foot{display:block}
+  .section-foot span{display:block;text-align:left!important;margin-top:3px}
+}
+@media (max-width:440px){
+  .top-meta{display:none}
+  .snapshot{padding:18px 14px 15px}
+  .price{font-size:40px}
+  .pin-number{font-size:46px}
+  .context-grid{grid-template-columns:1fr}
+  .metric .v{font-size:12.5px}
+}
+
+.gamma-wide{padding:22px;margin-top:16px}
+.gamma-body{display:grid;grid-template-columns:minmax(0,1.52fr) minmax(270px,.48fr);gap:26px;align-items:start}
+.gamma-side{border-left:1px solid var(--line);padding-left:22px}
+.gamma-side .gex-number{font-size:34px}
+.gamma-chart-head{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;margin-bottom:12px}
+.gamma-chart-head .sub{max-width:500px}
+.gamma-side .gex-note{margin-top:11px}
+.gamma-side .gamma-nodes{gap:16px}
+.gamma-side .node-row{font-size:9.5px}
+@media(max-width:980px){
+  .gamma-body{grid-template-columns:1fr}
+  .gamma-side{border-left:0;border-top:1px solid var(--line);padding:18px 0 0}
+}
+
+/* Keep the page gutter even when a component sets a vertical padding shorthand. */
+body .wrap{padding-left:28px;padding-right:28px}
+@media(max-width:760px){
+  body .wrap{padding-left:17px;padding-right:17px}
+}
+</style>
+</head>
+<body>
+
+<header class="topbar wrap">
+  <div class="brand">
+    <span class="mark">MP</span>
+    <span>Max Pain Map<span class="brand-sub">SPY × QQQ · WEEKLY OPTIONS</span></span>
+  </div>
+  <div class="top-meta">
+    <span class="chip"><span class="dot"></span>Data · Oct 19 close</span>
+    <span class="chip amber-chip"><span class="dot"></span>Expiry · Fri Oct 23</span>
+    <span class="chip">Yahoo Finance · yfinance</span>
+  </div>
+</header>
+
+<main>
+<section class="hero wrap">
+  <div>
+    <div class="eyebrow">SPY × QQQ · WEEKLY OPTIONS INTELLIGENCE</div>
+    <h1>Max pain is a map, <em>not a magnet.</em></h1>
+    <p class="dek">Both Friday’s SPY and QQQ max-pain levels sit above Monday’s close. SPY’s 768–770 cluster is tight enough to matter. QQQ’s 720–729 band is wider — and it lands in the middle of a heavy earnings week.</p>
+  </div>
+  <aside class="hero-read">
+    <div class="read-label">The one-line read</div>
+    <div class="read-line">
+      <div class="asset">SPY</div>
+      <div class="read-val"><strong>Pin 768–770</strong><span>OI max 770.00 · tail 745</span></div>
+    </div>
+    <div class="read-line">
+      <div class="asset">QQQ</div>
+      <div class="read-val"><strong>Pin 720–729</strong><span>OI max 727.00 · tail 711</span></div>
+    </div>
+    <div class="read-foot">Both max pains are above spot, but both ETFs are modeled short gamma below their <b>774 / 731</b> flip levels. The pin is conditional. The tails are real.</div>
+  </aside>
+</section>
+
+<section class="hero wrap" style="display:block;padding-top:0;padding-bottom:0">
+  <div class="hero-stats">
+    <div class="hero-stat"><div class="k">Expiry</div><div class="v">Fri, Oct 23, 2026 <small>4 DTE</small></div></div>
+    <div class="hero-stat"><div class="k">Scope</div><div class="v">SPY + QQQ <small>weeklies</small></div></div>
+    <div class="hero-stat"><div class="k">Open interest</div><div class="v">1,382,038 <small>contracts</small></div></div>
+    <div class="hero-stat"><div class="k">Monday volume</div><div class="v">928,825 <small>contracts</small></div></div>
+    <div class="hero-stat"><div class="k">Settlement</div><div class="v">PM close <small>ETF options</small></div></div>
+  </div>
+</section>
+
+<section class="snapshot-grid wrap">
+<article class="snapshot spy">
+  <div class="snap-top">
+    <div class="sym-lock">
+      <span class="sym-badge">SPY</span>
+      <div class="sym-name"><b>SPDR S&P 500 ETF</b>Broad U.S. large cap</div>
+    </div>
+    <span class="chg-pill">▲ +0.42%</span>
+  </div>
+  <div class="price-line">
+    <div class="price"><sup>$</sup>766.48</div>
+    <div class="price-sub">prev close 763.25</div>
+  </div>
+  <div class="pin-summary">
+    <div>
+      <div class="pin-label">Open-interest max pain</div>
+      <div class="pin-number">770.00<small>+0.46%</small></div>
+      <div class="pin-gap">+0.30σ away · volume max 768.00 · blend 769.00</div>
+    </div>
+    <div class="conf"><span>Pin confidence</span><b>High</b></div>
+  </div>
+  <div class="range-wrap"><svg viewBox="0 0 560 102" role="img" aria-label="SPY one sigma implied range, spot and max pain"><title>SPY one sigma implied range, spot and max pain</title><line x1="18" y1="49" x2="542" y2="49" stroke="rgba(158,181,211,.20)" stroke-width="4" stroke-linecap="round"/><rect x="60.39" y="36" width="439.21" height="26" rx="7" fill="#3bd8b6" opacity=".105" stroke="#3bd8b6" stroke-opacity=".22"/><line x1="60.39" y1="36" x2="60.39" y2="62" stroke="#3bd8b6" opacity=".35" stroke-width="1"/><line x1="499.61" y1="36" x2="499.61" y2="62" stroke="#3bd8b6" opacity=".35" stroke-width="1"/><text x="280.0" y="52.3" fill="#93a4bb" font-size="8.2" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" letter-spacing=".08em">1σ RANGE</text><line x1="280.00" y1="29" x2="280.00" y2="69" stroke="#f4f7fb" stroke-width="1.2" opacity=".8"/><circle cx="280.00" cy="49" r="4.5" fill="#f4f7fb" stroke="#0c1420" stroke-width="1.2"/><line x1="344.90" y1="26" x2="344.90" y2="72" stroke="#ffca62" stroke-width="1.4"/><circle cx="344.90" cy="49" r="4.9" fill="#ffca62" stroke="#0c1420" stroke-width="1.2"/><text x="344.9" y="15.0" fill="#ffca62" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" letter-spacing=".02em">MAX PAIN 770.00</text><text x="280.0" y="91.0" fill="#f4f7fb" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" letter-spacing=".02em">SPOT 766.48</text><text x="60.4" y="74.0" fill="#64758c" font-size="8.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >754.57</text><text x="499.6" y="74.0" fill="#64758c" font-size="8.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >778.39</text></svg></div>
+  <div class="range-caption"><span>Shaded: 1σ implied Friday range</span><span>Spot / OI max pain</span></div>
+  <div class="snap-band">
+    <div><div class="k">Practical pin band</div><div class="v">768–770 <em>all methods within $2</em></div></div>
+    <div><div class="k">1% pain shelf</div><div class="v">769–770 <em>2 strikes</em></div></div>
+  </div>
+  <div class="stat-grid">
+    <div class="stat"><div class="k">1σ move</div><div class="v">±$11.91 <small>±1.55%</small></div></div>
+    <div class="stat"><div class="k">ATM IV</div><div class="v">14.8% <small>straddle $9.46</small></div></div>
+    <div class="stat"><div class="k">P/C open interest</div><div class="v">1.81× <small>vol 1.48×</small></div></div>
+    <div class="stat"><div class="k">25Δ risk reversal</div><div class="v">+2.55 pts <small>put over call</small></div></div>
+    <div class="stat"><div class="k">Call wall</div><div class="v">790.00 <small>36.4k OI</small></div></div>
+    <div class="stat"><div class="k">Put wall</div><div class="v">745.00 <small>38.8k OI</small></div></div>
+    <div class="stat"><div class="k">Gamma flip</div><div class="v">773.95 <small>spot +0.98%</small></div></div>
+    <div class="stat"><div class="k">Net GEX / 1%</div><div class="v">-$2.06B <small>modeled</small></div></div>
+  </div>
+  <div class="snap-foot"><span>The 770 pin sits between the 50DMA (768.37) and 20DMA (770.83); spot is below both.</span><span>Net GEX assumes calls + / puts −</span></div>
+</article>
+<article class="snapshot qqq">
+  <div class="snap-top">
+    <div class="sym-lock">
+      <span class="sym-badge">QQQ</span>
+      <div class="sym-name"><b>Invesco QQQ Trust</b>Nasdaq-100 · tech-heavy</div>
+    </div>
+    <span class="chg-pill">▲ +1.21%</span>
+  </div>
+  <div class="price-line">
+    <div class="price"><sup>$</sup>718.36</div>
+    <div class="price-sub">prev close 709.80</div>
+  </div>
+  <div class="pin-summary">
+    <div>
+      <div class="pin-label">Open-interest max pain</div>
+      <div class="pin-number">727.00<small>+1.20%</small></div>
+      <div class="pin-gap">+0.48σ away · volume max 720.00 · blend 724.00</div>
+    </div>
+    <div class="conf moderate"><span>Pin confidence</span><b>Moderate</b></div>
+  </div>
+  <div class="range-wrap"><svg viewBox="0 0 560 102" role="img" aria-label="QQQ one sigma implied range, spot and max pain"><title>QQQ one sigma implied range, spot and max pain</title><line x1="18" y1="49" x2="542" y2="49" stroke="rgba(158,181,211,.20)" stroke-width="4" stroke-linecap="round"/><rect x="45.81" y="36" width="468.38" height="26" rx="7" fill="#86a5ff" opacity=".105" stroke="#86a5ff" stroke-opacity=".22"/><line x1="45.81" y1="36" x2="45.81" y2="62" stroke="#86a5ff" opacity=".35" stroke-width="1"/><line x1="514.19" y1="36" x2="514.19" y2="62" stroke="#86a5ff" opacity=".35" stroke-width="1"/><text x="280.0" y="52.3" fill="#93a4bb" font-size="8.2" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" letter-spacing=".08em">1σ RANGE</text><line x1="280.00" y1="29" x2="280.00" y2="69" stroke="#f4f7fb" stroke-width="1.2" opacity=".8"/><circle cx="280.00" cy="49" r="4.5" fill="#f4f7fb" stroke="#0c1420" stroke-width="1.2"/><line x1="391.49" y1="26" x2="391.49" y2="72" stroke="#ffca62" stroke-width="1.4"/><circle cx="391.49" cy="49" r="4.9" fill="#ffca62" stroke="#0c1420" stroke-width="1.2"/><text x="391.5" y="15.0" fill="#ffca62" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" letter-spacing=".02em">MAX PAIN 727.00</text><text x="280.0" y="91.0" fill="#f4f7fb" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" letter-spacing=".02em">SPOT 718.36</text><text x="45.8" y="74.0" fill="#64758c" font-size="8.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >700.21</text><text x="514.2" y="74.0" fill="#64758c" font-size="8.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >736.51</text></svg></div>
+  <div class="range-caption"><span>Shaded: 1σ implied Friday range</span><span>Spot / OI max pain</span></div>
+  <div class="snap-band">
+    <div><div class="k">Practical pin band</div><div class="v">720–729 <em>volume to OI</em></div></div>
+    <div><div class="k">1% pain shelf</div><div class="v">725–729 <em>5 strikes</em></div></div>
+  </div>
+  <div class="stat-grid">
+    <div class="stat"><div class="k">1σ move</div><div class="v">±$18.15 <small>±2.53%</small></div></div>
+    <div class="stat"><div class="k">ATM IV</div><div class="v">24.1% <small>straddle $14.41</small></div></div>
+    <div class="stat"><div class="k">P/C open interest</div><div class="v">1.39× <small>vol 1.15×</small></div></div>
+    <div class="stat"><div class="k">25Δ risk reversal</div><div class="v">+4.34 pts <small>put over call</small></div></div>
+    <div class="stat"><div class="k">Call wall</div><div class="v">735.00 <small>22.4k OI</small></div></div>
+    <div class="stat"><div class="k">Put wall</div><div class="v">711.00 <small>40.4k OI</small></div></div>
+    <div class="stat"><div class="k">Gamma flip</div><div class="v">731.12 <small>spot +1.78%</small></div></div>
+    <div class="stat"><div class="k">Net GEX / 1%</div><div class="v">-$1.16B <small>modeled</small></div></div>
+  </div>
+  <div class="snap-foot"><span>QQQ’s 727 pin sits almost exactly on its 50DMA (726.68).</span><span>Peer index weight: top 10 ≈ 46.7%</span></div>
+</article></section>
+
+<section class="section wrap" id="compare">
+  <div class="section-head">
+    <div>
+      <div class="eyebrow">Cross-asset read</div>
+      <h2>Both pins point up. Only one is tight.</h2>
+      <p class="lead">SPY’s three max-pain methods cluster within $2, right around its 50- and 20-day averages. QQQ’s OI pin is 727, but Monday’s volume pin is 720; the real location is a 720–729 band. Both structures are wrapped in the same put-heavy hedging tape.</p>
+    </div>
+    <div class="section-side"><strong>The setup:</strong> the market is pricing a mean-reversion bounce into Friday, not a trend breakout. Both put walls sit below spot; both call walls above. Negative gamma keeps the tails live, especially for QQQ into earnings.</div>
+  </div>
+  <div class="table-wrap">
+    <table class="data-table">
+      <thead><tr><th style="width:19%">Metric</th><th style="width:27%">SPY</th><th style="width:27%">QQQ</th><th>Read-through</th></tr></thead>
+      <tbody><tr class="subhead"><td colspan="4">PRICE & TREND</td></tr><tr><td class="metric">Last / prior close</td><td class="num spy-col">$766.48 / $763.25</td><td class="num qqq-col">$718.36 / $709.80</td><td class="note">QQQ bounced +1.21% Monday; SPY +0.42%</td></tr><tr><td class="metric">1-day / 5-day</td><td class="num spy-col"><span class="up">+0.42%</span> / <span class="down">-1.49%</span></td><td class="num qqq-col"><span class="up">+1.21%</span> / <span class="down">-3.71%</span></td><td class="note">QQQ still lower by 3.7% on the week</td></tr><tr><td class="metric">From 52-week high</td><td class="num spy-col"><span class="down">-1.94%</span></td><td class="num qqq-col"><span class="down">-5.83%</span></td><td class="note">SPY −1.9%; QQQ −5.8%</td></tr><tr class="subhead"><td colspan="4">MAX PAIN</td></tr><tr><td class="metric">Open-interest max pain</td><td class="num spy-col"><b class="spy-col">770.00</b></td><td class="num qqq-col"><b class="qqq-col">727.00</b></td><td class="note">Both above spot — a mild upward pin tilt</td></tr><tr><td class="metric">Gap to spot</td><td class="num spy-col"><span class="up">+0.46%</span> <span class="dim">/ +0.30σ</span></td><td class="num qqq-col"><span class="up">+1.20%</span> <span class="dim">/ +0.48σ</span></td><td class="note">SPY is closer; both are inside 1σ</td></tr><tr><td class="metric">Volume max pain</td><td class="num spy-col">768.00</td><td class="num qqq-col">720.00</td><td class="note">Monday flow peaks near or at spot</td></tr><tr><td class="metric">OI + 0.5× volume</td><td class="num spy-col">769.00</td><td class="num qqq-col">724.00</td><td class="note">The blend confirms SPY; QQQ is a band</td></tr><tr><td class="metric">1% pain shelf</td><td class="num spy-col">769–770</td><td class="num qqq-col">725–729</td><td class="note">Strikes within 1% of the minimum payout</td></tr><tr><td class="metric">Practical pin band</td><td class="num spy-col"><b>768–770</b></td><td class="num qqq-col"><b>720–729</b></td><td class="note">Analyst overlay; not a guarantee</td></tr><tr class="subhead"><td colspan="4">VOLATILITY & FLOW</td></tr><tr><td class="metric">1σ implied range</td><td class="num spy-col">754.57–778.39</td><td class="num qqq-col">700.21–736.51</td><td class="note">Average ATM IV, 4/365 years</td></tr><tr><td class="metric">ATM straddle</td><td class="num spy-col">$9.46 <span class="dim">(1.23%)</span></td><td class="num qqq-col">$14.41 <span class="dim">(2.01%)</span></td><td class="note">QQQ’s implied move is 1.6× wider</td></tr><tr><td class="metric">ATM IV</td><td class="num spy-col">14.8%</td><td class="num qqq-col">24.1%</td><td class="note">QQQ carries an earnings premium</td></tr><tr><td class="metric">25Δ risk reversal</td><td class="num spy-col">+2.55 pts</td><td class="num qqq-col">+4.34 pts</td><td class="note">Puts richer than calls in both</td></tr><tr><td class="metric">P/C open interest</td><td class="num spy-col">1.81× / vol 1.48×</td><td class="num qqq-col">1.39× / vol 1.15×</td><td class="note">Put-heavy OI; less extreme in Monday flow</td></tr><tr class="subhead"><td colspan="4">WALLS & GAMMA</td></tr><tr><td class="metric">Call wall</td><td class="num spy-col">790 <span class="dim">(36,380)</span></td><td class="num qqq-col">735 <span class="dim">(22,407)</span></td><td class="note">Largest call-OI strike</td></tr><tr><td class="metric">Put wall</td><td class="num spy-col">745 <span class="dim">(38,847)</span></td><td class="num qqq-col">711 <span class="dim">(40,399)</span></td><td class="note">QQQ’s support shelf is much closer</td></tr><tr><td class="metric">Gamma flip</td><td class="num spy-col">773.95</td><td class="num qqq-col">731.12</td><td class="note">Modeled zero-gamma level; both above spot</td></tr><tr><td class="metric">Net GEX / 1%</td><td class="num spy-col"><span class="down">-$2.06B</span></td><td class="num qqq-col"><span class="down">-$1.16B</span></td><td class="note">Conventional calls + / puts − sign model</td></tr><tr><td class="metric">Pin confidence</td><td class="num spy-col"><span class="badge call">High</span></td><td class="num qqq-col"><span class="badge pin">Moderate</span></td><td class="note">Based on method agreement and distance</td></tr></tbody>
+    </table>
+  </div>
+  <div class="read-grid">
+    <article class="read-card" style="--bar:var(--spy)">
+      <div class="num">01 / SPY</div>
+      <h3>High-confidence 768–770.</h3>
+      <p>OI max pain <strong>770</strong>, volume max pain <strong>768</strong>, blend <strong>769</strong>. The 1% shelf is <strong>769–770</strong> and the 1σ range is 754.57–778.39. This is the cleanest pin of the pair.</p>
+    </article>
+    <article class="read-card" style="--bar:var(--qqq)">
+      <div class="num">02 / QQQ</div>
+      <h3>A wider, event-driven band.</h3>
+      <p>OI max pain <strong>727</strong>, volume max pain <strong>720</strong>, blend <strong>724</strong>. The 1% shelf runs <strong>725–729</strong>; the practical band is 720–729. The 727 level also lands on the 50DMA.</p>
+    </article>
+    <article class="read-card" style="--bar:var(--put)">
+      <div class="num">03 / RISK</div>
+      <h3>The tails are still live.</h3>
+      <p>Net modeled gamma is <strong>−$2.06B</strong> for SPY and <strong>−$1.16B</strong> for QQQ per 1% move. Both are below their flip levels. Add QQQ’s <strong>24.1%</strong> IV and a three-name earnings cluster, and the pin is conditional.</p>
+    </article>
+  </div>
+</section>
+
+<section class="ticker-section spy wrap" id="spy">
+  
+  <div class="ticker-head">
+    <div>
+      <div class="ticker-title-line">
+        <span class="ticker-large">SPY</span>
+        <span class="ticker-name">SPDR S&P 500 ETF Trust · 766.48 · <span class="up">+0.42%</span></span>
+      </div>
+      <h2>The cleaner pin: <em>768–770.</em></h2>
+      <p class="lead">All three max-pain methods land within $2, and the 1% shelf is only two strikes wide. The catch: modeled gamma is negative below 773.95, and the 745 put wall is almost 3% away.</p>
+    </div>
+    <aside class="ticker-side"><div class="tside-row"><span class="k">Spot / OI max pain</span><span class="v">766.48 → 770.00 <span class="up">(+0.46%)</span></span></div><div class="tside-row"><span class="k">1σ Friday range</span><span class="v">754.57–778.39</span></div><div class="tside-row"><span class="k">ATM IV / straddle</span><span class="v">14.8% / $9.46</span></div><div class="tside-row"><span class="k">P/C open interest</span><span class="v">1.81× <span class="dim">(vol 1.48×)</span></span></div><div class="tside-row"><span class="k">Net GEX / 1%</span><span class="v"><span class="down">-$2.06B</span></span></div><div class="tside-row"><span class="k">Expiry / settlement</span><span class="v">Oct 23 · PM close</span></div></aside>
+  </div>
+  
+<div class="metrics-strip">
+  <div class="metric"><div class="k">Minimum payout</div><div class="v amber">$50.3M<small>@ 770</small></div></div>
+  <div class="metric"><div class="k">Payout at spot</div><div class="v">$62.1M<small>+$11.8M</small></div></div>
+  <div class="metric"><div class="k">Pain slope at spot</div><div class="v">-$5.4M<small>per $1</small></div></div>
+  <div class="metric"><div class="k">1% pain shelf</div><div class="v">769–770<small>strikes</small></div></div>
+  <div class="metric"><div class="k">Net GEX / 1%</div><div class="v">-$2.06B<small>modeled</small></div></div>
+  <div class="metric"><div class="k">Gamma flip</div><div class="v">773.95<small>+0.98%</small></div></div>
+</div>
+  <div class="chart-grid">
+    
+    <article class="card chart-card">
+      <div class="card-head">
+        <div>
+          <div class="kicker">Expiration payoff</div>
+          <h3>Max-pain curve</h3>
+          <div class="sub">Total modeled payout to option holders at each Friday settlement price. The minimum is the open-interest max pain.</div>
+        </div>
+        <span class="card-link">expiry Oct 23</span>
+      </div>
+      <div class="chart-legend">
+        <span class="legend-item"><span class="legend-line total"></span>Total payout</span>
+        <span class="legend-item"><span class="legend-line call"></span>Call side</span>
+        <span class="legend-item"><span class="legend-line put"></span>Put side</span>
+        <span class="legend-item"><span class="legend-line spot"></span>Spot</span>
+        <span class="legend-item"><span class="legend-line pin"></span>Max pain</span>
+        <span class="legend-item"><span class="legend-line band"></span>1σ range</span>
+      </div>
+      <div class="chart"><svg viewBox="0 0 720 360" role="img" aria-label="SPY modeled expiration payout by settlement price"><title>SPY total, call-side and put-side expiration payout</title><rect x="252.5" y="40" width="247.1" height="272" fill="#3bd8b6" opacity=".045"/><line x1="252.5" y1="40" x2="252.5" y2="312" stroke="#3bd8b6" opacity=".20" stroke-dasharray="2 5"/><line x1="499.6" y1="40" x2="499.6" y2="312" stroke="#3bd8b6" opacity=".20" stroke-dasharray="2 5"/><text x="376.1" y="55" fill="#64758c" font-size="8.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" letter-spacing=".08em">1σ IMPLIED RANGE</text><line x1="58" y1="312.0" x2="702" y2="312.0" stroke="rgba(158,181,211,.085)" stroke-width="1"/><text x="48.0" y="315.5" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="end" font-weight="400" >0</text><line x1="58" y1="222.6" x2="702" y2="222.6" stroke="rgba(158,181,211,.085)" stroke-width="1"/><text x="48.0" y="226.1" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="end" font-weight="400" >200</text><line x1="58" y1="133.3" x2="702" y2="133.3" stroke="rgba(158,181,211,.085)" stroke-width="1"/><text x="48.0" y="136.8" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="end" font-weight="400" >400</text><line x1="58" y1="43.9" x2="702" y2="43.9" stroke="rgba(158,181,211,.085)" stroke-width="1"/><text x="48.0" y="47.4" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="end" font-weight="400" >600</text><line x1="101.4" y1="40" x2="101.4" y2="312" stroke="rgba(158,181,211,.085)" stroke-width="1" opacity=".55"/><text x="101.4" y="336.0" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >740</text><line x1="205.1" y1="40" x2="205.1" y2="312" stroke="rgba(158,181,211,.085)" stroke-width="1" opacity=".55"/><text x="205.1" y="336.0" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >750</text><line x1="308.8" y1="40" x2="308.8" y2="312" stroke="rgba(158,181,211,.085)" stroke-width="1" opacity=".55"/><text x="308.8" y="336.0" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >760</text><line x1="412.6" y1="40" x2="412.6" y2="312" stroke="rgba(158,181,211,.085)" stroke-width="1" opacity=".55"/><text x="412.6" y="336.0" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >770</text><line x1="516.3" y1="40" x2="516.3" y2="312" stroke="rgba(158,181,211,.085)" stroke-width="1" opacity=".55"/><text x="516.3" y="336.0" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >780</text><line x1="620.0" y1="40" x2="620.0" y2="312" stroke="rgba(158,181,211,.085)" stroke-width="1" opacity=".55"/><text x="620.0" y="336.0" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >790</text><line x1="58" y1="312" x2="702" y2="312" stroke="rgba(158,181,211,.16)" stroke-width="1"/><line x1="58" y1="40" x2="58" y2="312" stroke="rgba(158,181,211,.16)" stroke-width="1"/><line x1="376.1" y1="40" x2="376.1" y2="312" stroke="#f4f7fb" stroke-width="1" opacity=".60" stroke-dasharray="5 5"/><line x1="412.6" y1="40" x2="412.6" y2="312" stroke="#ffca62" stroke-width="1.25" opacity=".82"/><path d="M 59.86 312.00 L 59.86 47.92 L 70.23 60.56 L 80.61 73.07 L 90.98 85.47 L 101.35 97.81 L 111.73 109.51 L 122.10 121.01 L 132.48 132.42 L 142.85 143.72 L 153.22 154.55 L 163.60 163.63 L 173.97 172.59 L 184.35 181.29 L 194.72 189.56 L 205.09 197.58 L 215.47 204.98 L 225.84 212.29 L 236.21 219.35 L 246.59 226.09 L 256.96 232.65 L 267.34 238.66 L 277.71 244.58 L 288.08 250.32 L 298.46 255.92 L 308.83 261.23 L 319.21 265.84 L 329.58 269.86 L 339.95 273.71 L 350.33 277.29 L 360.70 280.51 L 371.07 283.08 L 381.45 285.49 L 391.82 287.55 L 402.20 289.33 L 412.57 289.53 L 422.94 288.80 L 433.32 287.74 L 443.69 286.40 L 454.07 284.84 L 464.44 283.11 L 474.81 280.90 L 485.19 278.47 L 495.56 275.76 L 505.93 272.66 L 516.31 269.24 L 526.68 264.63 L 537.06 259.81 L 547.43 254.74 L 557.80 249.51 L 568.18 244.16 L 578.55 238.17 L 588.93 232.02 L 599.30 225.78 L 609.67 219.26 L 620.05 212.50 L 630.42 204.11 L 640.79 195.53 L 651.17 186.90 L 661.54 178.16 L 671.92 169.34 L 682.29 160.31 L 692.66 151.22 L 692.66 312.00 Z" fill="#eef3fa" opacity=".028"/><path d="M 59.86 308.49 L 70.23 308.40 L 80.61 308.32 L 90.98 308.24 L 101.35 308.15 L 111.73 308.05 L 122.10 307.95 L 132.48 307.84 L 142.85 307.73 L 153.22 307.62 L 163.60 307.49 L 173.97 307.36 L 184.35 307.23 L 194.72 307.10 L 205.09 306.96 L 215.47 306.77 L 225.84 306.55 L 236.21 306.33 L 246.59 306.10 L 256.96 305.85 L 267.34 305.55 L 277.71 305.23 L 288.08 304.91 L 298.46 304.55 L 308.83 304.17 L 319.21 303.70 L 329.58 303.21 L 339.95 302.63 L 350.33 301.99 L 360.70 301.28 L 371.07 300.38 L 381.45 299.40 L 391.82 298.36 L 402.20 297.15 L 412.57 295.84 L 422.94 293.94 L 433.32 291.92 L 443.69 289.75 L 454.07 287.44 L 464.44 285.02 L 474.81 282.29 L 485.19 279.41 L 495.56 276.37 L 505.93 273.02 L 516.31 269.41 L 526.68 264.71 L 537.06 259.86 L 547.43 254.77 L 557.80 249.53 L 568.18 244.17 L 578.55 238.18 L 588.93 232.02 L 599.30 225.79 L 609.67 219.27 L 620.05 212.50 L 630.42 204.11 L 640.79 195.53 L 651.17 186.91 L 661.54 178.16 L 671.92 169.34 L 682.29 160.31 L 692.66 151.22" fill="none" stroke="#3bd8b6" stroke-width="1.55" opacity=".82" stroke-linejoin="round"/><path d="M 59.86 51.43 L 70.23 64.16 L 80.61 76.75 L 90.98 89.23 L 101.35 101.66 L 111.73 113.46 L 122.10 125.07 L 132.48 136.59 L 142.85 147.99 L 153.22 158.93 L 163.60 168.14 L 173.97 177.23 L 184.35 186.06 L 194.72 194.46 L 205.09 202.62 L 215.47 210.22 L 225.84 217.73 L 236.21 225.03 L 246.59 231.99 L 256.96 238.79 L 267.34 245.12 L 277.71 251.35 L 288.08 257.42 L 298.46 263.37 L 308.83 269.06 L 319.21 274.14 L 329.58 278.65 L 339.95 283.08 L 350.33 287.30 L 360.70 291.24 L 371.07 294.69 L 381.45 298.09 L 391.82 301.20 L 402.20 304.18 L 412.57 305.68 L 422.94 306.85 L 433.32 307.82 L 443.69 308.66 L 454.07 309.40 L 464.44 310.08 L 474.81 310.61 L 485.19 311.06 L 495.56 311.39 L 505.93 311.64 L 516.31 311.83 L 526.68 311.92 L 537.06 311.95 L 547.43 311.97 L 557.80 311.98 L 568.18 311.99 L 578.55 311.99 L 588.93 311.99 L 599.30 312.00 L 609.67 312.00 L 620.05 312.00 L 630.42 312.00 L 640.79 312.00 L 651.17 312.00 L 661.54 312.00 L 671.92 312.00 L 682.29 312.00 L 692.66 312.00" fill="none" stroke="#ff7582" stroke-width="1.55" opacity=".82" stroke-linejoin="round"/><path d="M 59.86 47.92 L 70.23 60.56 L 80.61 73.07 L 90.98 85.47 L 101.35 97.81 L 111.73 109.51 L 122.10 121.01 L 132.48 132.42 L 142.85 143.72 L 153.22 154.55 L 163.60 163.63 L 173.97 172.59 L 184.35 181.29 L 194.72 189.56 L 205.09 197.58 L 215.47 204.98 L 225.84 212.29 L 236.21 219.35 L 246.59 226.09 L 256.96 232.65 L 267.34 238.66 L 277.71 244.58 L 288.08 250.32 L 298.46 255.92 L 308.83 261.23 L 319.21 265.84 L 329.58 269.86 L 339.95 273.71 L 350.33 277.29 L 360.70 280.51 L 371.07 283.08 L 381.45 285.49 L 391.82 287.55 L 402.20 289.33 L 412.57 289.53 L 422.94 288.80 L 433.32 287.74 L 443.69 286.40 L 454.07 284.84 L 464.44 283.11 L 474.81 280.90 L 485.19 278.47 L 495.56 275.76 L 505.93 272.66 L 516.31 269.24 L 526.68 264.63 L 537.06 259.81 L 547.43 254.74 L 557.80 249.51 L 568.18 244.16 L 578.55 238.17 L 588.93 232.02 L 599.30 225.78 L 609.67 219.26 L 620.05 212.50 L 630.42 204.11 L 640.79 195.53 L 651.17 186.90 L 661.54 178.16 L 671.92 169.34 L 682.29 160.31 L 692.66 151.22" fill="none" stroke="#eef3fa" stroke-width="2.4" stroke-linejoin="round"/><circle cx="412.6" cy="289.5" r="8" fill="#ffca62" opacity=".12"/><circle cx="412.6" cy="289.5" r="3.8" fill="#ffca62" stroke="#0c1420" stroke-width="1.5"/><circle cx="376.1" cy="284.2" r="3.1" fill="#f4f7fb" stroke="#0c1420" stroke-width="1.4"/><text x="412.6" y="19.0" fill="#ffca62" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" letter-spacing=".02em">MAX PAIN  770.00</text><text x="376.1" y="33.0" fill="#f4f7fb" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" letter-spacing=".02em">SPOT  766.48</text><text x="58.0" y="14.0" fill="#64758c" font-size="8.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="start" font-weight="400" >MODELED PAYOUT · $M</text><text x="380.0" y="353.0" fill="#64758c" font-size="9" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >Friday settlement price</text><text x="424.6" y="277.5" fill="#ffca62" font-size="9" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="start" font-weight="400" >min $50.3M</text></svg></div>
+      <div class="chart-note"><span>At 780 the payout is $95.7M — 1.9× the $50.3M minimum. The pin is a plateau, not a spike.</span><span class="right">Charts zoom around spot; the max-pain calculation uses the full chain.</span></div>
+    </article>
+    
+    <article class="card chart-card">
+      <div class="card-head">
+        <div>
+          <div class="kicker">Open interest profile</div>
+          <h3>Where the contracts sit</h3>
+          <div class="sub">Calls above the axis, puts below. The dashed line is spot; the amber line is max pain.</div>
+        </div>
+        <span class="card-link">all strikes</span>
+      </div>
+      <div class="chart-legend">
+        <span class="legend-item"><span class="legend-line call"></span>Call OI</span>
+        <span class="legend-item"><span class="legend-line put"></span>Put OI</span>
+        <span class="legend-item"><span class="legend-line spot"></span>Spot</span>
+        <span class="legend-item"><span class="legend-line pin"></span>Max pain</span>
+      </div>
+      <div class="chart"><svg viewBox="0 0 720 360" role="img" aria-label="SPY open interest by strike"><title>SPY call and put open interest by strike</title><line x1="58" y1="296.7" x2="702" y2="296.7" stroke="rgba(158,181,211,.085)" stroke-width="1"/><text x="48.0" y="300.2" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="end" font-weight="400" >-40k</text><line x1="58" y1="236.4" x2="702" y2="236.4" stroke="rgba(158,181,211,.085)" stroke-width="1"/><text x="48.0" y="239.9" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="end" font-weight="400" >-20k</text><line x1="58" y1="176.0" x2="702" y2="176.0" stroke="rgba(158,181,211,.085)" stroke-width="1"/><text x="48.0" y="179.5" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="end" font-weight="400" >0k</text><line x1="58" y1="115.6" x2="702" y2="115.6" stroke="rgba(158,181,211,.085)" stroke-width="1"/><text x="48.0" y="119.1" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="end" font-weight="400" >20k</text><line x1="58" y1="55.3" x2="702" y2="55.3" stroke="rgba(158,181,211,.085)" stroke-width="1"/><text x="48.0" y="58.8" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="end" font-weight="400" >40k</text><line x1="101.4" y1="40" x2="101.4" y2="312" stroke="rgba(158,181,211,.085)" stroke-width="1" opacity=".55"/><text x="101.4" y="336.0" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >740</text><line x1="205.1" y1="40" x2="205.1" y2="312" stroke="rgba(158,181,211,.085)" stroke-width="1" opacity=".55"/><text x="205.1" y="336.0" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >750</text><line x1="308.8" y1="40" x2="308.8" y2="312" stroke="rgba(158,181,211,.085)" stroke-width="1" opacity=".55"/><text x="308.8" y="336.0" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >760</text><line x1="412.6" y1="40" x2="412.6" y2="312" stroke="rgba(158,181,211,.085)" stroke-width="1" opacity=".55"/><text x="412.6" y="336.0" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >770</text><line x1="516.3" y1="40" x2="516.3" y2="312" stroke="rgba(158,181,211,.085)" stroke-width="1" opacity=".55"/><text x="516.3" y="336.0" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >780</text><line x1="620.0" y1="40" x2="620.0" y2="312" stroke="rgba(158,181,211,.085)" stroke-width="1" opacity=".55"/><text x="620.0" y="336.0" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >790</text><rect x="56.80" y="175.92" width="6.12" height="0.08" fill="#3bd8b6" opacity=".78" rx="1.5"><title>736 strike · calls 27</title></rect><rect x="56.80" y="176.00" width="6.12" height="11.89" fill="#ff7582" opacity=".76" rx="1.5"><title>736 strike · puts 3,941</title></rect><rect x="67.17" y="175.94" width="6.12" height="0.06" fill="#3bd8b6" opacity=".78" rx="1.5"><title>737 strike · calls 21</title></rect><rect x="67.17" y="176.00" width="6.12" height="9.28" fill="#ff7582" opacity=".76" rx="1.5"><title>737 strike · puts 3,076</title></rect><rect x="77.55" y="175.99" width="6.12" height="0.01" fill="#3bd8b6" opacity=".78" rx="1.5"><title>738 strike · calls 4</title></rect><rect x="77.55" y="176.00" width="6.12" height="7.10" fill="#ff7582" opacity=".76" rx="1.5"><title>738 strike · puts 2,352</title></rect><rect x="87.92" y="175.95" width="6.12" height="0.05" fill="#3bd8b6" opacity=".78" rx="1.5"><title>739 strike · calls 17</title></rect><rect x="87.92" y="176.00" width="6.12" height="3.93" fill="#ff7582" opacity=".76" rx="1.5"><title>739 strike · puts 1,302</title></rect><rect x="98.29" y="174.87" width="6.12" height="1.13" fill="#3bd8b6" opacity=".78" rx="1.5"><title>740 strike · calls 374</title></rect><rect x="98.29" y="176.00" width="6.12" height="42.10" fill="#ff7582" opacity=".76" rx="1.5"><title>740 strike · puts 13,948</title></rect><rect x="108.67" y="175.95" width="6.12" height="0.05" fill="#3bd8b6" opacity=".78" rx="1.5"><title>741 strike · calls 15</title></rect><rect x="108.67" y="176.00" width="6.12" height="13.11" fill="#ff7582" opacity=".76" rx="1.5"><title>741 strike · puts 4,344</title></rect><rect x="119.04" y="175.63" width="6.12" height="0.37" fill="#3bd8b6" opacity=".78" rx="1.5"><title>742 strike · calls 124</title></rect><rect x="119.04" y="176.00" width="6.12" height="6.01" fill="#ff7582" opacity=".76" rx="1.5"><title>742 strike · puts 1,991</title></rect><rect x="129.41" y="175.93" width="6.12" height="0.07" fill="#3bd8b6" opacity=".78" rx="1.5"><title>743 strike · calls 23</title></rect><rect x="129.41" y="176.00" width="6.12" height="8.00" fill="#ff7582" opacity=".76" rx="1.5"><title>743 strike · puts 2,651</title></rect><rect x="139.79" y="175.88" width="6.12" height="0.12" fill="#3bd8b6" opacity=".78" rx="1.5"><title>744 strike · calls 40</title></rect><rect x="139.79" y="176.00" width="6.12" height="30.99" fill="#ff7582" opacity=".76" rx="1.5"><title>744 strike · puts 10,268</title></rect><rect x="150.16" y="175.03" width="6.12" height="0.97" fill="#3bd8b6" opacity=".78" rx="1.5"><title>745 strike · calls 323</title></rect><rect x="150.16" y="176.00" width="6.12" height="117.24" fill="#ff7582" opacity=".76" rx="1.5"><title>745 strike · puts 38,847</title></rect><rect x="160.54" y="175.80" width="6.12" height="0.20" fill="#3bd8b6" opacity=".78" rx="1.5"><title>746 strike · calls 67</title></rect><rect x="160.54" y="176.00" width="6.12" height="7.53" fill="#ff7582" opacity=".76" rx="1.5"><title>746 strike · puts 2,495</title></rect><rect x="170.91" y="175.80" width="6.12" height="0.20" fill="#3bd8b6" opacity=".78" rx="1.5"><title>747 strike · calls 65</title></rect><rect x="170.91" y="176.00" width="6.12" height="18.21" fill="#ff7582" opacity=".76" rx="1.5"><title>747 strike · puts 6,035</title></rect><rect x="181.28" y="175.81" width="6.12" height="0.19" fill="#3bd8b6" opacity=".78" rx="1.5"><title>748 strike · calls 63</title></rect><rect x="181.28" y="176.00" width="6.12" height="28.20" fill="#ff7582" opacity=".76" rx="1.5"><title>748 strike · puts 9,344</title></rect><rect x="191.66" y="175.88" width="6.12" height="0.12" fill="#3bd8b6" opacity=".78" rx="1.5"><title>749 strike · calls 40</title></rect><rect x="191.66" y="176.00" width="6.12" height="17.21" fill="#ff7582" opacity=".76" rx="1.5"><title>749 strike · puts 5,702</title></rect><rect x="202.03" y="171.99" width="6.12" height="4.01" fill="#3bd8b6" opacity=".78" rx="1.5"><title>750 strike · calls 1,330</title></rect><rect x="202.03" y="176.00" width="6.12" height="37.27" fill="#ff7582" opacity=".76" rx="1.5"><title>750 strike · puts 12,348</title></rect><rect x="212.41" y="174.94" width="6.12" height="1.06" fill="#3bd8b6" opacity=".78" rx="1.5"><title>751 strike · calls 352</title></rect><rect x="212.41" y="176.00" width="6.12" height="5.74" fill="#ff7582" opacity=".76" rx="1.5"><title>751 strike · puts 1,901</title></rect><rect x="222.78" y="174.97" width="6.12" height="1.03" fill="#3bd8b6" opacity=".78" rx="1.5"><title>752 strike · calls 342</title></rect><rect x="222.78" y="176.00" width="6.12" height="15.16" fill="#ff7582" opacity=".76" rx="1.5"><title>752 strike · puts 5,024</title></rect><rect x="233.15" y="175.57" width="6.12" height="0.43" fill="#3bd8b6" opacity=".78" rx="1.5"><title>753 strike · calls 143</title></rect><rect x="233.15" y="176.00" width="6.12" height="22.08" fill="#ff7582" opacity=".76" rx="1.5"><title>753 strike · puts 7,315</title></rect><rect x="243.53" y="175.45" width="6.12" height="0.55" fill="#3bd8b6" opacity=".78" rx="1.5"><title>754 strike · calls 181</title></rect><rect x="243.53" y="176.00" width="6.12" height="10.92" fill="#ff7582" opacity=".76" rx="1.5"><title>754 strike · puts 3,617</title></rect><rect x="253.90" y="171.38" width="6.12" height="4.62" fill="#3bd8b6" opacity=".78" rx="1.5"><title>755 strike · calls 1,530</title></rect><rect x="253.90" y="176.00" width="6.12" height="32.55" fill="#ff7582" opacity=".76" rx="1.5"><title>755 strike · puts 10,786</title></rect><rect x="264.27" y="175.66" width="6.12" height="0.34" fill="#3bd8b6" opacity=".78" rx="1.5"><title>756 strike · calls 114</title></rect><rect x="264.27" y="176.00" width="6.12" height="5.78" fill="#ff7582" opacity=".76" rx="1.5"><title>756 strike · puts 1,916</title></rect><rect x="274.65" y="175.24" width="6.12" height="0.76" fill="#3bd8b6" opacity=".78" rx="1.5"><title>757 strike · calls 253</title></rect><rect x="274.65" y="176.00" width="6.12" height="11.56" fill="#ff7582" opacity=".76" rx="1.5"><title>757 strike · puts 3,829</title></rect><rect x="285.02" y="174.21" width="6.12" height="1.79" fill="#3bd8b6" opacity=".78" rx="1.5"><title>758 strike · calls 593</title></rect><rect x="285.02" y="176.00" width="6.12" height="7.83" fill="#ff7582" opacity=".76" rx="1.5"><title>758 strike · puts 2,594</title></rect><rect x="295.40" y="173.77" width="6.12" height="2.23" fill="#3bd8b6" opacity=".78" rx="1.5"><title>759 strike · calls 738</title></rect><rect x="295.40" y="176.00" width="6.12" height="17.19" fill="#ff7582" opacity=".76" rx="1.5"><title>759 strike · puts 5,696</title></rect><rect x="305.77" y="170.51" width="6.12" height="5.49" fill="#3bd8b6" opacity=".78" rx="1.5"><title>760 strike · calls 1,818</title></rect><rect x="305.77" y="176.00" width="6.12" height="41.57" fill="#ff7582" opacity=".76" rx="1.5"><title>760 strike · puts 13,775</title></rect><rect x="316.14" y="173.95" width="6.12" height="2.05" fill="#3bd8b6" opacity=".78" rx="1.5"><title>761 strike · calls 678</title></rect><rect x="316.14" y="176.00" width="6.12" height="38.17" fill="#ff7582" opacity=".76" rx="1.5"><title>761 strike · puts 12,647</title></rect><rect x="326.52" y="170.39" width="6.12" height="5.61" fill="#3bd8b6" opacity=".78" rx="1.5"><title>762 strike · calls 1,860</title></rect><rect x="326.52" y="176.00" width="6.12" height="5.73" fill="#ff7582" opacity=".76" rx="1.5"><title>762 strike · puts 1,898</title></rect><rect x="336.89" y="172.21" width="6.12" height="3.79" fill="#3bd8b6" opacity=".78" rx="1.5"><title>763 strike · calls 1,255</title></rect><rect x="336.89" y="176.00" width="6.12" height="14.25" fill="#ff7582" opacity=".76" rx="1.5"><title>763 strike · puts 4,723</title></rect><rect x="347.27" y="170.85" width="6.12" height="5.15" fill="#3bd8b6" opacity=".78" rx="1.5"><title>764 strike · calls 1,708</title></rect><rect x="347.27" y="176.00" width="6.12" height="19.10" fill="#ff7582" opacity=".76" rx="1.5"><title>764 strike · puts 6,328</title></rect><rect x="357.64" y="163.81" width="6.12" height="12.19" fill="#3bd8b6" opacity=".78" rx="1.5"><title>765 strike · calls 4,040</title></rect><rect x="357.64" y="176.00" width="6.12" height="32.21" fill="#ff7582" opacity=".76" rx="1.5"><title>765 strike · puts 10,671</title></rect><rect x="368.01" y="169.94" width="6.12" height="6.06" fill="#3bd8b6" opacity=".78" rx="1.5"><title>766 strike · calls 2,007</title></rect><rect x="368.01" y="176.00" width="6.12" height="4.44" fill="#ff7582" opacity=".76" rx="1.5"><title>766 strike · puts 1,470</title></rect><rect x="378.39" y="171.65" width="6.12" height="4.35" fill="#3bd8b6" opacity=".78" rx="1.5"><title>767 strike · calls 1,441</title></rect><rect x="378.39" y="176.00" width="6.12" height="19.18" fill="#ff7582" opacity=".76" rx="1.5"><title>767 strike · puts 6,356</title></rect><rect x="388.76" y="165.46" width="6.12" height="10.54" fill="#3bd8b6" opacity=".78" rx="1.5"><title>768 strike · calls 3,494</title></rect><rect x="388.76" y="176.00" width="6.12" height="8.69" fill="#ff7582" opacity=".76" rx="1.5"><title>768 strike · puts 2,878</title></rect><rect x="399.13" y="168.89" width="6.12" height="7.11" fill="#3bd8b6" opacity=".78" rx="1.5"><title>769 strike · calls 2,357</title></rect><rect x="399.13" y="176.00" width="6.12" height="99.54" fill="#ff7582" opacity=".76" rx="1.5"><title>769 strike · puts 32,982</title></rect><rect x="409.51" y="135.77" width="6.12" height="40.23" fill="#3bd8b6" opacity=".78" rx="1.5"><title>770 strike · calls 13,330</title></rect><rect x="409.51" y="176.00" width="6.12" height="22.66" fill="#ff7582" opacity=".76" rx="1.5"><title>770 strike · puts 7,507</title></rect><rect x="419.88" y="168.34" width="6.12" height="7.66" fill="#3bd8b6" opacity=".78" rx="1.5"><title>771 strike · calls 2,538</title></rect><rect x="419.88" y="176.00" width="6.12" height="13.93" fill="#ff7582" opacity=".76" rx="1.5"><title>771 strike · puts 4,614</title></rect><rect x="430.26" y="165.12" width="6.12" height="10.88" fill="#3bd8b6" opacity=".78" rx="1.5"><title>772 strike · calls 3,605</title></rect><rect x="430.26" y="176.00" width="6.12" height="8.47" fill="#ff7582" opacity=".76" rx="1.5"><title>772 strike · puts 2,805</title></rect><rect x="440.63" y="167.49" width="6.12" height="8.51" fill="#3bd8b6" opacity=".78" rx="1.5"><title>773 strike · calls 2,821</title></rect><rect x="440.63" y="176.00" width="6.12" height="6.52" fill="#ff7582" opacity=".76" rx="1.5"><title>773 strike · puts 2,160</title></rect><rect x="451.00" y="168.29" width="6.12" height="7.71" fill="#3bd8b6" opacity=".78" rx="1.5"><title>774 strike · calls 2,554</title></rect><rect x="451.00" y="176.00" width="6.12" height="4.16" fill="#ff7582" opacity=".76" rx="1.5"><title>774 strike · puts 1,378</title></rect><rect x="461.38" y="154.86" width="6.12" height="21.14" fill="#3bd8b6" opacity=".78" rx="1.5"><title>775 strike · calls 7,003</title></rect><rect x="461.38" y="176.00" width="6.12" height="10.67" fill="#ff7582" opacity=".76" rx="1.5"><title>775 strike · puts 3,536</title></rect><rect x="471.75" y="165.74" width="6.12" height="10.26" fill="#3bd8b6" opacity=".78" rx="1.5"><title>776 strike · calls 3,400</title></rect><rect x="471.75" y="176.00" width="6.12" height="5.09" fill="#ff7582" opacity=".76" rx="1.5"><title>776 strike · puts 1,688</title></rect><rect x="482.13" y="165.41" width="6.12" height="10.59" fill="#3bd8b6" opacity=".78" rx="1.5"><title>777 strike · calls 3,508</title></rect><rect x="482.13" y="176.00" width="6.12" height="7.83" fill="#ff7582" opacity=".76" rx="1.5"><title>777 strike · puts 2,595</title></rect><rect x="492.50" y="155.31" width="6.12" height="20.69" fill="#3bd8b6" opacity=".78" rx="1.5"><title>778 strike · calls 6,855</title></rect><rect x="492.50" y="176.00" width="6.12" height="5.62" fill="#ff7582" opacity=".76" rx="1.5"><title>778 strike · puts 1,862</title></rect><rect x="502.87" y="157.81" width="6.12" height="18.19" fill="#3bd8b6" opacity=".78" rx="1.5"><title>779 strike · calls 6,028</title></rect><rect x="502.87" y="176.00" width="6.12" height="3.87" fill="#ff7582" opacity=".76" rx="1.5"><title>779 strike · puts 1,282</title></rect><rect x="513.25" y="103.24" width="6.12" height="72.76" fill="#3bd8b6" opacity=".78" rx="1.5"><title>780 strike · calls 24,109</title></rect><rect x="513.25" y="176.00" width="6.12" height="6.95" fill="#ff7582" opacity=".76" rx="1.5"><title>780 strike · puts 2,302</title></rect><rect x="523.62" y="165.13" width="6.12" height="10.87" fill="#3bd8b6" opacity=".78" rx="1.5"><title>781 strike · calls 3,601</title></rect><rect x="523.62" y="176.00" width="6.12" height="4.15" fill="#ff7582" opacity=".76" rx="1.5"><title>781 strike · puts 1,374</title></rect><rect x="533.99" y="160.10" width="6.12" height="15.90" fill="#3bd8b6" opacity=".78" rx="1.5"><title>782 strike · calls 5,268</title></rect><rect x="533.99" y="176.00" width="6.12" height="0.49" fill="#ff7582" opacity=".76" rx="1.5"><title>782 strike · puts 161</title></rect><rect x="544.37" y="165.45" width="6.12" height="10.55" fill="#3bd8b6" opacity=".78" rx="1.5"><title>783 strike · calls 3,495</title></rect><rect x="544.37" y="176.00" width="6.12" height="0.41" fill="#ff7582" opacity=".76" rx="1.5"><title>783 strike · puts 135</title></rect><rect x="554.74" y="168.64" width="6.12" height="7.36" fill="#3bd8b6" opacity=".78" rx="1.5"><title>784 strike · calls 2,438</title></rect><rect x="554.74" y="176.00" width="6.12" height="0.36" fill="#ff7582" opacity=".76" rx="1.5"><title>784 strike · puts 118</title></rect><rect x="565.12" y="132.90" width="6.12" height="43.10" fill="#3bd8b6" opacity=".78" rx="1.5"><title>785 strike · calls 14,282</title></rect><rect x="565.12" y="176.00" width="6.12" height="0.40" fill="#ff7582" opacity=".76" rx="1.5"><title>785 strike · puts 133</title></rect><rect x="575.49" y="164.87" width="6.12" height="11.13" fill="#3bd8b6" opacity=".78" rx="1.5"><title>786 strike · calls 3,689</title></rect><rect x="575.49" y="176.00" width="6.12" height="0.15" fill="#ff7582" opacity=".76" rx="1.5"><title>786 strike · puts 49</title></rect><rect x="585.86" y="170.51" width="6.12" height="5.49" fill="#3bd8b6" opacity=".78" rx="1.5"><title>787 strike · calls 1,819</title></rect><rect x="585.86" y="176.00" width="6.12" height="0.00" fill="#ff7582" opacity=".76" rx="1.5"><title>787 strike · puts 0</title></rect><rect x="596.24" y="156.93" width="6.12" height="19.07" fill="#3bd8b6" opacity=".78" rx="1.5"><title>788 strike · calls 6,318</title></rect><rect x="596.24" y="176.00" width="6.12" height="0.03" fill="#ff7582" opacity=".76" rx="1.5"><title>788 strike · puts 10</title></rect><rect x="606.61" y="159.49" width="6.12" height="16.51" fill="#3bd8b6" opacity=".78" rx="1.5"><title>789 strike · calls 5,471</title></rect><rect x="606.61" y="176.00" width="6.12" height="0.00" fill="#ff7582" opacity=".76" rx="1.5"><title>789 strike · puts 0</title></rect><rect x="616.99" y="66.20" width="6.12" height="109.80" fill="#3bd8b6" opacity=".78" rx="1.5"><title>790 strike · calls 36,380</title></rect><rect x="616.99" y="176.00" width="6.12" height="0.01" fill="#ff7582" opacity=".76" rx="1.5"><title>790 strike · puts 3</title></rect><rect x="627.36" y="163.15" width="6.12" height="12.85" fill="#3bd8b6" opacity=".78" rx="1.5"><title>791 strike · calls 4,259</title></rect><rect x="627.36" y="176.00" width="6.12" height="0.00" fill="#ff7582" opacity=".76" rx="1.5"><title>791 strike · puts 0</title></rect><rect x="637.73" y="173.05" width="6.12" height="2.95" fill="#3bd8b6" opacity=".78" rx="1.5"><title>792 strike · calls 978</title></rect><rect x="637.73" y="176.00" width="6.12" height="0.00" fill="#ff7582" opacity=".76" rx="1.5"><title>792 strike · puts 0</title></rect><rect x="648.11" y="167.81" width="6.12" height="8.19" fill="#3bd8b6" opacity=".78" rx="1.5"><title>793 strike · calls 2,713</title></rect><rect x="648.11" y="176.00" width="6.12" height="0.01" fill="#ff7582" opacity=".76" rx="1.5"><title>793 strike · puts 4</title></rect><rect x="658.48" y="170.95" width="6.12" height="5.05" fill="#3bd8b6" opacity=".78" rx="1.5"><title>794 strike · calls 1,672</title></rect><rect x="658.48" y="176.00" width="6.12" height="0.00" fill="#ff7582" opacity=".76" rx="1.5"><title>794 strike · puts 0</title></rect><rect x="668.85" y="162.15" width="6.12" height="13.85" fill="#3bd8b6" opacity=".78" rx="1.5"><title>795 strike · calls 4,590</title></rect><rect x="668.85" y="176.00" width="6.12" height="0.00" fill="#ff7582" opacity=".76" rx="1.5"><title>795 strike · puts 0</title></rect><rect x="679.23" y="171.53" width="6.12" height="4.47" fill="#3bd8b6" opacity=".78" rx="1.5"><title>796 strike · calls 1,482</title></rect><rect x="679.23" y="176.00" width="6.12" height="0.00" fill="#ff7582" opacity=".76" rx="1.5"><title>796 strike · puts 0</title></rect><rect x="689.60" y="170.96" width="6.12" height="5.04" fill="#3bd8b6" opacity=".78" rx="1.5"><title>797 strike · calls 1,671</title></rect><rect x="689.60" y="176.00" width="6.12" height="0.00" fill="#ff7582" opacity=".76" rx="1.5"><title>797 strike · puts 0</title></rect><line x1="58" y1="176.0" x2="702" y2="176.0" stroke="#dbe5f4" opacity=".40" stroke-width="1"/><line x1="58" y1="312" x2="702" y2="312" stroke="rgba(158,181,211,.16)" stroke-width="1"/><line x1="58" y1="40" x2="58" y2="312" stroke="rgba(158,181,211,.16)" stroke-width="1"/><line x1="376.1" y1="40" x2="376.1" y2="312" stroke="#f4f7fb" stroke-width="1" opacity=".60" stroke-dasharray="5 5"/><line x1="412.6" y1="40" x2="412.6" y2="312" stroke="#ffca62" stroke-width="1.25" opacity=".82"/><text x="620.0" y="58.2" fill="#3bd8b6" font-size="8.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >36.4k</text><text x="153.2" y="308.2" fill="#ff7582" font-size="8.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >38.8k</text><text x="412.6" y="19.0" fill="#ffca62" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" letter-spacing=".02em">MAX PAIN  770.00</text><text x="376.1" y="33.0" fill="#f4f7fb" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" letter-spacing=".02em">SPOT  766.48</text><text x="58.0" y="14.0" fill="#64758c" font-size="8.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="start" font-weight="400" >OPEN INTEREST · CONTRACTS</text><text x="380.0" y="353.0" fill="#64758c" font-size="9" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >Option strike</text></svg></div>
+      <div class="chart-note"><span>Downside OI clusters at 745 (38,847 puts) and 725 (30,984). Upside OI clusters at 790 (36,380 calls) and 780 (24,109). The pin sits in the gap.</span><span class="right">One expiry; no smoothing or interpolation.</span></div>
+    </article>
+  </div>
+  <div class="info-grid">
+    
+<article class="card">
+  <div class="kicker">Max-pain sensitivity</div>
+  <h3>One strike or a zone?</h3>
+  <div class="sub">Open interest is stock; Monday’s volume is flow. The blend uses OI + 0.5× volume. The shelf is every strike within 1% of the minimum modeled payout.</div>
+  <div class="method-mini">
+    <div class="method-row"><span class="name">All open interest</span><span class="val">770.00<small>+0.46%</small></span></div>
+    <div class="method-row"><span class="name">Monday volume</span><span class="val">768.00<small>+0.20%</small></span></div>
+    <div class="method-row"><span class="name">OI + 0.5× volume</span><span class="val">769.00<small>+0.33%</small></span></div>
+    <div class="method-row pinrow"><span class="name">1% pain shelf</span><span class="val">769–770</span></div>
+  </div>
+  <p class="gex-note">Method spread: <b style="color:#dce7f6">+0.26% of spot</b>. A high-confidence pin needs the methods to agree. SPY does; QQQ is wider because the OI and volume answers sit 1% apart.</p>
+</article>
+    
+<article class="card">
+  <div class="kicker">Positioning tape</div>
+  <h3>What the contracts are saying</h3>
+  <div class="sub">Open interest shows the stock of positioning. Volume shows where Monday’s fresh activity went.</div>
+  <ul class="flow-list">
+        <li><strong>Put-heavy stock, less defensive flow.</strong> P/C open interest is 1.81×; Monday’s volume ratio is 1.48×.</li>
+        <li><strong>The tail is 745.</strong> That strike carries 38,847 puts, 2.8% below spot; 725 holds another 30,984. These are hedge-like positions, not the pin.</li>
+        <li><strong>The pin is 769/770.</strong> 769 puts hold 32,982 contracts; 770 calls hold 13,330. Combined, they create the two-sided 768–770 shelf.</li>
+        <li><strong>Fresh flow sits at 780.</strong> 34,269 calls traded there versus 24,109 OI — active positioning at the second call wall.</li></ul>
+  <div class="pin-banner"><span class="icon">◈</span><span><b style="color:#e9eff8">Read:</b> the put walls are downside insurance; the call walls are the upside test. Max pain sits between them, and closer to the action than either wall.</span></div>
+</article>
+    
+<article class="card">
+  <div class="kicker">Key levels</div>
+  <h3>The Friday map</h3>
+  <div class="sub">Descending from resistance to support. Max pain is a payout minimum, not a price forecast.</div>
+  <table class="level-table"><tbody><tr class=""><td class="lvl"><span class="dot "></span>790.00</td><td class="lbl">Largest call wall · 36,380 OI <span class="tag wall">WALL</span></td><td class="dst">+3.07%</td></tr><tr class=""><td class="lvl"><span class="dot "></span>781.62</td><td class="lbl">52-week intraday high </td><td class="dst">+1.98%</td></tr><tr class=""><td class="lvl"><span class="dot "></span>780.00</td><td class="lbl">Second call wall · 24,109 OI <span class="tag wall">WALL</span></td><td class="dst">+1.76%</td></tr><tr class=""><td class="lvl"><span class="dot "></span>778.39</td><td class="lbl">1σ upper bound <span class="tag wall">1σ</span></td><td class="dst">+1.55%</td></tr><tr class="gamma-row"><td class="lvl"><span class="dot gamma"></span>773.95</td><td class="lbl">Modeled gamma flip <span class="tag wall">GAMMA</span></td><td class="dst">+0.97%</td></tr><tr class=""><td class="lvl"><span class="dot "></span>770.83</td><td class="lbl">20-day average </td><td class="dst">+0.57%</td></tr><tr class="pin-row"><td class="lvl"><span class="dot pin"></span>770.00</td><td class="lbl">Max pain · OI minimum <span class="tag pin">PIN</span></td><td class="dst">+0.46%</td></tr><tr class=""><td class="lvl"><span class="dot "></span>768.37</td><td class="lbl">50-day average </td><td class="dst">+0.25%</td></tr><tr class=""><td class="lvl"><span class="dot "></span>768.00</td><td class="lbl">Volume max pain <span class="tag pin">VOL</span></td><td class="dst">+0.20%</td></tr><tr class="spot-row"><td class="lvl"><span class="dot spot"></span>766.48</td><td class="lbl">Monday close <span class="tag spot">SPOT</span></td><td class="dst">—</td></tr><tr class=""><td class="lvl"><span class="dot "></span>760.00</td><td class="lbl">Put cluster · 13,775 OI </td><td class="dst">-0.85%</td></tr><tr class=""><td class="lvl"><span class="dot "></span>754.57</td><td class="lbl">1σ lower bound <span class="tag wall">1σ</span></td><td class="dst">-1.55%</td></tr><tr class=""><td class="lvl"><span class="dot "></span>745.00</td><td class="lbl">Largest put wall · 38,847 OI <span class="tag wall">WALL</span></td><td class="dst">-2.80%</td></tr></tbody></table>
+</article>
+  </div>
+  
+<article class="card gamma-wide">
+  <div class="gamma-body">
+    <div>
+      <div class="gamma-chart-head">
+        <div>
+          <div class="kicker">Gamma regime</div>
+          <h3>Where hedging changes sign</h3>
+          <div class="sub">Modeled net dealer gamma across a range of hypothetical spots. The zero line is the estimated gamma flip.</div>
+        </div>
+        <span class="card-link">calls + / puts −</span>
+      </div>
+      <div class="chart"><svg viewBox="0 0 720 336" role="img" aria-label="SPY modeled dealer gamma by hypothetical spot"><title>SPY modeled net gamma exposure across spot</title><defs><linearGradient id="gspy" gradientUnits="userSpaceOnUse" x1="0" y1="40" x2="0" y2="290"><stop offset="0%" stop-color="#3bd8b6" stop-opacity=".22"/><stop offset="49.0%" stop-color="#3bd8b6" stop-opacity="0"/><stop offset="51.0%" stop-color="#ff7582" stop-opacity="0"/><stop offset="100%" stop-color="#ff7582" stop-opacity=".21"/></linearGradient></defs><line x1="58" y1="235.7" x2="702" y2="235.7" stroke="rgba(158,181,211,.085)" stroke-width="1"/><text x="48.0" y="239.2" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="end" font-weight="400" >-$2.0B</text><line x1="58" y1="165.0" x2="702" y2="165.0" stroke="rgba(158,181,211,.085)" stroke-width="1"/><text x="48.0" y="168.5" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="end" font-weight="400" >$0.0B</text><line x1="58" y1="94.3" x2="702" y2="94.3" stroke="rgba(158,181,211,.085)" stroke-width="1"/><text x="48.0" y="97.8" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="end" font-weight="400" >+$2.0B</text><line x1="101.1" y1="40" x2="101.1" y2="290" stroke="rgba(158,181,211,.085)" stroke-width="1" opacity=".55"/><text x="101.1" y="313.0" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >720</text><line x1="161.1" y1="40" x2="161.1" y2="290" stroke="rgba(158,181,211,.085)" stroke-width="1" opacity=".55"/><text x="161.1" y="313.0" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >730</text><line x1="221.1" y1="40" x2="221.1" y2="290" stroke="rgba(158,181,211,.085)" stroke-width="1" opacity=".55"/><text x="221.1" y="313.0" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >740</text><line x1="281.1" y1="40" x2="281.1" y2="290" stroke="rgba(158,181,211,.085)" stroke-width="1" opacity=".55"/><text x="281.1" y="313.0" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >750</text><line x1="341.1" y1="40" x2="341.1" y2="290" stroke="rgba(158,181,211,.085)" stroke-width="1" opacity=".55"/><text x="341.1" y="313.0" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >760</text><line x1="401.1" y1="40" x2="401.1" y2="290" stroke="rgba(158,181,211,.085)" stroke-width="1" opacity=".55"/><text x="401.1" y="313.0" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >770</text><line x1="461.1" y1="40" x2="461.1" y2="290" stroke="rgba(158,181,211,.085)" stroke-width="1" opacity=".55"/><text x="461.1" y="313.0" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >780</text><line x1="521.2" y1="40" x2="521.2" y2="290" stroke="rgba(158,181,211,.085)" stroke-width="1" opacity=".55"/><text x="521.2" y="313.0" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >790</text><line x1="581.2" y1="40" x2="581.2" y2="290" stroke="rgba(158,181,211,.085)" stroke-width="1" opacity=".55"/><text x="581.2" y="313.0" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >800</text><line x1="641.2" y1="40" x2="641.2" y2="290" stroke="rgba(158,181,211,.085)" stroke-width="1" opacity=".55"/><text x="641.2" y="313.0" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >810</text><line x1="701.2" y1="40" x2="701.2" y2="290" stroke="rgba(158,181,211,.085)" stroke-width="1" opacity=".55"/><text x="701.2" y="313.0" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >820</text><path d="M 58.00 165.00 L 58.00 208.56 L 81.00 215.51 L 104.00 223.24 L 127.00 231.66 L 150.00 240.52 L 173.00 249.46 L 196.00 258.00 L 219.00 265.62 L 242.00 271.85 L 265.00 276.31 L 288.00 278.64 L 311.00 278.04 L 334.00 272.84 L 357.00 260.34 L 380.00 237.85 L 403.00 204.55 L 426.00 162.81 L 449.00 118.73 L 472.00 81.28 L 495.00 58.58 L 518.00 53.11 L 541.00 61.26 L 564.00 76.65 L 587.00 93.51 L 610.00 108.28 L 633.00 119.64 L 656.00 127.79 L 679.00 133.52 L 702.00 137.71 L 702.00 165.00 Z" fill="url(#gspy)"/><path d="M 58.00 208.56 L 81.00 215.51 L 104.00 223.24 L 127.00 231.66 L 150.00 240.52 L 173.00 249.46 L 196.00 258.00 L 219.00 265.62 L 242.00 271.85 L 265.00 276.31 L 288.00 278.64 L 311.00 278.04 L 334.00 272.84 L 357.00 260.34 L 380.00 237.85 L 403.00 204.55 L 426.00 162.81 L 449.00 118.73 L 472.00 81.28 L 495.00 58.58 L 518.00 53.11 L 541.00 61.26 L 564.00 76.65 L 587.00 93.51 L 610.00 108.28 L 633.00 119.64 L 656.00 127.79 L 679.00 133.52 L 702.00 137.71" fill="none" stroke="#c9d7ea" stroke-width="2.1" stroke-linejoin="round"/><line x1="58" y1="165.0" x2="702" y2="165.0" stroke="#eef3fa" opacity=".45" stroke-width="1"/><line x1="58" y1="290" x2="702" y2="290" stroke="rgba(158,181,211,.16)" stroke-width="1"/><line x1="58" y1="40" x2="58" y2="290" stroke="rgba(158,181,211,.16)" stroke-width="1"/><line x1="380.0" y1="40" x2="380.0" y2="290" stroke="#f4f7fb" stroke-width="1" opacity=".60" stroke-dasharray="5 5"/><line x1="424.9" y1="40" x2="424.9" y2="290" stroke="#3bd8b6" stroke-width="1.15" opacity=".75" stroke-dasharray="2 4"/><text x="424.9" y="18.0" fill="#3bd8b6" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" letter-spacing=".02em">FLIP  773.95</text><text x="380.0" y="32.0" fill="#f4f7fb" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" letter-spacing=".02em">SPOT  766.48</text><text x="58.0" y="14.0" fill="#64758c" font-size="8.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="start" font-weight="400" >NET GEX · $M PER 1% MOVE</text><text x="66.0" y="180.0" fill="#ff7582" font-size="8" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="start" font-weight="400" opacity=".65" letter-spacing=".07em">SHORT GAMMA</text><text x="694.0" y="157.0" fill="#3bd8b6" font-size="8" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="end" font-weight="400" opacity=".65" letter-spacing=".07em">LONG GAMMA</text><text x="380.0" y="329.0" fill="#64758c" font-size="9" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >Hypothetical spot at expiration</text></svg></div>
+      <div class="chart-note"><span>Shaded fill: positive above zero, negative below.</span><span class="right">Calls positive, puts negative — a convention, not observed positioning.</span></div>
+    </div>
+    <aside class="gamma-side">
+      <div class="gex-number">-$2.06B<small>per 1% move</small></div>
+      <div class="sub">Modeled net dealer gamma at spot. Negative gamma can amplify moves; positive gamma can dampen them.</div>
+      <div class="gex-stats">
+        <div class="gex-stat"><div class="k">Call gamma</div><div class="v up">+$1.82B</div></div>
+        <div class="gex-stat"><div class="k">Put gamma</div><div class="v down">-$3.88B</div></div>
+        <div class="gex-stat"><div class="k">Zero gamma</div><div class="v">773.95</div></div>
+        <div class="gex-stat"><div class="k">Spot vs flip</div><div class="v">-0.97%</div></div>
+      </div>
+      <div class="gamma-nodes">
+        <div class="gamma-node-col"><div class="k">Positive nodes</div><div class="node-row"><span>780</span><span class="pos">+$214M</span></div><div class="node-row"><span>778</span><span class="pos">+$87M</span></div><div class="node-row"><span>770</span><span class="pos">+$80M</span></div></div>
+        <div class="gamma-node-col"><div class="k">Negative nodes</div><div class="node-row"><span>769</span><span class="neg">-$721M</span></div><div class="node-row"><span>745</span><span class="neg">-$218M</span></div><div class="node-row"><span>761</span><span class="neg">-$207M</span></div></div>
+      </div>
+      <p class="gex-note">The 769 put cluster is the single largest negative-gamma node; the flip is only ~1% above spot. OI does not reveal whether customers or dealers are long each strike.</p>
+    </aside>
+  </div>
+</article>
+  <div class="card-head" style="margin:34px 0 0">
+    <div>
+      <div class="kicker">Scenario map</div>
+      <h3 style="font-size:22px;letter-spacing:-.035em">Three paths into Friday</h3>
+    </div>
+    <span class="card-link">conditional on spot</span>
+  </div>
+  <div class="scenarios"><article class="scenario base"><div class="case">Base · 768–770</div><div class="trigger">Hold the shelf</div><p class="desc">The three max-pain methods and both short moving averages converge here. A quiet Friday keeps the pin intact.</p></article><article class="scenario bull"><div class="case">Upside · >774.0</div><div class="trigger">Gamma flip</div><p class="desc">Reclaiming the flip opens 778.39 (1σ high), then the 780 call cluster. A squeeze can extend to the 790 wall.</p></article><article class="scenario bear"><div class="case">Downside · <760</div><div class="trigger">Put shelf fails</div><p class="desc">Losing 760 opens 754.57 (1σ low); the 745 put wall is the larger tail if the market turns risk-off.</p></article></div>
+  <div class="info-grid two">
+    
+<article class="card">
+  <div class="kicker">Scenario triggers</div>
+  <h3>What would break the pin</h3>
+  <div class="sub">These are confirmation levels for the positioning story, not trade recommendations.</div>
+  <ul class="flow-list">
+        <li><strong>Above 774.0.</strong> A close through the modeled flip turns gamma positive; 778.39, then 780, become the next tests.</li>
+        <li><strong>Below 760.</strong> The 760 put shelf breaks and 754.57 (1σ low) opens; 745 is the larger tail.</li>
+        <li><strong>Watch the 780 call flow.</strong> Monday’s 34,269 contracts traded versus 24,109 OI. That is fresh positioning at the biggest overhead cluster.</li>
+        <li><strong>The pin can move.</strong> 769 puts (32,982) and 770 calls (13,330) define the shelf; an unwind in either changes the max-pain calculation.</li></ul>
+</article>
+    
+    <article class="card">
+      <div class="kicker">Confirmation checklist</div>
+      <h3>What keeps the pin alive</h3>
+      <div class="sub">A pin is a process, not a print. These are the observable conditions into Thursday’s close.</div>
+      <ul class="flow-list">
+        <li><strong>Hold the shelf.</strong> SPY needs to stay near 768–770; a close outside 766–772 weakens the setup.</li>
+        <li><strong>Keep the OI anchors.</strong> 769 puts (32,982) and 770 calls (13,330) must stay in place; large unwinds move the minimum.</li>
+        <li><strong>Respect the flip.</strong> A close above 773.95 turns modeled gamma positive; below 760 opens 754.57 and then 745.</li>
+        <li><strong>Watch the flow ratio.</strong> P/C OI is 1.81×; Monday’s volume ratio of 1.48× is less defensive. A falling ratio would ease the put bid.</li></ul>
+    </article>
+  </div>
+  
+<article class="card table-section">
+  <div class="card-head">
+    <div>
+      <div class="kicker">Open interest map</div>
+      <h3>Largest strikes by combined OI</h3>
+      <div class="sub">Top 12 strikes. Open interest is contracts; volume is Monday’s session. Some strikes carry multi-leg and hedge flow that the model cannot identify.</div>
+    </div>
+    <span class="card-link">expiry Oct 23</span>
+  </div>
+  <div class="table-wrap">
+    <table class="data-table">
+      <thead><tr><th>Strike</th><th>Call OI</th><th>Put OI</th><th>Total OI</th><th>Volume</th><th>Signals</th></tr></thead>
+      <tbody><tr>
+          <td class="num">745.00</td>
+          <td class="num">323</td>
+          <td class="num">38,847</td>
+          <td class="num">39,170</td>
+          <td class="num">10,268</td>
+          <td><span class="badge put">put wall</span></td>
+        </tr><tr>
+          <td class="num">790.00</td>
+          <td class="num">36,380</td>
+          <td class="num">3</td>
+          <td class="num">36,383</td>
+          <td class="num">3,763</td>
+          <td><span class="badge call">call wall</span></td>
+        </tr><tr>
+          <td class="num">769.00</td>
+          <td class="num">2,357</td>
+          <td class="num">32,982</td>
+          <td class="num">35,339</td>
+          <td class="num">22,814</td>
+          <td><span class="badge pin">pin zone</span> <span class="badge put">put cluster</span></td>
+        </tr><tr>
+          <td class="num">725.00</td>
+          <td class="num">133</td>
+          <td class="num">30,984</td>
+          <td class="num">31,117</td>
+          <td class="num">874</td>
+          <td><span class="badge put">put cluster</span></td>
+        </tr><tr>
+          <td class="num">780.00</td>
+          <td class="num">24,109</td>
+          <td class="num">2,302</td>
+          <td class="num">26,411</td>
+          <td class="num">34,905</td>
+          <td><span class="badge call">call cluster</span></td>
+        </tr><tr class="highlight">
+          <td class="num">770.00</td>
+          <td class="num">13,330</td>
+          <td class="num">7,507</td>
+          <td class="num">20,837</td>
+          <td class="num">21,467</td>
+          <td><span class="badge pin">max pain</span></td>
+        </tr><tr>
+          <td class="num">760.00</td>
+          <td class="num">1,818</td>
+          <td class="num">13,775</td>
+          <td class="num">15,593</td>
+          <td class="num">21,339</td>
+          <td><span class="badge ">—</span></td>
+        </tr><tr>
+          <td class="num">765.00</td>
+          <td class="num">4,040</td>
+          <td class="num">10,671</td>
+          <td class="num">14,711</td>
+          <td class="num">21,003</td>
+          <td><span class="badge ">—</span></td>
+        </tr><tr>
+          <td class="num">785.00</td>
+          <td class="num">14,282</td>
+          <td class="num">133</td>
+          <td class="num">14,415</td>
+          <td class="num">8,429</td>
+          <td><span class="badge ">—</span></td>
+        </tr><tr>
+          <td class="num">740.00</td>
+          <td class="num">374</td>
+          <td class="num">13,948</td>
+          <td class="num">14,322</td>
+          <td class="num">20,888</td>
+          <td><span class="badge ">—</span></td>
+        </tr><tr>
+          <td class="num">750.00</td>
+          <td class="num">1,330</td>
+          <td class="num">12,348</td>
+          <td class="num">13,678</td>
+          <td class="num">25,948</td>
+          <td><span class="badge ">—</span></td>
+        </tr><tr>
+          <td class="num">761.00</td>
+          <td class="num">678</td>
+          <td class="num">12,647</td>
+          <td class="num">13,325</td>
+          <td class="num">2,638</td>
+          <td><span class="badge ">—</span></td>
+        </tr></tbody>
+    </table>
+  </div>
+</article>
+  <div class="pin-banner" style="margin-top:16px"><span class="icon">◈</span><span>The trade-off: 770 is only 0.46% above spot, but negative gamma means a break below 760 can travel. Pin first, tails second.</span></div>
+  <div class="section-foot">
+    <span>All strikes with non-zero OI in the Oct 23 expiry are included in the calculation.</span>
+    <span>Payout = intrinsic value at settlement; no discounting.</span>
+  </div>
+</section>
+
+<section class="ticker-section qqq wrap" id="qqq">
+  
+  <div class="ticker-head">
+    <div>
+      <div class="ticker-title-line">
+        <span class="ticker-large">QQQ</span>
+        <span class="ticker-name">Invesco QQQ Trust · 718.36 · <span class="up">+1.21%</span></span>
+      </div>
+      <h2>A pin with a <em>six-point band.</em></h2>
+      <p class="lead">Open-interest max pain is 727; Monday’s volume max pain is 720. With META and TSLA reporting Wednesday and 24.1% ATM IV, the honest answer is a 720–729 band bracketed by a 710/711 put wall and a 735 call wall.</p>
+    </div>
+    <aside class="ticker-side"><div class="tside-row"><span class="k">Spot / OI max pain</span><span class="v">718.36 → 727.00 <span class="up">(+1.20%)</span></span></div><div class="tside-row"><span class="k">1σ Friday range</span><span class="v">700.21–736.51</span></div><div class="tside-row"><span class="k">ATM IV / straddle</span><span class="v">24.1% / $14.41</span></div><div class="tside-row"><span class="k">P/C open interest</span><span class="v">1.39× <span class="dim">(vol 1.15×)</span></span></div><div class="tside-row"><span class="k">Earnings in window</span><span class="v">META + TSLA ≈ 6.1%</span></div><div class="tside-row"><span class="k">Net GEX / 1%</span><span class="v"><span class="down">-$1.16B</span></span></div></aside>
+  </div>
+  
+<div class="metrics-strip">
+  <div class="metric"><div class="k">Minimum payout</div><div class="v amber">$88.0M<small>@ 727</small></div></div>
+  <div class="metric"><div class="k">Payout at spot</div><div class="v">$108.2M<small>+$20.2M</small></div></div>
+  <div class="metric"><div class="k">Pain slope at spot</div><div class="v">-$5.2M<small>per $1</small></div></div>
+  <div class="metric"><div class="k">1% pain shelf</div><div class="v">725–729<small>strikes</small></div></div>
+  <div class="metric"><div class="k">Net GEX / 1%</div><div class="v">-$1.16B<small>modeled</small></div></div>
+  <div class="metric"><div class="k">Gamma flip</div><div class="v">731.12<small>+1.78%</small></div></div>
+</div>
+  <div class="chart-grid">
+    
+    <article class="card chart-card qqq">
+      <div class="card-head">
+        <div>
+          <div class="kicker">Expiration payoff</div>
+          <h3>Max-pain curve</h3>
+          <div class="sub">Total modeled payout to option holders at each Friday settlement price. The minimum is the open-interest max pain.</div>
+        </div>
+        <span class="card-link">expiry Oct 23</span>
+      </div>
+      <div class="chart-legend">
+        <span class="legend-item"><span class="legend-line total"></span>Total payout</span>
+        <span class="legend-item"><span class="legend-line call"></span>Call side</span>
+        <span class="legend-item"><span class="legend-line put"></span>Put side</span>
+        <span class="legend-item"><span class="legend-line spot"></span>Spot</span>
+        <span class="legend-item"><span class="legend-line pin"></span>Max pain</span>
+        <span class="legend-item"><span class="legend-line band"></span>1σ range</span>
+      </div>
+      <div class="chart"><svg viewBox="0 0 720 360" role="img" aria-label="QQQ modeled expiration payout by settlement price"><title>QQQ total, call-side and put-side expiration payout</title><rect x="187.3" y="40" width="443.4" height="272" fill="#86a5ff" opacity=".045"/><line x1="187.3" y1="40" x2="187.3" y2="312" stroke="#86a5ff" opacity=".20" stroke-dasharray="2 5"/><line x1="630.7" y1="40" x2="630.7" y2="312" stroke="#86a5ff" opacity=".20" stroke-dasharray="2 5"/><text x="409.0" y="55" fill="#64758c" font-size="8.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" letter-spacing=".08em">1σ IMPLIED RANGE</text><line x1="58" y1="312.0" x2="702" y2="312.0" stroke="rgba(158,181,211,.085)" stroke-width="1"/><text x="48.0" y="315.5" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="end" font-weight="400" >0</text><line x1="58" y1="221.3" x2="702" y2="221.3" stroke="rgba(158,181,211,.085)" stroke-width="1"/><text x="48.0" y="224.8" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="end" font-weight="400" >200</text><line x1="58" y1="130.7" x2="702" y2="130.7" stroke="rgba(158,181,211,.085)" stroke-width="1"/><text x="48.0" y="134.2" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="end" font-weight="400" >400</text><line x1="58" y1="40.0" x2="702" y2="40.0" stroke="rgba(158,181,211,.085)" stroke-width="1"/><text x="48.0" y="43.5" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="end" font-weight="400" >600</text><line x1="62.6" y1="40" x2="62.6" y2="312" stroke="rgba(158,181,211,.085)" stroke-width="1" opacity=".55"/><text x="62.6" y="336.0" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >690</text><line x1="184.7" y1="40" x2="184.7" y2="312" stroke="rgba(158,181,211,.085)" stroke-width="1" opacity=".55"/><text x="184.7" y="336.0" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >700</text><line x1="306.9" y1="40" x2="306.9" y2="312" stroke="rgba(158,181,211,.085)" stroke-width="1" opacity=".55"/><text x="306.9" y="336.0" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >710</text><line x1="429.0" y1="40" x2="429.0" y2="312" stroke="rgba(158,181,211,.085)" stroke-width="1" opacity=".55"/><text x="429.0" y="336.0" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >720</text><line x1="551.2" y1="40" x2="551.2" y2="312" stroke="rgba(158,181,211,.085)" stroke-width="1" opacity=".55"/><text x="551.2" y="336.0" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >730</text><line x1="673.3" y1="40" x2="673.3" y2="312" stroke="rgba(158,181,211,.085)" stroke-width="1" opacity=".55"/><text x="673.3" y="336.0" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >740</text><line x1="58" y1="312" x2="702" y2="312" stroke="rgba(158,181,211,.16)" stroke-width="1"/><line x1="58" y1="40" x2="58" y2="312" stroke="rgba(158,181,211,.16)" stroke-width="1"/><line x1="409.0" y1="40" x2="409.0" y2="312" stroke="#f4f7fb" stroke-width="1" opacity=".60" stroke-dasharray="5 5"/><line x1="514.5" y1="40" x2="514.5" y2="312" stroke="#ffca62" stroke-width="1.25" opacity=".82"/><path d="M 62.57 312.00 L 62.57 55.54 L 74.79 65.85 L 87.00 76.12 L 99.22 86.32 L 111.43 96.45 L 123.65 106.49 L 135.86 116.13 L 148.07 125.67 L 160.29 135.12 L 172.50 144.49 L 184.72 153.78 L 196.93 162.35 L 209.15 170.82 L 221.36 179.16 L 233.58 187.38 L 245.79 195.53 L 258.00 203.47 L 270.22 211.32 L 282.43 219.04 L 294.65 226.69 L 306.86 234.21 L 319.08 239.98 L 331.29 243.83 L 343.51 247.45 L 355.72 250.94 L 367.93 254.23 L 380.15 257.00 L 392.36 259.62 L 404.58 262.11 L 416.79 264.47 L 429.01 266.70 L 441.22 268.04 L 453.44 269.22 L 465.65 270.22 L 477.86 271.03 L 490.08 271.72 L 502.29 271.99 L 514.51 272.11 L 526.72 272.09 L 538.94 271.91 L 551.15 271.59 L 563.37 270.28 L 575.58 268.83 L 587.79 267.16 L 600.01 265.38 L 612.22 263.45 L 624.44 260.37 L 636.65 257.21 L 648.87 253.86 L 661.08 250.35 L 673.30 246.69 L 685.51 242.04 L 697.72 237.27 L 697.72 312.00 Z" fill="#eef3fa" opacity=".028"/><path d="M 62.57 309.54 L 74.79 309.49 L 87.00 309.43 L 99.22 309.37 L 111.43 309.31 L 123.65 309.25 L 135.86 309.13 L 148.07 309.01 L 160.29 308.89 L 172.50 308.77 L 184.72 308.64 L 196.93 308.48 L 209.15 308.32 L 221.36 308.14 L 233.58 307.94 L 245.79 307.74 L 258.00 307.51 L 270.22 307.28 L 282.43 307.03 L 294.65 306.76 L 306.86 306.46 L 319.08 306.06 L 331.29 305.56 L 343.51 305.01 L 355.72 304.42 L 367.93 303.75 L 380.15 302.92 L 392.36 302.05 L 404.58 301.10 L 416.79 300.09 L 429.01 299.05 L 441.22 297.76 L 453.44 296.43 L 465.65 295.02 L 477.86 293.52 L 490.08 291.95 L 502.29 290.14 L 514.51 288.25 L 526.72 286.26 L 538.94 284.19 L 551.15 282.05 L 563.37 279.55 L 575.58 276.93 L 587.79 274.22 L 600.01 271.44 L 612.22 268.59 L 624.44 264.73 L 636.65 260.81 L 648.87 256.75 L 661.08 252.56 L 673.30 248.27 L 685.51 243.24 L 697.72 238.13" fill="none" stroke="#86a5ff" stroke-width="1.55" opacity=".82" stroke-linejoin="round"/><path d="M 62.57 58.00 L 74.79 68.36 L 87.00 78.69 L 99.22 88.94 L 111.43 99.14 L 123.65 109.24 L 135.86 118.99 L 148.07 128.66 L 160.29 138.23 L 172.50 147.72 L 184.72 157.14 L 196.93 165.86 L 209.15 174.50 L 221.36 183.02 L 233.58 191.44 L 245.79 199.79 L 258.00 207.95 L 270.22 216.04 L 282.43 224.01 L 294.65 231.92 L 306.86 239.74 L 319.08 245.92 L 331.29 250.27 L 343.51 254.44 L 355.72 258.53 L 367.93 262.48 L 380.15 266.07 L 392.36 269.58 L 404.58 273.01 L 416.79 276.37 L 429.01 279.66 L 441.22 282.28 L 453.44 284.80 L 465.65 287.19 L 477.86 289.51 L 490.08 291.77 L 502.29 293.85 L 514.51 295.86 L 526.72 297.83 L 538.94 299.72 L 551.15 301.54 L 563.37 302.73 L 575.58 303.91 L 587.79 304.94 L 600.01 305.94 L 612.22 306.86 L 624.44 307.65 L 636.65 308.41 L 648.87 309.12 L 661.08 309.78 L 673.30 310.42 L 685.51 310.79 L 697.72 311.14" fill="none" stroke="#ff7582" stroke-width="1.55" opacity=".82" stroke-linejoin="round"/><path d="M 62.57 55.54 L 74.79 65.85 L 87.00 76.12 L 99.22 86.32 L 111.43 96.45 L 123.65 106.49 L 135.86 116.13 L 148.07 125.67 L 160.29 135.12 L 172.50 144.49 L 184.72 153.78 L 196.93 162.35 L 209.15 170.82 L 221.36 179.16 L 233.58 187.38 L 245.79 195.53 L 258.00 203.47 L 270.22 211.32 L 282.43 219.04 L 294.65 226.69 L 306.86 234.21 L 319.08 239.98 L 331.29 243.83 L 343.51 247.45 L 355.72 250.94 L 367.93 254.23 L 380.15 257.00 L 392.36 259.62 L 404.58 262.11 L 416.79 264.47 L 429.01 266.70 L 441.22 268.04 L 453.44 269.22 L 465.65 270.22 L 477.86 271.03 L 490.08 271.72 L 502.29 271.99 L 514.51 272.11 L 526.72 272.09 L 538.94 271.91 L 551.15 271.59 L 563.37 270.28 L 575.58 268.83 L 587.79 267.16 L 600.01 265.38 L 612.22 263.45 L 624.44 260.37 L 636.65 257.21 L 648.87 253.86 L 661.08 250.35 L 673.30 246.69 L 685.51 242.04 L 697.72 237.27" fill="none" stroke="#eef3fa" stroke-width="2.4" stroke-linejoin="round"/><circle cx="514.5" cy="272.1" r="8" fill="#ffca62" opacity=".12"/><circle cx="514.5" cy="272.1" r="3.8" fill="#ffca62" stroke="#0c1420" stroke-width="1.5"/><circle cx="409.0" cy="263.0" r="3.1" fill="#f4f7fb" stroke="#0c1420" stroke-width="1.4"/><text x="514.5" y="19.0" fill="#ffca62" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" letter-spacing=".02em">MAX PAIN  727.00</text><text x="409.0" y="33.0" fill="#f4f7fb" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" letter-spacing=".02em">SPOT  718.36</text><text x="58.0" y="14.0" fill="#64758c" font-size="8.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="start" font-weight="400" >MODELED PAYOUT · $M</text><text x="380.0" y="353.0" fill="#64758c" font-size="9" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >Friday settlement price</text><text x="502.5" y="260.1" fill="#ffca62" font-size="9" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="end" font-weight="400" >min $88.0M</text></svg></div>
+      <div class="chart-note"><span>The 720–729 band costs $88–100M; 710 costs $171.6M and 740 costs $144.1M. The distribution is asymmetric around the pin.</span><span class="right">Charts zoom around spot; the max-pain calculation uses the full chain.</span></div>
+    </article>
+    
+    <article class="card chart-card qqq">
+      <div class="card-head">
+        <div>
+          <div class="kicker">Open interest profile</div>
+          <h3>Where the contracts sit</h3>
+          <div class="sub">Calls above the axis, puts below. The dashed line is spot; the amber line is max pain.</div>
+        </div>
+        <span class="card-link">all strikes</span>
+      </div>
+      <div class="chart-legend">
+        <span class="legend-item"><span class="legend-line call"></span>Call OI</span>
+        <span class="legend-item"><span class="legend-line put"></span>Put OI</span>
+        <span class="legend-item"><span class="legend-line spot"></span>Spot</span>
+        <span class="legend-item"><span class="legend-line pin"></span>Max pain</span>
+      </div>
+      <div class="chart"><svg viewBox="0 0 720 360" role="img" aria-label="QQQ open interest by strike"><title>QQQ call and put open interest by strike</title><line x1="58" y1="292.1" x2="702" y2="292.1" stroke="rgba(158,181,211,.085)" stroke-width="1"/><text x="48.0" y="295.6" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="end" font-weight="400" >-40k</text><line x1="58" y1="234.0" x2="702" y2="234.0" stroke="rgba(158,181,211,.085)" stroke-width="1"/><text x="48.0" y="237.5" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="end" font-weight="400" >-20k</text><line x1="58" y1="176.0" x2="702" y2="176.0" stroke="rgba(158,181,211,.085)" stroke-width="1"/><text x="48.0" y="179.5" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="end" font-weight="400" >0k</text><line x1="58" y1="118.0" x2="702" y2="118.0" stroke="rgba(158,181,211,.085)" stroke-width="1"/><text x="48.0" y="121.5" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="end" font-weight="400" >20k</text><line x1="58" y1="59.9" x2="702" y2="59.9" stroke="rgba(158,181,211,.085)" stroke-width="1"/><text x="48.0" y="63.4" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="end" font-weight="400" >40k</text><line x1="62.6" y1="40" x2="62.6" y2="312" stroke="rgba(158,181,211,.085)" stroke-width="1" opacity=".55"/><text x="62.6" y="336.0" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >690</text><line x1="184.7" y1="40" x2="184.7" y2="312" stroke="rgba(158,181,211,.085)" stroke-width="1" opacity=".55"/><text x="184.7" y="336.0" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >700</text><line x1="306.9" y1="40" x2="306.9" y2="312" stroke="rgba(158,181,211,.085)" stroke-width="1" opacity=".55"/><text x="306.9" y="336.0" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >710</text><line x1="429.0" y1="40" x2="429.0" y2="312" stroke="rgba(158,181,211,.085)" stroke-width="1" opacity=".55"/><text x="429.0" y="336.0" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >720</text><line x1="551.2" y1="40" x2="551.2" y2="312" stroke="rgba(158,181,211,.085)" stroke-width="1" opacity=".55"/><text x="551.2" y="336.0" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >730</text><line x1="673.3" y1="40" x2="673.3" y2="312" stroke="rgba(158,181,211,.085)" stroke-width="1" opacity=".55"/><text x="673.3" y="336.0" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >740</text><rect x="58.98" y="175.07" width="7.18" height="0.93" fill="#86a5ff" opacity=".78" rx="1.5"><title>690 strike · calls 319</title></rect><rect x="58.98" y="176.00" width="7.18" height="32.50" fill="#ff7582" opacity=".76" rx="1.5"><title>690 strike · puts 11,200</title></rect><rect x="71.20" y="175.94" width="7.18" height="0.06" fill="#86a5ff" opacity=".78" rx="1.5"><title>691 strike · calls 22</title></rect><rect x="71.20" y="176.00" width="7.18" height="2.42" fill="#ff7582" opacity=".76" rx="1.5"><title>691 strike · puts 834</title></rect><rect x="83.41" y="175.87" width="7.18" height="0.13" fill="#86a5ff" opacity=".78" rx="1.5"><title>692 strike · calls 46</title></rect><rect x="83.41" y="176.00" width="7.18" height="4.52" fill="#ff7582" opacity=".76" rx="1.5"><title>692 strike · puts 1,557</title></rect><rect x="95.63" y="175.91" width="7.18" height="0.09" fill="#86a5ff" opacity=".78" rx="1.5"><title>693 strike · calls 32</title></rect><rect x="95.63" y="176.00" width="7.18" height="3.88" fill="#ff7582" opacity=".76" rx="1.5"><title>693 strike · puts 1,337</title></rect><rect x="107.84" y="175.78" width="7.18" height="0.22" fill="#86a5ff" opacity=".78" rx="1.5"><title>694 strike · calls 76</title></rect><rect x="107.84" y="176.00" width="7.18" height="6.03" fill="#ff7582" opacity=".76" rx="1.5"><title>694 strike · puts 2,078</title></rect><rect x="120.05" y="172.61" width="7.18" height="3.39" fill="#86a5ff" opacity=".78" rx="1.5"><title>695 strike · calls 1,167</title></rect><rect x="120.05" y="176.00" width="7.18" height="22.23" fill="#ff7582" opacity=".76" rx="1.5"><title>695 strike · puts 7,659</title></rect><rect x="132.27" y="175.92" width="7.18" height="0.08" fill="#86a5ff" opacity=".78" rx="1.5"><title>696 strike · calls 29</title></rect><rect x="132.27" y="176.00" width="7.18" height="5.69" fill="#ff7582" opacity=".76" rx="1.5"><title>696 strike · puts 1,962</title></rect><rect x="144.48" y="175.82" width="7.18" height="0.18" fill="#86a5ff" opacity=".78" rx="1.5"><title>697 strike · calls 61</title></rect><rect x="144.48" y="176.00" width="7.18" height="6.22" fill="#ff7582" opacity=".76" rx="1.5"><title>697 strike · puts 2,145</title></rect><rect x="156.70" y="175.86" width="7.18" height="0.14" fill="#86a5ff" opacity=".78" rx="1.5"><title>698 strike · calls 48</title></rect><rect x="156.70" y="176.00" width="7.18" height="4.74" fill="#ff7582" opacity=".76" rx="1.5"><title>698 strike · puts 1,635</title></rect><rect x="168.91" y="175.70" width="7.18" height="0.30" fill="#86a5ff" opacity=".78" rx="1.5"><title>699 strike · calls 103</title></rect><rect x="168.91" y="176.00" width="7.18" height="5.08" fill="#ff7582" opacity=".76" rx="1.5"><title>699 strike · puts 1,749</title></rect><rect x="181.13" y="174.02" width="7.18" height="1.98" fill="#86a5ff" opacity=".78" rx="1.5"><title>700 strike · calls 682</title></rect><rect x="181.13" y="176.00" width="7.18" height="43.99" fill="#ff7582" opacity=".76" rx="1.5"><title>700 strike · puts 15,159</title></rect><rect x="193.34" y="175.52" width="7.18" height="0.48" fill="#86a5ff" opacity=".78" rx="1.5"><title>701 strike · calls 166</title></rect><rect x="193.34" y="176.00" width="7.18" height="5.87" fill="#ff7582" opacity=".76" rx="1.5"><title>701 strike · puts 2,022</title></rect><rect x="205.56" y="175.05" width="7.18" height="0.95" fill="#86a5ff" opacity=".78" rx="1.5"><title>702 strike · calls 326</title></rect><rect x="205.56" y="176.00" width="7.18" height="7.33" fill="#ff7582" opacity=".76" rx="1.5"><title>702 strike · puts 2,525</title></rect><rect x="217.77" y="175.00" width="7.18" height="1.00" fill="#86a5ff" opacity=".78" rx="1.5"><title>703 strike · calls 346</title></rect><rect x="217.77" y="176.00" width="7.18" height="6.71" fill="#ff7582" opacity=".76" rx="1.5"><title>703 strike · puts 2,311</title></rect><rect x="229.98" y="175.57" width="7.18" height="0.43" fill="#86a5ff" opacity=".78" rx="1.5"><title>704 strike · calls 147</title></rect><rect x="229.98" y="176.00" width="7.18" height="3.67" fill="#ff7582" opacity=".76" rx="1.5"><title>704 strike · puts 1,266</title></rect><rect x="242.20" y="174.67" width="7.18" height="1.33" fill="#86a5ff" opacity=".78" rx="1.5"><title>705 strike · calls 458</title></rect><rect x="242.20" y="176.00" width="7.18" height="13.01" fill="#ff7582" opacity=".76" rx="1.5"><title>705 strike · puts 4,484</title></rect><rect x="254.41" y="175.25" width="7.18" height="0.75" fill="#86a5ff" opacity=".78" rx="1.5"><title>706 strike · calls 259</title></rect><rect x="254.41" y="176.00" width="7.18" height="4.30" fill="#ff7582" opacity=".76" rx="1.5"><title>706 strike · puts 1,480</title></rect><rect x="266.63" y="175.11" width="7.18" height="0.89" fill="#86a5ff" opacity=".78" rx="1.5"><title>707 strike · calls 305</title></rect><rect x="266.63" y="176.00" width="7.18" height="7.23" fill="#ff7582" opacity=".76" rx="1.5"><title>707 strike · puts 2,492</title></rect><rect x="278.84" y="174.94" width="7.18" height="1.06" fill="#86a5ff" opacity=".78" rx="1.5"><title>708 strike · calls 365</title></rect><rect x="278.84" y="176.00" width="7.18" height="4.23" fill="#ff7582" opacity=".76" rx="1.5"><title>708 strike · puts 1,456</title></rect><rect x="291.06" y="173.84" width="7.18" height="2.16" fill="#86a5ff" opacity=".78" rx="1.5"><title>709 strike · calls 743</title></rect><rect x="291.06" y="176.00" width="7.18" height="5.91" fill="#ff7582" opacity=".76" rx="1.5"><title>709 strike · puts 2,035</title></rect><rect x="303.27" y="169.25" width="7.18" height="6.75" fill="#86a5ff" opacity=".78" rx="1.5"><title>710 strike · calls 2,327</title></rect><rect x="303.27" y="176.00" width="7.18" height="104.84" fill="#ff7582" opacity=".76" rx="1.5"><title>710 strike · puts 36,127</title></rect><rect x="315.49" y="169.77" width="7.18" height="6.23" fill="#86a5ff" opacity=".78" rx="1.5"><title>711 strike · calls 2,148</title></rect><rect x="315.49" y="176.00" width="7.18" height="117.24" fill="#ff7582" opacity=".76" rx="1.5"><title>711 strike · puts 40,399</title></rect><rect x="327.70" y="172.97" width="7.18" height="3.03" fill="#86a5ff" opacity=".78" rx="1.5"><title>712 strike · calls 1,044</title></rect><rect x="327.70" y="176.00" width="7.18" height="11.15" fill="#ff7582" opacity=".76" rx="1.5"><title>712 strike · puts 3,841</title></rect><rect x="339.91" y="173.30" width="7.18" height="2.70" fill="#86a5ff" opacity=".78" rx="1.5"><title>713 strike · calls 930</title></rect><rect x="339.91" y="176.00" width="7.18" height="5.87" fill="#ff7582" opacity=".76" rx="1.5"><title>713 strike · puts 2,024</title></rect><rect x="352.13" y="171.48" width="7.18" height="4.52" fill="#86a5ff" opacity=".78" rx="1.5"><title>714 strike · calls 1,559</title></rect><rect x="352.13" y="176.00" width="7.18" height="8.42" fill="#ff7582" opacity=".76" rx="1.5"><title>714 strike · puts 2,900</title></rect><rect x="364.34" y="165.38" width="7.18" height="10.62" fill="#86a5ff" opacity=".78" rx="1.5"><title>715 strike · calls 3,659</title></rect><rect x="364.34" y="176.00" width="7.18" height="22.67" fill="#ff7582" opacity=".76" rx="1.5"><title>715 strike · puts 7,810</title></rect><rect x="376.56" y="172.91" width="7.18" height="3.09" fill="#86a5ff" opacity=".78" rx="1.5"><title>716 strike · calls 1,065</title></rect><rect x="376.56" y="176.00" width="7.18" height="5.92" fill="#ff7582" opacity=".76" rx="1.5"><title>716 strike · puts 2,041</title></rect><rect x="388.77" y="171.29" width="7.18" height="4.71" fill="#86a5ff" opacity=".78" rx="1.5"><title>717 strike · calls 1,623</title></rect><rect x="388.77" y="176.00" width="7.18" height="4.68" fill="#ff7582" opacity=".76" rx="1.5"><title>717 strike · puts 1,612</title></rect><rect x="400.99" y="172.69" width="7.18" height="3.31" fill="#86a5ff" opacity=".78" rx="1.5"><title>718 strike · calls 1,140</title></rect><rect x="400.99" y="176.00" width="7.18" height="4.25" fill="#ff7582" opacity=".76" rx="1.5"><title>718 strike · puts 1,466</title></rect><rect x="413.20" y="173.14" width="7.18" height="2.86" fill="#86a5ff" opacity=".78" rx="1.5"><title>719 strike · calls 987</title></rect><rect x="413.20" y="176.00" width="7.18" height="5.28" fill="#ff7582" opacity=".76" rx="1.5"><title>719 strike · puts 1,818</title></rect><rect x="425.42" y="160.49" width="7.18" height="15.51" fill="#86a5ff" opacity=".78" rx="1.5"><title>720 strike · calls 5,346</title></rect><rect x="425.42" y="176.00" width="7.18" height="42.07" fill="#ff7582" opacity=".76" rx="1.5"><title>720 strike · puts 14,496</title></rect><rect x="437.63" y="173.36" width="7.18" height="2.64" fill="#86a5ff" opacity=".78" rx="1.5"><title>721 strike · calls 908</title></rect><rect x="437.63" y="176.00" width="7.18" height="7.02" fill="#ff7582" opacity=".76" rx="1.5"><title>721 strike · puts 2,420</title></rect><rect x="449.84" y="171.06" width="7.18" height="4.94" fill="#86a5ff" opacity=".78" rx="1.5"><title>722 strike · calls 1,703</title></rect><rect x="449.84" y="176.00" width="7.18" height="7.49" fill="#ff7582" opacity=".76" rx="1.5"><title>722 strike · puts 2,582</title></rect><rect x="462.06" y="170.23" width="7.18" height="5.77" fill="#86a5ff" opacity=".78" rx="1.5"><title>723 strike · calls 1,989</title></rect><rect x="462.06" y="176.00" width="7.18" height="5.40" fill="#ff7582" opacity=".76" rx="1.5"><title>723 strike · puts 1,860</title></rect><rect x="474.27" y="170.83" width="7.18" height="5.17" fill="#86a5ff" opacity=".78" rx="1.5"><title>724 strike · calls 1,780</title></rect><rect x="474.27" y="176.00" width="7.18" height="3.14" fill="#ff7582" opacity=".76" rx="1.5"><title>724 strike · puts 1,083</title></rect><rect x="486.49" y="161.58" width="7.18" height="14.42" fill="#86a5ff" opacity=".78" rx="1.5"><title>725 strike · calls 4,968</title></rect><rect x="486.49" y="176.00" width="7.18" height="12.34" fill="#ff7582" opacity=".76" rx="1.5"><title>725 strike · puts 4,252</title></rect><rect x="498.70" y="170.25" width="7.18" height="5.75" fill="#86a5ff" opacity=".78" rx="1.5"><title>726 strike · calls 1,982</title></rect><rect x="498.70" y="176.00" width="7.18" height="3.37" fill="#ff7582" opacity=".76" rx="1.5"><title>726 strike · puts 1,162</title></rect><rect x="510.92" y="170.19" width="7.18" height="5.81" fill="#86a5ff" opacity=".78" rx="1.5"><title>727 strike · calls 2,003</title></rect><rect x="510.92" y="176.00" width="7.18" height="3.74" fill="#ff7582" opacity=".76" rx="1.5"><title>727 strike · puts 1,289</title></rect><rect x="523.13" y="170.47" width="7.18" height="5.53" fill="#86a5ff" opacity=".78" rx="1.5"><title>728 strike · calls 1,906</title></rect><rect x="523.13" y="176.00" width="7.18" height="4.59" fill="#ff7582" opacity=".76" rx="1.5"><title>728 strike · puts 1,582</title></rect><rect x="535.35" y="171.58" width="7.18" height="4.42" fill="#86a5ff" opacity=".78" rx="1.5"><title>729 strike · calls 1,522</title></rect><rect x="535.35" y="176.00" width="7.18" height="4.05" fill="#ff7582" opacity=".76" rx="1.5"><title>729 strike · puts 1,396</title></rect><rect x="547.56" y="152.53" width="7.18" height="23.47" fill="#86a5ff" opacity=".78" rx="1.5"><title>730 strike · calls 8,089</title></rect><rect x="547.56" y="176.00" width="7.18" height="40.56" fill="#ff7582" opacity=".76" rx="1.5"><title>730 strike · puts 13,976</title></rect><rect x="559.77" y="168.61" width="7.18" height="7.39" fill="#86a5ff" opacity=".78" rx="1.5"><title>731 strike · calls 2,547</title></rect><rect x="559.77" y="176.00" width="7.18" height="1.34" fill="#ff7582" opacity=".76" rx="1.5"><title>731 strike · puts 462</title></rect><rect x="571.99" y="170.38" width="7.18" height="5.62" fill="#86a5ff" opacity=".78" rx="1.5"><title>732 strike · calls 1,938</title></rect><rect x="571.99" y="176.00" width="7.18" height="8.71" fill="#ff7582" opacity=".76" rx="1.5"><title>732 strike · puts 3,000</title></rect><rect x="584.20" y="171.78" width="7.18" height="4.22" fill="#86a5ff" opacity=".78" rx="1.5"><title>733 strike · calls 1,453</title></rect><rect x="584.20" y="176.00" width="7.18" height="2.23" fill="#ff7582" opacity=".76" rx="1.5"><title>733 strike · puts 770</title></rect><rect x="596.42" y="171.34" width="7.18" height="4.66" fill="#86a5ff" opacity=".78" rx="1.5"><title>734 strike · calls 1,605</title></rect><rect x="596.42" y="176.00" width="7.18" height="5.47" fill="#ff7582" opacity=".76" rx="1.5"><title>734 strike · puts 1,886</title></rect><rect x="608.63" y="110.97" width="7.18" height="65.03" fill="#86a5ff" opacity=".78" rx="1.5"><title>735 strike · calls 22,407</title></rect><rect x="608.63" y="176.00" width="7.18" height="8.08" fill="#ff7582" opacity=".76" rx="1.5"><title>735 strike · puts 2,783</title></rect><rect x="620.85" y="172.27" width="7.18" height="3.73" fill="#86a5ff" opacity=".78" rx="1.5"><title>736 strike · calls 1,285</title></rect><rect x="620.85" y="176.00" width="7.18" height="1.90" fill="#ff7582" opacity=".76" rx="1.5"><title>736 strike · puts 653</title></rect><rect x="633.06" y="167.25" width="7.18" height="8.75" fill="#86a5ff" opacity=".78" rx="1.5"><title>737 strike · calls 3,016</title></rect><rect x="633.06" y="176.00" width="7.18" height="3.12" fill="#ff7582" opacity=".76" rx="1.5"><title>737 strike · puts 1,074</title></rect><rect x="645.28" y="167.97" width="7.18" height="8.03" fill="#86a5ff" opacity=".78" rx="1.5"><title>738 strike · calls 2,767</title></rect><rect x="645.28" y="176.00" width="7.18" height="2.69" fill="#ff7582" opacity=".76" rx="1.5"><title>738 strike · puts 927</title></rect><rect x="657.49" y="168.83" width="7.18" height="7.17" fill="#86a5ff" opacity=".78" rx="1.5"><title>739 strike · calls 2,470</title></rect><rect x="657.49" y="176.00" width="7.18" height="2.02" fill="#ff7582" opacity=".76" rx="1.5"><title>739 strike · puts 695</title></rect><rect x="669.70" y="129.45" width="7.18" height="46.55" fill="#86a5ff" opacity=".78" rx="1.5"><title>740 strike · calls 16,040</title></rect><rect x="669.70" y="176.00" width="7.18" height="17.00" fill="#ff7582" opacity=".76" rx="1.5"><title>740 strike · puts 5,859</title></rect><rect x="681.92" y="170.42" width="7.18" height="5.58" fill="#86a5ff" opacity=".78" rx="1.5"><title>741 strike · calls 1,923</title></rect><rect x="681.92" y="176.00" width="7.18" height="1.50" fill="#ff7582" opacity=".76" rx="1.5"><title>741 strike · puts 518</title></rect><rect x="694.13" y="169.92" width="7.18" height="6.08" fill="#86a5ff" opacity=".78" rx="1.5"><title>742 strike · calls 2,095</title></rect><rect x="694.13" y="176.00" width="7.18" height="7.39" fill="#ff7582" opacity=".76" rx="1.5"><title>742 strike · puts 2,546</title></rect><line x1="58" y1="176.0" x2="702" y2="176.0" stroke="#dbe5f4" opacity=".40" stroke-width="1"/><line x1="58" y1="312" x2="702" y2="312" stroke="rgba(158,181,211,.16)" stroke-width="1"/><line x1="58" y1="40" x2="58" y2="312" stroke="rgba(158,181,211,.16)" stroke-width="1"/><line x1="409.0" y1="40" x2="409.0" y2="312" stroke="#f4f7fb" stroke-width="1" opacity=".60" stroke-dasharray="5 5"/><line x1="514.5" y1="40" x2="514.5" y2="312" stroke="#ffca62" stroke-width="1.25" opacity=".82"/><text x="612.2" y="103.0" fill="#86a5ff" font-size="8.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >22.4k</text><text x="319.1" y="308.2" fill="#ff7582" font-size="8.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >40.4k</text><text x="514.5" y="19.0" fill="#ffca62" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" letter-spacing=".02em">MAX PAIN  727.00</text><text x="409.0" y="33.0" fill="#f4f7fb" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" letter-spacing=".02em">SPOT  718.36</text><text x="58.0" y="14.0" fill="#64758c" font-size="8.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="start" font-weight="400" >OPEN INTEREST · CONTRACTS</text><text x="380.0" y="353.0" fill="#64758c" font-size="9" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >Option strike</text></svg></div>
+      <div class="chart-note"><span>The 710/711 put complex holds 76,526 contracts; the 735/740 call complex holds 38,447. The pin sits between them, closer to the put wall.</span><span class="right">One expiry; no smoothing or interpolation.</span></div>
+    </article>
+  </div>
+  <div class="info-grid">
+    
+<article class="card">
+  <div class="kicker">Max-pain sensitivity</div>
+  <h3>One strike or a zone?</h3>
+  <div class="sub">Open interest is stock; Monday’s volume is flow. The blend uses OI + 0.5× volume. The shelf is every strike within 1% of the minimum modeled payout.</div>
+  <div class="method-mini">
+    <div class="method-row"><span class="name">All open interest</span><span class="val">727.00<small>+1.20%</small></span></div>
+    <div class="method-row"><span class="name">Monday volume</span><span class="val">720.00<small>+0.23%</small></span></div>
+    <div class="method-row"><span class="name">OI + 0.5× volume</span><span class="val">724.00<small>+0.79%</small></span></div>
+    <div class="method-row pinrow"><span class="name">1% pain shelf</span><span class="val">725–729</span></div>
+  </div>
+  <p class="gex-note">Method spread: <b style="color:#dce7f6">+0.97% of spot</b>. A high-confidence pin needs the methods to agree. SPY does; QQQ is wider because the OI and volume answers sit 1% apart.</p>
+</article>
+    
+<article class="card">
+  <div class="kicker">Positioning tape</div>
+  <h3>What the contracts are saying</h3>
+  <div class="sub">Open interest shows the stock of positioning. Volume shows where Monday’s fresh activity went.</div>
+  <ul class="flow-list">
+        <li><strong>Put-heavy, but less one-sided than SPY.</strong> P/C open interest is 1.39×; volume is 1.15×.</li>
+        <li><strong>The support shelf is 710/711.</strong> Combined put OI is 76,526; 700 adds another 15,159. That is the first real downside test.</li>
+        <li><strong>The ceiling is 735.</strong> 22,407 calls sit there, with 16,040 at 740. The 730 strike is the busiest flow pivot between the two.</li>
+        <li><strong>Monday was two-sided.</strong> 720 puts traded 20,460 vs 14,496 OI; 730 calls traded 19,047 vs 8,089 OI. Fresh positioning brackets the pin.</li></ul>
+  <div class="pin-banner"><span class="icon">◈</span><span><b style="color:#e9eff8">Read:</b> the put walls are downside insurance; the call walls are the upside test. Max pain sits between them, and closer to the action than either wall.</span></div>
+</article>
+    
+<article class="card">
+  <div class="kicker">Key levels</div>
+  <h3>The Friday map</h3>
+  <div class="sub">Descending from resistance to support. Max pain is a payout minimum, not a price forecast.</div>
+  <table class="level-table"><tbody><tr class=""><td class="lvl"><span class="dot "></span>741.36</td><td class="lbl">20-day average </td><td class="dst">+3.20%</td></tr><tr class=""><td class="lvl"><span class="dot "></span>736.51</td><td class="lbl">1σ upper bound <span class="tag wall">1σ</span></td><td class="dst">+2.53%</td></tr><tr class=""><td class="lvl"><span class="dot "></span>735.00</td><td class="lbl">Largest call wall · 22,407 OI <span class="tag wall">WALL</span></td><td class="dst">+2.32%</td></tr><tr class="gamma-row"><td class="lvl"><span class="dot gamma"></span>731.12</td><td class="lbl">Modeled gamma flip <span class="tag wall">GAMMA</span></td><td class="dst">+1.78%</td></tr><tr class=""><td class="lvl"><span class="dot "></span>729.00</td><td class="lbl">1% pain shelf top </td><td class="dst">+1.48%</td></tr><tr class="pin-row"><td class="lvl"><span class="dot pin"></span>727.00</td><td class="lbl">Max pain · OI minimum <span class="tag pin">PIN</span></td><td class="dst">+1.20%</td></tr><tr class=""><td class="lvl"><span class="dot "></span>726.68</td><td class="lbl">50-day average </td><td class="dst">+1.16%</td></tr><tr class=""><td class="lvl"><span class="dot "></span>720.00</td><td class="lbl">Volume max pain </td><td class="dst">+0.23%</td></tr><tr class="spot-row"><td class="lvl"><span class="dot spot"></span>718.36</td><td class="lbl">Monday close <span class="tag spot">SPOT</span></td><td class="dst">—</td></tr><tr class=""><td class="lvl"><span class="dot "></span>711.00</td><td class="lbl">Largest put wall · 40,399 OI <span class="tag wall">WALL</span></td><td class="dst">-1.02%</td></tr><tr class=""><td class="lvl"><span class="dot "></span>710.00</td><td class="lbl">Put cluster · 36,127 OI </td><td class="dst">-1.16%</td></tr><tr class=""><td class="lvl"><span class="dot "></span>700.21</td><td class="lbl">1σ lower bound <span class="tag wall">1σ</span></td><td class="dst">-2.53%</td></tr></tbody></table>
+</article>
+  </div>
+  
+<article class="card gamma-wide">
+  <div class="gamma-body">
+    <div>
+      <div class="gamma-chart-head">
+        <div>
+          <div class="kicker">Gamma regime</div>
+          <h3>Where hedging changes sign</h3>
+          <div class="sub">Modeled net dealer gamma across a range of hypothetical spots. The zero line is the estimated gamma flip.</div>
+        </div>
+        <span class="card-link">calls + / puts −</span>
+      </div>
+      <div class="chart"><svg viewBox="0 0 720 336" role="img" aria-label="QQQ modeled dealer gamma by hypothetical spot"><title>QQQ modeled net gamma exposure across spot</title><defs><linearGradient id="gqqq" gradientUnits="userSpaceOnUse" x1="0" y1="40" x2="0" y2="290"><stop offset="0%" stop-color="#86a5ff" stop-opacity=".22"/><stop offset="49.0%" stop-color="#86a5ff" stop-opacity="0"/><stop offset="51.0%" stop-color="#ff7582" stop-opacity="0"/><stop offset="100%" stop-color="#ff7582" stop-opacity=".21"/></linearGradient></defs><line x1="58" y1="234.1" x2="702" y2="234.1" stroke="rgba(158,181,211,.085)" stroke-width="1"/><text x="48.0" y="237.6" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="end" font-weight="400" >-$1.0B</text><line x1="58" y1="165.0" x2="702" y2="165.0" stroke="rgba(158,181,211,.085)" stroke-width="1"/><text x="48.0" y="168.5" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="end" font-weight="400" >$0.0B</text><line x1="58" y1="95.9" x2="702" y2="95.9" stroke="rgba(158,181,211,.085)" stroke-width="1"/><text x="48.0" y="99.4" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="end" font-weight="400" >+$1.0B</text><line x1="70.3" y1="40" x2="70.3" y2="290" stroke="rgba(158,181,211,.085)" stroke-width="1" opacity=".55"/><text x="70.3" y="313.0" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >670</text><line x1="134.4" y1="40" x2="134.4" y2="290" stroke="rgba(158,181,211,.085)" stroke-width="1" opacity=".55"/><text x="134.4" y="313.0" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >680</text><line x1="198.4" y1="40" x2="198.4" y2="290" stroke="rgba(158,181,211,.085)" stroke-width="1" opacity=".55"/><text x="198.4" y="313.0" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >690</text><line x1="262.4" y1="40" x2="262.4" y2="290" stroke="rgba(158,181,211,.085)" stroke-width="1" opacity=".55"/><text x="262.4" y="313.0" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >700</text><line x1="326.5" y1="40" x2="326.5" y2="290" stroke="rgba(158,181,211,.085)" stroke-width="1" opacity=".55"/><text x="326.5" y="313.0" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >710</text><line x1="390.5" y1="40" x2="390.5" y2="290" stroke="rgba(158,181,211,.085)" stroke-width="1" opacity=".55"/><text x="390.5" y="313.0" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >720</text><line x1="454.5" y1="40" x2="454.5" y2="290" stroke="rgba(158,181,211,.085)" stroke-width="1" opacity=".55"/><text x="454.5" y="313.0" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >730</text><line x1="518.6" y1="40" x2="518.6" y2="290" stroke="rgba(158,181,211,.085)" stroke-width="1" opacity=".55"/><text x="518.6" y="313.0" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >740</text><line x1="582.6" y1="40" x2="582.6" y2="290" stroke="rgba(158,181,211,.085)" stroke-width="1" opacity=".55"/><text x="582.6" y="313.0" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >750</text><line x1="646.6" y1="40" x2="646.6" y2="290" stroke="rgba(158,181,211,.085)" stroke-width="1" opacity=".55"/><text x="646.6" y="313.0" fill="#64758c" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >760</text><path d="M 58.00 165.00 L 58.00 210.59 L 81.00 216.49 L 104.00 223.22 L 127.00 230.78 L 150.00 239.05 L 173.00 247.77 L 196.00 256.55 L 219.00 264.79 L 242.00 271.78 L 265.00 276.68 L 288.00 278.64 L 311.00 276.86 L 334.00 270.77 L 357.00 260.07 L 380.00 244.84 L 403.00 225.59 L 426.00 203.21 L 449.00 178.85 L 472.00 153.83 L 495.00 129.56 L 518.00 107.45 L 541.00 88.83 L 564.00 74.77 L 587.00 65.89 L 610.00 62.19 L 633.00 63.07 L 656.00 67.47 L 679.00 74.18 L 702.00 82.08 L 702.00 165.00 Z" fill="url(#gqqq)"/><path d="M 58.00 210.59 L 81.00 216.49 L 104.00 223.22 L 127.00 230.78 L 150.00 239.05 L 173.00 247.77 L 196.00 256.55 L 219.00 264.79 L 242.00 271.78 L 265.00 276.68 L 288.00 278.64 L 311.00 276.86 L 334.00 270.77 L 357.00 260.07 L 380.00 244.84 L 403.00 225.59 L 426.00 203.21 L 449.00 178.85 L 472.00 153.83 L 495.00 129.56 L 518.00 107.45 L 541.00 88.83 L 564.00 74.77 L 587.00 65.89 L 610.00 62.19 L 633.00 63.07 L 656.00 67.47 L 679.00 74.18 L 702.00 82.08" fill="none" stroke="#c9d7ea" stroke-width="2.1" stroke-linejoin="round"/><line x1="58" y1="165.0" x2="702" y2="165.0" stroke="#eef3fa" opacity=".45" stroke-width="1"/><line x1="58" y1="290" x2="702" y2="290" stroke="rgba(158,181,211,.16)" stroke-width="1"/><line x1="58" y1="40" x2="58" y2="290" stroke="rgba(158,181,211,.16)" stroke-width="1"/><line x1="380.0" y1="40" x2="380.0" y2="290" stroke="#f4f7fb" stroke-width="1" opacity=".60" stroke-dasharray="5 5"/><line x1="461.7" y1="40" x2="461.7" y2="290" stroke="#86a5ff" stroke-width="1.15" opacity=".75" stroke-dasharray="2 4"/><text x="461.7" y="18.0" fill="#86a5ff" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" letter-spacing=".02em">FLIP  731.12</text><text x="380.0" y="32.0" fill="#f4f7fb" font-size="9.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" letter-spacing=".02em">SPOT  718.36</text><text x="58.0" y="14.0" fill="#64758c" font-size="8.5" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="start" font-weight="400" >NET GEX · $M PER 1% MOVE</text><text x="66.0" y="180.0" fill="#ff7582" font-size="8" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="start" font-weight="400" opacity=".65" letter-spacing=".07em">SHORT GAMMA</text><text x="694.0" y="157.0" fill="#86a5ff" font-size="8" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="end" font-weight="400" opacity=".65" letter-spacing=".07em">LONG GAMMA</text><text x="380.0" y="329.0" fill="#64758c" font-size="9" font-family='"SFMono-Regular","Cascadia Code",Consolas,monospace' text-anchor="middle" font-weight="400" >Hypothetical spot at expiration</text></svg></div>
+      <div class="chart-note"><span>Shaded fill: positive above zero, negative below.</span><span class="right">Calls positive, puts negative — a convention, not observed positioning.</span></div>
+    </div>
+    <aside class="gamma-side">
+      <div class="gex-number">-$1.16B<small>per 1% move</small></div>
+      <div class="sub">Modeled net dealer gamma at spot. Negative gamma can amplify moves; positive gamma can dampen them.</div>
+      <div class="gex-stats">
+        <div class="gex-stat"><div class="k">Call gamma</div><div class="v up">+$1.08B</div></div>
+        <div class="gex-stat"><div class="k">Put gamma</div><div class="v down">-$2.23B</div></div>
+        <div class="gex-stat"><div class="k">Zero gamma</div><div class="v">731.12</div></div>
+        <div class="gex-stat"><div class="k">Spot vs flip</div><div class="v">-1.75%</div></div>
+      </div>
+      <div class="gamma-nodes">
+        <div class="gamma-node-col"><div class="k">Positive nodes</div><div class="node-row"><span>735</span><span class="pos">+$154M</span></div><div class="node-row"><span>740</span><span class="pos">+$67M</span></div><div class="node-row"><span>745</span><span class="pos">+$21M</span></div></div>
+        <div class="gamma-node-col"><div class="k">Negative nodes</div><div class="node-row"><span>711</span><span class="neg">-$387M</span></div><div class="node-row"><span>710</span><span class="neg">-$331M</span></div><div class="node-row"><span>720</span><span class="neg">-$120M</span></div></div>
+      </div>
+      <p class="gex-note">The 710/711 put complex dominates negative gamma; 735 is the largest positive node. OI does not reveal whether customers or dealers are long each strike.</p>
+    </aside>
+  </div>
+</article>
+  <div class="card-head" style="margin:34px 0 0">
+    <div>
+      <div class="kicker">Scenario map</div>
+      <h3 style="font-size:22px;letter-spacing:-.035em">Three paths into Friday</h3>
+    </div>
+    <span class="card-link">conditional on spot</span>
+  </div>
+  <div class="scenarios"><article class="scenario base"><div class="case">Base · 720–729</div><div class="trigger">The event band</div><p class="desc">Volume max pain is 720, OI max pain is 727, and the 50DMA is 726.68. Earnings can keep the band wide.</p></article><article class="scenario bull"><div class="case">Upside · >731.1</div><div class="trigger">Gamma flip</div><p class="desc">A move through the flip targets 735 (call wall), then 736.51 (1σ high). The 20DMA at 741.36 is next.</p></article><article class="scenario bear"><div class="case">Downside · <710</div><div class="trigger">Support test</div><p class="desc">The 710/711 put wall is the first real support. A break exposes 700.21 and the 700 put cluster.</p></article></div>
+  <div class="info-grid two">
+    
+<article class="card">
+  <div class="kicker">Scenario triggers</div>
+  <h3>What would break the pin</h3>
+  <div class="sub">These are confirmation levels for the positioning story, not trade recommendations.</div>
+  <ul class="flow-list">
+        <li><strong>Earnings first.</strong> NFLX reports Tuesday; META and TSLA report Wednesday. Their combined weight is ~6.1% of QQQ.</li>
+        <li><strong>Above 731.1.</strong> The gamma model flips positive, opening 735 and 736.51 (1σ high); 741.36 is the 20DMA.</li>
+        <li><strong>Below 710.</strong> The 710/711 put wall fails and 700.21 / 700 put OI become the next target; 690 is the deeper shelf.</li>
+        <li><strong>Fresh hedging at 720.</strong> 20,460 puts traded versus 14,496 OI Monday. That makes the volume pin a live line, not just a weekend artifact.</li></ul>
+</article>
+    
+    <article class="card">
+      <div class="kicker">Confirmation checklist</div>
+      <h3>What keeps the pin alive</h3>
+      <div class="sub">A pin is a process, not a print. These are the observable conditions into Thursday’s close.</div>
+      <ul class="flow-list">
+        <li><strong>Hold the band.</strong> 720–729 is the zone; 727 is the OI pin and 726.68 the 50DMA. A close outside 718–731 weakens it.</li>
+        <li><strong>Defend 710/711.</strong> 76,526 puts form the first real support shelf; a break exposes 700.21 and the 700 cluster.</li>
+        <li><strong>Cap 735.</strong> 22,407 calls sit there; above 731.12 the gamma model flips positive and 735/736.51 become the test.</li>
+        <li><strong>Absorb earnings.</strong> META and TSLA report Wednesday after the close; a gap outside 710–735 makes the pre-earnings pin stale.</li></ul>
+    </article>
+  </div>
+  
+<article class="card table-section">
+  <div class="card-head">
+    <div>
+      <div class="kicker">Open interest map</div>
+      <h3>Largest strikes by combined OI</h3>
+      <div class="sub">Top 12 strikes. Open interest is contracts; volume is Monday’s session. Some strikes carry multi-leg and hedge flow that the model cannot identify.</div>
+    </div>
+    <span class="card-link">expiry Oct 23</span>
+  </div>
+  <div class="table-wrap">
+    <table class="data-table">
+      <thead><tr><th>Strike</th><th>Call OI</th><th>Put OI</th><th>Total OI</th><th>Volume</th><th>Signals</th></tr></thead>
+      <tbody><tr>
+          <td class="num">711.00</td>
+          <td class="num">2,148</td>
+          <td class="num">40,399</td>
+          <td class="num">42,547</td>
+          <td class="num">5,094</td>
+          <td><span class="badge put">put wall</span></td>
+        </tr><tr>
+          <td class="num">710.00</td>
+          <td class="num">2,327</td>
+          <td class="num">36,127</td>
+          <td class="num">38,454</td>
+          <td class="num">16,826</td>
+          <td><span class="badge put">put cluster</span></td>
+        </tr><tr>
+          <td class="num">735.00</td>
+          <td class="num">22,407</td>
+          <td class="num">2,783</td>
+          <td class="num">25,190</td>
+          <td class="num">13,625</td>
+          <td><span class="badge call">call wall</span></td>
+        </tr><tr>
+          <td class="num">730.00</td>
+          <td class="num">8,089</td>
+          <td class="num">13,976</td>
+          <td class="num">22,065</td>
+          <td class="num">20,522</td>
+          <td><span class="badge ">—</span></td>
+        </tr><tr>
+          <td class="num">740.00</td>
+          <td class="num">16,040</td>
+          <td class="num">5,859</td>
+          <td class="num">21,899</td>
+          <td class="num">17,816</td>
+          <td><span class="badge call">call cluster</span></td>
+        </tr><tr>
+          <td class="num">720.00</td>
+          <td class="num">5,346</td>
+          <td class="num">14,496</td>
+          <td class="num">19,842</td>
+          <td class="num">33,241</td>
+          <td><span class="badge pin">volume pin</span></td>
+        </tr><tr>
+          <td class="num">700.00</td>
+          <td class="num">682</td>
+          <td class="num">15,159</td>
+          <td class="num">15,841</td>
+          <td class="num">17,265</td>
+          <td><span class="badge put">put cluster</span></td>
+        </tr><tr>
+          <td class="num">745.00</td>
+          <td class="num">10,360</td>
+          <td class="num">1,892</td>
+          <td class="num">12,252</td>
+          <td class="num">9,909</td>
+          <td><span class="badge ">—</span></td>
+        </tr><tr>
+          <td class="num">750.00</td>
+          <td class="num">11,757</td>
+          <td class="num">484</td>
+          <td class="num">12,241</td>
+          <td class="num">5,496</td>
+          <td><span class="badge ">—</span></td>
+        </tr><tr>
+          <td class="num">690.00</td>
+          <td class="num">319</td>
+          <td class="num">11,200</td>
+          <td class="num">11,519</td>
+          <td class="num">6,471</td>
+          <td><span class="badge ">—</span></td>
+        </tr><tr>
+          <td class="num">715.00</td>
+          <td class="num">3,659</td>
+          <td class="num">7,810</td>
+          <td class="num">11,469</td>
+          <td class="num">19,943</td>
+          <td><span class="badge ">—</span></td>
+        </tr><tr>
+          <td class="num">775.00</td>
+          <td class="num">10,639</td>
+          <td class="num">4</td>
+          <td class="num">10,643</td>
+          <td class="num">376</td>
+          <td><span class="badge ">—</span></td>
+        </tr></tbody>
+    </table>
+  </div>
+</article>
+  <div class="pin-banner" style="margin-top:16px"><span class="icon">◈</span><span>The trade-off: 720–729 is the base case, 710/711 is the first real support test, and 735 is the upside magnet. Earnings can move the whole map.</span></div>
+  <div class="section-foot">
+    <span>All strikes with non-zero OI in the Oct 23 expiry are included in the calculation.</span>
+    <span>Payout = intrinsic value at settlement; no discounting.</span>
+  </div>
+</section>
+
+<section class="section wrap" id="catalysts">
+  <div class="section-head">
+    <div>
+      <div class="eyebrow">Event clock</div>
+      <h2>Three earnings. Four sessions. One expiry.</h2>
+      <p class="lead">This expiry sits inside a dense single-stock calendar. NFLX reports Tuesday; META and TSLA report Wednesday after the close. Thursday is the last full session to hedge, and Friday is PM-settled. The Fed is not until Oct 27–28 — outside this expiry.</p>
+    </div>
+    <div class="section-side"><strong>Index weight at risk:</strong> META + TSLA are ~6.1% of QQQ and ~3.9% of SPY. That is enough to move the tape, especially with QQQ at 24.1% ATM IV. The FOMC is next week; do not pay for Fed event risk in a Friday pin.</div>
+  </div>
+  <div class="timeline">
+    <article class="event earn">
+      <div class="day"><span>Tuesday</span><span class="date">Oct 20</span></div>
+      <div class="event-title">NFLX reports</div>
+      <div class="event-sub">After the close · Nasdaq-100</div>
+      <p>Netflix is a QQQ constituent and a sentiment driver for large-cap tech. Its reaction feeds Wednesday’s tape, one session before the last full hedging day.</p>
+    </article>
+    <article class="event earn">
+      <div class="day"><span>Wednesday</span><span class="date">Oct 21</span></div>
+      <div class="event-title">META + TSLA report</div>
+      <div class="event-sub">After the close · ~6.1% of QQQ</div>
+      <p>The main event. Combined index weight is ~6.1% of QQQ and ~3.9% of SPY. Both report after the close; Thursday is the reaction session.</p>
+    </article>
+    <article class="event data">
+      <div class="day"><span>Thursday</span><span class="date">Oct 22</span></div>
+      <div class="event-title">Last full session</div>
+      <div class="event-sub">Gamma &amp; hedging · 1 DTE</div>
+      <p>The market reprices the earnings reactions. Watch whether SPY holds 768–770 and QQQ holds 720–729; a break changes the pin before expiry.</p>
+    </article>
+    <article class="event expiry">
+      <div class="day"><span>Friday</span><span class="date">Oct 23</span></div>
+      <div class="event-title">Expiry</div>
+      <div class="event-sub">PM-settled · 0 DTE</div>
+      <p>SPY and QQQ settle at the close. Max pain is a payout minimum, not a guarantee; closing-auction flows can dominate the final hour.</p>
+    </article>
+  </div>
+  <div class="split-note">
+    <div class="quote-block">“The sequencing matters more than the levels. A QQQ earnings shock on Wednesday night is transmitted into Thursday’s hedging, one day before expiry. That is why <b>720–729</b> is a band, not a point.”</div>
+    <article class="card">
+      <div class="kicker">Index weight at risk</div>
+      <h3>Two names, two betas</h3>
+      <div class="method-mini">
+        <div class="method-row"><span class="name">META · QQQ / SPY</span><span class="val">3.26% / 2.42%</span></div>
+        <div class="method-row"><span class="name">TSLA · QQQ / SPY</span><span class="val">2.82% / 1.51%</span></div>
+        <div class="method-row pinrow"><span class="name">Combined</span><span class="val">6.08% / 3.93%</span></div>
+        <div class="method-row"><span class="name">NFLX weight</span><span class="val">n/a</span></div>
+      </div>
+      <p class="gex-note">NFLX is a Nasdaq-100 constituent, but its index weight was not available in the data pull; it is not included in the combined figure.</p>
+    </article>
+  </div>
+</section>
+
+<section class="section wrap" id="volatility">
+  <div class="section-head">
+    <div>
+      <div class="eyebrow">Volatility &amp; skew</div>
+      <h2>Event premium, <em style="font-style:normal;color:var(--pin)">not panic.</em></h2>
+      <p class="lead">SPY’s term structure is flat near 14.5%; QQQ’s front end is 2.4 vol points above its 60-day expiry. That is an earnings premium, not a macro stress signal. Realized volatility is lower than implied in both names.</p>
+    </div>
+    <div class="section-side"><strong>The move being priced:</strong> ±1.55% for SPY and ±2.53% for QQQ over four sessions. Both max-pain levels sit inside those 1σ ranges — plausible pins, not prophecies.</div>
+  </div>
+  <div class="vol-grid">
+    <article class="card">
+      <div class="kicker">Term structure</div>
+      <h3>Front-end event premium</h3>
+      <div class="sub">ATM implied volatility by expiry, averaged across the nearest call and put. Bars are scaled to a 25% IV ceiling.</div>
+      <table class="term-table">
+        <colgroup><col style="width:20%"><col style="width:10%"><col style="width:26%"><col style="width:26%"><col style="width:18%"></colgroup>
+        <thead><tr><th>Expiry</th><th>DTE</th><th class="bar-cell">SPY IV</th><th class="bar-cell">QQQ IV</th><th style="text-align:right">QQQ − SPY</th></tr></thead>
+        <tbody><tr>
+          <td class="exp">2026-10-23</td>
+          <td class="dte">4d</td>
+          <td class="bar-cell"><div class="term-bar-row"><span class="term-bar" style="width:49px"></span><span class="term-val">14.84%</span></div></td>
+          <td class="bar-cell"><div class="term-bar-row"><span class="term-bar qqq" style="width:79px"></span><span class="term-val">24.13%</span></div></td>
+          <td class="dst" style="text-align:right;font-family:var(--mono);font-size:10px;color:var(--muted)">+9.29</td>
+        </tr><tr>
+          <td class="exp">2026-10-30</td>
+          <td class="dte">11d</td>
+          <td class="bar-cell"><div class="term-bar-row"><span class="term-bar" style="width:48px"></span><span class="term-val">14.65%</span></div></td>
+          <td class="bar-cell"><div class="term-bar-row"><span class="term-bar qqq" style="width:78px"></span><span class="term-val">23.82%</span></div></td>
+          <td class="dst" style="text-align:right;font-family:var(--mono);font-size:10px;color:var(--muted)">+9.17</td>
+        </tr><tr>
+          <td class="exp">2026-11-20</td>
+          <td class="dte">32d</td>
+          <td class="bar-cell"><div class="term-bar-row"><span class="term-bar" style="width:47px"></span><span class="term-val">14.46%</span></div></td>
+          <td class="bar-cell"><div class="term-bar-row"><span class="term-bar qqq" style="width:72px"></span><span class="term-val">21.90%</span></div></td>
+          <td class="dst" style="text-align:right;font-family:var(--mono);font-size:10px;color:var(--muted)">+7.44</td>
+        </tr><tr>
+          <td class="exp">2026-12-18</td>
+          <td class="dte">60d</td>
+          <td class="bar-cell"><div class="term-bar-row"><span class="term-bar" style="width:49px"></span><span class="term-val">14.92%</span></div></td>
+          <td class="bar-cell"><div class="term-bar-row"><span class="term-bar qqq" style="width:71px"></span><span class="term-val">21.73%</span></div></td>
+          <td class="dst" style="text-align:right;font-family:var(--mono);font-size:10px;color:var(--muted)">+6.81</td>
+        </tr></tbody>
+      </table>
+      <p class="term-note">SPY’s 4-day IV (14.84%) is essentially equal to its 60-day IV (14.92%) — a flat curve with no single event premium. QQQ’s 4-day IV (24.13%) is 2.40 points above its 60-day (21.73%), consistent with META and TSLA inside the week.</p>
+    </article>
+    <article class="card">
+      <div class="kicker">Implied vs realized</div>
+      <h3>The premium is real</h3>
+      <div class="sub">20-day realized volatility versus 4-day ATM implied. A positive gap is the price of event protection.</div>
+      <div class="gex-stats">
+        <div class="gex-stat"><div class="k">SPY IV − RV20</div><div class="v up">+5.92 pts</div></div>
+        <div class="gex-stat"><div class="k">QQQ IV − RV20</div><div class="v up">+8.37 pts</div></div>
+        <div class="gex-stat"><div class="k">SPY 1σ move</div><div class="v">±$11.91</div></div>
+        <div class="gex-stat"><div class="k">QQQ 1σ move</div><div class="v">±$18.15</div></div>
+      </div>
+      <ul class="bullets">
+        <li><strong>SPY:</strong> 14.84% ATM IV vs 8.92% RV20. The $9.46 straddle is 1.23% of spot; breakevens are 756.54–775.47.</li>
+        <li><strong>QQQ:</strong> 24.13% vs 15.76%. The $14.41 straddle is 2.01% of spot; breakevens are 703.59–732.42.</li>
+        <li><strong>Relative:</strong> QQQ’s 1σ is 1.63× SPY’s in percentage terms, and its IV–RV gap is 2.45 points wider.</li>
+      </ul>
+    </article>
+  </div>
+  <div class="split-note">
+    <article class="card">
+      <div class="kicker">25-delta skew</div>
+      <h3>Puts are paying the premium</h3>
+      <div class="method-mini">
+        <div class="method-row"><span class="name">SPY 25Δ put / call</span><span class="val">15.98% / 13.44%</span></div>
+        <div class="method-row"><span class="name">SPY risk reversal</span><span class="val">+2.55 pts</span></div>
+        <div class="method-row"><span class="name">QQQ 25Δ put / call</span><span class="val">26.27% / 21.93%</span></div>
+        <div class="method-row pinrow"><span class="name">QQQ risk reversal</span><span class="val">+4.34 pts</span></div>
+      </div>
+      <p class="gex-note">Positive risk reversal = puts richer than calls. The downside tail is priced even with max pain above spot — a two-sided setup, not a one-way bullish signal.</p>
+    </article>
+    <article class="card">
+      <div class="kicker">Range math</div>
+      <h3>The pin is inside one sigma</h3>
+      <ul class="bullets">
+        <li><strong>SPY:</strong> 1σ range 754.57–778.39; ATM breakevens 756.54–775.47; pin 770.00.</li>
+        <li><strong>QQQ:</strong> 1σ range 700.21–736.51; ATM breakevens 703.59–732.42; pin 727.00.</li>
+        <li><strong>Read:</strong> a pin inside 1σ is plausible. SPY’s 745 put wall is below the 1σ low; QQQ’s 710/711 wall is just above its 1σ low.</li>
+        <li><strong>Do not conflate:</strong> the 1σ range is a 68% statistical band, not a support/resistance call.</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section class="section wrap" id="context">
+  <div class="section-head">
+    <div>
+      <div class="eyebrow">Market context</div>
+      <h2>A bounce, <em style="font-style:normal;color:var(--pin)">not a repair.</em></h2>
+      <p class="lead">Monday’s rally was real but partial. SPY is still below both its 20- and 50-day averages; QQQ is 5.8% below its 52-week high and has lost 3.7% over five sessions. The options market is priced for that fragility.</p>
+    </div>
+    <div class="section-side"><strong>The backdrop:</strong> VIX 18.44 is off 7.75% but sits ~18% above its 50-day average. The 10-year at 5.14% keeps duration risk alive. A 0.909 correlation means these are not independent bets.</div>
+  </div>
+  <div class="context-grid">
+    <div class="context-card">
+      <div class="k">VIX · 30-day</div>
+      <div class="big">18.44 <small>−7.75%</small></div>
+      <p>Still ~18% above its 50-day average of 15.60. Fear cooled Monday, but not to complacency.</p>
+    </div>
+    <div class="context-card">
+      <div class="k">10-year Treasury</div>
+      <div class="big">5.136% <small>+3.8 bp</small></div>
+      <p>Long-end yields pressing higher — a valuation headwind for long-duration technology.</p>
+    </div>
+    <div class="context-card">
+      <div class="k">SPY / QQQ correlation</div>
+      <div class="big">0.909 <small>60D · β 1.52</small></div>
+      <p>QQQ is the high-beta expression of the same risk, not a diversifier. The pins can fail together.</p>
+    </div>
+    <div class="context-card">
+      <div class="k">Five-session return</div>
+      <div class="big down">−3.71% <small>QQQ</small></div>
+      <p><b>SPY −1.49%</b> over the same window. QQQ underperformed by 2.2 points into Monday’s bounce.</p>
+    </div>
+  </div>
+  <div class="split-note">
+    <article class="card">
+      <div class="kicker">Returns tape</div>
+      <h3>Same direction, different amplitude</h3>
+      <table class="term-table">
+        <thead><tr><th>Window</th><th style="text-align:right">SPY</th><th style="text-align:right">QQQ</th><th style="text-align:right">QQQ − SPY</th></tr></thead>
+        <tbody>
+          <tr><td class="exp">1 day</td><td style="text-align:right" class="up">+0.42%</td><td style="text-align:right" class="up">+1.21%</td><td style="text-align:right">+0.79</td></tr>
+          <tr><td class="exp">5 days</td><td style="text-align:right" class="down">−1.49%</td><td style="text-align:right" class="down">−3.71%</td><td style="text-align:right">−2.22</td></tr>
+          <tr><td class="exp">20 days</td><td style="text-align:right" class="down">−0.91%</td><td style="text-align:right" class="down">−3.12%</td><td style="text-align:right">−2.21</td></tr>
+          <tr><td class="exp">60 days</td><td style="text-align:right" class="up">+3.73%</td><td style="text-align:right" class="up">+4.99%</td><td style="text-align:right">+1.26</td></tr>
+          <tr><td class="exp">YTD</td><td style="text-align:right" class="up">+12.40%</td><td style="text-align:right" class="up">+16.94%</td><td style="text-align:right">+4.54</td></tr>
+          <tr><td class="exp">52W drawdown</td><td style="text-align:right" class="down">−1.94%</td><td style="text-align:right" class="down">−5.83%</td><td style="text-align:right">−3.90</td></tr>
+        </tbody>
+      </table>
+      <p class="gex-note">Monday’s bounce narrowed the one-day gap but not the week: QQQ is still 2.2 points behind SPY over five sessions.</p>
+    </article>
+    <article class="card">
+      <div class="kicker">Relative value</div>
+      <h3>QQQ is the more conditional pin</h3>
+      <ul class="bullets">
+        <li><strong>Distance:</strong> QQQ’s max pain is 1.20% above spot vs SPY’s 0.46% — 2.6× farther in percentage terms.</li>
+        <li><strong>Sigma:</strong> 0.48σ vs 0.30σ. Both are inside 1σ, but QQQ’s pin requires more travel.</li>
+        <li><strong>Walls:</strong> QQQ’s put wall is 1.0% below spot; SPY’s is 2.8% below. QQQ’s first support test is much closer.</li>
+        <li><strong>Verdict:</strong> SPY offers the cleaner pin; QQQ offers a wider band with more event risk. They are not the same trade.</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section class="section wrap" id="method">
+  <div class="section-head">
+    <div>
+      <div class="eyebrow">Method &amp; limits</div>
+      <h2>How the numbers <em style="font-style:normal;color:var(--pin)">were built.</em></h2>
+      <p class="lead">Max pain is the strike that minimizes the aggregate intrinsic payout to option holders at expiration. The model is deliberately simple; the judgment is in the context around it.</p>
+    </div>
+    <div class="section-side"><strong>Data:</strong> Yahoo Finance via yfinance, as of the Oct 19, 2026 close. Expiry: Oct 23, 2026 (4 DTE). SPY open interest 778,304 contracts; QQQ 603,734.</div>
+  </div>
+  <div class="method-grid">
+    <article class="card">
+      <div class="kicker">Max pain</div>
+      <h3>The payout minimum</h3>
+      <div class="formula">For each settlement price S:
+  Call pain(S) = Σ  CallOI(K) × max(S − K, 0) × 100
+  Put pain(S)  = Σ  PutOI(K)  × max(K − S, 0) × 100
+  Total(S)     = Call pain(S) + Put pain(S)
+
+Max pain = argmin Total(S)</div>
+      <ul class="bullets">
+        <li><strong>Full chain:</strong> every strike with non-zero OI in the Oct 23 expiry is included. The chart is zoomed; the calculation is not.</li>
+        <li><strong>Variants:</strong> volume max pain repeats the calculation with Monday’s volume. The blend uses OI + 0.5 × volume.</li>
+        <li><strong>Shelf:</strong> every strike whose total payout is within 1% of the minimum. It is a robustness check, not a separate forecast.</li>
+        <li><strong>Payout:</strong> intrinsic value at settlement; no discounting, early exercise or assignment frictions.</li>
+      </ul>
+    </article>
+    <article class="card">
+      <div class="kicker">Volatility &amp; gamma</div>
+      <h3>Implied move and dealer exposure</h3>
+      <div class="formula">1σ move = S × IV_ATM × √(DTE / 365)
+
+GEX(S) = Σ Γ(K, S) × OI(K) × 100 × S² × 0.01
+         calls positive · puts negative</div>
+      <ul class="bullets">
+        <li><strong>ATM IV:</strong> average of the nearest ATM call and put mid IVs; 1σ uses 4/365 years.</li>
+        <li><strong>Skew:</strong> 25Δ risk reversal is 25Δ put IV minus 25Δ call IV. Positive means puts are richer.</li>
+        <li><strong>GEX:</strong> Black-Scholes gamma at each hypothetical spot, held OI constant. It is a static, modeled exposure.</li>
+        <li><strong>Sign convention:</strong> calls + / puts −. That assumes a particular dealer book; actual positioning is unobservable.</li>
+      </ul>
+    </article>
+  </div>
+  <div class="split-note">
+    <article class="card">
+      <div class="kicker">Data &amp; verification</div>
+      <h3>What was checked</h3>
+      <ul class="bullets">
+        <li><strong>Source:</strong> Yahoo Finance via yfinance, as of the Oct 19, 2026 close.</li>
+        <li><strong>Expiry:</strong> Oct 23, 2026 (4 DTE). SPY OI 778,304; QQQ OI 603,734.</li>
+        <li><strong>Volume:</strong> 500,001 SPY and 428,824 QQQ contracts traded Monday.</li>
+        <li><strong>Max-pain check:</strong> every listed strike was brute-forced; the minimum is not an interpolation.</li>
+        <li><strong>Consistency:</strong> pin levels, 1σ ranges and breakevens reconcile to the quoted spot and IVs.</li>
+      </ul>
+    </article>
+    <article class="card">
+      <div class="kicker">Limitations</div>
+      <h3>What the model cannot see</h3>
+      <ul class="bullets">
+        <li><strong>Anonymous OI:</strong> customer vs dealer, spreads, hedges and rolls are invisible in end-of-day data.</li>
+        <li><strong>No arbitrage force:</strong> max pain is descriptive. Nothing guarantees settlement at the minimum.</li>
+        <li><strong>Static gamma:</strong> the model excludes vanna, charm, dividends and intraday hedging. It is a snapshot, not a simulation.</li>
+        <li><strong>Event risk:</strong> earnings dates and index weights can change; NFLX weight was unavailable in the data pull.</li>
+        <li><strong>Closing auction:</strong> PM settlement and MOC flows can overwhelm the map in the final hour.</li>
+        <li><strong>Quote quality:</strong> yfinance IVs are mid-based and can be stale; they are not directly tradeable.</li>
+      </ul>
+    </article>
+  </div>
+  <p class="footnote" style="margin-top:18px">Model outputs are conditional on the current open-interest book and the stated sign convention. A max-pain level is a reference point for positioning, not a price target or a trade recommendation.</p>
+</section>
+</main>
+
+<footer class="footer wrap">
+  <div class="brand">
+    <span class="mark">MP</span>
+    <span>Max Pain Map<span class="brand-sub">SPY × QQQ · OCT 23 2026</span></span>
+  </div>
+  <div class="legal">
+    <b>Research and education only.</b> Not investment advice, a solicitation, or a recommendation to buy or sell any security. Options involve substantial risk and are not suitable for every investor. Max pain, gamma and implied ranges are model estimates based on end-of-day data; they can be wrong and are not guarantees of future price behavior. Past performance is not indicative of future results.<br><br>
+    Data: Yahoo Finance via yfinance, as of the Oct 19, 2026 close. Expiry: Oct 23, 2026. Built as a self-contained HTML report with inline SVG.
+  </div>
+</footer>
+</body>
+</html>
