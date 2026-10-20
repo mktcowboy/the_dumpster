@@ -1,0 +1,1788 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Spikeandred Look — Prompt Field Guide &amp; Campaign Playbook</title>
+<meta name="description" content="A deconstruction of @spikeandred's hyperreal cinematic language: 12 copy-paste prompts, a consistency system, and a campaign playbook.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Space+Grotesk:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0a0a0b;
+    --panel:#121214;
+    --panel-2:#17171a;
+    --line:#2a2a2e;
+    --line-2:#3a3a40;
+    --ink:#f4f1ea;
+    --muted:#a19b90;
+    --dim:#6f6a62;
+    --red:#e8472f;
+    --red-soft:rgba(232,71,47,.12);
+    --good:#9ad46b;
+    --sans:'Space Grotesk',-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+    --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    --display:'Anton',Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;
+    --max:1240px;
+  }
+
+  *,*::before,*::after{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:var(--sans);
+    font-size:16px;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+    overflow-x:clip;
+  }
+  body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    z-index:9999;
+    pointer-events:none;
+    opacity:.05;
+    mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  ::selection{background:var(--red);color:#fff}
+  a{color:inherit;text-decoration:none}
+  button{font:inherit;color:inherit}
+  :focus-visible{outline:2px solid var(--red);outline-offset:3px}
+  .skip{
+    position:absolute;left:-9999px;top:0;z-index:999;
+    background:var(--ink);color:var(--bg);padding:10px 14px;
+    font-family:var(--mono);font-size:11px;text-transform:uppercase;
+  }
+  .skip:focus{left:16px;top:16px}
+
+  #progress{
+    position:fixed;top:0;left:0;height:2px;width:0;
+    background:var(--red);z-index:500;
+  }
+
+  .topbar{
+    position:sticky;top:0;z-index:100;
+    background:rgba(10,10,11,.86);
+    backdrop-filter:blur(14px);
+    -webkit-backdrop-filter:blur(14px);
+    border-bottom:1px solid var(--line);
+  }
+  .topbar-inner{
+    max-width:var(--max);margin:0 auto;padding:14px 28px;
+    display:flex;align-items:center;justify-content:space-between;gap:24px;
+  }
+  .brand{
+    display:flex;align-items:center;gap:10px;
+    font-family:var(--mono);font-size:11px;letter-spacing:.12em;
+    text-transform:uppercase;white-space:nowrap;
+  }
+  .brand-mark{width:9px;height:9px;background:var(--red);display:inline-block;flex:0 0 auto}
+  .brand strong{font-weight:500;color:var(--ink)}
+  .brand span{color:var(--dim)}
+  .nav{
+    display:flex;align-items:center;gap:18px;
+    font-family:var(--mono);font-size:9px;letter-spacing:.11em;
+    text-transform:uppercase;color:var(--muted);
+    overflow-x:auto;scrollbar-width:none;
+  }
+  .nav::-webkit-scrollbar{display:none}
+  .nav a{white-space:nowrap;padding:4px 0;border-bottom:1px solid transparent}
+  .nav a:hover{color:var(--ink);border-bottom-color:var(--red)}
+
+  .hero{
+    max-width:var(--max);margin:0 auto;
+    padding:clamp(52px,7vw,96px) 28px clamp(56px,7vw,88px);
+    display:grid;grid-template-columns:1.12fr .88fr;
+    gap:clamp(32px,5vw,72px);align-items:center;
+  }
+  .eyebrow{
+    display:flex;align-items:center;gap:10px;
+    margin:0 0 24px;
+    font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;
+    text-transform:uppercase;color:var(--muted);
+  }
+  .eyebrow .dot{
+    width:7px;height:7px;border-radius:50%;background:var(--red);
+    box-shadow:0 0 0 4px var(--red-soft);flex:0 0 auto;
+  }
+  h1{
+    font-family:var(--display);font-weight:400;
+    font-size:clamp(54px,7.4vw,104px);
+    line-height:.88;letter-spacing:.004em;text-transform:uppercase;
+    margin:0 0 26px;
+  }
+  h1 .outline{color:transparent;-webkit-text-stroke:1.5px var(--ink)}
+  h1 .red{color:var(--red)}
+  .deck{
+    max-width:57ch;margin:0 0 30px;
+    font-size:clamp(15.5px,1.45vw,18px);line-height:1.62;color:var(--muted);
+  }
+  .deck strong{color:var(--ink);font-weight:500}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:40px}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:8px;
+    padding:13px 17px;border:1px solid var(--line);background:transparent;
+    font-family:var(--mono);font-size:10px;letter-spacing:.1em;
+    text-transform:uppercase;cursor:pointer;
+    transition:background .2s,border-color .2s,color .2s;
+  }
+  .btn:hover{border-color:var(--ink)}
+  .btn-primary{background:var(--red);border-color:var(--red);color:#fff}
+  .btn-primary:hover{background:#f25a42;border-color:#f25a42}
+  .btn-ghost{color:var(--ink)}
+  .btn-ghost:hover{background:rgba(255,255,255,.04)}
+  .stats{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:1px;
+    margin:0;background:var(--line);
+    border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  }
+  .stats div{background:var(--bg);padding:15px 12px 13px}
+  .stats dt{font-family:var(--display);font-size:30px;line-height:1;margin:0}
+  .stats div:first-child dt{color:var(--red)}
+  .stats dd{
+    margin:7px 0 0;font-family:var(--mono);font-size:8.5px;
+    letter-spacing:.1em;text-transform:uppercase;color:var(--dim);line-height:1.4;
+  }
+
+  .hero-board{
+    border:1px solid var(--line);background:var(--panel);
+    padding:13px;position:relative;
+  }
+  .hero-board::before,.hero-board::after{
+    content:"";position:absolute;width:14px;height:14px;
+    border-color:var(--red);border-style:solid;pointer-events:none;
+  }
+  .hero-board::before{top:-1px;left:-1px;border-width:2px 0 0 2px}
+  .hero-board::after{bottom:-1px;right:-1px;border-width:0 2px 2px 0}
+  .board-head{
+    display:flex;justify-content:space-between;gap:12px;
+    padding:0 2px 11px;
+    font-family:var(--mono);font-size:8.5px;letter-spacing:.12em;
+    text-transform:uppercase;color:var(--dim);
+  }
+  .contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}
+  .frame{
+    margin:0;aspect-ratio:4/5;position:relative;overflow:hidden;
+    border:1px solid rgba(255,255,255,.08);
+    transition:transform .3s ease,border-color .3s ease;
+  }
+  .frame:hover{transform:translateY(-3px);border-color:rgba(232,71,47,.75)}
+  .frame::after{
+    content:"";position:absolute;inset:0;pointer-events:none;
+    background:linear-gradient(180deg,transparent 48%,rgba(0,0,0,.62));
+  }
+  .frame figcaption{
+    position:absolute;left:8px;right:8px;bottom:7px;z-index:1;
+    font-family:var(--mono);font-size:8px;line-height:1.45;
+    letter-spacing:.07em;text-transform:uppercase;
+    color:rgba(255,255,255,.9);text-shadow:0 1px 8px rgba(0,0,0,.65);
+  }
+  .frame figcaption span{color:rgba(255,255,255,.55)}
+  .f1{background:
+    radial-gradient(circle at 68% 24%,rgba(255,244,214,.95) 0 6%,rgba(255,244,214,.18) 7%,transparent 18%),
+    linear-gradient(180deg,#d9c6a1 0%,#c1a983 42%,#6b5b49 43%,#3a322a 100%)}
+  .f2{background:
+    radial-gradient(circle at 48% 46%,rgba(255,255,255,.5) 0 8%,rgba(255,255,255,.12) 9%,transparent 26%),
+    radial-gradient(circle at 18% 74%,rgba(232,71,47,.5) 0 12%,transparent 38%),
+    linear-gradient(180deg,#16161a 0%,#08080a 100%)}
+  .f3{background:
+    radial-gradient(circle at 32% 66%,rgba(255,176,92,.85) 0 10%,transparent 34%),
+    linear-gradient(165deg,#e5a05c 0%,#b86234 45%,#4a2218 75%,#1d0f0c 100%)}
+  .f4{background:
+    radial-gradient(circle at 74% 30%,rgba(255,64,42,.7) 0 6%,transparent 22%),
+    radial-gradient(circle at 30% 55%,rgba(60,220,200,.35) 0 5%,transparent 24%),
+    repeating-linear-gradient(105deg,transparent 0 18px,rgba(255,255,255,.05) 19px 20px),
+    linear-gradient(180deg,#0a1517 0%,#050809 100%)}
+  .f5{background:
+    linear-gradient(115deg,transparent 38%,rgba(255,255,255,.28) 39%,rgba(255,255,255,.05) 41%,transparent 42%),
+    radial-gradient(ellipse at 50% 50%,#4a4a4a 0%,#101010 72%)}
+  .f6{background:
+    radial-gradient(ellipse 38% 11% at 50% 40%,#2b2b2e 98%,transparent 100%),
+    linear-gradient(180deg,#cfd6d4 0%,#aeb9b5 58%,#6f756f 100%)}
+  .board-note{
+    margin:11px 0 0;
+    font-family:var(--mono);font-size:8px;line-height:1.5;
+    letter-spacing:.07em;text-transform:uppercase;color:var(--dim);
+  }
+  .board-note a{color:var(--muted);text-decoration:underline;text-underline-offset:2px}
+  .board-note a:hover{color:var(--ink)}
+
+  .section{border-top:1px solid var(--line);padding:clamp(60px,7.5vw,104px) 0}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 28px}
+  .section-head{
+    display:grid;grid-template-columns:86px minmax(0,1fr);gap:26px;
+    align-items:start;margin-bottom:clamp(30px,4.5vw,52px);
+  }
+  .section-num{
+    padding-top:8px;
+    font-family:var(--mono);font-size:10px;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--red);
+  }
+  h2{
+    font-family:var(--display);font-weight:400;
+    font-size:clamp(38px,5vw,66px);line-height:.92;
+    text-transform:uppercase;margin:0 0 16px;
+  }
+  .lede{max-width:68ch;margin:0;color:var(--muted);font-size:16px;line-height:1.65}
+  .lede strong{color:var(--ink);font-weight:500}
+  .lede + .lede{margin-top:12px}
+
+  .pillars{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
+    background:var(--line);border:1px solid var(--line);
+  }
+  .pillar{background:var(--panel);padding:26px 24px 28px;transition:background .2s}
+  .pillar:hover{background:var(--panel-2)}
+  .p-num{
+    display:block;margin-bottom:18px;
+    font-family:var(--mono);font-size:9px;letter-spacing:.12em;color:var(--red);
+  }
+  .pillar h3{margin:0 0 8px;font-size:15.5px;font-weight:600;letter-spacing:-.01em}
+  .pillar p{margin:0;color:var(--muted);font-size:13px;line-height:1.6}
+
+  .formula-box{
+    position:relative;background:var(--panel);
+    border:1px solid var(--line);border-left:3px solid var(--red);
+    padding:clamp(20px,3vw,34px);
+  }
+  .block-head{
+    display:flex;align-items:center;justify-content:space-between;gap:16px;
+    margin-bottom:18px;
+  }
+  .block-label{
+    font-family:var(--mono);font-size:9px;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--dim);
+  }
+  .formula-box pre{
+    margin:0;white-space:pre-wrap;
+    font-family:var(--mono);font-size:clamp(12px,1.4vw,16px);
+    line-height:1.85;color:#d8d2c7;
+  }
+  .tok{color:var(--red)}
+  .copy-btn{
+    flex:0 0 auto;background:transparent;border:1px solid var(--line);
+    padding:6px 9px;cursor:pointer;
+    font-family:var(--mono);font-size:8.5px;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--muted);
+    transition:background .2s,border-color .2s,color .2s;
+  }
+  .copy-btn:hover{color:var(--ink);border-color:var(--ink)}
+  .copy-btn.copied{background:var(--red);border-color:var(--red);color:#fff}
+
+  .module-grid{
+    display:grid;grid-template-columns:1fr 1fr;gap:1px;
+    margin-top:24px;background:var(--line);border:1px solid var(--line);
+  }
+  .module{background:var(--bg);padding:18px 20px}
+  .module-label{
+    display:block;margin-bottom:7px;
+    font-family:var(--mono);font-size:8.5px;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--red);
+  }
+  .module p{margin:0;font-size:12.5px;line-height:1.6;color:var(--muted)}
+  .module em{color:var(--ink);font-style:normal}
+
+  .compare{
+    display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:16px;
+  }
+  .compare-col{border:1px solid var(--line);background:var(--panel);padding:20px 22px}
+  .compare-col.bad{border-color:rgba(232,71,47,.35)}
+  .compare-col.good{border-color:rgba(154,212,107,.35)}
+  .compare-col span{
+    display:block;margin-bottom:10px;
+    font-family:var(--mono);font-size:8.5px;letter-spacing:.13em;
+    text-transform:uppercase;
+  }
+  .compare-col.bad span{color:var(--red)}
+  .compare-col.good span{color:var(--good)}
+  .compare-col p{margin:0;font-family:var(--mono);font-size:11.5px;line-height:1.7;color:var(--muted)}
+
+  .howto{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:1px;
+    margin-bottom:24px;background:var(--line);border:1px solid var(--line);
+  }
+  .howto div{
+    background:var(--panel);padding:13px 15px;
+    font-family:var(--mono);font-size:9px;line-height:1.55;
+    letter-spacing:.05em;text-transform:uppercase;color:var(--muted);
+  }
+  .howto b{color:var(--red);font-weight:500;margin-right:5px}
+
+  .toolbar{
+    display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;
+    gap:14px;margin-bottom:22px;
+  }
+  .filters{display:flex;flex-wrap:wrap;gap:6px}
+  .filter{
+    background:transparent;border:1px solid var(--line);padding:8px 11px;
+    cursor:pointer;
+    font-family:var(--mono);font-size:8.5px;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--muted);
+    transition:background .2s,border-color .2s,color .2s;
+  }
+  .filter:hover{color:var(--ink);border-color:var(--line-2)}
+  .filter.active{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+  .toolbar-right{display:flex;align-items:center;gap:10px}
+  .count{
+    font-family:var(--mono);font-size:8.5px;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--dim);white-space:nowrap;
+  }
+  .mini-btn{
+    background:transparent;border:1px solid var(--line);padding:7px 9px;
+    cursor:pointer;
+    font-family:var(--mono);font-size:8px;letter-spacing:.08em;
+    text-transform:uppercase;color:var(--muted);
+    transition:background .2s,border-color .2s,color .2s;
+  }
+  .mini-btn:hover{color:var(--ink);border-color:var(--line-2)}
+
+  .prompt-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .prompt-card{
+    display:flex;flex-direction:column;
+    background:var(--panel);border:1px solid var(--line);
+    padding:21px 21px 23px;
+    transition:border-color .2s,transform .2s;
+  }
+  .prompt-card:hover{border-color:var(--line-2);transform:translateY(-2px)}
+  .prompt-card[hidden]{display:none}
+  .pcard-top{display:flex;align-items:center;gap:9px;margin-bottom:15px}
+  .pnum{font-family:var(--mono);font-size:9px;letter-spacing:.1em;color:var(--dim)}
+  .chip{
+    border:1px solid rgba(232,71,47,.35);padding:4px 6px;
+    font-family:var(--mono);font-size:7.5px;line-height:1;
+    letter-spacing:.12em;text-transform:uppercase;color:var(--red);
+  }
+  .pcard-top .copy-btn{margin-left:auto}
+  .prompt-card h3{margin:0 0 6px;font-size:17px;font-weight:600;letter-spacing:-.015em}
+  .spec{
+    margin:0 0 15px;
+    font-family:var(--mono);font-size:8.5px;letter-spacing:.07em;
+    text-transform:uppercase;color:var(--dim);
+  }
+  .prompt{
+    flex:1;margin:0;
+    font-family:var(--mono);font-size:11.5px;line-height:1.7;
+    color:#c9c3b8;
+  }
+
+  .negative{
+    display:grid;grid-template-columns:190px 1fr auto;gap:20px;align-items:center;
+    margin-top:14px;padding:20px 22px;
+    background:rgba(232,71,47,.055);
+    border:1px solid rgba(232,71,47,.28);
+  }
+  .negative .block-label{color:var(--red)}
+  .negative p{
+    margin:0;font-family:var(--mono);font-size:11px;line-height:1.65;color:var(--muted);
+  }
+
+  .panel-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line)}
+  .panel{background:var(--panel);padding:24px 24px 26px}
+  .panel h3{
+    margin:0 0 14px;
+    font-family:var(--mono);font-size:10px;letter-spacing:.14em;
+    text-transform:uppercase;
+  }
+  .panel.lock h3{color:var(--red)}
+  .panel.swap h3{color:var(--good)}
+  .panel ul{list-style:none;margin:0;padding:0;display:grid;gap:9px}
+  .panel li{
+    position:relative;padding-left:18px;
+    font-size:13px;line-height:1.55;color:var(--muted);
+  }
+  .panel li::before{
+    position:absolute;left:0;top:0;
+    font-family:var(--mono);font-size:11px;
+  }
+  .panel.lock li::before{content:"×";color:var(--red)}
+  .panel.swap li::before{content:"+";color:var(--good)}
+
+  .spine-box{
+    margin-top:14px;background:var(--panel);
+    border:1px solid var(--line);border-left:3px solid var(--red);
+    padding:clamp(20px,3vw,30px);
+  }
+  .spine-box pre{
+    margin:0;white-space:pre-wrap;
+    font-family:var(--mono);font-size:clamp(11px,1.25vw,14px);
+    line-height:1.8;color:#d8d2c7;
+  }
+  .spine-box .tok{color:var(--red)}
+
+  .table-wrap{overflow-x:auto;border:1px solid var(--line);background:var(--panel)}
+  table{width:100%;border-collapse:collapse;min-width:760px}
+  th,td{
+    padding:14px 16px;text-align:left;vertical-align:top;
+    border-bottom:1px solid var(--line);
+    font-size:12.5px;line-height:1.55;
+  }
+  th{
+    background:var(--bg);color:var(--dim);font-weight:500;
+    font-family:var(--mono);font-size:8.5px;letter-spacing:.12em;
+    text-transform:uppercase;white-space:nowrap;
+  }
+  td{color:var(--muted)}
+  td:first-child{color:var(--ink);font-weight:600;white-space:nowrap}
+  tr:last-child td{border-bottom:0}
+  td code,th code{
+    font-family:var(--mono);font-size:10.5px;color:var(--ink);
+    background:rgba(255,255,255,.06);padding:2px 5px;
+    border:1px solid rgba(255,255,255,.08);
+  }
+
+  .steps{
+    display:grid;grid-template-columns:1fr 1fr;gap:1px;
+    background:var(--line);border:1px solid var(--line);
+  }
+  .step{background:var(--panel);padding:20px 22px;display:grid;grid-template-columns:30px 1fr;gap:10px}
+  .step.wide{grid-column:1 / -1}
+  .step .s-num{font-family:var(--mono);font-size:9px;letter-spacing:.1em;color:var(--red);padding-top:2px}
+  .step h4{margin:0 0 5px;font-size:13px;font-weight:600}
+  .step p{margin:0;font-size:12px;line-height:1.6;color:var(--muted)}
+
+  .recipe-base{
+    margin-top:14px;padding:20px 22px;
+    background:var(--panel);border:1px solid var(--line);
+  }
+  .recipe-base .block-label{display:block;margin-bottom:9px}
+  .recipe-base p{
+    margin:0;font-family:var(--mono);font-size:11.5px;line-height:1.7;color:#c9c3b8;
+  }
+  .recipe-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;margin-top:10px;background:var(--line);border:1px solid var(--line)}
+  .recipe-cell{background:var(--panel);padding:17px 16px 19px}
+  .recipe-cell span{
+    display:block;margin-bottom:8px;
+    font-family:var(--mono);font-size:8px;letter-spacing:.12em;
+    text-transform:uppercase;color:var(--red);
+  }
+  .recipe-cell p{margin:0;font-size:11.5px;line-height:1.6;color:var(--muted)}
+
+  .phase-list{border-left:1px solid var(--line);margin-left:8px}
+  .phase{
+    position:relative;padding:0 0 30px 32px;
+  }
+  .phase:last-child{padding-bottom:0}
+  .phase::before{
+    content:"";position:absolute;left:-5px;top:5px;
+    width:9px;height:9px;background:var(--bg);
+    border:1px solid var(--red);border-radius:50%;
+  }
+  .phase-num{
+    font-family:var(--mono);font-size:8.5px;letter-spacing:.14em;
+    color:var(--red);text-transform:uppercase;
+  }
+  .phase h3{margin:6px 0 7px;font-size:17px;font-weight:600;letter-spacing:-.01em}
+  .phase p{margin:0;max-width:78ch;font-size:13px;line-height:1.65;color:var(--muted)}
+  .phase p strong{color:var(--ink);font-weight:500}
+
+  .shotlist{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
+    background:var(--line);border:1px solid var(--line);
+  }
+  .shot{background:var(--panel);padding:20px 20px 22px}
+  .shot .s-num{font-family:var(--mono);font-size:8px;letter-spacing:.12em;color:var(--red)}
+  .shot h4{margin:7px 0 5px;font-size:14.5px;font-weight:600}
+  .shot p{margin:0;font-size:12px;line-height:1.6;color:var(--muted)}
+  .shot .ratio{
+    display:inline-block;margin-top:11px;padding:4px 6px;
+    border:1px solid var(--line-2);
+    font-family:var(--mono);font-size:8px;letter-spacing:.08em;color:var(--dim);
+  }
+
+  .checklist{
+    display:grid;grid-template-columns:1fr 1fr;gap:7px 22px;
+    list-style:none;margin:18px 0 0;padding:0;
+  }
+  .checklist li{
+    position:relative;padding-left:24px;
+    font-size:12.5px;line-height:1.6;color:var(--muted);
+  }
+  .checklist li::before{
+    content:"";position:absolute;left:0;top:3px;
+    width:11px;height:11px;border:1px solid var(--line-2);
+  }
+
+  .rules{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .rule-col{border:1px solid var(--line);background:var(--panel);padding:23px 24px 25px}
+  .rule-col h3{
+    display:flex;align-items:center;gap:8px;margin:0 0 16px;
+    font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;
+  }
+  .rule-col.do h3{color:var(--good)}
+  .rule-col.dont h3{color:var(--red)}
+  .rule-list{list-style:none;margin:0;padding:0;display:grid;gap:9px}
+  .rule-list li{
+    position:relative;padding-left:19px;
+    font-size:13px;line-height:1.55;color:var(--muted);
+  }
+  .rule-list li::before{position:absolute;left:0;top:0;font-family:var(--mono);font-size:11px}
+  .do .rule-list li::before{content:"+";color:var(--good)}
+  .dont .rule-list li::before{content:"−";color:var(--red)}
+  .kill{
+    display:flex;flex-wrap:wrap;gap:7px;margin-top:24px;align-items:center;
+  }
+  .kill-label{
+    width:100%;margin-bottom:2px;
+    font-family:var(--mono);font-size:8.5px;letter-spacing:.12em;
+    text-transform:uppercase;color:var(--dim);
+  }
+  .kill span{
+    padding:6px 9px;border:1px solid var(--line);
+    font-family:var(--mono);font-size:8.5px;letter-spacing:.09em;
+    text-transform:uppercase;color:var(--dim);
+    text-decoration:line-through;text-decoration-color:var(--red);
+    text-decoration-thickness:1.5px;
+  }
+
+  .ref-group{margin-bottom:32px}
+  .ref-group:last-child{margin-bottom:0}
+  .ref-group h3{
+    margin:0 0 12px;padding-bottom:9px;
+    border-bottom:1px solid var(--line);
+    font-family:var(--mono);font-size:9px;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--red);
+  }
+  .ref-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}
+  .ref{
+    display:grid;grid-template-columns:1fr auto;gap:4px 12px;
+    padding:14px 15px;background:var(--panel);border:1px solid var(--line);
+    transition:background .2s,border-color .2s;
+  }
+  .ref:hover{background:var(--panel-2);border-color:var(--line-2)}
+  .ref-title{margin:0;font-size:13px;font-weight:600;line-height:1.35;letter-spacing:-.01em}
+  .ref-src{
+    margin:0;font-family:var(--mono);font-size:7.5px;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--dim);
+  }
+  .ref-desc{grid-column:1 / -1;margin:4px 0 0;font-size:11px;line-height:1.55;color:var(--muted)}
+  .ref-arrow{color:var(--dim);font-size:13px;line-height:1;transition:color .2s,transform .2s}
+  .ref:hover .ref-arrow{color:var(--red);transform:translate(2px,-2px)}
+
+  .ethics-box{
+    display:grid;grid-template-columns:200px 1fr;gap:24px;
+    padding:clamp(24px,3.5vw,38px);
+    border:1px solid rgba(232,71,47,.35);
+    background:linear-gradient(135deg,rgba(232,71,47,.08),transparent 62%);
+  }
+  .ethics-box h2{font-size:clamp(25px,3.2vw,38px);margin:0}
+  .ethics-box p{margin:0 0 10px;max-width:82ch;font-size:13px;line-height:1.65;color:var(--muted)}
+  .ethics-box p:last-child{margin-bottom:0}
+  .ethics-box strong{color:var(--ink);font-weight:500}
+
+  footer{border-top:1px solid var(--line);padding:28px 0 38px}
+  .footer-inner{
+    max-width:var(--max);margin:0 auto;padding:0 28px;
+    display:flex;justify-content:space-between;gap:24px;
+    font-family:var(--mono);font-size:8.5px;line-height:1.7;
+    letter-spacing:.08em;text-transform:uppercase;color:var(--dim);
+  }
+  .footer-inner p{margin:0;max-width:72ch}
+  .footer-inner a{text-decoration:underline;text-underline-offset:2px}
+  .footer-inner a:hover{color:var(--ink)}
+
+  .toast{
+    position:fixed;left:50%;bottom:24px;z-index:300;
+    padding:10px 15px;background:var(--ink);color:var(--bg);
+    font-family:var(--mono);font-size:9px;letter-spacing:.08em;
+    text-transform:uppercase;white-space:nowrap;
+    opacity:0;pointer-events:none;transform:translate(-50%,16px);
+    transition:opacity .22s,transform .22s;
+  }
+  .toast.show{opacity:1;transform:translate(-50%,0)}
+
+  @media (max-width:1080px){
+    .hero{grid-template-columns:1fr;gap:44px}
+    .hero-board{max-width:560px}
+    .pillars{grid-template-columns:1fr 1fr}
+    .prompt-grid{grid-template-columns:1fr}
+    .ref-grid{grid-template-columns:1fr 1fr}
+    .recipe-grid{grid-template-columns:1fr 1fr}
+    .shotlist{grid-template-columns:1fr 1fr}
+    .howto{grid-template-columns:1fr 1fr}
+  }
+  @media (max-width:820px){
+    .nav{display:none}
+    .topbar-inner{padding:12px 18px}
+    .hero{padding:48px 18px 60px}
+    .wrap{padding:0 18px}
+    .section-head{grid-template-columns:1fr;gap:8px}
+    .section-num{padding-top:0}
+    .stats{grid-template-columns:1fr 1fr}
+    .pillars{grid-template-columns:1fr}
+    .module-grid{grid-template-columns:1fr}
+    .compare{grid-template-columns:1fr}
+    .panel-grid{grid-template-columns:1fr}
+    .steps{grid-template-columns:1fr}
+    .rules{grid-template-columns:1fr}
+    .ref-grid{grid-template-columns:1fr}
+    .shotlist{grid-template-columns:1fr}
+    .ethics-box{grid-template-columns:1fr}
+    .negative{grid-template-columns:1fr;gap:10px}
+    .checklist{grid-template-columns:1fr}
+    .toolbar{align-items:flex-start;flex-direction:column}
+    .toolbar-right{width:100%;justify-content:space-between}
+    .footer-inner{flex-direction:column}
+    h1{font-size:clamp(45px,12.5vw,72px)}
+  }
+  @media (max-width:520px){
+    .hero-actions .btn{width:100%}
+    .contact-grid{grid-template-columns:1fr 1fr}
+    .recipe-grid{grid-template-columns:1fr}
+    .howto{grid-template-columns:1fr}
+    .prompt-card{padding:18px 16px 20px}
+    .prompt{font-size:11px}
+  }
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    *,*::before,*::after{animation:none!important;transition:none!important}
+  }
+
+  @media print{
+    body{background:#fff;color:#111}
+    body::before,#progress,.topbar,.hero-board,.hero-actions,.filters,.toolbar,.copy-btn,.toast,.board-note{display:none!important}
+    .section{padding:22px 0;border-color:#ddd;break-inside:avoid}
+    .wrap,.hero{max-width:none;padding:0}
+    .hero{display:block;padding-top:12px}
+    h1{font-size:58px;color:#111}
+    h1 .outline{color:#111;-webkit-text-stroke:0}
+    h1 .red{color:#111}
+    .section-num,.p-num,.block-label,.module-label,.chip,.phase-num,.shot .s-num,.ref-group h3{color:#111}
+    .deck,.lede,.pillar p,.panel li,.step p,.phase p,.ref-desc,.rule-list li,.module p,.checklist li{color:#333}
+    .pillars,.module-grid,.panel-grid,.steps,.shotlist,.prompt-grid,.rules,.ref-grid,.negative{background:#ddd;border-color:#ccc}
+    .pillar,.panel,.step,.shot,.prompt-card,.ref,.rule-col,.formula-box,.spine-box,.recipe-base,.negative,.compare-col{background:#fff;color:#111;border-color:#ccc;break-inside:avoid}
+    .prompt,.spec,.compare-col p,.recipe-base p,.negative p{color:#222}
+    .stats div{background:#fff}
+    .stats dt,.stats dd{color:#111}
+    .section-head{grid-template-columns:1fr}
+    .prompt-grid{grid-template-columns:1fr 1fr}
+    a{color:#111;text-decoration:underline}
+    .ref-arrow{display:none}
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#prompts">Skip to prompts</a>
+<div id="progress" aria-hidden="true"></div>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="#top" aria-label="Back to top">
+      <span class="brand-mark"></span>
+      <span><strong>SPIKE/LOOK</strong> <span>/ FIELD GUIDE</span></span>
+    </a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#look">Look</a>
+      <a href="#formula">Formula</a>
+      <a href="#prompts">Prompts</a>
+      <a href="#consistency">Consistency</a>
+      <a href="#campaign">Campaign</a>
+      <a href="#models">Models</a>
+      <a href="#rules">Rules</a>
+      <a href="#references">References</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="dot"></span> Prompt field guide / 002 — @spikeandred</p>
+      <h1>Hyperreal.<br><span class="outline">Not AI-looking.</span></h1>
+      <p class="deck">A deconstruction of @spikeandred's cinematic language — <strong>16mm grain, direct flash, Rio street realism, one deadpan surreal beat</strong> — turned into 12 prompts, a consistency system, and a campaign playbook.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#prompts">Get the 12 prompts</a>
+        <a class="btn btn-ghost" href="#consistency">Consistency system</a>
+        <a class="btn btn-ghost" href="#campaign">Campaign playbook</a>
+        <a class="btn btn-ghost" href="https://www.instagram.com/spikeandred/" target="_blank" rel="noopener">Source account ↗</a>
+      </div>
+      <dl class="stats">
+        <div><dt>12</dt><dd>Prompts</dd></div>
+        <div><dt>04</dt><dd>Model playbooks</dd></div>
+        <div><dt>08</dt><dd>Campaign phases</dd></div>
+        <div><dt>00</dt><dd>“Hyperrealistic” in prompts</dd></div>
+      </dl>
+    </div>
+
+    <div class="hero-board" aria-label="Style mood board">
+      <div class="board-head"><span>Contact sheet / style mood</span><span>Rio · 2026</span></div>
+      <div class="contact-grid">
+        <figure class="frame f1"><figcaption>01 / Rooftop<br><span>16mm · 250D</span></figcaption></figure>
+        <figure class="frame f2"><figcaption>02 / Night flash<br><span>35mm · Portra 400</span></figcaption></figure>
+        <figure class="frame f3"><figcaption>03 / Moto<br><span>Golden hour · 500T</span></figcaption></figure>
+        <figure class="frame f4"><figcaption>04 / Rain neon<br><span>35mm · 800T</span></figcaption></figure>
+        <figure class="frame f5"><figcaption>05 / Studio<br><span>85mm · Tri-X 1600</span></figcaption></figure>
+        <figure class="frame f6"><figcaption>06 / Surreal<br><span>35mm · 250D</span></figcaption></figure>
+      </div>
+      <p class="board-note">Original CSS mood board — not source images. <a href="#references">See real examples ↗</a></p>
+    </div>
+  </section>
+
+  <section class="section" id="look">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-num">01 / The look</div>
+        <div>
+          <h2>Realism is evidence, not detail.</h2>
+          <p class="lede">His feed reads like lost frames from a hip-hop film shot in Rio on expired stock. The realism doesn't come from “more detail.” It comes from <strong>grain, bad light, sweat, clutter, and timing</strong> — the things a real camera accidentally records.</p>
+        </div>
+      </div>
+
+      <div class="pillars">
+        <div class="pillar">
+          <span class="p-num">01</span>
+          <h3>Documentary first</h3>
+          <p>Every frame implies a photographer was standing there. Candid beats composed. The subject is often mid-action, mid-conversation, or leaving the frame.</p>
+        </div>
+        <div class="pillar">
+          <span class="p-num">02</span>
+          <h3>Film is the finish</h3>
+          <p>16mm and 35mm stocks, visible grain, halation, soft corners. Never “8K.” The imperfections are the proof that a lens, not a renderer, made it.</p>
+        </div>
+        <div class="pillar">
+          <span class="p-num">03</span>
+          <h3>Light has a source</h3>
+          <p>Hard afternoon sun, direct on-camera flash, sodium streetlights, blue-hour ambience. Name the source and direction. “Cinematic lighting” alone is a slot machine.</p>
+        </div>
+        <div class="pillar">
+          <span class="p-num">04</span>
+          <h3>Place is a character</h3>
+          <p>Tangled wires, laundry lines, mosaic pavement, heat haze, stacked brick. Three specific clutter details do more than twenty adjectives.</p>
+        </div>
+        <div class="pillar">
+          <span class="p-num">05</span>
+          <h3>Bodies don't pose</h3>
+          <p>Hands in pockets, backs turned, sweat, awkward crops. Eye contact is occasional, not mandatory. Perfection reads as stock photography.</p>
+        </div>
+        <div class="pillar">
+          <span class="p-num">06</span>
+          <h3>One surreal beat</h3>
+          <p>A blimp over the hillside. A gas mask in a stairwell. A giant bird in traffic. Keep the world real and let exactly one thing be wrong.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="formula">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-num">02 / The formula</div>
+        <div>
+          <h2>Write like a photographer,<br>not a prompt engineer.</h2>
+          <p class="lede">Fill every bracket with something only a real place would have. The chain is: <strong>format → subject → place → light → camera → film → flaw → ratio</strong>. Break the chain and the AI look creeps back in.</p>
+        </div>
+      </div>
+
+      <div class="formula-box">
+        <div class="block-head">
+          <span class="block-label">The skeleton</span>
+          <button class="copy-btn" type="button" data-copy="#formula-text">Copy</button>
+        </div>
+        <pre id="formula-text"><span class="tok">[shot type]</span> of <span class="tok">[very specific subject]</span>
+in <span class="tok">[hyper-specific real place]</span>, <span class="tok">[candid action]</span>,
+<span class="tok">[wardrobe + props]</span>, <span class="tok">[time of day + light source]</span>,
+shot on <span class="tok">[camera + lens]</span>, <span class="tok">[film stock]</span>,
+<span class="tok">[imperfections]</span>, <span class="tok">[color palette]</span>, <span class="tok">[aspect ratio]</span></pre>
+      </div>
+
+      <div class="compare">
+        <div class="compare-col bad">
+          <span>Before / AI-looking</span>
+          <p>“Hyperrealistic Brazilian favela, 8K, cinematic lighting, masterpiece, ultra-detailed, perfect skin.”</p>
+        </div>
+        <div class="compare-col good">
+          <span>After / photographic</span>
+          <p>“Film still from a 16mm documentary, teenagers playing football on a favela rooftop in Rio, laundry lines and tangled wires, hard afternoon sun, 24mm lens, Kodak Vision3 250D, visible grain, slight halation, imperfect framing, 4:5.”</p>
+        </div>
+      </div>
+
+      <div class="module-grid">
+        <div class="module"><span class="module-label">Place bank</span><p>favela rooftop · Copacabana sidewalk · Ipanema Beach · São Paulo night street · concrete stairwell · basement party · beach promenade · bus interior</p></div>
+        <div class="module"><span class="module-label">Subject bank</span><p>teenagers · dirt-bike rider · street vendor · grandmother · skateboarder · model in archive streetwear · kids playing football · group of friends</p></div>
+        <div class="module"><span class="module-label">Light bank</span><p>golden hour · direct on-camera flash · blue hour · harsh midday sun · sodium streetlight · overcast · tungsten interior · television glow</p></div>
+        <div class="module"><span class="module-label">Stock bank</span><p>Vision3 250D · Vision3 500T · Portra 400 · Portra 800 · Cinestill 800T · Tri-X 400 · Superia 400 · Ultramax 400</p></div>
+        <div class="module"><span class="module-label">Flaw bank</span><p>visible grain · halation · motion blur · red-eye · slight underexposure · soft corners · dust · imperfect framing · chromatic aberration</p></div>
+        <div class="module"><span class="module-label">Surreal bank</span><p>blimp · giant bird · gas mask · chrome object · animal in traffic · impossible shadow · floating product · second sun</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="prompts">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-num">03 / 12 prompts</div>
+        <div>
+          <h2>The prompt library.</h2>
+          <p class="lede">Copy a card, swap one or two modules, generate 4–6 variations. Keep the camera and film language intact — that's what carries the look.</p>
+        </div>
+      </div>
+
+      <div class="howto">
+        <div><b>01</b> Pick a card</div>
+        <div><b>02</b> Swap place or subject</div>
+        <div><b>03</b> Generate 4–6 frames</div>
+        <div><b>04</b> Upscale once, lightly</div>
+      </div>
+
+      <div class="toolbar">
+        <div class="filters" role="group" aria-label="Filter prompts">
+          <button class="filter active" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter" type="button" data-filter="documentary" aria-pressed="false">Documentary</button>
+          <button class="filter" type="button" data-filter="portrait" aria-pressed="false">Portrait</button>
+          <button class="filter" type="button" data-filter="street" aria-pressed="false">Street</button>
+          <button class="filter" type="button" data-filter="editorial" aria-pressed="false">Editorial</button>
+          <button class="filter" type="button" data-filter="surreal" aria-pressed="false">Surreal</button>
+          <button class="filter" type="button" data-filter="motion" aria-pressed="false">Motion</button>
+        </div>
+        <div class="toolbar-right">
+          <span class="count" id="prompt-count">12 prompts</span>
+          <button class="mini-btn" type="button" id="download-pack">Download .txt</button>
+        </div>
+      </div>
+
+      <div class="prompt-grid" id="prompt-grid">
+
+        <article class="prompt-card" data-category="documentary">
+          <div class="pcard-top">
+            <span class="pnum">01</span><span class="chip">Documentary</span>
+            <button class="copy-btn" type="button" aria-label="Copy prompt 1">Copy</button>
+          </div>
+          <h3>Rooftop football, 16mm</h3>
+          <p class="spec">24mm · Vision3 250D · 4:5</p>
+          <p class="prompt">Film still from a 16mm documentary, a group of teenagers playing football on a crowded favela rooftop in Rio de Janeiro, late afternoon, laundry lines and tangled electrical wires overhead, patchwork brick houses stacked down the hillside, Christ the Redeemer tiny in the heat haze, shot on a 24mm lens from a low angle, harsh sun and deep shadows, Kodak Vision3 250D, heavy natural grain, slight halation, imperfect framing, candid unposed moment, sweat and dust, muted greens and sun-bleached concrete, 4:5</p>
+        </article>
+
+        <article class="prompt-card" data-category="portrait">
+          <div class="pcard-top">
+            <span class="pnum">02</span><span class="chip">Portrait</span>
+            <button class="copy-btn" type="button" aria-label="Copy prompt 2">Copy</button>
+          </div>
+          <h3>Night street portrait</h3>
+          <p class="spec">35mm · Portra 400 pushed 2 · 4:5</p>
+          <p class="prompt">Candid close-up portrait of a young Brazilian man on a night street in Rio, direct on-camera flash, sweat on his skin, thin gold chain, vintage denim jacket, cigarette smoke drifting through the flash, blurred neon shop signs and wet asphalt behind him, 35mm lens, Kodak Portra 400 pushed two stops, visible grain, slight red-eye, small motion blur, unposed, raw street photography, 4:5</p>
+        </article>
+
+        <article class="prompt-card" data-category="documentary">
+          <div class="pcard-top">
+            <span class="pnum">03</span><span class="chip">Documentary</span>
+            <button class="copy-btn" type="button" aria-label="Copy prompt 3">Copy</button>
+          </div>
+          <h3>Dirt bike descent</h3>
+          <p class="spec">35mm · Vision3 500T · 3:2</p>
+          <p class="prompt">Documentary photograph of a rider on a dirt bike doing a wheelie down a steep favela street in Rio de Janeiro, golden hour, dust and exhaust in the air, spectators on the curb, motion blur in the wheels, 35mm lens, Kodak Vision3 500T, gritty grain, lens flare, imperfect focus, 3:2</p>
+        </article>
+
+        <article class="prompt-card" data-category="street">
+          <div class="pcard-top">
+            <span class="pnum">04</span><span class="chip">Street</span>
+            <button class="copy-btn" type="button" aria-label="Copy prompt 4">Copy</button>
+          </div>
+          <h3>Lowrider at dusk</h3>
+          <p class="spec">35mm · Portra 800 · 3:2</p>
+          <p class="prompt">35mm film photo of a customized lowrider parked at dusk on a Brazilian beach promenade, chrome reflecting pink and orange sky, a group of friends leaning on the hood, palm trees and apartment blocks behind, direct flash mixed with fading daylight, Kodak Portra 800, grain, slight color shift, candid, 3:2</p>
+        </article>
+
+        <article class="prompt-card" data-category="street">
+          <div class="pcard-top">
+            <span class="pnum">05</span><span class="chip">Street</span>
+            <button class="copy-btn" type="button" aria-label="Copy prompt 5">Copy</button>
+          </div>
+          <h3>Copacabana crossing</h3>
+          <p class="spec">28mm · Superia 400 · 3:2</p>
+          <p class="prompt">Candid street photograph, an elderly man in a yellow football shirt crossing a Copacabana sidewalk at midday, mosaic pavement, vendors with umbrellas, harsh overhead sun, hard shadows, 28mm lens, Fuji Superia 400, amateur snapshot framing, slight tilt, grain, 3:2</p>
+        </article>
+
+        <article class="prompt-card" data-category="editorial">
+          <div class="pcard-top">
+            <span class="pnum">06</span><span class="chip">Editorial</span>
+            <button class="copy-btn" type="button" aria-label="Copy prompt 6">Copy</button>
+          </div>
+          <h3>Gas-mask editorial</h3>
+          <p class="spec">50mm · Tri-X 400 @1600 · 4:5</p>
+          <p class="prompt">Editorial fashion photograph, model wearing a black balaclava with a vintage gas mask pushed up on the forehead, oversized leather jacket, standing in a concrete stairwell, harsh direct flash, deep black shadows, smoke in the air, 50mm lens, Kodak Tri-X 400 pushed to 1600, heavy grain, contrasty black and white, slight blur, 4:5</p>
+        </article>
+
+        <article class="prompt-card" data-category="portrait">
+          <div class="pcard-top">
+            <span class="pnum">07</span><span class="chip">Portrait</span>
+            <button class="copy-btn" type="button" aria-label="Copy prompt 7">Copy</button>
+          </div>
+          <h3>Studio flash portrait</h3>
+          <p class="spec">85mm · Portra 400 · 4:5</p>
+          <p class="prompt">Studio portrait of a young woman with braids and gold teeth, black seamless background, hard direct flash from the side, sweat and visible skin texture, oversized basketball jersey, hands in pockets, 85mm lens, Kodak Portra 400, subtle grain, unretouched skin, 4:5</p>
+        </article>
+
+        <article class="prompt-card" data-category="surreal">
+          <div class="pcard-top">
+            <span class="pnum">08</span><span class="chip">Surreal</span>
+            <button class="copy-btn" type="button" aria-label="Copy prompt 8">Copy</button>
+          </div>
+          <h3>Blimp over the hillside</h3>
+          <p class="spec">35mm · Vision3 250D · 3:2</p>
+          <p class="prompt">Documentary-style photograph of a massive silver blimp floating low over a favela hillside at golden hour, tiny residents on rooftops looking up, cables and antennas, 35mm lens, Kodak Vision3 250D, grain, slight atmospheric haze, realistic scale, deadpan composition, 3:2</p>
+        </article>
+
+        <article class="prompt-card" data-category="motion">
+          <div class="pcard-top">
+            <span class="pnum">09</span><span class="chip">Motion</span>
+            <button class="copy-btn" type="button" aria-label="Copy prompt 9">Copy</button>
+          </div>
+          <h3>Rain and neon</h3>
+          <p class="spec">35mm · Cinestill 800T · 4:5</p>
+          <p class="prompt">Night street photograph in São Paulo, heavy rain, a figure in a hooded jacket walking away under neon signage, reflections on wet asphalt, steam rising from a grate, 35mm lens, Cinestill 800T, halation around the lights, grain, motion blur, 4:5</p>
+        </article>
+
+        <article class="prompt-card" data-category="motion">
+          <div class="pcard-top">
+            <span class="pnum">10</span><span class="chip">Motion</span>
+            <button class="copy-btn" type="button" aria-label="Copy prompt 10">Copy</button>
+          </div>
+          <h3>Basement party</h3>
+          <p class="spec">28mm · Ultramax 400 · 3:2</p>
+          <p class="prompt">Flash photograph inside a crowded basement party, dancers mid-motion, sweat and smiling faces, disposable camera look, direct flash, 28mm lens, Kodak Ultramax 400, blur, grain, red-eye, candid, 3:2</p>
+        </article>
+
+        <article class="prompt-card" data-category="documentary">
+          <div class="pcard-top">
+            <span class="pnum">11</span><span class="chip">Documentary</span>
+            <button class="copy-btn" type="button" aria-label="Copy prompt 11">Copy</button>
+          </div>
+          <h3>Ipanema sunset</h3>
+          <p class="spec">50mm · Portra 400 · 3:2</p>
+          <p class="prompt">Film photograph of kids playing football on Ipanema beach at sunset, silhouettes, spray of sand, kites in the sky, 50mm lens, Kodak Portra 400, warm highlights, grain, imperfect timing, 3:2</p>
+        </article>
+
+        <article class="prompt-card" data-category="portrait">
+          <div class="pcard-top">
+            <span class="pnum">12</span><span class="chip">Portrait</span>
+            <button class="copy-btn" type="button" aria-label="Copy prompt 12">Copy</button>
+          </div>
+          <h3>Blue-hour rooftop</h3>
+          <p class="spec">35mm · Portra 800 · 4:5</p>
+          <p class="prompt">Environmental portrait of a young man on a favela rooftop at blue hour, city lights below, wearing a vintage football jersey, looking off-camera, 35mm lens, Kodak Portra 800, direct flash balanced with ambient blue light, grain, 4:5</p>
+        </article>
+
+      </div>
+
+      <div class="negative">
+        <span class="block-label">Negative prompt</span>
+        <p id="negative-prompt">plastic skin, waxy, CGI, 3D render, video game, HDR, oversaturated, airbrushed, perfect teeth, symmetrical composition, stock photo, studio lighting, watermark, text, logo</p>
+        <button class="copy-btn" type="button" data-copy="#negative-prompt">Copy</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="consistency">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-num">04 / Consistency</div>
+        <div>
+          <h2>One world. Many angles.</h2>
+          <p class="lede">A campaign isn't 20 images that each look good. It's <strong>one world photographed from 20 angles</strong>. Lock the film language, then move only the story. The goal is not identical images — it's images that clearly came from the same shoot.</p>
+        </div>
+      </div>
+
+      <div class="panel-grid">
+        <div class="panel lock">
+          <h3>Lock these / the film language</h3>
+          <ul>
+            <li>Aspect ratio and crop logic</li>
+            <li>Lens set: 24mm, 35mm, 50mm</li>
+            <li>Film stock, grain, and halation level</li>
+            <li>Light logic: hard sun, direct flash, tungsten night</li>
+            <li>Grade: warm highlights, crushed blacks, muted greens</li>
+            <li>Cast, wardrobe palette, and recurring props</li>
+          </ul>
+        </div>
+        <div class="panel swap">
+          <h3>Swap one at a time / the story</h3>
+          <ul>
+            <li>One location detail</li>
+            <li>One action or gesture</li>
+            <li>One framing: wide, medium, close</li>
+            <li>Time of day, only within the same light logic</li>
+            <li>One surreal beat</li>
+            <li>The product or campaign message</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="spine-box">
+        <div class="block-head">
+          <span class="block-label">The campaign spine / reuse this block</span>
+          <button class="copy-btn" type="button" data-copy="#spine-text">Copy</button>
+        </div>
+        <pre id="spine-text"><span class="tok">STYLE LOCK</span>
+16mm documentary, Rio de Janeiro, 35mm lens, Kodak Vision3 250D,
+hard natural sun, warm highlights, crushed blacks, muted greens,
+visible grain, slight halation, unposed framing, 4:5.
+
+<span class="tok">SCENE</span>      [one sentence: who + what + where]
+<span class="tok">SUBJECT</span>    [age, wardrobe, props, emotional state]
+<span class="tok">PLACE</span>      [specific location + three clutter details]
+<span class="tok">LIGHT</span>      [source, direction, time of day]
+<span class="tok">SURREAL</span>    [one wrong thing — optional]</pre>
+      </div>
+
+      <div style="margin-top:30px">
+        <div class="block-head">
+          <span class="block-label">The modification ladder / change one rung at a time</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Level</th><th>What changes</th><th>What stays</th><th>Example</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>01 / Micro</td>
+                <td>Expression, gesture, crop</td>
+                <td>Everything else</td>
+                <td>“Same frame, one kid looks back over his shoulder.”</td>
+              </tr>
+              <tr>
+                <td>02 / Angle</td>
+                <td>Camera height and framing</td>
+                <td>Scene, cast, wardrobe, light</td>
+                <td>“Same rooftop, camera two meters lower, wide from behind.”</td>
+              </tr>
+              <tr>
+                <td>03 / Scene</td>
+                <td>Location and action</td>
+                <td>Cast, stock, light logic, grade</td>
+                <td>“Same crew, now at the beach at dusk, same stock.”</td>
+              </tr>
+              <tr>
+                <td>04 / Campaign</td>
+                <td>Subject and product</td>
+                <td>The entire film language</td>
+                <td>“Same look, a sneaker launch in São Paulo.”</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div style="margin-top:30px">
+        <div class="block-head">
+          <span class="block-label">Find and replace / change the variable, not the language</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>If you want</th><th>Change this</th><th>Keep this</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>New city</td>
+                <td>“Rio de Janeiro” → “São Paulo” and swap the clutter: wet asphalt, graffiti, bus interior.</td>
+                <td>Stock, lens, grade, grain</td>
+              </tr>
+              <tr>
+                <td>Night version</td>
+                <td>“golden hour · 250D” → “direct flash at night · Portra 400.”</td>
+                <td>Subject, place, framing</td>
+              </tr>
+              <tr>
+                <td>New subject</td>
+                <td>“teenagers playing football” → “a rider doing a wheelie.”</td>
+                <td>Place, light, lens</td>
+              </tr>
+              <tr>
+                <td>Vertical cut</td>
+                <td>“4:5” → “9:16, subject in the upper third, copy space in the lower third.”</td>
+                <td>Everything else</td>
+              </tr>
+              <tr>
+                <td>Tighter frame</td>
+                <td>“24mm wide” → “50mm, tight on hands and the ball.”</td>
+                <td>Scene, stock, grade</td>
+              </tr>
+              <tr>
+                <td>Campaign product</td>
+                <td>“scuffed skateboard” → your product, with the same handling and wear.</td>
+                <td>Spine, cast, light, grade</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="lede" style="margin-top:12px;font-size:13px">Change one row at a time. Change two and you've made a new look — which is fine, but rebuild the style bible around it.</p>
+      </div>
+
+      <div style="margin-top:30px">
+        <div class="block-head">
+          <span class="block-label">Between scenes / the 8-step ritual</span>
+        </div>
+        <div class="steps">
+          <div class="step"><span class="s-num">01</span><div><h4>Finish the hero first</h4><p>If the hero frame is wrong, every variation inherits the mistake. Don't move on until the grade, grain, and cast read correctly.</p></div></div>
+          <div class="step"><span class="s-num">02</span><div><h4>Save the recipe</h4><p>Store the exact prompt, seed, model version, reference images, and settings for every keeper. Future you will not remember.</p></div></div>
+          <div class="step"><span class="s-num">03</span><div><h4>Write the shot list first</h4><p>List all scenes before generating the second one. Otherwise you'll fall in love with a frame that doesn't fit the set.</p></div></div>
+          <div class="step"><span class="s-num">04</span><div><h4>Use the hero as reference</h4><p>Feed the approved frame back in as an image or style reference. Text alone drifts; a reference anchors the grade and texture.</p></div></div>
+          <div class="step"><span class="s-num">05</span><div><h4>Change one axis per batch</h4><p>Lens, light, place, or action. Never all four. If you change two, you've made a new look, not a new scene.</p></div></div>
+          <div class="step"><span class="s-num">06</span><div><h4>Build a contact sheet</h4><p>Judge each scene as a set, not as a single image. Pick for continuity and thumbnail readability.</p></div></div>
+          <div class="step"><span class="s-num">07</span><div><h4>Keep a reject wall</h4><p>Near-misses tell you which variable is drifting — skin tone, grain, wardrobe, or product shape. Diagnose before re-rolling.</p></div></div>
+          <div class="step"><span class="s-num">08</span><div><h4>Grade at the end</h4><p>Batch-grade all selects in one pass. Grain and halation go on last, after color and exposure are matched.</p></div></div>
+        </div>
+      </div>
+
+      <div style="margin-top:30px">
+        <div class="block-head">
+          <span class="block-label">Same scene, four ways / the base stays fixed</span>
+        </div>
+        <div class="recipe-base">
+          <p id="recipe-base">Film still from a 16mm documentary, two kids playing football on a favela rooftop in Rio de Janeiro at golden hour, laundry lines and tangled wires, 24mm lens, Kodak Vision3 250D, hard sun, visible grain, slight halation, unposed, 4:5</p>
+        </div>
+        <div class="recipe-grid">
+          <div class="recipe-cell"><span>Variation A / gesture</span><p>Same frame, one kid looks back over his shoulder, ball mid-air.</p></div>
+          <div class="recipe-cell"><span>Variation B / angle</span><p>Same frame, camera two meters lower, looking up past the laundry.</p></div>
+          <div class="recipe-cell"><span>Variation C / lens</span><p>Same frame, 50mm, tighter on hands and the ball, rooftop out of focus.</p></div>
+          <div class="recipe-cell"><span>Variation D / light</span><p>Same frame, blue hour, streetlights on, same grade and grain.</p></div>
+        </div>
+        <p class="lede" style="margin-top:14px;font-size:13px">Notice what did <strong>not</strong> change: cast, wardrobe, place, stock, grade, ratio. That's why they read as one scene instead of four unrelated images.</p>
+      </div>
+
+      <div style="margin-top:30px">
+        <div class="block-head">
+          <span class="block-label">Consistency tools / by model</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Tool</th><th>What to use</th><th>How to keep the look</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Midjourney</td>
+                <td>Seed, style reference, character reference, <code>--style raw</code></td>
+                <td>Stick to one model version for the whole campaign. Reuse the same style reference and seed across a scene batch.</td>
+              </tr>
+              <tr>
+                <td>Flux</td>
+                <td>Image-to-image, Kontext edits, IP-Adapter, a small LoRA</td>
+                <td>For a large campaign, train a LoRA on 20–30 approved selects. For a small one, anchor every prompt with the hero image.</td>
+              </tr>
+              <tr>
+                <td>Nano Banana / Imagen</td>
+                <td>Multi-image reference, conversational edits</td>
+                <td>Say “keep everything, change only the jacket.” Change one attribute per turn instead of re-prompting from zero.</td>
+              </tr>
+              <tr>
+                <td>Higgsfield</td>
+                <td>Reference frame, camera motion, video presets</td>
+                <td>Lock the reference frame and grade. Motion smoothing can erase grain, so re-add it in post.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="campaign">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-num">05 / Campaign</div>
+        <div>
+          <h2>Run it like a<br>small film shoot.</h2>
+          <p class="lede">Brief, style bible, shot list, selects, grade, legal, test. The model is the camera, not the director. <strong>A campaign needs a point of view before it needs more generations.</strong></p>
+        </div>
+      </div>
+
+      <div class="phase-list">
+        <div class="phase">
+          <span class="phase-num">Phase 00</span>
+          <h3>Brief</h3>
+          <p>One sentence: who, what, where, why. Define audience, platform, product truth, mandatories, and three reference images. If you can't write the concept in one sentence, you're not ready to generate.</p>
+        </div>
+        <div class="phase">
+          <span class="phase-num">Phase 01</span>
+          <h3>Build the style bible</h3>
+          <p>Three anchor frames: a hero portrait, an environment, and a detail. Add the locked spine, the negative prompt, a palette, wardrobe notes, and the lens set. <strong>If a frame doesn't match the anchors, it doesn't ship.</strong></p>
+        </div>
+        <div class="phase">
+          <span class="phase-num">Phase 02</span>
+          <h3>Shot list</h3>
+          <p>Six frames maximum for the first pass: establishing, hero, action, detail, crowd, surreal/end card. Give every frame a purpose, a ratio, a prompt, and a reference. No orphan images.</p>
+        </div>
+        <div class="phase">
+          <span class="phase-num">Phase 03</span>
+          <h3>Generate</h3>
+          <p>Four to six variations per frame at the final aspect ratio. Use the same seed and reference for the batch. Keep a contact sheet and a reject wall. Don't crop after the fact if you can generate at the right ratio.</p>
+        </div>
+        <div class="phase">
+          <span class="phase-num">Phase 04</span>
+          <h3>Select</h3>
+          <p>Choose for continuity and thumbnail readability, not for “the best image.” The most impressive frame is often the most AI-looking. Pick the one that feels like it was captured by accident.</p>
+        </div>
+        <div class="phase">
+          <span class="phase-num">Phase 05</span>
+          <h3>Post</h3>
+          <p>Batch-grade every select in one pass. Add grain and halation globally. Use a light unsharp mask, never HDR. Put type in the safe zone and export per platform.</p>
+        </div>
+        <div class="phase">
+          <span class="phase-num">Phase 06</span>
+          <h3>Legal and ethics</h3>
+          <p>Label AI where required. Secure likeness rights. Don't present staged AI favela scenes as documentary. Check product labels and logos. Follow platform ad policy and music licensing.</p>
+        </div>
+        <div class="phase">
+          <span class="phase-num">Phase 07</span>
+          <h3>Test</h3>
+          <p>Three hooks × three visuals × two CTAs. Test the hook first, then the visual. Keep the style spine fixed and vary only the message. Iterate weekly, not daily.</p>
+        </div>
+      </div>
+
+      <div style="margin-top:32px">
+        <div class="block-head">
+          <span class="block-label">The 6-frame shot list</span>
+        </div>
+        <div class="shotlist">
+          <div class="shot">
+            <span class="s-num">01 / ESTABLISHING</span>
+            <h4>Where are we?</h4>
+            <p>Place, clutter, weather, and light. No product yet. This frame sets the world.</p>
+            <span class="ratio">4:5 + 9:16</span>
+          </div>
+          <div class="shot">
+            <span class="s-num">02 / HERO</span>
+            <h4>Who is this?</h4>
+            <p>Cast, wardrobe, attitude, and the product. The frame the campaign is built around.</p>
+            <span class="ratio">4:5</span>
+          </div>
+          <div class="shot">
+            <span class="s-num">03 / ACTION</span>
+            <h4>What's happening?</h4>
+            <p>Motion, gesture, blur. The energy frame for Reels and Stories.</p>
+            <span class="ratio">9:16</span>
+          </div>
+          <div class="shot">
+            <span class="s-num">04 / DETAIL</span>
+            <h4>What is it?</h4>
+            <p>Product texture, hands, wear, and material. This is where AI usually cheats — check it hardest.</p>
+            <span class="ratio">4:5 + 1:1</span>
+          </div>
+          <div class="shot">
+            <span class="s-num">05 / CROWD</span>
+            <h4>Who's it for?</h4>
+            <p>Community, reactions, side characters. Proof that the world exists beyond the hero.</p>
+            <span class="ratio">3:2</span>
+          </div>
+          <div class="shot">
+            <span class="s-num">06 / SURREAL</span>
+            <h4>What will they remember?</h4>
+            <p>One wrong thing, played deadpan. The frame people screenshot and share.</p>
+            <span class="ratio">16:9</span>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:32px">
+        <div class="block-head">
+          <span class="block-label">Deliverable matrix / generate at final ratio</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Placement</th><th>Ratio</th><th>Export</th><th>Notes</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Instagram feed</td><td>4:5</td><td>1080 × 1350</td><td>Hero, detail, carousel frames</td></tr>
+              <tr><td>Stories / Reels</td><td>9:16</td><td>1080 × 1920</td><td>Keep subject high, copy in lower third</td></tr>
+              <tr><td>TikTok</td><td>9:16</td><td>1080 × 1920</td><td>Hook in the first second</td></tr>
+              <tr><td>YouTube pre-roll</td><td>16:9</td><td>1920 × 1080</td><td>5s and 15s cutdowns</td></tr>
+              <tr><td>Web / display</td><td>1:1 + 16:9</td><td>1200 × 1200</td><td>Product must read at small sizes</td></tr>
+              <tr><td>OOH / print</td><td>3:2 + 16:9</td><td>300 DPI</td><td>Simple silhouette, few words</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div style="margin-top:32px">
+        <div class="block-head">
+          <span class="block-label">Campaign hero prompt / swap the product, keep the spine</span>
+          <button class="copy-btn" type="button" data-copy="#campaign-prompt">Copy</button>
+        </div>
+        <div class="spine-box" style="border-left-color:var(--good)">
+          <p class="prompt" id="campaign-prompt" style="font-size:12.5px">Campaign hero frame for a streetwear launch, 16mm documentary, a young Brazilian skateboarder in an oversized vintage football jersey standing on a favela rooftop at golden hour, scuffed skateboard under one arm, city haze and tangled wires behind, 35mm lens, Kodak Vision3 250D, hard sun, warm highlights, crushed blacks, muted greens, visible grain, slight halation, unposed, 4:5, clean copy space in the upper left</p>
+        </div>
+        <p class="lede" style="margin-top:12px;font-size:13px">For the next frame, change only the product or the action. Keep the spine, stock, lens, light, and grade identical. That is how a set stays coherent.</p>
+      </div>
+
+      <div style="margin-top:32px">
+        <div class="block-head">
+          <span class="block-label">Campaign QA / check before export</span>
+        </div>
+        <ul class="checklist">
+          <li>Same grade and grain across every frame</li>
+          <li>Cast and wardrobe read continuously</li>
+          <li>Product label and logo are accurate</li>
+          <li>Hands, reflections, and shadows are sane</li>
+          <li>Copy space exists where type will go</li>
+          <li>No accidental text, watermark, or brand mark</li>
+          <li>No real-person likeness without rights</li>
+          <li>AI disclosure added where required</li>
+          <li>Exports match each platform ratio</li>
+          <li>Thumbnail test: product and face still read</li>
+        </ul>
+      </div>
+
+      <div style="margin-top:32px">
+        <div class="block-head">
+          <span class="block-label">Ad structures that fit this look</span>
+        </div>
+        <div class="steps">
+          <div class="step"><span class="s-num">A</span><div><h4>Carousel: World → Hero → Detail → CTA</h4><p>Four frames, one story. The world earns attention, the hero carries desire, the detail proves the product, the CTA closes.</p></div></div>
+          <div class="step"><span class="s-num">B</span><div><h4>Video: Hook → World → Product → CTA</h4><p>0–1s hook, 1–3s world, 3–6s product, 6–8s CTA. Keep the same grade and grain across every cut.</p></div></div>
+          <div class="step"><span class="s-num">C</span><div><h4>Test: 3 hooks × 3 visuals × 2 CTAs</h4><p>Eighteen combinations is enough for a first read. Don't test style and message at the same time.</p></div></div>
+          <div class="step"><span class="s-num">D</span><div><h4>Iterate: keep the spine, change the hook</h4><p>If CTR is low, change the first frame. If CPA is high, change the offer. Don't redesign the look to fix a message problem.</p></div></div>
+        </div>
+      </div>
+
+      <div style="margin-top:32px">
+        <div class="block-head">
+          <span class="block-label">The 7-day sprint / one person, one campaign</span>
+        </div>
+        <div class="steps">
+          <div class="step"><span class="s-num">01</span><div><h4>Brief + refs</h4><p>One sentence, three references, audience, platform, product truth, and the full deliverable list.</p></div></div>
+          <div class="step"><span class="s-num">02</span><div><h4>Style bible + hero</h4><p>Lock the spine, generate the hero frame, and get approval before making anything else.</p></div></div>
+          <div class="step"><span class="s-num">03</span><div><h4>Shot list + support</h4><p>Generate the five supporting frames. Four to six variations each, same seed and reference.</p></div></div>
+          <div class="step"><span class="s-num">04</span><div><h4>Selects</h4><p>Build contact sheets, keep a reject wall, and run a continuity pass across the whole set.</p></div></div>
+          <div class="step"><span class="s-num">05</span><div><h4>Post</h4><p>Batch grade, add grain and halation, set type in the safe zones, and export every ratio.</p></div></div>
+          <div class="step"><span class="s-num">06</span><div><h4>Legal + exports</h4><p>Likeness rights, AI disclosure, product accuracy, platform policy, file naming, and handoff.</p></div></div>
+          <div class="step wide"><span class="s-num">07</span><div><h4>Launch + test</h4><p>Three hooks, three visuals, two CTAs. Keep the style spine fixed and read the data before making more.</p></div></div>
+        </div>
+        <p class="lede" style="margin-top:12px;font-size:13px">Two people can compress this to three days: one directs and selects, one generates and retouches. The sequence stays the same.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="models">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-num">06 / Models</div>
+        <div>
+          <h2>Same prompt,<br>different camera.</h2>
+          <p class="lede">Every generator has a default bias. Midjourney beautifies, Flux sharpens, conversational models clean up clutter. Prompt against the bias, not with it.</p>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Model</th><th>How to feed it</th><th>Settings</th><th>Watch for</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Midjourney</td>
+              <td>Paste comma-separated; keep the camera and film chain intact.</td>
+              <td><code>--style raw --s 50 --ar 4:5</code> + current version flag</td>
+              <td>Beauty-retouched faces. Lower stylize and add “unretouched skin.”</td>
+            </tr>
+            <tr>
+              <td>Flux</td>
+              <td>Full sentences work better than tag soup. Paste as written.</td>
+              <td>4:5 or 3:2; guidance 3–4; 28–40 steps</td>
+              <td>Over-sharpening. Add “amateur documentary photograph, not retouched.”</td>
+            </tr>
+            <tr>
+              <td>Nano Banana / Imagen</td>
+              <td>Brief it like a photographer, then iterate on one image.</td>
+              <td>Ask for “unedited 16mm documentary frame”; 4:5</td>
+              <td>It cleans up clutter. Ask for mess, sweat, and imperfect framing.</td>
+            </tr>
+            <tr>
+              <td>Higgsfield</td>
+              <td>Video-first. Use the same prompt and add camera motion.</td>
+              <td>“Handheld 16mm, subtle camera shake, no stabilization”</td>
+              <td>Motion smoothing can kill grain. Re-add it in post.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="lede" style="margin-top:14px;font-size:13px">If your tool has a realism or reference mode, feed it three to five frames with matching light and texture. Use your own images or licensed references — not someone else's campaign.</p>
+    </div>
+  </section>
+
+  <section class="section" id="rules">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-num">07 / Rules</div>
+        <div>
+          <h2>What sells the realism.</h2>
+          <p class="lede">A checklist you can run before every export. If a frame fails three or more items, regenerate instead of retouching.</p>
+        </div>
+      </div>
+
+      <div class="rules">
+        <div class="rule-col do">
+          <h3>Do</h3>
+          <ul class="rule-list">
+            <li>Name a real camera, lens, and film stock.</li>
+            <li>Put a real place-name in the prompt and describe its clutter.</li>
+            <li>Use direct on-camera flash for night portraits.</li>
+            <li>Ask for grain, halation, motion blur, and red-eye.</li>
+            <li>Keep skin unretouched: pores, sweat, stray hairs.</li>
+            <li>Compose off-center and crop tight.</li>
+            <li>Hide hands in pockets or keep them busy.</li>
+            <li>Generate 4–6 variations and pick the least perfect one.</li>
+            <li>Grade all selects together, then add grain last.</li>
+          </ul>
+        </div>
+        <div class="rule-col dont">
+          <h3>Don't</h3>
+          <ul class="rule-list">
+            <li>“Hyperrealistic,” “8K,” “ultra-detailed,” “masterpiece.”</li>
+            <li>“Perfect skin,” “perfect teeth,” “flawless.”</li>
+            <li>“Cinematic lighting” with no source or direction.</li>
+            <li>Symmetrical, centered, eye-level portraits.</li>
+            <li>HDR, heavy clarity, or over-sharpening.</li>
+            <li>Square 1:1 crops for everything.</li>
+            <li>Upscaling more than once.</li>
+            <li>Recreating real people without rights.</li>
+            <li>Presenting staged AI scenes as documentary.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="kill">
+        <span class="kill-label">Words that kill realism</span>
+        <span>Hyperrealistic</span>
+        <span>8K</span>
+        <span>Ultra-detailed</span>
+        <span>Masterpiece</span>
+        <span>Perfect skin</span>
+        <span>HDR</span>
+        <span>Symmetrical</span>
+        <span>Stock photo</span>
+        <span>Flawless</span>
+        <span>CGI</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="references">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="section-num">08 / References</div>
+        <div>
+          <h2>Go to the source.</h2>
+          <p class="lede">The account, the films, the stocks, and the tools. Instagram links may ask you to log in. No source images are reproduced in this report.</p>
+        </div>
+      </div>
+
+      <div class="howto" style="margin-bottom:32px">
+        <div><b>01</b> Save 9 frames: 3 wide, 3 portraits, 3 details</div>
+        <div><b>02</b> Label light, lens guess, stock guess, one flaw</div>
+        <div><b>03</b> Build a 3-image anchor board</div>
+        <div><b>04</b> Prompt from the board, not the feed</div>
+      </div>
+
+      <div class="ref-group">
+        <h3>The source</h3>
+        <div class="ref-grid">
+          <a class="ref" href="https://www.instagram.com/spikeandred/" target="_blank" rel="noopener">
+            <p class="ref-title">@spikeandred</p>
+            <span class="ref-arrow">↗</span>
+            <p class="ref-src">Instagram</p>
+            <p class="ref-desc">The account being deconstructed: AI visuals for artists, brands, and culture. Video-first, Rio-rooted.</p>
+          </a>
+          <a class="ref" href="https://www.instagram.com/fabioniebling/" target="_blank" rel="noopener">
+            <p class="ref-title">Fabio Niebling</p>
+            <span class="ref-arrow">↗</span>
+            <p class="ref-src">Instagram</p>
+            <p class="ref-desc">A related visual account. Experiments in visual culture; creative partner at Higgsfield.</p>
+          </a>
+          <a class="ref" href="https://higgsfield.ai/contests/make-your-action-scene/submissions/839d8bba-37ac-4833-b9f0-8dc85cbb607e" target="_blank" rel="noopener">
+            <p class="ref-title">RIO — short film</p>
+            <span class="ref-arrow">↗</span>
+            <p class="ref-src">Higgsfield</p>
+            <p class="ref-desc">His own production note: documentary-inspired, 16mm style, raw, intimate, and real.</p>
+          </a>
+          <a class="ref" href="https://www.instagram.com/p/DXnAJ8rDfY2/" target="_blank" rel="noopener">
+            <p class="ref-title">clanker.mag feature</p>
+            <span class="ref-arrow">↗</span>
+            <p class="ref-src">Instagram</p>
+            <p class="ref-desc">“A visual language that is difficult to fake… the codes of hip-hop cinema.”</p>
+          </a>
+          <a class="ref" href="https://www.instagram.com/reel/DYpE8CkRZAl" target="_blank" rel="noopener">
+            <p class="ref-title">MADWORLD</p>
+            <span class="ref-arrow">↗</span>
+            <p class="ref-src">Instagram reel</p>
+            <p class="ref-desc">A clean example of the hyperreal cinematic world-building and scale.</p>
+          </a>
+          <a class="ref" href="https://www.instagram.com/reel/DcJ2KIZSIhA" target="_blank" rel="noopener">
+            <p class="ref-title">Artist profile reel</p>
+            <span class="ref-arrow">↗</span>
+            <p class="ref-src">Instagram reel</p>
+            <p class="ref-desc">Short breakdown: hip-hop films, street photography, raw Brazilian reality.</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="ref-group">
+        <h3>Cinematic DNA</h3>
+        <div class="ref-grid">
+          <a class="ref" href="https://www.imdb.com/title/tt0317248/" target="_blank" rel="noopener">
+            <p class="ref-title">City of God (2002)</p>
+            <span class="ref-arrow">↗</span>
+            <p class="ref-src">IMDb</p>
+            <p class="ref-desc">The obvious north star: favela energy, sun-bleached color, restless camera.</p>
+          </a>
+          <a class="ref" href="https://www.imdb.com/title/tt0113247/" target="_blank" rel="noopener">
+            <p class="ref-title">La Haine (1995)</p>
+            <span class="ref-arrow">↗</span>
+            <p class="ref-src">IMDb</p>
+            <p class="ref-desc">Black-and-white street realism and deadpan hanging-out energy.</p>
+          </a>
+          <a class="ref" href="https://www.imdb.com/title/tt0113540/" target="_blank" rel="noopener">
+            <p class="ref-title">Kids (1995)</p>
+            <span class="ref-arrow">↗</span>
+            <p class="ref-src">IMDb</p>
+            <p class="ref-desc">Direct flash, skate culture, unposed bodies, disposable-camera intimacy.</p>
+          </a>
+          <a class="ref" href="https://www.imdb.com/title/tt0097216/" target="_blank" rel="noopener">
+            <p class="ref-title">Do the Right Thing (1989)</p>
+            <span class="ref-arrow">↗</span>
+            <p class="ref-src">IMDb</p>
+            <p class="ref-desc">Block heat, saturated color, community as the main character.</p>
+          </a>
+          <a class="ref" href="https://www.imdb.com/title/tt0101507/" target="_blank" rel="noopener">
+            <p class="ref-title">Boyz n the Hood (1991)</p>
+            <span class="ref-arrow">↗</span>
+            <p class="ref-src">IMDb</p>
+            <p class="ref-desc">Hip-hop cinema codes: friendship, threat, and wide-open daylight.</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="ref-group">
+        <h3>Film and tools</h3>
+        <div class="ref-grid">
+          <a class="ref" href="https://www.kodak.com/en/motion/product/camera-films/250d-5207-7207/" target="_blank" rel="noopener">
+            <p class="ref-title">Kodak Vision3 250D</p>
+            <span class="ref-arrow">↗</span>
+            <p class="ref-src">Kodak</p>
+            <p class="ref-desc">The daylight motion-picture stock behind the rooftop and beach frames.</p>
+          </a>
+          <a class="ref" href="https://en.wikipedia.org/wiki/Kodak_Portra" target="_blank" rel="noopener">
+            <p class="ref-title">Kodak Portra</p>
+            <span class="ref-arrow">↗</span>
+            <p class="ref-src">Wikipedia</p>
+            <p class="ref-desc">The still-photo look: warm skin, soft contrast, forgiving highlights.</p>
+          </a>
+          <a class="ref" href="https://cinestillfilm.com/" target="_blank" rel="noopener">
+            <p class="ref-title">CineStill 800T</p>
+            <span class="ref-arrow">↗</span>
+            <p class="ref-src">CineStill</p>
+            <p class="ref-desc">Tungsten-balanced night film. The halation around neon is the signature.</p>
+          </a>
+          <a class="ref" href="https://www.midjourney.com/" target="_blank" rel="noopener">
+            <p class="ref-title">Midjourney</p>
+            <span class="ref-arrow">↗</span>
+            <p class="ref-src">Tool</p>
+            <p class="ref-desc">Fast iteration on light and composition. Use <code>--style raw</code>.</p>
+          </a>
+          <a class="ref" href="https://blackforestlabs.ai/" target="_blank" rel="noopener">
+            <p class="ref-title">Black Forest Labs / Flux</p>
+            <span class="ref-arrow">↗</span>
+            <p class="ref-src">Tool</p>
+            <p class="ref-desc">Natural-language prompting and strong photographic texture.</p>
+          </a>
+          <a class="ref" href="https://higgsfield.ai/" target="_blank" rel="noopener">
+            <p class="ref-title">Higgsfield</p>
+            <span class="ref-arrow">↗</span>
+            <p class="ref-src">Tool</p>
+            <p class="ref-desc">The tool Spike collaborates with; video-first cinematic generation.</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="ethics">
+    <div class="wrap">
+      <div class="ethics-box">
+        <div>
+          <div class="section-num" style="padding-top:0;margin-bottom:8px">09 / Use it right</div>
+          <h2>Style is a language,<br>not a license.</h2>
+        </div>
+        <div>
+          <p>These are <strong>original deconstructions of a visual language</strong>, not Spike's private recipes and not permission to copy specific frames. Style imitation is normal; passing off someone's identity, community, or lived experience as your own documentary is not.</p>
+          <p>Don't recreate real people without rights. Don't stage AI favela scenes and present them as journalism. Label AI work where required. If you shoot in a real community, hire locally and pay people. The look is better when the respect is real.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <p>The Spikeandred Look / Prompt Field Guide — v1.0 / October 2026. Independent and unofficial. Not affiliated with Spike, Fabio Niebling, Instagram, or any model provider. No source images reproduced; the contact sheet is an original CSS mood board.</p>
+    <p><a href="#top">Back to top ↑</a></p>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite">Copied to clipboard</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var toast = document.getElementById("toast");
+  var toastTimer = null;
+
+  function showToast(message){
+    if(!toast) return;
+    toast.textContent = message || "Copied to clipboard";
+    toast.classList.add("show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove("show"); }, 1800);
+  }
+
+  function fallbackCopy(text){
+    var ta = document.createElement("textarea");
+    ta.value = text;
+    ta.setAttribute("readonly","");
+    ta.style.position = "fixed";
+    ta.style.top = "-9999px";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    var ok = false;
+    try { ok = document.execCommand("copy"); } catch(e) { ok = false; }
+    document.body.removeChild(ta);
+    return ok;
+  }
+
+  function copyText(text, button){
+    if(!text) return;
+    var done = function(){
+      if(button){
+        var original = button.getAttribute("data-label") || button.textContent;
+        button.setAttribute("data-label", original);
+        button.textContent = "Copied";
+        button.classList.add("copied");
+        setTimeout(function(){
+          button.textContent = button.getAttribute("data-label");
+          button.classList.remove("copied");
+        }, 1500);
+      }
+      showToast("Copied to clipboard");
+    };
+
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(done).catch(function(){
+        if(fallbackCopy(text)){ done(); } else { showToast("Copy failed — select manually"); }
+      });
+    } else {
+      if(fallbackCopy(text)){ done(); } else { showToast("Copy failed — select manually"); }
+    }
+  }
+
+  document.querySelectorAll("[data-copy]").forEach(function(button){
+    button.addEventListener("click", function(){
+      var selector = button.getAttribute("data-copy");
+      var target = selector ? document.querySelector(selector) : null;
+      if(target){ copyText(target.innerText.trim(), button); }
+    });
+  });
+
+  document.querySelectorAll(".prompt-card .copy-btn").forEach(function(button){
+    button.addEventListener("click", function(){
+      var card = button.closest(".prompt-card");
+      var prompt = card ? card.querySelector(".prompt") : null;
+      if(prompt){ copyText(prompt.innerText.trim(), button); }
+    });
+  });
+
+  var filterButtons = Array.prototype.slice.call(document.querySelectorAll("[data-filter]"));
+  var cards = Array.prototype.slice.call(document.querySelectorAll(".prompt-card"));
+  var countEl = document.getElementById("prompt-count");
+
+  filterButtons.forEach(function(button){
+    button.addEventListener("click", function(){
+      var filter = button.getAttribute("data-filter");
+      filterButtons.forEach(function(other){
+        var active = other === button;
+        other.classList.toggle("active", active);
+        other.setAttribute("aria-pressed", active ? "true" : "false");
+      });
+      var visible = 0;
+      cards.forEach(function(card){
+        var show = filter === "all" || card.getAttribute("data-category") === filter;
+        card.hidden = !show;
+        if(show){ visible++; }
+      });
+      if(countEl){ countEl.textContent = visible + (visible === 1 ? " prompt" : " prompts"); }
+    });
+  });
+
+  var downloadButton = document.getElementById("download-pack");
+  if(downloadButton){
+    downloadButton.addEventListener("click", function(){
+      var lines = [];
+      lines.push("THE SPIKEANDRED LOOK — PROMPT PACK");
+      lines.push("Photographic prompt field guide. Original deconstructions, not the artist's private recipes.");
+      lines.push("");
+      lines.push("FORMULA");
+      var formula = document.getElementById("formula-text");
+      if(formula){ lines.push(formula.innerText.trim()); }
+      lines.push("");
+      lines.push("NEGATIVE PROMPT");
+      var negative = document.getElementById("negative-prompt");
+      if(negative){ lines.push(negative.innerText.trim()); }
+      lines.push("");
+      lines.push("CAMPAIGN SPINE");
+      var spine = document.getElementById("spine-text");
+      if(spine){ lines.push(spine.innerText.trim()); }
+      lines.push("");
+      lines.push("12 PROMPTS");
+      lines.push("");
+      cards.forEach(function(card, index){
+        var title = card.querySelector("h3");
+        var spec = card.querySelector(".spec");
+        var prompt = card.querySelector(".prompt");
+        lines.push(String(index + 1).padStart(2, "0") + " / " + (title ? title.innerText.trim() : "Prompt"));
+        if(spec){ lines.push(spec.innerText.trim()); }
+        if(prompt){ lines.push(prompt.innerText.trim()); }
+        lines.push("");
+      });
+      lines.push("CAMPAIGN HERO PROMPT");
+      var campaign = document.getElementById("campaign-prompt");
+      if(campaign){ lines.push(campaign.innerText.trim()); }
+      lines.push("");
+      lines.push("Source account: https://www.instagram.com/spikeandred/");
+
+      var blob = new Blob([lines.join("\n")], {type:"text/plain;charset=utf-8"});
+      var url = URL.createObjectURL(blob);
+      var link = document.createElement("a");
+      link.href = url;
+      link.download = "spikeandred-style-prompt-pack.txt";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      setTimeout(function(){ URL.revokeObjectURL(url); }, 1000);
+      showToast("Prompt pack downloaded");
+    });
+  }
+
+  var progress = document.getElementById("progress");
+  function updateProgress(){
+    if(!progress) return;
+    var doc = document.documentElement;
+    var max = doc.scrollHeight - doc.clientHeight;
+    var pct = max > 0 ? (doc.scrollTop / max) * 100 : 0;
+    progress.style.width = pct + "%";
+  }
+  window.addEventListener("scroll", updateProgress, {passive:true});
+  window.addEventListener("resize", updateProgress);
+  updateProgress();
+})();
+</script>
+</body>
+</html>
