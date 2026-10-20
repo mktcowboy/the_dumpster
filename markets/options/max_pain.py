@@ -1,19 +1,18 @@
 #!/usr/bin/env python3
-"""Compute a max-pain snapshot for listed ETF options.
+"""Compute max-pain snapshots for listed options.
 
-Fetches the full option chain from Cboe's delayed-quote endpoint, filters one
-expiry, and writes a reproducible JSON snapshot with:
+Fetches full option chains from Cboe's delayed-quote endpoint, filters one
+expiry (or the nearest listed expiry), and writes a reproducible JSON snapshot
+with open-interest, volume, and blended max pain, the 1% shelf, walls, ATM
+volatility, the 25-delta risk reversal, modeled GEX, and the gamma flip.
 
-  * open-interest, volume, and blended max pain
-  * the 1% pain shelf
-  * call and put walls plus the largest strikes by combined OI
-  * ATM implied volatility, ATM straddle, and the 1-sigma implied range
-  * the 25-delta risk reversal
-  * modeled net gamma exposure (GEX) and the gamma flip
-  * put/call ratios, payout at spot, and the pain slope at spot
+Use --universe qqq to load every current QQQ holding. An optional standalone
+HTML board ranks the whole universe.
 
 Usage:
     python3 markets/options/max_pain.py --tickers SPY QQQ --expiry 2026-10-23
+    python3 markets/options/max_pain.py --universe qqq --expiry 2026-10-23 \
+        --html-out markets/options/qqq-max-pain.html
 
 By default the snapshot is written to markets/options/data/ with a filename
 that includes the expiry and the quote date. Pass --out to override it.
@@ -23,21 +22,64 @@ Requires only requests.
 from __future__ import annotations
 
 import argparse
+import html
 import json
 import math
 import re
 import sys
-from dataclasses import dataclass, field
+import threading
+import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from dataclasses import dataclass
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from statistics import fmean
 from typing import Iterable, Optional
 
+try:
+    import requests
+except ImportError:
+    requests = None
+
 CBOE_URL = "https://cdn.cboe.com/api/global/delayed_quotes/options/{ticker}.json"
+WIKIPEDIA_API = "https://en.wikipedia.org/w/api.php"
+QQQ_LIST_PAGE = "List of NASDAQ-100 companies"
+QQQ_LIST_URL = "https://en.wikipedia.org/wiki/List_of_NASDAQ-100_companies"
 USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"
+_local = threading.local()
 OCC_RE = re.compile(r"^(?P<root>[A-Z_]+)(?P<ymd>\d{6})(?P<kind>[CP])(?P<strike>\d{8})$")
 SCRIPT_DIR = Path(__file__).resolve().parent
 DEFAULT_OUT_DIR = SCRIPT_DIR / "data"
+
+
+def _session() -> "requests.Session":
+    session = getattr(_local, "session", None)
+    if session is None:
+        session = requests.Session()
+        session.headers.update({"User-Agent": USER_AGENT})
+        _local.session = session
+    return session
+
+
+class TickerUnavailable(RuntimeError):
+    """Raised when a ticker has no usable chain for the requested expiry."""
+
+
+class Throttle:
+    """Process-wide rate limiter for Cboe requests."""
+
+    def __init__(self, min_interval: float = 0.65):
+        self.min_interval = min_interval
+        self._lock = threading.Lock()
+        self._next_at = 0.0
+
+    def wait(self) -> None:
+        with self._lock:
+            now = time.monotonic()
+            delay = max(0.0, self._next_at - now)
+            self._next_at = max(now, self._next_at) + self.min_interval
+        if delay:
+            time.sleep(delay)
 
 
 @dataclass
@@ -74,7 +116,7 @@ class Leg:
             "mid": _round(self.mid, 4),
             "last": _round(self.last, 4),
         }
-        return {k: v for k, v in out.items() if v is not None}
+        return {key: value for key, value in out.items() if value is not None}
 
 
 @dataclass
@@ -150,6 +192,19 @@ def _mean(values: Iterable[float]) -> float:
     return fmean(values)
 
 
+def _money(value: Optional[float]) -> str:
+    if value is None:
+        return "—"
+    absolute = abs(value)
+    if absolute >= 1e9:
+        return f"${value / 1e9:+.2f}B"
+    if absolute >= 1e6:
+        return f"${value / 1e6:+.1f}M"
+    if absolute >= 1e3:
+        return f"${value / 1e3:+.0f}K"
+    return f"${value:+.0f}"
+
+
 def parse_occ(symbol: str) -> Optional[tuple[date, str, float]]:
     """Parse an OCC option symbol into (expiry, call/put, strike)."""
     match = OCC_RE.match(symbol)
@@ -163,23 +218,93 @@ def parse_occ(symbol: str) -> Optional[tuple[date, str, float]]:
     return expiry, match.group("kind"), int(match.group("strike")) / 1000
 
 
-def fetch_payload(ticker: str, timeout: float) -> dict:
-    try:
-        import requests
-    except ImportError as exc:  # pragma: no cover - dependency guard
-        raise SystemExit("requests is required: python3 -m pip install requests") from exc
+def fetch_payload(ticker: str, timeout: float, throttle: Throttle, retries: int = 4) -> dict:
+    if requests is None:
+        raise SystemExit("requests is required: python3 -m pip install requests")
 
     url = CBOE_URL.format(ticker=ticker.upper())
-    try:
-        response = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=timeout)
-        response.raise_for_status()
-        payload = response.json()
-    except Exception as exc:
-        raise SystemExit(f"could not fetch {ticker} from Cboe: {exc}") from exc
+    last_error = "unknown error"
+    for attempt in range(retries):
+        throttle.wait()
+        try:
+            response = _session().get(url, timeout=timeout)
+        except Exception as exc:
+            last_error = str(exc)
+            time.sleep(0.5 * (attempt + 1))
+            continue
 
-    if not isinstance(payload, dict) or "data" not in payload:
-        raise SystemExit(f"unexpected Cboe response for {ticker}")
-    return payload
+        if response.status_code == 429:
+            response.close()
+            last_error = "rate limited"
+            time.sleep(1.5 * (attempt + 1) ** 2)
+            continue
+        if response.status_code == 404:
+            response.close()
+            raise TickerUnavailable("no listed options")
+        try:
+            response.raise_for_status()
+            payload = response.json()
+        except Exception as exc:
+            response.close()
+            last_error = str(exc)
+            time.sleep(0.5 * (attempt + 1))
+            continue
+
+        if not isinstance(payload, dict) or "data" not in payload:
+            response.close()
+            last_error = "unexpected response"
+            continue
+        return payload
+
+    raise TickerUnavailable(last_error)
+
+
+def fetch_qqq_constituents(timeout: float) -> list[str]:
+    if requests is None:
+        raise SystemExit("requests is required: python3 -m pip install requests")
+    params = {
+        "action": "parse",
+        "page": QQQ_LIST_PAGE,
+        "format": "json",
+        "prop": "wikitext",
+    }
+    try:
+        response = requests.get(
+            WIKIPEDIA_API, params=params, headers={"User-Agent": USER_AGENT}, timeout=timeout
+        )
+        response.raise_for_status()
+        wikitext = response.json()["parse"]["wikitext"]["*"]
+    except Exception as exc:
+        raise SystemExit(f"could not fetch the QQQ holdings list: {exc}") from exc
+
+    tickers = []
+    for match in re.finditer(r"^\|\s*([A-Z][A-Z0-9.\-]*)\s*\|\|", wikitext, re.MULTILINE):
+        ticker = match.group(1)
+        if ticker not in tickers:
+            tickers.append(ticker)
+    if len(tickers) < 50:
+        raise SystemExit("QQQ holdings list looked incomplete; refusing to continue")
+    return tickers
+
+
+def available_expiries(payload: dict) -> list[date]:
+    expiries = set()
+    for option in payload.get("data", {}).get("options", []):
+        parsed = parse_occ(option.get("option", ""))
+        if parsed:
+            expiries.add(parsed[0])
+    return sorted(expiries)
+
+
+def resolve_expiry(expiries: list[date], requested: date, mode: str) -> Optional[date]:
+    if requested in expiries:
+        return requested
+    if mode == "exact" or not expiries:
+        return None
+    later = [expiry for expiry in expiries if expiry >= requested]
+    if later:
+        return min(later)
+    return max(expiries)
 
 
 def _parse_timestamp(value: str) -> datetime:
@@ -227,7 +352,7 @@ def build_chain(payload: dict, ticker: str, expiry: date) -> Chain:
             row.put = leg
 
     if not rows:
-        raise SystemExit(f"{ticker}: no contracts found for {expiry.isoformat()}")
+        raise TickerUnavailable(f"no contracts for {expiry.isoformat()}")
 
     return Chain(
         ticker=ticker.upper(),
@@ -240,6 +365,20 @@ def build_chain(payload: dict, ticker: str, expiry: date) -> Chain:
         skipped_contracts=skipped,
         payload_timestamp=payload.get("timestamp", ""),
     )
+
+
+def load_chain(
+    ticker: str,
+    requested_expiry: date,
+    expiry_mode: str,
+    timeout: float,
+    throttle: Throttle,
+) -> tuple[Chain, date]:
+    payload = fetch_payload(ticker, timeout, throttle)
+    actual_expiry = resolve_expiry(available_expiries(payload), requested_expiry, expiry_mode)
+    if actual_expiry is None:
+        raise TickerUnavailable(f"no {requested_expiry.isoformat()} expiry")
+    return build_chain(payload, ticker, actual_expiry), actual_expiry
 
 
 def _units(row: StrikeRow, side: str, field_name: str) -> float:
@@ -274,7 +413,7 @@ def max_pain(chain: Chain, field_name: str = "oi") -> dict:
         if _units(row, "call", field_name) or _units(row, "put", field_name)
     ]
     if not candidates:
-        raise SystemExit(f"{chain.ticker}: no {field_name} data for {chain.expiry.isoformat()}")
+        raise TickerUnavailable(f"no {field_name} data for {chain.expiry.isoformat()}")
 
     curve = {strike: payout(chain, strike, field_name) for strike in candidates}
     strike = min(candidates, key=lambda level: (curve[level], abs(level - chain.spot)))
@@ -308,13 +447,22 @@ def ratios(chain: Chain) -> tuple[Optional[float], Optional[float]]:
 
 
 def atm_metrics(chain: Chain) -> dict:
-    row = min(chain.rows, key=lambda item: abs(item.strike - chain.spot))
-    ivs = [leg.iv for leg in (row.call, row.put) if leg and leg.iv and leg.iv > 0]
-    mids = [leg.mid for leg in (row.call, row.put) if leg and leg.mid is not None]
+    nearest = min(chain.rows, key=lambda item: abs(item.strike - chain.spot))
+    ordered = sorted(chain.rows, key=lambda item: abs(item.strike - chain.spot))
+    chosen = nearest
+    ivs = []
+    for row in ordered:
+        ivs = [leg.iv for leg in (row.call, row.put) if leg and leg.iv and leg.iv > 0]
+        if ivs:
+            chosen = row
+            break
     atm_iv = _mean(ivs) if ivs else None
+    nearest_mids = [leg.mid for leg in (nearest.call, nearest.put) if leg and leg.mid is not None]
+    chosen_mids = [leg.mid for leg in (chosen.call, chosen.put) if leg and leg.mid is not None]
+    mids = nearest_mids if len(nearest_mids) == 2 else chosen_mids
     sigma = chain.spot * atm_iv * math.sqrt(chain.t_years) if atm_iv else None
     return {
-        "strike": row.strike,
+        "strike": chosen.strike,
         "iv": atm_iv,
         "straddle": sum(mids) if len(mids) == 2 else None,
         "one_sigma_move": sigma,
@@ -443,30 +591,39 @@ def top_strikes(chain: Chain, oi_strike: float, call_wall: float, put_wall: floa
 
 def compute(chain: Chain) -> dict:
     oi = max_pain(chain, "oi")
-    volume = max_pain(chain, "volume")
+    try:
+        volume = max_pain(chain, "volume")
+    except TickerUnavailable:
+        volume = None
     blend = max_pain(chain, "blend")
     call_wall, put_wall = walls(chain)
     pc_oi, pc_volume = ratios(chain)
     atm = atm_metrics(chain)
     rr = risk_reversal(chain)
     current_gex = net_gex(chain, chain.spot, atm["iv"])
+    if atm["iv"] is None and current_gex == 0:
+        current_gex = None
     flip = gamma_flip(chain, atm["iv"])
-    confidence, spread_pct = pin_confidence(
-        [oi["strike"], volume["strike"], blend["strike"]], chain.spot
-    )
+    levels = [oi["strike"], blend["strike"]]
+    if volume:
+        levels.append(volume["strike"])
+    confidence, spread_pct = pin_confidence(levels, chain.spot)
     slope_step = 0.5
     slope = (
         payout(chain, chain.spot + slope_step, "oi")
         - payout(chain, chain.spot - slope_step, "oi")
     ) / (2 * slope_step)
+    distance_pct = (oi["strike"] / chain.spot - 1) * 100 if chain.spot else None
 
     return {
         "max_pain": {
             "oi": oi["strike"],
             "oi_minimum_payout": oi["minimum_payout"],
-            "volume": volume["strike"],
+            "volume": volume["strike"] if volume else None,
             "blend": blend["strike"],
             "shelf_1pct": oi["shelf"],
+            "shelf_width": len(oi["shelf"]),
+            "distance_pct": distance_pct,
             "method_spread_pct": spread_pct,
             "pin_confidence": confidence,
         },
@@ -502,9 +659,9 @@ def compute(chain: Chain) -> dict:
     }
 
 
-def snapshot(chain: Chain) -> dict:
+def snapshot(chain: Chain, requested_expiry: date, include_chain: bool) -> dict:
     metrics = compute(chain)
-    return {
+    out = {
         "ticker": chain.ticker,
         "spot": chain.spot,
         "prev_close": chain.prev_close,
@@ -512,36 +669,273 @@ def snapshot(chain: Chain) -> dict:
         "as_of": chain.as_of,
         "quote_timestamp": chain.payload_timestamp,
         "expiry": chain.expiry.isoformat(),
+        "requested_expiry": requested_expiry.isoformat(),
+        "expiry_drift_days": (chain.expiry - requested_expiry).days,
         "dte": chain.dte,
-        "chain": [row.to_dict() for row in chain.rows],
         "metrics": metrics,
     }
+    if include_chain:
+        out["chain"] = [row.to_dict() for row in chain.rows]
+    return out
 
 
-def summarize(snapshots: list[dict], expiry: date, as_of: str) -> str:
+def _sort_key(snap: dict) -> tuple:
+    distance = snap["metrics"]["max_pain"].get("distance_pct")
+    return (abs(distance) if distance is not None else float("inf"), snap["ticker"])
+
+
+def summarize(
+    snapshots: list[dict],
+    requested_expiry: date,
+    as_of: str,
+    limit: Optional[int] = None,
+    show_expiry: bool = False,
+) -> str:
+    ordered = sorted(snapshots, key=_sort_key)
+    shown = ordered[:limit] if limit else ordered
+    header = (
+        f"{'Ticker':<7} {'Spot':>8} {'OI max':>8} {'Away':>7} "
+        f"{'Vol max':>8} {'Blend':>8} {'Shelf':>9}"
+    )
+    if show_expiry:
+        header += f" {'Exp':>11} {'DTE':>4}"
+    header += f" {'Pin':>8}"
     lines = [
-        f"Max-pain snapshot — as of {as_of} · expiry {expiry.isoformat()}",
+        f"Max-pain snapshot — as of {as_of} · requested expiry {requested_expiry.isoformat()}",
         "",
-        f"{'Ticker':<7}{'Spot':>9}{'OI max':>9}{'Vol max':>9}{'Blend':>9}"
-        f"{'1σ range':>20}{'ATM IV':>9}{'P/C OI':>8}{'GEX/1%':>11}{'Flip':>9}{'Pin':>10}",
+        header,
     ]
-    for snap in snapshots:
+    for snap in shown:
+        metrics = snap["metrics"]
+        pain = metrics["max_pain"]
+        distance = pain.get("distance_pct")
+        away = f"{distance:+.2f}%" if distance is not None else "—"
+        shelf = pain["shelf_1pct"]
+        shelf_text = f"{shelf[0]:g}" if len(shelf) == 1 else f"{shelf[0]:g}–{shelf[-1]:g}"
+        volume = pain["volume"]
+        volume_text = f"{volume:.2f}" if volume is not None else "—"
+        row = (
+            f"{snap['ticker']:<7} {snap['spot']:>8.2f} {pain['oi']:>8.2f} {away:>7} "
+            f"{volume_text:>8} {pain['blend']:>8.2f} {shelf_text:>9}"
+        )
+        if show_expiry:
+            expiry = snap["expiry"][5:].replace("-", "/")
+            drift = snap.get("expiry_drift_days", 0)
+            marker = "" if drift == 0 else f"+{drift}d" if drift > 0 else f"{drift}d"
+            row += f" {expiry + marker:>13} {snap['dte']:>4}"
+        row += f" {pain['pin_confidence']:>8}"
+        lines.append(row)
+    if limit and len(ordered) > limit:
+        lines.append(f"... {len(ordered) - limit} more in the JSON snapshot")
+    return "\n".join(lines)
+
+
+def _cell(value, text: str, sort_value=None, css: str = "") -> str:
+    attr = "" if sort_value is None else f' data-v="{sort_value}"'
+    klass = f' class="{css}"' if css else ""
+    return f"<td{klass}{attr}>{html.escape(text)}</td>"
+
+
+def render_html(
+    snapshots: list[dict],
+    requested_expiry: date,
+    as_of: str,
+    out_path: Path,
+    universe: Optional[dict],
+) -> None:
+    ordered = sorted(snapshots, key=_sort_key)
+    rows = []
+    for snap in ordered:
         metrics = snap["metrics"]
         pain = metrics["max_pain"]
         vol = metrics["volatility"]
         gamma = metrics["gamma"]
+        distance = pain.get("distance_pct")
+        away = "—" if distance is None else f"{distance:+.2f}%"
+        away_class = "up" if distance is not None and distance > 0 else "down" if distance is not None else ""
+        shelf = pain["shelf_1pct"]
+        shelf_text = f"{shelf[0]:g}" if len(shelf) == 1 else f"{shelf[0]:g}–{shelf[-1]:g}"
         sigma = vol["one_sigma_range"]
-        sigma_text = f"{sigma[0]:.2f}–{sigma[1]:.2f}" if sigma else "—"
-        iv_text = f"{vol['atm_iv'] * 100:.1f}%" if vol["atm_iv"] else "—"
-        gex_text = f"${gamma['net_gex_per_1pct'] / 1e9:+.2f}B" if gamma["net_gex_per_1pct"] else "—"
-        flip_text = f"{gamma['flip']:.2f}" if gamma["flip"] else "—"
-        pc_text = f"{metrics['ratios']['pc_oi']:.2f}" if metrics["ratios"]["pc_oi"] else "—"
-        lines.append(
-            f"{snap['ticker']:<7}{snap['spot']:>9.2f}{pain['oi']:>9.2f}{pain['volume']:>9.2f}"
-            f"{pain['blend']:>9.2f}{sigma_text:>20}{iv_text:>9}{pc_text:>8}{gex_text:>11}"
-            f"{flip_text:>9}{pain['pin_confidence']:>10}"
+        sigma_text = "—" if not sigma else f"{sigma[0]:.2f}–{sigma[1]:.2f}"
+        iv_text = "—" if vol["atm_iv"] is None else f"{vol['atm_iv'] * 100:.1f}%"
+        gex = gamma["net_gex_per_1pct"]
+        gex_text = _money(gex)
+        flip = "—" if gamma["flip"] is None else f"{gamma['flip']:.2f}"
+        drift = snap.get("expiry_drift_days", 0)
+        exp_text = snap["expiry"][5:].replace("-", "/") + ("" if drift == 0 else f" +{drift}d")
+        pin = pain["pin_confidence"]
+        pin_class = pin.lower()
+        rows.append(
+            "<tr>"
+            + _cell(snap["ticker"], snap["ticker"], snap["ticker"], "ticker")
+            + _cell(snap["spot"], f"{snap['spot']:.2f}", round(snap["spot"], 4))
+            + _cell(pain["oi"], f"{pain['oi']:g}", pain["oi"], "pin")
+            + _cell(distance, away, distance if distance is not None else -999, away_class)
+            + _cell(
+                pain["volume"],
+                "—" if pain["volume"] is None else f"{pain['volume']:g}",
+                pain["volume"] if pain["volume"] is not None else -999,
+            )
+            + _cell(pain["blend"], f"{pain['blend']:g}", pain["blend"])
+            + _cell(len(shelf), shelf_text, len(shelf))
+            + _cell(snap["expiry"], exp_text, snap["expiry"] + f"|{snap['dte']:04d}")
+            + _cell(snap["dte"], str(snap["dte"]), snap["dte"])
+            + _cell(pin, pin, {"High": 0, "Moderate": 1, "Low": 2}.get(pin, 3), f"badge {pin_class}")
+            + _cell(metrics["ratios"]["pc_oi"], "—" if metrics["ratios"]["pc_oi"] is None else f"{metrics['ratios']['pc_oi']:.2f}", metrics["ratios"]["pc_oi"])
+            + _cell(vol["atm_iv"], iv_text, vol["atm_iv"])
+            + _cell(sigma, sigma_text, sigma[1] if sigma else None)
+            + _cell(gex, gex_text, gex)
+            + _cell(gamma["flip"], flip, gamma["flip"])
+            + "</tr>"
         )
-    return "\n".join(lines)
+
+    loaded = len(snapshots)
+    exact = sum(1 for snap in snapshots if snap.get("expiry_drift_days", 0) == 0)
+    universe_label = ""
+    if universe:
+        universe_label = (
+            f'<p class="note">Universe: QQQ holdings via <a href="{QQQ_LIST_URL}">Wikipedia</a> · '
+            f"{universe['loaded']} loaded · {len(universe['skipped'])} skipped · "
+            f"{exact} on the requested expiry.</p>"
+        )
+
+    document = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QQQ max-pain board — {requested_expiry.isoformat()}</title>
+<style>
+:root {{
+  color-scheme: dark;
+  --bg: #070b12;
+  --panel: #0d1623;
+  --panel-2: #111d2d;
+  --line: rgba(158, 181, 211, .16);
+  --text: #eef3fa;
+  --muted: #93a4bb;
+  --dim: #64758c;
+  --pin: #ffca62;
+  --up: #47dfa1;
+  --down: #ff7d89;
+  --mono: "SFMono-Regular", "Cascadia Code", Consolas, monospace;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}}
+* {{ box-sizing: border-box; }}
+body {{
+  margin: 0;
+  background: radial-gradient(900px 520px at 12% -8%, rgba(59, 216, 182, .10), transparent 62%),
+              radial-gradient(900px 520px at 92% 0%, rgba(134, 165, 255, .10), transparent 62%),
+              var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  font-variant-numeric: tabular-nums;
+}}
+.wrap {{ max-width: 1500px; margin: 0 auto; padding: 34px 26px 60px; }}
+header {{ display: flex; flex-wrap: wrap; gap: 18px; justify-content: space-between; align-items: end; margin-bottom: 22px; }}
+h1 {{ margin: 0; font-size: clamp(28px, 4vw, 46px); letter-spacing: -.03em; }}
+h1 em {{ color: var(--pin); font-style: normal; }}
+.kicker {{ color: var(--dim); font-family: var(--mono); font-size: 10px; letter-spacing: .16em; text-transform: uppercase; }}
+.sub {{ color: var(--muted); font-size: 13px; max-width: 760px; line-height: 1.6; margin: 8px 0 0; }}
+.note {{ color: var(--muted); font-size: 12px; margin: 4px 0 18px; }}
+.note a {{ color: var(--pin); }}
+.tools {{ display: flex; gap: 10px; align-items: center; margin: 0 0 14px; }}
+input[type=search] {{
+  width: min(340px, 100%);
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  color: var(--text);
+  padding: 10px 13px;
+  font: inherit;
+  outline: none;
+}}
+input[type=search]:focus {{ border-color: rgba(255, 202, 98, .55); }}
+.table-wrap {{ overflow: auto; border: 1px solid var(--line); border-radius: 16px; background: rgba(13, 22, 35, .82); }}
+table {{ width: 100%; border-collapse: collapse; min-width: 1180px; }}
+th, td {{ padding: 10px 11px; border-bottom: 1px solid var(--line); text-align: right; white-space: nowrap; }}
+th {{ position: sticky; top: 0; z-index: 1; background: var(--panel-2); color: var(--muted); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; cursor: pointer; user-select: none; }}
+th:first-child, td:first-child {{ text-align: left; }}
+tbody tr:hover {{ background: rgba(255, 202, 98, .035); }}
+td {{ font-family: var(--mono); font-size: 12px; }}
+td.ticker {{ font-family: var(--sans); font-weight: 700; font-size: 13px; letter-spacing: .01em; }}
+td.pin {{ color: var(--pin); font-weight: 700; }}
+td.up {{ color: var(--up); }}
+td.down {{ color: var(--down); }}
+.badge {{ font-family: var(--sans); font-size: 10px; letter-spacing: .05em; text-transform: uppercase; }}
+.badge.high {{ color: var(--up); }}
+.badge.moderate {{ color: var(--pin); }}
+.badge.low {{ color: var(--down); }}
+.footer {{ color: var(--dim); font-size: 11px; line-height: 1.7; margin-top: 16px; }}
+@media (max-width: 700px) {{
+  .wrap {{ padding: 22px 14px 40px; }}
+  th, td {{ padding: 9px 8px; }}
+}}
+</style>
+</head>
+<body>
+<main class="wrap">
+<header>
+  <div>
+    <div class="kicker">QQQ max-pain board</div>
+    <h1>Where the pin sits, <em>across the Nasdaq-100.</em></h1>
+    <p class="sub">Open-interest max pain for every loadable QQQ holding, with the volume and blended
+    variants, the 1% shelf, the implied range, and modeled dealer gamma. Ranked by distance from spot.</p>
+  </div>
+  <div class="kicker">As of {html.escape(as_of)}<br>Requested expiry {requested_expiry.isoformat()}</div>
+</header>
+{universe_label}
+<div class="tools">
+  <input id="search" type="search" placeholder="Filter tickers…" autocomplete="off" spellcheck="false">
+  <span class="note" style="margin:0">{loaded} tickers</span>
+</div>
+<div class="table-wrap">
+<table id="board">
+<thead><tr>
+<th>Ticker</th><th>Spot</th><th>OI max</th><th>Away</th><th>Vol max</th><th>Blend</th><th>Shelf</th>
+<th>Exp</th><th>DTE</th><th>Pin</th><th>P/C OI</th><th>ATM IV</th><th>1σ range</th><th>GEX / 1%</th><th>Flip</th>
+</tr></thead>
+<tbody>
+{''.join(rows)}
+</tbody>
+</table>
+</div>
+<p class="footer">Data: Cboe delayed quotes. Open interest is the latest published value; intraday volume is partial.
+Max pain is descriptive, not a forecast. Not investment advice.</p>
+</main>
+<script>
+const table = document.getElementById('board');
+const headers = [...table.querySelectorAll('th')];
+headers.forEach((th, index) => {{
+  th.addEventListener('click', () => {{
+    const tbody = table.querySelector('tbody');
+    const rows = [...tbody.querySelectorAll('tr')];
+    const ascending = th.dataset.order !== 'asc';
+    headers.forEach(other => delete other.dataset.order);
+    th.dataset.order = ascending ? 'asc' : 'desc';
+    rows.sort((a, b) => {{
+      const left = a.children[index];
+      const right = b.children[index];
+      const lv = left.dataset.v !== undefined ? Number(left.dataset.v) : left.textContent;
+      const rv = right.dataset.v !== undefined ? Number(right.dataset.v) : right.textContent;
+      if (typeof lv === 'number' && typeof rv === 'number') return ascending ? lv - rv : rv - lv;
+      return ascending ? String(lv).localeCompare(String(rv)) : String(rv).localeCompare(String(lv));
+    }});
+    rows.forEach(row => tbody.appendChild(row));
+  }});
+}});
+document.getElementById('search').addEventListener('input', event => {{
+  const query = event.target.value.trim().toUpperCase();
+  for (const row of table.querySelectorAll('tbody tr')) {{
+    row.style.display = row.children[0].textContent.includes(query) ? '' : 'none';
+  }}
+}});
+</script>
+</body>
+</html>
+"""
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    out_path.write_text(document, encoding="utf-8")
 
 
 def default_expiry(today: date) -> date:
@@ -557,23 +951,100 @@ def parse_date(value: str) -> date:
 
 
 def main(argv: Optional[list[str]] = None) -> int:
-    parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("--tickers", nargs="+", default=["SPY", "QQQ"], help="option roots (default: SPY QQQ)")
-    parser.add_argument("--expiry", type=parse_date, help="expiry date (default: next Friday)")
+    parser = argparse.ArgumentParser(
+        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
+    )
+    parser.add_argument("--tickers", nargs="+", help="option roots (default: SPY QQQ)")
+    parser.add_argument("--universe", choices=["qqq"], help="load every QQQ holding")
+    parser.add_argument("--expiry", type=parse_date, help="requested expiry (default: next Friday)")
+    parser.add_argument(
+        "--expiry-mode",
+        choices=["auto", "exact", "nearest"],
+        default="auto",
+        help="exact skips missing expiries; nearest uses the next listed expiry; auto is exact for tickers, nearest for a universe",
+    )
+    parser.add_argument("--workers", type=int, default=4, help="parallel Cboe requests (default: 4)")
+    parser.add_argument(
+        "--chains",
+        choices=["auto", "full", "none"],
+        default="auto",
+        help="include per-strike chains in the JSON (auto: full for tickers, none for a universe)",
+    )
+    parser.add_argument("--summary-limit", type=int, help="rows to print; default all for tickers, 25 for a universe")
+    parser.add_argument("--html-out", type=Path, help="write a standalone HTML board")
     parser.add_argument("--out", type=Path, help="output JSON path")
-    parser.add_argument("--timeout", type=float, default=60.0, help="request timeout in seconds")
+    parser.add_argument("--timeout", type=float, default=45.0, help="request timeout in seconds")
     parser.add_argument("--quiet", action="store_true", help="do not print the summary table")
     args = parser.parse_args(argv)
 
-    expiry = args.expiry or default_expiry(date.today())
-    chains = []
-    for ticker in args.tickers:
-        chains.append(build_chain(fetch_payload(ticker, args.timeout), ticker, expiry))
+    requested_expiry = args.expiry or default_expiry(date.today())
+    universe = None
+    if args.universe:
+        tickers = fetch_qqq_constituents(args.timeout)
+        expiry_mode = "nearest" if args.expiry_mode == "auto" else args.expiry_mode
+        include_chain = args.chains == "full"
+        universe = {
+            "name": args.universe,
+            "source": QQQ_LIST_URL,
+            "requested": len(tickers),
+            "loaded": 0,
+            "skipped": [],
+        }
+    else:
+        tickers = args.tickers or ["SPY", "QQQ"]
+        expiry_mode = "exact" if args.expiry_mode == "auto" else args.expiry_mode
+        include_chain = args.chains != "none"
+    if args.chains == "none":
+        include_chain = False
 
-    snapshots = [snapshot(chain) for chain in chains]
-    as_of = max(chain.as_of for chain in chains)
+    def load_batch(
+        batch: list[str], throttle: Throttle, workers: int
+    ) -> tuple[dict[str, Chain], list[dict]]:
+        loaded: dict[str, Chain] = {}
+        failed: list[dict] = []
+        with ThreadPoolExecutor(max_workers=max(1, workers)) as pool:
+            futures = {
+                pool.submit(
+                    load_chain, ticker, requested_expiry, expiry_mode, args.timeout, throttle
+                ): ticker
+                for ticker in batch
+            }
+            for future in as_completed(futures):
+                ticker = futures[future]
+                try:
+                    chain, _ = future.result()
+                except Exception as exc:
+                    failed.append({"ticker": ticker, "reason": str(exc)})
+                else:
+                    loaded[ticker] = chain
+        return loaded, failed
+
+    chains, skipped = load_batch(tickers, Throttle(), args.workers)
+    rate_limited = [item["ticker"] for item in skipped if "rate" in item["reason"].lower()]
+    if rate_limited:
+        time.sleep(3)
+        retry_chains, retry_skipped = load_batch(
+            rate_limited, Throttle(1.0), max(1, min(2, args.workers))
+        )
+        chains.update(retry_chains)
+        skipped = [
+            item for item in skipped if item["ticker"] not in retry_chains
+        ] + retry_skipped
+
+    if not chains:
+        raise SystemExit("no tickers loaded")
+
+    snapshots = [
+        snapshot(chain, requested_expiry, include_chain)
+        for _, chain in sorted(chains.items())
+    ]
+    as_of = max(chain.as_of for chain in chains.values())
+    if universe:
+        universe["loaded"] = len(snapshots)
+        universe["skipped"] = sorted(skipped, key=lambda item: item["ticker"])
+
     result = {
-        "schema_version": 1,
+        "schema_version": 2,
         "kind": "options_max_pain_snapshot",
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "source": {
@@ -583,9 +1054,10 @@ def main(argv: Optional[list[str]] = None) -> int:
             "note": "Open interest is the exchange's latest published value; intraday volume is partial.",
         },
         "as_of": as_of,
-        "expiry": expiry.isoformat(),
-        "dte": chains[0].dte if chains else None,
+        "requested_expiry": requested_expiry.isoformat(),
+        "expiry_mode": expiry_mode,
         "settlement": "PM close",
+        "universe": universe,
         "tickers": [snap["ticker"] for snap in snapshots],
         "snapshots": snapshots,
         "method": {
@@ -603,13 +1075,26 @@ def main(argv: Optional[list[str]] = None) -> int:
     out_path = args.out
     if out_path is None:
         stamp = datetime.fromisoformat(as_of).date().isoformat()
-        names = "-".join(snap["ticker"].lower() for snap in snapshots)
-        out_path = DEFAULT_OUT_DIR / f"{expiry.isoformat()}-{names}-{stamp}.json"
+        if universe:
+            out_path = DEFAULT_OUT_DIR / f"{requested_expiry.isoformat()}-qqq-holdings-{stamp}.json"
+        else:
+            names = "-".join(ticker.lower() for ticker in tickers)
+            out_path = DEFAULT_OUT_DIR / f"{requested_expiry.isoformat()}-{names}-{stamp}.json"
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(json.dumps(result, indent=2) + "\n", encoding="utf-8")
 
+    if args.html_out:
+        render_html(snapshots, requested_expiry, as_of, args.html_out, universe)
+        if not args.quiet:
+            print(f"Wrote {args.html_out}")
+
     if not args.quiet:
-        print(summarize(snapshots, expiry, as_of))
+        limit = args.summary_limit
+        if limit is None:
+            limit = 25 if universe else None
+        print(summarize(snapshots, requested_expiry, as_of, limit=limit, show_expiry=bool(universe)))
+        if skipped:
+            print(f"\nSkipped {len(skipped)}: " + ", ".join(item["ticker"] for item in skipped))
         print(f"\nWrote {out_path}")
     return 0
 
