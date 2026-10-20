@@ -1,54 +1,84 @@
 # Options — max pain
 
-A SPY × QQQ max-pain report and a reproducible data pipeline behind it.
+A SPY × QQQ max-pain report, a scanner for the entire QQQ universe, and the
+reproducible pipeline behind both.
+
+For an auto-refreshing dashboard with click-through ticker details, see
+[`markets/options-live/`](../options-live/).
 
 | File | Purpose |
 | --- | --- |
-| `index.html` | Standalone report for the Oct 23, 2026 expiry, based on the Oct 19 close |
-| `max_pain.py` | Fetches a live chain from Cboe, computes the metrics, and writes a JSON snapshot |
+| `index.html` | Standalone SPY × QQQ report for the Oct 23, 2026 expiry, based on the Oct 19 close |
+| `qqq-max-pain.html` | Ranked board for every loadable QQQ holding (Oct 20, 2026 snapshot) |
+| `max_pain.py` | Fetches live chains from Cboe, computes the metrics, and writes JSON snapshots |
 | `data/` | Dated snapshots produced by `max_pain.py` |
 | `requirements.txt` | `requests` (the only dependency) |
 
-The HTML report is a hand-authored narrative layer. The script produces the
-underlying numbers; it does not rewrite the page.
+The two HTML files are presentation layers. The script produces the numbers;
+it does not rewrite the hand-authored report.
 
-## Generate a snapshot
-
-From the repository root:
-
-```sh
-python3 markets/options/max_pain.py --tickers SPY QQQ --expiry 2026-10-23
-```
-
-The script prints a summary and writes
-`markets/options/data/2026-10-23-spy-qqq-2026-10-20.json` (expiry, tickers,
-quote date). Use `--out` to put it somewhere else.
-
-```
-Max-pain snapshot — as of 2026-10-20T13:49:37+00:00 · expiry 2026-10-23
-
-Ticker      Spot   OI max  Vol max    Blend            1σ range   ATM IV  P/C OI     GEX/1%     Flip       Pin
-SPY       765.71   770.00   767.00   770.00       755.06–776.36    15.3%    1.99    $-2.77B   774.64      High
-QQQ       713.84   726.00   720.00   726.00       696.99–730.69    26.0%    1.57    $-1.79B   730.68  Moderate
-```
-
-Requires Python 3.9+ and `requests`:
+## Quick start
 
 ```sh
 python3 -m pip install -r markets/options/requirements.txt
+
+# Two-ticker snapshot
+python3 markets/options/max_pain.py --tickers SPY QQQ --expiry 2026-10-23
+
+# Every QQQ holding, plus a standalone HTML board
+python3 markets/options/max_pain.py --universe qqq --expiry 2026-10-23 \
+  --html-out markets/options/qqq-max-pain.html
 ```
+
+The script prints a ranked summary and writes JSON to
+`markets/options/data/`. Use `--out` to override the path.
+
+```
+Ticker      Spot   OI max    Away  Vol max    Blend     Shelf         Exp  DTE      Pin
+CSX        48.04    48.00  -0.08%    39.00    48.00        48         10/23    3      Low
+AAPL      342.06   342.50  +0.13%   340.00   342.50     342.5         10/23    3 Moderate
+GOOGL     343.90   345.00  +0.32%   342.50   345.00       345         10/23    3 Moderate
+LIN       501.96   500.00  -0.39%   500.00   500.00       500     11/20+28d   31     High
+...
+```
+
+The generated board loaded all 101 QQQ holdings. 78 had the requested Oct 23
+weekly; 23 names without that weekly fell back to the Nov 20 monthly and are
+marked with a `+28d` drift.
+
+## Universe mode
+
+`--universe qqq` reads the current Nasdaq-100 constituent list from the
+[Wikipedia holdings table](https://en.wikipedia.org/wiki/List_of_NASDAQ-100_companies),
+deduplicates the tickers, and fetches each chain from Cboe.
+
+| Flag | Behavior |
+| --- | --- |
+| `--expiry-mode exact` | Skip a ticker if the requested expiry is not listed |
+| `--expiry-mode nearest` | Use the next listed expiry when the requested one is missing |
+| `--expiry-mode auto` | Exact for explicit tickers; nearest for `--universe qqq` |
+| `--workers N` | Parallel requests (default 4) |
+| `--chains full` | Include every strike in the JSON (auto: on for tickers, off for a universe) |
+| `--chains none` | Omit per-strike chains to keep the snapshot small |
+| `--summary-limit N` | Rows printed to the terminal (default 25 for a universe, all for tickers) |
+| `--html-out PATH` | Write the standalone sortable board |
+
+The script throttles Cboe requests and automatically retries tickers that hit a
+rate limit. A full universe run takes about a minute.
 
 ## What the snapshot contains
 
-Each snapshot has top-level metadata (`as_of`, `expiry`, `dte`, `settlement`,
-`source`, `method`) and one object per ticker under `snapshots`:
+Each snapshot has top-level metadata (`as_of`, `requested_expiry`, `expiry_mode`,
+`settlement`, `source`, `universe`, `method`) and one object per ticker under
+`snapshots`:
 
 - `spot`, `prev_close`, `change_pct`
-- `chain`: every listed strike in the expiry, with call and put `oi`, `volume`,
+- `expiry`, `requested_expiry`, `expiry_drift_days`, `dte`
+- `chain` (optional): every listed strike, with call and put `oi`, `volume`,
   `iv`, `delta`, `gamma`, `bid`, `ask`, `mid`, and `last`. IVs are decimal
   fractions (`0.1534` is 15.34%)
-- `metrics.max_pain`: OI, volume, and blended max pain, the 1% shelf, and a
-  method-spread confidence score
+- `metrics.max_pain`: OI, volume, and blended max pain, the 1% shelf, distance
+  from spot, and a method-spread confidence score
 - `metrics.payout`: modeled payout at spot, the minimum payout, and the pain
   slope per $1
 - `metrics.walls`: largest call-OI and put-OI strikes
@@ -58,6 +88,8 @@ Each snapshot has top-level metadata (`as_of`, `expiry`, `dte`, `settlement`,
 - `metrics.gamma`: modeled net GEX per 1% move and the gamma flip
 - `metrics.top_strikes`: top 12 strikes by combined OI, with tags
 - `metrics.totals`: call/put OI and volume, and the strike count
+
+`universe.skipped` records any ticker that could not be loaded and why.
 
 ## Definitions
 
@@ -80,7 +112,8 @@ flat the bottom of the curve is; a wider shelf is a weaker pin.
 and blend levels are within 0.5% of spot, Moderate within 1%, otherwise Low.
 
 **1σ range.** `spot × ATM IV × √(DTE / 365)`, where ATM IV is the mean of the
-nearest-strike call and put IVs.
+nearest-strike call and put IVs. If the nearest strike has no usable quotes,
+the script walks outward to the closest strike with an IV.
 
 **25-delta risk reversal.** 25-delta put IV minus 25-delta call IV, in
 volatility points. Positive means puts are richer than calls.
@@ -95,9 +128,15 @@ zero crossing within ±15% of spot.
   OI, volume, IV, and Greeks. Yahoo Finance via yfinance is the source named in
   the hand-authored report; the endpoint was unreliable when this pipeline was
   built.
+- The QQQ universe is the Nasdaq-100 list, not Invesco's exact share-level
+  holdings. It includes dual-class lines such as `GOOG`/`GOOGL` and does not
+  apply index weights.
 - Open interest is the exchange's latest published value. Intraday volume is
   partial, so a snapshot taken during the session will differ from a
   close-of-day snapshot.
+- Tickers without the requested weekly fall back to the next listed expiry in
+  universe mode. Their `expiry_drift_days` field makes the mismatch explicit;
+  do not compare their DTE-sensitive metrics directly with the weekly names.
 - The sign convention assumes dealers are short calls and long puts. Actual
   positioning is unobservable.
 - Max pain is descriptive, not a price target. PM settlement, closing-auction
