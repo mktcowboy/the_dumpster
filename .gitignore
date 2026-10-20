@@ -7,3 +7,9 @@ Thumbs.db
 __pycache__/
 node_modules/
 .browser-profile/
+
+# Local Python environments and downloaded map data
+.venv/
+.venv-*/
+venv/
+/texas-triangle-land/data/cache/
