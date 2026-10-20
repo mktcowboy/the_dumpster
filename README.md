@@ -7,7 +7,7 @@ Reports, data snapshots, visualizations, and small tools are grouped by topic:
 | Topic | Projects |
 | --- | --- |
 | Infrastructure | [Data center deals](infrastructure/data-center-deals/), [solar farm pro forma](infrastructure/solar-farm-proforma/) |
-| Markets | [Factor returns](markets/factor-returns/), [S&P 500 correlation](markets/sp500-correlation/), [S&P 500 tracker](markets/sp500-tracker/), [Options reports](markets/options/) |
+| Markets | [Factor returns](markets/factor-returns/), [S&P 500 correlation](markets/sp500-correlation/), [S&P 500 tracker](markets/sp500-tracker/), [Options reports](markets/options/), [QQQ max-pain board](markets/options/qqq-max-pain.html), [Options live board](markets/options-live/) |
 | Reading | [Beyond arXiv digest](reading/beyond-arxiv-digest/), [books](reading/books/), [Friday briefs](reading/friday-briefs/) |
 | Real estate | [Colorado land](real-estate/colorado/), [Texas Triangle land](real-estate/texas-triangle/), [Utah land](real-estate/utah/) |
 | Other projects | [Epigenetics deep dive](epigenetics-deep-dive/), [Oklahoma storage](oklahoma-storage/), [Microgreens business data](other_biz/microgreens-business-data/), [Rent seeking report](rent-seeking-report/), [Spikeandred prompt guide](misc/spikeandred-prompt-guide/), [Dumpster GIF](misc/dumpster-gif/) |
