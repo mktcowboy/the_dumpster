@@ -1,0 +1,1450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QQQ max-pain · live</title>
+<style>
+:root {
+  color-scheme: dark;
+  --bg: #070b12;
+  --panel: #0d1623;
+  --panel-2: #111d2d;
+  --line: rgba(158, 181, 211, .16);
+  --text: #eef3fa;
+  --muted: #93a4bb;
+  --dim: #64758c;
+  --pin: #ffca62;
+  --up: #47dfa1;
+  --down: #ff7d89;
+  --accent: #86a5ff;
+  --mono: "SFMono-Regular", "Cascadia Code", Consolas, monospace;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { background: var(--bg); }
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(900px 520px at 12% -8%, rgba(59, 216, 182, .10), transparent 62%),
+    radial-gradient(900px 520px at 92% 0%, rgba(134, 165, 255, .10), transparent 62%),
+    var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 13px;
+  line-height: 1.45;
+}
+body.no-scroll { overflow: hidden; }
+button, input { font: inherit; }
+.wrap { width: min(1560px, calc(100% - 40px)); margin: 0 auto; }
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--line);
+}
+.brand { display: flex; align-items: center; gap: 11px; min-width: 0; }
+.mark {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid rgba(255, 202, 98, .36);
+  border-radius: 9px;
+  color: var(--pin);
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: .08em;
+  background: rgba(255, 202, 98, .06);
+}
+.brand > div { min-width: 0; }
+.brand strong { display: block; font-size: 15px; letter-spacing: -.01em; font-weight: 650; }
+.brand-sub {
+  display: block;
+  margin-top: 2px;
+  color: var(--dim);
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: .13em;
+}
+.status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  max-width: 55%;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+.status span:last-child { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.dot {
+  flex: 0 0 auto;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--dim);
+  box-shadow: 0 0 0 3px rgba(100, 117, 140, .12);
+}
+.dot.ok { background: var(--up); box-shadow: 0 0 0 3px rgba(71, 223, 161, .12), 0 0 12px rgba(71, 223, 161, .5); }
+.dot.busy { background: var(--pin); box-shadow: 0 0 0 3px rgba(255, 202, 98, .12), 0 0 12px rgba(255, 202, 98, .5); animation: pulse 1.2s ease-in-out infinite; }
+.dot.error { background: var(--down); box-shadow: 0 0 0 3px rgba(255, 125, 137, .12), 0 0 12px rgba(255, 125, 137, .5); }
+.dot.closed { background: var(--muted); box-shadow: 0 0 0 3px rgba(147, 164, 187, .10); }
+@keyframes pulse { 50% { opacity: .45; } }
+main { padding: 20px 0 56px; }
+.toolbar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 13px;
+}
+.chips { display: flex; gap: 7px; flex-wrap: wrap; }
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 9px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  background: rgba(255, 255, 255, .017);
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.chip b { color: var(--text); font-weight: 600; }
+.controls { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+input[type="search"] {
+  width: 250px;
+  height: 34px;
+  padding: 0 11px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  outline: none;
+  color: var(--text);
+  background: rgba(255, 255, 255, .025);
+  font-family: var(--mono);
+  font-size: 11px;
+}
+input[type="search"]:focus { border-color: rgba(134, 165, 255, .55); box-shadow: 0 0 0 3px rgba(134, 165, 255, .10); }
+input[type="search"]::placeholder { color: var(--dim); }
+button {
+  height: 34px;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  color: var(--text);
+  background: rgba(255, 255, 255, .025);
+  cursor: pointer;
+}
+button:hover { border-color: rgba(158, 181, 211, .32); background: rgba(255, 255, 255, .045); }
+button:disabled { cursor: wait; opacity: .55; }
+button.primary {
+  border-color: rgba(255, 202, 98, .28);
+  color: var(--pin);
+  background: rgba(255, 202, 98, .07);
+}
+button.primary:hover { border-color: rgba(255, 202, 98, .5); background: rgba(255, 202, 98, .11); }
+.toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 34px;
+  padding: 0 9px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  color: var(--muted);
+  background: rgba(255, 255, 255, .017);
+  font-family: var(--mono);
+  font-size: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  user-select: none;
+}
+.toggle input { accent-color: var(--pin); margin: 0; }
+.panel {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  overflow: auto;
+  background: linear-gradient(180deg, rgba(17, 29, 45, .72), rgba(13, 22, 35, .86));
+  box-shadow: 0 24px 80px rgba(0, 0, 0, .22);
+}
+table { width: 100%; border-collapse: collapse; }
+.panel table { min-width: 1180px; }
+th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 11px 10px;
+  border-bottom: 1px solid var(--line);
+  color: var(--dim);
+  background: #0d1623;
+  font-family: var(--mono);
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: .08em;
+  text-align: right;
+  text-transform: uppercase;
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+}
+th:first-child, td:first-child { text-align: left; }
+th:hover { color: var(--muted); }
+th.asc::after { content: " ↑"; color: var(--pin); }
+th.desc::after { content: " ↓"; color: var(--pin); }
+td {
+  padding: 9px 10px;
+  border-bottom: 1px solid rgba(158, 181, 211, .075);
+  color: var(--text);
+  font-family: var(--mono);
+  font-size: 11px;
+  text-align: right;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+tbody tr { cursor: pointer; transition: background .12s ease; }
+tbody tr:hover { background: rgba(134, 165, 255, .065); }
+tbody tr:focus-visible { outline: 1px solid var(--accent); outline-offset: -1px; }
+tbody tr:last-child td { border-bottom: 0; }
+td.ticker { font-weight: 650; letter-spacing: .02em; }
+td.pin { color: var(--pin); font-weight: 650; }
+.up { color: var(--up); }
+.down { color: var(--down); }
+.badge {
+  display: inline-block;
+  padding: 2px 6px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+.badge.high { border-color: rgba(71, 223, 161, .3); color: var(--up); background: rgba(71, 223, 161, .07); }
+.badge.moderate { border-color: rgba(255, 202, 98, .3); color: var(--pin); background: rgba(255, 202, 98, .07); }
+.badge.low { border-color: rgba(255, 125, 137, .28); color: var(--down); background: rgba(255, 125, 137, .06); }
+.stale-dot {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  margin-right: 6px;
+  border-radius: 50%;
+  background: var(--pin);
+  vertical-align: 1px;
+}
+.empty { padding: 30px 14px; color: var(--dim); text-align: center; font-family: var(--sans); }
+.note { margin: 12px 2px 0; color: var(--dim); font-size: 11px; line-height: 1.6; }
+.note.subtle { margin-top: 4px; color: #4d5d73; font-size: 10px; }
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 24px;
+  z-index: 100;
+  max-width: min(520px, calc(100% - 32px));
+  padding: 10px 14px;
+  border: 1px solid rgba(255, 202, 98, .28);
+  border-radius: 10px;
+  color: var(--text);
+  background: #111d2d;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, .45);
+  font-size: 12px;
+  transform: translateX(-50%);
+}
+.drawer { position: fixed; inset: 0; z-index: 50; display: flex; justify-content: flex-end; }
+.drawer-backdrop { position: absolute; inset: 0; background: rgba(2, 5, 10, .68); backdrop-filter: blur(2px); }
+.drawer-panel {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  width: min(880px, 100%);
+  height: 100%;
+  border-left: 1px solid var(--line);
+  background: #0b1420;
+  box-shadow: -24px 0 80px rgba(0, 0, 0, .35);
+  animation: slideIn .18s ease-out;
+}
+@keyframes slideIn { from { transform: translateX(28px); opacity: .6; } to { transform: none; opacity: 1; } }
+.drawer-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 20px 14px;
+  border-bottom: 1px solid var(--line);
+}
+.drawer-kicker {
+  color: var(--dim);
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+.drawer-head h2 { margin: 4px 0 0; font-size: 26px; line-height: 1; letter-spacing: -.03em; }
+.drawer-sub { margin-top: 7px; color: var(--muted); font-family: var(--mono); font-size: 10px; }
+.icon-btn {
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border-radius: 9px;
+  color: var(--muted);
+  font-size: 20px;
+  line-height: 1;
+}
+.tabs { display: flex; gap: 4px; padding: 11px 20px 0; border-bottom: 1px solid var(--line); }
+.tab {
+  height: 32px;
+  padding: 0 11px;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  border-radius: 0;
+  color: var(--dim);
+  background: transparent;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+.tab:hover { color: var(--muted); background: transparent; }
+.tab.active { border-bottom-color: var(--pin); color: var(--pin); }
+.drawer-body { padding: 18px 20px 40px; overflow-y: auto; }
+.detail-hero {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 1px;
+  margin-bottom: 16px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--line);
+}
+.detail-hero > div { padding: 10px 12px; background: #0d1623; }
+.detail-hero span { display: block; margin-bottom: 4px; color: var(--dim); font-family: var(--mono); font-size: 8px; letter-spacing: .09em; text-transform: uppercase; }
+.detail-hero b { display: block; font-family: var(--mono); font-size: 13px; font-weight: 600; }
+.detail-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(235px, 1fr)); gap: 10px; }
+.metric-card {
+  padding: 13px 14px;
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  background: rgba(17, 29, 45, .55);
+}
+.metric-card h3 {
+  margin: 0 0 9px;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+.metric-card dl { margin: 0; }
+.metric-card dl > div { display: flex; justify-content: space-between; gap: 14px; padding: 3px 0; }
+.metric-card dt { color: var(--dim); font-size: 11px; }
+.metric-card dd { margin: 0; color: var(--text); font-family: var(--mono); font-size: 11px; text-align: right; }
+.detail-section { margin-top: 20px; }
+.detail-section h3 {
+  margin: 0 0 8px;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+.table-scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; }
+.mini-table { min-width: 620px; }
+.mini-table th { position: static; padding: 8px 9px; background: rgba(17, 29, 45, .8); cursor: default; }
+.mini-table td { padding: 7px 9px; font-size: 10px; }
+.mini-table tbody tr { cursor: default; }
+.tag {
+  display: inline-block;
+  margin: 1px 2px 1px 0;
+  padding: 1px 5px;
+  border: 1px solid rgba(134, 165, 255, .22);
+  border-radius: 999px;
+  color: var(--accent);
+  font-size: 8px;
+  text-transform: uppercase;
+}
+.chain-note { margin-bottom: 8px; color: var(--muted); font-family: var(--mono); font-size: 10px; }
+.chart { width: 100%; margin: 6px 0 10px; }
+.chart svg { display: block; width: 100%; height: auto; }
+.chart-axis { fill: var(--dim); font-family: var(--mono); font-size: 9px; }
+.chart-label { font-family: var(--mono); font-size: 9px; }
+.spot-label { fill: var(--accent); }
+.pin-label { fill: var(--pin); }
+.chain-legend { display: flex; align-items: center; gap: 6px; margin-bottom: 8px; color: var(--dim); font-family: var(--mono); font-size: 9px; text-transform: uppercase; }
+.legend { display: inline-block; width: 14px; height: 2px; margin-left: 6px; }
+.legend.pin { background: var(--pin); }
+.legend.spot { background: var(--accent); }
+.chart-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin: 16px 0 3px; }
+.chart-title { color: var(--muted); font-family: var(--mono); font-size: 9px; letter-spacing: .1em; text-transform: uppercase; }
+.chart-hint { margin: 0 0 2px; color: var(--dim); font-family: var(--mono); font-size: 9px; line-height: 1.5; }
+.range-buttons { display: flex; gap: 3px; }
+.range-btn { height: 24px; padding: 0 8px; border: 1px solid var(--line); border-radius: 6px; color: var(--dim); background: transparent; font-family: var(--mono); font-size: 9px; }
+.range-btn:hover { color: var(--muted); border-color: rgba(158, 181, 211, .3); }
+.range-btn.active { color: var(--pin); border-color: rgba(255, 202, 98, .34); background: rgba(255, 202, 98, .07); }
+.expiry-controls { display: flex; align-items: flex-start; gap: 8px; min-width: 0; margin: 7px 0 8px; }
+.expiry-label { flex: 0 0 auto; padding-top: 5px; color: var(--dim); font-family: var(--mono); font-size: 8px; letter-spacing: .1em; text-transform: uppercase; }
+.expiry-chips { display: flex; gap: 5px; max-width: 100%; overflow-x: auto; padding: 0 0 3px; scrollbar-width: thin; }
+.expiry-chip {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  height: 24px;
+  padding: 0 8px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--dim);
+  background: transparent;
+  font-family: var(--mono);
+  font-size: 9px;
+  white-space: nowrap;
+}
+.expiry-chip:hover { color: var(--muted); border-color: rgba(158, 181, 211, .3); }
+.expiry-chip.active { color: var(--text); border-color: var(--expiry-color); background: rgba(255, 255, 255, .035); }
+.expiry-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--expiry-color); opacity: .32; }
+.expiry-chip.active .expiry-dot { opacity: 1; box-shadow: 0 0 8px var(--expiry-color); }
+.expiry-chip small { color: var(--dim); font-size: 8px; }
+.expiry-chip.active small { color: var(--muted); }
+.oi-legend { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; margin: 2px 0 16px; color: var(--dim); font-family: var(--mono); font-size: 9px; text-transform: uppercase; }
+.oi-direction { margin-left: auto; }
+.swatch { display: inline-block; width: 9px; height: 9px; margin-right: 4px; border-radius: 2px; vertical-align: -1px; }
+.swatch.call { background: rgba(71, 223, 161, .7); }
+.swatch.put { background: rgba(255, 125, 137, .7); }
+.swatch.pin { background: var(--pin); }
+.swatch.spot { background: var(--accent); }
+.chart-error { padding: 18px 12px; color: var(--muted); font-family: var(--mono); font-size: 10px; text-align: center; }
+.chain-table { min-width: 780px; }
+.volume-table { min-width: 690px; }
+.chain-table th, .chain-table td { padding: 6px 5px; font-size: 9px; }
+.chain-table td.strike { font-weight: 650; }
+.pin-row { background: rgba(255, 202, 98, .07); }
+.pin-row td.strike { color: var(--pin); }
+.wall-cell { color: var(--accent); font-weight: 600; }
+.loading, .error-box { padding: 24px 12px; color: var(--muted); text-align: center; font-family: var(--mono); font-size: 11px; }
+.error-box { color: var(--down); }
+@media (max-width: 760px) {
+  .wrap { width: min(100% - 22px, 1560px); }
+  .topbar { align-items: flex-start; }
+  .status { max-width: 45%; }
+  input[type="search"] { width: 100%; }
+  .controls { width: 100%; }
+  .controls input[type="search"] { flex: 1 1 100%; }
+  .drawer-head h2 { font-size: 22px; }
+  .chart { overflow-x: auto; }
+  .expiry-controls { flex-direction: column; gap: 4px; }
+  .expiry-chips { width: 100%; }
+  .chart svg { min-width: 640px; }
+}
+</style>
+</head>
+<body>
+<header class="topbar wrap">
+  <div class="brand">
+    <span class="mark">MP</span>
+    <div>
+      <strong>Max Pain Live</strong>
+      <span class="brand-sub">QQQ UNIVERSE · AUTO-REFRESH</span>
+    </div>
+  </div>
+  <div class="status" aria-live="polite">
+    <span class="dot" id="dot"></span>
+    <span id="status-text">Starting…</span>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="toolbar">
+    <div class="chips">
+      <span class="chip">Expiry <b id="expiry">—</b></span>
+      <span class="chip">Updated <b id="updated">—</b></span>
+      <span class="chip">Next <b id="next">—</b></span>
+      <span class="chip">Rows <b id="count">—</b></span>
+      <span class="chip">Skipped <b id="skipped">—</b></span>
+    </div>
+    <div class="controls">
+      <input id="filter" type="search" placeholder="Filter or load ticker…" autocomplete="off" spellcheck="false" aria-label="Filter or load ticker">
+      <button id="refresh" class="primary" type="button">Refresh now</button>
+      <label class="toggle" title="Poll for new snapshots every 10 seconds"><input id="auto" type="checkbox" checked> Auto</label>
+    </div>
+  </section>
+
+  <section class="panel">
+    <table>
+      <thead>
+        <tr>
+          <th data-sort="0">Ticker</th>
+          <th data-sort="1">Spot</th>
+          <th data-sort="2">OI max</th>
+          <th data-sort="3">Away</th>
+          <th data-sort="4">Vol max</th>
+          <th data-sort="5">Blend</th>
+          <th data-sort="6">Shelf</th>
+          <th data-sort="7">Exp</th>
+          <th data-sort="8">DTE</th>
+          <th data-sort="9">Pin</th>
+          <th data-sort="10">P/C OI</th>
+          <th data-sort="11" title="Today's option volume divided by current open interest">Vol/OI</th>
+          <th data-sort="12">ATM IV</th>
+          <th data-sort="13">1σ range</th>
+          <th data-sort="14">GEX / 1%</th>
+          <th data-sort="15">Flip</th>
+        </tr>
+      </thead>
+      <tbody id="rows">
+        <tr><td colspan="16" class="empty">Loading the QQQ universe…</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <p class="note" id="note">Loading the QQQ universe…</p>
+  <p class="note subtle">Click any row for the full detail panel. Quotes are vendor-delayed; open interest is the exchange's latest published value.</p>
+</main>
+
+<div class="toast" id="toast" hidden></div>
+
+<div class="drawer" id="drawer" hidden>
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+  <aside class="drawer-panel" role="dialog" aria-modal="true" aria-labelledby="drawer-title">
+    <header class="drawer-head">
+      <div>
+        <div class="drawer-kicker" id="drawer-kicker">Ticker details</div>
+        <h2 id="drawer-title">—</h2>
+        <div class="drawer-sub" id="drawer-sub">—</div>
+      </div>
+      <button class="icon-btn" id="drawer-close" type="button" aria-label="Close details">×</button>
+    </header>
+    <div class="tabs" role="tablist">
+      <button class="tab active" id="tab-summary-btn" data-tab="summary" type="button" role="tab" aria-selected="true">Summary</button>
+      <button class="tab" id="tab-chain-btn" data-tab="chain" type="button" role="tab" aria-selected="false">Chart &amp; chain</button>
+    </div>
+    <div class="drawer-body">
+      <div id="pane-summary"></div>
+      <div id="pane-chain" hidden></div>
+    </div>
+  </aside>
+</div>
+
+<script>
+const $ = (id) => document.getElementById(id);
+const PIN_RANK = { High: 0, Moderate: 1, Low: 2 };
+const MAX_CHART_EXPIRIES = 3;
+const EXPIRY_COLORS = ["#47dfa1", "#ff9f43", "#b48cff", "#5ad1e6"];
+const state = {
+  rows: [],
+  snapshot: null,
+  meta: {},
+  filter: "",
+  auto: true,
+  sortIndex: null,
+  sortDir: 1,
+  lastSuccess: null,
+  poll: null,
+  manualPoll: null,
+  detailSymbol: null,
+  chain: null,
+  chartExpiries: [],
+  chartMonths: 3,
+};
+
+function esc(value) {
+  return String(value).replace(/[&<>"']/g, (char) => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
+  }[char]));
+}
+
+const raw = (value) => value == null || Number.isNaN(Number(value)) ? "—" : String(Number(value));
+const num = (value, digits = 2) => value == null || Number.isNaN(Number(value)) ? "—" : Number(value).toFixed(digits);
+const pct = (value) => value == null || Number.isNaN(Number(value)) ? "—" : `${Number(value) > 0 ? "+" : ""}${Number(value).toFixed(2)}%`;
+const iv = (value) => value == null || Number.isNaN(Number(value)) ? "—" : `${(Number(value) * 100).toFixed(1)}%`;
+const range = (value) => !value || value.length < 2 ? "—" : `${Number(value[0]).toFixed(2)}–${Number(value[1]).toFixed(2)}`;
+const ratioPct = (value, base) => base ? `${(Number(value) / Number(base) * 100).toFixed(1)}%` : "—";
+
+function money(value) {
+  if (value == null || Number.isNaN(Number(value))) return "—";
+  const n = Number(value);
+  const absolute = Math.abs(n);
+  if (absolute >= 1e9) return `$${(n / 1e9).toFixed(2)}B`;
+  if (absolute >= 1e6) return `$${(n / 1e6).toFixed(1)}M`;
+  if (absolute >= 1e3) return `$${(n / 1e3).toFixed(0)}K`;
+  return `$${n.toFixed(0)}`;
+}
+
+function shelf(values) {
+  if (!values || !values.length) return "—";
+  return values.length === 1 ? raw(values[0]) : `${raw(values[0])}–${raw(values[values.length - 1])}`;
+}
+
+function expiryText(snapshot) {
+  return snapshot.expiry.slice(5).replace("-", "/") + (snapshot.expiry_drift_days ? ` +${snapshot.expiry_drift_days}d` : "");
+}
+
+function getExpirySeries(data) {
+  if (Array.isArray(data.expiry_series) && data.expiry_series.length) return data.expiry_series;
+  return [{
+    expiry: data.expiry,
+    dte: data.dte,
+    primary: true,
+    rows: (data.chain || []).map((row) => [
+      Number(row.strike),
+      Number((row.call || {}).oi || 0),
+      Number((row.put || {}).oi || 0),
+    ]),
+  }];
+}
+
+function expiryChipLabel(item) {
+  const [year, month, day] = String(item.expiry || "").split("-");
+  if (!year || !month || !day) return "—";
+  return year === String(new Date().getFullYear()) ? `${month}/${day}` : `${month}/${day}/${year.slice(2)}`;
+}
+
+function fmtTime(iso) {
+  if (!iso) return "—";
+  const value = new Date(iso);
+  if (Number.isNaN(value.getTime())) return "—";
+  const now = new Date();
+  const sameDay = value.toDateString() === now.toDateString();
+  return sameDay
+    ? value.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit", second: "2-digit" })
+    : value.toLocaleString([], { month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" });
+}
+
+function buildRow(snapshot) {
+  const metrics = snapshot.metrics || {};
+  const pain = metrics.max_pain || {};
+  const vol = metrics.volatility || {};
+  const gamma = metrics.gamma || {};
+  const totals = metrics.totals || {};
+  const totalOi = Number(totals.call_oi || 0) + Number(totals.put_oi || 0);
+  const totalVolume = Number(totals.call_volume || 0) + Number(totals.put_volume || 0);
+  const volumeOi = totalOi ? totalVolume / totalOi : null;
+  const distance = pain.distance_pct;
+  const pin = pain.pin_confidence || "Low";
+  const cells = [
+    { v: snapshot.ticker, t: snapshot.ticker, cls: "ticker", stale: Boolean(snapshot.stale) },
+    { v: snapshot.spot ?? -Infinity, t: num(snapshot.spot) },
+    { v: pain.oi ?? -Infinity, t: raw(pain.oi), cls: "pin" },
+    { v: distance == null ? Infinity : distance, t: pct(distance), cls: distance == null ? "" : distance > 0 ? "up" : "down" },
+    { v: pain.volume ?? -Infinity, t: raw(pain.volume) },
+    { v: pain.blend ?? -Infinity, t: raw(pain.blend) },
+    { v: (pain.shelf_1pct || []).length, t: shelf(pain.shelf_1pct) },
+    { v: `${snapshot.expiry}|${String(snapshot.dte).padStart(4, "0")}`, t: expiryText(snapshot) },
+    { v: snapshot.dte ?? -Infinity, t: raw(snapshot.dte) },
+    { v: PIN_RANK[pin] ?? 3, t: pin, cls: `badge ${pin.toLowerCase()}` },
+    { v: (metrics.ratios || {}).pc_oi ?? -Infinity, t: num((metrics.ratios || {}).pc_oi) },
+    { v: volumeOi ?? -Infinity, t: volumeOi == null ? "—" : `${(volumeOi * 100).toFixed(1)}%` },
+    { v: vol.atm_iv ?? -Infinity, t: iv(vol.atm_iv) },
+    { v: vol.one_sigma_range ? vol.one_sigma_range[1] : -Infinity, t: range(vol.one_sigma_range) },
+    { v: gamma.net_gex_per_1pct ?? -Infinity, t: money(gamma.net_gex_per_1pct) },
+    { v: gamma.flip ?? -Infinity, t: num(gamma.flip) },
+  ];
+  return { snapshot, cells };
+}
+
+function renderTable() {
+  const query = state.filter.trim().toUpperCase();
+  let rows = state.rows.map(buildRow);
+  if (query) rows = rows.filter((row) => row.snapshot.ticker.includes(query));
+  if (state.sortIndex != null) {
+    const index = state.sortIndex;
+    rows.sort((left, right) => {
+      const a = left.cells[index].v;
+      const b = right.cells[index].v;
+      if (typeof a === "number" && typeof b === "number") return (a - b) * state.sortDir;
+      return String(a).localeCompare(String(b), undefined, { numeric: true }) * state.sortDir;
+    });
+  }
+  const body = $("rows");
+  if (!rows.length) {
+    body.innerHTML = `<tr><td colspan="16" class="empty">No loaded ticker matches “${esc(query)}”. Press Enter to load it.</td></tr>`;
+  } else {
+    body.innerHTML = rows.map((row) => {
+      const cells = row.cells.map((cell) => {
+        const dot = cell.stale ? '<span class="stale-dot" title="Carried from the previous refresh"></span>' : "";
+        return `<td${cell.cls ? ` class="${cell.cls}"` : ""} data-v="${esc(cell.v)}">${dot}${esc(cell.t)}</td>`;
+      }).join("");
+      return `<tr data-ticker="${esc(row.snapshot.ticker)}" tabindex="0" role="button" aria-label="Open details for ${esc(row.snapshot.ticker)}">${cells}</tr>`;
+    }).join("");
+  }
+  $("count").textContent = `${rows.length}/${state.rows.length}`;
+  updateSortIndicators();
+}
+
+function updateSortIndicators() {
+  document.querySelectorAll("th[data-sort]").forEach((th) => {
+    const active = Number(th.dataset.sort) === state.sortIndex;
+    th.classList.toggle("asc", active && state.sortDir === 1);
+    th.classList.toggle("desc", active && state.sortDir === -1);
+  });
+}
+
+function card(title, rows) {
+  const items = rows.map(([label, value]) => `<div><dt>${esc(label)}</dt><dd>${value}</dd></div>`).join("");
+  return `<section class="metric-card"><h3>${esc(title)}</h3><dl>${items}</dl></section>`;
+}
+
+function detailHtml(snapshot) {
+  const metrics = snapshot.metrics || {};
+  const pain = metrics.max_pain || {};
+  const payout = metrics.payout || {};
+  const walls = metrics.walls || {};
+  const ratios = metrics.ratios || {};
+  const vol = metrics.volatility || {};
+  const gamma = metrics.gamma || {};
+  const totals = metrics.totals || {};
+  const callOi = Number(totals.call_oi || 0);
+  const putOi = Number(totals.put_oi || 0);
+  const callVolume = Number(totals.call_volume || 0);
+  const putVolume = Number(totals.put_volume || 0);
+  const totalOi = callOi + putOi;
+  const totalVolume = callVolume + putVolume;
+  const risk = vol.risk_reversal_legs || {};
+  const change = snapshot.change_pct;
+  const changeClass = change == null ? "" : change >= 0 ? "up" : "down";
+  const pin = pain.pin_confidence || "—";
+  const hero = `
+    <div class="detail-hero">
+      <div><span>Spot</span><b>${num(snapshot.spot)}</b></div>
+      <div><span>Change</span><b class="${changeClass}">${pct(change)}</b></div>
+      <div><span>Expiry</span><b>${esc(expiryText(snapshot))}</b></div>
+      <div><span>DTE</span><b>${raw(snapshot.dte)}</b></div>
+      <div><span>Pin</span><b><span class="badge ${esc(pin.toLowerCase())}">${esc(pin)}</span></b></div>
+    </div>`;
+  const cards = [
+    card("Max pain", [
+      ["OI", raw(pain.oi)],
+      ["Volume", raw(pain.volume)],
+      ["Blend", raw(pain.blend)],
+      ["Shelf", shelf(pain.shelf_1pct)],
+      ["Away", pct(pain.distance_pct)],
+      ["Method spread", pain.method_spread_pct == null ? "—" : `${num(pain.method_spread_pct)}%`],
+    ]),
+    card("Payout", [
+      ["At spot", money(payout.at_spot)],
+      ["Minimum", money(payout.minimum)],
+      ["Slope / $1", money(payout.slope_per_dollar)],
+    ]),
+    card("Walls", [
+      ["Call wall", walls.call ? `${raw(walls.call.strike)} · ${raw(walls.call.oi)} OI` : "—"],
+      ["Put wall", walls.put ? `${raw(walls.put.strike)} · ${raw(walls.put.oi)} OI` : "—"],
+    ]),
+    card("Put / call", [
+      ["P/C OI", num(ratios.pc_oi)],
+      ["P/C volume", num(ratios.pc_volume)],
+    ]),
+    card("Volatility", [
+      ["ATM strike", raw(vol.atm_strike)],
+      ["ATM IV", iv(vol.atm_iv)],
+      ["ATM straddle", num(vol.atm_straddle)],
+      ["1σ move", num(vol.one_sigma_move)],
+      ["1σ range", range(vol.one_sigma_range)],
+      ["25Δ RR", vol.risk_reversal_25d_points == null ? "—" : `${vol.risk_reversal_25d_points > 0 ? "+" : ""}${num(vol.risk_reversal_25d_points)} pts`],
+      ["25Δ call", risk.call ? `${raw(risk.call.strike)} · ${iv(risk.call.iv)}` : "—"],
+      ["25Δ put", risk.put ? `${raw(risk.put.strike)} · ${iv(risk.put.iv)}` : "—"],
+    ]),
+    card("Gamma", [
+      ["Net GEX / 1%", money(gamma.net_gex_per_1pct)],
+      ["Gamma flip", num(gamma.flip)],
+      ["Fallback IV", iv(gamma.fallback_iv)],
+    ]),
+    card("Open interest", [
+      ["Call OI", raw(callOi)],
+      ["Put OI", raw(putOi)],
+      ["Total OI", raw(totalOi)],
+      ["Strikes", raw(totals.strikes)],
+    ]),
+    card("Volume", [
+      ["Call volume", raw(callVolume)],
+      ["Put volume", raw(putVolume)],
+      ["Total volume", raw(totalVolume)],
+      ["Volume / OI", ratioPct(totalVolume, totalOi)],
+      ["Call vol / OI", ratioPct(callVolume, callOi)],
+      ["Put vol / OI", ratioPct(putVolume, putOi)],
+    ]),
+  ];
+  const top = (metrics.top_strikes || []).map((row) => `
+    <tr>
+      <td>${raw(row.strike)}</td>
+      <td>${raw(row.call_oi)}</td>
+      <td>${raw(row.put_oi)}</td>
+      <td>${raw(row.total_oi)}</td>
+      <td>${raw(row.volume)}</td>
+      <td>${(row.tags || []).map((tag) => `<span class="tag">${esc(tag)}</span>`).join(" ")}</td>
+    </tr>`).join("");
+  return `${hero}
+    <div class="detail-grid">${cards.join("")}</div>
+    <section class="detail-section">
+      <h3>Top strikes by open interest</h3>
+      <div class="table-scroll">
+        <table class="mini-table">
+          <thead><tr><th>Strike</th><th>Call OI</th><th>Put OI</th><th>Total OI</th><th>Volume</th><th>Tags</th></tr></thead>
+          <tbody>${top}</tbody>
+        </table>
+      </div>
+    </section>`;
+}
+
+function volumeLeadersHtml(data) {
+  const pain = data.metrics && data.metrics.max_pain ? data.metrics.max_pain.oi : null;
+  const walls = (data.metrics && data.metrics.walls) || {};
+  const callWall = walls.call ? walls.call.strike : null;
+  const putWall = walls.put ? walls.put.strike : null;
+  const rows = (data.chain || []).map((row) => {
+    const call = row.call || {};
+    const put = row.put || {};
+    const callVolume = Number(call.volume || 0);
+    const putVolume = Number(put.volume || 0);
+    const callOi = Number(call.oi || 0);
+    const putOi = Number(put.oi || 0);
+    return {
+      strike: row.strike,
+      callVolume,
+      putVolume,
+      totalVolume: callVolume + putVolume,
+      callOi,
+      putOi,
+      totalOi: callOi + putOi,
+    };
+  }).filter((row) => row.totalVolume > 0)
+    .sort((left, right) => right.totalVolume - left.totalVolume)
+    .slice(0, 12);
+  if (!rows.length) return `<div class="loading">No volume reported for this expiry.</div>`;
+  const leaderVolume = rows[0].totalVolume;
+  const body = rows.map((row) => {
+    const tags = [];
+    if (row.totalVolume === leaderVolume) tags.push("volume leader");
+    if (row.strike === pain) tags.push("max pain");
+    if (row.strike === callWall) tags.push("call wall");
+    if (row.strike === putWall) tags.push("put wall");
+    return `<tr>
+      <td>${raw(row.strike)}</td>
+      <td>${raw(row.callVolume)}</td>
+      <td>${raw(row.putVolume)}</td>
+      <td>${raw(row.totalVolume)}</td>
+      <td>${ratioPct(row.totalVolume, row.totalOi)}</td>
+      <td>${raw(row.callOi)}</td>
+      <td>${raw(row.putOi)}</td>
+      <td>${tags.map((tag) => `<span class="tag">${esc(tag)}</span>`).join(" ")}</td>
+    </tr>`;
+  }).join("");
+  return `<div class="table-scroll">
+    <table class="mini-table volume-table">
+      <thead><tr><th>Strike</th><th>Call vol</th><th>Put vol</th><th>Total vol</th><th>Vol / OI</th><th>Call OI</th><th>Put OI</th><th>Tags</th></tr></thead>
+      <tbody>${body}</tbody>
+    </table>
+  </div>`;
+}
+
+function chainHtml(data) {
+  const metrics = data.metrics || {};
+  const pain = metrics.max_pain || {};
+  const walls = metrics.walls || {};
+  const callWall = walls.call ? walls.call.strike : null;
+  const putWall = walls.put ? walls.put.strike : null;
+  const rows = (data.chain || []).map((row) => {
+    const call = row.call || {};
+    const put = row.put || {};
+    const pinned = row.strike === pain.oi;
+    return `<tr class="${pinned ? "pin-row" : ""}">
+      <td class="strike">${raw(row.strike)}</td>
+      <td class="${row.strike === callWall ? "wall-cell" : ""}">${raw(call.oi)}</td>
+      <td>${raw(call.volume)}</td>
+      <td>${iv(call.iv)}</td>
+      <td>${num(call.delta, 3)}</td>
+      <td>${num(call.mid)}</td>
+      <td class="${row.strike === putWall ? "wall-cell" : ""}">${raw(put.oi)}</td>
+      <td>${raw(put.volume)}</td>
+      <td>${iv(put.iv)}</td>
+      <td>${num(put.delta, 3)}</td>
+      <td>${num(put.mid)}</td>
+    </tr>`;
+  }).join("");
+  const historyError = data.history && data.history.error
+    ? `<div class="chart-error">OHLC unavailable: ${esc(data.history.error)}</div>`
+    : "";
+  const series = getExpirySeries(data);
+  const active = new Set(state.chartExpiries);
+  const chips = series.map((item, index) => {
+    const color = EXPIRY_COLORS[index % EXPIRY_COLORS.length];
+    const isActive = active.has(item.expiry);
+    return `<button class="expiry-chip${isActive ? " active" : ""}" data-expiry="${esc(item.expiry)}" style="--expiry-color:${color}" type="button" aria-pressed="${isActive}" title="${esc(item.expiry)} · ${raw(item.dte)} DTE${item.primary ? " · primary expiry" : ""}"><span class="expiry-dot"></span>${esc(expiryChipLabel(item))}<small>${raw(item.dte)}d</small></button>`;
+  }).join("");
+  const primarySeries = series.find((item) => item.primary) || series[0];
+  const primaryLabel = primarySeries ? expiryChipLabel(primarySeries) : String(data.expiry || "").slice(5).replace("-", "/");
+  return `<div class="chain-note">Expiry ${esc(data.expiry)} · ${raw(data.dte)} DTE · Spot ${num(data.spot)} · as of ${fmtTime(data.as_of)}</div>
+    <div class="chart-head">
+      <div class="chart-title">Price &amp; open interest</div>
+      <div class="range-buttons">
+        ${[1, 3, 6].map((months) => `<button class="range-btn${state.chartMonths === months ? " active" : ""}" data-range="${months}" type="button">${months}M</button>`).join("")}
+      </div>
+    </div>
+    <p class="chart-hint">Daily candles over the selected window; OI bars show the selected expiries at strikes inside the price range. Up to ${MAX_CHART_EXPIRIES} overlays; the chain table and payout use ${esc(primaryLabel)}.</p>
+    ${historyError}
+    <div class="expiry-controls">
+      <span class="expiry-label">Expiries</span>
+      <div class="expiry-chips">${chips}</div>
+    </div>
+    <div class="chart" id="price-oi"></div>
+    <div class="oi-legend">
+      <span><span class="swatch pin"></span>Max pain (${esc(primaryLabel)})</span>
+      <span><span class="swatch spot"></span>Spot</span>
+      <span class="oi-direction">Put OI ← · Call OI →</span>
+    </div>
+    <div class="chart-head"><div class="chart-title">Modeled payout by settlement</div></div>
+    <div class="chart" id="payoff"></div>
+    <div class="chain-legend"><span class="legend pin"></span> max pain <span class="legend spot"></span> spot</div>
+    <section class="detail-section">
+      <h3>Top strikes by volume</h3>
+      ${volumeLeadersHtml(data)}
+    </section>
+    <section class="detail-section">
+      <h3>Full chain</h3>
+      <div class="table-scroll">
+        <table class="mini-table chain-table">
+          <thead><tr>
+            <th>Strike</th><th>Call OI</th><th>Call vol</th><th>Call IV</th><th>Call Δ</th><th>Call mid</th>
+            <th>Put OI</th><th>Put vol</th><th>Put IV</th><th>Put Δ</th><th>Put mid</th>
+          </tr></thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>
+    </section>`;
+}
+
+function drawPayoff(data) {
+  const target = $("payoff");
+  if (!target || !data.chain || !data.chain.length) return;
+  const strikes = data.chain.map((row) => row.strike);
+  const spot = Number(data.spot);
+  const low = Math.min(...strikes, spot * 0.9);
+  const high = Math.max(...strikes, spot * 1.1);
+  const samples = 90;
+  const curve = [];
+  for (let index = 0; index <= samples; index += 1) {
+    const settlement = low + (high - low) * index / samples;
+    let total = 0;
+    for (const row of data.chain) {
+      const callOi = row.call && row.call.oi ? row.call.oi : 0;
+      const putOi = row.put && row.put.oi ? row.put.oi : 0;
+      if (callOi) total += callOi * Math.max(0, settlement - row.strike) * 100;
+      if (putOi) total += putOi * Math.max(0, row.strike - settlement) * 100;
+    }
+    curve.push([settlement, total]);
+  }
+  const minimum = Math.min(...curve.map((point) => point[1]));
+  const maximum = Math.max(...curve.map((point) => point[1]));
+  const width = 680;
+  const height = 240;
+  const padLeft = 54;
+  const padRight = 18;
+  const padTop = 18;
+  const padBottom = 34;
+  const x = (value) => padLeft + (value - low) / (high - low) * (width - padLeft - padRight);
+  const y = (value) => padTop + (1 - (value - minimum) / Math.max(1, maximum - minimum)) * (height - padTop - padBottom);
+  const line = curve.map(([settlement, value], index) => `${index ? "L" : "M"}${x(settlement).toFixed(1)},${y(value).toFixed(1)}`).join(" ");
+  const area = `${line} L${x(high).toFixed(1)},${y(minimum).toFixed(1)} L${x(low).toFixed(1)},${y(minimum).toFixed(1)} Z`;
+  const pain = data.metrics && data.metrics.max_pain ? data.metrics.max_pain.oi : spot;
+  const spotX = x(spot);
+  const painX = x(pain);
+  target.innerHTML = `<svg viewBox="0 0 ${width} ${height}" role="img" aria-label="Modeled payout by settlement">
+    <line x1="${padLeft}" y1="${height - padBottom}" x2="${width - padRight}" y2="${height - padBottom}" stroke="var(--line)"/>
+    <line x1="${padLeft}" y1="${padTop}" x2="${padLeft}" y2="${height - padBottom}" stroke="var(--line)"/>
+    <path d="${area}" fill="rgba(255,202,98,.12)"/>
+    <path d="${line}" fill="none" stroke="var(--pin)" stroke-width="2"/>
+    <line x1="${spotX}" y1="${padTop}" x2="${spotX}" y2="${height - padBottom}" stroke="var(--accent)" stroke-width="1" stroke-dasharray="4 4"/>
+    <line x1="${painX}" y1="${padTop}" x2="${painX}" y2="${height - padBottom}" stroke="var(--pin)" stroke-width="1" stroke-dasharray="4 4"/>
+    <text x="${spotX}" y="${padTop - 5}" text-anchor="middle" class="chart-label spot-label">Spot</text>
+    <text x="${painX}" y="${padTop + 12}" text-anchor="middle" class="chart-label pin-label">Max pain</text>
+    <text x="${padLeft}" y="${height - 12}" text-anchor="start" class="chart-axis">${num(low)}</text>
+    <text x="${width - padRight}" y="${height - 12}" text-anchor="end" class="chart-axis">${num(high)}</text>
+    <text x="${padLeft - 6}" y="${padTop + 4}" text-anchor="end" class="chart-axis">${money(maximum)}</text>
+    <text x="${padLeft - 6}" y="${height - padBottom}" text-anchor="end" class="chart-axis">${money(minimum)}</text>
+  </svg>`;
+}
+
+const MONTH_LABELS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+function shortDate(iso) {
+  const parts = String(iso || "").split("-");
+  if (parts.length !== 3) return "";
+  return `${MONTH_LABELS[Number(parts[1]) - 1]} ${Number(parts[2])}`;
+}
+
+function drawPriceOi(data, months) {
+  const target = $("price-oi");
+  if (!target) return;
+  const allCandles = (data.history && data.history.candles) || [];
+  const cutoff = new Date();
+  cutoff.setUTCMonth(cutoff.getUTCMonth() - months);
+  const cutoffIso = cutoff.toISOString().slice(0, 10);
+  let candles = allCandles.filter((candle) => candle.t >= cutoffIso);
+  if (candles.length < 5) candles = allCandles;
+  const series = getExpirySeries(data);
+  const activeSet = new Set(state.chartExpiries);
+  const activeSeries = series
+    .map((item, index) => ({ ...item, color: EXPIRY_COLORS[index % EXPIRY_COLORS.length] }))
+    .filter((item) => activeSet.has(item.expiry));
+  const spot = Number(data.spot) || 0;
+  const painValue = data.metrics && data.metrics.max_pain ? Number(data.metrics.max_pain.oi) : spot;
+  const pain = Number.isFinite(painValue) && painValue > 0 ? painValue : spot;
+  let low;
+  let high;
+  if (candles.length) {
+    low = Math.min(...candles.map((candle) => candle.l));
+    high = Math.max(...candles.map((candle) => candle.h));
+  } else {
+    low = spot * 0.85;
+    high = spot * 1.15;
+  }
+  low = Math.min(low, spot, pain);
+  high = Math.max(high, spot, pain);
+  const padding = Math.max((high - low) * 0.05, spot * 0.005);
+  low -= padding;
+  high += padding;
+  if (!Number.isFinite(low) || !Number.isFinite(high) || high <= low) {
+    target.innerHTML = '<div class="chart-error">Price history unavailable.</div>';
+    return;
+  }
+  const visible = [];
+  let maxOi = 1;
+  activeSeries.forEach((item) => {
+    const rows = (item.rows || [])
+      .map((row) => ({
+        strike: Number(row[0]),
+        call: Number(row[1] || 0),
+        put: Number(row[2] || 0),
+      }))
+      .filter((row) => Number.isFinite(row.strike) && row.strike >= low && row.strike <= high && (row.call || row.put));
+    if (!rows.length) return;
+    rows.forEach((row) => {
+      maxOi = Math.max(maxOi, row.call, row.put);
+    });
+    visible.push({ expiry: item.expiry, color: item.color, rows });
+  });
+  const width = 820;
+  const height = 360;
+  const padLeft = 54;
+  const padRight = 12;
+  const padTop = 34;
+  const padBottom = 38;
+  const priceRight = 548;
+  const oiCenter = 700;
+  const oiHalf = 104;
+  const y = (price) => padTop + (1 - (price - low) / (high - low)) * (height - padTop - padBottom);
+  const xPrice = (index) => padLeft + (candles.length <= 1 ? (priceRight - padLeft) / 2 : index / (candles.length - 1) * (priceRight - padLeft));
+  const candleWidth = Math.max(1.5, (priceRight - padLeft) / Math.max(1, candles.length) * 0.62);
+  const parts = [];
+  parts.push(`<rect x="${priceRight + 20}" y="${padTop}" width="${width - padRight - priceRight - 20}" height="${height - padTop - padBottom}" rx="4" fill="rgba(255,255,255,.012)"/>`);
+  for (let index = 0; index <= 5; index += 1) {
+    const price = low + (high - low) * index / 5;
+    const tickY = y(price);
+    parts.push(`<line x1="${padLeft}" y1="${tickY.toFixed(1)}" x2="${width - padRight}" y2="${tickY.toFixed(1)}" stroke="rgba(158,181,211,.09)"/>`);
+    parts.push(`<text x="${padLeft - 8}" y="${(tickY + 3).toFixed(1)}" text-anchor="end" class="chart-axis">${num(price)}</text>`);
+  }
+  parts.push(`<line x1="${priceRight + 10}" y1="${padTop}" x2="${priceRight + 10}" y2="${height - padBottom}" stroke="rgba(158,181,211,.14)"/>`);
+  parts.push(`<line x1="${oiCenter}" y1="${padTop}" x2="${oiCenter}" y2="${height - padBottom}" stroke="rgba(158,181,211,.18)"/>`);
+  if (candles.length) {
+    candles.forEach((candle, index) => {
+      const x = xPrice(index);
+      const openY = y(candle.o);
+      const closeY = y(candle.c);
+      const color = candle.c >= candle.o ? "var(--up)" : "var(--down)";
+      const bodyTop = Math.min(openY, closeY);
+      const bodyHeight = Math.max(1, Math.abs(closeY - openY));
+      const detail = `${esc(candle.t)} · O ${num(candle.o)} H ${num(candle.h)} L ${num(candle.l)} C ${num(candle.c)}`;
+      parts.push(`<line x1="${x.toFixed(1)}" y1="${y(candle.h).toFixed(1)}" x2="${x.toFixed(1)}" y2="${y(candle.l).toFixed(1)}" stroke="${color}" stroke-width="1" opacity=".85"><title>${detail}</title></line>`);
+      parts.push(`<rect x="${(x - candleWidth / 2).toFixed(1)}" y="${bodyTop.toFixed(1)}" width="${candleWidth.toFixed(1)}" height="${bodyHeight.toFixed(1)}" fill="${color}" opacity=".82"><title>${detail}</title></rect>`);
+    });
+    const labelIndexes = [0, Math.floor((candles.length - 1) / 2), candles.length - 1];
+    labelIndexes.forEach((index, position) => {
+      const candle = candles[index];
+      if (!candle) return;
+      parts.push(`<text x="${xPrice(index).toFixed(1)}" y="${height - 14}" text-anchor="${position === 0 ? "start" : position === 2 ? "end" : "middle"}" class="chart-axis">${esc(shortDate(candle.t))}</text>`);
+    });
+  } else {
+    parts.push(`<text x="${(padLeft + priceRight) / 2}" y="${height / 2}" text-anchor="middle" class="chart-axis">OHLC unavailable — showing open interest by strike</text>`);
+  }
+  const laneCount = Math.max(1, visible.length);
+  const strikeCount = new Set(visible.flatMap((item) => item.rows.map((row) => row.strike))).size;
+  const laneSpacing = (height - padTop - padBottom) / Math.max(1, strikeCount);
+  const laneHeight = Math.max(0.8, Math.min(4, laneSpacing / laneCount * 0.82));
+  const barHeight = Math.max(0.8, laneHeight * 0.8);
+  visible.forEach((item, seriesIndex) => {
+    const offset = (seriesIndex - (visible.length - 1) / 2) * laneHeight;
+    item.rows.forEach((row) => {
+      const strikeY = y(row.strike) + offset;
+      const callWidth = row.call / maxOi * oiHalf;
+      const putWidth = row.put / maxOi * oiHalf;
+      const detail = `${item.expiry} · Strike ${raw(row.strike)} · Call OI ${raw(row.call)} · Put OI ${raw(row.put)}`;
+      if (callWidth > 0) {
+        parts.push(`<rect x="${oiCenter}" y="${(strikeY - barHeight / 2).toFixed(1)}" width="${callWidth.toFixed(1)}" height="${barHeight.toFixed(1)}" rx="1" fill="${item.color}" opacity=".78"><title>${esc(detail)}</title></rect>`);
+      }
+      if (putWidth > 0) {
+        parts.push(`<rect x="${(oiCenter - putWidth).toFixed(1)}" y="${(strikeY - barHeight / 2).toFixed(1)}" width="${putWidth.toFixed(1)}" height="${barHeight.toFixed(1)}" rx="1" fill="${item.color}" opacity=".5"><title>${esc(detail)}</title></rect>`);
+      }
+    });
+  });
+  const spotY = y(spot);
+  const painY = y(pain);
+  parts.push(`<line x1="${padLeft}" y1="${spotY.toFixed(1)}" x2="${width - padRight}" y2="${spotY.toFixed(1)}" stroke="var(--accent)" stroke-width="1" stroke-dasharray="4 4"/>`);
+  parts.push(`<text x="${padLeft + 4}" y="${(spotY - 5).toFixed(1)}" text-anchor="start" class="chart-label spot-label">Spot ${num(spot)}</text>`);
+  const painLabel = `Max pain ${num(pain)}`;
+  const painLabelWidth = Math.max(72, painLabel.length * 5.3 + 8);
+  parts.push(`<line x1="${padLeft}" y1="${painY.toFixed(1)}" x2="${width - padRight}" y2="${painY.toFixed(1)}" stroke="var(--pin)" stroke-width="1" stroke-dasharray="4 4"/>`);
+  parts.push(`<rect x="${(width - padRight - painLabelWidth).toFixed(1)}" y="${(painY - 16).toFixed(1)}" width="${painLabelWidth.toFixed(1)}" height="13" rx="3" fill="#0b1420" opacity=".82"/>`);
+  parts.push(`<text x="${width - padRight}" y="${(painY - 5).toFixed(1)}" text-anchor="end" class="chart-label pin-label">${painLabel}</text>`);
+  parts.push(`<text x="${oiCenter - oiHalf}" y="15" text-anchor="start" class="chart-axis">PUT OI</text>`);
+  parts.push(`<text x="${oiCenter + oiHalf}" y="15" text-anchor="end" class="chart-axis">CALL OI</text>`);
+  if (!visible.length) {
+    const message = activeSeries.length ? "No strikes in range" : "Select an expiry to show OI";
+    parts.push(`<text x="${oiCenter}" y="${height / 2}" text-anchor="middle" class="chart-axis">${message}</text>`);
+  }
+  target.innerHTML = `<svg viewBox="0 0 ${width} ${height}" role="img" aria-label="Daily price and open interest by expiry and strike">${parts.join("")}</svg>`;
+}
+
+function switchTab(tab) {
+  document.querySelectorAll(".tab").forEach((button) => {
+    const active = button.dataset.tab === tab;
+    button.classList.toggle("active", active);
+    button.setAttribute("aria-selected", active ? "true" : "false");
+  });
+  $("pane-summary").hidden = tab !== "summary";
+  $("pane-chain").hidden = tab !== "chain";
+  document.querySelector(".drawer-body").scrollTop = 0;
+  if (tab === "chain") loadChain(state.detailSymbol);
+}
+
+function openDrawer(symbol) {
+  const snapshot = state.rows.find((row) => row.ticker === symbol);
+  if (!snapshot) return;
+  if (
+    state.detailSymbol !== symbol
+    || (state.chain && (state.chain.symbol !== symbol || state.chain.expiry !== snapshot.expiry))
+  ) {
+    state.chain = null;
+  }
+  state.detailSymbol = symbol;
+  $("drawer-title").textContent = symbol;
+  $("drawer-kicker").textContent = snapshot.stale ? "Ticker details · carried" : "Ticker details";
+  const change = snapshot.change_pct;
+  const changeClass = change == null ? "" : change >= 0 ? "up" : "down";
+  $("drawer-sub").innerHTML = `Spot ${num(snapshot.spot)} <span class="${changeClass}">${pct(change)}</span> · ${esc(snapshot.expiry)} · ${raw(snapshot.dte)} DTE`;
+  $("pane-summary").innerHTML = detailHtml(snapshot);
+  $("pane-chain").innerHTML = "";
+  switchTab("summary");
+  $("drawer").hidden = false;
+  document.body.classList.add("no-scroll");
+  $("drawer-close").focus();
+}
+
+function closeDrawer() {
+  $("drawer").hidden = true;
+  document.body.classList.remove("no-scroll");
+  state.detailSymbol = null;
+}
+
+function toggleExpiry(data, expiry) {
+  const series = getExpirySeries(data);
+  const available = new Set(series.map((item) => item.expiry));
+  if (!available.has(expiry)) return;
+  const active = new Set(state.chartExpiries.filter((item) => available.has(item)));
+  if (active.has(expiry)) {
+    active.delete(expiry);
+  } else {
+    if (active.size >= MAX_CHART_EXPIRIES) {
+      toast(`Up to ${MAX_CHART_EXPIRIES} expiries at once. Turn one off first.`);
+      return;
+    }
+    active.add(expiry);
+  }
+  state.chartExpiries = series.map((item) => item.expiry).filter((item) => active.has(item));
+  const pane = $("pane-chain");
+  pane.querySelectorAll(".expiry-chip").forEach((chip) => {
+    const on = active.has(chip.dataset.expiry);
+    chip.classList.toggle("active", on);
+    chip.setAttribute("aria-pressed", on ? "true" : "false");
+  });
+  drawPriceOi(data, state.chartMonths);
+}
+
+function renderChain(data) {
+  const pane = $("pane-chain");
+  pane.innerHTML = chainHtml(data);
+  drawPriceOi(data, state.chartMonths);
+  drawPayoff(data);
+  pane.querySelectorAll("[data-range]").forEach((button) => {
+    button.addEventListener("click", () => {
+      state.chartMonths = Number(button.dataset.range) || 3;
+      pane.querySelectorAll("[data-range]").forEach((item) => item.classList.toggle("active", item === button));
+      drawPriceOi(data, state.chartMonths);
+    });
+  });
+  pane.querySelectorAll("[data-expiry]").forEach((button) => {
+    button.addEventListener("click", () => toggleExpiry(data, button.dataset.expiry));
+  });
+}
+
+async function loadChain(symbol) {
+  if (!symbol) return;
+  if (state.chain && state.chain.symbol === symbol) {
+    if (!$("pane-chain").querySelector("#price-oi svg")) renderChain(state.chain);
+    return;
+  }
+  const pane = $("pane-chain");
+  pane.innerHTML = `<div class="loading">Loading the full chain for ${esc(symbol)}…</div>`;
+  try {
+    const response = await fetch(`/api/chain?symbol=${encodeURIComponent(symbol)}`, { cache: "no-store" });
+    const data = await response.json();
+    if (!response.ok || !data.ok) throw new Error(data.error || `HTTP ${response.status}`);
+    if (state.detailSymbol !== symbol) return;
+    state.chain = data;
+    const series = getExpirySeries(data);
+    state.chartExpiries = series.some((item) => item.expiry === data.expiry)
+      ? [data.expiry]
+      : series.length ? [series[0].expiry] : [];
+    renderChain(data);
+  } catch (error) {
+    if (state.detailSymbol === symbol) {
+      pane.innerHTML = `<div class="error-box">Could not load the chain: ${esc(error.message)}</div>`;
+    }
+  }
+}
+
+function toast(message, sticky = false) {
+  const element = $("toast");
+  element.textContent = message;
+  element.hidden = false;
+  clearTimeout(toast.timer);
+  if (!sticky) {
+    toast.timer = setTimeout(() => { element.hidden = true; }, 3500);
+  }
+}
+
+function updateStatus(data) {
+  const dot = $("dot");
+  const text = $("status-text");
+  dot.className = "dot";
+  if (data.last_error) {
+    dot.classList.add("error");
+    text.textContent = `Error · ${data.last_error}`;
+  } else if (data.refreshing) {
+    dot.classList.add("busy");
+    text.textContent = "Refreshing…";
+  } else if (data.market_open === false) {
+    dot.classList.add("closed");
+    text.textContent = "Market closed";
+  } else if (data.ok) {
+    dot.classList.add("ok");
+    text.textContent = "Live";
+  } else {
+    text.textContent = "Starting…";
+  }
+}
+
+function updateMeta(data) {
+  state.meta = data;
+  updateStatus(data);
+  $("updated").textContent = fmtTime(data.last_success);
+  $("expiry").textContent = data.requested_expiry || (data.snapshot && data.snapshot.requested_expiry) || "—";
+  const snapshot = data.snapshot;
+  if (!snapshot) {
+    $("note").textContent = "Waiting for the first universe refresh…";
+    return;
+  }
+  const universe = snapshot.universe;
+  if (universe) {
+    const extras = universe.extras || [];
+    const extraText = extras.length ? ` · ${extras.length} extra` : "";
+    $("skipped").textContent = (universe.skipped || []).length;
+    $("note").textContent = `QQQ holdings via Wikipedia · ${universe.loaded}/${universe.requested} loaded · ${universe.carried || 0} carried · ${(universe.skipped || []).length} skipped${extraText} · quotes ${fmtTime(snapshot.as_of)}. Click any row for details.`;
+  } else {
+    $("skipped").textContent = "0";
+    $("note").textContent = `${state.rows.length} tickers · quotes ${fmtTime(snapshot.as_of)}. Click any row for details.`;
+  }
+}
+
+async function refreshData(force = false) {
+  try {
+    const response = await fetch("/api/snapshot", { cache: "no-store" });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const data = await response.json();
+    if (data.snapshot) {
+      state.snapshot = data.snapshot;
+      state.rows = data.snapshot.snapshots || [];
+    }
+    updateMeta(data);
+    if (!data.snapshot) return;
+    const changed = state.lastSuccess === null || data.last_success !== state.lastSuccess;
+    if (changed || force) {
+      state.lastSuccess = data.last_success;
+      renderTable();
+      if (state.detailSymbol && !$("drawer").hidden) {
+        const snapshot = state.rows.find((row) => row.ticker === state.detailSymbol);
+        if (snapshot) $("pane-summary").innerHTML = detailHtml(snapshot);
+      }
+    }
+  } catch (error) {
+    $("dot").className = "dot error";
+    $("status-text").textContent = `Connection error · ${error.message}`;
+  }
+}
+
+function schedulePoll() {
+  clearInterval(state.poll);
+  if (state.auto) state.poll = setInterval(() => refreshData(), 10000);
+}
+
+async function loadTicker(symbol) {
+  const filterInput = $("filter");
+  filterInput.disabled = true;
+  toast(`Loading ${symbol}…`, true);
+  try {
+    const response = await fetch(`/api/ticker?symbol=${encodeURIComponent(symbol)}`, { cache: "no-store" });
+    const data = await response.json();
+    if (!response.ok || !data.ok) throw new Error(data.error || `HTTP ${response.status}`);
+    const snapshot = data.snapshot;
+    const index = state.rows.findIndex((row) => row.ticker === snapshot.ticker);
+    if (index >= 0) state.rows[index] = snapshot;
+    else state.rows.push(snapshot);
+    state.rows.sort((left, right) => {
+      const a = left.metrics.max_pain.distance_pct;
+      const b = right.metrics.max_pain.distance_pct;
+      return Math.abs(a == null ? Infinity : a) - Math.abs(b == null ? Infinity : b);
+    });
+    state.filter = snapshot.ticker;
+    filterInput.value = snapshot.ticker;
+    renderTable();
+    toast(`${snapshot.ticker} ${data.cached ? "already loaded" : "loaded"}`);
+    refreshData();
+  } catch (error) {
+    toast(`${symbol}: ${error.message}`);
+  } finally {
+    filterInput.disabled = false;
+    filterInput.focus();
+  }
+}
+
+document.querySelectorAll("th[data-sort]").forEach((th) => {
+  th.addEventListener("click", () => {
+    const index = Number(th.dataset.sort);
+    if (state.sortIndex === index) state.sortDir *= -1;
+    else {
+      state.sortIndex = index;
+      state.sortDir = 1;
+    }
+    renderTable();
+  });
+});
+
+$("rows").addEventListener("click", (event) => {
+  const row = event.target.closest("tr[data-ticker]");
+  if (row) openDrawer(row.dataset.ticker);
+});
+
+$("rows").addEventListener("keydown", (event) => {
+  if (event.key !== "Enter" && event.key !== " ") return;
+  const row = event.target.closest("tr[data-ticker]");
+  if (row) {
+    event.preventDefault();
+    openDrawer(row.dataset.ticker);
+  }
+});
+
+$("filter").addEventListener("input", (event) => {
+  state.filter = event.target.value;
+  renderTable();
+});
+
+$("filter").addEventListener("keydown", (event) => {
+  if (event.key !== "Enter") return;
+  const symbol = event.target.value.trim().toUpperCase();
+  if (!/^[A-Z][A-Z0-9.\-]{0,9}$/.test(symbol)) return;
+  if (state.rows.some((row) => row.ticker === symbol)) {
+    state.filter = symbol;
+    renderTable();
+    return;
+  }
+  loadTicker(symbol);
+});
+
+$("auto").addEventListener("change", (event) => {
+  state.auto = event.target.checked;
+  schedulePoll();
+  if (state.auto) refreshData();
+});
+
+$("refresh").addEventListener("click", async () => {
+  const button = $("refresh");
+  button.disabled = true;
+  try {
+    const response = await fetch("/api/refresh", { method: "POST" });
+    const data = await response.json();
+    if (data.started) {
+      $("dot").className = "dot busy";
+      $("status-text").textContent = "Refreshing…";
+    }
+    clearInterval(state.manualPoll);
+    state.manualPoll = setInterval(async () => {
+      await refreshData(true);
+      if (!state.meta.refreshing) {
+        clearInterval(state.manualPoll);
+        state.manualPoll = null;
+        button.disabled = false;
+      }
+    }, 5000);
+    setTimeout(() => refreshData(true), 1500);
+  } catch (error) {
+    toast(`Refresh failed: ${error.message}`);
+    button.disabled = false;
+  }
+});
+
+document.querySelectorAll(".tab").forEach((button) => {
+  button.addEventListener("click", () => switchTab(button.dataset.tab));
+});
+
+$("drawer-close").addEventListener("click", closeDrawer);
+$("drawer-backdrop").addEventListener("click", closeDrawer);
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && !$("drawer").hidden) closeDrawer();
+});
+
+setInterval(() => {
+  if (state.meta.refreshing) {
+    $("next").textContent = "refreshing";
+    return;
+  }
+  if (state.meta.market_open === false) {
+    $("next").textContent = "closed";
+    return;
+  }
+  const next = state.meta.next_refresh;
+  if (!next) {
+    $("next").textContent = "—";
+    return;
+  }
+  const seconds = Math.max(0, Math.round((new Date(next) - Date.now()) / 1000));
+  $("next").textContent = seconds >= 60
+    ? `${Math.floor(seconds / 60)}m ${String(seconds % 60).padStart(2, "0")}s`
+    : `${seconds}s`;
+}, 1000);
+
+refreshData();
+schedulePoll();
+</script>
+</body>
+</html>
