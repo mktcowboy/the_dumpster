@@ -1,6 +1,6 @@
 {
  "ticker": "HONA",
- "as_of": "2026-10-21T15:20:59-05:00",
+ "as_of": "2026-10-21T16:29:24-05:00",
  "notes": [
   "Post-earnings expiry is 16 trading days after the reaction day; straddle includes material non-earnings time value."
  ],
@@ -23,8 +23,28 @@
    "eps_surprise_pct": -11.75
   }
  ],
+ "date_check": {
+  "yahoo_date": "2026-10-28",
+  "yahoo_timing": "AMC",
+  "yahoo_is_estimate": false,
+  "nasdaq_date": "2026-10-28",
+  "nasdaq_timing": "AMC",
+  "status": "Confirmed",
+  "detail": "date agrees and timing agrees",
+  "date": "2026-10-28",
+  "timing": "AMC",
+  "timing_src": "Yahoo+Nasdaq",
+  "nasdaq_meta": {
+   "days_queried": 87,
+   "days_failed": 0,
+   "start": "2026-10-21",
+   "end": "2027-02-18"
+  }
+ },
+ "date_status": "Confirmed",
  "next_earnings": "2026-10-28",
  "timing": "AMC",
+ "timing_src": "Yahoo+Nasdaq",
  "days_to_earnings": 7,
  "reaction_day": "2026-10-29",
  "post": {
@@ -41,10 +61,57 @@
   "spread": 4.5,
   "spread_pct_of_straddle": 25.2,
   "call_oi": 195,
-  "put_oi": 763
+  "put_oi": 763,
+  "call_vol": 18,
+  "put_vol": 7
  },
  "implied_move_pct": 10.987,
  "days_event_to_expiry": 16,
+ "liquidity": {
+  "atm_oi": 958,
+  "atm_volume": 25,
+  "spread_pct_of_mid": 25.2,
+  "grade": "F"
+ },
+ "hist_vol_ex_earnings": 0.4519,
+ "model": {
+  "sigma_ex": 0.4519,
+  "sigma_ex_src": "63d realized vol ex-earnings (proxy: no pre-earnings expiry)",
+  "E_std_pct": 4.453,
+  "t_rem_days": 16,
+  "entry_premium_pct": 9.749,
+  "flag": null
+ },
+ "costs": {
+  "entry_slip_pct": 0.6925,
+  "exit_slip_pct": 0.6925,
+  "commission_pct": 0.016,
+  "total_cost_pct": 1.401,
+  "spread_estimated": false,
+  "spread_used": 4.5
+ },
+ "pnl_per_quarter": [
+  {
+   "earnings_date": "2026-08-05",
+   "move_pct": -23.163,
+   "exit_value_pct": 23.233,
+   "gross_pct": -13.484,
+   "net_pct": -14.885
+  }
+ ],
+ "pnl_stats": {
+  "entry_premium_pct": 9.749,
+  "cost_pct": 1.401,
+  "gross_avg_pct": -13.484,
+  "net_avg_pct": -14.885,
+  "net_avg_pct_of_premium": -152.7,
+  "gross_hit_rate": 0.0,
+  "net_hit_rate": 0.0,
+  "net_worst_pct": -14.885,
+  "net_tail25_pct": -14.885,
+  "net_avg_win_pct": null,
+  "net_avg_loss_pct": -14.885
+ },
  "stats": {
   "n_quarters": 1,
   "avg_abs_move_pct": 23.163,

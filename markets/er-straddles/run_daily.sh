@@ -1,3 +1,4 @@
 #!/bin/bash
-# Refresh everything: N100 analysis + straddle snapshot + rebuild site. Suggested cron: 45 14 * * 1-5 (2:45pm CT, before close)
+# Afternoon pipeline (weekdays ~2:40 PM CT, before the close): N100 analysis + 'pm' straddle snapshot + crush + site.
+set -e
 cd "$(dirname "$0")" && . .venv/bin/activate && python batch.py && python build_site.py

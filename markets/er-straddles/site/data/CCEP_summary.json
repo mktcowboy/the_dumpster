@@ -1,14 +1,35 @@
 {
  "ticker": "CCEP",
- "as_of": "2026-10-21T15:20:27-05:00",
+ "as_of": "2026-10-21T16:28:49-05:00",
  "notes": [
-  "Straddle priced from last trade (mid/last), not bid/ask mid."
+  "Straddle priced from last trade (mid/last), not bid/ask mid.",
+  "Bid/ask spread unavailable; costs use default spread % from config."
  ],
  "error": null,
  "spot": 110.29,
  "history": [],
+ "date_check": {
+  "yahoo_date": "2027-02-19",
+  "yahoo_timing": "BMO",
+  "yahoo_is_estimate": false,
+  "nasdaq_date": null,
+  "nasdaq_timing": null,
+  "status": "Unconfirmed",
+  "detail": "Yahoo only; not found in Nasdaq calendar window",
+  "date": "2027-02-19",
+  "timing": "BMO",
+  "timing_src": "Yahoo",
+  "nasdaq_meta": {
+   "days_queried": 87,
+   "days_failed": 0,
+   "start": "2026-10-21",
+   "end": "2027-02-18"
+  }
+ },
+ "date_status": "Unconfirmed",
  "next_earnings": "2027-02-19",
  "timing": "BMO",
+ "timing_src": "Yahoo",
  "days_to_earnings": 121,
  "reaction_day": "2027-02-19",
  "post": {
@@ -25,10 +46,18 @@
   "spread": null,
   "spread_pct_of_straddle": null,
   "call_oi": 6,
-  "put_oi": 0
+  "put_oi": 0,
+  "call_vol": 0,
+  "put_vol": 0
  },
  "implied_move_pct": 14.145,
  "days_event_to_expiry": 0,
+ "liquidity": {
+  "atm_oi": 6,
+  "atm_volume": 0,
+  "spread_pct_of_mid": null,
+  "grade": "F"
+ },
  "pre": {
   "expiry": "2026-11-20",
   "strike": 110.0,
@@ -43,9 +72,30 @@
   "spread": 3.6,
   "spread_pct_of_straddle": 55.4,
   "call_oi": 2239,
-  "put_oi": 7
+  "put_oi": 7,
+  "call_vol": 2,
+  "put_vol": 2
  },
  "earnings_only_move_pct": 8.148,
+ "hist_vol_ex_earnings": 0.2372,
+ "model": {
+  "sigma_ex": 0.25,
+  "sigma_ex_src": "pre-earnings expiry ATM IV",
+  "E_std_pct": 10.212,
+  "t_rem_days": 0,
+  "entry_premium_pct": 8.145,
+  "flag": null
+ },
+ "costs": {
+  "entry_slip_pct": 0.3536,
+  "exit_slip_pct": 0.3536,
+  "commission_pct": 0.0236,
+  "total_cost_pct": 0.7308,
+  "spread_estimated": true,
+  "spread_used": 1.56
+ },
+ "pnl_per_quarter": [],
+ "pnl_stats": {},
  "stats": {},
  "name": "Coca-Cola Europacific Partners plc",
  "chart_png": null

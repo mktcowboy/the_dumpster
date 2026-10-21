@@ -9,6 +9,10 @@ __pycache__/
 .ipynb_checkpoints/
 
 # Local rerun artifacts. build_site.py copies the published files into site/.
-# output/n100.json (the Nasdaq-100 constituent cache) stays tracked.
+# Tracked under output/: constituent cache, Nasdaq earnings-calendar cache,
+# the append-only snapshot sheet, and the crush-event table.
 output/*
 !output/n100.json
+!output/snapshots.csv
+!output/crush_events.csv
+!output/cache/

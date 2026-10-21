@@ -1,6 +1,6 @@
 {
  "ticker": "PYPL",
- "as_of": "2026-10-21T15:20:21-05:00",
+ "as_of": "2026-10-21T16:28:44-05:00",
  "notes": [],
  "error": null,
  "spot": 57.2,
@@ -186,8 +186,28 @@
    "eps_surprise_pct": 8.03
   }
  ],
+ "date_check": {
+  "yahoo_date": "2026-10-27",
+  "yahoo_timing": "BMO",
+  "yahoo_is_estimate": false,
+  "nasdaq_date": "2026-10-27",
+  "nasdaq_timing": "BMO",
+  "status": "Confirmed",
+  "detail": "date agrees and timing agrees",
+  "date": "2026-10-27",
+  "timing": "BMO",
+  "timing_src": "Yahoo+Nasdaq",
+  "nasdaq_meta": {
+   "days_queried": 87,
+   "days_failed": 0,
+   "start": "2026-10-21",
+   "end": "2027-02-18"
+  }
+ },
+ "date_status": "Confirmed",
  "next_earnings": "2026-10-27",
  "timing": "BMO",
+ "timing_src": "Yahoo+Nasdaq",
  "days_to_earnings": 6,
  "reaction_day": "2026-10-27",
  "post": {
@@ -204,27 +224,153 @@
   "spread": 0.96,
   "spread_pct_of_straddle": 21.0,
   "call_oi": 704,
-  "put_oi": 1015
+  "put_oi": 1015,
+  "call_vol": 57,
+  "put_vol": 44
  },
  "implied_move_pct": 8.007,
  "days_event_to_expiry": 3,
+ "liquidity": {
+  "atm_oi": 1719,
+  "atm_volume": 101,
+  "spread_pct_of_mid": 21.0,
+  "grade": "F"
+ },
  "pre": {
   "expiry": "2026-10-23",
   "strike": 57.0,
   "call": 0.66,
-  "put": 0.415,
+  "put": 0.42,
   "price_src": "mid",
-  "straddle": 1.075,
-  "implied_move_pct": 1.879,
+  "straddle": 1.08,
+  "implied_move_pct": 1.888,
   "T_years": 0.00794,
-  "iv_straddle": 0.2614,
-  "iv_yf": 0.3027,
-  "spread": 0.37,
-  "spread_pct_of_straddle": 34.4,
+  "iv_straddle": 0.2626,
+  "iv_yf": 0.3052,
+  "spread": 0.38,
+  "spread_pct_of_straddle": 35.2,
   "call_oi": 1273,
-  "put_oi": 456
+  "put_oi": 456,
+  "call_vol": 695,
+  "put_vol": 220
  },
- "earnings_only_move_pct": 7.346,
+ "earnings_only_move_pct": 7.34,
+ "hist_vol_ex_earnings": 0.3745,
+ "model": {
+  "sigma_ex": 0.2626,
+  "sigma_ex_src": "pre-earnings expiry ATM IV",
+  "E_std_pct": 9.199,
+  "t_rem_days": 3,
+  "entry_premium_pct": 7.685,
+  "flag": null
+ },
+ "costs": {
+  "entry_slip_pct": 0.4196,
+  "exit_slip_pct": 0.4196,
+  "commission_pct": 0.0455,
+  "total_cost_pct": 0.8846,
+  "spread_estimated": false,
+  "spread_used": 0.96
+ },
+ "pnl_per_quarter": [
+  {
+   "earnings_date": "2023-11-01",
+   "move_pct": 6.581,
+   "exit_value_pct": 6.608,
+   "gross_pct": 1.077,
+   "net_pct": 0.192
+  },
+  {
+   "earnings_date": "2024-02-07",
+   "move_pct": -11.243,
+   "exit_value_pct": 11.243,
+   "gross_pct": -3.558,
+   "net_pct": -4.443
+  },
+  {
+   "earnings_date": "2024-04-30",
+   "move_pct": 1.388,
+   "exit_value_pct": 2.563,
+   "gross_pct": 5.122,
+   "net_pct": 4.237
+  },
+  {
+   "earnings_date": "2024-07-30",
+   "move_pct": 8.585,
+   "exit_value_pct": 8.589,
+   "gross_pct": -0.904,
+   "net_pct": -1.788
+  },
+  {
+   "earnings_date": "2024-10-29",
+   "move_pct": -3.96,
+   "exit_value_pct": 4.161,
+   "gross_pct": 3.524,
+   "net_pct": 2.639
+  },
+  {
+   "earnings_date": "2025-02-04",
+   "move_pct": -13.166,
+   "exit_value_pct": 13.166,
+   "gross_pct": -5.481,
+   "net_pct": -6.366
+  },
+  {
+   "earnings_date": "2025-04-29",
+   "move_pct": 2.141,
+   "exit_value_pct": 2.915,
+   "gross_pct": 4.77,
+   "net_pct": 3.886
+  },
+  {
+   "earnings_date": "2025-07-29",
+   "move_pct": -8.655,
+   "exit_value_pct": 8.656,
+   "gross_pct": -0.971,
+   "net_pct": -1.856
+  },
+  {
+   "earnings_date": "2025-10-28",
+   "move_pct": 3.943,
+   "exit_value_pct": 4.182,
+   "gross_pct": 3.503,
+   "net_pct": 2.618
+  },
+  {
+   "earnings_date": "2026-02-03",
+   "move_pct": -20.313,
+   "exit_value_pct": 20.313,
+   "gross_pct": -12.628,
+   "net_pct": -13.513
+  },
+  {
+   "earnings_date": "2026-05-05",
+   "move_pct": -7.74,
+   "exit_value_pct": 7.744,
+   "gross_pct": -0.059,
+   "net_pct": -0.944
+  },
+  {
+   "earnings_date": "2026-07-28",
+   "move_pct": 4.013,
+   "exit_value_pct": 4.24,
+   "gross_pct": 3.445,
+   "net_pct": 2.56
+  }
+ ],
+ "pnl_stats": {
+  "entry_premium_pct": 7.685,
+  "cost_pct": 0.8846,
+  "gross_avg_pct": -0.18,
+  "net_avg_pct": -1.065,
+  "net_avg_pct_of_premium": -13.9,
+  "gross_hit_rate": 50.0,
+  "net_hit_rate": 50.0,
+  "net_worst_pct": -13.513,
+  "net_tail25_pct": -8.107,
+  "net_avg_win_pct": 2.689,
+  "net_avg_loss_pct": -4.818
+ },
  "stats": {
   "n_quarters": 12,
   "avg_abs_move_pct": 7.644,
@@ -246,13 +392,13 @@
   "median_abs_move_pct": 7.161,
   "max_abs_move_pct": 20.313,
   "avg_abs_open_move_pct": 7.405,
-  "implied_over_avg": 0.961,
-  "implied_over_median": 1.026,
+  "implied_over_avg": 0.96,
+  "implied_over_median": 1.025,
   "pct_exceeded_implied": 50.0,
   "seller_hit_rate": 50.0,
-  "avg_pnl_pct_spot": -0.298,
-  "total_pnl_pct_spot": -3.576,
-  "worst_pnl_pct_spot": -12.967,
+  "avg_pnl_pct_spot": -0.304,
+  "total_pnl_pct_spot": -3.648,
+  "worst_pnl_pct_spot": -12.973,
   "avg_pnl_pct_premium": -4.1
  },
  "name": "PayPal Holdings, Inc.",
