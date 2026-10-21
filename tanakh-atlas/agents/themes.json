@@ -1,0 +1,2370 @@
+[
+  {
+    "id": "covenant",
+    "name": "Covenant",
+    "he_name": "בְּרִית",
+    "kind": "theme",
+    "short": "A binding relationship that precedes agreement and survives disappointment.",
+    "essay": "The Hebrew Bible rarely argues for one covenant; it layers several. With Noah, the sign is a bow in the clouds and the promise is universal (Genesis 9). With Abraham, covenant becomes a grant of land and descendants, sealed in a night ritual of severed animals (Genesis 15) and later in circumcision (Genesis 17). At Sinai the mood changes: Israel accepts a conditional charter, blessing for obedience and curse for refusal (Exodus 19–24; Deuteronomy 28). Jeremiah then announces a “new covenant” written on the heart rather than stone (Jeremiah 31:31–34), a repair made necessary by the old one's failure. Rabbinic Judaism lived inside that tension. Circumcision remained the durable sign; marriage became its governing metaphor; the Talmud treated covenant as a bond that could be violated but not dissolved. Maimonides codified circumcision, the covenant's enduring sign, as a central commandment. Modern readers ask whether a covenant of election can coexist with a covenant of universal dignity. The sources do not offer a tidy synthesis but a wager: relationship precedes agreement, and obligation outlasts disappointment. That is why covenant is less a doctrine than a plot — the plot of a people argued into faithfulness.",
+    "works": [
+      "genesis",
+      "exodus",
+      "deuteronomy",
+      "jeremiah",
+      "talmud-bavli",
+      "siddur"
+    ],
+    "people": [
+      "abraham",
+      "moses",
+      "jeremiah",
+      "rambam"
+    ],
+    "places": [
+      "canaan",
+      "sinai",
+      "jerusalem"
+    ],
+    "connections": [
+      {
+        "to": "chosenness",
+        "why": "Election narrows covenant to a particular people, raising the question of what that intimacy is for."
+      },
+      {
+        "to": "revelation",
+        "why": "Sinai gives covenant its constitutional moment, though the text describes thunder more clearly than terms."
+      },
+      {
+        "to": "exile-and-return",
+        "why": "Exile tests whether a covenant can survive the loss of the land that sealed it."
+      },
+      {
+        "to": "law-and-narrative",
+        "why": "Covenant is the plot that makes the Torah's laws intelligible as obligations rather than arbitrary rules."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Sefaria: Tanakh",
+        "url": "https://www.sefaria.org/"
+      },
+      {
+        "label": "Britannica: Torah",
+        "url": "https://www.britannica.com/topic/Torah"
+      },
+      {
+        "label": "My Jewish Learning",
+        "url": "https://www.myjewishlearning.com/"
+      }
+    ]
+  },
+  {
+    "id": "creation",
+    "name": "Creation",
+    "he_name": "בְּרִיאָה",
+    "kind": "theme",
+    "short": "The world called into being — and the arguments over what that claim means.",
+    "essay": "Genesis opens with two creation accounts that resist easy harmonization. The first is cosmic and liturgical: light, sky, sea, land, and finally humanity in the divine image, all ordered by speech and crowned by Sabbath (Genesis 1). The second is earthy and intimate: a human formed from dust, a garden, animals named, a woman (Genesis 2). The Bible elsewhere imagines creation as combat with sea monsters (Psalm 74; Job 26; Isaiah 51), as wisdom's playground (Proverbs 8), and as a question God refuses to answer (Job 38–41). Rabbinic tradition turned silence into doctrine: God looked into Torah and created (Genesis Rabbah 1:1); creation from nothing became a creed, though the phrase is not explicit in Genesis. Maimonides devoted Guide II to the eternity-versus-creation debate and concluded that creation is philosophically defensible but not demonstrable. Kabbalists later asked a sharper question: if God is infinite, how is there room for a world at all? Their answer — tzimtzum — would have startled the biblical writers. Creation remains combustible because it joins cosmology to ethics: a world spoken into being can be desecrated by human speech and repaired by human care. The doctrine's payoff is not chronology but responsibility.",
+    "works": [
+      "genesis",
+      "psalms",
+      "job",
+      "proverbs",
+      "guide-perplexed",
+      "midrash",
+      "zohar"
+    ],
+    "people": [
+      "rambam",
+      "saadia-gaon",
+      "shimon-bar-yochai"
+    ],
+    "places": [
+      "eden"
+    ],
+    "connections": [
+      {
+        "to": "tzimtzum",
+        "why": "The Lurianic withdrawal is a later, more radical answer to the question of how the infinite yields a finite world."
+      },
+      {
+        "to": "wisdom",
+        "why": "Proverbs makes wisdom present at creation, linking cosmology to the search for a livable order."
+      },
+      {
+        "to": "image-of-god",
+        "why": "Creation culminates in humanity, and the image of God defines what kind of creature the world was made to hold."
+      },
+      {
+        "to": "revelation",
+        "why": "The God who creates by speech is the God who later speaks at Sinai, though the two claims are held in different registers."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Sefaria: Genesis",
+        "url": "https://www.sefaria.org/"
+      },
+      {
+        "label": "SEP: Maimonides",
+        "url": "https://plato.stanford.edu/entries/maimonides/"
+      },
+      {
+        "label": "My Jewish Learning",
+        "url": "https://www.myjewishlearning.com/"
+      }
+    ]
+  },
+  {
+    "id": "image-of-god",
+    "name": "Image of God",
+    "he_name": "צֶלֶם אֱלֹהִים",
+    "kind": "idea",
+    "short": "The royal title extended to every human being, grounding dignity and demand.",
+    "essay": "צֶלֶם אֱלֹהִים is a royal idiom before it is a democratic one. In the ancient Near East, kings were called the image of their god; Genesis 1 extends the title to every human being, male and female, made to represent the creator's rule over the earth. The claim is functional and relational, not a description of divine anatomy. Its ethical force appears immediately: because the image is inviolable, murder is an offense against God (Genesis 9:6), and because it is universal, the stranger has a claim. Rabbinic Judaism sharpened the paradox. Mishnah Sanhedrin 4:5 notes that a king stamps many coins with one image, but God stamps every person with the image of the first — and yet no two faces are identical. The image can be obscured by sin, but not erased. Maimonides located it in intellectual apprehension; modern thinkers have located it in relational presence and moral agency. The tension is permanent: if the image is a status, it grounds human rights; if it is a task, it demands imitation of God's mercy. Both readings run through the sources. The image is less a possession than a summons — a title that tells you what you owe the person in front of you.",
+    "works": [
+      "genesis",
+      "leviticus",
+      "psalms",
+      "mishnah",
+      "talmud-bavli",
+      "guide-perplexed"
+    ],
+    "people": [
+      "akiva",
+      "hillel",
+      "rambam",
+      "moses"
+    ],
+    "places": [
+      "eden",
+      "sinai"
+    ],
+    "connections": [
+      {
+        "to": "ethics",
+        "why": "The image of God supplies the theological warrant for treating every person as an end rather than a means."
+      },
+      {
+        "to": "chosenness",
+        "why": "If all humans bear the image, election must be a vocation within universal dignity rather than a claim to superior essence."
+      },
+      {
+        "to": "suffering",
+        "why": "The image's persistence in the sufferer is what makes cruelty an assault on God, not merely on a person."
+      },
+      {
+        "to": "mysticism",
+        "why": "Kabbalists read the image as a trace of the divine structure within the soul, intensifying both intimacy and responsibility."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Sefaria: Genesis",
+        "url": "https://www.sefaria.org/"
+      },
+      {
+        "label": "SEP: Maimonides",
+        "url": "https://plato.stanford.edu/entries/maimonides/"
+      },
+      {
+        "label": "Jewish Encyclopedia",
+        "url": "https://www.jewishencyclopedia.com/"
+      }
+    ]
+  },
+  {
+    "id": "exodus",
+    "name": "Exodus",
+    "he_name": "יְצִיאַת מִצְרַיִם",
+    "kind": "theme",
+    "short": "The founding memory of slavery, liberation, and the obligation it imposes.",
+    "essay": "Exodus is the Bible's founding story of liberation and its most dangerous memory. Israel is enslaved, its sons killed, its cry heard; God appears in a burning bush and sends Moses to confront Pharaoh. The plagues escalate, the sea splits, and the people sing (Exodus 14–15). But the same book moves from the sea to a golden calf and a law code; deliverance does not produce virtue automatically. Prophets kept invoking Egypt as evidence that God hears the oppressed (Amos 2:10; Micah 6:4), while the Passover Haggadah turned the event into an annual exercise in empathy: “In every generation a person must see himself as if he went out from Egypt.” Rabbinic law elaborated the Exodus in daily prayer and in the shape of the week. The historical kernel is debated; scholars reconstruct no single date or route, and the text itself is theology before it is chronicle. That does not make it fiction. It makes it a memory communities have chosen to inhabit, with all the risk that entails: a story of liberation can inspire solidarity or justify conquest. The Exodus matters because it refuses to let suffering be private. It teaches a people to remember being strangers — and then tests whether they treat strangers differently.",
+    "works": [
+      "exodus",
+      "deuteronomy",
+      "isaiah",
+      "psalms",
+      "siddur",
+      "midrash"
+    ],
+    "people": [
+      "moses",
+      "miriam",
+      "aaron"
+    ],
+    "places": [
+      "goshen",
+      "sinai"
+    ],
+    "connections": [
+      {
+        "to": "covenant",
+        "why": "The Exodus is the deed that makes Sinai's obligations conceivable: a freed people can choose to be bound."
+      },
+      {
+        "to": "memory",
+        "why": "Passover converts a past event into a recurring discipline of identification with the enslaved."
+      },
+      {
+        "to": "justice",
+        "why": "The prophetic appeal to Egypt grounds social criticism in the memory of having been strangers."
+      },
+      {
+        "to": "messianism",
+        "why": "Later redemption hopes are patterned on the Exodus, which supplies the grammar of deliverance from an impossible power."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Sefaria: Exodus",
+        "url": "https://www.sefaria.org/"
+      },
+      {
+        "label": "My Jewish Learning",
+        "url": "https://www.myjewishlearning.com/"
+      },
+      {
+        "label": "Jewish Encyclopedia",
+        "url": "https://www.jewishencyclopedia.com/"
+      }
+    ]
+  },
+  {
+    "id": "revelation",
+    "name": "Revelation",
+    "he_name": "הִתְגַּלּוּת",
+    "kind": "theme",
+    "short": "The claim that God spoke at Sinai — and the interpretive argument that followed.",
+    "essay": "Sinai is the Bible's central claim and its most contested scene. Exodus 19–20 describes thunder, fire, a mountain trembling, and a people standing at a distance; Deuteronomy 5 retells the event with different emphases. Moses goes up alone; the people hear and fear. The text offers no clean theory of revelation — it offers an overwhelming encounter and then generations of argument about what was heard. Rabbinic Judaism claimed that both Written and Oral Torah were given at Sinai, an audacious move that authorized the sages' ongoing legislation. A famous Talmudic story has Moses transported to Akiva's academy and unable to follow the discussion, yet comforted that the law is “given by Moses from Sinai” (Menahot 29b). Maimonides systematized revelation as prophetic truth, while modern thinkers have described it as ongoing, mediated, or reconstructed. The tension is not between belief and doubt so much as between presence and interpretation: if God speaks, who decides what the words mean? Every subsequent authority — prophet, sage, rabbi, reader — lives in that gap. Revelation is therefore less a datum than a relationship under negotiation, which is why Jews have been able to argue about it without abandoning it.",
+    "works": [
+      "exodus",
+      "deuteronomy",
+      "talmud-bavli",
+      "mishneh-torah",
+      "guide-perplexed",
+      "midrash"
+    ],
+    "people": [
+      "moses",
+      "akiva",
+      "rambam",
+      "yishmael"
+    ],
+    "places": [
+      "sinai"
+    ],
+    "connections": [
+      {
+        "to": "oral-torah",
+        "why": "The claim that Sinai included oral teaching turns revelation into an ongoing legislative process rather than a closed book."
+      },
+      {
+        "to": "prophecy",
+        "why": "Prophecy is revelation in a person; Sinai is revelation to a people, and the two models compete for authority."
+      },
+      {
+        "to": "canon",
+        "why": "Canon fixes which revelations are authoritative, but the fixing itself depends on judgments made after the fact."
+      },
+      {
+        "to": "interpretation",
+        "why": "Once revelation is written, interpretation becomes the medium through which it remains revelation for later generations."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Sefaria: Exodus",
+        "url": "https://www.sefaria.org/"
+      },
+      {
+        "label": "SEP: Maimonides",
+        "url": "https://plato.stanford.edu/entries/maimonides/"
+      },
+      {
+        "label": "My Jewish Learning",
+        "url": "https://www.myjewishlearning.com/"
+      }
+    ]
+  },
+  {
+    "id": "chosenness",
+    "name": "Chosenness",
+    "he_name": "בְּחִירָה",
+    "kind": "idea",
+    "short": "Election as responsibility rather than privilege, tested by conduct.",
+    "essay": "Election is the Bible's most embarrassing doctrine and one of its most misunderstood. Deuteronomy 7:6–8 insists that God chose Israel not because it was numerous or righteous but out of love and an oath to the ancestors; the choice is gratuitous, not earned. A famous midrash reverses the angle: God first offers the Torah to every other nation, and each refuses before Israel accepts (Avodah Zarah 2b). Amos 3:2 draws the radical conclusion: “You only have I known of all the families of the earth; therefore I will punish you for all your iniquities.” Chosenness is responsibility before it is privilege. Ruth the Moabite complicates the line: her loyalty to Naomi and to Israel's God makes her an ancestor of David, so the boundary of election is more porous than genealogy suggests. Isaiah 42 turns the chosen servant into a light to the nations, a vocation that includes suffering. Rabbinic tradition debated whether election was conditional; the Kuzari made it a metaphysical gift, while Maimonides treated it as a historical calling bound to Torah. Modern Judaism divided: some emphasized a universal mission, others a particular peoplehood, and post-Holocaust theology asked whether the label could survive its cost. The honest reading holds two truths at once: the texts do claim a special relationship, and they consistently judge that relationship by conduct. Chosenness is not a claim to superiority; it is a claim to be watched. The question it leaves is not whether Israel is loved, but what love demands — and whether any people can bear being singled out without turning election into entitlement.",
+    "works": [
+      "deuteronomy",
+      "isaiah",
+      "genesis",
+      "talmud-bavli",
+      "kuzari",
+      "ruth"
+    ],
+    "people": [
+      "abraham",
+      "isaiah",
+      "yehuda-halevi",
+      "moses"
+    ],
+    "places": [
+      "sinai",
+      "jerusalem"
+    ],
+    "connections": [
+      {
+        "to": "covenant",
+        "why": "Election is the personal decision behind the covenant, and covenant is the structure that gives election obligations."
+      },
+      {
+        "to": "diaspora",
+        "why": "Exile made chosenness portable, forcing the tradition to distinguish peoplehood from land and sovereignty."
+      },
+      {
+        "to": "ethics",
+        "why": "The prophets judge election by conduct, making chosenness a standard of accountability rather than a guarantee."
+      },
+      {
+        "to": "suffering",
+        "why": "The suffering servant of Isaiah turns election into vicarious exposure, complicating any simple theology of privilege."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Sefaria: Deuteronomy",
+        "url": "https://www.sefaria.org/"
+      },
+      {
+        "label": "My Jewish Learning",
+        "url": "https://www.myjewishlearning.com/"
+      },
+      {
+        "label": "Jewish Encyclopedia",
+        "url": "https://www.jewishencyclopedia.com/"
+      }
+    ]
+  },
+  {
+    "id": "law-and-narrative",
+    "name": "Law and Narrative",
+    "he_name": "",
+    "kind": "idea",
+    "short": "The Torah's refusal to separate statute from story.",
+    "essay": "“Law and narrative” is a modern scholarly label, not a biblical one. The Torah does not separate statute from story: Exodus interrupts the flight from Egypt with covenant law; Leviticus places ritual legislation inside a narrative of divine speech to Moses; Numbers alternates censuses, journeys, and rebellion. The effect is theological. Law is not abstract; it is given to people who have just been freed, who will fail, and who must live together in a land. Narratives explain why a rule exists and what happens when it is broken. Rabbinic midrash exploited the gaps: Why does the Torah begin with creation rather than the first commandment? Why are the laws of the Tabernacle placed beside the story of the calf? The sages read law as a character in a plot, and plot as a commentary on law. Maimonides' Guide distinguishes commandments whose reasons are evident from statutes beyond reason, but the distinction itself is a philosophical reading of a literary Torah. Modern legal theory has rediscovered the same insight: rules need stories to be intelligible, and stories need rules to become livable. The tension is real — law can stifle narrative, narrative can dissolve law — but the canon keeps them yoked. That yoking is one reason the Torah remains readable as scripture rather than as a code.",
+    "works": [
+      "exodus",
+      "leviticus",
+      "numbers",
+      "deuteronomy",
+      "midrash",
+      "talmud-bavli"
+    ],
+    "people": [
+      "moses",
+      "aaron",
+      "akiva",
+      "rashi"
+    ],
+    "places": [
+      "sinai"
+    ],
+    "connections": [
+      {
+        "to": "halakhah",
+        "why": "Halakhah extracts the legal normative content from the Torah's mixed text, risking the loss of the narrative that makes it meaningful."
+      },
+      {
+        "to": "aggadah",
+        "why": "Aggadah is the rabbinic heir of narrative, preserving the story-shaped imagination that law alone cannot supply."
+      },
+      {
+        "to": "revelation",
+        "why": "The unity of law and story assumes that the commanding God is also the God who acts in history."
+      },
+      {
+        "to": "interpretation",
+        "why": "Reading law as narrative is itself an interpretive choice, one that later commentators make explicit."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Sefaria: Leviticus",
+        "url": "https://www.sefaria.org/"
+      },
+      {
+        "label": "My Jewish Learning",
+        "url": "https://www.myjewishlearning.com/"
+      },
+      {
+        "label": "Jewish Encyclopedia",
+        "url": "https://www.jewishencyclopedia.com/"
+      }
+    ]
+  },
+  {
+    "id": "oral-torah",
+    "name": "Oral Torah",
+    "he_name": "תּוֹרָה שֶׁבְּעַל פֶּה",
+    "kind": "idea",
+    "short": "The tradition that revelation is wider than the written text.",
+    "essay": "Judaism's most radical claim is that the written Torah was never meant to stand alone. The Mishnah opens Pirkei Avot with a chain: Moses received Torah at Sinai and transmitted it to Joshua, the elders, the prophets, and the Men of the Great Assembly. That “Torah” includes the oral tradition — the explanations, debates, and practices that make the written text actionable. The claim solved a problem: a written constitution cannot cover every case, and a community cannot live by proof-text alone. It also created a new problem: if the oral Torah is divine, why does it look so human, full of disagreement and change? The Talmud answers with a story: when Rabbi Eliezer appeals to miracles to prove his ruling, a heavenly voice declares, “The Torah is not in heaven” (Bava Metzia 59b). The law is decided by human reasoning, even when heaven disagrees. The Mishnah's redaction around 200 CE and the Talmuds' later editing did not close the process; responsa, codes, and commentary kept it open. Karaites rejected the whole construction, and modern scholars describe the oral Torah as a historical development rather than a single revelation. Both critiques matter. Yet the idea remains generative: it makes interpretation a form of revelation, and it makes the community, not just the book, a bearer of truth.",
+    "works": [
+      "mishnah",
+      "talmud-bavli",
+      "talmud-yerushalmi",
+      "pirkei-avot",
+      "mishneh-torah",
+      "midrash"
+    ],
+    "people": [
+      "judah-hanasi",
+      "akiva",
+      "rav-ashi",
+      "rambam",
+      "hillel"
+    ],
+    "places": [
+      "yavneh",
+      "tiberias",
+      "pumbedita"
+    ],
+    "connections": [
+      {
+        "to": "chain-of-tradition",
+        "why": "The chain of transmission is the legitimating story that makes oral Torah continuous with Sinai."
+      },
+      {
+        "to": "revelation",
+        "why": "Oral Torah expands revelation beyond the written words, making ongoing interpretation itself revelatory."
+      },
+      {
+        "to": "canon",
+        "why": "A closed canon would be unworkable without an oral tradition to interpret and apply it."
+      },
+      {
+        "to": "machloket",
+        "why": "Once oral Torah is authoritative, disagreement becomes a permanent feature of revelation rather than an accident."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Sefaria: Mishnah",
+        "url": "https://www.sefaria.org/"
+      },
+      {
+        "label": "Jewish Encyclopedia",
+        "url": "https://www.jewishencyclopedia.com/"
+      },
+      {
+        "label": "My Jewish Learning",
+        "url": "https://www.myjewishlearning.com/"
+      }
+    ]
+  },
+  {
+    "id": "interpretation",
+    "name": "Interpretation",
+    "he_name": "פַּרְשָׁנוּת",
+    "kind": "practice",
+    "short": "The disciplined art of making an inexhaustible text speak again.",
+    "essay": "Jewish interpretation begins with the conviction that the text is inexhaustible — and with the anxiety that it might mean anything. The rabbis spoke of “seventy faces to the Torah” (Numbers Rabbah 13:15), an image of plenitude that also implies discipline: not every reading is legitimate. The Talmud distinguishes peshat, the plain sense, from derash, the homiletical expansion, though the distinction is often honored in the breach. Medieval commentators turned interpretation into a craft. Rashi, writing in Troyes in the eleventh century, aimed at the plain sense while quoting midrashim that fill narrative gaps; Ibn Ezra brought grammar and geography; Nachmanides read the text through kabbalistic and legal concerns. The result was not a single method but a conversation across centuries. Modern historical criticism added another voice, asking about sources, redaction, and ancient Near Eastern context. Some traditional readers treat that voice as a threat; others as a provocation to read more carefully. The tension is built into the enterprise: a sacred text must be stable enough to command and open enough to speak to new generations. Interpretation is the practice that holds those requirements together. It is not a supplement to revelation; it is the form revelation takes once it is written down.",
+    "works": [
+      "rashi-commentary",
+      "midrash",
+      "talmud-bavli",
+      "guide-perplexed"
+    ],
+    "people": [
+      "rashi",
+      "ibn-ezra",
+      "nachmanides",
+      "akiva"
+    ],
+    "places": [
+      "troyes",
+      "jerusalem"
+    ],
+    "connections": [
+      {
+        "to": "canon",
+        "why": "Canon establishes the bounded library within which interpretation can claim authority."
+      },
+      {
+        "to": "oral-torah",
+        "why": "Interpretation is the engine of oral Torah, turning written words into applicable teaching."
+      },
+      {
+        "to": "machloket",
+        "why": "Competing interpretations are contained by the tradition's willingness to preserve argument rather than erase it."
+      },
+      {
+        "to": "aggadah",
+        "why": "Aggadah is interpretation in narrative mode, expanding scripture through imagination rather than legal inference."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Sefaria: Rashi",
+        "url": "https://www.sefaria.org/"
+      },
+      {
+        "label": "Jewish Encyclopedia",
+        "url": "https://www.jewishencyclopedia.com/"
+      },
+      {
+        "label": "My Jewish Learning",
+        "url": "https://www.myjewishlearning.com/"
+      }
+    ]
+  },
+  {
+    "id": "canon",
+    "name": "Canon",
+    "he_name": "כִּתְבֵי הַקֹּדֶשׁ",
+    "kind": "idea",
+    "short": "The bounded library that makes argument authoritative.",
+    "essay": "Canon is a modern word for a process the sources never name. The Hebrew Bible is traditionally divided into Torah, Prophets, and Writings, but the boundaries were not fixed overnight. The Torah was authoritative by the Persian period; the Prophets were closed by the second century BCE; the Writings remained contested, with Esther, Song of Songs, and Ecclesiastes provoking debate. The rabbinic story of a council at Yavneh that settled the canon is now widely doubted as a tidy event, though Yavneh was a real center after 70 CE. What we can say is that canonization was driven by liturgy, study, and politics as much as by decree. The rabbis spoke of books that “defile the hands” — a ritual marker of sacred status — and argued about which books qualified (Mishnah Yadayim 3:5). Canon did not end interpretation; it created a bounded field in which interpretation could become authoritative. Closure and vitality pull against each other: a canon says these books and not others, yet the meaning of those books keeps expanding. Modern scholars treat canon as a historical category, while communities treat it as a theological fact. Both are right about different things. The canon is less a list than a decision about what counts as a voice worth arguing with.",
+    "works": [
+      "deuteronomy",
+      "isaiah",
+      "psalms",
+      "daniel",
+      "mishnah",
+      "talmud-bavli"
+    ],
+    "people": [
+      "ezra",
+      "judah-hanasi",
+      "akiva",
+      "yohanan-ben-zakkai"
+    ],
+    "places": [
+      "yavneh",
+      "jerusalem",
+      "babylon"
+    ],
+    "connections": [
+      {
+        "to": "oral-torah",
+        "why": "The canon's authority depends on an oral tradition that interprets it, even as that tradition claims to be older than the canon."
+      },
+      {
+        "to": "interpretation",
+        "why": "Canon sets the boundary within which interpretation is authoritative rather than merely private."
+      },
+      {
+        "to": "chain-of-tradition",
+        "why": "The chain legitimates the canon by tracing it to Moses, even though the canon's shape emerged much later."
+      },
+      {
+        "to": "prophecy",
+        "why": "Closing the prophetic canon required explaining why prophecy had ceased while its texts remained normative."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Sefaria: Tanakh",
+        "url": "https://www.sefaria.org/"
+      },
+      {
+        "label": "Jewish Encyclopedia",
+        "url": "https://www.jewishencyclopedia.com/"
+      },
+      {
+        "label": "Britannica: Bible",
+        "url": "https://www.britannica.com/topic/Bible"
+      }
+    ]
+  },
+  {
+    "id": "chain-of-tradition",
+    "name": "Chain of Tradition",
+    "he_name": "שַׁלְשֶׁלֶת הַמָּסוֹרֶת",
+    "kind": "idea",
+    "short": "The claim that each generation receives, argues with, and hands on Torah.",
+    "essay": "Pirkei Avot 1:1 gives Judaism its founding image of transmission: Moses received Torah from Sinai, handed it to Joshua, Joshua to the elders, the elders to the prophets, the prophets to the Men of the Great Assembly. The chain is orderly, personal, and reassuring. History is messier. The Bible itself shows gaps, rival sanctuaries, and lost books; the Talmud preserves disputes about what was received and what was inferred. The chain is therefore best read as a claim of legitimacy rather than a transcript — a way of saying that the community's practice stands in continuity with Sinai, even when the links cannot be documented. The image has real consequences. It makes teaching a form of inheritance, and it makes every generation responsible for handing on more than it received. Maimonides begins the Mishneh Torah with the same chain, then writes a code that reorganizes the tradition. Modern scholarship asks how oral traditions actually traveled, and the answers are less tidy and more interesting: through institutions, rituals, scribes, and argument. The chain's power lies in its combination of humility and audacity. We are not the first to read these texts, and we are not merely repeating what others said. The chain holds only if each link bears weight.",
+    "works": [
+      "pirkei-avot",
+      "mishnah",
+      "talmud-bavli",
+      "mishneh-torah"
+    ],
+    "people": [
+      "moses",
+      "joshua",
+      "hillel",
+      "judah-hanasi",
+      "rambam"
+    ],
+    "places": [
+      "sinai",
+      "yavneh"
+    ],
+    "connections": [
+      {
+        "to": "oral-torah",
+        "why": "The chain is the narrative that authorizes oral Torah by linking it to Sinai."
+      },
+      {
+        "to": "canon",
+        "why": "The same logic that chains teaching to Moses also chains the books to prophetic origin."
+      },
+      {
+        "to": "machloket",
+        "why": "A chain that preserves disagreement must explain how competing links can all be faithful."
+      },
+      {
+        "to": "torah-study",
+        "why": "Study is the practice by which each generation repairs and extends the chain."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Sefaria: Pirkei Avot",
+        "url": "https://www.sefaria.org/"
+      },
+      {
+        "label": "My Jewish Learning",
+        "url": "https://www.myjewishlearning.com/"
+      },
+      {
+        "label": "Jewish Encyclopedia",
+        "url": "https://www.jewishencyclopedia.com/"
+      }
+    ]
+  },
+  {
+    "id": "mitzvot",
+    "name": "Mitzvot",
+    "he_name": "מִצְווֹת",
+    "kind": "practice",
+    "short": "Commandments that turn belief into a practiced way of life.",
+    "essay": "Judaism is a religion of commandments, not merely beliefs. The Hebrew mitzvah means “commandment,” and the tradition counts 613 of them — 248 positive, 365 negative — though the count itself is post-biblical and disputed. The biblical root is the covenant at Sinai: “All that the Lord has spoken we will do” (Exodus 24:7), a pledge that precedes understanding. Rabbinic Judaism organized the commandments into categories — between God and neighbor, between God and self — and debated which could be suspended to save a life. Maimonides' Mishneh Torah arranges all 613 into a legal code, while his Guide offers reasons for some and admits that others are training in obedience. Action and intention do not easily align: a commandment performed by rote is still performed, but the tradition repeatedly asks for the heart. The Hasidic masters emphasized joy and devekut; the Musar movement emphasized character; modern Jews often speak of mitzvot as “connections” rather than orders. That translation is revealing and risky. It preserves the practice while softening the authority. The sources do not resolve the tension; they live in it. A commandment is an address, and an address requires someone who can say yes, no, or not yet.",
+    "works": [
+      "exodus",
+      "leviticus",
+      "deuteronomy",
+      "mishneh-torah",
+      "shulchan-aruch",
+      "psalms"
+    ],
+    "people": [
+      "moses",
+      "rambam",
+      "joseph-karo",
+      "akiva"
+    ],
+    "places": [
+      "sinai"
+    ],
+    "connections": [
+      {
+        "to": "halakhah",
+        "why": "Halakhah is the systematic elaboration of how the commandments are to be performed in changing circumstances."
+      },
+      {
+        "to": "kavvanah",
+        "why": "Intention is the inner counterpart to the commanded act, and the tradition argues about how much it is required."
+      },
+      {
+        "to": "ethics",
+        "why": "Commandments between persons make ethics a subset of religious obligation rather than a separate domain."
+      },
+      {
+        "to": "covenant",
+        "why": "The commandments are the concrete terms of the covenant, giving relationship a daily grammar."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Sefaria: Mishneh Torah",
+        "url": "https://www.sefaria.org/"
+      },
+      {
+        "label": "SEP: Maimonides",
+        "url": "https://plato.stanford.edu/entries/maimonides/"
+      },
+      {
+        "label": "My Jewish Learning",
+        "url": "https://www.myjewishlearning.com/"
+      }
+    ]
+  },
+  {
+    "id": "halakhah",
+    "name": "Halakhah",
+    "he_name": "הֲלָכָה",
+    "kind": "practice",
+    "short": "The walking path of Jewish law, argued from Scripture to application.",
+    "essay": "Halakhah comes from the verb “to walk,” and the metaphor matters: Jewish law is a path, not a codebook dropped from heaven. Its sources are layered — Torah, Mishnah, Talmud, geonic responsa, medieval codes, and modern rulings — and each layer interprets the one before it. The Shulchan Aruch, compiled by Joseph Karo in the sixteenth century, gave the tradition a usable map; Moses Isserles added glosses for Ashkenazi practice, turning the map into a conversation. The Talmud's most famous legal principle is that the law follows the majority, even against a heavenly voice (Bava Metzia 59b). That principle is both a recipe for stability and a source of grief: it can silence dissent and it can authorize change. Halakhah has shown remarkable flexibility — adapting to exile, printing, electricity, and the State of Israel — while insisting that change be argued from within the tradition. The ideal and the workable rarely coincide: a law that cannot be lived will be abandoned, and a law that adapts too easily will lose its authority. Halakhah is best understood not as a fixed system but as a disciplined practice of judgment, carried on by people who believe the details matter. Its continuing vitality depends on that belief.",
+    "works": [
+      "mishnah",
+      "talmud-bavli",
+      "mishneh-torah",
+      "shulchan-aruch",
+      "talmud-yerushalmi"
+    ],
+    "people": [
+      "judah-hanasi",
+      "rambam",
+      "joseph-karo",
+      "moses-isserles",
+      "akiva"
+    ],
+    "places": [
+      "tiberias",
+      "vilna",
+      "worms"
+    ],
+    "connections": [
+      {
+        "to": "aggadah",
+        "why": "Halakhah supplies the normative skeleton, while aggadah supplies the imaginative and theological flesh."
+      },
+      {
+        "to": "machloket",
+        "why": "Legal disagreement is the raw material of halakhah, resolved by majority but never entirely erased."
+      },
+      {
+        "to": "mitzvot",
+        "why": "Halakhah translates the commandments into actionable rules for ordinary life."
+      },
+      {
+        "to": "oral-torah",
+        "why": "Halakhah is the most visible product of the claim that Torah includes an ongoing oral tradition."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Sefaria: Talmud",
+        "url": "https://www.sefaria.org/"
+      },
+      {
+        "label": "Jewish Encyclopedia",
+        "url": "https://www.jewishencyclopedia.com/"
+      },
+      {
+        "label": "My Jewish Learning",
+        "url": "https://www.myjewishlearning.com/"
+      }
+    ]
+  },
+  {
+    "id": "aggadah",
+    "name": "Aggadah",
+    "he_name": "אַגָּדָה",
+    "kind": "theme",
+    "short": "The non-legal lore where the tradition dreams, protests, and imagines.",
+    "essay": "Aggadah is the non-legal side of rabbinic literature: stories, parables, theology, ethics, and imaginative expansions of Scripture. The word means “telling,” and the genre resists definition precisely because it is not a genre. The Talmud mixes aggadah with halakhah on nearly every page; a legal discussion can break into a story about Rabbi Akiva, a demon, or the Messiah. Aggadah was never binding in the way law is, but it was never decorative either. It shaped how Jews imagined God, suffering, the patriarchs, and the world to come. Freedom and authority are the two poles: aggadah invites speculation, yet it operates inside a tradition that has boundaries. Some rabbis distrusted it — Maimonides warned against taking its anthropomorphisms literally — while others treated it as the deepest level of Torah. Its freedom also made it useful: a story could criticize a ruling that law could not reverse. Modern readers often prefer aggadah to halakhah because it feels more spiritual, but that preference misses the point. Aggadah without halakhah becomes edifying sentiment; halakhah without aggadah becomes brittle legalism. The two are not rivals but registers of the same religious life. Aggadah is where the tradition dreams, argues with itself, and imagines what it cannot legislate.",
+    "works": [
+      "talmud-bavli",
+      "midrash",
+      "zohar",
+      "pirkei-avot"
+    ],
+    "people": [
+      "akiva",
+      "shimon-bar-yochai",
+      "rashi",
+      "yochanan-bar-nappacha"
+    ],
+    "places": [
+      "tiberias",
+      "safed"
+    ],
+    "connections": [
+      {
+        "to": "halakhah",
+        "why": "Aggadah and halakhah are complementary registers, and the Talmud's page deliberately entwines them."
+      },
+      {
+        "to": "interpretation",
+        "why": "Aggadah is interpretation freed from the constraint of legal application, though not from the constraint of the text."
+      },
+      {
+        "to": "mysticism",
+        "why": "Kabbalistic literature inherits aggadah's symbolic imagination and pushes it toward cosmic drama."
+      },
+      {
+        "to": "ethics",
+        "why": "Much of aggadah is ethical reflection in narrative form, testing principles against character and consequence."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Sefaria: Midrash",
+        "url": "https://www.sefaria.org/"
+      },
+      {
+        "label": "Jewish Encyclopedia",
+        "url": "https://www.jewishencyclopedia.com/"
+      },
+      {
+        "label": "My Jewish Learning",
+        "url": "https://www.myjewishlearning.com/"
+      }
+    ]
+  },
+  {
+    "id": "machloket",
+    "name": "Machloket",
+    "he_name": "מַחֲלֹקֶת",
+    "kind": "practice",
+    "short": "Disagreement as a form of fidelity, contained by majority rule.",
+    "essay": "מַחֲלֹקֶת is usually translated “dispute,” but the tradition treats it as a form of fidelity. The Mishnah is built out of disagreements; the Talmud rarely resolves them and often preserves the minority view alongside the majority. Hillel and Shammai argued about almost everything, yet the Talmud declares that both “are words of the living God” (Eruvin 13b) — a startling claim that truth is not exhausted by the winning side. Pirkei Avot distinguishes a dispute for the sake of heaven, which will endure, from one driven by ego, which will not (Avot 5:17). The legal rule still follows the majority, so machloket is not relativism; it is a way of containing conflict without pretending it away. Decision and respect are hard to hold together: a community must act, and it must also leave room for the loser to be heard. Modern Judaism inherited the structure and multiplied it — Orthodox, Conservative, Reform, and secular readings now argue across a wider field. The sources offer no guarantee that argument will be civil. They do suggest that a tradition which preserves its arguments is more honest than one that pretends to have none. Machloket is the price of taking both truth and community seriously.",
+    "works": [
+      "mishnah",
+      "talmud-bavli",
+      "pirkei-avot",
+      "shulchan-aruch"
+    ],
+    "people": [
+      "hillel",
+      "shammai",
+      "akiva",
+      "yishmael",
+      "judah-hanasi"
+    ],
+    "places": [
+      "yavneh",
+      "tiberias"
+    ],
+    "connections": [
+      {
+        "to": "halakhah",
+        "why": "Halakhah depends on machloket for its dynamism, then uses majority rule to make decision possible."
+      },
+      {
+        "to": "oral-torah",
+        "why": "A tradition that claims ongoing revelation must find a way to treat disagreement as legitimate rather than corrosive."
+      },
+      {
+        "to": "interpretation",
+        "why": "Competing readings of the same verse are the textual form of machloket."
+      },
+      {
+        "to": "chain-of-tradition",
+        "why": "The chain survives only if it can hold disputing links without breaking."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Sefaria: Mishnah",
+        "url": "https://www.sefaria.org/"
+      },
+      {
+        "label": "My Jewish Learning",
+        "url": "https://www.myjewishlearning.com/"
+      },
+      {
+        "label": "Jewish Encyclopedia",
+        "url": "https://www.jewishencyclopedia.com/"
+      }
+    ]
+  },
+  {
+    "id": "torah-study",
+    "name": "Torah Study",
+    "he_name": "תַּלְמוּד תּוֹרָה",
+    "kind": "practice",
+    "short": "Study as worship, inheritance, and a discipline of attention.",
+    "essay": "Torah study is Judaism's most characteristic act of worship. The Shema commands Israel to speak of the words “when you sit in your house, when you walk by the way” (Deuteronomy 6:7); Joshua is told to meditate on the Torah day and night (Joshua 1:8); Psalm 1 calls the student of Torah a tree planted by water. Rabbinic Judaism turned study into a communal institution and a religious ideal. Pirkei Avot advises, “Make your house a meeting house for the wise” (Avot 1:4), and the Talmud declares that study is greater than practice because it leads to practice (Kiddushin 40b). Elitism and access have always competed. For centuries, full-time study was the preserve of men and often of the wealthy; women were exempted and sometimes excluded. Yet the tradition also insisted that every Jew should study, and the modern democratization of learning — from the printing press to the internet — has transformed who can participate. Study is not merely information transfer. It is a discipline of attention, argument, and humility, carried on in pairs (havruta) and across generations. The question that remains is whether a tradition of study can survive when its texts are read without the practices that produced them. The sources would say that study is itself a practice, and that the book is only the beginning.",
+    "works": [
+      "deuteronomy",
+      "psalms",
+      "pirkei-avot",
+      "talmud-bavli",
+      "mishneh-torah"
+    ],
+    "people": [
+      "moses",
+      "joshua",
+      "hillel",
+      "akiva",
+      "rav-ashi"
+    ],
+    "places": [
+      "yavneh",
+      "pumbedita",
+      "vilna"
+    ],
+    "connections": [
+      {
+        "to": "revelation",
+        "why": "Study is the ongoing reception of revelation, the way Sinai remains audible in later generations."
+      },
+      {
+        "to": "oral-torah",
+        "why": "The oral tradition exists because study keeps producing new applications and arguments."
+      },
+      {
+        "to": "prayer",
+        "why": "Study and prayer are rival and complementary forms of worship, with the Talmud sometimes ranking study higher."
+      },
+      {
+        "to": "ethics",
+        "why": "The tradition insists that study which does not lead to practice is incomplete, making ethics the test of learning."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Sefaria: Talmud",
+        "url": "https://www.sefaria.org/"
+      },
+      {
+        "label": "My Jewish Learning",
+        "url": "https://www.myjewishlearning.com/"
+      },
+      {
+        "label": "Jewish Encyclopedia",
+        "url": "https://www.jewishencyclopedia.com/"
+      }
+    ]
+  },
+  {
+    "id": "exile-and-return",
+    "name": "Exile and Return",
+    "he_name": "גָּלוּת וְשִׁיבָה",
+    "kind": "theme",
+    "short": "Catastrophe and promise held together in the grammar of return.",
+    "essay": "Exile is the Bible's great trauma and its great engine. In 586 BCE Babylon destroyed Jerusalem and the Temple, deporting the elite; in 70 CE Rome repeated the catastrophe. The prophets interpreted the first exile as judgment and promised return: Jeremiah bought a field as a sign that houses and vineyards would be restored (Jeremiah 32), Ezekiel envisioned dry bones coming to life (Ezekiel 37), and Psalm 137 hung harps on the willows. The return under Cyrus was real but partial; the Second Temple was built, and the community remained entangled with empire. Rabbinic Judaism was born after the second destruction, and it developed a theology of exile in which the Shekhinah itself wandered with Israel. Punishment and promise are woven together: exile explains suffering, but it can also become a permanent identity, a way of avoiding responsibility for the present. Modern Zionism turned return into a political program, while religious thinkers debated whether the state was the beginning of redemption or a human substitute for it. The sources do not settle the question. They do insist that exile is not the end of the story, and that return is not simply a change of address. It is a demand to rebuild the conditions of collective life.",
+    "works": [
+      "jeremiah",
+      "ezekiel",
+      "psalms",
+      "lamentations",
+      "ezra",
+      "talmud-bavli"
+    ],
+    "people": [
+      "jeremiah",
+      "ezekiel",
+      "ezra",
+      "rav"
+    ],
+    "places": [
+      "babylon",
+      "jerusalem",
+      "susa"
+    ],
+    "connections": [
+      {
+        "to": "diaspora",
+        "why": "Exile names the wound; diaspora names the long, creative condition that followed it."
+      },
+      {
+        "to": "land-of-israel",
+        "why": "Return is inseparable from the land, which becomes the concrete object of hope and the test of its realization."
+      },
+      {
+        "to": "messianism",
+        "why": "Messianic hope is the engine of return, and return is the political form that hope can take."
+      },
+      {
+        "to": "memory",
+        "why": "Exile is kept alive through fasts, psalms, and liturgy, making memory a form of residence."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Sefaria: Jeremiah",
+        "url": "https://www.sefaria.org/"
+      },
+      {
+        "label": "My Jewish Learning",
+        "url": "https://www.myjewishlearning.com/"
+      },
+      {
+        "label": "Jewish Encyclopedia",
+        "url": "https://www.jewishencyclopedia.com/"
+      }
+    ]
+  },
+  {
+    "id": "land-of-israel",
+    "name": "Land of Israel",
+    "he_name": "אֶרֶץ יִשְׂרָאֵל",
+    "kind": "theme",
+    "short": "The promised land as gift, trust, and moral test.",
+    "essay": "The land is promised before it is possessed, and the gap between promise and possession generates most of the Bible's moral drama. Abraham is told to leave Haran for a land God will show him (Genesis 12); the land is given by covenant, yet it is inhabited by others. The Torah makes possession conditional on obedience and warns, in Leviticus, that the land will “vomit out” its inhabitants if they defile it (18:28). Gift and responsibility are inseparable: land is not property to be owned but a trust to be kept. The rabbis added a further layer. The laws of shemittah and yovel — letting the land rest and returning it to its original holders — turned agriculture into theology. After the destruction, the land became both a memory and a legal category; prayer turned toward Jerusalem, and pilgrimage became a dream. Modern Zionism transformed the dream into a state, raising questions the tradition had never faced at this scale: sovereignty, borders, and the rights of non-Jews. Religious Zionists read return as redemption; others insist that the land's sanctity demands justice, not merely possession. The sources are not unanimous, but they are clear about one thing: the land is never merely land. It is the place where covenant becomes concrete — and therefore the place where its failures are most visible.",
+    "works": [
+      "genesis",
+      "deuteronomy",
+      "leviticus",
+      "joshua",
+      "talmud-bavli",
+      "kuzari"
+    ],
+    "people": [
+      "abraham",
+      "joshua",
+      "yehuda-halevi",
+      "moses"
+    ],
+    "places": [
+      "canaan",
+      "hebron",
+      "jerusalem"
+    ],
+    "connections": [
+      {
+        "to": "covenant",
+        "why": "The land is the territorial term of the covenant, which is why losing it feels like losing the relationship itself."
+      },
+      {
+        "to": "exile-and-return",
+        "why": "Return to the land is the Bible's answer to exile, though the answer arrives with unresolved questions about possession."
+      },
+      {
+        "to": "diaspora",
+        "why": "Diaspora defines itself against the land, and the land defines itself against diaspora, each needing the other for contrast."
+      },
+      {
+        "to": "chosenness",
+        "why": "A chosen people and a promised land together intensify the claim to particularity and the ethical scrutiny it invites."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Sefaria: Deuteronomy",
+        "url": "https://www.sefaria.org/"
+      },
+      {
+        "label": "My Jewish Learning",
+        "url": "https://www.myjewishlearning.com/"
+      },
+      {
+        "label": "Jewish Encyclopedia",
+        "url": "https://www.jewishencyclopedia.com/"
+      }
+    ]
+  },
+  {
+    "id": "diaspora",
+    "name": "Diaspora",
+    "he_name": "תְּפוּצוֹת",
+    "kind": "theme",
+    "short": "Life outside the land as absence, creativity, and a form of belonging.",
+    "essay": "Diaspora is a Greek word the tradition mostly did not use; it spoke of galut, exile, and tefutsot, scattering. The Bible itself contains a diaspora before the rabbis: Joseph in Egypt, Esther in Persia, Daniel in Babylon. These stories ask whether a Jew can be faithful outside the land, and they answer with a qualified yes. Esther hides her identity and then reveals it; Daniel serves foreign kings without worshipping their gods. After 70 CE, diaspora became the normal condition, and rabbinic Judaism built portable institutions — synagogue, study house, calendar, law — that could travel. Yohanan ben Zakkai's escape from Jerusalem to Yavneh is the founding legend of that portability. Exile as curse and diaspora as creativity coexist: the Talmud of Babylon, the Golden Age of Spain, and the Jewish Enlightenment all happened outside the land. Modern Zionism adopted the slogan “negation of the diaspora” (shlilat hagolah), treating exile as a pathology to be cured. That polemic captured a real yearning but simplified a complex history. Today most Jews live in diaspora, and the question is not whether it can be authentic but how it relates to the land without being reduced to waiting. Diaspora is not a temporary absence. It is one of the forms Jewish life has taken.",
+    "works": [
+      "esther",
+      "daniel",
+      "ezra",
+      "talmud-bavli",
+      "siddur"
+    ],
+    "people": [
+      "ezra",
+      "esther",
+      "yohanan-ben-zakkai",
+      "saadia-gaon",
+      "joseph"
+    ],
+    "places": [
+      "babylon",
+      "susa",
+      "cairo"
+    ],
+    "connections": [
+      {
+        "to": "land-of-israel",
+        "why": "Diaspora is defined by distance from the land, even when it develops institutions that no longer depend on return."
+      },
+      {
+        "to": "exile-and-return",
+        "why": "Exile supplies diaspora with a theological meaning, while return supplies it with a destination."
+      },
+      {
+        "to": "prayer",
+        "why": "Prayer toward Jerusalem turns diaspora space into a relationship with the absent center."
+      },
+      {
+        "to": "memory",
+        "why": "Diaspora Judaism survives by remembering what it has lost, and that memory shapes its creativity."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Sefaria: Esther",
+        "url": "https://www.sefaria.org/"
+      },
+      {
+        "label": "My Jewish Learning",
+        "url": "https://www.myjewishlearning.com/"
+      },
+      {
+        "label": "Jewish Encyclopedia",
+        "url": "https://www.jewishencyclopedia.com/"
+      }
+    ]
+  },
+  {
+    "id": "temple",
+    "name": "Temple",
+    "he_name": "בֵּית הַמִּקְדָּשׁ",
+    "kind": "theme",
+    "short": "The house of God's presence — and the religion built after its loss.",
+    "essay": "The Temple was the place where heaven and earth were thought to meet, and its destruction forced Judaism to imagine God's presence without a building. Solomon's dedication prayer already contains the tension: “Will God indeed dwell on the earth? Even heaven and the highest heaven cannot contain you, much less this house” (1 Kings 8:27). The Temple was not a container but a threshold — the site of sacrifice, pilgrimage, and national identity. Ezekiel's vision of a restored Temple (Ezekiel 40–48) kept hope alive in exile, and the returning community built a Second Temple, smaller and more contested. When Rome destroyed it in 70 CE, the rabbis did not simply mourn; they relocated sanctity to prayer, study, and deeds of loving-kindness. The daily liturgy preserves the memory of sacrifice, and Tisha B'Av mourns the loss. Memory and reconstruction compete: some Jews pray for the Temple's rebuilding, others regard the destruction as a permanent theological warning against sacralizing a place. Modern political sovereignty over Jerusalem has made the question urgent in ways the rabbis could not have anticipated. The Temple remains powerful precisely because it is absent — a symbol of what was lost, what might return, and what should never be rebuilt.",
+    "works": [
+      "kings",
+      "psalms",
+      "ezekiel",
+      "talmud-bavli",
+      "siddur"
+    ],
+    "people": [
+      "solomon",
+      "david",
+      "ezekiel",
+      "yohanan-ben-zakkai"
+    ],
+    "places": [
+      "jerusalem",
+      "shiloh"
+    ],
+    "connections": [
+      {
+        "to": "sacrifice",
+        "why": "The Temple was the institution that made sacrifice possible, and sacrifice is the memory the Temple left behind."
+      },
+      {
+        "to": "prayer",
+        "why": "Prayer replaced the Temple's offerings, yet its language and hours remain shaped by the altar."
+      },
+      {
+        "to": "exile-and-return",
+        "why": "The destroyed Temple is the emblem of exile and the object of return."
+      },
+      {
+        "to": "messianism",
+        "why": "Rebuilding the Temple is one of the most literal and most contested messianic hopes."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Sefaria: 1 Kings",
+        "url": "https://www.sefaria.org/"
+      },
+      {
+        "label": "My Jewish Learning",
+        "url": "https://www.myjewishlearning.com/"
+      },
+      {
+        "label": "Jewish Encyclopedia",
+        "url": "https://www.jewishencyclopedia.com/"
+      }
+    ]
+  },
+  {
+    "id": "sacrifice",
+    "name": "Sacrifice",
+    "he_name": "קָרְבָּן",
+    "kind": "practice",
+    "short": "The offering that draws near, translated after the Temple into prayer and charity.",
+    "essay": "קָרְבָּן comes from the root meaning “near,” and that etymology is a sermon: sacrifice was a technology of proximity. Leviticus describes burnt offerings, grain offerings, peace offerings, and sin offerings, each with its own logic; most involve blood, though the grain offering does not. The prophets attacked sacrifice without justice — “I hate, I despise your festivals” (Amos 5:21); “Who asked this of you?” (Isaiah 1:12) — not because the cult was wrong but because it had become a substitute for righteousness. After the Temple's destruction, the rabbis declared that prayer, study, and charity replace sacrifice; the liturgy still recites the offerings daily, keeping the grammar alive. Maimonides, writing in the twelfth century, argued that sacrifice was a concession to ancient habit, a way of redirecting pagan ritual toward God (Guide III.32). That rationalism scandalized some readers and liberated others. Continuity and supersession are tangled: Jews did not simply abandon sacrifice; they translated it. The synagogue is not a temple, but its prayers are structured like offerings, and its hours echo the daily tamid. Sacrifice remains a useful word because it names the cost of devotion — the recognition that relationship requires giving something up. Whether that giving is blood, time, or attention is a question each generation answers.",
+    "works": [
+      "leviticus",
+      "isaiah",
+      "psalms",
+      "mishnah",
+      "talmud-bavli",
+      "guide-perplexed"
+    ],
+    "people": [
+      "aaron",
+      "moses",
+      "isaiah",
+      "rambam"
+    ],
+    "places": [
+      "jerusalem",
+      "shiloh",
+      "sinai"
+    ],
+    "connections": [
+      {
+        "to": "temple",
+        "why": "Sacrifice was the Temple's central act, and the Temple's absence turned sacrifice into memory and metaphor."
+      },
+      {
+        "to": "prayer",
+        "why": "The rabbis made prayer the successor of sacrifice, preserving its structure while changing its medium."
+      },
+      {
+        "to": "purity",
+        "why": "Sacrifice required ritual fitness, making purity the boundary condition of approach."
+      },
+      {
+        "to": "sin-and-atonement",
+        "why": "The sin offering and the scapegoat are the Bible's most vivid technologies of atonement."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Sefaria: Leviticus",
+        "url": "https://www.sefaria.org/"
+      },
+      {
+        "label": "SEP: Maimonides",
+        "url": "https://plato.stanford.edu/entries/maimonides/"
+      },
+      {
+        "label": "Jewish Encyclopedia",
+        "url": "https://www.jewishencyclopedia.com/"
+      }
+    ]
+  },
+  {
+    "id": "prayer",
+    "name": "Prayer",
+    "he_name": "תְּפִלָּה",
+    "kind": "practice",
+    "short": "The cry and the fixed liturgy that teach a community to stand together.",
+    "essay": "Prayer in the Bible is often a cry rather than a composition. Hannah prays silently in Shiloh, her lips moving, and is mistaken for a drunk (1 Samuel 1); Jonah prays from the belly of the fish; the Psalms give the community a vocabulary for complaint, praise, and rage. Rabbinic Judaism standardized prayer without extinguishing spontaneity. The Amidah, the standing prayer, was fixed in eighteen (later nineteen) blessings; the Shema was assigned to morning and evening; the Siddur arranged the whole into a daily cycle. Keva, fixed form, and kavvanah, intention, are not natural allies. Pirkei Avot warns, “Do not make your prayer a fixed routine” (Avot 2:13), even as the law mandates fixed times. The rabbis resolved the paradox by treating routine as the scaffold on which intention can be built. Prayer also became a substitute for sacrifice and a way of participating in the Temple's memory. Modern Jews argue about the language of the liturgy — God as king, the chosen people, the restoration of Jerusalem — and some rewrite it while others defend it. The sources do not promise that prayer will be answered. They promise that prayer is a relationship, and relationships require showing up even when the words feel worn.",
+    "works": [
+      "psalms",
+      "samuel",
+      "siddur",
+      "talmud-bavli",
+      "mishneh-torah"
+    ],
+    "people": [
+      "david",
+      "samuel",
+      "rambam",
+      "yohanan-ben-zakkai"
+    ],
+    "places": [
+      "jerusalem",
+      "yavneh"
+    ],
+    "connections": [
+      {
+        "to": "sacrifice",
+        "why": "Prayer inherited sacrifice's function and much of its imagery after the Temple's destruction."
+      },
+      {
+        "to": "kavvanah",
+        "why": "The fixed liturgy creates the need for intention, and intention keeps the fixed words from becoming empty."
+      },
+      {
+        "to": "shabbat",
+        "why": "Shabbat prayer has its own register, combining rest, sanctification, and communal assembly."
+      },
+      {
+        "to": "teshuvah",
+        "why": "The penitential prayers of Yom Kippur make return a collective, embodied practice."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Sefaria: Siddur",
+        "url": "https://www.sefaria.org/"
+      },
+      {
+        "label": "My Jewish Learning",
+        "url": "https://www.myjewishlearning.com/"
+      },
+      {
+        "label": "Jewish Encyclopedia",
+        "url": "https://www.jewishencyclopedia.com/"
+      }
+    ]
+  },
+  {
+    "id": "kavvanah",
+    "name": "Kavvanah",
+    "he_name": "כַּוָּנָה",
+    "kind": "practice",
+    "short": "The intention that turns performance into presence.",
+    "essay": "כַּוָּנָה means direction, intention, or concentration — the inner orientation that turns a performed act into a meaningful one. The Talmud insists that prayer requires intention (Berakhot 31a), yet it also knows how hard intention is to sustain. Maimonides ruled that one who prays without kavvanah has not fulfilled the obligation, a standard so demanding that later authorities softened it. The Kabbalists expanded the concept: every commandment has a hidden intention, a combination of letters and sefirot that can repair the cosmos. Lurianic prayer became a technical discipline, with meditations designed to reunite the divine sparks. Hasidism democratized the idea, teaching that a simple heartfelt cry outranks a perfectly performed ritual. Technique and sincerity seem opposed: if intention can be manufactured by method, is it still intention? The sources answer with a paradox. Kavvanah cannot be forced, but it can be cultivated — through repetition, silence, song, and the company of others. Modern Jews often seek it in meditation or in small prayer communities. The tradition would recognize the search. It has always known that the shortest distance between a person and God is attention, and that attention is the hardest thing to give.",
+    "works": [
+      "siddur",
+      "talmud-bavli",
+      "mishneh-torah",
+      "zohar"
+    ],
+    "people": [
+      "rambam",
+      "isaac-luria",
+      "shlomo-alkabetz",
+      "hillel"
+    ],
+    "places": [
+      "safed",
+      "jerusalem"
+    ],
+    "connections": [
+      {
+        "to": "prayer",
+        "why": "Kavvanah is the inner life of prayer, without which the fixed words risk becoming mere recitation."
+      },
+      {
+        "to": "mysticism",
+        "why": "Kabbalah turns intention into a cosmic technique, linking human attention to divine repair."
+      },
+      {
+        "to": "mitzvot",
+        "why": "The question of intention extends beyond prayer to every commanded act."
+      },
+      {
+        "to": "teshuvah",
+        "why": "Return requires intention too: regret that does not redirect attention is not yet teshuvah."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Sefaria: Talmud",
+        "url": "https://www.sefaria.org/"
+      },
+      {
+        "label": "SEP: Maimonides",
+        "url": "https://plato.stanford.edu/entries/maimonides/"
+      },
+      {
+        "label": "My Jewish Learning",
+        "url": "https://www.myjewishlearning.com/"
+      }
+    ]
+  },
+  {
+    "id": "shabbat",
+    "name": "Shabbat",
+    "he_name": "שַׁבָּת",
+    "kind": "practice",
+    "short": "A weekly sanctuary in time, rooted in creation and redemption.",
+    "essay": "Shabbat is the only commandment in the Decalogue that is explained by a story. In Exodus 20, the reason is creation: God rested on the seventh day. In Deuteronomy 5, the reason is slavery: you were a servant in Egypt, therefore let your servants rest. The two versions are not contradictory so much as complementary — creation grounds the rhythm of rest, redemption grounds its ethics. The rabbis built a legal architecture around the day: thirty-nine categories of prohibited work, the lighting of candles, the sanctification of wine, the separation of havdalah. They also surrounded it with poetry. Lekhah Dodi, written by Shlomo Alkabetz in sixteenth-century Safed, welcomes the Sabbath as a bride and queen. Restriction and liberation are two readings of the same day: to outsiders, Shabbat can look like a day of prohibitions; to practitioners, it is a day when the ordinary economy is suspended and attention is freed. Modern life has made that suspension harder and more precious. The laws of Shabbat remain a test case for how a tradition negotiates technology, work, and community. But the day's deepest claim is not legal. It is that time itself can be holy, and that a people can build a sanctuary out of a weekly pause.",
+    "works": [
+      "genesis",
+      "exodus",
+      "deuteronomy",
+      "isaiah",
+      "siddur",
+      "talmud-bavli"
+    ],
+    "people": [
+      "moses",
+      "isaiah",
+      "shlomo-alkabetz",
+      "hillel"
+    ],
+    "places": [
+      "sinai",
+      "jerusalem",
+      "safed"
+    ],
+    "connections": [
+      {
+        "to": "creation",
+        "why": "Shabbat is the weekly reenactment of creation's completion, a ritual affirmation that the world is not merely raw material."
+      },
+      {
+        "to": "covenant",
+        "why": "Shabbat is called an eternal sign of the covenant, a recurring renewal that does not depend on the Temple."
+      },
+      {
+        "to": "kavvanah",
+        "why": "The day's restrictions are meant to produce attention, making kavvanah the inner purpose of external rest."
+      },
+      {
+        "to": "prayer",
+        "why": "Shabbat liturgy intensifies prayer, adding psalms, special blessings, and a communal dimension."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Sefaria: Shabbat",
+        "url": "https://www.sefaria.org/"
+      },
+      {
+        "label": "My Jewish Learning",
+        "url": "https://www.myjewishlearning.com/"
+      },
+      {
+        "label": "Jewish Encyclopedia",
+        "url": "https://www.jewishencyclopedia.com/"
+      }
+    ]
+  },
+  {
+    "id": "kashrut",
+    "name": "Kashrut",
+    "he_name": "כַּשְׁרוּת",
+    "kind": "practice",
+    "short": "A discipline of eating that makes the body part of the covenant.",
+    "essay": "Kashrut is a discipline of eating that refuses to let food be merely food. Leviticus 11 and Deuteronomy 14 divide animals into permitted and forbidden, but the Torah gives no systematic reason; the laws are introduced as divine decree. Rabbinic Judaism elaborated the details — slaughter, salting, separation of meat and dairy, the status of utensils — into a vast legal field. Meaning and obedience are not easily separated. Some interpreters emphasize separateness: kashrut marks Israel as a people apart. Others emphasize ethics: the laws of animal slaughter have been read as minimizing suffering, and the prohibition of mixing meat and dairy has been read as a protest against cruelty. Maimonides treated kashrut as a training in self-control and a rejection of idolatrous practices. Modern critics ask whether a diet can be ethical when its production is industrialized, and the eco-kashrut movement has tried to extend the question. The sources do not settle the matter. They do insist that eating is a moral act, and that the body is not outside the covenant. Kashrut is less a menu than a daily reminder that desire is subject to discipline — and that the way a people eats can shape the way it imagines itself.",
+    "works": [
+      "leviticus",
+      "deuteronomy",
+      "mishnah",
+      "talmud-bavli",
+      "shulchan-aruch",
+      "guide-perplexed"
+    ],
+    "people": [
+      "moses",
+      "aaron",
+      "rambam",
+      "joseph-karo"
+    ],
+    "places": [
+      "sinai",
+      "vilna"
+    ],
+    "connections": [
+      {
+        "to": "purity",
+        "why": "Kashrut borrows the vocabulary of purity but applies it to the ordinary act of eating rather than the Temple."
+      },
+      {
+        "to": "mitzvot",
+        "why": "Kashrut is a paradigm of the commandment that governs daily life rather than exceptional moments."
+      },
+      {
+        "to": "ethics",
+        "why": "The question of how animals are treated turns kashrut into a test of whether law can be humane."
+      },
+      {
+        "to": "diaspora",
+        "why": "Kashrut's portability helped diaspora communities maintain boundaries without a shared territory."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Sefaria: Leviticus",
+        "url": "https://www.sefaria.org/"
+      },
+      {
+        "label": "My Jewish Learning",
+        "url": "https://www.myjewishlearning.com/"
+      },
+      {
+        "label": "Jewish Encyclopedia",
+        "url": "https://www.jewishencyclopedia.com/"
+      }
+    ]
+  },
+  {
+    "id": "purity",
+    "name": "Purity",
+    "he_name": "טָהֳרָה",
+    "kind": "practice",
+    "short": "Ritual states that guard the threshold of the sacred.",
+    "essay": "טָהֳרָה is about states, not sins. Biblical impurity is a ritual condition caused by birth, death, sex, and certain diseases; it is not guilt, and it is not permanent. The laws of Leviticus 11–15 place impurity at the center of bodily life, which is one reason they have been misread as a rejection of the body. The mikveh, a ritual bath of gathered water, restores purity; the priests guarded the Temple's sanctity, and the ordinary Israelite lived with a calendar of washing and waiting. Rabbinic Judaism expanded the system and then, after the Temple's destruction, narrowed its practical scope while preserving its vocabulary. Separation and belonging are the two sides of purity: impurity marks the boundaries of the sacred, but it can also exclude people — women after childbirth, those who touch the dead — from full participation. Modern Judaism has reclaimed mikveh for conversion, mourning, and healing, while criticizing the gender asymmetries built into the classical laws. The sources do not resolve those asymmetries, but they do show a tradition that took bodies seriously. Purity is not merely a metaphor for virtue; it is a way of marking the threshold between ordinary life and the sacred. Its power lies in that threshold — and in the question of who is allowed to cross it.",
+    "works": [
+      "leviticus",
+      "numbers",
+      "mishnah",
+      "seder-taharot",
+      "talmud-bavli"
+    ],
+    "people": [
+      "aaron",
+      "moses",
+      "akiva",
+      "judah-hanasi"
+    ],
+    "places": [
+      "jerusalem",
+      "sinai"
+    ],
+    "connections": [
+      {
+        "to": "sacrifice",
+        "why": "Purity determined who and what could approach the altar, making it a precondition of sacrifice."
+      },
+      {
+        "to": "kashrut",
+        "why": "Kashrut extends purity's logic from the sanctuary to the table."
+      },
+      {
+        "to": "temple",
+        "why": "The purity system was organized around the Temple, and its decline followed the Temple's destruction."
+      },
+      {
+        "to": "ethics",
+        "why": "The prophets spiritualized purity into moral cleanliness, challenging rituals that left injustice untouched."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Sefaria: Leviticus",
+        "url": "https://www.sefaria.org/"
+      },
+      {
+        "label": "My Jewish Learning",
+        "url": "https://www.myjewishlearning.com/"
+      },
+      {
+        "label": "Jewish Encyclopedia",
+        "url": "https://www.jewishencyclopedia.com/"
+      }
+    ]
+  },
+  {
+    "id": "teshuvah",
+    "name": "Teshuvah",
+    "he_name": "תְּשׁוּבָה",
+    "kind": "practice",
+    "short": "Return to God, neighbor, and self through repair rather than regret.",
+    "essay": "תְּשׁוּבָה means “return,” not “repentance” in the narrow sense. The Bible's vocabulary is relational: Israel turns back to God, God turns back to Israel, and the turning is both gift and demand. Deuteronomy 30 promises that even in exile, if the heart turns, God will restore the people; Ezekiel insists that God takes no pleasure in the death of the wicked but desires that they turn and live (Ezekiel 18:23). The rabbis turned return into a legal and psychological process. Maimonides' Hilkhot Teshuvah lists its elements: regret for the wrong, confession, abandonment of the sin, and repair of its consequences. He also distinguishes between repentance out of fear and repentance out of love, the latter turning sins into merits. Grace and effort are both claimed: is return something a person achieves or something God grants? The sources hold both. Yom Kippur atones for sins against God, but not for sins against another person until restitution is made. That rule is the tradition's most important contribution to moral thought. Teshuvah is not a feeling of regret; it is a change in the world. It still matters because it refuses to let the past be final without pretending that it can be undone.",
+    "works": [
+      "deuteronomy",
+      "ezekiel",
+      "twelve",
+      "psalms",
+      "mishneh-torah",
+      "talmud-bavli"
+    ],
+    "people": [
+      "moses",
+      "ezekiel",
+      "rambam",
+      "yohanan-ben-zakkai"
+    ],
+    "places": [
+      "jerusalem",
+      "babylon"
+    ],
+    "connections": [
+      {
+        "to": "sin-and-atonement",
+        "why": "Teshuvah is the human act that makes atonement possible, while atonement is the divine response."
+      },
+      {
+        "to": "prayer",
+        "why": "The penitential liturgy gives return a communal form and a calendar."
+      },
+      {
+        "to": "ethics",
+        "why": "The requirement to repair harm makes teshuvah a social obligation, not only an inner state."
+      },
+      {
+        "to": "memory",
+        "why": "Return depends on remembering the wrong clearly enough to change its future."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Sefaria: Mishneh Torah",
+        "url": "https://www.sefaria.org/"
+      },
+      {
+        "label": "SEP: Maimonides",
+        "url": "https://plato.stanford.edu/entries/maimonides/"
+      },
+      {
+        "label": "My Jewish Learning",
+        "url": "https://www.myjewishlearning.com/"
+      }
+    ]
+  },
+  {
+    "id": "sin-and-atonement",
+    "name": "Sin and Atonement",
+    "he_name": "חֵטְא וְכַפָּרָה",
+    "kind": "theme",
+    "short": "The vocabulary of wrongdoing and the work of making the world habitable again.",
+    "essay": "The Bible has several words for sin — chet, “missing the mark”; avon, “iniquity” or “twisting”; pesha, “rebellion” — and they do not mean the same thing. Leviticus 16 describes the Day of Atonement: a scapegoat carries the people's sins into the wilderness, while the high priest enters the Holy of Holies. The ritual is both communal and individual, and its logic is not simply punishment but purification. The prophets insisted that sacrifice without justice is worthless (Isaiah 1), and later readers found in Isaiah 53's suffering servant another model: atonement through vicarious suffering. Rabbinic Judaism replaced the Temple ritual with teshuvah, prayer, and charity, while keeping Yom Kippur as the central day of atonement. Guilt and responsibility are close neighbors: a vocabulary of sin can liberate by naming what is wrong, or it can crush by making people feel permanently stained. The rabbis also knew that a community can carry guilt collectively, and that confession must be specific. Modern thought has often preferred the language of trauma and repair, but the tradition's insight is that wrongdoing creates a debt that must be acknowledged. Atonement is not forgetting. It is the work of making the world habitable again after it has been broken.",
+    "works": [
+      "leviticus",
+      "isaiah",
+      "psalms",
+      "mishnah",
+      "talmud-bavli",
+      "siddur"
+    ],
+    "people": [
+      "aaron",
+      "isaiah",
+      "akiva",
+      "rambam"
+    ],
+    "places": [
+      "jerusalem",
+      "sinai"
+    ],
+    "connections": [
+      {
+        "to": "teshuvah",
+        "why": "Atonement is the goal, teshuvah the path; the tradition refuses to separate the ritual from the repair."
+      },
+      {
+        "to": "sacrifice",
+        "why": "The Temple's atonement rituals provide the imagery that prayer and penitence later inherit."
+      },
+      {
+        "to": "suffering",
+        "why": "Isaiah's suffering servant and the book of Job both ask whether pain can bear meaning without becoming punishment."
+      },
+      {
+        "to": "temple",
+        "why": "The destruction of the Temple forced atonement to become portable, internal, and communal."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Sefaria: Leviticus",
+        "url": "https://www.sefaria.org/"
+      },
+      {
+        "label": "My Jewish Learning",
+        "url": "https://www.myjewishlearning.com/"
+      },
+      {
+        "label": "Jewish Encyclopedia",
+        "url": "https://www.jewishencyclopedia.com/"
+      }
+    ]
+  },
+  {
+    "id": "prophecy",
+    "name": "Prophecy",
+    "he_name": "נְבוּאָה",
+    "kind": "theme",
+    "short": "Covenantal critique spoken in God's name — and the testing of its truth.",
+    "essay": "Prophecy in Israel is not fortune-telling; it is covenantal critique. The prophet speaks for God to a community that has broken its obligations, and the message is usually unwelcome. Moses is the paradigm: he argues with God, intercedes for the people, and speaks face to face. Isaiah's call vision (Isaiah 6) fills him with awe and sends him to a people who will not listen; Jeremiah protests that he is too young (Jeremiah 1); Ezekiel sees the chariot and eats the scroll. Deuteronomy 18 sets a test: a true prophet's words must come true, and a prophet who leads Israel astray is false. The problem is authority: prophecy challenges established power, yet it must itself be tested by tradition. Rabbinic Judaism declared prophecy ended with Haggai, Zechariah, and Malachi, and replaced it with the bat kol and the sage. Maimonides ranked prophecy as the highest human perfection, but he also insisted that it could not override the law. Modern readers often secularize the prophet as a social critic, which captures something real but misses the theological claim: the prophet speaks because God has spoken. The tradition keeps the prophet alive as a voice that refuses to let the community settle for itself.",
+    "works": [
+      "deuteronomy",
+      "isaiah",
+      "jeremiah",
+      "ezekiel",
+      "twelve",
+      "guide-perplexed"
+    ],
+    "people": [
+      "moses",
+      "isaiah",
+      "jeremiah",
+      "ezekiel",
+      "rambam"
+    ],
+    "places": [
+      "jerusalem",
+      "babylon"
+    ],
+    "connections": [
+      {
+        "to": "revelation",
+        "why": "Prophecy is revelation embodied in a person, while Sinai is revelation addressed to a people."
+      },
+      {
+        "to": "messianism",
+        "why": "Prophetic promises of a future king and a transformed world supply the raw material of messianic hope."
+      },
+      {
+        "to": "justice",
+        "why": "The prophets measure the nation by its treatment of the poor, making justice the test of covenant."
+      },
+      {
+        "to": "canon",
+        "why": "The closing of the prophetic canon required the tradition to explain why prophecy ceased while its books remained authoritative."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Sefaria: Isaiah",
+        "url": "https://www.sefaria.org/"
+      },
+      {
+        "label": "SEP: Maimonides",
+        "url": "https://plato.stanford.edu/entries/maimonides/"
+      },
+      {
+        "label": "My Jewish Learning",
+        "url": "https://www.myjewishlearning.com/"
+      }
+    ]
+  },
+  {
+    "id": "messianism",
+    "name": "Messianism",
+    "he_name": "מְשִׁיחִיּוּת",
+    "kind": "idea",
+    "short": "The hope of an anointed future, powerful and dangerous.",
+    "essay": "The Messiah is a biblical idea that became a political hope, a theological doctrine, and a recurring disappointment. The Hebrew mashiach means “anointed” and originally referred to kings and priests; David is the anointed one, and the promise to his house (2 Samuel 7) grounds later expectation. Isaiah 11 imagines a shoot from Jesse's stump who will judge with righteousness; Jeremiah 23 promises a righteous branch; Daniel 7's son of man receives an everlasting kingdom. The prophets disagree about whether the messianic age is this-worldly or apocalyptic, and the tradition multiplied the possibilities: a Davidic Messiah, a priestly one at Qumran, a suffering one in later readings, even a Messiah who comes on a donkey. The danger is built in. Maimonides made belief in the Messiah a principle of faith but warned against calculating the end; the Talmud says the Messiah will come when the world is either wholly guilty or wholly innocent. Sabbatai Zevi's seventeenth-century movement ended in apostasy and deepened the caution. Modern Zionism secularized the return, while some religious Jews read the state as “the beginning of redemption.” Messianism remains dangerous because it can authorize violence and beautiful because it refuses to accept the world as it is.",
+    "works": [
+      "isaiah",
+      "jeremiah",
+      "daniel",
+      "psalms",
+      "talmud-bavli",
+      "mishneh-torah"
+    ],
+    "people": [
+      "david",
+      "isaiah",
+      "jeremiah",
+      "rambam",
+      "shimon-bar-yochai"
+    ],
+    "places": [
+      "jerusalem",
+      "babylon"
+    ],
+    "connections": [
+      {
+        "to": "exile-and-return",
+        "why": "Messianic hope is the theological engine of return, and return is the political shape that hope can take."
+      },
+      {
+        "to": "prophecy",
+        "why": "Messianism inherits the prophets' promises but must decide which ones are literal and which are symbolic."
+      },
+      {
+        "to": "suffering",
+        "why": "The suffering servant and the birth pangs of the Messiah link redemption to pain rather than bypassing it."
+      },
+      {
+        "to": "teshuvah",
+        "why": "Some traditions make repentance the precondition of redemption, tying the future to present moral change."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Sefaria: Isaiah",
+        "url": "https://www.sefaria.org/"
+      },
+      {
+        "label": "My Jewish Learning",
+        "url": "https://www.myjewishlearning.com/"
+      },
+      {
+        "label": "Jewish Encyclopedia",
+        "url": "https://www.jewishencyclopedia.com/"
+      }
+    ]
+  },
+  {
+    "id": "wisdom",
+    "name": "Wisdom",
+    "he_name": "חָכְמָה",
+    "kind": "theme",
+    "short": "The search for order in a world that resists explanation.",
+    "essay": "חָכְמָה in the Bible is both a divine attribute and a human skill. Proverbs personifies Wisdom as a woman who was present at creation (Proverbs 8), inviting the young to a banquet of understanding. Job and Ecclesiastes test the tradition from opposite ends: Job demands a hearing and receives a whirlwind; Ecclesiastes declares everything hevel, vapor, and still recommends enjoying bread and love. What the books cannot settle is whether the world is hospitable to human flourishing. Wisdom literature believes that the world has a pattern and that fear of the Lord is the beginning of knowledge, but it also knows that the pattern can fail. Rabbinic Judaism identified Torah with wisdom, making study the royal road to understanding. Maimonides went further, arguing that the highest human perfection is intellectual and that the Torah trains the mind toward truth. Kabbalah made Chochmah the second sefirah, the flash of insight before form. Modern readers often treat wisdom as practical advice, but the biblical books are more ambitious: they ask whether the universe has a grain that human life can follow. Wisdom is the courage to seek order without pretending that suffering has been explained.",
+    "works": [
+      "proverbs",
+      "job",
+      "ecclesiastes",
+      "psalms",
+      "guide-perplexed",
+      "zohar"
+    ],
+    "people": [
+      "solomon",
+      "job",
+      "rambam",
+      "shimon-bar-yochai"
+    ],
+    "places": [
+      "jerusalem"
+    ],
+    "connections": [
+      {
+        "to": "creation",
+        "why": "Wisdom is present at creation, making the search for understanding a way of reading the world's structure."
+      },
+      {
+        "to": "suffering",
+        "why": "Job and Ecclesiastes test wisdom's claim that the world is ordered justly."
+      },
+      {
+        "to": "torah-study",
+        "why": "Rabbinic Judaism identifies Torah with wisdom, turning study into the practice of cosmic insight."
+      },
+      {
+        "to": "sefirot",
+        "why": "Kabbalah personifies Chochmah as a sefirah, translating biblical wisdom into divine structure."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Sefaria: Proverbs",
+        "url": "https://www.sefaria.org/"
+      },
+      {
+        "label": "SEP: Maimonides",
+        "url": "https://plato.stanford.edu/entries/maimonides/"
+      },
+      {
+        "label": "My Jewish Learning",
+        "url": "https://www.myjewishlearning.com/"
+      }
+    ]
+  },
+  {
+    "id": "suffering",
+    "name": "Suffering",
+    "he_name": "יִסּוּרִין",
+    "kind": "theme",
+    "short": "The unanswered question that the tradition refuses to silence.",
+    "essay": "Suffering is the Bible's most persistent question, and its answers are not consistent. Deuteronomy promises that obedience brings blessing and disobedience brings curse; much of the Prophets reads history through that lens. Job demolishes the arithmetic. A righteous man loses everything, his friends insist he must have sinned, and God finally answers not with an explanation but with a tour of creation (Job 38–41). Jeremiah accuses God of deceiving him (Jeremiah 20:7); Psalm 44 protests that the people have been faithful and still are slaughtered. The psalms of lament preserve the right to argue with God inside the liturgy itself. The rabbis developed the idea of yissurin shel ahavah, “afflictions of love,” and the story of Elisha ben Abuyah, who lost his faith at the sight of a child's death, became a warning about theodicy's cost. The contradiction is irreducible: to explain suffering can be cruel, and to refuse explanation can be honest. Maimonides argued that evil is largely privation and human choice, not divine malice. Modern theology after the Holocaust has rightly questioned every tidy answer. The sources do not resolve the problem. They give it a language, a liturgy, and a community willing to sit with it.",
+    "works": [
+      "job",
+      "psalms",
+      "deuteronomy",
+      "isaiah",
+      "talmud-bavli",
+      "guide-perplexed"
+    ],
+    "people": [
+      "job",
+      "jeremiah",
+      "isaiah",
+      "rambam",
+      "akiva"
+    ],
+    "places": [
+      "jerusalem",
+      "babylon"
+    ],
+    "connections": [
+      {
+        "to": "sin-and-atonement",
+        "why": "The retribution framework makes suffering look like punishment, and atonement rituals try to restore the broken order."
+      },
+      {
+        "to": "justice",
+        "why": "If God is just, innocent suffering is a scandal; if God is not, justice loses its ground."
+      },
+      {
+        "to": "love",
+        "why": "The suffering servant and the Song of Songs both imagine a love that survives loss, though in very different keys."
+      },
+      {
+        "to": "mysticism",
+        "why": "Kabbalah locates suffering in the brokenness of the divine world, making human repair part of cosmic repair."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Sefaria: Job",
+        "url": "https://www.sefaria.org/"
+      },
+      {
+        "label": "SEP: Maimonides",
+        "url": "https://plato.stanford.edu/entries/maimonides/"
+      },
+      {
+        "label": "Jewish Encyclopedia",
+        "url": "https://www.jewishencyclopedia.com/"
+      }
+    ]
+  },
+  {
+    "id": "love",
+    "name": "Love",
+    "he_name": "אַהֲבָה",
+    "kind": "theme",
+    "short": "Desire, covenant, and the language that binds God to Israel.",
+    "essay": "אַהֲבָה in the Bible is both command and passion. Deuteronomy 6:5 demands that Israel love God with heart, soul, and might — an astonishing command, since love cannot be legislated. Leviticus 19:18 commands love of neighbor, and Rabbi Akiva treated it as a great principle of the Torah. The Song of Songs is the Bible's most erotic book, and Akiva famously called it the Holy of Holies; the tradition read its lovers as God and Israel. The prophets used the same metaphor: Hosea's marriage to an unfaithful woman becomes a parable of divine love (Hosea 1–3). The difficulty is that intimacy and transcendence pull in opposite directions: how can the infinite God be loved as a person, and how can human love become a window to the divine? Rabbinic and medieval thinkers answered with allegory, philosophy, and mystical eros. Maimonides described love as the intellectual apprehension of God's goodness; the Zohar described it as the union of sefirot. Modern readers may resist the allegorization of the Song, but the tradition's instinct was sound: erotic language is the strongest language we have for a bond that exceeds obligation. Love remains central because it names what law cannot compel and what covenant hopes to elicit.",
+    "works": [
+      "song",
+      "deuteronomy",
+      "leviticus",
+      "twelve",
+      "psalms",
+      "zohar"
+    ],
+    "people": [
+      "akiva",
+      "moses",
+      "shimon-bar-yochai",
+      "yehuda-halevi"
+    ],
+    "places": [
+      "jerusalem",
+      "safed"
+    ],
+    "connections": [
+      {
+        "to": "covenant",
+        "why": "Covenant is love formalized into obligation, and love is the affection that keeps obligation from becoming mere compliance."
+      },
+      {
+        "to": "mysticism",
+        "why": "Kabbalah reads love as a cosmic force, the longing that draws the sefirot toward union."
+      },
+      {
+        "to": "ethics",
+        "why": "Love of neighbor is the ethical core that the rabbis use to summarize the Torah."
+      },
+      {
+        "to": "suffering",
+        "why": "Love makes suffering intelligible as grief rather than punishment, though it does not explain it away."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Sefaria: Song of Songs",
+        "url": "https://www.sefaria.org/"
+      },
+      {
+        "label": "My Jewish Learning",
+        "url": "https://www.myjewishlearning.com/"
+      },
+      {
+        "label": "Jewish Encyclopedia",
+        "url": "https://www.jewishencyclopedia.com/"
+      }
+    ]
+  },
+  {
+    "id": "ethics",
+    "name": "Ethics",
+    "he_name": "מוּסָר",
+    "kind": "idea",
+    "short": "The disciplined tension between commanded good and reasoned good.",
+    "essay": "Jewish ethics is not a single system but a field of tension between revealed command and universal reason. The phrase itself is modern; the sources speak of musar, derekh eretz, and commandments between persons. The Torah contains both: “You shall be holy” (Leviticus 19) and “You shall love your neighbor as yourself” (Leviticus 19:18), alongside laws that modern readers find troubling — slavery, war, and gender hierarchy. The rabbis expanded the ethical core through midrash and law, insisting that the way of God is mercy, justice, and humility (Micah 6:8). Pirkei Avot turned ethics into aphorism: “What is hateful to you, do not do to your neighbor” (Hillel, Shabbat 31a). The argument is joined between heteronomy and autonomy: is the good good because God commands it, or does God command it because it is good? Maimonides, influenced by Aristotle, argued that the commandments train character; modern thinkers from Buber to Levinas emphasized relation and responsibility. The sources do not produce a clean algorithm, and they do not try to. They produce a discipline of attention — to the stranger, the poor, the vulnerable — and a suspicion of piety that ignores them. Ethics is where the tradition tests its own claims, and where those claims become arguable rather than merely obeyed.",
+    "works": [
+      "leviticus",
+      "exodus",
+      "proverbs",
+      "pirkei-avot",
+      "guide-perplexed",
+      "mishneh-torah"
+    ],
+    "people": [
+      "hillel",
+      "akiva",
+      "rambam",
+      "moses"
+    ],
+    "places": [
+      "sinai",
+      "jerusalem"
+    ],
+    "connections": [
+      {
+        "to": "justice",
+        "why": "Ethics becomes concrete in institutions of judgment, where the vulnerable either receive a hearing or do not."
+      },
+      {
+        "to": "image-of-god",
+        "why": "The image of God grounds the claim that every person deserves moral consideration."
+      },
+      {
+        "to": "mitzvot",
+        "why": "The commandments give ethics a daily, embodied form rather than leaving it as principle."
+      },
+      {
+        "to": "halakhah",
+        "why": "Halakhah is the legal elaboration of ethical norms, and its casuistry tests whether principle can survive detail."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Sefaria: Leviticus",
+        "url": "https://www.sefaria.org/"
+      },
+      {
+        "label": "SEP: Maimonides",
+        "url": "https://plato.stanford.edu/entries/maimonides/"
+      },
+      {
+        "label": "My Jewish Learning",
+        "url": "https://www.myjewishlearning.com/"
+      }
+    ]
+  },
+  {
+    "id": "justice",
+    "name": "Justice",
+    "he_name": "צֶדֶק וּמִשְׁפָּט",
+    "kind": "theme",
+    "short": "Right order and fair judgment as the test of covenant.",
+    "essay": "צֶדֶק and מִשְׁפָּט are not synonyms. Tzedek is right order, the way things ought to be; mishpat is judgment, the process that restores it. The Bible demands both: “Justice, justice shall you pursue” (Deuteronomy 16:20), and the prophets measure the nation by whether the poor receive a fair hearing. The king is supposed to embody justice, but the books of Kings show how often he fails. Rabbinic Judaism built courts, rules of evidence, and a system of torts and damages; the Talmud's civil law is as extensive as its ritual law. The fault line runs between rigor and mercy. The world, the sages said, stands on three things: Torah, worship, and deeds of loving-kindness (Avot 1:2) — but justice requires judgment, and judgment can be harsh. The tradition distinguishes din, strict law, from rachamim, compassion, and prays that God will temper one with the other. Modern Jews have translated the prophetic demand into movements for social justice, sometimes at the cost of the legal specificity that gave the demand its traction. Justice remains central because it is the test of covenant: a community that worships God but ignores the widow and the orphan has misunderstood the terms.",
+    "works": [
+      "deuteronomy",
+      "isaiah",
+      "jeremiah",
+      "proverbs",
+      "talmud-bavli",
+      "mishneh-torah"
+    ],
+    "people": [
+      "moses",
+      "isaiah",
+      "jeremiah",
+      "david",
+      "rambam"
+    ],
+    "places": [
+      "jerusalem",
+      "samaria"
+    ],
+    "connections": [
+      {
+        "to": "ethics",
+        "why": "Justice is ethics in institutional form, where private conscience must become public procedure."
+      },
+      {
+        "to": "suffering",
+        "why": "The spectacle of unjust suffering is the strongest challenge to the claim that the world is ordered rightly."
+      },
+      {
+        "to": "messianism",
+        "why": "The messianic age is imagined as a reign of justice, which makes present injustice a standing indictment."
+      },
+      {
+        "to": "covenant",
+        "why": "The covenant's survival depends on whether the community practices the justice it professes to have received."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Sefaria: Deuteronomy",
+        "url": "https://www.sefaria.org/"
+      },
+      {
+        "label": "My Jewish Learning",
+        "url": "https://www.myjewishlearning.com/"
+      },
+      {
+        "label": "Jewish Encyclopedia",
+        "url": "https://www.jewishencyclopedia.com/"
+      }
+    ]
+  },
+  {
+    "id": "memory",
+    "name": "Memory",
+    "he_name": "זִכָּרוֹן",
+    "kind": "practice",
+    "short": "The commanded discipline of carrying the past into the present.",
+    "essay": "זִכָּרוֹן is a commandment before it is a sentiment. The Decalogue commands “Remember the Sabbath” (Exodus 20:8), and Deuteronomy repeatedly commands Israel to remember slavery, the wilderness, and the covenant. Memory is not nostalgia; it is a legal and liturgical discipline. The Passover seder makes memory dramatic: participants recline, ask questions, and recite the story as if they had been there. Purim commands hearing the megillah; Tisha B'Av mourns the Temple; Yizkor remembers the dead. Memory is selective, and that is the point: a community chooses what to carry and how. The danger is that a people which remembers only trauma can become captive to it, while a people that forgets can repeat it. The prophets warn against forgetting God, and the rabbis warn against forgetting Torah. Forgetting is not merely a failure of attention; it is a way of letting the past off the hook. Modern Jewish memory has been reshaped by the Holocaust, which produced new liturgies and new debates about how to transmit catastrophe without making it the whole story. The sources suggest that remembering is a form of moral attention — to those who came before, and to what they failed to do.",
+    "works": [
+      "deuteronomy",
+      "exodus",
+      "psalms",
+      "esther",
+      "siddur",
+      "talmud-bavli"
+    ],
+    "people": [
+      "moses",
+      "esther",
+      "david"
+    ],
+    "places": [
+      "goshen",
+      "jerusalem",
+      "susa"
+    ],
+    "connections": [
+      {
+        "to": "exodus",
+        "why": "The Exodus is the memory the tradition commands most often, and Passover is its annual technology."
+      },
+      {
+        "to": "shabbat",
+        "why": "Shabbat is a weekly act of memory, recalling both creation and slavery."
+      },
+      {
+        "to": "exile-and-return",
+        "why": "Exile is sustained by memory of the land, and return is imagined as the renewal of memory."
+      },
+      {
+        "to": "prayer",
+        "why": "Liturgy is the communal form of memory, repeating the past until it becomes present."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Sefaria: Deuteronomy",
+        "url": "https://www.sefaria.org/"
+      },
+      {
+        "label": "My Jewish Learning",
+        "url": "https://www.myjewishlearning.com/"
+      },
+      {
+        "label": "Jewish Encyclopedia",
+        "url": "https://www.jewishencyclopedia.com/"
+      }
+    ]
+  },
+  {
+    "id": "mysticism",
+    "name": "Mysticism",
+    "he_name": "קַבָּלָה",
+    "kind": "theme",
+    "short": "The attempt to describe, and live toward, what cannot be described.",
+    "essay": "Kabbalah means “reception,” and Jewish mysticism is less a doctrine than a series of attempts to describe what cannot be described. The category is modern; the sources speak of kabbalah, sod, and ma'aseh merkavah. Its early layers are visionary: the Merkavah texts describe ascents to the divine chariot, and the Heikhalot literature maps the palaces of heaven. Sefer Yetzirah, an early work of uncertain date, explores creation through letters and numbers. The Bahir, and later the Zohar — the great thirteenth-century masterpiece attributed to Shimon bar Yochai — turned these currents into a symbolic system of sefirot, exile, and repair. Lurianic Kabbalah, born in sixteenth-century Safed, added a cosmic drama of withdrawal, shattering, and tikkun. Hasidism democratized the tradition, emphasizing joy, devekut, and the presence of God in the ordinary. The paradox is that the deepest truths are said to be dangerous, yet they are also meant to transform daily life. The claim to secrecy also creates hierarchy, since those who know more can claim more authority. Modern scholarship has shown how much of kabbalah is historical, polemical, and embodied; modern seekers have often stripped it of law and community. The sources resist both reductions. Mysticism is the tradition's attempt to say that God is not merely a concept — and that the saying must be lived.",
+    "works": [
+      "zohar",
+      "talmud-bavli",
+      "psalms",
+      "siddur",
+      "guide-perplexed"
+    ],
+    "people": [
+      "shimon-bar-yochai",
+      "isaac-luria",
+      "shlomo-alkabetz",
+      "akiva",
+      "nachmanides"
+    ],
+    "places": [
+      "safed",
+      "tiberias",
+      "jerusalem"
+    ],
+    "connections": [
+      {
+        "to": "sefirot",
+        "why": "The sefirot are Kabbalah's central map of divine life, the structure through which mysticism becomes systematic."
+      },
+      {
+        "to": "shekhinah",
+        "why": "The indwelling presence is the most intimate and most vulnerable face of the divine in mystical thought."
+      },
+      {
+        "to": "ein-sof",
+        "why": "Ein Sof names the unknowable ground from which the sefirot emerge, setting the limit of all mystical language."
+      },
+      {
+        "to": "tzimtzum",
+        "why": "Lurianic withdrawal explains how the infinite can make room for a world and for human responsibility."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Sefaria: Zohar",
+        "url": "https://www.sefaria.org/"
+      },
+      {
+        "label": "Britannica: Kabbalah",
+        "url": "https://www.britannica.com/topic/Kabbalah"
+      },
+      {
+        "label": "Jewish Encyclopedia",
+        "url": "https://www.jewishencyclopedia.com/"
+      }
+    ]
+  },
+  {
+    "id": "sefirot",
+    "name": "Sefirot",
+    "he_name": "סְפִירוֹת",
+    "kind": "idea",
+    "short": "Ten emanations that let the infinite become knowable without becoming many.",
+    "essay": "The sefirot are the ten emanations through which the infinite God becomes knowable and through which the world is sustained. The term appears in Sefer Yetzirah as “ten sefirot belimah,” ten numbers or depths without substance; medieval Kabbalists developed them into a dynamic system. Kabbalists map them as a Tree of Life: Keter, Chochmah, Binah, Chesed, Gevurah, Tiferet, Netzach, Hod, Yesod, Malkhut. They are not gods; they are aspects of one God, arranged in polarities — mercy and judgment, masculine and feminine — that must be balanced. The risk is that a language of ten divine faces becomes a pantheon in spite of itself. Kabbalists answered with symbols, not doctrines, and warned against reifying them. Maimonides would have rejected the whole scheme as compromising divine unity; Kabbalists replied that they were speaking of inner divine life, not anatomy. The sefirot also structure prayer and ethics: each act can align a particular quality. The system also invites projection, since every reader finds a favorite sefirah. Modern readers often psychologicalize them, which can illuminate but also flatten. The sefirot remain powerful because they give a grammar to the paradox of a God who is both beyond everything and present in everything.",
+    "works": [
+      "zohar",
+      "proverbs",
+      "talmud-bavli",
+      "siddur"
+    ],
+    "people": [
+      "shimon-bar-yochai",
+      "isaac-luria",
+      "nachmanides",
+      "shlomo-alkabetz"
+    ],
+    "places": [
+      "safed"
+    ],
+    "connections": [
+      {
+        "to": "ein-sof",
+        "why": "The sefirot are the emanations through which Ein Sof becomes manifest without ceasing to be infinite."
+      },
+      {
+        "to": "shekhinah",
+        "why": "Shekhinah is identified with the tenth sefirah, Malkhut, making divine presence the point where the system touches the world."
+      },
+      {
+        "to": "creation",
+        "why": "The sefirot offer a non-mechanical account of creation as emanation rather than manufacture."
+      },
+      {
+        "to": "mysticism",
+        "why": "They are the organizing grammar of Kabbalistic symbolism, prayer, and ethical practice."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Sefaria: Zohar",
+        "url": "https://www.sefaria.org/"
+      },
+      {
+        "label": "Britannica: Kabbalah",
+        "url": "https://www.britannica.com/topic/Kabbalah"
+      },
+      {
+        "label": "Jewish Encyclopedia",
+        "url": "https://www.jewishencyclopedia.com/"
+      }
+    ]
+  },
+  {
+    "id": "shekhinah",
+    "name": "Shekhinah",
+    "he_name": "שְׁכִינָה",
+    "kind": "idea",
+    "short": "The dwelling presence of God, vulnerable and near.",
+    "essay": "Shekhinah is the dwelling presence of God. The noun is rabbinic, though its root, shakhan, “to dwell,” is biblical, and the idea appears as the glory that fills the Tabernacle and the Temple. Rabbinic Judaism personified it: the Shekhinah goes into exile with Israel, suffers with the people, and will return with them. The Talmud says that when husband and wife live in harmony, the Shekhinah rests between them (Sotah 17a), and that study of Torah draws the presence near. In Kabbalah, Shekhinah became the tenth sefirah, Malkhut, the feminine dimension of the divine, often depicted as the bride or daughter who is separated from her beloved and longs for reunion. The unresolved question is how a God who dwells can also be a God who transcends every place. The sources hold both. Shekhinah is not a separate deity but the face of God turned toward the world — vulnerable, relational, and unfinished. The image also carries a risk: a suffering God can be used to sanctify suffering. Modern theology has found in her a resource for thinking about gender, exile, and divine suffering. The image remains potent because it says that God is not indifferent to where we are.",
+    "works": [
+      "exodus",
+      "ezekiel",
+      "talmud-bavli",
+      "zohar",
+      "siddur"
+    ],
+    "people": [
+      "moses",
+      "ezekiel",
+      "shimon-bar-yochai",
+      "isaac-luria"
+    ],
+    "places": [
+      "sinai",
+      "jerusalem",
+      "safed"
+    ],
+    "connections": [
+      {
+        "to": "sefirot",
+        "why": "In Kabbalah, Shekhinah is the tenth sefirah, the point at which divine presence becomes accessible and vulnerable."
+      },
+      {
+        "to": "exile-and-return",
+        "why": "The rabbinic Shekhinah accompanies Israel into exile, making God a participant in the people's suffering."
+      },
+      {
+        "to": "temple",
+        "why": "The Temple was the primary dwelling of the Shekhinah, and its loss raised the question of where presence now resides."
+      },
+      {
+        "to": "mysticism",
+        "why": "Shekhinah is the most anthropomorphic and most intimate image of God in the mystical tradition."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Sefaria: Zohar",
+        "url": "https://www.sefaria.org/"
+      },
+      {
+        "label": "Britannica: Kabbalah",
+        "url": "https://www.britannica.com/topic/Kabbalah"
+      },
+      {
+        "label": "Jewish Encyclopedia",
+        "url": "https://www.jewishencyclopedia.com/"
+      }
+    ]
+  },
+  {
+    "id": "ein-sof",
+    "name": "Ein Sof",
+    "he_name": "אֵין סוֹף",
+    "kind": "idea",
+    "short": "The infinite ground of God that exceeds every name.",
+    "essay": "אֵין סוֹף means “without end,” and it names the aspect of God that exceeds every name. The term emerges in thirteenth- and fourteenth-century Kabbalah, especially among the Gerona circle and in the Zohar; it is not a biblical word. Ein Sof is not a being among beings but the infinite ground from which the sefirot emanate. The difficulty is that if God is truly without end, how can anything else exist? Kabbalists answered with emanation, not creation in the ordinary sense: the sefirot are the stages through which the infinite becomes finite without ceasing to be infinite. The doctrine resembles negative theology — Maimonides also insisted that God's essence cannot be described — but it goes further, giving the unknown a dynamic inner life. Modern readers sometimes treat Ein Sof as an abstract principle, a Jewish version of the absolute. The sources are more careful: Ein Sof is not a concept we possess but a limit we encounter. Its importance lies in what it protects — the refusal to reduce God to a manageable image — and in what it makes possible: a world that is real precisely because it is not God.",
+    "works": [
+      "zohar",
+      "guide-perplexed",
+      "talmud-bavli",
+      "siddur"
+    ],
+    "people": [
+      "shimon-bar-yochai",
+      "isaac-luria",
+      "rambam",
+      "nachmanides"
+    ],
+    "places": [
+      "safed"
+    ],
+    "connections": [
+      {
+        "to": "tzimtzum",
+        "why": "Tzimtzum is the Lurianic answer to the question Ein Sof poses: how the infinite makes room for the finite."
+      },
+      {
+        "to": "sefirot",
+        "why": "The sefirot are the emanations through which Ein Sof becomes manifest while remaining unknowable in essence."
+      },
+      {
+        "to": "mysticism",
+        "why": "Ein Sof marks the apophatic limit of mystical language, the point beyond which speech must fall silent."
+      },
+      {
+        "to": "creation",
+        "why": "The doctrine reframes creation as emanation, challenging the simpler biblical picture of a maker and a made world."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Sefaria: Zohar",
+        "url": "https://www.sefaria.org/"
+      },
+      {
+        "label": "Britannica: Kabbalah",
+        "url": "https://www.britannica.com/topic/Kabbalah"
+      },
+      {
+        "label": "SEP: Maimonides",
+        "url": "https://plato.stanford.edu/entries/maimonides/"
+      }
+    ]
+  },
+  {
+    "id": "tzimtzum",
+    "name": "Tzimtzum",
+    "he_name": "צִמְצוּם",
+    "kind": "idea",
+    "short": "The Lurianic withdrawal that makes room for a broken, repairable world.",
+    "essay": "צִמְצוּם is a Lurianic term, not a Zoharic one. Isaac Luria, teaching in Safed in the sixteenth century, asked how a finite world could exist if God fills all reality. His answer: God withdrew, contracted, or concealed the divine light, leaving a void in which creation could take place. The doctrine is bold and controversial. Some read tzimtzum literally, as a voluntary self-limitation; others, especially in Chabad thought, read it as a concealment within the infinite, not a change in God. Luria paired it with shevirat ha-kelim, the shattering of the vessels, and tikkun, the work of repair. The wager is that a God who withdraws makes room for human freedom, but also for evil. The doctrine also risks making God seem deficient, as if the infinite needed to retreat. The image has been borrowed by modern philosophers and poets, often stripped of its ritual context. That is a loss, because tzimtzum is not a theory of creation for its own sake; it is a map of exile and responsibility. If the world is broken, the question is not why God allowed it but what we are doing about it. The doctrine remains generative because it turns cosmology into ethics.",
+    "works": [
+      "zohar",
+      "guide-perplexed",
+      "talmud-bavli",
+      "siddur"
+    ],
+    "people": [
+      "isaac-luria",
+      "shimon-bar-yochai",
+      "rambam",
+      "shlomo-alkabetz"
+    ],
+    "places": [
+      "safed"
+    ],
+    "connections": [
+      {
+        "to": "ein-sof",
+        "why": "Tzimtzum is the mechanism by which Ein Sof creates space for a world other than itself."
+      },
+      {
+        "to": "shekhinah",
+        "why": "The withdrawn light leaves a residue of presence, and Shekhinah becomes the point of contact between exile and return."
+      },
+      {
+        "to": "creation",
+        "why": "It offers a radical alternative to creation from nothing, emphasizing divine self-limitation rather than manufacture."
+      },
+      {
+        "to": "suffering",
+        "why": "The shattering of the vessels gives cosmic resonance to the experience of brokenness and the obligation to repair."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Sefaria: Zohar",
+        "url": "https://www.sefaria.org/"
+      },
+      {
+        "label": "Britannica: Kabbalah",
+        "url": "https://www.britannica.com/topic/Kabbalah"
+      },
+      {
+        "label": "Jewish Encyclopedia",
+        "url": "https://www.jewishencyclopedia.com/"
+      }
+    ]
+  }
+]

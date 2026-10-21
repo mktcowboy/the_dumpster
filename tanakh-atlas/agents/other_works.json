@@ -1,0 +1,758 @@
+[
+  {
+    "id": "mishnah",
+    "title": "Mishnah",
+    "he_title": "מִשְׁנָה",
+    "also": ["Mishna", "Shishah Sidrei Mishnah", "The Six Orders"],
+    "corpus": "oral",
+    "division": "mishnah",
+    "order": 1,
+    "date": "compiled c. 200 CE",
+    "date_sort": 200,
+    "language": "Mishnaic Hebrew, with Aramaic and Greek loanwords",
+    "summary": "The Mishnah is the first great written digest of the Oral Torah: sixty-three tractates in six orders, edited in the Galilee and traditionally ascribed to Rabbi Judah ha-Nasi around 200 CE. It is not a code in the modern sense. It preserves named disputes, anonymous rulings, ritual scripts, and sudden detours into story and maxim, and it often records a minority view beside the majority. Its Hebrew is terse and formulaic, built for memorization — mishnah means 'repetition' — and a whole tractate can turn on one ambiguous sentence. Later Jews treated it as the floor beneath the Talmud, but it can be read on its own as a portrait of a community imagining a life ordered by commandment.",
+    "why": "The Mishnah exists because the Oral Torah had grown too large and too fragile to survive only in memory. After the Temple's destruction in 70 CE, the schools at Yavneh and later in Galilee faced a double crisis: the loss of the sacrificial center and the fraying of the chains that carried rulings. Rabbi Judah's compilation did not end debate; it gave debate a stable floor and a fixed vocabulary. Its authority was eventually accepted as the definitive digest of tannaitic teaching, which is why both Talmuds are built as commentary on it, and it changed Judaism by making the study of legal detail a religious act in its own right.",
+    "structure": [
+      {"name": "Zera'im", "note": "Seeds: prayer, agriculture, tithes, and the land."},
+      {"name": "Mo'ed", "note": "Appointed times: Sabbath, festivals, fasts, and the Temple calendar."},
+      {"name": "Nashim", "note": "Women: marriage, divorce, vows, and kinship."},
+      {"name": "Nezikin", "note": "Damages: torts, courts, oaths, and civil society."},
+      {"name": "Kodashim", "note": "Holy things: sacrifice, slaughter, and the Temple."},
+      {"name": "Taharot", "note": "Purities: impurity, immersion, and the body."},
+      {"name": "Avot", "note": "The chain of tradition and the ethics of the sages, appended to Nezikin."}
+    ],
+    "themes": ["oral-torah", "halakhah", "machloket", "canon", "chain-of-tradition", "mitzvot", "interpretation"],
+    "people": ["judah-hanasi", "akiva", "yishmael", "hillel", "shammai", "yohanan-ben-zakkai"],
+    "places": ["yavneh", "tiberias", "sepphoris", "jerusalem"],
+    "key_passages": [
+      {"ref": "Mishnah Avot 1:1", "text": "Moses received the Torah from Sinai and transmitted it to Joshua; Joshua to the elders; the elders to the prophets; and the prophets to the men of the Great Assembly.", "note": "The Mishnah's own account of how tradition travels. It is a claim about authority, not a neutral history.", "source": "translation by the atlas"},
+      {"ref": "Mishnah Avot 5:22", "text": "Ben Bag Bag says: Turn it and turn it, for everything is in it. Look into it, grow old and gray in it, and do not stir from it, for you have no better portion than it.", "note": "A famous invitation to endless interpretation, placed near the end of Avot.", "source": "translation by the atlas"}
+    ],
+    "connections": [
+      {"to": "talmud-bavli", "why": "The Bavli is keyed to Mishnah paragraphs; without it there is no Talmud."},
+      {"to": "talmud-yerushalmi", "why": "The Yerushalmi comments on the same Mishnah from Galilee."},
+      {"to": "pirkei-avot", "why": "Avot is a Mishnah tractate that circulated separately as ethics."},
+      {"to": "midrash", "why": "Midrash shares the Mishnah's tannaitic world and sages."},
+      {"to": "mishneh-torah", "why": "Maimonides reorganized its halakhah into a systematic code."},
+      {"to": "shulchan-aruch", "why": "Later codes distill rulings first gathered here."}
+    ],
+    "sources": [
+      {"label": "Sefaria: Mishnah Berakhot", "url": "https://www.sefaria.org/Mishnah_Berakhot"},
+      {"label": "Wikipedia: Mishnah", "url": "https://en.wikipedia.org/wiki/Mishnah"}
+    ]
+  },
+  {
+    "id": "seder-zeraim",
+    "title": "Zera'im",
+    "he_title": "זְרָעִים",
+    "also": ["Zeraim", "Seeds", "Order of Seeds"],
+    "corpus": "oral",
+    "division": "mishnah",
+    "order": 2,
+    "date": "compiled c. 200 CE (as part of the Mishnah)",
+    "date_sort": 200,
+    "language": "Mishnaic Hebrew",
+    "summary": "Zera'im, 'Seeds,' is the first order of the Mishnah and the most land-bound. Its eleven tractates follow the agricultural year of Roman Palestine: the daily Shema (Berakhot), the corners left for the poor (Peah), doubtfully tithed produce (Demai), forbidden mixtures (Kilayim), the sabbatical year (Shevi'it), terumah, tithes, the second tithe, challah, the fruit of a young tree (Orlah), and first-fruits (Bikkurim). It is no farmer's manual but a sustained argument about how ordinary work — sowing, harvesting, separating, eating — can be a relationship with God and the poor. Its laws assume the Temple is standing even as they preserve a world most readers no longer farm.",
+    "why": "Zera'im matters because it refuses to confine religion to the sanctuary: its opening tractate, Berakhot, places prayer and the Shema alongside peah and tithes, making the whole day and the whole field a liturgical surface. It also preserves the Torah's economic ethics in unusually concrete form: the poor have a right to corners, gleanings, and the forgotten sheaf. After the Temple's fall, these laws became memory and study, yet they kept alive a vision of holiness as a property of land, labor, and food. The order reveals that the Mishnah's Judaism is not otherworldly but a way of inhabiting a place.",
+    "structure": [
+      {"name": "Berakhot", "note": "Prayer and the Shema: the order's liturgical front door."},
+      {"name": "Peah", "note": "Corners, gleanings, and the poor's right to the harvest."},
+      {"name": "Demai and Kilayim", "note": "Doubtful tithes and forbidden mixtures of seeds and species."},
+      {"name": "Shevi'it", "note": "The sabbatical year: land rest, debt release, ownerless produce."},
+      {"name": "Terumot, Ma'asrot, and Ma'aser Sheni", "note": "Offerings and tithes for priests, Levites, the poor, and Jerusalem."},
+      {"name": "Challah and Orlah", "note": "Dough offering and the fruit of a tree's first years."},
+      {"name": "Bikkurim", "note": "First-fruits carried to Jerusalem with the declaration of the wandering Aramean."}
+    ],
+    "themes": ["prayer", "halakhah", "land-of-israel", "mitzvot", "justice", "memory", "temple"],
+    "people": ["judah-hanasi", "akiva", "yohanan-ben-zakkai"],
+    "places": ["jerusalem", "yavneh", "tiberias"],
+    "key_passages": [
+      {"ref": "Mishnah Berakhot 1:1", "text": "From what time may one recite the evening Shema? From the time the priests enter to eat their terumah until the end of the first watch.", "note": "The order opens not with farming but with prayer, tying the sacred day to the Temple's ritual clock.", "source": "translation by the atlas"},
+      {"ref": "Mishnah Peah 1:1", "text": "These are the things that have no fixed measure: the corners of the field, the first-fruits, the pilgrimage offering, acts of loving-kindness, and the study of Torah.", "note": "Peah's opening pairs agricultural charity with study, making both immeasurable obligations.", "source": "translation by the atlas"}
+    ],
+    "connections": [
+      {"to": "mishnah", "why": "Zera'im is the Mishnah's first order and sets its embodied tone."},
+      {"to": "talmud-yerushalmi", "why": "The Yerushalmi preserves the fullest commentary on this land-centered order."},
+      {"to": "seder-moed", "why": "Agriculture and festival are two halves of one sacred year."},
+      {"to": "siddur", "why": "Berakhot's prayer laws became the skeleton of the daily liturgy."},
+      {"to": "leviticus", "why": "The order turns Leviticus's priestly legislation into agrarian practice."},
+      {"to": "deuteronomy", "why": "Deuteronomy's tithes and first-fruits are its biblical charter."}
+    ],
+    "sources": [
+      {"label": "Sefaria: Mishnah Peah", "url": "https://www.sefaria.org/Mishnah_Peah"},
+      {"label": "Wikipedia: Zeraim", "url": "https://en.wikipedia.org/wiki/Zeraim"}
+    ]
+  },
+  {
+    "id": "seder-moed",
+    "title": "Mo'ed",
+    "he_title": "מוֹעֵד",
+    "also": ["Moed", "Appointed Times", "Order of Festivals"],
+    "corpus": "oral",
+    "division": "mishnah",
+    "order": 3,
+    "date": "compiled c. 200 CE (as part of the Mishnah)",
+    "date_sort": 200,
+    "language": "Mishnaic Hebrew",
+    "summary": "Mo'ed, 'Appointed Time,' is the order of the calendar: twelve tractates that move from Shabbat and Eruvin through the festivals to the Days of Awe and the fasts. Pesachim narrates the Passover sacrifice and the seder; Sukkah builds the booth; Yoma choreographs the high priest's Yom Kippur service; Rosh Hashanah fixes the new year and the shofar; Megillah reads Esther; Taanit governs fasts and rain. Shekalim deals with the half-shekel and the Temple treasury; Mo'ed Katan with the intermediate days; Chagigah with pilgrimage offerings. The order synchronizes a people: it tells a Jew in Galilee and a Jew in Babylon what day it is, what may be done, and what story is told. Law and liturgy are not yet separate here.",
+    "why": "Sabbath and festivals are the most durable institutions of rabbinic Judaism, and Mo'ed is where their grammar was worked out. With the Temple gone, the calendar became the chief means whereby dispersed communities shared sacred time. Its legal creativity — eruv, carrying, the limits of work — shows a religion that takes the fourth commandment seriously and builds a livable world around it. It also preserves the festivals' narrative logic — Exodus, harvest, wilderness, Torah, fragility — and shows that what looks like legalism is a technology of memory.",
+    "structure": [
+      {"name": "Shabbat and Eruvin", "note": "The thirty-nine labors, the domains, and the legal fiction that joins them."},
+      {"name": "Pesachim", "note": "Passover: the lamb, the matzah, the bitter herbs, and the telling."},
+      {"name": "Shekalim", "note": "The half-shekel tax and the Temple's finances."},
+      {"name": "Yoma", "note": "The Day of Atonement and the high priest's once-a-year entry."},
+      {"name": "Sukkah and Beitzah", "note": "The booth, the four species, and festival cooking."},
+      {"name": "Rosh Hashanah and Taanit", "note": "New year, shofar, fasts, and rain."},
+      {"name": "Megillah, Mo'ed Katan, Chagigah", "note": "Purim, the intermediate days, and pilgrimage offerings."}
+    ],
+    "themes": ["shabbat", "prayer", "temple", "sacrifice", "memory", "halakhah", "mitzvot", "kavvanah"],
+    "people": ["judah-hanasi", "akiva", "hillel", "shammai"],
+    "places": ["jerusalem", "yavneh", "tiberias"],
+    "key_passages": [
+      {"ref": "Mishnah Pesachim 10:5", "text": "In every generation a person is obligated to see himself as if he himself went out from Egypt.", "note": "The Haggadah's core instruction, quoted from the Mishnah.", "source": "translation by the atlas"},
+      {"ref": "Mishnah Yoma 8:9", "text": "For transgressions between a person and God, Yom Kippur atones; for transgressions between a person and another, Yom Kippur does not atone until he appeases the other.", "note": "The order's most quoted ethical limit: ritual atonement cannot replace repair of a relationship.", "source": "translation by the atlas"},
+      {"ref": "Mishnah Shabbat 7:2", "text": "The principal labors are forty less one: sowing, plowing, reaping, binding sheaves, threshing, winnowing, selecting, grinding, sifting, kneading, baking.", "note": "A taxonomy of work that became the basis for Sabbath law.", "source": "translation by the atlas"}
+    ],
+    "connections": [
+      {"to": "mishnah", "why": "Mo'ed is the Mishnah's second order and its most socially consequential."},
+      {"to": "talmud-bavli", "why": "The Bavli's festival tractates are among its most expansive."},
+      {"to": "shulchan-aruch", "why": "The Shulchan Aruch's Sabbath and festival laws depend on Mo'ed."},
+      {"to": "siddur", "why": "The festival liturgy turns the calendar into words a congregation can say."},
+      {"to": "exodus", "why": "Passover and the calendar of redemption are the order's narrative spine."},
+      {"to": "leviticus", "why": "Leviticus supplies the festival and sacrifice laws Mo'ed elaborates."}
+    ],
+    "sources": [
+      {"label": "Sefaria: Mishnah Shabbat", "url": "https://www.sefaria.org/Mishnah_Shabbat"},
+      {"label": "Wikipedia: Moed", "url": "https://en.wikipedia.org/wiki/Moed"}
+    ]
+  },
+  {
+    "id": "seder-nashim",
+    "title": "Nashim",
+    "he_title": "נָשִׁים",
+    "also": ["Seder Nashim", "Women", "Order of Women"],
+    "corpus": "oral",
+    "division": "mishnah",
+    "order": 4,
+    "date": "compiled c. 200 CE (as part of the Mishnah)",
+    "date_sort": 200,
+    "language": "Mishnaic Hebrew",
+    "summary": "Nashim, 'Women,' gathers seven tractates on marriage, divorce, and the vows and obligations that surround them: Yevamot (levirate marriage and forbidden unions), Ketubot (the marriage contract and its economic terms), Nedarim and Nazir (vows and the nazirite), Sotah (the accused wife and the ordeal), Gittin (divorce), and Kiddushin (betrothal). It is a legal anatomy of kinship, status, and property, written by men in a patriarchal society, and it preserves women's voices mostly as litigants, objects of regulation, or dissenters. Within that frame it builds detailed protections: the ketubah settlement, a wife's maintenance, procedures for a valid divorce, and limits on a husband's power. It is one of the Mishnah's most important and troubling orders.",
+    "why": "Nashim is where the Talmud works out what a household is and what a person owes to those closest to them: marriage is a contract with sacred consequences, and divorce is dangerous for women. The tractates struggle with that asymmetry, sometimes protecting the wife, sometimes treating her as property. They also preserve rabbinic thinking about vows and speech: a person can bind himself with words, and the community must decide when to release him. Its laws shaped Jewish family life for centuries and remain the framework modern halakhic authorities argue over; to read Nashim honestly is to see both the protection and the inequality.",
+    "structure": [
+      {"name": "Yevamot", "note": "Levirate marriage, forbidden unions, and the widow's status."},
+      {"name": "Ketubot", "note": "The marriage contract: money, maintenance, and marital duties."},
+      {"name": "Nedarim", "note": "Vows: how speech binds and a court releases."},
+      {"name": "Nazir", "note": "The nazirite's vow and the end of the term."},
+      {"name": "Sotah", "note": "The accused wife, the ordeal, and the erosion of the ritual."},
+      {"name": "Gittin", "note": "Bills of divorce and the mechanics of ending a marriage."},
+      {"name": "Kiddushin", "note": "Betrothal, acquisition, and the legal language of marriage."}
+    ],
+    "themes": ["love", "covenant", "halakhah", "ethics", "justice", "machloket"],
+    "people": ["hillel", "shammai", "akiva", "judah-hanasi"],
+    "places": ["yavneh", "tiberias", "sepphoris"],
+    "key_passages": [
+      {"ref": "Mishnah Kiddushin 1:1", "text": "A woman is acquired in three ways and acquires herself in two: through money, through a document, and through intercourse.", "note": "The Mishnah's blunt legal grammar; later readers were uneasy with the verb 'acquire' for a person.", "source": "translation by the atlas"},
+      {"ref": "Mishnah Ketubot 5:5", "text": "These are the tasks a wife performs for her husband: she grinds, bakes, washes, cooks, nurses her child, makes his bed, and spins wool.", "note": "A window into the household economy, and into the order's assumptions about gender.", "source": "translation by the atlas"}
+    ],
+    "connections": [
+      {"to": "mishnah", "why": "Nashim is the Mishnah's order on the household, rabbinic society's basic unit."},
+      {"to": "talmud-bavli", "why": "Ketubot and Kiddushin are among the Bavli's central legal tractates."},
+      {"to": "genesis", "why": "The order's language of cleaving and one flesh echoes Genesis 2."},
+      {"to": "ruth", "why": "Ruth's levirate and conversion story illuminates Yevamot's kinship law."},
+      {"to": "shulchan-aruch", "why": "Even HaEzer codifies the marriage law Nashim first organized."},
+      {"to": "talmud-yerushalmi", "why": "The Yerushalmi preserves Palestinian marriage customs unlike the Bavli's."}
+    ],
+    "sources": [
+      {"label": "Sefaria: Mishnah Kiddushin", "url": "https://www.sefaria.org/Mishnah_Kiddushin"},
+      {"label": "Wikipedia: Nashim", "url": "https://en.wikipedia.org/wiki/Nashim"}
+    ]
+  },
+  {
+    "id": "seder-nezikin",
+    "title": "Nezikin",
+    "he_title": "נְזִיקִין",
+    "also": ["Order of Damages", "Damages", "Seder Nezikin"],
+    "corpus": "oral",
+    "division": "mishnah",
+    "order": 5,
+    "date": "compiled c. 200 CE (as part of the Mishnah)",
+    "date_sort": 200,
+    "language": "Mishnaic Hebrew",
+    "summary": "Nezikin, 'Damages,' is the order of civil and criminal law, and the most philosophical of the six. Its ten tractates cover torts and property (Bava Kamma, Bava Metzia, Bava Batra), courts and capital procedure (Sanhedrin, Makkot), oaths (Shevuot), testimony and precedent (Eduyot), idolatry (Avodah Zarah), judicial error (Horayot), and the ethical miscellany of Avot. Bava Kamma opens with four categories of damage — ox, pit, crop-destroying beast, fire — and asks how liability is allocated when causation is partial and intention absent. It reads like a code, but its subject is responsibility: who pays, who judges, who is believed, and what a community owes the stranger.",
+    "why": "Nezikin is where rabbinic Judaism becomes a theory of society: because Jews lived under foreign empires, its courts could not always exercise the powers it describes, and its laws of capital punishment, idolatry, and kingship were partly aspirational. Yet they shaped how communities handled money, contracts, loans, and disputes, and preserve one of antiquity's most sustained reflections on negligence. It also contains the Mishnah's most famous statement of equality — one person was created so no one could say 'my ancestor was greater' — and its most humane voice, which calls a court that condemns once in seventy years destructive. Nezikin shows that halakhah is not only ritual.",
+    "structure": [
+      {"name": "Bava Kamma", "note": "Torts, theft, robbery, and the four categories of damage."},
+      {"name": "Bava Metzia", "note": "Found property, deposits, loans, and fair dealing."},
+      {"name": "Bava Batra", "note": "Real estate, inheritance, sales, and neighbors' rights."},
+      {"name": "Sanhedrin and Makkot", "note": "Courts, testimony, capital procedure, and punishment."},
+      {"name": "Shevuot", "note": "Oaths, testimony, and the psychology of swearing."},
+      {"name": "Eduyot", "note": "Tested testimonies and precedents."},
+      {"name": "Avodah Zarah and Horayot", "note": "Idolatry and judicial error."},
+      {"name": "Avot", "note": "The order's ethical appendix."}
+    ],
+    "themes": ["justice", "ethics", "halakhah", "law-and-narrative", "machloket", "memory"],
+    "people": ["akiva", "hillel", "shammai", "judah-hanasi", "yohanan-ben-zakkai"],
+    "places": ["yavneh", "sepphoris", "tiberias", "jerusalem"],
+    "key_passages": [
+      {"ref": "Mishnah Bava Kamma 1:1", "text": "There are four principal categories of damage: the ox, the pit, the crop-destroying beast, and fire.", "note": "The order opens with a taxonomy, then spends tractates asking how the categories interact.", "source": "translation by the atlas"},
+      {"ref": "Mishnah Sanhedrin 4:5", "text": "Therefore Adam was created alone, to teach that one who destroys a single soul of Israel, Scripture accounts it to him as if he destroyed a whole world; and one who sustains a single soul of Israel, as if he sustained a whole world.", "note": "Some manuscripts read 'a single soul' without 'of Israel'; the universal reading is ancient, and the particular reading is traditional.", "source": "translation by the atlas"},
+      {"ref": "Mishnah Makkot 1:10", "text": "A Sanhedrin that puts a man to death once in seven years is called destructive. Rabbi Elazar ben Azariah says: Once in seventy years. Rabbi Tarfon and Rabbi Akiva say: Had we been in the Sanhedrin, no one would ever have been put to death.", "note": "The anonymous baseline is once in seven years; Rabbi Elazar ben Azariah raises it to seventy. Rabban Shimon ben Gamliel replied that such leniency would multiply murderers.", "source": "translation by the atlas"}
+    ],
+    "connections": [
+      {"to": "mishnah", "why": "Nezikin is the Mishnah's largest order and its closest approach to a code."},
+      {"to": "talmud-bavli", "why": "The Bavli's three Bava tractates are the foundation of rabbinic civil law."},
+      {"to": "exodus", "why": "Exodus's Covenant Code supplies the torts and slave laws the order develops."},
+      {"to": "deuteronomy", "why": "Deuteronomy's courts, witnesses, and cities of refuge frame Sanhedrin's procedure."},
+      {"to": "pirkei-avot", "why": "Avot sits inside Nezikin, turning justice into a school of character."},
+      {"to": "shulchan-aruch", "why": "Choshen Mishpat is the later codification of Nezikin's civil law."}
+    ],
+    "sources": [
+      {"label": "Sefaria: Mishnah Bava Kamma", "url": "https://www.sefaria.org/Mishnah_Bava_Kamma"},
+      {"label": "Wikipedia: Nezikin", "url": "https://en.wikipedia.org/wiki/Nezikin"}
+    ]
+  },
+  {
+    "id": "seder-kodashim",
+    "title": "Kodashim",
+    "he_title": "קָדָשִׁים",
+    "also": ["Holy Things", "Order of Sacrifices", "Seder Kodashim"],
+    "corpus": "oral",
+    "division": "mishnah",
+    "order": 6,
+    "date": "compiled c. 200 CE (as part of the Mishnah)",
+    "date_sort": 200,
+    "language": "Mishnaic Hebrew",
+    "summary": "Kodashim, 'Holy Things,' is the order of the Temple. Eleven tractates describe sacrifice (Zevachim), meal offerings (Menachot), slaughter and dietary law (Chullin), firstborn animals (Bekhorot), valuation vows (Arakhin), substitutions (Temurah), sins punishable by excision (Keritot), sacrilege (Me'ilah), the daily service, the Temple measurements, and bird offerings (Tamid, Middot, Kinnim). It is intensely practical and deeply theological: it specifies which animal, hand, blood, and altar, then asks what distinguishes a sacrifice offered for the right intention from one offered for the wrong. Much became inapplicable after 70 CE, but it was never abandoned; studying Kodashim kept the Temple's architecture alive in the mind.",
+    "why": "Kodashim exists because the Temple was the center of the Mishnah's world, and its destruction did not erase the need to understand what was lost. It preserves the grammar of sacrifice in unmatched detail, and that detail is itself a theological claim: body, blood, and fire are not arbitrary symbols but a precise language of atonement and gift. After the destruction, the rabbis transferred some Temple functions to prayer and study but did not spiritualize the sacrifices away; Kodashim kept the memory exact. It also contains Chullin, which made kosher slaughter portable — one reason the order stayed practical long after the altar went cold.",
+    "structure": [
+      {"name": "Zevachim", "note": "Animal offerings: intention, blood, and altar."},
+      {"name": "Menachot", "note": "Meal offerings, the showbread, and the measure of the heart."},
+      {"name": "Chullin", "note": "Ordinary slaughter and dietary law, the order's portable legacy."},
+      {"name": "Bekhorot and Arakhin", "note": "Firstborn animals and valuation vows."},
+      {"name": "Temurah and Keritot", "note": "Substitutions and the sacrifices for grave sins."},
+      {"name": "Me'ilah", "note": "Sacrilege: misuse of consecrated property."},
+      {"name": "Tamid, Middot, Kinnim", "note": "The daily service, Temple measurements, and bird offerings."}
+    ],
+    "themes": ["sacrifice", "temple", "purity", "sin-and-atonement", "mitzvot", "halakhah", "memory", "kashrut"],
+    "people": ["aaron", "judah-hanasi", "akiva", "yishmael"],
+    "places": ["jerusalem", "shiloh", "yavneh"],
+    "key_passages": [
+      {"ref": "Mishnah Menachot 13:11", "text": "One who brings a substantial offering and one who brings a meager offering have equal merit, provided that he directs his heart toward Heaven.", "note": "The order's theology in one sentence: intention, not quantity, makes the gift.", "source": "translation by the atlas"},
+      {"ref": "Mishnah Zevachim 1:1", "text": "All slaughtered offerings that were slaughtered not for their own sake are fit, but they did not satisfy the owner's obligation.", "note": "A precise distinction between ritual validity and the purpose that makes a sacrifice count.", "source": "translation by the atlas"},
+      {"ref": "Mishnah Tamid 7:4", "text": "On the first day of the week they would recite: 'The earth is the Lord's and all that fills it, the world and those who dwell in it.'", "note": "The daily psalm of the Levites, preserving the Temple's soundtrack.", "source": "translation by the atlas"}
+    ],
+    "connections": [
+      {"to": "mishnah", "why": "Kodashim most directly preserves the Temple's ritual world."},
+      {"to": "leviticus", "why": "Leviticus is the source for nearly every sacrifice described here."},
+      {"to": "talmud-bavli", "why": "The Bavli's Kodashim tractates turn ritual detail into argument."},
+      {"to": "mishneh-torah", "why": "Maimonides' Sefer Avodah and Sefer Korbanot reorganize Kodashim after the Temple."},
+      {"to": "seder-taharot", "why": "Sacrifice and purity are inseparable: the altar requires fit bodies."},
+      {"to": "siddur", "why": "Prayer inherited the Temple's language of offering and its daily rhythm."}
+    ],
+    "sources": [
+      {"label": "Sefaria: Mishnah Chullin", "url": "https://www.sefaria.org/Mishnah_Chullin"},
+      {"label": "Wikipedia: Kodashim", "url": "https://en.wikipedia.org/wiki/Kodashim"}
+    ]
+  },
+  {
+    "id": "seder-taharot",
+    "title": "Taharot",
+    "he_title": "טְהָרוֹת",
+    "also": ["Tohorot", "Purities", "Order of Purities"],
+    "corpus": "oral",
+    "division": "mishnah",
+    "order": 7,
+    "date": "compiled c. 200 CE (as part of the Mishnah)",
+    "date_sort": 200,
+    "language": "Mishnaic Hebrew",
+    "summary": "Taharot, 'Purities,' is the longest and most demanding order in the Mishnah: twelve tractates on impurity and its removal. Kelim catalogues vessels; Oholot deals with corpse-impurity under a roof; Nega'im with skin disease; Parah with the red heifer; Taharot with contact-impurity; Mikvaot with immersion pools; Niddah with menstrual purity; Machshirin with liquids that make food susceptible; Zavim, Tevul Yom, and Yadayim with discharges, the day-after immersion, and hands; Uktzim closes with the stems of fruit. The detail is absurdly fine — a cracked pot, a dead lizard, a doubtful shadow — and that is the point. Purity is a system of distinctions, and the Mishnah trains its readers to notice them.",
+    "why": "Taharot is the order modern readers find hardest and the one that most reveals the Mishnah: impurity is not sin but a state of being unfit for the sacred, and the system assumes that most ordinary life is lived in it. Its casuistry is a discipline of attention: the world is full of boundaries, bodies leak, vessels break, and holiness requires separation and restoration. After the Temple, many laws fell into disuse, but Niddah and mikveh remained central, and the order's categories invite comparison with Christian and Islamic purity systems. Taharot is the clearest case of a Judaism that did not abandon the body but made it the subject of law.",
+    "structure": [
+      {"name": "Kelim", "note": "Vessels: what contracts impurity and how it spreads."},
+      {"name": "Oholot", "note": "Corpse-impurity under a roof."},
+      {"name": "Nega'im", "note": "Skin disease and the priest's inspection."},
+      {"name": "Parah", "note": "The red heifer and the ashes of purification."},
+      {"name": "Taharot and Mikvaot", "note": "Nested impurities and the pools that end them."},
+      {"name": "Niddah and Zavim", "note": "Menstrual and bodily purity, the enduring practical core."},
+      {"name": "Machshirin, Tevul Yom, Yadayim, Uktzim", "note": "Liquids, immersion, hands, and the stems of fruit."}
+    ],
+    "themes": ["purity", "temple", "mitzvot", "halakhah", "memory", "kashrut"],
+    "people": ["aaron", "judah-hanasi", "akiva", "yishmael"],
+    "places": ["jerusalem", "tiberias", "yavneh"],
+    "key_passages": [
+      {"ref": "Mishnah Yadayim 3:5", "text": "Rabbi Akiva said: All the writings are holy, but the Song of Songs is the holy of holies.", "note": "A purity tractate becomes a witness to the canon's inner hierarchy.", "source": "translation by the atlas"},
+      {"ref": "Mishnah Kelim 1:1", "text": "The fathers of impurity are the creeping thing, semen, one who has contracted corpse impurity, the leper during the days of his counting, and the waters of purification.", "note": "The order begins with a taxonomy, as Nezikin does with damages: classification is the first act of law.", "source": "translation by the atlas"}
+    ],
+    "connections": [
+      {"to": "mishnah", "why": "Taharot is the Mishnah's longest order and its great exercise in classification."},
+      {"to": "leviticus", "why": "Leviticus 11–15 supplies the impurity laws the order elaborates."},
+      {"to": "talmud-bavli", "why": "Niddah, the one Taharot tractate with a full Bavli, became central to practice."},
+      {"to": "mishneh-torah", "why": "Maimonides' Sefer Taharah turns the order into a code."},
+      {"to": "seder-kodashim", "why": "The Temple's sacrifices require the purity that Taharot defines."},
+      {"to": "zohar", "why": "Kabbalists read impurity and immersion as cosmic exile and return."}
+    ],
+    "sources": [
+      {"label": "Sefaria: Mishnah Kelim", "url": "https://www.sefaria.org/Mishnah_Kelim"},
+      {"label": "Wikipedia: Tohorot", "url": "https://en.wikipedia.org/wiki/Tohorot"}
+    ]
+  },
+  {
+    "id": "pirkei-avot",
+    "title": "Pirkei Avot",
+    "he_title": "פִּרְקֵי אָבוֹת",
+    "also": ["Avot", "Ethics of the Fathers", "Sayings of the Fathers"],
+    "corpus": "oral",
+    "division": "mishnah",
+    "order": 8,
+    "date": "compiled c. 200 CE; sayings from the 2nd c. BCE to the 3rd c. CE",
+    "date_sort": 200,
+    "language": "Mishnaic Hebrew",
+    "summary": "Pirkei Avot, 'Chapters of the Fathers,' is the Mishnah's most-read tractate: five chapters of maxims, mostly chains of sages, on Torah study, character, humility, friendship, fear of sin, and the good life. It is not halakhah: almost no law, ritual, or narrative, but portable wisdom arranged as a genealogy from Moses to the tannaim. The famous opening — 'Moses received the Torah from Sinai and transmitted it to Joshua' — is less a history than a warrant: the ethics that follow are presented as the content of the chain. Later generations added a sixth chapter, Kinyan Torah, and read the whole on Sabbath afternoons between Passover and the High Holidays.",
+    "why": "Avot exists because a tradition needs not only rules but a picture of the people who carry them. By presenting ethics as the distilled saying of named masters, it makes character formation part of revelation rather than a secular supplement. Its sayings are deliberately unsystematic and often clash — Hillel's patience against Shammai's severity, Akiva's rigor against Elisha ben Abuyah's apostasy — which is why it has been commented on from Rashi and Maimonides to modern ethics. Its liturgical use turned the study of character into a public, seasonal practice, and Avot is the closest thing the canon has to a book of Proverbs for the rabbinic academy.",
+    "structure": [
+      {"name": "Chapter 1", "note": "The chain from Moses to the Great Assembly and the first pairs."},
+      {"name": "Chapter 2", "note": "Hillel, Yohanan ben Zakkai, and student discipline."},
+      {"name": "Chapter 3", "note": "Akiva, the image of God, and the ethics of speech."},
+      {"name": "Chapter 4", "note": "Ben Zoma, Ben Azzai, and the four who entered the orchard."},
+      {"name": "Chapter 5", "note": "Creation, miracles, and the types of students."},
+      {"name": "Chapter 6 (Kinyan Torah)", "note": "A later addition on Torah as gift."}
+    ],
+    "themes": ["chain-of-tradition", "torah-study", "ethics", "machloket", "wisdom", "oral-torah"],
+    "people": ["hillel", "shammai", "akiva", "yohanan-ben-zakkai", "judah-hanasi"],
+    "places": ["yavneh", "jerusalem", "tiberias"],
+    "key_passages": [
+      {"ref": "Mishnah Avot 1:2", "text": "Shimon the Righteous used to say: The world stands on three things — on Torah, on Temple service, and on acts of loving-kindness.", "note": "The three pillars that later rabbinic Judaism would redistribute after the Temple's fall.", "source": "translation by the atlas"},
+      {"ref": "Mishnah Avot 1:14", "text": "Hillel used to say: If I am not for myself, who will be for me? And if I am only for myself, what am I? And if not now, when?", "note": "A saying that balances self-care, obligation, and urgency without resolving them.", "source": "translation by the atlas"},
+      {"ref": "Mishnah Avot 2:16", "text": "Rabbi Tarfon used to say: It is not your duty to finish the work, but neither are you free to neglect it.", "note": "The canonical statement of patient, non-triumphalist effort.", "source": "translation by the atlas"},
+      {"ref": "Mishnah Avot 4:1", "text": "Ben Zoma said: Who is wise? One who learns from every person. Who is mighty? One who subdues his inclination. Who is rich? One who rejoices in his lot. Who is honored? One who honors others.", "note": "Four redefinitions that turn status into discipline.", "source": "translation by the atlas"}
+    ],
+    "connections": [
+      {"to": "mishnah", "why": "Avot is a Mishnah tractate whose ethical form made it a standalone classic."},
+      {"to": "talmud-bavli", "why": "The Bavli's aggadah and ethics of study extend Avot's project."},
+      {"to": "proverbs", "why": "Avot's maxims stand in Proverbs's wisdom tradition."},
+      {"to": "mishneh-torah", "why": "Maimonides commented on Avot and incorporated its ethics into his code."},
+      {"to": "rashi-commentary", "why": "Rashi's Avot commentary is one of the earliest and most influential readings."},
+      {"to": "siddur", "why": "Avot is recited on Sabbath afternoons, making ethics liturgical."}
+    ],
+    "sources": [
+      {"label": "Sefaria: Pirkei Avot", "url": "https://www.sefaria.org/Pirkei_Avot"},
+      {"label": "Wikipedia: Pirkei Avot", "url": "https://en.wikipedia.org/wiki/Pirkei_Avot"}
+    ]
+  },
+  {
+    "id": "talmud-bavli",
+    "title": "Talmud Bavli",
+    "he_title": "תַּלְמוּד בַּבְלִי",
+    "also": ["Babylonian Talmud", "Bavli", "Shas"],
+    "corpus": "oral",
+    "division": "talmud",
+    "order": 9,
+    "date": "redacted c. 500–600 CE; first printed 1520s",
+    "date_sort": 550,
+    "language": "Jewish Babylonian Aramaic, with Mishnaic Hebrew and biblical quotations",
+    "summary": "The Talmud Bavli is the vast Aramaic record of rabbinic argument in Babylonia, built as a commentary on the Mishnah and redacted in the fifth and sixth centuries CE. Its core is the sugya: a unit that begins with a Mishnah, asks what it means, cites a baraita, proposes a solution, refutes it, and often ends without a verdict. It covers only about thirty-seven of the Mishnah's sixty-three tractates, but expands them enormously — law, ritual, medicine, astronomy, folklore, theology, and stories about the sages. It is not a code or a summa; it is a workshop, and its argumentative form is the message.",
+    "why": "The Bavli became rabbinic Judaism's central text because it preserved not only rulings but the reasoning behind them. Its dialectic made disagreement itself a form of revelation: the famous declaration that 'both these and those are the words of the living God' allowed the losing opinion to remain sacred. After the geonim and Rashi, it became the yeshiva's primary curriculum, and its page — with Rashi and Tosafot — the defining layout of Jewish learning. It also became a portable homeland, a library of argument a dispersed people could carry anywhere, and its authority is enormous — but it is the authority of a conversation, not a decree.",
+    "structure": [
+      {"name": "Zera'im", "note": "Blessings and agriculture; only Berakhot has a full Bavli."},
+      {"name": "Mo'ed", "note": "Sabbath and festivals: the most studied."},
+      {"name": "Nashim", "note": "Marriage and divorce, including Kiddushin's great sugya."},
+      {"name": "Nezikin", "note": "Civil law and courts; Avot is the exception, with no Bavli."},
+      {"name": "Kodashim", "note": "Sacrifice and slaughter; the source of Chullin's laws."},
+      {"name": "Taharot", "note": "Purity; only Niddah has a full Bavli."},
+      {"name": "The sugya", "note": "The argumentative unit: question, proof, refutation, unresolved tension."}
+    ],
+    "themes": ["oral-torah", "interpretation", "machloket", "halakhah", "aggadah", "diaspora", "torah-study", "exile-and-return"],
+    "people": ["rav", "shmuel", "rav-ashi", "ravina", "hillel", "akiva"],
+    "places": ["babylon", "pumbedita", "sura"],
+    "key_passages": [
+      {"ref": "Talmud Bavli Shabbat 31a", "text": "That which is hateful to you, do not do to another. That is the entire Torah; the rest is interpretation. Go and study.", "note": "Hillel to a convert who asked to be taught the whole Torah while standing on one foot.", "source": "translation by the atlas"},
+      {"ref": "Talmud Bavli Bava Metzia 59b", "text": "It is not in heaven. Since the Torah was already given at Sinai, we do not regard a divine voice; the majority decides.", "note": "Rabbi Joshua's reply to a heavenly voice supporting Rabbi Eliezer; the Talmud adds that God smiled and said, 'My children have defeated me.'", "source": "translation by the atlas"},
+      {"ref": "Talmud Bavli Eruvin 13b", "text": "Both these and those are the words of the living God, but the halakhah follows Beit Hillel.", "note": "The Talmud's charter for preserving dispute — and for deciding anyway. It explains that Beit Hillel prevailed because they were humble and taught their opponents' words first.", "source": "translation by the atlas"}
+    ],
+    "connections": [
+      {"to": "mishnah", "why": "The Bavli is formally a commentary on the Mishnah, whose text begins each page."},
+      {"to": "talmud-yerushalmi", "why": "The two Talmuds share traditions but diverge in language, scope, and authority."},
+      {"to": "rashi-commentary", "why": "Rashi's Talmud commentary is the indispensable key on the inner margin."},
+      {"to": "midrash", "why": "Its aggadah draws on and reshapes the midrashic tradition."},
+      {"to": "mishneh-torah", "why": "Maimonides distilled its rulings into a code, provoking the charge that he bypassed argument."},
+      {"to": "shulchan-aruch", "why": "The Shulchan Aruch's rulings are largely its halakhah filtered through medieval authorities."}
+    ],
+    "sources": [
+      {"label": "Sefaria: Bava Metzia", "url": "https://www.sefaria.org/Bava_Metzia"},
+      {"label": "Wikipedia: Talmud", "url": "https://en.wikipedia.org/wiki/Talmud"}
+    ]
+  },
+  {
+    "id": "talmud-yerushalmi",
+    "title": "Talmud Yerushalmi",
+    "he_title": "תַּלְמוּד יְרוּשַׁלְמִי",
+    "also": ["Jerusalem Talmud", "Palestinian Talmud", "Yerushalmi"],
+    "corpus": "oral",
+    "division": "talmud",
+    "order": 10,
+    "date": "redacted c. 400–450 CE",
+    "date_sort": 425,
+    "language": "Jewish Palestinian Aramaic, with Mishnaic Hebrew",
+    "summary": "The Talmud Yerushalmi — also called the Palestinian Talmud — is the other great talmudic compilation: a commentary on the Mishnah produced in the Palestinian academies of Tiberias, Sepphoris, and Caesarea, redacted around 400–450 CE. It covers most of the first four orders and Niddah, but not the whole Mishnah, and its text is shorter, more compressed, and more fragmentary than the Bavli. Its Aramaic is Galilean, its legal traditions often preserve earlier Palestinian usage, and its aggadah is raw and vivid. It is not a failed Bavli; it is a different archive, closer to the land of Israel, to the Temple's memory, and to the liturgical poetry of the synagogue.",
+    "why": "The Yerushalmi matters because it preserves a Judaism shaped by the land, by Roman rule, and by the aftermath of the Temple's destruction in a way the Bavli does not. Its halakhah often reflects actual Galilean practice, and its stories are indispensable for the social history of late antique Palestine. It remained marginal in most of the Jewish world because the Bavli was longer, clearer, and backed by the authority of the Babylonian geonim; when the two disagree, most authorities follow the Bavli. But the Yerushalmi was never discarded: it is the counter-voice that shows how much of what became 'normative' was one option among several.",
+    "structure": [
+      {"name": "Zera'im", "note": "Prayer, agriculture, and tithes: one of its largest blocks."},
+      {"name": "Mo'ed", "note": "Sabbath and festivals, with a distinctive Palestinian calendar."},
+      {"name": "Nashim", "note": "Marriage and divorce, often closer to early custom."},
+      {"name": "Nezikin", "note": "Civil and criminal law, including Sanhedrin and Avodah Zarah."},
+      {"name": "Niddah", "note": "The one tractate of Taharot with a Yerushalmi."},
+      {"name": "Lost tractates", "note": "Kodashim and most of Taharot are absent or survive only in fragments."}
+    ],
+    "themes": ["oral-torah", "interpretation", "halakhah", "aggadah", "land-of-israel", "diaspora", "torah-study"],
+    "people": ["yochanan-bar-nappacha", "shimon-bar-yochai", "hillel", "akiva"],
+    "places": ["tiberias", "sepphoris", "jerusalem"],
+    "key_passages": [
+      {"ref": "Talmud Yerushalmi Berakhot 4:1", "text": "Rabban Gamliel says: The evening prayer is obligatory. Rabbi Joshua says: It is voluntary.", "note": "A clean example of the Yerushalmi preserving a disagreement that the Bavli also records, and handles differently.", "source": "translation by the atlas"},
+      {"ref": "Talmud Yerushalmi Berakhot 9:5", "text": "With all your heart — with both your inclinations, the good and the evil.", "note": "A tannaitic reading of Deuteronomy 6:5 that makes the evil impulse part of the love of God.", "source": "translation by the atlas"}
+    ],
+    "connections": [
+      {"to": "mishnah", "why": "The Yerushalmi is a commentary on the Mishnah, tractate by tractate."},
+      {"to": "talmud-bavli", "why": "The two Talmuds share early traditions but differ in language, coverage, and authority."},
+      {"to": "midrash", "why": "The Yerushalmi and the Palestinian midrashim share sages, sources, and a Galilean setting."},
+      {"to": "seder-zeraim", "why": "The Yerushalmi preserves the fullest commentary on the land-centered first order."},
+      {"to": "zohar", "why": "The Zohar's narrative world is the same Galilee of the Yerushalmi's academies."},
+      {"to": "siddur", "why": "The Yerushalmi preserves Palestinian liturgical customs that later rites partly forgot."}
+    ],
+    "sources": [
+      {"label": "Sefaria: Jerusalem Talmud Berakhot", "url": "https://www.sefaria.org/Talmud_Yerushalmi_Berakhot"},
+      {"label": "Wikipedia: Jerusalem Talmud", "url": "https://en.wikipedia.org/wiki/Jerusalem_Talmud"}
+    ]
+  },
+  {
+    "id": "midrash",
+    "title": "Midrash",
+    "he_title": "מִדְרָשׁ",
+    "also": ["Midrashim", "Midrash Rabbah", "Halakhic Midrash"],
+    "corpus": "oral",
+    "division": "midrash",
+    "order": 11,
+    "date": "collections c. 200–1300 CE; core 3rd–9th c.",
+    "date_sort": 500,
+    "language": "Mishnaic Hebrew and Palestinian Aramaic, varying by collection",
+    "summary": "Midrash is not one book but a family of interpretive works, produced over a millennium, that read Scripture as conversation rather than document. The halakhic midrashim — Mekhilta on Exodus, Sifra on Leviticus, Sifrei on Numbers and Deuteronomy — derive law from the Torah's wording. The great aggadic collections — Genesis Rabbah, Leviticus Rabbah, Lamentations Rabbah, Song of Songs Rabbah, Pesikta de-Rav Kahana, Tanhuma — retell, expand, and argue with the text, filling gaps, inventing dialogue, and finding contemporary meaning in ancient verse. Some are commentaries, others sermons, still others anthologies. They share a conviction that the text is inexhaustible and interpretation is revelation.",
+    "why": "Midrash exists because the Bible does not answer every question it raises and because a living community needs more than the plain sense: it supplied narrative for the gaps — what Abraham was doing before God called him, what Moses saw at the sea, why God chose Israel — and turned law into theology and theology into story. After the Talmud, midrash became the reservoir of Jewish imagination: Rashi quotes it, the Zohar rewrites it, and modern literature mines it. Its authority differs from halakhah's: it is suggestive rather than binding, which is why it was daring. Midrash is the canon's dream life.",
+    "structure": [
+      {"name": "Mekhilta", "note": "Halakhic midrash on Exodus, expanding the laws of the wilderness."},
+      {"name": "Sifra", "note": "Halakhic midrash on Leviticus, the priestly code."},
+      {"name": "Sifrei", "note": "Halakhic midrash on Numbers and Deuteronomy."},
+      {"name": "Genesis Rabbah", "note": "The foundational aggadic commentary on creation and the patriarchs."},
+      {"name": "Leviticus Rabbah", "note": "Thirty-seven sermons on holiness, sacrifice, and Israel's vocation."},
+      {"name": "Lamentations Rabbah", "note": "Elegies and stories for the destroyed Temple."},
+      {"name": "Pesikta de-Rav Kahana and Tanhuma", "note": "Festival sermons and later homiletical collections."},
+      {"name": "Yalkut Shimoni", "note": "A medieval anthology that gathered thousands of midrashim."}
+    ],
+    "themes": ["aggadah", "interpretation", "revelation", "suffering", "messianism", "memory", "love", "creation"],
+    "people": ["akiva", "yishmael", "shimon-bar-yochai", "moses", "david"],
+    "places": ["sinai", "jerusalem", "eden"],
+    "key_passages": [
+      {"ref": "Genesis Rabbah 1:1", "text": "The Torah says: 'I was with Him as a craftsman.' When a king builds a palace, he does not build it by himself; he consults an architect. So the Holy One looked into the Torah and created the world.", "note": "The midrash's image of Torah as the blueprint of creation.", "source": "translation by the atlas"},
+      {"ref": "Genesis Rabbah 24:7", "text": "Ben Azzai says: 'This is the book of the generations of Adam' — this is a great principle of the Torah. Rabbi Akiva says: 'Love your neighbor as yourself' — this is a great principle of the Torah.", "note": "The two sages disagree about whether the Torah's core is the unity of humanity or the love of neighbor.", "source": "translation by the atlas"}
+    ],
+    "connections": [
+      {"to": "talmud-bavli", "why": "The Bavli's aggadah draws on and reshapes midrash."},
+      {"to": "genesis", "why": "Genesis Rabbah expands the creation and patriarch narratives verse by verse."},
+      {"to": "exodus", "why": "The Mekhilta turns the Exodus story into law, theology, and liturgy."},
+      {"to": "rashi-commentary", "why": "Rashi quotes midrash constantly, trimming it for the plain-sense reader."},
+      {"to": "zohar", "why": "The Zohar presents itself as deeper midrash, rewriting the same verses symbolically."},
+      {"to": "pirkei-avot", "why": "Avot's chain of tradition and midrash's named sages share a world and method."}
+    ],
+    "sources": [
+      {"label": "Sefaria: Genesis Rabbah", "url": "https://www.sefaria.org/Genesis_Rabbah"},
+      {"label": "Wikipedia: Midrash", "url": "https://en.wikipedia.org/wiki/Midrash"}
+    ]
+  },
+  {
+    "id": "rashi-commentary",
+    "title": "Rashi on the Torah",
+    "he_title": "פֵּרוּשׁ רַשִׁ״י",
+    "also": ["Rashi", "Perush Rashi", "Rashi's Commentary"],
+    "corpus": "commentary",
+    "division": "commentary",
+    "order": 12,
+    "date": "c. 1070–1105",
+    "date_sort": 1105,
+    "language": "Medieval Hebrew, with Old French (la'az) glosses",
+    "summary": "Rashi — Rabbi Shlomo Yitzhaki of Troyes (1040–1105) — wrote the most influential commentaries on the Hebrew Bible and the Talmud. His Torah commentary is a running gloss in plain Hebrew: it explains a word, resolves a grammatical difficulty, quotes a midrash when the plain sense needs help, and moves on. His Talmud commentary does the same for a far more tangled text, translating Aramaic terms, reconstructing the steps of an argument, and supplying the context a student needs. Neither work is a treatise. Both are instruments for reading, and their economy is the source of their power: Rashi rarely wastes a sentence.",
+    "why": "Rashi's commentary became printed on the page because it made the page usable. When Hebrew books moved from manuscript to print in the fifteenth and sixteenth centuries, publishers set Rashi's Torah commentary in a distinctive column beside the biblical text, and the Talmud's layout placed Rashi on the inner margin and Tosafot on the outer. The format canonized a method: the plain sense first, the midrashic tradition second, the argument visible at a glance. Rashi's willingness to say 'I do not know' — famously in his Talmud commentary — modeled intellectual honesty, and his influence is so complete that Jews speak of 'Rashi's voice' as if he were a member of the family.",
+    "structure": [
+      {"name": "Torah", "note": "Verse-by-verse gloss on the Pentateuch, mixing grammar, law, and midrash."},
+      {"name": "Prophets and Writings", "note": "Commentaries on much of the Tanakh, including Psalms and Song of Songs."},
+      {"name": "Talmud", "note": "The running commentary that made the Bavli teachable."},
+      {"name": "Responsa", "note": "Legal replies to questions from northern France and beyond."},
+      {"name": "Liturgical poems", "note": "Piyyutim and selichot attributed to Rashi or his circle."}
+    ],
+    "themes": ["interpretation", "torah-study", "halakhah", "aggadah", "exile-and-return", "memory"],
+    "people": ["rashi", "moses", "akiva", "hillel"],
+    "places": ["troyes", "worms"],
+    "key_passages": [
+      {"ref": "Rashi on Genesis 1:1", "text": "Rabbi Yitzhak said: The Torah should have begun with 'This month shall be for you the first of months,' the first commandment. Why then does it begin with creation? Because 'the strength of His works He declared to His people, to give them the inheritance of nations' — so that if the nations say to Israel, 'You are robbers,' Israel can reply: The earth belongs to the Holy One; He created it and gave it to whom He pleased.", "note": "Rashi's most famous comment: the Bible begins with creation to establish the right to the land.", "source": "translation by the atlas"},
+      {"ref": "Rashi on Deuteronomy 6:4", "text": "'The Lord our God, the Lord is one' — the Lord, who is now our God and not the God of the other nations, will in the future be the one God, as it says: 'For then I will turn to the peoples a pure language, that they may all call on the name of the Lord.'", "note": "Rashi reads the Shema as promise as well as confession.", "source": "translation by the atlas"},
+      {"ref": "Rashi on Genesis 1:26", "text": "'Let us make man' — the meekness of the Holy One: because man is in the likeness of the angels, He took counsel with them, teaching that the greater should ask permission of the lesser.", "note": "Rashi turns an awkward plural into a lesson in humility.", "source": "translation by the atlas"}
+    ],
+    "connections": [
+      {"to": "talmud-bavli", "why": "Rashi's Talmud commentary is printed on the inner margin of every standard page."},
+      {"to": "genesis", "why": "His Torah commentary begins with Genesis and sets the pattern for the whole Pentateuch."},
+      {"to": "exodus", "why": "Rashi's comments on the Exodus and Sinai dominate traditional study of the book."},
+      {"to": "midrash", "why": "Rashi selects, compresses, and sometimes rejects midrashic readings in favor of the plain sense."},
+      {"to": "psalms", "why": "His commentary on Psalms shows the same method applied to poetry."},
+      {"to": "mishnah", "why": "Rashi's Mishnah commentary, though surviving only in part, shaped the study of Avot."}
+    ],
+    "sources": [
+      {"label": "Sefaria: Rashi on Genesis", "url": "https://www.sefaria.org/Rashi_on_Genesis"},
+      {"label": "Wikipedia: Rashi", "url": "https://en.wikipedia.org/wiki/Rashi"}
+    ]
+  },
+  {
+    "id": "mishneh-torah",
+    "title": "Mishneh Torah",
+    "he_title": "מִשְׁנֵה תּוֹרָה",
+    "also": ["Yad HaChazakah", "Yad", "Torah Repetition"],
+    "corpus": "law",
+    "division": "code",
+    "order": 13,
+    "date": "1170–1180 CE",
+    "date_sort": 1175,
+    "language": "Mishnaic Hebrew",
+    "summary": "The Mishneh Torah is Maimonides' fourteen-book code of Jewish law, written in Egypt between about 1170 and 1180. It is the first comprehensive attempt to organize the entire Oral Torah — ritual, civil, criminal, agricultural, and Temple law — into one systematic work in clear Mishnaic Hebrew, without sources or the Talmud's argumentative detours. Its opening book, Sefer Madda, begins not with law but with theology: the existence of God, the angels, the structure of the cosmos, and the foundations of faith. Its title signals the ambition: a 'second Torah,' a repetition of the law for a people who could no longer master talmudic debate.",
+    "why": "Maimonides wrote it because he believed the Talmud had become unnavigable: a student could spend years in dialectic and never learn the ruling. His code offered a definitive answer, organized by topic, with reasoning distilled rather than displayed. The method provoked controversy: critics said it made decision too easy, omitted the sources underwriting authority, and presented Maimonides' own philosophical theology as normative. The code was attacked, and some communities banned or restricted Maimonides' writings, but it became a foundation of later codes and changed Judaism by demonstrating that halakhah could be systematic — and by showing how dangerous that demonstration could be.",
+    "structure": [
+      {"name": "Sefer Madda", "note": "Foundations: God, Torah, ethics, and repentance."},
+      {"name": "Sefer Ahavah", "note": "Love: prayer, blessings, circumcision, and the reading of Shema."},
+      {"name": "Sefer Zemanim", "note": "Times: Sabbath, festivals, Hanukkah, and the fasts."},
+      {"name": "Sefer Nashim", "note": "Women: marriage, divorce, and levirate law."},
+      {"name": "Sefer Kedushah", "note": "Holiness: forbidden relations and dietary law."},
+      {"name": "Sefer Nezikin and Sefer Kinyan", "note": "Damages, property, sale, and acquisition."},
+      {"name": "Sefer Mishpatim and Sefer Shoftim", "note": "Civil law, courts, kings, and the Messiah."},
+      {"name": "Fourteen books in all", "note": "A complete architecture of Jewish obligation."}
+    ],
+    "themes": ["halakhah", "mitzvot", "oral-torah", "torah-study", "teshuvah", "messianism", "temple", "sacrifice"],
+    "people": ["rambam", "moses", "judah-hanasi", "akiva"],
+    "places": ["cairo", "jerusalem"],
+    "key_passages": [
+      {"ref": "Mishneh Torah, Foundations of the Torah 1:1", "text": "The foundation of foundations and the pillar of wisdom is to know that there is a First Being who brought all existence into being.", "note": "Maimonides begins his legal code with metaphysics, not ritual.", "source": "translation by the atlas"},
+      {"ref": "Mishneh Torah, Repentance 5:1", "text": "Free will is granted to every person. If one wishes to turn toward the good and be righteous, the choice is his; if one wishes to turn toward evil and be wicked, the choice is his.", "note": "The anthropology that makes repentance possible.", "source": "translation by the atlas"},
+      {"ref": "Mishneh Torah, Introduction", "text": "I have called this work Mishneh Torah, because a person may read the Written Torah first and then this book, and know from it the entire Oral Torah, without needing any other book.", "note": "The code's astonishing claim of self-sufficiency.", "source": "translation by the atlas"}
+    ],
+    "connections": [
+      {"to": "talmud-bavli", "why": "It distills the Bavli's rulings while omitting its arguments and sources."},
+      {"to": "shulchan-aruch", "why": "Karo's code builds on Maimonides even where it disagrees with him."},
+      {"to": "guide-perplexed", "why": "The Guide supplies the theology its first book assumes."},
+      {"to": "mishnah", "why": "It imitates the Mishnah's Hebrew and organizes the Oral Torah on its model."},
+      {"to": "deuteronomy", "why": "It presents itself as a repetition of the Torah, echoing Deuteronomy."},
+      {"to": "siddur", "why": "Its laws of prayer shaped the liturgy's legal frame."}
+    ],
+    "sources": [
+      {"label": "Sefaria: Mishneh Torah, Foundations of the Torah", "url": "https://www.sefaria.org/Mishneh_Torah,_Foundations_of_the_Torah"},
+      {"label": "Wikipedia: Mishneh Torah", "url": "https://en.wikipedia.org/wiki/Mishneh_Torah"}
+    ]
+  },
+  {
+    "id": "shulchan-aruch",
+    "title": "Shulchan Aruch",
+    "he_title": "שֻׁלְחָן עָרוּךְ",
+    "also": ["Shulhan Arukh", "Set Table", "Code of Jewish Law"],
+    "corpus": "law",
+    "division": "code",
+    "order": 14,
+    "date": "completed 1563; first printed Venice 1565",
+    "date_sort": 1563,
+    "language": "Rabbinic Hebrew",
+    "summary": "The Shulchan Aruch, 'The Set Table,' is the most authoritative code of Jewish law in the early modern and modern world, completed in Safed in 1563 and published in Venice in 1565. It distills Karo's own larger commentary, the Beit Yosef, into four sections: Orach Chayim (daily prayer, Sabbath, festivals), Yoreh De'ah (dietary law, purity, vows, mourning), Even HaEzer (marriage and divorce), and Choshen Mishpat (civil and criminal law). Karo wrote for a Sephardic audience and followed the rulings of Isaac Alfasi, Maimonides, and Asher ben Yehiel. The text is terse, almost telegraphic: a ruling, a qualification, a source implied rather than argued. It was designed to be used, not pondered.",
+    "why": "The Shulchan Aruch became central because it was usable: in an age of print, a compact code that told a household what to do on Friday afternoon or a court how to divide a disputed inheritance could travel farther than a commentary. But its Sephardic orientation made it incomplete for Ashkenazim, and Moses Isserles of Kraków supplied the gap. His glosses, printed in a distinct typeface and known as the Mapah, note where Ashkenazic custom differs and often soften Karo's rulings. The resulting page — Karo's text with Isserles' voice beside it — became a portrait of halakhah as a conversation between two legal cultures, and later authorities added the commentary that kept the code alive.",
+    "structure": [
+      {"name": "Orach Chayim", "note": "The path of life: prayer, blessings, Sabbath, and festivals."},
+      {"name": "Yoreh De'ah", "note": "Instruction: kashrut, purity, vows, and mourning."},
+      {"name": "Even HaEzer", "note": "The stone of help: marriage, divorce, and family law."},
+      {"name": "Choshen Mishpat", "note": "The breastplate of judgment: courts, damages, and contracts."},
+      {"name": "The Mapah", "note": "Isserles' Ashkenazic glosses, printed alongside Karo's text."}
+    ],
+    "themes": ["halakhah", "mitzvot", "prayer", "shabbat", "kashrut", "purity", "teshuvah"],
+    "people": ["joseph-karo", "moses-isserles", "rambam"],
+    "places": ["safed", "vilna"],
+    "key_passages": [
+      {"ref": "Shulchan Aruch, Orach Chayim 1:1", "text": "One should strengthen himself like a lion to rise in the morning for the service of his Creator, as it is said: 'I have set the Lord before me always.'", "note": "The code opens with the body — posture, alacrity, attentiveness — before any specific ritual.", "source": "translation by the atlas"},
+      {"ref": "Shulchan Aruch, Yoreh De'ah 246:1", "text": "Every Jewish man is obligated to study Torah — whether poor or rich, healthy or sick, young or old — even a poor man who goes door to door.", "note": "The code's law of study is comprehensive and uncompromising.", "source": "translation by the atlas"}
+    ],
+    "connections": [
+      {"to": "mishneh-torah", "why": "Karo treats Maimonides as one of the three pillars whose rulings define the code."},
+      {"to": "talmud-bavli", "why": "The Shulchan Aruch's rulings are the Bavli's halakhah as mediated by medieval authorities."},
+      {"to": "siddur", "why": "Orach Chayim's laws of prayer and the prayer book developed together."},
+      {"to": "seder-moed", "why": "The Sabbath and festival laws of Mo'ed become the code's daily practice."},
+      {"to": "seder-nashim", "why": "Even HaEzer codifies the marriage and divorce law first organized in Nashim."},
+      {"to": "mishnah", "why": "The code's fourfold structure descends from the Mishnah's topical organization."}
+    ],
+    "sources": [
+      {"label": "Sefaria: Shulchan Arukh, Orach Chayim", "url": "https://www.sefaria.org/Shulchan_Arukh,_Orach_Chayim"},
+      {"label": "Wikipedia: Shulchan Aruch", "url": "https://en.wikipedia.org/wiki/Shulchan_Aruch"}
+    ]
+  },
+  {
+    "id": "guide-perplexed",
+    "title": "Guide for the Perplexed",
+    "he_title": "מוֹרֶה נְבוּכִים",
+    "also": ["Moreh Nevukhim", "Dalalat al-Ha'irin", "Guide of the Perplexed"],
+    "corpus": "philosophy",
+    "division": "philosophy",
+    "order": 15,
+    "date": "c. 1190 CE",
+    "date_sort": 1190,
+    "language": "Judaeo-Arabic (Arabic in Hebrew script)",
+    "summary": "The Guide for the Perplexed is Maimonides' philosophical masterpiece, written in Judaeo-Arabic around 1190 for a student who was educated in Torah but unsettled by philosophy. It is not a systematic treatise. Its three parts move from biblical language and divine attributes (Part I), to prophecy, creation, and the limits of metaphysics (Part II), to providence, evil, and the reasons for the commandments (Part III). Maimonides writes esoterically, warning that some truths must be concealed from ordinary readers and conveyed through contradiction and hint. The book is dense, digressive, and deliberately difficult — a guide for the perplexed, not a catechism for the comfortable.",
+    "why": "The Guide exists because Maimonides could not accept a choice between revelation and reason. He argued that the Torah's anthropomorphic language is accommodation to human weakness, that God's unity excludes any plurality of attributes, and that creation is philosophically defensible though not demonstrable. He also offered a radical account of the commandments: many are divine therapy, designed to cure Israel of idolatry and to build a just society. The book provoked controversy from the start: some communities banned it, while others made it the foundation of Jewish philosophy, and it changed Judaism by making theology a legitimate and dangerous form of piety.",
+    "structure": [
+      {"name": "Part I", "note": "Biblical language, anthropomorphism, and the via negativa."},
+      {"name": "Part II", "note": "Prophecy, the cosmos, and the creation debate."},
+      {"name": "Part III", "note": "Providence, evil, and the reasons for the commandments."},
+      {"name": "Introduction", "note": "Maimonides' warning about esoteric writing and the limits of instruction."}
+    ],
+    "themes": ["interpretation", "revelation", "prophecy", "creation", "wisdom", "suffering", "ethics", "machloket"],
+    "people": ["rambam", "moses", "akiva"],
+    "places": ["cairo", "sinai", "jerusalem"],
+    "key_passages": [
+      {"ref": "Guide for the Perplexed III:27", "text": "The general object of the Law is twofold: the well-being of the soul, and the well-being of the body. The soul is perfected by correct opinions; the body, by a well-ordered society.", "note": "Maimonides' summary of why the commandments exist.", "source": "translation by the atlas, after Friedländer 1881"},
+      {"ref": "Guide for the Perplexed I:35", "text": "Just as all must be taught that God is one and that none beside Him is to be worshipped, so must all be taught that God is incorporeal, and that there is no similarity whatever between Him and His creatures.", "note": "The doctrine Maimonides thought indispensable for every Jew, not only the philosopher.", "source": "translation by the atlas, after Friedländer 1881"}
+    ],
+    "connections": [
+      {"to": "mishneh-torah", "why": "The Guide supplies the theology that the Mishneh Torah's first book assumes."},
+      {"to": "kuzari", "why": "Halevi's defense of revelation through history is the great counter-argument to Maimonides' rationalism."},
+      {"to": "job", "why": "Maimonides' discussion of providence and suffering turns on the Book of Job."},
+      {"to": "genesis", "why": "The Guide's account of creation and biblical language begins with Genesis."},
+      {"to": "talmud-bavli", "why": "Maimonides reads aggadah philosophically while insisting on the Talmud's authority."},
+      {"to": "zohar", "why": "The Zohar's symbolic theology is a different answer to the same question of how to speak of God."}
+    ],
+    "sources": [
+      {"label": "Sefaria: Guide for the Perplexed", "url": "https://www.sefaria.org/Guide_for_the_Perplexed"},
+      {"label": "Stanford Encyclopedia: Maimonides", "url": "https://plato.stanford.edu/entries/maimonides/"}
+    ]
+  },
+  {
+    "id": "kuzari",
+    "title": "Kuzari",
+    "he_title": "כּוּזָרִי",
+    "also": ["Sefer Ha-Kuzari", "Book of the Khazar", "Kitab al-Khazari"],
+    "corpus": "philosophy",
+    "division": "philosophy",
+    "order": 16,
+    "date": "c. 1140 CE",
+    "date_sort": 1140,
+    "language": "Judaeo-Arabic (Arabic in Hebrew script)",
+    "summary": "The Kuzari is Judah Halevi's defense of Judaism, written in Judaeo-Arabic around 1140 and framed as the record of a dialogue between the king of the Khazars and a Jewish sage. The king has rejected philosophy, Christianity, and Islam in turn; the rabbi then argues that the God of Israel is known not primarily through metaphysical proof but through historical experience — the exodus, the revelation at Sinai, and the survival of a people. Halevi's argument is startlingly concrete: prophecy is a faculty of the land of Israel, the Jewish people is the heart of humanity, and the commandments are the diet that keeps that heart alive. The book is both a philosophical apology and a poem of exile.",
+    "why": "The Kuzari matters because it offered a counter-model to Maimonides. Where the Guide trusted reason to purify faith, the Kuzari trusted testimony and communal memory; where the Guide made the commandments a therapy for society, the Kuzari made them the conditions of prophecy. Halevi wrote as a Jew living in Christian Spain, aware of philosophy's prestige and of its inability to prove what mattered most. His answer — that God is known through what happened to Israel — has never lost its appeal, and the book became important to Zionist thinkers, who read Halevi's longing for the land as a political claim avant la lettre.",
+    "structure": [
+      {"name": "Part I", "note": "The king's dream, the philosopher, and the rabbi's opening creed."},
+      {"name": "Part II", "note": "The divine attributes, the names of God, and the nature of prophecy."},
+      {"name": "Part III", "note": "Israel's election, the land, and the meaning of the commandments."},
+      {"name": "Part IV", "note": "The Kuzari king's questions, the Sabbath, and prayer."},
+      {"name": "Part V", "note": "The reasons for the commandments and the shape of Jewish life."}
+    ],
+    "themes": ["chosenness", "revelation", "prophecy", "land-of-israel", "exile-and-return", "prayer", "wisdom"],
+    "people": ["yehuda-halevi", "abraham", "moses"],
+    "places": ["jerusalem", "canaan", "babylon"],
+    "key_passages": [
+      {"ref": "Kuzari I:17", "text": "I believe in the God of Abraham, Isaac, and Israel, who led the children of Israel out of Egypt with signs and wonders, fed them in the desert, and gave them the land.", "note": "The rabbi's creed is historical, not abstract: it names the God who acted.", "source": "translation by the atlas"},
+      {"ref": "Kuzari II:36", "text": "Israel amidst the nations is like the heart amidst the organs of the body; it is at one and the same time the most sick and the most healthy of them.", "note": "Halevi's image of election as vocation and vulnerability.", "source": "Hirschfeld, 1905"}
+    ],
+    "connections": [
+      {"to": "guide-perplexed", "why": "The Kuzari is the great alternative to Maimonides' rationalist theology."},
+      {"to": "mishneh-torah", "why": "Both give halakhah a coherent intellectual foundation."},
+      {"to": "genesis", "why": "Halevi's argument begins with the patriarchal covenant and the land."},
+      {"to": "exodus", "why": "The exodus is his primary evidence that God acts in history."},
+      {"to": "siddur", "why": "Halevi's poetry, including 'Zion, will you not ask,' is part of the prayer book."},
+      {"to": "zohar", "why": "Both make land and people cosmically significant, in very different registers."}
+    ],
+    "sources": [
+      {"label": "Sefaria: Kuzari", "url": "https://www.sefaria.org/Kuzari"},
+      {"label": "Wikipedia: Kuzari", "url": "https://en.wikipedia.org/wiki/Kuzari"}
+    ]
+  },
+  {
+    "id": "zohar",
+    "title": "Zohar",
+    "he_title": "זֹהַר",
+    "also": ["Sefer Ha-Zohar", "Book of Splendor"],
+    "corpus": "mysticism",
+    "division": "kabbalah",
+    "order": 17,
+    "date": "composed late 13th c.; traditionally ascribed to R. Shimon bar Yochai",
+    "date_sort": 1286,
+    "language": "Literary Aramaic, with Hebrew",
+    "summary": "The Zohar, 'Book of Splendor,' is Kabbalah's central text: a vast, pseudepigraphic Aramaic work that reads the Torah as the symbolic account of God's inner life. Its frame is a circle of Galilean sages — Rabbi Shimon bar Yochai, his son Elazar, and their companions — who wander, argue, and reveal the sefirot, the ten emanations through which the infinite (Ein Sof) becomes knowable. It is not a single book: its corpus includes a commentary on the weekly portions, the Idrot (assemblies revealing the deepest secrets), the Ra'aya Meheimna, and the Tikkunei Zohar. Its Aramaic is artificial, its symbolism dense, and its moods range from erotic poetry to cosmic tragedy.",
+    "why": "The Zohar exists because its readers believed the Torah's surface was a garment and its body a hidden world. Tradition gives it to Rabbi Shimon bar Yochai in the second century; modern scholarship places its composition in late thirteenth-century Castile, most likely by Moses de León and possibly a circle. Its publication gave Kabbalah a canonical scripture and a narrative world, and after the expulsion from Spain it became the map of exile and repair. Its authorship is contested because the text claims antiquity and because that claim is part of its meaning; the Zohar changed Judaism by making the inner life of God a subject of daily study.",
+    "structure": [
+      {"name": "Bereshit", "note": "The opening homilies: the rose, the hard spark, emanation."},
+      {"name": "The weekly portions", "note": "A symbolic commentary on the weekly Torah portions."},
+      {"name": "Idra Rabba", "note": "The great assembly: the sefirot's anatomy."},
+      {"name": "Idra Zuta", "note": "The small assembly: Rabbi Shimon's death."},
+      {"name": "Ra'aya Meheimna", "note": "The faithful shepherd: the commandments' kabbalistic reasons."},
+      {"name": "Tikkunei Zohar", "note": "Seventy interpretations of the opening word, Bereshit."}
+    ],
+    "themes": ["mysticism", "sefirot", "shekhinah", "ein-sof", "creation", "revelation", "prayer", "torah-study", "interpretation", "exile-and-return"],
+    "people": ["shimon-bar-yochai", "akiva", "moses"],
+    "places": ["tiberias", "sepphoris", "safed"],
+    "key_passages": [
+      {"ref": "Zohar, Introduction 1", "text": "Rabbi Hizkiyah opened: 'As a lily among thorns, so is my beloved among the daughters.' What is the lily? It is the Community of Israel, who is visited now with justice and now with mercy.", "note": "The Zohar's opening image: Israel, the Shekhinah, and the Torah are intertwined.", "source": "translation by the atlas"},
+      {"ref": "Zohar, Bereshit 1:1", "text": "When the King desired to create the world, a hard spark made an engraving on the supernal light.", "note": "The Zohar's cosmogony begins with a spark, not a sentence.", "source": "translation by the atlas"}
+    ],
+    "connections": [
+      {"to": "talmud-bavli", "why": "It adopts the Talmud's sages, Aramaic, and argumentative texture while claiming a deeper secret."},
+      {"to": "midrash", "why": "It presents itself as the esoteric fulfillment of midrash."},
+      {"to": "genesis", "why": "Its opening and doctrine of emanation comment on creation."},
+      {"to": "exodus", "why": "The exodus and the Song of the Sea become dramas of the sefirot and the Shekhinah."},
+      {"to": "siddur", "why": "Lurianic prayer and Kabbalat Shabbat are deeply shaped by Zoharic symbolism."},
+      {"to": "kuzari", "why": "Both give land and people a cosmic role, though the Zohar's is symbolic."}
+    ],
+    "sources": [
+      {"label": "Sefaria: Zohar", "url": "https://www.sefaria.org/Zohar"},
+      {"label": "Wikipedia: Zohar", "url": "https://en.wikipedia.org/wiki/Zohar"}
+    ]
+  },
+  {
+    "id": "siddur",
+    "title": "Siddur",
+    "he_title": "סִדּוּר",
+    "also": ["Seder Tefillot", "Prayer Book", "Siddur Tefillah"],
+    "corpus": "prayer",
+    "division": "liturgy",
+    "order": 18,
+    "date": "core c. 8th–10th c. CE; continually revised; first printed 1486",
+    "date_sort": 900,
+    "language": "Hebrew, with Aramaic passages such as the Kaddish",
+    "summary": "The Siddur is the book most Jews actually hold: a compiled order of prayers for weekdays, Sabbaths, festivals, and the turning points of life. There is no single original Siddur. Its core — the Shema and its blessings, the Amidah, the Torah service, the Kaddish, the grace after meals — developed over many centuries, from Temple ritual and early synagogue practice through the geonim, the medieval poets, and the kabbalists of Safed. Different rites (Ashkenaz, Sepharad, and Edot HaMizrach) and Hasidic variants preserve different wording, and the book is constantly revised. The Siddur is less a fixed text than a set of rooms generations have furnished differently.",
+    "why": "The Siddur exists because prayer needed to be portable. After the Temple, sacrifice was replaced by the 'service of the heart,' and a dispersed people needed a common order that could be recited without a priest, a sacrifice, or a pilgrimage. The geonim fixed the blessings; the poets added piyyutim; the kabbalists of Safed, especially Isaac Luria and his circle, reshaped the intention (kavvanah) of the words. Print standardized the page but not the text, and the Siddur changed Judaism by making every household a small sanctuary — and by turning memory, petition, and praise into a daily discipline.",
+    "structure": [
+      {"name": "Shacharit", "note": "Morning: blessings, Shema, Amidah, and Torah reading."},
+      {"name": "Minchah and Maariv", "note": "Afternoon and evening prayer, with Shema and blessings."},
+      {"name": "The Amidah", "note": "The standing prayer: praise, petition, and thanks."},
+      {"name": "Kaddish", "note": "Aramaic doxology recited by mourners and at the completion of study."},
+      {"name": "Shabbat and festivals", "note": "Kabbalat Shabbat, holiday liturgies, and the cycle of the year."},
+      {"name": "Life cycle", "note": "Circumcision, marriage, burial, and the blessings of the home."},
+      {"name": "Grace after meals", "note": "Birkat HaMazon and the table as altar."}
+    ],
+    "themes": ["prayer", "kavvanah", "shabbat", "memory", "temple", "messianism", "halakhah", "chain-of-tradition"],
+    "people": ["shlomo-alkabetz", "isaac-luria", "moses", "david"],
+    "places": ["jerusalem", "safed", "vilna"],
+    "key_passages": [
+      {"ref": "Siddur, Amidah (Avot)", "text": "Blessed are You, Lord our God, God of our fathers, God of Abraham, God of Isaac, and God of Jacob, great, mighty, and awesome God, exalted God, who shows kindness and remembers the covenant.", "note": "The opening blessing of the standing prayer links the individual worshipper to the patriarchs.", "source": "translation by the atlas"},
+      {"ref": "Siddur, Kaddish", "text": "May His great name be magnified and sanctified in the world which He created according to His will, and may He establish His kingdom in your lifetime and in your days.", "note": "The Kaddish is Aramaic, ancient, and eschatological; its use by mourners is a later development.", "source": "translation by the atlas"},
+      {"ref": "Siddur, Lecha Dodi", "text": "Come, my beloved, to meet the bride; let us welcome the Sabbath.", "note": "Solomon Alkabetz's hymn, sung at Kabbalat Shabbat, fuses the Sabbath with the Shekhinah.", "source": "translation by the atlas"}
+    ],
+    "connections": [
+      {"to": "psalms", "why": "Psalms is the backbone of daily and festival liturgy, especially Ashrei and Hallel."},
+      {"to": "talmud-bavli", "why": "The Talmud's laws of prayer define the Siddur's structure."},
+      {"to": "zohar", "why": "Kabbalat Shabbat and Lurianic kavvanot are deeply indebted to Zoharic symbolism."},
+      {"to": "shulchan-aruch", "why": "Orach Chayim codifies the legal rules that govern the prayer book."},
+      {"to": "mishneh-torah", "why": "Maimonides' laws of prayer are a major source for the liturgy's shape."},
+      {"to": "exodus", "why": "The daily Shema and the Passover Haggadah keep the Exodus at prayer's center."}
+    ],
+    "sources": [
+      {"label": "Sefaria: Siddur Ashkenaz", "url": "https://www.sefaria.org/Siddur_Ashkenaz"},
+      {"label": "Wikipedia: Siddur", "url": "https://en.wikipedia.org/wiki/Siddur"}
+    ]
+  }
+]
