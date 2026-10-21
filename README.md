@@ -19,9 +19,11 @@ Most projects are self-contained HTML pages that open directly in a browser.
 | [Factor returns](markets/factor-returns/) | Daily 1-day, 5-day, and 1-month returns for nine factor ETFs versus SPY and QQQ |
 | [S&P 500 correlation](markets/sp500-correlation/) | One-year pairwise correlation grid and pair-trade screen across S&P 500 constituents |
 | [S&P 500 tracker](markets/sp500-tracker/) | Constituent changes from 2007–2026, removed-stock performance, and ticker comparisons |
+| [Dow weighting history](markets/djia-weights/) | Price-weighted Dow member weights from 2004–2026, with era snapshots and a membership log |
 | [Options — max pain](markets/options/) | SPY × QQQ max-pain report, QQQ universe scanner, and reproducible snapshot pipeline |
 | [QQQ max-pain board](markets/options/qqq-max-pain.html) | Ranked max-pain board for all loadable QQQ holdings |
 | [Options — live board](markets/options-live/) | Self-refreshing max-pain dashboard with click-through ticker details and charts |
+| [QXO fundamentals](markets/qxo-fundamentals/) | QXO overview, income statement, balance sheet, cash flow, quarterly data, and a downloadable SQLite database |
 
 ## Real estate
 
