@@ -1,6 +1,6 @@
 {
  "ticker": "WDC",
- "as_of": "2026-10-21T15:19:44-05:00",
+ "as_of": "2026-10-21T16:28:06-05:00",
  "notes": [],
  "error": null,
  "spot": 378.51,
@@ -186,42 +186,186 @@
    "eps_surprise_pct": 7.87
   }
  ],
+ "date_check": {
+  "yahoo_date": "2026-10-22",
+  "yahoo_timing": "AMC",
+  "yahoo_is_estimate": false,
+  "nasdaq_date": "2026-10-22",
+  "nasdaq_timing": "AMC",
+  "status": "Confirmed",
+  "detail": "date agrees and timing agrees",
+  "date": "2026-10-22",
+  "timing": "AMC",
+  "timing_src": "Yahoo+Nasdaq",
+  "nasdaq_meta": {
+   "days_queried": 87,
+   "days_failed": 0,
+   "start": "2026-10-21",
+   "end": "2027-02-18"
+  }
+ },
+ "date_status": "Confirmed",
  "next_earnings": "2026-10-22",
  "timing": "AMC",
+ "timing_src": "Yahoo+Nasdaq",
  "days_to_earnings": 1,
  "reaction_day": "2026-10-23",
  "post": {
   "expiry": "2026-10-23",
   "strike": 377.5,
-  "call": 16.15,
+  "call": 16.0,
   "put": 15.025,
   "price_src": "mid",
-  "straddle": 31.175,
-  "implied_move_pct": 8.236,
+  "straddle": 31.025,
+  "implied_move_pct": 8.197,
   "T_years": 0.00794,
-  "iv_straddle": 1.1605,
-  "iv_yf": 1.1402,
-  "spread": 1.45,
-  "spread_pct_of_straddle": 4.7,
+  "iv_straddle": 1.1549,
+  "iv_yf": 1.1347,
+  "spread": 1.75,
+  "spread_pct_of_straddle": 5.6,
   "call_oi": 137,
-  "put_oi": 41
+  "put_oi": 41,
+  "call_vol": 77,
+  "put_vol": 28
  },
- "implied_move_pct": 8.236,
+ "implied_move_pct": 8.197,
  "days_event_to_expiry": 0,
+ "liquidity": {
+  "atm_oi": 178,
+  "atm_volume": 105,
+  "spread_pct_of_mid": 5.6,
+  "grade": "F"
+ },
+ "hist_vol_ex_earnings": 0.7043,
+ "model": {
+  "sigma_ex": 0.7043,
+  "sigma_ex_src": "63d realized vol ex-earnings (proxy: no pre-earnings expiry)",
+  "E_std_pct": 9.284,
+  "t_rem_days": 0,
+  "entry_premium_pct": 7.405,
+  "flag": null
+ },
+ "costs": {
+  "entry_slip_pct": 0.1156,
+  "exit_slip_pct": 0.1156,
+  "commission_pct": 0.0069,
+  "total_cost_pct": 0.238,
+  "spread_estimated": false,
+  "spread_used": 1.75
+ },
+ "pnl_per_quarter": [
+  {
+   "earnings_date": "2023-10-30",
+   "move_pct": 7.262,
+   "exit_value_pct": 7.262,
+   "gross_pct": 0.143,
+   "net_pct": -0.095
+  },
+  {
+   "earnings_date": "2024-01-25",
+   "move_pct": -3.481,
+   "exit_value_pct": 3.481,
+   "gross_pct": 3.924,
+   "net_pct": 3.686
+  },
+  {
+   "earnings_date": "2024-04-25",
+   "move_pct": 2.765,
+   "exit_value_pct": 2.765,
+   "gross_pct": 4.64,
+   "net_pct": 4.402
+  },
+  {
+   "earnings_date": "2024-07-31",
+   "move_pct": -9.724,
+   "exit_value_pct": 9.724,
+   "gross_pct": -2.319,
+   "net_pct": -2.557
+  },
+  {
+   "earnings_date": "2024-10-24",
+   "move_pct": 4.72,
+   "exit_value_pct": 4.72,
+   "gross_pct": 2.685,
+   "net_pct": 2.447
+  },
+  {
+   "earnings_date": "2025-01-29",
+   "move_pct": 4.745,
+   "exit_value_pct": 4.745,
+   "gross_pct": 2.66,
+   "net_pct": 2.422
+  },
+  {
+   "earnings_date": "2025-04-30",
+   "move_pct": 7.976,
+   "exit_value_pct": 7.976,
+   "gross_pct": -0.571,
+   "net_pct": -0.809
+  },
+  {
+   "earnings_date": "2025-07-30",
+   "move_pct": 10.164,
+   "exit_value_pct": 10.164,
+   "gross_pct": -2.759,
+   "net_pct": -2.997
+  },
+  {
+   "earnings_date": "2025-10-30",
+   "move_pct": 8.745,
+   "exit_value_pct": 8.745,
+   "gross_pct": -1.34,
+   "net_pct": -1.578
+  },
+  {
+   "earnings_date": "2026-01-29",
+   "move_pct": -10.122,
+   "exit_value_pct": 10.122,
+   "gross_pct": -2.717,
+   "net_pct": -2.955
+  },
+  {
+   "earnings_date": "2026-04-30",
+   "move_pct": -0.69,
+   "exit_value_pct": 0.69,
+   "gross_pct": 6.715,
+   "net_pct": 6.477
+  },
+  {
+   "earnings_date": "2026-08-05",
+   "move_pct": -13.03,
+   "exit_value_pct": 13.03,
+   "gross_pct": -5.625,
+   "net_pct": -5.863
+  }
+ ],
+ "pnl_stats": {
+  "entry_premium_pct": 7.405,
+  "cost_pct": 0.238,
+  "gross_avg_pct": 0.453,
+  "net_avg_pct": 0.215,
+  "net_avg_pct_of_premium": 2.9,
+  "gross_hit_rate": 50.0,
+  "net_hit_rate": 41.7,
+  "net_worst_pct": -5.863,
+  "net_tail25_pct": -3.938,
+  "net_avg_win_pct": 3.887,
+  "net_avg_loss_pct": -2.408
+ },
  "stats": {
   "n_quarters": 12,
   "avg_abs_move_pct": 6.952,
   "median_abs_move_pct": 7.619,
   "max_abs_move_pct": 13.03,
   "avg_abs_open_move_pct": 7.247,
-  "implied_over_avg": 1.185,
-  "implied_over_median": 1.081,
+  "implied_over_avg": 1.179,
+  "implied_over_median": 1.076,
   "pct_exceeded_implied": 41.7,
   "seller_hit_rate": 58.3,
-  "avg_pnl_pct_spot": 1.284,
-  "total_pnl_pct_spot": 15.408,
-  "worst_pnl_pct_spot": -4.794,
-  "avg_pnl_pct_premium": 15.6
+  "avg_pnl_pct_spot": 1.245,
+  "total_pnl_pct_spot": 14.94,
+  "worst_pnl_pct_spot": -4.833,
+  "avg_pnl_pct_premium": 15.2
  },
  "name": "Western Digital Corporation",
  "chart_png": "/workspace/er-straddles/output/WDC_moves.png"

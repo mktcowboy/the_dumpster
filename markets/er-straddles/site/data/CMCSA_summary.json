@@ -1,6 +1,6 @@
 {
  "ticker": "CMCSA",
- "as_of": "2026-10-21T15:18:20-05:00",
+ "as_of": "2026-10-21T16:26:42-05:00",
  "notes": [],
  "error": null,
  "spot": 22.08,
@@ -186,42 +186,186 @@
    "eps_surprise_pct": 7.62
   }
  ],
+ "date_check": {
+  "yahoo_date": "2026-10-22",
+  "yahoo_timing": "BMO",
+  "yahoo_is_estimate": false,
+  "nasdaq_date": "2026-10-22",
+  "nasdaq_timing": "BMO",
+  "status": "Confirmed",
+  "detail": "date agrees and timing agrees",
+  "date": "2026-10-22",
+  "timing": "BMO",
+  "timing_src": "Yahoo+Nasdaq",
+  "nasdaq_meta": {
+   "days_queried": 87,
+   "days_failed": 0,
+   "start": "2026-10-21",
+   "end": "2027-02-18"
+  }
+ },
+ "date_status": "Confirmed",
  "next_earnings": "2026-10-22",
  "timing": "BMO",
+ "timing_src": "Yahoo+Nasdaq",
  "days_to_earnings": 1,
  "reaction_day": "2026-10-22",
  "post": {
   "expiry": "2026-10-23",
   "strike": 22.0,
-  "call": 0.75,
-  "put": 0.69,
+  "call": 0.72,
+  "put": 0.895,
   "price_src": "mid",
-  "straddle": 1.44,
-  "implied_move_pct": 6.522,
+  "straddle": 1.615,
+  "implied_move_pct": 7.314,
   "T_years": 0.00794,
-  "iv_straddle": 0.9185,
-  "iv_yf": 0.9023,
-  "spread": 0.2,
-  "spread_pct_of_straddle": 13.9,
+  "iv_straddle": 1.0304,
+  "iv_yf": 1.0117,
+  "spread": 0.63,
+  "spread_pct_of_straddle": 39.0,
   "call_oi": 4746,
-  "put_oi": 3542
+  "put_oi": 3542,
+  "call_vol": 4662,
+  "put_vol": 4642
  },
- "implied_move_pct": 6.522,
+ "implied_move_pct": 7.314,
  "days_event_to_expiry": 1,
+ "liquidity": {
+  "atm_oi": 8288,
+  "atm_volume": 9304,
+  "spread_pct_of_mid": 39.0,
+  "grade": "F"
+ },
+ "hist_vol_ex_earnings": 0.3216,
+ "model": {
+  "sigma_ex": 0.3216,
+  "sigma_ex_src": "63d realized vol ex-earnings (proxy: no pre-earnings expiry)",
+  "E_std_pct": 8.955,
+  "t_rem_days": 1,
+  "entry_premium_pct": 7.323,
+  "flag": null
+ },
+ "costs": {
+  "entry_slip_pct": 0.7133,
+  "exit_slip_pct": 0.7133,
+  "commission_pct": 0.1178,
+  "total_cost_pct": 1.5444,
+  "spread_estimated": false,
+  "spread_used": 0.63
+ },
+ "pnl_per_quarter": [
+  {
+   "earnings_date": "2023-10-26",
+   "move_pct": -8.421,
+   "exit_value_pct": 8.421,
+   "gross_pct": -1.098,
+   "net_pct": -2.642
+  },
+  {
+   "earnings_date": "2024-01-25",
+   "move_pct": 3.356,
+   "exit_value_pct": 3.445,
+   "gross_pct": 3.878,
+   "net_pct": 2.333
+  },
+  {
+   "earnings_date": "2024-04-25",
+   "move_pct": -5.819,
+   "exit_value_pct": 5.821,
+   "gross_pct": 1.502,
+   "net_pct": -0.042
+  },
+  {
+   "earnings_date": "2024-07-23",
+   "move_pct": -2.58,
+   "exit_value_pct": 2.766,
+   "gross_pct": 4.557,
+   "net_pct": 3.013
+  },
+  {
+   "earnings_date": "2024-10-31",
+   "move_pct": 3.385,
+   "exit_value_pct": 3.471,
+   "gross_pct": 3.852,
+   "net_pct": 2.307
+  },
+  {
+   "earnings_date": "2025-01-30",
+   "move_pct": -11.001,
+   "exit_value_pct": 11.001,
+   "gross_pct": -3.678,
+   "net_pct": -5.222
+  },
+  {
+   "earnings_date": "2025-04-24",
+   "move_pct": -3.713,
+   "exit_value_pct": 3.761,
+   "gross_pct": 3.562,
+   "net_pct": 2.018
+  },
+  {
+   "earnings_date": "2025-07-31",
+   "move_pct": 2.246,
+   "exit_value_pct": 2.529,
+   "gross_pct": 4.794,
+   "net_pct": 3.249
+  },
+  {
+   "earnings_date": "2025-10-30",
+   "move_pct": -4.241,
+   "exit_value_pct": 4.264,
+   "gross_pct": 3.059,
+   "net_pct": 1.515
+  },
+  {
+   "earnings_date": "2026-01-29",
+   "move_pct": 2.922,
+   "exit_value_pct": 3.066,
+   "gross_pct": 4.257,
+   "net_pct": 2.713
+  },
+  {
+   "earnings_date": "2026-04-23",
+   "move_pct": 7.729,
+   "exit_value_pct": 7.729,
+   "gross_pct": -0.406,
+   "net_pct": -1.951
+  },
+  {
+   "earnings_date": "2026-07-23",
+   "move_pct": -6.803,
+   "exit_value_pct": 6.803,
+   "gross_pct": 0.52,
+   "net_pct": -1.025
+  }
+ ],
+ "pnl_stats": {
+  "entry_premium_pct": 7.323,
+  "cost_pct": 1.5444,
+  "gross_avg_pct": 2.067,
+  "net_avg_pct": 0.522,
+  "net_avg_pct_of_premium": 7.1,
+  "gross_hit_rate": 75.0,
+  "net_hit_rate": 58.3,
+  "net_worst_pct": -5.222,
+  "net_tail25_pct": -3.272,
+  "net_avg_win_pct": 2.45,
+  "net_avg_loss_pct": -2.176
+ },
  "stats": {
   "n_quarters": 12,
   "avg_abs_move_pct": 5.185,
   "median_abs_move_pct": 3.977,
   "max_abs_move_pct": 11.001,
   "avg_abs_open_move_pct": 4.555,
-  "implied_over_avg": 1.258,
-  "implied_over_median": 1.64,
-  "pct_exceeded_implied": 33.3,
-  "seller_hit_rate": 66.7,
-  "avg_pnl_pct_spot": 1.337,
-  "total_pnl_pct_spot": 16.048,
-  "worst_pnl_pct_spot": -4.479,
-  "avg_pnl_pct_premium": 20.5
+  "implied_over_avg": 1.411,
+  "implied_over_median": 1.839,
+  "pct_exceeded_implied": 25.0,
+  "seller_hit_rate": 75.0,
+  "avg_pnl_pct_spot": 2.129,
+  "total_pnl_pct_spot": 25.552,
+  "worst_pnl_pct_spot": -3.687,
+  "avg_pnl_pct_premium": 29.1
  },
  "name": "Comcast Corporation",
  "chart_png": "/workspace/er-straddles/output/CMCSA_moves.png"

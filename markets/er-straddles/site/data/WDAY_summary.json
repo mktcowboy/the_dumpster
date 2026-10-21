@@ -1,8 +1,8 @@
 {
  "ticker": "WDAY",
- "as_of": "2026-10-21T15:20:18-05:00",
+ "as_of": "2026-10-21T16:28:41-05:00",
  "notes": [
-  "Next earnings timing unknown/unconfirmed -> assumed AMC (reaction next trading day) for expiry selection.",
+  "Earnings date/timing mismatch (date: Yahoo 2026-12-01 AMC vs Nasdaq 2026-11-24 UNK); using 2026-12-01 AMC (Yahoo (non-estimate flag)), expiry chosen to cover both candidates.",
   "Post-earnings expiry is 12 trading days after the reaction day; straddle includes material non-earnings time value."
  ],
  "error": null,
@@ -189,8 +189,30 @@
    "eps_surprise_pct": 5.27
   }
  ],
+ "date_check": {
+  "yahoo_date": "2026-12-01",
+  "yahoo_timing": "AMC",
+  "yahoo_is_estimate": false,
+  "nasdaq_date": "2026-11-24",
+  "nasdaq_timing": "UNK",
+  "status": "Mismatch",
+  "detail": "date: Yahoo 2026-12-01 AMC vs Nasdaq 2026-11-24 UNK",
+  "date": "2026-12-01",
+  "timing": "AMC",
+  "timing_src": "Yahoo (non-estimate flag)",
+  "alt_date": "2026-11-24",
+  "alt_timing": "UNK",
+  "nasdaq_meta": {
+   "days_queried": 87,
+   "days_failed": 0,
+   "start": "2026-10-21",
+   "end": "2027-02-18"
+  }
+ },
+ "date_status": "Mismatch",
  "next_earnings": "2026-12-01",
- "timing": "UNK",
+ "timing": "AMC",
+ "timing_src": "Yahoo (non-estimate flag)",
  "days_to_earnings": 41,
  "reaction_day": "2026-12-02",
  "post": {
@@ -207,10 +229,18 @@
   "spread": 8.7,
   "spread_pct_of_straddle": 29.4,
   "call_oi": 747,
-  "put_oi": 90
+  "put_oi": 90,
+  "call_vol": 5,
+  "put_vol": 4
  },
  "implied_move_pct": 14.56,
  "days_event_to_expiry": 12,
+ "liquidity": {
+  "atm_oi": 837,
+  "atm_volume": 9,
+  "spread_pct_of_mid": 29.4,
+  "grade": "F"
+ },
  "pre": {
   "expiry": "2026-11-27",
   "strike": 205.0,
@@ -225,9 +255,127 @@
   "spread": 8.6,
   "spread_pct_of_straddle": 36.0,
   "call_oi": 3,
-  "put_oi": 1
+  "put_oi": 1,
+  "call_vol": 4,
+  "put_vol": 0
  },
  "earnings_only_move_pct": 2.174,
+ "hist_vol_ex_earnings": 0.5881,
+ "model": {
+  "sigma_ex": 0.4497,
+  "sigma_ex_src": "pre-earnings expiry ATM IV",
+  "E_std_pct": 2.725,
+  "t_rem_days": 12,
+  "entry_premium_pct": 8.123,
+  "flag": null
+ },
+ "costs": {
+  "entry_slip_pct": 1.0716,
+  "exit_slip_pct": 1.0716,
+  "commission_pct": 0.0128,
+  "total_cost_pct": 2.1561,
+  "spread_estimated": false,
+  "spread_used": 8.7
+ },
+ "pnl_per_quarter": [
+  {
+   "earnings_date": "2023-11-28",
+   "move_pct": 11.023,
+   "exit_value_pct": 12.54,
+   "gross_pct": -4.417,
+   "net_pct": -6.573
+  },
+  {
+   "earnings_date": "2024-02-26",
+   "move_pct": -3.958,
+   "exit_value_pct": 8.312,
+   "gross_pct": -0.189,
+   "net_pct": -2.345
+  },
+  {
+   "earnings_date": "2024-05-23",
+   "move_pct": -15.328,
+   "exit_value_pct": 15.662,
+   "gross_pct": -7.539,
+   "net_pct": -9.695
+  },
+  {
+   "earnings_date": "2024-08-22",
+   "move_pct": 12.494,
+   "exit_value_pct": 13.662,
+   "gross_pct": -5.539,
+   "net_pct": -7.695
+  },
+  {
+   "earnings_date": "2024-11-26",
+   "move_pct": -6.214,
+   "exit_value_pct": 9.147,
+   "gross_pct": -1.024,
+   "net_pct": -3.18
+  },
+  {
+   "earnings_date": "2025-02-25",
+   "move_pct": 6.218,
+   "exit_value_pct": 9.547,
+   "gross_pct": -1.424,
+   "net_pct": -3.58
+  },
+  {
+   "earnings_date": "2025-05-22",
+   "move_pct": -12.519,
+   "exit_value_pct": 13.248,
+   "gross_pct": -5.125,
+   "net_pct": -7.281
+  },
+  {
+   "earnings_date": "2025-08-21",
+   "move_pct": -2.773,
+   "exit_value_pct": 8.033,
+   "gross_pct": 0.09,
+   "net_pct": -2.066
+  },
+  {
+   "earnings_date": "2025-11-25",
+   "move_pct": -7.852,
+   "exit_value_pct": 9.985,
+   "gross_pct": -1.862,
+   "net_pct": -4.018
+  },
+  {
+   "earnings_date": "2026-02-24",
+   "move_pct": 2.242,
+   "exit_value_pct": 8.115,
+   "gross_pct": 0.008,
+   "net_pct": -2.149
+  },
+  {
+   "earnings_date": "2026-05-21",
+   "move_pct": 5.162,
+   "exit_value_pct": 9.061,
+   "gross_pct": -0.938,
+   "net_pct": -3.094
+  },
+  {
+   "earnings_date": "2026-08-27",
+   "move_pct": 5.76,
+   "exit_value_pct": 9.327,
+   "gross_pct": -1.204,
+   "net_pct": -3.361
+  }
+ ],
+ "pnl_stats": {
+  "entry_premium_pct": 8.123,
+  "cost_pct": 2.1561,
+  "gross_avg_pct": -2.43,
+  "net_avg_pct": -4.586,
+  "net_avg_pct_of_premium": -56.5,
+  "gross_hit_rate": 16.7,
+  "net_hit_rate": 0.0,
+  "net_worst_pct": -9.695,
+  "net_tail25_pct": -8.224,
+  "net_avg_win_pct": null,
+  "net_avg_loss_pct": -4.586
+ },
  "stats": {
   "n_quarters": 12,
   "avg_abs_move_pct": 7.629,

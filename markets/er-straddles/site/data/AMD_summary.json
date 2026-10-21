@@ -1,9 +1,7 @@
 {
  "ticker": "AMD",
- "as_of": "2026-10-21T15:19:23-05:00",
- "notes": [
-  "Next earnings timing unknown/unconfirmed -> assumed AMC (reaction next trading day) for expiry selection."
- ],
+ "as_of": "2026-10-21T16:27:44-05:00",
+ "notes": [],
  "error": null,
  "spot": 552.72,
  "history": [
@@ -188,59 +186,205 @@
    "eps_surprise_pct": 3.21
   }
  ],
+ "date_check": {
+  "yahoo_date": "2026-11-03",
+  "yahoo_timing": "AMC",
+  "yahoo_is_estimate": false,
+  "nasdaq_date": "2026-11-03",
+  "nasdaq_timing": "AMC",
+  "status": "Confirmed",
+  "detail": "date agrees and timing agrees",
+  "date": "2026-11-03",
+  "timing": "AMC",
+  "timing_src": "Yahoo+Nasdaq",
+  "nasdaq_meta": {
+   "days_queried": 87,
+   "days_failed": 0,
+   "start": "2026-10-21",
+   "end": "2027-02-18"
+  }
+ },
+ "date_status": "Confirmed",
  "next_earnings": "2026-11-03",
- "timing": "UNK",
+ "timing": "AMC",
+ "timing_src": "Yahoo+Nasdaq",
  "days_to_earnings": 13,
  "reaction_day": "2026-11-04",
  "post": {
   "expiry": "2026-11-06",
   "strike": 555.0,
-  "call": 31.5,
+  "call": 30.75,
   "put": 32.5,
   "price_src": "mid",
-  "straddle": 64.0,
-  "implied_move_pct": 11.579,
+  "straddle": 63.25,
+  "implied_move_pct": 11.443,
   "T_years": 0.04762,
-  "iv_straddle": 0.6648,
-  "iv_yf": 0.6714,
-  "spread": 2.8,
-  "spread_pct_of_straddle": 4.4,
+  "iv_straddle": 0.657,
+  "iv_yf": 0.6635,
+  "spread": 3.5,
+  "spread_pct_of_straddle": 5.5,
   "call_oi": 103,
-  "put_oi": 264
+  "put_oi": 264,
+  "call_vol": 342,
+  "put_vol": 28
  },
- "implied_move_pct": 11.579,
+ "implied_move_pct": 11.443,
  "days_event_to_expiry": 2,
+ "liquidity": {
+  "atm_oi": 367,
+  "atm_volume": 370,
+  "spread_pct_of_mid": 5.5,
+  "grade": "C"
+ },
  "pre": {
   "expiry": "2026-10-30",
   "strike": 555.0,
-  "call": 19.75,
+  "call": 19.7,
   "put": 21.1,
   "price_src": "mid",
-  "straddle": 40.85,
-  "implied_move_pct": 7.391,
+  "straddle": 40.8,
+  "implied_move_pct": 7.382,
   "T_years": 0.02778,
-  "iv_straddle": 0.5548,
-  "iv_yf": 0.5581,
-  "spread": 1.1,
-  "spread_pct_of_straddle": 2.7,
+  "iv_straddle": 0.5542,
+  "iv_yf": 0.5574,
+  "spread": 1.2,
+  "spread_pct_of_straddle": 2.9,
   "call_oi": 307,
-  "put_oi": 616
+  "put_oi": 616,
+  "call_vol": 608,
+  "put_vol": 285
  },
- "earnings_only_move_pct": 6.96,
+ "earnings_only_move_pct": 6.746,
+ "hist_vol_ex_earnings": 0.6029,
+ "model": {
+  "sigma_ex": 0.5542,
+  "sigma_ex_src": "pre-earnings expiry ATM IV",
+  "E_std_pct": 8.455,
+  "t_rem_days": 2,
+  "entry_premium_pct": 7.809,
+  "flag": null
+ },
+ "costs": {
+  "entry_slip_pct": 0.1583,
+  "exit_slip_pct": 0.1583,
+  "commission_pct": 0.0047,
+  "total_cost_pct": 0.3213,
+  "spread_estimated": false,
+  "spread_used": 3.5
+ },
+ "pnl_per_quarter": [
+  {
+   "earnings_date": "2023-10-31",
+   "move_pct": 9.685,
+   "exit_value_pct": 9.808,
+   "gross_pct": -1.999,
+   "net_pct": -2.32
+  },
+  {
+   "earnings_date": "2024-01-30",
+   "move_pct": -2.54,
+   "exit_value_pct": 4.405,
+   "gross_pct": 3.404,
+   "net_pct": 3.083
+  },
+  {
+   "earnings_date": "2024-04-30",
+   "move_pct": -8.909,
+   "exit_value_pct": 9.016,
+   "gross_pct": -1.207,
+   "net_pct": -1.528
+  },
+  {
+   "earnings_date": "2024-07-30",
+   "move_pct": 4.363,
+   "exit_value_pct": 5.443,
+   "gross_pct": 2.366,
+   "net_pct": 2.045
+  },
+  {
+   "earnings_date": "2024-10-29",
+   "move_pct": -10.617,
+   "exit_value_pct": 10.654,
+   "gross_pct": -2.845,
+   "net_pct": -3.166
+  },
+  {
+   "earnings_date": "2025-02-04",
+   "move_pct": -6.268,
+   "exit_value_pct": 6.693,
+   "gross_pct": 1.116,
+   "net_pct": 0.795
+  },
+  {
+   "earnings_date": "2025-05-06",
+   "move_pct": 1.764,
+   "exit_value_pct": 4.22,
+   "gross_pct": 3.589,
+   "net_pct": 3.267
+  },
+  {
+   "earnings_date": "2025-08-05",
+   "move_pct": -6.42,
+   "exit_value_pct": 6.816,
+   "gross_pct": 0.993,
+   "net_pct": 0.672
+  },
+  {
+   "earnings_date": "2025-11-04",
+   "move_pct": 2.511,
+   "exit_value_pct": 4.481,
+   "gross_pct": 3.328,
+   "net_pct": 3.007
+  },
+  {
+   "earnings_date": "2026-02-03",
+   "move_pct": -17.314,
+   "exit_value_pct": 17.314,
+   "gross_pct": -9.505,
+   "net_pct": -9.826
+  },
+  {
+   "earnings_date": "2026-05-05",
+   "move_pct": 18.615,
+   "exit_value_pct": 18.616,
+   "gross_pct": -10.807,
+   "net_pct": -11.128
+  },
+  {
+   "earnings_date": "2026-08-04",
+   "move_pct": -7.044,
+   "exit_value_pct": 7.336,
+   "gross_pct": 0.473,
+   "net_pct": 0.151
+  }
+ ],
+ "pnl_stats": {
+  "entry_premium_pct": 7.809,
+  "cost_pct": 0.3213,
+  "gross_avg_pct": -0.925,
+  "net_avg_pct": -1.246,
+  "net_avg_pct_of_premium": -16.0,
+  "gross_hit_rate": 58.3,
+  "net_hit_rate": 58.3,
+  "net_worst_pct": -11.128,
+  "net_tail25_pct": -8.04,
+  "net_avg_win_pct": 1.86,
+  "net_avg_loss_pct": -5.594
+ },
  "stats": {
   "n_quarters": 12,
   "avg_abs_move_pct": 8.004,
   "median_abs_move_pct": 6.732,
   "max_abs_move_pct": 18.615,
   "avg_abs_open_move_pct": 6.688,
-  "implied_over_avg": 1.447,
-  "implied_over_median": 1.72,
+  "implied_over_avg": 1.43,
+  "implied_over_median": 1.7,
   "pct_exceeded_implied": 16.7,
   "seller_hit_rate": 83.3,
-  "avg_pnl_pct_spot": 3.575,
-  "total_pnl_pct_spot": 42.898,
-  "worst_pnl_pct_spot": -7.036,
-  "avg_pnl_pct_premium": 30.9
+  "avg_pnl_pct_spot": 3.439,
+  "total_pnl_pct_spot": 41.266,
+  "worst_pnl_pct_spot": -7.172,
+  "avg_pnl_pct_premium": 30.1
  },
  "stats_earnings_only": {
   "n_quarters": 12,
@@ -248,14 +392,14 @@
   "median_abs_move_pct": 6.732,
   "max_abs_move_pct": 18.615,
   "avg_abs_open_move_pct": 6.688,
-  "implied_over_avg": 0.87,
-  "implied_over_median": 1.034,
+  "implied_over_avg": 0.843,
+  "implied_over_median": 1.002,
   "pct_exceeded_implied": 50.0,
   "seller_hit_rate": 50.0,
-  "avg_pnl_pct_spot": -1.044,
-  "total_pnl_pct_spot": -12.53,
-  "worst_pnl_pct_spot": -11.655,
-  "avg_pnl_pct_premium": -15.0
+  "avg_pnl_pct_spot": -1.258,
+  "total_pnl_pct_spot": -15.098,
+  "worst_pnl_pct_spot": -11.869,
+  "avg_pnl_pct_premium": -18.7
  },
  "name": "Advanced Micro Devices, Inc.",
  "chart_png": "/workspace/er-straddles/output/AMD_moves.png"

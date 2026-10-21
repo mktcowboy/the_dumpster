@@ -1,6 +1,6 @@
 {
  "ticker": "INTC",
- "as_of": "2026-10-21T15:18:22-05:00",
+ "as_of": "2026-10-21T16:26:43-05:00",
  "notes": [
   "1 past quarter(s) had unknown BMO/AMC timing; reaction day inferred from the larger overnight gap."
  ],
@@ -188,59 +188,205 @@
    "eps_surprise_pct": 94.59
   }
  ],
+ "date_check": {
+  "yahoo_date": "2026-10-29",
+  "yahoo_timing": "AMC",
+  "yahoo_is_estimate": false,
+  "nasdaq_date": "2026-10-29",
+  "nasdaq_timing": "AMC",
+  "status": "Confirmed",
+  "detail": "date agrees and timing agrees",
+  "date": "2026-10-29",
+  "timing": "AMC",
+  "timing_src": "Yahoo+Nasdaq",
+  "nasdaq_meta": {
+   "days_queried": 87,
+   "days_failed": 0,
+   "start": "2026-10-21",
+   "end": "2027-02-18"
+  }
+ },
+ "date_status": "Confirmed",
  "next_earnings": "2026-10-29",
  "timing": "AMC",
+ "timing_src": "Yahoo+Nasdaq",
  "days_to_earnings": 8,
  "reaction_day": "2026-10-30",
  "post": {
   "expiry": "2026-10-30",
   "strike": 93.0,
-  "call": 5.05,
+  "call": 5.0,
   "put": 4.975,
   "price_src": "mid",
-  "straddle": 10.025,
-  "implied_move_pct": 10.784,
+  "straddle": 9.975,
+  "implied_move_pct": 10.73,
   "T_years": 0.02778,
-  "iv_straddle": 0.8118,
-  "iv_yf": 0.817,
+  "iv_straddle": 0.8078,
+  "iv_yf": 0.813,
   "spread": 0.35,
   "spread_pct_of_straddle": 3.5,
   "call_oi": 727,
-  "put_oi": 2327
+  "put_oi": 2327,
+  "call_vol": 3267,
+  "put_vol": 227
  },
- "implied_move_pct": 10.784,
+ "implied_move_pct": 10.73,
  "days_event_to_expiry": 0,
+ "liquidity": {
+  "atm_oi": 3054,
+  "atm_volume": 3494,
+  "spread_pct_of_mid": 3.5,
+  "grade": "B"
+ },
  "pre": {
   "expiry": "2026-10-23",
   "strike": 93.0,
-  "call": 1.98,
-  "put": 1.955,
+  "call": 1.95,
+  "put": 1.965,
   "price_src": "mid",
-  "straddle": 3.935,
-  "implied_move_pct": 4.233,
+  "straddle": 3.915,
+  "implied_move_pct": 4.211,
   "T_years": 0.00794,
-  "iv_straddle": 0.5956,
-  "iv_yf": 0.585,
-  "spread": 0.11,
-  "spread_pct_of_straddle": 2.8,
+  "iv_straddle": 0.5925,
+  "iv_yf": 0.582,
+  "spread": 0.13,
+  "spread_pct_of_straddle": 3.3,
   "call_oi": 10910,
-  "put_oi": 2201
+  "put_oi": 2201,
+  "call_vol": 9609,
+  "put_vol": 4401
  },
- "earnings_only_move_pct": 7.923,
+ "earnings_only_move_pct": 7.886,
+ "hist_vol_ex_earnings": 0.6508,
+ "model": {
+  "sigma_ex": 0.5925,
+  "sigma_ex_src": "pre-earnings expiry ATM IV",
+  "E_std_pct": 9.883,
+  "t_rem_days": 0,
+  "entry_premium_pct": 7.883,
+  "flag": null
+ },
+ "costs": {
+  "entry_slip_pct": 0.0941,
+  "exit_slip_pct": 0.0941,
+  "commission_pct": 0.028,
+  "total_cost_pct": 0.2162,
+  "spread_estimated": false,
+  "spread_used": 0.35
+ },
+ "pnl_per_quarter": [
+  {
+   "earnings_date": "2023-10-26",
+   "move_pct": 9.287,
+   "exit_value_pct": 9.287,
+   "gross_pct": -1.404,
+   "net_pct": -1.62
+  },
+  {
+   "earnings_date": "2024-01-25",
+   "move_pct": -11.907,
+   "exit_value_pct": 11.907,
+   "gross_pct": -4.024,
+   "net_pct": -4.24
+  },
+  {
+   "earnings_date": "2024-04-25",
+   "move_pct": -9.2,
+   "exit_value_pct": 9.2,
+   "gross_pct": -1.317,
+   "net_pct": -1.533
+  },
+  {
+   "earnings_date": "2024-08-01",
+   "move_pct": -26.059,
+   "exit_value_pct": 26.059,
+   "gross_pct": -18.176,
+   "net_pct": -18.392
+  },
+  {
+   "earnings_date": "2024-10-31",
+   "move_pct": 7.807,
+   "exit_value_pct": 7.807,
+   "gross_pct": 0.076,
+   "net_pct": -0.14
+  },
+  {
+   "earnings_date": "2025-01-30",
+   "move_pct": -2.899,
+   "exit_value_pct": 2.899,
+   "gross_pct": 4.984,
+   "net_pct": 4.768
+  },
+  {
+   "earnings_date": "2025-04-24",
+   "move_pct": -6.701,
+   "exit_value_pct": 6.701,
+   "gross_pct": 1.182,
+   "net_pct": 0.966
+  },
+  {
+   "earnings_date": "2025-07-24",
+   "move_pct": -8.528,
+   "exit_value_pct": 8.528,
+   "gross_pct": -0.645,
+   "net_pct": -0.861
+  },
+  {
+   "earnings_date": "2025-10-23",
+   "move_pct": 0.314,
+   "exit_value_pct": 0.314,
+   "gross_pct": 7.569,
+   "net_pct": 7.353
+  },
+  {
+   "earnings_date": "2026-01-22",
+   "move_pct": -17.029,
+   "exit_value_pct": 17.029,
+   "gross_pct": -9.146,
+   "net_pct": -9.362
+  },
+  {
+   "earnings_date": "2026-04-23",
+   "move_pct": 23.6,
+   "exit_value_pct": 23.6,
+   "gross_pct": -15.717,
+   "net_pct": -15.933
+  },
+  {
+   "earnings_date": "2026-07-23",
+   "move_pct": -7.892,
+   "exit_value_pct": 7.892,
+   "gross_pct": -0.009,
+   "net_pct": -0.225
+  }
+ ],
+ "pnl_stats": {
+  "entry_premium_pct": 7.883,
+  "cost_pct": 0.2162,
+  "gross_avg_pct": -3.052,
+  "net_avg_pct": -3.268,
+  "net_avg_pct_of_premium": -41.5,
+  "gross_hit_rate": 33.3,
+  "net_hit_rate": 25.0,
+  "net_worst_pct": -18.392,
+  "net_tail25_pct": -14.562,
+  "net_avg_win_pct": 4.362,
+  "net_avg_loss_pct": -5.812
+ },
  "stats": {
   "n_quarters": 12,
   "avg_abs_move_pct": 10.935,
   "median_abs_move_pct": 8.864,
   "max_abs_move_pct": 26.059,
   "avg_abs_open_move_pct": 9.778,
-  "implied_over_avg": 0.986,
-  "implied_over_median": 1.217,
+  "implied_over_avg": 0.981,
+  "implied_over_median": 1.211,
   "pct_exceeded_implied": 33.3,
   "seller_hit_rate": 66.7,
-  "avg_pnl_pct_spot": -0.151,
-  "total_pnl_pct_spot": -1.815,
-  "worst_pnl_pct_spot": -15.275,
-  "avg_pnl_pct_premium": -1.4
+  "avg_pnl_pct_spot": -0.205,
+  "total_pnl_pct_spot": -2.463,
+  "worst_pnl_pct_spot": -15.329,
+  "avg_pnl_pct_premium": -1.9
  },
  "stats_earnings_only": {
   "n_quarters": 12,
@@ -248,14 +394,14 @@
   "median_abs_move_pct": 8.864,
   "max_abs_move_pct": 26.059,
   "avg_abs_open_move_pct": 9.778,
-  "implied_over_avg": 0.725,
-  "implied_over_median": 0.894,
-  "pct_exceeded_implied": 58.3,
-  "seller_hit_rate": 41.7,
-  "avg_pnl_pct_spot": -3.012,
-  "total_pnl_pct_spot": -36.147,
-  "worst_pnl_pct_spot": -18.136,
-  "avg_pnl_pct_premium": -38.0
+  "implied_over_avg": 0.721,
+  "implied_over_median": 0.89,
+  "pct_exceeded_implied": 66.7,
+  "seller_hit_rate": 33.3,
+  "avg_pnl_pct_spot": -3.049,
+  "total_pnl_pct_spot": -36.591,
+  "worst_pnl_pct_spot": -18.173,
+  "avg_pnl_pct_premium": -38.7
  },
  "name": "Intel Corporation",
  "chart_png": "/workspace/er-straddles/output/INTC_moves.png"
