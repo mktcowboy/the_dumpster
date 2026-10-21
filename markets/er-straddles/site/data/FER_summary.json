@@ -1,0 +1,35 @@
+{
+ "ticker": "FER",
+ "as_of": "2026-10-21T15:20:52-05:00",
+ "notes": [
+  "Post-earnings expiry is 17 trading days after the reaction day; straddle includes material non-earnings time value."
+ ],
+ "error": null,
+ "spot": 50.02,
+ "history": [],
+ "next_earnings": "2026-10-27",
+ "timing": "AMC",
+ "days_to_earnings": 6,
+ "reaction_day": "2026-10-28",
+ "post": {
+  "expiry": "2026-11-20",
+  "strike": 50.0,
+  "call": 2.1,
+  "put": 2.275,
+  "price_src": "mid",
+  "straddle": 4.375,
+  "implied_move_pct": 8.747,
+  "T_years": 0.0873,
+  "iv_straddle": 0.3717,
+  "iv_yf": 0.6718,
+  "spread": 6.85,
+  "spread_pct_of_straddle": 156.6,
+  "call_oi": 14,
+  "put_oi": 19
+ },
+ "implied_move_pct": 8.747,
+ "days_event_to_expiry": 17,
+ "stats": {},
+ "name": "Ferrovial N.V.",
+ "chart_png": null
+}

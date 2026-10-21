@@ -1,0 +1,65 @@
+{
+ "ticker": "HONA",
+ "as_of": "2026-10-21T15:20:59-05:00",
+ "notes": [
+  "Post-earnings expiry is 16 trading days after the reaction day; straddle includes material non-earnings time value."
+ ],
+ "error": null,
+ "spot": 162.46,
+ "history": [
+  {
+   "earnings_date": "2026-08-05",
+   "timing": "AMC",
+   "timing_inferred": false,
+   "pre_close_date": "2026-08-05",
+   "reaction_date": "2026-08-06",
+   "pre_close": 203.64,
+   "react_open": 155.0,
+   "react_close": 156.47,
+   "move_close_pct": -23.163,
+   "move_open_pct": -23.885,
+   "abs_close_pct": 23.163,
+   "abs_open_pct": 23.885,
+   "eps_surprise_pct": -11.75
+  }
+ ],
+ "next_earnings": "2026-10-28",
+ "timing": "AMC",
+ "days_to_earnings": 7,
+ "reaction_day": "2026-10-29",
+ "post": {
+  "expiry": "2026-11-20",
+  "strike": 160.0,
+  "call": 10.3,
+  "put": 7.55,
+  "price_src": "mid",
+  "straddle": 17.85,
+  "implied_move_pct": 10.987,
+  "T_years": 0.0873,
+  "iv_straddle": 0.4665,
+  "iv_yf": 0.5341,
+  "spread": 4.5,
+  "spread_pct_of_straddle": 25.2,
+  "call_oi": 195,
+  "put_oi": 763
+ },
+ "implied_move_pct": 10.987,
+ "days_event_to_expiry": 16,
+ "stats": {
+  "n_quarters": 1,
+  "avg_abs_move_pct": 23.163,
+  "median_abs_move_pct": 23.163,
+  "max_abs_move_pct": 23.163,
+  "avg_abs_open_move_pct": 23.885,
+  "implied_over_avg": 0.474,
+  "implied_over_median": 0.474,
+  "pct_exceeded_implied": 100.0,
+  "seller_hit_rate": 0.0,
+  "avg_pnl_pct_spot": -12.176,
+  "total_pnl_pct_spot": -12.176,
+  "worst_pnl_pct_spot": -12.176,
+  "avg_pnl_pct_premium": -110.8
+ },
+ "name": "Honeywell Aerospace Inc. Common Stock",
+ "chart_png": "/workspace/er-straddles/output/HONA_moves.png"
+}

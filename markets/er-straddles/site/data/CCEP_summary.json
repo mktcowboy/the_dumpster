@@ -1,0 +1,52 @@
+{
+ "ticker": "CCEP",
+ "as_of": "2026-10-21T15:20:27-05:00",
+ "notes": [
+  "Straddle priced from last trade (mid/last), not bid/ask mid."
+ ],
+ "error": null,
+ "spot": 110.29,
+ "history": [],
+ "next_earnings": "2027-02-19",
+ "timing": "BMO",
+ "days_to_earnings": 121,
+ "reaction_day": "2027-02-19",
+ "post": {
+  "expiry": "2027-02-19",
+  "strike": 110.0,
+  "call": 6.8,
+  "put": 8.8,
+  "price_src": "mid/last",
+  "straddle": 15.6,
+  "implied_move_pct": 14.145,
+  "T_years": 0.34524,
+  "iv_straddle": 0.3033,
+  "iv_yf": 0.1656,
+  "spread": null,
+  "spread_pct_of_straddle": null,
+  "call_oi": 6,
+  "put_oi": 0
+ },
+ "implied_move_pct": 14.145,
+ "days_event_to_expiry": 0,
+ "pre": {
+  "expiry": "2026-11-20",
+  "strike": 110.0,
+  "call": 3.325,
+  "put": 3.175,
+  "price_src": "mid",
+  "straddle": 6.5,
+  "implied_move_pct": 5.894,
+  "T_years": 0.0873,
+  "iv_straddle": 0.25,
+  "iv_yf": 0.3241,
+  "spread": 3.6,
+  "spread_pct_of_straddle": 55.4,
+  "call_oi": 2239,
+  "put_oi": 7
+ },
+ "earnings_only_move_pct": 8.148,
+ "stats": {},
+ "name": "Coca-Cola Europacific Partners plc",
+ "chart_png": null
+}
