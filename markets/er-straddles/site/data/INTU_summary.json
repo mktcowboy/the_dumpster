@@ -1,9 +1,7 @@
 {
  "ticker": "INTU",
- "as_of": "2026-10-21T15:18:58-05:00",
- "notes": [
-  "Next earnings timing unknown/unconfirmed -> assumed AMC (reaction next trading day) for expiry selection."
- ],
+ "as_of": "2026-10-21T16:27:19-05:00",
+ "notes": [],
  "error": null,
  "spot": 335.61,
  "history": [
@@ -188,28 +186,56 @@
    "eps_surprise_pct": 12.34
   }
  ],
+ "date_check": {
+  "yahoo_date": "2026-11-19",
+  "yahoo_timing": "AMC",
+  "yahoo_is_estimate": true,
+  "nasdaq_date": "2026-11-19",
+  "nasdaq_timing": "UNK",
+  "status": "Confirmed",
+  "detail": "date agrees",
+  "date": "2026-11-19",
+  "timing": "AMC",
+  "timing_src": "Yahoo",
+  "nasdaq_meta": {
+   "days_queried": 87,
+   "days_failed": 0,
+   "start": "2026-10-21",
+   "end": "2027-02-18"
+  }
+ },
+ "date_status": "Confirmed",
  "next_earnings": "2026-11-19",
- "timing": "UNK",
+ "timing": "AMC",
+ "timing_src": "Yahoo",
  "days_to_earnings": 29,
  "reaction_day": "2026-11-20",
  "post": {
   "expiry": "2026-11-20",
   "strike": 340.0,
-  "call": 18.9,
-  "put": 22.6,
+  "call": 17.9,
+  "put": 22.0,
   "price_src": "mid",
-  "straddle": 41.5,
-  "implied_move_pct": 12.366,
+  "straddle": 39.9,
+  "implied_move_pct": 11.889,
   "T_years": 0.0873,
-  "iv_straddle": 0.5216,
-  "iv_yf": 0.527,
-  "spread": 4.6,
-  "spread_pct_of_straddle": 11.1,
+  "iv_straddle": 0.5013,
+  "iv_yf": 0.5065,
+  "spread": 10.8,
+  "spread_pct_of_straddle": 27.1,
   "call_oi": 296,
-  "put_oi": 32
+  "put_oi": 32,
+  "call_vol": 10,
+  "put_vol": 1
  },
- "implied_move_pct": 12.366,
+ "implied_move_pct": 11.889,
  "days_event_to_expiry": 0,
+ "liquidity": {
+  "atm_oi": 328,
+  "atm_volume": 11,
+  "spread_pct_of_mid": 27.1,
+  "grade": "F"
+ },
  "pre": {
   "expiry": "2026-11-13",
   "strike": 335.0,
@@ -224,23 +250,141 @@
   "spread": 9.4,
   "spread_pct_of_straddle": 29.7,
   "call_oi": 25,
-  "put_oi": 47
+  "put_oi": 47,
+  "call_vol": 1,
+  "put_vol": 45
  },
- "earnings_only_move_pct": 6.365,
+ "earnings_only_move_pct": 5.382,
+ "hist_vol_ex_earnings": 0.4469,
+ "model": {
+  "sigma_ex": 0.4568,
+  "sigma_ex_src": "pre-earnings expiry ATM IV",
+  "E_std_pct": 6.745,
+  "t_rem_days": 0,
+  "entry_premium_pct": 5.381,
+  "flag": null
+ },
+ "costs": {
+  "entry_slip_pct": 0.8045,
+  "exit_slip_pct": 0.8045,
+  "commission_pct": 0.0077,
+  "total_cost_pct": 1.6168,
+  "spread_estimated": false,
+  "spread_used": 10.8
+ },
+ "pnl_per_quarter": [
+  {
+   "earnings_date": "2023-11-28",
+   "move_pct": 2.152,
+   "exit_value_pct": 2.152,
+   "gross_pct": 3.229,
+   "net_pct": 1.612
+  },
+  {
+   "earnings_date": "2024-02-22",
+   "move_pct": 0.287,
+   "exit_value_pct": 0.287,
+   "gross_pct": 5.094,
+   "net_pct": 3.477
+  },
+  {
+   "earnings_date": "2024-05-23",
+   "move_pct": -8.346,
+   "exit_value_pct": 8.346,
+   "gross_pct": -2.965,
+   "net_pct": -4.582
+  },
+  {
+   "earnings_date": "2024-08-22",
+   "move_pct": -6.83,
+   "exit_value_pct": 6.83,
+   "gross_pct": -1.449,
+   "net_pct": -3.066
+  },
+  {
+   "earnings_date": "2024-11-21",
+   "move_pct": -5.684,
+   "exit_value_pct": 5.684,
+   "gross_pct": -0.303,
+   "net_pct": -1.92
+  },
+  {
+   "earnings_date": "2025-02-25",
+   "move_pct": 12.577,
+   "exit_value_pct": 12.577,
+   "gross_pct": -7.196,
+   "net_pct": -8.813
+  },
+  {
+   "earnings_date": "2025-05-22",
+   "move_pct": 8.116,
+   "exit_value_pct": 8.116,
+   "gross_pct": -2.735,
+   "net_pct": -4.352
+  },
+  {
+   "earnings_date": "2025-08-21",
+   "move_pct": -5.03,
+   "exit_value_pct": 5.03,
+   "gross_pct": 0.351,
+   "net_pct": -1.266
+  },
+  {
+   "earnings_date": "2025-11-20",
+   "move_pct": 4.033,
+   "exit_value_pct": 4.033,
+   "gross_pct": 1.348,
+   "net_pct": -0.269
+  },
+  {
+   "earnings_date": "2026-02-26",
+   "move_pct": 3.704,
+   "exit_value_pct": 3.704,
+   "gross_pct": 1.677,
+   "net_pct": 0.06
+  },
+  {
+   "earnings_date": "2026-05-20",
+   "move_pct": -20.019,
+   "exit_value_pct": 20.019,
+   "gross_pct": -14.638,
+   "net_pct": -16.255
+  },
+  {
+   "earnings_date": "2026-08-25",
+   "move_pct": -3.24,
+   "exit_value_pct": 3.24,
+   "gross_pct": 2.141,
+   "net_pct": 0.524
+  }
+ ],
+ "pnl_stats": {
+  "entry_premium_pct": 5.381,
+  "cost_pct": 1.6168,
+  "gross_avg_pct": -1.287,
+  "net_avg_pct": -2.904,
+  "net_avg_pct_of_premium": -54.0,
+  "gross_hit_rate": 50.0,
+  "net_hit_rate": 33.3,
+  "net_worst_pct": -16.255,
+  "net_tail25_pct": -9.883,
+  "net_avg_win_pct": 1.418,
+  "net_avg_loss_pct": -5.065
+ },
  "stats": {
   "n_quarters": 12,
   "avg_abs_move_pct": 6.668,
   "median_abs_move_pct": 5.357,
   "max_abs_move_pct": 20.019,
   "avg_abs_open_move_pct": 6.401,
-  "implied_over_avg": 1.854,
-  "implied_over_median": 2.308,
+  "implied_over_avg": 1.783,
+  "implied_over_median": 2.219,
   "pct_exceeded_implied": 16.7,
   "seller_hit_rate": 83.3,
-  "avg_pnl_pct_spot": 5.698,
-  "total_pnl_pct_spot": 68.374,
-  "worst_pnl_pct_spot": -7.653,
-  "avg_pnl_pct_premium": 46.1
+  "avg_pnl_pct_spot": 5.221,
+  "total_pnl_pct_spot": 62.65,
+  "worst_pnl_pct_spot": -8.13,
+  "avg_pnl_pct_premium": 43.9
  },
  "stats_earnings_only": {
   "n_quarters": 12,
@@ -248,14 +392,14 @@
   "median_abs_move_pct": 5.357,
   "max_abs_move_pct": 20.019,
   "avg_abs_open_move_pct": 6.401,
-  "implied_over_avg": 0.955,
-  "implied_over_median": 1.188,
-  "pct_exceeded_implied": 41.7,
-  "seller_hit_rate": 58.3,
-  "avg_pnl_pct_spot": -0.303,
-  "total_pnl_pct_spot": -3.638,
-  "worst_pnl_pct_spot": -13.654,
-  "avg_pnl_pct_premium": -4.8
+  "implied_over_avg": 0.807,
+  "implied_over_median": 1.005,
+  "pct_exceeded_implied": 50.0,
+  "seller_hit_rate": 50.0,
+  "avg_pnl_pct_spot": -1.286,
+  "total_pnl_pct_spot": -15.434,
+  "worst_pnl_pct_spot": -14.637,
+  "avg_pnl_pct_premium": -23.9
  },
  "name": "Intuit Inc.",
  "chart_png": "/workspace/er-straddles/output/INTU_moves.png"

@@ -1,9 +1,7 @@
 {
  "ticker": "AMAT",
- "as_of": "2026-10-21T15:18:17-05:00",
- "notes": [
-  "Next earnings timing unknown/unconfirmed -> assumed AMC (reaction next trading day) for expiry selection."
- ],
+ "as_of": "2026-10-21T16:26:38-05:00",
+ "notes": [],
  "error": null,
  "spot": 408.94,
  "history": [
@@ -188,28 +186,56 @@
    "eps_surprise_pct": 3.11
   }
  ],
+ "date_check": {
+  "yahoo_date": "2026-11-12",
+  "yahoo_timing": "AMC",
+  "yahoo_is_estimate": false,
+  "nasdaq_date": "2026-11-12",
+  "nasdaq_timing": "AMC",
+  "status": "Confirmed",
+  "detail": "date agrees and timing agrees",
+  "date": "2026-11-12",
+  "timing": "AMC",
+  "timing_src": "Yahoo+Nasdaq",
+  "nasdaq_meta": {
+   "days_queried": 87,
+   "days_failed": 0,
+   "start": "2026-10-21",
+   "end": "2027-02-18"
+  }
+ },
+ "date_status": "Confirmed",
  "next_earnings": "2026-11-12",
- "timing": "UNK",
+ "timing": "AMC",
+ "timing_src": "Yahoo+Nasdaq",
  "days_to_earnings": 22,
  "reaction_day": "2026-11-13",
  "post": {
   "expiry": "2026-11-13",
   "strike": 410.0,
-  "call": 24.325,
+  "call": 24.025,
   "put": 24.05,
   "price_src": "mid",
-  "straddle": 48.375,
-  "implied_move_pct": 11.829,
+  "straddle": 48.075,
+  "implied_move_pct": 11.756,
   "T_years": 0.06746,
-  "iv_straddle": 0.5714,
-  "iv_yf": 0.5779,
-  "spread": 6.95,
-  "spread_pct_of_straddle": 14.4,
+  "iv_straddle": 0.5678,
+  "iv_yf": 0.5743,
+  "spread": 6.35,
+  "spread_pct_of_straddle": 13.2,
   "call_oi": 17,
-  "put_oi": 93
+  "put_oi": 93,
+  "call_vol": 10,
+  "put_vol": 94
  },
- "implied_move_pct": 11.829,
+ "implied_move_pct": 11.756,
  "days_event_to_expiry": 0,
+ "liquidity": {
+  "atm_oi": 110,
+  "atm_volume": 104,
+  "spread_pct_of_mid": 13.2,
+  "grade": "F"
+ },
  "pre": {
   "expiry": "2026-11-06",
   "strike": 410.0,
@@ -224,23 +250,141 @@
   "spread": 6.15,
   "spread_pct_of_straddle": 15.3,
   "call_oi": 10,
-  "put_oi": 104
+  "put_oi": 104,
+  "call_vol": 60,
+  "put_vol": 15
  },
- "earnings_only_move_pct": 3.432,
+ "earnings_only_move_pct": 3.165,
+ "hist_vol_ex_earnings": 0.5974,
+ "model": {
+  "sigma_ex": 0.5637,
+  "sigma_ex_src": "pre-earnings expiry ATM IV",
+  "E_std_pct": 3.967,
+  "t_rem_days": 0,
+  "entry_premium_pct": 3.165,
+  "flag": null
+ },
+ "costs": {
+  "entry_slip_pct": 0.3882,
+  "exit_slip_pct": 0.3882,
+  "commission_pct": 0.0064,
+  "total_cost_pct": 0.7828,
+  "spread_estimated": false,
+  "spread_used": 6.35
+ },
+ "pnl_per_quarter": [
+  {
+   "earnings_date": "2023-11-16",
+   "move_pct": -4.018,
+   "exit_value_pct": 4.018,
+   "gross_pct": -0.853,
+   "net_pct": -1.636
+  },
+  {
+   "earnings_date": "2024-02-15",
+   "move_pct": 6.347,
+   "exit_value_pct": 6.347,
+   "gross_pct": -3.182,
+   "net_pct": -3.965
+  },
+  {
+   "earnings_date": "2024-05-16",
+   "move_pct": -0.911,
+   "exit_value_pct": 0.911,
+   "gross_pct": 2.254,
+   "net_pct": 1.471
+  },
+  {
+   "earnings_date": "2024-08-15",
+   "move_pct": -1.855,
+   "exit_value_pct": 1.855,
+   "gross_pct": 1.31,
+   "net_pct": 0.527
+  },
+  {
+   "earnings_date": "2024-11-14",
+   "move_pct": -9.204,
+   "exit_value_pct": 9.204,
+   "gross_pct": -6.039,
+   "net_pct": -6.822
+  },
+  {
+   "earnings_date": "2025-02-13",
+   "move_pct": -8.178,
+   "exit_value_pct": 8.178,
+   "gross_pct": -5.013,
+   "net_pct": -5.796
+  },
+  {
+   "earnings_date": "2025-05-15",
+   "move_pct": -5.253,
+   "exit_value_pct": 5.253,
+   "gross_pct": -2.088,
+   "net_pct": -2.871
+  },
+  {
+   "earnings_date": "2025-08-14",
+   "move_pct": -14.067,
+   "exit_value_pct": 14.067,
+   "gross_pct": -10.902,
+   "net_pct": -11.685
+  },
+  {
+   "earnings_date": "2025-11-13",
+   "move_pct": 1.245,
+   "exit_value_pct": 1.245,
+   "gross_pct": 1.92,
+   "net_pct": 1.137
+  },
+  {
+   "earnings_date": "2026-02-12",
+   "move_pct": 8.076,
+   "exit_value_pct": 8.076,
+   "gross_pct": -4.911,
+   "net_pct": -5.694
+  },
+  {
+   "earnings_date": "2026-05-14",
+   "move_pct": -0.894,
+   "exit_value_pct": 0.894,
+   "gross_pct": 2.271,
+   "net_pct": 1.488
+  },
+  {
+   "earnings_date": "2026-08-13",
+   "move_pct": -5.118,
+   "exit_value_pct": 5.118,
+   "gross_pct": -1.953,
+   "net_pct": -2.736
+  }
+ ],
+ "pnl_stats": {
+  "entry_premium_pct": 3.165,
+  "cost_pct": 0.7828,
+  "gross_avg_pct": -2.266,
+  "net_avg_pct": -3.048,
+  "net_avg_pct_of_premium": -96.3,
+  "gross_hit_rate": 33.3,
+  "net_hit_rate": 33.3,
+  "net_worst_pct": -11.685,
+  "net_tail25_pct": -8.101,
+  "net_avg_win_pct": 1.156,
+  "net_avg_loss_pct": -5.151
+ },
  "stats": {
   "n_quarters": 12,
   "avg_abs_move_pct": 5.43,
   "median_abs_move_pct": 5.186,
   "max_abs_move_pct": 14.067,
   "avg_abs_open_move_pct": 6.77,
-  "implied_over_avg": 2.178,
-  "implied_over_median": 2.281,
+  "implied_over_avg": 2.165,
+  "implied_over_median": 2.267,
   "pct_exceeded_implied": 8.3,
   "seller_hit_rate": 91.7,
-  "avg_pnl_pct_spot": 6.399,
-  "total_pnl_pct_spot": 76.782,
-  "worst_pnl_pct_spot": -2.238,
-  "avg_pnl_pct_premium": 54.1
+  "avg_pnl_pct_spot": 6.326,
+  "total_pnl_pct_spot": 75.906,
+  "worst_pnl_pct_spot": -2.311,
+  "avg_pnl_pct_premium": 53.8
  },
  "stats_earnings_only": {
   "n_quarters": 12,
@@ -248,14 +392,14 @@
   "median_abs_move_pct": 5.186,
   "max_abs_move_pct": 14.067,
   "avg_abs_open_move_pct": 6.77,
-  "implied_over_avg": 0.632,
-  "implied_over_median": 0.662,
+  "implied_over_avg": 0.583,
+  "implied_over_median": 0.61,
   "pct_exceeded_implied": 66.7,
   "seller_hit_rate": 33.3,
-  "avg_pnl_pct_spot": -1.999,
-  "total_pnl_pct_spot": -23.982,
-  "worst_pnl_pct_spot": -10.635,
-  "avg_pnl_pct_premium": -58.2
+  "avg_pnl_pct_spot": -2.266,
+  "total_pnl_pct_spot": -27.186,
+  "worst_pnl_pct_spot": -10.902,
+  "avg_pnl_pct_premium": -71.6
  },
  "name": "Applied Materials, Inc.",
  "chart_png": "/workspace/er-straddles/output/AMAT_moves.png"

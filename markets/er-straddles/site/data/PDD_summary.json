@@ -1,7 +1,10 @@
 {
  "ticker": "PDD",
- "as_of": "2026-10-21T15:20:30-05:00",
- "notes": [],
+ "as_of": "2026-10-21T16:28:53-05:00",
+ "notes": [
+  "Earnings date/timing mismatch (date: Yahoo 2026-11-18 BMO vs Nasdaq 2026-11-17 UNK); using 2026-11-17 UNK (Nasdaq), expiry chosen to cover both candidates.",
+  "Next earnings timing unknown in all sources -> assumed AMC (reaction next trading day) for expiry selection."
+ ],
  "error": null,
  "spot": 78.72,
  "history": [
@@ -186,9 +189,31 @@
    "eps_surprise_pct": 5.34
   }
  ],
- "next_earnings": "2026-11-18",
- "timing": "BMO",
- "days_to_earnings": 28,
+ "date_check": {
+  "yahoo_date": "2026-11-18",
+  "yahoo_timing": "BMO",
+  "yahoo_is_estimate": true,
+  "nasdaq_date": "2026-11-17",
+  "nasdaq_timing": "UNK",
+  "status": "Mismatch",
+  "detail": "date: Yahoo 2026-11-18 BMO vs Nasdaq 2026-11-17 UNK",
+  "date": "2026-11-17",
+  "timing": "UNK",
+  "timing_src": "Nasdaq",
+  "alt_date": "2026-11-18",
+  "alt_timing": "BMO",
+  "nasdaq_meta": {
+   "days_queried": 87,
+   "days_failed": 0,
+   "start": "2026-10-21",
+   "end": "2027-02-18"
+  }
+ },
+ "date_status": "Mismatch",
+ "next_earnings": "2026-11-17",
+ "timing": "UNK",
+ "timing_src": "Nasdaq",
+ "days_to_earnings": 27,
  "reaction_day": "2026-11-18",
  "post": {
   "expiry": "2026-11-20",
@@ -204,10 +229,18 @@
   "spread": 3.33,
   "spread_pct_of_straddle": 49.4,
   "call_oi": 8024,
-  "put_oi": 10200
+  "put_oi": 10200,
+  "call_vol": 1812,
+  "put_vol": 94
  },
  "implied_move_pct": 8.556,
  "days_event_to_expiry": 2,
+ "liquidity": {
+  "atm_oi": 18224,
+  "atm_volume": 1906,
+  "spread_pct_of_mid": 49.4,
+  "grade": "F"
+ },
  "pre": {
   "expiry": "2026-11-13",
   "strike": 78.0,
@@ -222,9 +255,127 @@
   "spread": 2.96,
   "spread_pct_of_straddle": 60.2,
   "call_oi": 135,
-  "put_oi": 73
+  "put_oi": 73,
+  "call_vol": 1,
+  "put_vol": 15
  },
  "earnings_only_move_pct": 4.854,
+ "hist_vol_ex_earnings": 0.2783,
+ "model": {
+  "sigma_ex": 0.3,
+  "sigma_ex_src": "pre-earnings expiry ATM IV",
+  "E_std_pct": 6.084,
+  "t_rem_days": 2,
+  "entry_premium_pct": 5.301,
+  "flag": null
+ },
+ "costs": {
+  "entry_slip_pct": 1.0575,
+  "exit_slip_pct": 1.0575,
+  "commission_pct": 0.033,
+  "total_cost_pct": 2.1481,
+  "spread_estimated": false,
+  "spread_used": 3.33
+ },
+ "pnl_per_quarter": [
+  {
+   "earnings_date": "2023-11-28",
+   "move_pct": 18.077,
+   "exit_value_pct": 18.077,
+   "gross_pct": -12.776,
+   "net_pct": -14.924
+  },
+  {
+   "earnings_date": "2024-03-20",
+   "move_pct": 3.517,
+   "exit_value_pct": 3.768,
+   "gross_pct": 1.533,
+   "net_pct": -0.615
+  },
+  {
+   "earnings_date": "2024-05-22",
+   "move_pct": 1.128,
+   "exit_value_pct": 2.331,
+   "gross_pct": 2.97,
+   "net_pct": 0.822
+  },
+  {
+   "earnings_date": "2024-08-26",
+   "move_pct": -28.505,
+   "exit_value_pct": 28.505,
+   "gross_pct": -23.204,
+   "net_pct": -25.352
+  },
+  {
+   "earnings_date": "2024-11-21",
+   "move_pct": -10.645,
+   "exit_value_pct": 10.645,
+   "gross_pct": -5.344,
+   "net_pct": -7.492
+  },
+  {
+   "earnings_date": "2025-03-20",
+   "move_pct": 3.971,
+   "exit_value_pct": 4.147,
+   "gross_pct": 1.154,
+   "net_pct": -0.994
+  },
+  {
+   "earnings_date": "2025-05-27",
+   "move_pct": -13.636,
+   "exit_value_pct": 13.636,
+   "gross_pct": -8.335,
+   "net_pct": -10.483
+  },
+  {
+   "earnings_date": "2025-08-25",
+   "move_pct": 0.865,
+   "exit_value_pct": 2.252,
+   "gross_pct": 3.049,
+   "net_pct": 0.901
+  },
+  {
+   "earnings_date": "2025-11-18",
+   "move_pct": -7.331,
+   "exit_value_pct": 7.334,
+   "gross_pct": -2.033,
+   "net_pct": -4.181
+  },
+  {
+   "earnings_date": "2026-03-25",
+   "move_pct": 4.608,
+   "exit_value_pct": 4.712,
+   "gross_pct": 0.589,
+   "net_pct": -1.559
+  },
+  {
+   "earnings_date": "2026-05-27",
+   "move_pct": -10.379,
+   "exit_value_pct": 10.379,
+   "gross_pct": -5.078,
+   "net_pct": -7.226
+  },
+  {
+   "earnings_date": "2026-08-24",
+   "move_pct": -1.482,
+   "exit_value_pct": 2.439,
+   "gross_pct": 2.862,
+   "net_pct": 0.714
+  }
+ ],
+ "pnl_stats": {
+  "entry_premium_pct": 5.301,
+  "cost_pct": 2.1481,
+  "gross_avg_pct": -3.718,
+  "net_avg_pct": -5.866,
+  "net_avg_pct_of_premium": -110.7,
+  "gross_hit_rate": 50.0,
+  "net_hit_rate": 25.0,
+  "net_worst_pct": -25.352,
+  "net_tail25_pct": -16.92,
+  "net_avg_win_pct": 0.812,
+  "net_avg_loss_pct": -8.092
+ },
  "stats": {
   "n_quarters": 12,
   "avg_abs_move_pct": 8.679,

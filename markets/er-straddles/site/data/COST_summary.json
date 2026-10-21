@@ -1,9 +1,7 @@
 {
  "ticker": "COST",
- "as_of": "2026-10-21T15:19:02-05:00",
- "notes": [
-  "Next earnings timing unknown/unconfirmed -> assumed AMC (reaction next trading day) for expiry selection."
- ],
+ "as_of": "2026-10-21T16:27:24-05:00",
+ "notes": [],
  "error": null,
  "spot": 998.31,
  "history": [
@@ -188,8 +186,28 @@
    "eps_surprise_pct": 3.41
   }
  ],
+ "date_check": {
+  "yahoo_date": "2026-12-10",
+  "yahoo_timing": "AMC",
+  "yahoo_is_estimate": false,
+  "nasdaq_date": "2026-12-10",
+  "nasdaq_timing": "UNK",
+  "status": "Confirmed",
+  "detail": "date agrees",
+  "date": "2026-12-10",
+  "timing": "AMC",
+  "timing_src": "Yahoo",
+  "nasdaq_meta": {
+   "days_queried": 87,
+   "days_failed": 0,
+   "start": "2026-10-21",
+   "end": "2027-02-18"
+  }
+ },
+ "date_status": "Confirmed",
  "next_earnings": "2026-12-10",
- "timing": "UNK",
+ "timing": "AMC",
+ "timing_src": "Yahoo",
  "days_to_earnings": 50,
  "reaction_day": "2026-12-11",
  "post": {
@@ -206,27 +224,153 @@
   "spread": 8.6,
   "spread_pct_of_straddle": 12.9,
   "call_oi": 1545,
-  "put_oi": 386
+  "put_oi": 386,
+  "call_vol": 19,
+  "put_vol": 4
  },
  "implied_move_pct": 6.701,
  "days_event_to_expiry": 5,
+ "liquidity": {
+  "atm_oi": 1931,
+  "atm_volume": 23,
+  "spread_pct_of_mid": 12.9,
+  "grade": "F"
+ },
  "pre": {
   "expiry": "2026-11-27",
   "strike": 1000.0,
   "call": 24.225,
-  "put": 22.625,
+  "put": 22.6,
   "price_src": "mid",
-  "straddle": 46.85,
-  "implied_move_pct": 4.693,
+  "straddle": 46.825,
+  "implied_move_pct": 4.69,
   "T_years": 0.10714,
-  "iv_straddle": 0.1798,
-  "iv_yf": 0.1965,
-  "spread": 7.4,
-  "spread_pct_of_straddle": 15.8,
+  "iv_straddle": 0.1797,
+  "iv_yf": 0.1963,
+  "spread": 7.35,
+  "spread_pct_of_straddle": 15.7,
   "call_oi": 205,
-  "put_oi": 26
+  "put_oi": 26,
+  "call_vol": 25,
+  "put_vol": 22
  },
- "earnings_only_move_pct": 3.391,
+ "earnings_only_move_pct": 3.396,
+ "hist_vol_ex_earnings": 0.1682,
+ "model": {
+  "sigma_ex": 0.1797,
+  "sigma_ex_src": "pre-earnings expiry ATM IV",
+  "E_std_pct": 4.257,
+  "t_rem_days": 5,
+  "entry_premium_pct": 3.951,
+  "flag": null
+ },
+ "costs": {
+  "entry_slip_pct": 0.2154,
+  "exit_slip_pct": 0.2154,
+  "commission_pct": 0.0026,
+  "total_cost_pct": 0.4333,
+  "spread_estimated": false,
+  "spread_used": 8.6
+ },
+ "pnl_per_quarter": [
+  {
+   "earnings_date": "2023-12-14",
+   "move_pct": 4.445,
+   "exit_value_pct": 4.536,
+   "gross_pct": -0.585,
+   "net_pct": -1.018
+  },
+  {
+   "earnings_date": "2024-03-07",
+   "move_pct": -7.641,
+   "exit_value_pct": 7.642,
+   "gross_pct": -3.691,
+   "net_pct": -4.124
+  },
+  {
+   "earnings_date": "2024-06-06",
+   "move_pct": 1.0,
+   "exit_value_pct": 2.185,
+   "gross_pct": 1.766,
+   "net_pct": 1.333
+  },
+  {
+   "earnings_date": "2024-09-26",
+   "move_pct": -1.755,
+   "exit_value_pct": 2.473,
+   "gross_pct": 1.478,
+   "net_pct": 1.045
+  },
+  {
+   "earnings_date": "2024-12-12",
+   "move_pct": 0.097,
+   "exit_value_pct": 2.022,
+   "gross_pct": 1.929,
+   "net_pct": 1.496
+  },
+  {
+   "earnings_date": "2025-03-06",
+   "move_pct": -6.069,
+   "exit_value_pct": 6.08,
+   "gross_pct": -2.129,
+   "net_pct": -2.562
+  },
+  {
+   "earnings_date": "2025-05-29",
+   "move_pct": 3.117,
+   "exit_value_pct": 3.398,
+   "gross_pct": 0.553,
+   "net_pct": 0.12
+  },
+  {
+   "earnings_date": "2025-09-25",
+   "move_pct": -2.9,
+   "exit_value_pct": 3.202,
+   "gross_pct": 0.749,
+   "net_pct": 0.316
+  },
+  {
+   "earnings_date": "2025-12-11",
+   "move_pct": -0.001,
+   "exit_value_pct": 2.02,
+   "gross_pct": 1.931,
+   "net_pct": 1.498
+  },
+  {
+   "earnings_date": "2026-03-05",
+   "move_pct": 1.581,
+   "exit_value_pct": 2.414,
+   "gross_pct": 1.537,
+   "net_pct": 1.103
+  },
+  {
+   "earnings_date": "2026-05-28",
+   "move_pct": -3.907,
+   "exit_value_pct": 4.029,
+   "gross_pct": -0.078,
+   "net_pct": -0.512
+  },
+  {
+   "earnings_date": "2026-09-24",
+   "move_pct": 2.933,
+   "exit_value_pct": 3.257,
+   "gross_pct": 0.694,
+   "net_pct": 0.261
+  }
+ ],
+ "pnl_stats": {
+  "entry_premium_pct": 3.951,
+  "cost_pct": 0.4333,
+  "gross_avg_pct": 0.346,
+  "net_avg_pct": -0.087,
+  "net_avg_pct_of_premium": -2.2,
+  "gross_hit_rate": 66.7,
+  "net_hit_rate": 66.7,
+  "net_worst_pct": -4.124,
+  "net_tail25_pct": -2.568,
+  "net_avg_win_pct": 0.897,
+  "net_avg_loss_pct": -2.054
+ },
  "stats": {
   "n_quarters": 12,
   "avg_abs_move_pct": 2.954,
@@ -248,14 +392,14 @@
   "median_abs_move_pct": 2.916,
   "max_abs_move_pct": 7.641,
   "avg_abs_open_move_pct": 1.373,
-  "implied_over_avg": 1.148,
-  "implied_over_median": 1.163,
+  "implied_over_avg": 1.15,
+  "implied_over_median": 1.164,
   "pct_exceeded_implied": 33.3,
   "seller_hit_rate": 66.7,
-  "avg_pnl_pct_spot": 0.437,
-  "total_pnl_pct_spot": 5.246,
-  "worst_pnl_pct_spot": -4.25,
-  "avg_pnl_pct_premium": 12.9
+  "avg_pnl_pct_spot": 0.442,
+  "total_pnl_pct_spot": 5.306,
+  "worst_pnl_pct_spot": -4.245,
+  "avg_pnl_pct_premium": 13.0
  },
  "name": "Costco Wholesale Corporation",
  "chart_png": "/workspace/er-straddles/output/COST_moves.png"

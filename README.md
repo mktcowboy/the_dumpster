@@ -23,7 +23,7 @@ Most reports open directly in a browser; the live options board requires its loc
 | [Options — max pain](markets/options/) | SPY × QQQ max-pain report, QQQ universe scanner, and reproducible snapshot pipeline |
 | [QQQ max-pain board](markets/options/qqq-max-pain.html) | Ranked max-pain board for all loadable QQQ holdings |
 | [Options — live board](markets/options-live/) | Max-pain dashboard with click-through ticker details and charts; requires the [local server](markets/options-live/README.md) |
-| [Nasdaq-100 earnings straddles](markets/er-straddles/) | Seller's-view ATM earnings-straddle screen for Nasdaq-100 names, with the October 21, 2026 static snapshot |
+| [Nasdaq-100 earnings straddles](markets/er-straddles/) | Seller's-view ATM earnings-straddle screen for Nasdaq-100 names, with cost-aware P&L, liquidity grades, and the October 21, 2026 snapshot |
 | [Size & style ETFs](markets/size-style/styles.html) | Nine iShares S&P style-box ETFs charted together, with a 6M, 1Y, 3Y, and 5Y total-return table. Yahoo Finance through November 4, 2026 |
 | [SPDR sector ETFs](markets/size-style/sectors.html) | Companion chart of the 11 Select Sector SPDRs, daily and dividend-adjusted, with period returns. Yahoo Finance through November 4, 2026 |
 | [Fortune 500 2026 Atlas](f500/f500_explorer.html) | Single-file interactive explorer of the 2026 Fortune 500, with a dashboard, sortable table, HQ map, industry treemap, relationship network, Public vs Private ownership tab, and a profile for every company |

@@ -21,6 +21,9 @@ def main(argv):
     syms = syms[:lim] if lim else syms
     results, failures = [], []
     t0 = time.time()
+    from earnings_cal import get_index
+    meta = get_index(now_chi().date())[1]   # prefetch Nasdaq earnings calendar once
+    print("nasdaq calendar:", meta, flush=True)
     for i, s in enumerate(syms, 1):
         res = None
         for attempt in range(2):
@@ -44,15 +47,25 @@ def main(argv):
         results.append(res)
         st = res.get("stats", {})
         print(f"[{i}/{len(syms)}] {t} next={res.get('next_earnings')} {res.get('timing')} impl={res.get('implied_move_pct')} "
-              f"eo={res.get('earnings_only_move_pct')} avg={st.get('avg_abs_move_pct')} hit={st.get('seller_hit_rate')}", flush=True)
+              f"eo={res.get('earnings_only_move_pct')} {res.get('date_status')} liq={(res.get('liquidity') or {}).get('grade')} net={(res.get('pnl_stats') or {}).get('net_avg_pct')} avg={st.get('avg_abs_move_pct')} hit={st.get('seller_hit_rate')}", flush=True)
         time.sleep(0.5)
-    out = {"generated": now_chi().isoformat(timespec="seconds"), "n_ok": len(results), "n_fail": len(failures),
+    from collections import Counter
+    from earnings_cal import get_index
+    date_counts = dict(Counter(r.get("date_status", "Unconfirmed") for r in results))
+    liq_counts = dict(Counter((r.get("liquidity") or {}).get("grade", "n/a") for r in results))
+    print("date status:", date_counts, "| liquidity:", liq_counts)
+    out = {"date_status_counts": date_counts, "liquidity_counts": liq_counts,
+           "nasdaq_calendar": get_index(now_chi().date())[1], "generated": now_chi().isoformat(timespec="seconds"), "n_ok": len(results), "n_fail": len(failures),
            "failures": failures, "results": results}
     json.dump(out, open(f"{OUT}/results.json", "w"), indent=1, default=str)
     print(f"batch done in {time.time()-t0:.0f}s: {len(results)} ok, {len(failures)} failed -> {OUT}/results.json")
     if snap:
         import snapshot
         snapshot.run(syms)
+    import crush
+    ev = crush.compute()
+    ev.to_csv(crush.OUTCSV, index=False)
+    print(f"crush events: {len(ev)} -> {crush.OUTCSV}")
 
 
 if __name__ == "__main__":

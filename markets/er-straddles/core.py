@@ -38,6 +38,9 @@ def classify_timing(ts: pd.Timestamp) -> str:
         return "BMO"
     if mins >= 16 * 60:
         return "AMC"
+    u = t.tz_convert("UTC")
+    if u.hour == 20 and u.minute == 0:   # Yahoo's "after close" stamp (16:00 EDT) shown as 15:00 EST after DST ends
+        return "AMC"
     return "UNK"   # intraday stamps (e.g. 15:00) are usually placeholders / unconfirmed
 
 
@@ -216,7 +219,9 @@ def atm_straddle(tk: yf.Ticker, expiry: str, spot: float) -> dict:
             "spread": None if spread is None else round(spread, 4),
             "spread_pct_of_straddle": None if not spread else round(100 * spread / straddle, 1),
             "call_oi": int(c.loc[K].get("openInterest") or 0) if pd.notna(c.loc[K].get("openInterest")) else 0,
-            "put_oi": int(p.loc[K].get("openInterest") or 0) if pd.notna(p.loc[K].get("openInterest")) else 0}
+            "put_oi": int(p.loc[K].get("openInterest") or 0) if pd.notna(p.loc[K].get("openInterest")) else 0,
+            "call_vol": int(c.loc[K].get("volume")) if pd.notna(c.loc[K].get("volume")) else 0,
+            "put_vol": int(p.loc[K].get("volume")) if pd.notna(p.loc[K].get("volume")) else 0}
 
 
 def pick_expiries(expiries, react_day: dt.date):
@@ -259,6 +264,125 @@ def seller_stats(moves: pd.DataFrame, implied: float | None, col="abs_close_pct"
     return s
 
 
+# ---------------------------------------------------------------- liquidity
+def liquidity(post: dict, cfg=None) -> dict:
+    from config import CFG
+    cfg = cfg or CFG
+    oi = (post.get("call_oi") or 0) + (post.get("put_oi") or 0)
+    vol = (post.get("call_vol") or 0) + (post.get("put_vol") or 0)
+    sp = post.get("spread_pct_of_straddle")
+    grade = "F"
+    if sp is not None and post.get("price_src") == "mid":
+        for g in ("A", "B", "C"):
+            t = cfg["liquidity_grades"][g]
+            if oi >= t["min_oi"] and vol >= t["min_volume"] and sp <= t["max_spread_pct"]:
+                grade = g
+                break
+    return {"atm_oi": oi, "atm_volume": vol, "spread_pct_of_mid": sp, "grade": grade}
+
+
+# ---------------------------------------------------------------- earnings event resolution (Yahoo x Nasdaq)
+def resolve_event(tk: yf.Ticker, nxt: dict | None, symbol: str) -> dict:
+    from earnings_cal import lookup, reconcile
+    today = now_chi().date()
+    y_est = None
+    try:
+        y_est = tk.info.get("isEarningsDateEstimate")
+    except Exception:
+        pass
+    try:
+        hit, meta = lookup(symbol, today)
+    except Exception as e:
+        hit, meta = None, {"error": str(e)}
+    r = reconcile(nxt["date"] if nxt else None, nxt["timing"] if nxt else "UNK", y_est, hit)
+    r["nasdaq_meta"] = meta
+    return r
+
+
+# ---------------------------------------------------------------- cost-aware P&L model
+def ex_earnings_vol(h: pd.DataFrame, moves: pd.DataFrame, lookback=63) -> float | None:
+    """Annualized realized vol of the last `lookback` closes, excluding earnings reaction days."""
+    r = np.log(h["Close"]).diff().dropna()
+    if moves is not None and len(moves):
+        excl = set(pd.to_datetime(moves["reaction_date"]))
+        r = r[~r.index.isin(excl)]
+    r = r.tail(lookback)
+    return float(r.std() * math.sqrt(252)) if len(r) > 20 else None
+
+
+def residual_model(post: dict, pre: dict | None, react_day: dt.date, hist_vol: float | None) -> dict | None:
+    """Term-structure model (documented on the site):
+      sigma_ex  = ATM IV of the expiry before earnings (fallback: 63d realized vol ex-earnings days)
+      E^2       = sigma_post^2*T_post - sigma_ex^2*(T_post - 1d)        (earnings-day variance)
+      T_rem     = trading days from reaction-day close to post expiry
+      entry     = ATM straddle at the close before the event with variance E^2 + sigma_ex^2*T_rem (+ 1 day of time)
+      exit(m)   = BS straddle at reaction-day close: spot*(1+m), strike = old spot, T_rem, sigma_ex  (residual time value)
+    All in % of spot, r=0."""
+    s1, T1 = post.get("iv_straddle"), post.get("T_years")
+    if not s1 or not T1:
+        return None
+    if pre and pre.get("iv_straddle"):
+        s_ex, src = pre["iv_straddle"], "pre-earnings expiry ATM IV"
+    elif hist_vol:
+        s_ex, src = hist_vol, "63d realized vol ex-earnings (proxy: no pre-earnings expiry)"
+    else:
+        return None
+    exp = dt.date.fromisoformat(post["expiry"])
+    t_rem = max(int(np.busday_count(react_day, exp)), 0) / 252
+    E2 = s1 * s1 * T1 - s_ex * s_ex * max(T1 - 1 / 252, 0)
+    flag = None
+    if E2 <= 0:
+        E2, flag = 0.0, "term structure shows no earnings premium (E=0)"
+    T_e = t_rem + 1 / 252
+    sig_e = math.sqrt((E2 + s_ex * s_ex * t_rem) / T_e)
+    entry = 100 * bs_straddle(1.0, 1.0, T_e, sig_e, r=0.0)
+    return {"sigma_ex": round(s_ex, 4), "sigma_ex_src": src, "E_std_pct": round(100 * math.sqrt(E2), 3),
+            "t_rem_days": int(round(t_rem * 252)), "entry_premium_pct": round(entry, 3), "flag": flag}
+
+
+def exit_value_pct(m: float, model: dict) -> float:
+    return 100 * bs_straddle(1.0 + m, 1.0, model["t_rem_days"] / 252, model["sigma_ex"], r=0.0)
+
+
+def costs_pct(post: dict, spot: float, cfg=None) -> dict:
+    from config import CFG
+    cfg = cfg or CFG
+    spread = post.get("spread")
+    est = False
+    if spread is None or post.get("price_src") != "mid":
+        spread = post["straddle"] * cfg["default_spread_pct_of_mid_if_unknown"] / 100
+        est = True
+    half = spread / 2
+    entry = cfg["entry_slippage_frac_of_half_spread"] * half / spot * 100
+    exit_ = cfg["exit_slippage_frac_of_half_spread"] * half * cfg["exit_spread_multiplier"] / spot * 100
+    comm = 4 * cfg["commission_per_contract"] / (100 * spot) * 100   # 2 legs x (open+close), per 1 straddle = 100 sh
+    return {"entry_slip_pct": round(entry, 4), "exit_slip_pct": round(exit_, 4), "commission_pct": round(comm, 4),
+            "total_cost_pct": round(entry + exit_ + comm, 4), "spread_estimated": est, "spread_used": round(spread, 4)}
+
+
+def cost_pnl(moves: pd.DataFrame, model: dict | None, costs: dict | None) -> tuple[list, dict]:
+    if moves is None or moves.empty or not model or not costs:
+        return [], {}
+    prem = model["entry_premium_pct"]
+    per = []
+    for _, x in moves.iterrows():
+        m = x["move_close_pct"] / 100
+        ex = exit_value_pct(m, model)
+        g = prem - ex
+        per.append({"earnings_date": x["earnings_date"], "move_pct": x["move_close_pct"], "exit_value_pct": round(ex, 3),
+                    "gross_pct": round(g, 3), "net_pct": round(g - costs["total_cost_pct"], 3)})
+    net = np.array([p["net_pct"] for p in per]); gross = np.array([p["gross_pct"] for p in per])
+    k = max(1, math.ceil(len(net) * 0.25))
+    st = {"entry_premium_pct": prem, "cost_pct": costs["total_cost_pct"],
+          "gross_avg_pct": round(gross.mean(), 3), "net_avg_pct": round(net.mean(), 3),
+          "net_avg_pct_of_premium": round(100 * net.mean() / prem, 1) if prem else None,
+          "gross_hit_rate": round(100 * (gross > 0).mean(), 1), "net_hit_rate": round(100 * (net > 0).mean(), 1),
+          "net_worst_pct": round(net.min(), 3), "net_tail25_pct": round(np.sort(net)[:k].mean(), 3),
+          "net_avg_win_pct": round(net[net > 0].mean(), 3) if (net > 0).any() else None,
+          "net_avg_loss_pct": round(net[net <= 0].mean(), 3) if (net <= 0).any() else None}
+    return per, st
+
+
 # ---------------------------------------------------------------- top-level
 def analyze(symbol: str) -> dict:
     symbol = symbol.upper().replace(".", "-")
@@ -279,15 +403,24 @@ def analyze(symbol: str) -> dict:
         res["notes"].append(f"{int(moves['timing_inferred'].sum())} past quarter(s) had unknown BMO/AMC timing; "
                             "reaction day inferred from the larger overnight gap.")
     res["history"] = moves.to_dict("records")
-    if nxt:
-        d = nxt["date"]
+    ev = resolve_event(tk, nxt, symbol)
+    res["date_check"] = {k: (v.isoformat() if isinstance(v, dt.date) else v) for k, v in ev.items()}
+    res["date_status"] = ev["status"]
+    if ev["status"] == "Mismatch":
+        res["notes"].append(f"Earnings date/timing mismatch ({ev['detail']}); using {ev['date']} {ev['timing']} "
+                            f"({ev['timing_src']}), expiry chosen to cover both candidates.")
+    if ev.get("date"):
+        d, timing = ev["date"], ev["timing"] or "UNK"
         res["next_earnings"] = d.isoformat()
-        res["timing"] = nxt["timing"]
+        res["timing"] = timing
+        res["timing_src"] = ev.get("timing_src")
         res["days_to_earnings"] = (d - now_chi().date()).days
-        rd = reaction_day_future(d, nxt["timing"])
+        rd = reaction_day_future(d, timing)
+        if ev.get("alt_date"):
+            rd = max(rd, reaction_day_future(ev["alt_date"], ev.get("alt_timing") or "UNK"))
         res["reaction_day"] = rd.isoformat()
-        if nxt["timing"] == "UNK":
-            res["notes"].append("Next earnings timing unknown/unconfirmed -> assumed AMC (reaction next trading day) "
+        if timing == "UNK":
+            res["notes"].append("Next earnings timing unknown in all sources -> assumed AMC (reaction next trading day) "
                                 "for expiry selection.")
         expiries = retry(lambda: tk.options)
         if not expiries:
@@ -299,9 +432,11 @@ def analyze(symbol: str) -> dict:
                 res["post"] = post
                 res["implied_move_pct"] = post["implied_move_pct"]
                 res["days_event_to_expiry"] = int(np.busday_count(rd, dt.date.fromisoformat(post_e)))
+                res["liquidity"] = liquidity(post)
                 if res["days_event_to_expiry"] > 5:
                     res["notes"].append(f"Post-earnings expiry is {res['days_event_to_expiry']} trading days after the "
                                         "reaction day; straddle includes material non-earnings time value.")
+                pre = None
                 if pre_e:
                     try:
                         pre = atm_straddle(tk, pre_e, spot)
@@ -311,6 +446,18 @@ def analyze(symbol: str) -> dict:
                         res["notes"].append(f"Pre-earnings expiry {pre_e} unusable: {e}")
                 if post["price_src"] != "mid":
                     res["notes"].append(f"Straddle priced from last trade ({post['price_src']}), not bid/ask mid.")
+                hv = ex_earnings_vol(hist, moves)
+                res["hist_vol_ex_earnings"] = None if hv is None else round(hv, 4)
+                model = residual_model(post, pre, rd, hv)
+                res["model"] = model
+                if model:
+                    res["costs"] = costs_pct(post, spot)
+                    if res["costs"]["spread_estimated"]:
+                        res["notes"].append("Bid/ask spread unavailable; costs use default spread % from config.")
+                    if model.get("flag"):
+                        res["notes"].append("Model: " + model["flag"])
+                    per, st = cost_pnl(moves, model, res["costs"])
+                    res["pnl_per_quarter"], res["pnl_stats"] = per, st
             else:
                 res["notes"].append("No listed expiry after the earnings reaction day yet.")
     else:
