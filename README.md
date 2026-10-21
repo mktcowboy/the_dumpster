@@ -37,8 +37,6 @@ Most projects are self-contained HTML pages that open directly in a browser.
 | Project | What it is |
 | --- | --- |
 | [Epigenetics deep dive](epigenetics-deep-dive/) | Long-form, journal-style review of epigenetics, with 72 cited papers and linked sources |
-| [Oklahoma storage](oklahoma-storage/) | Statewide self-storage market report: 865 directory records, ownership profiles, and pricing observations |
-| [Landfill methane & RNG](landfill-methane-rng/) | How landfill gas is captured and converted to renewable natural gas, plus Oklahoma projects |
 | [Rent-seeking report](rent-seeking-report/) | Economic rents, their history, and 50 ways to create rental income today |
 | [Microgreens business data](other_biz/microgreens-business-data/) | Research dossier for a rack-based microgreens operation in the OKC area, with unit economics |
 

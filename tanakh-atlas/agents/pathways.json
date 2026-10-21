@@ -1,0 +1,389 @@
+[
+  {
+    "id": "creation-to-covenant",
+    "title": "Creation to Covenant",
+    "dek": "From the first word of Genesis to the last speeches of Moses: how a universal creation becomes the ground of a particular covenant.",
+    "intro": "The Bible begins with the widest possible subject—the heavens and the earth—and narrows to one family, one land, one mountain. This path follows that narrowing. It reads creation, Eden, the flood, the call of Abraham, the covenant between the pieces, the binding of Isaac, Sinai, and the closing choices of Deuteronomy. The question is not whether these stories happened as written but how they were arranged to answer a question: what does it mean to be chosen, and what does the choice demand?",
+    "stops": [
+      {
+        "work": "genesis",
+        "ref": "Genesis 1:1–2:3",
+        "title": "The First Seven Days",
+        "text": "Genesis 1 is less a scientific account than a liturgical architecture: six days of making, one day of rest. Light is separated from darkness, waters from waters, and the human is made in the image of God, male and female. Ancient Near Eastern creation stories feature divine combat; here God speaks and it is so. The chapter's calm is polemical. Notice that the Sabbath crowns creation, not humanity. That ending will govern the whole canon—and it leads directly to the garden, where the story becomes intimate and dangerous."
+      },
+      {
+        "work": "genesis",
+        "ref": "Genesis 2:4–3:24",
+        "title": "The Garden and the Choice",
+        "text": "Genesis 2 tells the creation again, this time close up: dust, breath, a garden, a companion. The tree of knowledge and the serpent introduce desire, doubt, and limits. When the man and woman eat, they do not become gods; they become ashamed, and they are sent east of Eden. The story explains mortality, labor, and exile without blaming a rival deity. Read with chapter 1, it holds two truths together: the world is good, and human freedom can wound it. The next stop is the first great unmaking."
+      },
+      {
+        "work": "genesis",
+        "ref": "Genesis 6:5–9:17",
+        "title": "The Flood and the Rainbow",
+        "text": "Genesis 6–9 is a story of cosmic regret. Violence fills the earth, and the flood undoes creation's order; Noah builds an ark, and the waters rise. After the deluge, God sets a bow in the clouds and makes a covenant not with Israel alone but with all flesh. The narrative preserves older flood traditions and reworks them toward restraint. Notice the refrain of remembering and the promise that the seasons will not cease. It ends the primeval history and clears the stage for one family."
+      },
+      {
+        "work": "genesis",
+        "ref": "Genesis 12:1–3",
+        "title": "The Call",
+        "text": "Genesis 12 begins with an imperative: leave your land, your birthplace, your father's house. Abraham is given a promise of peoplehood, land, and blessing—and the startling clause that all families of the earth will be blessed through him. The text does not explain why Abraham is chosen. He simply goes. Famine immediately tests the promise, and he lies about Sarah to survive. The canon's founder is not a hero of flawless virtue but a migrant who trusts and doubts. That ambiguity will persist."
+      },
+      {
+        "work": "genesis",
+        "ref": "Genesis 15",
+        "title": "Between the Pieces",
+        "text": "In Genesis 15 Abraham complains that he has no heir. God takes him outside to count stars, and the narrator says Abraham trusted. Then comes a strange covenant rite: animals are split, a smoking fire pot and a torch pass between the pieces, and God binds himself by oath. The scene is ancient, visceral, and one-sided; Abraham sleeps while God commits. The promise includes land and a future slavery, then exodus. The covenant is not a contract between equals. It is a self-binding of the greater party, and it leads to the hardest test."
+      },
+      {
+        "work": "genesis",
+        "ref": "Genesis 22:1–19",
+        "title": "The Binding",
+        "text": "Genesis 22 is the canon's most disturbing chapter. God tests Abraham by asking for Isaac, the son of the promise. The journey takes three days; the text withholds Abraham's thoughts. At the last moment a ram is provided, and the blessing is renewed. Readers have seen a polemic against child sacrifice, a meditation on faith, and a warning about religious violence. The story does not resolve its own terror. It leaves a silence that commentary has filled for two thousand years, and it turns the promise into something that must be surrendered."
+      },
+      {
+        "work": "exodus",
+        "ref": "Exodus 19:1–20:18",
+        "title": "The Mountain",
+        "text": "Exodus 19–20 describes a revelation that is public, terrifying, and deliberately incomplete. Israel camps at Sinai; God descends in fire and smoke; Moses ascends and descends as mediator. The Decalogue is spoken amid thunder, but the people beg for distance. The text gives two versions of the event—one in Exodus, one in Deuteronomy—and later tradition multiplies the voices. What was actually heard is a classic dispute. The canon's claim is that covenant is founded on encounter, not merely on ideas."
+      },
+      {
+        "work": "deuteronomy",
+        "ref": "Deuteronomy 6:4–9",
+        "title": "Hear, O Israel",
+        "text": "Deuteronomy is Moses' farewell, and chapter 6 gives it a creed: hear, Israel, the Lord our God, the Lord is one. The command is not only to believe but to love, teach, bind, and remember. The Shema becomes the daily recitation of Jewish life and the deathbed confession of martyrs. Notice the framing: a wandering people is told to remember when it settles, builds houses, and grows comfortable. The verse turns memory into a discipline and prepares the reader for the blessings and curses of the book's ending."
+      },
+      {
+        "work": "deuteronomy",
+        "ref": "Deuteronomy 30:15–20",
+        "title": "Choose Life",
+        "text": "Deuteronomy 30 sets two paths before Israel: life and good, death and evil. Heaven and earth are called as witnesses; the command is not in heaven, not beyond the sea, but near, in mouth and heart. The chapter promises return after exile and insists that the choice is real. The canon ends its Torah not with arrival but with a decision, and Moses dies within sight of the land. That unfinished ending is the point: the story hands the reader the obligation to continue it."
+      }
+    ],
+    "themes": ["creation", "covenant", "exodus", "revelation", "chosenness", "law-and-narrative", "memory"]
+  },
+  {
+    "id": "making-of-the-canon",
+    "title": "The Making of the Canon",
+    "dek": "Why the Hebrew Bible has twenty-four books, three divisions, and a last verse that opens a door.",
+    "intro": "The Hebrew Bible is a library with a shape, and the shape is an argument. Its twenty-four books fall into Torah, Prophets, and Writings; the order runs from law to prophecy to the gathered voices of worship and wisdom. Christian Old Testaments count thirty-nine books and often end with Malachi. This path follows the seams—the end of Deuteronomy, the Former Prophets, Isaiah, Jeremiah, Psalms, Daniel, and Chronicles—to see how a library became a canon and why its arrangement still changes how the books are read.",
+    "stops": [
+      {
+        "work": "deuteronomy",
+        "ref": "Deuteronomy 31:24–26",
+        "title": "The Book Beside the Ark",
+        "text": "At the end of Deuteronomy, Moses writes the Torah and gives it to the Levites, to be placed beside the ark of the covenant as a witness against Israel. The gesture is foundational: scripture is not only proclaimed but deposited, preserved, and made available for future failure and return. The book is complete, yet the story is not. Joshua must still cross the river. Canon begins here, in the gap between a finished scroll and an unfinished mission. The scroll is a witness, not a talisman; it can be opened and read against the very community that keeps it."
+      },
+      {
+        "work": "joshua",
+        "ref": "Joshua 1:1–9",
+        "title": "The Command to Cross",
+        "text": "Moses is dead; the voice now addresses Joshua. The command is repeated: be strong and courageous, do not turn from the Torah, meditate on it day and night. The Former Prophets begin not with conquest but with a book. This is the Hebrew order's logic: Torah first, then the narrative of how Israel did or did not keep it. Joshua's successes and failures will be measured by the scroll he carries. The next stop shows what happens when the measure is applied to a king."
+      },
+      {
+        "work": "samuel",
+        "ref": "2 Samuel 7",
+        "title": "The Promise to David",
+        "text": "David wants to build God a house; God instead promises David a house, a dynasty. Nathan's oracle is the theological center of the monarchy: an eternal throne, a father-son relationship, and a conditional clause about discipline. The promise survives the worst kings, and it becomes the raw material of messianic hope. Notice that the Temple is not the point; the dynasty is. Later, when the Temple falls, this chapter will be reread as a promise that outlives architecture. The oracle also complicates any simple theology of divine favor: the dynasty is chosen, yet its kings remain accountable."
+      },
+      {
+        "work": "kings",
+        "ref": "2 Kings 17",
+        "title": "The Verdict on the North",
+        "text": "The fall of Samaria is narrated as a courtroom verdict. The northern kingdom is charged with idolatry, rejection of the covenant, and refusal to listen to the prophets. The chapter lists deportations and resettlements, then explains them theologically. It is a southern account, written by the survivors, and it shapes the canon's moral interpretation of history. The ten tribes disappear into memory. From this point, the canon's question becomes sharper: if the north could fall, could Jerusalem? The chapter's editors want the reader to feel the inevitability of judgment, even as they preserve the grief of the exiles."
+      },
+      {
+        "work": "isaiah",
+        "ref": "Isaiah 6",
+        "title": "Holy, Holy, Holy",
+        "text": "Isaiah's vision places him in the Temple, where the thresholds shake and the seraphim call to one another. The prophet is a man of unclean lips among a people of unclean lips; a coal touches his mouth and he is commissioned. The scene is liturgical, vertical, and overwhelming. It gives the canon its language of holiness and its model of the prophet as one who is sent, not self-appointed. Isaiah's visions will accompany Judah through the Assyrian crisis and, in later chapters, through exile."
+      },
+      {
+        "work": "jeremiah",
+        "ref": "Jeremiah 36",
+        "title": "The Scroll That Would Not Die",
+        "text": "Jeremiah dictates his oracles to Baruch, who reads them in the Temple. Officials take the scroll to King Jehoiakim, who cuts it apart and burns it piece by piece. Jeremiah dictates it again, with more words added. The episode is a parable of canon-making: revelation is written, resisted, destroyed, and rewritten. It also shows the political stakes of prophecy. The scroll survives not because a king preserves it but because a community copies it. That community is the canon's carrier."
+      },
+      {
+        "work": "psalms",
+        "ref": "Psalm 1",
+        "title": "The Gateway to the Writings",
+        "text": "Psalm 1 is a doorway. It contrasts the righteous, who meditate on Torah day and night, with the wicked, who are like chaff. The image is arboreal: the righteous are planted by streams of water, rooted and fruitful. The Psalter begins with a claim that the book of Psalms is itself Torah, a text to be studied and lived. In the Hebrew order, Psalms opens the Writings, the third division of the canon. It teaches the reader how to pray and how to read."
+      },
+      {
+        "work": "daniel",
+        "ref": "Daniel 7",
+        "title": "The Beasts and the Ancient of Days",
+        "text": "Daniel 7 reports a night vision: four beasts rise from the sea, then thrones are set and an Ancient of Days takes his seat. One like a son of man comes with the clouds and receives dominion. The imagery is apocalyptic, symbolic, and politically charged; empires are beasts, and God is the judge of history. In the Hebrew Bible, Daniel belongs among the Writings, not the Prophets, a placement that surprises Christian readers. The canon's order is also an argument about what kind of book this is."
+      },
+      {
+        "work": "chronicles",
+        "ref": "2 Chronicles 36:22–23",
+        "title": "The Last Verse",
+        "text": "The Hebrew Bible ends, in its usual printed order, with Chronicles and the decree of Cyrus: whoever is among you, let him go up. The ending is open, a door into return. Protestant Old Testaments usually end with Malachi and the promise of Elijah, so the same books produce a different final note. The difference is not merely editorial. The Hebrew order places Torah first and Writings last, making the canon a curriculum of covenant, prophecy, and prayer. Its last word is invitation."
+      }
+    ],
+    "themes": ["canon", "prophecy", "interpretation", "memory", "exile-and-return", "torah-study", "covenant"]
+  },
+  {
+    "id": "sinai-to-study-house",
+    "title": "Sinai to the Study House",
+    "dek": "How a mountain revelation becomes a tradition of argument, commentary, and daily practice.",
+    "intro": "Judaism calls itself a chain of tradition, and the chain has a founding scene: Moses receives Torah at Sinai and hands it to Joshua. But the verse in Pirkei Avot is not a history lesson; it is a claim about authority. This path follows that claim from the mountain to the Mishnah, the Talmud's arguments, Rashi's page, and the legal code that still shapes practice. It asks how revelation becomes a study house—and why disagreement is preserved rather than silenced.",
+    "stops": [
+      {
+        "work": "exodus",
+        "ref": "Exodus 19:1–20:18",
+        "title": "The Assembly at the Mountain",
+        "text": "Israel arrives at Sinai and is told that it will be a kingdom of priests and a holy nation. God descends in fire; Moses goes up and down as the mediator; the Ten Words are spoken to the whole assembly. The scene is both public and guarded: the people stand at a distance while Moses approaches the thick darkness. Later tradition asks what each person heard. The text itself gives no single answer. That uncertainty is not a flaw; it is the space in which interpretation begins."
+      },
+      {
+        "work": "pirkei-avot",
+        "ref": "Mishnah Avot 1:1",
+        "title": "Moses Received Torah",
+        "text": "The first sentence of Pirkei Avot supplies the chain: Moses received Torah from Sinai and handed it to Joshua, Joshua to the elders, the elders to the prophets, and the prophets to the men of the Great Assembly. The claim is not a documented chronology but a theory of authority: what the rabbis teach is connected to the mountain. The same mishnah names three pillars—Torah, worship, and deeds of loving-kindness. The chain is a mandate to continue, not merely to repeat."
+      },
+      {
+        "work": "mishnah",
+        "ref": "Mishnah Eduyot 1:1",
+        "title": "Why Disputes Are Kept",
+        "text": "Eduyot opens by asking why the words of the schools of Shammai and Hillel are recorded when the law follows only one of them. The answer is that a later court may need to rely on either opinion, and that no sage should stubbornly insist on his own view. The tractate is a monument to minority opinions. In the Mishnah, disagreement is not an embarrassment to be erased; it is evidence of careful transmission. This editorial choice makes argument itself a canonical form."
+      },
+      {
+        "work": "talmud-bavli",
+        "ref": "Eruvin 13b",
+        "title": "These and These",
+        "text": "The Talmud asks why the law follows the school of Hillel when the school of Shammai was sharper. The answer: Hillel's students were kindly and humble, studied both their own words and those of their opponents, and taught the rival opinion before their own. Elsewhere the Talmud attributes to a heavenly voice the declaration that both are words of the living God, though the law follows Hillel. The passage does not make all readings equal. It makes the argument sacred, and it teaches a way of losing."
+      },
+      {
+        "work": "rashi-commentary",
+        "ref": "Genesis 1:1",
+        "title": "The Page Begins",
+        "text": "Rashi opens his Torah commentary by quoting Rabbi Yitzchak: the Torah should have begun with the command to sanctify the new moon, the first commandment given to Israel. Why, then, begin with creation? To show that the land belongs to God, who gives it to whom God chooses. The comment is at once a textual question and a polemic against those who claim the land by prior possession. Rashi teaches the reader to ask why a book begins where it does. Every later comment stands on that question."
+      },
+      {
+        "work": "mishneh-torah",
+        "ref": "Mishneh Torah, Yesodei ha-Torah 1:1",
+        "title": "The Code",
+        "text": "Maimonides begins his legal code not with a ritual but with a metaphysical claim: the foundation of foundations is to know that there is a First Being who gives existence to everything. Law is thus grounded in theology, and theology is expressed through law. The Mishneh Torah then organizes the entire tradition into fourteen books, from knowledge to sacrifice to civil governance. Its confidence is breathtaking and its omissions controversial. For the chain of tradition, it is the moment when commentary becomes architecture."
+      },
+      {
+        "work": "shulchan-aruch",
+        "ref": "Shulchan Aruch, Orach Chayim 1:1",
+        "title": "The Day Begins",
+        "text": "The Shulchan Aruch opens with the body: one should strengthen oneself like a lion to rise in the morning and serve the Creator. It invokes the verse that sets God always before the worshipper, and it turns awakening into a commandment. From there the code moves through washing, prayer, study, meals, and work, ordering the whole day. The chain that began at Sinai now reaches a page of practical instruction. Revelation has become a schedule—not to diminish it, but to make it livable."
+      }
+    ],
+    "themes": ["revelation", "oral-torah", "chain-of-tradition", "interpretation", "halakhah", "machloket", "torah-study"]
+  },
+  {
+    "id": "commentators-desk",
+    "title": "The Commentator's Desk",
+    "dek": "Seven readers around one verse: how Jewish commentary turns a sentence into a conversation.",
+    "intro": "A biblical verse is not a closed box. Jewish commentary opens it from many sides: grammar, law, philosophy, mysticism, and the stubborn plain sense. This path takes the first verse of Genesis and watches several readers work. The midrash imagines Torah as a blueprint; Rashi asks why the book begins here at all; Ibn Ezra worries at the grammar; Maimonides turns the verse into metaphysics; Nachmanides hears the act of creation itself. The goal is not to choose one reading but to see how they argue.",
+    "stops": [
+      {
+        "work": "genesis",
+        "ref": "Genesis 1:1",
+        "title": "The Verse",
+        "text": "In Hebrew, Genesis 1:1 is seven words: bereshit bara Elohim et hashamayim ve'et ha'aretz. The first word can mean in the beginning, or with a beginning, or at the start of; the verb bara is used in the Bible only with God as subject. The sentence has no article before its opening noun, which grammarians have argued about for centuries. Everything that follows in this path is a way of inhabiting that small uncertainty. The verse is short enough to memorize and strange enough to require help."
+      },
+      {
+        "work": "midrash",
+        "ref": "Genesis Rabbah 1:1",
+        "title": "The Blueprint",
+        "text": "Genesis Rabbah opens with a parable: a king builds a palace, and the architect uses a plan. So God looked into the Torah and created the world. The midrash is not saying that a physical book existed before creation; it is saying that Torah is the intelligible order of things, the pattern God consulted. The image gives scripture a cosmic dignity and makes study a form of cosmology. It also creates a problem: if Torah is the plan, what does it mean when the plan seems to contradict the building?"
+      },
+      {
+        "work": "rashi-commentary",
+        "ref": "Genesis 1:1",
+        "title": "Why Begin Here?",
+        "text": "Rashi's first comment is a question from Rabbi Yitzchak: the Torah should have begun with Exodus 12, the first commandment given to Israel. Why start with creation? To show the nations that the earth belongs to God, who apportions it as God wills. The answer is theological and polemical at once. Rashi reads the opening not as a science lesson but as a title deed. His comment also teaches a method: notice the order of the text, ask what it is doing, then answer with another verse."
+      },
+      {
+        "work": "genesis",
+        "ref": "Genesis 1:1",
+        "title": "The Grammarian",
+        "text": "Ibn Ezra reads the verse as a philologist. He notes the absence of the article, the syntax of bara, and the plural form Elohim joined to a singular verb. He is willing to say that a word has more than one possible sense, and he sometimes hints at a secret he will not spell out. His commentary is famously cryptic: he tells the wise reader to understand. The effect is to make the verse a problem in language, not only in doctrine. Grammar becomes a way of honoring the text's precision."
+      },
+      {
+        "work": "guide-perplexed",
+        "ref": "Guide for the Perplexed II:30",
+        "title": "The Philosopher",
+        "text": "Maimonides reads Genesis 1 through the lens of Aristotelian physics and metaphysics. He argues that the account of creation must be understood parabolically, that God is not a body, and that the world's origin cannot be settled by the plain sense alone. The Guide addresses a reader who is loyal to Torah but disturbed by philosophy. Its method is to show that scripture and reason can be reconciled without pretending the difficulties are simple. The verse becomes a gate to metaphysics—and to the limits of language about God."
+      },
+      {
+        "work": "genesis",
+        "ref": "Genesis 1:1",
+        "title": "The Mystic",
+        "text": "Nachmanides reads the same words as a map of being. He insists that creation is ex nihilo, that the Hebrew letters carry hidden meaning, and that the account of the six days describes a structured unfolding rather than ordinary time. He often disagrees with Ibn Ezra and sometimes with Maimonides, but he shares their conviction that the verse is inexhaustible. His commentary turns grammar into theology and theology into mystery. For him, the beginning is not a date; it is the structure of everything that exists."
+      },
+      {
+        "work": "genesis",
+        "ref": "Genesis 1:1",
+        "title": "The Modern Reader",
+        "text": "Modern scholarship reads Genesis 1 against the literature of the ancient Near East, especially Babylonian creation traditions, and asks about sources, priests, and exile. It notices that the chapter's calm may answer the violence of older myths, and that its Sabbath structure reflects a temple-centered imagination. Historical criticism does not necessarily cancel theological reading; it changes the questions. The verse now stands in a room crowded with ancient texts, medieval commentators, and modern readers. The conversation continues, which is what a canon is for."
+      }
+    ],
+    "themes": ["interpretation", "creation", "revelation", "mysticism", "torah-study", "canon"]
+  },
+  {
+    "id": "law-and-life",
+    "title": "Law and Life",
+    "dek": "How the Mishnah's categories become the Talmud's arguments, the codes' rulings, and the shape of a Sabbath day.",
+    "intro": "Jewish law is not an abstract system; it is a way of inhabiting time. This path follows one legal question—how to keep the Sabbath—from the Mishnah's list of forbidden labors through the Talmud's analysis, Maimonides' code, and the Shulchan Aruch's practical rulings, then turns to the table and the kitchen. Along the way, law becomes architecture: walls around the day, blessings at its edges, and a discipline that turns eating into a repeated ethical act.",
+    "stops": [
+      {
+        "work": "mishnah",
+        "ref": "Mishnah Shabbat 7:2",
+        "title": "Forty Less One",
+        "text": "The Mishnah lists thirty-nine categories of labor forbidden on the Sabbath: sowing, plowing, reaping, binding sheaves, threshing, winnowing, selecting, grinding, sifting, kneading, baking, and so on through weaving, hunting, writing, building, and fire. The list is not a definition but a curriculum. It assumes that the Sabbath is a day of rest from constructive work, and it asks what counts as construction. The number thirty-nine is traditional, not spelled out in the Torah. Law begins with a list that invites interpretation."
+      },
+      {
+        "work": "talmud-bavli",
+        "ref": "Shabbat 73a",
+        "title": "The Anatomy of Work",
+        "text": "The Gemara's discussion of the thirty-nine labors connects them to the building of the Tabernacle. The reasoning is analogical: the same kinds of work that built the sanctuary are the work that must cease on the Sabbath. The discussion then distinguishes intent, accident, and partial acts, asking what a person actually intended. The law is not a simple checklist; it is a set of distinctions. This is how abstract categories become judgments about real hands. The upshot is a legal grammar of rest, detailed enough to be lived."
+      },
+      {
+        "work": "mishneh-torah",
+        "ref": "Mishneh Torah, Hilkhot Shabbat 1:1",
+        "title": "The Code's Definition",
+        "text": "Maimonides opens the laws of Sabbath with a definition: the Sabbath is a positive commandment and a negative one, to rest and not to work. He classifies the prohibited labors, explains their rationale, and moves from the sanctuary to the household. The code is orderly in a way the Talmud is not; it decides where the Gemara leaves options open. For a reader trying to keep the day, this is liberating. For a reader who loves argument, it is a little alarming. The canon now has a constitution."
+      },
+      {
+        "work": "shulchan-aruch",
+        "ref": "Shulchan Aruch, Orach Chayim 250:1",
+        "title": "Preparing the Day",
+        "text": "The Shulchan Aruch begins its laws of Sabbath with Friday: one should rise early to prepare, shop, cook, and clean, so that the day is honored and enjoyed. The details are practical—food, clothing, a tidy house—but the theology is large. Preparation is itself a commandment; the day is not an interruption of life but its goal. The code turns the week into a slope toward rest. From here, the path moves to the table, where the day is sanctified with wine and words."
+      },
+      {
+        "work": "siddur",
+        "ref": "Kiddush, Friday evening",
+        "title": "Sanctifying Time",
+        "text": "Kiddush over wine declares the Sabbath holy. The blessing recalls creation; the day's wider liturgy also binds it to the exodus, joining the making of the world to the freeing of slaves. The cup is lifted, the day is named, and the meal begins. The prayer does not describe the Sabbath as a doctrine; it performs it. Time becomes a possession that cannot be hoarded, only received. The next stop turns from time to food, where the same logic of separation and intention governs what may be eaten and how."
+      },
+      {
+        "work": "talmud-bavli",
+        "ref": "Chullin 105a",
+        "title": "Meat and Milk",
+        "text": "The Talmud discusses the biblical prohibition of cooking a kid in its mother's milk. The verse appears three times in the Torah, and the repetition is read as a signal: cooking, eating, and deriving benefit are all forbidden. The discussion distinguishes kinds of meat, the status of poultry, and the problem of mixtures. It is a case study in how a short verse becomes a system. The law's concern is not only diet but the discipline of attention at the table."
+      },
+      {
+        "work": "shulchan-aruch",
+        "ref": "Shulchan Aruch, Yoreh De'ah 87:1",
+        "title": "The Table's Law",
+        "text": "The Shulchan Aruch rules that meat and milk cooked together are forbidden, and it extends the prohibition to utensils, dishes, and the organization of the kitchen. The law creates a geography of separation: pots, sinks, towels, and waiting periods. What began as a verse about a kid becomes a daily practice of boundaries. The point is not merely avoidance; it is the cultivation of a household that knows what it is doing. Law has become the shape of an ordinary meal."
+      }
+    ],
+    "themes": ["halakhah", "mitzvot", "shabbat", "kashrut", "oral-torah", "torah-study", "law-and-narrative"]
+  },
+  {
+    "id": "inner-light",
+    "title": "The Inner Light",
+    "dek": "From the Temple's altar to the mystics of Safed: how sacrifice becomes prayer, and prayer becomes a path to the divine.",
+    "intro": "The Temple was a place of sacrifice, but its deepest legacy is interior. When the building fell, the Psalms and the prayer book carried its furniture into the heart: the altar became attention, the incense became intention, the pilgrimage became a rhythm of return. This path moves from Solomon's dedication to the Psalter, the Siddur, the Zohar, and the kabbalists of Safed, asking how outer worship became inner light—and what was gained and lost in the transfer.",
+    "stops": [
+      {
+        "work": "kings",
+        "ref": "1 Kings 8:10–30",
+        "title": "The Cloud and the House",
+        "text": "When the ark is brought into Solomon's Temple, a cloud fills the house, and Solomon prays. His prayer is astonishingly honest: will God really dwell on earth? The heaven of heavens cannot contain you, how much less this house. The Temple is not a container but a meeting place, a point where prayer is directed. The scene establishes a tension the canon never resolves: God is everywhere, yet a place is holy. Solomon's prayer also asks God to hear the foreigner and the stranger, a universal horizon inside a particular house. The Psalms will take that tension inward."
+      },
+      {
+        "work": "psalms",
+        "ref": "Psalm 63",
+        "title": "Longing in a Dry Land",
+        "text": "Psalm 63 is a song of thirst: my soul thirsts for you, my flesh faints for you, in a dry and weary land. The speaker remembers seeing God in the sanctuary and longs to return. The psalm turns geography into desire; the Temple becomes a place in the heart. Its intimacy is not private sentiment, because it is sung in public worship. The Psalter teaches Israel to pray with the whole body. The next stop shows how those prayers were gathered into a book."
+      },
+      {
+        "work": "siddur",
+        "ref": "Amidah, Avodah blessing",
+        "title": "The Service Restored",
+        "text": "The weekday Amidah includes a blessing for the restoration of the Temple service: restore the worship to your sanctuary. The prayer remembers sacrifice without pretending it continues. After 70 CE, prayer is described by the rabbis as a substitute for sacrifice, and the synagogue's liturgy takes over the Temple's rhythm. The blessing is both mourning and hope. It keeps the altar present in the imagination while training the worshipper to offer words instead of animals. The next stop asks what those words are doing."
+      },
+      {
+        "work": "zohar",
+        "ref": "Zohar, Parashat Pinchas",
+        "title": "The Ladder of Prayer",
+        "text": "The Zohar describes prayer as an ascent through the worlds, a movement from the lower realms toward the divine. Words are not mere speech; they carry intention and can unite the sefirot. The mystic's task is to pray with kavvanah, directing the heart to the hidden meaning of the words. The imagery is erotic, cosmic, and daring. Prayer becomes a repair of the world, not only a request. The path now moves to Safed, where this vision was translated into liturgy and song."
+      },
+      {
+        "work": "siddur",
+        "ref": "Lecha Dodi",
+        "title": "Welcoming the Bride",
+        "text": "Solomon Alkabetz's Lecha Dodi turns Friday evening into a wedding. The congregation rises and turns toward the door to welcome the Sabbath bride; the song blends creation, exodus, and messianic longing. Kabbalat Shabbat was shaped by the Safed mystics, who went into the fields to meet the day. The liturgy does not explain the doctrine; it enacts it. The Sabbath becomes a presence to be received, not merely a rule to be kept. The next stop descends into the Zohar's cosmology of light."
+      },
+      {
+        "work": "zohar",
+        "ref": "Zohar, Parashat Bereshit",
+        "title": "The Hidden Light",
+        "text": "The Zohar reads the opening of Genesis as a story of hidden light. God's first act is not the sun but a primordial radiance, stored away for the righteous. Creation unfolds through the sefirot, the emanations through which Ein Sof, the infinite, becomes knowable. The world is not a finished product but a process of concealment and revelation. To study Torah is to uncover the light hidden in the letters. This is the cosmology that Luria would later dramatize as exile and repair."
+      },
+      {
+        "work": "siddur",
+        "ref": "Modeh Ani",
+        "title": "The First Word",
+        "text": "Modeh Ani is the first prayer of the day: gratitude for the return of the soul. It is short, unadorned, and meant to be said before the mind is fully awake. The kabbalists of Safed taught that every morning is a small resurrection and every act can be performed with intention. The path ends here, in an ordinary bedroom, where the Temple's fire has become a whispered thank-you. The inner light is not a rejection of the altar; it is the altar carried home."
+      }
+    ],
+    "themes": ["temple", "sacrifice", "prayer", "kavvanah", "mysticism", "shekhinah", "sefirot"]
+  },
+  {
+    "id": "exile-and-return",
+    "title": "Exile and Return",
+    "dek": "The fall of Jerusalem, the poetry of lament, and the long shape of Jewish time.",
+    "intro": "Exile is not only a place; it is a way of telling time. This path begins with the fall of Jerusalem in 586 BCE and follows the Bible's response: lament, prophetic vision, comfort, return, and the long diaspora that followed. It ends with the rabbinic prayer for restoration, asking how a people can live in two times at once—the time of the destroyed house and the time of the promised return. The answer is a calendar, a text, and a memory disciplined by hope.",
+    "stops": [
+      {
+        "work": "kings",
+        "ref": "2 Kings 25",
+        "title": "The City Falls",
+        "text": "2 Kings 25 is written with terrible restraint. The siege tightens, famine takes hold, the wall is breached, and the king flees by night. The Temple is burned, the city is destroyed, and the people are carried away. The narrator does not explain or console; the facts are enough. The narrator names the dates and the officials, as if precision could hold back chaos; it cannot. This is the end of the Deuteronomistic history, and it is an ending without a resolution. The next stop gives the grief a voice."
+      },
+      {
+        "work": "psalms",
+        "ref": "Psalm 137",
+        "title": "By the Rivers of Babylon",
+        "text": "Psalm 137 is the exile's signature poem. The exiles hang their harps on the willows and refuse to sing the songs of Zion in a foreign land. The psalm remembers Jerusalem above its chief joy, and it ends with a cry for vengeance that many readers find unbearable. The tradition did not censor it. The lament gives rage a place in prayer, and it refuses to let memory be sweetened. Its opening became a vow repeated in Jewish memory, and its final lines still disturb. The next stop turns from grief to vision."
+      },
+      {
+        "work": "ezekiel",
+        "ref": "Ezekiel 37",
+        "title": "Dry Bones",
+        "text": "Ezekiel is set down in a valley of bones and asked whether they can live. He prophesies; sinew and flesh come, but there is no breath until the wind blows. The vision is about national restoration, not individual resurrection, though later readers heard both. It answers the exiles' despair: our bones are dried up, our hope is lost. God promises to open graves and bring the people home. The imagery is grotesque and magnificent, and it makes exile a place where God can still speak."
+      },
+      {
+        "work": "isaiah",
+        "ref": "Isaiah 40:1–11",
+        "title": "Comfort",
+        "text": "Second Isaiah begins with a command to comfort: comfort my people. A voice cries in the wilderness, a highway is prepared, and the glory of the Lord is revealed. The prophet announces that the people's service is ended and their iniquity pardoned. The language is tender, imperial, and liturgical; it has shaped Handel and the synagogue alike. The exile is not denied, but it is given a limit. The next stop shows what happens when the decree of return actually arrives."
+      },
+      {
+        "work": "ezra",
+        "ref": "Ezra 1",
+        "title": "The Decree",
+        "text": "Ezra 1 begins with Cyrus, king of Persia, stirred by God to issue a decree: whoever is among you may go up to Jerusalem and rebuild the house of the Lord. The Temple vessels are returned. The text presents the empire as an instrument of divine purpose, even though Cyrus did not worship Israel's God. Not all the exiles returned; many had built lives in Babylon. The return is real, but it is partial. That partiality will shape the next five centuries."
+      },
+      {
+        "work": "ezra",
+        "ref": "Nehemiah 8",
+        "title": "The Reading",
+        "text": "Ezra reads the Torah aloud in the square before the Water Gate, from morning until midday, while Levites explain it to the people. The people weep, but Nehemiah tells them to rejoice, for the joy of the Lord is their strength. The scene is often called the birth of public scriptural interpretation. It is also a scene of assembly, translation, and communal obligation. The return from exile is completed not by a wall but by a book read aloud. The next stop carries that book into the rabbinic academy."
+      },
+      {
+        "work": "talmud-bavli",
+        "ref": "Gittin 56a–b",
+        "title": "Yavneh",
+        "text": "The Talmud tells how Yohanan ben Zakkai, trapped in besieged Jerusalem, has himself carried out in a coffin and asks Vespasian for a place to teach. The story is legendary in its details and profound in its logic: when the Temple cannot be saved, the academy is. Yavneh becomes the seat of the rabbinic movement, where Torah study, prayer, and law replace sacrifice as the center of Jewish life. The story also preserves a critique of zealotry: the city's defenders fight, while the sage negotiates survival. The next stop shows how that replacement was prayed for."
+      },
+      {
+        "work": "siddur",
+        "ref": "Amidah, blessing 10",
+        "title": "The Prayer for Return",
+        "text": "The tenth blessing of the weekday Amidah asks God to sound the great shofar for freedom and to gather the dispersed of Israel. It is a prayer said facing Jerusalem, in a diaspora that has learned to live without the Temple. The blessing does not specify a timetable. It keeps return as a daily horizon, not a political program. The path ends here, with a people living in two times: the time of the destroyed house and the time of the promised gathering. Prayer holds them together."
+      }
+    ],
+    "themes": ["exile-and-return", "diaspora", "memory", "prayer", "temple", "messianism", "land-of-israel"]
+  }
+]
