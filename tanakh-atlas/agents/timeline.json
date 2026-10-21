@@ -1,0 +1,582 @@
+[
+  {
+    "year": "c. 1800 BCE",
+    "sort": -1800,
+    "label": "Patriarchs",
+    "title": "The Call from Ur",
+    "text": "Genesis opens its story of Israel not with a birth but with a departure. Abraham is told to leave Ur and Haran for a land God will show him, and is promised blessing for all the families of the earth. Whether a historical Abraham can be recovered is debated; the narratives reflect Iron Age concerns and are theological portraits, not court records. What matters for the canon is the shape: election is for mission, and the land is promised, never yet possessed.",
+    "works": ["genesis"],
+    "people": ["abraham", "sarah"],
+    "places": ["ur", "haran", "canaan"]
+  },
+  {
+    "year": "c. 1750 BCE",
+    "sort": -1750,
+    "label": "Patriarchs",
+    "title": "The Binding of Isaac",
+    "text": "Genesis 22 asks Abraham to give back the son through whom the promise was to continue. The test ends with a ram and a reaffirmation of blessing. The story has been read as a critique of child sacrifice, as a founding test of faith, and as a narrative about the land of Moriah, later identified with Jerusalem. Historians debate its date and setting; the text itself is spare, and its silences have generated more commentary than almost any other biblical scene.",
+    "works": ["genesis"],
+    "people": ["abraham", "isaac"],
+    "places": ["canaan"]
+  },
+  {
+    "year": "c. 1700 BCE",
+    "sort": -1700,
+    "label": "Patriarchs",
+    "title": "Joseph in Egypt",
+    "text": "The final quarter of Genesis follows Joseph from a pit to an Egyptian prison to the administration of grain. Famine drives Jacob's household to Egypt, where the family becomes a people. The story is a court novella with unusually vivid Egyptian detail, though its chronology resists correlation with known pharaohs. For the canon it supplies the bridge between promise and slavery: exile begins as rescue, and providence is named only in retrospect.",
+    "works": ["genesis"],
+    "people": ["joseph", "jacob"],
+    "places": ["canaan", "goshen"]
+  },
+  {
+    "year": "c. 1250 BCE",
+    "sort": -1250,
+    "label": "Egypt",
+    "title": "Exodus from Egypt",
+    "text": "Exodus opens with Israel enslaved in Egypt and ends with the divine presence filling the Tabernacle. The plagues, the Passover, and the crossing of the sea are the founding acts of Israel's memory, recalled in liturgy, law, and prophecy. The dating and scale of the exodus are debated; the Merneptah stele already mentions Israel in Canaan around 1208 BCE. The book's concern is not neutral history but the character of a God who hears.",
+    "works": ["exodus"],
+    "people": ["moses", "aaron", "miriam"],
+    "places": ["goshen", "sinai"]
+  },
+  {
+    "year": "c. 1250 BCE",
+    "sort": -1250,
+    "label": "Sinai",
+    "title": "Revelation at Sinai",
+    "text": "At Sinai, Moses ascends into cloud and fire, and Israel receives the Decalogue amid thunder. Exodus 19–24 interweaves narrative with covenant law; Deuteronomy retells the scene differently, and later tradition multiplies the voices. What exactly was revealed, and to whom, becomes a central argument in Jewish and Christian thought. The canon's claim is stronger than archaeology can test: a people is constituted by hearing, and every later study house returns to this mountain.",
+    "works": ["exodus", "deuteronomy"],
+    "people": ["moses", "aaron"],
+    "places": ["sinai"]
+  },
+  {
+    "year": "c. 1200 BCE",
+    "sort": -1200,
+    "label": "Settlement",
+    "title": "Conquest and Settlement",
+    "text": "Joshua narrates the crossing of the Jordan, the fall of Jericho, and a campaign of conquest. Archaeology suggests a more gradual and uneven settlement, with Israelites emerging partly from Canaanite society; the book's herem texts pose acute moral questions. Its canonical function is theological: the promise to the fathers becomes land. The tension between the sweeping claim of chapter 21 and the unfinished map of chapter 13 was not lost on later readers.",
+    "works": ["joshua"],
+    "people": ["joshua"],
+    "places": ["jericho", "canaan", "shiloh"]
+  },
+  {
+    "year": "c. 1150 BCE",
+    "sort": -1150,
+    "label": "Judges",
+    "title": "The Tribes Without a King",
+    "text": "Judges cycles through apostasy, oppression, deliverance, and relapse. Deborah, Barak, Gideon, and Jephthah lead tribes that are only loosely joined; the book's refrain is that there was no king in Israel. The Song of Deborah is among the oldest Hebrew poems, though its date is disputed. For the canon, Judges preserves a pre-monarchic memory and shows how narrative can judge a society by its own failures.",
+    "works": ["judges"],
+    "people": ["deborah"],
+    "places": ["canaan", "shiloh"]
+  },
+  {
+    "year": "c. 1020 BCE",
+    "sort": -1020,
+    "label": "Monarchy",
+    "title": "Israel Asks for a King",
+    "text": "Israel asks Samuel for a king like the nations. Samuel warns of taxes and conscription, but God grants the request; Saul is anointed, wins battles, and loses favor. The book of Samuel contains overlapping pro- and anti-monarchic traditions, and historians debate how much of the Saul story is early. Canonically, kingship is neither simply rejected nor blessed: it is a dangerous gift, judged by obedience.",
+    "works": ["samuel"],
+    "people": ["samuel", "saul"],
+    "places": ["shiloh"]
+  },
+  {
+    "year": "c. 1000 BCE",
+    "sort": -1000,
+    "label": "Jerusalem",
+    "title": "David and the Holy City",
+    "text": "David captures Jerusalem, makes it his capital, and receives a promise that his dynasty will endure. The books of Samuel give him poetry, adultery, grief, and civil war; Chronicles gives a cleaner, liturgical portrait. The Tel Dan inscription, probably ninth century, refers to the house of David. Whether a united monarchy of the scale described existed is debated, but the canonical David becomes the model king and the ancestor of messianic hope.",
+    "works": ["samuel", "psalms", "chronicles"],
+    "people": ["david"],
+    "places": ["jerusalem", "hebron", "bethlehem"]
+  },
+  {
+    "year": "c. 960 BCE",
+    "sort": -960,
+    "label": "Temple",
+    "title": "Solomon Builds the Temple",
+    "text": "Solomon builds the Temple in Jerusalem, and 1 Kings 8 dedicates it with a prayer that God cannot be contained in a house. The building centralizes sacrifice and pilgrimage, though archaeology has not identified its remains. Its description may reflect later memory and royal ideology. The canon turns the Temple into a horizon: destruction will be unimaginable, and restoration will be the language of hope.",
+    "works": ["kings", "chronicles"],
+    "people": ["solomon", "david"],
+    "places": ["jerusalem"]
+  },
+  {
+    "year": "c. 930 BCE",
+    "sort": -930,
+    "label": "Divided Kingdom",
+    "title": "The Kingdom Divides",
+    "text": "After Solomon, the kingdom splits: Rehoboam keeps Judah and Jerusalem, while Jeroboam rules the north from Shechem; the northern capital will later move to Samaria. 1 Kings judges every northern king for the calves at Dan and Bethel, a polemic from a southern perspective. The division reshapes the canon: two kingdoms, two prophetic traditions, and two ways of remembering David. Assyria will end the northern kingdom; Babylon will end the southern.",
+    "works": ["kings"],
+    "people": ["solomon"],
+    "places": ["jerusalem", "samaria"]
+  },
+  {
+    "year": "c. 870 BCE",
+    "sort": -870,
+    "label": "Prophecy",
+    "title": "Elijah at the Mountain",
+    "text": "Elijah confronts Ahab and Jezebel, contests the prophets of Baal on Carmel, and flees to Horeb, where he hears not wind or fire but a still small voice. The stories are vivid, partisan, and edited long after the events. Elijah becomes the canonical bridge between prophecy and hope: he is taken up in a whirlwind, and later tradition expects him before the messiah.",
+    "works": ["kings"],
+    "people": ["elijah"],
+    "places": ["samaria", "canaan"]
+  },
+  {
+    "year": "c. 760 BCE",
+    "sort": -760,
+    "label": "Prophecy",
+    "title": "Amos and the Demand for Justice",
+    "text": "Amos, a herdsman from Tekoa, speaks in the northern kingdom around the mid-eighth century. He indicts luxury, courts that take bribes, and worship that ignores justice; the book's refusal of sacrifice without righteousness is not a rejection of ritual but a demand that it transform conduct. The book is short, harsh, and probably contains later additions. It establishes the prophetic criterion by which the canon will judge kings and nations alike.",
+    "works": ["twelve"],
+    "people": [],
+    "places": ["samaria"]
+  },
+  {
+    "year": "c. 740 BCE",
+    "sort": -740,
+    "label": "Prophecy",
+    "title": "Isaiah's Vision",
+    "text": "In the year King Uzziah dies, Isaiah sees the Lord high and lifted up and hears the thrice-holy hymn. His call combines awe with a commission to speak to a people who will not listen. The book of Isaiah spans centuries of editing: chapters 1–39 reflect eighth-century Jerusalem, while 40–66 address exiles and returnees. The canonical Isaiah is thus a scroll that grows, and its vision of holiness shapes liturgy and ethics.",
+    "works": ["isaiah"],
+    "people": ["isaiah"],
+    "places": ["jerusalem"]
+  },
+  {
+    "year": "722 BCE",
+    "sort": -722,
+    "label": "Assyria",
+    "title": "The Fall of Samaria",
+    "text": "Assyria besieges Samaria, and in 722 BCE the northern kingdom falls. 2 Kings 17 interprets the disaster as covenant infidelity, lists deportations, and describes resettlement from other provinces. The ten tribes become a memory and a myth; the Samaritans preserve a rival Pentateuchal tradition. Historically, the population was not simply erased. For the canon, the fall of Samaria is the first great warning: the land can lose its people.",
+    "works": ["kings", "twelve"],
+    "people": [],
+    "places": ["samaria", "nineveh"]
+  },
+  {
+    "year": "701 BCE",
+    "sort": -701,
+    "label": "Assyria",
+    "title": "Sennacherib at the Walls",
+    "text": "Sennacherib's campaign of 701 BCE strips Judah of its towns and shuts Hezekiah up in Jerusalem. The Bible says an angel struck the Assyrian camp; Assyrian annals claim the city was caged but not taken. Isaiah promises deliverance, and the episode becomes a template for trust in God against empire. Historians weigh the two accounts; the canon preserves the memory as a lesson in limits, not a triumphalist legend.",
+    "works": ["kings", "isaiah"],
+    "people": ["isaiah"],
+    "places": ["jerusalem"]
+  },
+  {
+    "year": "c. 640 BCE",
+    "sort": -640,
+    "label": "Reform",
+    "title": "Josiah and the Found Book",
+    "text": "During repairs to the Temple, a book of the law is found and read to King Josiah, who tears his clothes and reforms Judah. Scholars widely associate the book with Deuteronomy or its core. The reform centralizes worship in Jerusalem, removes local shrines, and revives Passover. Whether the account is contemporary or retrojected is debated. Canonically, the episode shows scripture being discovered, interpreted, and enacted—a template for later renewal.",
+    "works": ["kings", "deuteronomy"],
+    "people": [],
+    "places": ["jerusalem"]
+  },
+  {
+    "year": "c. 627 BCE",
+    "sort": -627,
+    "label": "Prophecy",
+    "title": "Jeremiah's Call",
+    "text": "Jeremiah is called as a youth and told he was known before birth. He preaches against the Temple's false security, weeps over Jerusalem, and dictates a scroll that the king burns; it is rewritten with additions. The book is complex, with prose sermons, poetry, and later oracles. Jeremiah's new covenant, written on the heart, becomes central to both Jewish and Christian hope, though its original setting is the crisis of 586.",
+    "works": ["jeremiah"],
+    "people": ["jeremiah"],
+    "places": ["jerusalem"]
+  },
+  {
+    "year": "597 BCE",
+    "sort": -597,
+    "label": "Babylon",
+    "title": "The First Deportation",
+    "text": "Nebuchadnezzar deports King Jehoiachin, the court, and craftsmen to Babylon in 597 BCE. Ezekiel is among the exiles; the Babylonians keep royal ration records that confirm Jehoiachin's presence. The first deportation creates a diaspora community that will outlast the Temple. It also poses the canon's hardest question: can the presence of God travel with captives? Ezekiel's visions answer yes, and the synagogue will inherit the answer.",
+    "works": ["kings", "jeremiah", "ezekiel"],
+    "people": ["jeremiah", "ezekiel"],
+    "places": ["babylon", "jerusalem"]
+  },
+  {
+    "year": "586 BCE",
+    "sort": -586,
+    "label": "Exile",
+    "title": "The Temple Falls",
+    "text": "In 586 BCE Babylon breaches Jerusalem, burns the Temple, and deports much of Judah. Lamentations gives voice to starvation and grief; Jeremiah and Kings interpret the catastrophe as covenant judgment. The loss is not only political but liturgical: sacrifice stops, and the canon begins to imagine a Judaism of text, prayer, and memory. Even the date becomes a fast. The destruction is the hinge on which the Hebrew Bible's theology of exile turns.",
+    "works": ["kings", "lamentations", "jeremiah"],
+    "people": ["jeremiah", "ezekiel"],
+    "places": ["jerusalem", "babylon"]
+  },
+  {
+    "year": "c. 580 BCE",
+    "sort": -580,
+    "label": "Exile",
+    "title": "Ezekiel's Chariot",
+    "text": "Ezekiel, a priest in Babylon, sees the chariot and the glory of God by the river Chebar. The glory departs the Temple and later returns; dry bones rise; a new heart and a new spirit are promised. His visions are strange, priestly, and hugely influential in Jewish mysticism. The book was controversial in antiquity, and its dates are internally precise but debated. It answers exile with a portable sanctuary: God's presence is not tied to one building.",
+    "works": ["ezekiel"],
+    "people": ["ezekiel"],
+    "places": ["babylon"]
+  },
+  {
+    "year": "c. 550 BCE",
+    "sort": -550,
+    "label": "Exile",
+    "title": "Second Isaiah's Comfort",
+    "text": "Isaiah 40–55 addresses a people who believe God has forgotten them. The anonymous prophet announces comfort, a highway in the desert, and a servant who suffers for others. Cyrus is named as God's anointed, a startling claim for a pagan king. The servant songs have been read collectively and individually, by Jews and Christians, with very different results. Most scholars date these chapters to the exile; the canon presents them as one Isaiah.",
+    "works": ["isaiah"],
+    "people": ["isaiah"],
+    "places": ["babylon"]
+  },
+  {
+    "year": "538 BCE",
+    "sort": -538,
+    "label": "Return",
+    "title": "Cyrus and the Decree",
+    "text": "Cyrus of Persia takes Babylon in 539 BCE and issues a decree permitting Judahites to return and rebuild. Ezra 1 frames it as God stirring the king's spirit; Isaiah 45 calls Cyrus anointed. The Cyrus Cylinder shows a broader policy of restoring sanctuaries, though it does not mention the Jews. Not everyone returned. The decree begins the long, contested project of restoration—and gives the canon its clearest image of empire as an unwitting instrument.",
+    "works": ["ezra", "isaiah"],
+    "people": [],
+    "places": ["babylon", "jerusalem"]
+  },
+  {
+    "year": "c. 515 BCE",
+    "sort": -515,
+    "label": "Second Temple",
+    "title": "The Second Temple Dedicated",
+    "text": "Under Zerubbabel and the prophets Haggai and Zechariah, the Temple is rebuilt and dedicated around 515 BCE. The second house is modest compared with Solomon's, and some weep at the foundation. Haggai promises that its glory will exceed the first; Zechariah sees visions of a purified priesthood. The Persian province of Yehud is small and poor. Canonically, the ambivalence matters: restoration is real, but it does not erase loss.",
+    "works": ["ezra", "twelve"],
+    "people": [],
+    "places": ["jerusalem"]
+  },
+  {
+    "year": "c. 445 BCE",
+    "sort": -445,
+    "label": "Return",
+    "title": "Ezra Reads the Torah Aloud",
+    "text": "Ezra, a scribe skilled in the Torah, and Nehemiah, the king's cupbearer, return to Jerusalem. Nehemiah rebuilds the walls; Ezra reads the Torah aloud before the people, with Levites explaining it, and the people weep. The scene is often called the birth of the synagogue and of public scriptural interpretation. The chronology of Ezra's mission is disputed, and the reforms include painful divorces. The canon remembers both the assembly and its costs.",
+    "works": ["ezra"],
+    "people": ["ezra"],
+    "places": ["jerusalem"]
+  },
+  {
+    "year": "c. 333 BCE",
+    "sort": -333,
+    "label": "Hellenism",
+    "title": "Alexander and the Greek World",
+    "text": "Alexander the Great defeats Persia and brings Greek rule to the eastern Mediterranean. Judea passes from Persian to Macedonian control, and Greek language, cities, and gymnasia reshape the region. The Bible does not name Alexander, but Daniel's visions of successive empires are often read against him. Later legend makes him visit Jerusalem. For the canon, Hellenization is not a single event but a long negotiation: translation, resistance, and appropriation all belong to it.",
+    "works": ["daniel"],
+    "people": [],
+    "places": ["jerusalem", "canaan"]
+  },
+  {
+    "year": "c. 250 BCE",
+    "sort": -250,
+    "label": "Hellenism",
+    "title": "The Torah in Greek",
+    "text": "Jewish translators in Alexandria render the Torah into Greek, according to the Letter of Aristeas a project of seventy-two elders. The Septuagint becomes the scripture of Greek-speaking diaspora Jews and, later, of the church. Its wording sometimes differs from the Masoretic text, and its canon includes books the Hebrew Bible does not. The translation shows that canon and language are intertwined. It also creates a lasting divergence between Jewish and Christian Bibles.",
+    "works": ["genesis"],
+    "people": [],
+    "places": []
+  },
+  {
+    "year": "c. 175 BCE",
+    "sort": -175,
+    "label": "Hellenism",
+    "title": "Antiochus and the Persecution",
+    "text": "Antiochus IV Epiphanes imposes Hellenistic reforms and, according to 1 and 2 Maccabees, desecrates the Temple and forbids Torah observance. The causes are debated: internal Jewish factionalism, imperial finance, or religious policy. Daniel 11 describes the crisis in veiled language. Martyrdom traditions emerge, and the question of how to live under a hostile empire becomes central. The canon's answer is not one answer: resistance, accommodation, and martyrdom all find voices.",
+    "works": ["daniel"],
+    "people": [],
+    "places": ["jerusalem"]
+  },
+  {
+    "year": "164 BCE",
+    "sort": -164,
+    "label": "Hasmoneans",
+    "title": "The Maccabean Revolt",
+    "text": "Judah Maccabee and his brothers lead a revolt, retake Jerusalem, and rededicate the Temple in 164 BCE. The Hasmoneans go on to found a dynasty that combines priesthood and kingship, a combination much later rabbinic memory regards with suspicion. The books of Maccabees are not in the Jewish canon, but Hanukkah and the liturgy preserve the story. The canon's silence about the Maccabees is itself evidence of how selective memory works.",
+    "works": ["daniel"],
+    "people": [],
+    "places": ["jerusalem"]
+  },
+  {
+    "year": "63 BCE",
+    "sort": -63,
+    "label": "Rome",
+    "title": "Pompey in the Sanctuary",
+    "text": "In 63 BCE Pompey takes Jerusalem and enters the Holy of Holies, scandalizing the city. Roman rule replaces Hasmonean independence; Herod will later rule as a client king and rebuild the Temple on a grand scale. The Psalms of Solomon, not in the canon, voice the outrage of the pious. The canon itself says little about Rome directly. Its apocalyptic texts, however, increasingly imagine empires as beasts and deliverance as divine, not diplomatic.",
+    "works": ["daniel"],
+    "people": [],
+    "places": ["jerusalem"]
+  },
+  {
+    "year": "c. 30 BCE",
+    "sort": -30,
+    "label": "Second Temple",
+    "title": "Hillel and Shammai",
+    "text": "Hillel and Shammai, near-contemporaries in the first century BCE, become the emblematic pair of the Oral Torah. Their schools disagree over ritual, marriage, and the Sabbath, and the Mishnah preserves both opinions. Hillel is remembered for patience and for a golden-rule summary of Torah; Shammai for severity. The tradition that a heavenly voice declared both words to be those of the living God is later, but it captures the canon's tolerance of argument.",
+    "works": ["pirkei-avot"],
+    "people": ["hillel", "shammai"],
+    "places": ["jerusalem"]
+  },
+  {
+    "year": "c. 30 CE",
+    "sort": 30,
+    "label": "Second Temple",
+    "title": "The Temple's Daily Round",
+    "text": "Before 70 CE the Jerusalem Temple runs a daily regimen of sacrifice, incense, and psalmody, funded by pilgrimage and taxes. The Mishnah's tractates on the sanctuary describe it in loving, idealized detail, though they were compiled after its destruction. Priests, Levites, and Israelites each have roles. The Temple is not only a building in the canon; it is a system of time, purity, and music. Its memory will shape prayer, mysticism, and messianic longing.",
+    "works": ["mishnah", "seder-kodashim"],
+    "people": [],
+    "places": ["jerusalem"]
+  },
+  {
+    "year": "66 CE",
+    "sort": 66,
+    "label": "Revolt",
+    "title": "The Great Revolt Begins",
+    "text": "Jewish factions revolt against Rome in 66 CE. The war is bitter and internally divided; Josephus, a commander who surrenders, writes its history. The canon does not contain a book of the revolt, but apocalyptic texts and psalms of lament give it a vocabulary. The Romans burn the archives and take captives. By the time Jerusalem falls, the question is no longer whether the Temple will survive but what Judaism will become without it.",
+    "works": ["psalms", "lamentations"],
+    "people": [],
+    "places": ["jerusalem"]
+  },
+  {
+    "year": "70 CE",
+    "sort": 70,
+    "label": "Destruction",
+    "title": "The Temple Destroyed",
+    "text": "Titus takes Jerusalem in 70 CE and burns the Temple. The loss is total: sacrifice ends, the priesthood is scattered, and the city is garrisoned. Lamentations and Psalms provide the language of grief; the rabbis institute fasts and prayers for restoration. Yohanan ben Zakkai obtains permission to teach at Yavneh, where Torah replaces sacrifice as the center. The destruction is the great rupture, and the canon after it is a canon of survival.",
+    "works": ["lamentations", "psalms"],
+    "people": ["yohanan-ben-zakkai"],
+    "places": ["jerusalem", "yavneh"]
+  },
+  {
+    "year": "c. 75 CE",
+    "sort": 75,
+    "label": "Yavneh",
+    "title": "The Academy at Yavneh",
+    "text": "At Yavneh, a coastal town, Yohanan ben Zakkai and his successors establish a study house after the Temple's fall. The academy clarifies law, collects traditions, and standardizes prayer and calendar. The story that ben Zakkai escaped Jerusalem in a coffin is memorable but late. What is historically plausible is a reorientation: study, prayer, and deeds of loving-kindness become the pillars that replace sacrifice. Yavneh is the seed of the rabbinic movement.",
+    "works": ["mishnah", "pirkei-avot"],
+    "people": ["yohanan-ben-zakkai"],
+    "places": ["yavneh"]
+  },
+  {
+    "year": "c. 100 CE",
+    "sort": 100,
+    "label": "Canon",
+    "title": "The Twenty-Four Books",
+    "text": "By the second century CE, the Hebrew Bible is emerging as a fixed set of twenty-four books: Torah, Prophets, and Writings. The boundary was debated—Song of Songs and Ecclesiastes were questioned, while Daniel was placed among the Writings, not the Prophets. The idea of a council at Yavneh that voted on the canon is a later simplification. Manuscripts from the Judean desert show pluriform texts before standardization. Canon is a process, not a single decree.",
+    "works": ["chronicles", "daniel"],
+    "people": [],
+    "places": ["yavneh"]
+  },
+  {
+    "year": "132–135 CE",
+    "sort": 132,
+    "label": "Revolt",
+    "title": "Bar Kokhba",
+    "text": "Simon bar Kokhba leads a second revolt against Rome in 132–135 CE. Letters from the Judean desert show a commander managing supplies and discipline; Rabbi Akiva reportedly hails him as the messiah. Hadrian crushes the revolt, renames Jerusalem Aelia Capitolina, and bars Jews from the city. The defeat deepens diaspora existence and shifts messianic expectation away from immediate politics. The canon does not record the war, but its aftermath shapes rabbinic Judaism.",
+    "works": [],
+    "people": ["akiva"],
+    "places": ["jerusalem"]
+  },
+  {
+    "year": "c. 200 CE",
+    "sort": 200,
+    "label": "Mishnah",
+    "title": "Judah HaNasi and the Mishnah",
+    "text": "Judah HaNasi compiles the Mishnah around 200 CE, organizing earlier traditions into six orders: seeds, festivals, women, damages, holy things, and purity. The work is concise, often anonymous, and records disputes without always resolving them. It becomes the foundation of the Oral Torah and the curriculum of the academies. Historians debate how much is earlier tradition and how much is the editor's shaping. Its authority is immediate and enduring.",
+    "works": ["mishnah"],
+    "people": ["judah-hanasi"],
+    "places": ["sepphoris", "tiberias"]
+  },
+  {
+    "year": "c. 250 CE",
+    "sort": 250,
+    "label": "Oral Torah",
+    "title": "Tosefta and Baraitot",
+    "text": "Alongside the Mishnah, other tannaitic traditions circulated: the Tosefta, a supplement arranged like the Mishnah, and baraitot quoted in the Talmuds. These are not a single book but a library of parallel versions. Their existence shows that the Oral Torah was never one fixed text; it was a field of teaching, memorized and debated. The Talmuds preserve many such traditions that the Mishnah omits, and the boundary between canonical and extra-canonical is porous.",
+    "works": ["mishnah", "talmud-bavli"],
+    "people": [],
+    "places": ["tiberias"]
+  },
+  {
+    "year": "c. 400–450 CE",
+    "sort": 400,
+    "label": "Talmud",
+    "title": "The Palestinian Talmud",
+    "text": "The Palestinian Talmud, or Yerushalmi, is compiled in the Galilee around 400–450 CE, chiefly at Tiberias and Sepphoris. It comments on the Mishnah in a mix of Hebrew and Galilean Aramaic, preserving the teachings of Yochanan bar Nappacha and his circle. It is shorter and more fragmentary than the Babylonian Talmud, and its text survives imperfectly. For the canon it preserves a Judaism living under Christian Rome, with its own aggadah, law, and grief.",
+    "works": ["talmud-yerushalmi"],
+    "people": ["yochanan-bar-nappacha"],
+    "places": ["tiberias", "sepphoris"]
+  },
+  {
+    "year": "c. 450 CE",
+    "sort": 450,
+    "label": "Midrash",
+    "title": "The Midrashic Imagination",
+    "text": "Midrash turns scripture into an inexhaustible conversation. Genesis Rabbah, Leviticus Rabbah, and the Tanhuma collections read verses through analogy, wordplay, and narrative expansion, sometimes filling gaps and sometimes arguing with the text. The genre spans centuries and defies a single date. Its halakhic and aggadic strands shaped both law and imagination. For the canon, Midrash is proof that revelation is not exhausted by the plain sense; interpretation becomes a form of continuing revelation.",
+    "works": ["midrash"],
+    "people": [],
+    "places": ["tiberias"]
+  },
+  {
+    "year": "c. 500–600 CE",
+    "sort": 550,
+    "label": "Talmud",
+    "title": "The Babylonian Talmud",
+    "text": "The Babylonian Talmud is shaped in the academies of Sura and Pumbedita under the Sasanian empire, with Rav Ashi and Ravina associated with its later editing. It is a vast, discursive commentary on the Mishnah, mixing law, story, theology, and folklore. Its redaction probably continued into the sixth century. It becomes the authoritative Talmud for most of the Jewish world, though the Yerushalmi remains authoritative in some communities. The canon now includes argument itself.",
+    "works": ["talmud-bavli"],
+    "people": ["rav-ashi", "ravina"],
+    "places": ["sura", "pumbedita"]
+  },
+  {
+    "year": "c. 650–1050 CE",
+    "sort": 650,
+    "label": "Geonim",
+    "title": "The Geonim of Babylon",
+    "text": "After the Talmud, the heads of the Babylonian academies—the Geonim—become the chief authorities for diaspora Jewry. They answer questions by responsa, fix the calendar, regulate prayer, and transmit law to North Africa, Spain, and Europe. Their period runs roughly from the seventh to the eleventh century. The canon is no longer only a text but a network of consultation. Geonic responsa show how practice travels across distances and how local custom meets central authority.",
+    "works": ["talmud-bavli"],
+    "people": [],
+    "places": ["sura", "pumbedita"]
+  },
+  {
+    "year": "c. 900 CE",
+    "sort": 900,
+    "label": "Geonim",
+    "title": "Saadia Gaon",
+    "text": "Saadia ben Joseph, Gaon of Sura from 928 to 942, is the first great medieval Jewish philosopher. He translates the Bible into Arabic, defends the calendar against sectarians, and writes The Book of Beliefs and Opinions, reconciling revelation with reason. His work marks a new stage in the canon: scripture is not only recited but argued philosophically. He also shows the Geonic world at its most confident, just before its centers decline.",
+    "works": ["talmud-bavli"],
+    "people": ["saadia-gaon"],
+    "places": ["sura"]
+  },
+  {
+    "year": "1040–1105",
+    "sort": 1040,
+    "label": "Commentary",
+    "title": "Rashi of Troyes",
+    "text": "Rabbi Solomon ben Isaac, known as Rashi, is born in Troyes around 1040 and dies in 1105. His commentary on the Torah and Talmud combines philology, midrash, and a fierce economy of style. He explains the plain sense where he can and admits when a verse resists. His glosses become indispensable: almost no printed Talmud appears without them. Through Rashi, the medieval French-Jewish world enters the canon of every later study house.",
+    "works": ["rashi-commentary"],
+    "people": ["rashi"],
+    "places": ["troyes", "worms"]
+  },
+  {
+    "year": "1096",
+    "sort": 1096,
+    "label": "Crusades",
+    "title": "The First Crusade",
+    "text": "The First Crusade, launched in 1095, produces massacres of Jewish communities in the Rhineland in 1096, including Worms, Mainz, and Cologne. Rashi, then in Troyes, lives through the shock; liturgical laments and chronicles record the martyrdoms. The events deepen Ashkenazi memory and shape Jewish-Christian relations for centuries. They also show the canon being lamented and expanded in prayer. The Crusades are not in the Bible, but they enter the liturgy that surrounds it.",
+    "works": ["psalms", "rashi-commentary"],
+    "people": ["rashi"],
+    "places": ["worms", "troyes"]
+  },
+  {
+    "year": "1135–1204",
+    "sort": 1135,
+    "label": "Philosophy",
+    "title": "Maimonides",
+    "text": "Moses ben Maimon, the Rambam, is born in Cordoba in 1135, flees Almohad persecution, and settles in Fustat, Egypt, where he works as a physician and community leader. His Mishneh Torah, completed around 1180, reorganizes all of Jewish law into fourteen books. It is bold, systematic, and controversial for omitting sources. He dies in 1204. The canon now has a code that aspires to be a complete Torah for a dispersed people.",
+    "works": ["mishneh-torah"],
+    "people": ["rambam"],
+    "places": ["cairo"]
+  },
+  {
+    "year": "c. 1140",
+    "sort": 1140,
+    "label": "Philosophy",
+    "title": "The Kuzari",
+    "text": "Judah Halevi, poet and physician, writes the Kuzari in Arabic around 1140. Framed as a dialogue between a pagan king and a Jewish sage, it defends the historical experience of revelation over philosophical abstraction. The book values the land of Israel and the Hebrew language in ways that anticipate modern Zionism, though its argument is medieval. Halevi set out for Jerusalem and died in Egypt around 1141. The Kuzari remains a classic of Jewish particularism.",
+    "works": ["kuzari"],
+    "people": ["yehuda-halevi"],
+    "places": ["cairo"]
+  },
+  {
+    "year": "c. 1190",
+    "sort": 1190,
+    "label": "Philosophy",
+    "title": "The Guide for the Perplexed",
+    "text": "The Guide for the Perplexed, completed around 1190, addresses a reader who is both religious and philosophically trained. Maimonides argues that scripture speaks in parables, that God is known through negation, and that creation, prophecy, and providence need careful philosophical defense. The book was banned by some traditionalists and embraced by others; it sparked the Maimonidean controversies. It remains the great Jewish attempt to hold revelation and reason in one hand.",
+    "works": ["guide-perplexed"],
+    "people": ["rambam"],
+    "places": ["cairo"]
+  },
+  {
+    "year": "c. 1280",
+    "sort": 1280,
+    "label": "Kabbalah",
+    "title": "The Zohar",
+    "text": "The Zohar emerges in Castile in the late thirteenth century, attributed to Rabbi Shimon bar Yochai and his circle in the Galilee. Modern scholarship associates its composition with Moses de Leon and a group of kabbalists. It reads Torah as a map of divine emanations, the sefirot, and of the exile of the Shekhinah. Its Aramaic is artificial and its imagery unforgettable. Printed in Mantua in 1558, it becomes the central text of Kabbalah.",
+    "works": ["zohar"],
+    "people": ["shimon-bar-yochai"],
+    "places": ["tiberias"]
+  },
+  {
+    "year": "1492",
+    "sort": 1492,
+    "label": "Expulsion",
+    "title": "The Expulsion from Spain",
+    "text": "In 1492 Ferdinand and Isabella expel the Jews from Spain. Some convert, some flee to Portugal and are expelled again, and others scatter to North Africa, Italy, and the Ottoman Empire. The expulsion ends the golden age of Spanish Jewry and helps turn Safed into a creative center. Kabbalistic and legal traditions travel with the exiles. The canon's geography changes: Sephardic manuscripts, customs, and commentaries become part of the inheritance of the whole Jewish world.",
+    "works": ["zohar"],
+    "people": [],
+    "places": ["safed", "jerusalem"]
+  },
+  {
+    "year": "1520–1523",
+    "sort": 1520,
+    "label": "Print",
+    "title": "The Talmud Printed in Venice",
+    "text": "Daniel Bomberg's Venice press prints the Babylonian Talmud between 1520 and 1523, establishing the pagination still used today. Printing standardizes texts but also invites censorship; papal authorities expurgate passages, and the Talmud is burned in Rome in 1553. The new technology fixes a page while making it reproducible across continents. For the canon, print is not a neutral vehicle: it creates a shared page, a shared commentary layout, and a new vulnerability to political power.",
+    "works": ["talmud-bavli"],
+    "people": [],
+    "places": []
+  },
+  {
+    "year": "c. 1563",
+    "sort": 1563,
+    "label": "Law",
+    "title": "The Shulchan Aruch",
+    "text": "Joseph Karo, a kabbalist and legal authority in Safed, publishes the Shulchan Aruch in the 1560s. Its four parts cover prayer and festivals, dietary and ritual law, marriage, and civil damages. Moses Isserles adds the Mapah, glosses recording Ashkenazi custom, so the work can serve both Sephardic and Ashkenazi communities. Karo's code is concise and decisive, though later authorities qualify it. It becomes the most widely used guide to halakhah in the early modern world.",
+    "works": ["shulchan-aruch"],
+    "people": ["joseph-karo", "moses-isserles"],
+    "places": ["safed"]
+  },
+  {
+    "year": "c. 1570",
+    "sort": 1570,
+    "label": "Safed",
+    "title": "Luria and the Kabbalists of Safed",
+    "text": "In the sixteenth century Safed becomes the capital of Jewish mysticism. Isaac Luria, known as the Ari, teaches a dramatic cosmology of exile and repair; Solomon Alkabetz writes Lecha Dodi, welcoming the Sabbath bride. Kabbalat Shabbat transforms Friday evening into a mystical ascent. Luria's disciples circulate his teachings after his death in 1572. The canon gains a new layer: law and liturgy are now read through the sefirot, and every commandment can repair a broken world.",
+    "works": ["zohar", "siddur"],
+    "people": ["isaac-luria", "shlomo-alkabetz"],
+    "places": ["safed"]
+  },
+  {
+    "year": "1720–1797",
+    "sort": 1720,
+    "label": "Lithuania",
+    "title": "The Vilna Gaon",
+    "text": "Elijah ben Solomon, the Vilna Gaon, lives from 1720 to 1797 and becomes the emblem of Lithuanian rabbinic scholarship. He masters Talmud, halakhah, and Kabbalah, corrects textual errors, and insists on precise study. He is a fierce opponent of the emerging Hasidic movement, signing bans against it. His disciples shape the Lithuanian yeshiva world, and his insistence on precise study leaves a deep mark on later rabbinic culture. For the canon, he represents the ideal of total textual mastery—and the limits of a Judaism organized around argument.",
+    "works": ["talmud-bavli"],
+    "people": [],
+    "places": ["vilna"]
+  },
+  {
+    "year": "c. 1740",
+    "sort": 1740,
+    "label": "Hasidism",
+    "title": "The Hasidic Movement",
+    "text": "Hasidism emerges in the eighteenth century around Israel Baal Shem Tov and his disciples, teaching that God is present everywhere and that devotion can be cultivated through joy, song, and prayer. It democratizes mystical practice and produces new genres of story and liturgy. Opponents, including the Vilna Gaon, denounce it as antinomian; the conflict reshapes Eastern European Jewry. Hasidism does not add books to the canon, but it changes how the existing books are read and sung.",
+    "works": ["zohar", "siddur"],
+    "people": [],
+    "places": []
+  },
+  {
+    "year": "c. 1780",
+    "sort": 1780,
+    "label": "Haskalah",
+    "title": "The Jewish Enlightenment",
+    "text": "The Haskalah, or Jewish Enlightenment, begins in eighteenth-century Berlin around Moses Mendelssohn and spreads through Europe. Its adherents promote Hebrew grammar, secular learning, and translation of the Bible into German, hoping to combine Jewish citizenship with modern culture. Traditionalists see assimilation; maskilim see renewal. The movement produces a new historical-critical reading of the canon and, eventually, modern Jewish scholarship. It is the intellectual door through which the atlas itself enters.",
+    "works": ["genesis"],
+    "people": [],
+    "places": []
+  },
+  {
+    "year": "1917",
+    "sort": 1917,
+    "label": "Modernity",
+    "title": "The JPS Bible",
+    "text": "The Jewish Publication Society publishes its English translation of the Hebrew Bible in 1917, the first complete English Bible produced by a committee of Jewish scholars. It follows the Masoretic text and aims for dignity and accuracy, though its style now sounds archaic. In the same year, the Balfour Declaration promises a national home for the Jewish people, and the British enter Jerusalem. Translation and politics both reshape the canon's public life. The atlas ends here, at the threshold of modernity.",
+    "works": ["genesis", "psalms"],
+    "people": [],
+    "places": ["jerusalem"]
+  }
+]
