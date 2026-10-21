@@ -48,7 +48,6 @@ Most projects are self-contained HTML pages that open directly in a browser.
 | --- | --- |
 | [Beyond arXiv digest](reading/beyond-arxiv-digest/) | Top papers from six preprint servers beyond arXiv, one tab per server |
 | [Books](reading/books/) | Reading list |
-| [Friday briefs](reading/friday-briefs/) | Weekly arXiv and Oklahoma news briefs |
 
 ## Misc
 
