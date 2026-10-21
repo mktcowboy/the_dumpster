@@ -1,0 +1,4970 @@
+{
+  "meta": {
+    "ticker": "QXO",
+    "captured_at": "2026-10-21",
+    "source_overview": "https://www.roic.ai/quote/QXO",
+    "source_financials": "https://www.roic.ai/quote/QXO/financials",
+    "datasets": {
+      "overview": "Overview metrics",
+      "income": "Income statement",
+      "balance": "Balance sheet",
+      "cashflow": "Cash flow statement",
+      "capital_structure": "Capital structure",
+      "working_capital": "Working capital",
+      "growth": "Growth rates",
+      "quarterly": "Quarterly data"
+    }
+  },
+  "company": {
+    "ticker": "QXO",
+    "name": "QXO, Inc.",
+    "exchange": "New York Stock Exchange",
+    "price": 10.46,
+    "price_change": 0.32,
+    "market_cap_millions": 10850.0,
+    "sector": "Industrials",
+    "industry": "Industrial - Distribution",
+    "ceo": "Bradley S. Jacobs",
+    "employees": 7794.0,
+    "address": "Five American Lane Greenwich CT United States of America 06831",
+    "ipo_date": "2012-04-17",
+    "cik": "0001236275",
+    "isin": "US82846H4056",
+    "cusip": "82846H405",
+    "website": "https://qxo.com",
+    "description": "QXO, Inc. is a publicly traded distributor of roofing, waterproofing and complementary building products in the United States. It plans to become tech-enabled in the building products distribution industry and generate outsized value for shareholders. The company was founded on October 3, 2002, and is headquartered in Greenwich, CT.",
+    "business": "QXO, Inc. operates as a leading publicly traded distributor of roofing, waterproofing, and complementary building products in the United States. The company offers a comprehensive range of products including asphalt, metal, wood, tile, and slate roofing; roofing accessories and insulation products; vinyl, aluminum, steel, fiber cement, wood, and composite siding; trim and gutters with accessories; built-up, modified, EPDM, PVC, and low-slope metal roofing; as well as air and vapor barriers, fluid-applied products, repair and protection solutions, and membrane waterproofing products. Additionally, QXO supplies building materials and tools such as exterior and interior materials and roof hatches, serving contractors, distributors, and suppliers to streamline operations across the construction and building sectors. Founded in 2024 with headquarters located in Greenwich, Connecticut, QXO aims to become the tech-enabled leader in the $800 billion building products distribution industry. The company targets $50 billion in annual revenues over the next decade through a combination of organic growth and accretive acquisitions. A major recent strategic development for QXO includes its April 2025 completion of the approximately $11 billion acquisition of Beacon Roofing Supply, Inc., a transaction that significantly expands its scale and market presence, making QXO the largest publicly traded distributor in its segment in the U.S. This acquisition is part of a broad transformation initiative focused on pricing, procurement, sales, organizational structure, and logistics, designed to boost growth and margins while enhancing customer experience. Beacon is now a wholly owned subsidiary of QXO, with its operations fully integrated. Additional recent company activities include a substantial equity private placement raising $830 million in conjunction with the Beacon acquisition and ongoing strategic initiatives to optimize operational efficiencies and maximize shareholder value. QXO maintains a strong focus on technology integration in its distribution processes and customer solutions, serving a wide geographic footprint across North America. The company's leadership under CEO Brad Jacobs emphasizes leveraging acquisitions and organic initiatives to drive long-term growth in the building products distribution industry. QXO's operations concentrate on customers from contractors to large-scale distributors and suppliers, providing essential building products and service solutions tailored to the construction market. Its broad product portfolio and strategic market position are supported by active investor interest and recent significant institutional investments, reflecting confidence in its growth trajectory and market leadership role. Overall, QXO, Inc. stands out as a major player in building supply distribution, distinguished by its extensive product range, aggressive expansion strategy through acquisitions like Beacon Roofing Supply, and commitment to becoming a technology-driven industry leader headquartered in Greenwich, Connecticut and operating primarily across the United States.",
+    "source_overview": "https://www.roic.ai/quote/QXO",
+    "source_financials": "https://www.roic.ai/quote/QXO/financials",
+    "captured_at": "2026-10-21"
+  },
+  "snapshot": {
+    "Name": "QXO, Inc.",
+    "Ticker": "QXO",
+    "Exchange": "New York Stock Exchange",
+    "Price": "10.46",
+    "Price Change": "0.32",
+    "Market Cap": "10.85B",
+    "Sector": "Industrials",
+    "Industry": "Industrial - Distribution",
+    "CEO": "Bradley S. Jacobs",
+    "Employees": "7,794",
+    "Address": "Five American Lane Greenwich CT United States of America 06831",
+    "IPO Date": "2012-04-17",
+    "CIK": "0001236275",
+    "ISIN": "US82846H4056",
+    "CUSIP": "82846H405",
+    "Website": "https://qxo.com",
+    "Description": "QXO, Inc. is a publicly traded distributor of roofing, waterproofing and complementary building products in the United States. It plans to become tech-enabled in the building products distribution industry and generate outsized value for shareholders. The company was founded on October 3, 2002, and is headquartered in Greenwich, CT."
+  },
+  "overview": {
+    "columns": [
+      "2013",
+      "2014",
+      "2015",
+      "2016",
+      "2017",
+      "2018",
+      "2019",
+      "2020",
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "TTM"
+    ],
+    "rows": [
+      {
+        "item": "Revenue per Share",
+        "values": [
+          35.67,
+          43.55,
+          51.41,
+          61.83,
+          62.11,
+          64.19,
+          68.44,
+          73.26,
+          66.37,
+          69.65,
+          82.98,
+          0.28,
+          11.16,
+          13.45
+        ]
+      },
+      {
+        "item": "Basic EPS, GAAP",
+        "values": [
+          0.66,
+          0.39,
+          0.7,
+          6.23,
+          -0.87,
+          0.47,
+          12.08,
+          0.31,
+          -0.21,
+          -0.44,
+          -1.63,
+          -0.11,
+          -0.63,
+          -0.82
+        ]
+      },
+      {
+        "item": "Free Cash Flow per Basic Share",
+        "values": [
+          1.46,
+          1.7,
+          0.11,
+          2.35,
+          2.66,
+          1.59,
+          -0.98,
+          2.85,
+          0.18,
+          3.1,
+          0.7,
+          0.42,
+          0.43,
+          0.34
+        ]
+      },
+      {
+        "item": "Dividend per Share",
+        "values": [
+          null,
+          null,
+          null,
+          0.48,
+          0.64,
+          null,
+          0.4,
+          7.2,
+          4.9,
+          null,
+          1.6,
+          0.16,
+          0.17,
+          0.16
+        ]
+      },
+      {
+        "item": "Book Value per Share",
+        "values": [
+          -0.1,
+          null,
+          0.35,
+          1.11,
+          7.53,
+          7.7,
+          15.81,
+          12.94,
+          14.57,
+          14.54,
+          11.24,
+          11.12,
+          12.82,
+          12.85
+        ]
+      },
+      {
+        "item": "Tangible Book Value per Share",
+        "values": [
+          -0.28,
+          -0.22,
+          -0.32,
+          0.48,
+          2.11,
+          0.95,
+          9.59,
+          5.58,
+          7.56,
+          6.31,
+          2.13,
+          11.11,
+          -0.42,
+          -1.78
+        ]
+      },
+      {
+        "item": "Basic Weighted Avg Shares",
+        "values": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          204,
+          613,
+          736
+        ]
+      },
+      {
+        "item": "Sales/Revenue/Turnover",
+        "values": [
+          17,
+          21,
+          28,
+          34,
+          35,
+          36,
+          39,
+          41,
+          42,
+          45,
+          55,
+          57,
+          6842,
+          9899
+        ]
+      },
+      {
+        "item": "Operating Margin (%)",
+        "values": [
+          1.49,
+          2.19,
+          1.29,
+          3.71,
+          2.69,
+          -3.22,
+          -4.34,
+          0.54,
+          -0.55,
+          -0.86,
+          -2.4,
+          -124.78,
+          -3.58,
+          -3.41
+        ]
+      },
+      {
+        "item": "Depreciation Expense",
+        "values": [
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          1,
+          1,
+          423,
+          678
+        ]
+      },
+      {
+        "item": "Net Income, GAAP",
+        "values": [
+          null,
+          null,
+          null,
+          3,
+          null,
+          null,
+          7,
+          null,
+          null,
+          null,
+          -1,
+          28,
+          -279,
+          -512
+        ]
+      },
+      {
+        "item": "Effective Tax Rate (%)",
+        "values": [
+          null,
+          53.05,
+          13.82,
+          null,
+          153.6,
+          null,
+          null,
+          21.25,
+          408.54,
+          null,
+          null,
+          44.88,
+          null,
+          null
+        ]
+      },
+      {
+        "item": "Profit Margin (%)",
+        "values": [
+          1.85,
+          0.9,
+          1.35,
+          10.07,
+          -1.4,
+          0.73,
+          17.65,
+          0.43,
+          -0.32,
+          -0.63,
+          -1.96,
+          49.21,
+          -4.08,
+          -5.17
+        ]
+      },
+      {
+        "item": "Working Capital",
+        "values": [
+          -1,
+          -1,
+          -1,
+          null,
+          null,
+          -1,
+          4,
+          2,
+          3,
+          3,
+          null,
+          5044,
+          3996,
+          7833
+        ]
+      },
+      {
+        "item": "LT Debt",
+        "values": [
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          2,
+          1,
+          1,
+          2,
+          null,
+          3758,
+          6848
+        ]
+      },
+      {
+        "item": "Total Equity",
+        "values": [
+          null,
+          null,
+          2,
+          5,
+          4,
+          4,
+          9,
+          7,
+          9,
+          10,
+          7,
+          5053,
+          9707,
+          10378
+        ]
+      },
+      {
+        "item": "Return on Invested Capital (%)",
+        "values": [
+          null,
+          101.28,
+          18.02,
+          null,
+          -9.76,
+          null,
+          null,
+          1.66,
+          6.59,
+          null,
+          null,
+          -1.54,
+          null,
+          null
+        ]
+      },
+      {
+        "item": "Return on Capital (%)",
+        "values": [
+          null,
+          78.17,
+          23.58,
+          null,
+          -9.33,
+          null,
+          null,
+          1.74,
+          -2.54,
+          null,
+          null,
+          1.11,
+          null,
+          null
+        ]
+      },
+      {
+        "item": "Return on Common Equity (%)",
+        "values": [
+          null,
+          null,
+          47.68,
+          105.29,
+          -10.58,
+          6.13,
+          102.72,
+          2.17,
+          -1.62,
+          -2.98,
+          -12.57,
+          -1.01,
+          -5.88,
+          -6.63
+        ]
+      }
+    ]
+  },
+  "capital_structure": {
+    "columns": [
+      "Dec'25",
+      "Mar'26",
+      "Jun'26"
+    ],
+    "rows": [
+      {
+        "item": "ST Debt",
+        "values": [
+          157,
+          160,
+          189
+        ]
+      },
+      {
+        "item": "LT Borrowings",
+        "values": [
+          3057,
+          3059,
+          6040
+        ]
+      },
+      {
+        "item": "LT Finance Leases",
+        "values": [
+          700,
+          684,
+          808
+        ]
+      },
+      {
+        "item": "Preferred Equity and Hybrid Capital",
+        "values": [
+          1057,
+          1057,
+          1057
+        ]
+      },
+      {
+        "item": "Shares Outstanding",
+        "values": [
+          675,
+          711,
+          725
+        ]
+      },
+      {
+        "item": "Market Capitalization",
+        "values": [
+          13012,
+          13804,
+          12535
+        ]
+      }
+    ]
+  },
+  "working_capital": {
+    "columns": [
+      "Dec'25",
+      "Mar'26",
+      "Jun'26"
+    ],
+    "rows": [
+      {
+        "item": "Total Current Assets",
+        "values": [
+          5546,
+          6457,
+          10348
+        ]
+      },
+      {
+        "item": "Cash, Cash Equivalents & STI",
+        "values": [
+          2362,
+          3046,
+          2774
+        ]
+      },
+      {
+        "item": "Accounts Receivable, Net",
+        "values": [
+          1145,
+          1136,
+          1782
+        ]
+      },
+      {
+        "item": "Inventories",
+        "values": [
+          1497,
+          1668,
+          2072
+        ]
+      },
+      {
+        "item": "Total Current Liabilities",
+        "values": [
+          1550,
+          1937,
+          2515
+        ]
+      },
+      {
+        "item": "Payables & Accruals",
+        "values": [
+          1393,
+          1752,
+          2288
+        ]
+      },
+      {
+        "item": "ST Debt",
+        "values": [
+          157,
+          160,
+          189
+        ]
+      },
+      {
+        "item": "Deferred Revenue",
+        "values": [
+          null,
+          25,
+          38
+        ]
+      }
+    ]
+  },
+  "growth": {
+    "columns": [
+      "10 years",
+      "5 years",
+      "1 year"
+    ],
+    "rows": [
+      {
+        "item": "Total Equity",
+        "values": [
+          6792.85,
+          13526.89,
+          92.1
+        ]
+      },
+      {
+        "item": "Free Cash Flow",
+        "values": [
+          2144.36,
+          3985.82,
+          208.63
+        ]
+      },
+      {
+        "item": "Net Income, GAAP",
+        "values": [
+          -66.07,
+          -720.43,
+          -1097.86
+        ]
+      },
+      {
+        "item": "Sales/Revenue/Turnover",
+        "values": [
+          1200.24,
+          2391.91,
+          11924.96
+        ]
+      },
+      {
+        "item": "Total Cash Common Dividend",
+        "values": [
+          null,
+          null,
+          -78.07
+        ]
+      }
+    ]
+  },
+  "quarterly": {
+    "revenue": {
+      "unit": "USD millions",
+      "rows": [
+        {
+          "period": "2024-Q1",
+          "period_type": "quarter",
+          "year": 2024,
+          "quarter": "Q1",
+          "value": 14
+        },
+        {
+          "period": "2024-Q2",
+          "period_type": "quarter",
+          "year": 2024,
+          "quarter": "Q2",
+          "value": 14
+        },
+        {
+          "period": "2024-Q3",
+          "period_type": "quarter",
+          "year": 2024,
+          "quarter": "Q3",
+          "value": 13
+        },
+        {
+          "period": "2024-Q4",
+          "period_type": "quarter",
+          "year": 2024,
+          "quarter": "Q4",
+          "value": 15
+        },
+        {
+          "period": "2024-FY",
+          "period_type": "annual",
+          "year": 2024,
+          "quarter": "FY",
+          "value": 57
+        },
+        {
+          "period": "2025-Q1",
+          "period_type": "quarter",
+          "year": 2025,
+          "quarter": "Q1",
+          "value": 14
+        },
+        {
+          "period": "2025-Q2",
+          "period_type": "quarter",
+          "year": 2025,
+          "quarter": "Q2",
+          "value": 1906
+        },
+        {
+          "period": "2025-Q3",
+          "period_type": "quarter",
+          "year": 2025,
+          "quarter": "Q3",
+          "value": 2728
+        },
+        {
+          "period": "2025-Q4",
+          "period_type": "quarter",
+          "year": 2025,
+          "quarter": "Q4",
+          "value": 2194
+        },
+        {
+          "period": "2025-FY",
+          "period_type": "annual",
+          "year": 2025,
+          "quarter": "FY",
+          "value": 6842
+        },
+        {
+          "period": "2026-Q1",
+          "period_type": "quarter",
+          "year": 2026,
+          "quarter": "Q1",
+          "value": 1730
+        },
+        {
+          "period": "2026-Q2",
+          "period_type": "quarter",
+          "year": 2026,
+          "quarter": "Q2",
+          "value": 3246
+        },
+        {
+          "period": "2026-Q3",
+          "period_type": "quarter",
+          "year": 2026,
+          "quarter": "Q3",
+          "value": null
+        },
+        {
+          "period": "2026-Q4",
+          "period_type": "quarter",
+          "year": 2026,
+          "quarter": "Q4",
+          "value": null
+        },
+        {
+          "period": "2026-FY",
+          "period_type": "annual",
+          "year": 2026,
+          "quarter": "FY",
+          "value": null
+        }
+      ]
+    },
+    "eps": {
+      "unit": "USD/share",
+      "rows": [
+        {
+          "period": "2024-Q1",
+          "period_type": "quarter",
+          "year": 2024,
+          "quarter": "Q1",
+          "value": 0.21
+        },
+        {
+          "period": "2024-Q2",
+          "period_type": "quarter",
+          "year": 2024,
+          "quarter": "Q2",
+          "value": -9.43
+        },
+        {
+          "period": "2024-Q3",
+          "period_type": "quarter",
+          "year": 2024,
+          "quarter": "Q3",
+          "value": -0.01
+        },
+        {
+          "period": "2024-Q4",
+          "period_type": "quarter",
+          "year": 2024,
+          "quarter": "Q4",
+          "value": -0.02
+        },
+        {
+          "period": "2024-FY",
+          "period_type": "annual",
+          "year": 2024,
+          "quarter": "FY",
+          "value": -0.11
+        },
+        {
+          "period": "2025-Q1",
+          "period_type": "quarter",
+          "year": 2025,
+          "quarter": "Q1",
+          "value": -0.03
+        },
+        {
+          "period": "2025-Q2",
+          "period_type": "quarter",
+          "year": 2025,
+          "quarter": "Q2",
+          "value": -0.14
+        },
+        {
+          "period": "2025-Q3",
+          "period_type": "quarter",
+          "year": 2025,
+          "quarter": "Q3",
+          "value": -0.24
+        },
+        {
+          "period": "2025-Q4",
+          "period_type": "quarter",
+          "year": 2025,
+          "quarter": "Q4",
+          "value": -0.17
+        },
+        {
+          "period": "2025-FY",
+          "period_type": "annual",
+          "year": 2025,
+          "quarter": "FY",
+          "value": -0.63
+        },
+        {
+          "period": "2026-Q1",
+          "period_type": "quarter",
+          "year": 2026,
+          "quarter": "Q1",
+          "value": -0.35
+        },
+        {
+          "period": "2026-Q2",
+          "period_type": "quarter",
+          "year": 2026,
+          "quarter": "Q2",
+          "value": -0.07
+        },
+        {
+          "period": "2026-Q3",
+          "period_type": "quarter",
+          "year": 2026,
+          "quarter": "Q3",
+          "value": null
+        },
+        {
+          "period": "2026-Q4",
+          "period_type": "quarter",
+          "year": 2026,
+          "quarter": "Q4",
+          "value": null
+        },
+        {
+          "period": "2026-FY",
+          "period_type": "annual",
+          "year": 2026,
+          "quarter": "FY",
+          "value": null
+        }
+      ]
+    },
+    "dps": {
+      "unit": "USD/share",
+      "rows": [
+        {
+          "period": "2024-Q1",
+          "period_type": "quarter",
+          "year": 2024,
+          "quarter": "Q1",
+          "value": null
+        },
+        {
+          "period": "2024-Q2",
+          "period_type": "quarter",
+          "year": 2024,
+          "quarter": "Q2",
+          "value": 24.86
+        },
+        {
+          "period": "2024-Q3",
+          "period_type": "quarter",
+          "year": 2024,
+          "quarter": "Q3",
+          "value": 0.03
+        },
+        {
+          "period": "2024-Q4",
+          "period_type": "quarter",
+          "year": 2024,
+          "quarter": "Q4",
+          "value": 0.05
+        },
+        {
+          "period": "2024-FY",
+          "period_type": "annual",
+          "year": 2024,
+          "quarter": "FY",
+          "value": 0.16
+        },
+        {
+          "period": "2025-Q1",
+          "period_type": "quarter",
+          "year": 2025,
+          "quarter": "Q1",
+          "value": 0.05
+        },
+        {
+          "period": "2025-Q2",
+          "period_type": "quarter",
+          "year": 2025,
+          "quarter": "Q2",
+          "value": 0.04
+        },
+        {
+          "period": "2025-Q3",
+          "period_type": "quarter",
+          "year": 2025,
+          "quarter": "Q3",
+          "value": 0.04
+        },
+        {
+          "period": "2025-Q4",
+          "period_type": "quarter",
+          "year": 2025,
+          "quarter": "Q4",
+          "value": 0.04
+        },
+        {
+          "period": "2025-FY",
+          "period_type": "annual",
+          "year": 2025,
+          "quarter": "FY",
+          "value": 0.17
+        },
+        {
+          "period": "2026-Q1",
+          "period_type": "quarter",
+          "year": 2026,
+          "quarter": "Q1",
+          "value": 0.04
+        },
+        {
+          "period": "2026-Q2",
+          "period_type": "quarter",
+          "year": 2026,
+          "quarter": "Q2",
+          "value": 0.04
+        },
+        {
+          "period": "2026-Q3",
+          "period_type": "quarter",
+          "year": 2026,
+          "quarter": "Q3",
+          "value": null
+        },
+        {
+          "period": "2026-Q4",
+          "period_type": "quarter",
+          "year": 2026,
+          "quarter": "Q4",
+          "value": null
+        },
+        {
+          "period": "2026-FY",
+          "period_type": "annual",
+          "year": 2026,
+          "quarter": "FY",
+          "value": null
+        }
+      ]
+    }
+  },
+  "statements": {
+    "income": {
+      "columns": [
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025"
+      ],
+      "as_of": [
+        "2011-12-31",
+        "2012-12-31",
+        "2013-12-31",
+        "2014-12-31",
+        "2015-12-31",
+        "2016-12-31",
+        "2017-12-31",
+        "2018-12-31",
+        "2019-12-31",
+        "2020-12-31",
+        "2021-12-31",
+        "2022-12-31",
+        "2023-12-31",
+        "2024-12-31",
+        "2025-12-31"
+      ],
+      "rows": [
+        {
+          "item": "Sales/Revenue/Turnover",
+          "values": [
+            11,
+            13,
+            17,
+            21,
+            28,
+            34,
+            35,
+            36,
+            39,
+            41,
+            42,
+            45,
+            55,
+            57,
+            6842
+          ],
+          "section": "income"
+        },
+        {
+          "item": "+ Sales & Services Revenue",
+          "values": [
+            11,
+            13,
+            17,
+            21,
+            28,
+            34,
+            35,
+            36,
+            39,
+            41,
+            42,
+            45,
+            55,
+            57,
+            6842
+          ],
+          "section": "income"
+        },
+        {
+          "item": "- Cost of Revenue",
+          "values": [
+            6,
+            8,
+            11,
+            13,
+            17,
+            21,
+            21,
+            22,
+            24,
+            25,
+            24,
+            27,
+            33,
+            34,
+            5270
+          ],
+          "section": "income"
+        },
+        {
+          "item": "+ Cost of Goods & Services",
+          "values": [
+            6,
+            8,
+            11,
+            13,
+            17,
+            21,
+            21,
+            22,
+            24,
+            25,
+            24,
+            27,
+            33,
+            34,
+            5270
+          ],
+          "section": "income"
+        },
+        {
+          "item": "Gross Profit",
+          "values": [
+            4,
+            5,
+            7,
+            9,
+            11,
+            13,
+            14,
+            14,
+            15,
+            17,
+            17,
+            18,
+            22,
+            23,
+            1573
+          ],
+          "section": "income"
+        },
+        {
+          "item": "+ Other Operating Income",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "income"
+        },
+        {
+          "item": "- Operating Expenses",
+          "values": [
+            4,
+            7,
+            6,
+            8,
+            10,
+            11,
+            13,
+            15,
+            16,
+            16,
+            17,
+            18,
+            23,
+            94,
+            1818
+          ],
+          "section": "income"
+        },
+        {
+          "item": "+ Selling, General & Admin",
+          "values": [
+            4,
+            6,
+            6,
+            8,
+            10,
+            11,
+            12,
+            14,
+            16,
+            16,
+            17,
+            17,
+            22,
+            93,
+            1395
+          ],
+          "section": "income"
+        },
+        {
+          "item": "+ Research & Development",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "income"
+        },
+        {
+          "item": "+ Other Operating Expense",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            423
+          ],
+          "section": "income"
+        },
+        {
+          "item": "Operating Income (Loss)",
+          "values": [
+            null,
+            -1,
+            null,
+            null,
+            null,
+            1,
+            1,
+            -1,
+            -2,
+            null,
+            null,
+            null,
+            -1,
+            -71,
+            -245
+          ],
+          "section": "income"
+        },
+        {
+          "item": "- Non-Operating (Income) Loss",
+          "values": [
+            -2,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            -122,
+            92
+          ],
+          "section": "income"
+        },
+        {
+          "item": "+ Interest Expense, Net",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            -122,
+            48
+          ],
+          "section": "income"
+        },
+        {
+          "item": "+ Interest Expense",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            174
+          ],
+          "section": "income"
+        },
+        {
+          "item": "- Interest Income",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            122,
+            126
+          ],
+          "section": "income"
+        },
+        {
+          "item": "+ Other Non-Op (Income) Loss",
+          "values": [
+            -3,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            44
+          ],
+          "section": "income"
+        },
+        {
+          "item": "Pretax Income",
+          "values": [
+            3,
+            -1,
+            null,
+            null,
+            null,
+            1,
+            1,
+            -1,
+            -2,
+            null,
+            null,
+            null,
+            -1,
+            51,
+            -337
+          ],
+          "section": "income"
+        },
+        {
+          "item": "- Income Tax Expense (Benefit)",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            -2,
+            1,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            23,
+            -58
+          ],
+          "section": "income"
+        },
+        {
+          "item": "- (Income) Loss from Affiliates",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "income"
+        },
+        {
+          "item": "Income (Loss) from Cont Ops",
+          "values": [
+            3,
+            -1,
+            null,
+            null,
+            null,
+            3,
+            null,
+            -1,
+            -1,
+            null,
+            null,
+            null,
+            -1,
+            28,
+            -279
+          ],
+          "section": "income"
+        },
+        {
+          "item": "- Net Extraordinary Losses (Gains)",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            -1,
+            -8,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "income"
+        },
+        {
+          "item": "+ Discontinued Operations",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            1,
+            11,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "income"
+        },
+        {
+          "item": "+ Extraord. & Accounting Changes",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            -2,
+            -20,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "income"
+        },
+        {
+          "item": "Income (Loss) Incl. MI",
+          "values": [
+            3,
+            -1,
+            null,
+            null,
+            null,
+            3,
+            null,
+            null,
+            7,
+            null,
+            null,
+            null,
+            -1,
+            28,
+            -279
+          ],
+          "section": "income"
+        },
+        {
+          "item": "- Minority Interest",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "income"
+        },
+        {
+          "item": "Net Income, GAAP",
+          "values": [
+            3,
+            -1,
+            null,
+            null,
+            null,
+            3,
+            null,
+            null,
+            7,
+            null,
+            null,
+            null,
+            -1,
+            28,
+            -279
+          ],
+          "section": "income"
+        },
+        {
+          "item": "- Preferred Dividends",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            51,
+            109
+          ],
+          "section": "income"
+        },
+        {
+          "item": "- Other Adjustments",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "income"
+        },
+        {
+          "item": "Net Income Avail to Common, GAAP",
+          "values": [
+            3,
+            -1,
+            null,
+            null,
+            null,
+            3,
+            null,
+            null,
+            7,
+            null,
+            null,
+            null,
+            -1,
+            -23,
+            -388
+          ],
+          "section": "income"
+        },
+        {
+          "item": "EBIT",
+          "values": [
+            null,
+            -1,
+            null,
+            null,
+            null,
+            1,
+            1,
+            -1,
+            -2,
+            null,
+            null,
+            null,
+            -1,
+            -71,
+            -245
+          ],
+          "section": "income"
+        },
+        {
+          "item": "EBITDA",
+          "values": [
+            null,
+            -1,
+            1,
+            1,
+            1,
+            2,
+            2,
+            -1,
+            -1,
+            1,
+            1,
+            1,
+            null,
+            -70,
+            178
+          ],
+          "section": "income"
+        },
+        {
+          "item": "EBITDA Margin (%)",
+          "values": [
+            3.39,
+            -7.44,
+            3.22,
+            3.89,
+            3.05,
+            5.72,
+            4.47,
+            -1.42,
+            -1.92,
+            3.26,
+            2.79,
+            3.05,
+            -0.57,
+            -122.85,
+            2.6
+          ],
+          "section": "income"
+        },
+        {
+          "item": "EBITA",
+          "values": [
+            null,
+            -1,
+            null,
+            null,
+            null,
+            1,
+            1,
+            -1,
+            -2,
+            null,
+            null,
+            null,
+            -1,
+            -71,
+            -245
+          ],
+          "section": "income"
+        },
+        {
+          "item": "Gross Margin (%)",
+          "values": [
+            42.74,
+            40.47,
+            38.79,
+            39.94,
+            39.23,
+            37.3,
+            39.78,
+            38.38,
+            38.12,
+            40.22,
+            41.26,
+            39.93,
+            39.65,
+            40.6,
+            22.99
+          ],
+          "section": "income"
+        },
+        {
+          "item": "Operating Margin (%)",
+          "values": [
+            2.47,
+            -8.93,
+            1.49,
+            2.19,
+            1.29,
+            3.71,
+            2.69,
+            -3.22,
+            -4.34,
+            0.54,
+            -0.55,
+            -0.86,
+            -2.4,
+            -124.78,
+            -3.58
+          ],
+          "section": "income"
+        },
+        {
+          "item": "Profit Margin (%)",
+          "values": [
+            24.87,
+            -9.37,
+            1.85,
+            0.9,
+            1.35,
+            10.07,
+            -1.4,
+            0.73,
+            17.65,
+            0.43,
+            -0.32,
+            -0.63,
+            -1.96,
+            49.21,
+            -4.08
+          ],
+          "section": "income"
+        },
+        {
+          "item": "Sales per Employee",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "income"
+        },
+        {
+          "item": "Dividend per Share",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            0.48,
+            0.64,
+            null,
+            0.4,
+            7.2,
+            4.9,
+            null,
+            1.6,
+            0.16,
+            0.17
+          ],
+          "section": "income"
+        },
+        {
+          "item": "Depreciation Expense",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            1,
+            1,
+            423
+          ],
+          "section": "income"
+        },
+        {
+          "item": "Basic Weighted Avg Shares",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            204,
+            613
+          ],
+          "section": "income"
+        },
+        {
+          "item": "Basic EPS, GAAP",
+          "values": [
+            140.15,
+            -2.57,
+            0.66,
+            0.39,
+            0.7,
+            6.23,
+            -0.87,
+            0.47,
+            12.08,
+            0.31,
+            -0.21,
+            -0.44,
+            -1.63,
+            -0.11,
+            -0.63
+          ],
+          "section": "income"
+        },
+        {
+          "item": "Basic EPS from Cont Ops",
+          "values": [
+            145.1,
+            -2.57,
+            0.66,
+            0.39,
+            0.7,
+            6.23,
+            -0.87,
+            -1.64,
+            -2.61,
+            0.31,
+            -0.21,
+            -0.44,
+            -1.63,
+            0.14,
+            -0.46
+          ],
+          "section": "income"
+        },
+        {
+          "item": "Diluted Weighted Avg Shares",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            204,
+            613
+          ],
+          "section": "income"
+        },
+        {
+          "item": "Diluted EPS, GAAP",
+          "values": [
+            5.94,
+            -2.57,
+            0.66,
+            0.39,
+            0.69,
+            6.15,
+            -0.87,
+            0.47,
+            12.08,
+            0.31,
+            -0.21,
+            -0.44,
+            -1.63,
+            -0.11,
+            -0.63
+          ],
+          "section": "income"
+        },
+        {
+          "item": "Diluted EPS from Cont Ops",
+          "values": [
+            6.14,
+            -2.57,
+            0.66,
+            0.39,
+            0.69,
+            6.15,
+            -0.87,
+            -1.64,
+            -2.61,
+            0.31,
+            -0.21,
+            -0.44,
+            -1.63,
+            0.14,
+            -0.46
+          ],
+          "section": "income"
+        }
+      ]
+    },
+    "balance": {
+      "columns": [
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025"
+      ],
+      "as_of": [
+        "2011-12-31",
+        "2012-12-31",
+        "2013-12-31",
+        "2014-12-31",
+        "2015-12-31",
+        "2016-12-31",
+        "2017-12-31",
+        "2018-12-31",
+        "2019-12-31",
+        "2020-12-31",
+        "2021-12-31",
+        "2022-12-31",
+        "2023-12-31",
+        "2024-12-31",
+        "2025-12-31"
+      ],
+      "rows": [
+        {
+          "item": "Total Current Assets",
+          "values": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            5,
+            5,
+            5,
+            13,
+            9,
+            11,
+            14,
+            12,
+            5090,
+            5546
+          ],
+          "section": "assets_current"
+        },
+        {
+          "item": "+ Cash, Cash Equivalents & STI",
+          "values": [
+            null,
+            null,
+            1,
+            1,
+            1,
+            2,
+            2,
+            2,
+            9,
+            7,
+            7,
+            8,
+            6,
+            5068,
+            2362
+          ],
+          "section": "assets_current"
+        },
+        {
+          "item": "+ Cash & Cash Equivalents",
+          "values": [
+            null,
+            null,
+            1,
+            1,
+            1,
+            2,
+            2,
+            2,
+            9,
+            7,
+            7,
+            8,
+            6,
+            5068,
+            2362
+          ],
+          "section": "assets_current"
+        },
+        {
+          "item": "+ ST Investments",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "assets_current"
+        },
+        {
+          "item": "+ Accounts & Notes Receiv",
+          "values": [
+            1,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            2,
+            4,
+            2,
+            2,
+            3,
+            3,
+            3,
+            1604
+          ],
+          "section": "assets_current"
+        },
+        {
+          "item": "+ Accounts Receivable, Net",
+          "values": [
+            1,
+            2,
+            2,
+            2,
+            2,
+            3,
+            2,
+            2,
+            3,
+            2,
+            2,
+            2,
+            3,
+            3,
+            1145
+          ],
+          "section": "assets_current"
+        },
+        {
+          "item": "+ Notes Receivable, Net",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "assets_current"
+        },
+        {
+          "item": "+ Loans Receivable, Net",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "assets_current"
+        },
+        {
+          "item": "+ Other Receivable, Net",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null,
+            null,
+            null,
+            459
+          ],
+          "section": "assets_current"
+        },
+        {
+          "item": "+ Inventories",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            1497
+          ],
+          "section": "assets_current"
+        },
+        {
+          "item": "+ Raw Materials",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "assets_current"
+        },
+        {
+          "item": "+ Work In Process",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "assets_current"
+        },
+        {
+          "item": "+ Finished Goods",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "assets_current"
+        },
+        {
+          "item": "+ Inventory Adjustments",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "assets_current"
+        },
+        {
+          "item": "+ Other Inventory",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            1497
+          ],
+          "section": "assets_current"
+        },
+        {
+          "item": "+ Other ST Assets",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            2,
+            3,
+            3,
+            18,
+            84
+          ],
+          "section": "assets_current"
+        },
+        {
+          "item": "+ Misc ST Assets",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "assets_current"
+        },
+        {
+          "item": "+ Prepaid Expenses",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "assets_current"
+        },
+        {
+          "item": "+ ST Derivative & Hedging Assets",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "assets_current"
+        },
+        {
+          "item": "+ ST Assets Held-for-Sale",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "assets_current"
+        },
+        {
+          "item": "+ ST Deferred Tax Assets",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "assets_current"
+        },
+        {
+          "item": "Total Noncurrent Assets",
+          "values": [
+            null,
+            1,
+            1,
+            1,
+            4,
+            6,
+            5,
+            7,
+            6,
+            7,
+            7,
+            8,
+            9,
+            9,
+            10341
+          ],
+          "section": "assets_current"
+        },
+        {
+          "item": "+ Property, Plant & Equip, Net",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            1,
+            1,
+            1,
+            2,
+            2,
+            1,
+            1,
+            1,
+            1378
+          ],
+          "section": "assets_noncurrent"
+        },
+        {
+          "item": "+ Property, Plant & Equip",
+          "values": [
+            1,
+            1,
+            1,
+            1,
+            2,
+            2,
+            2,
+            3,
+            4,
+            4,
+            4,
+            4,
+            5,
+            5,
+            1466
+          ],
+          "section": "assets_noncurrent"
+        },
+        {
+          "item": "- Accumulated Depreciation",
+          "values": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4,
+            88
+          ],
+          "section": "assets_noncurrent"
+        },
+        {
+          "item": "+ LT Investments & Receivables",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "assets_noncurrent"
+        },
+        {
+          "item": "+ LT Investments",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "assets_noncurrent"
+        },
+        {
+          "item": "+ LT Receivables",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "assets_noncurrent"
+        },
+        {
+          "item": "+ Other LT Assets",
+          "values": [
+            null,
+            1,
+            1,
+            1,
+            3,
+            5,
+            4,
+            6,
+            5,
+            5,
+            6,
+            7,
+            8,
+            8,
+            8963
+          ],
+          "section": "assets_noncurrent"
+        },
+        {
+          "item": "+ Total Intangible Assets",
+          "values": [
+            null,
+            1,
+            1,
+            1,
+            3,
+            3,
+            3,
+            4,
+            3,
+            4,
+            5,
+            5,
+            6,
+            5,
+            8930
+          ],
+          "section": "assets_noncurrent"
+        },
+        {
+          "item": "+ Goodwill",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            5111
+          ],
+          "section": "assets_noncurrent"
+        },
+        {
+          "item": "+ Other Intangible Assets",
+          "values": [
+            null,
+            1,
+            1,
+            1,
+            3,
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            4,
+            5,
+            4,
+            3819
+          ],
+          "section": "assets_noncurrent"
+        },
+        {
+          "item": "+ LT Deferred Tax Assets",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "assets_noncurrent"
+        },
+        {
+          "item": "+ LT Derivative & Hedging Assets",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "assets_noncurrent"
+        },
+        {
+          "item": "+ Misc LT Assets",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            2,
+            1,
+            2,
+            1,
+            1,
+            1,
+            1,
+            2,
+            3,
+            32
+          ],
+          "section": "assets_noncurrent"
+        },
+        {
+          "item": "Total Assets",
+          "values": [
+            2,
+            3,
+            4,
+            5,
+            8,
+            11,
+            10,
+            12,
+            19,
+            16,
+            18,
+            21,
+            20,
+            5098,
+            15887
+          ],
+          "section": "assets_noncurrent"
+        },
+        {
+          "item": "+ Payables & Accruals",
+          "values": [
+            1,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            6,
+            4,
+            4,
+            6,
+            7,
+            45,
+            1393
+          ],
+          "section": "liabilities_current"
+        },
+        {
+          "item": "+ Accounts Payable",
+          "values": [
+            1,
+            2,
+            1,
+            1,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            5,
+            6,
+            819
+          ],
+          "section": "liabilities_current"
+        },
+        {
+          "item": "+ Accrued Taxes",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            24,
+            null
+          ],
+          "section": "liabilities_current"
+        },
+        {
+          "item": "+ Interest & Dividends Payable",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "liabilities_current"
+        },
+        {
+          "item": "+ Other Payables & Accruals",
+          "values": [
+            null,
+            null,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            3,
+            1,
+            2,
+            2,
+            3,
+            15,
+            574
+          ],
+          "section": "liabilities_current"
+        },
+        {
+          "item": "+ ST Debt",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            null,
+            157
+          ],
+          "section": "liabilities_current"
+        },
+        {
+          "item": "+ ST Borrowings",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            1,
+            null,
+            1,
+            1,
+            null,
+            null
+          ],
+          "section": "liabilities_current"
+        },
+        {
+          "item": "+ ST Finance Leases",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            1,
+            1,
+            null,
+            null,
+            null,
+            157
+          ],
+          "section": "liabilities_current"
+        },
+        {
+          "item": "+ Other ST Liabilities",
+          "values": [
+            1,
+            1,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            4,
+            3,
+            null,
+            null
+          ],
+          "section": "liabilities_current"
+        },
+        {
+          "item": "+ Deferred Revenue",
+          "values": [
+            1,
+            1,
+            2,
+            2,
+            2,
+            2,
+            2,
+            1,
+            2,
+            2,
+            2,
+            4,
+            3,
+            3,
+            null
+          ],
+          "section": "liabilities_current"
+        },
+        {
+          "item": "+ Derivatives & Hedging",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "liabilities_current"
+        },
+        {
+          "item": "+ Deferred Tax Liabilities",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "liabilities_current"
+        },
+        {
+          "item": "+ Misc ST Liabilities",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null,
+            null,
+            null,
+            -3,
+            null
+          ],
+          "section": "liabilities_current"
+        },
+        {
+          "item": "Total Current Liabilities",
+          "values": [
+            2,
+            4,
+            4,
+            5,
+            6,
+            5,
+            6,
+            6,
+            9,
+            7,
+            7,
+            11,
+            12,
+            45,
+            1550
+          ],
+          "section": "liabilities_current"
+        },
+        {
+          "item": "+ LT Debt",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            1,
+            1,
+            null,
+            1,
+            1,
+            2,
+            1,
+            1,
+            2,
+            null,
+            3758
+          ],
+          "section": "liabilities_noncurrent"
+        },
+        {
+          "item": "+ LT Borrowings",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            null,
+            3057
+          ],
+          "section": "liabilities_noncurrent"
+        },
+        {
+          "item": "+ LT Finance Leases",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            1,
+            1,
+            1,
+            null,
+            1,
+            null,
+            700
+          ],
+          "section": "liabilities_noncurrent"
+        },
+        {
+          "item": "+ Other LT Liabilities",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            873
+          ],
+          "section": "liabilities_noncurrent"
+        },
+        {
+          "item": "+ Accrued Liabilities",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            847
+          ],
+          "section": "liabilities_noncurrent"
+        },
+        {
+          "item": "+ Pension Liabilities",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "liabilities_noncurrent"
+        },
+        {
+          "item": "+ Deferred Revenue",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "liabilities_noncurrent"
+        },
+        {
+          "item": "+ Deferred Tax Liabilities",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "liabilities_noncurrent"
+        },
+        {
+          "item": "+ Derivatives & Hedging",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "liabilities_noncurrent"
+        },
+        {
+          "item": "+ Misc LT Liabilities",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            26
+          ],
+          "section": "liabilities_noncurrent"
+        },
+        {
+          "item": "Total Noncurrent Liabilities",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            1,
+            1,
+            null,
+            1,
+            1,
+            2,
+            1,
+            1,
+            2,
+            null,
+            4630
+          ],
+          "section": "liabilities_noncurrent"
+        },
+        {
+          "item": "Total Liabilities",
+          "values": [
+            2,
+            4,
+            4,
+            5,
+            7,
+            6,
+            6,
+            7,
+            10,
+            9,
+            9,
+            12,
+            13,
+            45,
+            6180
+          ],
+          "section": "equity"
+        },
+        {
+          "item": "+ Preferred Equity and Hybrid Capital",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            499,
+            1057
+          ],
+          "section": "equity"
+        },
+        {
+          "item": "+ Share Capital & APIC",
+          "values": [
+            9,
+            11,
+            11,
+            11,
+            12,
+            12,
+            12,
+            12,
+            10,
+            8,
+            10,
+            10,
+            9,
+            4560,
+            9047
+          ],
+          "section": "equity"
+        },
+        {
+          "item": "+ Common Stock",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "equity"
+        },
+        {
+          "item": "+ Additional Paid in Capital",
+          "values": [
+            9,
+            11,
+            11,
+            11,
+            12,
+            12,
+            12,
+            12,
+            10,
+            8,
+            10,
+            10,
+            9,
+            4560,
+            9047
+          ],
+          "section": "equity"
+        },
+        {
+          "item": "- Treasury Stock",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "equity"
+        },
+        {
+          "item": "+ Retained Earnings",
+          "values": [
+            -10,
+            -12,
+            -11,
+            -11,
+            -11,
+            -7,
+            -8,
+            -7,
+            -1,
+            null,
+            -1,
+            -1,
+            -2,
+            -6,
+            -394
+          ],
+          "section": "equity"
+        },
+        {
+          "item": "+ Other Equity",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            -2
+          ],
+          "section": "equity"
+        },
+        {
+          "item": "Equity Before Minority Interest",
+          "values": [
+            -1,
+            -1,
+            null,
+            null,
+            2,
+            5,
+            4,
+            4,
+            9,
+            7,
+            9,
+            10,
+            7,
+            5053,
+            9707
+          ],
+          "section": "equity"
+        },
+        {
+          "item": "+ Minority/Non Controlling Interest",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "equity"
+        },
+        {
+          "item": "Total Equity",
+          "values": [
+            -1,
+            -1,
+            null,
+            null,
+            2,
+            5,
+            4,
+            4,
+            9,
+            7,
+            9,
+            10,
+            7,
+            5053,
+            9707
+          ],
+          "section": "equity"
+        },
+        {
+          "item": "Total Liabilities & Equity",
+          "values": [
+            2,
+            3,
+            4,
+            5,
+            8,
+            11,
+            10,
+            12,
+            19,
+            16,
+            18,
+            21,
+            20,
+            5098,
+            15887
+          ],
+          "section": "equity"
+        },
+        {
+          "item": "Shares Outstanding",
+          "values": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            409,
+            675
+          ],
+          "section": "equity"
+        },
+        {
+          "item": "Number of Employees",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "equity"
+        },
+        {
+          "item": "Capital Leases - Total",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            1,
+            2,
+            1,
+            1,
+            1,
+            1,
+            857
+          ],
+          "section": "equity"
+        },
+        {
+          "item": "Net Debt",
+          "values": [
+            null,
+            null,
+            null,
+            -1,
+            null,
+            -1,
+            -2,
+            null,
+            -7,
+            -5,
+            -6,
+            -7,
+            -4,
+            -5068,
+            696
+          ],
+          "section": "equity"
+        },
+        {
+          "item": "Net Debt to Equity",
+          "values": [
+            18.56,
+            -23.84,
+            115.89,
+            -6546.87,
+            6.42,
+            -16.65,
+            -41.37,
+            -9.37,
+            -83.96,
+            -70.23,
+            -62.47,
+            -68.61,
+            -59.52,
+            -100.31,
+            7.17
+          ],
+          "section": "equity"
+        },
+        {
+          "item": "Tangible Common Equity Ratio",
+          "values": [
+            -74.71,
+            -88.6,
+            -37.74,
+            -20.32,
+            -25.7,
+            27.32,
+            16.09,
+            6.71,
+            34.92,
+            26.71,
+            35.96,
+            25.87,
+            9.78,
+            89.32,
+            -4.03
+          ],
+          "section": "equity"
+        },
+        {
+          "item": "Current Ratio",
+          "values": [
+            0.51,
+            0.45,
+            0.66,
+            0.82,
+            0.88,
+            0.96,
+            0.92,
+            0.78,
+            1.5,
+            1.28,
+            1.45,
+            1.27,
+            1.02,
+            112.85,
+            3.58
+          ],
+          "section": "equity"
+        },
+        {
+          "item": "Cash Conversion Cycle",
+          "values": [
+            -46.84,
+            -41.49,
+            -20.99,
+            -4.92,
+            -2.25,
+            -2.51,
+            -8.72,
+            -12.4,
+            -11.47,
+            -12.06,
+            -13.81,
+            -18.99,
+            -26.05,
+            -39.93,
+            60.22
+          ],
+          "section": "equity"
+        }
+      ]
+    },
+    "cashflow": {
+      "columns": [
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025"
+      ],
+      "as_of": [
+        "2011-12-31",
+        "2012-12-31",
+        "2013-12-31",
+        "2014-12-31",
+        "2015-12-31",
+        "2016-12-31",
+        "2017-12-31",
+        "2018-12-31",
+        "2019-12-31",
+        "2020-12-31",
+        "2021-12-31",
+        "2022-12-31",
+        "2023-12-31",
+        "2024-12-31",
+        "2025-12-31"
+      ],
+      "rows": [
+        {
+          "item": "+ Net Income",
+          "values": [
+            3,
+            -1,
+            null,
+            null,
+            null,
+            3,
+            null,
+            -1,
+            -1,
+            null,
+            null,
+            null,
+            -1,
+            28,
+            -279
+          ],
+          "section": "operating"
+        },
+        {
+          "item": "+ Depreciation & Amortization",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            1,
+            1,
+            423
+          ],
+          "section": "operating"
+        },
+        {
+          "item": "+ Non-Cash Items",
+          "values": [
+            -3,
+            1,
+            null,
+            null,
+            null,
+            -2,
+            1,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            34,
+            242
+          ],
+          "section": "operating"
+        },
+        {
+          "item": "+ Stock-Based Compensation",
+          "values": [
+            null,
+            1,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            34,
+            144
+          ],
+          "section": "operating"
+        },
+        {
+          "item": "+ Deferred Income Taxes",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            -2,
+            1,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            -1,
+            -61
+          ],
+          "section": "operating"
+        },
+        {
+          "item": "+ Asset Impairment Charge",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "operating"
+        },
+        {
+          "item": "+ Other Non-Cash Adj",
+          "values": [
+            -3,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            158
+          ],
+          "section": "operating"
+        },
+        {
+          "item": "+ Chg in Non-Cash Work Cap",
+          "values": [
+            1,
+            null,
+            null,
+            null,
+            -1,
+            null,
+            1,
+            null,
+            null,
+            1,
+            -1,
+            null,
+            1,
+            22,
+            -124
+          ],
+          "section": "operating"
+        },
+        {
+          "item": "+ (Inc) Dec in Accts Receiv",
+          "values": [
+            null,
+            -1,
+            null,
+            -1,
+            -1,
+            null,
+            null,
+            null,
+            -1,
+            1,
+            -1,
+            -1,
+            null,
+            null,
+            -38
+          ],
+          "section": "operating"
+        },
+        {
+          "item": "+ (Inc) Dec in Inventories",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            288
+          ],
+          "section": "operating"
+        },
+        {
+          "item": "+ (Inc) Dec in Prepaid Assets",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            -1,
+            null,
+            null,
+            -12,
+            20
+          ],
+          "section": "operating"
+        },
+        {
+          "item": "+ Inc (Dec) in Accts Payable",
+          "values": [
+            null,
+            1,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            2,
+            2,
+            34,
+            -326
+          ],
+          "section": "operating"
+        },
+        {
+          "item": "+ Inc (Dec) in Other",
+          "values": [
+            1,
+            null,
+            null,
+            null,
+            null,
+            -1,
+            null,
+            null,
+            null,
+            -1,
+            null,
+            -1,
+            -1,
+            null,
+            -68
+          ],
+          "section": "operating"
+        },
+        {
+          "item": "+ Net Cash From Disc Ops",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            2,
+            1,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "operating"
+        },
+        {
+          "item": "Cash from Operating Activities",
+          "values": [
+            1,
+            null,
+            1,
+            1,
+            null,
+            2,
+            2,
+            1,
+            null,
+            2,
+            null,
+            2,
+            1,
+            85,
+            261
+          ],
+          "section": "operating"
+        },
+        {
+          "item": "+ Change in Fixed & Intang",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "investing"
+        },
+        {
+          "item": "+ Disp in Fixed & Intang",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "investing"
+        },
+        {
+          "item": "+ Disp of Fixed Prod Assets",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "investing"
+        },
+        {
+          "item": "+ Disp of Intangible Assets",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "investing"
+        },
+        {
+          "item": "+ Acq of Fixed & Intang",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            -1,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "investing"
+        },
+        {
+          "item": "+ Acq of Fixed Prod Assets",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "investing"
+        },
+        {
+          "item": "+ Acq of Intangible Assets",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            -1,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "investing"
+        },
+        {
+          "item": "+ Cash (Repurchase) of Equity",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null,
+            null,
+            null,
+            4,
+            null,
+            null,
+            4034,
+            4256
+          ],
+          "section": "investing"
+        },
+        {
+          "item": "+ Increase in Capital Stock",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null,
+            null,
+            null,
+            4,
+            null,
+            null,
+            4051,
+            4256
+          ],
+          "section": "investing"
+        },
+        {
+          "item": "+ Decrease in Capital Stock",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            -17,
+            null
+          ],
+          "section": "investing"
+        },
+        {
+          "item": "+ Net Change in LT Investment",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "investing"
+        },
+        {
+          "item": "+ Dec in LT Investment",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "investing"
+        },
+        {
+          "item": "+ Inc in LT Investment",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "investing"
+        },
+        {
+          "item": "+ Net Cash From Acq & Div",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            -1,
+            null,
+            null,
+            null,
+            8,
+            null,
+            null,
+            null,
+            null,
+            null,
+            -10556
+          ],
+          "section": "investing"
+        },
+        {
+          "item": "+ Cash from Divestitures",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            8,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "investing"
+        },
+        {
+          "item": "+ Cash for Acq of Subs",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            -1,
+            null,
+            null,
+            null,
+            null,
+            null,
+            -1,
+            null,
+            null,
+            null,
+            -10556
+          ],
+          "section": "investing"
+        },
+        {
+          "item": "+ Cash for JVs",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "investing"
+        },
+        {
+          "item": "+ Other Investing Activities",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null,
+            null,
+            -74
+          ],
+          "section": "investing"
+        },
+        {
+          "item": "+ Net Cash From Disc Ops",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "investing"
+        },
+        {
+          "item": "Cash from Investing Activities",
+          "values": [
+            null,
+            -1,
+            null,
+            null,
+            -1,
+            null,
+            -1,
+            -1,
+            8,
+            1,
+            -1,
+            null,
+            null,
+            null,
+            -10630
+          ],
+          "section": "investing"
+        },
+        {
+          "item": "+ Dividends Paid",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            -4,
+            -3,
+            null,
+            -1,
+            -32,
+            -105
+          ],
+          "section": "financing"
+        },
+        {
+          "item": "+ Net Cash From Debt",
+          "values": [
+            -1,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -2,
+            3070
+          ],
+          "section": "financing"
+        },
+        {
+          "item": "+ Cash From Debt",
+          "values": [
+            1,
+            null,
+            1,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            6,
+            null,
+            null,
+            null,
+            null,
+            5342
+          ],
+          "section": "financing"
+        },
+        {
+          "item": "+ Repayments of Debt",
+          "values": [
+            -1,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            -1,
+            -1,
+            -7,
+            -1,
+            -1,
+            -1,
+            -2,
+            -2272
+          ],
+          "section": "financing"
+        },
+        {
+          "item": "+ Other Financing Activities",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            982,
+            442
+          ],
+          "section": "financing"
+        },
+        {
+          "item": "+ Net Cash From Disc Ops",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "financing"
+        },
+        {
+          "item": "Cash from Financing Activities",
+          "values": [
+            -1,
+            null,
+            null,
+            null,
+            null,
+            -1,
+            -1,
+            -1,
+            -1,
+            -5,
+            1,
+            -1,
+            -2,
+            4981,
+            7663
+          ],
+          "section": "financing"
+        },
+        {
+          "item": "Effect of Foreign Exchange Rates",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "summary"
+        },
+        {
+          "item": "Net Changes in Cash",
+          "values": [
+            null,
+            null,
+            1,
+            1,
+            null,
+            null,
+            1,
+            null,
+            7,
+            -2,
+            null,
+            1,
+            -2,
+            5066,
+            -2706
+          ],
+          "section": "summary"
+        },
+        {
+          "item": "EBITDA",
+          "values": [
+            null,
+            -1,
+            1,
+            1,
+            1,
+            2,
+            2,
+            -1,
+            -1,
+            1,
+            1,
+            1,
+            null,
+            -70,
+            178
+          ],
+          "section": "summary"
+        },
+        {
+          "item": "EBITDA Margin (%)",
+          "values": [
+            3.39,
+            -7.44,
+            3.22,
+            3.89,
+            3.05,
+            5.72,
+            4.47,
+            -1.42,
+            -1.92,
+            3.26,
+            2.79,
+            3.05,
+            -0.57,
+            -122.85,
+            2.6
+          ],
+          "section": "summary"
+        },
+        {
+          "item": "Free Cash Flow",
+          "values": [
+            1,
+            null,
+            1,
+            1,
+            null,
+            1,
+            1,
+            1,
+            -1,
+            2,
+            null,
+            2,
+            null,
+            85,
+            261
+          ],
+          "section": "summary"
+        },
+        {
+          "item": "Net Cash Paid for Acquisitions",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            1,
+            null,
+            null,
+            null,
+            -8,
+            null,
+            null,
+            null,
+            null,
+            null,
+            10556
+          ],
+          "section": "summary"
+        },
+        {
+          "item": "Free Cash Flow to Firm",
+          "values": [
+            1,
+            null,
+            null,
+            1,
+            null,
+            null,
+            1,
+            null,
+            null,
+            2,
+            null,
+            null,
+            null,
+            85,
+            null
+          ],
+          "section": "summary"
+        },
+        {
+          "item": "Free Cash Flow to Equity",
+          "values": [
+            null,
+            null,
+            1,
+            1,
+            null,
+            1,
+            2,
+            1,
+            -1,
+            1,
+            null,
+            1,
+            -1,
+            530,
+            3780
+          ],
+          "section": "summary"
+        },
+        {
+          "item": "Free Cash Flow per Basic Share",
+          "values": [
+            46.34,
+            0.19,
+            1.46,
+            1.7,
+            0.11,
+            2.35,
+            2.66,
+            1.59,
+            -0.98,
+            2.85,
+            0.18,
+            3.1,
+            0.7,
+            0.42,
+            0.43
+          ],
+          "section": "summary"
+        },
+        {
+          "item": "Price/Free Cash Flow",
+          "values": [
+            1.19,
+            19.92,
+            10.64,
+            22.74,
+            60.95,
+            5.86,
+            6.08,
+            6.17,
+            -79.91,
+            6.94,
+            65.93,
+            7.36,
+            127.56,
+            38.2,
+            45.24
+          ],
+          "section": "summary"
+        },
+        {
+          "item": "Cash Flow to Net Income",
+          "values": [
+            0.35,
+            -0.32,
+            2.3,
+            5.15,
+            0.34,
+            0.52,
+            -4.75,
+            4.93,
+            -0.06,
+            9.84,
+            -1.68,
+            -7.22,
+            -0.55,
+            3.03,
+            -0.94
+          ],
+          "section": "summary"
+        },
+        {
+          "item": "Capital Expenditures",
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            -1,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "section": "summary"
+        }
+      ]
+    }
+  },
+  "news": [
+    {
+      "published": "2026-10-15",
+      "source": "defenseworld.net",
+      "title": "94,230 Shares in QXO, Inc. $QXO Purchased by Sax Wealth Advisors LLC",
+      "url": "https://www.defenseworld.net/2026/10/15/94230-shares-in-qxo-inc-qxo-purchased-by-sax-wealth-advisors-llc.html"
+    },
+    {
+      "published": "2026-10-14",
+      "source": "zacks.com",
+      "title": "QXO Plunges 43% Year to Date: How Should Investors Play the Stock?",
+      "url": "https://www.zacks.com/stock/news/3007253/qxo-plunges-43-year-to-date-how-should-investors-play-the-stock"
+    },
+    {
+      "published": "2026-10-12",
+      "source": "zacks.com",
+      "title": "Can QXO Double EBITDA by 2030 After Its $15B TopBuild Deal?",
+      "url": "https://www.zacks.com/stock/news/3005421/can-qxo-double-ebitda-by-2030-after-its-15b-topbuild-deal"
+    },
+    {
+      "published": "2026-10-07",
+      "source": "fool.com",
+      "title": "Stock Market Today, Oct. 7: QXO Falls 7% on RBC Price-Target Cut to $18",
+      "url": "https://www.fool.com/coverage/stock-market-today/2026/10/07/stock-market-today-oct-7-qxo-falls-7-on-rbc-price-target-cut-to-usd18/"
+    },
+    {
+      "published": "2026-10-07",
+      "source": "fool.com",
+      "title": "Why QXO Sank Today",
+      "url": "https://www.fool.com/investing/2026/10/07/why-qxo-sank-today/"
+    },
+    {
+      "published": "2026-10-07",
+      "source": "schaeffersresearch.com",
+      "title": "3 Stocks Seeing Midweek Analyst Attention",
+      "url": "https://www.schaeffersresearch.com/content/news/2026/10/07/3-stocks-seeing-midweek-analyst-attention"
+    },
+    {
+      "published": "2026-10-05",
+      "source": "defenseworld.net",
+      "title": "470,310 Shares in QXO, Inc. $QXO Purchased by Neville Rodie & Shaw Inc.",
+      "url": "https://www.defenseworld.net/2026/10/05/470310-shares-in-qxo-inc-qxo-purchased-by-neville-rodie-shaw-inc.html"
+    },
+    {
+      "published": "2026-09-28",
+      "source": "defenseworld.net",
+      "title": "QXO, Inc. (NYSE:QXO) Stock Has Consensus Target Price of $28.00 According to Analysts",
+      "url": "https://www.defenseworld.net/2026/09/28/qxo-inc-nyseqxo-stock-has-consensus-target-price-of-28-00-according-to-analysts.html"
+    },
+    {
+      "published": "2026-09-21",
+      "source": "finbold.com",
+      "title": "Here's 'Big Short' Michael Burry's updated stock portfolio",
+      "url": "https://finbold.com/heres-big-short-michael-burrys-updated-stock-portfolio-2/"
+    },
+    {
+      "published": "2026-09-21",
+      "source": "seekingalpha.com",
+      "title": "QXO: High Risk, Even Higher Conviction",
+      "url": "https://seekingalpha.com/article/4948448-qxo-high-risk-even-higher-conviction"
+    },
+    {
+      "published": "2026-09-21",
+      "source": "seekingalpha.com",
+      "title": "QXO Trades Below Book Value, And The Rate Hike May Work In Its Favor",
+      "url": "https://seekingalpha.com/article/4948111-qxo-trades-below-book-value-and-the-rate-hike-may-work-in-its-favor"
+    },
+    {
+      "published": "2026-09-21",
+      "source": "seekingalpha.com",
+      "title": "QXO: A Rough Start, But I'm Not Giving Up On Brad Jacobs",
+      "url": "https://seekingalpha.com/article/4946073-qxo-a-rough-start-but-im-not-giving-up-on-brad-jacobs"
+    },
+    {
+      "published": "2026-09-21",
+      "source": "benzinga.com",
+      "title": "Jim Cramer Recommends Buying This Communication Services Stock, Calling It 'Amazing'",
+      "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/09/61762135/jim-cramer-recommends-buying-this-communication-services-stock-calling-it-amazing"
+    },
+    {
+      "published": "2026-09-19",
+      "source": "defenseworld.net",
+      "title": "Engineers Gate Manager LP Makes New $1.11 Million Investment in QXO, Inc. $QXO",
+      "url": "https://www.defenseworld.net/2026/09/19/engineers-gate-manager-lp-makes-new-1-11-million-investment-in-qxo-inc-qxo.html"
+    },
+    {
+      "published": "2026-09-10",
+      "source": "defenseworld.net",
+      "title": "Head to Head Review: QXO (NYSE:QXO) vs. Global Industrial (NYSE:GIC)",
+      "url": "https://www.defenseworld.net/2026/09/10/head-to-head-review-qxo-nyseqxo-vs-global-industrial-nysegic.html"
+    },
+    {
+      "published": "2026-08-28",
+      "source": "defenseworld.net",
+      "title": "Bank of New York Mellon Corp Makes New $44.92 Million Investment in QXO, Inc. $QXO",
+      "url": "https://www.defenseworld.net/2026/08/28/bank-of-new-york-mellon-corp-makes-new-44-92-million-investment-in-qxo-inc-qxo.html"
+    },
+    {
+      "published": "2026-08-24",
+      "source": "businesswire.com",
+      "title": "QXO Appoints Ken West as President and Chief Operating Officer",
+      "url": "https://www.businesswire.com/news/home/20260824160086/en/QXO-Appoints-Ken-West-as-President-and-Chief-Operating-Officer/"
+    },
+    {
+      "published": "2026-08-21",
+      "source": "zacks.com",
+      "title": "QXO, Inc. (QXO) Misses Q2 Earnings Estimates",
+      "url": "https://www.zacks.com/stock/news/2974659/qxo-inc-qxo-misses-q2-earnings-estimates"
+    },
+    {
+      "published": "2026-08-13",
+      "source": "businesswire.com",
+      "title": "QXO Reports Second Quarter 2026 Results",
+      "url": "https://www.businesswire.com/news/home/20260813274335/en/QXO-Reports-Second-Quarter-2026-Results/"
+    },
+    {
+      "published": "2026-08-09",
+      "source": "fool.com",
+      "title": "Why QXO, Inc. Fell Over 20% in July",
+      "url": "https://www.fool.com/investing/2026/08/09/why-qxo-inc-fell-over-20-in-july/"
+    }
+  ]
+}
