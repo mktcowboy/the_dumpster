@@ -1,8 +1,7 @@
 {
  "ticker": "CRWD",
- "as_of": "2026-10-21T15:20:33-05:00",
+ "as_of": "2026-10-21T16:28:56-05:00",
  "notes": [
-  "Next earnings timing unknown/unconfirmed -> assumed AMC (reaction next trading day) for expiry selection.",
   "Post-earnings expiry is 12 trading days after the reaction day; straddle includes material non-earnings time value."
  ],
  "error": null,
@@ -189,8 +188,28 @@
    "eps_surprise_pct": 6.38
   }
  ],
+ "date_check": {
+  "yahoo_date": "2026-12-01",
+  "yahoo_timing": "AMC",
+  "yahoo_is_estimate": false,
+  "nasdaq_date": "2026-12-01",
+  "nasdaq_timing": "UNK",
+  "status": "Confirmed",
+  "detail": "date agrees",
+  "date": "2026-12-01",
+  "timing": "AMC",
+  "timing_src": "Yahoo",
+  "nasdaq_meta": {
+   "days_queried": 87,
+   "days_failed": 0,
+   "start": "2026-10-21",
+   "end": "2027-02-18"
+  }
+ },
+ "date_status": "Confirmed",
  "next_earnings": "2026-12-01",
- "timing": "UNK",
+ "timing": "AMC",
+ "timing_src": "Yahoo",
  "days_to_earnings": 41,
  "reaction_day": "2026-12-02",
  "post": {
@@ -207,10 +226,18 @@
   "spread": 1.95,
   "spread_pct_of_straddle": 4.3,
   "call_oi": 3768,
-  "put_oi": 3308
+  "put_oi": 3308,
+  "call_vol": 155,
+  "put_vol": 1623
  },
  "implied_move_pct": 18.937,
  "days_event_to_expiry": 12,
+ "liquidity": {
+  "atm_oi": 7076,
+  "atm_volume": 1778,
+  "spread_pct_of_mid": 4.3,
+  "grade": "A"
+ },
  "pre": {
   "expiry": "2026-11-27",
   "strike": 240.0,
@@ -225,9 +252,127 @@
   "spread": 7.75,
   "spread_pct_of_straddle": 23.0,
   "call_oi": 394,
-  "put_oi": 118
+  "put_oi": 118,
+  "call_vol": 13,
+  "put_vol": 9
  },
  "earnings_only_move_pct": 7.676,
+ "hist_vol_ex_earnings": 0.579,
+ "model": {
+  "sigma_ex": 0.5406,
+  "sigma_ex_src": "pre-earnings expiry ATM IV",
+  "E_std_pct": 9.621,
+  "t_rem_days": 12,
+  "entry_premium_pct": 12.134,
+  "flag": null
+ },
+ "costs": {
+  "entry_slip_pct": 0.2037,
+  "exit_slip_pct": 0.2037,
+  "commission_pct": 0.0109,
+  "total_cost_pct": 0.4182,
+  "spread_estimated": false,
+  "spread_used": 1.95
+ },
+ "pnl_per_quarter": [
+  {
+   "earnings_date": "2023-11-28",
+   "move_pct": 10.403,
+   "exit_value_pct": 13.181,
+   "gross_pct": -1.047,
+   "net_pct": -1.465
+  },
+  {
+   "earnings_date": "2024-03-05",
+   "move_pct": 10.757,
+   "exit_value_pct": 13.407,
+   "gross_pct": -1.273,
+   "net_pct": -1.691
+  },
+  {
+   "earnings_date": "2024-06-04",
+   "move_pct": 11.977,
+   "exit_value_pct": 14.223,
+   "gross_pct": -2.089,
+   "net_pct": -2.507
+  },
+  {
+   "earnings_date": "2024-08-28",
+   "move_pct": 2.827,
+   "exit_value_pct": 9.805,
+   "gross_pct": 2.329,
+   "net_pct": 1.911
+  },
+  {
+   "earnings_date": "2024-11-26",
+   "move_pct": -4.587,
+   "exit_value_pct": 9.909,
+   "gross_pct": 2.225,
+   "net_pct": 1.807
+  },
+  {
+   "earnings_date": "2025-03-04",
+   "move_pct": -6.336,
+   "exit_value_pct": 10.474,
+   "gross_pct": 1.66,
+   "net_pct": 1.242
+  },
+  {
+   "earnings_date": "2025-06-03",
+   "move_pct": -5.77,
+   "exit_value_pct": 10.269,
+   "gross_pct": 1.865,
+   "net_pct": 1.446
+  },
+  {
+   "earnings_date": "2025-08-27",
+   "move_pct": 4.588,
+   "exit_value_pct": 10.309,
+   "gross_pct": 1.825,
+   "net_pct": 1.406
+  },
+  {
+   "earnings_date": "2025-12-02",
+   "move_pct": 1.475,
+   "exit_value_pct": 9.549,
+   "gross_pct": 2.585,
+   "net_pct": 2.167
+  },
+  {
+   "earnings_date": "2026-03-03",
+   "move_pct": 4.154,
+   "exit_value_pct": 10.168,
+   "gross_pct": 1.966,
+   "net_pct": 1.548
+  },
+  {
+   "earnings_date": "2026-06-03",
+   "move_pct": -3.815,
+   "exit_value_pct": 9.724,
+   "gross_pct": 2.41,
+   "net_pct": 1.992
+  },
+  {
+   "earnings_date": "2026-08-26",
+   "move_pct": 20.499,
+   "exit_value_pct": 21.128,
+   "gross_pct": -8.994,
+   "net_pct": -9.412
+  }
+ ],
+ "pnl_stats": {
+  "entry_premium_pct": 12.134,
+  "cost_pct": 0.4182,
+  "gross_avg_pct": 0.288,
+  "net_avg_pct": -0.13,
+  "net_avg_pct_of_premium": -1.1,
+  "gross_hit_rate": 66.7,
+  "net_hit_rate": 66.7,
+  "net_worst_pct": -9.412,
+  "net_tail25_pct": -4.537,
+  "net_avg_win_pct": 1.69,
+  "net_avg_loss_pct": -3.769
+ },
  "stats": {
   "n_quarters": 12,
   "avg_abs_move_pct": 7.266,

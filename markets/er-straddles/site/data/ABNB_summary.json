@@ -1,9 +1,7 @@
 {
  "ticker": "ABNB",
- "as_of": "2026-10-21T15:20:39-05:00",
- "notes": [
-  "Next earnings timing unknown/unconfirmed -> assumed AMC (reaction next trading day) for expiry selection."
- ],
+ "as_of": "2026-10-21T16:29:03-05:00",
+ "notes": [],
  "error": null,
  "spot": 173.69,
  "history": [
@@ -188,8 +186,28 @@
    "eps_surprise_pct": 9.48
   }
  ],
+ "date_check": {
+  "yahoo_date": "2026-11-05",
+  "yahoo_timing": "AMC",
+  "yahoo_is_estimate": false,
+  "nasdaq_date": "2026-11-05",
+  "nasdaq_timing": "AMC",
+  "status": "Confirmed",
+  "detail": "date agrees and timing agrees",
+  "date": "2026-11-05",
+  "timing": "AMC",
+  "timing_src": "Yahoo+Nasdaq",
+  "nasdaq_meta": {
+   "days_queried": 87,
+   "days_failed": 0,
+   "start": "2026-10-21",
+   "end": "2027-02-18"
+  }
+ },
+ "date_status": "Confirmed",
  "next_earnings": "2026-11-05",
- "timing": "UNK",
+ "timing": "AMC",
+ "timing_src": "Yahoo+Nasdaq",
  "days_to_earnings": 15,
  "reaction_day": "2026-11-06",
  "post": {
@@ -206,10 +224,18 @@
   "spread": 5.4,
   "spread_pct_of_straddle": 33.6,
   "call_oi": 32,
-  "put_oi": 8
+  "put_oi": 8,
+  "call_vol": 1,
+  "put_vol": 1
  },
  "implied_move_pct": 9.241,
  "days_event_to_expiry": 0,
+ "liquidity": {
+  "atm_oi": 40,
+  "atm_volume": 2,
+  "spread_pct_of_mid": 33.6,
+  "grade": "F"
+ },
  "pre": {
   "expiry": "2026-10-30",
   "strike": 172.5,
@@ -224,9 +250,127 @@
   "spread": 4.15,
   "spread_pct_of_straddle": 61.7,
   "call_oi": 135,
-  "put_oi": 28
+  "put_oi": 28,
+  "call_vol": 6,
+  "put_vol": 8
  },
  "earnings_only_move_pct": 7.913,
+ "hist_vol_ex_earnings": 0.3435,
+ "model": {
+  "sigma_ex": 0.2884,
+  "sigma_ex_src": "pre-earnings expiry ATM IV",
+  "E_std_pct": 9.918,
+  "t_rem_days": 0,
+  "entry_premium_pct": 7.91,
+  "flag": null
+ },
+ "costs": {
+  "entry_slip_pct": 0.7772,
+  "exit_slip_pct": 0.7772,
+  "commission_pct": 0.015,
+  "total_cost_pct": 1.5695,
+  "spread_estimated": false,
+  "spread_used": 5.4
+ },
+ "pnl_per_quarter": [
+  {
+   "earnings_date": "2023-11-01",
+   "move_pct": -3.323,
+   "exit_value_pct": 3.323,
+   "gross_pct": 4.587,
+   "net_pct": 3.018
+  },
+  {
+   "earnings_date": "2024-02-13",
+   "move_pct": -1.737,
+   "exit_value_pct": 1.737,
+   "gross_pct": 6.173,
+   "net_pct": 4.604
+  },
+  {
+   "earnings_date": "2024-05-08",
+   "move_pct": -6.871,
+   "exit_value_pct": 6.871,
+   "gross_pct": 1.039,
+   "net_pct": -0.531
+  },
+  {
+   "earnings_date": "2024-08-06",
+   "move_pct": -13.382,
+   "exit_value_pct": 13.382,
+   "gross_pct": -5.472,
+   "net_pct": -7.042
+  },
+  {
+   "earnings_date": "2024-11-07",
+   "move_pct": -8.658,
+   "exit_value_pct": 8.658,
+   "gross_pct": -0.748,
+   "net_pct": -2.317
+  },
+  {
+   "earnings_date": "2025-02-13",
+   "move_pct": 14.45,
+   "exit_value_pct": 14.45,
+   "gross_pct": -6.54,
+   "net_pct": -8.11
+  },
+  {
+   "earnings_date": "2025-05-01",
+   "move_pct": 1.008,
+   "exit_value_pct": 1.008,
+   "gross_pct": 6.902,
+   "net_pct": 5.332
+  },
+  {
+   "earnings_date": "2025-08-06",
+   "move_pct": -8.023,
+   "exit_value_pct": 8.023,
+   "gross_pct": -0.113,
+   "net_pct": -1.683
+  },
+  {
+   "earnings_date": "2025-11-06",
+   "move_pct": 0.29,
+   "exit_value_pct": 0.29,
+   "gross_pct": 7.62,
+   "net_pct": 6.051
+  },
+  {
+   "earnings_date": "2026-02-12",
+   "move_pct": 4.648,
+   "exit_value_pct": 4.648,
+   "gross_pct": 3.262,
+   "net_pct": 1.692
+  },
+  {
+   "earnings_date": "2026-05-07",
+   "move_pct": 0.733,
+   "exit_value_pct": 0.733,
+   "gross_pct": 7.177,
+   "net_pct": 5.607
+  },
+  {
+   "earnings_date": "2026-08-06",
+   "move_pct": 17.429,
+   "exit_value_pct": 17.429,
+   "gross_pct": -9.519,
+   "net_pct": -11.089
+  }
+ ],
+ "pnl_stats": {
+  "entry_premium_pct": 7.91,
+  "cost_pct": 1.5695,
+  "gross_avg_pct": 1.197,
+  "net_avg_pct": -0.372,
+  "net_avg_pct_of_premium": -4.7,
+  "gross_hit_rate": 58.3,
+  "net_hit_rate": 50.0,
+  "net_worst_pct": -11.089,
+  "net_tail25_pct": -8.747,
+  "net_avg_win_pct": 4.384,
+  "net_avg_loss_pct": -5.129
+ },
  "stats": {
   "n_quarters": 12,
   "avg_abs_move_pct": 6.713,

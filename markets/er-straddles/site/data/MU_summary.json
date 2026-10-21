@@ -1,8 +1,7 @@
 {
  "ticker": "MU",
- "as_of": "2026-10-21T15:19:32-05:00",
+ "as_of": "2026-10-21T16:27:54-05:00",
  "notes": [
-  "Next earnings timing unknown/unconfirmed -> assumed AMC (reaction next trading day) for expiry selection.",
   "Post-earnings expiry is 16 trading days after the reaction day; straddle includes material non-earnings time value."
  ],
  "error": null,
@@ -189,8 +188,28 @@
    "eps_surprise_pct": 5.03
   }
  ],
+ "date_check": {
+  "yahoo_date": "2026-12-23",
+  "yahoo_timing": "AMC",
+  "yahoo_is_estimate": true,
+  "nasdaq_date": null,
+  "nasdaq_timing": null,
+  "status": "Unconfirmed",
+  "detail": "Yahoo only (Yahoo marks it an estimate); not found in Nasdaq calendar window",
+  "date": "2026-12-23",
+  "timing": "AMC",
+  "timing_src": "Yahoo",
+  "nasdaq_meta": {
+   "days_queried": 87,
+   "days_failed": 0,
+   "start": "2026-10-21",
+   "end": "2027-02-18"
+  }
+ },
+ "date_status": "Unconfirmed",
  "next_earnings": "2026-12-23",
- "timing": "UNK",
+ "timing": "AMC",
+ "timing_src": "Yahoo",
  "days_to_earnings": 63,
  "reaction_day": "2026-12-24",
  "post": {
@@ -207,10 +226,18 @@
   "spread": 6.4,
   "spread_pct_of_straddle": 3.6,
   "call_oi": 2481,
-  "put_oi": 1973
+  "put_oi": 1973,
+  "call_vol": 92,
+  "put_vol": 118
  },
  "implied_move_pct": 19.69,
  "days_event_to_expiry": 16,
+ "liquidity": {
+  "atm_oi": 4454,
+  "atm_volume": 210,
+  "spread_pct_of_mid": 3.6,
+  "grade": "B"
+ },
  "pre": {
   "expiry": "2026-12-18",
   "strike": 910.0,
@@ -221,13 +248,131 @@
   "implied_move_pct": 15.936,
   "T_years": 0.16667,
   "iv_straddle": 0.492,
-  "iv_yf": 0.504,
-  "spread": 5.6,
+  "iv_yf": 0.5038,
+  "spread": 5.5,
   "spread_pct_of_straddle": 3.8,
   "call_oi": 1886,
-  "put_oi": 1146
+  "put_oi": 1146,
+  "call_vol": 145,
+  "put_vol": 293
  },
  "earnings_only_move_pct": 4.571,
+ "hist_vol_ex_earnings": 0.6901,
+ "model": {
+  "sigma_ex": 0.492,
+  "sigma_ex_src": "pre-earnings expiry ATM IV",
+  "E_std_pct": 5.729,
+  "t_rem_days": 16,
+  "entry_premium_pct": 10.888,
+  "flag": null
+ },
+ "costs": {
+  "entry_slip_pct": 0.1751,
+  "exit_slip_pct": 0.1751,
+  "commission_pct": 0.0028,
+  "total_cost_pct": 0.3531,
+  "spread_estimated": false,
+  "spread_used": 6.4
+ },
+ "pnl_per_quarter": [
+  {
+   "earnings_date": "2023-12-20",
+   "move_pct": 8.629,
+   "exit_value_pct": 12.524,
+   "gross_pct": -1.636,
+   "net_pct": -1.989
+  },
+  {
+   "earnings_date": "2024-03-20",
+   "move_pct": 14.13,
+   "exit_value_pct": 16.07,
+   "gross_pct": -5.182,
+   "net_pct": -5.535
+  },
+  {
+   "earnings_date": "2024-06-26",
+   "move_pct": -7.116,
+   "exit_value_pct": 11.172,
+   "gross_pct": -0.284,
+   "net_pct": -0.637
+  },
+  {
+   "earnings_date": "2024-09-25",
+   "move_pct": 14.733,
+   "exit_value_pct": 16.522,
+   "gross_pct": -5.634,
+   "net_pct": -5.987
+  },
+  {
+   "earnings_date": "2024-12-18",
+   "move_pct": -16.179,
+   "exit_value_pct": 16.968,
+   "gross_pct": -6.08,
+   "net_pct": -6.433
+  },
+  {
+   "earnings_date": "2025-03-20",
+   "move_pct": -8.039,
+   "exit_value_pct": 11.573,
+   "gross_pct": -0.685,
+   "net_pct": -1.038
+  },
+  {
+   "earnings_date": "2025-06-25",
+   "move_pct": -0.982,
+   "exit_value_pct": 9.868,
+   "gross_pct": 1.02,
+   "net_pct": 0.667
+  },
+  {
+   "earnings_date": "2025-09-23",
+   "move_pct": -2.824,
+   "exit_value_pct": 10.004,
+   "gross_pct": 0.884,
+   "net_pct": 0.531
+  },
+  {
+   "earnings_date": "2025-12-17",
+   "move_pct": 10.212,
+   "exit_value_pct": 13.425,
+   "gross_pct": -2.537,
+   "net_pct": -2.89
+  },
+  {
+   "earnings_date": "2026-03-18",
+   "move_pct": -3.781,
+   "exit_value_pct": 10.163,
+   "gross_pct": 0.725,
+   "net_pct": 0.372
+  },
+  {
+   "earnings_date": "2026-06-24",
+   "move_pct": 15.741,
+   "exit_value_pct": 17.301,
+   "gross_pct": -6.413,
+   "net_pct": -6.766
+  },
+  {
+   "earnings_date": "2026-09-30",
+   "move_pct": 3.031,
+   "exit_value_pct": 10.324,
+   "gross_pct": 0.564,
+   "net_pct": 0.211
+  }
+ ],
+ "pnl_stats": {
+  "entry_premium_pct": 10.888,
+  "cost_pct": 0.3531,
+  "gross_avg_pct": -2.105,
+  "net_avg_pct": -2.458,
+  "net_avg_pct_of_premium": -22.6,
+  "gross_hit_rate": 33.3,
+  "net_hit_rate": 33.3,
+  "net_worst_pct": -6.766,
+  "net_tail25_pct": -6.395,
+  "net_avg_win_pct": 0.445,
+  "net_avg_loss_pct": -3.909
+ },
  "stats": {
   "n_quarters": 12,
   "avg_abs_move_pct": 8.783,

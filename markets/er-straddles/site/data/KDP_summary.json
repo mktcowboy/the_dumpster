@@ -1,6 +1,6 @@
 {
  "ticker": "KDP",
- "as_of": "2026-10-21T15:20:04-05:00",
+ "as_of": "2026-10-21T16:28:27-05:00",
  "notes": [
   "Post-earnings expiry is 13 trading days after the reaction day; straddle includes material non-earnings time value."
  ],
@@ -188,8 +188,28 @@
    "eps_surprise_pct": 6.18
   }
  ],
+ "date_check": {
+  "yahoo_date": "2026-11-03",
+  "yahoo_timing": "BMO",
+  "yahoo_is_estimate": false,
+  "nasdaq_date": "2026-11-03",
+  "nasdaq_timing": "BMO",
+  "status": "Confirmed",
+  "detail": "date agrees and timing agrees",
+  "date": "2026-11-03",
+  "timing": "BMO",
+  "timing_src": "Yahoo+Nasdaq",
+  "nasdaq_meta": {
+   "days_queried": 87,
+   "days_failed": 0,
+   "start": "2026-10-21",
+   "end": "2027-02-18"
+  }
+ },
+ "date_status": "Confirmed",
  "next_earnings": "2026-11-03",
  "timing": "BMO",
+ "timing_src": "Yahoo+Nasdaq",
  "days_to_earnings": 13,
  "reaction_day": "2026-11-03",
  "post": {
@@ -206,10 +226,134 @@
   "spread": 1.45,
   "spread_pct_of_straddle": 56.3,
   "call_oi": 214,
-  "put_oi": 219
+  "put_oi": 219,
+  "call_vol": 2,
+  "put_vol": 12
  },
  "implied_move_pct": 7.47,
  "days_event_to_expiry": 13,
+ "liquidity": {
+  "atm_oi": 433,
+  "atm_volume": 14,
+  "spread_pct_of_mid": 56.3,
+  "grade": "F"
+ },
+ "hist_vol_ex_earnings": 0.2742,
+ "model": {
+  "sigma_ex": 0.2742,
+  "sigma_ex_src": "63d realized vol ex-earnings (proxy: no pre-earnings expiry)",
+  "E_std_pct": 4.858,
+  "t_rem_days": 13,
+  "entry_premium_pct": 6.3,
+  "flag": null
+ },
+ "costs": {
+  "entry_slip_pct": 1.0516,
+  "exit_slip_pct": 1.0516,
+  "commission_pct": 0.0754,
+  "total_cost_pct": 2.1787,
+  "spread_estimated": false,
+  "spread_used": 1.45
+ },
+ "pnl_per_quarter": [
+  {
+   "earnings_date": "2023-10-26",
+   "move_pct": 1.409,
+   "exit_value_pct": 5.129,
+   "gross_pct": 1.171,
+   "net_pct": -1.008
+  },
+  {
+   "earnings_date": "2024-02-22",
+   "move_pct": -3.892,
+   "exit_value_pct": 5.829,
+   "gross_pct": 0.471,
+   "net_pct": -1.707
+  },
+  {
+   "earnings_date": "2024-04-25",
+   "move_pct": 4.638,
+   "exit_value_pct": 6.373,
+   "gross_pct": -0.073,
+   "net_pct": -2.252
+  },
+  {
+   "earnings_date": "2024-07-25",
+   "move_pct": 1.343,
+   "exit_value_pct": 5.116,
+   "gross_pct": 1.184,
+   "net_pct": -0.995
+  },
+  {
+   "earnings_date": "2024-10-24",
+   "move_pct": -4.796,
+   "exit_value_pct": 6.285,
+   "gross_pct": 0.015,
+   "net_pct": -2.163
+  },
+  {
+   "earnings_date": "2025-02-25",
+   "move_pct": 2.403,
+   "exit_value_pct": 5.389,
+   "gross_pct": 0.911,
+   "net_pct": -1.268
+  },
+  {
+   "earnings_date": "2025-04-24",
+   "move_pct": -2.074,
+   "exit_value_pct": 5.192,
+   "gross_pct": 1.108,
+   "net_pct": -1.071
+  },
+  {
+   "earnings_date": "2025-07-24",
+   "move_pct": 0.209,
+   "exit_value_pct": 4.976,
+   "gross_pct": 1.324,
+   "net_pct": -0.855
+  },
+  {
+   "earnings_date": "2025-10-27",
+   "move_pct": 7.622,
+   "exit_value_pct": 8.378,
+   "gross_pct": -2.078,
+   "net_pct": -4.256
+  },
+  {
+   "earnings_date": "2026-02-24",
+   "move_pct": 4.232,
+   "exit_value_pct": 6.157,
+   "gross_pct": 0.143,
+   "net_pct": -2.036
+  },
+  {
+   "earnings_date": "2026-04-23",
+   "move_pct": 7.498,
+   "exit_value_pct": 8.282,
+   "gross_pct": -1.982,
+   "net_pct": -4.161
+  },
+  {
+   "earnings_date": "2026-08-06",
+   "move_pct": -1.236,
+   "exit_value_pct": 5.036,
+   "gross_pct": 1.264,
+   "net_pct": -0.914
+  }
+ ],
+ "pnl_stats": {
+  "entry_premium_pct": 6.3,
+  "cost_pct": 2.1787,
+  "gross_avg_pct": 0.288,
+  "net_avg_pct": -1.89,
+  "net_avg_pct_of_premium": -30.0,
+  "gross_hit_rate": 75.0,
+  "net_hit_rate": 0.0,
+  "net_worst_pct": -4.256,
+  "net_tail25_pct": -3.556,
+  "net_avg_win_pct": null,
+  "net_avg_loss_pct": -1.89
+ },
  "stats": {
   "n_quarters": 12,
   "avg_abs_move_pct": 3.446,

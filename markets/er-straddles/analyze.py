@@ -37,6 +37,9 @@ def report(res):
     t = res["ticker"]
     print("=" * 90)
     print(f"{t}  spot {res.get('spot')}   as of {res['as_of']} (America/Chicago)")
+    dc = res.get("date_check") or {}
+    print(f"Date check: {res.get('date_status')} - {dc.get('detail')} (Yahoo {dc.get('yahoo_date')} {dc.get('yahoo_timing')}, "
+          f"Nasdaq {dc.get('nasdaq_date')} {dc.get('nasdaq_timing')})")
     print(f"Next earnings: {res.get('next_earnings')} {res.get('timing')}  (reaction day {res.get('reaction_day')}, "
           f"{res.get('days_to_earnings')} days away)")
     rows = []
@@ -67,9 +70,18 @@ def report(res):
             print(f"Implied/avg {s['implied_over_avg']}x | realized > implied {s['pct_exceeded_implied']}% of quarters | "
                   f"seller hit rate {s['seller_hit_rate']}% | avg P&L {s['avg_pnl_pct_spot']:+.2f}% of spot "
                   f"({s['avg_pnl_pct_premium']:+.1f}% of premium), worst {s['worst_pnl_pct_spot']:+.2f}%")
+    lq, ps, md, cs = res.get("liquidity"), res.get("pnl_stats"), res.get("model"), res.get("costs")
+    if lq:
+        print(f"Liquidity {lq['grade']}: ATM OI {lq['atm_oi']}, volume {lq['atm_volume']}, spread {lq['spread_pct_of_mid']}% of mid")
+    if ps:
+        print(f"Model (entry just before event, exit reaction close incl. residual time value; sigma_ex={md['sigma_ex']} from "
+              f"{md['sigma_ex_src']}, {md['t_rem_days']}d left): entry premium {ps['entry_premium_pct']:.2f}% | costs "
+              f"{ps['cost_pct']:.2f}% (slip {cs['entry_slip_pct']:.2f}+{cs['exit_slip_pct']:.2f}, comm {cs['commission_pct']:.3f})")
+        print(f"  gross avg {ps['gross_avg_pct']:+.2f}% | NET avg {ps['net_avg_pct']:+.2f}% of spot ({ps['net_avg_pct_of_premium']:+.1f}% of premium)"
+              f" | net hit {ps['net_hit_rate']}% | worst {ps['net_worst_pct']:+.2f}% | worst-25% avg {ps['net_tail25_pct']:+.2f}%")
     for n in res.get("notes", []):
         print("note:", n)
-    print("(* = timing inferred. P&L ignores residual time value/bid-ask; uses TODAY's implied move for every past quarter.)")
+    print("(* = timing inferred. Table P&L / naive stats: today's implied minus realized, no costs or residual time value; the NET line includes both.)")
 
 
 def run(sym):
