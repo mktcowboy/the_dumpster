@@ -1,0 +1,62 @@
+{
+ "Cormorant Garamond": [
+  [
+   "CormorantGaramond-400-italic.woff2",
+   "italic",
+   "400",
+   23660
+  ],
+  [
+   "CormorantGaramond-400-normal.woff2",
+   "normal",
+   "400",
+   37776
+  ],
+  [
+   "CormorantGaramond-600-normal.woff2",
+   "normal",
+   "600",
+   37776
+  ]
+ ],
+ "Spectral": [
+  [
+   "Spectral-400-italic.woff2",
+   "italic",
+   "400",
+   14988
+  ],
+  [
+   "Spectral-400-normal.woff2",
+   "normal",
+   "400",
+   14028
+  ],
+  [
+   "Spectral-500-normal.woff2",
+   "normal",
+   "500",
+   15084
+  ],
+  [
+   "Spectral-600-normal.woff2",
+   "normal",
+   "600",
+   15164
+  ]
+ ],
+ "Frank Ruhl Libre": [
+  [
+   "FrankRuhlLibre-400-normal.woff2",
+   "normal",
+   "400",
+   18760
+  ],
+  [
+   "FrankRuhlLibre-700-normal.woff2",
+   "normal",
+   "700",
+   18760
+  ]
+ ]
+}

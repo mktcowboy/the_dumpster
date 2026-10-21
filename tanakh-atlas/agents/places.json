@@ -1,0 +1,1355 @@
+[
+  {
+    "id": "eden",
+    "name": "Eden",
+    "he_name": "גַּן־עֵדֶן",
+    "region": "Mesopotamia (literary)",
+    "coordinates": [
+      33.0,
+      44.0
+    ],
+    "ancient": false,
+    "bio": "The garden at the center of Genesis 2–3, watered by four rivers and guarded after the first couple’s expulsion by cherubim and a flaming sword. Eden is not a site on a map but a literary and theological location: the text gives no itinerary, and its rivers reach toward the known world without fixing a spot. Mesopotamian texts offer partial parallels — a primeval garden in Sumerian myth, Gilgamesh’s snake that steals the plant of youth — but Genesis’s garden is distinctive in its single prohibition and its intimate walk with God. Ezekiel 28 borrows Eden imagery for the king of Tyre; Isaiah 51 imagines the wilderness made like Eden. The garden becomes the Bible’s template for exile, the first leaving of home, and rabbinic midrash makes it the reward of the righteous. Archaeology can illuminate Mesopotamian gardens and temples; it cannot locate Eden.",
+    "works": [
+      "genesis",
+      "ezekiel",
+      "isaiah"
+    ],
+    "people": [],
+    "themes": [
+      "creation",
+      "image-of-god",
+      "exile-and-return",
+      "memory"
+    ],
+    "connections": [
+      {
+        "to": "ur",
+        "why": "Genesis places Eden’s rivers in the same Mesopotamian world from which Abraham is called."
+      },
+      {
+        "to": "canaan",
+        "why": "Expulsion from the garden begins the wandering that ends with the promise of land."
+      },
+      {
+        "to": "creation",
+        "why": "Eden dramatizes the created order as a place of abundance and limit."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Bible Odyssey — Eden",
+        "url": "https://www.bibleodyssey.org/articles/eden/"
+      }
+    ]
+  },
+  {
+    "id": "ur",
+    "name": "Ur",
+    "he_name": "אוּר כַּשְׂדִּים",
+    "region": "Mesopotamia",
+    "coordinates": [
+      30.96,
+      46.1
+    ],
+    "ancient": true,
+    "bio": "A Sumerian city in southern Mesopotamia, on the Euphrates and now Tell el-Muqayyar in Iraq. By the third millennium BCE it was a major urban center, with the ziggurat of Ur-Nammu, a canal harbor, and the Royal Cemetery excavated by Leonard Woolley in 1922–34; his flood deposit, once linked to Noah, is now read as a local event. Genesis 11:28 names “Ur of the Chaldeans” as Terah’s home and Abraham’s birthplace, and Joshua 24:2 places the ancestors “beyond the River.” The Chaldeans arrived in the first millennium, so the phrase is likely a later gloss, and some scholars prefer Urfa in Turkey; the identification is traditional, not proven. For the canon, Ur is the archetype of the great city left behind at the call of God — the first departure, and the first glimpse of exile.",
+    "works": [
+      "genesis",
+      "joshua",
+      "ezra"
+    ],
+    "people": [
+      "abraham",
+      "sarah"
+    ],
+    "themes": [
+      "covenant",
+      "chosenness",
+      "land-of-israel",
+      "exile-and-return"
+    ],
+    "connections": [
+      {
+        "to": "haran",
+        "why": "Terah’s family leaves Ur for Haran, the first stage of Abraham’s migration."
+      },
+      {
+        "to": "canaan",
+        "why": "The call from Ur is a call toward a land not yet possessed."
+      },
+      {
+        "to": "babylon",
+        "why": "Babylon later becomes the Mesopotamian empire that repeats Ur’s role as a place of exile."
+      },
+      {
+        "to": "abraham",
+        "why": "The city is remembered chiefly as the birthplace Abraham is commanded to leave."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Encyclopaedia Britannica — Ur",
+        "url": "https://www.britannica.com/place/Ur"
+      }
+    ]
+  },
+  {
+    "id": "haran",
+    "name": "Haran",
+    "he_name": "חָרָן",
+    "region": "Upper Mesopotamia",
+    "coordinates": [
+      36.86,
+      39.03
+    ],
+    "ancient": true,
+    "bio": "An ancient caravan city in the upper Balikh valley, at the crossroads of Mesopotamia, Anatolia, and the Levant; its ruins lie beside modern Harran in southeastern Turkey. It was a center of the moon-god Sin, whose temple survived into late antiquity, and the Roman city of Carrhae fought the Parthians nearby in 53 BCE. Genesis 11:31–12:5 brings Terah’s family from Ur to Haran, where Abraham receives the call to leave; Jacob later flees there to Laban, meets Rachel at a well, and works fourteen years for Leah and Rachel. Haran is thus both the pause before the promise and the nursery of Israel’s ancestral households. Archaeology reveals a tell with Bronze Age occupation and a distinctive temple plan, though the biblical prose is later tradition. The place matters as the threshold between Mesopotamia and Canaan — the last stop before the land.",
+    "works": [
+      "genesis"
+    ],
+    "people": [
+      "abraham",
+      "sarah",
+      "jacob"
+    ],
+    "themes": [
+      "covenant",
+      "chosenness",
+      "land-of-israel",
+      "love"
+    ],
+    "connections": [
+      {
+        "to": "ur",
+        "why": "Haran is the family’s first stop after leaving Ur."
+      },
+      {
+        "to": "canaan",
+        "why": "Abraham leaves Haran for the land that the promise names."
+      },
+      {
+        "to": "jacob",
+        "why": "Jacob’s years with Laban and his marriages begin at Haran’s well."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Bible Odyssey — Haran",
+        "url": "https://www.bibleodyssey.org/dictionary/haran/"
+      }
+    ]
+  },
+  {
+    "id": "canaan",
+    "name": "Canaan",
+    "he_name": "כְּנַעַן",
+    "region": "Levant",
+    "coordinates": [
+      31.5,
+      35.0
+    ],
+    "ancient": true,
+    "bio": "The land between the Mediterranean and the Jordan, and the name by which the Hebrew Bible knows it before Israel. Egyptian texts of the 15th–14th centuries BCE — Thutmose III’s annals and the Amarna letters — use “Canaan” for the southern Levant, often a zone of Egyptian control; the name may mean “lowland” or “merchant,” and its borders shifted. The land itself is a narrow corridor of coastal plain, central hills, Jordan rift, and desert edge, a bridge fought over by Egypt, Assyria, Babylon, Persia, and Rome. Genesis promises it to Abraham’s descendants; Exodus and Joshua narrate its taking, though archaeology shows gradual Iron Age settlement and deep Canaanite continuity rather than one sweeping conquest. “Canaanite” also becomes a polemical religious label. The place is therefore both real geography and theological claim: the land Israel is given, and the older world it must not become.",
+    "works": [
+      "genesis",
+      "exodus",
+      "numbers",
+      "deuteronomy",
+      "joshua",
+      "judges"
+    ],
+    "people": [
+      "abraham",
+      "moses",
+      "joshua",
+      "deborah"
+    ],
+    "themes": [
+      "covenant",
+      "land-of-israel",
+      "chosenness",
+      "exile-and-return",
+      "memory"
+    ],
+    "connections": [
+      {
+        "to": "hebron",
+        "why": "Hebron is the first foothold in Canaan that the ancestors actually purchase."
+      },
+      {
+        "to": "jericho",
+        "why": "Jericho is the first city the book of Joshua claims in the land."
+      },
+      {
+        "to": "goshen",
+        "why": "Canaan is the home the Israelites leave for Egypt and the land they return to."
+      },
+      {
+        "to": "babylon",
+        "why": "Babylon is the empire that empties the land in the great exile."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Bible Odyssey — Canaan",
+        "url": "https://www.bibleodyssey.org/dictionary/canaan/"
+      }
+    ]
+  },
+  {
+    "id": "hebron",
+    "name": "Hebron",
+    "he_name": "חֶבְרוֹן",
+    "region": "Levant",
+    "coordinates": [
+      31.53,
+      35.1
+    ],
+    "ancient": true,
+    "bio": "One of the oldest continuously inhabited cities in the southern Judaean hills, about 30 km south of Jerusalem, built around a spring and the Cave of Machpelah. Genesis 23 narrates Abraham’s purchase of the cave and field of Ephron as a burial place for Sarah — the first piece of the promised land owned by the family, transferred with witnesses and silver. Abraham, Sarah, Isaac, Rebekah, Jacob, and Leah are buried there in tradition. David is anointed king in Hebron and rules there seven years before taking Jerusalem (2 Samuel 2–5); Absalom’s revolt also begins there. Excavations at Tel Rumeida have exposed Middle Bronze Age fortifications and a Judahite town, while Herod’s massive enclosure around the cave still stands, now divided between Jewish and Muslim prayer. Hebron is the canon’s ground of ancestry and legal claim: the purchased grave that makes the promise tangible.",
+    "works": [
+      "genesis",
+      "joshua",
+      "samuel",
+      "chronicles"
+    ],
+    "people": [
+      "abraham",
+      "sarah",
+      "isaac",
+      "jacob",
+      "david"
+    ],
+    "themes": [
+      "covenant",
+      "land-of-israel",
+      "memory",
+      "messianism"
+    ],
+    "connections": [
+      {
+        "to": "canaan",
+        "why": "The cave purchase is the family’s first legal possession within Canaan."
+      },
+      {
+        "to": "jerusalem",
+        "why": "David rules in Hebron before moving his capital to Jerusalem."
+      },
+      {
+        "to": "david",
+        "why": "David is anointed at Hebron and buried there in tradition."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Bible Odyssey — Hebron",
+        "url": "https://www.bibleodyssey.org/dictionary/hebron/"
+      }
+    ]
+  },
+  {
+    "id": "goshen",
+    "name": "Goshen",
+    "he_name": "גֹּשֶׁן",
+    "region": "Egypt",
+    "coordinates": [
+      30.6,
+      31.7
+    ],
+    "ancient": true,
+    "bio": "The eastern Nile Delta region where, in Genesis 45–47, Joseph settles Jacob and the Israelites at Pharaoh’s invitation, “in the best of the land.” There they multiply; Exodus 1 turns the welcome into servitude, and the book names Pithom and Rameses as store-cities built by Israelite labor. The name probably denotes a region rather than a single mound; Egyptologists have looked to the Wadi Tumilat and the eastern Delta, where excavations at Tell el-Dabʿa (Avaris) and Qantir have revealed a flourishing Canaanite population and a Ramesside capital. No stratum can be labeled “Israelite” or tied directly to the exodus, and the chronology is debated. Goshen matters as the canon’s place of sojourn: the cradle of Israel in Egypt, the setting of the slavery that makes redemption necessary, and the starting point of the road to Sinai.",
+    "works": [
+      "genesis",
+      "exodus"
+    ],
+    "people": [
+      "joseph",
+      "jacob",
+      "moses",
+      "aaron",
+      "miriam"
+    ],
+    "themes": [
+      "exodus",
+      "suffering",
+      "exile-and-return",
+      "chosenness"
+    ],
+    "connections": [
+      {
+        "to": "sinai",
+        "why": "The exodus from Goshen leads directly to the mountain of revelation."
+      },
+      {
+        "to": "canaan",
+        "why": "Goshen is the detour from which Israel returns to the promised land."
+      },
+      {
+        "to": "joseph",
+        "why": "Joseph’s rise in Egypt is what brings his family to Goshen."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Bible Odyssey — Goshen",
+        "url": "https://www.bibleodyssey.org/dictionary/goshen/"
+      }
+    ]
+  },
+  {
+    "id": "sinai",
+    "name": "Sinai",
+    "he_name": "סִינַי",
+    "region": "Sinai Peninsula",
+    "coordinates": [
+      28.54,
+      33.98
+    ],
+    "ancient": true,
+    "bio": "The mountain of revelation in the Sinai Peninsula, where Moses receives the Decalogue, the covenant is ratified (Exodus 19–24), the tabernacle is commanded, and Elijah hears the still small voice (1 Kings 19). The text never fixes the site precisely; candidates include Jebel Musa, where the sixth-century Monastery of St Catherine stands, Jebel Serbal, and sites in the Negev or northwest Arabia. The monastery, built under Justinian and rebuilt under the Abbasids, preserves icons, manuscripts, and the traditional burning bush, and UNESCO lists the area. Archaeology cannot certify the mountain of Exodus; the narrative’s geography is theological as much as topographical. For the canon, Sinai is the axis of revelation — the place where law, covenant, and divine presence are given, and the reference point for every later claim that Torah comes from God. Its very ambiguity has kept the mountain available to imagination.",
+    "works": [
+      "exodus",
+      "leviticus",
+      "numbers",
+      "deuteronomy",
+      "kings"
+    ],
+    "people": [
+      "moses",
+      "aaron",
+      "miriam",
+      "elijah"
+    ],
+    "themes": [
+      "revelation",
+      "covenant",
+      "law-and-narrative",
+      "mitzvot",
+      "chain-of-tradition"
+    ],
+    "connections": [
+      {
+        "to": "goshen",
+        "why": "The road from Egyptian slavery ends at Sinai."
+      },
+      {
+        "to": "canaan",
+        "why": "The covenant at Sinai is made on the way to the land."
+      },
+      {
+        "to": "jerusalem",
+        "why": "Sinai’s law becomes the measure by which Jerusalem’s temple and kings are judged."
+      },
+      {
+        "to": "moses",
+        "why": "Moses is the mediator of the revelation at Sinai."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Bible Odyssey — Sinai",
+        "url": "https://www.bibleodyssey.org/articles/sinai/"
+      },
+      {
+        "label": "UNESCO — Saint Catherine Area",
+        "url": "https://whc.unesco.org/en/list/954/"
+      }
+    ]
+  },
+  {
+    "id": "jericho",
+    "name": "Jericho",
+    "he_name": "יְרִיחוֹ",
+    "region": "Levant",
+    "coordinates": [
+      31.87,
+      35.44
+    ],
+    "ancient": true,
+    "bio": "An oasis town in the Jordan Valley, about 10 km northwest of the Dead Sea and among the oldest continuously occupied settlements on earth. Tell es-Sultan preserves Natufian and Pre-Pottery Neolithic remains, including a stone tower and wall from the ninth–eighth millennia BCE; Kathleen Kenyon’s excavations showed that the famous Early Bronze Age walls were destroyed long before any plausible Israelite arrival, and the Late Bronze Age town was small and poor. Joshua 6 nonetheless makes Jericho the first conquest, its walls falling at the shout and trumpets; the text is theology and etiology as much as report. Later Jericho was a Hasmonean winter palace and a Herodian estate, and the road descending to it frames the parable of the good Samaritan. For the canon, Jericho is the threshold of the land — the first city taken, the first test of obedience, and a case study in the gap between excavation and narrative.",
+    "works": [
+      "joshua",
+      "deuteronomy",
+      "kings"
+    ],
+    "people": [
+      "joshua",
+      "moses"
+    ],
+    "themes": [
+      "land-of-israel",
+      "covenant",
+      "memory",
+      "justice"
+    ],
+    "connections": [
+      {
+        "to": "canaan",
+        "why": "Jericho is the first claimed city in the conquest of Canaan."
+      },
+      {
+        "to": "shiloh",
+        "why": "Both are early Israelite sanctuaries whose ruins become warnings in later prophecy."
+      },
+      {
+        "to": "joshua",
+        "why": "Joshua’s leadership is defined by the fall of Jericho."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Bible Odyssey — Jericho",
+        "url": "https://www.bibleodyssey.org/articles/jericho/"
+      },
+      {
+        "label": "Bible Odyssey — The Walls of Jericho",
+        "url": "https://www.bibleodyssey.org/articles/the-walls-of-jericho/"
+      }
+    ]
+  },
+  {
+    "id": "shiloh",
+    "name": "Shiloh",
+    "he_name": "שִׁלֹה",
+    "region": "Levant",
+    "coordinates": [
+      32.06,
+      35.29
+    ],
+    "ancient": true,
+    "bio": "An Ephraimite town in the central hill country, about 30 km north of Jerusalem, where the tabernacle and the ark were kept in the period of the judges. 1 Samuel 1–4 places Hannah’s prayer, Samuel’s call, and the disastrous battle in which the Philistines capture the ark; the sanctuary is destroyed, and Jeremiah 7 and 26 cite Shiloh as proof that Jerusalem too can fall. Excavations at Tel Shiloh have revealed Iron Age I remains, possible cultic installations, and a destruction layer, though the identification of a specific altar or tabernacle is contested; Byzantine churches and a mosaic attest the site’s later sanctity. Shiloh matters because it is the canon’s first central sanctuary — the precursor of Jerusalem, and evidence that a holy place can be abandoned. The ark’s journey from Shiloh to Philistine captivity to Jerusalem is one of the Bible’s great narrative arcs.",
+    "works": [
+      "joshua",
+      "judges",
+      "samuel",
+      "jeremiah",
+      "psalms"
+    ],
+    "people": [
+      "joshua",
+      "samuel"
+    ],
+    "themes": [
+      "temple",
+      "sacrifice",
+      "prophecy",
+      "memory",
+      "chosenness"
+    ],
+    "connections": [
+      {
+        "to": "jericho",
+        "why": "Shiloh belongs to the same early Israelite settlement of the hill country."
+      },
+      {
+        "to": "jerusalem",
+        "why": "Shiloh is the sanctuary Jerusalem replaces, and the warning Jeremiah uses against it."
+      },
+      {
+        "to": "samuel",
+        "why": "Samuel’s call and the ark’s capture both happen at Shiloh."
+      },
+      {
+        "to": "temple",
+        "why": "Shiloh is the Bible’s first lasting central sanctuary, the template for the temple."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Bible Odyssey — Shiloh",
+        "url": "https://www.bibleodyssey.org/articles/shiloh/"
+      }
+    ]
+  },
+  {
+    "id": "jerusalem",
+    "name": "Jerusalem",
+    "he_name": "יְרוּשָׁלַיִם",
+    "region": "Levant",
+    "coordinates": [
+      31.78,
+      35.22
+    ],
+    "ancient": true,
+    "bio": "The city in the Judaean hills, built around the Gihon spring, captured by David from the Jebusites and made his capital; Solomon builds the temple, and the city becomes the center of the canon’s geography. It survives the Assyrian siege of 701 BCE, falls to Babylon in 586, is rebuilt under Persian authority, and reaches its greatest physical extent under Herod before Rome destroys the temple in 70 CE. Archaeology has exposed the City of David, Hezekiah’s Siloam tunnel, the Broad Wall, the Temple Mount platform, and the Western Wall; the temple itself is unrecovered and the mount is contested. Jerusalem is the site of sacrifice, pilgrimage, prophecy, lament, and messianic hope; the liturgy ends “next year in Jerusalem.” Its sanctity is claimed by three religions and its sovereignty is disputed. For the canon, it is less a backdrop than an argument about where God chooses to dwell.",
+    "works": [
+      "samuel",
+      "kings",
+      "isaiah",
+      "jeremiah",
+      "ezekiel",
+      "psalms",
+      "lamentations",
+      "ezra",
+      "chronicles",
+      "mishnah",
+      "talmud-yerushalmi",
+      "siddur"
+    ],
+    "people": [
+      "david",
+      "solomon",
+      "isaiah",
+      "jeremiah",
+      "ezekiel",
+      "ezra",
+      "yohanan-ben-zakkai"
+    ],
+    "themes": [
+      "temple",
+      "sacrifice",
+      "prayer",
+      "memory",
+      "exile-and-return",
+      "land-of-israel",
+      "messianism",
+      "shekhinah"
+    ],
+    "connections": [
+      {
+        "to": "hebron",
+        "why": "David rules in Hebron before making Jerusalem his capital."
+      },
+      {
+        "to": "shiloh",
+        "why": "Jerusalem inherits Shiloh’s role as the central sanctuary."
+      },
+      {
+        "to": "babylon",
+        "why": "Babylon destroys the first temple and takes Jerusalem’s elite into exile."
+      },
+      {
+        "to": "yavneh",
+        "why": "After Rome destroys the second temple, Yavneh becomes the portable center of Torah."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Bible Odyssey — Jerusalem",
+        "url": "https://www.bibleodyssey.org/articles/jerusalem/"
+      },
+      {
+        "label": "UNESCO — Old City of Jerusalem",
+        "url": "https://whc.unesco.org/en/list/148/"
+      }
+    ]
+  },
+  {
+    "id": "bethlehem",
+    "name": "Bethlehem",
+    "he_name": "בֵּית לֶחֶם",
+    "region": "Levant",
+    "coordinates": [
+      31.7,
+      35.2
+    ],
+    "ancient": true,
+    "bio": "A small town in the Judaean hills about 8 km south of Jerusalem, called Ephrath in Genesis and “Bethlehem of Judah” in the prophets. Genesis 35:19 remembers Rachel’s tomb on the road there; the book of Ruth is set in its fields, where Ruth gleans behind Boaz and the lineage of David is traced. 1 Samuel 16 has Samuel anoint David at Bethlehem, and the town becomes David’s birthplace and the model for the ideal king. Micah 5:1 promises a ruler from Bethlehem Ephrathah, a verse the New Testament reads messianically. Archaeology shows Iron Age occupation and a modest settlement, not a grand city; the Church of the Nativity, built by Constantine and rebuilt by Justinian, is among the oldest continuously used churches, and UNESCO lists it. Bethlehem matters as the canon’s place of smallness and election: the least of Judah’s clans, chosen for the line of David.",
+    "works": [
+      "genesis",
+      "ruth",
+      "samuel",
+      "twelve"
+    ],
+    "people": [
+      "david",
+      "samuel"
+    ],
+    "themes": [
+      "messianism",
+      "covenant",
+      "memory",
+      "love"
+    ],
+    "connections": [
+      {
+        "to": "jerusalem",
+        "why": "Bethlehem lies within Jerusalem’s orbit as the modest origin of its greatest king."
+      },
+      {
+        "to": "hebron",
+        "why": "Both are Judaean towns woven into David’s rise and the ancestors’ burial memory."
+      },
+      {
+        "to": "ruth",
+        "why": "Ruth’s gleaning in Bethlehem’s fields produces David’s ancestral line."
+      },
+      {
+        "to": "david",
+        "why": "David is anointed at Bethlehem and remembered as its shepherd-king."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Bible Odyssey — Bethlehem",
+        "url": "https://www.bibleodyssey.org/articles/bethlehem/"
+      },
+      {
+        "label": "UNESCO — Birthplace of Jesus, Bethlehem",
+        "url": "https://whc.unesco.org/en/list/1433/"
+      }
+    ]
+  },
+  {
+    "id": "samaria",
+    "name": "Samaria",
+    "he_name": "שֹׁמְרוֹן",
+    "region": "Levant",
+    "coordinates": [
+      32.28,
+      35.19
+    ],
+    "ancient": true,
+    "bio": "The hilltop capital of the northern kingdom of Israel, founded by Omri around 880 BCE and expanded by Ahab, who built a palace with ivory panels and a temple to Baal (1 Kings 16–22). Assyria besieged and took the city in 722/721 BCE and deported its population; the region became an Assyrian province and later a Hellenistic and Herodian city, Sebaste. The Bible uses “Samaria” for the city, the kingdom, and the later Samaritan community, whose temple stood on Mount Gerizim rather than in Samaria. Archaeology at Sebastia has exposed Omride palace foundations, fortifications, a stepped street, and the Roman city; the Samaria ostraca — inscribed potsherds listing oil and wine deliveries — illuminate its administrative economy. Prophets denounce Samaria’s wealth and idolatry, yet Jeremiah imagines vineyards planted again on Samaria’s mountains. For the canon, Samaria is the northern counterpart to Jerusalem: a rival sanctuary, a rejected kinship, and a symbol of division.",
+    "works": [
+      "kings",
+      "isaiah",
+      "jeremiah",
+      "twelve",
+      "chronicles"
+    ],
+    "people": [
+      "elijah",
+      "isaiah"
+    ],
+    "themes": [
+      "exile-and-return",
+      "prophecy",
+      "temple",
+      "chosenness",
+      "sin-and-atonement"
+    ],
+    "connections": [
+      {
+        "to": "jerusalem",
+        "why": "Samaria’s rival sanctuary and separate tradition define the north against the south."
+      },
+      {
+        "to": "nineveh",
+        "why": "Assyria, whose capital is Nineveh, destroys Samaria and deports its people."
+      },
+      {
+        "to": "babylon",
+        "why": "Babylon completes what Assyria began, emptying the southern kingdom too."
+      },
+      {
+        "to": "elijah",
+        "why": "Elijah’s conflict with Ahab and Jezebel is fought in and around Samaria."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Bible Odyssey — Samaria",
+        "url": "https://www.bibleodyssey.org/articles/samaria/"
+      },
+      {
+        "label": "Bible Odyssey — The Samaria Ostraca",
+        "url": "https://www.bibleodyssey.org/articles/the-samaria-ostraca/"
+      }
+    ]
+  },
+  {
+    "id": "nineveh",
+    "name": "Nineveh",
+    "he_name": "נִינְוֵה",
+    "region": "Mesopotamia",
+    "coordinates": [
+      36.36,
+      43.15
+    ],
+    "ancient": true,
+    "bio": "The Assyrian capital on the Tigris, opposite modern Mosul, expanded by Sennacherib (r. 705–681 BCE) into a vast royal city with the “palace without rival,” gardens, aqueducts, and massive walls. Its library, collected by Ashurbanipal, preserved thousands of cuneiform tablets including Gilgamesh and Mesopotamian wisdom; the mounds of Kuyunjik and Nebi Yunus were excavated by Botta, Layard, and Rassam in the nineteenth century. The book of Jonah makes Nineveh the object of a reluctant prophet’s mission and a paradigm of mass repentance; Nahum and Zephaniah celebrate its fall in 612 BCE. Archaeology confirms the city’s scale and violent end, though the Jonah narrative is didactic rather than archival. In the canon, Nineveh is the great enemy city that God can spare — a limit case for prophecy’s universal reach — and the counter-image to Jerusalem.",
+    "works": [
+      "genesis",
+      "kings",
+      "isaiah",
+      "twelve"
+    ],
+    "people": [
+      "isaiah"
+    ],
+    "themes": [
+      "prophecy",
+      "teshuvah",
+      "justice",
+      "chosenness"
+    ],
+    "connections": [
+      {
+        "to": "samaria",
+        "why": "Nineveh’s empire destroys Samaria and nearly takes Jerusalem."
+      },
+      {
+        "to": "babylon",
+        "why": "Babylon inherits Assyria’s imperial role after Nineveh falls."
+      },
+      {
+        "to": "jerusalem",
+        "why": "Jerusalem’s deliverance from Sennacherib is the mirror of Nineveh’s eventual ruin."
+      },
+      {
+        "to": "twelve",
+        "why": "Jonah, Nahum, and Zephaniah make Nineveh a central stage of prophetic drama."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Bible Odyssey — Nineveh",
+        "url": "https://www.bibleodyssey.org/articles/nineveh/"
+      },
+      {
+        "label": "Bible Odyssey — The Art and Archaeology of Nineveh",
+        "url": "https://www.bibleodyssey.org/articles/the-art-and-archaeology-of-nineveh/"
+      }
+    ]
+  },
+  {
+    "id": "babylon",
+    "name": "Babylon",
+    "he_name": "בָּבֶל",
+    "region": "Mesopotamia",
+    "coordinates": [
+      32.54,
+      44.42
+    ],
+    "ancient": true,
+    "bio": "City on the Euphrates, seat of Hammurabi’s Old Babylonian kingdom and later of the Neo-Babylonian empire under Nabopolassar and Nebuchadnezzar II, who rebuilt its walls, palaces, and the ziggurat Etemenanki; the Ishtar Gate and the imagined Hanging Gardens belong to its imperial image. In 586 BCE Nebuchadnezzar destroyed Jerusalem and deported its elite; Babylon becomes the Bible’s archetype of exile. Cyrus takes the city in 539, and the exiles are permitted to return. The city declined under the Seleucids and was largely abandoned by the Parthian period, but “Babylon” remained a name for the Jewish academies of Sasanian Mesopotamia; the Talmud Bavli was compiled at Sura and Pumbedita, not in the ruined city. Archaeology under Koldewey (1899–1917) exposed the processional way, Ishtar Gate, and palaces. Distinguish the city, the empire, and the rabbinic “Babylonia.”",
+    "works": [
+      "kings",
+      "isaiah",
+      "jeremiah",
+      "ezekiel",
+      "daniel",
+      "psalms",
+      "ezra",
+      "chronicles",
+      "talmud-bavli"
+    ],
+    "people": [
+      "jeremiah",
+      "ezekiel",
+      "ezra",
+      "rav",
+      "shmuel",
+      "rav-ashi",
+      "ravina"
+    ],
+    "themes": [
+      "exile-and-return",
+      "diaspora",
+      "temple",
+      "oral-torah",
+      "interpretation",
+      "canon",
+      "messianism"
+    ],
+    "connections": [
+      {
+        "to": "jerusalem",
+        "why": "Babylon destroys the first temple and takes Jerusalem’s elite into exile."
+      },
+      {
+        "to": "sura",
+        "why": "Sura is one of the two academies that make rabbinic Babylonia a second center of Torah."
+      },
+      {
+        "to": "pumbedita",
+        "why": "Pumbedita, with Sura, produced the Talmud that carries Babylon’s name."
+      },
+      {
+        "to": "talmud-bavli",
+        "why": "The Babylonian Talmud is the diaspora’s great monument, compiled long after the city’s ruin."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Bible Odyssey — Babylon",
+        "url": "https://www.bibleodyssey.org/articles/babylon/"
+      },
+      {
+        "label": "UNESCO — Babylon",
+        "url": "https://whc.unesco.org/en/list/278/"
+      }
+    ]
+  },
+  {
+    "id": "susa",
+    "name": "Susa",
+    "he_name": "שׁוּשַׁן",
+    "region": "Persia",
+    "coordinates": [
+      32.19,
+      48.26
+    ],
+    "ancient": true,
+    "bio": "An ancient Elamite city in the Khuzestan plain, now Shush in Iran, later one of the Achaemenid empire’s capitals, where Darius I built a palace and Apadana. French excavations in the nineteenth and twentieth centuries found the Code of Hammurabi stele, carried there as booty, and the famous archer frieze. The book of Esther is set in “Shushan the citadel,” at the court of Ahasuerus, and its plot turns on the vulnerability of a diaspora community inside imperial power. Daniel 8 receives a vision “in the citadel of Susa,” and Nehemiah served as cupbearer in the same Persian court. Archaeology confirms a substantial Achaemenid palace and long occupation, though Esther is a court tale with folkloric features rather than a chronicle. Susa matters as the canon’s model of diaspora politics: Jews at the center of an empire, surviving without a temple, and the origin of Purim.",
+    "works": [
+      "esther",
+      "daniel",
+      "ezra",
+      "chronicles"
+    ],
+    "people": [
+      "esther",
+      "ezra"
+    ],
+    "themes": [
+      "diaspora",
+      "memory",
+      "justice",
+      "chosenness"
+    ],
+    "connections": [
+      {
+        "to": "babylon",
+        "why": "Susa belongs to the Persian order that succeeds Babylon and permits the exiles’ return."
+      },
+      {
+        "to": "jerusalem",
+        "why": "Esther’s diaspora court and Nehemiah’s cupbearer post both point back toward Jerusalem."
+      },
+      {
+        "to": "esther",
+        "why": "Esther’s story is set entirely in the palace at Susa."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Bible Odyssey — Susa",
+        "url": "https://www.bibleodyssey.org/dictionary/susa/"
+      },
+      {
+        "label": "UNESCO — Susa",
+        "url": "https://whc.unesco.org/en/list/1455/"
+      }
+    ]
+  },
+  {
+    "id": "yavneh",
+    "name": "Yavneh",
+    "he_name": "יַבְנֶה",
+    "region": "Levant",
+    "coordinates": [
+      31.88,
+      34.74
+    ],
+    "ancient": true,
+    "bio": "A town on the southern coastal plain, identified with Tel Yavne, with a harbor at Yavne-Yam and a long history from the Bronze Age through the Crusades. After Rome destroyed Jerusalem in 70 CE, tradition places Rabbi Yohanan ben Zakkai’s academy at Yavneh, where Torah study, prayer, and halakhic deliberation were reorganized without the temple; Gittin 56b has him smuggled out of besieged Jerusalem in a coffin. The “vineyard at Yavneh” becomes the emblem of rabbinic reconstruction, and a council there is traditionally associated with fixing the biblical canon, though evidence for a single formal council is thin. Archaeology has exposed Roman-era buildings, ritual baths, a synagogue, and industrial installations, showing a thriving town rather than a retreat. Yavneh matters as the hinge between temple Judaism and rabbinic Judaism: the place where the canon’s interpretation became portable.",
+    "works": [
+      "mishnah",
+      "talmud-yerushalmi",
+      "midrash",
+      "pirkei-avot",
+      "siddur"
+    ],
+    "people": [
+      "yohanan-ben-zakkai",
+      "akiva"
+    ],
+    "themes": [
+      "oral-torah",
+      "canon",
+      "interpretation",
+      "chain-of-tradition",
+      "prayer",
+      "halakhah"
+    ],
+    "connections": [
+      {
+        "to": "jerusalem",
+        "why": "Yavneh rebuilds Jewish study and prayer after Jerusalem’s temple is destroyed."
+      },
+      {
+        "to": "tiberias",
+        "why": "Tiberias inherits and extends Yavneh’s role as a Galilean rabbinic center."
+      },
+      {
+        "to": "yohanan-ben-zakkai",
+        "why": "Yohanan ben Zakkai is the tradition’s emblematic founder of the academy at Yavneh."
+      },
+      {
+        "to": "mishnah",
+        "why": "The Mishnah is the great product of the rabbinic project that Yavneh helped launch."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Jewish Encyclopedia — Jabneh",
+        "url": "https://www.jewishencyclopedia.com/articles/8375-jabneh"
+      }
+    ]
+  },
+  {
+    "id": "tiberias",
+    "name": "Tiberias",
+    "he_name": "טְבֶרְיָה",
+    "region": "Levant",
+    "coordinates": [
+      32.79,
+      35.53
+    ],
+    "ancient": true,
+    "bio": "A city on the western shore of the Sea of Galilee, founded around 20 CE by Herod Antipas and named for Tiberius; it was built over a cemetery and therefore regarded as ritually impure, which may explain its absence from the Gospels. After the Bar Kokhba revolt, Tiberias became a center of Palestinian rabbinic learning; the Sanhedrin moved there, and the Jerusalem Talmud was compiled in the region. In the ninth and tenth centuries the Masoretes of Tiberias, especially the Ben Asher family, developed the system of vocalization and cantillation that fixed the Hebrew text’s pronunciation. The city also preserves the tombs of rabbis and the Hammat Tiberias synagogue with its zodiac mosaic. Archaeology has exposed the Roman cardo, baths, and basilica. Tiberias matters because it is where the oral tradition and the written text were both stabilized: the Jerusalem Talmud and the Masoretic text are its two great legacies.",
+    "works": [
+      "mishnah",
+      "talmud-yerushalmi",
+      "midrash",
+      "siddur"
+    ],
+    "people": [
+      "yochanan-bar-nappacha",
+      "judah-hanasi"
+    ],
+    "themes": [
+      "oral-torah",
+      "interpretation",
+      "torah-study",
+      "prayer",
+      "halakhah"
+    ],
+    "connections": [
+      {
+        "to": "sepphoris",
+        "why": "Sepphoris and Tiberias were the two great Galilean centers of rabbinic learning."
+      },
+      {
+        "to": "jerusalem",
+        "why": "Tiberias preserves Jerusalem’s liturgical and scholarly inheritance after 70 CE."
+      },
+      {
+        "to": "yavneh",
+        "why": "Tiberias continues the academy tradition that Yavneh began."
+      },
+      {
+        "to": "talmud-yerushalmi",
+        "why": "The Jerusalem Talmud is the product of the Galilean circles centered on Tiberias."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Bible Odyssey — Tiberias",
+        "url": "https://www.bibleodyssey.org/dictionary/tiberias/"
+      }
+    ]
+  },
+  {
+    "id": "sepphoris",
+    "name": "Sepphoris",
+    "he_name": "צִפּוֹרִי",
+    "region": "Levant",
+    "coordinates": [
+      32.75,
+      35.28
+    ],
+    "ancient": true,
+    "bio": "A hilltop city in the Lower Galilee, about 6 km northwest of Nazareth, rebuilt by Herod Antipas after the revolt of 4 BCE and called “the ornament of Galilee” by Josephus. It had a Roman theater, a cardo, bathhouses, and elaborate mosaic floors — the Dionysus mosaic and the Nile festival mosaic are among the finest in the region — as well as ritual baths and a synagogue. Rabbinic tradition places Judah HaNasi at Sepphoris, where the Mishnah was compiled around 200 CE; the city was a center of the Sanhedrin and of Galilean scholarship before Tiberias eclipsed it. Sepphoris is not mentioned in the New Testament, though its proximity to Nazareth has fueled speculation about Jesus’ world. Archaeology shows a prosperous, mixed pagan and Jewish city, a reminder that Galilee was not an isolated backwater. For the canon, Sepphoris is where the Mishnah took shape — the oral Torah’s first great written monument.",
+    "works": [
+      "mishnah",
+      "talmud-yerushalmi",
+      "midrash"
+    ],
+    "people": [
+      "judah-hanasi"
+    ],
+    "themes": [
+      "oral-torah",
+      "halakhah",
+      "interpretation",
+      "torah-study"
+    ],
+    "connections": [
+      {
+        "to": "tiberias",
+        "why": "Tiberias succeeds Sepphoris as the dominant Galilean rabbinic center."
+      },
+      {
+        "to": "yavneh",
+        "why": "Sepphoris inherits Yavneh’s project of turning oral tradition into written Mishnah."
+      },
+      {
+        "to": "judah-hanasi",
+        "why": "Judah HaNasi is traditionally associated with Sepphoris and the Mishnah’s compilation."
+      },
+      {
+        "to": "mishnah",
+        "why": "The Mishnah is the text that makes Sepphoris a canonical place."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Jewish Encyclopedia — Sepphoris",
+        "url": "https://www.jewishencyclopedia.com/articles/13431-sepphoris"
+      }
+    ]
+  },
+  {
+    "id": "pumbedita",
+    "name": "Pumbedita",
+    "he_name": "פּוּמְבְּדִיתָא",
+    "region": "Mesopotamia",
+    "coordinates": [
+      33.35,
+      43.78
+    ],
+    "ancient": true,
+    "bio": "A Jewish academy town in Sasanian Mesopotamia, near the Euphrates in the region of modern Fallujah, Iraq; its exact site is not securely identified. The academy was founded in the third century, after the yeshiva of Nehardea was disrupted, and became one of the two great institutions of Babylonian Jewry alongside Sura. Its heads included Rav Yehuda, Rabbah bar Nahmani, Rav Yosef, Abaye, and Rava; the give-and-take between Abaye and Rava is the engine of much of the Talmud’s dialectic, and Pumbedita’s methods helped shape the Bavli. The academy continued into the Geonic period and eventually moved to Baghdad. Because the site is unexcavated and uncertain, Pumbedita is known mainly through texts — a place constituted by its scholars rather than its ruins. In the canon, it stands for the Babylonian Talmud’s intellectual culture: argument as a devotional practice and the academy as a surrogate temple.",
+    "works": [
+      "talmud-bavli"
+    ],
+    "people": [],
+    "themes": [
+      "oral-torah",
+      "torah-study",
+      "halakhah",
+      "machloket",
+      "interpretation"
+    ],
+    "connections": [
+      {
+        "to": "sura",
+        "why": "Sura and Pumbedita are the paired academies of Babylonian Jewry."
+      },
+      {
+        "to": "babylon",
+        "why": "Pumbedita belongs to the Sasanian Jewish world that gave “Babylon” its second life."
+      },
+      {
+        "to": "talmud-bavli",
+        "why": "Pumbedita’s dialectic is embedded in nearly every page of the Bavli."
+      },
+      {
+        "to": "machloket",
+        "why": "The Abaye–Rava debates make Pumbedita the classic home of constructive disagreement."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Jewish Encyclopedia — Pumbedita",
+        "url": "https://www.jewishencyclopedia.com/articles/12439-pumbedita"
+      }
+    ]
+  },
+  {
+    "id": "sura",
+    "name": "Sura",
+    "he_name": "סוּרָא",
+    "region": "Mesopotamia",
+    "coordinates": [
+      31.98,
+      46.0
+    ],
+    "ancient": true,
+    "bio": "A Jewish academy town in southern Mesopotamia, on the Euphrates near the Sasanian frontier, traditionally identified with a site near the later city of al-Hira; its exact location is uncertain. Rav founded the academy around 220 CE after returning from Palestine, and Sura became one of the two pillars of Babylonian learning, paired with Pumbedita. Rav Ashi and Ravina are credited in tradition with the redaction of the Talmud Bavli around 500 CE, and the Sura academy continued into the Geonic period, when its heads corresponded with Jewish communities across the Mediterranean. The “Kallah” months, when students gathered for intensive study, were associated with Sura. No excavated building can be labeled the academy; the place survives in the Talmud’s attributions and in geonic responsa. For the canon, Sura is the cradle of the Bavli — where the oral law was edited into the text that would define Jewish study for centuries.",
+    "works": [
+      "talmud-bavli"
+    ],
+    "people": [
+      "rav",
+      "rav-ashi",
+      "ravina"
+    ],
+    "themes": [
+      "oral-torah",
+      "torah-study",
+      "halakhah",
+      "chain-of-tradition"
+    ],
+    "connections": [
+      {
+        "to": "pumbedita",
+        "why": "Pumbedita is Sura’s sister academy and rival in the Talmud’s formation."
+      },
+      {
+        "to": "babylon",
+        "why": "Sura gives rabbinic Babylonia its enduring institutional center."
+      },
+      {
+        "to": "rav-ashi",
+        "why": "Rav Ashi is traditionally credited with the Bavli’s redaction at Sura."
+      },
+      {
+        "to": "talmud-bavli",
+        "why": "The Babylonian Talmud is Sura’s defining legacy."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Jewish Encyclopedia — Sura",
+        "url": "https://www.jewishencyclopedia.com/articles/14121-sura"
+      }
+    ]
+  },
+  {
+    "id": "troyes",
+    "name": "Troyes",
+    "he_name": "טְרוֹיֶשׁ",
+    "region": "Europe",
+    "coordinates": [
+      48.3,
+      4.08
+    ],
+    "ancient": false,
+    "bio": "A town in Champagne, France, on the Seine, known for its medieval fairs and cathedral; it was also the home of Rashi (Solomon ben Isaac, 1040–1105), the most influential Jewish commentator on Bible and Talmud. Rashi studied at Worms and Mainz, returned to Troyes, and wrote commentaries that combine philology, midrash, and a genius for the plain sense; his Torah commentary became the standard companion to the text, and his Talmud commentary is printed in every Vilna edition. The Jewish community of Troyes is documented from the eleventh century and suffered expulsions in 1306 and 1394; no trace of Rashi’s study house survives, and the later “Rashi synagogue” is a reconstruction of a sixteenth-century building. Troyes matters to the canon because it shows the commentary tradition becoming inseparable from the text itself: Rashi’s margins are where most Jews have first met the Bible.",
+    "works": [
+      "rashi-commentary",
+      "talmud-bavli"
+    ],
+    "people": [
+      "rashi"
+    ],
+    "themes": [
+      "interpretation",
+      "torah-study",
+      "canon",
+      "diaspora",
+      "chain-of-tradition"
+    ],
+    "connections": [
+      {
+        "to": "worms",
+        "why": "Rashi studied at Worms before returning to write in Troyes."
+      },
+      {
+        "to": "vilna",
+        "why": "The Vilna Talmud prints Rashi’s commentary on nearly every page."
+      },
+      {
+        "to": "rashi",
+        "why": "Troyes is Rashi’s home and the place his commentary took shape."
+      },
+      {
+        "to": "interpretation",
+        "why": "Rashi’s work makes Troyes a capital of the commentary tradition."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Jewish Encyclopedia — Troyes",
+        "url": "https://www.jewishencyclopedia.com/articles/14528-troyes"
+      }
+    ]
+  },
+  {
+    "id": "worms",
+    "name": "Worms",
+    "he_name": "וָרְמַיְזָא",
+    "region": "Europe",
+    "coordinates": [
+      49.63,
+      8.36
+    ],
+    "ancient": false,
+    "bio": "A Rhineland city on the Rhine, one of the ShUM towns — Speyer, Worms, and Mainz — that formed the heart of medieval Ashkenazi Jewry. Jewish settlement is attested from the tenth century; the community produced scholars, liturgical poets, and legal customs that shaped Ashkenazi practice. Rashi studied at Worms under Isaac ben Eliezer and at Mainz under Jacob ben Yakar, and the city’s eleventh-century synagogue, twelfth-century ritual bath, and “Holy Sands” cemetery are among the oldest surviving Jewish monuments in Europe; the synagogue was destroyed in 1938 and rebuilt, and the ShUM sites were inscribed by UNESCO in 2021. In 1096, Crusader bands massacred the community, an event remembered in liturgy and chronicles. Worms matters as a place where the canon was lived: synagogue, cemetery, and study hall made the oral law local, and the trauma of 1096 entered the tradition’s memory alongside the destruction of the temples.",
+    "works": [
+      "rashi-commentary",
+      "talmud-bavli",
+      "siddur"
+    ],
+    "people": [
+      "rashi"
+    ],
+    "themes": [
+      "diaspora",
+      "interpretation",
+      "torah-study",
+      "memory",
+      "prayer",
+      "halakhah"
+    ],
+    "connections": [
+      {
+        "to": "troyes",
+        "why": "Worms is where Rashi studied before his return to Troyes."
+      },
+      {
+        "to": "jerusalem",
+        "why": "The memory of 1096 is folded into the older memory of Jerusalem’s destroyed temples."
+      },
+      {
+        "to": "rashi",
+        "why": "Rashi’s teachers and formative years belong to Worms."
+      },
+      {
+        "to": "siddur",
+        "why": "Worms’ liturgical poets helped shape Ashkenazi prayer."
+      }
+    ],
+    "sources": [
+      {
+        "label": "UNESCO — ShUM Sites of Speyer, Worms and Mainz",
+        "url": "https://whc.unesco.org/en/list/1636/"
+      },
+      {
+        "label": "Jewish Encyclopedia — Worms",
+        "url": "https://www.jewishencyclopedia.com/articles/15013-worms"
+      }
+    ]
+  },
+  {
+    "id": "cairo",
+    "name": "Cairo",
+    "he_name": "קָהִיר",
+    "region": "Egypt",
+    "coordinates": [
+      30.04,
+      31.24
+    ],
+    "ancient": false,
+    "bio": "The capital of Egypt, founded by the Fatimids in 969 CE beside the older city of Fustat; by the twelfth century it was the center of the Jewish Mediterranean world. Maimonides (1138–1204) settled in Fustat, served as a physician at Saladin’s court, and wrote the Mishneh Torah and the Guide for the Perplexed there; his tomb is traditionally shown in Tiberias. The Ben Ezra synagogue in Old Cairo held the Cairo Geniza, a storeroom of some 300,000 manuscript fragments that Solomon Schechter examined in 1896; the Geniza has transformed the study of medieval Jewish life, revealing letters, contracts, liturgy, and poetry that official texts never preserved. Cairo was also home to Karaite and Rabbanite communities and to a yeshiva tied to Baghdad. Archaeology and the Geniza together make Cairo the best-documented medieval Jewish diaspora. For the canon, it is where philosophy, law, and everyday life meet in the same archive.",
+    "works": [
+      "guide-perplexed",
+      "mishneh-torah",
+      "kuzari"
+    ],
+    "people": [
+      "rambam",
+      "yehuda-halevi"
+    ],
+    "themes": [
+      "wisdom",
+      "halakhah",
+      "diaspora",
+      "interpretation",
+      "memory"
+    ],
+    "connections": [
+      {
+        "to": "jerusalem",
+        "why": "Cairo’s Jews prayed toward Jerusalem while living at the center of the Mediterranean diaspora."
+      },
+      {
+        "to": "tiberias",
+        "why": "Maimonides’ tomb is traditionally located in Tiberias."
+      },
+      {
+        "to": "babylon",
+        "why": "Cairo’s yeshiva maintained ties with the geonim of Baghdad."
+      },
+      {
+        "to": "rambam",
+        "why": "Maimonides lived and wrote his major works in Fustat-Cairo."
+      }
+    ],
+    "sources": [
+      {
+        "label": "UNESCO — Historic Cairo",
+        "url": "https://whc.unesco.org/en/list/89/"
+      },
+      {
+        "label": "Jewish Encyclopedia — Cairo",
+        "url": "https://www.jewishencyclopedia.com/articles/3906-cairo"
+      }
+    ]
+  },
+  {
+    "id": "safed",
+    "name": "Safed",
+    "he_name": "צְפַת",
+    "region": "Levant",
+    "coordinates": [
+      32.97,
+      35.5
+    ],
+    "ancient": false,
+    "bio": "A hilltop city in the Upper Galilee, crowned by a Crusader fortress, about 20 km north of Tiberias. It became the center of a remarkable kabbalistic flowering in the sixteenth century, when refugees from the Spanish expulsion and other scholars gathered there: Moses Cordovero systematized the Zohar’s symbolism, Isaac Luria (1534–1572) taught a radical cosmology of tzimtzum, the breaking of the vessels, and tikkun; Joseph Karo wrote the Shulchan Aruch and lived in Safed; Shlomo Alkabetz composed Lekhah Dodi, the hymn that welcomes the Sabbath. The city’s synagogues — the Ari, the Caro, the Abuhav — preserve the memory of this circle. Safed’s sanctity is largely early modern, not biblical; it is not named in the Tanakh. For the canon, Safed is where mysticism became a lived system and where the prayer book and the law code were both shaped by the same small community.",
+    "works": [
+      "zohar",
+      "shulchan-aruch",
+      "siddur"
+    ],
+    "people": [
+      "isaac-luria",
+      "joseph-karo",
+      "shlomo-alkabetz",
+      "shimon-bar-yochai"
+    ],
+    "themes": [
+      "mysticism",
+      "sefirot",
+      "shekhinah",
+      "tzimtzum",
+      "kavvanah",
+      "prayer",
+      "teshuvah"
+    ],
+    "connections": [
+      {
+        "to": "tiberias",
+        "why": "Safed belongs to the same Galilean landscape and rabbinic tomb tradition as Tiberias."
+      },
+      {
+        "to": "jerusalem",
+        "why": "Safed’s liturgy and kabbalistic practice orient themselves toward Jerusalem."
+      },
+      {
+        "to": "zohar",
+        "why": "The Zohar is the textual foundation of Safed’s mystical revival."
+      },
+      {
+        "to": "isaac-luria",
+        "why": "Luria’s teaching makes Safed the center of early modern kabbalah."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Encyclopaedia Britannica — Zefat",
+        "url": "https://www.britannica.com/place/Zefat"
+      },
+      {
+        "label": "Jewish Encyclopedia — Safed",
+        "url": "https://www.jewishencyclopedia.com/articles/12990-safed"
+      }
+    ]
+  },
+  {
+    "id": "vilna",
+    "name": "Vilna",
+    "he_name": "וִילְנָה",
+    "region": "Europe",
+    "coordinates": [
+      54.69,
+      25.28
+    ],
+    "ancient": false,
+    "bio": "The capital of Lithuania, called “the Jerusalem of the North” for its density of yeshivot, synagogues, and Hebrew printing houses. Jewish settlement dates from the fourteenth century; the city became a stronghold of Talmud study and of the mitnaggedic opposition to Hasidism. The Vilna Gaon (Elijah ben Solomon Zalman, 1720–1797) combined immense erudition with a critical, text-centered method, and his disciples shaped the modern yeshiva movement. The Romm press published the “Vilna Shas,” the standard edition of the Talmud, with pagination still used today. In 1941–43 the Nazis confined Jews in the Vilna ghetto and murdered them at Ponar; the ghetto’s library and archives, and the partisans, are part of the city’s memory. Vilna matters to the canon as a place of textual mastery and catastrophe: the edition in which the Talmud is studied and the site of one of the Holocaust’s great centers.",
+    "works": [
+      "talmud-bavli",
+      "shulchan-aruch",
+      "rashi-commentary"
+    ],
+    "people": [],
+    "themes": [
+      "torah-study",
+      "halakhah",
+      "interpretation",
+      "oral-torah",
+      "diaspora",
+      "memory"
+    ],
+    "connections": [
+      {
+        "to": "troyes",
+        "why": "The Vilna Talmud carries Rashi’s Troyes commentary on every page."
+      },
+      {
+        "to": "worms",
+        "why": "Vilna inherits the Ashkenazi legal and liturgical tradition shaped in the ShUM cities."
+      },
+      {
+        "to": "jerusalem",
+        "why": "Vilna’s study culture defined the diaspora’s orientation toward Jerusalem."
+      },
+      {
+        "to": "talmud-bavli",
+        "why": "The Vilna edition fixed the Talmud’s standard pagination and presentation."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Jewish Encyclopedia — Wilna",
+        "url": "https://www.jewishencyclopedia.com/articles/14934-wilna"
+      }
+    ]
+  }
+]

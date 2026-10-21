@@ -1,0 +1,984 @@
+[
+  {
+    "id": "genesis",
+    "title": "Genesis",
+    "he_title": "בְּרֵאשִׁית",
+    "also": ["Bereshit", "The Book of Beginnings"],
+    "corpus": "tanakh",
+    "division": "torah",
+    "order": 1,
+    "date": "composed c. 1000–500 BCE from older traditions; canonized by c. 200 CE",
+    "date_sort": -1000,
+    "language": "Biblical Hebrew (with isolated Aramaic in 31:47)",
+    "summary": "Genesis is a book of beginnings that keeps postponing its endings. It opens with creation by speech, passes through murder, flood, and Babel, then narrows to one family: Abraham, Sarah, and the son they can scarcely believe in. Its prose is spare and strange — God walks in a garden, bargains over cities, and wrestles a man at a river. It closes in Egypt with a coffin and a promise unfulfilled.",
+    "why": "It stands first in the Torah because everything later depends on its premises: the world is created by a word, humanity bears the divine image, and a particular family is chosen for the sake of all families. The annual Torah cycle ends with Deuteronomy and begins again with Genesis on Simchat Torah; the Passover Haggadah reaches back to its covenant of land and descendants. Tradition ascribes the book to Moses; scholars describe it as a composite of older traditions, Priestly and non-Priestly sources, edited into shape in the exilic and Persian periods. Without it, Sinai would have no backstory and Jewish chosenness no genealogy.",
+    "structure": [
+      {"name": "Primeval history (1–11)", "note": "Creation, Eden, Cain, the flood, and Babel: universal stories of human capacity and failure."},
+      {"name": "Abraham and Sarah (12–25:18)", "note": "Call, covenant, the birth of Isaac, the Akedah, and a grave bought at Hebron."},
+      {"name": "Jacob and his children (25:19–36)", "note": "Struggle at birth, the ladder, Laban's household, and the wrestling that renames him Israel."},
+      {"name": "Joseph in Egypt (37–50)", "note": "A novella of jealousy, dreams, famine, and reconciliation, ending with a coffin in Egypt."},
+      {"name": "The toledot frame", "note": "Eleven 'these are the generations' headings turn the book into a genealogy of promise."}
+    ],
+    "themes": ["creation", "covenant", "chosenness", "exile-and-return", "land-of-israel", "image-of-god"],
+    "people": ["abraham", "sarah", "isaac", "jacob", "joseph"],
+    "places": ["eden", "ur", "haran", "canaan", "hebron"],
+    "key_passages": [
+      {"ref": "Genesis 1:1–3", "note": "Creation by speech: the opening establishes a God who orders chaos through language rather than combat."},
+      {"ref": "Genesis 12:1–3", "note": "The call of Abram; election is immediately tied to blessing for all the families of the earth."},
+      {"ref": "Genesis 22:1–19", "note": "The Akedah, read on Rosh Hashanah; the hardest text in the book and the one most argued over."},
+      {"ref": "Genesis 32:24–32", "note": "Wrestling at the Jabbok, where Jacob receives the name Israel; Hebrew numbering begins the scene at 32:25."}
+    ],
+    "connections": [
+      {"to": "exodus", "why": "The promise to Abraham becomes the crisis of Egypt; Exodus is Genesis's unfinished sentence."},
+      {"to": "job", "why": "Both test a righteous man without explaining the wager, and both end in a divine speech."},
+      {"to": "twelve", "why": "Hosea's marriage and Israel's wilderness years replay Genesis's themes of covenant, betrayal, and costly love."},
+      {"to": "rashi-commentary", "why": "Rashi's Genesis commentary is the classic Jewish reading, alert to gaps and repetitions."},
+      {"to": "land-of-israel", "why": "The land is promised, walked, bought, and never fully possessed here."}
+    ],
+    "sources": [
+      {"label": "Sefaria: Genesis, Hebrew and JPS translation", "url": "https://www.sefaria.org/Genesis.1"},
+      {"label": "My Jewish Learning: Hebrew Bible", "url": "https://www.myjewishlearning.com/"}
+    ]
+  },
+  {
+    "id": "exodus",
+    "title": "Exodus",
+    "he_title": "שְׁמוֹת",
+    "also": ["Shemot", "The Book of Names"],
+    "corpus": "tanakh",
+    "division": "torah",
+    "order": 2,
+    "date": "composed c. 950–500 BCE from older traditions; canonized by c. 200 CE",
+    "date_sort": -950,
+    "language": "Biblical Hebrew",
+    "summary": "Exodus is the Bible's founding story of liberation and its most sustained argument that freedom issues in obligation. It begins with slaves whose names the empire has tried to erase, follows a reluctant shepherd back to Egypt, and stages a contest between Pharaoh and a God who hears cries. The sea crossing is followed almost immediately by hunger, litigation, and a covenant at a mountain wrapped in smoke. The second half is mostly law and architecture — the Ten Commandments, the blueprints for a portable sanctuary — until the golden calf nearly cancels everything.",
+    "why": "It is second in the Torah because it turns the promises of Genesis into a people with a constitution. The Exodus is recited at Passover and in the daily liturgy, and it grounds the Sabbath and the treatment of strangers: you were strangers in Egypt. Tradition ascribes the book to Moses; historians debate the scale and date of the Exodus and treat the narrative as a foundational memory shaped over centuries. Without it, the Torah would have origins but no politics, and Jewish ethics no charter.",
+    "structure": [
+      {"name": "Slavery and the call (1–6)", "note": "The midwives resist, Moses is drawn from the Nile, and the divine name is disclosed at the bush."},
+      {"name": "Plagues, Passover, and the sea (7–15:21)", "note": "A contest with Pharaoh, a meal that becomes liturgy, and a victory song led by Miriam."},
+      {"name": "Wilderness to Sinai (15:22–18)", "note": "Manna, water, judges, and the first lessons in dependence and administration."},
+      {"name": "Covenant and law (19–24)", "note": "Theophany, the Decalogue, and the people's acceptance."},
+      {"name": "Tabernacle and apostasy (25–40)", "note": "Sanctuary instructions, the golden calf, Moses's intercession, and glory filling the tent."}
+    ],
+    "themes": ["exodus", "revelation", "covenant", "law-and-narrative", "mitzvot", "memory"],
+    "people": ["moses", "aaron", "miriam"],
+    "places": ["goshen", "sinai"],
+    "key_passages": [
+      {"ref": "Exodus 3:1–15", "note": "The burning bush and the disclosure of the divine name, the moment Moses is sent and the exodus begins."},
+      {"ref": "Exodus 12:1–14", "note": "The Passover ritual: a family meal becomes the annual memory of liberation."},
+      {"ref": "Exodus 20:1–14", "note": "The Ten Words at Sinai, the constitutional core of the covenant."},
+      {"ref": "Exodus 32:1–14", "note": "The golden calf and Moses's intercession, where mercy is argued into the covenant."}
+    ],
+    "connections": [
+      {"to": "leviticus", "why": "The tabernacle Exodus builds is staffed and legislated in Leviticus."},
+      {"to": "deuteronomy", "why": "Deuteronomy retells the wilderness story as a farewell sermon, turning Exodus into catechism."},
+      {"to": "siddur", "why": "The daily liturgy and the Passover Haggadah both narrate the Exodus as present obligation, not past event."},
+      {"to": "jeremiah", "why": "Jeremiah's new covenant answers the failure of the Sinai covenant without abandoning its God."},
+      {"to": "memory", "why": "Exodus makes remembering a commandment: the past is to be rehearsed until it becomes identity."}
+    ],
+    "sources": [
+      {"label": "Sefaria: Exodus, Hebrew and JPS translation", "url": "https://www.sefaria.org/Exodus.1"},
+      {"label": "My Jewish Learning: Passover", "url": "https://www.myjewishlearning.com/"}
+    ]
+  },
+  {
+    "id": "leviticus",
+    "title": "Leviticus",
+    "he_title": "וַיִּקְרָא",
+    "also": ["Vayikra", "Torat Kohanim", "The Priestly Code"],
+    "corpus": "tanakh",
+    "division": "torah",
+    "order": 3,
+    "date": "composed c. 600–500 BCE from older priestly material; canonized by c. 200 CE",
+    "date_sort": -600,
+    "language": "Biblical Hebrew",
+    "summary": "Leviticus is the Bible's most maligned book and one of its most radical. It is almost entirely speech: God addresses Moses from the tent of meeting, legislating sacrifice, priesthood, purity, and atonement. There is hardly a story, but there is a terrifying one near the beginning — two priests bring strange fire and die — and a ritual at the heart of the book that sends a goat into the wilderness carrying the community's sins. Its Holiness Code turns cultic separation into ethics: honest scales, prompt wages, respect for the blind, love of neighbor.",
+    "why": "It sits at the center of the Torah because it answers the question Exodus leaves open: how can a holy God dwell among an impure people? The rabbis called it Torat Kohanim, the teaching of the priests, and made it the first book children studied, arguing that the pure should learn about purity. Its vocabulary of sacrifice, purity, and atonement is assumed by the rest of the canon and systematized in the Mishnah and Maimonides' code. Without it, the Temple would have no manual and rabbinic Judaism no grammar for sanctifying ordinary life.",
+    "structure": [
+      {"name": "Sacrifices (1–7)", "note": "Burnt, grain, well-being, sin, and guilt offerings, each with its own logic."},
+      {"name": "Priesthood and sanctuary (8–10)", "note": "Ordination, the inaugural service, and the deaths of Nadab and Abihu."},
+      {"name": "Purity and impurity (11–15)", "note": "Dietary laws, childbirth, skin disease, and bodily flows: a map of boundaries."},
+      {"name": "Yom Kippur (16)", "note": "The scapegoat and the annual purification of sanctuary and people."},
+      {"name": "The Holiness Code (17–26)", "note": "Sexual ethics, social justice, the Sabbatical year, and the Jubilee."},
+      {"name": "Vows and dedications (27)", "note": "A closing appendix on valuing persons and property dedicated to the sanctuary."}
+    ],
+    "themes": ["sacrifice", "purity", "sin-and-atonement", "kashrut", "mitzvot", "temple"],
+    "people": ["moses", "aaron"],
+    "places": ["sinai"],
+    "key_passages": [
+      {"ref": "Leviticus 16:1–34", "note": "The Yom Kippur ritual, including the scapegoat sent into the wilderness with the people's sins."},
+      {"ref": "Leviticus 19:1–18", "note": "Holiness becomes ethics: gleaning, wages, honest judgment, and love of neighbor."},
+      {"ref": "Leviticus 25:8–13", "note": "The Jubilee, a radical reset of land, debt, and servitude every fiftieth year."},
+      {"ref": "Leviticus 10:1–3", "note": "Nadab and Abihu offer strange fire and die, a warning that the sanctuary is not controllable."}
+    ],
+    "connections": [
+      {"to": "exodus", "why": "Leviticus is the operating manual for the tabernacle whose construction Exodus describes."},
+      {"to": "talmud-bavli", "why": "The orders of Kodashim and Tohorot are essentially extended arguments with Leviticus."},
+      {"to": "mishneh-torah", "why": "Maimonides' code devotes whole sections to the sacrificial and purity laws, keeping them intellectually alive after the Temple."},
+      {"to": "temple", "why": "Without Leviticus the Temple's daily and festival service would have no script."},
+      {"to": "sin-and-atonement", "why": "The book supplies the canon's grammar of guilt, reparation, and cleansing."}
+    ],
+    "sources": [
+      {"label": "Sefaria: Leviticus, Hebrew and JPS translation", "url": "https://www.sefaria.org/Leviticus.1"},
+      {"label": "My Jewish Learning: Leviticus", "url": "https://www.myjewishlearning.com/"}
+    ]
+  },
+  {
+    "id": "numbers",
+    "title": "Numbers",
+    "he_title": "בְּמִדְבַּר",
+    "also": ["Bamidbar", "The Book of Wanderings"],
+    "corpus": "tanakh",
+    "division": "torah",
+    "order": 4,
+    "date": "composed c. 600–500 BCE from older traditions; canonized by c. 200 CE",
+    "date_sort": -600,
+    "language": "Biblical Hebrew",
+    "summary": "Numbers is a book of movement and delay. It begins with a census and a marching order, as if the camp were an army of God, then spends the next thirty-eight years burying the generation that left Egypt. The route from Sinai to the plains of Moab is punctuated by rebellion over food, authority, and the land. Its laws are a miscellany — the ordeal of the suspected wife, the Nazirite vow, the red heifer — and its poetry includes the oracles of a foreign prophet, Balaam, who blesses Israel against his will. It ends with a new generation poised to enter, and Moses still outside.",
+    "why": "It is fourth in the Torah because it shows the promise becoming a route, and the route becoming a judgment. The wilderness is the Bible's great school of failure, and the rabbis read its grumblings as a mirror of exile and its censuses as evidence of God's love for each individual. Its priestly blessing is recited daily, and its laws of inheritance and vows are argued in the Talmud. Without Numbers, the Torah would move from revelation to death without the long, costly education in what covenant demands.",
+    "structure": [
+      {"name": "Census and camp (1–10)", "note": "The tribes numbered, arranged, and set in motion around the portable sanctuary."},
+      {"name": "From Sinai to Kadesh (11–19)", "note": "Grumblings, the spies' report, Korah's revolt, and the red heifer."},
+      {"name": "Balaam and the plains of Moab (20–25)", "note": "Water from the rock, the bronze serpent, and a foreign prophet's blessing."},
+      {"name": "Second census and the land (26–36)", "note": "A new generation, inheritance laws, and the daughters of Zelophehad."}
+    ],
+    "themes": ["covenant", "exile-and-return", "prophecy", "land-of-israel", "memory"],
+    "people": ["moses", "aaron", "miriam", "joshua"],
+    "places": ["sinai", "canaan"],
+    "key_passages": [
+      {"ref": "Numbers 6:22–27", "note": "The priestly blessing, still recited daily in synagogue and used to bless children on Friday night."},
+      {"ref": "Numbers 13:1–33", "note": "The spies' report and the people's panic, the failure that costs a generation the land."},
+      {"ref": "Numbers 20:1–13", "note": "Water from the rock and Moses's fatal striking of it, which keeps him outside the land."},
+      {"ref": "Numbers 24:15–19", "note": "Balaam's oracle of a star rising from Jacob, a text later read messianically."}
+    ],
+    "connections": [
+      {"to": "deuteronomy", "why": "Deuteronomy retells these wilderness years as a lesson in remembering and not repeating them."},
+      {"to": "psalms", "why": "Psalms 78 and 106 retell the wilderness rebellions as communal confession."},
+      {"to": "talmud-bavli", "why": "Tractates Nazir and Sotah turn the book's odd vows and ordeals into sustained legal discussion."},
+      {"to": "land-of-israel", "why": "The book is structured as a march toward a land the first generation is forbidden to enter."},
+      {"to": "memory", "why": "The wilderness becomes the memory against which later prophets measure faithfulness."}
+    ],
+    "sources": [
+      {"label": "Sefaria: Numbers, Hebrew and JPS translation", "url": "https://www.sefaria.org/Numbers.1"},
+      {"label": "My Jewish Learning: Numbers", "url": "https://www.myjewishlearning.com/"}
+    ]
+  },
+  {
+    "id": "deuteronomy",
+    "title": "Deuteronomy",
+    "he_title": "דְּבָרִים",
+    "also": ["Devarim", "The Second Law"],
+    "corpus": "tanakh",
+    "division": "torah",
+    "order": 5,
+    "date": "composed c. 700–500 BCE; canonized by c. 200 CE",
+    "date_sort": -700,
+    "language": "Biblical Hebrew",
+    "summary": "Deuteronomy is a farewell address that became the constitution of later Judaism. Moses, standing on the plains of Moab, retells the wilderness story, restates the covenant, and delivers a long sermon on love, obedience, and memory. Its laws reorganize Israelite life around a single sanctuary, a written scroll, and a king who must copy the Torah. The rhetoric is urgent and intimate: you shall love the LORD your God with all your heart. It ends with Moses climbing a mountain, seeing the land, and dying outside it.",
+    "why": "It is fifth in the Torah because it is the Torah's own interpretation of itself — a second law that turns narrative into catechism. The Shema, the mezuzah, and tefillin all come from it, and the Passover Haggadah quotes its command to tell the story. Scholars associate its core with the scroll found during Josiah's temple repair (2 Kings 22) and date it to the seventh century BCE; the book presents itself as Moses's speech. Without Deuteronomy, the prophets would lack their standard of covenant fidelity and Judaism its most portable form of devotion.",
+    "structure": [
+      {"name": "Prologue and retrospect (1–4)", "note": "Moses recounts the journey, the failures, and the victories, and warns against forgetting."},
+      {"name": "The covenant demand (5–11)", "note": "The Decalogue repeated, the Shema, and the command to love and teach."},
+      {"name": "The laws (12–26)", "note": "Centralized worship, judges, kings, prophets, warfare, family, and compassion for the poor."},
+      {"name": "Blessings, curses, renewal (27–30)", "note": "The ceremony at Shechem, the curses, and the promise of return after exile."},
+      {"name": "Song and death of Moses (31–34)", "note": "Torah written and entrusted, a final song, a blessing, and a view from Nebo."}
+    ],
+    "themes": ["covenant", "law-and-narrative", "mitzvot", "chosenness", "memory", "teshuvah"],
+    "people": ["moses", "joshua"],
+    "places": ["canaan"],
+    "key_passages": [
+      {"ref": "Deuteronomy 6:4–9", "note": "The Shema and the command to teach Torah to children, the daily declaration of Jewish faith."},
+      {"ref": "Deuteronomy 17:14–20", "note": "The law of the king: he must write a copy of the Torah and read it, so power remains under law."},
+      {"ref": "Deuteronomy 30:15–20", "note": "Choose life: the covenant is set before the people as a stark, reiterated choice."},
+      {"ref": "Deuteronomy 34:1–12", "note": "Moses sees the land and dies; the Torah ends with a promise fulfilled only from a distance."}
+    ],
+    "connections": [
+      {"to": "kings", "why": "Josiah's reform is driven by a scroll that scholars identify with Deuteronomy's core."},
+      {"to": "siddur", "why": "The Shema, mezuzah, and tefillin make Deuteronomy the most physically present book in Jewish daily life."},
+      {"to": "jeremiah", "why": "Jeremiah's new covenant intensifies Deuteronomy's demand for inward obedience."},
+      {"to": "talmud-bavli", "why": "The Talmud's treatment of kingship, prophecy, and warfare begins from Deuteronomy's laws."},
+      {"to": "memory", "why": "The book turns history into command: remember that you were slaves, therefore act justly."}
+    ],
+    "sources": [
+      {"label": "Sefaria: Deuteronomy, Hebrew and JPS translation", "url": "https://www.sefaria.org/Deuteronomy.1"},
+      {"label": "My Jewish Learning: Shema", "url": "https://www.myjewishlearning.com/"}
+    ]
+  },
+  {
+    "id": "joshua",
+    "title": "Joshua",
+    "he_title": "יְהוֹשֻׁעַ",
+    "also": ["Yehoshua", "The Book of Joshua"],
+    "corpus": "tanakh",
+    "division": "neviim",
+    "order": 6,
+    "date": "composed c. 600–550 BCE; canonized by c. 200 CE",
+    "date_sort": -600,
+    "language": "Biblical Hebrew",
+    "summary": "Joshua is a book of land and violence. It follows Moses's successor across the Jordan, through the fall of Jericho, and into a campaign of conquest that the text presents as obedience and modern readers find hard to bear. Yet the book is more complicated than its reputation: Rahab, a Canaanite prostitute, saves her family and joins Israel; Achan's private theft halts the army; the Gibeonites survive by deception. The second half is mostly boundaries and allotments, a legal geography of promise. It ends with covenant renewal at Shechem and a choice: this day whom you will serve.",
+    "why": "It opens the Former Prophets because it delivers the land that Genesis promised and Deuteronomy demanded, and because it establishes the pattern of obedience and defeat that runs through Kings. Tradition ascribes it to Joshua; scholars see a late monarchic or exilic composition, and archaeology does not support a single unified conquest. The rabbis read its wars with caution and its land divisions with legal seriousness. Without Joshua, the Torah's promise would remain unfulfilled and the later prophets' critique of land and kingship would lack its baseline.",
+    "structure": [
+      {"name": "Entry into the land (1–5)", "note": "Commission, spies, the Jordan crossing, memorial stones, and the first Passover in Canaan."},
+      {"name": "Conquest narratives (6–12)", "note": "Jericho, Ai, the Gibeonite treaty, and a summary of defeated kings."},
+      {"name": "Allotment of the land (13–22)", "note": "Tribal boundaries, cities of refuge, and the altar by the Jordan."},
+      {"name": "Farewell and covenant (23–24)", "note": "Joshua's charge, the assembly at Shechem, and the people's vow."}
+    ],
+    "themes": ["land-of-israel", "covenant", "chosenness", "justice", "memory"],
+    "people": ["joshua", "moses"],
+    "places": ["jericho", "canaan", "shiloh"],
+    "key_passages": [
+      {"ref": "Joshua 1:1–9", "note": "God commissions Joshua with the charge to be strong and courageous and to keep the Torah on his lips."},
+      {"ref": "Joshua 6:1–21", "note": "The fall of Jericho: liturgy as siege, with the ark and trumpets circling the city."},
+      {"ref": "Joshua 7:1–12", "note": "Achan's theft and the defeat at Ai, showing that the land's gift is conditional on obedience."},
+      {"ref": "Joshua 24:1–15", "note": "The covenant at Shechem and the famous call to choose this day whom you will serve."}
+    ],
+    "connections": [
+      {"to": "exodus", "why": "The crossing of the Jordan deliberately echoes the crossing of the sea, casting Joshua as a new Moses."},
+      {"to": "deuteronomy", "why": "Joshua is the first test of Deuteronomy's promise that obedience brings the land and disobedience loses it."},
+      {"to": "judges", "why": "Judges begins where Joshua leaves off, with tribes unable or unwilling to complete the conquest."},
+      {"to": "samuel", "why": "The land allotted here becomes the map on which monarchy, Philistine war, and David's kingdom unfold."},
+      {"to": "land-of-israel", "why": "This is the Bible's most detailed claim that the land is a gift with conditions attached."}
+    ],
+    "sources": [
+      {"label": "Sefaria: Joshua, Hebrew and JPS translation", "url": "https://www.sefaria.org/Joshua.1"},
+      {"label": "Bible Odyssey: Joshua", "url": "https://www.bibleodyssey.org/"}
+    ]
+  },
+  {
+    "id": "judges",
+    "title": "Judges",
+    "he_title": "שׁוֹפְטִים",
+    "also": ["Shoftim", "The Book of Judges"],
+    "corpus": "tanakh",
+    "division": "neviim",
+    "order": 7,
+    "date": "composed c. 600–550 BCE from older traditions; canonized by c. 200 CE",
+    "date_sort": -600,
+    "language": "Biblical Hebrew",
+    "summary": "Judges is a cycle of rescue and relapse, told with growing horror. Israel does evil, is delivered to an enemy, cries out, and is saved by a leader — Deborah, Gideon, Jephthah, Samson — and then the cycle begins again. The stories are vivid and morally uneven: a woman prophet directs a battle, a man tests God with a fleece, a vow leads to a daughter's death, a strongman is destroyed by his own appetite. The book ends not with a judge but with civil war and an atrocity at Gibeah, under the refrain that everyone did what was right in their own eyes.",
+    "why": "It is second in the Prophets because it explains why Israel needed a king and, at the same time, why a king would not be enough. The rabbis read its heroes as flawed instruments of providence and its chaos as the cost of lawlessness; the Talmud draws legal precedents from its stories while resisting their imitation. Its song of Deborah is among the oldest Hebrew poems in the Bible. Without Judges, the canon would lack its most unflinching account of how a society comes apart.",
+    "structure": [
+      {"name": "Incomplete conquest and the pattern (1–2)", "note": "Tribal failures, the angel at Bochim, and the theological frame of the cycle."},
+      {"name": "The judges (3–16)", "note": "Ehud, Deborah and Barak, Gideon, Jephthah, and Samson, with escalating moral cost."},
+      {"name": "Appendices of chaos (17–21)", "note": "Micah's shrine, the Danite migration, and the outrage at Gibeah."}
+    ],
+    "themes": ["covenant", "justice", "prophecy", "memory", "sin-and-atonement"],
+    "people": ["deborah", "joshua"],
+    "places": ["canaan", "shiloh"],
+    "key_passages": [
+      {"ref": "Judges 2:11–19", "note": "The cycle stated outright: apostasy, oppression, cry, deliverance, and relapse."},
+      {"ref": "Judges 4:4–16", "note": "Deborah, prophet and judge, directs Barak's battle and embodies leadership the book otherwise gives to men."},
+      {"ref": "Judges 5:1–31", "note": "The Song of Deborah, archaic Hebrew poetry and one of the oldest passages in the Bible."},
+      {"ref": "Judges 21:25", "note": "The book's final verdict: there was no king in Israel, and everyone did what was right in his own eyes."}
+    ],
+    "connections": [
+      {"to": "joshua", "why": "Judges opens with the unfinished conquest Joshua began, turning triumph into a long failure."},
+      {"to": "samuel", "why": "The demand for a king in Samuel is the answer Judges makes inevitable."},
+      {"to": "kings", "why": "The monarchy Kings evaluates is the institution Judges says Israel lacked."},
+      {"to": "deuteronomy", "why": "The cycle follows Deuteronomy's logic: apostasy brings oppression, repentance brings rescue."},
+      {"to": "justice", "why": "The book's chaos is a case study in what happens when there is no enforceable law."}
+    ],
+    "sources": [
+      {"label": "Sefaria: Judges, Hebrew and JPS translation", "url": "https://www.sefaria.org/Judges.1"},
+      {"label": "My Jewish Learning: Judges", "url": "https://www.myjewishlearning.com/"}
+    ]
+  },
+  {
+    "id": "samuel",
+    "title": "Samuel",
+    "he_title": "שְׁמוּאֵל",
+    "also": ["Shmuel", "1–2 Samuel", "The Book of Samuel"],
+    "corpus": "tanakh",
+    "division": "neviim",
+    "order": 8,
+    "date": "composed c. 600–550 BCE from older sources; canonized by c. 200 CE",
+    "date_sort": -600,
+    "language": "Biblical Hebrew",
+    "summary": "Samuel is the story of how Israel got a king, told through three lives that cannot be separated. Hannah's prayer produces a prophet; Samuel anoints Saul, then David; Saul's kingship collapses under jealousy and disobedience; David's rises through patience, cunning, and violence. The book is intimate and political at once — the ark captured, the witch of Endor, Absalom's rebellion, a king weeping over a son. Its Hebrew is often difficult, and the Qumran Samuel scroll preserves readings that clarify corrupt passages. It ends with David's final song and a census that brings plague.",
+    "why": "It is third in the Prophets because it founds the three institutions the rest of the canon argues about: kingship, prophecy, and the Davidic covenant. The book is ambivalent about monarchy — the people demand a king, God warns what a king will take, and yet David is promised an enduring house. Tradition reads David as psalmist and messianic ancestor without pretending he is innocent; the Talmud confronts his sins directly. Without Samuel, the Psalms would have no author, the prophets no courtly model, and the messianic hope no genealogy.",
+    "structure": [
+      {"name": "Samuel's rise (1 Samuel 1–7)", "note": "Hannah's vow, the ark's capture and return, and the defeat of the Philistines."},
+      {"name": "Saul's kingship (1 Samuel 8–15)", "note": "The demand for a king, Saul's anointing, and his rejection after Amalek."},
+      {"name": "David and Saul (1 Samuel 16–31)", "note": "Anointing, Goliath, friendship with Jonathan, flight, and Saul's death."},
+      {"name": "David's reign (2 Samuel 1–20)", "note": "Jerusalem, the ark, the Davidic covenant, Bathsheba, Absalom, and civil war."},
+      {"name": "Appendices (2 Samuel 21–24)", "note": "Famine, giants, a psalm, and a census, arranged by theme rather than chronology."}
+    ],
+    "themes": ["prophecy", "covenant", "messianism", "prayer", "sin-and-atonement"],
+    "people": ["samuel", "saul", "david"],
+    "places": ["shiloh", "bethlehem", "hebron", "jerusalem"],
+    "key_passages": [
+      {"ref": "1 Samuel 3:1–10", "note": "The call of the boy Samuel, a model of listening to a voice one does not yet recognize."},
+      {"ref": "1 Samuel 16:1–13", "note": "David is anointed youngest son; God looks at the heart, not outward appearance."},
+      {"ref": "2 Samuel 7:1–17", "note": "The Davidic covenant: a house, a throne, and a dynasty promised without conditions."},
+      {"ref": "2 Samuel 12:1–14", "note": "Nathan's parable exposes David's sin with Bathsheba and pronounces judgment from within the king's own court."}
+    ],
+    "connections": [
+      {"to": "psalms", "why": "David's profile as singer and sufferer shapes the Psalter's superscriptions and its later reception."},
+      {"to": "kings", "why": "Samuel's ambivalence about monarchy becomes the measuring stick by which Kings judges every ruler."},
+      {"to": "messianism", "why": "The promise to David is the seed of every later Jewish and Christian messianic claim."},
+      {"to": "talmud-bavli", "why": "The rabbis argue about David's sins, Saul's tragedy, and the limits of kingship with these chapters open before them."},
+      {"to": "covenant", "why": "The Davidic covenant adds an unconditional promise to the conditional Sinai covenant, and the tension never disappears."}
+    ],
+    "sources": [
+      {"label": "Sefaria: 1 Samuel, Hebrew and JPS translation", "url": "https://www.sefaria.org/I_Samuel.1"},
+      {"label": "My Jewish Learning: King David", "url": "https://www.myjewishlearning.com/"}
+    ]
+  },
+  {
+    "id": "kings",
+    "title": "Kings",
+    "he_title": "מְלָכִים",
+    "also": ["Melakhim", "1–2 Kings", "The Book of Kings"],
+    "corpus": "tanakh",
+    "division": "neviim",
+    "order": 9,
+    "date": "composed c. 600–550 BCE; canonized by c. 200 CE",
+    "date_sort": -600,
+    "language": "Biblical Hebrew",
+    "summary": "Kings is a two-part account of the monarchy from Solomon's temple to the Babylonian destruction, and it reads like a coroner's report. Each ruler is introduced with a formula, judged by a single standard — fidelity to the covenant — and dismissed. The northern kingdom falls to Assyria; the southern kingdom survives longer, then follows. The book gives disproportionate space to Elijah and Elisha, whose miracles and confrontations interrupt the political record. It ends with Jerusalem burned, the temple plundered, and a Judean king released from prison to eat at a Babylonian table.",
+    "why": "It is fourth in the Prophets because it supplies the historical crisis the prophets interpret and the theological explanation for exile: the violation of covenant, especially idolatry and injustice. The Deuteronomistic historian, writing in the exilic period, uses the temple as the measure of royal success. Jewish liturgy reads parts of Kings as haftarot, and Tisha B'Av mourns the destruction it narrates. Without Kings, the prophetic books would float free of history and the exile would have no explanation.",
+    "structure": [
+      {"name": "Solomon and the temple (1 Kings 1–11)", "note": "Succession, wisdom, the temple's construction and dedication, and the seeds of division."},
+      {"name": "The divided monarchy (1 Kings 12–16)", "note": "Jeroboam's calves, rival sanctuaries, and a rapid succession of kings."},
+      {"name": "Elijah (1 Kings 17–2 Kings 2)", "note": "Drought, Carmel, the still small voice, Naboth's vineyard, and the fiery chariot."},
+      {"name": "Elisha and the fall of Samaria (2 Kings 3–17)", "note": "Miracles, sieges, dynastic coups, and Assyria's deportation of the north."},
+      {"name": "Judah to the destruction (2 Kings 18–25)", "note": "Hezekiah, Isaiah, Manasseh, Josiah's reform, and Nebuchadnezzar's siege."}
+    ],
+    "themes": ["temple", "prophecy", "covenant", "exile-and-return", "sin-and-atonement"],
+    "people": ["solomon", "elijah"],
+    "places": ["jerusalem", "samaria", "babylon"],
+    "key_passages": [
+      {"ref": "1 Kings 8:1–11", "note": "The ark is installed and glory fills the temple, the high point of the monarchy."},
+      {"ref": "1 Kings 18:20–39", "note": "Elijah on Carmel: a public contest between the LORD and Baal, decided by fire and exhausted irony."},
+      {"ref": "2 Kings 17:7–18", "note": "The theological verdict on Samaria's fall: exile as the consequence of covenant violation."},
+      {"ref": "2 Kings 25:8–12", "note": "Jerusalem is burned and the people deported, the catastrophe the prophets had announced."}
+    ],
+    "connections": [
+      {"to": "deuteronomy", "why": "Kings applies Deuteronomy's covenant curses as a historical ledger, king by king."},
+      {"to": "jeremiah", "why": "Jeremiah preaches through the last years Kings narrates, interpreting the same collapse."},
+      {"to": "chronicles", "why": "Chronicles retells this material with the northern kingdom largely erased and the temple magnified."},
+      {"to": "exile-and-return", "why": "Kings ends in exile, making the return under Cyrus the canon's great unanswered question."},
+      {"to": "temple", "why": "The temple's building, defilement, and burning form the book's structural spine."}
+    ],
+    "sources": [
+      {"label": "Sefaria: 1 Kings, Hebrew and JPS translation", "url": "https://www.sefaria.org/I_Kings.1"},
+      {"label": "Bible Odyssey: Kings", "url": "https://www.bibleodyssey.org/"}
+    ]
+  },
+  {
+    "id": "isaiah",
+    "title": "Isaiah",
+    "he_title": "יְשַׁעְיָהוּ",
+    "also": ["Yeshayahu", "The Book of Isaiah"],
+    "corpus": "tanakh",
+    "division": "neviim",
+    "order": 10,
+    "date": "composed c. 740–500 BCE; canonized by c. 200 CE",
+    "date_sort": -740,
+    "language": "Biblical Hebrew",
+    "summary": "Isaiah is the longest prophetic book and the most anthologized. Its first chapters are a lawsuit against a people whose worship has become theater; then comes the throne vision that calls the prophet, oracles against Assyria and Egypt, and promises of a child, a shoot from Jesse's stump, and a mountain where swords become plowshares. Chapters 40–55 address a later generation in Babylonian exile with astonishing tenderness: Comfort, comfort my people. The final chapters imagine a restored Jerusalem and argue about who belongs in it.",
+    "why": "It is fifth in the Prophets because it is the prophetic corpus at its most comprehensive — judgment, consolation, and a vision of history under divine purpose. Jewish tradition reads Isaiah as the great book of consolation, especially the seven haftarot after Tisha B'Av, and as a source of messianic hope. Scholars distinguish an eighth-century Isaiah of Jerusalem (1–39) from an exilic prophet (40–55) and later editors (56–66), while the book presents itself as one scroll. Without Isaiah, both Jewish and Christian liturgy would lose their richest vocabulary of hope.",
+    "structure": [
+      {"name": "Isaiah of Jerusalem (1–39)", "note": "Indictment, the throne vision, the Assyrian crisis, and oracles against the nations."},
+      {"name": "The book of consolation (40–55)", "note": "Exile, Cyrus, the servant songs, and the invitation to the thirsty."},
+      {"name": "Restoration and its disputes (56–66)", "note": "Return, foreign worshipers, Zion's glory, and a final cosmic judgment."}
+    ],
+    "themes": ["prophecy", "justice", "messianism", "exile-and-return", "chosenness"],
+    "people": ["isaiah"],
+    "places": ["jerusalem", "babylon"],
+    "key_passages": [
+      {"ref": "Isaiah 1:10–17", "note": "Worship without justice is rejected; the prophet's opening charge against empty ritual."},
+      {"ref": "Isaiah 6:1–8", "note": "The throne vision and the seraph's coal: Isaiah is called, cleansed, and sent."},
+      {"ref": "Isaiah 40:1–11", "note": "Comfort, comfort my people: the exile is declared over and the way home is prepared."},
+      {"ref": "Isaiah 53:1–12", "note": "The suffering servant; Jewish readings have seen Israel or a righteous remnant, Christian readings Jesus, while the text names no one."}
+    ],
+    "connections": [
+      {"to": "kings", "why": "Isaiah counsels Hezekiah during the Assyrian siege that Kings also narrates."},
+      {"to": "jeremiah", "why": "Both prophets interpret national catastrophe, but Jeremiah's angle is intimate confession and Isaiah's is cosmic consolation."},
+      {"to": "ezekiel", "why": "Ezekiel's restoration visions answer the same exilic crisis with a different, more priestly imagination."},
+      {"to": "messianism", "why": "The shoot of Jesse and the servant songs became the canon's central messianic texts."},
+      {"to": "siddur", "why": "Isaiah supplies many of the haftarot of consolation that structure the synagogue year after destruction."}
+    ],
+    "sources": [
+      {"label": "Sefaria: Isaiah, Hebrew and JPS translation", "url": "https://www.sefaria.org/Isaiah.1"},
+      {"label": "Dead Sea Scrolls: The Great Isaiah Scroll", "url": "https://www.deadseascrolls.org.il/"}
+    ]
+  },
+  {
+    "id": "jeremiah",
+    "title": "Jeremiah",
+    "he_title": "יִרְמְיָהוּ",
+    "also": ["Yirmiyahu", "The Book of Jeremiah"],
+    "corpus": "tanakh",
+    "division": "neviim",
+    "order": 11,
+    "date": "composed c. 627–580 BCE; canonized by c. 200 CE",
+    "date_sort": -627,
+    "language": "Biblical Hebrew",
+    "summary": "Jeremiah is the most confessional of the prophets and the most reluctant. He is called in his youth, forbidden to marry, beaten, thrown into a cistern, and forced to watch the city he loves be destroyed. The book mixes poetry, prose sermons, symbolic acts, and first-person laments that accuse God of deceiving him. It is also textually unstable: the Greek Septuagint is about one-eighth shorter, and the Dead Sea Scrolls preserve both editions. At the center of the wreckage is a promise of a new covenant written on the heart, and a field bought at Anathoth as a down payment on return.",
+    "why": "It is sixth in the Prophets because it interprets the destruction that Kings narrates and gives the exile its theology. Jeremiah's new covenant is one of the canon's boldest claims: the problem is not the law's content but its location, and the remedy is interior transformation. Jewish tradition reads him on Tisha B'Av and treats him as a model of faithful dissent; the new covenant passage became central to later messianic hope. Without Jeremiah, the canon would lack its most intimate language of prophetic suffering.",
+    "structure": [
+      {"name": "Oracles against Judah (1–25)", "note": "Call, covenant lawsuit, temple sermon, potter's house, and the new covenant."},
+      {"name": "The prophet's life (26–45)", "note": "Arrest, the yoke, the cistern, the purchase of the field, and Baruch's scroll."},
+      {"name": "Oracles against the nations (46–51)", "note": "Egypt, Philistia, Moab, Ammon, Edom, Damascus, and Babylon."},
+      {"name": "Historical appendix (52)", "note": "The fall of Jerusalem, the temple's burning, and the release of Jehoiachin."}
+    ],
+    "themes": ["prophecy", "covenant", "sin-and-atonement", "exile-and-return", "teshuvah"],
+    "people": ["jeremiah"],
+    "places": ["jerusalem", "babylon"],
+    "key_passages": [
+      {"ref": "Jeremiah 1:4–10", "note": "The call before birth and the charge to uproot and plant, a job description for prophetic speech."},
+      {"ref": "Jeremiah 20:7–18", "note": "A confession that accuses God of seduction and violence, the Bible's rawest prophetic protest."},
+      {"ref": "Jeremiah 31:31–34", "note": "The new covenant written on the heart, where knowing God no longer requires instruction."},
+      {"ref": "Jeremiah 32:6–15", "note": "The purchase of a field at Anathoth during the siege, a legal act of hope in a doomed city."}
+    ],
+    "connections": [
+      {"to": "kings", "why": "Jeremiah's career unfolds in the last decades of Judah that Kings chronicles."},
+      {"to": "ezekiel", "why": "Both are exilic prophets; Ezekiel's priestly vision and Jeremiah's inward covenant answer the same rupture."},
+      {"to": "deuteronomy", "why": "Jeremiah's covenant lawsuit uses Deuteronomy's blessings and curses as its legal basis."},
+      {"to": "exile-and-return", "why": "The book interprets the exile as discipline rather than abandonment and predicts return."},
+      {"to": "teshuvah", "why": "Jeremiah makes repentance a matter of the heart, not merely of ritual or national policy."}
+    ],
+    "sources": [
+      {"label": "Sefaria: Jeremiah, Hebrew and JPS translation", "url": "https://www.sefaria.org/Jeremiah.1"},
+      {"label": "My Jewish Learning: Jeremiah", "url": "https://www.myjewishlearning.com/"}
+    ]
+  },
+  {
+    "id": "ezekiel",
+    "title": "Ezekiel",
+    "he_title": "יְחֶזְקֵאל",
+    "also": ["Yehezkel", "The Book of Ezekiel"],
+    "corpus": "tanakh",
+    "division": "neviim",
+    "order": 12,
+    "date": "composed c. 593–571 BCE; canonized by c. 200 CE",
+    "date_sort": -593,
+    "language": "Biblical Hebrew",
+    "summary": "Ezekiel is the Bible's most surreal prophetic book. A priest deported to Babylon receives a vision of a throne-chariot with four living creatures and wheels within wheels; later he lies on his side for hundreds of days, shaves his head, and eats a scroll. The book is dated with unusual precision, from 593 to 571 BCE, and organized around the departure of God's glory from the temple and its promised return. Its middle chapters explain the exile as purification; its final vision measures a future temple and ends with a city whose name is The LORD is there.",
+    "why": "It is seventh in the Prophets because it speaks from inside the exile, the condition the other prophets anticipate or interpret. Its vision of the valley of dry bones is the classic Jewish image of national resurrection, read at Passover, and its throne-chariot became the foundation of Merkavah mysticism. The rabbis restricted the first chapter's public reading because it was dangerous, itself a sign of its power. Without Ezekiel, the canon would lack a theology of God's presence in exile and its most radical vision of covenant surviving the loss of land.",
+    "structure": [
+      {"name": "Call and the throne-chariot (1–3)", "note": "The merkavah vision, the scroll eaten, and the watchman's commission."},
+      {"name": "Judgment on Jerusalem (4–24)", "note": "Sign-acts, allegories of adultery, and the departure of the glory."},
+      {"name": "Oracles against the nations (25–32)", "note": "Ammon, Moab, Edom, Philistia, Tyre, Sidon, and Egypt."},
+      {"name": "Restoration (33–39)", "note": "The watchman, the new heart, the dry bones, and Gog and Magog."},
+      {"name": "The new temple and city (40–48)", "note": "A measured temple, a life-giving river, and the name The LORD is there."}
+    ],
+    "themes": ["prophecy", "exile-and-return", "temple", "mysticism", "purity"],
+    "people": ["ezekiel"],
+    "places": ["babylon", "jerusalem"],
+    "key_passages": [
+      {"ref": "Ezekiel 1:1–28", "note": "The throne-chariot vision, the dangerous text that later Jewish mystics read as a map of the divine world."},
+      {"ref": "Ezekiel 36:24–32", "note": "The promise of a new heart and a new spirit, cleansing that enables obedience rather than merely demanding it."},
+      {"ref": "Ezekiel 37:1–14", "note": "The valley of dry bones, a vision of national resurrection read at Passover."},
+      {"ref": "Ezekiel 47:1–12", "note": "The river flowing from the temple, healing the Dead Sea and turning the land into paradise."}
+    ],
+    "connections": [
+      {"to": "jeremiah", "why": "Both interpret the fall of Jerusalem, but Ezekiel's response is visionary and priestly where Jeremiah's is confessional."},
+      {"to": "kings", "why": "Ezekiel's temple vision presupposes the destroyed temple that Kings describes."},
+      {"to": "mysticism", "why": "The merkavah vision became the scriptural foundation of Jewish mystical practice and speculation."},
+      {"to": "temple", "why": "The book ends with a detailed blueprint for a temple that has never been built."},
+      {"to": "exile-and-return", "why": "Ezekiel is the canonical theologian of God's presence with the exiled, not only in the land."}
+    ],
+    "sources": [
+      {"label": "Sefaria: Ezekiel, Hebrew and JPS translation", "url": "https://www.sefaria.org/Ezekiel.1"},
+      {"label": "My Jewish Learning: Ezekiel", "url": "https://www.myjewishlearning.com/"}
+    ]
+  },
+  {
+    "id": "twelve",
+    "title": "The Twelve",
+    "he_title": "תְּרֵי עָשָׂר",
+    "also": ["Trei Asar", "The Minor Prophets", "Hosea–Malachi"],
+    "corpus": "tanakh",
+    "division": "neviim",
+    "order": 13,
+    "date": "composed c. 750–450 BCE; canonized by c. 200 CE",
+    "date_sort": -750,
+    "language": "Biblical Hebrew",
+    "summary": "The Twelve is one scroll containing twelve prophetic books, from eighth-century Amos and Hosea to fifth-century Malachi. The collection is polyphonic: a marriage ruined and restored, locusts devouring the land, a prophet fleeing the mercy he must announce, night visions of a restored temple. Short books reward close reading; together they trace an argument from judgment to restoration and back to covenant. The last verses turn back to Moses and promise Elijah.",
+    "why": "It closes the Prophets because the Twelve carry the prophetic corpus into the Persian period, the Second Temple world. Jewish liturgy draws on them repeatedly — Hosea on Shabbat Shuva, Jonah on Yom Kippur, Micah's call to justice in the vocabulary of prophetic ethics. The collection preserves prophecy's social conscience and insists that Assyria, Babylon, and Persia are not history's final actors. Without it, the canon would lose its sharpest short-form critique of injustice.",
+    "structure": [
+      {"name": "Hosea", "note": "A marriage as covenant parable: apostasy, jealousy, and relentless love."},
+      {"name": "Joel", "note": "Locusts, drought, and the spirit poured out on all flesh."},
+      {"name": "Amos", "note": "A shepherd indicts Israel's luxury; justice is the only worship."},
+      {"name": "Obadiah", "note": "The shortest book: an oracle against Edom for gloating."},
+      {"name": "Jonah", "note": "A prophet flees mercy, preaches to Nineveh, and sulks when spared."},
+      {"name": "Micah", "note": "Judah's poor, Bethlehem's promise, and the demand for justice and mercy."},
+      {"name": "Nahum", "note": "Nineveh's fall as divine retribution, in savage poetry."},
+      {"name": "Habakkuk", "note": "A prophet argues with God; the righteous shall live by faith."},
+      {"name": "Zephaniah", "note": "The day of the LORD, a remnant of the poor, purified speech."},
+      {"name": "Haggai", "note": "Dated sermons urging the exiles to finish the temple."},
+      {"name": "Zechariah", "note": "Night visions, a crowned priest, and an apocalyptic horizon."},
+      {"name": "Malachi", "note": "Covenant, tithes, and Elijah before the great day."}
+    ],
+    "themes": ["prophecy", "justice", "covenant", "teshuvah", "messianism"],
+    "people": ["moses", "elijah"],
+    "places": ["nineveh", "jerusalem", "samaria"],
+    "key_passages": [
+      {"ref": "Amos 5:21–24", "note": "God rejects festivals and songs and demands that justice roll down like water."},
+      {"ref": "Micah 6:6–8", "note": "What the LORD requires: justice, mercy, and a humble walk, not escalating sacrifices."},
+      {"ref": "Jonah 3:1–10", "note": "Nineveh repents at a single sentence, while the prophet resents the mercy he has preached."},
+      {"ref": "Malachi 4:4–6", "note": "The canon's closing verses, Hebrew 3:22–24, turn back to Moses and promise Elijah."}
+    ],
+    "connections": [
+      {"to": "kings", "why": "Amos, Hosea, and Micah preach into the Assyrian crisis Kings narrates."},
+      {"to": "isaiah", "why": "Isaiah shares the eighth-century prophets' theology of Zion, justice, and Assyrian judgment."},
+      {"to": "siddur", "why": "Hosea, Jonah, Micah, and Habakkuk supply haftarot for holidays and consolation."},
+      {"to": "justice", "why": "Amos and Micah give the canon its most memorable formulation of social righteousness."},
+      {"to": "teshuvah", "why": "Hosea's plea to return and Jonah's Nineveh make repentance universal."}
+    ],
+    "sources": [
+      {"label": "Sefaria: Hosea, Hebrew and JPS translation", "url": "https://www.sefaria.org/Hosea.1"},
+      {"label": "My Jewish Learning: The Twelve Prophets", "url": "https://www.myjewishlearning.com/"}
+    ]
+  },
+  {
+    "id": "psalms",
+    "title": "Psalms",
+    "he_title": "תְּהִלִּים",
+    "also": ["Tehillim", "The Psalter"],
+    "corpus": "tanakh",
+    "division": "ketuvim",
+    "order": 14,
+    "date": "composed c. 1000–400 BCE; canonized by c. 200 CE",
+    "date_sort": -1000,
+    "language": "Biblical Hebrew",
+    "summary": "Psalms is the Bible's prayer book and its most human book. Its 150 poems range from cosmic praise to raw complaint, from royal liturgy to a penitent's plea, from the serenity of the shepherd psalm to the rage of Psalm 137. The collection is arranged in five books, the first four closing with a doxology, and the whole ends in a crescendo of praise. Many psalms carry superscriptions linking them to David; scholars treat these as later liturgical tradition and the collection as a layered anthology. The Dead Sea Scrolls show that the number and order were still fluid in the late Second Temple period.",
+    "why": "It opens the Writings because it is the canon's school of prayer and the gateway to its poetry. The rabbis made Psalms the spine of daily worship — Pesukei de-Zimra, Hallel, the psalms of ascent — and synagogue and church liturgy are unimaginable without it. Its laments give suffering a voice without requiring a tidy resolution, which is why it remains the book Jews recite in illness, mourning, and danger. Without Psalms, the canon would have law and prophecy but no grammar for speaking to God.",
+    "structure": [
+      {"name": "Book I (1–41)", "note": "Prayers of David, wisdom psalms, and laments, ending with a doxology."},
+      {"name": "Book II (42–72)", "note": "Korahite and Davidic collections, royal prayer, and longing for God."},
+      {"name": "Book III (73–89)", "note": "Wisdom, national lament, and the crisis of the destroyed sanctuary."},
+      {"name": "Book IV (90–106)", "note": "Moses's prayer, creation, and historical recital from Egypt to exile."},
+      {"name": "Book V (107–150)", "note": "Thanksgiving, the Songs of Ascents, Hallel, and the final praise."}
+    ],
+    "themes": ["prayer", "kavvanah", "suffering", "creation", "justice", "messianism"],
+    "people": ["david", "moses", "solomon"],
+    "places": ["jerusalem"],
+    "key_passages": [
+      {"ref": "Psalm 23", "note": "The shepherd psalm: trust expressed as a walk through danger, with a table set at the end."},
+      {"ref": "Psalm 51", "note": "The great penitential psalm, traditionally linked to David and Nathan, pleading for a clean heart."},
+      {"ref": "Psalm 137", "note": "By the rivers of Babylon: exile turned into a song of refusal and longing."},
+      {"ref": "Psalm 150", "note": "The Psalter's final drumroll: every instrument and every breath summoned to praise."}
+    ],
+    "connections": [
+      {"to": "samuel", "why": "David's rise, guilt, and grief provide the narrative frame for the psalms attributed to him."},
+      {"to": "siddur", "why": "Psalms is the largest scriptural component of Jewish daily prayer and the festival liturgy."},
+      {"to": "temple", "why": "The Songs of Ascents and the Hallel preserve the memory and imagery of temple pilgrimage."},
+      {"to": "suffering", "why": "The laments model protest and trust at once, refusing to choose between them."},
+      {"to": "talmud-bavli", "why": "The Talmud discusses which psalms were sung in the temple and how they entered the liturgy."}
+    ],
+    "sources": [
+      {"label": "Sefaria: Psalms, Hebrew and JPS translation", "url": "https://www.sefaria.org/Psalms.1"},
+      {"label": "Dead Sea Scrolls: Psalms manuscripts", "url": "https://www.deadseascrolls.org.il/"}
+    ]
+  },
+  {
+    "id": "proverbs",
+    "title": "Proverbs",
+    "he_title": "מִשְׁלֵי",
+    "also": ["Mishlei", "The Book of Proverbs"],
+    "corpus": "tanakh",
+    "division": "ketuvim",
+    "order": 15,
+    "date": "composed c. 900–400 BCE; canonized by c. 200 CE",
+    "date_sort": -900,
+    "language": "Biblical Hebrew",
+    "summary": "Proverbs is a book of instruction in the art of living, assembled from several collections. Its opening chapters are a father's speeches to a son, urging him to seek wisdom as a treasure and to flee the company of the violent. Wisdom herself appears in the streets and at creation, a playful presence beside God. The middle chapters are short sayings about speech, money, work, drink, friendship, and fools; the book ends with the acrostic poem of the woman of valor. It is practical, sometimes harsh, and confident that the fear of the LORD is the beginning of knowledge.",
+    "why": "It sits second in the Writings because it represents the wisdom tradition, the canon's international and experiential voice. The rabbis read it ethically, liturgically, and allegorically; Proverbs 31 is sung at the Friday-night table, and the Talmud uses its verses to shape character and law. Its optimism about retribution is deliberately qualified by Job and Ecclesiastes, which is why the three books belong together. Without Proverbs, the Bible would lack its most sustained reflection on ordinary prudence and the moral texture of daily life.",
+    "structure": [
+      {"name": "Instructions for a son (1–9)", "note": "Wisdom's call, the path of the wicked, and Wisdom beside God at creation."},
+      {"name": "Solomonic collections (10–24)", "note": "Antithetical couplets on speech, wealth, laziness, and the fear of the LORD."},
+      {"name": "Hezekiah's collection (25–29)", "note": "Sayings copied by the men of Hezekiah, on rulers, fools, and self-control."},
+      {"name": "Agur and Lemuel (30–31:9)", "note": "A skeptical appendix and a mother's advice on kingship and wine."},
+      {"name": "The woman of valor (31:10–31)", "note": "An acrostic portrait of competence, generosity, and wisdom in the household."}
+    ],
+    "themes": ["wisdom", "ethics", "creation", "justice"],
+    "people": ["solomon"],
+    "places": ["jerusalem"],
+    "key_passages": [
+      {"ref": "Proverbs 1:1–7", "note": "The book's thesis: wisdom begins with fear of the LORD and is meant for the simple and the young."},
+      {"ref": "Proverbs 3:5–8", "note": "Trust in the LORD with all your heart, a verse that became central to Jewish piety."},
+      {"ref": "Proverbs 8:22–31", "note": "Wisdom present at creation, playing before God, a text later central to debates about Torah and Logos."},
+      {"ref": "Proverbs 31:10–31", "note": "The woman of valor, sung at the Friday-night table and read as both domestic praise and allegory of wisdom."}
+    ],
+    "connections": [
+      {"to": "job", "why": "Job tests the retribution formula Proverbs assumes and finds it inadequate to experience."},
+      {"to": "ecclesiastes", "why": "Ecclesiastes radicalizes Proverbs' claim that wisdom is available and reliable."},
+      {"to": "creation", "why": "Proverbs 8 makes wisdom a participant in creation rather than a merely human skill."},
+      {"to": "wisdom", "why": "The book is the canonical core of the wisdom tradition and its most practical expression."},
+      {"to": "talmud-bavli", "why": "Pirkei Avot and much of the Talmud's ethical teaching are unthinkable without Proverbs."}
+    ],
+    "sources": [
+      {"label": "Sefaria: Proverbs, Hebrew and JPS translation", "url": "https://www.sefaria.org/Proverbs.1"},
+      {"label": "My Jewish Learning: Wisdom Literature", "url": "https://www.myjewishlearning.com/"}
+    ]
+  },
+  {
+    "id": "job",
+    "title": "Job",
+    "he_title": "אִיּוֹב",
+    "also": ["Iyov", "The Book of Job"],
+    "corpus": "tanakh",
+    "division": "ketuvim",
+    "order": 16,
+    "date": "composed c. 600–400 BCE (date disputed); canonized by c. 200 CE",
+    "date_sort": -600,
+    "language": "Biblical Hebrew",
+    "summary": "Job is a wager, a lawsuit, and a poem that refuses to console. A righteous man loses his children, wealth, and health in a heavenly bet, and his friends arrive to explain that he must have deserved it. Job refuses their theology and demands a hearing from God. After nearly thirty chapters of argument, a fourth voice speaks, and then God answers — not with an explanation but with a tour of creation, wild animals, and the storehouses of snow. The prose epilogue restores Job's fortunes, but the question has not been answered, only overwhelmed.",
+    "why": "It is third in the Writings because it belongs among the wisdom books yet tests their central claim from within. The Talmud debates whether Job existed and whether he was righteous or merely fearful; the rabbis read him as a universal figure, not an Israelite. Its protest is preserved, not neutralized, which is why it has been the companion of sufferers and the despair of systematizers. Without Job, the canon would have no full-throated challenge to the doctrine of reward and punishment, and no answer but the whirlwind.",
+    "structure": [
+      {"name": "Prologue in prose (1–2)", "note": "The heavenly wager, the loss of children and health, and Job's refusal to curse God."},
+      {"name": "Dialogue with the friends (3–31)", "note": "Job's curse of his birth and three cycles of argument about suffering and justice."},
+      {"name": "Elihu's speeches (32–37)", "note": "A younger voice argues that suffering instructs and God's ways are beyond reproach."},
+      {"name": "The whirlwind (38–41)", "note": "God answers with questions about creation, Behemoth, and Leviathan."},
+      {"name": "Epilogue (42)", "note": "Job's repentance, the friends' rebuke, and the restoration of his fortunes."}
+    ],
+    "themes": ["suffering", "wisdom", "justice", "creation", "prayer"],
+    "people": ["job"],
+    "places": [],
+    "key_passages": [
+      {"ref": "Job 1:6–12", "note": "The heavenly wager: a righteous man's suffering becomes a test of whether faith is disinterested."},
+      {"ref": "Job 3:1–10", "note": "Job curses the day of his birth, breaking the piety of the prologue with raw grief."},
+      {"ref": "Job 38:1–7", "note": "God answers from the whirlwind with questions about creation, not an explanation of suffering."},
+      {"ref": "Job 42:1–6", "note": "Job's final response, a vision that silences rather than solves his complaint."}
+    ],
+    "connections": [
+      {"to": "genesis", "why": "Both begin with a divine evaluation of a human being and ask what a creature may claim before God."},
+      {"to": "proverbs", "why": "Job is the counter-test to Proverbs' confidence that righteousness brings reward."},
+      {"to": "ecclesiastes", "why": "Both resist tidy theologies of success, though Ecclesiastes settles for pleasure and Job for a vision."},
+      {"to": "suffering", "why": "Job gives the canon its most sustained language for undeserved pain and protest."},
+      {"to": "guide-perplexed", "why": "Maimonides returns to Job in the Guide to argue about providence and the limits of human knowledge."}
+    ],
+    "sources": [
+      {"label": "Sefaria: Job, Hebrew and JPS translation", "url": "https://www.sefaria.org/Job.1"},
+      {"label": "Bible Odyssey: Job", "url": "https://www.bibleodyssey.org/"}
+    ]
+  },
+  {
+    "id": "song",
+    "title": "Song of Songs",
+    "he_title": "שִׁיר הַשִּׁירִים",
+    "also": ["Shir HaShirim", "Canticles", "Song of Solomon"],
+    "corpus": "tanakh",
+    "division": "ketuvim",
+    "order": 17,
+    "date": "composed c. 900–400 BCE (date disputed); canonized by c. 200 CE",
+    "date_sort": -900,
+    "language": "Biblical Hebrew",
+    "summary": "Song of Songs is eight chapters of love poetry with no explicit mention of God, law, or history. A woman and a man speak to each other and about each other; a chorus of Jerusalem women answers; the imagery is vineyards, doves, pomegranates, and the bodies of lovers. The Hebrew is difficult in places, but the erotic charge is unmistakable. Its canonicity was contested in the first centuries CE; Akiva's defense — all the Writings are holy, but this is the Holy of Holies — carried the day.",
+    "why": "It is fourth in the Writings because it is one of the five megillot, read at Passover, and because the canon chose to preserve eros as a way of talking about covenant. The rabbis did not read it as a secular love poem but as an allegory of Israel and God, of exile and reunion, of the soul's longing. That reading is a theological claim, not an embarrassment: desire is intrinsic to fidelity. Without Song of Songs, the canon would lack its most direct language of love and its boldest metaphor for the bond between God and Israel.",
+    "structure": [
+      {"name": "Longing and invitation (1:1–2:7)", "note": "Mutual desire, the vineyard, and the refrain not to awaken love too soon."},
+      {"name": "Spring and separation (2:8–3:5)", "note": "The beloved comes leaping, then is lost and sought in the streets."},
+      {"name": "Wedding and praise (3:6–5:1)", "note": "A royal procession, the garden, and the lovers' mutual praise."},
+      {"name": "Absence and reunion (5:2–8:4)", "note": "The knock at the door, the search, and the women's chorus."},
+      {"name": "Love strong as death (8:5–14)", "note": "The seal on the heart, the flame that cannot be quenched, and a final call."}
+    ],
+    "themes": ["love", "covenant", "interpretation", "mysticism", "exile-and-return"],
+    "people": ["solomon"],
+    "places": ["jerusalem"],
+    "key_passages": [
+      {"ref": "Song of Songs 1:1–4", "note": "The opening exchange of desire, establishing the book's refusal to spiritualize its own language too quickly."},
+      {"ref": "Song of Songs 3:1–5", "note": "The woman searches the night streets for her beloved, the book's central image of absence and seeking."},
+      {"ref": "Song of Songs 5:2–8", "note": "The beloved knocks and is gone; the watchmen wound the seeker, a passage ripe for allegory."},
+      {"ref": "Song of Songs 8:6–7", "note": "Love strong as death, its flame unquenchable: the book's theological climax in erotic poetry."}
+    ],
+    "connections": [
+      {"to": "twelve", "why": "Hosea's marriage parable and Song of Songs share the metaphor of covenant as intimacy, one through betrayal and one through desire."},
+      {"to": "jeremiah", "why": "Jeremiah's language of covenant marriage depends on the same imagery that Song of Songs celebrates."},
+      {"to": "mysticism", "why": "The allegorical reading became a foundation for Jewish mystical treatments of love and union."},
+      {"to": "zohar", "why": "The Zohar reads the Song as the drama of the sefirot."},
+      {"to": "love", "why": "The book gives the canon its most unguarded account of desire as created good."}
+    ],
+    "sources": [
+      {"label": "Sefaria: Song of Songs, Hebrew and JPS translation", "url": "https://www.sefaria.org/Song_of_Songs.1"},
+      {"label": "My Jewish Learning: Song of Songs", "url": "https://www.myjewishlearning.com/"}
+    ]
+  },
+  {
+    "id": "ruth",
+    "title": "Ruth",
+    "he_title": "רוּת",
+    "also": ["Megillat Ruth", "The Book of Ruth"],
+    "corpus": "tanakh",
+    "division": "ketuvim",
+    "order": 18,
+    "date": "composed c. 600–400 BCE (date disputed); canonized by c. 200 CE",
+    "date_sort": -600,
+    "language": "Biblical Hebrew",
+    "summary": "Ruth is a quiet story set in the days of the judges, when a famine drives an Israelite family to Moab. The father and sons die; Naomi returns home bitter, and her Moabite daughter-in-law refuses to leave her: Whither thou goest, I will go. The book then becomes a legal idyll — gleaning, a kinsman-redeemer, a nighttime encounter at the threshing floor, a public transaction at the gate — and ends with a genealogy that runs from the Moabite outsider to David. God is rarely named and never speaks, but the plot is full of providence.",
+    "why": "It is fifth in the Writings because it is the megillah of Shavuot, the festival of harvest and revelation, and because it makes the case that covenant belonging is not purely ethnic. Ruth the Moabite becomes the great-grandmother of David, and the rabbis read her as the model convert. The book also stands in tension with the exclusivism of Ezra–Nehemiah, which sought to separate returned exiles from foreign wives. Without Ruth, the canon would lack its gentlest argument about belonging and its clearest link between ordinary kindness and messianic genealogy.",
+    "structure": [
+      {"name": "Famine and return (1)", "note": "Elimelech's family in Moab, the deaths, and Ruth's vow to Naomi."},
+      {"name": "Gleaning (2)", "note": "Ruth meets Boaz, who protects her and recognizes her loyalty."},
+      {"name": "The threshing floor (3)", "note": "Naomi's plan, Ruth's appeal for redemption, and Boaz's promise."},
+      {"name": "Redemption and genealogy (4)", "note": "The gate transaction, the birth of Obed, and the line to David."}
+    ],
+    "themes": ["chosenness", "love", "land-of-israel", "diaspora", "messianism"],
+    "people": ["david"],
+    "places": ["bethlehem"],
+    "key_passages": [
+      {"ref": "Ruth 1:1–5", "note": "Famine, flight, and death: the book begins with emptiness and a family erased."},
+      {"ref": "Ruth 1:16–17", "note": "Ruth's vow to Naomi, a conversion formula that binds her to a people and a God."},
+      {"ref": "Ruth 2:1–12", "note": "Boaz notices the foreign gleaner and invokes the LORD's protection over her."},
+      {"ref": "Ruth 4:13–17", "note": "The birth of Obed and the genealogy that makes the Moabite widow an ancestor of David."}
+    ],
+    "connections": [
+      {"to": "judges", "why": "The book is set in the judges' chaotic era but offers a counter-image of loyalty and quiet order."},
+      {"to": "samuel", "why": "The genealogy that ends Ruth leads directly to David, the central figure of Samuel."},
+      {"to": "chosenness", "why": "Ruth tests and expands election: an outsider becomes the ancestor of Israel's king."},
+      {"to": "ezra", "why": "Ruth's welcome of a Moabite stands against the divorce of foreign wives in Ezra–Nehemiah."},
+      {"to": "messianism", "why": "The Davidic line, and later messianic genealogy, runs through a Moabite convert."}
+    ],
+    "sources": [
+      {"label": "Sefaria: Ruth, Hebrew and JPS translation", "url": "https://www.sefaria.org/Ruth.1"},
+      {"label": "My Jewish Learning: Ruth", "url": "https://www.myjewishlearning.com/"}
+    ]
+  },
+  {
+    "id": "lamentations",
+    "title": "Lamentations",
+    "he_title": "אֵיכָה",
+    "also": ["Eikhah", "Megillat Eikhah", "The Book of Lamentations"],
+    "corpus": "tanakh",
+    "division": "ketuvim",
+    "order": 19,
+    "date": "composed c. 586 BCE; canonized by c. 200 CE",
+    "date_sort": -586,
+    "language": "Biblical Hebrew",
+    "summary": "Lamentations is five poems of grief for a destroyed city. The first four are acrostics, forcing grief into the alphabet's order; the fifth is a bare prayer without the acrostic frame. Jerusalem speaks as a widow, a daughter, a violated woman; a narrator describes the siege and the temple's ruin; God is mostly silent. At the center, in chapter 3, a single voice remembers that the steadfast love of the LORD never ceases and that his mercies are new every morning — a sentence spoken inside the rubble, not above it. Tradition ascribes the book to Jeremiah; its language suggests another poet.",
+    "why": "It is sixth in the Writings because it is the megillah of Tisha B'Av, the fast mourning the First and Second Temples. The acrostics are not a formal game: they insist that catastrophe can be spoken, ordered, and brought into prayer. Jewish liturgy has used these poems for two millennia, and their refrain return us, O LORD keeps hope and protest in the same breath. Without Lamentations, the canon would lack a communal grammar for disaster and the honesty that prevents faith from becoming denial.",
+    "structure": [
+      {"name": "The deserted city (1)", "note": "Jerusalem speaks as a widow; her allies have become enemies."},
+      {"name": "The day of wrath (2)", "note": "The temple destroyed, children starving, and the prophet's refusal to comfort."},
+      {"name": "The sufferer's hope (3)", "note": "Affliction, silence, and the central affirmation of mercies renewed each morning."},
+      {"name": "The siege (4)", "note": "The horrors of famine and the fall of the city, with a final address to Edom."},
+      {"name": "The prayer (5)", "note": "A communal plea for restoration, ending with unless Thou hast utterly rejected us."}
+    ],
+    "themes": ["exile-and-return", "suffering", "sin-and-atonement", "prayer", "temple"],
+    "people": ["jeremiah"],
+    "places": ["jerusalem"],
+    "key_passages": [
+      {"ref": "Lamentations 1:1–6", "note": "How lonely sits the city: the destruction imagined as a widow's public grief."},
+      {"ref": "Lamentations 3:19–24", "note": "Hope spoken from inside affliction: mercies renewed every morning."},
+      {"ref": "Lamentations 3:40–42", "note": "A call to examine our ways and return, turning lament into penitential prayer."},
+      {"ref": "Lamentations 5:1–22", "note": "The final communal plea, ending on a question rather than a resolution."}
+    ],
+    "connections": [
+      {"to": "jeremiah", "why": "The book is traditionally ascribed to Jeremiah, and its theology of destruction echoes his."},
+      {"to": "kings", "why": "Lamentations gives an inner voice to the destruction Kings narrates from the outside."},
+      {"to": "psalms", "why": "Its laments belong to the same liturgical grammar as the psalms of complaint."},
+      {"to": "temple", "why": "The loss of the temple is the book's central wound and the reason for its ongoing liturgical use."},
+      {"to": "exile-and-return", "why": "Lamentations refuses cheap consolation while still asking God to restore."}
+    ],
+    "sources": [
+      {"label": "Sefaria: Lamentations, Hebrew and JPS translation", "url": "https://www.sefaria.org/Lamentations.1"},
+      {"label": "My Jewish Learning: Tisha B'Av", "url": "https://www.myjewishlearning.com/"}
+    ]
+  },
+  {
+    "id": "ecclesiastes",
+    "title": "Ecclesiastes",
+    "he_title": "קֹהֶלֶת",
+    "also": ["Kohelet", "Qoheleth", "The Preacher"],
+    "corpus": "tanakh",
+    "division": "ketuvim",
+    "order": 20,
+    "date": "composed c. 450–250 BCE; canonized by c. 200 CE",
+    "date_sort": -450,
+    "language": "Biblical Hebrew (with Persian loanwords)",
+    "summary": "Ecclesiastes is a first-person meditation by a figure called Kohelet, who claims to be a king and tests everything the wisdom tradition promises. Pleasure, building, wealth, sex, and learning all come back stamped with the same word: hevel, vapor, breath, futility. Yet the book is not simply bleak. It keeps recommending bread, wine, love, and work as the portion of a creature who cannot see the whole. Its famous poem on time — a time to be born, and a time to die — is set inside an argument about human ignorance, not a greeting-card consolation.",
+    "why": "It is seventh in the Writings because it is read at Sukkot, the festival of harvest and fragility, and because it preserves the wisdom tradition's own self-critique. The rabbis debated whether it defiles the hands; its inclusion shows that the canon can hold a book that argues with the canon. Its late Hebrew and Persian loanwords place it in the Persian or early Hellenistic period, though tradition associates it with Solomon. Without Ecclesiastes, the Bible would lack its most modern voice: doubt without despair, pleasure without permanence.",
+    "structure": [
+      {"name": "Frame and quest (1:1–2:26)", "note": "The vanity of toil, the experiment with pleasure, and the limits of wisdom."},
+      {"name": "Time and mortality (3:1–6:12)", "note": "The poem of times, injustice, friendship, and the inability to know the future."},
+      {"name": "Wisdom and its limits (7:1–11:10)", "note": "Proverbs about death, rulers, folly, and the risk of living."},
+      {"name": "Epilogue (12:1–14)", "note": "Remember your creator in youth, the fading of old age, and the final verdict."}
+    ],
+    "themes": ["wisdom", "suffering", "creation", "ethics", "memory"],
+    "people": ["solomon"],
+    "places": ["jerusalem"],
+    "key_passages": [
+      {"ref": "Ecclesiastes 1:1–11", "note": "Vanity of vanities and the weariness of cycles: the book's thesis and its mood."},
+      {"ref": "Ecclesiastes 3:1–8", "note": "A time for everything, a poem about human finitude set within a meditation on ignorance."},
+      {"ref": "Ecclesiastes 12:1–8", "note": "Remember your creator before the silver cord snaps, old age imagined as a failing house."},
+      {"ref": "Ecclesiastes 12:13–14", "note": "The epilogue's verdict: fear God and keep the commandments, a frame that may be a later editor's."}
+    ],
+    "connections": [
+      {"to": "proverbs", "why": "Ecclesiastes inherits Proverbs' wisdom vocabulary and turns it toward skepticism."},
+      {"to": "job", "why": "Both challenge the doctrine that virtue guarantees reward, but Ecclesiastes doubts even the possibility of an answer."},
+      {"to": "wisdom", "why": "The book is wisdom literature at its most self-critical, testing the tradition's own promises."},
+      {"to": "talmud-bavli", "why": "The rabbis debated Ecclesiastes' canonicity and read it with suspicion and affection."},
+      {"to": "siddur", "why": "Its reading at Sukkot ties the book's fragility to the festival's temporary booths."}
+    ],
+    "sources": [
+      {"label": "Sefaria: Ecclesiastes, Hebrew and JPS translation", "url": "https://www.sefaria.org/Ecclesiastes.1"},
+      {"label": "My Jewish Learning: Ecclesiastes", "url": "https://www.myjewishlearning.com/"}
+    ]
+  },
+  {
+    "id": "esther",
+    "title": "Esther",
+    "he_title": "אֶסְתֵּר",
+    "also": ["Megillat Esther", "The Book of Esther"],
+    "corpus": "tanakh",
+    "division": "ketuvim",
+    "order": 21,
+    "date": "composed c. 400–300 BCE; canonized by c. 200 CE",
+    "date_sort": -400,
+    "language": "Biblical Hebrew (with Persian loanwords)",
+    "summary": "Esther is a court tale set in Susa, the Persian capital, where a Jewish orphan becomes queen and a vendetta threatens her people with annihilation. God is never named; the plot turns on banquets, a sleepless night, a gallows built for the wrong man, and the reversal of a lot (pur). The king is a comic fool, the villain Haman a preening monster, and Esther a strategist who risks her life at the right moment. The Hebrew text is the basis of the Purim megillah; the Greek version adds long prayers and visions and is substantially longer.",
+    "why": "It is eighth in the Writings because it is the megillah of Purim and because it models diaspora survival without temple, prophecy, or a named God. The rabbis debated its canonicity — whether it defiles the hands — and eventually embraced it, finding in its hiddenness a theology of providence. Its festival is the most carnivalesque in the Jewish year, with drinking, costume, and noisemakers at the villain's name. Without Esther, the canon would lack its most audacious story of political cunning and its clearest celebration of Jewish life outside the land.",
+    "structure": [
+      {"name": "The rise of Esther (1–2)", "note": "Vashti's refusal, the search for a queen, and Mordecai's discovery of a plot."},
+      {"name": "Haman's plot (3–4)", "note": "The lot cast, the decree of destruction, and Mordecai's appeal to Esther."},
+      {"name": "Esther's intercession (5–7)", "note": "Two banquets, the king's insomnia, and Haman's fall."},
+      {"name": "Purim established (8–10)", "note": "The counter-decree, the victory, and the festival's annual observance."}
+    ],
+    "themes": ["diaspora", "chosenness", "memory", "justice"],
+    "people": ["esther"],
+    "places": ["susa"],
+    "key_passages": [
+      {"ref": "Esther 2:5–11", "note": "Esther and Mordecai introduced in the Persian court, their Jewish identity initially concealed."},
+      {"ref": "Esther 3:1–6", "note": "Mordecai refuses to bow to Haman, the small act of defiance that triggers the plot."},
+      {"ref": "Esther 4:1–17", "note": "Mordecai's appeal and Esther's decision to approach the king: if I perish, I perish."},
+      {"ref": "Esther 9:20–28", "note": "The establishment of Purim, turning a deliverance into an annual obligation of memory."}
+    ],
+    "connections": [
+      {"to": "ezra", "why": "Both are set in the Persian period and explore Jewish life under imperial rule, one in Jerusalem and one in Susa."},
+      {"to": "daniel", "why": "Daniel's court tales share Esther's genre: Jews succeeding, and surviving, in a foreign palace."},
+      {"to": "diaspora", "why": "Esther is the canon's most confident portrait of Jewish flourishing outside the land."},
+      {"to": "memory", "why": "Purim makes remembrance a communal performance, with the megillah read aloud and the villain drowned out."},
+      {"to": "talmud-bavli", "why": "The Talmud's tractate Megillah works out the laws of reading Esther and the observance of Purim."}
+    ],
+    "sources": [
+      {"label": "Sefaria: Esther, Hebrew and JPS translation", "url": "https://www.sefaria.org/Esther.1"},
+      {"label": "My Jewish Learning: Purim", "url": "https://www.myjewishlearning.com/"}
+    ]
+  },
+  {
+    "id": "daniel",
+    "title": "Daniel",
+    "he_title": "דָּנִיֵּאל",
+    "also": ["Daniyyel", "The Book of Daniel"],
+    "corpus": "tanakh",
+    "division": "ketuvim",
+    "order": 22,
+    "date": "composed c. 165 BCE (visions), from older court tales; canonized by c. 200 CE",
+    "date_sort": -165,
+    "language": "Biblical Hebrew and Aramaic",
+    "summary": "Daniel is two books in one: six court tales and four apocalyptic visions. The tales follow Jewish exiles in Babylonian and Persian courts — refusing the king's food, interpreting dreams, surviving a furnace and a lions' den — and they are written in a confident, folkloric style. The visions are stranger: four beasts rising from the sea, a ram and a goat, seventy weeks, and a resurrection of the dead. The book is bilingual, Hebrew and Aramaic, and its visions are widely dated to the persecution of Antiochus IV in the 160s BCE, while the stories are older.",
+    "why": "It sits in the Writings, not the Prophets, a placement that surprises Christian readers: in the Hebrew canon Daniel is a courtier and visionary, not one of the prophetic books. Jewish tradition treasures it for its stories of fidelity and its hope of resurrection, and its imagery fed later apocalyptic and mystical speculation, including the Zohar. The book's central claim is that empires rise and fall under a sovereignty that outlasts them. Without Daniel, the canon would lack its most developed apocalypticism and the figure of the son of man and the resurrection of the dead.",
+    "structure": [
+      {"name": "Court tales (1–6)", "note": "Dietary resistance, Nebuchadnezzar's dream, the furnace, Belshazzar's feast, and the lions' den."},
+      {"name": "The four beasts (7)", "note": "A vision of empires as beasts and a human figure coming with the clouds."},
+      {"name": "The ram, the goat, and the seventy weeks (8–9)", "note": "History decoded, and Daniel's prayer for Jerusalem."},
+      {"name": "The final vision (10–12)", "note": "A heavenly messenger, the time of trouble, and the promise of resurrection."}
+    ],
+    "themes": ["diaspora", "prophecy", "messianism", "exile-and-return", "mysticism"],
+    "people": [],
+    "places": ["babylon", "susa", "jerusalem"],
+    "key_passages": [
+      {"ref": "Daniel 1:8–17", "note": "Daniel refuses the king's food and prospers on pulse, a story of fidelity under assimilating pressure."},
+      {"ref": "Daniel 5:1–30", "note": "Belshazzar's feast and the writing on the wall, the book's sharpest scene of imperial hubris."},
+      {"ref": "Daniel 7:1–14", "note": "Four beasts and a human figure coming with the clouds, the source of the son of man imagery."},
+      {"ref": "Daniel 12:1–4", "note": "The time of trouble and the promise that many of those asleep in the dust shall awake."}
+    ],
+    "connections": [
+      {"to": "esther", "why": "Both are diaspora court tales, though Daniel adds visions and a resurrection hope that Esther lacks."},
+      {"to": "ezekiel", "why": "Ezekiel's exilic visions and Daniel's apocalypses share a priestly imagination of God's glory and history."},
+      {"to": "zohar", "why": "Daniel's imagery of thrones, beasts, and reckoning fed the symbolic world of later Jewish mysticism."},
+      {"to": "messianism", "why": "The son of man and the kingdom that replaces the beasts became central to apocalyptic and messianic speculation."},
+      {"to": "diaspora", "why": "Daniel models fidelity in a foreign court without the comfort of return."}
+    ],
+    "sources": [
+      {"label": "Sefaria: Daniel, Hebrew and JPS translation", "url": "https://www.sefaria.org/Daniel.1"},
+      {"label": "Dead Sea Scrolls: Daniel manuscripts", "url": "https://www.deadseascrolls.org.il/"}
+    ]
+  },
+  {
+    "id": "ezra",
+    "title": "Ezra–Nehemiah",
+    "he_title": "עֶזְרָא־נְחֶמְיָה",
+    "also": ["Ezra and Nehemiah", "Ezra–Nehemiah"],
+    "corpus": "tanakh",
+    "division": "ketuvim",
+    "order": 23,
+    "date": "composed c. 450–400 BCE; canonized by c. 200 CE",
+    "date_sort": -450,
+    "language": "Biblical Hebrew and Aramaic",
+    "summary": "Ezra–Nehemiah is one book in the Hebrew canon, split in two in Christian Bibles. It covers roughly a century of return from Babylon: the first wave under Zerubbabel, the rebuilding of the temple, Ezra's mission to teach Torah, and Nehemiah's rebuilding of Jerusalem's wall. Its sources are unusually visible — royal decrees, letters, lists, and Nehemiah's first-person memoir — and its tone is administrative, anxious, and sometimes harsh. The climactic scene is not a battle but a public reading: Ezra reads the Torah aloud, Levites explain it, and the people weep.",
+    "why": "It is tenth in the Writings because it bridges the exile and the Second Temple, the world in which rabbinic Judaism would grow. Nehemiah 8 is one of the earliest extended descriptions of public Torah reading and interpretation, a template for synagogue liturgy and the rabbinic idea that scripture requires explanation. The book's reforms — divorce of foreign wives, Sabbath enforcement, temple taxes — show a community defining its boundaries under pressure. Without Ezra–Nehemiah, the canon would jump from Babylon to the Maccabees with no account of how Judaism rebuilt itself around Torah and temple.",
+    "structure": [
+      {"name": "Return and the temple (Ezra 1–6)", "note": "Cyrus's decree, the altar restored, opposition, and the temple completed."},
+      {"name": "Ezra's mission (Ezra 7–10)", "note": "The scribe arrives, confronts intermarriage, and leads a confession."},
+      {"name": "Nehemiah's wall (Nehemiah 1–7)", "note": "The cupbearer's leave, the nighttime inspection, and the wall rebuilt under threat."},
+      {"name": "Covenant renewal (Nehemiah 8–10)", "note": "The Torah read publicly, Sukkot celebrated, and a sealed covenant."},
+      {"name": "Final reforms (Nehemiah 11–13)", "note": "Jerusalem repopulated, the wall dedicated, and abuses corrected."}
+    ],
+    "themes": ["exile-and-return", "temple", "torah-study", "interpretation", "mitzvot"],
+    "people": ["ezra"],
+    "places": ["jerusalem", "babylon", "susa", "samaria"],
+    "key_passages": [
+      {"ref": "Ezra 1:1–4", "note": "Cyrus's decree ends the exile and begins the return, the canonical hinge between Babylon and Jerusalem."},
+      {"ref": "Ezra 9:1–9", "note": "Ezra's prayer over intermarriage, a window into the community's anxious boundaries."},
+      {"ref": "Nehemiah 8:1–8", "note": "The public reading of Torah with interpretation, a founding scene for synagogue liturgy."},
+      {"ref": "Nehemiah 13:23–31", "note": "Nehemiah's final reforms, ending the book with conflict rather than settled peace."}
+    ],
+    "connections": [
+      {"to": "chronicles", "why": "Chronicles and Ezra–Nehemiah overlap in genealogy and temple concern, and are often read as a single historiographic project."},
+      {"to": "daniel", "why": "Both depict Jewish life under Persian rule, one through court visions and one through administrative memoir."},
+      {"to": "temple", "why": "The rebuilding and reform of the temple are the book's organizing political and religious concerns."},
+      {"to": "torah-study", "why": "Nehemiah 8 makes public reading and explanation the model for later Torah study."},
+      {"to": "interpretation", "why": "The Levites who explain the text are a canonical precedent for commentary as a religious act."}
+    ],
+    "sources": [
+      {"label": "Sefaria: Ezra, Hebrew and JPS translation", "url": "https://www.sefaria.org/Ezra.1"},
+      {"label": "My Jewish Learning: Second Temple", "url": "https://www.myjewishlearning.com/"}
+    ]
+  },
+  {
+    "id": "chronicles",
+    "title": "Chronicles",
+    "he_title": "דִּבְרֵי הַיָּמִים",
+    "also": ["Divrei HaYamim", "1–2 Chronicles", "The Book of Chronicles"],
+    "corpus": "tanakh",
+    "division": "ketuvim",
+    "order": 24,
+    "date": "composed c. 400–300 BCE; canonized by c. 200 CE",
+    "date_sort": -400,
+    "language": "Biblical Hebrew",
+    "summary": "Chronicles retells Israel's story from Adam to the return from Babylon, but it is not a sequel to Samuel and Kings so much as a revision of them. It compresses the northern kingdom into a few notices, expands David's reign into a liturgical project, and presents Solomon's temple as the center of national life. Its opening nine chapters are genealogies; its closing verses are Cyrus's decree to rebuild. The author, traditionally Ezra and now usually called the Chronicler, writes in the Persian or early Hellenistic period with a priestly and musical imagination.",
+    "why": "It closes the Writings because it ends the canon with an open door: the last words are a foreign king's invitation to go up. The rabbis placed it last, and its final words leave the canon open rather than closed. Its detailed imagination of temple singers and Levites shaped how later readers pictured the Second Temple's worship. Without Chronicles, the canon would lack its great alternative history and its argument that worship, not politics, is the center of national life.",
+    "structure": [
+      {"name": "Genealogies (1 Chronicles 1–9)", "note": "Adam to Israel, the tribes, and the first inhabitants of Jerusalem."},
+      {"name": "David's reign (1 Chronicles 10–29)", "note": "The ark, the covenant, the census, and elaborate preparations for the temple."},
+      {"name": "Solomon and the temple (2 Chronicles 1–9)", "note": "Wisdom, construction, dedication, and the glory filling the house."},
+      {"name": "The kings of Judah (2 Chronicles 10–28)", "note": "Rehoboam to Ahaz, judged by cultic fidelity and military fortune."},
+      {"name": "Hezekiah to the exile (2 Chronicles 29–36)", "note": "Reform, Passover, Manasseh's repentance, Josiah, and destruction."},
+      {"name": "The decree of Cyrus (2 Chronicles 36:22–23)", "note": "The canon's last verses: Who is among you of all His people? Let him go up."}
+    ],
+    "themes": ["temple", "memory", "prayer", "chosenness", "exile-and-return"],
+    "people": ["david", "solomon"],
+    "places": ["jerusalem", "hebron", "babylon"],
+    "key_passages": [
+      {"ref": "1 Chronicles 16:1–7", "note": "The ark installed and music appointed, the Chronicler's vision of worship as Israel's true center."},
+      {"ref": "1 Chronicles 17:1–15", "note": "The Davidic covenant retold with the temple in view, linking dynasty and sanctuary."},
+      {"ref": "2 Chronicles 7:1–3", "note": "Fire from heaven and glory filling the temple, the dedication as a second Sinai."},
+      {"ref": "2 Chronicles 36:22–23", "note": "Cyrus's decree closes the canon with an invitation to return, not a conclusion."}
+    ],
+    "connections": [
+      {"to": "samuel", "why": "Chronicles rewrites Samuel's David, smoothing his failures and amplifying his liturgical role."},
+      {"to": "kings", "why": "It retells Kings with the northern kingdom largely deleted and the temple made the measure of every reign."},
+      {"to": "psalms", "why": "The Chronicler's temple singers and thanksgiving psalms illuminate the Psalter's liturgical setting."},
+      {"to": "ezra", "why": "The two works share genealogies, temple concerns, and a Persian-period setting."},
+      {"to": "temple", "why": "Chronicles is the canon's most sustained argument that worship is the center of national life."}
+    ],
+    "sources": [
+      {"label": "Sefaria: 1 Chronicles, Hebrew and JPS translation", "url": "https://www.sefaria.org/I_Chronicles.1"},
+      {"label": "My Jewish Learning: Chronicles", "url": "https://www.myjewishlearning.com/"}
+    ]
+  }
+]

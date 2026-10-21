@@ -1,0 +1,925 @@
+[
+  {
+    "id": "abraham",
+    "name": "Abraham",
+    "he_name": "אַבְרָהָם",
+    "dates": "c. 19th–18th century BCE (traditional)",
+    "era": "Biblical",
+    "bio": "Abraham enters the biblical narrative in Genesis 11 as a man from Ur of the Chaldees, settled with his father's household in Haran. A command breaks his life open: leave your land, your birthplace, your father's house, for a land God will show you. The story that follows is a sequence of promises and delays—a covenant sealed by a strange night ritual, a barren wife, a dangerous detour into Egypt, a son promised and then demanded back on Mount Moriah. The biblical narrative presents him as the first monotheist and the father of a multitude; the text itself never uses the word 'monotheist.' Historians cannot confirm a single individual behind the patriarchal sagas. The stories were shaped centuries later, in a kingdom that needed an ancestor, and they carry the concerns of that later community. What remains is a portrait of faith as movement: not certainty but obedience to a voice, a tent pitched between promise and fulfillment.",
+    "key_idea": "The tradition's founding figure is not a philosopher but a migrant: covenant begins with a summons to leave.",
+    "works": ["genesis"],
+    "places": ["ur", "haran", "canaan", "hebron"],
+    "themes": ["covenant", "chosenness", "land-of-israel", "memory"],
+    "connections": [
+      {"to": "sarah", "why": "Sarah shares the covenant promise and the long barren years that test it."},
+      {"to": "isaac", "why": "The Akedah makes Isaac the promised son and the story's most disturbing test."},
+      {"to": "jacob", "why": "Jacob inherits Abraham's covenant and the narratives that interpret it."},
+      {"to": "moses", "why": "Moses is presented as the heir of Abraham's covenant, now expanded into a national law."}
+    ],
+    "sources": [
+      {"label": "Sefaria — Genesis 12", "url": "https://www.sefaria.org/Genesis.12"},
+      {"label": "My Jewish Learning — Abraham", "url": "https://www.myjewishlearning.com/article/abraham/"}
+    ]
+  },
+  {
+    "id": "sarah",
+    "name": "Sarah",
+    "he_name": "שָׂרָה",
+    "dates": "c. 19th–18th century BCE (traditional)",
+    "era": "Biblical",
+    "bio": "Sarah is the first matriarch and the hardest-edged of the ancestral portraits. Genesis introduces her as Sarai, Abram's wife and half-sister, beautiful enough to endanger him in foreign courts. She is barren through decades of promise, then hands her Egyptian maidservant Hagar to Abraham—and later, when Hagar conceives, treats her harshly. The narrative gives Sarah the Bible's most famous laugh: overhearing that she will bear a son at ninety, she laughs, and the child is named Isaac, 'he will laugh.' She bears him, demands Hagar's expulsion, and dies at Kiriath-arba; Abraham buys the cave of Machpelah to bury her. Historians read the matriarchs as ancestral traditions shaped by later Israelite concerns; there is no independent evidence for Sarah. Yet her story does real theological work: the covenant passes through a woman whose body contradicts the promise, and the text refuses to soften her jealousy or her power.",
+    "key_idea": "The promise runs through Sarah's barren body and her fierce, unsentimental will; the covenant is not a domestic idyll.",
+    "works": ["genesis"],
+    "places": ["ur", "haran", "canaan", "hebron"],
+    "themes": ["covenant", "chosenness", "memory"],
+    "connections": [
+      {"to": "abraham", "why": "Her partnership with Abraham is the human vessel of the covenant promise."},
+      {"to": "isaac", "why": "Isaac is the son whose birth vindicates her laughter and her long wait."},
+      {"to": "esther", "why": "Both women navigate dangerous foreign courts and conceal or risk themselves to save their people."},
+      {"to": "miriam", "why": "Sarah and Miriam stand at the head of the tradition's memory of women who shape Israel's destiny."}
+    ],
+    "sources": [
+      {"label": "Sefaria — Genesis 18", "url": "https://www.sefaria.org/Genesis.18"},
+      {"label": "My Jewish Learning — Sarah", "url": "https://www.myjewishlearning.com/article/sarah/"}
+    ]
+  },
+  {
+    "id": "isaac",
+    "name": "Isaac",
+    "he_name": "יִצְחָק",
+    "dates": "c. 18th century BCE (traditional)",
+    "era": "Biblical",
+    "bio": "Isaac is the quietest of the patriarchs and, in some ways, the most unsettling. The biblical narrative gives him two great scenes: the Akedah, where his father binds him on Mount Moriah and a ram replaces him, and the blessing scene, where he lies blind and old while Jacob steals what belongs to Esau. Between them he is largely acted upon—carried to the mountain, chosen for a wife by his father's servant, deceived by his son. Yet Genesis also gives him a strange, stubborn strength: he digs wells in a hostile land, reopens the wells his father dug, and refuses to abandon the promise. The Akedah has generated centuries of commentary, from rabbinic midrash to Kierkegaard; the text itself is spare, saying nothing of Isaac's inner life. Historians treat the patriarchal narratives as later literary constructions, not court records. Isaac's importance lies in being the hinge: the child of promise, nearly lost, through whom the line continues.",
+    "key_idea": "Isaac is the promised child who survives—and the tradition reads his near-sacrifice as the wound at the center of covenant.",
+    "works": ["genesis"],
+    "places": ["canaan", "hebron"],
+    "themes": ["covenant", "sacrifice", "chosenness", "land-of-israel"],
+    "connections": [
+      {"to": "abraham", "why": "The Akedah binds father and son in the Bible's most compressed and terrible act of obedience."},
+      {"to": "sarah", "why": "Isaac is the child of Sarah's old age, the proof that the promise was not biological inevitability."},
+      {"to": "jacob", "why": "Jacob's deception of the blind Isaac turns the blessing into a story about chosenness and its costs."}
+    ],
+    "sources": [
+      {"label": "Sefaria — Genesis 22", "url": "https://www.sefaria.org/Genesis.22"},
+      {"label": "Sefaria — Genesis 27", "url": "https://www.sefaria.org/Genesis.27"}
+    ]
+  },
+  {
+    "id": "jacob",
+    "name": "Jacob",
+    "he_name": "יַעֲקֹב",
+    "dates": "c. 17th century BCE (traditional)",
+    "era": "Biblical",
+    "bio": "Jacob is the trickster who becomes Israel. He buys Esau's birthright with lentil stew, impersonates his brother to receive Isaac's blessing, then flees to Haran, where Laban outwits him for twenty years. On the way he dreams of a ladder between earth and heaven; on the way back he wrestles a nameless figure until dawn and is renamed Israel. The narrative presents him as neither hero nor saint: he favors Rachel over Leah, Joseph over his other sons, and his family is a furnace of rivalry. The twelve sons become the twelve tribes, so the story is simultaneously family saga and national etiology. Historians do not treat Jacob as a documented individual; the narratives reflect the self-understanding of later Israelite tribes. The key tension is election: Jacob is chosen before he is good, and the text lets that scandal stand. His ladder and his limp became emblems of a people that encounters God in exile and carries the encounter in its body.",
+    "key_idea": "Jacob is chosen before he is worthy—the tradition's unsettling lesson that election is not a reward for virtue.",
+    "works": ["genesis"],
+    "places": ["canaan", "haran", "hebron"],
+    "themes": ["covenant", "chosenness", "exile-and-return", "land-of-israel"],
+    "connections": [
+      {"to": "isaac", "why": "Jacob steals the blessing that Isaac intends for Esau, making the father's blindness the turning point of the story."},
+      {"to": "abraham", "why": "Jacob receives the covenant promise of land and descendants, now attached to a fraught family."},
+      {"to": "joseph", "why": "Jacob's favoritism toward Joseph sets the family's descent into Egypt in motion."},
+      {"to": "moses", "why": "The name Israel, given to Jacob, becomes the name of the people Moses leads out of Egypt."}
+    ],
+    "sources": [
+      {"label": "Sefaria — Genesis 28", "url": "https://www.sefaria.org/Genesis.28"},
+      {"label": "Sefaria — Genesis 32", "url": "https://www.sefaria.org/Genesis.32"}
+    ]
+  },
+  {
+    "id": "joseph",
+    "name": "Joseph",
+    "he_name": "יוֹסֵף",
+    "dates": "c. 17th century BCE (traditional)",
+    "era": "Biblical",
+    "bio": "Joseph's story is the longest continuous narrative in Genesis and the most novelistic. Favored son of Jacob and Rachel, he is given a coat, dreams of his family bowing to him, and is sold by his brothers into Egypt. There he rises in Potiphar's house, is falsely accused, interprets dreams in prison, and becomes vizier over Egypt's grain. The narrative's texture is courtly and ironic: the boy who dreamed of sheaves now controls the food supply, and the brothers who sold him must come begging. When he reveals himself—'I am Joseph your brother'—the scene is one of the Bible's great acts of forgiveness, though he also tests them. Historians find no Egyptian record of Joseph, and the story's details reflect later literary art rather than a documented career. Its theological claim is subtle: Joseph tells his brothers that their crime was turned to good, but the text never lets the famine or the slavery disappear. The ending in Egypt sets up Exodus.",
+    "key_idea": "Joseph's story turns disaster into providence without erasing human guilt—the Bible's most searching study of forgiveness and power.",
+    "works": ["genesis"],
+    "places": ["canaan", "goshen"],
+    "themes": ["exile-and-return", "suffering", "memory", "ethics"],
+    "connections": [
+      {"to": "jacob", "why": "Jacob's favoritism and grief frame Joseph's rise and the family's reconciliation."},
+      {"to": "moses", "why": "Joseph's descent into Egypt creates the setting from which Moses will lead the people out."},
+      {"to": "esther", "why": "Both are diaspora courtiers who rise in a foreign palace and use their position to save their people."}
+    ],
+    "sources": [
+      {"label": "Sefaria — Genesis 37", "url": "https://www.sefaria.org/Genesis.37"},
+      {"label": "Sefaria — Genesis 45", "url": "https://www.sefaria.org/Genesis.45"}
+    ]
+  },
+  {
+    "id": "moses",
+    "name": "Moses",
+    "he_name": "מֹשֶׁה",
+    "dates": "c. 13th century BCE (traditional)",
+    "era": "Biblical",
+    "bio": "Moses is the central human figure of the Hebrew Bible and the least available to historians. The narrative presents an infant hidden in a basket on the Nile, raised in Pharaoh's palace, who kills an Egyptian overseer and flees to Midian. There God speaks from a burning bush and sends him back to demand freedom. Moses leads the people through the plagues, the sea, and the wilderness; he receives the Torah at Sinai, smashes the tablets over the golden calf, intercedes again and again, and dies on Mount Nebo within sight of a land he will not enter. The biblical narrative presents him as prophet, lawgiver, and mediator; Deuteronomy calls him unique. Historians cannot confirm him from Egyptian or archaeological evidence, and the Exodus traditions are widely thought to be composite memories shaped over centuries. The tradition's Moses is bigger than any reconstruction: the one who speaks with God face to face and whose grave no one knows.",
+    "key_idea": "Moses is the tradition's hinge between revelation and law—the mediator whose authority the Oral Torah later claims.",
+    "works": ["exodus", "leviticus", "numbers", "deuteronomy"],
+    "places": ["goshen", "sinai", "canaan"],
+    "themes": ["exodus", "revelation", "law-and-narrative", "prophecy", "covenant"],
+    "connections": [
+      {"to": "aaron", "why": "Aaron is Moses's brother, spokesman, and priestly counterpart throughout the wilderness."},
+      {"to": "miriam", "why": "Miriam is Moses's sister and fellow prophet, and the three siblings lead Israel together."},
+      {"to": "joshua", "why": "Joshua succeeds Moses and carries the people into the land Moses only sees."},
+      {"to": "akiva", "why": "The rabbis trace the Oral Torah to Moses at Sinai, and Akiva is its most celebrated interpreter."}
+    ],
+    "sources": [
+      {"label": "Sefaria — Exodus 3", "url": "https://www.sefaria.org/Exodus.3"},
+      {"label": "Sefaria — Deuteronomy 34", "url": "https://www.sefaria.org/Deuteronomy.34"}
+    ]
+  },
+  {
+    "id": "aaron",
+    "name": "Aaron",
+    "he_name": "אַהֲרֹן",
+    "dates": "c. 13th century BCE (traditional)",
+    "era": "Biblical",
+    "bio": "Aaron is Moses's elder brother, the first high priest, and the Bible's most ambiguous religious figure. He speaks for Moses before Pharaoh, stretches out his staff over the waters, and supports Moses's arms during the battle with Amalek. At Sinai, while Moses is on the mountain, Aaron yields to the people's demand and makes the golden calf—then defends himself with a sentence that has embarrassed readers for millennia: 'I threw the gold into the fire, and out came this calf.' The Priestly tradition makes him the ancestor of Israel's priesthood; the story of Korah's rebellion is a contest over that claim. Historians read the Aaronide material as a later priestly construction, part of the Priestly strata's effort to centralize sacrifice in Jerusalem. The narrative portrait holds priestly dignity and moral failure together. Aaron dies on Mount Hor, and his son Eleazar succeeds him; the office, not the man, is the point.",
+    "key_idea": "Aaron stands for institutional priesthood—necessary, inherited, and compromised—the counterweight to Moses's prophetic authority.",
+    "works": ["exodus", "leviticus", "numbers"],
+    "places": ["goshen", "sinai"],
+    "themes": ["sacrifice", "purity", "temple", "revelation"],
+    "connections": [
+      {"to": "moses", "why": "The brothers divide prophecy and priesthood, and their partnership is also a rivalry of authority."},
+      {"to": "miriam", "why": "Aaron joins Miriam in challenging Moses's singular authority and is implicated in her punishment."},
+      {"to": "ezra", "why": "Ezra, a priest and scribe, inherits the Aaronide claim that priesthood and Torah belong together."}
+    ],
+    "sources": [
+      {"label": "Sefaria — Exodus 28", "url": "https://www.sefaria.org/Exodus.28"},
+      {"label": "Sefaria — Leviticus 8", "url": "https://www.sefaria.org/Leviticus.8"}
+    ]
+  },
+  {
+    "id": "miriam",
+    "name": "Miriam",
+    "he_name": "מִרְיָם",
+    "dates": "c. 13th century BCE (traditional)",
+    "era": "Biblical",
+    "bio": "Miriam is one of the Bible's three prophetic siblings—Moses, Aaron, and Miriam—and the first woman in the Hebrew Bible explicitly called a prophet. The narrative introduces her as the sister who watches the basket on the Nile and arranges for Pharaoh's daughter to hire their own mother as nurse. At the sea, she takes a timbrel and leads the women in song: 'Sing to the Lord, for he has triumphed gloriously.' That brief victory song may preserve one of the oldest poetic passages in the Bible. Later she and Aaron challenge Moses's authority—'Has the Lord spoken only through Moses?'—and she is struck with leprosy, healed only after Moses cries out for her. She dies at Kadesh, and the wilderness tradition remembers the well that followed the people in her merit. Historians see the Miriam traditions as evidence of women's prophetic leadership in early Israel, later subordinated in the text. Her story is the Bible's sharpest study of prophetic authority, gender, and memory.",
+    "key_idea": "Miriam is the Bible's named woman prophet, whose song and challenge show that revelation in Israel was not exclusively male.",
+    "works": ["exodus", "numbers"],
+    "places": ["goshen", "sinai"],
+    "themes": ["prophecy", "exodus", "memory"],
+    "connections": [
+      {"to": "moses", "why": "Sister and prophet, Miriam challenges Moses's authority and is punished for it, yet remains his ally."},
+      {"to": "aaron", "why": "Aaron and Miriam confront Moses together, and the story weighs their prophetic standing against his."},
+      {"to": "deborah", "why": "Deborah is the other great woman prophet in the Hebrew Bible, and the two are often read together."},
+      {"to": "esther", "why": "Both women act publicly to preserve Israel, one at the sea and one in a foreign palace."}
+    ],
+    "sources": [
+      {"label": "Sefaria — Exodus 15", "url": "https://www.sefaria.org/Exodus.15"},
+      {"label": "Sefaria — Numbers 12", "url": "https://www.sefaria.org/Numbers.12"}
+    ]
+  },
+  {
+    "id": "joshua",
+    "name": "Joshua",
+    "he_name": "יְהוֹשֻׁעַ",
+    "dates": "c. 13th–12th century BCE (traditional)",
+    "era": "Biblical",
+    "bio": "Joshua is Moses's successor, the military leader who brings Israel across the Jordan. The narrative presents him as one of the two faithful spies sent from Kadesh, the only adult of the wilderness generation (with Caleb) permitted to enter the land. After Moses's death God commands him: be strong and courageous. He leads the crossing, the fall of Jericho, the campaigns in the south and north, and the covenant renewal at Shechem; the book ends with his farewell and the famous challenge, 'Choose this day whom you will serve.' The conquest narrative is theologically driven—land as gift, obedience as condition—and historians do not read it as a straightforward record. Archaeology shows a complex settlement history over centuries, with destruction layers that rarely match the book's chronology. Joshua himself is a literary and traditional figure, not a documented individual. His importance is the transfer of authority: Moses's charisma becomes a people's institutional memory, and the land becomes the test of covenant.",
+    "key_idea": "Joshua turns the Exodus promise into a land—and raises the Bible's permanent question of how covenant and conquest can be told together.",
+    "works": ["joshua", "deuteronomy"],
+    "places": ["sinai", "jericho", "canaan", "shiloh"],
+    "themes": ["land-of-israel", "covenant", "memory", "exodus"],
+    "connections": [
+      {"to": "moses", "why": "Joshua is Moses's appointed successor, and his authority depends on the transfer of Moses's spirit."},
+      {"to": "samuel", "why": "Samuel inherits Joshua's role as Israel's leader in a later, monarchic crisis."},
+      {"to": "david", "why": "David completes the conquest Joshua begins, making Jerusalem the capital of the land."}
+    ],
+    "sources": [
+      {"label": "Sefaria — Joshua 1", "url": "https://www.sefaria.org/Joshua.1"},
+      {"label": "Sefaria — Joshua 24", "url": "https://www.sefaria.org/Joshua.24"}
+    ]
+  },
+  {
+    "id": "deborah",
+    "name": "Deborah",
+    "he_name": "דְּבוֹרָה",
+    "dates": "c. 12th century BCE (narrative setting)",
+    "era": "Biblical",
+    "bio": "Deborah is the only woman among the biblical judges and one of the most vivid figures in the Hebrew Bible. The narrative presents her as a prophet who holds court under a palm tree between Ramah and Bethel, and as the one who summons Barak to lead Israel against Sisera's chariots. Barak hesitates; Deborah tells him the Lord will sell Sisera into the hand of a woman. The battle ends with Jael driving a tent peg through the sleeping general's temple. Deborah's song, one of the oldest poems in the Bible, celebrates the victory in dense, archaic Hebrew and imagines the land itself trembling. Historians treat the judge stories as traditions from the pre-monarchic period, transmitted and shaped orally before being written down. Deborah's authority is doubly unusual: a woman exercising judicial and prophetic power in a society whose stories are mostly about men. Her name means 'bee,' and the tradition remembered her as a mother in Israel—a leader whose authority was recognized, not seized.",
+    "key_idea": "Deborah shows prophecy and justice converging in a woman's public authority before Israel had kings.",
+    "works": ["judges"],
+    "places": ["canaan"],
+    "themes": ["prophecy", "justice", "land-of-israel", "memory"],
+    "connections": [
+      {"to": "miriam", "why": "Deborah and Miriam are the Hebrew Bible's two great women prophets, each associated with song."},
+      {"to": "samuel", "why": "Like Samuel, Deborah is a judge who combines prophetic authority with national leadership."},
+      {"to": "joshua", "why": "Deborah's battles continue the unfinished work of securing the land Joshua entered."}
+    ],
+    "sources": [
+      {"label": "Sefaria — Judges 4", "url": "https://www.sefaria.org/Judges.4"},
+      {"label": "Sefaria — Judges 5", "url": "https://www.sefaria.org/Judges.5"}
+    ]
+  },
+  {
+    "id": "samuel",
+    "name": "Samuel",
+    "he_name": "שְׁמוּאֵל",
+    "dates": "c. 11th century BCE (narrative setting)",
+    "era": "Biblical",
+    "bio": "Samuel is the last of the judges and the first of the great prophets, a transitional figure who anoints two kings. The narrative presents him as a child at Shiloh, hearing God call his name in the night, and as an old man who judges Israel, warns the people what a king will cost them, and reluctantly anoints Saul. When Saul fails, Samuel anoints David, then dies—and the book has him summoned from the dead by the witch of Endor, a scene of eerie power. The biblical narrative presents him as incorruptible and formidable, though his sons are corrupt and the people's demand for a king is read as a rejection of God. Historians see the Samuel traditions as part of the Deuteronomistic History, shaped to explain the monarchy's rise and its failures; the figure himself is not independently attested. His story sets the pattern for prophetic critique of power: the prophet stands outside the throne and speaks truth to it.",
+    "key_idea": "Samuel invents the prophet's role as critic of kingship—the voice that anoints power and then judges it.",
+    "works": ["samuel"],
+    "places": ["shiloh", "bethlehem"],
+    "themes": ["prophecy", "covenant", "justice", "chain-of-tradition"],
+    "connections": [
+      {"to": "saul", "why": "Samuel anoints Saul and then declares his kingship forfeit, setting the tragedy in motion."},
+      {"to": "david", "why": "Samuel's clandestine anointing of David in Bethlehem establishes the dynasty the prophets will later judge."},
+      {"to": "elijah", "why": "Elijah inherits Samuel's role as the prophet who confronts a king on behalf of God."}
+    ],
+    "sources": [
+      {"label": "Sefaria — I Samuel 3", "url": "https://www.sefaria.org/I_Samuel.3"},
+      {"label": "Sefaria — I Samuel 8", "url": "https://www.sefaria.org/I_Samuel.8"}
+    ]
+  },
+  {
+    "id": "saul",
+    "name": "Saul",
+    "he_name": "שָׁאוּל",
+    "dates": "late 11th century BCE (c. 1020–1000 BCE)",
+    "era": "Biblical",
+    "bio": "Saul is the Bible's first king and its first tragic hero. The narrative presents him as a tall, handsome Benjaminite, chosen by Samuel and acclaimed by the people, who wins victories against Israel's neighbors but cannot obey the prophet's commands. He spares the Amalekite king and the best of the flock; Samuel declares that obedience is better than sacrifice and that the kingdom has been torn from him. From there Saul unravels: he is tormented by an evil spirit, jealous of David, and finally consults a medium at Endor before dying on Mount Gilboa with his sons. The biblical narrative is written from a pro-Davidic perspective, so Saul's failures are magnified. Historians believe a historical Saul likely existed—the monarchy's emergence in the 11th century BCE is plausible—but the details are literary. His story is about the fragility of kingship when it is measured against prophetic demand.",
+    "key_idea": "Saul is the Bible's warning that kingship, once granted, is judged by a standard no king can fully meet.",
+    "works": ["samuel"],
+    "places": ["canaan"],
+    "themes": ["prophecy", "covenant", "sin-and-atonement"],
+    "connections": [
+      {"to": "samuel", "why": "Samuel makes and unmakes Saul, and their relationship is the Bible's first great prophet-king conflict."},
+      {"to": "david", "why": "David's rise comes at Saul's expense, and Saul's jealousy becomes the engine of the court narrative."},
+      {"to": "esther", "why": "Mordecai, Esther's cousin, is a Benjaminite of Saul's clan, linking the diaspora story to the first king's line."}
+    ],
+    "sources": [
+      {"label": "Sefaria — I Samuel 9", "url": "https://www.sefaria.org/I_Samuel.9"},
+      {"label": "Sefaria — I Samuel 15", "url": "https://www.sefaria.org/I_Samuel.15"}
+    ]
+  },
+  {
+    "id": "david",
+    "name": "David",
+    "he_name": "דָּוִד",
+    "dates": "c. 1040–970 BCE (traditional)",
+    "era": "Biblical",
+    "bio": "David is the Bible's most fully drawn character: shepherd, musician, giant-killer, outlaw, king, adulterer, penitent, and the tradition's model of prayer. The narrative presents him as the youngest son of Jesse, anointed by Samuel, who enters Saul's court with a lyre, kills Goliath, and spends years as a fugitive before becoming king in Hebron and then Jerusalem. He brings the ark to the capital, receives Nathan's promise of an everlasting dynasty, and then destroys much of his own household through desire and violence—Bathsheba, Uriah, Amnon, Absalom. The psalms are attributed to him, though most were composed later. Historians have firmer ground here: the Tel Dan inscription (9th century BCE) mentions the 'house of David,' evidence that a Davidic dynasty existed. The scale of his united monarchy is debated, but a historical David is widely accepted. His importance is dynastic and liturgical: Messiah means 'anointed one,' and the tradition's hopes run through his line.",
+    "key_idea": "David fuses dynasty, prayer, and repentance—the king whose failures become the language of the psalter.",
+    "works": ["samuel", "psalms", "chronicles"],
+    "places": ["bethlehem", "hebron", "jerusalem"],
+    "themes": ["covenant", "prayer", "messianism", "memory", "justice"],
+    "connections": [
+      {"to": "samuel", "why": "Samuel anoints David while Saul still reigns, setting the rivalry that defines David's early life."},
+      {"to": "saul", "why": "Saul's jealousy and pursuit turn David into an outlaw and teach him the fragility of royal power."},
+      {"to": "solomon", "why": "Solomon inherits David's throne, his palace, and the unresolved violence of his household."},
+      {"to": "isaiah", "why": "Isaiah's messianic promises hang on the everlasting dynasty promised to David."}
+    ],
+    "sources": [
+      {"label": "Sefaria — II Samuel 7", "url": "https://www.sefaria.org/II_Samuel.7"},
+      {"label": "Sefaria — Psalms 23", "url": "https://www.sefaria.org/Psalms.23"}
+    ]
+  },
+  {
+    "id": "solomon",
+    "name": "Solomon",
+    "he_name": "שְׁלֹמֹה",
+    "dates": "c. 990–931 BCE (traditional)",
+    "era": "Biblical",
+    "bio": "Solomon is the Bible's king of wisdom, wealth, and compromise. The narrative presents him as David's son by Bathsheba, who secures the throne amid court intrigue, asks God for an understanding heart, and receives both wisdom and riches. He builds the Temple in Jerusalem, the center of Israelite worship for centuries, and a palace; the queen of Sheba visits to test him with riddles. But the same narrative judges him: his many foreign wives turn his heart to other gods, and the kingdom is divided after his death. Proverbs, Ecclesiastes, and Song of Songs are attributed to him, though their language and thought are much later. Historians regard the Temple's construction as plausible and the united monarchy as real but smaller than the text suggests; the legendary wealth is likely exaggerated. Solomon's tension is the Bible's own: the builder of God's house is also the king whose appetites fracture it.",
+    "key_idea": "Solomon builds the Temple and embodies the danger of wisdom without obedience—the Bible's ambivalent monument to monarchy.",
+    "works": ["kings", "proverbs", "ecclesiastes", "song"],
+    "places": ["jerusalem"],
+    "themes": ["wisdom", "temple", "love", "covenant"],
+    "connections": [
+      {"to": "david", "why": "Solomon inherits David's throne and the promise of an everlasting dynasty, but not his father's whole heart."},
+      {"to": "elijah", "why": "Solomon's foreign worship foreshadows the religious crisis Elijah confronts under Ahab."},
+      {"to": "ezra", "why": "Ezra's rebuilt community lives after the Temple Solomon built and the exile its destruction caused."}
+    ],
+    "sources": [
+      {"label": "Sefaria — I Kings 3", "url": "https://www.sefaria.org/I_Kings.3"},
+      {"label": "Sefaria — I Kings 8", "url": "https://www.sefaria.org/I_Kings.8"}
+    ]
+  },
+  {
+    "id": "elijah",
+    "name": "Elijah",
+    "he_name": "אֵלִיָּהוּ",
+    "dates": "9th century BCE (narrative setting)",
+    "era": "Biblical",
+    "bio": "Elijah appears in 1 Kings as a prophet from Tishbe in Gilead, without genealogy or introduction, and dominates the narrative of Ahab's reign. He announces drought, hides by a brook fed by ravens, raises a widow's son, and confronts the prophets of Baal on Mount Carmel with a contest of fire. Then he flees Jezebel into the wilderness, wants to die, and encounters God not in wind, earthquake, or fire but in a still, small voice. He condemns Ahab for Naboth's vineyard and is taken up in a chariot of fire, leaving Elisha his mantle. The stories are among the Bible's most cinematic, and historians treat them as prophetic legends shaped over time rather than eyewitness report. Elijah became the tradition's forerunner of the Messiah (Malachi) and a guest at the Passover seder and circumcision. His key tension is zeal: he is fiercely faithful and deeply exhausted, a prophet who learns that God's presence is not always in the spectacular.",
+    "key_idea": "Elijah is zeal transformed into hope—the prophet who meets God in silence and becomes the herald of redemption.",
+    "works": ["kings", "twelve"],
+    "places": ["samaria", "jericho"],
+    "themes": ["prophecy", "covenant", "teshuvah", "messianism"],
+    "connections": [
+      {"to": "moses", "why": "Elijah's Horeb encounter echoes Moses's Sinai, and the two appear together at the transfiguration in Christian tradition."},
+      {"to": "isaiah", "why": "Elijah's role as forerunner shapes the later prophetic hope of a messenger before redemption."},
+      {"to": "shimon-bar-yochai", "why": "Later tradition links Elijah to the mystical circle around Shimon bar Yochai and to secrets revealed in caves."}
+    ],
+    "sources": [
+      {"label": "Sefaria — I Kings 17", "url": "https://www.sefaria.org/I_Kings.17"},
+      {"label": "Sefaria — I Kings 19", "url": "https://www.sefaria.org/I_Kings.19"}
+    ]
+  },
+  {
+    "id": "isaiah",
+    "name": "Isaiah",
+    "he_name": "יְשַׁעְיָהוּ",
+    "dates": "8th century BCE (fl. c. 740–700)",
+    "era": "Biblical",
+    "bio": "Isaiah is the great prophet of Jerusalem, and the book that bears his name spans centuries. The narrative presents him as a court prophet in the 8th century BCE, active under Uzziah, Jotham, Ahaz, and Hezekiah, called in the Temple by a vision of God's overwhelming holiness. He counsels Ahaz during the Assyrian crisis, promises a sign—the young woman shall conceive—and announces judgment on Judah's injustice while insisting that a remnant will return. The book's later chapters, with their servant songs and visions of a new creation, are widely attributed to anonymous prophets of the exile and restoration. Historians distinguish the 8th-century Isaiah from the book's later layers; the traditional attribution is a claim about a tradition, not a single author. Isaiah's language of holiness, justice, and comfort became central to Jewish liturgy and to messianic hope. His key tension is that the same vision that judges Jerusalem also consoles it.",
+    "key_idea": "Isaiah's holiness vision makes justice the test of worship and consolation the shape of hope.",
+    "works": ["isaiah", "kings"],
+    "places": ["jerusalem"],
+    "themes": ["prophecy", "justice", "messianism", "exile-and-return"],
+    "connections": [
+      {"to": "jeremiah", "why": "Jeremiah inherits Isaiah's Jerusalem-centered prophecy of judgment and remnant."},
+      {"to": "ezekiel", "why": "Ezekiel's exilic visions extend Isaiah's hope of restoration beyond the ruined city."},
+      {"to": "david", "why": "Isaiah's messianic promises are attached to the Davidic dynasty and its future heir."}
+    ],
+    "sources": [
+      {"label": "Sefaria — Isaiah 1", "url": "https://www.sefaria.org/Isaiah.1"},
+      {"label": "Sefaria — Isaiah 6", "url": "https://www.sefaria.org/Isaiah.6"}
+    ]
+  },
+  {
+    "id": "jeremiah",
+    "name": "Jeremiah",
+    "he_name": "יִרְמְיָהוּ",
+    "dates": "c. 650–586 BCE",
+    "era": "Biblical",
+    "bio": "Jeremiah is the Bible's most intimate prophetic book and its most reluctant prophet. The narrative presents him as a priest's son from Anathoth, called in his youth, who protests that he is only a child and is told he was known before he was formed. He preaches in the Temple courtyard that the building will not save a corrupt people, dictates a scroll that the king burns piece by piece, is beaten, put in stocks, and lowered into a muddy cistern. He lives through the fall of Jerusalem in 586 BCE and, against his will, is taken to Egypt by refugees. Lamentations is traditionally attributed to him. Historians see the book as a complex editorial achievement, with prose sermons shaped by Deuteronomistic circles and two textual recensions. Jeremiah's key tension is pathos: he accuses God of deceiving him, yet cannot stop speaking. His new covenant, written on the heart, became one of the tradition's deepest hopes.",
+    "key_idea": "Jeremiah turns prophecy inward—covenant written on the heart, spoken by a man who cannot keep silent.",
+    "works": ["jeremiah", "lamentations", "kings"],
+    "places": ["jerusalem", "babylon"],
+    "themes": ["prophecy", "exile-and-return", "covenant", "suffering"],
+    "connections": [
+      {"to": "isaiah", "why": "Jeremiah continues Isaiah's Jerusalem prophecy while living through the destruction Isaiah foretold."},
+      {"to": "ezekiel", "why": "Both prophets address the exile, one from Jerusalem and one from Babylon, with visions of a new heart."},
+      {"to": "ezra", "why": "Ezra's returning community tries to realize the restored covenant Jeremiah promised."}
+    ],
+    "sources": [
+      {"label": "Sefaria — Jeremiah 1", "url": "https://www.sefaria.org/Jeremiah.1"},
+      {"label": "Sefaria — Jeremiah 31", "url": "https://www.sefaria.org/Jeremiah.31"}
+    ]
+  },
+  {
+    "id": "ezekiel",
+    "name": "Ezekiel",
+    "he_name": "יְחֶזְקֵאל",
+    "dates": "c. 622–570 BCE",
+    "era": "Biblical",
+    "bio": "Ezekiel is the priest-prophet of the Babylonian exile and the Bible's most visionary book. The narrative presents him among the deportees by the Chebar canal, where in 593 BCE he sees a storm wind, four living creatures, and a throne-chariot—the merkavah—and falls on his face. He is commanded to eat a scroll, to lie on his side for hundreds of days as a sign, and to speak to a people who will not listen. He announces Jerusalem's fall, then consoles the exiles with the valley of dry bones and the promise of a new heart of flesh. His final chapters describe a restored Temple and a land reordered around holiness. Historians treat the book as a priestly composition with dated oracles and later editorial layers. Ezekiel's tension is the presence of God in exile: the glory departs the Temple, yet the prophet sees it moving with the people. His visions became foundational for Jewish mysticism.",
+    "key_idea": "Ezekiel sees God's glory leave the Temple and travel with the exiles—exile becomes the birthplace of mysticism.",
+    "works": ["ezekiel"],
+    "places": ["babylon", "jerusalem"],
+    "themes": ["prophecy", "exile-and-return", "shekhinah", "temple"],
+    "connections": [
+      {"to": "jeremiah", "why": "Ezekiel and Jeremiah interpret the same catastrophe from opposite ends of the exile."},
+      {"to": "isaiah", "why": "Ezekiel's restored Temple and new creation extend Isaiah's visions of consolation."},
+      {"to": "ezra", "why": "Ezra's community attempts to rebuild the Temple Ezekiel saw in vision."}
+    ],
+    "sources": [
+      {"label": "Sefaria — Ezekiel 1", "url": "https://www.sefaria.org/Ezekiel.1"},
+      {"label": "Sefaria — Ezekiel 37", "url": "https://www.sefaria.org/Ezekiel.37"}
+    ]
+  },
+  {
+    "id": "ezra",
+    "name": "Ezra",
+    "he_name": "עֶזְרָא",
+    "dates": "5th century BCE (fl. c. 458–428)",
+    "era": "Biblical",
+    "bio": "Ezra is the scribe who gives the returning exiles a book and a community. The narrative presents him as a priest and 'scribe skilled in the Torah of Moses,' coming from Babylon to Jerusalem in the Persian period with royal authorization. He reads the Torah aloud to the assembled people at the Water Gate, with Levites explaining it, and the people weep as they understand. He confronts intermarriage with non-Judean women, a harsh episode that has troubled readers, and works alongside Nehemiah to rebuild the community's walls and practices. Historians debate the chronology—whether Ezra came before or after Nehemiah—and the books are composite. What is clear is the period's central achievement: Torah as the portable constitution of a people living under empire. Ezra's key tension is between openness and boundary. His reading scene is often called the birth of the synagogue and of scriptural interpretation.",
+    "key_idea": "Ezra makes the Torah the center of a community without a king or an independent state—the scribe replaces the palace.",
+    "works": ["ezra"],
+    "places": ["babylon", "jerusalem"],
+    "themes": ["canon", "exile-and-return", "torah-study", "memory"],
+    "connections": [
+      {"to": "jeremiah", "why": "Ezra's return is the institutional form of Jeremiah's promise of restoration."},
+      {"to": "ezekiel", "why": "Ezekiel's vision of a restored Temple becomes, under Ezra, a community organized around Torah."},
+      {"to": "judah-hanasi", "why": "Ezra's public reading and interpretation of Torah set the pattern that the Mishnah's editors later formalize."}
+    ],
+    "sources": [
+      {"label": "Sefaria — Ezra 1", "url": "https://www.sefaria.org/Ezra.1"},
+      {"label": "Sefaria — Nehemiah 8", "url": "https://www.sefaria.org/Nehemiah.8"}
+    ]
+  },
+  {
+    "id": "esther",
+    "name": "Esther",
+    "he_name": "אֶסְתֵּר",
+    "dates": "5th–4th century BCE (narrative setting)",
+    "era": "Biblical",
+    "bio": "Esther is the heroine of the book that bears her name, a book of the Hebrew Bible that never mentions God. The narrative is set in the Persian court of Ahasuerus, where a Jewish woman becomes queen after Vashti's refusal, conceals her identity, and then learns of Haman's plot to destroy the Jews. Urged by Mordecai that she may have come to her position 'for such a time as this,' she approaches the king uninvited, risks death, and turns the plot back on Haman. Purim celebrates the reversal. Historians have found no Persian record of Esther, Vashti, or Haman; the names and court details have inspired both confidence and skepticism, and the book's historicity is widely doubted. Its theological power lies in concealment: providence works through coincidence, banquets, and a queen's courage, without a single miracle. Esther's key tension is assimilation and survival—a diaspora story about passing, power, and the cost of speaking up.",
+    "key_idea": "Esther is the Bible's diaspora book: God is absent from the page, and survival comes through hidden providence and human courage.",
+    "works": ["esther"],
+    "places": ["susa"],
+    "themes": ["diaspora", "memory", "chosenness", "justice"],
+    "connections": [
+      {"to": "saul", "why": "Mordecai is a Benjaminite of Saul's clan, and the scroll quietly links Esther's victory to the first king's line."},
+      {"to": "miriam", "why": "Esther joins Miriam as a woman whose public courage becomes a saving act for Israel."},
+      {"to": "joseph", "why": "Like Joseph, Esther rises in a foreign court and uses her position to rescue her people."}
+    ],
+    "sources": [
+      {"label": "Sefaria — Esther 1", "url": "https://www.sefaria.org/Esther.1"},
+      {"label": "Sefaria — Esther 4", "url": "https://www.sefaria.org/Esther.4"}
+    ]
+  },
+  {
+    "id": "job",
+    "name": "Job",
+    "he_name": "אִיּוֹב",
+    "dates": "text: c. 6th–4th century BCE",
+    "era": "Biblical",
+    "bio": "Job is the Bible's most radical exploration of suffering, and its hero is not an Israelite. The narrative presents him as a wealthy man in the land of Uz, 'blameless and upright,' who loses children, wealth, and health in a wager between God and the satan. Three friends explain his suffering as deserved; Job rejects their comfort and demands a hearing from God. The poem that follows is among the greatest in world literature, and the divine answer from the whirlwind does not explain suffering—it overwhelms Job with creation's wildness. Job repents in dust and ashes, and the prose epilogue restores his fortunes. Historians treat Job as a literary composition, probably 6th–4th century BCE, drawing on ancient Near Eastern wisdom traditions; there is no reason to posit a historical individual. The book's tension is between the moral order the friends defend and the unfathomable freedom God claims. Job's protest became a template for all religious argument with heaven.",
+    "key_idea": "Job refuses easy theodicy: the book vindicates protest and leaves the mystery of suffering standing before God.",
+    "works": ["job"],
+    "places": [],
+    "themes": ["suffering", "wisdom", "justice", "creation"],
+    "connections": [
+      {"to": "abraham", "why": "Job, like Abraham, is a righteous non-Israelite who argues with God and is tested beyond reason."},
+      {"to": "jeremiah", "why": "Jeremiah's accusations against God echo Job's refusal to accept pious explanations of suffering."},
+      {"to": "rambam", "why": "Maimonides devotes much of the Guide to Job's suffering and the limits of providence."}
+    ],
+    "sources": [
+      {"label": "Sefaria — Job 1", "url": "https://www.sefaria.org/Job.1"},
+      {"label": "Sefaria — Job 38", "url": "https://www.sefaria.org/Job.38"}
+    ]
+  },
+  {
+    "id": "hillel",
+    "name": "Hillel",
+    "he_name": "הִלֵּל",
+    "dates": "c. 110 BCE–10 CE",
+    "era": "Second Temple",
+    "bio": "Hillel the Elder is the tradition's model of gentle, patient scholarship. The Mishnah presents him as a member of the last pair of zugot, alongside Shammai, and the Talmud tells how the two men and their schools disputed hundreds of legal questions. Hillel came from Babylonia, studied in Jerusalem, and became the leading sage of his generation; his rulings tend toward leniency and concern for ordinary people. He is credited with the prosbul, a legal device allowing loans to be collected despite the sabbatical year's cancellation of debts, and with the golden rule spoken to a would-be convert standing on one foot: what is hateful to you, do not do to another. The story of the convert who wanted the whole Torah while standing on one foot is late and legendary, but it captures his reputation. Historians treat the Hillel traditions as shaped by his school over generations. His key tension is authority exercised as accessibility.",
+    "key_idea": "Hillel makes Torah livable: scholarship in service of ordinary people, and argument without humiliation.",
+    "works": ["pirkei-avot", "mishnah", "talmud-bavli"],
+    "places": ["babylon", "jerusalem"],
+    "themes": ["oral-torah", "ethics", "chain-of-tradition", "interpretation", "machloket"],
+    "connections": [
+      {"to": "shammai", "why": "Hillel's disputes with Shammai define the tradition's model of principled disagreement."},
+      {"to": "yohanan-ben-zakkai", "why": "Yohanan ben Zakkai is presented as Hillel's disciple and the heir of his academy."},
+      {"to": "judah-hanasi", "why": "Judah HaNasi is a descendant of Hillel and the editor of the Mishnah that preserves his rulings."},
+      {"to": "akiva", "why": "Akiva's school continues the Hillelite emphasis on interpretation and accessibility."}
+    ],
+    "sources": [
+      {"label": "Sefaria — Pirkei Avot 1", "url": "https://www.sefaria.org/Pirkei_Avot.1"},
+      {"label": "My Jewish Learning — Hillel", "url": "https://www.myjewishlearning.com/article/hillel/"}
+    ]
+  },
+  {
+    "id": "shammai",
+    "name": "Shammai",
+    "he_name": "שַׁמַּאי",
+    "dates": "c. 50 BCE–30 CE",
+    "era": "Second Temple",
+    "bio": "Shammai is Hillel's great contemporary and the tradition's emblem of strictness. The Mishnah pairs them as the last of the zugot, and the Talmud preserves their disputes on dozens of matters—Sabbath, marriage, ritual purity, the wording of blessings. Shammai's school, Beit Shammai, is consistently more stringent than Beit Hillel; in one famous debate a heavenly voice declares both are words of the living God, but the law follows Hillel because his students were gentle and taught both positions. Shammai himself is remembered as impatient—the story of the would-be convert turned away with a measuring rod—though the sources are polemical and late. Historians caution that the sharp contrast between the two schools was elaborated by later editors. Shammai's importance is structural: he gives the tradition a genuine alternative, a rigor that is not straw but a serious reading of obligation. His key tension is the place of strictness within a tradition that canonized argument.",
+    "key_idea": "Shammai keeps the counter-argument alive: strictness as a real option, preserved even when the law follows his rival.",
+    "works": ["pirkei-avot", "mishnah"],
+    "places": ["jerusalem"],
+    "themes": ["oral-torah", "machloket", "halakhah", "ethics"],
+    "connections": [
+      {"to": "hillel", "why": "Shammai's rivalry with Hillel becomes the template for legitimate halakhic disagreement."},
+      {"to": "judah-hanasi", "why": "The Mishnah preserves Shammai's positions alongside Hillel's, canonizing the dispute rather than erasing it."},
+      {"to": "akiva", "why": "Akiva's method intensifies the interpretive rigor that Shammai's school represents."}
+    ],
+    "sources": [
+      {"label": "Sefaria — Pirkei Avot 1", "url": "https://www.sefaria.org/Pirkei_Avot.1"},
+      {"label": "Sefaria — Mishnah", "url": "https://www.sefaria.org/texts/Mishnah"}
+    ]
+  },
+  {
+    "id": "yohanan-ben-zakkai",
+    "name": "Yohanan ben Zakkai",
+    "he_name": "יוֹחָנָן בֶּן זַכַּאי",
+    "dates": "c. 1st century CE (fl. 50–80)",
+    "era": "Tannaitic",
+    "bio": "Yohanan ben Zakkai is the architect of Judaism after the Temple. The Talmud tells that he was a disciple of Hillel, served in Jerusalem, and, as the Romans besieged the city, had himself carried out in a coffin—some versions say he predicted Vespasian's rise and won permission to settle with his disciples at Yavneh. There he established an academy that became the center of Torah study after 70 CE, and the tradition credits him with ordinances that adapted practice to a Temple-less world. The story is almost certainly embellished; historians debate how much of it is reliable, and Yavneh's centrality was gradual. But the achievement is real: a portable Judaism of study, prayer, and law. His key tension is survival through reinterpretation—not mourning the Temple alone, but building institutions that could outlive it. When he said, 'Give me Yavneh and its sages,' he chose a future over a ruin.",
+    "key_idea": "Yohanan ben Zakkai turns catastrophe into institution: after the Temple, Torah study becomes the new center.",
+    "works": ["pirkei-avot", "talmud-bavli"],
+    "places": ["jerusalem", "yavneh"],
+    "themes": ["oral-torah", "chain-of-tradition", "halakhah", "exile-and-return"],
+    "connections": [
+      {"to": "hillel", "why": "The Talmud presents Yohanan as Hillel's disciple, linking the Yavneh academy to the Hillelite tradition."},
+      {"to": "akiva", "why": "Akiva's generation builds the Torah-centered Judaism that Yohanan's Yavneh made possible."},
+      {"to": "yishmael", "why": "Yishmael is remembered as one of Yohanan's students and a leader of the post-Temple academy."}
+    ],
+    "sources": [
+      {"label": "Sefaria — Gittin 56a", "url": "https://www.sefaria.org/Gittin.56a"},
+      {"label": "Sefaria — Pirkei Avot 2", "url": "https://www.sefaria.org/Pirkei_Avot.2"}
+    ]
+  },
+  {
+    "id": "akiva",
+    "name": "Akiva",
+    "he_name": "עֲקִיבָא",
+    "dates": "c. 50–135 CE",
+    "era": "Tannaitic",
+    "bio": "Akiva is the tradition's greatest interpreter and its most famous martyr. The Talmud presents him as a poor shepherd who began studying at forty, sat in the academy of Yavneh, and became the leading sage of his generation. His exegesis found meaning in every letter of Torah—'crowns' on letters, superfluous words, the Song of Songs as the love between God and Israel. He hailed Simon bar Kokhba as the messiah—a judgment the tradition later remembered with ambivalence—and after the revolt's failure he was captured and executed by the Romans, dying with the Shema on his lips. Historians treat the martyrdom accounts as devotional literature shaped by later memory, and the scale of his legal influence is debated. His key tension is interpretation itself: Akiva reads Scripture expansively, even dangerously, and the tradition both venerates and limits him. His story made study a form of love and death a form of witness.",
+    "key_idea": "Akiva turns interpretation into intimacy—every letter of Torah speaks—and his martyrdom makes study a way of loving God 'with all your soul.'",
+    "works": ["mishnah", "talmud-bavli", "midrash", "pirkei-avot"],
+    "places": ["yavneh", "jerusalem"],
+    "themes": ["oral-torah", "interpretation", "love", "messianism", "machloket"],
+    "connections": [
+      {"to": "yohanan-ben-zakkai", "why": "Akiva inherits the Yavneh academy's project of rebuilding Judaism around Torah."},
+      {"to": "yishmael", "why": "Akiva's expansive exegesis is sharpened by Yishmael's insistence on the plain sense."},
+      {"to": "judah-hanasi", "why": "Judah HaNasi preserves Akiva's teachings as the backbone of the Mishnah."},
+      {"to": "shimon-bar-yochai", "why": "Shimon bar Yochai is presented as Akiva's student and the heir of his interpretive boldness."}
+    ],
+    "sources": [
+      {"label": "Sefaria — Berakhot 61b", "url": "https://www.sefaria.org/Berakhot.61b"},
+      {"label": "Sefaria — Pirkei Avot 3", "url": "https://www.sefaria.org/Pirkei_Avot.3"}
+    ]
+  },
+  {
+    "id": "yishmael",
+    "name": "Yishmael",
+    "he_name": "יִשְׁמָעֵאל",
+    "dates": "c. 90–135 CE",
+    "era": "Tannaitic",
+    "bio": "Yishmael ben Elisha is Akiva's great contemporary and rival among the Tannaim, and the tradition's model of legal restraint. A priest by descent, he was among the sages who rebuilt Jewish life after the Temple's destruction; the Mishnah and midrash preserve his rulings on sacrifices, vows, and civil law. His name is attached to the thirteen hermeneutical principles—a systematic method for deriving law from Scripture—and to the principle that 'the Torah speaks in the language of human beings,' which limits over-literal reading. He and Akiva argue repeatedly: Akiva finds law in every particle, Yishmael insists on the plain sense and the limits of inference. Again and again the Talmud lets Yishmael's restraint check Akiva's expansiveness. Historians see the schools as literary constructions of later editors, but the contrast is real. His key tension is fidelity and flexibility: how much may an interpreter infer before the text ceases to bind?",
+    "key_idea": "Yishmael guards the plain sense: interpretation must be disciplined by language, context, and the possibility of living the law.",
+    "works": ["mishnah", "talmud-bavli", "midrash"],
+    "places": ["jerusalem", "yavneh"],
+    "themes": ["halakhah", "interpretation", "machloket", "oral-torah"],
+    "connections": [
+      {"to": "akiva", "why": "Yishmael's disputes with Akiva define the limits of rabbinic interpretation."},
+      {"to": "yohanan-ben-zakkai", "why": "Yishmael belongs to the generation after Yohanan ben Zakkai, which built the Yavneh academy into a lasting movement."},
+      {"to": "judah-hanasi", "why": "The Mishnah preserves Yishmael's rulings as a counterweight to Akiva's expansive method."}
+    ],
+    "sources": [
+      {"label": "Sefaria — Sifra", "url": "https://www.sefaria.org/Sifra"},
+      {"label": "Sefaria — Mishnah", "url": "https://www.sefaria.org/texts/Mishnah"}
+    ]
+  },
+  {
+    "id": "judah-hanasi",
+    "name": "Judah HaNasi",
+    "he_name": "יְהוּדָה הַנָּשִׂיא",
+    "dates": "c. 135–217 CE",
+    "era": "Tannaitic",
+    "bio": "Judah HaNasi—'Rabbi' par excellence—is the figure the tradition credits with redacting the Mishnah. The narrative presents him as a descendant of Hillel, educated in the academy, wealthy, and friendly with Roman authorities; the Talmud's stories of 'Antoninus' imagine a philosophical friendship between the sage and an emperor. He lived mainly in Sepphoris and later Tiberias, and around 200 CE he gathered the teachings of the Tannaim into six orders, giving them a fixed form and authority. Historians accept that a substantial editorial project took place under his circle, though the Mishnah as we have it continued to be transmitted and slightly shaped. His key tension is canonization: to close a tradition is also to preserve its arguments. The Mishnah records disputes it does not always resolve, so Rabbi's work became the foundation of both Talmud and commentary. He is buried, by tradition, in Beit She'arim.",
+    "key_idea": "Judah HaNasi gives the Oral Torah a book—the Mishnah—without extinguishing the arguments inside it.",
+    "works": ["mishnah", "pirkei-avot", "talmud-bavli"],
+    "places": ["sepphoris", "tiberias"],
+    "themes": ["oral-torah", "canon", "halakhah", "chain-of-tradition"],
+    "connections": [
+      {"to": "akiva", "why": "Judah HaNasi's Mishnah preserves Akiva's teachings as its central legal tradition."},
+      {"to": "rav", "why": "Rav studied with Judah HaNasi and carried his Mishnah to Babylonia."},
+      {"to": "hillel", "why": "Judah HaNasi claims descent from Hillel, linking the patriarchate to the earlier sage."},
+      {"to": "yochanan-bar-nappacha", "why": "Yohanan bar Nappacha studied under Judah HaNasi and became the leading sage of the Land of Israel after him."}
+    ],
+    "sources": [
+      {"label": "Sefaria — Pirkei Avot 2", "url": "https://www.sefaria.org/Pirkei_Avot.2"},
+      {"label": "Sefaria — Mishnah", "url": "https://www.sefaria.org/texts/Mishnah"}
+    ]
+  },
+  {
+    "id": "rav",
+    "name": "Rav",
+    "he_name": "רַב",
+    "dates": "c. 175–247 CE",
+    "era": "Amoraic",
+    "bio": "Rav—Abba Arika—is the founder of the Babylonian Talmud's culture. Born in Babylonia, he studied in the Land of Israel under Judah HaNasi and returned home around 219 CE, settling in Sura, where he established an academy that would shape Jewish law for centuries. The Talmud calls him simply 'Rav,' the master, and preserves hundreds of his rulings on prayer, Sabbath, marriage, damages, and ritual purity. He was a bridge: Palestinian learning transplanted to Babylonia, where it took root and eventually surpassed its source. His disputes with Shmuel are the Talmud's paradigmatic argument, and the phrase 'Rav and Shmuel' names a whole legal world. Historians see the academy's founding as a turning point in the shift of Jewish intellectual gravity eastward. His key tension is authority and adaptation: a Babylonian sage applying Palestinian tradition to a diaspora community. His teaching made the diaspora a center, not a periphery.",
+    "key_idea": "Rav transplants the academy to Babylonia and makes the diaspora a center of Torah—the beginning of the Bavli's world.",
+    "works": ["talmud-bavli", "mishnah"],
+    "places": ["sura", "babylon"],
+    "themes": ["oral-torah", "halakhah", "machloket", "diaspora", "torah-study"],
+    "connections": [
+      {"to": "shmuel", "why": "Rav's disputes with Shmuel define the argumentative texture of the Babylonian Talmud."},
+      {"to": "judah-hanasi", "why": "Rav studied under Judah HaNasi and brought the Mishnah's authority to Babylonia."},
+      {"to": "rav-ashi", "why": "Rav's academy at Sura becomes the institutional base for Rav Ashi's later redaction."},
+      {"to": "yochanan-bar-nappacha", "why": "Rav's Palestinian teacher and peer represents the tradition he transplanted eastward."}
+    ],
+    "sources": [
+      {"label": "Sefaria — Talmud", "url": "https://www.sefaria.org/texts/Talmud"},
+      {"label": "Sefaria — Shabbat 10b", "url": "https://www.sefaria.org/Shabbat.10b"}
+    ]
+  },
+  {
+    "id": "shmuel",
+    "name": "Shmuel",
+    "he_name": "שְׁמוּאֵל",
+    "dates": "c. 165–257 CE",
+    "era": "Amoraic",
+    "bio": "Shmuel—Samuel of Nehardea—is Rav's great colleague and the other pillar of early Babylonian Judaism. The Talmud presents him as an astronomer, physician, and jurist, famous for saying that the paths of the stars are as clear to him as the streets of Nehardea. He was head of the academy at Nehardea, and his legal rulings often differ from Rav's; the Talmud treats their disagreements as a model of principled argument. He formulated the principle dina d'malkhuta dina—the law of the kingdom is binding—which allowed Jewish communities to live under foreign rulers without treating every civil obligation as idolatry. He also ruled that the Jewish calendar could be calculated in advance, a decisive step toward a diaspora Judaism not dependent on witnesses. Historians regard him as a historical figure of the 3rd century, though the anecdotes are shaped by later tradition. His key tension is fidelity and pragmatism under foreign rule.",
+    "key_idea": "Shmuel makes diaspora life legally coherent: the law of the kingdom is law, and the calendar can be calculated rather than seen.",
+    "works": ["talmud-bavli"],
+    "places": ["babylon"],
+    "themes": ["halakhah", "oral-torah", "diaspora", "justice"],
+    "connections": [
+      {"to": "rav", "why": "Shmuel's legal disputes with Rav become the Talmud's model of sustained, respectful argument."},
+      {"to": "rav-ashi", "why": "Rav Ashi's redaction preserves Shmuel's rulings as half of the Bavli's foundational debate."},
+      {"to": "judah-hanasi", "why": "Shmuel's generation receives the Mishnah and turns it into the basis of Amoraic analysis."}
+    ],
+    "sources": [
+      {"label": "Sefaria — Talmud", "url": "https://www.sefaria.org/texts/Talmud"},
+      {"label": "Sefaria — Berakhot 2a", "url": "https://www.sefaria.org/Berakhot.2a"}
+    ]
+  },
+  {
+    "id": "rav-ashi",
+    "name": "Rav Ashi",
+    "he_name": "רַב אָשִׁי",
+    "dates": "c. 352–427 CE",
+    "era": "Amoraic",
+    "bio": "Rav Ashi is the tradition's chief architect of the Babylonian Talmud. He headed the academy at Sura in the 4th century, and the Talmud marks him and Ravina as 'the end of hora'ah'—the close of authoritative teaching, the final generation whose discussions were gathered into the text. The claim that they redacted the Bavli is traditional and oversimplified: historians describe a longer process of editing, anonymizing, and arranging that continued into the 6th century or later. But Rav Ashi's academy was decisive. The Talmud presents him as extraordinarily wealthy and influential, with access to the Persian court, and as a master of both law and narrative. His key tension is the one every canon-maker faces: to organize a living debate is to change it. The Bavli preserves arguments it also frames, and Rav Ashi's name stands at the point where oral discussion becomes a book.",
+    "key_idea": "Rav Ashi stands for the redaction of the Bavli—the moment argument becomes canon, though the process was longer and messier than the legend.",
+    "works": ["talmud-bavli"],
+    "places": ["sura"],
+    "themes": ["oral-torah", "canon", "halakhah", "chain-of-tradition"],
+    "connections": [
+      {"to": "rav", "why": "Rav Ashi heads the Sura academy founded by Rav and inherits its legal tradition."},
+      {"to": "shmuel", "why": "The Bavli that Rav Ashi's circle shapes preserves the Rav-Shmuel debates as its core."},
+      {"to": "ravina", "why": "Ravina is Rav Ashi's partner in the traditional account of the Talmud's completion."},
+      {"to": "judah-hanasi", "why": "Rav Ashi does for the Gemara what Judah HaNasi did for the Mishnah: gives argument a durable form."}
+    ],
+    "sources": [
+      {"label": "Sefaria — Talmud", "url": "https://www.sefaria.org/texts/Talmud"},
+      {"label": "Sefaria — Bava Metzia 86a", "url": "https://www.sefaria.org/Bava_Metzia.86a"}
+    ]
+  },
+  {
+    "id": "ravina",
+    "name": "Ravina",
+    "he_name": "רָבִינָא",
+    "dates": "c. 420–499 CE",
+    "era": "Amoraic",
+    "bio": "Ravina is the tradition's last Amora and, with Rav Ashi, the name attached to the close of the Babylonian Talmud. Two sages called Ravina appear in the sources; the relevant one is Ravina II, who lived in the 5th century and is said to have completed the work Rav Ashi began. The Talmud's own statement that 'Rav Ashi and Ravina are the end of hora'ah'—the end of authoritative teaching—became the traditional marker of the Bavli's completion. Historians are cautious: the text's final editing is anonymous and gradual, and no single date can be assigned. Ravina's importance is symbolic and institutional. He represents the generation that closed the canon of rabbinic argument, after which the work of interpretation passed to the Geonim and the commentators. His key tension is closure: a tradition that lives by argument must one day decide what counts as the argument's text.",
+    "key_idea": "Ravina marks the end of the Amoraic chain—the Bavli's closure, after which interpretation becomes commentary.",
+    "works": ["talmud-bavli"],
+    "places": ["sura"],
+    "themes": ["oral-torah", "canon", "halakhah", "chain-of-tradition"],
+    "connections": [
+      {"to": "rav-ashi", "why": "Ravina II is traditionally paired with Rav Ashi as the finisher of the Babylonian Talmud."},
+      {"to": "rav", "why": "Ravina inherits the Sura academy's tradition and the legal world Rav founded."},
+      {"to": "shmuel", "why": "The debates of Rav and Shmuel remain the substance that Ravina's generation organizes and closes."},
+      {"to": "judah-hanasi", "why": "Ravina's closure of the Gemara parallels Judah HaNasi's closure of the Mishnah."}
+    ],
+    "sources": [
+      {"label": "Sefaria — Talmud", "url": "https://www.sefaria.org/texts/Talmud"}
+    ]
+  },
+  {
+    "id": "yochanan-bar-nappacha",
+    "name": "Yochanan bar Nappacha",
+    "he_name": "יוֹחָנָן בַּר נַפָּחָא",
+    "dates": "c. 279–320 CE",
+    "era": "Amoraic",
+    "bio": "Yohanan bar Nappacha is the dominant sage of the Land of Israel in the 3rd century and the central figure of the Jerusalem Talmud. He studied under Judah HaNasi, succeeded him as head of the academy at Tiberias, and trained a generation of students whose debates fill the Palestinian Talmud and the midrashim. The Talmud remembers him as exceptionally beautiful and as a master of aggadah as well as law; his sayings on repentance, prayer, and the destruction of the Temple are among the tradition's most quoted. He stood at the head of the Palestinian academy while the Babylonian schools of Rav and Shmuel were consolidating, and the two centers corresponded and competed. Historians treat the Jerusalem Talmud as a later compilation of his school's traditions, not his personal work. His key tension is the Land of Israel after the Temple: how to sustain a full Jewish life in a defeated, Roman-ruled province. His answer was academy, midrash, and memory.",
+    "key_idea": "Yohanan bar Nappacha keeps the Land of Israel's tradition alive after the Temple—law and aggadah as a portable homeland.",
+    "works": ["talmud-yerushalmi", "midrash", "talmud-bavli"],
+    "places": ["tiberias", "sepphoris"],
+    "themes": ["oral-torah", "aggadah", "halakhah", "interpretation", "machloket"],
+    "connections": [
+      {"to": "judah-hanasi", "why": "Yohanan studied under Judah HaNasi and succeeded him as the leading sage of the Land of Israel."},
+      {"to": "rav", "why": "Yohanan's Palestinian academy and Rav's Babylonian one represent the two centers of Amoraic Judaism."},
+      {"to": "shmuel", "why": "Yohanan's tradition is a counterpart and rival to the Babylonian learning of Rav and Shmuel."}
+    ],
+    "sources": [
+      {"label": "Sefaria — Jerusalem Talmud", "url": "https://www.sefaria.org/texts/Talmud_Yerushalmi"},
+      {"label": "Sefaria — Midrash", "url": "https://www.sefaria.org/texts/Midrash"}
+    ]
+  },
+  {
+    "id": "shimon-bar-yochai",
+    "name": "Shimon bar Yochai",
+    "he_name": "שִׁמְעוֹן בַּר יוֹחַאי",
+    "dates": "c. 2nd century CE (fl. c. 130–160)",
+    "era": "Tannaitic",
+    "bio": "Shimon bar Yochai is the Tanna who became the face of Jewish mysticism. The Talmud presents him as a student of Akiva, a fierce critic of Rome, and a man who hid in a cave with his son for thirteen years while a carob tree and spring sustained them; he emerged, burned everything he looked at, and had to be sent back until his anger cooled. He is credited with authorship of the Zohar, the central text of Kabbalah—a claim historians reject, since the Zohar was composed in medieval Castile, most likely by Moses de León and a circle around him. Yet the attribution is not incidental: it expresses the tradition's conviction that the deepest reading of Torah goes back to Akiva's school. Lag BaOmer, his traditional yahrzeit, draws pilgrims to Meron. His key tension is the holiness of withdrawal and the obligation to return to the world.",
+    "key_idea": "Shimon bar Yochai is the tradition's mystic in the cave—the figure through whom Kabbalah claims the authority of the Tannaim.",
+    "works": ["zohar", "mishnah", "talmud-bavli", "midrash"],
+    "places": ["tiberias", "sepphoris"],
+    "themes": ["mysticism", "oral-torah", "interpretation", "shekhinah"],
+    "connections": [
+      {"to": "akiva", "why": "Shimon is presented as Akiva's student and the heir of his bold, letter-by-letter reading."},
+      {"to": "judah-hanasi", "why": "Shimon's generation, preserved in the Mishnah, stands close to the circle that edited it."},
+      {"to": "isaac-luria", "why": "Lurianic Kabbalah reads the Zohar attributed to Shimon as its foundational text."},
+      {"to": "shlomo-alkabetz", "why": "The Safed circle of Alkabetz made Shimon's mystical legacy central to its Sabbath piety."}
+    ],
+    "sources": [
+      {"label": "Sefaria — Zohar", "url": "https://www.sefaria.org/Zohar"},
+      {"label": "Sefaria — Shabbat 33b", "url": "https://www.sefaria.org/Shabbat.33b"}
+    ]
+  },
+  {
+    "id": "rashi",
+    "name": "Rashi",
+    "he_name": "רַשִׁ״י",
+    "dates": "1040–1105",
+    "era": "Rishonim",
+    "bio": "Rashi—Rabbi Shlomo Yitzhaki—is the most widely read Jewish commentator of all time. Born in Troyes around 1040, he studied in the Rhineland and returned to Champagne, where he supported himself from vineyards and taught a school. His commentary on the Torah and most of the Talmud combines an uncanny command of midrash with a preference for the plain sense; his Talmud commentary is so indispensable that the Vilna edition prints it in a special typeface, 'Rashi script.' He lived through the First Crusade's anti-Jewish violence, and some of his responsa reflect the anguish of those years. His grandsons, the Tosafists, expanded his method into a dialectical commentary that fills the margins of the Talmud. Historians know his life only in outline, but his influence is measurable in every page of traditional study. His key tension is between peshat and derash: he cites the rabbis constantly, yet keeps asking what the verse actually says.",
+    "key_idea": "Rashi makes the text teachable: plain sense and rabbinic tradition held together in the margins of every page.",
+    "works": ["rashi-commentary", "talmud-bavli", "mishnah"],
+    "places": ["troyes", "worms"],
+    "themes": ["interpretation", "torah-study", "halakhah", "chain-of-tradition"],
+    "connections": [
+      {"to": "rambam", "why": "Rashi and Maimonides are the two towering authorities of the medieval Jewish world, one a commentator and one a codifier."},
+      {"to": "nachmanides", "why": "Nachmanides' commentary repeatedly engages, and often disputes, Rashi's readings."},
+      {"to": "ibn-ezra", "why": "Ibn Ezra's grammatical plain-sense approach is a contemporary alternative to Rashi's midrashic method."}
+    ],
+    "sources": [
+      {"label": "Sefaria — Rashi on Genesis 1:1", "url": "https://www.sefaria.org/Rashi_on_Genesis.1.1"},
+      {"label": "My Jewish Learning — Rashi", "url": "https://www.myjewishlearning.com/article/rashi/"}
+    ]
+  },
+  {
+    "id": "rambam",
+    "name": "Maimonides",
+    "he_name": "רַמְבַּ״ם",
+    "dates": "1138–1204",
+    "era": "Rishonim",
+    "bio": "Moses Maimonides—Rambam—is the greatest Jewish philosopher and codifier of the Middle Ages. Born in Córdoba in 1138, he fled the Almohad persecution with his family, wandered through North Africa and Palestine, and settled in Fustat, Egypt, where he served as a physician and leader of the Jewish community. His Mishneh Torah, completed around 1180, organized the entire halakhic system into fourteen books in clear Hebrew—a revolutionary attempt to make the law accessible without Talmudic training. The Guide for the Perplexed, written in Arabic, reconciled Aristotle with Torah through allegory and negative theology. Both works provoked controversy: critics feared the code would replace Talmud study and the Guide would corrode belief. His thirteen principles of faith became a touchstone, though not everyone accepted them. He died in 1204. His key tension is reason and revelation—faith seeking intelligibility without surrendering its ground.",
+    "key_idea": "Maimonides makes Torah systematic and rational: law without chaos, faith without superstition, and a God beyond all images.",
+    "works": ["mishneh-torah", "guide-perplexed", "mishnah", "talmud-bavli"],
+    "places": ["cairo", "jerusalem"],
+    "themes": ["halakhah", "interpretation", "ethics", "torah-study"],
+    "connections": [
+      {"to": "rashi", "why": "Maimonides' code and Rashi's commentary represent the two great medieval paths into Torah."},
+      {"to": "ibn-ezra", "why": "Ibn Ezra is a contemporary whose plain-sense and philosophical concerns intersect with Maimonides' project."},
+      {"to": "yehuda-halevi", "why": "Maimonides' rationalism answers, and partly rejects, Halevi's defense of revelation and chosenness."},
+      {"to": "nachmanides", "why": "Nachmanides defends traditional Kabbalah against what he sees as Maimonides' over-rationalization."},
+      {"to": "joseph-karo", "why": "Karo's Shulchan Aruch inherits the codifying impulse of the Mishneh Torah."}
+    ],
+    "sources": [
+      {"label": "Stanford Encyclopedia of Philosophy — Maimonides", "url": "https://plato.stanford.edu/entries/maimonides/"},
+      {"label": "Sefaria — Guide for the Perplexed", "url": "https://www.sefaria.org/Guide_for_the_Perplexed"}
+    ]
+  },
+  {
+    "id": "yehuda-halevi",
+    "name": "Judah Halevi",
+    "he_name": "יְהוּדָה הַלֵּוִי",
+    "dates": "c. 1075–1141",
+    "era": "Rishonim",
+    "bio": "Judah Halevi is the Hebrew poet of the Middle Ages and the author of the Kuzari, the most influential defense of Judaism against philosophy. Born in Tudela around 1075, he practiced medicine and wrote liturgical poetry that entered the synagogue: hymns of longing for Jerusalem, songs of the Sabbath, selichot of repentance. His secular poems are among the finest in Hebrew, but his fame rests equally on the Kuzari, written in Arabic as a dialogue between the Khazar king and a Jewish sage. The book argues that the God of Abraham is known through revelation and history, not through Aristotle; that the Land of Israel is constitutive of Jewish life; and that the Hebrew language is uniquely suited to prophecy. In 1140 or 1141 he left Spain for the Land of Israel. Legends say he was killed at Jerusalem's gate; historians are uncertain. His key tension is love of a particular land and people against a universal philosophy.",
+    "key_idea": "Judah Halevi argues that Judaism is known through revelation, peoplehood, and land—not through philosophy alone.",
+    "works": ["kuzari", "siddur", "psalms"],
+    "places": ["jerusalem"],
+    "themes": ["chosenness", "land-of-israel", "prayer", "kavvanah", "messianism"],
+    "connections": [
+      {"to": "rambam", "why": "Halevi's Kuzari and Maimonides' Guide offer rival answers to the challenge of philosophy."},
+      {"to": "ibn-ezra", "why": "The two Spanish contemporaries represent poetry and grammar, revelation and reason, in the same generation."},
+      {"to": "saadia-gaon", "why": "Halevi radicalizes Saadia's defense of tradition by grounding Judaism in revelation and land rather than reason."},
+      {"to": "shlomo-alkabetz", "why": "Alkabetz's Lecha Dodi inherits Halevi's liturgical language of longing for Jerusalem."}
+    ],
+    "sources": [
+      {"label": "Stanford Encyclopedia of Philosophy — Judah Halevi", "url": "https://plato.stanford.edu/entries/halevi/"},
+      {"label": "Sefaria — Kuzari", "url": "https://www.sefaria.org/Kuzari"}
+    ]
+  },
+  {
+    "id": "saadia-gaon",
+    "name": "Saadia Gaon",
+    "he_name": "סַעַדְיָה גָאוֹן",
+    "dates": "882–942",
+    "era": "Geonic",
+    "bio": "Saadia ben Joseph al-Fayyumi is the first great medieval Jewish philosopher and the most formidable Gaon of the Babylonian academies. Born in Egypt in 882, he studied in Tiberias and settled in Babylonia, where he became head of the academy at Sura in 928. He translated the Hebrew Bible into Arabic with a commentary—the Tafsir—making Scripture accessible to Arabic-speaking Jews, and he wrote the first systematic Jewish philosophy, Emunot ve-Deot (Beliefs and Opinions), which used reason to defend creation, revelation, and reward. He fought the Karaite challenge to rabbinic authority, and he intervened in the calendar controversy of 921–923, upholding the Babylonian calculation against the Palestinian sage Ben Meir. His polemics were fierce, his scholarship encyclopedic. Historians regard him as the founder of Jewish rationalism, a century before Maimonides. His key tension is tradition and reason: he insists that the Oral Torah is authentic and that it can be defended philosophically.",
+    "key_idea": "Saadia makes Judaism argue: revelation and reason, Scripture and Oral Torah, held together in Arabic.",
+    "works": ["mishnah", "talmud-bavli", "siddur"],
+    "places": ["sura", "babylon"],
+    "themes": ["oral-torah", "interpretation", "diaspora", "prayer"],
+    "connections": [
+      {"to": "rambam", "why": "Saadia's rational theology sets the stage for Maimonides' more systematic Aristotelian synthesis."},
+      {"to": "yehuda-halevi", "why": "Halevi's Kuzari pushes back against the rationalist confidence Saadia helped establish."},
+      {"to": "ibn-ezra", "why": "Ibn Ezra's grammar and philosophy continue Saadia's project of reading Scripture through reason and language."}
+    ],
+    "sources": [
+      {"label": "Stanford Encyclopedia of Philosophy — Saadia Gaon", "url": "https://plato.stanford.edu/entries/saadya/"},
+      {"label": "My Jewish Learning — Jewish history and thinkers", "url": "https://www.myjewishlearning.com/"}
+    ]
+  },
+  {
+    "id": "ibn-ezra",
+    "name": "Abraham ibn Ezra",
+    "he_name": "אַבְרָהָם אִבְּן עֶזְרָא",
+    "dates": "c. 1089–1167",
+    "era": "Rishonim",
+    "bio": "Abraham ibn Ezra is the Bible's most restless commentator. Born in Tudela around 1089, he left Spain in midlife and traveled through Italy, France, and England, earning a living by teaching and writing. His commentaries on nearly every book of the Hebrew Bible are marked by grammatical precision, a passion for the plain sense, and a willingness to note contradictions that unsettled later readers. He wrote on Hebrew grammar, astronomy, astrology, and philosophy; his poetry is less remembered than his prose. The 'secret of the Torah' he hints at—his cryptic allusions to a source-critical reading of the Pentateuch—fascinated Spinoza and modern scholars. He was a contemporary of Judah Halevi and Rashi's successors, and his work influenced Nachmanides, who often argues with him. His key tension is between tradition and observation: he trusts the received text and still lets grammar and reason expose its seams.",
+    "key_idea": "Ibn Ezra makes grammar and reason serve Scripture—the plain sense pursued with unsentimental precision.",
+    "works": ["genesis", "exodus", "psalms"],
+    "places": [],
+    "themes": ["interpretation", "wisdom", "torah-study", "diaspora"],
+    "connections": [
+      {"to": "rashi", "why": "Ibn Ezra's grammatical method offers a more technical alternative to Rashi's midrashic commentary."},
+      {"to": "rambam", "why": "Both philosophers read Scripture through reason, though Ibn Ezra stays closer to grammar and astronomy."},
+      {"to": "nachmanides", "why": "Nachmanides quotes and disputes Ibn Ezra repeatedly, making him a permanent interlocutor."},
+      {"to": "yehuda-halevi", "why": "The two Spanish contemporaries share a world of Hebrew poetry, philosophy, and wandering."}
+    ],
+    "sources": [
+      {"label": "Sefaria — Ibn Ezra on Genesis 1:1", "url": "https://www.sefaria.org/Ibn_Ezra_on_Genesis.1.1"},
+      {"label": "Sefaria — Tanakh", "url": "https://www.sefaria.org/texts/Tanakh"}
+    ]
+  },
+  {
+    "id": "nachmanides",
+    "name": "Nachmanides",
+    "he_name": "מֹשֶׁה בֶּן נַחְמָן",
+    "dates": "1194–c. 1270",
+    "era": "Rishonim",
+    "bio": "Moses ben Nahman—Nachmanides, or Ramban—is the great synthesizer of Spanish Judaism: Talmudist, Bible commentator, kabbalist, and communal leader. Born in Girona in 1194, he was trained in the Talmudic method of the Tosafists and became a physician and rabbi. His commentary on the Torah weaves halakhah, philosophy, and Kabbalah into a single reading, and he often challenges Rashi and Ibn Ezra with independent judgment. In 1263 he was summoned by King James I of Aragon to a public disputation with the convert Pablo Christiani in Barcelona; he defended Judaism so effectively that the Dominicans pressed for his punishment, and he left Spain for the Land of Israel. There he rebuilt Jewish life in Jerusalem and Acre and wrote of the land's holiness with personal intensity. His key tension is tradition and innovation: he insists on received authority while reading Scripture through the sefirot. He died around 1270.",
+    "key_idea": "Nachmanides reads Torah as law, history, and mystical symbol at once—the Land of Israel at the center.",
+    "works": ["genesis", "exodus", "talmud-bavli"],
+    "places": ["jerusalem", "canaan"],
+    "themes": ["interpretation", "land-of-israel", "mysticism", "halakhah"],
+    "connections": [
+      {"to": "rambam", "why": "Nachmanides defends Kabbalah and traditional particularity against Maimonides' rationalist universalism."},
+      {"to": "rashi", "why": "Rashi is Nachmanides' constant foil: he preserves Rashi's questions while often reversing his answers."},
+      {"to": "ibn-ezra", "why": "Ibn Ezra's plain-sense readings and hints at textual seams provoke Nachmanides' most technical arguments."},
+      {"to": "isaac-luria", "why": "Lurianic Kabbalah later reads Nachmanides as an early witness to the sefirotic reading of Torah."}
+    ],
+    "sources": [
+      {"label": "Sefaria — Ramban on Genesis 1:1", "url": "https://www.sefaria.org/Ramban_on_Genesis.1.1"},
+      {"label": "My Jewish Learning — Jewish history and thinkers", "url": "https://www.myjewishlearning.com/"}
+    ]
+  },
+  {
+    "id": "joseph-karo",
+    "name": "Joseph Karo",
+    "he_name": "יוֹסֵף קָארוֹ",
+    "dates": "1488–1575",
+    "era": "Rishonim",
+    "bio": "Joseph Karo is the author of the Shulchan Aruch, the most authoritative code of Jewish law. Born in Toledo in 1488, he was expelled from Spain as a child, wandered through Portugal, the Ottoman Empire, and Egypt, and settled in Safed, the Galilean town that became the center of Kabbalah. There he studied with the great legalists of his generation and wrote the Beit Yosef, an exhaustive commentary on Jacob ben Asher's Arba'ah Turim, tracing every ruling to its Talmudic sources. The Shulchan Aruch, published in 1565, distilled that work into a practical manual organized by topic. Karo was also a mystic; his Maggid Mesharim records the voice of a heavenly mentor that he believed spoke through him. His key tension is codification: to make law usable is to freeze debate, and the Shulchan Aruch became both a blessing and a battleground. Moses Isserles's glosses made it usable for Ashkenazim.",
+    "key_idea": "Karo turns centuries of argument into a usable code—the Shulchan Aruch becomes the common language of halakhah.",
+    "works": ["shulchan-aruch", "mishneh-torah", "talmud-bavli"],
+    "places": ["safed"],
+    "themes": ["halakhah", "oral-torah", "mysticism", "chain-of-tradition"],
+    "connections": [
+      {"to": "moses-isserles", "why": "Isserles's glosses turn Karo's Sephardic code into a shared Ashkenazi-Sephardi authority."},
+      {"to": "isaac-luria", "why": "Karo and Luria were contemporaries in Safed, the twin poles of its legal and mystical renaissance."},
+      {"to": "rambam", "why": "Karo's code realizes Maimonides' ambition to make the whole law accessible in one work."},
+      {"to": "judah-hanasi", "why": "The Shulchan Aruch does for later halakhah what the Mishnah did for Tannaitic teaching."}
+    ],
+    "sources": [
+      {"label": "Sefaria — Shulchan Arukh, Orach Chayim 1", "url": "https://www.sefaria.org/Shulchan_Arukh,_Orach_Chayim.1"},
+      {"label": "My Jewish Learning — Jewish law", "url": "https://www.myjewishlearning.com/"}
+    ]
+  },
+  {
+    "id": "moses-isserles",
+    "name": "Moses Isserles",
+    "he_name": "מֹשֶׁה אִיסֶרְלֶס",
+    "dates": "c. 1520–1572",
+    "era": "Rishonim",
+    "bio": "Moses Isserles—the Rema—is the Ashkenazi voice that made the Shulchan Aruch universal. Born in Kraków around 1520, he was a renowned Talmudist, philosopher, and communal leader, and he married the daughter of a prominent rabbi. When Joseph Karo's Shulchan Aruch reached Ashkenazi lands, Isserles added glosses (the Mapah, 'tablecloth') recording where Ashkenazi practice differed from Karo's Sephardic rulings. The result was a single code with two voices, and it became normative for Ashkenazim. His yeshiva in Kraków drew students from across Poland and Lithuania, and his responsa show a working rabbi immersed in communal disputes. He also wrote a philosophical work, Torat ha-Olah. His key tension is unity and difference: he accepted Karo's authority while insisting that Ashkenazi custom was not error. The Mapah's presence in the printed page is a daily reminder that Jewish law has a center and several accents. He died in 1572, three years before Karo.",
+    "key_idea": "Isserles preserves Ashkenazi custom inside a shared code—unity without uniformity.",
+    "works": ["shulchan-aruch", "talmud-bavli"],
+    "places": [],
+    "themes": ["halakhah", "diaspora", "oral-torah", "chain-of-tradition"],
+    "connections": [
+      {"to": "joseph-karo", "why": "Isserles's Mapah turns Karo's code into a dialogue between Sephardi and Ashkenazi law."},
+      {"to": "rambam", "why": "Isserles shares Maimonides' confidence that law and philosophy can inhabit one religious world."},
+      {"to": "rashi", "why": "Isserles stands in the Ashkenazi tradition of Rashi and the Tosafists whose customs he defends."}
+    ],
+    "sources": [
+      {"label": "My Jewish Learning — Moses Isserles", "url": "https://www.myjewishlearning.com/article/moses-isserles/"},
+      {"label": "Sefaria — Shulchan Arukh", "url": "https://www.sefaria.org/Shulchan_Arukh,_Orach_Chayim.1"}
+    ]
+  },
+  {
+    "id": "isaac-luria",
+    "name": "Isaac Luria",
+    "he_name": "יִצְחָק לוּרְיָא",
+    "dates": "1534–1572",
+    "era": "Acharonim",
+    "bio": "Isaac Luria—the Ari—is the most influential kabbalist in Jewish history. Born in Jerusalem in 1534, he was raised in Egypt, studied rabbinic law, and returned to Safed in 1570, where he gathered a circle of disciples and taught a radical new cosmology. His teaching, preserved mainly by his student Hayyim Vital, describes creation as tzimtzum—God's self-contraction—followed by the shattering of the vessels and the scattering of divine sparks. The task of the Jew is tikkun, repair: through mitzvot, prayer, and intention, the sparks are gathered and the world restored. Luria died in 1572 at thirty-eight, having written almost nothing; his influence spread through his students and the Zohar's reception. Historians treat the Lurianic system as a 16th-century construction, not an ancient tradition, though it draws on earlier Kabbalah. His key tension is exile and repair: the cosmos itself needs human effort.",
+    "key_idea": "Luria turns creation into a drama of exile and repair—tzimtzum, shattered vessels, and the human task of tikkun.",
+    "works": ["zohar"],
+    "places": ["safed", "cairo", "jerusalem"],
+    "themes": ["mysticism", "sefirot", "ein-sof", "tzimtzum", "shekhinah"],
+    "connections": [
+      {"to": "shimon-bar-yochai", "why": "Luria's authority rests on the Zohar attributed to Shimon bar Yochai, which he reads as a cosmic drama."},
+      {"to": "shlomo-alkabetz", "why": "Alkabetz was part of the Safed circle in which Luria's teaching took shape."},
+      {"to": "joseph-karo", "why": "Karo's legal authority and Luria's mystical authority made Safed a double center of Jewish life."},
+      {"to": "nachmanides", "why": "Lurianic Kabbalah inherits Nachmanides' sefirotic reading of Torah and his reverence for the land."}
+    ],
+    "sources": [
+      {"label": "My Jewish Learning — Isaac Luria", "url": "https://www.myjewishlearning.com/article/isaac-luria/"},
+      {"label": "Sefaria — Zohar", "url": "https://www.sefaria.org/Zohar"}
+    ]
+  },
+  {
+    "id": "shlomo-alkabetz",
+    "name": "Shlomo Alkabetz",
+    "he_name": "שְׁלֹמֹה אַלְקָבֵץ",
+    "dates": "c. 1505–1576",
+    "era": "Acharonim",
+    "bio": "Shlomo Alkabetz is the poet of the Sabbath and a central figure of the Safed mystical circle. Born in Salonika around 1505, he studied Kabbalah and Talmud, traveled to the Land of Israel, and settled in Safed, where he became a colleague of Joseph Karo and a member of the Safed circle that also gathered around Isaac Luria. He is best known for Lecha Dodi, the hymn sung at Friday evening services to welcome the Sabbath as a bride. Its refrain—'Come, my beloved, to meet the bride; let us welcome the Sabbath'—weaves together the language of the Song of Songs, the rabbinic idea of the Sabbath as a bride, and the kabbalistic image of the Shekhinah in exile. The poem's final stanza looks toward Jerusalem's restoration. Historians know few details of his life, but the hymn's reception is documented across the Jewish world. His key tension is exile and consolation: the song begins in longing and ends in hope.",
+    "key_idea": "Alkabetz's Lecha Dodi turns the Sabbath into a meeting with the divine presence—liturgy as mystical consolation.",
+    "works": ["siddur", "zohar"],
+    "places": ["safed"],
+    "themes": ["prayer", "kavvanah", "mysticism", "shabbat", "shekhinah"],
+    "connections": [
+      {"to": "isaac-luria", "why": "Alkabetz belonged to the Safed circle in which Luria's Kabbalah flourished."},
+      {"to": "joseph-karo", "why": "Karo was Alkabetz's colleague in Safed, and the two represent its legal and liturgical faces."},
+      {"to": "shimon-bar-yochai", "why": "The Zohar attributed to Shimon supplies the mystical imagery behind Alkabetz's hymn."},
+      {"to": "yehuda-halevi", "why": "Alkabetz's liturgy of longing for Jerusalem inherits Halevi's poetry of exile and return."}
+    ],
+    "sources": [
+      {"label": "Sefaria — Lekha Dodi", "url": "https://www.sefaria.org/Lekha_Dodi"},
+      {"label": "Sefaria — Siddur Ashkenaz", "url": "https://www.sefaria.org/Siddur_Ashkenaz"}
+    ]
+  }
+]
