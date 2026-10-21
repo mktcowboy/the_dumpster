@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dow Jones Weighting History — 2004–2026</title>
+  <style>/*__STYLES__*/</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="eyebrow">PRICE-WEIGHTED INDEX · APRIL 2004 – OCTOBER 2026</p>
+    <h1>Dow Jones Weighting History</h1>
+    <p class="sub">How the 30-stock Dow’s price weighting shifted as members, prices, and splits changed.</p>
+  </header>
+
+  <div class="stats" id="stats"></div>
+
+  <section>
+    <div class="section-head">
+      <div>
+        <h2>Today’s weights</h2>
+        <p class="hint" id="current-asof"></p>
+      </div>
+      <div class="legend-key"><span><i class="swatch-price"></i>Weight = price ÷ sum of prices</span></div>
+    </div>
+    <div class="current-grid">
+      <div class="table-wrap">
+        <table class="weights-table">
+          <thead><tr><th>#</th><th>Company</th><th class="num">Price</th><th class="num">Weight</th><th class="bar-col"></th></tr></thead>
+          <tbody id="current-rows"></tbody>
+        </table>
+      </div>
+      <aside class="note-card">
+        <h3>Why the Dow is different</h3>
+        <p>The Dow is price-weighted: a $500 stock carries ten times the weight of a $50 stock, regardless of market value. A 2-for-1 split therefore cuts a stock’s weight roughly in half unless the divisor is adjusted.</p>
+        <p>Index weights drift every day with prices. Membership changes reset them; the divisor keeps the index level continuous.</p>
+        <p class="hint" id="current-note"></p>
+      </aside>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <div>
+        <h2>Weight history</h2>
+        <p class="hint">Share of the 30-stock price sum at month-end. The shaded band is every other member.</p>
+      </div>
+      <label class="select-label">Show
+        <select id="history-mode">
+          <option value="average">Top 10 by average weight</option>
+          <option value="latest">Top 10 today</option>
+        </select>
+      </label>
+    </div>
+    <div class="chartbox">
+      <canvas id="history-chart" aria-label="Stacked area chart of Dow constituent weights over time"></canvas>
+      <div class="tooltip" id="history-tip"></div>
+    </div>
+    <div class="legend" id="history-legend"></div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <div>
+        <h2>Concentration</h2>
+        <p class="hint">Top-1, top-5, and top-10 share of the index, plus the effective number of equally weighted stocks.</p>
+      </div>
+    </div>
+    <div class="chartbox">
+      <canvas id="conc-chart" aria-label="Line chart of Dow concentration over time"></canvas>
+      <div class="tooltip" id="conc-tip"></div>
+    </div>
+    <div class="legend">
+      <span><i style="background:#14324f"></i>Top 10 share</span>
+      <span><i style="background:#1f8b82"></i>Top 5 share</span>
+      <span><i style="background:#da8734"></i>Top 1 share</span>
+      <span><i class="dash"></i>Effective N (right axis)</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Era snapshots</h2>
+    <p class="hint">The ten largest weights at selected month-ends. Bars are scaled within each era.</p>
+    <div class="era-grid" id="eras"></div>
+  </section>
+
+  <section>
+    <h2>Membership log</h2>
+    <p class="hint">Index changes since April 2004, with ticker renames noted separately.</p>
+    <div class="table-wrap">
+      <table class="change-table">
+        <thead><tr><th>Effective</th><th>Added</th><th>Removed</th><th>Note</th></tr></thead>
+        <tbody id="change-rows"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <details class="methodology">
+    <summary>Data sources, coverage &amp; method</summary>
+    <p>Membership: <a href="https://en.wikipedia.org/wiki/Historical_components_of_the_Dow_Jones_Industrial_Average">Historical components of the Dow Jones Industrial Average</a> (Wikipedia, CC BY-SA), retrieved October 21, 2026. The roster in force at each month-end is used. Prices: <a href="https://finance.yahoo.com/">Yahoo Finance</a>, monthly unadjusted closes converted back from split- and spinoff-adjusted history; latest weights use the October 20, 2026 close.</p>
+    <p>Weights are <span class="mono">price ÷ sum of the 30 prices</span>. Because the Dow is price-weighted, this is also the index’s portfolio weight. Monthly weights use the last trading day of each month; the report begins in April 2004, when Pfizer, AIG, and Verizon replaced AT&amp;T, Kodak, and International Paper.</p>
+    <p><strong>Coverage.</strong> DuPont is excluded from historical weights: Yahoo’s pre-2019 DD series does not reconcile with DuPont’s reported quarterly price ranges after the DowDuPont merger and 2019 split. General Motors (2004–2009), Kraft Foods (2008–2012), DowDuPont (2017–2019), and Walgreens Boots Alliance (2018–2024) are delisted and have no accessible unadjusted history. Weights are renormalized over the priced members; the number priced is shown in the chart tooltip and era cards. The current roster is fully priced.</p>
+    <p><strong>Checks.</strong> The method reproduces the published June 29, 2026 divisor of 0.16824816528350 and the December 31, 2019 price sum of 4,207.87 once Walgreens is added back. At March 31, 2008, the priced sum reconciles with the published divisor after allowing for the excluded DuPont and GM prices. Current weights match a published Dow weights snapshot within normal one-day price drift (this report uses the prior close).</p>
+    <p>Splits and spinoffs are handled by multiplying a month-end close by every split ratio dated after that month-end, recovering the price actually quoted at the time. This matters for names such as Apple, Nvidia, Nike, Walmart, GE, AIG, Citigroup, AT&amp;T, Honeywell, and 3M.</p>
+    <p>Not investment advice. Prices and memberships can contain errors; the original sources are linked above.</p>
+  </details>
+  <footer>Dow Jones weighting history · built from local snapshots · <a href="README.md">Project notes</a></footer>
+</div>
+<script>
+/*__DATA__*/
+/*__APP__*/
+</script>
+</body>
+</html>

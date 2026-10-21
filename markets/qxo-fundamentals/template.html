@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QXO, Inc. — Fundamentals, Statements &amp; Database</title>
+  <meta name="description" content="QXO, Inc. dashboard: overview metrics, income statement, balance sheet, cash flow, quarterly data, and a downloadable SQLite database.">
+  <style>/*__STYLES__*/</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="topline">
+      <span class="eyebrow">Company fundamentals</span>
+      <span class="source">Snapshot from <a href="https://www.roic.ai/quote/QXO" target="_blank" rel="noopener">roic.ai</a> · captured <span id="captured">2026-10-21</span></span>
+    </div>
+    <div class="hero">
+      <div>
+        <h1 id="company-name">QXO, Inc.</h1>
+        <p class="sub"><strong>NYSE: QXO</strong> <span class="dot">·</span> <span id="company-sector">Industrials</span> <span class="dot">·</span> <span id="company-industry">Industrial – Distribution</span></p>
+      </div>
+      <div class="price">
+        <div class="px" id="price">$10.46</div>
+        <div class="chg up" id="change">+0.32</div>
+        <div class="mcap" id="mcap">Market cap $10.85B</div>
+      </div>
+    </div>
+    <nav class="tabs" id="tabs" aria-label="Sections">
+      <button class="tab active" data-panel="overview" aria-selected="true">Overview</button>
+      <button class="tab" data-panel="income" aria-selected="false">Income statement</button>
+      <button class="tab" data-panel="balance" aria-selected="false">Balance sheet</button>
+      <button class="tab" data-panel="cashflow" aria-selected="false">Cash flow</button>
+      <button class="tab" data-panel="quarterly" aria-selected="false">Quarterly</button>
+      <button class="tab" data-panel="news" aria-selected="false">News</button>
+      <button class="tab" data-panel="database" aria-selected="false">Database</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="panel" id="panel-overview">
+      <div class="stats" id="stats"></div>
+
+      <div class="section-head">
+        <div>
+          <h2>Overview metrics</h2>
+          <p class="hint">Annual and trailing-twelve-month figures. Per-share values in USD; totals in USD millions.</p>
+        </div>
+      </div>
+      <div class="table-wrap" id="overview-table"></div>
+
+      <div class="two-col">
+        <div>
+          <div class="section-head"><h2>Capital structure</h2><span class="hint">USD millions</span></div>
+          <div class="table-wrap compact" id="capital-table"></div>
+        </div>
+        <div>
+          <div class="section-head"><h2>Working capital</h2><span class="hint">USD millions</span></div>
+          <div class="table-wrap compact" id="working-table"></div>
+        </div>
+      </div>
+
+      <div class="section-head"><h2>Growth rates</h2><span class="hint">Average rate of change</span></div>
+      <div class="table-wrap compact" id="growth-table"></div>
+
+      <details class="about">
+        <summary>Company description</summary>
+        <p id="description"></p>
+        <p id="business"></p>
+        <dl class="facts" id="company-facts"></dl>
+      </details>
+    </section>
+
+    <section class="panel" id="panel-income" hidden>
+      <div class="section-head">
+        <div>
+          <h2>Income statement</h2>
+          <p class="hint">USD millions unless the line item is per share or a ratio. Fiscal years end December 31.</p>
+        </div>
+        <label class="toggle"><input type="checkbox" class="hide-empty" checked> Hide empty rows</label>
+      </div>
+      <div class="table-wrap tall" id="income-table"></div>
+    </section>
+
+    <section class="panel" id="panel-balance" hidden>
+      <div class="section-head">
+        <div>
+          <h2>Balance sheet</h2>
+          <p class="hint">USD millions unless the line item is per share or a ratio. Fiscal years end December 31.</p>
+        </div>
+        <label class="toggle"><input type="checkbox" class="hide-empty" checked> Hide empty rows</label>
+      </div>
+      <div class="table-wrap tall" id="balance-table"></div>
+    </section>
+
+    <section class="panel" id="panel-cashflow" hidden>
+      <div class="section-head">
+        <div>
+          <h2>Cash flow statement</h2>
+          <p class="hint">USD millions unless the line item is per share or a ratio. Fiscal years end December 31.</p>
+        </div>
+        <label class="toggle"><input type="checkbox" class="hide-empty" checked> Hide empty rows</label>
+      </div>
+      <div class="table-wrap tall" id="cashflow-table"></div>
+    </section>
+
+    <section class="panel" id="panel-quarterly" hidden>
+      <div class="section-head">
+        <div>
+          <h2>Quarterly data</h2>
+          <p class="hint">Revenue in USD millions; EPS and dividends per share in USD.</p>
+        </div>
+      </div>
+      <div class="mini-grid">
+        <div>
+          <h3>Revenue</h3>
+          <div class="table-wrap compact" id="q-revenue"></div>
+        </div>
+        <div>
+          <h3>Earnings per share</h3>
+          <div class="table-wrap compact" id="q-eps"></div>
+        </div>
+        <div>
+          <h3>Dividends per share</h3>
+          <div class="table-wrap compact" id="q-dps"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" id="panel-news" hidden>
+      <div class="section-head">
+        <div>
+          <h2>Company news</h2>
+          <p class="hint">Headlines collected by roic.ai. Dates come from source URLs where available; otherwise from the page's relative labels.</p>
+        </div>
+      </div>
+      <ol class="news" id="news-list"></ol>
+    </section>
+
+    <section class="panel" id="panel-database" hidden>
+      <div class="section-head">
+        <div>
+          <h2>Start a database</h2>
+          <p class="hint">This page ships with a SQLite database built from the same snapshot. Download it, or export the SQL and JSON below.</p>
+        </div>
+      </div>
+
+      <div class="db-stats" id="db-stats"></div>
+
+      <div class="db-actions">
+        <a class="btn primary" href="qxo.sqlite" download="qxo.sqlite">Download qxo.sqlite</a>
+        <a class="btn" id="download-sql" href="#" download="qxo.sql">Download qxo.sql</a>
+        <a class="btn" id="download-json" href="#" download="qxo.json">Download qxo.json</a>
+      </div>
+      <p class="hint">Load the dump with <code>sqlite3 qxo.db &lt; qxo.sql</code>, or open <code>qxo.sqlite</code> directly.</p>
+
+      <div class="two-col db-cols">
+        <div>
+          <h3>Schema</h3>
+          <pre><code>companies (
+  ticker TEXT PRIMARY KEY, name, exchange,
+  price, price_change, market_cap_millions,
+  sector, industry, ceo, employees, address,
+  ipo_date, cik, isin, cusip, website,
+  description, business,
+  source_overview, source_financials, captured_at
+)
+
+facts (
+  ticker, dataset, period, period_type,
+  as_of, section, item, value, unit,
+  PRIMARY KEY (ticker, dataset, period, section, item)
+)
+
+news (
+  ticker, published, source, title, url,
+  PRIMARY KEY (ticker, url)
+)</code></pre>
+          <p class="hint"><code>dataset</code> is one of overview, income, balance, cashflow, capital_structure, working_capital, growth, or quarterly.</p>
+        </div>
+        <div>
+          <h3>Example queries</h3>
+          <pre><code>-- Revenue and net income by year
+SELECT period,
+       MAX(CASE WHEN dataset='income'
+                AND item='Sales/Revenue/Turnover'
+                THEN value END) AS revenue,
+       MAX(CASE WHEN dataset='income'
+                AND item='Net Income, GAAP'
+                THEN value END) AS net_income
+FROM facts
+GROUP BY period
+ORDER BY period;
+
+-- Full 2025 balance sheet, in order
+SELECT section, item, value, unit
+FROM facts
+WHERE dataset='balance' AND period='2025'
+ORDER BY rowid;
+
+-- Latest quarterly revenue
+SELECT period, value
+FROM facts
+WHERE dataset='quarterly' AND item='Revenue'
+  AND period_type='quarter'
+ORDER BY period;
+
+-- Headlines
+SELECT published, source, title
+FROM news ORDER BY published DESC;</code></pre>
+        </div>
+      </div>
+
+      <div class="note">
+        <strong>Caveats.</strong> Values are a point-in-time snapshot of roic.ai, rounded as displayed there. Negative values are stored as reported; missing values are NULL. The annual statements cover fiscal 2011–2025; overview metrics add TTM through June 2026. Verify against filings before relying on the data.
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>Source: <a href="https://www.roic.ai/quote/QXO" target="_blank" rel="noopener">roic.ai/quote/QXO</a> and <a href="https://www.roic.ai/quote/QXO/financials" target="_blank" rel="noopener">financials</a></span>
+    <span id="footer-captured"></span>
+  </footer>
+</div>
+<script>
+/*__DATA__*/
+/*__STATS__*/
+/*__SQL__*/
+/*__APP__*/
+</script>
+</body>
+</html>
