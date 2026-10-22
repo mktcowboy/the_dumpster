@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Oklahoma for sale</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+<style>
+  :root {
+    --bg: #14160f;
+    --bg-2: #1e2318;
+    --bg-3: #282e20;
+    --ink: #f3efe2;
+    --muted: #b4ad99;
+    --line: #3a4030;
+    --accent: #e4b15a;
+    --res: #8eb8c9;
+    --com: #d7a07a;
+    --land: #a9c47a;
+    --distress: #e08b78;
+    --unknown: #9a9486;
+    --danger: #e07a6a;
+    --ok: #b7c98a;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font: 14px/1.45 "Segoe UI", system-ui, sans-serif;
+  }
+  header {
+    display: flex; gap: 16px; align-items: flex-end; justify-content: space-between;
+    padding: 18px 22px 12px; border-bottom: 1px solid var(--line);
+  }
+  h1 { font: 600 28px/1.1 Georgia, "Iowan Old Style", Palatino, serif; margin: 0; letter-spacing: -0.02em; }
+  h1 span { color: var(--accent); }
+  .sub { color: var(--muted); margin: 4px 0 0; max-width: 720px; }
+  header .actions { display: flex; gap: 8px; align-items: center; }
+  button, select, input {
+    background: var(--bg-3); color: var(--ink); border: 1px solid var(--line);
+    border-radius: 8px; padding: 7px 10px; font: inherit;
+  }
+  button { cursor: pointer; }
+  button.primary { background: var(--accent); color: #241c0c; border-color: transparent; font-weight: 650; }
+  button:disabled { opacity: 0.55; cursor: wait; }
+  .filters {
+    display: flex; flex-wrap: wrap; gap: 8px; align-items: end;
+    padding: 12px 22px; border-bottom: 1px solid var(--line); background: #191c14;
+  }
+  label { display: flex; flex-direction: column; gap: 3px; color: var(--muted); font-size: 11px; letter-spacing: 0.04em; text-transform: uppercase; }
+  label.grow { flex: 1 1 180px; }
+  label input, label select { text-transform: none; letter-spacing: 0; font-size: 14px; color: var(--ink); }
+  .checks { display: flex; gap: 12px; align-items: center; color: var(--ink); text-transform: none; letter-spacing: 0; font-size: 13px; padding-bottom: 6px; }
+  .checks label { flex-direction: row; align-items: center; gap: 6px; text-transform: none; letter-spacing: 0; color: var(--ink); font-size: 13px; }
+  .stats { display: flex; flex-wrap: wrap; gap: 8px; padding: 12px 22px 0; }
+  .stat {
+    background: var(--bg-2); border: 1px solid var(--line); border-radius: 10px;
+    padding: 8px 12px; min-width: 110px;
+  }
+  .stat b { display: block; font-size: 18px; font-variant-numeric: tabular-nums; }
+  .stat span { color: var(--muted); font-size: 12px; }
+  .layout { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr); gap: 12px; padding: 12px 22px; }
+  #map { height: 520px; border-radius: 12px; border: 1px solid var(--line); background: #0e100c; }
+  #detail {
+    background: var(--bg-2); border: 1px solid var(--line); border-radius: 12px;
+    padding: 14px 16px; max-height: 520px; overflow: auto;
+  }
+  #detail h2 { font: 600 20px/1.25 Georgia, Palatino, serif; margin: 0 0 4px; }
+  #detail .meta { color: var(--muted); margin-bottom: 10px; }
+  dl { display: grid; grid-template-columns: 140px 1fr; gap: 4px 10px; margin: 0 0 12px; }
+  dt { color: var(--muted); }
+  dd { margin: 0; }
+  .tag {
+    display: inline-block; border-radius: 999px; padding: 1px 8px; font-size: 12px;
+    border: 1px solid var(--line); margin-right: 4px;
+  }
+  .tag.residential { color: var(--res); }
+  .tag.commercial { color: var(--com); }
+  .tag.land { color: var(--land); }
+  .tag.distressed, .tag.unknown { color: var(--distress); }
+  table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+  th, td { text-align: left; padding: 7px 8px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+  th { color: var(--muted); font-weight: 600; font-size: 12px; cursor: pointer; position: sticky; top: 0; background: #191c14; }
+  td.num, th.num { text-align: right; }
+  tr.data { cursor: pointer; }
+  tr.data:hover, tr.data.on { background: #2a3122; }
+  .wrap { padding: 0 22px 18px; }
+  .scroller { max-height: 460px; overflow: auto; border: 1px solid var(--line); border-radius: 12px; }
+  .panels { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; padding: 0 22px 22px; }
+  .panel { background: var(--bg-2); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; }
+  .panel h3 { margin: 0 0 8px; font-size: 15px; }
+  .note { color: var(--muted); font-size: 13px; }
+  .empty { padding: 28px 8px; color: var(--muted); }
+  a { color: var(--accent); }
+  .banner { margin: 12px 22px 0; padding: 10px 12px; border-radius: 10px; background: #2a2618; border: 1px solid #5c4d28; color: #f0e2bc; }
+  .src { display: flex; justify-content: space-between; gap: 12px; padding: 6px 0; border-bottom: 1px solid var(--line); }
+  .src .access { font-size: 12px; text-transform: uppercase; letter-spacing: 0.04em; }
+  .access.working { color: var(--ok); }
+  .access.needs-key { color: var(--accent); }
+  .access.manual, .access.blocked { color: var(--distress); }
+  .leaflet-container { background: #0e100c; font: inherit; }
+  @media (max-width: 980px) {
+    .layout, .panels { grid-template-columns: 1fr; }
+    header { flex-direction: column; align-items: flex-start; }
+    #map, #detail { max-height: none; height: 380px; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>Oklahoma <span>for sale</span></h1>
+    <p class="sub">Statewide listings from public feeds that allow automated access. Asking prices, auction bids, and assessor values are labeled. Nothing on this page is estimated.</p>
+  </div>
+  <div class="actions">
+    <span id="syncLabel" class="note"></span>
+    <button id="csvBtn" type="button">Export CSV</button>
+    <button id="syncBtn" class="primary" type="button">Sync now</button>
+  </div>
+</header>
+<div id="banner" class="banner" hidden></div>
+<div class="filters">
+  <label class="grow">Search<input id="q" placeholder="Address, city, county, case"></label>
+  <label>Category
+    <select id="category">
+      <option value="">All</option>
+      <option value="residential">Residential</option>
+      <option value="commercial">Commercial</option>
+      <option value="land">Land</option>
+      <option value="distressed">Distressed</option>
+      <option value="unknown">Type unknown</option>
+    </select>
+  </label>
+  <label>Type<select id="type"><option value="">All</option></select></label>
+  <label>County<select id="county"><option value="">All</option></select></label>
+  <label>Status<select id="status"><option value="">All</option></select></label>
+  <label>Source<select id="source"><option value="">All</option></select></label>
+  <label>Min price<input id="minPrice" inputmode="numeric" placeholder="0"></label>
+  <label>Max price<input id="maxPrice" inputmode="numeric" placeholder="Any"></label>
+  <label>Area
+    <select id="radius">
+      <option value="">Statewide</option>
+      <option value="50">Within 50 mi of downtown OKC</option>
+      <option value="25">Within 25 mi</option>
+      <option value="100">Within 100 mi</option>
+    </select>
+  </label>
+  <label>Sort
+    <select id="sort">
+      <option value="price-asc">Price, low to high</option>
+      <option value="price-desc">Price, high to low</option>
+      <option value="ppsf-asc">$ / sq ft</option>
+      <option value="ppa-asc">$ / acre</option>
+      <option value="sqft-desc">Living area</option>
+      <option value="acres-desc">Acreage</option>
+      <option value="dom-desc">Days on market</option>
+      <option value="dist-asc">Miles from OKC</option>
+      <option value="county">County</option>
+      <option value="sale">Sale date</option>
+    </select>
+  </label>
+  <div class="checks">
+    <label><input type="checkbox" id="hideOff" checked> Hide off-market</label>
+    <label><input type="checkbox" id="priced"> Has a price</label>
+  </div>
+</div>
+<div class="stats" id="stats"></div>
+<div class="layout">
+  <div id="map"></div>
+  <aside id="detail"><p class="note">Select a listing on the map or in the table.</p></aside>
+</div>
+<div class="wrap">
+  <div class="scroller">
+    <table id="grid">
+      <thead>
+        <tr>
+          <th data-k="address">Address</th>
+          <th data-k="city">City</th>
+          <th data-k="county">County</th>
+          <th data-k="propertyType">Type</th>
+          <th data-k="price" class="num">Price</th>
+          <th data-k="sqft" class="num">Sq ft</th>
+          <th data-k="acres" class="num">Acres</th>
+          <th data-k="pricePerSqft" class="num">$/sq ft</th>
+          <th data-k="pricePerAcre" class="num">$/acre</th>
+          <th data-k="yearBuilt" class="num">Year</th>
+          <th data-k="daysOnMarket" class="num">DOM</th>
+          <th data-k="capRate" class="num">Cap</th>
+          <th data-k="status">Status</th>
+          <th data-k="source">Source</th>
+          <th data-k="distanceMi" class="num">Mi</th>
+        </tr>
+      </thead>
+      <tbody id="rows"></tbody>
+    </table>
+  </div>
+  <p id="tableNote" class="note"></p>
+</div>
+<div class="panels">
+  <section class="panel">
+    <h3>By county</h3>
+    <div id="byCounty"></div>
+  </section>
+  <section class="panel">
+    <h3>By city</h3>
+    <div id="byCity"></div>
+  </section>
+  <section class="panel">
+    <h3>By type</h3>
+    <div id="byType"></div>
+  </section>
+  <section class="panel">
+    <h3>Sources</h3>
+    <p class="note">Working feeds are fetched by sync. Keyed APIs run only when the env var is set. Manual sources are not scraped.</p>
+    <div id="sources"></div>
+  </section>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+<script>
+const $ = id => document.getElementById(id);
+const money = n => n == null || n === '' ? '—' : Number(n).toLocaleString('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 });
+const num = (n, d = 0) => n == null || n === '' || Number.isNaN(Number(n)) ? '—' : Number(n).toLocaleString('en-US', { maximumFractionDigits: d });
+const dash = v => v == null || v === '' ? '—' : v;
+
+let listings = [];
+let catalog = [];
+let live = {};
+let selected = null;
+let map, layer, streets, photo;
+
+function priceOf(l) {
+  const n = Number(l.price ?? l.openingBid);
+  return Number.isFinite(n) && n > 0 ? n : null;
+}
+function median(values) {
+  const xs = values.filter(n => n != null).sort((a, b) => a - b);
+  if (!xs.length) return null;
+  const mid = Math.floor(xs.length / 2);
+  return xs.length % 2 ? xs[mid] : Math.round((xs[mid - 1] + xs[mid]) / 2);
+}
+function categoryOf(l) {
+  return $('category').value === 'distressed' ? (l.distressed ? 'distressed' : '') : (l.propertyCategory || 'unknown');
+}
+function passes(l) {
+  if ($('hideOff').checked && l.removedAt) return false;
+  const cat = $('category').value;
+  if (cat === 'distressed' && !l.distressed) return false;
+  if (cat && cat !== 'distressed' && (l.propertyCategory || 'unknown') !== cat) return false;
+  if ($('type').value && l.propertyType !== $('type').value) return false;
+  if ($('county').value && l.county !== $('county').value) return false;
+  if ($('status').value && l.status !== $('status').value) return false;
+  if ($('source').value && l.source !== $('source').value) return false;
+  const p = priceOf(l);
+  if ($('priced').checked && p == null) return false;
+  const min = Number($('minPrice').value);
+  const max = Number($('maxPrice').value);
+  if ($('minPrice').value && (p == null || p < min)) return false;
+  if ($('maxPrice').value && (p == null || p > max)) return false;
+  const radius = $('radius').value;
+  if (radius) {
+    if (radius === '50') { if (l.inArea !== true) return false; }
+    else if (!(Number(l.distanceMi) <= Number(radius))) return false;
+  }
+  const q = $('q').value.trim().toLowerCase();
+  if (q) {
+    const blob = [l.address, l.city, l.county, l.zip, l.caseNumber, l.source, l.propertyType].join(' ').toLowerCase();
+    if (!blob.includes(q)) return false;
+  }
+  return true;
+}
+function sortRows(rows) {
+  const key = $('sort').value;
+  const val = l => {
+    if (key.startsWith('price')) return priceOf(l);
+    if (key.startsWith('ppsf')) return l.pricePerSqft;
+    if (key.startsWith('ppa')) return l.pricePerAcre;
+    if (key.startsWith('sqft')) return l.sqft;
+    if (key.startsWith('acres')) return l.acres;
+    if (key.startsWith('dom')) return l.daysOnMarket;
+    if (key.startsWith('dist')) return l.distanceMi;
+    if (key === 'county') return l.county || '';
+    if (key === 'sale') return l.auctionDate || '';
+    return 0;
+  };
+  const dir = key.endsWith('asc') || key === 'county' || key === 'sale' ? 1 : -1;
+  return rows.slice().sort((a, b) => {
+    const av = val(a), bv = val(b);
+    if (av == null && bv == null) return 0;
+    if (av == null) return 1;
+    if (bv == null) return -1;
+    if (typeof av === 'string') return av.localeCompare(bv) * (key === 'sale' ? 1 : dir);
+    return (av - bv) * dir;
+  });
+}
+function colorOf(l) {
+  if (l.propertyCategory === 'commercial') return '#d7a07a';
+  if (l.propertyCategory === 'land') return '#a9c47a';
+  if (l.propertyCategory === 'residential') return '#8eb8c9';
+  return '#e08b78';
+}
+function fillSelect(id, values) {
+  const el = $(id);
+  const current = el.value;
+  const first = el.options[0];
+  el.innerHTML = '';
+  el.appendChild(first);
+  [...values].sort().forEach(v => {
+    const o = document.createElement('option');
+    o.value = v; o.textContent = v;
+    el.appendChild(o);
+  });
+  if ([...el.options].some(o => o.value === current)) el.value = current;
+}
+function groupTable(rows, keyFn) {
+  const map = new Map();
+  rows.forEach(l => {
+    const k = keyFn(l) || 'Unknown';
+    if (!map.has(k)) map.set(k, []);
+    map.get(k).push(l);
+  });
+  const items = [...map.entries()].sort((a, b) => b[1].length - a[1].length || String(a[0]).localeCompare(String(b[0]))).slice(0, 12);
+  if (!items.length) return '<p class="note">Nothing in this filter.</p>';
+  return '<table><thead><tr><th>Name</th><th class="num">Count</th><th class="num">Median price</th></tr></thead><tbody>' +
+    items.map(([k, list]) => `<tr><td>${escapeHtml(k)}</td><td class="num">${list.length}</td><td class="num">${money(median(list.map(priceOf)))}</td></tr>`).join('') +
+    '</tbody></table>';
+}
+function escapeHtml(s) {
+  return String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+}
+function render() {
+  const rows = sortRows(listings.filter(passes));
+  const prices = rows.map(priceOf);
+  const cats = ['residential', 'commercial', 'land', 'distressed'];
+  $('stats').innerHTML = [
+    ['Shown', rows.length],
+    ['Median price', money(median(prices))],
+    ['Residential', rows.filter(l => l.propertyCategory === 'residential').length],
+    ['Commercial', rows.filter(l => l.propertyCategory === 'commercial').length],
+    ['Land', rows.filter(l => l.propertyCategory === 'land').length],
+    ['Distressed', rows.filter(l => l.distressed).length],
+    ['With cap rate', rows.filter(l => l.capRate != null).length],
+    ['Recorded sale', rows.filter(l => l.recordedSale && l.recordedSale.price).length],
+  ].map(([label, value]) => `<div class="stat"><b>${value}</b><span>${label}</span></div>`).join('');
+
+  const commercialOn = $('category').value === 'commercial';
+  const landOn = $('category').value === 'land';
+  $('tableNote').textContent = rows.length
+    ? `${rows.length} listings. A mile limit hides rows with no distance. Cap rate appears only when a source provided it or the income used to compute it.`
+    : (commercialOn
+      ? 'No commercial rows. Crexi, LoopNet, CityFeet, and CommercialSearch block or forbid automated access, and the keyed APIs in this build do not cover office, retail, or industrial.'
+      : landOn
+        ? 'No land rows in this filter. LandWatch and the Land.com network block automated access. RentCast land listings appear here only when RENTCAST_API_KEY is set.'
+        : 'No listings match.');
+
+  $('rows').innerHTML = rows.map(l => `<tr class="data${selected === l.id ? ' on' : ''}" data-id="${escapeHtml(l.id)}">
+    <td>${escapeHtml(l.address)}</td>
+    <td>${escapeHtml(dash(l.city))}</td>
+    <td>${escapeHtml(dash(l.county))}</td>
+    <td>${escapeHtml(l.propertyType || 'unknown')}${l.distressed ? ' · distressed' : ''}</td>
+    <td class="num">${money(priceOf(l))}</td>
+    <td class="num">${num(l.sqft)}</td>
+    <td class="num">${l.acres == null ? '—' : num(l.acres, 2)}</td>
+    <td class="num">${l.pricePerSqft == null ? '—' : num(l.pricePerSqft, 0)}</td>
+    <td class="num">${l.pricePerAcre == null ? '—' : num(l.pricePerAcre, 0)}</td>
+    <td class="num">${dash(l.yearBuilt)}</td>
+    <td class="num" title="${escapeHtml(l.daysOnMarketBasis || '')}">${dash(l.daysOnMarket)}</td>
+    <td class="num" title="${escapeHtml(l.capRateBasis || '')}">${l.capRate == null ? '—' : num(l.capRate, 2) + '%'}</td>
+    <td>${escapeHtml(l.status || '')}${l.removedAt ? ' · off' : ''}</td>
+    <td>${escapeHtml(l.source || '')}</td>
+    <td class="num">${l.distanceMi == null ? '—' : (l.geoApprox ? '~' : '') + l.distanceMi}</td>
+  </tr>`).join('') || '<tr><td class="empty" colspan="15">No rows.</td></tr>';
+
+  $('byCounty').innerHTML = groupTable(rows, l => l.county);
+  $('byCity').innerHTML = groupTable(rows, l => l.city);
+  $('byType').innerHTML = groupTable(rows, l => l.distressed ? `${l.propertyType || 'unknown'} · distressed` : (l.propertyType || 'unknown'));
+  drawMap(rows);
+  if (selected && !rows.some(l => l.id === selected)) {
+    selected = null;
+    $('detail').innerHTML = '<p class="note">Select a listing on the map or in the table.</p>';
+  }
+}
+function drawMap(rows) {
+  if (!map) return;
+  layer.clearLayers();
+  const bounds = [];
+  rows.forEach(l => {
+    const lat = l.mapLat ?? l.lat, lon = l.mapLon ?? l.lon;
+    if (lat == null || lon == null) return;
+    const marker = L.circleMarker([lat, lon], {
+      radius: l.geoApprox || l.areaBasis === 'town' ? 5 : 7,
+      color: l.distressed ? '#e08b78' : '#1a1c14',
+      weight: l.distressed ? 2 : 1,
+      fillColor: colorOf(l),
+      fillOpacity: l.geoApprox ? 0.45 : 0.9,
+    });
+    marker.bindTooltip(`${l.address}<br>${money(priceOf(l))} · ${l.propertyType || 'unknown'}`, { direction: 'top' });
+    marker.on('click', () => select(l.id, false));
+    marker.addTo(layer);
+    bounds.push([lat, lon]);
+  });
+  if (bounds.length) map.fitBounds(bounds, { padding: [24, 24], maxZoom: 12 });
+}
+function field(label, value) {
+  if (value == null || value === '' || value === '—') return '';
+  return `<dt>${escapeHtml(label)}</dt><dd>${value}</dd>`;
+}
+function select(id, pan = true) {
+  selected = id;
+  const l = listings.find(x => x.id === id);
+  if (!l) return;
+  document.querySelectorAll('tr.data').forEach(tr => tr.classList.toggle('on', tr.dataset.id === id));
+  const p = priceOf(l);
+  const tags = `<span class="tag ${escapeHtml(l.propertyCategory || 'unknown')}">${escapeHtml(l.propertyCategory || 'unknown')}</span>` +
+    (l.distressed ? '<span class="tag distressed">distressed</span>' : '') +
+    `<span class="tag">${escapeHtml(l.status || '')}</span>`;
+  const comps = (l.comps || []).length ? `<table><thead><tr><th>Nearby</th><th class="num">Mi</th><th class="num">Price</th><th>Comparison</th><th>Basis</th></tr></thead><tbody>` +
+    l.comps.map(c => `<tr><td>${escapeHtml(c.address)}</td><td class="num">${c.distanceMi}</td><td class="num">${money(c.price)}</td><td>${compText(c)}</td><td>${escapeHtml(c.basis)}${c.loose ? ' · loose size' : ''}</td></tr>`).join('') +
+    '</tbody></table>' : '<p class="note">No nearby listing of the same type is inside the comparison radius.</p>';
+  const sold = (l.soldComps || []).length ? `<h3>Recorded sales nearby</h3><table><thead><tr><th>Address</th><th class="num">Mi</th><th class="num">Amount</th><th>Date</th><th>Source</th></tr></thead><tbody>` +
+    l.soldComps.map(c => `<tr><td>${escapeHtml(c.address)}</td><td class="num">${c.distanceMi}</td><td class="num">${money(c.price)}</td><td>${escapeHtml(dash(c.date))}</td><td>${escapeHtml(c.source)}</td></tr>`).join('') +
+    `</tbody></table><p class="note">${escapeHtml(l.soldComps[0].note || '')}</p>` : '<p class="note">No recorded sale amount is attached to a nearby listing. Oklahoma deeds can imply consideration from documentary stamps, and this tracker does not compute that.</p>';
+  const assessor = l.assessor ? `<h3>Assessor</h3><p class="note">${escapeHtml(l.assessor.note || '')}</p><dl>
+    ${field('Total value', money(l.assessor.totalValue))}
+    ${field('Assessed', money(l.assessor.totalAssessed))}
+    ${field('Land', money(l.assessor.landValue))}
+    ${field('Building', money(l.assessor.buildingValue))}
+    ${field('Parcel size', l.assessor.parcelSize != null ? `${l.assessor.parcelSize} ${l.assessor.parcelSizeUnits || ''}`.trim() : null)}
+    ${field('Class', escapeHtml(l.assessor.propertyClass || ''))}
+  </dl>` : '';
+  $('detail').innerHTML = `
+    <h2>${escapeHtml(l.address)}</h2>
+    <div class="meta">${escapeHtml([l.city, l.county, l.zip].filter(Boolean).join(' · '))}</div>
+    <div>${tags}</div>
+    <dl>
+      ${field('Price', money(p) + (l.saleType === 'sheriff' ? ' <span class="note">(opening bid)</span>' : ''))}
+      ${field('Appraisal', l.appraisedValue ? money(l.appraisedValue) + (l.appraisedValueBasis ? ` <span class="note">(${escapeHtml(l.appraisedValueBasis)})</span>` : '') : null)}
+      ${field('Type', escapeHtml(l.propertyType || ''))}
+      ${field('Beds / baths', (l.beds == null && l.baths == null) ? null : `${dash(l.beds)} / ${dash(l.baths)}`)}
+      ${field('Living area', l.sqft ? num(l.sqft) + ' sq ft' : null)}
+      ${field('Lot / acres', l.acres == null ? null : `${num(l.acres, 2)} ac${l.acresBasis ? ` <span class="note">(${escapeHtml(l.acresBasis)})</span>` : ''}`)}
+      ${field('$/sq ft', l.pricePerSqft == null ? null : num(l.pricePerSqft, 2) + (l.pricePerSqftBasis ? ' computed' : ''))}
+      ${field('$/acre', l.pricePerAcre == null ? null : num(l.pricePerAcre, 0) + (l.pricePerAcreBasis ? ' computed' : ''))}
+      ${field('Year built', l.yearBuilt)}
+      ${field('Days on market', l.daysOnMarket == null ? null : `${l.daysOnMarket} <span class="note">(${escapeHtml(l.daysOnMarketBasis || '')})</span>`)}
+      ${field('Status', escapeHtml(l.status || ''))}
+      ${field('Sale date', l.auctionDate)}
+      ${field('Case', escapeHtml(l.caseNumber || ''))}
+      ${field('Cap rate', l.capRate == null ? null : `${num(l.capRate, 2)}% <span class="note">(${escapeHtml(l.capRateBasis)})</span>`)}
+      ${field('NOI', l.noi == null ? null : money(l.noi) + (l.noiBasis ? ` <span class="note">(${escapeHtml(l.noiBasis)})</span>` : ''))}
+      ${field('Occupancy', l.occupancyPct == null ? null : `${num(l.occupancyPct, 1)}% <span class="note">(${escapeHtml(l.occupancyBasis || 'source')})</span>`)}
+      ${field('Tenants', l.tenants ? escapeHtml(typeof l.tenants === 'string' ? l.tenants : JSON.stringify(l.tenants)) : null)}
+      ${field('Lease terms', l.leaseTerms ? escapeHtml(typeof l.leaseTerms === 'string' ? l.leaseTerms : JSON.stringify(l.leaseTerms)) : null)}
+      ${field('Source', escapeHtml(l.source || ''))}
+      ${field('Miles from OKC', l.distanceMi == null ? null : `${l.geoApprox ? '~' : ''}${l.distanceMi}`)}
+      ${field('Link', l.url ? `<a href="${escapeHtml(l.url)}" target="_blank" rel="noopener">Source page</a>` : null)}
+    </dl>
+    ${l.capRate == null ? '<p class="note">Cap rate is blank because this source did not provide one, or the NOI and price needed to compute it.</p>' : ''}
+    ${l.recordedSale ? `<h3>Recorded sale on this property</h3><p>${money(l.recordedSale.price)} ${l.recordedSale.date ? '· ' + escapeHtml(l.recordedSale.date) : ''} · ${escapeHtml(l.recordedSale.source || '')}</p><p class="note">${escapeHtml(l.recordedSale.note || '')}</p>` : ''}
+    ${assessor}
+    <h3>Listing comps</h3>
+    ${comps}
+    ${sold}
+    ${l.notes ? `<p class="note">${escapeHtml(l.notes)}</p>` : ''}`;
+  const lat = l.mapLat ?? l.lat, lon = l.mapLon ?? l.lon;
+  if (pan && map && lat != null && lon != null) map.setView([lat, lon], Math.max(map.getZoom(), 12));
+  const tr = document.querySelector(`tr[data-id="${CSS.escape(id)}"]`);
+  if (tr) tr.scrollIntoView({ block: 'nearest' });
+}
+function compText(c) {
+  if (c.comparison === 'sqft' || c.comparison === 'acre') {
+    const unit = c.comparison === 'sqft' ? '/sq ft' : '/acre';
+    const delta = c.deltaPct == null ? '' : ` (${c.deltaPct > 0 ? '+' : ''}${c.deltaPct}%)`;
+    return `${num(c.compPerUnit, c.comparison === 'sqft' ? 0 : 0)}${unit} vs ${num(c.subjectPerUnit, 0)}${delta}`;
+  }
+  if (c.comparison === 'price' && c.deltaPct != null) return `price only ${c.deltaPct > 0 ? '+' : ''}${c.deltaPct}%`;
+  return 'no shared size';
+}
+function renderSources() {
+  const liveHtml = Object.entries(live).map(([name, row]) => {
+    const label = row.skipped ? 'skipped' : row.ok === false ? (row.error || 'error') : String(row.count ?? 0);
+    const cls = row.skipped ? 'needs-key' : row.ok === false ? 'manual' : 'working';
+    return `<div class="src"><div><b>${escapeHtml(name)}</b><div class="note">Last sync</div></div><div class="access ${cls}">${escapeHtml(label)}</div></div>`;
+  }).join('');
+  const catalogHtml = catalog.map(s => `<div class="src"><div><b>${escapeHtml(s.name)}</b><div class="note">${escapeHtml(s.fields || '')}${s.env ? ' Env: ' + escapeHtml(s.env) + '.' : ''}</div></div><div class="access ${escapeHtml(s.access)}">${escapeHtml(s.access)}</div></div>`).join('');
+  $('sources').innerHTML = (liveHtml ? '<h3>Last sync</h3>' + liveHtml : '') + catalogHtml;
+}
+function exportCsv() {
+  const rows = sortRows(listings.filter(passes));
+  const cols = ['address','city','zip','county','propertyCategory','propertyType','distressed','status','price','sqft','acres','pricePerSqft','pricePerAcre','yearBuilt','daysOnMarket','capRate','capRateBasis','occupancyPct','noi','source','url','lat','lon','distanceMi'];
+  const lines = [cols.join(',')];
+  rows.forEach(l => {
+    lines.push(cols.map(k => {
+      let v = k === 'price' ? priceOf(l) : l[k];
+      if (v == null) v = '';
+      v = String(v).replace(/"/g, '""');
+      return /[",\n]/.test(v) ? `"${v}"` : v;
+    }).join(','));
+  });
+  const blob = new Blob([lines.join('\n')], { type: 'text/csv' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'oklahoma-listings.csv';
+  a.click();
+  URL.revokeObjectURL(a.href);
+}
+async function load() {
+  const [listRes, srcRes] = await Promise.all([fetch('/api/listings'), fetch('/api/sources')]);
+  listings = await listRes.json();
+  const src = await srcRes.json();
+  catalog = src.catalog || [];
+  live = src.live || {};
+  fillSelect('type', new Set(listings.map(l => l.propertyType).filter(Boolean)));
+  fillSelect('county', new Set(listings.map(l => l.county).filter(Boolean)));
+  fillSelect('status', new Set(listings.map(l => l.status).filter(Boolean)));
+  fillSelect('source', new Set(listings.map(l => l.source).filter(Boolean)));
+  const status = await fetch('/api/status').then(r => r.json());
+  $('syncLabel').textContent = status.lastSync ? `Last sync ${new Date(status.lastSync).toLocaleString()}` : 'Not synced yet';
+  $('banner').hidden = listings.length > 0;
+  if (!listings.length) $('banner').textContent = 'No saved listings yet. Sync pulls the sheriff feeds and VRM. The first run geocodes new addresses and can take a few minutes. Commercial and land portals that block automation stay empty.';
+  renderSources();
+  render();
+}
+async function syncNow() {
+  $('syncBtn').disabled = true;
+  $('syncLabel').textContent = 'Syncing…';
+  const res = await fetch('/api/sync', { method: 'POST' });
+  const body = await res.json();
+  if (!body.ok && body.message && !/started/i.test(body.message)) {
+    $('syncLabel').textContent = body.message;
+    $('syncBtn').disabled = false;
+    return;
+  }
+  for (let i = 0; i < 120; i++) {
+    await new Promise(r => setTimeout(r, 2000));
+    const status = await fetch('/api/status').then(r => r.json());
+    $('syncLabel').textContent = status.syncing ? 'Syncing…' : `Last sync ${status.lastSync ? new Date(status.lastSync).toLocaleString() : ''}`;
+    if (!status.syncing && status.lastSync) break;
+  }
+  $('syncBtn').disabled = false;
+  await load();
+}
+function bootMap() {
+  if (typeof L === 'undefined') {
+    $('map').innerHTML = '<p class="empty">Map tiles need the Leaflet script. The table still works.</p>';
+    return;
+  }
+  map = L.map('map', { scrollWheelZoom: true }).setView([35.5, -97.0], 7);
+  streets = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', { attribution: 'Esri', maxZoom: 19 });
+  photo = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', { attribution: 'Esri', maxZoom: 19 });
+  streets.addTo(map);
+  L.control.layers({ Streets: streets, Satellite: photo }, {}).addTo(map);
+  layer = L.layerGroup().addTo(map);
+}
+document.querySelectorAll('.filters input, .filters select').forEach(el => el.addEventListener('input', render));
+$('rows').addEventListener('click', ev => {
+  const tr = ev.target.closest('tr[data-id]');
+  if (tr) select(tr.dataset.id);
+});
+document.querySelector('#grid thead').addEventListener('click', ev => {
+  const th = ev.target.closest('th[data-k]');
+  if (!th) return;
+  const k = th.dataset.k;
+  const mapKey = { price: 'price-asc', pricePerSqft: 'ppsf-asc', pricePerAcre: 'ppa-asc', sqft: 'sqft-desc', acres: 'acres-desc', daysOnMarket: 'dom-desc', distanceMi: 'dist-asc', county: 'county', address: 'county' };
+  if (mapKey[k]) { $('sort').value = $('sort').value === mapKey[k] && k === 'price' ? 'price-desc' : mapKey[k]; render(); }
+});
+$('csvBtn').addEventListener('click', exportCsv);
+$('syncBtn').addEventListener('click', syncNow);
+bootMap();
+load().catch(err => { $('banner').hidden = false; $('banner').textContent = 'Could not load listings. ' + err.message; });
+</script>
+</body>
+</html>
