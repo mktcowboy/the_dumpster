@@ -1,0 +1,16 @@
+{
+  "name": "oklahoma-real-estate-tracker",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Statewide Oklahoma for-sale tracker. Distressed sheriff and REO feeds, optional keyed listing APIs, and a local dashboard.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test",
+    "sync": "node server.js --sync-once",
+    "build-area": "node scripts/build-area.mjs"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
