@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <title>Nasdaq-100 Historical Constituents: All Changes 2007–2026</title>
+  <meta name="description" content="Every Nasdaq-100 constituent change from 2007 to 2026 — 272 companies tracked, ~12 changes per year. Full 2025–2026 change table and why the data is hard.">
+  <meta name="keywords" content="nasdaq 100 historical data survivorship bias, ndx point-in-time dataset, backtesting survivorship bias free, nasdaq component history python, claude code trading strategy, vibe trading algo, algorithmic trading data python, lopez de prado backtesting python, ndx-100 pit dataset, combinatorial purged cross validation">
+  <meta name="author" content="NDX PIT Dataset">
+  <meta name="robots" content="index, follow">
+  <meta name="google-site-verification" content="LnzBRuM3NZSk5BfH3owUQoI3UjCeCkfIRJ9vsVl9ATs">
+
+  
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.crucible-research.com/nasdaq-100-historical-constituents">
+  <meta property="og:title" content="Nasdaq-100 Historical Constituents: Every Change, 2007–2026">
+  <meta property="og:description" content="272 companies have passed through the Nasdaq-100 since 2007. The complete 2025–2026 change table, turnover statistics, and why assembling the full record is harder than it looks.">
+  <meta property="og:image" content="https://www.crucible-research.com/static/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Nasdaq-100 Historical Constituents: Every Change, 2007–2026">
+  <meta name="twitter:description" content="One company survived 6 trading days in the index. The SNDK ticker belonged to two different companies 18 years apart. The historical constituent record is messier than any list suggests.">
+  <meta name="twitter:image" content="https://www.crucible-research.com/static/img/og-cover.png">
+
+  
+  <link rel="canonical" href="https://www.crucible-research.com/nasdaq-100-historical-constituents">
+
+  
+  
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Nasdaq-100 Historical Constituents: Every Change From 2007 to 2026","description":"Every Nasdaq-100 constituent change from 2007 to 2026 — 272 companies tracked, roughly 12 changes per year. Complete 2025–2026 change table, turnover statistics, and why point-in-time membership data is hard to assemble.","author":{"@type":"Organization","name":"NDX PIT Dataset"},"publisher":{"@type":"Organization","name":"NDX PIT Dataset","url":"https://www.crucible-research.com"},"url":"https://www.crucible-research.com/nasdaq-100-historical-constituents","datePublished":"2026-07-15","dateModified":"2026-09-17"}
+</script>
+
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/svg+xml" href="/static/img/favicon.svg">
+  <link rel="shortcut icon" href="/static/img/favicon.svg">
+  <link rel="stylesheet" href="/static/css/style.css">
+  
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">NDX<span class="accent">.</span>PIT</a>
+      <div class="nav-links">
+        <a href="/validate">Validation</a>
+        <a href="/skills">Skills</a>
+        <a href="https://github.com/rujis90/crucible" target="_blank" rel="noopener">Crucible</a>
+        <a href="/#pricing" class="nav-cta">Buy $20 →</a>
+      </div>
+      <button class="nav-hamburger" aria-label="Menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+      <a href="/validate">Validation Report</a>
+      <a href="/skills">CLAUDE.md Skills</a>
+      <a href="https://github.com/rujis90/crucible" target="_blank">Crucible OSS</a>
+      <a href="/#pricing" class="nav-mobile-cta">Buy Dataset — $20</a>
+    </div>
+  </nav>
+
+  <main>
+
+
+<header class="article-hero">
+  <div class="container article-hero-inner">
+    <nav class="article-breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span>/</span>
+      Data
+    </nav>
+    <div class="article-eyebrow">
+      <span class="article-category">Index Data</span>
+      <span class="article-read-time">9 min read</span>
+    </div>
+    <h1 class="article-title">Nasdaq-100 Historical Constituents:<br>Every Change, <em>2007–2026</em></h1>
+    <p class="article-subtitle">272 companies have passed through the Nasdaq-100 since 2007 — roughly 12 changes per year. The full recent change table is below, along with the reasons assembling the complete record is harder than any single list suggests.</p>
+    <div class="article-tags">
+      <span class="article-tag">Nasdaq-100 constituents</span>
+      <span class="article-tag">index changes</span>
+      <span class="article-tag">historical components</span>
+      <span class="article-tag">point-in-time data</span>
+    </div>
+    <p class="article-date" style="margin-top: 20px;">August 2026</p>
+  </div>
+</header>
+
+
+<div class="article-layout">
+
+  
+  <article class="prose">
+
+    <p>If you are looking for the historical membership of the Nasdaq-100, here is the shape of the record. Between February 2007 and August 2026, <strong>272 distinct tickers</strong> held membership in the index. <strong>102 are members today</strong> (the count exceeds 100 because of dual share classes and recent spin-offs); <strong>170 have left</strong> — acquired, delisted, transferred to the NYSE, or dropped for falling below weight requirements. Across those 19.7 years the index recorded <strong>226 constituent changes</strong>, an average of just under 12 per year, with individual years ranging from 7 changes (2010, 2014, 2024) to 21 (2015).</p>
+
+    <p>The turnover mechanism itself changed in June 2026: after decades of annual December reconstitution plus ad-hoc replacements, Nasdaq moved the index to a <strong>regular quarterly rebalancing schedule</strong>. The June 2026 rebalance replaced five names at once. If your mental model of NDX turnover is "one December shuffle per year," it is now out of date.</p>
+
+    <h2 id="recent-changes">Every Constituent Change, 2025–2026</h2>
+
+    <p>The table below is the complete change record for 2025 through 2026-09, taken directly from the dataset this site maintains. Additions are green, removals red.</p>
+
+    <div class="table-scroll">
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Added</th>
+          <th>Removed</th>
+          <th>Reason</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr>
+          <td class="ct-label">2025-05-19</td>
+          <td class="ct-good">SHOP (Shopify)</td>
+          <td class="ct-bad">MDB (MongoDB)</td>
+          <td>MongoDB did not meet the minimum monthly weight requirements.</td>
+        </tr>
+        
+        <tr>
+          <td class="ct-label">2025-07-28</td>
+          <td class="ct-good">TRI (Thomson Reuters)</td>
+          <td>—</td>
+          <td>Thomson Reuters transferred its listing from NYSE to NASDAQ and replaced Ansys in the index.</td>
+        </tr>
+        
+        <tr>
+          <td class="ct-label">2025-07-28</td>
+          <td>—</td>
+          <td class="ct-bad">ANSS (Ansys)</td>
+          <td>Ansys was acquired by Synopsys.</td>
+        </tr>
+        
+        <tr>
+          <td class="ct-label">2025-10-20</td>
+          <td class="ct-good">SOLS (Solstice Advanced Materials)</td>
+          <td>—</td>
+          <td>Solstice Advanced Materials was spun off from Honeywell.</td>
+        </tr>
+        
+        <tr>
+          <td class="ct-label">2025-11-10</td>
+          <td>—</td>
+          <td class="ct-bad">SOLS (Solstice Advanced Materials)</td>
+          <td>Solstice Advanced Materials did not meet the minimum monthly weight requirements.</td>
+        </tr>
+        
+        <tr>
+          <td class="ct-label">2025-12-22</td>
+          <td class="ct-good">ALNY (Alnylam Pharmaceuticals)</td>
+          <td class="ct-bad">BIIB (Biogen)</td>
+          <td>Annual index reconstitution.</td>
+        </tr>
+        
+        <tr>
+          <td class="ct-label">2025-12-22</td>
+          <td class="ct-good">FER (Ferrovial SE)</td>
+          <td class="ct-bad">CDW (CDW Corporation)</td>
+          <td>Annual index reconstitution.</td>
+        </tr>
+        
+        <tr>
+          <td class="ct-label">2025-12-22</td>
+          <td class="ct-good">INSM (Insmed Incorporated)</td>
+          <td class="ct-bad">GFS (GlobalFoundries)</td>
+          <td>Annual index reconstitution.</td>
+        </tr>
+        
+        <tr>
+          <td class="ct-label">2025-12-22</td>
+          <td class="ct-good">MPWR (Monolithic Power Systems)</td>
+          <td class="ct-bad">LULU (Lululemon Athletica)</td>
+          <td>Annual index reconstitution.</td>
+        </tr>
+        
+        <tr>
+          <td class="ct-label">2025-12-22</td>
+          <td class="ct-good">STX (Seagate Technology Holdings)</td>
+          <td class="ct-bad">ON (ON Semiconductor)</td>
+          <td>Annual index reconstitution.</td>
+        </tr>
+        
+        <tr>
+          <td class="ct-label">2025-12-22</td>
+          <td class="ct-good">WDC (Western Digital)</td>
+          <td class="ct-bad">TTD (Trade Desk (The))</td>
+          <td>Annual index reconstitution.</td>
+        </tr>
+        
+        <tr>
+          <td class="ct-label">2026-01-05</td>
+          <td class="ct-good">VSNT (Versant)</td>
+          <td>—</td>
+          <td>Versant was spun off from Comcast.</td>
+        </tr>
+        
+        <tr>
+          <td class="ct-label">2026-01-09</td>
+          <td>—</td>
+          <td class="ct-bad">VSNT (Versant)</td>
+          <td>Versant did not meet the minimum monthly weight requirements.</td>
+        </tr>
+        
+        <tr>
+          <td class="ct-label">2026-01-20</td>
+          <td class="ct-good">WMT (Walmart)</td>
+          <td class="ct-bad">AZN (AstraZeneca)</td>
+          <td>Walmart transferred its listing from NYSE to NASDAQ and replaced AstraZeneca in the index. AstraZeneca was preparing to transfer its listing from Nasdaq to the NYSE.</td>
+        </tr>
+        
+        <tr>
+          <td class="ct-label">2026-04-20</td>
+          <td class="ct-good">SNDK (Sandisk)</td>
+          <td class="ct-bad">TEAM (Atlassian)</td>
+          <td>Atlassian did not meet the minimum monthly weight requirements.</td>
+        </tr>
+        
+        <tr>
+          <td class="ct-label">2026-05-18</td>
+          <td class="ct-good">LITE (Lumentum)</td>
+          <td class="ct-bad">CSGP (CoStar Group)</td>
+          <td>CoStar did not meet the minimum monthly weight requirements.</td>
+        </tr>
+        
+        <tr>
+          <td class="ct-label">2026-06-22</td>
+          <td class="ct-good">ALAB (Astera Labs)</td>
+          <td class="ct-bad">CHTR (Charter Communications)</td>
+          <td>Quarterly index reconstitution. Nasdaq-100 moved to a regular quarterly rebalancing schedule.</td>
+        </tr>
+        
+        <tr>
+          <td class="ct-label">2026-06-22</td>
+          <td class="ct-good">CRWV (CoreWeave)</td>
+          <td class="ct-bad">CTSH (Cognizant)</td>
+          <td>Quarterly index reconstitution. Nasdaq-100 moved to a regular quarterly rebalancing schedule.</td>
+        </tr>
+        
+        <tr>
+          <td class="ct-label">2026-06-22</td>
+          <td class="ct-good">NBIS (Nebius Group)</td>
+          <td class="ct-bad">INSM (Insmed Incorporated)</td>
+          <td>Quarterly index reconstitution. Nasdaq-100 moved to a regular quarterly rebalancing schedule.</td>
+        </tr>
+        
+        <tr>
+          <td class="ct-label">2026-06-22</td>
+          <td class="ct-good">RKLB (Rocket Lab)</td>
+          <td class="ct-bad">VRSK (Verisk Analytics)</td>
+          <td>Quarterly index reconstitution. Nasdaq-100 moved to a regular quarterly rebalancing schedule.</td>
+        </tr>
+        
+        <tr>
+          <td class="ct-label">2026-06-22</td>
+          <td class="ct-good">TER (Teradyne)</td>
+          <td class="ct-bad">ZS (Zscaler)</td>
+          <td>Quarterly index reconstitution. Nasdaq-100 moved to a regular quarterly rebalancing schedule.</td>
+        </tr>
+        
+        <tr>
+          <td class="ct-label">2026-06-29</td>
+          <td class="ct-good">HONA (Honeywell Aerospace)</td>
+          <td>—</td>
+          <td>Honeywell International spun off Honeywell Aerospace then renamed itself Honeywell Technologies.</td>
+        </tr>
+        
+        <tr>
+          <td class="ct-label">2026-07-07</td>
+          <td class="ct-good">SPCX (SpaceX)</td>
+          <td>—</td>
+          <td>SpaceX fast-tracked into index under new rules that aim to include newly public megacap companies more quickly.</td>
+        </tr>
+        
+        <tr>
+          <td class="ct-label">2026-08-04</td>
+          <td>—</td>
+          <td class="ct-bad">EA (Electronic Arts)</td>
+          <td>EA was taken private by a consortium led by the Public Investment Fund of Saudi Arabia.</td>
+        </tr>
+        
+      </tbody>
+    </table>
+    </div>
+
+    <p>Two details in this table repay attention. Versant (VSNT) was spun off from Comcast on January 5, 2026, entered the index automatically as a spin-off of a member, and was removed on January 9 — <strong>six trading days of membership</strong>. Insmed (INSM) was added in the December 2025 reconstitution and removed in the June 2026 one — in and out within six months. SpaceX (SPCX) was fast-tracked in on July 1, 2026 under new IPO-inclusion rules. Any backtest whose membership data is sampled monthly, or reconstructed loosely from announcement articles, gets these wrong.</p>
+
+    <h2 id="how-turnover-works">How Companies Enter and Leave</h2>
+
+    <p>Across the 226 recorded changes, the reasons break down into three broad groups:</p>
+
+    <div class="table-scroll">
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th>Mechanism</th>
+          <th>Count</th>
+          <th>What it means for your data</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="ct-label">Scheduled reconstitution (annual, now quarterly)</td>
+          <td>123</td>
+          <td>Predictable dates, ranked replacements</td>
+        </tr>
+        <tr>
+          <td class="ct-label">Below minimum weight requirements</td>
+          <td>37</td>
+          <td>Removals at arbitrary dates through the year</td>
+        </tr>
+        <tr>
+          <td class="ct-label">M&amp;A, taken private, mergers</td>
+          <td>34</td>
+          <td>The ticker's price history often disappears with it</td>
+        </tr>
+        <tr>
+          <td class="ct-label">Listing transfers, spin-offs, other</td>
+          <td>31</td>
+          <td>Mid-year, sometimes reversed within days</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <p>The scheduled reconstitutions are the easy part — dated, announced, documented. The other ~45% of changes are the reason maintaining an accurate membership record is a continuous job rather than a one-time scrape: they happen on arbitrary dates, sometimes reverse within a week, and in the M&amp;A cases they take the company's price history with them.</p>
+
+    <h2 id="why-hard">Why the Full Historical List Is Harder Than It Looks</h2>
+
+    <p>The change events themselves are public record. If a list of dates and tickers were the whole problem, this article would end here. In practice, three things break naive reconstructions.</p>
+
+    <h3>Tickers get reused by different companies</h3>
+    <p>SNDK was removed from the index in December 2008 — that was SanDisk, the flash-memory maker, later acquired by Western Digital. SNDK was added to the index in April 2026 — that is Sandisk again, but a different legal entity, spun back out of Western Digital eighteen years later. A reconstruction keyed on ticker symbols alone will happily splice these two companies into one continuous price series. Similar traps exist wherever a symbol was recycled.</p>
+
+    <h3>Companies leave and come back</h3>
+    <p>Ross Stores was removed in the December 2007 reconstitution and re-added in December 2008. Seagate was added in 2008, left, and returned in the December 2025 reconstitution. A membership table that stores one entry date and one exit date per ticker cannot represent this. Correct point-in-time membership is interval-based: a company can have multiple disjoint membership periods, and about a dozen NDX names do.</p>
+
+    <h3>The shortest tenures are shorter than your sampling frequency</h3>
+    <p>Comverse Technology's final stint in 2007 lasted 9 trading days. The Liberty Media Braves tracking shares (BATRA/BATRK) lasted 19 trading days in 2016. Solstice lasted 31, Versant 6. If your membership snapshots are monthly — which is what most free reconstructions provide — these companies either never appear or appear for a month they were not actually tradable as index members. Daily granularity is not a nice-to-have; it is the difference between a record and an approximation.</p>
+
+    <div class="callout callout-warning">
+      <span class="callout-label">The harder problem: the prices are gone</span>
+      <p>Even a perfect membership list is only half the dataset. Of the 272 historical constituents, <strong>65 no longer have retrievable price history from free sources</strong> — companies like Activision Blizzard, Celgene, Cerner, Altera, and BEA Systems were acquired, their tickers retired, and their OHLCV data subsequently dropped from public APIs. You cannot re-download this data today. A backtest that silently skips these tickers is a survivorship-biased backtest with extra steps — it has the correct universe definition and the wrong tradable set.</p>
+    </div>
+
+    <h2 id="correct-structure">How Point-in-Time Membership Should Be Structured</h2>
+
+    <p>The representation that makes backtests correct by construction is a boolean matrix: trading dates as rows, all 272 historical tickers as columns, <code>True</code> where the ticker was an index member on that date. Universe selection then becomes a single lookup with no room for look-ahead:</p>
+
+    <pre><code>import pandas as pd
+
+pit = pd.read_parquet("ndx_pit_daily.parquet")   # 4,957 days × 272 tickers, bool
+
+# The universe on any historical date — exactly what was tradable that day
+universe = pit.columns[pit.loc["2013-05-20"]].tolist()
+# ['AAPL', 'ADBE', ..., 'YHOO']   ← includes members that later left
+
+# Interval-based membership survives re-entries (ROST, STX) automatically:
+# each date is answered independently, no entry/exit pair assumptions</code></pre>
+
+    <p>This structure handles every pathology above. Re-entries are just separate runs of <code>True</code>. Six-day members occupy six rows. Reused tickers are disambiguated by date. And because the universe for each backtest date comes from that date's row, it is structurally impossible to leak today's constituent list into a 2013 trading decision — the error that <a href="/survivorship-bias-backtesting">inflates Nasdaq-100 backtest returns by roughly 214 bps per year</a>.</p>
+
+    <div class="article-cta-card">
+      <div class="article-cta-icon">◈</div>
+      <div class="article-cta-body">
+        <strong>The complete record, ready to load</strong>
+        <p>The NDX PIT Dataset contains the full daily membership matrix — 4,957 trading days × 272 tickers from 2007 to the present — plus daily OHLCV for the 209 tickers with recoverable price history, the per-ticker membership interval table, the raw change log, and documentation of the 65 tickers whose data no longer exists anywhere free. Validated with 36 automated checks passed and 0 failures.</p>
+        <form action="/buy" method="POST">
+          <button type="submit" class="btn-primary">Get the NDX PIT Dataset — $20 →</button>
+        </form>
+      </div>
+    </div>
+
+    <h2 id="what-you-get">What a Complete Constituent Dataset Contains</h2>
+
+    <p>Whether you buy it or build it, a historical constituent dataset you can actually backtest against needs four layers, and most free sources stop after the first:</p>
+
+    <div class="table-scroll">
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th>Layer</th>
+          <th>Free sources</th>
+          <th>Required for backtesting</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="ct-label">Change log (dates, added, removed)</td>
+          <td class="ct-good">Available, with effort</td>
+          <td class="ct-good">Yes — but it's the starting point, not the product</td>
+        </tr>
+        <tr>
+          <td class="ct-label">Daily membership matrix</td>
+          <td class="ct-bad">Must be derived; edge cases break naive scripts</td>
+          <td class="ct-good">Yes — this is what the backtest queries</td>
+        </tr>
+        <tr>
+          <td class="ct-label">OHLCV for departed members</td>
+          <td class="ct-bad">65 of 272 tickers: gone from free APIs</td>
+          <td class="ct-good">Yes — otherwise the bias returns silently</td>
+        </tr>
+        <tr>
+          <td class="ct-label">Validation (counts, gaps, known limits)</td>
+          <td class="ct-bad">Not provided</td>
+          <td class="ct-good">Yes — unaudited data is a liability</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="verdict-box">
+      <span class="verdict-label">The record in numbers</span>
+      <h3>Nasdaq-100 membership, 2007–2026</h3>
+      <ul>
+        <li><span class="verdict-check">→</span> 272 distinct tickers held membership; 102 remain, 170 left</li>
+        <li><span class="verdict-check">→</span> 226 constituent changes — ~12 per year, from 7 (2010) to 21 (2015)</li>
+        <li><span class="verdict-check">→</span> Quarterly rebalancing since June 2026 — annual-only mental models are stale</li>
+        <li><span class="verdict-check">→</span> Shortest tenure: 6 trading days (Versant, January 2026)</li>
+        <li><span class="verdict-cross">→</span> 65 departed tickers have no recoverable free price data — the part you cannot rebuild yourself</li>
+      </ul>
+    </div>
+
+    <h2 id="reconstitution-faq">Nasdaq-100 Additions, Deletions, and Reconstitution — FAQ</h2>
+
+    <h3>What is the official Nasdaq-100 reconstitution methodology?</h3>
+    <p>Nasdaq re-ranks the index annually each December, based on market capitalization as of the last trading day in October (with a buffer rule so existing members already ranked in roughly the top 100+ by size aren't dropped over minor rank shuffling). As of June 2026, Nasdaq added quarterly evaluations on top of the annual reconstitution — so treating this as a once-a-year event, which most explainers still do, is now out of date. Nasdaq publishes the authoritative methodology document itself; this page tracks what actually changed on each date, cross-referenced against it.</p>
+
+    <h3>How do Nasdaq-100 additions and deletions actually work?</h3>
+    <p>Only about half of all changes are the scheduled reconstitution described above. The rest happen year-round: a company falls below the minimum weighting threshold, gets acquired or taken private, spins off a division, or transfers its primary listing — any of which can trigger an addition or deletion on an unscheduled date. That's the split in the table above: 123 of 226 recorded changes were scheduled reconstitution; the other ~45% happened on arbitrary dates throughout the year.</p>
+
+    <h3>How many changes does the Nasdaq-100 make per year?</h3>
+    <p>Roughly 12 per year on average since 2007, ranging from as few as 7 (2010) to as many as 21 (2015) — index turnover tracks the broader market cycle, with more churn during periods of heavy M&amp;A activity or sharp sector rotation (e.g. the 2015 spike, and the tech/biotech volatility of recent years).</p>
+
+  </article>
+
+  
+  <aside class="article-sidebar">
+    <nav class="toc" aria-label="Table of contents">
+      <div class="toc-title">In this article</div>
+      <div class="toc-list">
+        <a class="toc-link" href="#recent-changes">All changes, 2025–2026</a>
+        <a class="toc-link" href="#how-turnover-works">How companies enter and leave</a>
+        <a class="toc-link" href="#why-hard">Why the full list is hard</a>
+        <a class="toc-link" href="#correct-structure">Correct PIT structure</a>
+        <a class="toc-link" href="#what-you-get">What a complete dataset contains</a>
+      </div>
+    </nav>
+
+    <div class="sidebar-product">
+      <span class="sidebar-product-label">NDX PIT Dataset</span>
+      <strong>4,957 days × 272 tickers</strong>
+      <p>Daily point-in-time membership + OHLCV, 2007–present. Validated. $20 one-time.</p>
+      <form action="/buy" method="POST">
+        <button type="submit" class="btn-primary">Buy — $20 →</button>
+      </form>
+    </div>
+  </aside>
+
+</div>
+
+
+<section class="read-next">
+  <div class="container">
+    <div class="read-next-header">
+      <h3>Continue reading</h3>
+    </div>
+    <div class="read-next-grid">
+      <a href="/survivorship-bias-backtesting" class="read-next-card">
+        <span class="read-next-category">Research</span>
+        <h4>Survivorship Bias in Backtesting: Why Strategies Fail Live</h4>
+        <p>What happens when your backtest trains only on the 101 survivors — and meets the other 169 in live trading.</p>
+        <span class="read-next-arrow">Read article →</span>
+      </a>
+      <a href="/validate" class="read-next-card">
+        <span class="read-next-category">Data</span>
+        <h4>NDX PIT Dataset Validation Report</h4>
+        <p>Full data quality audit: coverage statistics, known gaps, and the 214 bps bias measurement methodology.</p>
+        <span class="read-next-arrow">View report →</span>
+      </a>
+      <a href="/claude-code-trading" class="read-next-card">
+        <span class="read-next-category">Research</span>
+        <h4>Claude Code for Algorithmic Trading</h4>
+        <p>How CLAUDE.md skill files make survivorship-bias-free backtesting the default output, not a manual review step.</p>
+        <span class="read-next-arrow">Read article →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="nav-logo">NDX<span class="accent">.</span>PIT</span>
+        <p>Survivorship-bias-free Nasdaq-100 data for serious algorithmic trading research.</p>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h4>Product</h4>
+          <a href="/#whats-in-the-box">What's included</a>
+          <a href="/validate">Validation report</a>
+          <a href="/skills">Skills files</a>
+          <a href="/#pricing">Pricing</a>
+        </div>
+        <div>
+          <h4>Open Source</h4>
+          <a href="https://github.com/rujis90/crucible" target="_blank">Crucible-NDX</a>
+          <a href="https://github.com/rujis90/crucible" target="_blank">GitHub</a>
+        </div>
+        <div>
+          <h4>Research</h4>
+          <a href="/nasdaq-100-historical-constituents">NDX Historical Constituents</a>
+          <a href="/claude-code-trading">Claude Code for Trading</a>
+          <a href="/claude-code-trading-strategy-research-loop">Autonomous Research Loop</a>
+          <a href="/claude-code-agent-swarm-signal-discovery">Agent Swarm Signal Discovery</a>
+          <a href="/ai-algorithmic-trading">AI in Algorithmic Trading</a>
+          <a href="/chatgpt-for-stock-trading">ChatGPT for Trading</a>
+          <a href="/survivorship-bias-backtesting">Survivorship Bias Explained</a>
+          <a href="/probability-of-backtest-overfitting">Probability of Backtest Overfitting</a>
+        </div>
+        <div>
+          <h4>Learn</h4>
+          <a href="/#why-pit">Survivorship bias</a>
+          <a href="/#methodology">Methodology</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 NDX PIT Dataset. For research and strategy development only — not financial advice. &nbsp;·&nbsp; <a href="/terms">Terms &amp; Refund Policy</a></p>
+    </div>
+  </footer>
+
+  <script src="/static/js/main.js"></script>
+  
+</body>
+</html>
