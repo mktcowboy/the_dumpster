@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Fetch monthly closes, split ratios, and validation-day closes from Yahoo Finance."""
+import copy
 import json
 import time
 import warnings
@@ -25,6 +26,7 @@ TICKERS = [
 ]
 
 ANCHORS = ["2008-03-31", "2019-12-31", "2026-06-29", "2026-10-20"]
+MANUAL_PATH = DATA / "manual_prices.json"
 
 
 def frame(ticker, interval, **kwargs):
@@ -45,10 +47,16 @@ def frame(ticker, interval, **kwargs):
 
 
 def main():
+    manual = json.loads(MANUAL_PATH.read_text()) if MANUAL_PATH.exists() else {"prices": {}, "splits": {}, "sources": {}}
     prices, splits, missing = {}, {}, []
     for i, ticker in enumerate(TICKERS, 1):
         clean = ticker.lstrip("^")
         print(f"[{i}/{len(TICKERS)}] {ticker}")
+        if clean in manual["prices"]:
+            prices[clean] = copy.deepcopy(manual["prices"][clean])
+            splits[clean] = copy.deepcopy(manual["splits"].get(clean, {}))
+            print("  manual series; Yahoo skipped")
+            continue
         monthly = frame(ticker, "1mo")
         if monthly is None:
             missing.append(ticker)
@@ -83,12 +91,16 @@ def main():
             splits[clean] = {k: v for k, v in ratios.items() if k >= "2004-01-01"}
         time.sleep(0.6)
 
+    for clean, series in manual["prices"].items():
+        prices.setdefault(clean, copy.deepcopy(series))
+        splits.setdefault(clean, copy.deepcopy(manual["splits"].get(clean, {})))
     out = {
         "retrieved": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "start": START,
         "anchors": ANCHORS,
         "prices": prices,
         "splits": splits,
+        "manual": manual.get("sources", {}),
     }
     (DATA / "prices.json").write_text(json.dumps(out, separators=(",", ":")))
     print(f"\nwrote {DATA / 'prices.json'}")

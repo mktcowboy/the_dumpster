@@ -1,0 +1,841 @@
+<DOCUMENT>
+<TYPE>N-30B-2
+<SEQUENCE>1
+<FILENAME>c36210.txt
+<TEXT>
+                           NASDAQ-100 TRUST, SERIES 1
+
+OBJECTIVE:
+
+     The Nasdaq-100 Trust, Series 1 (the "Trust") is a unit investment trust
+that issues securities called Nasdaq-100 Index Tracking Stock. The Trust holds
+all of the component securities of the Nasdaq-100 Index (the "Index"). The
+Investment objective of the Trust is to provide investment results that
+generally correspond to the price and yield performance of the Index. There can
+be no assurance that this investment objective will be met fully.
+
+
+<PAGE>
+
+                           NASDAQ-100 TRUST, SERIES 1
+
+                              FINANCIAL STATEMENTS
+
+                          YEAR ENDED SEPTEMBER 30, 2004
+
+
+                                    CONTENTS
+
+Report of Independent Registered Public Accounting Firm ..................   1
+
+Financial Statements
+
+Statement of Assets and Liabilities ......................................   2
+Statements of Operations. ................................................   3
+Statements of Changes in Net Assets ......................................   4
+Financial Highlights. ....................................................   5
+Notes to Financial Statements ............................................   6
+Schedule of Investments. .................................................  10
+
+
+
+
+
+<PAGE>
+
+             REPORT OF INDEPENDENT REGISTERED PUBLIC ACCOUNTING FIRM
+
+To the Sponsor, Trustee and the Unitholders of the Nasdaq-100 Trust, Series 1:
+
+     We have audited the accompanying statement of assets and liabilities of the
+Nasdaq-100 Trust, Series 1 (the "Trust"), including the schedule of investments,
+as of September 30, 2004, and the related statements of operations and changes
+in net assets for each of the three years in the period then ended, and the
+financial highlights for each of the five years in the period then ended. These
+financial statements and financial highlights are the responsibility of the
+Trust's management. Our responsibility is to express an opinion on these
+financial statements and financial highlights based on our audits.
+
+     We conducted our audits in accordance with the standards of the Public
+Company Accounting Oversight Board (United States). Those standards require that
+we plan and perform the audits to obtain reasonable assurance about whether the
+financial statements and financial highlights are free of material misstatement.
+An audit includes examining, on a test basis, evidence supporting the amounts
+and disclosures in the financial statements and financial highlights. Our
+procedures included confirmation of securities owned as of September 30, 2004,
+by correspondence with the Trust's custodian and brokers. An audit also includes
+assessing the accounting principles used and significant estimates made by
+management, as well as evaluating the overall financial statement presentation.
+We believe that our audits provide a reasonable basis for our opinion.
+
+     In our opinion, the financial statements and the financial highlights
+referred to above present fairly, in all material respects, the financial
+position of the Nasdaq-100 Trust, Series 1 at September 30, 2004, the results of
+its operations and changes in its net assets for each of the three years in the
+period then ended, and the financial highlights for each of the five years in
+the period then ended, in conformity with U.S. generally accepted accounting
+principles.
+
+                                                Ernst & Young LLP
+
+New York, New York
+January 21, 2005
+
+
+                                       1
+<PAGE>
+
+                           NASDAQ-100 TRUST, SERIES 1
+
+                       STATEMENT OF ASSETS AND LIABILITIES
+
+<TABLE>
+<CAPTION>
+                                                                                     SEPTEMBER 30,
+                                                                                         2004
+                                                                                   ----------------
+<S>                                                                                <C>
+ASSETS
+  Investment in Securities, at value (cost $30,283,524,240) ..................     $ 20,376,214,952
+  Cash .......................................................................           11,003,938
+  Dividends receivable .......................................................              494,127
+  Receivable for units created ...............................................               26,848
+                                                                                   ----------------
+  Total assets ...............................................................       20,387,739,865
+                                                                                   ----------------
+
+LIABILITIES
+  Payable to Sponsor .........................................................            4,062,514
+  Payable to Trustee .........................................................            1,067,199
+  Payable to Licensor ........................................................            2,123,160
+  Accrued expenses ...........................................................               99,408
+  Payable for units redeemed .................................................                2,757
+                                                                                   ----------------
+  Total liabilities ..........................................................            7,355,038
+                                                                                   ----------------
+  Net assets .................................................................     $ 20,380,384,827
+                                                                                   ================
+
+NET ASSETS REPRESENTED BY:
+  Paid in surplus relating to 580,150,000 Nasdaq-100 Index Tracking Stock
+    shares outstanding; unlimited units authorized ...........................     $ 46,242,785,524
+    Undistributed net investment income ......................................            1,471,796
+    Accumulated net realized loss on investments .............................      (15,956,563,205)
+    Net unrealized depreciation of investments ...............................       (9,907,309,288)
+                                                                                   ----------------
+  Net assets .................................................................     $ 20,380,384,827
+                                                                                   ================
+
+NET ASSET VALUE PER SHARE: (comprised of $20,380,384,827 / 580,150,000
+  Nasdaq-100 Index Tracking Stock shares outstanding) ........................     $          35.13
+                                                                                   ================
+</TABLE>
+
+                 See accompanying notes to financial statements.
+
+
+                                       2
+<PAGE>
+
+                           NASDAQ-100 TRUST, SERIES 1
+
+                            STATEMENTS OF OPERATIONS
+
+<TABLE>
+<CAPTION>
+                                                                           YEAR ENDED SEPTEMBER 30,
+                                                                 -----------------------------------------------------
+                                                                      2004               2003               2002
+                                                                 --------------     --------------     ---------------
+<S>                                                               <C>                <C>                 <C>
+INVESTMENT INCOME:
+  Dividend income .............................................   $  59,439,915      $  31,935,985       $  14,668,344
+
+EXPENSES:
+  Trustee fees ................................................      13,841,499         11,891,747          12,860,995
+  Marketing expenses ..........................................      21,154,762         17,797,637          19,442,324
+  Licensing fees ..............................................       8,804,330          7,524,027           8,166,739
+  SEC filing fees .............................................           1,000                900             305,475
+  Professional fees ...........................................         318,289            193,549             255,398
+  Other fees and expenses .....................................          17,324             16,521              22,585
+                                                                 --------------     --------------     ---------------
+  Total expenses ..............................................      44,137,204         37,424,381          41,053,516
+  Less: refund of Commission filing fees ......................              --                 --          (4,109,251)
+  Less: expenses assumed by the Sponsor .......................              --                 --             148,486
+                                                                 --------------     --------------     ---------------
+  Net expenses ................................................      44,137,204         37,424,381          37,092,751
+                                                                 --------------     --------------     ---------------
+  Net investment income (loss) ................................      15,302,711         (5,488,396)        (22,424,407)
+                                                                 --------------     --------------     ---------------
+
+REALIZED AND UNREALIZED GAIN (LOSS)
+  ON INVESTMENTS:
+  Net realized loss on sale of investments ....................  (1,388,010,691)    (4,146,549,585)     (6,209,873,986)*
+  Net realized gain on in-kind redemptions ....................   2,024,647,203        850,621,587         717,832,551
+  Net change in unrealized appreciation/depreciation of
+    investments ...............................................   1,106,137,591     11,619,697,025        (798,390,909)*
+                                                                 --------------     --------------     ---------------
+  Net realized and unrealized gain (loss) on investments ......   1,742,774,103      8,323,769,027      (6,290,432,344)
+                                                                 --------------     --------------     ---------------
+
+NET INCREASE (DECREASE) IN NET ASSETS
+  RESULTING FROM OPERATIONS ...................................  $1,758,076,814     $8,318,280,631     $(6,312,856,751)
+                                                                 ==============     ==============     ===============
+</TABLE>
+
+-----------
+* Reclassified; see Note 6.
+
+                 See accompanying notes to financial statements.
+
+
+                                       3
+<PAGE>
+
+                           NASDAQ-100 TRUST, SERIES 1
+
+                       STATEMENTS OF CHANGES IN NET ASSETS
+
+<TABLE>
+<CAPTION>
+                                                                              YEAR ENDED SEPTEMBER 30,
+                                                                ------------------------------------------------------
+                                                                     2004              2003                2002
+                                                                ---------------    ---------------     ---------------
+<S>                                                             <C>                <C>                 <C>
+INCREASE (DECREASE) IN NET ASSETS:
+OPERATIONS:
+  Net investment income (loss) ...............................  $    15,302,711    $    (5,488,396)    $   (22,424,407)
+  Net realized gain (loss) on investment transactions ........      636,636,512     (3,295,927,998)     (5,492,041,435)*
+  Net change in unrealized appreciation / depreciation
+    on investments ...........................................    1,106,137,591     11,619,697,025        (798,390,909)*
+                                                                ---------------    ---------------     ---------------
+  Net increase (decrease) in net assets resulting
+    from operations ..........................................    1,758,076,814      8,318,280,631      (6,312,856,751)
+                                                                ---------------    ---------------     ---------------
+
+DISTRIBUTION TO UNITHOLDERS FROM:
+  Net investment income ......................................       (8,613,794)                --                  --
+                                                                ---------------    ---------------     ---------------
+
+UNITHOLDER TRANSACTIONS:
+  Proceeds from subscriptions of Nasdaq-100 units ............   24,171,986,179     18,735,061,802      22,268,825,627
+  Less redemptions of Nasdaq-100 units .......................  (25,602,336,418)   (22,100,133,150)    (18,953,465,994)
+                                                                ---------------    ---------------     ---------------
+  Increase (decrease) in net assets due to
+    unitholder transactions ..................................   (1,430,350,239)    (3,365,071,348)      3,315,359,633
+                                                                ---------------    ---------------     ---------------
+  Total increase (decrease) ..................................      319,112,781      4,953,209,283      (2,997,497,118)
+
+NET ASSETS:
+  Beginning of year ..........................................   20,061,272,046     15,108,062,763      18,105,559,881
+                                                                ---------------    ---------------     ---------------
+  End of year(**) ............................................  $20,380,384,827    $20,061,272,046     $15,108,062,763
+                                                                ===============    ===============     ===============
+</TABLE>
+
+--------------
+ * Reclassified; see Note 6.
+
+** Includes undistributed net investment income of $1,471,796. There was no
+   undistributed net investment income at September 30, 2003 and 2002.
+
+                 See accompanying notes to financial statements.
+
+
+                                       4
+<PAGE>
+
+                           NASDAQ-100 TRUST, SERIES 1
+
+                              FINANCIAL HIGHLIGHTS
+
+<TABLE>
+<CAPTION>
+                                                                        YEAR ENDED SEPTEMBER 30,
+                                                  ---------------------------------------------------------------------
+                                                     2004           2003           2002          2001           2000
+                                                  ----------     ----------    ----------     ----------     ----------
+<S>                                               <C>            <C>           <C>            <C>              <C>
+Net asset value, beginning of period ..........   $    32.41     $    20.70    $    29.11     $    89.07       $  60.16
+Investment operations:
+  Net investment income (loss) (1) ............         0.02          (0.01)        (0.03)         (0.06)         (0.16)
+  Net realized and unrealized
+    gain (loss) on investments ................         2.71          11.72         (8.38)        (59.90)         29.07
+                                                  ----------     ----------    ----------     ----------     ----------
+Total from investment operations ..............         2.73          11.71         (8.41)        (59.96)         28.91
+Less distributions from:
+  Net investment income .......................        (0.01)          --             --              --              --
+                                                  ----------     ----------    ----------     ----------     ----------
+Net asset value, end of period ................   $    35.13     $    32.41    $    20.70     $    29.11     $    89.07
+                                                  ==========     ==========    ==========     ==========     ==========
+Total investment return (2) ...................         8.43%         56.57%       (28.89)%       (67.32)%        48.06%
+
+Ratios and Supplemental Data:
+  Net assets, end of period (000's) ...........  $20,380,385    $20,061,272   $15,108,063    $18,105,560    $12,367,946
+  Ratios to average net assets:
+       Expenses before expenses waived
+      and/ or assumed .........................         0.20%          0.20%         0.20%          0.18%          0.19%
+    Expenses after expenses waived
+      and/ or assumed .........................         0.20%          0.20%         0.18%(4)       0.18%          0.18%
+    Net investment income (loss)
+      before expenses waived
+      and/ or assumed .........................         0.07%         (0.03)%       (0.13)%        (0.13)%        (0.16)%
+    Net investment income (loss)
+      after expenses waived
+      and/or assumed ..........................         0.07%         (0.03)%       (0.11)%(4)     (0.13)%        (0.15)%
+  Portfolio turnover rate (3) .................         6.60%         13.35%        12.64%         21.77%         23.46%
+</TABLE>
+
+The financial highlights summarize the impact of net investment income, net
+realized and unrealized gains and losses and distributions on a single share of
+the Nasdaq-100 Trust outstanding for each period presented. Additionally,
+important relationships between certain financial statement items are expressed
+in ratio form.
+
+---------------
+(1)  Calculated using average share method.
+
+(2)  The total return calculation assumes the reinvestment of dividends and
+     capital gain distributions, if any. Total return excludes the effect of
+     transaction fees connected to the creation and redemption of Creation Units
+     and brokerage commissions incurred by purchasing and/ or selling shares of
+     the Trust in the secondary market. Currently, the Trust does not have a
+     dividend reinvestment program.
+
+(3)  Portfolio turnover excludes securities received or delivered from
+     processing creations or redemptions of Nasdaq-100 units.
+
+(4)  The net ratio also reflects the impact of refunded commission filing fees.
+
+                 See accompanying notes to financial statements.
+
+
+                                       5
+<PAGE>
+
+                           NASDAQ-100 TRUST, SERIES 1
+
+                          NOTES TO FINANCIAL STATEMENTS
+
+                               SEPTEMBER 30, 2004
+
+1. ORGANIZATION
+
+     Nasdaq-100 Trust, Series 1 (the "Trust") is a unit investment trust created
+under the laws of the State of New York and registered under the Investment
+Company Act of 1940. The Trust was created to provide investors with the
+opportunity to purchase units of beneficial interest in the Trust representing
+proportionate undivided interests in the portfolio of securities held by the
+Trust, which consists of substantially all of the securities, in substantially
+the same weighting, as the component securities of the Nasdaq-100 Index.
+
+     The Trust commenced operations on March 5, 1999 upon the initial issuance
+of 150,000 shares of the Nasdaq-100 Index Tracking Stock (equivalent to three
+Creation Units) in exchange for a portfolio of securities assembled to reflect
+the intended portfolio composition of the Trust.
+
+     Nasdaq Global Funds, Inc. (formerly Nasdaq Financial Product Services,
+Inc.) is the Sponsor of the Trust and The Bank of New York is the Trustee.
+
+2. SIGNIFICANT ACCOUNTING POLICIES
+
+     The preparation of financial statements in accordance with U.S. generally
+accepted accounting principles requires management to make estimates and
+assumptions that affect the reported amounts and disclosures. Actual results
+could differ from those estimates. The following is a summary of significant
+accounting policies followed by the Trust.
+
+SECURITY VALUATION
+
+     Portfolio securities are valued at the official closing price of The Nasdaq
+Stock Market, which is deemed to be the principal market on which the securities
+are traded. If there is no official closing price on the day of valuation, a
+security is valued at the closing bid price of The Nasdaq Stock Market. If a
+security is not quoted on The Nasdaq Stock Market, or the principal market of
+the security is other than The Nasdaq Stock Market, or the Trustee deems the
+official close price or closing bid price inappropriate for valuation purposes,
+then the security shall be fair valued by the Trustee in good faith based (a) on
+the closing price for the security on another market on which the security is
+traded or if there is no such appropriate closing price, at the closing bid
+price on such other market, (b) on current bid prices on The Nasdaq Stock Market
+or such other markets, (c) if bid prices are not available, on the basis of
+current bid prices for comparable securities, (d) by the Trustee's appraising
+the value of the securities in good faith on the bid side of the market, or (e)
+any combination thereof.
+
+INVESTMENT TRANSACTIONS
+
+     Investment transactions are recorded on the trade date. Realized gains and
+losses from the sale or disposition of securities are recorded on a specific
+identification basis. Dividend income is recorded on the ex-dividend date.
+
+DISTRIBUTIONS TO UNITHOLDERS
+
+     The Trust will declare and distribute dividends, if any, from net
+investment income quarterly. The Trust will declare and distribute net realized
+capital gains, if any, at least annually.
+
+FEDERAL INCOME TAX
+
+     The Trust has qualified and intends to continue to qualify for and elect
+treatment as a "regulated investment company" under Subchapter M of the Internal
+Revenue Code of 1986, as amended. By so qualifying the Trust will not be subject
+to federal income taxes to the extent it distributes 90% of its net investment
+income, including any net realized capital gains, for each fiscal year. In
+addition, by distributing during each calendar year at least
+
+
+                                       6
+<PAGE>
+
+                           NASDAQ-100 TRUST, SERIES 1
+
+                    NOTES TO FINANCIAL STATEMENTS (CONTINUED)
+
+                               SEPTEMBER 30, 2004
+
+
+2. SIGNIFICANT ACCOUNTING POLICIES (CONTINUED)
+
+98% of its net investment income and capital gains, if any, the Trust will not
+be subject to federal excise tax. Income and capital gain distributions are
+determined in accordance with income tax regulations, which may differ from U.S.
+generally accepted accounting principles. To the extent these differences are
+permanent, such amounts are reclassified within the capital accounts based on
+their federal tax basis treatment; temporary differences do not require such
+reclassification.
+
+     At September 30, 2004, permanent differences primarily due to the tax
+treatment of in-kind transactions and interest earned on redemptions, were
+reclassified within the capital accounts of the Trust. These differences
+resulted in a net decrease of $5,217,121 in undistributed net investment income,
+a net increase in accumulated net realized loss of $2,024,647,203 on investments
+and a corresponding increase to paid in surplus of $2,029,864,324. This
+reclassification had no effect on net assets of the Trust.
+
+     The tax character of distributions paid during the year ended September 30,
+2004 was $8,613,794 of ordinary income.
+
+     At September 30, 2004, the Trust had a capital loss carryforward of
+$11,845,518,450, of which $18,036,354 expires in 2007, $9,472,938 expires in
+2008, $615,423,028 expires in 2009, $2,457,820,737 expires in 2010,
+$5,729,023,648 expires in 2011 and $3,015,741,745 expires in 2012.
+
+     Capital losses incurred after October 31 ("post-October" losses) within the
+taxable year are deemed to arise on the first business day of the Trust's next
+taxable year. The Trust incurred and will elect to defer net capital losses of
+$1,687,659,837 for the year ended September 30, 2004. These carryover losses may
+be used to offset future gains. To the extent they are so used, future gains
+will not be distributed to unitholders until they exceed available loss
+carryovers.
+
+     As of September 30, 2004 the components of accumulated earnings/(deficit)
+on a tax basis were as follows:
+
+           Accumulated capital and other losses .........   $(13,533,178,287)
+           Unrealized depreciation ......................    (12,330,694,207)
+           Undistributed ordinary income ................          1,471,796
+                                                            ----------------
+           Total accumulated deficit ....................   $(25,862,400,698)
+                                                            ================
+
+3. TRANSACTIONS WITH THE TRUSTEE AND SPONSOR
+
+     The Trust pays the expenses of its operations, including the fees of its
+Trustee and reimbursement to the Sponsor for expenses of the Sponsor relating to
+the marketing of the Trust and for payments to The Nasdaq Stock Market, Inc.
+(the "Licensor") for a license to use the Nasdaq-100 Index as a basis for
+determining the composition and weighting of securities held by the Trust. The
+annual license fee to the Licensor is 4/100 of one percent (0.04%) of the
+average net assets of the Trust. License fees of $2,123,160 were payable to the
+Licensor at September 30, 2004. Currently, the License Agreement is scheduled to
+expire on March 10, 2009 in accordance with its terms.
+
+     In accordance with the Trust Agreement, the Trustee maintains the Trust's
+accounting records, acts as custodian and transfer agent to the Trust, and
+provides administrative services, including filing of all required regulatory
+reports. The Trustee is also responsible for determining the composition of the
+portfolio of securities, which must be delivered in exchange for the issuance of
+Creation Units of the Trust, and for adjusting the composition of the Trust's
+portfolio from time to time to conform to changes in the composition and/or
+weighting structure of the Nasdaq-100 Index. For these services, the Trustee
+receives a fee at the following annual rates:
+
+
+                                       7
+<PAGE>
+
+                           NASDAQ-100 TRUST, SERIES 1
+
+                    NOTES TO FINANCIAL STATEMENTS (CONTINUED)
+
+                               SEPTEMBER 30, 2004
+
+
+3. TRANSACTIONS WITH THE TRUSTEE AND SPONSOR (CONTINUED)
+
+                    NET ASSET VALUE                 FEE AS A PERCENTAGE OF NET
+                     OF THE TRUST                    ASSET VALUE OF THE TRUST
+        -----------------------------------         --------------------------
+                         $0-$499,999,999*              10/100 of 1% per annum
+             $500,000,000-$2,499,999,999*               8/100 of 1% per annum
+          $2,500,000,000-$24,999,999,999*               6/100 of 1% per annum
+         $25,000,000,000-$49,999,999,999*               5/100 of 1% per annum
+                $50,000,000,000 and over*               4/100 of 1% per annum
+
+---------------
+* The fee indicated applies to that portion of the net asset value of the Trust
+  which falls in the size category indicated and is computed each business day
+  on the basis of net asset value of the Trust on such day.
+
+     The minimum annual fee, which shall be paid to the Trustee, is $180,000. To
+the extent that the amount of the Trustee's compensation is less than such
+minimum annual fee, the Sponsor has agreed to pay the amount of such shortfall.
+
+     Until the Sponsor otherwise determines, the ordinary operating expenses of
+the Trust as calculated by the Trustee would not be permitted to exceed an
+amount which is 20/100 of one percent (0.20%) per annum of the daily net assets
+of the Trust. To the extent during such periods that ordinary operating expenses
+of the Trust exceeded such amounts, the Sponsor reimbursed the Trust or assumed
+invoices on behalf of the Trust for such excess ordinary operating expenses.
+
+     The Sponsor retains the ability to be repaid by the Trust for expenses so
+reimbursed or assumed to the extent that subsequently during the fiscal year
+expenses fall below the applicable per annum level on any given day. For the
+years ended September 30, 2004 and 2003, ordinary operating expenses incurred by
+the Trust did not exceed the 0.20% per annum level and, accordingly, no expenses
+of the Trust were assumed by the Sponsor. During 2002, the Trust was refunded
+previously paid 2001 Commission filing fees of $4,109,251, which permitted the
+Sponsor to be reimbursed in 2002 for expenses previously assumed in 2001. The
+reimbursement resulted in a reduction of expenses assumed by the Sponsor of
+$148,486 for the year ended September 30, 2002.
+
+     In addition, $4,062,514 of marketing expenses paid by the Sponsor on behalf
+of the Trust for invoices received directly by the Sponsor during the year
+remain payable to the Sponsor at September 30, 2004.
+
+     ALPS Distributors, Inc. (the "Distributor") is the distributor for the
+Trust. The Sponsor, not the Trust, pays the Distributor a flat annual fee for
+its distribution services.
+
+4. TRANSACTIONS IN SHARES OF THE NASDAQ-100 TRUST
+
+     Transactions in shares were as follows:
+
+<TABLE>
+<CAPTION>
+                                               FOR THE YEAR ENDED      FOR THE YEAR ENDED     FOR THE YEAR ENDED
+                                               SEPTEMBER 30, 2004      SEPTEMBER 30, 2003     SEPTEMBER 30, 2002
+                                               ------------------      ------------------     ------------------
+<S>                                                <C>                     <C>                    <C>
+Nasdaq-100 Index Tracking Stock
+  shares sold                                       847,600,000             664,050,000            689,400,000
+Nasdaq-100 Index Tracking Stock
+  shares redeemed                                  (886,450,000)           (774,850,000)          (581,600,000)
+                                                 --------------          --------------         --------------
+Net increase (decrease)                             (38,850,000)           (110,800,000)           107,800,000
+                                                 ==============          ==============         ==============
+</TABLE>
+
+     Nasdaq-100 Index Tracking Stock shares are issued and redeemed by the Trust
+only in Creation Unit size aggregations of 50,000 Nasdaq-100 Index Tracking
+Stock shares. Such transactions are only permitted on an
+
+
+                                       8
+<PAGE>
+
+                           NASDAQ-100 TRUST, SERIES 1
+
+                    NOTES TO FINANCIAL STATEMENTS (CONTINUED)
+
+                               SEPTEMBER 30, 2004
+
+
+4. TRANSACTIONS IN SHARES OF THE NASDAQ-100 TRUST (CONTINUED)
+
+     in-kind basis, with a separate cash payment that is equivalent to the
+undistributed net investment income per Nasdaq-100 Index Tracking share and a
+balancing cash component to equate the transaction to the net asset value per
+share of the Trust on the transaction date. The transaction fee charged in
+connection with creation or redemption of Creation Units through the Nasdaq-100
+Clearing Process is either $0, $500, or $1,000 per participating party per day,
+depending on specific circumstances. The total fee charged in connection with
+the creation or redemption of Creation Units outside the Nasdaq-100 Clearing
+Process is $4,000 per participating party per day.
+
+     Transaction fees are received by the Trustee from the Participating Party,
+as defined, and used to offset the expense of processing orders. For the years
+ended September 30, 2004, 2003 and 2002, the Trustee earned $428,000, $361,000
+and $377,000, respectively, in transaction fees. The Trustee, in its sole
+discretion, may voluntarily reduce or waive its fee, or modify its transaction
+fee schedule, subject to certain limitations. There were no such reductions or
+waivers for the years ended September 30, 2004, 2003 and 2002.
+
+5. INVESTMENT TRANSACTIONS
+
+     For the year ended September 30, 2004, the Trust had purchases and sales of
+investment securities of $1,461,819,956 and $1,459,908,686, respectively. This
+excludes securities received or delivered from processing creations or
+redemptions of the Trust. At September 30, 2004, the cost of investments for
+federal income tax purposes was $32,706,909,159. Accordingly, gross unrealized
+depreciation was $13,173,318,849 and gross unrealized appreciation was
+$842,624,642 resulting in net unrealized depreciation of $12,330,694,207.
+
+6. RECLASSIFICATION
+
+     In 2003, certain 2002 amounts were reclassified to conform to the 2003
+presentation. Accordingly, net realized loss on sale of investments and net
+change in unrealized appreciation (depreciation) of investments included in the
+statements of operations and changes in net assets for the year ended September
+30, 2002 were decreased and increased by $529,718,413, respectively. This prior
+year reclassification had no impact on the 2002 net assets or the net increase
+(decrease) in net assets resulting from operations.
+
+7. SUBSEQUENT EVENTS (UNAUDITED)
+
+     On December 2, 2004, Microsoft Corporation paid a special dividend of $3.00
+per share to shareholders of record on November 17, 2004, which resulted in
+dividend income of $204,265,356 to the Trust in fiscal 2005. Also, in December
+2004, the Trust paid an ordinary income dividend to shareholders of $.37858 per
+share or $213,935,811 in aggregate, in part as a result of the Microsoft
+Corporation special dividend.
+
+
+                                       9
+<PAGE>
+
+                           NASDAQ-100 TRUST, SERIES 1
+
+                             SCHEDULE OF INVESTMENTS
+
+                               SEPTEMBER 30, 2004
+
+
+COMMON STOCK                                         SHARES           VALUE
+-------------                                      -----------    --------------
+
+Microsoft Corporation ...........................   66,304,339    $1,833,314,973
+QUALCOMM Inc. ...................................   34,783,441     1,357,945,537
+eBay Inc.* ......................................    8,735,006       803,096,452
+Intel Corporation ...............................   39,785,607       798,099,276
+Cisco Systems, Inc.* ............................   42,794,203       774,575,074
+Amgen Inc.* .....................................   10,452,430       592,443,732
+Nextel Communications, Inc.* ....................   24,594,703       586,337,720
+Dell Inc.* ......................................   16,266,090       579,072,804
+Comcast Corporation* ............................   16,854,182       475,962,100
+Starbucks Corporation* ..........................    9,790,924       445,095,405
+Oracle Corporation* .............................   38,189,869       430,781,722
+Biogen Idec, Inc.* ..............................    6,515,895       398,577,297
+Yahoo! Inc.* ....................................   11,589,723       393,007,507
+Apple Computer, Inc.* ...........................    9,590,778       371,642,648
+Maxim Integrated Products, Inc. .................    8,062,954       340,982,325
+Symantec Corporation* ...........................    5,839,904       320,493,932
+Biomet, Inc. ....................................    6,058,975       284,044,748
+IAC / InterActiveCorp* ..........................   12,767,264       281,135,153
+Gilead Sciences, Inc.* ..........................    7,512,535       280,818,558
+Genzyme Corporation* ............................    5,064,492       275,559,010
+Bed Bath & Beyond Inc.* .........................    7,160,848       265,739,069
+Linear Technology Corporation ...................    7,279,903       263,823,685
+Applied Materials, Inc.* ........................   15,561,913       256,615,945
+Research In Motion, Ltd.* .......................    3,313,771       252,973,278
+Electronic Arts Inc.* ...........................    5,423,746       249,438,079
+PACCAR Inc. .....................................    3,445,319       238,140,449
+Apollo Group, Inc.* .............................    3,141,780       230,512,399
+Xilinx, Inc. ....................................    8,156,940       220,237,380
+Teva Pharmaceutical Industries Limited ..........    7,945,122       206,175,916
+Adobe Systems Incorporated ......................    4,163,513       205,968,988
+Chiron Corporation* .............................    4,650,227       205,540,033
+Amazon.com, Inc.* ...............................    4,786,371       195,571,119
+Intuit Inc.* ....................................    4,271,446       193,923,648
+Paychex, Inc. ...................................    6,356,107       191,636,626
+PeopleSoft, Inc.* ...............................    9,185,129       182,324,811
+Altera Corporation* .............................    9,260,666       181,231,234
+Costco Wholesale Corporation ....................    4,303,698       178,861,689
+Staples, Inc. ...................................    5,921,081       176,566,635
+KLA-Tencor Corporation* .........................    4,215,554       174,861,180
+Cintas Corporation ..............................    3,645,427       153,253,751
+Network Appliance, Inc.* ........................    6,630,975       152,512,425
+Fiserv, Inc.* ...................................    4,327,593       150,859,892
+Juniper Networks, Inc.* .........................    6,218,303       146,751,951
+Kmart Holding Corporation* ......................    1,660,998       145,287,495
+Flextronics International Ltd.* .................   10,687,928       141,615,046
+VERITAS Software Corporation* ...................    7,840,274       139,556,877
+EchoStar Communications Corporation* ............    3,947,364       122,841,968
+
+
+                                       10
+<PAGE>
+
+                           NASDAQ-100 TRUST, SERIES 1
+
+                       SCHEDULE OF INVESTMENTS (CONTINUED)
+
+                               SEPTEMBER 30, 2004
+
+COMMON STOCK                                         SHARES           VALUE
+-------------                                      -----------    --------------
+
+Marvell Technology Group, Ltd.* ..................   4,500,880      $117,607,994
+Broadcom Corporation* ............................   4,238,042       115,656,166
+MedImmune, Inc.* .................................   4,725,391       111,991,767
+Sun Microsystems, Inc.* ..........................  25,718,431       103,902,461
+JDS Uniphase Corporation* ........................  28,968,058        97,622,355
+Expeditors International of Washington, Inc. .....   1,842,884        95,277,103
+Whole Foods Market, Inc. .........................   1,081,857        92,812,512
+Patterson Companies, Inc.* .......................   1,164,840        89,180,150
+CDW Corporation ..................................   1,531,388        88,866,446
+Smurfit-Stone Container Corporation* .............   4,407,071        85,364,965
+VeriSign, Inc.* ..................................   4,270,764        84,902,788
+Microchip Technology Incorporated ................   3,031,509        81,365,702
+Millennium Pharmaceuticals, Inc.* ................   5,927,062        81,260,020
+Express Scripts, Inc.* ...........................   1,226,495        80,139,183
+Pixar* ...........................................   1,007,645        79,503,191
+Siebel System, Inc.* .............................  10,491,352        79,104,794
+Garmin, Ltd. .....................................   1,776,697        76,842,145
+Sandisk Corporation* .............................   2,632,150        76,648,208
+Check Point Software Technologies Ltd.* ..........   4,506,046        76,467,601
+Fastenal Company .................................   1,285,030        74,017,728
+PETsMART, Inc. ...................................   2,535,432        71,980,914
+DENTSPLY International Inc. ......................   1,369,230        71,117,806
+Sanmina-SCI Corporation* .........................   9,855,387        69,480,478
+Robinson (C.H.) Worldwide, Inc. ..................   1,495,313        69,367,570
+Novellus System, Inc.* ...........................   2,575,669        68,487,039
+Sigma-Aldrich Corporation ........................   1,175,531        68,180,798
+Comverse Technology, Inc.* .......................   3,597,834        67,747,214
+ATI Technologies, Inc.* ..........................   4,292,532        65,804,516
+Lamar Advertising Company* .......................   1,505,543        62,645,644
+Citrix Systems, Inc.* ............................   3,559,475        62,362,002
+American Power Conversion Corporation ............   3,568,355        62,053,693
+Mercury Interactive Corporation* .................   1,757,312        61,295,043
+Ross Stores, Inc. ................................   2,571,831        60,283,719
+Patterson-UTI Energy, Inc. .......................   3,052,473        58,210,660
+Lam Research Corporation* ........................   2,451,453        53,637,792
+Career Education Corporation* ....................   1,844,989        52,453,037
+Dollar Tree Stores, Inc.* ........................   1,934,655        52,138,952
+Molex Incorporated ...............................   1,748,347        52,135,708
+Lincare Holdings Inc.* ...........................   1,707,440        50,728,042
+Gentex Corporation ...............................   1,428,557        50,185,207
+Qlogic Corporation* ..............................   1,667,835        49,384,594
+Invitrogen Corporation* ..........................     876,223        48,183,503
+NVIDIA Corporation* ..............................   3,189,308        46,308,752
+BEA Systems, Inc.* ...............................   6,687,669        46,211,793
+Henry Schein, Inc.* ..............................     717,837        44,728,423
+Cephalon, Inc.* ..................................     919,330        44,035,907
+Intersil Corporation .............................   2,691,931        42,882,461
+
+
+                                       11
+<PAGE>
+
+                           NASDAQ-100 TRUST, SERIES 1
+
+                       SCHEDULE OF INVESTMENTS (CONTINUED)
+
+                               SEPTEMBER 30, 2004
+
+COMMON STOCK                                         SHARES           VALUE
+-------------                                      -----------    --------------
+
+Synopsys, Inc.* .................................    2,528,002   $    40,018,272
+Tellabs, Inc.* ..................................    4,202,456        38,620,571
+Ryanair Holdings plc* ...........................    1,076,158        31,423,814
+Level 3 Communications, Inc.* ...................   11,932,907        30,906,229
+First Health Group Corp.* .......................    1,686,817        27,140,886
+Compuware Corporation* ..........................    4,220,018        21,733,093
+                                                                 ---------------
+Total Investments (Cost $30,283,524,240) ........                $20,376,214,952
+                                                                 ===============
+
+--------------
+* Designates a security on which no dividends were declared during the period
+  from October 1, 2003 through September 30, 2004.
+
+                 See accompanying notes to financial statements.
+
+
+
+                                       12
+<PAGE>
+
+                                NASDAQ 100-TRUST
+
+                FREQUENCY DISTRIBUTION OF DISCOUNTS AND PREMIUMS
+
+                     CLOSING PRICE VS. NET ASSET VALUE (NAV)
+
+                        FIVE YEAR PERIOD ENDING 12/31/04
+
+                                                     NUMBER        PERCENTAGE
+                                                   OF TRADING       OF TOTAL
+PREMIUM/DISCOUNT RANGE                               DAYS(1)      TRADING DAYS
+----------------------                             ----------     -------------
+
+Greater than 0.25% .............................       266            21.17%
+Between zero and 0.25% .........................       388            30.89%
+CLOSING PRICE EQUAL TO NAV .....................        41             3.26%
+Between zero and -0.25% ........................       327            26.04%
+Less than -0.25% ...............................       234            18.64%
+                                                      ----           -------
+                                                      1256           100.00%
+
+--------------
+(1) Number of Trading Days refers to the number of days during which there is
+    buy/sell activity for the Fund on the Exchange.
+
+
+
+
+
+
+
+
+                                       13
+<PAGE>
+
+
+           COMPARISON OF TOTAL RETURN BASED ON NAV AND CLOSE PRICE (1)
+                           FROM INCEPTION TO 12/31/04
+
+
+                             CUMULATIVE TOTAL RETURN
+
+<TABLE>
+<CAPTION>
+                                                                                       SINCE
+                                                     1 YEAR           5 YEAR         INCEPTION
+                                                    ---------        ---------       ----------
+<S>                                                   <C>               <C>             <C>
+NASDAQ 100-TRUST
+  Return based on NAV ...........................     10.47%           -56.45%         -20.47%
+  Return based on Close Price ...................     10.53%           -55.88%         -20.51%
+Index ...........................................     10.75%           -55.97%         -19.46%
+</TABLE>
+
+
+                          AVERAGE ANNUAL TOTAL RETURN
+
+<TABLE>
+<CAPTION>
+                                                                                       SINCE
+                                                     1 YEAR           5 YEAR         INCEPTION
+                                                    ---------        ---------       ----------
+<S>                                                   <C>               <C>             <C>
+NASDAQ 100-TRUST
+  Return based on NAV ...........................     10.47%           -15.32%         -3.86%
+  Return based on Close Price ...................     10.53%           -15.10%         -3.87%
+Index ...........................................     10.75%           -15.13%         -3.65%
+</TABLE>
+
+---------------
+(1) Average Annual Return and Cumulative Total Return for the period since
+    inception is calculated from the inception date of March 5, 1999.
+
+
+
+
+
+                                       14
+</TEXT>
+</DOCUMENT>

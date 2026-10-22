@@ -16,6 +16,7 @@ Most projects are self-contained HTML pages that open directly in a browser.
 
 | Project | What it is |
 | --- | --- |
+| [Crypto deep dive](markets/crypto-deep-dive/) | Industry-wide crypto map covering market structure, the top 100, stablecoins, yields, wallet and trader tracking, and risk frameworks |
 | [Factor returns](markets/factor-returns/) | Daily 1-day, 5-day, and 1-month returns for nine factor ETFs versus SPY and QQQ |
 | [S&P 500 correlation](markets/sp500-correlation/) | One-year pairwise correlation grid and pair-trade screen across S&P 500 constituents |
 | [S&P 500 tracker](markets/sp500-tracker/) | Constituent changes from 2007–2026, removed-stock performance, and ticker comparisons |
@@ -39,15 +40,13 @@ Most projects are self-contained HTML pages that open directly in a browser.
 | Project | What it is |
 | --- | --- |
 | [Epigenetics deep dive](epigenetics-deep-dive/) | Long-form, journal-style review of epigenetics, with 72 cited papers and linked sources |
-| [Rent-seeking report](rent-seeking-report/) | Economic rents, their history, and 50 ways to create rental income today |
-| [Microgreens business data](other_biz/microgreens-business-data/) | Research dossier for a rack-based microgreens operation in the OKC area, with unit economics |
+| [Rent-seeking report](biz-other/rent-seeking-report/) | Economic rents, their history, and 50 ways to create rental income today |
 
 ## Reading
 
 | Project | What it is |
 | --- | --- |
 | [Beyond arXiv digest](reading/beyond-arxiv-digest/) | Top papers from six preprint servers beyond arXiv, one tab per server |
-| [Books](reading/books/) | Reading list |
 
 ## Misc
 
@@ -58,6 +57,6 @@ Most projects are self-contained HTML pages that open directly in a browser.
 
 ## Repository notes
 
-- `drops/` holds agent file drops; `scripts/` holds the privacy checker.
+- `scripts/` holds the privacy checker.
 - Run `python3 scripts/check_privacy.py` before committing, per [AGENTS.md](AGENTS.md).
 - Each project folder contains its source files and, where available, a README with build or refresh instructions.
