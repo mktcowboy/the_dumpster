@@ -19,7 +19,7 @@
   <section>
     <div class="section-head">
       <div>
-        <h2>Today’s weights</h2>
+        <h2>Latest weights</h2>
         <p class="hint" id="current-asof"></p>
       </div>
       <div class="legend-key"><span><i class="swatch-price"></i>Weight = price ÷ sum of prices</span></div>
@@ -98,11 +98,11 @@
 
   <details class="methodology">
     <summary>Data sources, coverage &amp; method</summary>
-    <p>Membership: <a href="https://en.wikipedia.org/wiki/Historical_components_of_the_Dow_Jones_Industrial_Average">Historical components of the Dow Jones Industrial Average</a> (Wikipedia, CC BY-SA), retrieved October 21, 2026. The roster in force at each month-end is used. Prices: <a href="https://finance.yahoo.com/">Yahoo Finance</a>, monthly unadjusted closes converted back from split- and spinoff-adjusted history; latest weights use the October 20, 2026 close.</p>
+    <p>Membership: <a href="https://en.wikipedia.org/wiki/Historical_components_of_the_Dow_Jones_Industrial_Average">Historical components of the Dow Jones Industrial Average</a> (Wikipedia, CC BY-SA), retrieved October 21, 2026. The roster in force at each month-end is used. Prices: <a href="https://finance.yahoo.com/">Yahoo Finance</a> monthly closes converted back from split- and spinoff-adjusted history; latest weights use the October 20, 2026 close.</p>
     <p>Weights are <span class="mono">price ÷ sum of the 30 prices</span>. Because the Dow is price-weighted, this is also the index’s portfolio weight. Monthly weights use the last trading day of each month; the report begins in April 2004, when Pfizer, AIG, and Verizon replaced AT&amp;T, Kodak, and International Paper.</p>
-    <p><strong>Coverage.</strong> DuPont is excluded from historical weights: Yahoo’s pre-2019 DD series does not reconcile with DuPont’s reported quarterly price ranges after the DowDuPont merger and 2019 split. General Motors (2004–2009), Kraft Foods (2008–2012), DowDuPont (2017–2019), and Walgreens Boots Alliance (2018–2024) are delisted and have no accessible unadjusted history. Weights are renormalized over the priced members; the number priced is shown in the chart tooltip and era cards. The current roster is fully priced.</p>
-    <p><strong>Checks.</strong> The method reproduces the published June 29, 2026 divisor of 0.16824816528350 and the December 31, 2019 price sum of 4,207.87 once Walgreens is added back. At March 31, 2008, the priced sum reconciles with the published divisor after allowing for the excluded DuPont and GM prices. Current weights match a published Dow weights snapshot within normal one-day price drift (this report uses the prior close).</p>
-    <p>Splits and spinoffs are handled by multiplying a month-end close by every split ratio dated after that month-end, recovering the price actually quoted at the time. This matters for names such as Apple, Nvidia, Nike, Walmart, GE, AIG, Citigroup, AT&amp;T, Honeywell, and 3M.</p>
+    <p><strong>Coverage.</strong> All 30 members are priced in every month. Delisted and successor histories: DuPont through August 2017, DowDuPont (2017–2019), and Walgreens (2018–2024) use <a href="https://www.digrin.com/">Digrin</a> month-end real prices; Kraft Foods (2008–2012) uses Yahoo’s MDLZ close before the 2012 change; General Motors (2004–2009) is reconstructed from SEC 10-K month-end anchors and Dow divisor continuity. GM values are estimates, not directly observed monthly closes.</p>
+    <p><strong>Checks.</strong> The method reproduces the published June 29, 2026 divisor of 0.16824816528350 and the December 31, 2019 price sum of 4,207.87 with Walgreens included. At June 30, 2008 the full 30-member sum is 1,386.03 and the implied divisor is 0.1221170741, matching the SEC GM anchor. Current weights match a published Dow weights snapshot within normal one-day price drift (this report uses the prior close).</p>
+    <p>Splits and spinoffs are handled by multiplying a Yahoo close by every split ratio dated after that month-end, recovering the price actually quoted at the time. This matters for names such as Apple, Nvidia, Nike, Walmart, GE, AIG, Citigroup, AT&amp;T, Honeywell, and 3M. The manual delisted series are already quoted prices and bypass that adjustment.</p>
     <p>Not investment advice. Prices and memberships can contain errors; the original sources are linked above.</p>
   </details>
   <footer>Dow Jones weighting history · built from local snapshots · <a href="README.md">Project notes</a></footer>

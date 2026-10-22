@@ -94,7 +94,7 @@ LABELS = {
     "GM": "General Motors", "EK": "Eastman Kodak", "ATTC": "AT&T (old)",
 }
 
-PRICE_UNAVAILABLE = {"DD", "GM", "KFT", "DWDP", "WBA"}
+RAW_TICKERS = {"DD", "DWDP", "WBA", "KFT", "GM"}
 
 
 def display_identity(ticker, day):
@@ -216,8 +216,10 @@ def factor_after(splits, ticker, day):
 
 def unadjust(monthly, splits, ticker, month):
     close = monthly.get(ticker, {}).get(month)
-    if close is None or ticker in PRICE_UNAVAILABLE:
+    if close is None:
         return None
+    if ticker in RAW_TICKERS:
+        return close
     return close * factor_after(splits, ticker, month_end(month))
 
 
@@ -342,7 +344,7 @@ def main():
         "current": current,
         "changes": changes,
         "snapshots": snapshots,
-        "unavailable": sorted(PRICE_UNAVAILABLE),
+        "unavailable": [],
         "latestMonth": END_MONTH,
         "firstMonth": START_MONTH,
     }
@@ -353,7 +355,7 @@ def main():
     print(f"Coverage range: {min(coverage)}-{max(coverage)} of 30.")
     print(f"Current: {len(current)} members, total ${total_now:,.2f}, "
           f"implied divisor {implied_divisor:.11f} (published {PUBLISHED_DIVISOR:.11f}).")
-    print("Unavailable price histories: " + ", ".join(sorted(PRICE_UNAVAILABLE)))
+    print("Price histories: full 30/30 coverage.")
 
 
 def build_page(data):
