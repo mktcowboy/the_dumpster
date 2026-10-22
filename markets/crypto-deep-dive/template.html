@@ -1,0 +1,2949 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="dark light" />
+<meta name="description" content="A full industry deep dive into crypto: market structure, top assets, sectors, stablecoins, yield farming, wallet and trader tracking, valuation, regulation, and security." />
+<link rel="icon" href="data:," />
+<title>Crypto Deep Dive — Market, Stablecoins, Yield, Wallets, Traders</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #07090d;
+    --bg-2: #0a0e14;
+    --panel: #0e141d;
+    --panel-2: #131b27;
+    --panel-3: #182231;
+    --ink: #e9eff7;
+    --ink-2: #b9c5d6;
+    --muted: #7f8da3;
+    --line: #1d2837;
+    --line-2: #2a384c;
+    --accent: #5eead4;
+    --accent-2: #8b9dff;
+    --accent-3: #c084fc;
+    --good: #4ade80;
+    --danger: #fb7185;
+    --warn: #fbbf24;
+    --btc: #f7931a;
+    --display: "Space Grotesk", "Inter", system-ui, sans-serif;
+    --sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+    --radius: 14px;
+    --shadow: 0 18px 60px -30px rgba(0, 0, 0, .9);
+  }
+  [data-theme="light"] {
+    --bg: #f3f5f8;
+    --bg-2: #eef1f5;
+    --panel: #ffffff;
+    --panel-2: #f4f6f9;
+    --panel-3: #e9edf3;
+    --ink: #0e1724;
+    --ink-2: #344256;
+    --muted: #65758c;
+    --line: #dbe1e9;
+    --line-2: #c6cfdb;
+    --accent: #0f766e;
+    --accent-2: #4f46e5;
+    --accent-3: #7e22ce;
+    --good: #15803d;
+    --danger: #be123c;
+    --warn: #a16207;
+    --btc: #c2710c;
+    --shadow: 0 18px 60px -35px rgba(15, 23, 42, .35);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; }
+  }
+  body {
+    margin: 0;
+    background:
+      radial-gradient(1100px 520px at 12% -180px, rgba(94, 234, 212, .10), transparent 62%),
+      radial-gradient(900px 460px at 92% -120px, rgba(139, 157, 255, .10), transparent 60%),
+      var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.62;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  [data-theme="light"] body {
+    background:
+      radial-gradient(1000px 460px at 12% -180px, rgba(15, 118, 110, .08), transparent 62%),
+      radial-gradient(900px 460px at 92% -120px, rgba(79, 70, 229, .07), transparent 60%),
+      var(--bg);
+  }
+  ::selection { background: var(--accent); color: #04120f; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:hover { text-decoration-thickness: 2px; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+  .mono { font-family: var(--mono); }
+  .wrap { width: min(1280px, calc(100% - 48px)); margin: 0 auto; }
+  .skip {
+    position: absolute; left: -999px; top: 8px; z-index: 100;
+    background: var(--accent); color: #04120f; padding: 10px 14px; border-radius: 8px; font-weight: 600;
+  }
+  .skip:focus { left: 16px; }
+
+  /* progress + header */
+  #progress { position: fixed; inset: 0 auto auto 0; height: 2px; width: 0; background: linear-gradient(90deg, var(--accent), var(--accent-2)); z-index: 80; }
+  .site-head {
+    position: sticky; top: 0; z-index: 50;
+    border-bottom: 1px solid var(--line);
+    background: color-mix(in srgb, var(--bg) 82%, transparent);
+    backdrop-filter: blur(16px) saturate(140%);
+  }
+  .head-inner { display: flex; align-items: center; justify-content: space-between; gap: 18px; height: 62px; }
+  .brand { display: inline-flex; align-items: center; gap: 11px; color: var(--ink); text-decoration: none; font-family: var(--display); font-weight: 600; letter-spacing: -0.01em; }
+  .brand-mark {
+    width: 28px; height: 28px; border-radius: 8px; display: grid; place-items: center;
+    background: linear-gradient(145deg, rgba(94,234,212,.22), rgba(139,157,255,.20));
+    border: 1px solid rgba(94,234,212,.35); color: var(--accent); font-family: var(--mono); font-size: 13px; font-weight: 600;
+  }
+  .brand span small { display: block; color: var(--muted); font-family: var(--mono); font-size: 9.5px; letter-spacing: .16em; text-transform: uppercase; font-weight: 500; margin-top: -3px; }
+  .head-right { display: flex; align-items: center; gap: 8px; }
+  .head-date { color: var(--muted); font-family: var(--mono); font-size: 11px; letter-spacing: .03em; white-space: nowrap; }
+  .icon-btn {
+    appearance: none; border: 1px solid var(--line); background: var(--panel); color: var(--ink-2);
+    height: 34px; padding: 0 11px; border-radius: 8px; cursor: pointer; font: 500 12px var(--sans);
+    display: inline-flex; align-items: center; gap: 7px;
+  }
+  .icon-btn:hover { border-color: var(--line-2); color: var(--ink); background: var(--panel-2); }
+  .icon-btn svg { width: 15px; height: 15px; }
+
+  /* ticker */
+  .ticker {
+    border-bottom: 1px solid var(--line);
+    background: linear-gradient(90deg, rgba(94,234,212,.035), transparent 25%, transparent 75%, rgba(139,157,255,.035));
+    overflow: hidden; font-family: var(--mono); font-size: 11.5px;
+    mask-image: linear-gradient(90deg, transparent, #000 2%, #000 98%, transparent);
+  }
+  .ticker-track { display: flex; width: max-content; animation: ticker 42s linear infinite; }
+  .ticker:hover .ticker-track { animation-play-state: paused; }
+  .tick { display: inline-flex; align-items: center; gap: 8px; padding: 9px 20px; border-right: 1px solid var(--line); white-space: nowrap; color: var(--ink-2); }
+  .tick b { color: var(--ink); font-weight: 600; letter-spacing: .02em; }
+  .tick .up { color: var(--good); }
+  .tick .down { color: var(--danger); }
+  @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+  /* hero */
+  .hero { position: relative; overflow: hidden; border-bottom: 1px solid var(--line); }
+  .hero::before {
+    content: ""; position: absolute; inset: 0; pointer-events: none; opacity: .45;
+    background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px);
+    background-size: 64px 64px;
+    mask-image: radial-gradient(ellipse 85% 65% at 50% 0%, #000 15%, transparent 72%);
+  }
+  .hero-inner { position: relative; padding: 62px 0 40px; }
+  .hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) 330px; gap: 54px; align-items: end; }
+  .kicker {
+    display: inline-flex; align-items: center; gap: 9px; color: var(--accent);
+    font-family: var(--mono); font-size: 11px; letter-spacing: .15em; text-transform: uppercase; font-weight: 600; margin: 0 0 20px;
+  }
+  .kicker::before { content: ""; width: 22px; height: 1px; background: var(--accent); }
+  h1 {
+    font-family: var(--display); font-size: clamp(46px, 7.2vw, 92px); line-height: .98;
+    letter-spacing: -0.045em; font-weight: 600; margin: 0 0 24px; max-width: 12ch;
+  }
+  h1 em { font-style: normal; color: transparent; background: linear-gradient(100deg, var(--accent) 10%, var(--accent-2) 55%, var(--accent-3) 95%); background-clip: text; -webkit-background-clip: text; }
+  .lede { font-size: clamp(17px, 1.55vw, 20px); line-height: 1.55; color: var(--ink-2); max-width: 66ch; margin: 0 0 26px; }
+  .lede strong { color: var(--ink); font-weight: 600; }
+  .hero-meta { display: flex; flex-wrap: wrap; gap: 8px; }
+  .meta-chip {
+    display: inline-flex; align-items: center; gap: 7px; border: 1px solid var(--line);
+    background: var(--panel); color: var(--muted); border-radius: 999px; padding: 5px 11px;
+    font-family: var(--mono); font-size: 10.5px; letter-spacing: .02em;
+  }
+  .meta-chip b { color: var(--ink-2); font-weight: 500; }
+  .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 10px var(--accent); }
+  .hero-aside {
+    border: 1px solid var(--line); border-radius: var(--radius); background: linear-gradient(160deg, var(--panel), var(--bg-2));
+    padding: 20px; box-shadow: var(--shadow);
+  }
+  .hero-aside .lbl { font-family: var(--mono); font-size: 10px; letter-spacing: .15em; text-transform: uppercase; color: var(--muted); margin: 0 0 10px; }
+  .hero-aside p { margin: 0 0 14px; color: var(--ink-2); font-size: 13.5px; line-height: 1.55; }
+  .hero-aside code { font-family: var(--mono); color: var(--accent); font-size: 11px; }
+  .aside-rule { border-top: 1px solid var(--line); padding-top: 13px; margin-top: 13px; }
+  .aside-small { font-size: 11.5px; color: var(--muted); line-height: 1.5; }
+  .stat-grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 10px; margin-top: 44px; }
+  .stat {
+    border: 1px solid var(--line); border-radius: 12px; background: linear-gradient(180deg, var(--panel), var(--bg-2));
+    padding: 15px 15px 13px; min-width: 0;
+  }
+  .stat .k { display: block; color: var(--muted); font-family: var(--mono); font-size: 9.5px; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 8px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .stat .v { display: block; font-family: var(--display); font-size: clamp(20px, 2vw, 27px); font-weight: 600; letter-spacing: -0.025em; line-height: 1; color: var(--ink); }
+  .stat .s { display: block; color: var(--muted); font-size: 11px; margin-top: 7px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .stat .s .up { color: var(--good); } .stat .s .down { color: var(--danger); }
+  .regime-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+  .regime {
+    display: inline-flex; align-items: baseline; gap: 8px; border: 1px solid var(--line); background: var(--panel);
+    border-radius: 999px; padding: 6px 13px; font-size: 11.5px; color: var(--muted);
+  }
+  .regime b { color: var(--ink-2); font-family: var(--mono); font-weight: 500; }
+
+  /* shell + toc */
+  .shell { display: grid; grid-template-columns: 216px minmax(0, 1fr); gap: 58px; padding: 54px 0 90px; }
+  .toc { position: sticky; top: 84px; align-self: start; max-height: calc(100vh - 110px); overflow: auto; scrollbar-width: none; }
+  .toc::-webkit-scrollbar { display: none; }
+  .toc-title { font-family: var(--mono); font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); margin: 0 0 12px; }
+  .toc ol { list-style: none; margin: 0; padding: 0; counter-reset: toc; }
+  .toc li { margin: 0 0 1px; }
+  .toc a {
+    display: grid; grid-template-columns: 24px 1fr; gap: 6px; align-items: baseline;
+    padding: 6px 8px; border-radius: 6px; color: var(--muted); text-decoration: none; font-size: 12.5px; line-height: 1.3;
+    border-left: 2px solid transparent;
+  }
+  .toc a::before { counter-increment: toc; content: counter(toc, decimal-leading-zero); font-family: var(--mono); font-size: 9.5px; color: var(--line-2); }
+  .toc a:hover { background: var(--panel); color: var(--ink-2); }
+  .toc a.active { color: var(--accent); background: rgba(94,234,212,.06); border-left-color: var(--accent); }
+  .toc a.active::before { color: var(--accent); }
+  .toc-note { margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--line); color: var(--muted); font-size: 10.5px; line-height: 1.5; }
+  .content { min-width: 0; max-width: 940px; }
+  .mobile-toc { display: none; }
+
+  /* sections */
+  section.sec { padding-top: 34px; margin-top: 44px; border-top: 1px solid var(--line); scroll-margin-top: 78px; }
+  section.sec:first-child { border-top: none; margin-top: 0; padding-top: 0; }
+  .sec-head { margin-bottom: 24px; }
+  .sec-num { font-family: var(--mono); font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: var(--accent); margin: 0 0 8px; font-weight: 600; }
+  h2 { font-family: var(--display); font-size: clamp(28px, 3.4vw, 42px); line-height: 1.08; letter-spacing: -0.035em; font-weight: 600; margin: 0 0 10px; max-width: 24ch; }
+  .dek { font-size: 16.5px; line-height: 1.6; color: var(--muted); margin: 0; max-width: 76ch; }
+  h3 { font-family: var(--display); font-size: 20px; letter-spacing: -0.02em; font-weight: 600; margin: 30px 0 10px; color: var(--ink); }
+  h4 { font-family: var(--display); font-size: 15px; font-weight: 600; margin: 20px 0 6px; color: var(--ink); }
+  p { margin: 0 0 14px; color: var(--ink-2); }
+  .content > p, .sec > p { max-width: 80ch; }
+  .content strong { color: var(--ink); font-weight: 600; }
+  .content ul, .content ol { margin: 0 0 16px; padding-left: 22px; color: var(--ink-2); }
+  .content li { margin: 0 0 7px; }
+  .content li::marker { color: var(--accent); }
+  .content hr { border: none; border-top: 1px solid var(--line); margin: 28px 0; }
+  .small { font-size: 12.5px; color: var(--muted); line-height: 1.55; }
+  .num { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+  .up { color: var(--good); } .down { color: var(--danger); } .flat { color: var(--muted); }
+  .warn-t { color: var(--warn); }
+
+  /* cards */
+  .card { border: 1px solid var(--line); border-radius: var(--radius); background: linear-gradient(180deg, var(--panel), var(--bg-2)); padding: 20px; }
+  .card + .card { margin-top: 14px; }
+  .card-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+  .card-grid.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .card-grid.four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .mini-card { border: 1px solid var(--line); border-radius: 12px; background: var(--panel); padding: 16px; }
+  .mini-card .k { font-family: var(--mono); font-size: 9.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin-bottom: 7px; }
+  .mini-card .v { font-family: var(--display); font-size: 24px; font-weight: 600; letter-spacing: -0.025em; line-height: 1.05; }
+  .mini-card .s { color: var(--muted); font-size: 11.5px; margin-top: 6px; line-height: 1.45; }
+  .mini-card.accent { border-color: rgba(94,234,212,.28); background: linear-gradient(160deg, rgba(94,234,212,.08), var(--panel) 60%); }
+  .mini-card.danger { border-color: rgba(251,113,133,.28); }
+  .mini-card.warn { border-color: rgba(251,191,36,.26); }
+
+  /* snapshot deltas + source freshness */
+  .delta-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin: 12px 0 8px; }
+  .delta-card { border: 1px solid var(--line); border-radius: 10px; background: var(--panel); padding: 12px 13px; min-width: 0; }
+  .delta-card .k { font-family: var(--mono); font-size: 9px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .delta-card .v { font-family: var(--display); font-size: 19px; font-weight: 600; letter-spacing: -0.02em; line-height: 1.1; }
+  .delta-card .d { display: flex; flex-wrap: wrap; gap: 6px; align-items: baseline; margin-top: 5px; font-family: var(--mono); font-size: 11px; }
+  .delta-card .d .pct { color: var(--muted); font-size: 10px; }
+  .delta-card .s { color: var(--muted); font-size: 10.5px; line-height: 1.4; margin-top: 5px; }
+  .delta-empty { grid-column: 1 / -1; text-align: left; }
+  .delta-note { font-size: 11px; color: var(--muted); margin: 7px 0 0; line-height: 1.5; }
+  .fresh-table { min-width: 620px; }
+  .fresh-table th, .fresh-table td { white-space: nowrap; }
+
+  .callout {
+    border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: 0 10px 10px 0;
+    background: linear-gradient(90deg, rgba(94,234,212,.055), transparent 70%); padding: 16px 18px; margin: 22px 0;
+  }
+  .callout .tag { display: block; font-family: var(--mono); font-size: 9.5px; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); margin-bottom: 5px; font-weight: 600; }
+  .callout p { margin: 0; font-size: 14px; line-height: 1.58; color: var(--ink-2); max-width: 76ch; }
+  .callout.warn { border-left-color: var(--warn); background: linear-gradient(90deg, rgba(251,191,36,.06), transparent 70%); }
+  .callout.warn .tag { color: var(--warn); }
+  .callout.danger { border-left-color: var(--danger); background: linear-gradient(90deg, rgba(251,113,133,.06), transparent 70%); }
+  .callout.danger .tag { color: var(--danger); }
+
+  /* tables */
+  .table-wrap { border: 1px solid var(--line); border-radius: 12px; overflow: auto; background: var(--panel); margin: 14px 0 8px; }
+  table { border-collapse: collapse; width: 100%; font-size: 12.5px; }
+  thead th {
+    position: sticky; top: 0; z-index: 2; background: var(--panel-2); color: var(--muted);
+    font-family: var(--mono); font-size: 9.5px; letter-spacing: .08em; text-transform: uppercase; font-weight: 500;
+    text-align: right; padding: 10px 11px; border-bottom: 1px solid var(--line-2); white-space: nowrap;
+  }
+  thead th:first-child, tbody td:first-child { text-align: left; }
+  thead th.left, tbody td.left { text-align: left; }
+  thead th[data-sort] { cursor: pointer; user-select: none; }
+  thead th[data-sort]:hover { color: var(--ink); }
+  thead th.sort-asc::after { content: ' ↑'; color: var(--accent); }
+  thead th.sort-desc::after { content: ' ↓'; color: var(--accent); }
+  tbody td { padding: 9px 11px; border-bottom: 1px solid var(--line); text-align: right; color: var(--ink-2); vertical-align: middle; }
+  tbody tr:last-child td { border-bottom: none; }
+  tbody tr:hover td { background: rgba(94,234,212,.035); }
+  td.name { font-weight: 500; color: var(--ink); white-space: nowrap; }
+  td.name .sym { font-family: var(--mono); font-size: 10px; color: var(--muted); margin-left: 6px; }
+  .rank { color: var(--muted); font-family: var(--mono); font-size: 10px; }
+  .asset-cell { display: flex; align-items: center; gap: 9px; min-width: 170px; }
+  .asset-badge {
+    width: 26px; height: 26px; border-radius: 8px; display: grid; place-items: center; flex: 0 0 auto;
+    font-family: var(--mono); font-size: 9px; font-weight: 600; color: var(--ink);
+    background: var(--panel-3); border: 1px solid var(--line-2);
+  }
+  .asset-name { min-width: 0; }
+  .asset-name b { display: block; font-size: 12.5px; color: var(--ink); font-weight: 600; line-height: 1.2; }
+  .asset-name span { display: block; font-family: var(--mono); font-size: 9.5px; color: var(--muted); margin-top: 1px; }
+  .table-note { font-size: 11px; color: var(--muted); margin: 7px 0 0; line-height: 1.5; }
+  .table-note a { color: var(--muted); }
+  .scroll-hint { display: none; }
+
+  /* chips, inputs */
+  .toolbar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between; margin: 16px 0 10px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chip {
+    appearance: none; border: 1px solid var(--line); background: var(--panel); color: var(--muted);
+    border-radius: 999px; padding: 5px 10px; font: 500 11px var(--sans); cursor: pointer; white-space: nowrap;
+  }
+  .chip:hover { color: var(--ink-2); border-color: var(--line-2); }
+  .chip.is-active { background: rgba(94,234,212,.10); border-color: rgba(94,234,212,.45); color: var(--accent); }
+  .search {
+    appearance: none; border: 1px solid var(--line); background: var(--panel); color: var(--ink);
+    border-radius: 8px; padding: 8px 11px; font: 400 12px var(--sans); min-width: 200px;
+  }
+  .search::placeholder { color: var(--muted); }
+  .search:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(94,234,212,.09); }
+  select {
+    appearance: none; border: 1px solid var(--line); background: var(--panel); color: var(--ink-2);
+    border-radius: 8px; padding: 8px 28px 8px 10px; font: 400 12px var(--sans); cursor: pointer;
+    background-image: linear-gradient(45deg, transparent 50%, var(--muted) 50%), linear-gradient(135deg, var(--muted) 50%, transparent 50%);
+    background-position: calc(100% - 14px) 50%, calc(100% - 9px) 50%; background-size: 5px 5px, 5px 5px; background-repeat: no-repeat;
+  }
+  .result-count { font-family: var(--mono); font-size: 10.5px; color: var(--muted); }
+
+  /* sparkline */
+  .spark { width: 92px; height: 26px; display: block; margin-left: auto; overflow: visible; }
+  .spark.up { color: var(--good); }
+  .spark.down { color: var(--danger); }
+  .spark.flat { color: var(--muted); }
+  .spark path.line { fill: none; stroke-width: 1.4; vector-effect: non-scaling-stroke; }
+  .spark path.fill { opacity: .12; }
+
+  /* treemap */
+  .treemap {
+    position: relative; height: 430px; border: 1px solid var(--line); border-radius: 12px;
+    overflow: hidden; background: var(--bg-2); margin: 18px 0 10px;
+  }
+  .tm-tile {
+    position: absolute; border: 1px solid rgba(7,9,13,.85); overflow: hidden; cursor: pointer;
+    transition: opacity .15s ease, filter .15s ease; padding: 8px 9px; color: #071018;
+  }
+  .tm-tile:hover { filter: brightness(1.12); z-index: 3; }
+  .tm-tile .tm-sym { font-family: var(--mono); font-size: 9px; font-weight: 600; letter-spacing: .04em; opacity: .78; display: block; }
+  .tm-tile .tm-name { font-family: var(--display); font-size: 13px; font-weight: 600; line-height: 1.1; display: block; margin-top: 2px; }
+  .tm-tile .tm-val { font-family: var(--mono); font-size: 9px; opacity: .75; display: block; margin-top: 3px; }
+  .tm-tile.small .tm-name { font-size: 10.5px; }
+  .tm-tile.tiny .tm-name { display: none; }
+  .tm-tile.tiny .tm-sym { font-size: 8px; }
+  .tm-legend { display: flex; flex-wrap: wrap; gap: 5px 12px; margin: 10px 0 0; }
+  .tm-legend span { display: inline-flex; align-items: center; gap: 5px; font-size: 10px; color: var(--muted); font-family: var(--mono); }
+  .tm-legend i { width: 7px; height: 7px; border-radius: 2px; display: inline-block; }
+
+  /* bars */
+  .bar-list { display: grid; gap: 9px; margin: 14px 0; }
+  .bar-row { display: grid; grid-template-columns: 118px minmax(0, 1fr) 104px; gap: 10px; align-items: center; }
+  .bar-row .lbl { font-size: 11.5px; color: var(--ink-2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .bar-track { height: 8px; border-radius: 999px; background: var(--panel-3); overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 999px; background: linear-gradient(90deg, var(--accent), var(--accent-2)); }
+  .bar-row .val { font-family: var(--mono); font-size: 10.5px; color: var(--muted); text-align: right; white-space: nowrap; }
+
+  /* charts */
+  .chart-card { border: 1px solid var(--line); border-radius: var(--radius); background: var(--panel); padding: 18px 18px 12px; margin: 18px 0; }
+  .chart-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 10px; margin-bottom: 8px; }
+  .chart-title { font-family: var(--display); font-size: 15px; font-weight: 600; color: var(--ink); }
+  .chart-sub { font-size: 11px; color: var(--muted); }
+  .chart-legend { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 0; }
+  .legend-btn {
+    appearance: none; border: 1px solid var(--line); background: transparent; color: var(--muted);
+    border-radius: 999px; padding: 3px 9px; font: 500 10px var(--mono); cursor: pointer; display: inline-flex; align-items: center; gap: 5px;
+  }
+  .legend-btn i { width: 7px; height: 7px; border-radius: 50%; display: inline-block; }
+  .legend-btn.is-off { opacity: .35; }
+  .legend-btn.is-off i { background: var(--muted) !important; }
+  .chart-svg { width: 100%; height: auto; display: block; overflow: visible; }
+  .chart-svg text { font-family: var(--mono); fill: var(--muted); font-size: 9px; }
+  .chart-svg .grid { stroke: var(--line); stroke-width: 1; }
+  .chart-tooltip {
+    position: absolute; pointer-events: none; z-index: 5; background: var(--panel-3); border: 1px solid var(--line-2);
+    border-radius: 8px; padding: 8px 10px; font-family: var(--mono); font-size: 10px; color: var(--ink-2);
+    box-shadow: 0 12px 30px -12px rgba(0,0,0,.8); opacity: 0; transition: opacity .08s; white-space: nowrap;
+  }
+  .chart-tooltip b { color: var(--ink); font-weight: 600; }
+  .chart-wrap { position: relative; }
+
+  /* calculators */
+  .calc { border: 1px solid var(--line); border-radius: 12px; background: var(--panel); padding: 18px; margin: 16px 0; }
+  .calc-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+  .field { display: grid; gap: 5px; margin-bottom: 11px; }
+  .field label { font-family: var(--mono); font-size: 9.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+  .field input, .field select {
+    width: 100%; border: 1px solid var(--line); background: var(--bg-2); color: var(--ink);
+    border-radius: 7px; padding: 9px 10px; font: 500 13px var(--mono);
+  }
+  .field input:focus, .field select:focus { outline: none; border-color: var(--accent); }
+  .out-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .out { border: 1px solid var(--line); border-radius: 8px; background: var(--bg-2); padding: 10px 11px; }
+  .out .k { font-family: var(--mono); font-size: 8.5px; letter-spacing: .09em; text-transform: uppercase; color: var(--muted); }
+  .out .v { font-family: var(--display); font-size: 18px; font-weight: 600; letter-spacing: -0.02em; margin-top: 3px; }
+  .out .v.small { font-size: 14px; }
+  .calc-note { font-size: 10.5px; color: var(--muted); margin: 10px 0 0; line-height: 1.5; }
+
+  /* watchlist */
+  .watch-form { display: grid; grid-template-columns: 1fr 1.5fr 130px auto; gap: 8px; align-items: end; margin: 14px 0; }
+  .watch-form .field { margin: 0; }
+  .watch-actions { display: flex; gap: 8px; flex-wrap: wrap; margin: 10px 0; }
+  .btn {
+    appearance: none; border: 1px solid var(--line-2); background: var(--panel-2); color: var(--ink);
+    border-radius: 8px; padding: 8px 12px; font: 600 11.5px var(--sans); cursor: pointer;
+  }
+  .btn:hover { border-color: var(--accent); color: var(--accent); }
+  .btn.primary { background: var(--accent); border-color: var(--accent); color: #04120f; }
+  .btn.primary:hover { filter: brightness(1.06); color: #04120f; }
+  .btn.ghost { background: transparent; color: var(--muted); }
+  .btn.ghost:hover { color: var(--ink); }
+  .watch-list { display: grid; gap: 8px; margin-top: 12px; }
+  .watch-item { display: grid; grid-template-columns: 1fr auto; gap: 12px; align-items: center; border: 1px solid var(--line); border-radius: 10px; background: var(--panel); padding: 11px 12px; }
+  .watch-item .wl { font-weight: 600; color: var(--ink); font-size: 13px; }
+  .watch-item .wa { font-family: var(--mono); font-size: 10px; color: var(--muted); word-break: break-all; margin-top: 2px; }
+  .watch-item .links { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 7px; }
+  .watch-item .links a { font-family: var(--mono); font-size: 9.5px; text-decoration: none; border: 1px solid var(--line); padding: 2px 6px; border-radius: 4px; color: var(--muted); }
+  .watch-item .links a:hover { color: var(--accent); border-color: var(--accent); }
+  .watch-item .chain-badge { font-family: var(--mono); font-size: 9px; text-transform: uppercase; letter-spacing: .05em; color: var(--accent); border: 1px solid rgba(94,234,212,.35); background: rgba(94,234,212,.06); border-radius: 4px; padding: 2px 6px; }
+  .empty { border: 1px dashed var(--line-2); border-radius: 10px; padding: 24px; text-align: center; color: var(--muted); font-size: 12.5px; }
+
+  /* score badges */
+  .badge { display: inline-block; font-family: var(--mono); font-size: 9px; padding: 2px 6px; border-radius: 4px; border: 1px solid var(--line-2); color: var(--muted); white-space: nowrap; }
+  .badge.low { color: var(--good); border-color: rgba(74,222,128,.35); background: rgba(74,222,128,.07); }
+  .badge.medium { color: var(--warn); border-color: rgba(251,191,36,.35); background: rgba(251,191,36,.07); }
+  .badge.high { color: var(--danger); border-color: rgba(251,113,133,.35); background: rgba(251,113,133,.08); }
+  .badge.tag { color: var(--accent-2); border-color: rgba(139,157,255,.3); background: rgba(139,157,255,.07); }
+
+  /* sector cards */
+  .sector-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin: 18px 0; }
+  .sector {
+    border: 1px solid var(--line); border-radius: 12px; background: linear-gradient(180deg, var(--panel), var(--bg-2));
+    padding: 16px; display: flex; flex-direction: column; min-height: 190px;
+  }
+  .sector .top { display: flex; justify-content: space-between; gap: 8px; align-items: flex-start; }
+  .sector .tag { font-family: var(--mono); font-size: 8.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+  .sector .cap { font-family: var(--display); font-size: 23px; font-weight: 600; letter-spacing: -0.03em; line-height: 1.05; margin-top: 3px; }
+  .sector .chg { font-family: var(--mono); font-size: 10px; margin-top: 4px; }
+  .sector h4 { margin: 12px 0 4px; font-size: 13px; }
+  .sector p { font-size: 11.5px; line-height: 1.5; color: var(--muted); margin: 0 0 10px; flex: 1; }
+  .sector .leaders { display: flex; flex-wrap: wrap; gap: 4px; }
+  .sector .leader { font-family: var(--mono); font-size: 9px; color: var(--ink-2); border: 1px solid var(--line); border-radius: 4px; padding: 2px 5px; background: var(--bg-2); }
+  .sector .leader b { color: var(--accent); font-weight: 500; }
+  .sector .risk { margin-top: 9px; font-family: var(--mono); font-size: 8.5px; color: var(--warn); letter-spacing: .04em; }
+
+  /* prose blocks */
+  .two-col { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+  .two-col p:last-child { margin-bottom: 0; }
+  .plain-list { list-style: none; padding: 0; margin: 12px 0; }
+  .plain-list li { position: relative; padding: 7px 0 7px 26px; border-bottom: 1px solid var(--line); font-size: 13px; color: var(--ink-2); }
+  .plain-list li:last-child { border-bottom: none; }
+  .plain-list li::before { content: "→"; position: absolute; left: 0; top: 7px; color: var(--accent); font-family: var(--mono); font-size: 11px; }
+  .check-list { list-style: none; padding: 0; margin: 10px 0; }
+  .check-list li { position: relative; padding: 6px 0 6px 26px; font-size: 13px; color: var(--ink-2); }
+  .check-list li::before { content: "✓"; position: absolute; left: 0; top: 6px; color: var(--accent); font-size: 12px; }
+  .x-list { list-style: none; padding: 0; margin: 10px 0; }
+  .x-list li { position: relative; padding: 6px 0 6px 26px; font-size: 13px; color: var(--ink-2); }
+  .x-list li::before { content: "×"; position: absolute; left: 0; top: 6px; color: var(--danger); font-size: 14px; line-height: 1.3; }
+
+  /* glossary */
+  .glossary { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 28px; margin: 18px 0; }
+  .glossary div { padding: 10px 0; border-bottom: 1px solid var(--line); }
+  .glossary dt { font-family: var(--display); font-weight: 600; font-size: 13px; color: var(--ink); }
+  .glossary dd { margin: 3px 0 0; font-size: 12px; color: var(--muted); line-height: 1.5; }
+
+  /* footer */
+  .site-foot { border-top: 1px solid var(--line); padding: 34px 0 56px; color: var(--muted); font-size: 11.5px; }
+  .foot-grid { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px; align-items: flex-start; }
+  .foot-grid a { color: var(--ink-2); }
+  .foot-links { display: flex; flex-wrap: wrap; gap: 14px; font-family: var(--mono); font-size: 10.5px; }
+
+  @media (max-width: 1120px) {
+    .hero-grid { grid-template-columns: 1fr; gap: 28px; }
+    .hero-aside { max-width: 560px; }
+    .stat-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .shell { grid-template-columns: 1fr; gap: 0; }
+    .toc { display: none; }
+    .mobile-toc { display: block; margin-bottom: 26px; border: 1px solid var(--line); border-radius: 10px; background: var(--panel); }
+    .mobile-toc summary { cursor: pointer; padding: 12px 14px; font-family: var(--mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+    .mobile-toc ol { columns: 2; padding: 0 18px 14px 32px; margin: 0; color: var(--muted); font-size: 12px; }
+    .mobile-toc li { margin-bottom: 5px; }
+    .mobile-toc a { color: var(--ink-2); text-decoration: none; }
+    .content { max-width: none; }
+    .sector-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .delta-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+  @media (max-width: 820px) {
+    .wrap { width: calc(100% - 32px); }
+    .head-date { display: none; }
+    .hero-inner { padding: 42px 0 30px; }
+    .stat-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .card-grid, .card-grid.three, .card-grid.four, .two-col { grid-template-columns: 1fr; }
+    .sector-grid { grid-template-columns: 1fr; }
+    .calc-grid { grid-template-columns: 1fr; }
+    .watch-form { grid-template-columns: 1fr; }
+    .glossary { grid-template-columns: 1fr; }
+    .bar-row { grid-template-columns: 92px minmax(0, 1fr) 104px; }
+    .table-wrap table:has(thead th:nth-child(4)) { min-width: 540px; }
+    .table-wrap table:has(thead th:nth-child(6)) { min-width: 720px; }
+    .treemap { height: 360px; }
+    .scroll-hint { display: block; font-family: var(--mono); font-size: 9.5px; color: var(--muted); margin: 0 0 6px; }
+  }
+  @media (max-width: 520px) {
+    .stat-grid { grid-template-columns: 1fr 1fr; }
+    .stat .v { font-size: 20px; }
+    h1 { font-size: 48px; }
+    .out-grid { grid-template-columns: 1fr; }
+    .delta-grid { grid-template-columns: 1fr; }
+    .toolbar { align-items: stretch; }
+    .search { width: 100%; }
+  }
+  @media print {
+    #progress, .site-head, .ticker, .toc, .mobile-toc, .hero-aside, .chart-legend { display: none !important; }
+    body { background: #fff; color: #000; }
+    .shell { display: block; }
+    .content { max-width: none; }
+    .card, .stat, .mini-card, .chart-card, .calc, .table-wrap { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to report</a>
+<div id="progress" aria-hidden="true"></div>
+
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="brand" href="#top">
+      <span class="brand-mark">◈</span>
+      <span>Market Field Notes<small>Crypto deep dive</small></span>
+    </a>
+    <div class="head-right">
+      <span class="head-date">SNAPSHOT · __GENERATED_LABEL__</span>
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle color theme" title="Toggle theme">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.6 6.6 0 0 0 9.8 9.8Z"/></svg>
+        <span>Theme</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="ticker" aria-label="Market ticker">
+  <div class="ticker-track" id="tickerTrack"></div>
+</div>
+
+<section class="hero" id="top">
+  <div class="hero-inner wrap">
+    <div class="hero-grid">
+      <div>
+        <p class="kicker">Industry deep dive · October 2026</p>
+        <h1>Crypto,<br><em>end to end.</em></h1>
+        <p class="lede">
+          A working map of a <strong>__TOTAL_MCAP__</strong> market: bitcoin and ethereum at the core,
+          a <strong>__STABLE_TOTAL__</strong> dollar layer wrapped around it, and a long tail of exchanges,
+          lending markets, perp venues, yield strategies, wallets, and traders. This report covers the
+          whole stack — what is big, what is working, how the money moves, and where the risks hide.
+        </p>
+        <div class="hero-meta">
+          <span class="meta-chip"><span class="dot"></span><b>Data snapshot</b> __GENERATED_LABEL__</span>
+          <span class="meta-chip"><b>__COIN_COUNT__</b> top assets</span>
+          <span class="meta-chip"><b>__STABLE_COUNT__</b> stablecoins</span>
+          <span class="meta-chip"><b>Public APIs</b> CoinGecko · DefiLlama · Hyperliquid</span>
+        </div>
+      </div>
+      <aside class="hero-aside">
+        <p class="lbl">How to read this</p>
+        <p>
+          Every table is a snapshot, not a live feed. The prose is the map; the tables are the terrain.
+          Rebuild the snapshot any time with <code>python3 fetch_data.py --refresh</code>.
+        </p>
+        <div class="aside-rule">
+          <p class="lbl">Market regime</p>
+          <p class="aside-small">BTC is <b class="warn-t">__BTC_ATH_DOWN__</b> from its all-time high and ETH is <b class="warn-t">__ETH_ATH_DOWN__</b>. Stablecoins are <b>__STABLE_SHARE__</b> of total market cap. This is a defensive, dollar-heavy tape with narrow leadership — not a broad risk-on market.</p>
+        </div>
+        <div class="aside-rule aside-small">
+          Not investment advice. Market caps, yields, and PnL figures are estimates from public data and can be wrong, stale, or manipulated.
+        </div>
+      </aside>
+    </div>
+
+    <div class="stat-grid">
+      <div class="stat"><span class="k">Total market cap</span><span class="v">__TOTAL_MCAP__</span><span class="s"><span class="__MCAP_CLASS__">__MCAP_CHANGE__</span> 24h</span></div>
+      <div class="stat"><span class="k">24h spot volume</span><span class="v">__TOTAL_VOL__</span><span class="s">__VOL_CHANGE__ vs prior day</span></div>
+      <div class="stat"><span class="k">BTC dominance</span><span class="v">__BTC_DOM__</span><span class="s">ETH __ETH_DOM__</span></div>
+      <div class="stat"><span class="k">Stablecoin supply</span><span class="v">__STABLE_TOTAL__</span><span class="s">__STABLE_SHARE__ of market cap</span></div>
+      <div class="stat"><span class="k">DeFi TVL</span><span class="v">__DEFI_TVL__</span><span class="s"><span class="__DEFI_CLASS__">__DEFI_30D__</span> 30d</span></div>
+      <div class="stat"><span class="k">Fear &amp; greed</span><span class="v">__FNG__</span><span class="s">__FNG_LABEL__ · alternative.me</span></div>
+    </div>
+    <div class="regime-row">
+      <span class="regime"><b>__BREADTH_UP__/__BREADTH_TOTAL__</b> top 100 green on 24h</span>
+      <span class="regime"><b>__TOP10_SHARE__</b> of market cap in top 10</span>
+      <span class="regime"><b>__DEX_24H__</b> spot DEX volume (24h)</span>
+      <span class="regime"><b>__HL_VOL__</b> Hyperliquid perp volume (24h)</span>
+    </div>
+  </div>
+</section>
+
+<div class="wrap shell">
+  <nav class="toc" id="toc" aria-label="Table of contents">
+    <p class="toc-title">Contents</p>
+    <ol>
+      <li><a href="#summary">The short version</a></li>
+      <li><a href="#market">State of the market</a></li>
+      <li><a href="#map">Market map &amp; top 100</a></li>
+      <li><a href="#sectors">Sectors &amp; narratives</a></li>
+      <li><a href="#structure">Market structure</a></li>
+      <li><a href="#anchors">Bitcoin &amp; Ethereum</a></li>
+      <li><a href="#stablecoins">Stablecoins</a></li>
+      <li><a href="#yield">Yield farming</a></li>
+      <li><a href="#wallets">Wallet tracking</a></li>
+      <li><a href="#traders">Trader tracking</a></li>
+      <li><a href="#valuation">Valuation</a></li>
+      <li><a href="#rules">Regulation &amp; security</a></li>
+      <li><a href="#playbooks">Playbooks</a></li>
+      <li><a href="#glossary">Glossary</a></li>
+      <li><a href="#sources">Sources &amp; method</a></li>
+    </ol>
+    <p class="toc-note">Sections 1–6 are the market. 7–10 are the operator's toolkit. 11–15 are frameworks and reference.</p>
+  </nav>
+
+  <main class="content" id="main">
+    <details class="mobile-toc">
+      <summary>Contents</summary>
+      <ol>
+        <li><a href="#summary">The short version</a></li>
+        <li><a href="#market">State of the market</a></li>
+        <li><a href="#map">Market map &amp; top 100</a></li>
+        <li><a href="#sectors">Sectors &amp; narratives</a></li>
+        <li><a href="#structure">Market structure</a></li>
+        <li><a href="#anchors">Bitcoin &amp; Ethereum</a></li>
+        <li><a href="#stablecoins">Stablecoins</a></li>
+        <li><a href="#yield">Yield farming</a></li>
+        <li><a href="#wallets">Wallet tracking</a></li>
+        <li><a href="#traders">Trader tracking</a></li>
+        <li><a href="#valuation">Valuation</a></li>
+        <li><a href="#rules">Regulation &amp; security</a></li>
+        <li><a href="#playbooks">Playbooks</a></li>
+        <li><a href="#glossary">Glossary</a></li>
+        <li><a href="#sources">Sources &amp; method</a></li>
+      </ol>
+    </details>
+
+    <section class="sec" id="summary">
+      <header class="sec-head">
+        <p class="sec-num">00 / Executive summary</p>
+        <h2>The short version</h2>
+        <p class="dek">One year after the late-2025 peak, crypto is cheaper but not smaller. The interesting rotation is inside the market: out of beta, into dollars, credit, and cash-flow infrastructure.</p>
+      </header>
+
+      <div class="card-grid">
+        <div class="mini-card accent">
+          <div class="k">The headline</div>
+          <div class="v">Two markets</div>
+          <div class="s">BTC is down 33% from its high and ETH is down 49%, yet total market cap is still __TOTAL_MCAP__ and stablecoin supply is __STABLE_TOTAL__. Speculative beta is compressed; the dollar layer is compounding.</div>
+        </div>
+        <div class="mini-card">
+          <div class="k">The rotation</div>
+          <div class="v">Beta → carry</div>
+          <div class="s">Capital is not leaving the industry. It is moving into T-bill-backed stablecoins, tokenized credit, basis trades, and yield-bearing dollars. __STABLE_COUNT__ stablecoins and tokenized funds now sit in the top 100.</div>
+        </div>
+      </div>
+
+      <p>
+        The first thing to understand about this snapshot is that the bear market is real but narrow.
+        Bitcoin trades near <strong>__BTC_PRICE__</strong>, roughly one-third below its October 2025 high.
+        Ethereum trades near <strong>__ETH_PRICE__</strong>, roughly half its August 2025 high. The total
+        market is <strong>__TOTAL_MCAP__</strong>, and the top 10 assets still account for
+        <strong>__TOP10_SHARE__</strong> of it. That is not a market that has been abandoned; it is a
+        market that has been re-priced and concentrated.
+      </p>
+      <p>
+        The second thing is that the growth is in dollars. Stablecoin supply is <strong>__STABLE_TOTAL__</strong>,
+        about <strong>__STABLE_SHARE__</strong> of total crypto market cap. Sixteen stablecoins plus five
+        tokenized T-bill or credit funds sit in the top 100. Figure HELOC, a tokenized home-equity line,
+        is a top-10 asset by reported market cap. The industry's biggest product is no longer a token that
+        goes up; it is a dollar that moves.
+      </p>
+      <p>
+        The third thing is that leadership is narrow and often low-float. Privacy assets (ZEC, XMR) and
+        perp DEX tokens (HYPE, ASTER, LIGHTER) are among the strongest narratives. New listings such as
+        Bitway (BTW) can post enormous percentage gains while a small share of supply circulates. The
+        <strong>FDV / market cap</strong> column in the top-100 table is there for a reason: in this tape,
+        float matters as much as the story.
+      </p>
+      <p>
+        The operator's edge in this market is not picking the next 100x. It is <strong>measurement</strong>:
+        knowing where liquidity actually is, which yields are real, which wallets are worth following,
+        which traders have an edge versus leverage, and which stablecoins are worth holding. The rest of
+        this page is organized around those questions.
+      </p>
+
+      <div class="callout">
+        <span class="tag">What this page covers</span>
+        <p>Market state and cycle · top 100 assets and sector map · CEX/DEX/perp structure · bitcoin and ethereum · stablecoins and tokenized dollars · yield farming and impermanent loss · wallet tracking and entity labeling · trader tracking and performance evaluation · valuation frameworks · regulation, tax, and security · playbooks and glossary.</p>
+      </div>
+    </section>
+
+    <section class="sec" id="market">
+      <header class="sec-head">
+        <p class="sec-num">01 / Market state</p>
+        <h2>A defensive tape with a growing dollar layer</h2>
+        <p class="dek">The index is down, breadth is uneven, and the only unambiguous uptrend is in dollar instruments. Here is the one-year picture.</p>
+      </header>
+
+      <p>
+        The market is in a post-peak consolidation. Bitcoin peaked near <strong>$126,080</strong> in
+        October 2025 and Ethereum near <strong>$4,946</strong> in August 2025. At this snapshot, BTC is
+        <strong>__BTC_ATH_DOWN__</strong> from that high and ETH is <strong>__ETH_ATH_DOWN__</strong>.
+        The 30-day tape is mixed: <strong>__BREADTH_30D_UP__</strong> of the top 100 are higher over the month,
+        while <strong>__BREADTH_24H_UP__</strong> are green on the day. That is a bounce inside a drawdown,
+        not a new trend.
+      </p>
+
+      <div class="chart-card">
+        <div class="chart-head">
+          <div>
+            <div class="chart-title">One year, indexed to 100</div>
+            <div class="chart-sub">Daily closes and supply/TVL levels · __HISTORY_START__ to __HISTORY_END__</div>
+          </div>
+          <div class="chart-sub">Hover for values</div>
+        </div>
+        <div class="chart-wrap" id="cycleChartWrap">
+          <svg class="chart-svg" id="cycleChart" role="img" aria-label="One-year indexed performance of bitcoin, ethereum, solana, stablecoin supply, and DeFi TVL"></svg>
+          <div class="chart-tooltip" id="cycleTooltip"></div>
+        </div>
+        <div class="chart-legend" id="cycleLegend"></div>
+      </div>
+
+      <h3>What the tape is saying</h3>
+      <div class="card-grid three">
+        <div class="mini-card">
+          <div class="k">Defensive dominance</div>
+          <div class="v">__BTC_DOM__</div>
+          <div class="s">BTC dominance is high, ETH dominance is __ETH_DOM__, and ETH/BTC is at the __ETH_BTC_PCT__ percentile of its one-year range. Capital is hiding in the reserve asset.</div>
+        </div>
+        <div class="mini-card">
+          <div class="k">Narrow breadth</div>
+          <div class="v">__BREADTH_24H_UP__/100</div>
+          <div class="s">The 24-hour bounce is broad, but the 30-day trend is not: __BREADTH_30D_UP__ of the top 100 are up over 30 days. Leadership is concentrated in privacy, perps, and a handful of new listings.</div>
+        </div>
+        <div class="mini-card">
+          <div class="k">Dollar layer</div>
+          <div class="v">__STABLE_TOTAL__</div>
+          <div class="s">Stablecoin supply is essentially flat over 30 days (__STABLE_30D__) but up from a year ago. In a drawdown, flat dollars are a relative win.</div>
+        </div>
+      </div>
+
+      <h3>Since the last snapshot</h3>
+      <div id="snapshotDelta"></div>
+      <p class="delta-note">Deltas compare with the prior stored snapshot, not a fixed period.</p>
+
+      <h3>The cycle in numbers</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th class="left">Asset</th><th>24h</th><th>7d</th><th>30d</th><th>90d</th><th>1y</th><th>From ATH</th><th>Market cap</th></tr></thead>
+          <tbody id="perfTable"></tbody>
+        </table>
+      </div>
+      <p class="table-note">Price performance from CoinGecko daily closes; 24h/7d/30d from the current ticker. “From ATH” uses the all-time high reported by CoinGecko. Past performance is not a forecast.</p>
+
+      <h3>Market internals</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th class="left">Reading</th><th>Value</th><th class="left">Why it matters</th></tr></thead>
+          <tbody>
+            <tr><td class="left name">BTC dominance</td><td class="num">__BTC_DOM__</td><td class="left">High dominance signals a defensive market. Altcoin beta usually needs dominance to fall before it outperforms.</td></tr>
+            <tr><td class="left name">ETH / BTC</td><td class="num">__ETH_BTC__</td><td class="left">At the __ETH_BTC_PCT__ percentile of the last year; __ETH_BTC_30D__ over 30 days. ETH is not leading.</td></tr>
+            <tr><td class="left name">Top-10 concentration</td><td class="num">__TOP10_SHARE__</td><td class="left">The market is top-heavy. The long tail is large in count but small in value.</td></tr>
+            <tr><td class="left name">Stablecoin share</td><td class="num">__STABLE_SHARE__</td><td class="left">A high share means the market's marginal dollar is sitting in cash-like instruments, not risk assets.</td></tr>
+            <tr><td class="left name">Fear &amp; greed</td><td class="num">__FNG__ · __FNG_LABEL__</td><td class="left">Sentiment has recovered even as price remains below the highs — a classic bounce condition, not confirmation of a new cycle.</td></tr>
+            <tr><td class="left name">CoinGecko sentiment</td><td class="num">__CG_FNG__ · __CG_FNG_LABEL__</td><td class="left">A second sentiment gauge reading more neutral than alternative.me. Divergence is a reminder that sentiment indices are noisy.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout warn">
+        <span class="tag">The important nuance</span>
+        <p>Market cap is not liquidity. A $2.85T market can still have thin order books, violent liquidation cascades, and assets that trade far below their reported value. The numbers here are useful for orientation, not for sizing a position.</p>
+      </div>
+    </section>
+
+    <section class="sec" id="map">
+      <header class="sec-head">
+        <p class="sec-num">02 / Market map</p>
+        <h2>The top 100, and what sits underneath</h2>
+        <p class="dek">A treemap of the largest assets, a sortable table with float and liquidity ratios, and the one number most people ignore: fully diluted valuation.</p>
+      </header>
+
+      <p>
+        The top of the market is more concentrated than the asset count suggests. The ten largest assets
+        are <strong>__TOP10_SHARE__</strong> of total market cap, and bitcoin alone is
+        <strong>__BTC_DOM__</strong>. Below the top ten, the market fragments quickly: L1 tokens, DeFi
+        governance, exchange tokens, memes, AI, privacy, and a growing shelf of dollar instruments.
+        The treemap makes the hierarchy visible at a glance.
+      </p>
+
+      <div class="chart-card">
+        <div class="chart-head">
+          <div>
+            <div class="chart-title">Top 60 assets by market cap</div>
+            <div class="chart-sub">Area is market cap · color is primary sector · click a tile to filter the table</div>
+          </div>
+          <div class="chart-sub" id="treemapTotal"></div>
+        </div>
+        <div class="treemap" id="treemap" role="img" aria-label="Treemap of the top 60 crypto assets by market cap"></div>
+        <div class="tm-legend" id="treemapLegend"></div>
+      </div>
+
+      <div class="toolbar">
+        <div class="chips" id="tagChips"></div>
+        <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
+          <input class="search" id="coinSearch" type="search" placeholder="Search asset or ticker…" aria-label="Search assets" />
+          <select id="rowLimit" aria-label="Rows to show">
+            <option value="100">Top 100</option>
+            <option value="50">Top 50</option>
+            <option value="25">Top 25</option>
+          </select>
+          <span class="result-count" id="resultCount"></span>
+        </div>
+      </div>
+      <p class="scroll-hint">Scroll horizontally to see all columns →</p>
+
+      <div class="table-wrap">
+        <table id="coinTable">
+          <thead>
+            <tr>
+              <th class="left" data-sort="rank">#</th>
+              <th class="left" data-sort="name">Asset</th>
+              <th data-sort="price">Price</th>
+              <th data-sort="change_24h">24h</th>
+              <th data-sort="change_7d">7d</th>
+              <th data-sort="change_30d">30d</th>
+              <th data-sort="market_cap">Market cap</th>
+              <th data-sort="fdv_ratio">FDV / MC</th>
+              <th data-sort="vol_ratio">Vol / MC</th>
+              <th data-sort="change_7d">7d trend</th>
+              <th class="left" data-sort="tag">Sector</th>
+            </tr>
+          </thead>
+          <tbody id="coinTableBody"></tbody>
+        </table>
+      </div>
+      <p class="table-note">
+        Market cap uses circulating supply. FDV / MC compares fully diluted valuation to current market
+        cap; a high ratio means future unlocks can dilute holders. Vol / MC is 24h volume divided by market
+        cap — a rough liquidity gauge. Data: CoinGecko, __GENERATED_LABEL__. Click any column header to sort.
+      </p>
+
+      <h3>The float problem</h3>
+      <p>
+        In a market where broad beta is scarce, low-float tokens become the trade. A small circulating
+        supply makes price easy to move, especially when a new listing has a compelling narrative and
+        market makers are thin. The catch is that the fully diluted valuation can be many times the
+        market cap — and the unlocks eventually arrive. This is not a reason to avoid every low-float
+        asset, but it is a reason to know what you are buying.
+      </p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th class="left">Asset</th><th>Market cap</th><th>FDV</th><th>FDV / MC</th><th>30d</th><th class="left">Sector</th></tr></thead>
+          <tbody id="lowFloatTable"></tbody>
+        </table>
+      </div>
+      <p class="table-note">Largest FDV-to-market-cap ratios among top-100 assets with market cap above $500M. High ratios are not automatically bearish, but they shift the risk from price to supply.</p>
+
+      <div class="callout">
+        <span class="tag">How to read the table</span>
+        <p><strong>Market cap</strong> is price × circulating supply. <strong>FDV</strong> is price × fully diluted supply. <strong>Vol / MC</strong> above roughly 10% is high turnover; below 1% is thin. A stablecoin’s market cap is supply, not demand — do not compare it to an equity-like token without adjusting your question.</p>
+      </div>
+    </section>
+
+    <section class="sec" id="sectors">
+      <header class="sec-head">
+        <p class="sec-num">03 / Sectors &amp; narratives</p>
+        <h2>What is working, what is not</h2>
+        <p class="dek">The market is not one trade. Privacy, perp DEXs, tokenized credit, and AI compute are working. L2 tokens, broad DeFi beta, and most memes are not.</p>
+      </header>
+
+      <p>
+        Sector tags overlap, so the numbers below do not add up to the total market. “L1 / smart contract
+        platforms” includes bitcoin and ethereum, which is most of the market. “RWA” overlaps with
+        stablecoins and tokenized funds. Use the cards for orientation, not for a clean attribution model.
+      </p>
+
+      <div class="sector-grid" id="sectorGrid"></div>
+      <p class="table-note">Sector market caps are CoinGecko category aggregates and overlap heavily. Percent changes are 24-hour. Leaders are the category’s top three assets by market cap; their 7d and 30d moves come from the top-100 dataset.</p>
+
+      <h3>Narrative scoreboard</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th class="left">Category</th><th>Market cap</th><th>24h</th><th>24h volume</th></tr></thead>
+          <tbody id="categoryTable"></tbody>
+        </table>
+      </div>
+      <p class="table-note">Top 18 CoinGecko categories by market cap. Categories are editorial tags with overlapping membership; a single asset can appear in several.</p>
+
+      <h3>Momentum board</h3>
+      <div class="two-col">
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th class="left">Top 7d performers</th><th>7d</th><th>30d</th></tr></thead>
+            <tbody id="momentumUp"></tbody>
+          </table>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th class="left">Weakest 7d performers</th><th>7d</th><th>30d</th></tr></thead>
+            <tbody id="momentumDown"></tbody>
+          </table>
+        </div>
+      </div>
+      <p class="table-note">Top-100 assets with market cap above $500M, ranked by 7-day price change. A short window is noise; use this as a starting point for research, not a signal.</p>
+
+      <div class="two-col">
+        <div>
+          <h4>What is working</h4>
+          <ul class="check-list">
+            <li><strong>Privacy.</strong> ZEC and XMR are among the strongest large-cap performers, and the privacy category is a top-15 narrative by market cap. The trade is part regulatory hedge, part monetary premium.</li>
+            <li><strong>Perp DEXs.</strong> HYPE, ASTER, and LIGHTER sit in the top 100. On-chain perps are taking real volume and real fees, even in a drawdown.</li>
+            <li><strong>Tokenized credit and dollars.</strong> Figure HELOC, Ondo, BlackRock BUIDL, and a shelf of yield-bearing dollars are now large enough to matter at the index level.</li>
+            <li><strong>AI compute.</strong> NEAR, TAO, RENDER, VVV, and Pearl are a small but active pocket of speculation. The category is small relative to its narrative.</li>
+            <li><strong>Low-float new listings.</strong> BTW is the clearest example: a small float, a Binance distribution channel, and a 30-day move that forced shorts to cover.</li>
+          </ul>
+        </div>
+        <div>
+          <h4>What is not</h4>
+          <ul class="x-list">
+            <li><strong>L2 tokens.</strong> The technology is real; the token capture is not. ARB and POL are far below their highs while activity lives on the chains.</li>
+            <li><strong>Broad DeFi beta.</strong> UNI, AAVE, and MORPHO are down over 30 days even as protocol TVL holds up. Governance tokens are not cash-flow claims unless the protocol says they are.</li>
+            <li><strong>Memes ex-PUMP.</strong> The meme category is roughly $31B, but leadership is narrow. Most long-tail memes are liquidity traps.</li>
+            <li><strong>High-float infrastructure.</strong> Tokens with large circulating supply and no buyback need a new marginal buyer to move. In a defensive tape, there isn’t one.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="callout warn">
+        <span class="tag">The narrative trap</span>
+        <p>A sector can be structurally important and still be a bad trade. L2s are essential infrastructure and poor tokens. Stablecoins are the most important product in crypto and mostly not investable as equity. Separate “is this real?” from “does this token capture value?”</p>
+      </div>
+    </section>
+
+    <section class="sec" id="structure">
+      <header class="sec-head">
+        <p class="sec-num">04 / Market structure</p>
+        <h2>Where the liquidity actually lives</h2>
+        <p class="dek">Centralized exchanges still dominate price discovery. On-chain, the flow splits between Ethereum settlement, Solana and Base retail venues, Tron dollar rails, and Hyperliquid perps.</p>
+      </header>
+
+      <p>
+        Market structure is the part of crypto that does not fit in a price chart. The same asset can
+        trade at slightly different prices on a centralized venue, an AMM, an aggregator, and a perp
+        exchange. The venues are connected by arbitrage, bridges, market makers, and a small number of
+        settlement layers. Understanding that plumbing explains most “weird” price action.
+      </p>
+
+      <div class="card-grid four">
+        <div class="mini-card"><div class="k">Spot DEX volume · 24h</div><div class="v">__DEX_24H__</div><div class="s">__DEX_CHG_1D__ vs prior day</div></div>
+        <div class="mini-card"><div class="k">Spot DEX volume · 7d</div><div class="v">__DEX_7D__</div><div class="s">__DEX_CHG_7D__ week over week</div></div>
+        <div class="mini-card"><div class="k">DeFi TVL</div><div class="v">__DEFI_TVL__</div><div class="s">__DEFI_30D__ over 30 days</div></div>
+        <div class="mini-card"><div class="k">Hyperliquid perps · 24h</div><div class="v">__HL_VOL__</div><div class="s">__HL_OI__ open interest</div></div>
+      </div>
+
+      <h3>Spot DEX league table</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th class="left">Venue</th><th>24h volume</th><th>7d volume</th><th>7d change</th><th class="left">Primary chains</th></tr></thead>
+          <tbody id="dexTable"></tbody>
+        </table>
+      </div>
+      <p class="table-note">DefiLlama DEX volume, __GENERATED_LABEL__. Volume is counted one side of each trade. Aggregators and intent-based venues may double-count underlying pool volume; treat cross-venue totals as approximate.</p>
+
+      <h3>Chain TVL</h3>
+      <div class="bar-list" id="chainBars"></div>
+      <p class="table-note">DefiLlama chain TVL. TVL counts assets deposited in protocols, not the market value of the chain’s token. Multi-chain assets and bridged representations can be counted on more than one chain, so shares are directional, not additive.</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th class="left">Chain</th><th>TVL</th><th>Share of listed</th></tr></thead>
+          <tbody id="chainTable"></tbody>
+        </table>
+      </div>
+
+      <h3>Largest DeFi protocols</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th class="left">Protocol</th><th class="left">Category</th><th>TVL</th><th>1d</th><th>7d</th><th class="left">Chains</th></tr></thead>
+          <tbody id="protocolTable"></tbody>
+        </table>
+      </div>
+      <p class="table-note">DefiLlama, excluding centralized-exchange reserves. TVL includes liquid staking, lending, bridges, restaking, and CDPs. A bridge’s TVL is not the same kind of claim as a lending market’s TVL.</p>
+
+      <h3>Exchange reserves</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th class="left">Exchange</th><th>On-chain reserves</th><th>1d</th><th>7d</th><th>Chains</th></tr></thead>
+          <tbody id="exchangeTable"></tbody>
+        </table>
+      </div>
+      <p class="table-note">On-chain balances tracked by DefiLlama, not audited proof of liabilities. Reserves can include customer deposits, corporate treasury, and cold storage; a high number does not prove solvency.</p>
+
+      <h3>The liquidity stack</h3>
+      <ol class="plain-list">
+        <li><strong>Price discovery:</strong> centralized exchanges and large perp venues set the reference price. On-chain pools follow via arbitrage.</li>
+        <li><strong>Execution:</strong> retail flow hits aggregators, wallets, and app-specific interfaces. Those route into AMMs, RFQ desks, or centralized books.</li>
+        <li><strong>Settlement:</strong> stablecoins and major assets move across chains through canonical bridges, third-party bridges, or exchange withdrawals.</li>
+        <li><strong>Leverage:</strong> perp DEXs and centralized perps add leverage on top of spot. Funding and liquidations transmit stress back to spot.</li>
+        <li><strong>Accounting:</strong> TVL, volume, and reserves are all measured differently. Most “market share” claims depend on which layer is being counted.</li>
+      </ol>
+
+      <div class="callout">
+        <span class="tag">Read the venue, not the headline</span>
+        <p>A dollar of DEX volume is not a dollar of revenue. A dollar of TVL is not a dollar of deposits. A dollar of exchange reserves is not a dollar of customer funds. The most common analytical error in crypto is comparing metrics that share a unit but not a meaning.</p>
+      </div>
+    </section>
+
+    <section class="sec" id="anchors">
+      <header class="sec-head">
+        <p class="sec-num">05 / The anchors</p>
+        <h2>Bitcoin and Ethereum</h2>
+        <p class="dek">BTC is the reserve asset and the market’s risk appetite in one ticker. ETH is the collateral layer — essential, but still searching for a cleaner link between network activity and token value.</p>
+      </header>
+
+      <div class="card-grid">
+        <div class="card">
+          <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:10px;">
+            <div>
+              <div class="k mono" style="color:var(--muted); font-size:10px; letter-spacing:.12em; text-transform:uppercase;">Bitcoin · BTC</div>
+              <div class="v" style="font-family:var(--display); font-size:38px; font-weight:600; letter-spacing:-.04em; line-height:1.05; margin-top:6px;">__BTC_PRICE__</div>
+              <div class="s" style="color:var(--muted); font-size:12px; margin-top:5px;">__BTC_MCAP__ market cap · __BTC_DOM__ dominance</div>
+            </div>
+            <span class="badge tag">Reserve asset</span>
+          </div>
+          <div class="out-grid" style="margin-top:16px;">
+            <div class="out"><div class="k">24h</div><div class="v __BTC_24H_CLASS__" style="font-size:18px;">__BTC_24H__</div></div>
+            <div class="out"><div class="k">30d</div><div class="v __BTC_30D_CLASS__" style="font-size:18px;">__BTC_30D__</div></div>
+            <div class="out"><div class="k">1y</div><div class="v __BTC_1Y_CLASS__" style="font-size:18px;">__BTC_1Y__</div></div>
+            <div class="out"><div class="k">From ATH</div><div class="v down" style="font-size:18px;">__BTC_ATH_DOWN__</div></div>
+          </div>
+          <p class="small" style="margin:14px 0 0;">Scarcity, liquidity, and the ETF wrapper. Bitcoin’s demand is increasingly institutional and collateral-driven; its drawdown sets the beta for everything else.</p>
+        </div>
+        <div class="card">
+          <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:10px;">
+            <div>
+              <div class="k mono" style="color:var(--muted); font-size:10px; letter-spacing:.12em; text-transform:uppercase;">Ethereum · ETH</div>
+              <div class="v" style="font-family:var(--display); font-size:38px; font-weight:600; letter-spacing:-.04em; line-height:1.05; margin-top:6px;">__ETH_PRICE__</div>
+              <div class="s" style="color:var(--muted); font-size:12px; margin-top:5px;">__ETH_MCAP__ market cap · __ETH_DOM__ dominance</div>
+            </div>
+            <span class="badge tag">Collateral layer</span>
+          </div>
+          <div class="out-grid" style="margin-top:16px;">
+            <div class="out"><div class="k">24h</div><div class="v __ETH_24H_CLASS__" style="font-size:18px;">__ETH_24H__</div></div>
+            <div class="out"><div class="k">30d</div><div class="v __ETH_30D_CLASS__" style="font-size:18px;">__ETH_30D__</div></div>
+            <div class="out"><div class="k">1y</div><div class="v __ETH_1Y_CLASS__" style="font-size:18px;">__ETH_1Y__</div></div>
+            <div class="out"><div class="k">From ATH</div><div class="v down" style="font-size:18px;">__ETH_ATH_DOWN__</div></div>
+          </div>
+          <p class="small" style="margin:14px 0 0;">Staking yield, DeFi collateral, and L2 settlement. ETH’s problem is that activity migrated to L2s while fee capture and token demand did not fully follow.</p>
+        </div>
+      </div>
+
+      <h3>BTC vs ETH vs SOL</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th class="left">Metric</th><th>BTC</th><th>ETH</th><th>SOL</th></tr></thead>
+          <tbody>
+            <tr><td class="left name">Market cap</td><td class="num">__BTC_MCAP__</td><td class="num">__ETH_MCAP__</td><td class="num">__SOL_MCAP__</td></tr>
+            <tr><td class="left name">Price</td><td class="num">__BTC_PRICE__</td><td class="num">__ETH_PRICE__</td><td class="num">__SOL_PRICE__</td></tr>
+            <tr><td class="left name">30-day change</td><td class="num __BTC_30D_CLASS__">__BTC_30D__</td><td class="num __ETH_30D_CLASS__">__ETH_30D__</td><td class="num __SOL_30D_CLASS__">__SOL_30D__</td></tr>
+            <tr><td class="left name">From all-time high</td><td class="num down">__BTC_ATH_DOWN__</td><td class="num down">__ETH_ATH_DOWN__</td><td class="num">__SOL_ATH_DOWN__</td></tr>
+            <tr><td class="left name">Native staking</td><td>No</td><td>Yes · ~__ETH_STAKING_APY__</td><td>Yes · ~__SOL_STAKING_APY__</td></tr>
+            <tr><td class="left name">Supply behavior</td><td>Fixed cap, halving schedule</td><td>Elastic, fee burn + issuance</td><td>Inflationary, fee burn</td></tr>
+            <tr><td class="left name">Primary demand</td><td>ETF, treasury, collateral</td><td>Staking, DeFi, L2 settlement</td><td>Apps, consumer, payments</td></tr>
+            <tr><td class="left name">Key risk</td><td>Policy and liquidity beta</td><td>Value capture from L2s</td><td>Congestion and validator economics</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-note">Staking yields are approximate current rates from DefiLlama yield pools (Lido stETH and Binance staked SOL), not guarantees. Supply behavior is qualitative.</p>
+
+      <h3>Bitcoin: the reserve asset</h3>
+      <p>
+        Bitcoin’s 2024 halving cut issuance to roughly 3.125 BTC per block, and the next halving is due in
+        2028. The supply schedule is predictable; demand is not. The marginal buyer has shifted from
+        retail to ETFs, corporate treasuries, and collateral desks. That makes BTC more liquid and more
+        correlated to macro liquidity, but it also means the drawdowns can be slower and more orderly
+        than the retail-driven cycles of the past.
+      </p>
+      <p>
+        The Bitcoin ecosystem is broadening beyond the asset itself: Stacks and other L2s, Bitway’s
+        Bitcoin-compatible chain and yield products, Babylon restaking, and the long tail of Ordinals and
+        Runes. Most of these are small relative to BTC’s market cap. The important point is that BTC is no
+        longer only a buy-and-hold asset; it is becoming collateral with a yield curve.
+      </p>
+
+      <h3>Ethereum: the collateral layer</h3>
+      <p>
+        Ethereum still settles the largest share of on-chain value, and its DeFi stack remains the deepest:
+        Aave V3 alone holds about <strong>__AAVE_TVL__</strong>, Morpho Blue about
+        <strong>__MORPHO_TVL__</strong>, and EigenCloud about <strong>__EIGEN_TVL__</strong> in restaking.
+        Staking yields are modest — roughly <strong>__ETH_STAKING_APY__</strong> for liquid staking — but
+        they are real, and they anchor a large collateral market.
+      </p>
+      <p>
+        The bear case is structural: L2s captured activity and fees while ETH’s issuance and burn
+        mechanism did not produce a strong enough supply sink. The bull case is that Ethereum remains the
+        settlement layer for tokenized assets and stablecoins, and that a recovery in on-chain credit
+        will bring demand for ETH collateral. At this snapshot, ETH is down nearly half from its high and
+        underperforming BTC over 30 days. The market is still waiting for the bull case to show up in the
+        token price.
+      </p>
+
+      <div class="callout warn">
+        <span class="tag">The ETH/BTC question</span>
+        <p>ETH/BTC is at the __ETH_BTC_PCT__ percentile of its one-year range and __ETH_BTC_30D__ over 30 days. A mean-reversion trade is not a thesis. Before positioning for ETH outperformance, identify the catalyst that brings incremental demand to ETH rather than to L2s, staking wrappers, or stablecoins.</p>
+      </div>
+    </section>
+
+    <section class="sec" id="stablecoins">
+      <header class="sec-head">
+        <p class="sec-num">06 / Stablecoins</p>
+        <h2>The dollar layer is the product</h2>
+        <p class="dek">Stablecoins are __STABLE_TOTAL__ — about __STABLE_SHARE__ of the entire market. They are the settlement rail, the collateral, the savings account, and increasingly the yield product.</p>
+      </header>
+
+      <p>
+        Stablecoins are the most important part of crypto that most crypto investors do not own directly.
+        They are the unit of account for trading, the collateral for lending, the payout rail for
+        remittances, and the balance sheet for on-chain treasuries. The supply is
+        <strong>__STABLE_TOTAL__</strong>, split mostly between <strong>USDT</strong> at
+        <strong>__USDT_SUPPLY__</strong> and <strong>USDC</strong> at <strong>__USDC_SUPPLY__</strong>.
+        The rest is a long tail of crypto-backed, yield-bearing, and bank-issued dollars.
+      </p>
+
+      <div class="card-grid four">
+        <div class="mini-card accent"><div class="k">Total supply</div><div class="v">__STABLE_TOTAL__</div><div class="s">__STABLE_SHARE__ of total crypto market cap</div></div>
+        <div class="mini-card"><div class="k">30-day change</div><div class="v __STABLE_30D_CLASS__">__STABLE_30D__</div><div class="s">Flat supply is a relative win in a drawdown</div></div>
+        <div class="mini-card"><div class="k">USDT share</div><div class="v">__USDT_SHARE__</div><div class="s">__USDT_SUPPLY__ supply</div></div>
+        <div class="mini-card"><div class="k">USDC share</div><div class="v">__USDC_SHARE__</div><div class="s">__USDC_SUPPLY__ supply</div></div>
+      </div>
+
+      <h3>Supply by chain</h3>
+      <div class="bar-list" id="stableChainBars"></div>
+      <p class="table-note">DefiLlama chain circulation. Ethereum remains the largest venue by value; Tron is the largest by payments flow. Bridged and wrapped versions can be counted on multiple chains, so treat shares as directional.</p>
+
+      <h3>The largest stablecoins</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th class="left">Stablecoin</th><th>Supply</th><th>1d</th><th>7d</th><th>30d</th><th>Price</th><th>Peg dev.</th><th class="left">Mechanism</th><th>Chains</th><th class="left">Top chain</th></tr></thead>
+          <tbody id="stableTable"></tbody>
+        </table>
+      </div>
+      <p class="table-note">DefiLlama stablecoin supply and prices. “Peg dev.” is the deviation from $1.00 in basis points; a negative deviation means the stablecoin is trading below peg. Supply figures can differ from CoinGecko because of how wrapped, bridged, and yield-bearing versions are counted.</p>
+
+      <h3>The taxonomy</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th class="left">Type</th><th class="left">Examples</th><th class="left">Where yield comes from</th><th class="left">Main risk</th></tr></thead>
+          <tbody>
+            <tr><td class="left name">Fiat-backed</td><td class="left">USDT, USDC, USDG, PYUSD, RLUSD</td><td class="left">T-bills, bank deposits, repo</td><td class="left">Issuer, custody, banking, regulatory</td></tr>
+            <tr><td class="left name">Crypto-backed</td><td class="left">DAI / USDS, GHO, USDD</td><td class="left">Stability fees, collateral yield</td><td class="left">Collateral liquidation, oracle, governance</td></tr>
+            <tr><td class="left name">Synthetic / basis</td><td class="left">USDe, USDf</td><td class="left">Perp funding, basis, staking</td><td class="left">Negative funding, exchange, liquidation</td></tr>
+            <tr><td class="left name">Yield-bearing dollars</td><td class="left">sUSDS, sUSDe, USDY, USYC</td><td class="left">T-bill carry, basis, lending</td><td class="left">Duration, credit, smart contract</td></tr>
+            <tr><td class="left name">Tokenized funds</td><td class="left">BUIDL, USTB, EURSAFO</td><td class="left">Money market / government securities</td><td class="left">Transfer restrictions, custody, duration</td></tr>
+            <tr><td class="left name">Commodity-backed</td><td class="left">XAUT, PAXG</td><td class="left">Gold price</td><td class="left">Custody, market risk, redemption</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>How a stablecoin breaks</h3>
+      <div class="two-col">
+        <div>
+          <h4>1. Reserve shock</h4>
+          <p>A bank failure, a duration mismatch, or a frozen account makes the issuer’s assets worth less than the liabilities. USDC’s 2023 depeg during the SVB weekend is the canonical example: the peg recovered, but only after the issuer disclosed its exposure and the backstop arrived.</p>
+          <h4>2. Collateral cascade</h4>
+          <p>Crypto-backed stablecoins depend on liquidators showing up. In a fast market, collateral gaps, oracle delays, and bridge congestion can push the stablecoin below peg before governance can react.</p>
+          <h4>3. Funding inversion</h4>
+          <p>Basis-trade stablecoins earn when funding is positive. When funding flips negative for long enough, the yield becomes a cost and the stablecoin’s supply can shrink quickly.</p>
+        </div>
+        <div>
+          <h4>4. Redemption gates</h4>
+          <p>A stablecoin is only as good as its redemption. If the issuer can pause minting or redemption, or if the on-chain wrapper depends on a permissioned off-ramp, the “peg” is a promise rather than an arbitrage.</p>
+          <h4>5. Bridge and wrapper risk</h4>
+          <p>Most stablecoin supply on a given chain is not native issuance; it is a bridged or wrapped claim. The underlying issuer may be solid while the bridge is not. Always distinguish native USDC from bridged USDC.</p>
+          <h4>6. Governance and upgrade risk</h4>
+          <p>Upgradeable contracts and admin keys can change collateral rules, fees, or redemption terms. Read the governance docs, not just the audit badge.</p>
+        </div>
+      </div>
+
+      <h3>Regulation in one screen</h3>
+      <p>
+        The regulatory direction is toward reserve requirements, disclosure, and perimeter rules. In the
+        United States, the GENIUS Act created a federal framework for payment stablecoins, including
+        reserve and disclosure expectations for permitted issuers. The EU’s MiCA regime imposes reserve,
+        governance, and disclosure requirements on stablecoin issuers and has been fully applicable since
+        late 2024. Singapore, the UAE, Hong Kong, Switzerland, and Japan each have their own licensing
+        regimes. The practical takeaway for holders is simple: <strong>issuer jurisdiction and reserve
+        composition matter</strong>, and the regulatory wrapper is now part of the credit analysis.
+      </p>
+
+      <h3>Stablecoin due diligence</h3>
+      <ul class="check-list">
+        <li><strong>What backs it?</strong> T-bills, bank deposits, commercial paper, crypto collateral, or a mix. Get the latest reserve report, not the marketing page.</li>
+        <li><strong>Who audits it?</strong> An attestation is not a full audit. Check the auditor, the frequency, and whether the report covers all entities and chains.</li>
+        <li><strong>Who can redeem?</strong> Direct redemption for institutions only? Minimum size? Gate fees? What happens on weekends?</li>
+        <li><strong>Where is the native issuance?</strong> A bridged version inherits bridge risk. Prefer native issuance on the chain you use.</li>
+        <li><strong>What is the yield source?</strong> If the stablecoin pays more than T-bills, the excess is compensation for credit, duration, funding, or smart contract risk.</li>
+        <li><strong>What is the governance?</strong> Upgradeable contracts, admin keys, and multisig thresholds. Who can freeze or change rules?</li>
+        <li><strong>What is the liquidity?</strong> Depth on the venues you use, not just aggregate supply. A $5B stablecoin can still have a thin market on your chain.</li>
+        <li><strong>What is the tail risk?</strong> Bank exposure, commercial paper, counterparty concentration, and regulatory action in the issuer’s jurisdiction.</li>
+      </ul>
+
+      <div class="callout">
+        <span class="tag">The stablecoin insight</span>
+        <p>Stablecoins are not a sideshow to the crypto market; they are the market’s cash account. The supply trend is one of the cleanest signals of whether capital is entering, leaving, or simply waiting. In this snapshot, supply is flat over 30 days while prices are down — capital is waiting, not leaving.</p>
+      </div>
+    </section>
+
+    <section class="sec" id="yield">
+      <header class="sec-head">
+        <p class="sec-num">07 / Yield farming</p>
+        <h2>Yield is compensation, not free money</h2>
+        <p class="dek">Every sustainable yield comes from someone paying for liquidity, leverage, credit, or risk transfer. The question is not “what is the APY?” but “who is paying, and what happens when they stop?”</p>
+      </header>
+
+      <p>
+        Yield farming is the practice of deploying capital into on-chain protocols to earn fees, interest,
+        rewards, or points. The high-level mechanics are simple: you lend, provide liquidity, stake, or
+        take the other side of a basis trade. The complexity is in the risk stack. A 20% APY can be a
+        fair payment for providing liquidity in a volatile pair, or it can be a subsidy that disappears
+        the moment the token emissions end.
+      </p>
+
+      <h3>Anatomy of an APY</h3>
+      <div class="card" style="padding:18px 18px 20px;">
+        <div style="display:flex; height:34px; border-radius:8px; overflow:hidden; border:1px solid var(--line);">
+          <div style="width:34%; background:linear-gradient(180deg, rgba(94,234,212,.45), rgba(94,234,212,.2)); display:grid; place-items:center; font:500 10px var(--mono); color:var(--ink);">BASE FEES</div>
+          <div style="width:28%; background:linear-gradient(180deg, rgba(139,157,255,.45), rgba(139,157,255,.2)); display:grid; place-items:center; font:500 10px var(--mono); color:var(--ink);">EMISSIONS</div>
+          <div style="width:22%; background:linear-gradient(180deg, rgba(192,132,252,.42), rgba(192,132,252,.18)); display:grid; place-items:center; font:500 10px var(--mono); color:var(--ink);">POINTS</div>
+          <div style="width:16%; background:linear-gradient(180deg, rgba(251,191,36,.42), rgba(251,191,36,.16)); display:grid; place-items:center; font:500 10px var(--mono); color:var(--ink);">LEVERAGE</div>
+        </div>
+        <div class="card-grid four" style="margin-top:12px;">
+          <div><div class="k mono" style="font-size:9px; color:var(--muted); text-transform:uppercase; letter-spacing:.08em;">Base fees</div><p class="small" style="margin:4px 0 0;">Real revenue from borrowers or traders. The most durable component.</p></div>
+          <div><div class="k mono" style="font-size:9px; color:var(--muted); text-transform:uppercase; letter-spacing:.08em;">Emissions</div><p class="small" style="margin:4px 0 0;">Token inflation paid to attract capital. Dilutes holders and usually fades.</p></div>
+          <div><div class="k mono" style="font-size:9px; color:var(--muted); text-transform:uppercase; letter-spacing:.08em;">Points</div><p class="small" style="margin:4px 0 0;">Speculative airdrop value. Not cash flow; a lottery ticket with opportunity cost.</p></div>
+          <div><div class="k mono" style="font-size:9px; color:var(--muted); text-transform:uppercase; letter-spacing:.08em;">Leverage</div><p class="small" style="margin:4px 0 0;">Looping or recursive collateral. Amplifies both yield and liquidation risk.</p></div>
+        </div>
+      </div>
+
+      <h3>The strategies</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th class="left">Strategy</th><th class="left">What you provide</th><th class="left">Who pays</th><th>Typical APY</th><th class="left">Main risk</th></tr></thead>
+          <tbody>
+            <tr><td class="left name">Native staking</td><td class="left">Consensus security</td><td class="left">Protocol issuance</td><td>2–7%</td><td class="left">Slashing, validator, unbonding</td></tr>
+            <tr><td class="left name">Liquid staking</td><td class="left">Staked ETH/SOL + liquidity token</td><td class="left">Staking rewards</td><td>2–5%</td><td class="left">Smart contract, depeg of receipt token</td></tr>
+            <tr><td class="left name">Lending</td><td class="left">Stablecoins or major assets</td><td class="left">Borrowers</td><td>3–10%</td><td class="left">Utilization, bad debt, oracle</td></tr>
+            <tr><td class="left name">AMM liquidity</td><td class="left">Two-sided inventory</td><td class="left">Traders’ fees + emissions</td><td>5–30%</td><td class="left">Impermanent loss, MEV, contract</td></tr>
+            <tr><td class="left name">Basis / funding</td><td class="left">Spot + short perp</td><td class="left">Leveraged traders paying funding</td><td>4–12%</td><td class="left">Negative funding, exchange, liquidation</td></tr>
+            <tr><td class="left name">Restaking</td><td class="left">Staked ETH or BTC security</td><td class="left">AVSs / points</td><td>2–8%</td><td class="left">Slashing, layered contracts, illiquidity</td></tr>
+            <tr><td class="left name">Points / airdrops</td><td class="left">Activity and capital</td><td class="left">Future token supply</td><td>Variable</td><td class="left">No payout, sybil filters, opportunity cost</td></tr>
+            <tr><td class="left name">RWA / T-bills</td><td class="left">Cash</td><td class="left">Government securities</td><td>3–5%</td><td class="left">Duration, custody, transfer restrictions</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Live pools worth studying</h3>
+      <p class="small">A filtered slice of DefiLlama’s yield universe: TVL above $20M, APY below 60%, no flagged outliers. Risk is a heuristic based on asset type, IL, chain, TVL, and reward composition — not a recommendation.</p>
+      <div class="toolbar" style="margin:12px 0 8px;">
+        <div class="chips" id="yieldChips">
+          <button class="chip is-active" data-yield="all">All pools</button>
+          <button class="chip" data-yield="stable">Stablecoin only</button>
+          <button class="chip" data-yield="volatile">ETH / BTC / SOL</button>
+        </div>
+        <span class="result-count" id="yieldCount"></span>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th class="left">Pool</th><th class="left">Chain</th><th>TVL</th><th>APY</th><th>Base</th><th>Reward</th><th>30d avg</th><th>Risk</th></tr></thead>
+          <tbody id="yieldTable"></tbody>
+        </table>
+      </div>
+      <p class="table-note">APY is the current advertised rate; base is fee/interest yield and reward is token emissions. A high reward share is a warning that the yield may not persist. Pool data: DefiLlama, __GENERATED_LABEL__.</p>
+
+      <h3>Two calculators</h3>
+      <div class="calc-grid">
+        <div class="calc">
+          <h4 style="margin-top:0;">Compound a yield</h4>
+          <div class="field"><label for="cPrincipal">Principal (USD)</label><input id="cPrincipal" type="number" value="10000" min="0" step="100" /></div>
+          <div class="field"><label for="cApy">APY (%)</label><input id="cApy" type="number" value="5" min="0" max="1000" step="0.1" /></div>
+          <div class="field"><label for="cDays">Days</label><input id="cDays" type="number" value="365" min="1" max="3650" step="1" /></div>
+          <div class="field"><label for="cComp">Compounding</label>
+            <select id="cComp">
+              <option value="365">Daily</option>
+              <option value="52">Weekly</option>
+              <option value="12" selected>Monthly</option>
+              <option value="1">Annually</option>
+            </select>
+          </div>
+          <div class="out-grid">
+            <div class="out"><div class="k">Ending balance</div><div class="v" id="cEnd">—</div></div>
+            <div class="out"><div class="k">Yield earned</div><div class="v" id="cEarn">—</div></div>
+            <div class="out"><div class="k">Effective APY</div><div class="v" id="cEff">—</div></div>
+            <div class="out"><div class="k">Daily income</div><div class="v" id="cDaily">—</div></div>
+          </div>
+          <p class="calc-note">Simple compounding model. It ignores fees, taxes, changing rates, and the risk that the yield stops. Use it to compare scenarios, not to predict returns.</p>
+        </div>
+        <div class="calc">
+          <h4 style="margin-top:0;">Impermanent loss</h4>
+          <div class="field"><label for="ilPrincipal">LP principal (USD)</label><input id="ilPrincipal" type="number" value="10000" min="0" step="100" /></div>
+          <div class="field"><label for="ilMove">Volatile asset move (%)</label><input id="ilMove" type="number" value="50" min="-95" max="1000" step="1" /></div>
+          <div class="field"><label for="ilFee">Fee APR (%)</label><input id="ilFee" type="number" value="10" min="0" max="500" step="0.1" /></div>
+          <div class="field"><label for="ilDays">Days held</label><input id="ilDays" type="number" value="30" min="1" max="3650" step="1" /></div>
+          <div class="out-grid">
+            <div class="out"><div class="k">LP vs HODL</div><div class="v" id="ilPct">—</div></div>
+            <div class="out"><div class="k">IL cost</div><div class="v" id="ilCost">—</div></div>
+            <div class="out"><div class="k">Fees earned</div><div class="v" id="ilFees">—</div></div>
+            <div class="out"><div class="k">Net vs HODL</div><div class="v" id="ilNet">—</div></div>
+          </div>
+          <p class="calc-note">Standard 50/50 constant-product IL: <span class="mono">2√r / (1+r) − 1</span>, where r is the price ratio. Fees are a simple APR accrual, not compounded. Real LP returns depend on volume, fees, and rebalancing.</p>
+        </div>
+      </div>
+
+      <h3>The 12-point farm check</h3>
+      <div class="two-col">
+        <ul class="check-list">
+          <li>Is the base yield from real fees or interest, or is it mostly emissions?</li>
+          <li>What is the 30-day average APY versus the current APY?</li>
+          <li>How much TVL is in the pool, and how concentrated are LPs?</li>
+          <li>Is the pool stablecoin-only, or are you short volatility without knowing it?</li>
+          <li>What is the impermanent loss at −30%, −50%, and −70%?</li>
+          <li>Are the contracts audited, and who can upgrade them?</li>
+        </ul>
+        <ul class="check-list">
+          <li>Is the oracle reliable, and what happens if it lags?</li>
+          <li>What is the withdrawal queue or lock-up?</li>
+          <li>Are rewards paid in a token you would hold, or must you sell them?</li>
+          <li>What is the gas and bridge cost to enter and exit?</li>
+          <li>What happens if the chain halts or the bridge is exploited?</li>
+          <li>Can you explain the strategy to someone else in two sentences?</li>
+        </ul>
+      </div>
+
+      <div class="callout danger">
+        <span class="tag">Red flags</span>
+        <p>APY above 100% on a stablecoin pair; anonymous team with admin keys; TVL that doubled in a week; rewards paid in a token with thin liquidity; a “risk-free” loop; withdrawal fees that appear only when you try to exit; yield that depends on a points program with no published terms.</p>
+      </div>
+
+      <div class="callout">
+        <span class="tag">The yield insight</span>
+        <p>The best risk-adjusted yield in crypto is usually boring: T-bill-backed dollars, blue-chip lending, and staking. The highest APYs are compensation for risks that are hard to see until they materialize. Size the position so that a total loss is annoying, not fatal.</p>
+      </div>
+    </section>
+
+    <section class="sec" id="wallets">
+      <header class="sec-head">
+        <p class="sec-num">08 / Wallet tracking</p>
+        <h2>Wallets are the atomic unit of on-chain truth</h2>
+        <p class="dek">An address is a ledger entry. A labeled entity is intelligence. The difference is resolution: who owns it, what it holds, who it trades with, and what it does next.</p>
+      </header>
+
+      <p>
+        Wallet tracking is the practice of turning raw addresses into a watchlist of entities whose
+        behavior you understand. It is useful for four things: following smart money, monitoring protocol
+        health, finding airdrops and early opportunities, and catching your own security mistakes. It is
+        not useful as a copy-trading signal without context — a wallet can be a market maker, a bridge, a
+        treasury, or a bot.
+      </p>
+
+      <h3>The tool matrix</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th class="left">Tool</th><th class="left">Best for</th><th class="left">Chains</th><th class="left">Access</th></tr></thead>
+          <tbody>
+            <tr><td class="left name">Etherscan family</td><td class="left">Raw transactions, token transfers, contract reads, approvals</td><td class="left">Ethereum + major EVM chains</td><td class="left">Free + paid API</td></tr>
+            <tr><td class="left name">Solscan / Solana Explorer</td><td class="left">Solana accounts, token accounts, programs</td><td class="left">Solana</td><td class="left">Free + paid API</td></tr>
+            <tr><td class="left name">mempool.space</td><td class="left">Bitcoin transactions, fees, blocks</td><td class="left">Bitcoin</td><td class="left">Free</td></tr>
+            <tr><td class="left name">DeBank</td><td class="left">Portfolio, protocol positions, approvals across EVM</td><td class="left">Most EVM</td><td class="left">Free + paid</td></tr>
+            <tr><td class="left name">Arkham</td><td class="left">Entity labels, visual graph, alerts</td><td class="left">EVM + Solana + Bitcoin</td><td class="left">Free + paid</td></tr>
+            <tr><td class="left name">Nansen</td><td class="left">Smart-money labels, token flows, wallet cohorts</td><td class="left">Major chains</td><td class="left">Paid</td></tr>
+            <tr><td class="left name">Dune</td><td class="left">Custom SQL dashboards and cohort analysis</td><td class="left">Major chains</td><td class="left">Free + paid</td></tr>
+            <tr><td class="left name">Zapper / Zerion</td><td class="left">Consumer portfolio tracking and DeFi positions</td><td class="left">Major EVM + Solana</td><td class="left">Free + paid</td></tr>
+            <tr><td class="left name">Rabby</td><td class="left">Pre-transaction simulation and chain switching</td><td class="left">EVM</td><td class="left">Free</td></tr>
+            <tr><td class="left name">Safe</td><td class="left">Multisig treasury and role management</td><td class="left">EVM</td><td class="left">Free</td></tr>
+            <tr><td class="left name">Tenderly</td><td class="left">Transaction simulation, debugging, alerts</td><td class="left">EVM</td><td class="left">Free + paid</td></tr>
+            <tr><td class="left name">Cielo / Bubble Maps</td><td class="left">Wallet alerts and fund-flow graphs</td><td class="left">Major chains</td><td class="left">Paid</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-note">Pricing and chain coverage change frequently; check the provider. Free tiers are useful for individual wallets; cohort-level analysis usually requires a paid plan or your own indexer.</p>
+
+      <h3>Five questions a wallet should answer</h3>
+      <div class="card-grid three">
+        <div class="mini-card"><div class="k">1 · Who</div><div class="v" style="font-size:16px;">Entity, not address</div><div class="s">Is this a fund, a market maker, a DAO treasury, a bridge, an exchange hot wallet, or a person? The label changes the interpretation.</div></div>
+        <div class="mini-card"><div class="k">2 · How much</div><div class="v" style="font-size:16px;">Net worth &amp; stable ratio</div><div class="s">Total value, stablecoin share, and concentration. A whale with 90% in one token is a different risk than a diversified treasury.</div></div>
+        <div class="mini-card"><div class="k">3 · What</div><div class="v" style="font-size:16px;">Positions &amp; leverage</div><div class="s">Lending, LP, perps, staking, and vaults. Leverage is often hidden across multiple protocols.</div></div>
+        <div class="mini-card"><div class="k">4 · With whom</div><div class="v" style="font-size:16px;">Counterparties</div><div class="s">Who sends funds in and out? Repeated counterparties reveal the real network behind an address.</div></div>
+        <div class="mini-card"><div class="k">5 · What next</div><div class="v" style="font-size:16px;">Behavior change</div><div class="s">New approvals, large withdrawals, collateral changes, and governance votes are the signals worth alerting on.</div></div>
+        <div class="mini-card accent"><div class="k">The rule</div><div class="v" style="font-size:16px;">Track entities</div><div class="s">A watchlist of 20 well-understood entities beats 2,000 random addresses. Context is the edge.</div></div>
+      </div>
+
+      <h3>The workflow</h3>
+      <ol class="plain-list">
+        <li><strong>Define the question.</strong> “Is smart money accumulating ETH?” is trackable. “What is the market doing?” is not.</li>
+        <li><strong>Pick the chain and venue.</strong> Most flow is on Ethereum, Solana, Base, Arbitrum, BSC, Tron, and Hyperliquid. Start where the asset actually trades.</li>
+        <li><strong>Resolve the entity.</strong> Use labels from Arkham/Nansen, exchange deposit patterns, multisig signers, and protocol docs. Do not assume a label is correct because a dashboard says so.</li>
+        <li><strong>Build a small watchlist.</strong> 10–30 addresses with a clear reason for each. Record the thesis and the review date.</li>
+        <li><strong>Set alerts.</strong> Large transfers, new approvals, collateral changes, governance votes, and balance thresholds. Alerts should be specific enough to act on.</li>
+        <li><strong>Review and prune.</strong> Most wallets are noise after a few weeks. Keep the ones that taught you something.</li>
+      </ol>
+
+      <h3>Entity labels and their tells</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th class="left">Entity type</th><th class="left">Typical behavior</th><th class="left">How to recognize</th></tr></thead>
+          <tbody>
+            <tr><td class="left name">Exchange hot wallet</td><td class="left">High-volume inflows/outflows, many tokens, frequent internal transfers</td><td class="left">Labeled by explorers; interacts with known deposit addresses</td></tr>
+            <tr><td class="left name">Bridge</td><td class="left">Large locked balances, mint/burn patterns, cross-chain pairs</td><td class="left">Contract verified; canonical bridge docs</td></tr>
+            <tr><td class="left name">Fund / treasury</td><td class="left">Large stablecoin balances, slow rotation, multisig</td><td class="left">Safe multisig, public disclosure, governance forum</td></tr>
+            <tr><td class="left name">Market maker</td><td class="left">Constant two-sided flows, many small transactions, high volume</td><td class="left">Repeated interaction with exchange and DEX contracts</td></tr>
+            <tr><td class="left name">MEV bot</td><td class="left">Atomic bundles, failed transactions, gas spikes</td><td class="left">Contract calls in same block; DEX/router patterns</td></tr>
+            <tr><td class="left name">Airdrop farmer</td><td class="left">Many small interactions, new wallets, bridge hops</td><td class="left">Funding from a common source; repetitive task patterns</td></tr>
+            <tr><td class="left name">Whale / individual</td><td class="left">Fewer transactions, long holds, concentrated positions</td><td class="left">Harder to label; use counterparties and timing</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Build a watchlist</h3>
+      <p class="small">Add read-only addresses you want to monitor. The list is stored in your browser’s local storage; nothing is sent anywhere. Links open the relevant explorer, DeBank, or Arkham page.</p>
+      <form class="watch-form" id="watchForm">
+        <div class="field"><label for="watchLabel">Label</label><input id="watchLabel" type="text" placeholder="e.g. Treasury / fund" maxlength="40" /></div>
+        <div class="field"><label for="watchAddress">Address</label><input id="watchAddress" type="text" placeholder="0x… or Solana address" autocomplete="off" spellcheck="false" /></div>
+        <div class="field"><label for="watchChain">Chain</label>
+          <select id="watchChain">
+            <option value="ethereum">Ethereum</option>
+            <option value="base">Base</option>
+            <option value="arbitrum">Arbitrum</option>
+            <option value="optimism">Optimism</option>
+            <option value="polygon">Polygon</option>
+            <option value="bsc">BNB Chain</option>
+            <option value="avalanche">Avalanche</option>
+            <option value="solana">Solana</option>
+            <option value="bitcoin">Bitcoin</option>
+            <option value="hyperliquid">Hyperliquid</option>
+          </select>
+        </div>
+        <button class="btn primary" type="submit">Add</button>
+      </form>
+      <div class="watch-actions">
+        <button class="btn ghost" type="button" id="watchDemo">Add demo address</button>
+        <button class="btn ghost" type="button" id="watchExport">Export JSON</button>
+        <button class="btn ghost" type="button" id="watchClear">Clear all</button>
+        <span class="result-count" id="watchCount"></span>
+      </div>
+      <div class="watch-list" id="watchList"></div>
+
+      <h3>Wallet security</h3>
+      <div class="two-col">
+        <ul class="check-list">
+          <li>Use a hardware wallet for meaningful balances.</li>
+          <li>Keep a separate hot wallet for experiments and a cold wallet for savings.</li>
+          <li>Never enter a seed phrase into a website, chat, or browser extension.</li>
+          <li>Verify the domain before signing; bookmark the apps you use.</li>
+          <li>Read the transaction simulation, not just the button label.</li>
+        </ul>
+        <ul class="check-list">
+          <li>Revoke unused token approvals regularly.</li>
+          <li>Use a multisig for shared or protocol treasury funds.</li>
+          <li>Test with a small transaction before a large one.</li>
+          <li>Beware address poisoning and clipboard malware: verify the full address.</li>
+          <li>Assume any unsolicited token or NFT is a trap.</li>
+        </ul>
+      </div>
+
+      <div class="callout warn">
+        <span class="tag">The tracking trap</span>
+        <p>On-chain data is public but not self-explanatory. A wallet labeled “smart money” may be a market maker hedging elsewhere, a bridge, or a hacked account. Copying a single visible trade without the full position, cost basis, and hedge is not tracking — it is guessing with extra steps.</p>
+      </div>
+    </section>
+
+    <section class="sec" id="traders">
+      <header class="sec-head">
+        <p class="sec-num">09 / Trader tracking</p>
+        <h2>Separate edge from leverage</h2>
+        <p class="dek">A leaderboard shows outcomes, not process. The useful question is whether a trader’s returns come from repeatable skill, a single lucky trade, or hidden risk that has not blown up yet.</p>
+      </header>
+
+      <p>
+        Trader tracking has three layers: performance, risk, and behavior. Performance is the easiest to
+        measure and the least useful on its own. Risk explains how the returns were produced. Behavior
+        tells you whether the trader is repeatable or just currently lucky. On-chain perp venues like
+        Hyperliquid make all three more visible than centralized exchanges do, but they also make
+        survivorship bias and wash trading easier to mistake for skill.
+      </p>
+
+      <h3>Hyperliquid leaderboard snapshot</h3>
+      <div class="card-grid four">
+        <div class="mini-card"><div class="k">Tracked active accounts</div><div class="v">__HL_ACCOUNTS__</div><div class="s">Account value ≥ $100k and 30d volume ≥ $1M</div></div>
+        <div class="mini-card"><div class="k">Profitable over 30d</div><div class="v">__HL_POSITIVE__</div><div class="s">Share of the active cohort with positive 30d PnL</div></div>
+        <div class="mini-card"><div class="k">Median 30d ROI</div><div class="v __HL_MEDIAN_CLASS__">__HL_MEDIAN__</div><div class="s">Excludes zero-ROI accounts; mean is distorted by outliers</div></div>
+        <div class="mini-card"><div class="k">Aggregate account value</div><div class="v">__HL_ACCOUNT_VALUE__</div><div class="s">Across all eligible accounts in this snapshot</div></div>
+      </div>
+
+      <div class="toolbar">
+        <div class="chips" id="hlChips">
+          <button class="chip is-active" data-hl="pnl">Top 30d PnL</button>
+          <button class="chip" data-hl="accounts">Largest accounts</button>
+        </div>
+        <span class="result-count" id="hlNote">Accounts ≥ $100k</span>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th class="left">Trader</th><th>Account value</th><th>30d PnL</th><th>30d ROI</th><th>30d volume</th><th>All-time PnL</th></tr></thead>
+          <tbody id="hlTable"></tbody>
+        </table>
+      </div>
+      <p class="table-note">Hyperliquid public leaderboard, __GENERATED_LABEL__. Addresses are truncated and link to the Hyperliquid explorer. The leaderboard is not a random sample: it is skewed toward large, active accounts and survivors. High 30d PnL can come from high leverage, market making, or a single directional bet.</p>
+
+      <h3>Perp market dashboard</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th class="left">Market</th><th>24h volume</th><th>Open interest</th><th>Funding (ann.)</th><th>Mark</th></tr></thead>
+          <tbody id="hlMarketTable"></tbody>
+        </table>
+      </div>
+      <p class="table-note">Hyperliquid perp contexts. Funding is shown as a simple annualized rate (hourly funding × 24 × 365); positive means longs pay shorts. Funding is a sentiment and positioning gauge, not a forecast.</p>
+
+      <h3>Trader scorecard</h3>
+      <p class="small">Use gross averages from a trader’s actual history. The calculator shows the arithmetic of an edge; it cannot tell you whether the sample is large enough or whether the risk is hidden.</p>
+      <div class="calc">
+        <div class="calc-grid">
+          <div>
+            <div class="field"><label for="sWin">Win rate (%)</label><input id="sWin" type="number" value="45" min="0" max="100" step="1" /></div>
+            <div class="field"><label for="sAvgWin">Average win (USD)</label><input id="sAvgWin" type="number" value="1200" min="0" step="10" /></div>
+            <div class="field"><label for="sAvgLoss">Average loss (USD)</label><input id="sAvgLoss" type="number" value="800" min="0" step="10" /></div>
+            <div class="field"><label for="sTrades">Trades per month</label><input id="sTrades" type="number" value="40" min="1" step="1" /></div>
+          </div>
+          <div>
+            <div class="field"><label for="sFees">Fees per trade (USD)</label><input id="sFees" type="number" value="15" min="0" step="1" /></div>
+            <div class="field"><label for="sCapital">Capital (USD)</label><input id="sCapital" type="number" value="100000" min="0" step="1000" /></div>
+            <div class="field"><label for="sDrawdown">Max drawdown (%)</label><input id="sDrawdown" type="number" value="20" min="0" max="100" step="1" /></div>
+            <div class="out-grid">
+              <div class="out"><div class="k">Expectancy / trade</div><div class="v" id="sExpect">—</div></div>
+              <div class="out"><div class="k">Monthly PnL</div><div class="v" id="sMonthly">—</div></div>
+              <div class="out"><div class="k">Profit factor</div><div class="v" id="sPf">—</div></div>
+              <div class="out"><div class="k">Breakeven win rate</div><div class="v" id="sBe">—</div></div>
+            </div>
+          </div>
+        </div>
+        <p class="calc-note" id="sVerdict">—</p>
+      </div>
+
+      <h3>What to measure</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th class="left">Metric</th><th class="left">What it tells you</th><th class="left">How it misleads</th></tr></thead>
+          <tbody>
+            <tr><td class="left name">PnL</td><td class="left">Absolute dollars made or lost</td><td class="left">Biased by account size; a $100M account can make more than a skilled $10k account</td></tr>
+            <tr><td class="left name">ROI</td><td class="left">Return on account value</td><td class="left">Can be inflated by deposits, withdrawals, and leverage; not time-weighted</td></tr>
+            <tr><td class="left name">Volume</td><td class="left">Activity and liquidity provision</td><td class="left">Wash trading and market-making volume are not directional skill</td></tr>
+            <tr><td class="left name">Drawdown</td><td class="left">Risk taken to achieve returns</td><td class="left">A short sample may not include the real stress event</td></tr>
+            <tr><td class="left name">Win rate</td><td class="left">Frequency of profitable trades</td><td class="left">Meaningless without average win/loss and position sizing</td></tr>
+            <tr><td class="left name">Profit factor</td><td class="left">Gross wins divided by gross losses</td><td class="left">One huge win can dominate a small sample</td></tr>
+            <tr><td class="left name">Holding time</td><td class="left">Style: scalper, swing, or position</td><td class="left">Not comparable across market regimes</td></tr>
+            <tr><td class="left name">Concentration</td><td class="left">How much depends on one bet</td><td class="left">Hidden hedges or offsets can make concentration look safer than it is</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Copy trading: the fine print</h3>
+      <div class="two-col">
+        <div>
+          <h4>What can go wrong</h4>
+          <ul class="x-list">
+            <li><strong>Latency.</strong> You see the trade after it has moved. The leader’s entry is not your entry.</li>
+            <li><strong>Sizing.</strong> A 2% position for a $10M account is not 2% for a $10k account after fees and slippage.</li>
+            <li><strong>Hidden hedges.</strong> The visible perp may be offset by spot, options, or another venue you cannot see.</li>
+            <li><strong>Different mandates.</strong> A market maker’s inventory trade is not a directional signal.</li>
+            <li><strong>Survivorship.</strong> The leaderboard shows the survivors, not the accounts that blew up last month.</li>
+          </ul>
+        </div>
+        <div>
+          <h4>How to evaluate</h4>
+          <ul class="check-list">
+            <li>At least 6–12 months of history across different regimes.</li>
+            <li>Positive expectancy after fees and slippage, not just gross PnL.</li>
+            <li>Drawdowns you could actually sit through.</li>
+            <li>A strategy you can explain in plain language.</li>
+            <li>Position sizes that fit your capital and risk budget.</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3>Evaluate a trader in 15 minutes</h3>
+      <ol class="plain-list">
+        <li><strong>Check the time window.</strong> 30 days is a vibe; 12 months is a sample. Ask for both.</li>
+        <li><strong>Normalize by capital.</strong> Compare ROI and drawdown, not raw PnL.</li>
+        <li><strong>Look for concentration.</strong> One asset, one venue, one trade, or one funding regime?</li>
+        <li><strong>Check the downside.</strong> What was the worst month, and how did they behave after it?</li>
+        <li><strong>Separate beta from alpha.</strong> In a market that fell 30%, a short book can look brilliant.</li>
+        <li><strong>Find the hidden leg.</strong> Spot, options, borrow, or another account that offsets the visible position.</li>
+        <li><strong>Compare to a benchmark.</strong> Beating a 60/40 crypto index is different from beating a directional short.</li>
+        <li><strong>Write the thesis.</strong> If you cannot explain why the edge exists, you are the exit liquidity.</li>
+      </ol>
+
+      <div class="callout">
+        <span class="tag">The trader insight</span>
+        <p>Most active traders do not beat the market after costs. In this snapshot, only __HL_POSITIVE__ of the tracked active Hyperliquid cohort was profitable over 30 days, and the median 30-day ROI was __HL_MEDIAN__. That does not mean trading is impossible; it means the base rate is harsh and the leaderboard is a selection filter, not a random sample.</p>
+      </div>
+    </section>
+
+    <section class="sec" id="valuation">
+      <header class="sec-head">
+        <p class="sec-num">10 / Valuation</p>
+        <h2>What is the token actually claiming?</h2>
+        <p class="dek">Crypto valuation is not one model; it is a set of questions about cash flow, collateral demand, dilution, and reflexivity. Start with what the token owns, then decide which metric is honest.</p>
+      </header>
+
+      <p>
+        Most crypto tokens are not equity. They may be gas, collateral, governance, a claim on fees, a
+        claim on a treasury, or none of the above. Valuation starts by classifying the claim. A token with
+        a fee switch and a buyback can be modeled like a cash-flow asset. A gas token with no fee capture
+        is a monetary asset whose value depends on demand for blockspace. A governance token with no
+        economic rights is an option on future governance decisions. These are different assets and
+        should not be compared on the same multiple.
+      </p>
+
+      <h3>The metric shelf</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th class="left">Metric</th><th class="left">What it captures</th><th class="left">Best for</th><th class="left">Failure mode</th></tr></thead>
+          <tbody>
+            <tr><td class="left name">Market cap / FDV</td><td class="left">Price × circulating vs fully diluted supply</td><td class="left">Float and unlock risk</td><td class="left">Ignores demand and cash flow</td></tr>
+            <tr><td class="left name">P / F</td><td class="left">Price divided by protocol fees</td><td class="left">Fee-generating protocols</td><td class="left">Fees are not revenue; incentives can inflate them</td></tr>
+            <tr><td class="left name">P / S</td><td class="left">Price divided by protocol revenue</td><td class="left">Business-like protocols</td><td class="left">Revenue definitions vary widely</td></tr>
+            <tr><td class="left name">TVL multiple</td><td class="left">Market cap divided by TVL</td><td class="left">Lending, DEXs, bridges</td><td class="left">TVL is not deposits or revenue; it can be recycled</td></tr>
+            <tr><td class="left name">NVT</td><td class="left">Network value divided by transaction value</td><td class="left">Monetary assets like BTC</td><td class="left">Transaction value is noisy and gameable</td></tr>
+            <tr><td class="left name">MVRV</td><td class="left">Market value divided by realized value</td><td class="left">BTC cycle positioning</td><td class="left">Realized cap is an approximation</td></tr>
+            <tr><td class="left name">Staking yield</td><td class="left">Issuance and fees paid to validators</td><td class="left">Proof-of-stake assets</td><td class="left">Yield can be dilution, not income</td></tr>
+            <tr><td class="left name">Take rate</td><td class="left">Protocol revenue divided by volume</td><td class="left">Exchanges, perp DEXs</td><td class="left">Volume can be wash-traded</td></tr>
+            <tr><td class="left name">Earnings yield</td><td class="left">Buybacks or distributions divided by market cap</td><td class="left">Tokens with real cash return</td><td class="left">Few tokens actually do this</td></tr>
+            <tr><td class="left name">Comparables</td><td class="left">EV/sales or P/E versus TradFi peers</td><td class="left">Mature infrastructure</td><td class="left">Crypto growth and risk premia differ</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Value accrual mechanisms</h3>
+      <div class="card-grid three">
+        <div class="mini-card"><div class="k">Fee share</div><div class="v" style="font-size:16px;">Cash to holders</div><div class="s">The protocol routes a share of fees to stakers, LPs, or a treasury. The cleanest link between usage and token value — if the share is real and not governance-dependent.</div></div>
+        <div class="mini-card"><div class="k">Burn</div><div class="v" style="font-size:16px;">Supply sink</div><div class="s">Fees or gas are used to buy back and burn tokens. Works when usage is high and the burn is not offset by emissions.</div></div>
+        <div class="mini-card"><div class="k">Staking</div><div class="v" style="font-size:16px;">Security demand</div><div class="s">Validators must hold and lock the token. Creates structural demand, but also inflation and unbonding risk.</div></div>
+        <div class="mini-card"><div class="k">Collateral</div><div class="v" style="font-size:16px;">Balance-sheet demand</div><div class="s">The token is accepted as collateral in lending markets. Demand rises with credit creation, and falls with liquidation cascades.</div></div>
+        <div class="mini-card"><div class="k">Governance</div><div class="v" style="font-size:16px;">Option on control</div><div class="s">A claim on future decisions, not current cash flow. Value depends on the treasury and the credible threat of a fee switch.</div></div>
+        <div class="mini-card"><div class="k">Monetary premium</div><div class="v" style="font-size:16px;">Store of value</div><div class="s">Demand for a scarce, liquid, censorship-resistant asset. Hard to model, easy to observe in dominance and ETF flows.</div></div>
+      </div>
+
+      <h3>Three questions before any token</h3>
+      <ol class="plain-list">
+        <li><strong>What does the token claim on?</strong> Fees, gas, collateral, governance, treasury, or nothing. If the answer is “the ecosystem,” keep asking.</li>
+        <li><strong>Who pays, and why now?</strong> Identify the source of demand: users, borrowers, traders, validators, or a subsidy. A token that only appreciates because new buyers arrive is a reflexivity trade.</li>
+        <li><strong>What is the dilution path?</strong> Circulating supply, unlock schedule, emissions, and treasury sales. A great protocol with a 10× FDV overhang can be a bad token.</li>
+      </ol>
+
+      <div class="callout warn">
+        <span class="tag">The valuation trap</span>
+        <p>In a risk-on market, narratives and float dominate. In a risk-off market, cash flow and buybacks matter more. The same token can look cheap on P/F at the top and expensive on P/F at the bottom because fees collapse faster than price. Always stress-test the denominator.</p>
+      </div>
+
+      <h3>Token checklist</h3>
+      <ul class="check-list">
+        <li>Can I explain the value accrual in one sentence without using the word “ecosystem”?</li>
+        <li>Is the fee/revenue figure gross or net of incentives?</li>
+        <li>What percentage of supply is circulating, and when are the next unlocks?</li>
+        <li>Who holds the treasury, and what can they do with it?</li>
+        <li>Is the token needed to use the protocol, or is it optional governance?</li>
+        <li>What happens to the token if usage doubles but fees stay flat?</li>
+        <li>What is the bear case, and is it already priced in?</li>
+      </ul>
+    </section>
+
+    <section class="sec" id="rules">
+      <header class="sec-head">
+        <p class="sec-num">11 / Regulation, tax, security</p>
+        <h2>The rules are becoming real</h2>
+        <p class="dek">Licensing, reserve requirements, tax reporting, and security hygiene are now part of the investment case. This section is a map, not legal advice.</p>
+      </header>
+
+      <h3>Regulation by jurisdiction</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th class="left">Jurisdiction</th><th class="left">Stablecoins</th><th class="left">Tokens / securities</th><th class="left">Exchanges</th></tr></thead>
+          <tbody>
+            <tr><td class="left name">United States</td><td class="left">Federal payment-stablecoin framework (GENIUS Act); state and federal licensing</td><td class="left">SEC/CFTC perimeter still evolving; Howey analysis for many tokens</td><td class="left">Money-transmitter and securities rules; bank-like custody</td></tr>
+            <tr><td class="left name">European Union</td><td class="left">MiCA reserve, governance, and disclosure rules</td><td class="left">MiCA token classifications; prospectus rules for securities</td><td class="left">MiCA CASP licensing</td></tr>
+            <tr><td class="left name">United Kingdom</td><td class="left">FCA stablecoin regime in development</td><td class="left">FCA cryptoasset regime; financial promotions rules</td><td class="left">FCA registration and conduct rules</td></tr>
+            <tr><td class="left name">Singapore</td><td class="left">MAS single-currency stablecoin framework</td><td class="left">Payment Services Act; capital markets rules</td><td class="left">MAS licensing</td></tr>
+            <tr><td class="left name">United Arab Emirates</td><td class="left">VARA / central-bank rules, depending on emirate</td><td class="left">VARA asset classifications</td><td class="left">VARA licensing</td></tr>
+            <tr><td class="left name">Hong Kong</td><td class="left">HKMA stablecoin licensing regime</td><td class="left">SFC virtual-asset rules; professional-investor limits</td><td class="left">SFC VATP licensing</td></tr>
+            <tr><td class="left name">Switzerland</td><td class="left">FINMA guidance; DLT Act framework</td><td class="left">Token classification by function</td><td class="left">FINMA authorization</td></tr>
+            <tr><td class="left name">Japan</td><td class="left">Payment Services Act; stablecoin intermediaries</td><td class="left">FIEA token classification</td><td class="left">FSA registration</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-note">High-level summary as of late 2026. Rules change and depend on facts, entities, and distribution. Consult a qualified adviser for any specific transaction.</p>
+
+      <h3>Tax: the boring part that compounds</h3>
+      <div class="two-col">
+        <ul class="check-list">
+          <li>Record every trade, transfer, reward, and fee in a consistent ledger.</li>
+          <li>Track cost basis by lot; methods differ by jurisdiction.</li>
+          <li>Staking, lending, and liquidity rewards are usually income when received.</li>
+          <li>LP deposits and withdrawals can be taxable events; get advice.</li>
+          <li>Airdrops and forks may be income at receipt or at sale.</li>
+        </ul>
+        <ul class="check-list">
+          <li>Cross-chain bridges and wraps need a clear accounting policy.</li>
+          <li>US brokers are phasing in 1099-DA reporting; reconcile it with your own records.</li>
+          <li>Wash-sale and loss rules vary; do not assume TradFi treatment.</li>
+          <li>Keep wallet-level records, not just exchange statements.</li>
+          <li>If you cannot explain a transaction to an auditor, document it now.</li>
+        </ul>
+      </div>
+
+      <h3>Security: the loss ledger</h3>
+      <div class="card-grid four">
+        <div class="mini-card danger"><div class="k">Tracked incidents · 12m</div><div class="v">__HACKS_COUNT__</div><div class="s">DefiLlama-tracked hacks, exploits, and frauds</div></div>
+        <div class="mini-card danger"><div class="k">Reported losses · 12m</div><div class="v">__HACKS_TOTAL__</div><div class="s">Nominal USD at time of incident; not exhaustive</div></div>
+        <div class="mini-card"><div class="k">Largest recent</div><div class="v" style="font-size:15px;">__HACKS_LARGEST__</div><div class="s">__HACKS_LARGEST_AMOUNT__</div></div>
+        <div class="mini-card"><div class="k">Most common</div><div class="v" style="font-size:15px;">Key &amp; accounting</div><div class="s">Compromised keys, share accounting, oracle manipulation, frontends</div></div>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th class="left">Date</th><th class="left">Incident</th><th>Loss</th><th class="left">Classification</th><th class="left">Technique</th></tr></thead>
+          <tbody id="hackTable"></tbody>
+        </table>
+      </div>
+      <p class="table-note">DefiLlama incident database, trailing 12 months. Incidents with no disclosed amount are excluded from the loss total. Small incidents are numerous; large incidents dominate the dollar total.</p>
+
+      <h3>Attack surface</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th class="left">Vector</th><th class="left">How it happens</th><th class="left">Defense</th></tr></thead>
+          <tbody>
+            <tr><td class="left name">Key compromise</td><td class="left">Phishing, malware, leaked seed, weak key generation</td><td class="left">Hardware wallet, offline seed, multisig, key rotation</td></tr>
+            <tr><td class="left name">Smart contract</td><td class="left">Logic bug, reentrancy, access control, upgrade mistake</td><td class="left">Audits, formal verification, timelocks, least privilege</td></tr>
+            <tr><td class="left name">Oracle manipulation</td><td class="left">Thin market, stale price, spot-only feed</td><td class="left">TWAP, multiple sources, circuit breakers, caps</td></tr>
+            <tr><td class="left name">Frontend / DNS</td><td class="left">Malicious UI, wallet drainer, domain hijack</td><td class="left">Bookmarks, verify contracts, simulate transactions</td></tr>
+            <tr><td class="left name">Bridge</td><td class="left">Validator compromise, message verification bug</td><td class="left">Canonical bridges, limits, monitoring, insurance</td></tr>
+            <tr><td class="left name">Approval phishing</td><td class="left">Infinite approvals to malicious contracts</td><td class="left">Revoke regularly, least-privilege approvals, simulate</td></tr>
+            <tr><td class="left name">Social engineering</td><td class="left">Fake support, fake founders, job scams</td><td class="left">Verify out-of-band; never share screens or seeds</td></tr>
+            <tr><td class="left name">Supply chain</td><td class="left">Compromised dependency, wallet, or build pipeline</td><td class="left">Pinned versions, signed releases, separate devices</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout danger">
+        <span class="tag">The security rule</span>
+        <p>There is no yield high enough to justify a seed phrase. There is no support agent who needs your screen. There is no airdrop that requires your private key. Most losses are not clever exploits; they are a signature you should not have given.</p>
+      </div>
+    </section>
+
+    <section class="sec" id="playbooks">
+      <header class="sec-head">
+        <p class="sec-num">12 / Playbooks</p>
+        <h2>Five ways to use this page</h2>
+        <p class="dek">Turn the report into a repeatable process: a market dashboard, a stablecoin policy, a farm checklist, a wallet network, and a trader evaluation.</p>
+      </header>
+
+      <div class="card-grid">
+        <div class="card">
+          <span class="badge tag">Playbook A</span>
+          <h3 style="margin-top:10px;">Build a weekend market dashboard</h3>
+          <ol class="plain-list">
+            <li>Pick five metrics: total market cap, BTC dominance, stablecoin supply, DEX volume, and perp open interest.</li>
+            <li>Pull them from CoinGecko and DefiLlama into one sheet or script. Store the date and source for every row.</li>
+            <li>Add a 30-day and 90-day change column. Absolute levels are less useful than direction.</li>
+            <li>Write one sentence of interpretation per metric. If you cannot, drop the metric.</li>
+            <li>Review weekly, not hourly. The point is regime awareness, not dopamine.</li>
+          </ol>
+        </div>
+        <div class="card">
+          <span class="badge tag">Playbook B</span>
+          <h3 style="margin-top:10px;">Write a stablecoin treasury policy</h3>
+          <ol class="plain-list">
+            <li>Set the liquidity bucket: 1–3 months of expenses in same-day redeemable dollars.</li>
+            <li>Diversify issuers and chains; avoid a single bank, issuer, or bridge.</li>
+            <li>Separate operating cash, reserve cash, and yield-seeking cash.</li>
+            <li>Define eligible collateral and a maximum yield-product allocation.</li>
+            <li>Document redemption procedures, signers, and a quarterly review.</li>
+          </ol>
+        </div>
+        <div class="card">
+          <span class="badge tag">Playbook C</span>
+          <h3 style="margin-top:10px;">Run a farm through 12 questions</h3>
+          <ol class="plain-list">
+            <li>Identify the source of yield: fees, interest, emissions, points, or leverage.</li>
+            <li>Model the APY at 0%, 50%, and 100% of current rewards.</li>
+            <li>Compute IL at −30%, −50%, and −70% for volatile pools.</li>
+            <li>Check TVL concentration, audit status, admin keys, and withdrawal terms.</li>
+            <li>Size so a total loss is annoying, not existential. Write the exit plan before entering.</li>
+          </ol>
+        </div>
+        <div class="card">
+          <span class="badge tag">Playbook D</span>
+          <h3 style="margin-top:10px;">Build a 20-wallet intelligence network</h3>
+          <ol class="plain-list">
+            <li>Choose 20 entities across categories: funds, market makers, protocols, whales, and bridges.</li>
+            <li>Label each one with evidence, not vibes. Record the source and date.</li>
+            <li>Set alerts for large transfers, approvals, and collateral changes.</li>
+            <li>Review weekly: what changed, and does it confirm or contradict your thesis?</li>
+            <li>Prune aggressively. A noisy watchlist is worse than no watchlist.</li>
+          </ol>
+        </div>
+        <div class="card">
+          <span class="badge tag">Playbook E</span>
+          <h3 style="margin-top:10px;">Evaluate a trader in 15 minutes</h3>
+          <ol class="plain-list">
+            <li>Get 12 months of history, not 30 days.</li>
+            <li>Compute expectancy after fees, profit factor, and max drawdown.</li>
+            <li>Normalize by capital and compare to a simple benchmark.</li>
+            <li>Find the hidden leg: spot, options, borrow, or another venue.</li>
+            <li>Write the edge in one sentence. If you cannot, do not copy.</li>
+          </ol>
+        </div>
+        <div class="card">
+          <span class="badge tag">Playbook F</span>
+          <h3 style="margin-top:10px;">Build a sector basket</h3>
+          <ol class="plain-list">
+            <li>Pick a theme with a measurable driver: stablecoin supply, perp volume, RWA TVL, or AI compute demand.</li>
+            <li>Choose 5–8 assets with different value-capture mechanisms, not five copies of the same beta.</li>
+            <li>Cap position sizes and set a rebalance rule. Equal weight is a feature, not a bug.</li>
+            <li>Track the driver, not just the price. If the driver stalls, the basket should change.</li>
+            <li>Write the exit conditions before you enter.</li>
+          </ol>
+        </div>
+      </div>
+
+      <h3>A weekly cadence</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th class="left">Cadence</th><th class="left">What to check</th><th class="left">Why</th></tr></thead>
+          <tbody>
+            <tr><td class="left name">Daily</td><td class="left">BTC/ETH price, funding, liquidations, stablecoin flows</td><td class="left">Risk management; avoid surprises</td></tr>
+            <tr><td class="left name">Weekly</td><td class="left">DEX/perp volume, chain TVL, sector breadth, yields</td><td class="left">Regime and narrative shifts</td></tr>
+            <tr><td class="left name">Monthly</td><td class="left">Unlocks, governance, reserve reports, regulatory changes</td><td class="left">Structural risk and dilution</td></tr>
+            <tr><td class="left name">Quarterly</td><td class="left">Thesis review, position sizing, tax lots, security audit</td><td class="left">Process improvement and compliance</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="sec" id="glossary">
+      <header class="sec-head">
+        <p class="sec-num">13 / Glossary</p>
+        <h2>The words that matter</h2>
+        <p class="dek">A working vocabulary for the rest of the page and for reading crypto research without getting lost in jargon.</p>
+      </header>
+
+      <dl class="glossary">
+        <div><dt>AMM</dt><dd>Automated market maker. A smart contract that quotes prices using a formula and pooled liquidity instead of an order book.</dd></div>
+        <div><dt>APY</dt><dd>Annual percentage yield. A compounded annual rate; compare the compounding assumptions before comparing products.</dd></div>
+        <div><dt>Basis trade</dt><dd>Long spot and short a futures or perpetual contract to earn the spread or funding. Market-neutral until funding flips or a venue fails.</dd></div>
+        <div><dt>Bid-ask spread</dt><dd>The difference between the best buy and sell price. A measure of immediate liquidity cost.</dd></div>
+        <div><dt>Bridge</dt><dd>A protocol that moves assets or messages between chains. Bridge TVL is a claim on locked collateral, not a bank deposit.</dd></div>
+        <div><dt>CEX / DEX</dt><dd>Centralized exchange (custodial order book) versus decentralized exchange (on-chain liquidity). The line is blurring as CEXs add on-chain settlement.</dd></div>
+        <div><dt>Collateral factor</dt><dd>The share of an asset’s value that can be borrowed against in a lending market. Higher factors mean more leverage and more liquidation risk.</dd></div>
+        <div><dt>Concentrated liquidity</dt><dd>An AMM design where LPs choose price ranges. Higher capital efficiency, higher impermanent loss and management complexity.</dd></div>
+        <div><dt>Depeg</dt><dd>A stablecoin trading away from its target. A small, brief deviation is normal; a persistent one is a credit event.</dd></div>
+        <div><dt>DePIN</dt><dd>Decentralized physical infrastructure network. Tokens that coordinate hardware such as storage, compute, wireless, or sensors.</dd></div>
+        <div><dt>Drawdown</dt><dd>The peak-to-trough decline in a portfolio or strategy. The risk metric that determines whether you can stay in the trade.</dd></div>
+        <div><dt>Emissions</dt><dd>New token issuance used to reward participants. Usually dilutive; the yield is a transfer from holders to providers.</dd></div>
+        <div><dt>FDV</dt><dd>Fully diluted valuation: price × maximum or fully diluted supply. The value of the asset if every token existed today.</dd></div>
+        <div><dt>Funding rate</dt><dd>The periodic payment between longs and shorts in a perpetual futures market. Positive funding means longs pay shorts.</dd></div>
+        <div><dt>Impermanent loss</dt><dd>The opportunity cost of providing liquidity versus holding the two assets. It becomes permanent when you withdraw.</dd></div>
+        <div><dt>L1 / L2</dt><dd>Layer 1 is the base chain; Layer 2 is a scaling system that settles to it. A token can be essential infrastructure and still have weak value capture.</dd></div>
+        <div><dt>Liquidation</dt><dd>Forced closure of a leveraged position when collateral falls below the maintenance requirement. Cascades can move prices far beyond fundamentals.</dd></div>
+        <div><dt>LST / LRT</dt><dd>Liquid staking token / liquid restaking token. A transferable claim on staked assets; adds smart-contract and depeg risk.</dd></div>
+        <div><dt>MEV</dt><dd>Maximal extractable value. Profit from ordering, including, or censoring transactions. Often paid by ordinary users as slippage.</dd></div>
+        <div><dt>Multisig</dt><dd>A wallet requiring multiple signatures to move funds. Standard for treasuries and protocol admin keys.</dd></div>
+        <div><dt>MVRV</dt><dd>Market value to realized value. A Bitcoin cycle metric comparing market cap to the aggregate cost basis of holders.</dd></div>
+        <div><dt>NVT</dt><dd>Network value to transactions. A valuation ratio for monetary assets; noisy but useful as a regime check.</dd></div>
+        <div><dt>Open interest</dt><dd>The value of outstanding derivative contracts. Rising OI with rising price suggests new leverage; falling OI suggests closing.</dd></div>
+        <div><dt>Oracle</dt><dd>A service that brings external prices or data on-chain. Oracle design is a security property, not a detail.</dd></div>
+        <div><dt>Perp DEX</dt><dd>A decentralized perpetual futures venue. Typically uses an order book or a vault-based market maker, with on-chain settlement.</dd></div>
+        <div><dt>Points</dt><dd>A non-transferable accounting unit used to reward activity, often with an implied future airdrop. Not cash flow.</dd></div>
+        <div><dt>Realized cap</dt><dd>The aggregate value of all coins at the price they last moved. An approximation of the market’s cost basis.</dd></div>
+        <div><dt>Restaking</dt><dd>Reusing staked assets to secure additional services (AVSs). Adds yield and layered slashing risk.</dd></div>
+        <div><dt>RWA</dt><dd>Real-world assets. Tokenized credit, treasuries, real estate, commodities, or funds. The legal claim matters more than the token wrapper.</dd></div>
+        <div><dt>Slippage</dt><dd>The difference between the expected price and the executed price. A hidden cost that rises with size and thin liquidity.</dd></div>
+        <div><dt>Stablecoin</dt><dd>A token designed to hold a stable value, usually $1. The peg is a promise backed by reserves, collateral, or a mechanism.</dd></div>
+        <div><dt>TVL</dt><dd>Total value locked. Assets deposited in a protocol. Not revenue, not deposits, and not directly comparable across protocol types.</dd></div>
+        <div><dt>Unlock</dt><dd>The release of previously locked tokens into circulation. A supply event that can pressure price if demand does not keep up.</dd></div>
+        <div><dt>Utilization</dt><dd>The share of supplied assets that are borrowed in a lending market. High utilization can block withdrawals and spike rates.</dd></div>
+        <div><dt>Validator</dt><dd>An entity that proposes and attests blocks in a proof-of-stake network. Validators earn issuance and fees, and can be slashed.</dd></div>
+        <div><dt>Wash trading</dt><dd>Trading against yourself or a related party to inflate volume. Common in token listings and leaderboard metrics.</dd></div>
+      </dl>
+    </section>
+
+    <section class="sec" id="sources">
+      <header class="sec-head">
+        <p class="sec-num">14 / Sources &amp; method</p>
+        <h2>How this snapshot was built</h2>
+        <p class="dek">        Public APIs, a reproducible Python pipeline, and one static HTML file. No trackers, no keys,
+        no live data calls from the browser.</p>
+      </header>
+
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th class="left">Source</th><th class="left">Used for</th><th class="left">Refresh</th></tr></thead>
+          <tbody>
+            <tr><td class="left name">CoinGecko</td><td class="left">Top 100/250 assets, prices, market caps, FDVs, 7d sparklines, categories, global market data, 1y price history</td><td class="left">API · free tier, rate-limited</td></tr>
+            <tr><td class="left name">DefiLlama</td><td class="left">Stablecoin supply and chains, DeFi TVL, chain TVL, protocol TVL, DEX volume, yields, hack database, exchange reserves</td><td class="left">API · public endpoints</td></tr>
+            <tr><td class="left name">Alternative.me</td><td class="left">Fear &amp; Greed Index</td><td class="left">API · public</td></tr>
+            <tr><td class="left name">Hyperliquid</td><td class="left">Public leaderboard, perp volumes, open interest, funding, mark prices</td><td class="left">API · public</td></tr>
+            <tr><td class="left name">Project docs &amp; regulators</td><td class="left">Stablecoin mechanics, regulation summaries, tax notes</td><td class="left">Manual review</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Source freshness</h3>
+      <div id="sourceFreshness"></div>
+
+      <h3>Method notes</h3>
+      <ul class="plain-list">
+        <li><strong>Market cap</strong> is price × circulating supply from CoinGecko. It is not liquidity, NAV, or a guarantee of redeemability.</li>
+        <li><strong>Stablecoin supply</strong> uses DefiLlama’s aggregate. Individual issuer figures can differ from CoinGecko because of wrapped, bridged, and yield-bearing versions.</li>
+        <li><strong>Sector categories</strong> are CoinGecko tags and overlap. They are useful for orientation, not for summing the market.</li>
+        <li><strong>Yield risk</strong> is a heuristic based on asset type, IL, chain, TVL, APY level, and reward composition. It is not an audit or a recommendation.</li>
+        <li><strong>Hyperliquid stats</strong> are derived from the public leaderboard and perp contexts. The leaderboard is a selected sample, not a random survey.</li>
+        <li><strong>Hack losses</strong> are nominal USD at the time of the incident, from DefiLlama’s database, and are not exhaustive.</li>
+        <li><strong>Regulation and tax</strong> summaries are high-level and time-sensitive. They are not legal or tax advice.</li>
+      </ul>
+
+      <h3>Rebuild</h3>
+      <p>
+        From this folder, run <code class="mono">python3 fetch_data.py --refresh</code> to pull a new snapshot,
+        then <code class="mono">python3 build.py</code> to regenerate <code class="mono">index.html</code>.
+        The page is a single static file; open it directly in a browser. The raw API cache lives in
+        <code class="mono">data/raw/</code> and is excluded from version control.
+      </p>
+
+      <div class="callout warn">
+        <span class="tag">Limits</span>
+        <p>This is a snapshot, not a live terminal. APIs rate-limit, categories overlap, market caps can be wrong, yields can be subsidized, leaderboards are selected samples, and prices are not executable. Use the report to ask better questions, not to outsource a decision.</p>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<footer class="site-foot">
+  <div class="wrap foot-grid">
+    <div>
+      <div class="brand" style="margin-bottom:8px;"><span class="brand-mark">◈</span><span>Market Field Notes<small>Crypto deep dive</small></span></div>
+      <div>Snapshot __GENERATED_LABEL__ · __COIN_COUNT__ assets · __STABLE_COUNT__ stablecoins · public data only.</div>
+      <div style="margin-top:6px;">Not investment, legal, or tax advice. Do your own work.</div>
+    </div>
+    <div class="foot-links">
+      <a href="#top">Top</a>
+      <a href="#map">Top 100</a>
+      <a href="#stablecoins">Stablecoins</a>
+      <a href="#yield">Yield</a>
+      <a href="#wallets">Wallets</a>
+      <a href="#sources">Sources</a>
+    </div>
+  </div>
+</footer>
+
+<script id="snapshot" type="application/json">__SNAPSHOT_JSON__</script>
+<script>
+(() => {
+  'use strict';
+
+  const S = JSON.parse(document.getElementById('snapshot').textContent);
+  const $ = (sel, root = document) => root.querySelector(sel);
+  const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
+  const COLORS = {
+    BTC: '#f7931a', L1: '#5b8def', L2: '#8b9dff', Stablecoin: '#34d399', RWA: '#fbbf24',
+    DeFi: '#a78bfa', 'Perp DEX': '#f472b6', Oracle: '#22d3ee', CEX: '#94a3b8', Meme: '#fb7185',
+    AI: '#c084fc', Privacy: '#e879f9', Payments: '#38bdf8', DePIN: '#2dd4bf', Infra: '#64748b',
+    'Bitcoin DeFi': '#f59e0b', Other: '#64748b'
+  };
+  const SECTOR_COPY = {
+    l1: { blurb: 'The base layers. BTC and ETH dominate the category; the rest is a long tail competing for apps and fees.', risk: 'Beta to liquidity; most L1 tokens have weak value capture.', tag: 'L1' },
+    stablecoins: { blurb: 'The dollar layer. Supply is the cleanest measure of capital waiting on the sidelines.', risk: 'Issuer, reserve, and regulatory risk.', tag: 'Stablecoin' },
+    rwa: { blurb: 'Tokenized credit, treasuries, and funds. Figure HELOC is now a top-10 asset by reported market cap.', risk: 'Legal claim, custody, and duration.', tag: 'RWA' },
+    defi: { blurb: 'Lending, DEXs, and on-chain credit. TVL holds up better than governance token prices.', risk: 'Token value capture is uneven.', tag: 'DeFi' },
+    privacy: { blurb: 'ZEC and XMR are the strongest large-cap narrative of the drawdown.', risk: 'Regulatory delisting and liquidity.', tag: 'Privacy' },
+    perps: { blurb: 'On-chain perpetuals are taking real volume and real fees.', risk: 'Volume is mercenary; tokens are high beta.', tag: 'Perp DEX' },
+    ai: { blurb: 'Compute, agents, and data networks. Small category, large narrative.', risk: 'Narrative premium; most tokens have no revenue.', tag: 'AI' },
+    memes: { blurb: 'Attention markets. Leadership is narrow and liquidity is fragile.', risk: 'Extreme drawdowns and exit liquidity.', tag: 'Meme' },
+    l2: { blurb: 'Scaling infrastructure. The technology works; the tokens have not captured the activity.', risk: 'Fee compression and token dilution.', tag: 'L2' },
+    cex: { blurb: 'Exchange tokens with buybacks, fee discounts, and regulatory exposure.', risk: 'Venue concentration and policy.', tag: 'CEX' },
+    yield: { blurb: 'Governance tokens of yield protocols; the category is small relative to stablecoin yield.', risk: 'Emissions and mercenary TVL.', tag: 'DeFi' },
+    depin: { blurb: 'Hardware networks for storage, compute, and wireless.', risk: 'Unit economics and demand.', tag: 'DePIN' }
+  };
+
+  const esc = (value) => String(value == null ? '' : value).replace(/[&<>"']/g, (ch) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));
+  const isNum = (value) => value != null && Number.isFinite(Number(value));
+  const money = (value, digits = 2) => {
+    if (!isNum(value)) return '—';
+    const n = Number(value);
+    const abs = Math.abs(n);
+    const prefix = n < 0 ? '-$' : '$';
+    if (abs >= 1e12) return `${prefix}${(abs / 1e12).toFixed(digits)}T`;
+    if (abs >= 1e9) return `${prefix}${(abs / 1e9).toFixed(digits)}B`;
+    if (abs >= 1e6) return `${prefix}${(abs / 1e6).toFixed(abs >= 100e6 ? 1 : 2)}M`;
+    if (abs >= 1e3) return `${prefix}${(abs / 1e3).toFixed(1)}K`;
+    return `${prefix}${abs.toFixed(digits)}`;
+  };
+  const price = (value) => {
+    if (!isNum(value)) return '—';
+    const n = Number(value);
+    if (n >= 1000) return `$${n.toLocaleString('en-US', { maximumFractionDigits: 0 })}`;
+    if (n >= 1) return `$${n.toLocaleString('en-US', { maximumFractionDigits: 2 })}`;
+    if (n >= 0.01) return `$${n.toFixed(4)}`;
+    if (n >= 0.00000001) return `$${n.toFixed(8).replace(/0+$/, '')}`;
+    return `$${n.toPrecision(4)}`;
+  };
+  const pct = (value, digits = 2) => {
+    if (!isNum(value)) return '—';
+    const n = Number(value);
+    return `${n > 0 ? '+' : ''}${n.toFixed(digits)}%`;
+  };
+  const pctClass = (value) => !isNum(value) ? 'flat' : Number(value) > 0 ? 'up' : Number(value) < 0 ? 'down' : 'flat';
+  const pctCell = (value, digits = 2) => `<span class="${pctClass(value)}">${pct(value, digits)}</span>`;
+  const mm = (value) => { const n = Number(value || 0); return Math.round(n).toLocaleString('en-US'); };
+  const shortAddr = (address) => address ? `${address.slice(0, 6)}…${address.slice(-4)}` : '—';
+  const dateLabel = (iso) => {
+    if (!iso) return '';
+    const d = new Date(iso + 'T00:00:00Z');
+    return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
+  };
+  const shortDate = (iso) => {
+    const d = new Date(iso + 'T00:00:00Z');
+    return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' });
+  };
+  const UTC_MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  const parseUTC = (value) => {
+    if (value == null || value === '') return null;
+    if (typeof value === 'number' || (typeof value === 'string' && /^\d+(\.\d+)?$/.test(value.trim()))) {
+      const n = Number(value);
+      const d = new Date(n > 1e12 ? n : n * 1000);
+      return Number.isNaN(d.getTime()) ? null : d;
+    }
+    if (typeof value !== 'string') return null;
+    let text = value.trim();
+    if (/^\d{4}-\d{2}-\d{2}$/.test(text)) text += 'T00:00:00Z';
+    else if (/^\d{4}-\d{2}-\d{2}[ T]\d{2}:\d{2}(:\d{2}(\.\d+)?)?$/.test(text)) text = `${text.replace(' ', 'T')}Z`;
+    const d = new Date(text);
+    return Number.isNaN(d.getTime()) ? null : d;
+  };
+  const utcStamp = (value) => {
+    const d = parseUTC(value);
+    if (!d) return '';
+    const hours = String(d.getUTCHours()).padStart(2, '0');
+    const minutes = String(d.getUTCMinutes()).padStart(2, '0');
+    return `${UTC_MONTHS[d.getUTCMonth()]} ${d.getUTCDate()}, ${d.getUTCFullYear()} · ${hours}:${minutes} UTC`;
+  };
+  const snapshotDate = (value) => {
+    const d = parseUTC(value);
+    if (!d) return '';
+    return `${UTC_MONTHS[d.getUTCMonth()]} ${d.getUTCDate()}, ${d.getUTCFullYear()}`;
+  };
+  const asOfStamp = (value) => {
+    if (value == null || value === '') return '';
+    return /^\d{4}-\d{2}-\d{2}$/.test(String(value).trim()) ? snapshotDate(value) : utcStamp(value);
+  };
+  const hoursSince = (value) => {
+    const d = parseUTC(value);
+    if (!d) return null;
+    return Math.max(0, (Date.now() - d.getTime()) / 3600000);
+  };
+  const ageText = (hours) => {
+    if (!isNum(hours)) return '—';
+    const n = Number(hours);
+    if (n < 1) return '<1h';
+    if (n < 48) return `${n.toFixed(1)}h`;
+    return `${(n / 24).toFixed(1)}d`;
+  };
+
+  const root = document.documentElement;
+  try {
+    const saved = localStorage.getItem('crypto-deep-dive-theme');
+    if (saved === 'light' || saved === 'dark') root.dataset.theme = saved;
+  } catch (error) { /* storage unavailable */ }
+  $('#themeToggle').addEventListener('click', () => {
+    const next = root.dataset.theme === 'light' ? 'dark' : 'light';
+    root.dataset.theme = next;
+    try { localStorage.setItem('crypto-deep-dive-theme', next); } catch (error) { /* ignore */ }
+  });
+
+  const progress = $('#progress');
+  const updateProgress = () => {
+    const height = document.documentElement.scrollHeight - window.innerHeight;
+    progress.style.width = `${height > 0 ? (window.scrollY / height) * 100 : 0}%`;
+  };
+  window.addEventListener('scroll', updateProgress, { passive: true });
+  updateProgress();
+
+  const tickerCoins = ['bitcoin', 'ethereum', 'solana', 'hyperliquid', 'zcash', 'binancecoin', 'ripple', 'dogecoin'];
+  const tickerTrack = $('#tickerTrack');
+  const tickerItems = tickerCoins.map((id) => S.coins.find((coin) => coin.id === id)).filter(Boolean);
+  const tickerHtml = tickerItems.map((coin) => (
+    `<span class="tick"><b>${esc(coin.symbol)}</b> ${price(coin.price)} <span class="${pctClass(coin.change_24h)}">${pct(coin.change_24h)}</span></span>`
+  )).join('');
+  tickerTrack.innerHTML = tickerHtml + tickerHtml;
+
+  const perfBody = $('#perfTable');
+  perfBody.innerHTML = S.performance.map((row) => `
+    <tr>
+      <td class="left name">${esc(row.symbol)}</td>
+      <td class="num">${pctCell(row.change_24h)}</td>
+      <td class="num">${pctCell(row.change_7d)}</td>
+      <td class="num">${pctCell(row.change_30d)}</td>
+      <td class="num">${pctCell(row.change_90d)}</td>
+      <td class="num">${pctCell(row.change_365d)}</td>
+      <td class="num down">${pct(row.ath_change)}</td>
+      <td class="num">${money(row.market_cap)}</td>
+    </tr>
+  `).join('');
+
+  const DELTA_METRICS = [
+    { key: 'total_mcap', label: 'Total market cap', kind: 'usd' },
+    { key: 'stablecoin_total', label: 'Stablecoin supply', kind: 'usd' },
+    { key: 'defi_tvl', label: 'DeFi TVL', kind: 'usd' },
+    { key: 'btc_dominance', label: 'BTC dominance', kind: 'rate' },
+    { key: 'fear_greed', label: 'Fear & greed', kind: 'int' },
+    { key: 'hl_volume_24h', label: 'Hyperliquid 24h volume', kind: 'usd' },
+    { key: 'btc_price', label: 'BTC price', kind: 'usd' },
+    { key: 'top10_share', label: 'Top-10 share', kind: 'rate' }
+  ];
+  const metricValue = (metric, kind) => {
+    if (!metric || !isNum(metric.current)) return '—';
+    const value = Number(metric.current);
+    if (kind === 'rate') return `${value.toFixed(2)}%`;
+    if (kind === 'int') return String(Math.round(value));
+    return money(value);
+  };
+  const metricDelta = (metric, kind) => {
+    if (!metric || !isNum(metric.delta)) return null;
+    const value = Number(metric.delta);
+    if (kind === 'rate') return pct(value);
+    if (kind === 'int') return `${value > 0 ? '+' : ''}${Math.round(value)}`;
+    return money(value);
+  };
+  const metricPct = (metric) => {
+    if (!metric) return null;
+    if (isNum(metric.pct)) return Number(metric.pct);
+    if (isNum(metric.current) && isNum(metric.prior) && Number(metric.prior) !== 0) {
+      return ((Number(metric.current) - Number(metric.prior)) / Math.abs(Number(metric.prior))) * 100;
+    }
+    return null;
+  };
+  const renderSnapshotDelta = () => {
+    const target = $('#snapshotDelta');
+    if (!target) return;
+    const comparison = S.comparison;
+    if (!comparison || typeof comparison !== 'object' || !comparison.metrics || typeof comparison.metrics !== 'object') {
+      const asOf = S.data_as_of_label ? ` Data as of ${esc(S.data_as_of_label)}.` : '';
+      target.innerHTML = `<div class="delta-grid"><div class="empty delta-empty">This is the first stored snapshot. Deltas appear after the next refresh.${asOf}</div></div>`;
+      return;
+    }
+    const priorDate = comparison.prior_label ? esc(comparison.prior_label) : esc(snapshotDate(comparison.prior_date));
+    const cards = DELTA_METRICS.map((def) => {
+      const metric = comparison.metrics[def.key];
+      if (!metric || typeof metric !== 'object') {
+        return `<div class="delta-card">
+          <div class="k">${esc(def.label)}</div>
+          <div class="v">—</div>
+          <div class="d flat">Not available</div>
+          <div class="s">No prior reading in this snapshot.</div>
+        </div>`;
+      }
+      const current = metricValue(metric, def.kind);
+      const delta = metricDelta(metric, def.kind);
+      const deltaPct = metricPct(metric);
+      const direction = isNum(metric.delta) ? Number(metric.delta) : deltaPct;
+      const priorValue = isNum(metric.prior) ? metricValue({ current: metric.prior }, def.kind) : '—';
+      const priorText = priorDate ? `${priorValue} · ${priorDate}` : priorValue;
+      const deltaText = delta == null
+        ? '<span class="flat">No change data</span>'
+        : `<span class="${pctClass(direction)}">${esc(delta)}</span>${deltaPct == null ? '' : `<span class="pct">${esc(pct(deltaPct))}</span>`}`;
+      return `<div class="delta-card">
+        <div class="k">${esc(def.label)}</div>
+        <div class="v">${esc(current)}</div>
+        <div class="d">${deltaText}</div>
+        <div class="s">Prior ${priorText}</div>
+      </div>`;
+    }).join('');
+    target.innerHTML = `<div class="delta-grid">${cards}</div>`;
+  };
+  renderSnapshotDelta();
+
+  const renderSourceFreshness = () => {
+    const target = $('#sourceFreshness');
+    if (!target) return;
+    const sources = Array.isArray(S.sources) ? S.sources : [];
+    if (!sources.length) {
+      target.innerHTML = '<div class="empty">Source freshness is not available in this snapshot.</div>';
+      return;
+    }
+    const rows = sources.map((source) => {
+      const fetched = utcStamp(source.fetched_at);
+      const computedAge = hoursSince(source.fetched_at);
+      const age = computedAge != null ? computedAge : (isNum(source.age_hours) ? Number(source.age_hours) : null);
+      const status = age == null ? { label: 'Unknown', cls: '' } : age < 24 ? { label: 'Fresh', cls: 'low' } : age < 168 ? { label: 'Aging', cls: 'medium' } : { label: 'Stale', cls: 'high' };
+      const endpoints = Array.isArray(source.endpoints)
+        ? (source.endpoints.length ? source.endpoints.map((item) => esc(item)).join(', ') : '—')
+        : (source.endpoints == null || source.endpoints === '' || typeof source.endpoints === 'object' ? '—' : esc(source.endpoints));
+      return `<tr>
+        <td class="left name">${esc(source.provider || '—')}</td>
+        <td class="left small">${fetched ? esc(fetched) : '—'}</td>
+        <td class="num">${esc(ageText(age))}</td>
+        <td class="left small">${endpoints}</td>
+        <td class="left"><span class="badge ${status.cls}">${status.label}</span></td>
+      </tr>`;
+    }).join('');
+    const asOf = S.data_as_of_label ? esc(S.data_as_of_label) : (asOfStamp(S.data_as_of) ? esc(asOfStamp(S.data_as_of)) : 'not available');
+    const built = S.built_label ? esc(S.built_label) : (utcStamp(S.built_at) ? esc(utcStamp(S.built_at)) : 'not available');
+    target.innerHTML = `<div class="table-wrap"><table class="fresh-table">
+      <thead><tr><th class="left">Provider</th><th class="left">Fetched</th><th>Age</th><th class="left">Endpoints</th><th class="left">Status</th></tr></thead>
+      <tbody>${rows}</tbody>
+    </table></div>
+    <p class="table-note">Data as of ${asOf}; page built ${built}. Cached sources are reused until <code class="mono">fetch_data.py --refresh</code> is run.</p>`;
+  };
+  renderSourceFreshness();
+
+  const chart = (() => {
+    const defs = [
+      { key: 'btc', label: 'BTC', color: '#f7931a' },
+      { key: 'eth', label: 'ETH', color: '#8b9dff' },
+      { key: 'sol', label: 'SOL', color: '#14f195' },
+      { key: 'stablecoins', label: 'Stablecoins', color: '#5eead4' },
+      { key: 'tvl', label: 'DeFi TVL', color: '#fbbf24' }
+    ];
+    const active = new Set(defs.map((d) => d.key));
+    const wrap = $('#cycleChartWrap');
+    const svg = $('#cycleChart');
+    const tooltip = $('#cycleTooltip');
+    const legend = $('#cycleLegend');
+    const W = 920, H = 380, PAD = { l: 44, r: 18, t: 16, b: 30 };
+    const maps = {};
+    defs.forEach((def) => {
+      maps[def.key] = new Map((S.history[def.key] || []).map(([date, value]) => [date, Number(value)]));
+    });
+    const startDate = (S.history.btc && S.history.btc[0]) ? S.history.btc[0][0] : (S.history.stablecoins[0] || [])[0];
+    const dates = (S.history.btc || []).map(([date]) => date).filter((date) => date >= startDate);
+
+    const valueAt = (map, date) => {
+      if (map.has(date)) return map.get(date);
+      let previous = null;
+      for (const [key, value] of map) {
+        if (key <= date) previous = value; else break;
+      }
+      return previous;
+    };
+
+    const series = defs.map((def) => {
+      const values = dates.map((date) => valueAt(maps[def.key], date)).filter((value) => value != null);
+      const base = values[0] || 1;
+      const indexed = dates.map((date) => {
+        const value = valueAt(maps[def.key], date);
+        return value == null ? null : (value / base) * 100;
+      });
+      return { ...def, indexed };
+    });
+
+    const axisFor = (visible) => {
+      const values = visible.flatMap((item) => item.indexed.filter((v) => v != null));
+      const min = Math.min(...values), max = Math.max(...values);
+      const span = max - min || 1;
+      const raw = (span * 1.1) / 5;
+      const power = Math.pow(10, Math.floor(Math.log10(raw)));
+      const fraction = raw / power;
+      const nice = fraction <= 1 ? 1 : fraction <= 2 ? 2 : fraction <= 2.5 ? 2.5 : fraction <= 5 ? 5 : 10;
+      const step = nice * power;
+      return {
+        yMin: Math.floor((min - span * 0.05) / step) * step,
+        yMax: Math.ceil((max + span * 0.05) / step) * step,
+        step
+      };
+    };
+
+    const render = () => {
+      const visible = series.filter((item) => active.has(item.key));
+      const { yMin, yMax, step } = axisFor(visible);
+      const x = (i) => PAD.l + (i / Math.max(1, dates.length - 1)) * (W - PAD.l - PAD.r);
+      const y = (v) => PAD.t + (1 - (v - yMin) / (yMax - yMin)) * (H - PAD.t - PAD.b);
+      let markup = `<rect x="${PAD.l}" y="${PAD.t}" width="${W - PAD.l - PAD.r}" height="${H - PAD.t - PAD.b}" fill="transparent"></rect>`;
+      for (let val = yMin; val <= yMax + 1e-9; val += step) {
+        const yy = y(val);
+        markup += `<line class="grid" x1="${PAD.l}" y1="${yy}" x2="${W - PAD.r}" y2="${yy}"></line>`;
+        markup += `<text x="${PAD.l - 8}" y="${yy + 3}" text-anchor="end">${val.toFixed(0)}</text>`;
+      }
+      for (let i = 0; i < 6; i++) {
+        const idx = Math.round((dates.length - 1) * (i / 5));
+        const date = dates[idx];
+        const xx = x(idx);
+        markup += `<text x="${xx}" y="${H - 8}" text-anchor="${i === 0 ? 'start' : i === 5 ? 'end' : 'middle'}">${shortDate(date)}</text>`;
+      }
+      visible.forEach((item) => {
+        let d = '';
+        let started = false;
+        item.indexed.forEach((val, i) => {
+          if (val == null) return;
+          d += `${started ? 'L' : 'M'}${x(i).toFixed(1)} ${y(val).toFixed(1)} `;
+          started = true;
+        });
+        markup += `<path d="${d}" fill="none" stroke="${item.color}" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"></path>`;
+        const lastIndex = item.indexed.map((v, i) => v == null ? -1 : i).filter((i) => i >= 0).pop();
+        if (lastIndex != null) {
+          markup += `<circle cx="${x(lastIndex)}" cy="${y(item.indexed[lastIndex])}" r="2.6" fill="${item.color}"></circle>`;
+          markup += `<text x="${x(lastIndex) + 7}" y="${y(item.indexed[lastIndex]) + 3}" fill="${item.color}">${item.indexed[lastIndex].toFixed(0)}</text>`;
+        }
+      });
+      markup += `<line id="chartHoverLine" x1="0" y1="${PAD.t}" x2="0" y2="${H - PAD.b}" stroke="var(--line-2)" stroke-dasharray="3 3" opacity="0"></line>`;
+      visible.forEach((item) => {
+        markup += `<circle id="hover-${item.key}" r="3.5" fill="${item.color}" opacity="0"></circle>`;
+      });
+      svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+      svg.innerHTML = markup;
+      bindHover(visible);
+    };
+
+    const bindHover = (visible) => {
+      const overlay = svg.querySelector('rect');
+      const line = svg.querySelector('#chartHoverLine');
+      const x = (i) => PAD.l + (i / Math.max(1, dates.length - 1)) * (W - PAD.l - PAD.r);
+      const { yMin, yMax } = axisFor(visible);
+      const y = (v) => {
+        return PAD.t + (1 - (v - yMin) / (yMax - yMin)) * (H - PAD.t - PAD.b);
+      };
+      overlay.addEventListener('mousemove', (event) => {
+        const rect = svg.getBoundingClientRect();
+        const px = ((event.clientX - rect.left) / rect.width) * W;
+        const idx = Math.max(0, Math.min(dates.length - 1, Math.round(((px - PAD.l) / (W - PAD.l - PAD.r)) * (dates.length - 1))));
+        const xx = x(idx);
+        line.setAttribute('x1', xx);
+        line.setAttribute('x2', xx);
+        line.setAttribute('opacity', '1');
+        visible.forEach((item) => {
+          const point = svg.querySelector(`#hover-${item.key}`);
+          const value = item.indexed[idx];
+          if (value == null) { point.setAttribute('opacity', '0'); return; }
+          point.setAttribute('cx', xx);
+          point.setAttribute('cy', y(value));
+          point.setAttribute('opacity', '1');
+        });
+        tooltip.innerHTML = `<b>${dateLabel(dates[idx])}</b><br>${visible.map((item) => `${esc(item.label)} ${item.indexed[idx] == null ? '—' : item.indexed[idx].toFixed(1)}`).join('<br>')}`;
+        tooltip.style.opacity = '1';
+        tooltip.style.left = `${Math.min(88, Math.max(12, (xx / W) * 100))}%`;
+        tooltip.style.top = '18px';
+      });
+      overlay.addEventListener('mouseleave', () => {
+        line.setAttribute('opacity', '0');
+        tooltip.style.opacity = '0';
+        visible.forEach((item) => svg.querySelector(`#hover-${item.key}`).setAttribute('opacity', '0'));
+      });
+    };
+
+    legend.innerHTML = defs.map((def) => (
+      `<button class="legend-btn" type="button" data-key="${def.key}"><i style="background:${def.color}"></i>${def.label}</button>`
+    )).join('');
+    legend.addEventListener('click', (event) => {
+      const button = event.target.closest('button[data-key]');
+      if (!button) return;
+      const key = button.dataset.key;
+      if (active.has(key) && active.size === 1) return;
+      if (active.has(key)) active.delete(key); else active.add(key);
+      button.classList.toggle('is-off', !active.has(key));
+      render();
+    });
+    render();
+  })();
+
+  const tagOrder = (tag) => Object.keys(COLORS).indexOf(tag);
+  const tagColor = (tag) => COLORS[tag] || COLORS.Other;
+  const coinById = new Map(S.coins.map((coin) => [coin.id, coin]));
+  const coinExtras = (coin) => ({
+    fdv_ratio: coin.market_cap > 0 && coin.fdv > 0 ? coin.fdv / coin.market_cap : null,
+    vol_ratio: coin.market_cap > 0 ? (coin.volume / coin.market_cap) * 100 : null
+  });
+
+  const treemap = (() => {
+    const container = $('#treemap');
+    const items = S.coins.slice(0, 60).map((coin) => ({
+      ...coin,
+      value: coin.market_cap,
+      color: tagColor(coin.tag)
+    }));
+    const totalTop = items.reduce((sum, item) => sum + item.value, 0);
+    $('#treemapTotal').textContent = `${money(totalTop)} of ${money(S.global.total_mcap)}`;
+    const layout = (nodes, x, y, w, h, out) => {
+      if (!nodes.length) return;
+      if (nodes.length === 1) { out.push({ ...nodes[0], x, y, w, h }); return; }
+      const total = nodes.reduce((sum, item) => sum + item.value, 0);
+      let best = Infinity, split = 1, acc = 0;
+      for (let i = 1; i < nodes.length; i++) {
+        acc += nodes[i - 1].value;
+        const score = Math.abs(acc / total - 0.5);
+        if (score < best) { best = score; split = i; }
+      }
+      const first = nodes.slice(0, split);
+      const second = nodes.slice(split);
+      const ratio = first.reduce((sum, item) => sum + item.value, 0) / total;
+      if (w >= h) {
+        layout(first, x, y, w * ratio, h, out);
+        layout(second, x + w * ratio, y, w * (1 - ratio), h, out);
+      } else {
+        layout(first, x, y, w, h * ratio, out);
+        layout(second, x, y + h * ratio, w, h * (1 - ratio), out);
+      }
+    };
+    const tiles = [];
+    layout(items, 0, 0, 1, 1, tiles);
+    container.innerHTML = tiles.map((tile) => {
+      const area = tile.w * tile.h;
+      const sizeClass = area < 0.006 ? 'tiny' : area < 0.018 ? 'small' : '';
+      return `<div class="tm-tile ${sizeClass}" role="button" tabindex="0" data-tag="${esc(tile.tag)}" data-id="${esc(tile.id)}" style="left:${(tile.x * 100).toFixed(3)}%;top:${(tile.y * 100).toFixed(3)}%;width:${(tile.w * 100).toFixed(3)}%;height:${(tile.h * 100).toFixed(3)}%;background:${tile.color}" title="${esc(tile.name)} · ${money(tile.market_cap)} · ${pct(tile.change_24h)}">
+        <span class="tm-sym">${esc(tile.symbol)}</span>
+        <span class="tm-name">${esc(tile.name)}</span>
+        <span class="tm-val">${money(tile.market_cap)}</span>
+      </div>`;
+    }).join('');
+    const clickTile = (event) => {
+      const tile = event.target.closest('.tm-tile');
+      if (!tile) return;
+      setTag(tile.dataset.tag);
+    };
+    container.addEventListener('click', clickTile);
+    container.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        clickTile(event);
+      }
+    });
+    const usedTags = Array.from(new Set(items.map((item) => item.tag))).sort((a, b) => tagOrder(a) - tagOrder(b));
+    $('#treemapLegend').innerHTML = usedTags.map((tag) => `<span><i style="background:${tagColor(tag)}"></i>${esc(tag)}</span>`).join('');
+  })();
+
+  const tableState = { q: '', tag: 'All', limit: 100, sort: 'rank', dir: 1 };
+  const allTags = Array.from(new Set(S.coins.map((coin) => coin.tag))).sort((a, b) => {
+    const countA = S.coins.filter((coin) => coin.tag === a).length;
+    const countB = S.coins.filter((coin) => coin.tag === b).length;
+    return countB - countA || tagOrder(a) - tagOrder(b);
+  });
+
+  const sparkline = (values, change) => {
+    if (!values || values.length < 2) return '';
+    const w = 92, h = 26, pad = 2;
+    const min = Math.min(...values), max = Math.max(...values);
+    const span = max - min || 1;
+    const points = values.map((value, i) => [
+      pad + (i / (values.length - 1)) * (w - pad * 2),
+      h - pad - ((value - min) / span) * (h - pad * 2)
+    ]);
+    const d = points.map((point, i) => `${i ? 'L' : 'M'}${point[0].toFixed(1)} ${point[1].toFixed(1)}`).join(' ');
+    const fill = `${d} L ${w - pad} ${h - pad} L ${pad} ${h - pad} Z`;
+    return `<svg class="spark ${pctClass(change)}" viewBox="0 0 ${w} ${h}" aria-hidden="true"><path class="fill" d="${fill}" fill="currentColor"></path><path class="line" d="${d}" stroke="currentColor"></path></svg>`;
+  };
+
+  const renderTagChips = () => {
+    $('#tagChips').innerHTML = ['All'].concat(allTags).map((tag) => (
+      `<button class="chip ${tableState.tag === tag ? 'is-active' : ''}" type="button" data-tag="${esc(tag)}">${esc(tag)}</button>`
+    )).join('');
+  };
+
+  const filteredCoins = () => {
+    const query = tableState.q.trim().toLowerCase();
+    return S.coins.filter((coin) => {
+      if (tableState.tag !== 'All' && coin.tag !== tableState.tag) return false;
+      if (query && !`${coin.name} ${coin.symbol} ${coin.tag}`.toLowerCase().includes(query)) return false;
+      return true;
+    });
+  };
+
+  const sortValue = (coin, key) => {
+    if (key === 'fdv_ratio' || key === 'vol_ratio') return coinExtras(coin)[key];
+    return coin[key];
+  };
+
+  const renderCoins = () => {
+    const rows = filteredCoins().sort((a, b) => {
+      const av = sortValue(a, tableState.sort), bv = sortValue(b, tableState.sort);
+      if (typeof av === 'string' || typeof bv === 'string') return String(av).localeCompare(String(bv)) * tableState.dir;
+      if (av == null && bv == null) return 0;
+      if (av == null) return 1;
+      if (bv == null) return -1;
+      return (av - bv) * tableState.dir;
+    }).slice(0, tableState.limit);
+    $('#coinTableBody').innerHTML = rows.map((coin) => {
+      const extra = coinExtras(coin);
+      return `<tr>
+        <td class="left"><span class="rank">${coin.rank}</span></td>
+        <td class="left"><div class="asset-cell">
+          <span class="asset-badge" style="border-color:${tagColor(coin.tag)}66; background:${tagColor(coin.tag)}1c;">${esc(coin.symbol.slice(0, 4))}</span>
+          <div class="asset-name"><b><a href="https://www.coingecko.com/en/coins/${encodeURIComponent(coin.id)}" target="_blank" rel="noopener" style="color:inherit; text-decoration:none;">${esc(coin.name)}</a></b><span>${esc(coin.symbol)} · ${esc(coin.tag)}</span></div>
+        </div></td>
+        <td class="num">${price(coin.price)}</td>
+        <td class="num">${pctCell(coin.change_24h)}</td>
+        <td class="num">${pctCell(coin.change_7d)}</td>
+        <td class="num">${pctCell(coin.change_30d)}</td>
+        <td class="num">${money(coin.market_cap)}</td>
+        <td class="num ${extra.fdv_ratio && extra.fdv_ratio > 3 ? 'warn-t' : ''}" title="${extra.fdv_ratio ? `FDV is ${extra.fdv_ratio.toFixed(1)}× market cap` : ''}">${extra.fdv_ratio ? `${extra.fdv_ratio.toFixed(1)}×` : '—'}</td>
+        <td class="num">${extra.vol_ratio == null ? '—' : `${extra.vol_ratio.toFixed(2)}%`}</td>
+        <td>${sparkline(coin.spark, coin.change_7d)}</td>
+        <td class="left"><span class="badge tag" style="border-color:${tagColor(coin.tag)}55; color:${tagColor(coin.tag)};">${esc(coin.tag)}</span></td>
+      </tr>`;
+    }).join('');
+    $('#resultCount').textContent = `${rows.length} of ${filteredCoins().length}`;
+    $$('#coinTable thead th').forEach((th) => {
+      th.classList.remove('sort-asc', 'sort-desc');
+      if (th.dataset.sort === tableState.sort) th.classList.add(tableState.dir > 0 ? 'sort-asc' : 'sort-desc');
+    });
+  };
+
+  const setTag = (tag) => {
+    tableState.tag = tag;
+    renderTagChips();
+    renderCoins();
+    const target = document.getElementById('map');
+    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
+  $('#tagChips').addEventListener('click', (event) => {
+    const chip = event.target.closest('button[data-tag]');
+    if (!chip) return;
+    tableState.tag = chip.dataset.tag;
+    renderTagChips();
+    renderCoins();
+  });
+  $('#coinSearch').addEventListener('input', (event) => {
+    tableState.q = event.target.value;
+    renderCoins();
+  });
+  $('#rowLimit').addEventListener('change', (event) => {
+    tableState.limit = Number(event.target.value);
+    renderCoins();
+  });
+  $$('#coinTable thead th').forEach((th) => {
+    th.tabIndex = 0;
+    const activate = () => {
+      const key = th.dataset.sort;
+      if (!key) return;
+      if (tableState.sort === key) tableState.dir *= -1;
+      else {
+        tableState.sort = key;
+        tableState.dir = ['name', 'tag', 'rank'].includes(key) ? 1 : -1;
+      }
+      renderCoins();
+    };
+    th.addEventListener('click', activate);
+    th.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); activate(); }
+    });
+  });
+  renderTagChips();
+  renderCoins();
+
+  const lowFloat = S.coins
+    .filter((coin) => coin.market_cap > 500_000_000 && coin.fdv > 0 && coin.fdv > coin.market_cap)
+    .sort((a, b) => (b.fdv / b.market_cap) - (a.fdv / a.market_cap))
+    .slice(0, 6);
+  $('#lowFloatTable').innerHTML = lowFloat.map((coin) => {
+    const ratio = coin.fdv / coin.market_cap;
+    return `<tr>
+      <td class="left name">${esc(coin.name)} <span class="sym">${esc(coin.symbol)}</span></td>
+      <td class="num">${money(coin.market_cap)}</td>
+      <td class="num">${money(coin.fdv)}</td>
+      <td class="num warn-t">${ratio.toFixed(1)}×</td>
+      <td class="num">${pctCell(coin.change_30d)}</td>
+      <td class="left"><span class="badge tag">${esc(coin.tag)}</span></td>
+    </tr>`;
+  }).join('');
+
+  $('#sectorGrid').innerHTML = S.sectors.map((sector) => {
+    const copy = SECTOR_COPY[sector.key] || { blurb: '', risk: '', tag: 'Other' };
+    const leaders = (sector.leaders || []).map((leader) => (
+      `<span class="leader">${esc(leader.symbol)} <b>${leader.change_7d == null ? '' : pct(leader.change_7d, 0)}</b></span>`
+    )).join('');
+    return `<article class="sector" data-tag="${esc(copy.tag)}">
+      <div class="top">
+        <div>
+          <div class="tag">Sector</div>
+          <div class="cap">${money(sector.market_cap)}</div>
+          <div class="chg ${pctClass(sector.change_24h)}">${pct(sector.change_24h)} 24h</div>
+        </div>
+        <span class="badge ${sector.key === 'stablecoins' ? 'medium' : 'tag'}">${sector.leaders.length} leaders</span>
+      </div>
+      <h4>${esc(sector.label)}</h4>
+      <p>${copy.blurb}</p>
+      <div class="leaders">${leaders}</div>
+      <div class="risk">RISK · ${copy.risk}</div>
+    </article>`;
+  }).join('');
+  $('#sectorGrid').addEventListener('click', (event) => {
+    const card = event.target.closest('.sector');
+    if (card) setTag(card.dataset.tag);
+  });
+
+  $('#categoryTable').innerHTML = S.categories.slice(0, 18).map((category) => `
+    <tr>
+      <td class="left name">${esc(category.name)}</td>
+      <td class="num">${money(category.market_cap)}</td>
+      <td class="num">${pctCell(category.change_24h)}</td>
+      <td class="num">${money(category.volume_24h)}</td>
+    </tr>
+  `).join('');
+
+  const momentumCoins = S.coins.filter((coin) => coin.market_cap > 500_000_000 && coin.change_7d != null);
+  const up = momentumCoins.slice().sort((a, b) => b.change_7d - a.change_7d).slice(0, 7);
+  const down = momentumCoins.slice().sort((a, b) => a.change_7d - b.change_7d).slice(0, 7);
+  const momentumRow = (coin) => `<tr><td class="left name">${esc(coin.symbol)} <span class="sym">${esc(coin.name)}</span></td><td class="num">${pctCell(coin.change_7d)}</td><td class="num">${pctCell(coin.change_30d)}</td></tr>`;
+  $('#momentumUp').innerHTML = up.map(momentumRow).join('');
+  $('#momentumDown').innerHTML = down.map(momentumRow).join('');
+
+  $('#dexTable').innerHTML = S.dexs.protocols.map((dex) => `
+    <tr>
+      <td class="left name">${esc(dex.name)}</td>
+      <td class="num">${money(dex.volume_24h)}</td>
+      <td class="num">${money(dex.volume_7d)}</td>
+      <td class="num">${pctCell(dex.change_7d)}</td>
+      <td class="left small">${esc(dex.chains.join(', '))}</td>
+    </tr>
+  `).join('');
+
+  const chainTop = S.defi.chains.slice(0, 12);
+  const chainSum = chainTop.reduce((sum, chain) => sum + chain.tvl, 0);
+  const maxChain = Math.max(...chainTop.map((chain) => chain.tvl));
+  $('#chainBars').innerHTML = chainTop.map((chain) => `
+    <div class="bar-row">
+      <div class="lbl">${esc(chain.name)}</div>
+      <div class="bar-track"><div class="bar-fill" style="width:${(chain.tvl / maxChain) * 100}%"></div></div>
+      <div class="val">${money(chain.tvl)}</div>
+    </div>
+  `).join('');
+  $('#chainTable').innerHTML = chainTop.map((chain) => `
+    <tr><td class="left name">${esc(chain.name)}</td><td class="num">${money(chain.tvl)}</td><td class="num">${((chain.tvl / chainSum) * 100).toFixed(1)}%</td></tr>
+  `).join('');
+
+  $('#protocolTable').innerHTML = S.defi.protocols.slice(0, 12).map((protocol) => `
+    <tr>
+      <td class="left name">${esc(protocol.name)}</td>
+      <td class="left"><span class="badge">${esc(protocol.category || '—')}</span></td>
+      <td class="num">${money(protocol.tvl)}</td>
+      <td class="num">${pctCell(protocol.change_1d)}</td>
+      <td class="num">${pctCell(protocol.change_7d)}</td>
+      <td class="left small">${esc((protocol.chains || []).join(', '))}</td>
+    </tr>
+  `).join('');
+
+  $('#exchangeTable').innerHTML = S.exchanges.map((exchange) => `
+    <tr>
+      <td class="left name">${esc(exchange.name)}</td>
+      <td class="num">${money(exchange.tvl)}</td>
+      <td class="num">${pctCell(exchange.change_1d)}</td>
+      <td class="num">${pctCell(exchange.change_7d)}</td>
+      <td class="num">${exchange.chains}</td>
+    </tr>
+  `).join('');
+
+  const stableChainTop = S.stablecoins.chains.slice(0, 8);
+  const maxStableChain = Math.max(...stableChainTop.map((chain) => chain.value));
+  $('#stableChainBars').innerHTML = stableChainTop.map((chain) => `
+    <div class="bar-row">
+      <div class="lbl">${esc(chain.name)}</div>
+      <div class="bar-track"><div class="bar-fill" style="width:${(chain.value / maxStableChain) * 100}%"></div></div>
+      <div class="val">${money(chain.value)} · ${((chain.value / S.stablecoins.total) * 100).toFixed(1)}%</div>
+    </div>
+  `).join('');
+
+  $('#stableTable').innerHTML = S.stablecoins.assets.slice(0, 20).map((asset) => {
+    const pegDev = (asset.price - 1) * 10000;
+    const topChain = asset.top_chains && asset.top_chains[0] ? asset.top_chains[0][0] : '—';
+    return `<tr>
+      <td class="left name">${esc(asset.name)} <span class="sym">${esc(asset.symbol)}</span></td>
+      <td class="num">${money(asset.supply)}</td>
+      <td class="num">${pctCell(asset.change_1d)}</td>
+      <td class="num">${pctCell(asset.change_7d)}</td>
+      <td class="num">${pctCell(asset.change_30d)}</td>
+      <td class="num">${asset.price.toFixed(4)}</td>
+      <td class="num ${Math.abs(pegDev) > 50 ? 'warn-t' : ''}">${pegDev > 0 ? '+' : ''}${pegDev.toFixed(1)} bps</td>
+      <td class="left"><span class="badge">${esc(asset.mechanism || '—')}</span></td>
+      <td class="num">${asset.chains}</td>
+      <td class="left small">${esc(topChain)}</td>
+    </tr>`;
+  }).join('');
+
+  const yieldState = { filter: 'all' };
+  const renderYields = () => {
+    const rows = S.yields.filter((pool) => {
+      if (yieldState.filter === 'stable') return pool.stablecoin;
+      if (yieldState.filter === 'volatile') return !pool.stablecoin;
+      return true;
+    }).slice(0, 18);
+    $('#yieldTable').innerHTML = rows.map((pool) => {
+      const link = pool.pool ? `https://defillama.com/yields/pool/${encodeURIComponent(pool.pool)}` : 'https://defillama.com/yields';
+      return `<tr>
+        <td class="left name"><a href="${link}" target="_blank" rel="noopener" style="color:inherit; text-decoration:none;">${esc(pool.project)}</a> <span class="sym">${esc(pool.symbol)}</span></td>
+        <td class="left small">${esc(pool.chain)}</td>
+        <td class="num">${money(pool.tvl)}</td>
+        <td class="num ${pool.apy > 15 ? 'warn-t' : 'up'}">${pool.apy.toFixed(2)}%</td>
+        <td class="num">${pool.apy_base.toFixed(2)}%</td>
+        <td class="num">${pool.apy_reward.toFixed(2)}%</td>
+        <td class="num">${pool.apy_mean_30d.toFixed(2)}%</td>
+        <td class="num"><span class="badge ${pool.risk.toLowerCase()}">${pool.risk}</span></td>
+      </tr>`;
+    }).join('');
+    $('#yieldCount').textContent = `${rows.length} shown`;
+  };
+  $('#yieldChips').addEventListener('click', (event) => {
+    const chip = event.target.closest('button[data-yield]');
+    if (!chip) return;
+    yieldState.filter = chip.dataset.yield;
+    $$('#yieldChips .chip').forEach((button) => button.classList.toggle('is-active', button === chip));
+    renderYields();
+  });
+  renderYields();
+
+  const compound = () => {
+    const principal = Number($('#cPrincipal').value) || 0;
+    const apy = Number($('#cApy').value) || 0;
+    const days = Math.max(1, Number($('#cDays').value) || 1);
+    const periods = Number($('#cComp').value) || 12;
+    const t = days / 365;
+    const end = principal * Math.pow(1 + (apy / 100) / periods, periods * t);
+    const earned = end - principal;
+    const effective = t > 0 && principal > 0 ? (Math.pow(end / principal, 1 / t) - 1) * 100 : 0;
+    $('#cEnd').textContent = money(end);
+    $('#cEarn').textContent = money(earned);
+    $('#cEff').textContent = `${effective.toFixed(2)}%`;
+    $('#cDaily').textContent = money(earned / days);
+  };
+  ['cPrincipal', 'cApy', 'cDays', 'cComp'].forEach((id) => $('#' + id).addEventListener('input', compound));
+  compound();
+
+  const impermanent = () => {
+    const principal = Number($('#ilPrincipal').value) || 0;
+    const move = Number($('#ilMove').value) || 0;
+    const fee = Number($('#ilFee').value) || 0;
+    const days = Math.max(1, Number($('#ilDays').value) || 1);
+    const ratio = Math.max(0.000001, 1 + move / 100);
+    const il = (2 * Math.sqrt(ratio)) / (1 + ratio) - 1;
+    const hodl = principal * (1 + (ratio - 1) / 2);
+    const lp = hodl * (1 + il);
+    const fees = principal * (fee / 100) * (days / 365);
+    const net = lp + fees - hodl;
+    $('#ilPct').textContent = `${(il * 100).toFixed(2)}%`;
+    $('#ilPct').className = `v ${il < 0 ? 'down' : 'up'}`;
+    $('#ilCost').textContent = money(-il * hodl);
+    $('#ilFees').textContent = money(fees);
+    $('#ilNet').textContent = money(net);
+    $('#ilNet').className = `v ${net > 0 ? 'up' : net < 0 ? 'down' : ''}`;
+  };
+  ['ilPrincipal', 'ilMove', 'ilFee', 'ilDays'].forEach((id) => $('#' + id).addEventListener('input', impermanent));
+  impermanent();
+
+  const chains = {
+    ethereum: { label: 'Ethereum', explorer: (a) => `https://etherscan.io/address/${a}`, evm: true },
+    base: { label: 'Base', explorer: (a) => `https://basescan.org/address/${a}`, evm: true },
+    arbitrum: { label: 'Arbitrum', explorer: (a) => `https://arbiscan.io/address/${a}`, evm: true },
+    optimism: { label: 'Optimism', explorer: (a) => `https://optimistic.etherscan.io/address/${a}`, evm: true },
+    polygon: { label: 'Polygon', explorer: (a) => `https://polygonscan.com/address/${a}`, evm: true },
+    bsc: { label: 'BNB Chain', explorer: (a) => `https://bscscan.com/address/${a}`, evm: true },
+    avalanche: { label: 'Avalanche', explorer: (a) => `https://snowtrace.io/address/${a}`, evm: true },
+    solana: { label: 'Solana', explorer: (a) => `https://solscan.io/account/${a}`, evm: false },
+    bitcoin: { label: 'Bitcoin', explorer: (a) => `https://mempool.space/address/${a}`, evm: false },
+    hyperliquid: { label: 'Hyperliquid', explorer: (a) => `https://app.hyperliquid.xyz/explorer/address/${a}`, evm: false }
+  };
+  const watchKey = 'crypto-deep-dive-watchlist-v1';
+  let watchlist = [];
+  try {
+    const saved = JSON.parse(localStorage.getItem(watchKey) || '[]');
+    if (Array.isArray(saved)) watchlist = saved.filter((item) => item && item.address && item.label);
+  } catch (error) { watchlist = []; }
+  const saveWatch = () => {
+    try { localStorage.setItem(watchKey, JSON.stringify(watchlist)); } catch (error) { /* ignore */ }
+  };
+  const renderWatch = () => {
+    $('#watchCount').textContent = `${watchlist.length} address${watchlist.length === 1 ? '' : 'es'}`;
+    if (!watchlist.length) {
+      $('#watchList').innerHTML = '<div class="empty">No addresses yet. Add a read-only address above, or load the demo to see the explorer links.</div>';
+      return;
+    }
+    $('#watchList').innerHTML = watchlist.map((item, index) => {
+      const chain = chains[item.chain] || chains.ethereum;
+      const links = [`<a href="${chain.explorer(item.address)}" target="_blank" rel="noopener">${esc(chain.label)} explorer</a>`];
+      if (chain.evm) {
+        links.push(`<a href="https://debank.com/profile/${encodeURIComponent(item.address)}" target="_blank" rel="noopener">DeBank</a>`);
+        links.push(`<a href="https://intel.arkm.com/explorer/address/${encodeURIComponent(item.address)}" target="_blank" rel="noopener">Arkham</a>`);
+      } else if (item.chain === 'solana') {
+        links.push(`<a href="https://intel.arkm.com/explorer/address/${encodeURIComponent(item.address)}" target="_blank" rel="noopener">Arkham</a>`);
+      }
+      return `<div class="watch-item">
+        <div>
+          <div class="wl">${esc(item.label)} <span class="chain-badge">${esc(chain.label)}</span></div>
+          <div class="wa">${esc(item.address)}</div>
+          <div class="links">${links.join('')}</div>
+        </div>
+        <button class="btn ghost" type="button" data-remove="${index}" aria-label="Remove ${esc(item.label)}">Remove</button>
+      </div>`;
+    }).join('');
+  };
+  $('#watchForm').addEventListener('submit', (event) => {
+    event.preventDefault();
+    const label = $('#watchLabel').value.trim();
+    const address = $('#watchAddress').value.trim();
+    const chain = $('#watchChain').value;
+    if (!label || !address) return;
+    if (address.length < 20) {
+      $('#watchAddress').focus();
+      $('#watchAddress').setAttribute('aria-invalid', 'true');
+      return;
+    }
+    $('#watchAddress').removeAttribute('aria-invalid');
+    watchlist.push({ label, address, chain });
+    saveWatch();
+    renderWatch();
+    $('#watchLabel').value = '';
+    $('#watchAddress').value = '';
+    $('#watchLabel').focus();
+  });
+  $('#watchList').addEventListener('click', (event) => {
+    const button = event.target.closest('[data-remove]');
+    if (!button) return;
+    watchlist.splice(Number(button.dataset.remove), 1);
+    saveWatch();
+    renderWatch();
+  });
+  $('#watchDemo').addEventListener('click', () => {
+    const demo = { label: 'Burn address (demo)', address: '0x000000000000000000000000000000000000dEaD', chain: 'ethereum' };
+    if (!watchlist.some((item) => item.address.toLowerCase() === demo.address.toLowerCase())) {
+      watchlist.push(demo);
+      saveWatch();
+      renderWatch();
+    }
+  });
+  $('#watchExport').addEventListener('click', () => {
+    const blob = new Blob([JSON.stringify(watchlist, null, 2)], { type: 'application/json' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = 'crypto-watchlist.json';
+    link.click();
+    setTimeout(() => URL.revokeObjectURL(link.href), 1000);
+  });
+  $('#watchClear').addEventListener('click', () => {
+    if (!watchlist.length || !confirm('Clear all watchlist addresses?')) return;
+    watchlist = [];
+    saveWatch();
+    renderWatch();
+  });
+  renderWatch();
+
+  let hlMode = 'pnl';
+  const renderHl = () => {
+    const rows = hlMode === 'pnl' ? S.hyperliquid.top_pnl : S.hyperliquid.top_accounts;
+    $('#hlTable').innerHTML = rows.map((trader) => `
+      <tr>
+        <td class="left name"><a href="https://app.hyperliquid.xyz/explorer/address/${encodeURIComponent(trader.address)}" target="_blank" rel="noopener" style="color:inherit; text-decoration:none;">${esc(shortAddr(trader.address))}</a></td>
+        <td class="num">${money(trader.account)}</td>
+        <td class="num ${pctClass(trader.month_pnl)}">${money(trader.month_pnl)}</td>
+        <td class="num ${pctClass(trader.month_roi)}">${pct(trader.month_roi * 100)}</td>
+        <td class="num">${money(trader.month_volume)}</td>
+        <td class="num ${pctClass(trader.all_time_pnl)}">${money(trader.all_time_pnl)}</td>
+      </tr>
+    `).join('');
+    $('#hlNote').textContent = hlMode === 'pnl' ? 'Accounts ≥ $100k · ranked by 30d PnL' : 'Ranked by account value';
+  };
+  $('#hlChips').addEventListener('click', (event) => {
+    const chip = event.target.closest('button[data-hl]');
+    if (!chip) return;
+    hlMode = chip.dataset.hl;
+    $$('#hlChips .chip').forEach((button) => button.classList.toggle('is-active', button === chip));
+    renderHl();
+  });
+  renderHl();
+
+  $('#hlMarketTable').innerHTML = S.hyperliquid.markets.slice(0, 8).map((market) => {
+    const funding = market.funding * 24 * 365 * 100;
+    return `<tr>
+      <td class="left name">${esc(market.name)}</td>
+      <td class="num">${money(market.volume_24h)}</td>
+      <td class="num">${money(market.open_interest)}</td>
+      <td class="num ${pctClass(funding)}">${funding.toFixed(2)}%</td>
+      <td class="num">${price(market.mark)}</td>
+    </tr>`;
+  }).join('');
+
+  const scorecard = () => {
+    const win = Math.min(100, Math.max(0, Number($('#sWin').value) || 0)) / 100;
+    const avgWin = Math.max(0, Number($('#sAvgWin').value) || 0);
+    const avgLoss = Math.max(0, Number($('#sAvgLoss').value) || 0);
+    const trades = Math.max(1, Number($('#sTrades').value) || 1);
+    const fees = Math.max(0, Number($('#sFees').value) || 0);
+    const capital = Math.max(1, Number($('#sCapital').value) || 1);
+    const drawdown = Math.min(100, Math.max(0, Number($('#sDrawdown').value) || 0));
+    const expectancy = win * avgWin - (1 - win) * avgLoss - fees;
+    const monthly = expectancy * trades;
+    const profitFactor = avgLoss > 0 ? (win * avgWin) / ((1 - win) * avgLoss) : Infinity;
+    const breakeven = avgWin + avgLoss > 0 ? (avgLoss / (avgWin + avgLoss)) * 100 : 0;
+    $('#sExpect').textContent = money(expectancy);
+    $('#sExpect').className = `v ${expectancy > 0 ? 'up' : expectancy < 0 ? 'down' : ''}`;
+    $('#sMonthly').textContent = money(monthly);
+    $('#sMonthly').className = `v ${monthly > 0 ? 'up' : monthly < 0 ? 'down' : ''}`;
+    $('#sPf').textContent = Number.isFinite(profitFactor) ? profitFactor.toFixed(2) : '∞';
+    $('#sBe').textContent = `${breakeven.toFixed(1)}%`;
+    const monthlyReturn = (monthly / capital) * 100;
+    let verdict;
+    if (expectancy > 0 && monthly > 0) {
+      verdict = `Positive expectancy of ${money(expectancy)} per trade, or ${money(monthly)} per month at ${trades} trades. The breakeven win rate is ${breakeven.toFixed(1)}%; the current win rate is ${(win * 100).toFixed(1)}%. Before trusting it, check the sample size, the hidden hedge, and whether ${drawdown.toFixed(0)}% drawdown is survivable. Monthly return on capital: ${monthlyReturn.toFixed(2)}%.`;
+    } else {
+      verdict = `Negative or zero expectancy of ${money(expectancy)} per trade. At this win rate and payoff, the strategy loses ${money(Math.abs(monthly))} per month before hidden risk. It needs a higher win rate, a larger average win, smaller losses, or lower fees. Monthly return on capital: ${monthlyReturn.toFixed(2)}%.`;
+    }
+    $('#sVerdict').textContent = verdict;
+  };
+  ['sWin', 'sAvgWin', 'sAvgLoss', 'sTrades', 'sFees', 'sCapital', 'sDrawdown'].forEach((id) => $('#' + id).addEventListener('input', scorecard));
+  scorecard();
+
+  $('#hackTable').innerHTML = S.hacks.recent.map((hack) => `
+    <tr>
+      <td class="left small">${esc(hack.date)}</td>
+      <td class="left name">${esc(hack.name)}</td>
+      <td class="num">${hack.amount ? money(hack.amount) : '—'}</td>
+      <td class="left small">${esc(hack.classification || '—')}</td>
+      <td class="left small">${esc(hack.technique || '—')}</td>
+    </tr>
+  `).join('');
+
+  const tocLinks = $$('.toc a');
+  const sections = tocLinks.map((link) => document.querySelector(link.getAttribute('href'))).filter(Boolean);
+  let ticking = false;
+  const onScroll = () => {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(() => {
+      const y = window.scrollY + 120;
+      let current = sections[0];
+      sections.forEach((section) => { if (section.offsetTop <= y) current = section; });
+      tocLinks.forEach((link) => link.classList.toggle('active', link.getAttribute('href') === `#${current.id}`));
+      ticking = false;
+    });
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Nasdaq-100 Weighting History — 2004–2026</title>
+  <style>/*__STYLES__*/</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="eyebrow" id="eyebrow">Modified market-cap-weighted index · monthly history</p>
+    <h1>Nasdaq-100 Weighting History</h1>
+    <p class="sub">How the Nasdaq-100’s modified market-cap weights compare with uncapped market-cap shares and QQQ’s published holdings.</p>
+  </header>
+
+  <div class="method-bar">
+    <div class="method-copy">
+      <div class="method-label">Weighting method</div>
+      <div class="method-switch" id="method-switch" role="group" aria-label="Weighting method"></div>
+    </div>
+    <p class="method-note" id="method-hint"></p>
+  </div>
+
+  <div class="stats" id="stats"></div>
+
+  <section>
+    <div class="section-head">
+      <div>
+        <h2>Latest weights</h2>
+        <p class="hint" id="current-asof"></p>
+      </div>
+      <div class="legend-key"><span><i class="swatch-price"></i>Weight bar · scaled to largest</span></div>
+    </div>
+    <div class="current-grid">
+      <div class="table-wrap">
+        <table class="weights-table">
+          <thead><tr><th>#</th><th>Company</th><th class="num">Price</th><th class="num">Weight</th><th class="bar-col"></th></tr></thead>
+          <tbody id="current-rows"></tbody>
+        </table>
+      </div>
+      <aside class="note-card">
+        <h3>Not a price-weighted index</h3>
+        <p>The Nasdaq-100 is modified market-cap weighted: a company’s share of the index tracks its market value, then rebalance caps and adjustments keep the largest weights within the index’s limits. A high share price alone does not raise a member’s weight.</p>
+        <p id="current-note"></p>
+        <p class="hint" id="coverage-note"></p>
+      </aside>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <div>
+        <h2>Weight history</h2>
+        <p class="hint">The ten largest average weights under the selected method, stacked with everyone else. Null weights are treated as zero.</p>
+      </div>
+    </div>
+    <div class="chartbox">
+      <canvas id="history-chart" aria-label="Stacked area chart of Nasdaq-100 constituent weights over time"></canvas>
+      <div class="tooltip" id="history-tip"></div>
+    </div>
+    <div class="legend" id="history-legend"></div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <div>
+        <h2>Concentration</h2>
+        <p class="hint">Top-1, top-5, and top-10 share of the selected index view, plus effective N (the reciprocal of the Herfindahl index).</p>
+      </div>
+    </div>
+    <div class="chartbox">
+      <canvas id="conc-chart" aria-label="Line chart of Nasdaq-100 concentration over time"></canvas>
+      <div class="tooltip" id="conc-tip"></div>
+    </div>
+    <div class="legend">
+      <span><i style="background:#14324f"></i>Top 10 share</span>
+      <span><i style="background:#1f8b82"></i>Top 5 share</span>
+      <span><i style="background:#da8734"></i>Top 1 share</span>
+      <span><i class="dash"></i>Effective N (right axis)</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Era snapshots</h2>
+    <p class="hint">Up to six month-ends sampled across the selected method’s history. Bars are scaled within each card.</p>
+    <div class="era-grid" id="eras"></div>
+  </section>
+
+  <section>
+    <h2>Membership log</h2>
+    <p class="hint">Nasdaq-100 additions and removals. This log does not change with the weighting method.</p>
+    <div class="table-wrap">
+      <table class="change-table">
+        <thead><tr><th>Effective</th><th>Added</th><th>Removed</th><th>Note</th></tr></thead>
+        <tbody id="change-rows"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <details class="methodology">
+    <summary>Methodology, coverage &amp; sources</summary>
+    <p><strong>Construction.</strong> The Nasdaq-100 is a modified market-capitalization-weighted index. Base weights follow market value; at rebalances, caps and adjustments limit the largest constituents. It is not price-weighted: a stock’s quoted price does not determine its index share.</p>
+    <p><strong>Three views.</strong> The method switch updates every weight-based section below. Official capped uses the index’s adjusted weights, uncapped shows raw market-cap shares, and QQQ uses the fund’s published holdings weights. The membership log is identical for all three.</p>
+    <div id="method-notes"></div>
+    <p id="coverage-caveat"></p>
+    <p><strong>Definitions.</strong> Top-10 share sums the ten largest weights. Effective N is 1 ÷ Σw². Averages ignore months with no reported weight. The stacked “Others” band is the residual to 100%, so it also absorbs any unpriced members in a partial-coverage month.</p>
+    <p><strong>Sources.</strong> <span id="source-list"></span></p>
+    <p>Not investment advice. Prices, memberships, and published weights can contain errors or lag index events; the original sources are linked above.</p>
+  </details>
+  <footer>Nasdaq-100 weighting history · built from local snapshots</footer>
+</div>
+<script>/*__DATA__*/</script>
+<script>/*__APP__*/</script>
+</body>
+</html>

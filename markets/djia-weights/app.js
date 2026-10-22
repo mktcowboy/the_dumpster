@@ -219,8 +219,7 @@
       const max = Math.max(...snapshot.rows.map(row => row.weight));
       return '<div class="era-card' + (snapshot.date === DATA.asOf ? ' now' : '') + '">' +
         '<h3>' + esc(snapshot.label) + '</h3>' +
-        '<p class="meta">' + snapshot.coverage + '/30 priced · ' +
-        (snapshot.coverage < 30 ? 'renormalized' : 'full coverage') + '</p>' +
+        '<p class="meta">' + snapshot.coverage + '/30 priced</p>' +
         snapshot.rows.map(row => '<div class="era-row" title="' + esc(row.name) + '">' +
           '<span class="t">' + esc(row.ticker) + '</span>' +
           '<span class="bar"><i style="width:' + (100 * row.weight / max).toFixed(1) + '%"></i></span>' +
