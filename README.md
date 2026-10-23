@@ -24,6 +24,7 @@ Most projects are self-contained HTML pages that open directly in a browser.
 | [Options — max pain](markets/options/) | SPY × QQQ max-pain report, QQQ universe scanner, and reproducible snapshot pipeline |
 | [QQQ max-pain board](markets/options/qqq-max-pain.html) | Ranked max-pain board for all loadable QQQ holdings |
 | [Options — live board](markets/options-live/) | Self-refreshing max-pain dashboard with click-through ticker details and charts |
+| [Nasdaq-100 earnings straddles](markets/er-straddles/) | Seller's-view ATM earnings-straddle screen for Nasdaq-100 names, with cost-aware P&L, liquidity grades, and the October 21, 2026 snapshot |
 | [QXO fundamentals](markets/qxo-fundamentals/) | QXO overview, income statement, balance sheet, cash flow, quarterly data, and a downloadable SQLite database |
 
 ## Real estate
