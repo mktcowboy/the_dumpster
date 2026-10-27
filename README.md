@@ -25,6 +25,7 @@ Most projects are self-contained HTML pages that open directly in a browser.
 | [QQQ max-pain board](markets/options/qqq-max-pain.html) | Ranked max-pain board for all loadable QQQ holdings |
 | [Options — live board](markets/options-live/) | Self-refreshing max-pain dashboard with click-through ticker details and charts |
 | [QXO fundamentals](markets/qxo-fundamentals/) | QXO overview, income statement, balance sheet, cash flow, quarterly data, and a downloadable SQLite database |
+| [Diesel wholesale market analysis](markets/diesel-wholesale-market-analysis/) | Buying diesel wholesale for mixed on-road + off-road use: rack pricing, red vs clear, futures, and hedging |
 
 ## Real estate
 
@@ -33,20 +34,28 @@ Most projects are self-contained HTML pages that open directly in a browser.
 | [Colorado land](real-estate/colorado/) | 999 for-sale land listings, 10+ acres, captured October 2026 |
 | [Texas Triangle land](real-estate/texas-triangle/) | 16,048 parcels, 5+ acres, inside the Dallas–San Antonio–Houston triangle and its 50-mile ring |
 | [Utah land](real-estate/utah/) | 1,184 for-sale land listings, 10+ acres, captured October 2026 |
-| [Combined land listings](land-listings-combined/) | 18,231 Colorado, Texas, and Utah listings merged into one common-schema table |
+| [Combined land listings](real-estate/land-listings-combined/) | 18,231 Colorado, Texas, and Utah listings merged into one common-schema table |
 
 ## Research and reports
 
 | Project | What it is |
 | --- | --- |
-| [Epigenetics deep dive](epigenetics-deep-dive/) | Long-form, journal-style review of epigenetics, with 72 cited papers and linked sources |
+| [Epigenetics deep dive](research/epigenetics-deep-dive/) | Long-form, journal-style review of epigenetics, with 72 cited papers and linked sources |
 | [Rent-seeking report](biz-other/rent-seeking-report/) | Economic rents, their history, and 50 ways to create rental income today |
+| [Arby's deal deep dive](biz-other/arby-s-deal-deep-dive/) | Roark's 2011 Arby's acquisition and turnaround, with a Bob Berlin / LongRange note |
+| [US biochar profile](biz-other/biochar/) | US biochar market size, end uses, producers, and carbon-removal credit dynamics (Oct 2026) |
 
 ## Reading
 
 | Project | What it is |
 | --- | --- |
 | [Beyond arXiv digest](reading/beyond-arxiv-digest/) | Top papers from six preprint servers beyond arXiv, one tab per server |
+
+## Religion
+
+| Project | What it is |
+| --- | --- |
+| [Tanakh atlas](religion/tanakh-atlas/) | Interactive atlas of Tanakh people, places, themes, pathways, and text |
 
 ## Misc
 
@@ -57,6 +66,7 @@ Most projects are self-contained HTML pages that open directly in a browser.
 
 ## Repository notes
 
+- Topic folders hold finished and in-progress projects; the root stays an index plus shared tooling.
 - `scripts/` holds the privacy checker.
 - Run `python3 scripts/check_privacy.py` before committing, per [AGENTS.md](AGENTS.md).
 - Each project folder contains its source files and, where available, a README with build or refresh instructions.
