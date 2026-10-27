@@ -53,7 +53,7 @@ Most projects are self-contained HTML pages that open directly in a browser.
 | Project | What it is |
 | --- | --- |
 | [Spikeandred prompt guide](misc/spikeandred-prompt-guide/) | Field guide to a visual style: 12 photographic prompts, a consistency system, and a campaign playbook |
-| [Dumpster GIF](misc/dumpster-gif/) | A cheerful looping dumpster fire, ready to embed |
+| [Dumpster GIF](dumpster.gif) | A cheerful looping dumpster fire, ready to embed |
 
 ## Repository notes
 
