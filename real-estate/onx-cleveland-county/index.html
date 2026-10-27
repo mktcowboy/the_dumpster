@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+<title>Cleveland County Land Map — public-land & parcel explorer (Cleveland County, OK)</title>
+<meta name="description" content="onX-style hunting / land map for Cleveland County, Oklahoma built only on public data: PAD-US public lands, ODWC WMAs, PLSS, parcels, topo, imagery.">
+<meta name="theme-color" content="#1f2a1f">
+<link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div id="map" aria-label="Map"></div>
+
+<header id="topbar">
+  <div class="brand" title="Cleveland County, Oklahoma (FIPS 40027)">🦌 <b>Cleveland Co.</b> Land Map</div>
+  <form id="search" autocomplete="off" role="search">
+    <input id="q" type="search" placeholder="Address, place, Norman parcel #, or T9N R2W S15" aria-label="Search">
+    <button type="submit" aria-label="Search">🔍</button>
+    <ul id="results" hidden></ul>
+  </form>
+</header>
+
+<nav id="toolbar" aria-label="Tools">
+  <button data-panel="layers" title="Layers">🗺️<span>Layers</span></button>
+  <button data-tool="waypoint" title="Drop a waypoint">📍<span>Waypoint</span></button>
+  <button data-tool="line" title="Draw a line / track">〰️<span>Line</span></button>
+  <button data-tool="area" title="Draw an area">⬠<span>Area</span></button>
+  <button data-tool="measure" title="Measure distance & area">📏<span>Measure</span></button>
+  <button id="locate" title="Show my location">🎯<span>Locate</span></button>
+  <button data-panel="saved" title="My saved items">⭐<span>Saved</span></button>
+  <button data-panel="legend" title="Legend">🔑<span>Legend</span></button>
+  <button data-panel="about" title="About, sources & disclaimer">ℹ️<span>About</span></button>
+</nav>
+
+<div id="coords" title="Cursor / map-center coordinates. Click to cycle format.">—</div>
+<div id="drawhint" hidden><span id="drawmsg"></span> <button id="drawfinish">Finish</button> <button id="drawundo">Undo</button> <button id="drawcancel">Cancel</button></div>
+
+<aside id="panel" hidden>
+  <div class="panel-head"><h2 id="panel-title"></h2><button id="panel-close" aria-label="Close">✕</button></div>
+  <div id="panel-body"></div>
+</aside>
+
+<template id="tpl-layers">
+  <h3>Basemap</h3>
+  <div id="basemaps" class="list"></div>
+  <h3>Overlays</h3>
+  <div id="overlays" class="list"></div>
+  <p class="small">Parcels draw at zoom ≥ 15 (City of Norman data). Zoom in to see them.</p>
+</template>
+
+<template id="tpl-legend">
+  <div id="legend"></div>
+</template>
+
+<template id="tpl-saved">
+  <div class="row">
+    <button id="exp-gpx">Export GPX</button>
+    <button id="exp-geojson">Export GeoJSON</button>
+    <label class="btn">Import<input id="imp" type="file" accept=".geojson,.json,.gpx" hidden></label>
+  </div>
+  <ul id="saved-list" class="saved"></ul>
+  <p class="small">Saved only in this browser (localStorage). Export to back up or move to a GPS.</p>
+</template>
+
+<template id="tpl-about">
+  <div class="disclaimer">
+    <b>Not a survey. Not legal advice.</b> Boundaries, ownership and access shown here come from public
+    datasets that can be outdated, misaligned or incomplete. Always verify ownership, access rules and
+    hunting regulations (ODWC, landowner permission, posted signs) before entering any land.
+    Oklahoma law requires written permission to hunt private land.
+  </div>
+  <h3>Data sources</h3>
+  <ul class="small sources">
+    <li><b>Parcels:</b> City of Norman GIS <a href="https://services.arcgis.com/rt1leD4Hj3sLGHNL/arcgis/rest/services/Parcels/FeatureServer/1" target="_blank" rel="noopener">Parcels FeatureServer</a> (Norman city limits only; no owner names). Owner/assessor records: <a href="https://property.spatialest.com/ok/cleveland/" target="_blank" rel="noopener">Cleveland County Assessor</a>.</li>
+    <li><b>Public lands:</b> <a href="https://www.usgs.gov/programs/gap-analysis-project/science/pad-us-data-overview" target="_blank" rel="noopener">USGS PAD-US 4.1</a></li>
+    <li><b>WMAs & state parks:</b> <a href="https://services6.arcgis.com/RBtoEUQ2lmN0K3GY/arcgis/rest/services/OklahomaRecreationalAreas/FeatureServer" target="_blank" rel="noopener">Oklahoma Recreational Areas (ODOT)</a>; WMA facilities: <a href="https://www.wildlifedepartment.com/server/rest/services/PublicWILMA/WILMAFeatures/MapServer" target="_blank" rel="noopener">ODWC WILMA</a></li>
+    <li><b>PLSS:</b> <a href="https://gis.blm.gov/arcgis/rest/services/Cadastral/BLM_Natl_PLSS_CadNSDI/MapServer" target="_blank" rel="noopener">BLM CadNSDI</a></li>
+    <li><b>Lake Thunderbird flowage easements:</b> City of Norman GIS</li>
+    <li><b>County boundary:</b> US Census TIGERweb</li>
+    <li><b>Topo, imagery, hillshade, contours, hydrography (NHD), elevation:</b> USGS The National Map</li>
+    <li><b>Street map:</b> © OpenStreetMap contributors. <b>Search:</b> Nominatim (OSM).</li>
+    <li><b>Esri World Imagery / reference layers:</b> © Esri, Maxar, Earthstar Geographics and the GIS user community.</li>
+  </ul>
+  <p class="small">Open source. Not affiliated with onX.</p>
+</template>
+
+<div id="modal" hidden>
+  <div class="modal-card">
+    <h2>Before you go</h2>
+    <p>This free map is built only from public data for <b>Cleveland County, Oklahoma</b>. It is <b>not a survey</b>, ownership data may be missing or out of date, and it does not grant access to any land.</p>
+    <p><b>Verify ownership and get permission before entering private land.</b> Check ODWC regulations for WMAs and seasons.</p>
+    <button id="modal-ok">I understand</button>
+  </div>
+</div>
+
+<script src="vendor/leaflet/leaflet.js"></script>
+<script src="vendor/mgrs/mgrs.min.js"></script>
+<script src="js/geo.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

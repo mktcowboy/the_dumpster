@@ -34,6 +34,7 @@ Most projects are self-contained HTML pages that open directly in a browser.
 | [Texas Triangle land](real-estate/texas-triangle/) | 16,048 parcels, 5+ acres, inside the Dallas–San Antonio–Houston triangle and its 50-mile ring |
 | [Utah land](real-estate/utah/) | 1,184 for-sale land listings, 10+ acres, captured October 2026 |
 | [Combined land listings](land-listings-combined/) | 18,231 Colorado, Texas, and Utah listings merged into one common-schema table |
+| [Cleveland County onX-style map](real-estate/onx-cleveland-county/) | Free onX Hunt-style public-land and parcel web map for Cleveland County, OK: PAD-US, ODWC WMAs, PLSS, Norman parcels, waypoints, GPX/GeoJSON export; static Leaflet site, no API keys |
 
 ## Research and reports
 
