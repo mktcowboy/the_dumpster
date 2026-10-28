@@ -1,0 +1,20 @@
+{
+  "name": "onx-oklahoma-county",
+  "version": "1.0.0",
+  "private": true,
+  "description": "onX-style public-land & parcel map for Oklahoma County, Oklahoma, built only on public data.",
+  "type": "module",
+  "scripts": {
+    "fetch-data": "node scripts/fetch-data.mjs",
+    "check-endpoints": "node scripts/check-endpoints.mjs",
+    "serve": "npx --yes http-server -c-1 -p 8080 .",
+    "test": "python3 scripts/smoke_test.py"
+  },
+  "devDependencies": {
+    "@turf/bbox-clip": "^7.1.0",
+    "@turf/boolean-intersects": "^7.1.0",
+    "@turf/helpers": "^7.4.0",
+    "@turf/intersect": "^7.4.0"
+  },
+  "license": "MIT"
+}

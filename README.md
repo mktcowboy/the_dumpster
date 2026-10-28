@@ -35,6 +35,7 @@ Most projects are self-contained HTML pages that open directly in a browser.
 | [Utah land](real-estate/utah/) | 1,184 for-sale land listings, 10+ acres, captured October 2026 |
 | [Combined land listings](land-listings-combined/) | 18,231 Colorado, Texas, and Utah listings merged into one common-schema table |
 | [Cleveland County onX-style map](real-estate/onx-cleveland-county/) | Free onX Hunt-style public-land and parcel web map for Cleveland County, OK: PAD-US, ODWC WMAs, PLSS, Norman parcels, waypoints, GPX/GeoJSON export; static Leaflet site, no API keys |
+| [Oklahoma County onX-style map](real-estate/onx-oklahoma-county/) | Free onX Hunt-style public-land and parcel web map for Oklahoma County, OK: PAD-US, ODWC areas, PLSS, county parcels, waypoints, GPX/GeoJSON export; static Leaflet site, no API keys |
 
 ## Research and reports
 
