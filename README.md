@@ -54,7 +54,7 @@ Most projects are self-contained HTML pages that open directly in a browser.
 
 | Project | What it is |
 | --- | --- |
-| [Aircraft for-sale tracker](boy-toy-pricer/aircraft/) | Cirrus SR22, Vision Jet, CubCrafters, and Piper PA-28-180/181 listings in one HTML report |
+| [Aircraft for-sale tracker](boy-toy-pricer/airplane-pricer/) | Cirrus SR22, Vision Jet, CubCrafters, and Piper PA-28-180/181 listings in one HTML report |
 
 ## Misc
 

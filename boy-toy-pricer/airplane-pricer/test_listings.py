@@ -751,6 +751,11 @@ class ReportTests(unittest.TestCase):
         self.assertIn("refreshIfStale", html)
         self.assertIn('id="sr20"', html)
         self.assertIn('data-f="sr20"', html)
+        self.assertIn('Total time (TT)', html)
+        self.assertIn('data-f="state"', html)
+        self.assertIn('data-f="engineMin"', html)
+        self.assertIn('data-f="tboMin"', html)
+        self.assertIn("['Model', ['gen', 'trim', 'engine', 'line', 'subtype']]", html)
         self.assertNotIn('data-f="sr20" checked', html)
         self.assertNotIn('id="sr20" checked', html)
         self.assertIn("N100AB", html)
@@ -771,7 +776,7 @@ class ReportTests(unittest.TestCase):
         self.assertIn('class="thumb"', html)
         self.assertIn('"kind": "readme"', html)
         self.assertIn("127.0.0.1:8766", html)
-        self.assertIn("boy-toy-pricer/aircraft/output/report.html", html)
+        self.assertIn("boy-toy-pricer/airplane-pricer/output/report.html", html)
 
     def test_readme_markdown_covers_setup_and_stays_html(self):
         html = markdown_to_html(
@@ -804,7 +809,7 @@ class ReportTests(unittest.TestCase):
             "python3 refresh_searches.py --slug cubcrafters",
             "python3 search_server.py",
             "127.0.0.1:8766",
-            "boy-toy-pricer/aircraft/output/report.html",
+            "boy-toy-pricer/airplane-pricer/output/report.html",
             "com.example.aircraft-scan",
             "Controller.com",
             "could not launch a browser",

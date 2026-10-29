@@ -7,6 +7,8 @@ on:
     - cron: '0 12 * * 1'
     - cron: '0 13 * * 1'
   workflow_dispatch:
+    # Manual runs are not path-filtered. The job only reads and writes
+    # boy-toy-pricer/airplane-pricer/.
 
 permissions:
   contents: write
@@ -16,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: boy-toy-pricer/aircraft
+        working-directory: boy-toy-pricer/airplane-pricer
     steps:
       - name: Run only at 7 AM Central on scheduled runs
         id: schedule
@@ -58,8 +60,9 @@ jobs:
 
       - name: Commit refreshed report
         if: steps.schedule.outputs.should_run == 'true'
+        working-directory: ${{ github.workspace }}
         run: |
-          git add output/report.html saved
+          git add boy-toy-pricer/airplane-pricer/output/report.html boy-toy-pricer/airplane-pricer/saved
           if git diff --cached --quiet; then
             echo "No report changes to commit."
             exit 0

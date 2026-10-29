@@ -8,17 +8,17 @@ This folder tracks used airplanes and writes **one self-contained HTML file** wi
 - **Piper PA-28-180/181** — Cherokee 180 (including lettered 180C/180D and Cherokee Challenger), Cherokee Archer, Archer II, Archer III, Archer DX, Archer LX, and a Pilot 100i when the listing states PA-28-181. Any spelling of Cherokee 180, Archer, PA-28-180, PA-28-181, PA28-180, or PA28-181. Warrior, Arrow, Dakota, Cruiser, Cherokee 140/150/160/235/236, and a 140 with a 180 hp conversion are excluded.
 - **README** — this document, rendered into the report when the HTML file is built.
 
-Each airplane tab uses the same layout: filters, sorting, badges, thumbnails, per-site prices, a **Data as of** line (America/Chicago), and click-through. The usage column is **Hours** (total time), not mileage. The identifier column is the **N-number**. Clicking a row, title, thumbnail, or chart point opens the lowest-priced listing. Each price in the Source column opens that site's own listing.
+Each airplane tab uses the same controls, in the same order: column sorting, a search box, year and price ranges, a total time (TT) range, a state list, and aircraft filters. Those filters are model and series chips, engine time (SMOH, SNEW, and a TBO range when an hour figure is stated), avionics (Garmin G1000, Perspective, GTN, autopilot), FIKI / known ice, TKS, air conditioning, and gear. A chip or range is left off a tab when none of that tab's listings state it. The usage column is **Hours** (total time), not mileage. The identifier column is the **N-number**. Clicking a chip toggles that filter. Clicking a row, title, thumbnail, or chart point opens the lowest-priced listing. Each price in the Source column opens that site's own listing.
 
 This folder is the aircraft tracker. It listens on port 8766 so it can run beside another local tool on port 8765.
 
 In this repository the project lives at:
 
-`boy-toy-pricer/aircraft`
+`boy-toy-pricer/airplane-pricer`
 
 The report file is:
 
-`<repo>/boy-toy-pricer/aircraft/output/report.html`
+`<repo>/boy-toy-pricer/airplane-pricer/output/report.html`
 
 The same page is served at `http://127.0.0.1:8766` when the local server is running.
 
@@ -63,7 +63,7 @@ Inside each `saved/<slug>/` folder:
 From the repository root:
 
 ```bash
-cd boy-toy-pricer/aircraft
+cd boy-toy-pricer/airplane-pricer
 python3 -m venv .venv
 source .venv/bin/activate
 python3 -m pip install -r requirements.txt
@@ -76,12 +76,12 @@ python3 generate_report.py
 
 Open the report with no server:
 
-`<repo>/boy-toy-pricer/aircraft/output/report.html`
+`<repo>/boy-toy-pricer/airplane-pricer/output/report.html`
 
 Or start the server (leave this Terminal open):
 
 ```bash
-cd boy-toy-pricer/aircraft
+cd boy-toy-pricer/airplane-pricer
 source .venv/bin/activate
 python3 search_server.py
 ```
@@ -153,9 +153,9 @@ New and price-drop marks compare this `merged.csv` with the previous one. The fi
 
 ## Weekly GitHub Actions
 
-`.github/workflows/aircraft-pricer-weekly.yml` runs `boy-toy-pricer/aircraft/run_sr22_weekly.sh` with working directory `boy-toy-pricer/aircraft` on Mondays at 7:00 AM America/Chicago. GitHub's clock is UTC, so the file schedules both 12:00 and 13:00 UTC and continues only when the Chicago hour is 07. That keeps the same local hour across daylight-saving changes.
+`.github/workflows/aircraft-pricer-weekly.yml` runs `boy-toy-pricer/airplane-pricer/run_sr22_weekly.sh` with working directory `boy-toy-pricer/airplane-pricer` on Mondays at 7:00 AM America/Chicago. GitHub's clock is UTC, so the file schedules both 12:00 and 13:00 UTC and continues only when the Chicago hour is 07. That keeps the same local hour across daylight-saving changes.
 
-Scheduled workflows run from the default branch (`main`) only. After this branch is merged, you can also run it by hand: GitHub → Actions → **Refresh aircraft for-sale report** → **Run workflow**. The job commits `boy-toy-pricer/aircraft/output/report.html` and `boy-toy-pricer/aircraft/saved` when they change. It runs `python3 scripts/check_privacy.py` before that commit. It needs the `contents: write` permission already set in the workflow file. No repository secret is required.
+Scheduled workflows run from the default branch (`main`) only. After this branch is merged, you can also run it by hand: GitHub → Actions → **Refresh aircraft for-sale report** → **Run workflow**. The job commits `boy-toy-pricer/airplane-pricer/output/report.html` and `boy-toy-pricer/airplane-pricer/saved` when they change. It runs `python3 scripts/check_privacy.py` before that commit. It needs the `contents: write` permission already set in the workflow file. No repository secret is required.
 
 A Monday run still skips a search whose snapshot is inside the freshness window. The Mac launchd job below is the same script on your computer. You do not need both, but they do not conflict: a fresh snapshot is left alone.
 
@@ -173,7 +173,7 @@ Save this as `~/Library/LaunchAgents/com.example.aircraft-scan.plist`:
   <key>Label</key>
   <string>com.example.aircraft-scan</string>
   <key>WorkingDirectory</key>
-  <string><repo>/boy-toy-pricer/aircraft</string>
+  <string><repo>/boy-toy-pricer/airplane-pricer</string>
   <key>EnvironmentVariables</key>
   <dict>
     <key>PATH</key>
@@ -182,7 +182,7 @@ Save this as `~/Library/LaunchAgents/com.example.aircraft-scan.plist`:
   <key>ProgramArguments</key>
   <array>
     <string>/bin/bash</string>
-    <string><repo>/boy-toy-pricer/aircraft/run_sr22_weekly.sh</string>
+    <string><repo>/boy-toy-pricer/airplane-pricer/run_sr22_weekly.sh</string>
   </array>
   <key>StartCalendarInterval</key>
   <dict>
@@ -194,9 +194,9 @@ Save this as `~/Library/LaunchAgents/com.example.aircraft-scan.plist`:
     <integer>0</integer>
   </dict>
   <key>StandardOutPath</key>
-  <string><repo>/boy-toy-pricer/aircraft/output/launchd.log</string>
+  <string><repo>/boy-toy-pricer/airplane-pricer/output/launchd.log</string>
   <key>StandardErrorPath</key>
-  <string><repo>/boy-toy-pricer/aircraft/output/launchd.log</string>
+  <string><repo>/boy-toy-pricer/airplane-pricer/output/launchd.log</string>
 </dict>
 </plist>
 ```
@@ -250,7 +250,7 @@ Use the CubCrafters search as the pattern. A new family string (for example `pc1
 `generate_report.py` reads `SEARCHES`, so the new tab is included on the next build. The README tab stays last.
 
 4. **New source file name.** If you add a source key that is not already in `saved_store.py` `SOURCE_FILES` (the existing keys are `cirrus`, `cubcrafters`, `aso`, `globalair`, `aircraftdealer`, `barnstormers`, `controller`, `tradeaplane`, `aircraftcom`, `aerotrader`, `ebay`, `merged`), add a CSV name there. Add a label in `generate_report.py` `SITE_LABELS` so the Source column shows a readable name.
-5. **Optional filter chips** in `report_template.html` `SPEC_TERMS`. A chip with `display: true` is a filter only. It appears on a tab only when at least one listing matches. Put related names in one `group` so selecting several of them means "any of these".
+5. **Optional filter chips** in `report_template.html` `SPEC_TERMS`. Set `families` to the airplane families the chip belongs to. A chip with `display: true` is a filter only. It appears on a tab only when at least one listing matches. Put related names in one `group` so selecting several of them means "any of these".
 6. **Tests** in `test_listings.py` (a kept row, a rejected lookalike, and a parser fixture) and `test_saved.py` (a snapshot for the new slug does not write `saved/sr22/`).
 7. **Scrape and rebuild:**
 

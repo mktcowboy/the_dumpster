@@ -438,61 +438,90 @@ function scoreRow(row, tokens, alts) {
 // ---------- market model ----------
 // Per-tab hedonic regression: log(price) ~ model year + miles + older-generation flag + spec keywords.
 // Fit by least squares, refit after dropping listings priced far off the line (bad data, salvage, etc.).
-// [name, regex, options]. title: match the title only (trim names also show up in
-// descriptions as "limited warranty", "luxury SUV"...). display: a filter chip only, kept
-// out of the market model. group: chips in one group are alternatives (any of them);
-// different groups and ungrouped chips must all match.
+// Shared aircraft filters. display: a filter chip only, kept out of the market model.
+// group: chips in one group are alternatives (any of them); different groups must all match.
+// families: omit a chip from airplanes it does not describe. A chip is hidden on a tab
+// when no listing there matches, so empty series (G4, G3 on the SR22, Archer DX) stay off.
+function stated(r) {
+  return [r.model, r.variant, r.title].filter(Boolean).join(' ');
+}
+function equipBlob(r) {
+  return [r.avionics, r.autopilot, r.description, r.title].filter(Boolean).join(' ');
+}
+function gearBlob(r) {
+  return [r.gear, r.description, r.title].filter(Boolean).join(' ');
+}
 const SPEC_TERMS = [
-  ['GTS', /\bgts\b/i, { title: true, display: true, group: 'trim' }],
-  ['Turbo', /\bsr22t\b|\bturbo\b/i, { title: true, display: true, group: 'engine' }],
-  ['Arrivee', /\barriv[eé]e\b/i, { title: true, display: true }],
-  ['G3+', /\bg3\s*\+/i, { title: true, display: true, group: 'gen' }],
-  ['G2+', /\bg2\s*\+/i, { title: true, display: true, group: 'gen' }],
-  ['G7+', /\bg7\s*\+/i, { title: true, display: true, group: 'gen' }],
-  ['G7', /\bg7\b/i, { title: true, display: true, group: 'gen' }],
-  ['G6', /\bg6\b/i, { title: true, display: true, group: 'gen' }],
-  ['G5', /\bg5\b/i, { title: true, display: true, group: 'gen' }],
-  ['G3', /\bg3\b/i, { title: true, display: true, group: 'gen' }],
-  ['G2', /\bg2\b/i, { title: true, display: true, group: 'gen' }],
-  ['G1', /\bg1\b/i, { title: true, display: true, group: 'gen' }],
-  ['Carbon Cub', /\bcarbon cub\b/i, { display: true, group: 'line' }],
-  ['FX-3', /\bfx-?\s*3\b/i, { display: true, group: 'line' }],
-  ['FX-2', /\bfx-?\s*2\b/i, { display: true, group: 'line' }],
-  ['EX-3', /\bex-?\s*3\b/i, { display: true, group: 'line' }],
-  ['EX-2', /\bex-?\s*2\b/i, { display: true, group: 'line' }],
-  ['XCub', /\bx-?\s*cub\b/i, { display: true, group: 'line' }],
-  ['NXCub', /\bnx-?\s*cub\b/i, { display: true, group: 'line' }],
-  ['Top Cub', /\btop cub\b/i, { display: true, group: 'line' }],
-  ['Sport Cub', /\bsport cub\b/i, { display: true, group: 'line' }],
-  ['PA-28-181', /\bpa\s*-?\s*28\s*-?\s*181\b/i, { display: true, group: 'line' }],
-  ['PA-28-180', /\bpa\s*-?\s*28\s*-?\s*180(?:\s*[a-g])?\b/i, { display: true, group: 'line' }],
-  ['Archer LX', /\barcher\s+lx\b/i, { display: true, group: 'line' }],
-  ['Archer DX', /\barcher\s+dx\b/i, { display: true, group: 'line' }],
-  ['Archer III', /\barcher\s+iii\b/i, { display: true, group: 'line' }],
-  ['Archer II', /\barcher\s+ii(?!i)\b/i, { display: true, group: 'line' }],
-  ['Archer', /\barcher\b/i, { display: true, group: 'line' }],
-  ['Cherokee 180', /\bcher(?:okee)?\s+180/i, { display: true, group: 'line' }],
-  ['Challenger', /\bchallenger\b/i, { display: true, group: 'line' }],
-  ['Pilot 100i', /\bpilot\s+100i\b/i, { display: true, group: 'line' }],
-  ['FIKI', /\bfiki\b|known icing/i],
-  ['TKS', /\btks\b/i],
-  ['A/C', /\ba\/c\b|air conditioning/i],
-  ['Perspective+', /perspective\s*\+/i],
-  ['Perspective', /\bperspective\b/i],
-  ['Avidyne', /\bavidyne\b/i],
-  ['ADS-B', /ads-?b/i],
-  ['Floats', /\bfloats?\b|\bamphib/i, { display: true, group: 'gear' }],
-  ['Tundra', /\btundra\b|\bbush\s*-?\s*wheels?\b/i, { display: true, group: 'gear' }],
-  ['Skis', /\bskis\b/i, { display: true, group: 'gear' }],
+  { name: 'G1', group: 'gen', families: ['sr22', 'sr20', 'sf50'], display: true, test: r => r.generation === 'G1' },
+  { name: 'G2', group: 'gen', families: ['sr22', 'sr20', 'sf50'], display: true, test: r => r.generation === 'G2' },
+  { name: 'G2+', group: 'gen', families: ['sf50'], display: true, test: r => r.generation === 'G2+' },
+  { name: 'G3', group: 'gen', families: ['sr22', 'sr20', 'sf50'], display: true, test: r => r.generation === 'G3' },
+  { name: 'G3+', group: 'gen', families: ['sf50'], display: true, test: r => r.generation === 'G3+' },
+  { name: 'G5', group: 'gen', families: ['sr22', 'sr20'], display: true, test: r => r.generation === 'G5' },
+  { name: 'G6', group: 'gen', families: ['sr22', 'sr20'], display: true, test: r => r.generation === 'G6' },
+  { name: 'G7', group: 'gen', families: ['sr22', 'sr20'], display: true, test: r => r.generation === 'G7' },
+  { name: 'G7+', group: 'gen', families: ['sr22', 'sr20'], display: true, test: r => r.generation === 'G7+' },
+  { name: 'Turbo', group: 'engine', families: ['sr22', 'sr20'], display: true, test: r => r.turbo === true },
+  { name: 'GTS', group: 'trim', families: ['sr22', 'sr20'], display: true, test: r => /\bGTS\b/i.test(stated(r)) },
+  { name: 'Arrivee', group: 'trim', families: ['sf50'], display: true, test: r => /arriv/i.test(stated(r)) },
+  { name: 'Premium', group: 'trim', families: ['sf50'], display: true, test: r => /\bpremium\b/i.test(stated(r)) },
+  { name: 'Carbon Cub', group: 'line', families: ['cubcrafters'], display: true, test: r => r.model === 'Carbon Cub' },
+  { name: 'XCub', group: 'line', families: ['cubcrafters'], display: true, test: r => r.model === 'XCub' },
+  { name: 'NXCub', group: 'line', families: ['cubcrafters'], display: true, test: r => r.model === 'NXCub' },
+  { name: 'Sport Cub', group: 'line', families: ['cubcrafters'], display: true, test: r => r.model === 'Sport Cub' },
+  { name: 'Top Cub', group: 'line', families: ['cubcrafters'], display: true, test: r => r.model === 'Top Cub' },
+  { name: 'FX-3', group: 'subtype', families: ['cubcrafters'], display: true, test: r => /\bFX-?\s*3\b/i.test(stated(r)) },
+  { name: 'FX-2', group: 'subtype', families: ['cubcrafters'], display: true, test: r => /\bFX-?\s*2\b/i.test(stated(r)) },
+  { name: 'FX', group: 'subtype', families: ['cubcrafters'], display: true, test: r => /\bFX\b(?!\s*-?\s*[23])/i.test(stated(r)) },
+  { name: 'EX-3', group: 'subtype', families: ['cubcrafters'], display: true, test: r => /\bEX-?\s*3\b/i.test(stated(r)) },
+  { name: 'EX-2', group: 'subtype', families: ['cubcrafters'], display: true, test: r => /\bEX-?\s*2\b/i.test(stated(r)) },
+  { name: 'EX', group: 'subtype', families: ['cubcrafters'], display: true, test: r => /\bEX\b(?!\s*-?\s*[23])/i.test(stated(r)) },
+  { name: 'SS', group: 'subtype', families: ['cubcrafters'], display: true, test: r => /\bSS\b/.test(r.variant || '') || /\bSS\b/.test(r.title || '') },
+  { name: 'S2', group: 'subtype', families: ['cubcrafters'], display: true, test: r => /\bS2\b/.test(r.variant || '') || /\bS2\b/.test(r.title || '') },
+  { name: 'Ranger', group: 'subtype', families: ['cubcrafters'], display: true, test: r => /\bRanger\b/i.test(stated(r)) },
+  { name: 'Cherokee 180', group: 'line', families: ['pa28-180-181'], display: true, test: r => /\bcher(?:okee)?\s+180\b/i.test(stated(r)) && !/\b180\s*[A-G]\b/i.test(stated(r)) },
+  { name: 'Cherokee 180C', group: 'line', families: ['pa28-180-181'], display: true, test: r => /\b180\s*C\b/i.test(stated(r)) },
+  { name: 'Cherokee 180D', group: 'line', families: ['pa28-180-181'], display: true, test: r => /\b180\s*D\b/i.test(stated(r)) },
+  { name: 'Challenger', group: 'line', families: ['pa28-180-181'], display: true, test: r => /\bchallenger\b/i.test(stated(r)) },
+  { name: 'Archer', group: 'line', families: ['pa28-180-181'], display: true, test: r => /\barcher\b/i.test(stated(r)) && !/\barcher\s+(?:lx|dx|iii|ii)\b/i.test(stated(r)) },
+  { name: 'Archer II', group: 'line', families: ['pa28-180-181'], display: true, test: r => /\barcher\s+ii\b/i.test(stated(r)) && !/\barcher\s+iii\b/i.test(stated(r)) },
+  { name: 'Archer III', group: 'line', families: ['pa28-180-181'], display: true, test: r => /\barcher\s+iii\b/i.test(stated(r)) },
+  { name: 'Archer DX', group: 'line', families: ['pa28-180-181'], display: true, test: r => /\barcher\s+dx\b/i.test(stated(r)) },
+  { name: 'Archer LX', group: 'line', families: ['pa28-180-181'], display: true, test: r => /\barcher\s+lx\b/i.test(stated(r)) },
+  { name: 'PA-28-181', group: 'line', families: ['pa28-180-181'], display: true, test: r => r.model === 'PA-28-181' || /\bpa\s*-?\s*28\s*-?\s*181\b/i.test(stated(r)) },
+  { name: 'PA-28-180', group: 'line', families: ['pa28-180-181'], display: true, test: r => (r.model === 'PA-28-180' || /\bpa\s*-?\s*28\s*-?\s*180\b/i.test(stated(r))) && !/\bpa\s*-?\s*28\s*-?\s*181\b/i.test(stated(r)) },
+  { name: 'Pilot 100i', group: 'line', families: ['pa28-180-181'], display: true, test: r => /\bpilot\s+100i\b/i.test(stated(r)) },
+  { name: 'G1000', group: 'avionics', display: true, tip: 'Garmin G1000', test: r => /\bg1000\b/i.test(equipBlob(r)) },
+  { name: 'Perspective+', group: 'avionics', display: false, test: r => /perspective\s*\+/i.test(equipBlob(r)) },
+  { name: 'Perspective', group: 'avionics', display: false, tip: 'Garmin Perspective', test: r => /\bperspective\b/i.test(equipBlob(r)) },
+  { name: 'GTN', group: 'avionics', display: true, tip: 'Garmin GTN', test: r => /\bgtn\b/i.test(equipBlob(r)) },
+  { name: 'Autopilot', group: 'avionics', display: true, test: r => !!(r.autopilot) || /\bautopilot\b|gfc\s*700|dfc\s*90|dfc\s*100|s-?\s*tec/i.test(equipBlob(r)) },
+  { name: 'Avidyne', group: 'avionics', display: false, test: r => /\bavidyne\b/i.test(equipBlob(r)) },
+  { name: 'FIKI', group: 'equip', display: false, tip: 'Known ice', test: r => r.fiki || /fiki|known icing/i.test(equipBlob(r)) },
+  { name: 'TKS', group: 'equip', display: false, test: r => r.tks || /\btks\b/i.test(equipBlob(r)) },
+  { name: 'A/C', group: 'equip', display: false, tip: 'Air conditioning', test: r => r.airConditioning || /\ba\/c\b|air conditioning/i.test(equipBlob(r)) },
+  { name: 'ADS-B', group: 'equip', display: false, test: r => /ads-?b/i.test(equipBlob(r)) },
+  { name: 'SMOH', group: 'etime', display: true, tip: 'Engine time since major overhaul', test: r => r.engineTimeType === 'SMOH' || /\bSMOH\b/.test(r.description || '') },
+  { name: 'SNEW', group: 'etime', display: true, tip: 'Engine time since new', test: r => r.engineTimeType === 'SNEW' || /\bSNEW\b/.test(r.description || '') },
+  { name: 'TSOH', group: 'etime', display: true, tip: 'Engine time since overhaul', test: r => r.engineTimeType === 'TSOH' || /\bTSOH\b/.test(r.description || '') },
+  { name: 'SPOH', group: 'etime', display: true, tip: 'Prop or engine time since overhaul', test: r => r.engineTimeType === 'SPOH' || /\bSPOH\b/.test(r.description || '') },
+  { name: 'Floats', group: 'gear', display: true, test: r => /\bfloats?\b|\bamphib/i.test(gearBlob(r)) },
+  { name: 'Tundra', group: 'gear', display: true, test: r => /\btundra\b|\bbush\s*-?\s*wheels?\b/i.test(gearBlob(r)) },
+  { name: 'Skis', group: 'gear', display: true, test: r => /\bskis\b/i.test(gearBlob(r)) },
 ];
 const MIN_SPEC_COUNT = 4;
 
-const SPEC_GROUP = Object.fromEntries(SPEC_TERMS.map(([name, , o]) => [name, (o && o.group) || name]));
+const SPEC_GROUP = {};
+SPEC_TERMS.forEach(t => { if (!(t.name in SPEC_GROUP)) SPEC_GROUP[t.name] = t.group || t.name; });
 
 function detectSpecs(row) {
-  const title = (row.title || '').toLowerCase();
-  const text = title + ' ' + (row.description || '').toLowerCase();
-  return SPEC_TERMS.filter(([, re, o]) => re.test(o && o.title ? title : text)).map(([name]) => name);
+  const family = row.family || '';
+  const found = [];
+  SPEC_TERMS.forEach(t => {
+    if (t.families && !t.families.includes(family)) return;
+    if (t.test(row) && !found.includes(t.name)) found.push(t.name);
+  });
+  return found;
 }
 
 function solveLinear(A, b) {
@@ -551,7 +580,7 @@ function buildModel(rows) {
   if (data.length < 15) return null;
   const baseYear = years.reduce((a, y) => (yearCounts[y] > yearCounts[a] ? y : a), years[0]);
 
-  const specs = SPEC_TERMS.filter(([, , o]) => !(o && o.display)).map(([name]) => name).filter(name => {
+  const specs = [...new Set(SPEC_TERMS.filter(t => !t.display).map(t => t.name))].filter(name => {
     const n = data.filter(r => r._specs.includes(name)).length;
     return n >= MIN_SPEC_COUNT && n <= data.length - MIN_SPEC_COUNT;
   });
@@ -776,7 +805,7 @@ function newState(live) {
     bat: { days: 730, text: '', country: '', stock: true, matchSearch: true, adjust: false },
     sortKey: live ? 'score' : 'price',
     sortDir: live ? -1 : 1,
-    filters: { yearMin: null, yearMax: null, priceMin: null, priceMax: null, milesMin: null, milesMax: null, deal: '', color: '', vs: '', text: '', specs: [], sr20: false },
+    filters: { yearMin: null, yearMax: null, priceMin: null, priceMax: null, milesMin: null, milesMax: null, engineMin: null, engineMax: null, tboMin: null, tboMax: null, state: '', vs: '', text: '', specs: [], sr20: false },
   };
 }
 
@@ -996,8 +1025,10 @@ function visibleRows(tab) {
     if ((f.yearMin != null || f.yearMax != null) && !within(r.year, f.yearMin, f.yearMax)) return false;
     if ((f.priceMin != null || f.priceMax != null) && !within(r.price, f.priceMin, f.priceMax)) return false;
     if ((f.milesMin != null || f.milesMax != null) && !within(r.mileage, f.milesMin, f.milesMax)) return false;
+    if ((f.engineMin != null || f.engineMax != null) && !within(r.engineHours, f.engineMin, f.engineMax)) return false;
+    if ((f.tboMin != null || f.tboMax != null) && !within(r.engineTbo, f.tboMin, f.tboMax)) return false;
+    if (f.state && r.state !== f.state) return false;
     if (dealMin && (DEAL_RANK[r.deal_rating] || 0) < dealMin) return false;
-    if (f.color && r.color !== f.color) return false;
     if (f.specs.length) {
       const groups = {};
       f.specs.forEach(n => { (groups[SPEC_GROUP[n]] = groups[SPEC_GROUP[n]] || []).push(n); });
@@ -1061,17 +1092,18 @@ function panelHTML(tab) {
     <div class="panel">
       <div class="card-head"><h3>Filters</h3><span class="count" data-role="count"></span></div>
       <div class="filter-grid">
-        <label>Year<span class="pair"><input data-f="yearMin" inputmode="numeric" placeholder="from"> to <input data-f="yearMax" inputmode="numeric" placeholder="to"></span></label>
-        <label>Price<span class="pair"><input data-f="priceMin" inputmode="numeric" placeholder="min"> to <input data-f="priceMax" inputmode="numeric" placeholder="max"></span></label>
-        <label>Hours<span class="pair"><input data-f="milesMin" inputmode="numeric" placeholder="min"> to <input data-f="milesMax" inputmode="numeric" placeholder="max"></span></label>
-        <label class="check" title="SR20 listings stay hidden until this is on"><input type="checkbox" data-f="sr20" id="sr20"> Include SR20</label>
-        <label>Deal rating<select data-f="deal"><option value="">Any</option><option value="good">Good or better</option><option value="great">Great only</option></select></label>
-        <label>Color<select data-f="color" data-role="color"><option value="">Any</option></select></label>
-        <label>Vs market<select data-f="vs"><option value="">Any</option><option value="below">5%+ below</option><option value="below10">10%+ below</option><option value="above">5%+ above</option></select></label>
-        <label class="grow">Refine (fuzzy)<input class="wide" data-f="text" type="text" placeholder="title, dealer, city, description..."></label>
+        <label data-role="yearwrap">Year<span class="pair"><input data-f="yearMin" inputmode="numeric" placeholder="from"> to <input data-f="yearMax" inputmode="numeric" placeholder="to"></span></label>
+        <label data-role="pricewrap">Price<span class="pair"><input data-f="priceMin" inputmode="numeric" placeholder="min"> to <input data-f="priceMax" inputmode="numeric" placeholder="max"></span></label>
+        <label data-role="ttwrap">Total time (TT)<span class="pair"><input data-f="milesMin" inputmode="numeric" placeholder="min"> to <input data-f="milesMax" inputmode="numeric" placeholder="max"></span></label>
+        <label data-role="statewrap" hidden>State<select data-f="state" data-role="state"><option value="">Any</option></select></label>
+        <label data-role="enginewrap" hidden>Engine time<span class="pair"><input data-f="engineMin" inputmode="numeric" placeholder="min"> to <input data-f="engineMax" inputmode="numeric" placeholder="max"></span></label>
+        <label data-role="tbowrap" hidden>TBO<span class="pair"><input data-f="tboMin" inputmode="numeric" placeholder="min"> to <input data-f="tboMax" inputmode="numeric" placeholder="max"></span></label>
+        <label class="check" data-role="sr20wrap" hidden title="SR20 listings stay hidden until this is on"><input type="checkbox" data-f="sr20" id="sr20"> Include SR20</label>
+        <label data-role="vswrap" hidden>Vs market<select data-f="vs"><option value="">Any</option><option value="below">5%+ below</option><option value="below10">10%+ below</option><option value="above">5%+ above</option></select></label>
+        <label class="grow">Search<input class="wide" data-f="text" type="text" placeholder="title, dealer, city, state, description..."></label>
         <button class="btn-ghost" data-role="reset">Reset filters</button>
       </div>
-      <div class="spec-row" data-role="specs" hidden></div>
+      <div data-role="specs" hidden></div>
     </div>
     <div class="panel">
       <div class="card-head">
@@ -1159,29 +1191,46 @@ function renderTable(tab, rows) {
   });
 }
 
-// Chips for every spec found in this tab's listings, trims first, so each vehicle shows
-// its own trims and options. Counts are over all of the tab's listings.
+// The same chip rows on every airplane tab. A row is omitted when this tab has no matches.
 function renderSpecChips(tab) {
   const box = tab._panel.querySelector('[data-role=specs]');
   const counts = {};
-  tab.rows.forEach(r => r._specs.forEach(n => { counts[n] = (counts[n] || 0) + 1; }));
-  const rank = n => ({ line: 0, trim: 1, engine: 2, gear: 3 }[SPEC_GROUP[n]] ?? 4);
-  const names = SPEC_TERMS.map(([n]) => n).filter(n => counts[n]).sort((a, b) => rank(a) - rank(b) || counts[b] - counts[a]);
-  if (!names.length) { box.hidden = true; return; }
+  tab.rows.forEach(r => (r._specs || []).forEach(n => { counts[n] = (counts[n] || 0) + 1; }));
+  const sections = [
+    ['Model', ['gen', 'trim', 'engine', 'line', 'subtype']],
+    ['Avionics', ['avionics']],
+    ['Equipment', ['equip', 'etime']],
+    ['Gear', ['gear']],
+  ];
   const sel = tab._state.filters.specs;
-  let html = '<span>Specs</span>', last = null;
-  names.forEach(n => {
-    if (last != null && rank(n) !== last) html += '<span class="spec-sep" aria-hidden="true"></span>';
-    last = rank(n);
-    html += `<button type="button" class="spec-chip" data-spec="${escapeHtml(n)}" aria-pressed="${sel.includes(n)}">${escapeHtml(n)}<i>${counts[n]}</i></button>`;
+  let html = '';
+  sections.forEach(([label, groups]) => {
+    const seen = new Set();
+    const names = [];
+    SPEC_TERMS.forEach(t => {
+      if (!groups.includes(t.group) || seen.has(t.name) || !counts[t.name]) return;
+      seen.add(t.name);
+      names.push(t);
+    });
+    if (!names.length) return;
+    html += `<div class="spec-row"><span>${label}</span>`;
+    let last = null;
+    names.forEach(t => {
+      if (last != null && t.group !== last) html += '<span class="spec-sep" aria-hidden="true"></span>';
+      last = t.group;
+      const tip = t.tip ? ` title="${escapeHtml(t.tip)}"` : '';
+      html += `<button type="button" class="spec-chip" data-spec="${escapeHtml(t.name)}" aria-pressed="${sel.includes(t.name)}"${tip}>${escapeHtml(t.name)}<i>${counts[t.name]}</i></button>`;
+    });
+    html += '</div>';
   });
+  if (!html) { box.hidden = true; box.innerHTML = ''; return; }
   box.innerHTML = html;
+  box.hidden = false;
   box.querySelectorAll('[data-spec]').forEach(b => b.addEventListener('click', () => {
     const f = tab._state.filters, n = b.dataset.spec;
     f.specs = f.specs.includes(n) ? f.specs.filter(x => x !== n) : [...f.specs, n];
     renderTab(tab);
   }));
-  box.hidden = false;
 }
 
 function renderCount(tab, rows) {
@@ -1372,9 +1421,48 @@ function setRows(tab, rows) {
     tab.rows.forEach(r => { r.score = scoreRow(r, tab.tokens, tab.alts); });
   }
   applyModel(tab);
+  renderStateOptions(tab);
+  tuneFilters(tab);
   renderColorOptions(tab);
   renderAnalysis(tab);
   tab._btn.innerHTML = escapeHtml(tab.live ? 'Search' : tab.title) + (tab.rows.length ? `<span class="count-pill">${tab.rows.length}</span>` : '');
+}
+
+function renderStateOptions(tab) {
+  const sel = tab._panel && tab._panel.querySelector('[data-role=state]');
+  const wrap = tab._panel && tab._panel.querySelector('[data-role=statewrap]');
+  if (!sel || !wrap) return;
+  const counts = {};
+  tab.rows.forEach(r => { if (r.state) counts[r.state] = (counts[r.state] || 0) + 1; });
+  const names = Object.keys(counts).sort();
+  wrap.hidden = names.length === 0;
+  const cur = tab._state.filters.state || '';
+  sel.innerHTML = '<option value="">Any</option>' +
+    names.map(n => `<option value="${escapeHtml(n)}">${escapeHtml(n)} (${counts[n]})</option>`).join('');
+  sel.value = names.includes(cur) ? cur : '';
+  if (!names.includes(cur)) tab._state.filters.state = '';
+}
+
+// Hide a control when this tab has nothing to filter. The control set itself stays the same.
+function tuneFilters(tab) {
+  const panel = tab._panel;
+  if (!panel) return;
+  const all = tab._allRows || tab.rows || [];
+  const rows = tab.rows || [];
+  const sr20 = panel.querySelector('[data-role=sr20wrap]');
+  if (sr20) sr20.hidden = !all.some(r => r.family === 'sr20');
+  const year = panel.querySelector('[data-role=yearwrap]');
+  if (year) year.hidden = !rows.some(r => r.year != null);
+  const price = panel.querySelector('[data-role=pricewrap]');
+  if (price) price.hidden = !rows.some(r => r.price != null);
+  const tt = panel.querySelector('[data-role=ttwrap]');
+  if (tt) tt.hidden = !rows.some(r => r.mileage != null);
+  const eng = panel.querySelector('[data-role=enginewrap]');
+  if (eng) eng.hidden = !rows.some(r => r.engineHours != null);
+  const tbo = panel.querySelector('[data-role=tbowrap]');
+  if (tbo) tbo.hidden = !rows.some(r => r.engineTbo != null);
+  const vs = panel.querySelector('[data-role=vswrap]');
+  if (vs) vs.hidden = !rows.some(r => r.vs_market != null && !r._outlier);
 }
 
 function renderColorOptions(tab) {
@@ -1693,7 +1781,8 @@ TABS.forEach((tab, idx) => {
     panel.querySelectorAll('[data-f]').forEach(el => {
       const k = el.dataset.f;
       if (el.type === 'checkbox') f[k] = el.checked;
-      else f[k] = (k === 'deal' || k === 'color' || k === 'vs' || k === 'text') ? el.value : numOrNull(el.value);
+      else if (k === 'state' || k === 'vs' || k === 'text') f[k] = el.value;
+      else f[k] = numOrNull(el.value);
     });
     if (!!f.sr20 !== wasSr20) {
       const base = (tab._allRows || []).filter(r => f.sr20 || r.family !== 'sr20');
