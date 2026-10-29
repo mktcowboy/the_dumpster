@@ -1,0 +1,1748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>__PAGE_TITLE__</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<style>
+  :root {
+    --bg: #0b0d12; --panel: #12151c; --panel-2: #181c25; --border: #232836; --border-strong: #2f3545;
+    --text: #e6e9ef; --muted: #8b93a3; --faint: #5d6575;
+    --accent: #5aa9ff; --good: #34d399; --great: #fbbf24; --fair: #f87171;
+    --radius: 12px;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 14px; line-height: 1.45; -webkit-font-smoothing: antialiased;
+  }
+  .num, td, .kpi b, .stat b { font-variant-numeric: tabular-nums; }
+  .shell { max-width: 1440px; margin: 0 auto; padding: 28px 24px 48px; }
+  @media (max-width: 640px) { .shell { padding: 16px; } }
+
+  /* page header */
+  .page-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 20px; }
+  .page-title { display: grid; gap: 4px; min-width: 0; }
+  .update { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .update[hidden] { display: none; }
+  .update-status { font-size: 12px; color: var(--muted); }
+  .update-status.error { color: var(--fair); }
+  .btn-update { letter-spacing: 0.08em; padding: 9px 22px; }
+  h1 { font-size: 22px; font-weight: 700; letter-spacing: -0.01em; margin: 0; }
+  .meta { color: var(--muted); font-size: 13px; }
+  .asof { color: var(--muted); font-size: 13px; }
+  .data-warn { color: var(--fair); font-size: 12px; }
+  .data-warn[hidden] { display: none; }
+  .tab-title { display: grid; gap: 2px; }
+  .meta a { color: var(--muted); text-decoration: underline; text-decoration-color: var(--border-strong); text-underline-offset: 3px; }
+  .meta a:hover { color: var(--text); }
+
+  /* tab nav */
+  .tabs { display: flex; gap: 4px; flex-wrap: wrap; padding: 4px; background: var(--panel); border: 1px solid var(--border); border-radius: 12px; margin-bottom: 22px; }
+  .tab-btn {
+    background: transparent; border: 0; color: var(--muted); padding: 8px 14px; border-radius: 8px;
+    cursor: pointer; font: inherit; font-size: 13px; font-weight: 600; white-space: nowrap;
+  }
+  .tab-btn:hover { color: var(--text); background: var(--panel-2); }
+  .tab-btn.active { color: var(--text); background: var(--panel-2); box-shadow: inset 0 0 0 1px var(--border-strong); }
+  .tab-btn .count-pill { color: var(--faint); font-weight: 500; margin-left: 6px; }
+  .tab-btn.live { color: var(--accent); }
+  .tab-panel { display: none; }
+  .tab-panel.active { display: block; }
+
+  /* tab header + KPI strip */
+  .tab-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
+  .tab-head h2 { font-size: 18px; margin: 0; font-weight: 700; letter-spacing: -0.01em; }
+  .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 10px; margin-bottom: 18px; }
+  .kpi { background: var(--panel); border: 1px solid var(--border); border-radius: var(--radius); padding: 12px 14px; min-width: 0; }
+  .kpi > span { display: block; font-size: 11px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+  .kpi b { display: block; font-size: 20px; font-weight: 700; margin-top: 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .kpi em { display: block; font-style: normal; font-size: 12px; color: var(--muted); margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .kpi.bat { border-color: #2c3342; background: linear-gradient(180deg, #151923, var(--panel)); }
+  .kpi a { color: inherit; text-decoration: none; }
+  .kpi a:hover { color: var(--accent); }
+
+  /* cards */
+  .panel { background: var(--panel); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 18px; margin-bottom: 18px; }
+  .card-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin: -2px 0 12px; }
+  .card-head h3 { font-size: 13px; font-weight: 700; margin: 0; letter-spacing: 0.01em; }
+  .card-head .sub { color: var(--muted); font-size: 12px; }
+  .at-links { display: flex; gap: 8px; flex-wrap: wrap; }
+  .at-links:empty { display: none; }
+  .at-link {
+    display: inline-flex; align-items: center; gap: 6px; color: var(--text); background: var(--panel-2);
+    border: 1px solid var(--border-strong); text-decoration: none; padding: 7px 12px; border-radius: 8px; font-size: 13px; font-weight: 600;
+  }
+  .at-link:hover { border-color: var(--accent); color: var(--accent); }
+  .search-row { display: flex; gap: 8px; }
+  .search-input, .zip-input, .filter-grid input, .filter-grid select {
+    background: var(--bg); border: 1px solid var(--border-strong); color: var(--text);
+    border-radius: 8px; padding: 8px 12px; font: inherit; font-size: 14px;
+  }
+  .search-input { flex: 1; min-width: 0; }
+  .zip-input { width: 90px; }
+  .btn-primary {
+    background: var(--accent); color: #0f1115; border: 0; border-radius: 8px;
+    padding: 8px 20px; font-weight: 600; font-size: 14px; cursor: pointer;
+  }
+  .btn-primary:disabled { opacity: 0.5; cursor: wait; }
+  .btn-ghost {
+    background: transparent; color: var(--muted); border: 1px solid var(--border);
+    border-radius: 8px; padding: 7px 14px; font-size: 13px; cursor: pointer;
+  }
+  .btn-ghost:hover { color: var(--text); }
+  .status { font-size: 12px; color: var(--muted); margin-top: 8px; }
+  .status.busy { color: var(--accent); }
+  .status.error { color: var(--fair); }
+  .chips { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }
+  .chips:empty { display: none; }
+  .chip { background: #1d212b; border: 1px solid var(--border); border-radius: 999px; padding: 2px 10px; font-size: 12px; }
+  .chip b { color: var(--muted); font-weight: 600; margin-right: 4px; }
+  .filter-grid { display: flex; gap: 14px 20px; flex-wrap: wrap; align-items: flex-end; }
+  .filter-grid label {
+    display: flex; flex-direction: column; gap: 4px; font-size: 11px; color: var(--muted);
+    text-transform: uppercase; letter-spacing: 0.04em;
+  }
+  .filter-grid .pair { display: flex; align-items: center; gap: 6px; text-transform: none; letter-spacing: 0; }
+  .filter-grid input, .filter-grid select { padding: 6px 8px; font-size: 13px; width: 92px; }
+  .filter-grid select { width: auto; min-width: 92px; padding-right: 26px; }
+  .search-input:focus, .zip-input:focus, .filter-grid input:focus, .filter-grid select:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(90,169,255,0.15); }
+  .filter-grid input.wide { width: 100%; }
+  .filter-grid label.grow { flex: 1; min-width: 220px; }
+  .count { color: var(--muted); font-size: 12px; }
+  .chartWrap { position: relative; height: 480px; }
+  .chartWrap canvas { cursor: crosshair; }
+  .brush { position: absolute; border: 1px solid var(--accent); background: rgba(90,169,255,0.12); border-radius: 2px; pointer-events: none; }
+  .sel-bar { display: flex; align-items: center; gap: 8px 14px; flex-wrap: wrap; padding: 8px 12px; margin: 0 0 12px; border: 1px solid rgba(90,169,255,0.35); background: rgba(90,169,255,0.08); border-radius: 10px; font-size: 13px; }
+  .sel-bar[hidden], .brush[hidden] { display: none; }
+  .sel-bar b { font-weight: 600; }
+  .sel-bar .sel-actions { display: flex; gap: 8px; margin-left: auto; }
+  .btn-ghost.sm { padding: 4px 10px; font-size: 12px; }
+  .spec-row { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--border); }
+  .spec-row[hidden] { display: none; }
+  .spec-row > span { font-size: 11px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; margin-right: 4px; }
+  .spec-chip { font: inherit; font-size: 12px; font-weight: 600; color: var(--muted); background: var(--bg); border: 1px solid var(--border-strong); border-radius: 999px; padding: 4px 11px; cursor: pointer; }
+  .spec-chip:hover { color: var(--text); border-color: var(--muted); }
+  .spec-chip[aria-pressed="true"] { color: var(--text); background: rgba(90,169,255,0.15); border-color: var(--accent); }
+  .spec-chip i { font-style: normal; color: var(--faint); font-weight: 500; margin-left: 4px; }
+  .spec-chip[aria-pressed="true"] i { color: var(--muted); }
+  .spec-sep { width: 1px; height: 18px; background: var(--border-strong); margin: 0 2px; }
+  .chart-tools { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+  .chart-tools [hidden] { display: none; }
+  .switch { display: inline-flex; align-items: center; gap: 10px; cursor: pointer; font-size: 13px; color: var(--muted); user-select: none; }
+  .switch:hover { color: var(--text); }
+  .switch input { appearance: none; -webkit-appearance: none; width: 34px; height: 20px; border-radius: 999px; background: var(--border-strong); position: relative; margin: 0; cursor: pointer; transition: background .15s; flex: 0 0 auto; }
+  .switch input::after { content: ''; position: absolute; top: 3px; left: 3px; width: 14px; height: 14px; border-radius: 50%; background: #fff; transition: transform .15s; }
+  .switch input:checked { background: var(--accent); }
+  .switch input:checked::after { transform: translateX(14px); }
+  .switch input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .switch .tri { color: var(--text); }
+  .bat-filters { margin: 0 0 14px; padding: 12px 14px; background: var(--panel-2); border: 1px solid var(--border); border-radius: 10px; }
+  .bat-filters[hidden] { display: none; }
+  .filter-grid label.check { flex-direction: row; align-items: center; gap: 6px; text-transform: none; letter-spacing: 0; font-size: 13px; padding-bottom: 6px; }
+  .filter-grid label.check input { width: auto; accent-color: var(--accent); }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--border); white-space: nowrap; }
+  th { cursor: pointer; user-select: none; color: var(--muted); font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; position: sticky; top: 0; background: var(--panel); z-index: 1; }
+  th:hover { color: var(--text); }
+  th.no-sort { cursor: default; }
+  th.r, td.r { text-align: right; }
+  tbody tr:hover td { background: var(--panel-2); }
+  td small { display: block; font-size: 11px; color: var(--muted); }
+  .table-wrap { overflow: auto; max-height: 680px; margin: 0 -18px -16px; border-top: 1px solid var(--border); }
+  td.title-cell { white-space: normal; min-width: 260px; max-width: 380px; }
+  tr[data-href] { cursor: pointer; }
+  .thumb-link { float: left; margin: 0 10px 4px 0; }
+  .thumb { width: 84px; height: 56px; object-fit: cover; border-radius: 6px; background: var(--panel-2); display: block; }
+  .badge.new { background: rgba(63,214,126,0.15); color: var(--good); }
+  .badge.drop { background: rgba(255,135,135,0.15); color: var(--fair); }
+  td.source-cell { white-space: normal; min-width: 120px; max-width: 280px; }
+  td.source-cell a.view-link { margin: 0 4px 4px 0; display: inline-block; }
+  td.vin-cell { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12px; }
+  .muted { color: var(--muted); }
+  a.view-link {
+    color: var(--muted); text-decoration: none; border: 1px solid var(--border-strong);
+    padding: 3px 10px; border-radius: 6px; font-size: 12px;
+  }
+  a.title-link { color: var(--text); text-decoration: underline; text-decoration-color: var(--border); text-underline-offset: 3px; }
+  a.title-link:hover { color: var(--accent); text-decoration-color: var(--accent); }
+  a.view-link:hover { border-color: var(--accent); color: var(--accent); }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 11px; font-weight: 600; }
+  .badge.good { background: rgba(63,214,126,0.15); color: var(--good); }
+  .badge.great { background: rgba(255,212,59,0.15); color: var(--great); }
+  .badge.fair { background: rgba(255,135,135,0.15); color: var(--fair); }
+  .hot { color: #ff6b6b; font-weight: 700; }
+  .empty { color: var(--muted); text-align: center; padding: 32px 0; }
+  .below { color: var(--good); font-weight: 600; }
+  .above { color: var(--fair); }
+  .badge.outlier { background: rgba(154,161,172,0.15); color: var(--muted); }
+  .analysis h2 { font-size: 13px; font-weight: 700; margin: 0 0 10px; }
+  .analysis h3 { font-size: 12px; margin: 18px 0 8px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+  .analysis .lede { font-size: 14px; line-height: 1.5; margin: 0 0 6px; max-width: 900px; }
+  .analysis .footnote { font-size: 12px; color: var(--muted); line-height: 1.5; margin: 6px 0 0; max-width: 900px; }
+  .analysis-grid { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: 28px; }
+  @media (max-width: 1100px) { .analysis-grid { grid-template-columns: 1fr; } }
+  .analysis-grid > div { min-width: 0; overflow-x: auto; }
+  .analysis th { position: static; background: none; }
+  .analysis table.effects { width: auto; min-width: 100%; }
+  .analysis table.effects tr:hover td { background: none; }
+  .analysis td.neg { color: var(--fair); }
+  .analysis td.pos, .analysis .pos { color: var(--good); }
+  .analysis .sure { color: var(--text); }
+  .checks { display: flex; gap: 6px 16px; flex-wrap: wrap; margin-top: 12px; font-size: 13px; }
+  .check { display: flex; align-items: center; gap: 6px; cursor: pointer; }
+  .calc-out { margin-top: 14px; display: grid; gap: 10px; }
+  .stat { display: grid; grid-template-columns: 1fr auto; gap: 2px 12px; align-items: baseline; padding: 10px 12px; background: var(--bg); border: 1px solid var(--border); border-radius: 8px; }
+  .stat span { color: var(--muted); font-size: 12px; }
+  .stat b { font-size: 16px; text-align: right; }
+  .stat em { grid-column: 1 / -1; font-style: normal; font-size: 11px; color: var(--muted); }
+  .readme { max-width: 860px; padding: 4px 2px 64px; }
+  .readme h1 { font-size: 26px; line-height: 1.25; margin: 0 0 12px; }
+  .readme h2 { font-size: 18px; margin: 32px 0 10px; padding-top: 8px; border-top: 1px solid var(--border); }
+  .readme h3 { font-size: 15px; margin: 22px 0 8px; }
+  .readme h4 { font-size: 13px; margin: 16px 0 6px; color: var(--muted); }
+  .readme p, .readme li { font-size: 14px; line-height: 1.6; }
+  .readme p { margin: 0 0 12px; }
+  .readme ul, .readme ol { margin: 0 0 12px; padding-left: 22px; }
+  .readme li { margin: 4px 0; }
+  .readme a { color: var(--accent); }
+  .readme code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12px; background: var(--bg); border: 1px solid var(--border); border-radius: 4px; padding: 1px 5px; }
+  .readme pre { background: var(--bg); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; overflow-x: auto; margin: 0 0 14px; }
+  .readme pre code { background: none; border: 0; padding: 0; font-size: 12px; line-height: 1.5; }
+  .readme table { width: 100%; border-collapse: collapse; margin: 0 0 14px; font-size: 13px; }
+  .readme th, .readme td { text-align: left; padding: 7px 8px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  .readme th { color: var(--muted); font-size: 11px; letter-spacing: 0.04em; text-transform: uppercase; }
+  .readme hr { border: 0; border-top: 1px solid var(--border); margin: 24px 0; }
+</style>
+</head>
+<body>
+<div class="shell">
+  <header class="page-head">
+    <div class="page-title">
+      <h1>__PAGE_TITLE__</h1>
+      <div class="meta"><span id="dataAsOf">__DATA_AS_OF__</span>Updated __GENERATED_AT__ &middot; listings from Cirrus, ASO, GlobalAir, AircraftDealer, and Barnstormers</div>
+    </div>
+    <div class="update" id="updateBox" hidden>
+      <span class="update-status" id="updateStatus" role="status"></span>
+      <button class="btn-primary btn-update" id="updateBtn" title="Scrape every search again, even if the saved data is still fresh">UPDATE</button>
+    </div>
+  </header>
+
+  <nav class="tabs" id="tabButtons" aria-label="Searches"></nav>
+  <div id="tabPanels"></div>
+</div>
+
+<script>
+const TABS = __TABS_JSON__;
+const SEARCH_API = __SEARCH_API__;
+const DEFAULT_ZIP = __DEFAULT_ZIP__;
+const NOW_MS = __NOW_MS__;
+const FRESH_DAYS = __FRESH_DAYS__;
+
+const DEAL_RANK = { fair: 1, good: 2, great: 3 };
+
+// Same column order as the car tabs. `mileage` holds total time and `vin` holds the N-number,
+// so this tab can be dropped into the car report later. UNITS is the only wording swap.
+const UNITS = {
+  usageLabel: 'Hours',
+  usageSuffix: 'hr',
+  usageAxis: 'Total time (hr)',
+  usagePer: 100,
+  usagePerLabel: 'Each 100 hours',
+  zoomStep: 50,
+  idLabel: 'N-number',
+  noun: 'airplane',
+  outlookPerYear: 100,
+};
+const COLS = [
+  { key: 'score', label: 'Match', live: true },
+  { key: 'year', label: 'Year' },
+  { key: 'title', label: 'Title' },
+  { key: 'price', label: 'Price', r: true, tip: 'Asking price. When the same airplane is listed on more than one site, this is the lowest price.' },
+  { key: 'expected', label: 'Market value', r: true, tip: 'What this airplane should ask, from same-year listings adjusted for total time and specs' },
+  { key: 'vs_market', label: 'Vs market', r: true },
+  { key: 'bat_value', label: 'BaT value', r: true, tip: 'No sold-auction overlay for this search' },
+  { key: 'pct_msrp', label: 'MSRP (stated)', r: true },
+  { key: 'mileage', label: 'Hours', r: true, tip: 'Total time (TTAF), in hours. Nothing is converted from mileage.' },
+  { key: 'color', label: 'Color' },
+  { key: 'posted_date', label: 'Posted' },
+  { key: 'city', label: 'Location' },
+  { key: 'dealer', label: 'Dealer' },
+  { key: 'site_code', label: 'Source' },
+  { key: 'vin', label: 'N-number' },
+  { key: null, label: 'Link' },
+];
+
+// ---------- helpers ----------
+function fmtPrice(p) { return p == null ? 'N/A' : '$' + p.toLocaleString(); }
+function sourceLabel(s) {
+  let label = s.site || 'listing';
+  if (s.price != null) label += ' ' + fmtPrice(s.price);
+  if (s.price_with_fees != null && s.price_with_fees !== s.price) label += ' (' + fmtPrice(s.price_with_fees) + ' w/ fees)';
+  return label;
+}
+function priceCell(d) {
+  let html = `<b>${fmtPrice(d.price)}</b>`;
+  const sources = d.sources || [];
+  if (sources.length > 1) {
+    const nums = sources.map(s => s.price).filter(v => v != null);
+    if (new Set(nums).size > 1) html += `<small>${sources.length} sites</small>`;
+  } else {
+    const fees = sources.map(s => s.price_with_fees).filter(v => v != null && v !== d.price);
+    if (fees.length) html += `<small>${fmtPrice(fees[0])} with fees</small>`;
+  }
+  return html;
+}
+function extraNote(d) {
+  if ((d.sources || []).length > 1 || !d.extra_sites) return '';
+  return ` <span class="muted" title="Also listed on other sites">${escapeHtml(d.extra_sites)}</span>`;
+}
+function sourceCell(d) {
+  const sources = d.sources || [];
+  if (sources.length > 1) {
+    return sources.map(s => {
+      const link = safeUrl(s.link);
+      const label = escapeHtml(sourceLabel(s));
+      return link ? `<a class="view-link" href="${escapeHtml(link)}" target="_blank" rel="noopener">${label}</a>` : label;
+    }).join(' ');
+  }
+  return escapeHtml(d.site_code) + extraNote(d);
+}
+function fmtMiles(m) { return m == null ? 'N/A' : m.toLocaleString() + ' ' + UNITS.usageSuffix; }
+function escapeHtml(s) {
+  if (s == null) return '';
+  return String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+}
+function safeUrl(u) { return /^https?:\/\//i.test(u || '') ? u : ''; }
+function dealBadge(rating) {
+  return DEAL_RANK[rating] ? `<span class="badge ${rating}">${rating}</span>` : '';
+}
+function debounce(fn, ms) {
+  let t;
+  return (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); };
+}
+function numOrNull(v) {
+  if (v == null) return null;
+  const s = String(v).replace(/[$,\s]/g, '');
+  if (s === '') return null;
+  const n = Number(s);
+  return Number.isFinite(n) ? n : null;
+}
+function colorForYear(i, n) {
+  const hue = n <= 1 ? 200 : Math.round(220 - (i / (n - 1)) * 220);
+  return `hsl(${hue}, 70%, 60%)`;
+}
+
+// ---------- fuzzy matching ----------
+function wordsOf(s) { return (s || '').toLowerCase().match(/[a-z0-9]+/g) || []; }
+
+function editDistance(a, b, max) {
+  if (Math.abs(a.length - b.length) > max) return max + 1;
+  let prev = Array.from({ length: b.length + 1 }, (_, i) => i);
+  for (let i = 1; i <= a.length; i++) {
+    const cur = [i];
+    let rowMin = i;
+    for (let j = 1; j <= b.length; j++) {
+      const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+      const v = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + cost);
+      cur.push(v);
+      if (v < rowMin) rowMin = v;
+    }
+    if (rowMin > max) return max + 1;
+    prev = cur;
+  }
+  return prev[b.length];
+}
+
+// 0 = no match, 1 = typo-tolerant, 2 = substring, 3 = whole word
+function matchStrength(text, words, token) {
+  if (!token) return 0;
+  if (words.includes(token)) return 3;
+  if (text.includes(token)) return 2;
+  if (token.length >= 5) {
+    for (const w of words) if (editDistance(w, token, 1) <= 1) return 1;
+  }
+  return 0;
+}
+
+// Listing cards carry no color field, so infer exterior color from title/description text.
+const COLOR_WORDS = [
+  ['Black', /\b(black|nero|noir|obsidian|onyx|ebony|schwarz)\b/],
+  ['White', /\b(white|bianco|blanc|polar|diamond white|glacier)\b/],
+  ['Gray', /\b(gr[ae]y|grigio|graphite|gunmetal|selenite|magno|chalk|crayon|nardo|charcoal|slate|tungsten)\b/],
+  ['Silver', /\b(silver|argento|iridium|platinum silver)\b/],
+  ['Red', /\b(red|rosso|rouge|burgundy|maroon|crimson|tango)\b/],
+  ['Blue', /\b(blue|blu|azzurro|navy|cobalt|sepang|ascari|kyanite)\b/],
+  ['Green', /\b(green|verde|olive|emerald|british racing|sage)\b/],
+  ['Yellow', /\b(yellow|giallo|amarillo)\b/],
+  ['Orange', /\b(orange|arancio|arancione)\b/],
+  ['Brown/Tan', /\b(brown|bronze|beige|tan|marrone|copper|desert sand)\b/],
+  ['Gold', /\b(gold|oro|champagne)\b/],
+  ['Purple', /\b(purple|viola|violet)\b/],
+];
+
+function detectColor(row) {
+  const text = ((row.title || '') + ' ' + (row.description || '')).toLowerCase();
+  let best = null, bestAt = Infinity;
+  for (const [name, re] of COLOR_WORDS) {
+    const m = text.match(re);
+    if (m && m.index < bestAt) { best = name; bestAt = m.index; }
+  }
+  return best || 'Unknown';
+}
+
+function prepRow(row) {
+  row.color = detectColor(row);
+  row._specs = detectSpecs(row);
+  row.pct_msrp = row.msrp && row.price != null ? Math.round((row.price / row.msrp - 1) * 1000) / 10 : null;
+  row._title = (row.title || '').toLowerCase();
+  row._titleWords = wordsOf(row.title);
+  row._text = [row.title, row.dealer, row.city, row.description, row.site_code, row.vin || '', row.year].join(' ').toLowerCase();
+  row._words = wordsOf(row._text);
+  return row;
+}
+
+// Multi-word alternatives ("911 turbo") match when every word is present, in any order.
+function altStrength(text, words, alt) {
+  const parts = alt.split(/\s+/).filter(Boolean);
+  if (parts.length <= 1) return matchStrength(text, words, alt);
+  let min = 3;
+  for (const p of parts) {
+    const s = matchStrength(text, words, p);
+    if (!s) return 0;
+    if (s < min) min = s;
+  }
+  return min;
+}
+
+function scoreRow(row, tokens, alts) {
+  if (!tokens.length) return null;
+  let total = 0;
+  for (const t of tokens) {
+    let best = 0;
+    for (const alt of (alts[t] || [t])) {
+      const inTitle = altStrength(row._title, row._titleWords, alt);
+      const inText = altStrength(row._text, row._words, alt) * 0.6;
+      best = Math.max(best, inTitle, inText);
+    }
+    total += best;
+  }
+  return Math.round((total / (3 * tokens.length)) * 100);
+}
+
+// ---------- market model ----------
+// Per-tab hedonic regression: log(price) ~ model year + miles + older-generation flag + spec keywords.
+// Fit by least squares, refit after dropping listings priced far off the line (bad data, salvage, etc.).
+// [name, regex, options]. title: match the title only (trim names also show up in
+// descriptions as "limited warranty", "luxury SUV"...). display: a filter chip only, kept
+// out of the market model. group: chips in one group are alternatives (any of them);
+// different groups and ungrouped chips must all match.
+const SPEC_TERMS = [
+  ['GTS', /\bgts\b/i, { title: true, display: true, group: 'trim' }],
+  ['Turbo', /\bsr22t\b|\bturbo\b/i, { title: true, display: true, group: 'engine' }],
+  ['Arrivee', /\barriv[eé]e\b/i, { title: true, display: true }],
+  ['G3+', /\bg3\s*\+/i, { title: true, display: true, group: 'gen' }],
+  ['G2+', /\bg2\s*\+/i, { title: true, display: true, group: 'gen' }],
+  ['G7+', /\bg7\s*\+/i, { title: true, display: true, group: 'gen' }],
+  ['G7', /\bg7\b/i, { title: true, display: true, group: 'gen' }],
+  ['G6', /\bg6\b/i, { title: true, display: true, group: 'gen' }],
+  ['G5', /\bg5\b/i, { title: true, display: true, group: 'gen' }],
+  ['G3', /\bg3\b/i, { title: true, display: true, group: 'gen' }],
+  ['G2', /\bg2\b/i, { title: true, display: true, group: 'gen' }],
+  ['G1', /\bg1\b/i, { title: true, display: true, group: 'gen' }],
+  ['Carbon Cub', /\bcarbon cub\b/i, { display: true, group: 'line' }],
+  ['FX-3', /\bfx-?\s*3\b/i, { display: true, group: 'line' }],
+  ['FX-2', /\bfx-?\s*2\b/i, { display: true, group: 'line' }],
+  ['EX-3', /\bex-?\s*3\b/i, { display: true, group: 'line' }],
+  ['EX-2', /\bex-?\s*2\b/i, { display: true, group: 'line' }],
+  ['XCub', /\bx-?\s*cub\b/i, { display: true, group: 'line' }],
+  ['NXCub', /\bnx-?\s*cub\b/i, { display: true, group: 'line' }],
+  ['Top Cub', /\btop cub\b/i, { display: true, group: 'line' }],
+  ['Sport Cub', /\bsport cub\b/i, { display: true, group: 'line' }],
+  ['PA-28-181', /\bpa\s*-?\s*28\s*-?\s*181\b/i, { display: true, group: 'line' }],
+  ['PA-28-180', /\bpa\s*-?\s*28\s*-?\s*180(?:\s*[a-g])?\b/i, { display: true, group: 'line' }],
+  ['Archer LX', /\barcher\s+lx\b/i, { display: true, group: 'line' }],
+  ['Archer DX', /\barcher\s+dx\b/i, { display: true, group: 'line' }],
+  ['Archer III', /\barcher\s+iii\b/i, { display: true, group: 'line' }],
+  ['Archer II', /\barcher\s+ii(?!i)\b/i, { display: true, group: 'line' }],
+  ['Archer', /\barcher\b/i, { display: true, group: 'line' }],
+  ['Cherokee 180', /\bcher(?:okee)?\s+180/i, { display: true, group: 'line' }],
+  ['Challenger', /\bchallenger\b/i, { display: true, group: 'line' }],
+  ['Pilot 100i', /\bpilot\s+100i\b/i, { display: true, group: 'line' }],
+  ['FIKI', /\bfiki\b|known icing/i],
+  ['TKS', /\btks\b/i],
+  ['A/C', /\ba\/c\b|air conditioning/i],
+  ['Perspective+', /perspective\s*\+/i],
+  ['Perspective', /\bperspective\b/i],
+  ['Avidyne', /\bavidyne\b/i],
+  ['ADS-B', /ads-?b/i],
+  ['Floats', /\bfloats?\b|\bamphib/i, { display: true, group: 'gear' }],
+  ['Tundra', /\btundra\b|\bbush\s*-?\s*wheels?\b/i, { display: true, group: 'gear' }],
+  ['Skis', /\bskis\b/i, { display: true, group: 'gear' }],
+];
+const MIN_SPEC_COUNT = 4;
+
+const SPEC_GROUP = Object.fromEntries(SPEC_TERMS.map(([name, , o]) => [name, (o && o.group) || name]));
+
+function detectSpecs(row) {
+  const title = (row.title || '').toLowerCase();
+  const text = title + ' ' + (row.description || '').toLowerCase();
+  return SPEC_TERMS.filter(([, re, o]) => re.test(o && o.title ? title : text)).map(([name]) => name);
+}
+
+function solveLinear(A, b) {
+  const n = b.length, M = A.map((r, i) => [...r, b[i]]);
+  for (let c = 0; c < n; c++) {
+    let p = c;
+    for (let r = c + 1; r < n; r++) if (Math.abs(M[r][c]) > Math.abs(M[p][c])) p = r;
+    if (Math.abs(M[p][c]) < 1e-12) return null;
+    [M[c], M[p]] = [M[p], M[c]];
+    for (let r = 0; r < n; r++) {
+      if (r === c) continue;
+      const k = M[r][c] / M[c][c];
+      for (let j = c; j <= n; j++) M[r][j] -= k * M[c][j];
+    }
+  }
+  return M.map((r, i) => r[n] / r[i]);
+}
+
+function ols(X, y) {
+  const p = X[0].length;
+  const XtX = Array.from({ length: p }, (_, i) => Array.from({ length: p }, (_, j) => X.reduce((s, r) => s + r[i] * r[j], 0)));
+  const Xty = Array.from({ length: p }, (_, i) => X.reduce((s, r, k) => s + r[i] * y[k], 0));
+  const beta = solveLinear(XtX, Xty);
+  if (!beta) return null;
+  const inv = Array.from({ length: p }, (_, i) => solveLinear(XtX, Array.from({ length: p }, (_, j) => +(i === j))));
+  if (inv.some(c => !c)) return null;
+  const resid = y.map((v, k) => v - X[k].reduce((s, x, j) => s + x * beta[j], 0));
+  const s2 = resid.reduce((s, r) => s + r * r, 0) / Math.max(1, y.length - p);
+  return { beta, resid, se: beta.map((_, j) => Math.sqrt(s2 * inv[j][j])) };
+}
+
+function quantile(sorted, q) {
+  const i = (sorted.length - 1) * q, lo = Math.floor(i), hi = Math.ceil(i);
+  return sorted[lo] + (sorted[hi] - sorted[lo]) * (i - lo);
+}
+
+const MIN_YEAR_COUNT = 3;
+
+function buildModel(rows) {
+  const priced = rows.filter(r => r.price != null && r.mileage != null && r.year != null);
+  if (priced.length < 15) return null;
+
+  // Only compare within the current generation: a big gap in model years (e.g. 2003 vs 2021+ RS6)
+  // means the older cars are a different car, so they are left out entirely.
+  const allYears = [...new Set(priced.map(r => r.year))].sort((a, b) => a - b);
+  let genCut = null;
+  for (let i = 1; i < allYears.length; i++) if (allYears[i] - allYears[i - 1] >= 5) genCut = allYears[i - 1];
+  const current = priced.filter(r => genCut == null || r.year > genCut);
+
+  // Each model year is its own group, so a car is only valued against same-year listings.
+  const yearCounts = {};
+  current.forEach(r => { yearCounts[r.year] = (yearCounts[r.year] || 0) + 1; });
+  const years = Object.keys(yearCounts).map(Number).filter(y => yearCounts[y] >= MIN_YEAR_COUNT).sort((a, b) => a - b);
+  const thinYears = Object.keys(yearCounts).map(Number).filter(y => yearCounts[y] < MIN_YEAR_COUNT).sort((a, b) => a - b);
+  const data = current.filter(r => years.includes(r.year));
+  if (data.length < 15) return null;
+  const baseYear = years.reduce((a, y) => (yearCounts[y] > yearCounts[a] ? y : a), years[0]);
+
+  const specs = SPEC_TERMS.filter(([, , o]) => !(o && o.display)).map(([name]) => name).filter(name => {
+    const n = data.filter(r => r._specs.includes(name)).length;
+    return n >= MIN_SPEC_COUNT && n <= data.length - MIN_SPEC_COUNT;
+  });
+
+  const terms = [{ key: 'const', f: () => 1 }];
+  years.filter(y => y !== baseYear).forEach(y => terms.push({ key: 'year', year: y, f: r => +(r.year === y) }));
+  terms.push({ key: 'miles', label: UNITS.usagePerLabel, f: r => r.mileage / UNITS.usagePer });
+  specs.forEach(name => terms.push({ key: 'spec', label: name, spec: name, f: r => +r._specs.includes(name) }));
+
+  const design = r => terms.map(t => t.f(r));
+  const logFit = (r, beta) => design(r).reduce((s, x, j) => s + x * beta[j], 0);
+  let fitRows = data, fit = null, outliers = new Set();
+  for (let pass = 0; pass < 3; pass++) {
+    if (fitRows.length < terms.length + 8) return null;
+    fit = ols(fitRows.map(design), fitRows.map(r => Math.log(r.price)));
+    if (!fit) return null;
+    const absRes = fit.resid.map(Math.abs).sort((a, b) => a - b);
+    const cutoff = Math.max(3 * 1.4826 * quantile(absRes, 0.5), 0.2);
+    const next = new Set(data.filter(r => Math.abs(Math.log(r.price) - logFit(r, fit.beta)) > cutoff));
+    if (next.size === outliers.size && [...next].every(r => outliers.has(r))) break;
+    outliers = next;
+    fitRows = data.filter(r => !outliers.has(r));
+  }
+
+  const y = fitRows.map(r => Math.log(r.price));
+  const yBar = y.reduce((s, v) => s + v, 0) / y.length;
+  const ssTot = y.reduce((s, v) => s + (v - yBar) ** 2, 0);
+  const ssRes = fit.resid.reduce((s, v) => s + v * v, 0);
+  const res = [...fit.resid].sort((a, b) => a - b);
+  const sortedBy = (list, f) => list.map(f).sort((a, b) => a - b);
+
+  const byYear = years.map(yr => {
+    const list = fitRows.filter(r => r.year === yr);
+    const prices = sortedBy(list, r => r.price), miles = sortedBy(list, r => r.mileage);
+    return {
+      year: yr, n: list.length,
+      medPrice: quantile(prices, 0.5), lo: quantile(prices, 0.1), hi: quantile(prices, 0.9),
+      medMiles: quantile(miles, 0.5),
+    };
+  });
+
+  return {
+    terms, beta: fit.beta, se: fit.se, genCut, specs, years, thinYears, yearCounts, outliers, byYear,
+    n: fitRows.length, r2: ssTot ? 1 - ssRes / ssTot : 0,
+    typicalPrice: quantile(sortedBy(fitRows, r => r.price), 0.5),
+    medianMiles: quantile(sortedBy(fitRows, r => r.mileage), 0.5),
+    resLo: quantile(res, 0.1), resHi: quantile(res, 0.9),
+    spread: quantile(res.map(Math.abs).sort((a, b) => a - b), 0.5),
+    covers: r => r.year != null && years.includes(r.year),
+    predict: r => Math.exp(logFit(r, fit.beta)),
+  };
+}
+
+function applyModel(tab) {
+  const m = tab._model = buildModel(tab.rows);
+  tab.rows.forEach(r => {
+    r.expected = null; r.vs_market = null; r._outlier = false; r._skip = '';
+    if (!m || r.year == null || r.mileage == null) return;
+    if (m.genCut != null && r.year <= m.genCut) { r._skip = 'older generation'; return; }
+    if (!m.covers(r)) { r._skip = 'too few comps'; return; }
+    r.expected = Math.round(m.predict(r) / 100) * 100;
+    if (r.price != null) {
+      r.vs_market = Math.round((r.price / r.expected - 1) * 1000) / 10;
+      r._outlier = m.outliers.has(r);
+    }
+  });
+}
+
+function fmtPct(v, digits = 0) {
+  const mag = Math.abs(v).toFixed(digits);
+  if (Number(mag) === 0) return (0).toFixed(digits) + '%';
+  return (v > 0 ? '+' : '−') + mag + '%';
+}
+function fmtDollarDelta(v) {
+  return (v > 0 ? '+' : v < 0 ? '−' : '') + '$' + Math.abs(Math.round(v / 100) * 100).toLocaleString();
+}
+
+function vsMarketCell(d) {
+  if (d._skip) return `<span class="muted" title="Not compared: ${d._skip === 'older generation' ? 'different generation from the rest of this search' : 'fewer than ' + MIN_YEAR_COUNT + ' same-year listings'}">${d._skip}</span>`;
+  if (d.vs_market == null) return '<span class="muted">–</span>';
+  const cls = d.vs_market <= -5 ? 'below' : d.vs_market >= 5 ? 'above' : 'muted';
+  return `<span class="${cls}">${fmtPct(d.vs_market)}</span>${d._outlier ? ' <span class="badge outlier" title="Too far from the model to trust; left out of the fit">check</span>' : ''}`;
+}
+
+// MSRP only appears when the listing itself states it (CarGurus page data or the description).
+function msrpCell(d) {
+  if (!d.msrp) return '<span class="muted">–</span>';
+  const src = d.msrp_source === 'cargurus' ? 'Dealer-reported MSRP on CarGurus' : 'MSRP quoted in the listing description';
+  const pct = d.pct_msrp != null ? ` <span class="${d.pct_msrp < 0 ? 'below' : 'muted'}">${fmtPct(d.pct_msrp)}</span>` : '';
+  return `<span title="${src}">${fmtPrice(d.msrp)}</span>${pct}`;
+}
+
+function msrpSummary(rows) {
+  const pcts = rows.filter(r => r.pct_msrp != null).map(r => r.pct_msrp).sort((a, b) => a - b);
+  return pcts.length ? { n: pcts.length, med: quantile(pcts, 0.5) } : null;
+}
+
+function renderAnalysis(tab) {
+  const box = tab._panel.querySelector('[data-role=analysis]');
+  if (!box) return;
+  const m = tab._model;
+  if (!m) {
+    box.innerHTML = `<h2>Market analysis</h2><p class="muted">Not enough listings with price, year and total time to model this market${tab.live ? ' yet' : ''}.</p>`;
+    return;
+  }
+
+  const effectRows = m.terms.map((t, j) => ({ t, b: m.beta[j], se: m.se[j] })).filter(e => e.t.key === 'miles' || e.t.key === 'spec').map(({ t, b, se }) => {
+    const pct = (Math.exp(b) - 1) * 100;
+    const solid = Math.abs(b) > 2 * se;
+    return `<tr>
+      <td>${escapeHtml(t.label)}</td>
+      <td class="${pct < 0 ? 'neg' : 'pos'}">${fmtPct(pct, 1)}</td>
+      <td>${fmtDollarDelta(m.typicalPrice * pct / 100)}</td>
+      <td>${solid ? '<span class="sure">clear</span>' : '<span class="muted">weak / unclear</span>'}</td>
+    </tr>`;
+  }).join('');
+
+  const yearRows = m.byYear.map(b => {
+    const exp = m.predict({ year: b.year, mileage: b.medMiles, _specs: [] });
+    return `<tr>
+      <td>${b.year}</td><td>${b.n}</td><td>${fmtPrice(Math.round(b.medPrice / 100) * 100)}</td>
+      <td>${fmtPrice(Math.round(b.lo / 500) * 500)} – ${fmtPrice(Math.round(b.hi / 500) * 500)}</td>
+      <td>${fmtMiles(Math.round(b.medMiles / 100) * 100)}</td>
+      <td>${fmtPrice(Math.round(exp / 500) * 500)}</td>
+      <td>${(ms => ms ? `${fmtPct(ms.med)} <span class="muted">(${ms.n})</span>` : '<span class="muted">–</span>')(msrpSummary(tab.rows.filter(r => r.year === b.year && !r._outlier)))}</td>
+    </tr>`;
+  }).join('');
+
+  const left = [];
+  if (m.genCut != null) left.push(`${tab.rows.filter(r => r.year != null && r.year <= m.genCut).length} older-generation airplanes (${m.genCut} and earlier)`);
+  if (m.thinYears.length) left.push(`${m.thinYears.map(y => `${y} (${m.yearCounts[y]})`).join(', ')}: too few same-year listings`);
+  if (m.outliers.size) left.push(`${m.outliers.size} priced far off their year's market, flagged <span class="badge outlier">check</span>`);
+
+  const fitWord = m.r2 >= 0.7 ? 'explain most of' : m.r2 >= 0.4 ? 'explain a fair share of' : 'explain only a small part of';
+  const yearOpts = m.years.map(y => `<option${y === m.years[m.years.length - 1] ? ' selected' : ''}>${y}</option>`).join('');
+  const specBoxes = m.specs.map(s => `<label class="check"><input type="checkbox" data-calc-spec="${escapeHtml(s)}"> ${escapeHtml(s)}</label>`).join('');
+
+  box.innerHTML = `
+    <h2>Market analysis</h2>
+    <p class="lede">Each airplane is compared only with <b>same-model-year</b> listings, adjusted for total time${m.specs.length ? ' and the specs below' : ''}. Built from <b>${m.n}</b> listings across ${m.years.join(', ')}.
+      Year, total time${m.specs.length ? ' and specs' : ''} ${fitWord} the price differences (R² ${m.r2.toFixed(2)}); half of listings sit within <b>±${Math.round((Math.exp(m.spread) - 1) * 100)}%</b> of their expected price. The rest is options, condition, avionics and dealer pricing the listings don't show.</p>
+    <p class="footnote">MSRP is shown only where the listing states it (${tab.rows.filter(r => r.msrp).length} of ${tab.rows.length} listings here). Nothing is estimated.</p>
+    ${left.length ? `<p class="footnote">Left out of the comparison: ${left.join('; ')}.</p>` : ''}
+    <div class="analysis-grid">
+      <div>
+        <h3>By model year</h3>
+        <table class="effects">
+          <thead><tr><th class="no-sort">Year</th><th class="no-sort">Listings</th><th class="no-sort">Median ask</th><th class="no-sort">Middle 80%</th><th class="no-sort">Median hours</th><th class="no-sort">Expected at median hours</th><th class="no-sort" title="Median asking price vs the MSRP stated on the listing; count in brackets">Ask vs MSRP</th></tr></thead>
+          <tbody>${yearRows}</tbody>
+        </table>
+        <h3>What moves the price within a year</h3>
+        <table class="effects">
+          <thead><tr><th class="no-sort">Factor</th><th class="no-sort">Effect</th><th class="no-sort">On a ${fmtPrice(Math.round(m.typicalPrice / 1000) * 1000)} airplane</th><th class="no-sort">Signal</th></tr></thead>
+          <tbody>${effectRows}</tbody>
+        </table>
+      </div>
+      <div class="calc">
+        <h3>What to expect</h3>
+        <div class="filter-grid">
+          <label>Year<select data-calc="year">${yearOpts}</select></label>
+          <label>Hours<input data-calc="miles" inputmode="numeric"></label>
+          <label>Hours / year after<input data-calc="perYear" inputmode="numeric" value="100"></label>
+        </div>
+        ${specBoxes ? `<div class="checks">${specBoxes}</div>` : ''}
+        <div class="calc-out" data-role="calcOut"></div>
+      </div>
+    </div>
+    <p class="footnote">How this works: a regression of log price on model year (as separate groups), total time${m.specs.length ? ' and spec keywords found in titles/descriptions' : ''}, re-fit after setting aside listings priced far from their year's market. "Vs market" is each airplane's asking price against what the model expects for its year, total time and specs. Each N-number is one airplane; when several sites list it, the price used here is the lowest ask.</p>`;
+
+  // Miles follow the chosen year's typical mileage until the user types their own.
+  const yearSel = box.querySelector('[data-calc=year]'), milesIn = box.querySelector('[data-calc=miles]');
+  const syncMiles = () => {
+    if (milesIn.dataset.touched) return;
+    const b = m.byYear.find(b => b.year === Number(yearSel.value));
+    milesIn.value = Math.round((b ? b.medMiles : m.medianMiles) / 10) * 10;
+  };
+  milesIn.addEventListener('input', () => { milesIn.dataset.touched = '1'; });
+  yearSel.addEventListener('change', syncMiles);
+  syncMiles();
+
+  const update = () => updateCalc(tab);
+  box.querySelectorAll('[data-calc], [data-calc-spec]').forEach(el => {
+    el.addEventListener('input', update);
+    el.addEventListener('change', update);
+  });
+  update();
+}
+
+function updateCalc(tab) {
+  const m = tab._model, box = tab._panel.querySelector('[data-role=analysis]');
+  const year = Number(box.querySelector('[data-calc=year]').value);
+  const miles = numOrNull(box.querySelector('[data-calc=miles]').value) ?? m.medianMiles;
+  const perYear = numOrNull(box.querySelector('[data-calc=perYear]').value) ?? 0;
+  const specs = [...box.querySelectorAll('[data-calc-spec]:checked')].map(el => el.dataset.calcSpec);
+  const car = { year, mileage: miles, _specs: specs };
+
+  const mid = m.predict(car);
+  const lo = mid * Math.exp(m.resLo), hi = mid * Math.exp(m.resHi);
+  const round = v => fmtPrice(Math.round(v / 500) * 500);
+
+  // Next year this car is a year older: use today's price gap between this model year and the one before it.
+  let outlook;
+  if (m.years.includes(year - 1)) {
+    const later = m.predict({ year: year - 1, mileage: miles + perYear, _specs: specs });
+    outlook = `<div class="stat"><span>In 12 months (+${perYear.toLocaleString()} hr)</span><b>${round(later)}</b><em>${fmtPct((later / mid - 1) * 100, 1)} · rough, based on today's gap between ${year} and ${year - 1} airplanes</em></div>`;
+  } else {
+    outlook = `<div class="stat"><span>In 12 months</span><b class="muted">–</b><em>No ${year - 1} listings to compare with, so no projection.</em></div>`;
+  }
+
+  box.querySelector('[data-role=calcOut]').innerHTML = `
+    <div class="stat"><span>Expected asking price</span><b>${round(mid)}</b></div>
+    <div class="stat"><span>Typical range (middle 80%)</span><b>${round(lo)} – ${round(hi)}</b></div>
+    <div class="stat"><span>Strong buy below</span><b class="pos">${round(lo)}</b><em>cheaper than 9 in 10 comparable listings</em></div>
+    ${outlook}`;
+}
+
+// ---------- tab state / filtering ----------
+function newState(live) {
+  return {
+    showBat: false,
+    area: null,
+    bat: { days: 730, text: '', country: '', stock: true, matchSearch: true, adjust: false },
+    sortKey: live ? 'score' : 'price',
+    sortDir: live ? -1 : 1,
+    filters: { yearMin: null, yearMax: null, priceMin: null, priceMax: null, milesMin: null, milesMax: null, deal: '', color: '', vs: '', text: '', specs: [], sr20: false },
+  };
+}
+
+function sortVal(row, key) {
+  if (key === 'deal_rating') return DEAL_RANK[row.deal_rating] || null;
+  const v = row[key];
+  return v === '' ? null : v;
+}
+
+// ---------- BaT sold overlay ----------
+const MODIFIED_RE = /\b(modified|tuned|renntech|weistec|capristo|brabus|mansory|novitec|stage [123]|aftermarket (turbo|supercharger|exhaust|tune)|built engine|widebody)\b/i;
+const DAY_MS = 86400000;
+
+function prepBatRow(row) {
+  row._title = (row.title || '').toLowerCase();
+  row._titleWords = wordsOf(row.title);
+  row._full = (row._title + ' ' + (row.description || '')).toLowerCase();
+  row._fullWords = wordsOf(row._full);
+  row._modified = MODIFIED_RE.test(row._full);
+  row._soldMs = Date.parse(row.posted_date) || null;
+  return row;
+}
+
+// Short tokens like the "s" in "e63 s" must be whole words, or they match nearly every title.
+function hasToken(text, words, t) {
+  return t.length <= 2 ? words.includes(t) : matchStrength(text, words, t) > 0;
+}
+
+// The overlay honours the tab's year/price/mileage ranges so it compares like with like,
+// plus its own sale-window, title, location and stock-only filters.
+function visibleBatRows(tab) {
+  const f = tab._state.filters, b = tab._state.bat;
+  const within = (v, lo, hi) => v != null && (lo == null || v >= lo) && (hi == null || v <= hi);
+  const tokens = b.text ? b.text.toLowerCase().split(/\s+/).filter(Boolean) : [];
+  const include = tokens.filter(t => !t.startsWith('-'));
+  const exclude = tokens.filter(t => t.startsWith('-') && t.length > 1).map(t => t.slice(1));
+  const cutoff = b.days ? NOW_MS - b.days * DAY_MS : null;
+  const sr = tab._range;
+  return (tab.bat || []).filter(r =>
+    r.price != null && r.mileage != null &&
+    (!b.matchSearch || !sr || (within(r.year, sr.yMin, sr.yMax) && (sr.mMax == null || r.mileage <= sr.mMax))) &&
+    ((f.yearMin == null && f.yearMax == null) || within(r.year, f.yearMin, f.yearMax)) &&
+    ((f.priceMin == null && f.priceMax == null) || within(r.price, f.priceMin, f.priceMax)) &&
+    ((f.milesMin == null && f.milesMax == null) || within(r.mileage, f.milesMin, f.milesMax)) &&
+    inArea(tab, r) &&
+    (cutoff == null || (r._soldMs != null && r._soldMs >= cutoff)) &&
+    (!b.country || r.city === b.country) &&
+    (!b.stock || !r._modified) &&
+    include.every(t => hasToken(r._title, r._titleWords, t)) &&
+    !exclude.some(t => hasToken(r._full, r._fullWords, t)));
+}
+
+function median(nums) {
+  const a = nums.filter(n => n != null).sort((x, y) => x - y);
+  if (!a.length) return null;
+  const m = Math.floor(a.length / 2);
+  return a.length % 2 ? a[m] : Math.round((a[m - 1] + a[m]) / 2);
+}
+
+// Year range and top mileage of the AutoTempest results, so BaT comparables default to the same cars.
+function searchRange(rows) {
+  const years = rows.map(r => r.year).filter(y => y != null);
+  const miles = rows.map(r => r.mileage).filter(m => m != null);
+  if (!years.length) return null;
+  return { yMin: Math.min(...years), yMax: Math.max(...years), mMax: miles.length ? Math.max(...miles) : null };
+}
+
+function solve3(A, b) {
+  const M = A.map((row, i) => [...row, b[i]]);
+  for (let c = 0; c < 3; c++) {
+    let piv = c;
+    for (let r = c + 1; r < 3; r++) if (Math.abs(M[r][c]) > Math.abs(M[piv][c])) piv = r;
+    [M[c], M[piv]] = [M[piv], M[c]];
+    if (Math.abs(M[c][c]) < 1e-12) return null;
+    for (let r = 0; r < 3; r++) {
+      if (r === c) continue;
+      const f = M[r][c] / M[c][c];
+      for (let k = c; k < 4; k++) M[r][k] -= f * M[c][k];
+    }
+  }
+  return M.map((row, i) => row[3] / row[i]);
+}
+
+// Like-for-like BaT market level over time. Fit log(price) on mileage and model year across
+// the tab's stock BaT sales; whatever is left over, averaged around each sale date, is how
+// hot or cold the market was then. Comparing that with the last 12 months gives (a) the
+// recent trend and (b) a factor that restates an older sale in today's market.
+function computeMarketIndex(tab) {
+  const pts = (tab.bat || []).filter(r => !r._modified && r.price && r.mileage != null && r.year != null && r._soldMs);
+  tab._market = null;
+  if (pts.length < 12) return;
+  const yBar = pts.reduce((a, r) => a + r.year, 0) / pts.length;
+  const X = pts.map(r => [1, r.mileage / 1e4, r.year - yBar]);
+  const y = pts.map(r => Math.log(r.price));
+  const A = [0, 1, 2].map(i => [0, 1, 2].map(j => X.reduce((a, x) => a + x[i] * x[j], 0)));
+  const bv = [0, 1, 2].map(i => X.reduce((a, x, n) => a + x[i] * y[n], 0));
+  const beta = solve3(A, bv);
+  if (!beta) return;
+  pts.forEach((r, n) => { r._resid = y[n] - (beta[0] + beta[1] * X[n][1] + beta[2] * X[n][2]); });
+
+  const meanResid = (lo, hi) => {
+    const sel = pts.filter(r => r._soldMs >= lo && r._soldMs < hi);
+    return sel.length ? { v: sel.reduce((a, r) => a + r._resid, 0) / sel.length, n: sel.length } : { v: null, n: 0 };
+  };
+  const recent = meanResid(NOW_MS - 365 * DAY_MS, NOW_MS + DAY_MS);
+  const prior = meanResid(NOW_MS - 730 * DAY_MS, NOW_MS - 365 * DAY_MS);
+  if (recent.n < 3) return;
+
+  (tab.bat || []).forEach(r => {
+    r._adj = null;
+    if (!r._soldMs || r._soldMs >= NOW_MS - 365 * DAY_MS) { r._adj = 1; return; }
+    for (const half of [183, 365]) {
+      const local = meanResid(r._soldMs - half * DAY_MS, r._soldMs + half * DAY_MS);
+      if (local.n >= 5) { r._adj = Math.exp(recent.v - local.v); return; }
+    }
+  });
+  const level = recent.v;
+  tab._market = {
+    n: pts.length,
+    trend: prior.n >= 3 ? Math.exp(recent.v - prior.v) - 1 : null,
+    milesPct: Math.exp(beta[1]) - 1,
+    yMin: Math.min(...pts.map(r => r.year)), yMax: Math.max(...pts.map(r => r.year)),
+    mMax: Math.max(...pts.map(r => r.mileage)),
+    predict: r => Math.exp(beta[0] + beta[1] * r.mileage / 1e4 + beta[2] * (r.year - yBar) + level),
+  };
+}
+
+// Recent sales draw solid, older ones fade, so stale comps don't read as today's market.
+function batAlpha(ageDays) {
+  return Math.max(0.25, Math.min(1, 1 - (ageDays - 180) / 900));
+}
+
+function pct(v) { return fmtPct(v * 100); }
+
+// BaT sales as chart points, restated in today's market when that toggle is on.
+function batPoints(tab) {
+  const adjust = tab._state.bat.adjust && tab._market;
+  return visibleBatRows(tab).map(d => {
+    const now = adjust && d._adj ? Math.round(d.price * d._adj) : d.price;
+    const restated = now !== d.price ? ` · ≈ ${fmtPrice(now)} in today's market` : '';
+    return {
+      x: d.mileage, y: now, title: d.title, link: d.link, date: d.posted_date,
+      age: d._soldMs ? (NOW_MS - d._soldMs) / DAY_MS : 9999,
+      dealer: `sold ${fmtPrice(d.price)} on ${d.posted_date} (BaT)${restated}`,
+    };
+  });
+}
+
+// Likely BaT sale today for a listing's year and mileage, from the like-for-like BaT fit.
+// Only inside the model years and mileage the BaT sales actually cover.
+function applyBatValues(tab) {
+  const m = tab._market;
+  tab.rows.forEach(r => {
+    r.bat_value = null; r.vs_bat = null;
+    if (!m || r.year == null || r.mileage == null) return;
+    if (r.year < m.yMin || r.year > m.yMax || r.mileage > m.mMax * 1.1) return;
+    r.bat_value = Math.round(m.predict(r) / 500) * 500;
+    if (r.price != null) r.vs_bat = r.price / r.bat_value - 1;
+  });
+}
+
+function batValueCell(d) {
+  if (d.bat_value == null) return '<span class="muted">–</span>';
+  const gap = d.vs_bat != null ? `<small>ask ${pct(d.vs_bat)}</small>` : '';
+  return `${fmtPrice(d.bat_value)}${gap}`;
+}
+
+function kpi(label, value, note, cls = '') {
+  return `<div class="kpi ${cls}"><span>${label}</span><b>${value}</b>${note ? `<em>${note}</em>` : ''}</div>`;
+}
+
+function renderKpis(tab) {
+  const el = tab._panel.querySelector('[data-role=kpis]');
+  const rows = visibleRows(tab).filter(r => r.price != null);
+  if (!rows.length) { el.innerHTML = ''; return; }
+  const cards = [];
+  const askMed = median(rows.map(r => r.price)), milesMed = median(rows.map(r => r.mileage));
+  const years = rows.map(r => r.year).filter(Boolean);
+  cards.push(kpi('For sale', rows.length.toLocaleString(), `median ask ${fmtPrice(askMed)}`));
+  cards.push(kpi('Median hours', milesMed != null ? fmtMiles(milesMed) : '–', years.length ? `model years ${Math.min(...years)}–${Math.max(...years)}` : ''));
+
+  const best = rows.filter(r => r.vs_market != null && !r._outlier).sort((a, b) => a.vs_market - b.vs_market)[0];
+  if (best) {
+    const link = safeUrl(best.link);
+    const note = `${best.year ?? ''} · ${fmtPrice(best.price)} · ${fmtMiles(best.mileage)}`;
+    cards.push(kpi('Best vs market', `<span class="${best.vs_market < 0 ? 'below' : ''}">${fmtPct(best.vs_market)}</span>`,
+      link ? `<a href="${escapeHtml(link)}" target="_blank" rel="noopener" title="${escapeHtml(best.title)}">${escapeHtml(note)} &#8599;</a>` : escapeHtml(note)));
+  }
+
+  if (tab.bat && tab.bat.length) {
+    const pts = batPoints(tab);
+    const days = tab._state.bat.days;
+    const window = days ? (days % 365 === 0 ? `${days / 365 * 12} mo` : `${Math.round(days / 30)} mo`) : 'all time';
+    if (pts.length) {
+      const soldMed = median(pts.map(d => d.y)), soldMiles = median(pts.map(d => d.x));
+      cards.push(kpi(`BaT sold · ${window}`, pts.length.toLocaleString(), `median ${fmtPrice(soldMed)} at ${fmtMiles(soldMiles)}`, 'bat'));
+      cards.push(pts.length >= 3
+        ? kpi('Asking vs sold', pct(askMed / soldMed - 1), 'median ask vs median BaT sale', 'bat')
+        : kpi('Asking vs sold', '–', `only ${pts.length} BaT sale; too few to compare`, 'bat'));
+    } else {
+      cards.push(kpi(`BaT sold · ${window}`, '0', 'no matching sales; widen the BaT filters', 'bat'));
+    }
+    const m = tab._market;
+    cards.push(kpi('BaT market · 12 mo', m && m.trend != null ? pct(m.trend) : '–',
+      m && m.trend != null ? 'same hours and year, vs prior 12 mo' : 'too few recent sales', 'bat'));
+  }
+  el.innerHTML = cards.join('');
+}
+
+function visibleRows(tab) {
+  const f = tab._state.filters;
+  const textTokens = f.text ? f.text.toLowerCase().split(/\s+/).filter(Boolean) : [];
+  const dealMin = f.deal ? DEAL_RANK[f.deal] : 0;
+  const within = (v, lo, hi) => v != null && (lo == null || v >= lo) && (hi == null || v <= hi);
+
+  const rows = tab.rows.filter(r => {
+    if ((f.yearMin != null || f.yearMax != null) && !within(r.year, f.yearMin, f.yearMax)) return false;
+    if ((f.priceMin != null || f.priceMax != null) && !within(r.price, f.priceMin, f.priceMax)) return false;
+    if ((f.milesMin != null || f.milesMax != null) && !within(r.mileage, f.milesMin, f.milesMax)) return false;
+    if (dealMin && (DEAL_RANK[r.deal_rating] || 0) < dealMin) return false;
+    if (f.color && r.color !== f.color) return false;
+    if (f.specs.length) {
+      const groups = {};
+      f.specs.forEach(n => { (groups[SPEC_GROUP[n]] = groups[SPEC_GROUP[n]] || []).push(n); });
+      if (!Object.values(groups).every(any => any.some(n => r._specs.includes(n)))) return false;
+    }
+    if (f.vs) {
+      if (r.vs_market == null || r._outlier) return false;
+      if (f.vs === 'below' && r.vs_market > -5) return false;
+      if (f.vs === 'below10' && r.vs_market > -10) return false;
+      if (f.vs === 'above' && r.vs_market < 5) return false;
+    }
+    for (const t of textTokens) if (!matchStrength(r._text, r._words, t)) return false;
+    if (!inArea(tab, r)) return false;
+    return true;
+  });
+
+  const { sortKey, sortDir } = tab._state;
+  rows.sort((a, b) => {
+    const av = sortVal(a, sortKey), bv = sortVal(b, sortKey);
+    if (av == null && bv == null) return 0;
+    if (av == null) return 1;
+    if (bv == null) return -1;
+    if (typeof av === 'string') return av.localeCompare(bv) * sortDir;
+    return (av - bv) * sortDir;
+  });
+  return rows;
+}
+
+// ---------- rendering ----------
+function panelHTML(tab) {
+  if (tab.kind === 'readme') {
+    return '<article class="readme" data-role="readme"></article>';
+  }
+  const searchBar = tab.live ? `
+    <div class="panel">
+      <div class="search-row">
+        <input class="search-input" data-role="q" type="text" autocomplete="off"
+               placeholder='Try "930 porsche white", "g wagon black 2024" or "997 gt3 silver"'>
+        <input class="zip-input" data-role="zip" type="text" value="${escapeHtml(DEFAULT_ZIP)}" maxlength="5" inputmode="numeric" title="ZIP code (used for distance)">
+        <button class="btn-primary" data-role="go">Search</button>
+      </div>
+      <div class="status" data-role="status">Runs a live AutoTempest search (10-20 seconds). Needs the local server: python3 scraping/search_server.py</div>
+      <div class="chips" data-role="chips"></div>
+    </div>` : '';
+
+  const heads = COLS.filter(c => !c.live || tab.live).map(c =>
+    c.key ? `<th data-key="${c.key}"${c.r ? ' class="r"' : ''}${c.tip ? ` title="${escapeHtml(c.tip)}"` : ''}>${c.label}<span class="arrow"></span></th>` : `<th class="no-sort">${c.label}</th>`
+  ).join('');
+
+  return `
+    <div class="tab-head">
+      <div class="tab-title">
+        <h2>${escapeHtml(tab.live ? 'Live search' : tab.title)}</h2>
+        <div class="asof" data-role="asof"></div>
+        <div class="data-warn" data-role="datawarn" role="status" hidden></div>
+      </div>
+      <div class="at-links" data-role="atlinks"></div>
+    </div>
+    <div class="kpis" data-role="kpis"></div>
+    ${searchBar}
+    <div class="panel">
+      <div class="card-head"><h3>Filters</h3><span class="count" data-role="count"></span></div>
+      <div class="filter-grid">
+        <label>Year<span class="pair"><input data-f="yearMin" inputmode="numeric" placeholder="from"> to <input data-f="yearMax" inputmode="numeric" placeholder="to"></span></label>
+        <label>Price<span class="pair"><input data-f="priceMin" inputmode="numeric" placeholder="min"> to <input data-f="priceMax" inputmode="numeric" placeholder="max"></span></label>
+        <label>Hours<span class="pair"><input data-f="milesMin" inputmode="numeric" placeholder="min"> to <input data-f="milesMax" inputmode="numeric" placeholder="max"></span></label>
+        <label class="check" title="SR20 listings stay hidden until this is on"><input type="checkbox" data-f="sr20" id="sr20"> Include SR20</label>
+        <label>Deal rating<select data-f="deal"><option value="">Any</option><option value="good">Good or better</option><option value="great">Great only</option></select></label>
+        <label>Color<select data-f="color" data-role="color"><option value="">Any</option></select></label>
+        <label>Vs market<select data-f="vs"><option value="">Any</option><option value="below">5%+ below</option><option value="below10">10%+ below</option><option value="above">5%+ above</option></select></label>
+        <label class="grow">Refine (fuzzy)<input class="wide" data-f="text" type="text" placeholder="title, dealer, city, description..."></label>
+        <button class="btn-ghost" data-role="reset">Reset filters</button>
+      </div>
+      <div class="spec-row" data-role="specs" hidden></div>
+    </div>
+    <div class="panel">
+      <div class="card-head">
+        <div><h3>Price vs total time</h3><span class="sub">Colored by model year &middot; drag to zoom into an area &middot; click a point to open the listing</span></div>
+        <div class="chart-tools">
+          <button class="btn-ghost sm" data-role="resetview" hidden title="Zoom back out; your filters stay as they are">&#8634; Reset view</button>
+          ${tab.bat && tab.bat.length ? `<label class="switch"><input type="checkbox" role="switch" data-role="bat"> Bring a Trailer sold <span class="tri">&#9651;</span></label>` : ''}
+        </div>
+      </div>
+      ${tab.bat && tab.bat.length ? `
+      <div class="filter-grid bat-filters" data-role="batfilters" hidden>
+        <label>Sold within<select data-bf="days">
+          <option value="180">6 months</option><option value="365">12 months</option>
+          <option value="730" selected>24 months</option><option value="1095">3 years</option><option value="">All time</option>
+        </select></label>
+        <label class="grow">BaT title has<input class="wide" data-bf="text" type="text" placeholder='e.g. "e63 s" or "-edition" to exclude'></label>
+        <label>Location<select data-bf="country"><option value="">Anywhere</option><option value="US">US only</option></select></label>
+        <label class="check"><input type="checkbox" data-bf="stock" checked> Hide modified/tuned</label>
+        ${(() => { const r = searchRange(tab.rows); return r ? `<label class="check" title="Only BaT cars inside this search's model years and mileage"><input type="checkbox" data-bf="matchSearch" checked> Match this search (${r.yMin === r.yMax ? r.yMin : r.yMin + '–' + r.yMax}${r.mMax != null ? ', ≤' + r.mMax.toLocaleString() + ' ' + UNITS.usageSuffix : ''})</label>` : ''; })()}
+        <label class="check" data-role="adjustwrap"><input type="checkbox" data-bf="adjust"> Restate older sales in today's market</label>
+      </div>` : ''}
+      <div class="sel-bar" data-role="sel" hidden></div>
+      <div class="chartWrap"><canvas data-role="canvas"></canvas><div class="brush" data-role="brush" hidden></div></div>
+    </div>
+    <div class="panel analysis" data-role="analysis"></div>
+    <div class="panel">
+      <div class="card-head"><div><h3>Listings</h3><span class="sub">Click a column to sort &middot; hover Market value or BaT value for how they're worked out</span></div></div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr>${heads}</tr></thead>
+          <tbody data-role="tbody"></tbody>
+        </table>
+      </div>
+    </div>`;
+}
+
+function renderAtLinks(tab) {
+  const urls = (tab.urls || []).map(safeUrl).filter(Boolean);
+  const atr = String(tab.autotrader_url || '').split(/\s+/).filter(Boolean).map(safeUrl).filter(Boolean);
+  const tempest = urls.map((u, i) =>
+    `<a class="at-link" href="${escapeHtml(u)}" target="_blank" rel="noopener">Open this search on AutoTempest${urls.length > 1 ? ' (' + (i + 1) + ')' : ''} &#8599;</a>`
+  );
+  const trader = atr.map((u, i) =>
+    `<a class="at-link" href="${escapeHtml(u)}" target="_blank" rel="noopener">Open this search on Autotrader${atr.length > 1 ? ' (' + (i + 1) + ')' : ''} &#8599;</a>`
+  );
+  tab._panel.querySelector('[data-role=atlinks]').innerHTML = tempest.concat(trader).join('');
+}
+
+function renderTable(tab, rows) {
+  const tbody = tab._panel.querySelector('[data-role=tbody]');
+  const colSpan = COLS.filter(c => !c.live || tab.live).length;
+  if (!rows.length) {
+    tbody.innerHTML = `<tr><td colspan="${colSpan}" class="empty">${tab.rows.length ? 'No listings match these filters.' : (tab.live ? 'Run a search to see listings.' : 'No listings.')}</td></tr>`;
+  } else {
+    tbody.innerHTML = rows.map(d => {
+      const link = safeUrl(d.link);
+      const thumbSrc = safeUrl(d.image_url);
+      const thumb = link && thumbSrc ? `<a class="thumb-link" href="${escapeHtml(link)}" target="_blank" rel="noopener"><img class="thumb" alt="" src="${escapeHtml(thumbSrc)}" loading="lazy" onerror="this.parentNode.remove()"></a>` : '';
+      const drop = d.price_drop ? `<small><span class="badge drop">${escapeHtml(String(d.price_drop))}</span></small>` : '';
+      return `
+      <tr${link ? ` data-href="${escapeHtml(link)}"` : ''}>
+        ${tab.live ? `<td>${d.score != null ? d.score + '%' : ''}</td>` : ''}
+        <td>${d.year ?? 'N/A'}</td>
+        <td class="title-cell">${thumb}${d.is_hot ? '<span class="hot">HOT</span> ' : ''}${d.is_new ? '<span class="badge new">New</span> ' : ''}${link ? `<a class="title-link" href="${escapeHtml(link)}" target="_blank" rel="noopener">${escapeHtml(d.title)}</a>` : escapeHtml(d.title)}${d.serial ? `<small>s/n ${escapeHtml(d.serial)}</small>` : ''}</td>
+        <td class="r">${priceCell(d)}${drop}</td>
+        <td class="r">${d.expected != null ? fmtPrice(d.expected) : '<span class="muted">–</span>'}</td>
+        <td class="r">${vsMarketCell(d)}</td>
+        <td class="r">${batValueCell(d)}</td>
+        <td class="r">${msrpCell(d)}</td>
+        <td class="r">${fmtMiles(d.mileage)}</td>
+        <td>${d.color === 'Unknown' ? '<span class="muted">?</span>' : escapeHtml(d.color)}</td>
+        <td>${escapeHtml(d.posted_date)}</td>
+        <td>${escapeHtml(d.city)}${d.distance ? ' <span class="muted">' + escapeHtml(d.distance) + '</span>' : ''}</td>
+        <td>${escapeHtml(d.dealer)}</td>
+        <td class="source-cell">${sourceCell(d)}</td>
+        <td class="vin-cell">${d.vin ? escapeHtml(d.vin) : '<span class="muted">–</span>'}</td>
+        <td>${link ? `<a class="view-link" href="${escapeHtml(link)}" target="_blank" rel="noopener">View</a>` : ''}</td>
+      </tr>`;
+    }).join('');
+  }
+
+  tab._panel.querySelectorAll('th[data-key]').forEach(th => {
+    const arrow = th.querySelector('.arrow');
+    arrow.textContent = th.dataset.key === tab._state.sortKey ? (tab._state.sortDir === 1 ? ' ▲' : ' ▼') : '';
+  });
+}
+
+// Chips for every spec found in this tab's listings, trims first, so each vehicle shows
+// its own trims and options. Counts are over all of the tab's listings.
+function renderSpecChips(tab) {
+  const box = tab._panel.querySelector('[data-role=specs]');
+  const counts = {};
+  tab.rows.forEach(r => r._specs.forEach(n => { counts[n] = (counts[n] || 0) + 1; }));
+  const rank = n => ({ line: 0, trim: 1, engine: 2, gear: 3 }[SPEC_GROUP[n]] ?? 4);
+  const names = SPEC_TERMS.map(([n]) => n).filter(n => counts[n]).sort((a, b) => rank(a) - rank(b) || counts[b] - counts[a]);
+  if (!names.length) { box.hidden = true; return; }
+  const sel = tab._state.filters.specs;
+  let html = '<span>Specs</span>', last = null;
+  names.forEach(n => {
+    if (last != null && rank(n) !== last) html += '<span class="spec-sep" aria-hidden="true"></span>';
+    last = rank(n);
+    html += `<button type="button" class="spec-chip" data-spec="${escapeHtml(n)}" aria-pressed="${sel.includes(n)}">${escapeHtml(n)}<i>${counts[n]}</i></button>`;
+  });
+  box.innerHTML = html;
+  box.querySelectorAll('[data-spec]').forEach(b => b.addEventListener('click', () => {
+    const f = tab._state.filters, n = b.dataset.spec;
+    f.specs = f.specs.includes(n) ? f.specs.filter(x => x !== n) : [...f.specs, n];
+    renderTab(tab);
+  }));
+  box.hidden = false;
+}
+
+function renderCount(tab, rows) {
+  const f = tab._state.filters;
+  const filtered = Object.entries(f).some(([k, v]) => Array.isArray(v) ? v.length > 0 : v != null && v !== '');
+  tab._panel.querySelector('[data-role=count]').textContent =
+    `${rows.length} of ${tab.rows.length} listings` + (filtered && rows.length !== tab.rows.length ? ' (filters active)' : '');
+}
+
+function renderChart(tab, rows) {
+  tab._chartDirty = false;
+  if (tab._chart) { tab._chart.destroy(); tab._chart = null; }
+  if (typeof Chart === 'undefined') return;
+
+  const pts = rows.filter(d => d.price != null && d.mileage != null);
+  const yearColor = y => colorForYear(tab._years.indexOf(y), tab._years.length);
+  const toPoint = d => ({ x: d.mileage, y: d.price, title: d.title, link: d.link, dealer: d.dealer, city: d.city, vin: d.vin, sources: d.sources });
+
+  const years = [...new Set(pts.map(d => d.year).filter(y => y != null))].sort((a, b) => a - b);
+  const datasets = years.map(y => ({
+    label: String(y),
+    data: pts.filter(d => d.year === y).map(toPoint),
+    backgroundColor: yearColor(y),
+    pointRadius: 5,
+    pointHoverRadius: 8,
+  }));
+  if (pts.some(d => d.year == null)) {
+    datasets.push({
+      label: 'Unknown year',
+      data: pts.filter(d => d.year == null).map(toPoint),
+      backgroundColor: 'hsl(0, 0%, 60%)',
+      pointRadius: 5,
+      pointHoverRadius: 8,
+    });
+  }
+  if (tab.bat && tab.bat.length) {
+    const batPts = batPoints(tab);
+    if (tab._state.showBat) {
+      const white = a => `rgba(255,255,255,${a})`;
+      datasets.push({
+        label: 'BaT sold',
+        data: batPts,
+        pointStyle: 'triangle',
+        backgroundColor: c => white(c.raw ? batAlpha(c.raw.age) * 0.15 : 0.08),
+        borderColor: c => white(c.raw ? batAlpha(c.raw.age) : 1),
+        borderWidth: 1.5,
+        pointRadius: 7,
+        pointHoverRadius: 10,
+      });
+    }
+  }
+
+  tab._chart = new Chart(tab._panel.querySelector('[data-role=canvas]').getContext('2d'), {
+    type: 'scatter',
+    data: { datasets },
+    options: {
+      animation: false,
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: {
+        x: {
+          title: { display: true, text: UNITS.usageAxis, color: '#8b93a3' },
+          ticks: { color: '#8b93a3', callback: v => v.toLocaleString() },
+          grid: { color: '#1e2330' },
+        },
+        y: {
+          title: { display: true, text: 'Price ($)', color: '#8b93a3' },
+          ticks: { color: '#8b93a3', callback: v => '$' + v.toLocaleString() },
+          grid: { color: '#1e2330' },
+        },
+      },
+      plugins: {
+        legend: { labels: { color: '#e6e9ef', usePointStyle: true, boxWidth: 8, boxHeight: 8, padding: 14 }, title: { display: true, text: 'Model Year', color: '#8b93a3' } },
+        tooltip: {
+          callbacks: {
+            label: c => {
+              const d = c.raw;
+              const sites = d.sources && d.sources.length > 1 ? d.sources.map(sourceLabel).join(' · ') : '';
+              return [d.title, fmtPrice(d.y), fmtMiles(d.x), d.vin, sites, d.dealer || d.city].filter(Boolean);
+            },
+          },
+        },
+      },
+      onClick: (evt, elements) => {
+        if (tab._justBrushed || !elements.length) return;
+        const el = elements[0];
+        const link = safeUrl(datasets[el.datasetIndex].data[el.index].link);
+        if (link) window.open(link, '_blank', 'noopener');
+      },
+      onHover: (evt, elements) => {
+        evt.native.target.style.cursor = elements.length ? 'pointer' : 'crosshair';
+      },
+    },
+  });
+}
+
+// ---------- drag-to-select on the chart ----------
+// A dragged box is a view, kept apart from the filters: the chart zooms to it and the
+// table, summary cards and BaT overlay narrow to it, and Reset view zooms back out
+// without touching anything set in the Filters card.
+function inArea(tab, r) {
+  const a = tab._state.area;
+  return !a || (r.mileage != null && r.price != null &&
+    r.mileage >= a.milesMin && r.mileage <= a.milesMax && r.price >= a.priceMin && r.price <= a.priceMax);
+}
+
+function setArea(tab, area) {
+  tab._state.area = area;
+  renderTab(tab);
+}
+
+function renderSelection(tab, rows) {
+  const bar = tab._panel.querySelector('[data-role=sel]');
+  const reset = tab._panel.querySelector('[data-role=resetview]');
+  const a = tab._state.area;
+  reset.hidden = !a;
+  if (!a) { bar.hidden = true; return; }
+  bar.innerHTML = `<span>Zoomed to <b>${a.milesMin.toLocaleString()} – ${a.milesMax.toLocaleString()} ${UNITS.usageSuffix}</b> · <b>${fmtPrice(a.priceMin)} – ${fmtPrice(a.priceMax)}</b> &middot; <b>${rows.length}</b> listing${rows.length === 1 ? '' : 's'}</span>
+    <span class="sel-actions"><button class="btn-ghost sm" data-act="view">View listings &darr;</button></span>`;
+  bar.querySelector('[data-act=view]').onclick = () => tab._panel.querySelector('.table-wrap').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  bar.hidden = false;
+}
+
+function setupBrush(tab) {
+  const wrap = tab._panel.querySelector('.chartWrap');
+  const canvas = wrap.querySelector('canvas');
+  const box = wrap.querySelector('[data-role=brush]');
+  let start = null;
+  const pos = e => { const r = canvas.getBoundingClientRect(); return { x: e.clientX - r.left, y: e.clientY - r.top }; };
+  const area = () => tab._chart && tab._chart.chartArea;
+  const inside = p => { const a = area(); return a && p.x >= a.left && p.x <= a.right && p.y >= a.top && p.y <= a.bottom; };
+  const clamp = p => { const a = area(); return { x: Math.min(Math.max(p.x, a.left), a.right), y: Math.min(Math.max(p.y, a.top), a.bottom) }; };
+  const isDrag = (a, b) => Math.abs(a.x - b.x) >= 6 || Math.abs(a.y - b.y) >= 6;
+
+  // Mouse and pen only: on a phone a drag over the chart should still scroll the page.
+  canvas.addEventListener('pointerdown', e => {
+    if (e.pointerType === 'touch' || e.button !== 0 || !inside(pos(e))) return;
+    start = pos(e);
+    canvas.setPointerCapture(e.pointerId);
+  });
+  canvas.addEventListener('pointermove', e => {
+    if (!start) return;
+    const p = clamp(pos(e));
+    if (!isDrag(start, p)) { box.hidden = true; return; }
+    Object.assign(box.style, {
+      left: Math.min(start.x, p.x) + 'px', top: Math.min(start.y, p.y) + 'px',
+      width: Math.abs(p.x - start.x) + 'px', height: Math.abs(p.y - start.y) + 'px',
+    });
+    box.hidden = false;
+  });
+  canvas.addEventListener('pointerup', e => {
+    if (!start) return;
+    const s = start, p = clamp(pos(e));
+    start = null;
+    box.hidden = true;
+    if (!isDrag(s, p)) return;
+    tab._justBrushed = true;
+    setTimeout(() => { tab._justBrushed = false; }, 0);
+    const { x, y } = tab._chart.scales;
+    const down = (v, step) => Math.max(0, Math.floor(v / step) * step);
+    const up = (v, step) => Math.ceil(v / step) * step;
+    setArea(tab, {
+      milesMin: down(x.getValueForPixel(Math.min(s.x, p.x)), UNITS.zoomStep),
+      milesMax: up(x.getValueForPixel(Math.max(s.x, p.x)), UNITS.zoomStep),
+      priceMin: down(y.getValueForPixel(Math.max(s.y, p.y)), 1000),
+      priceMax: up(y.getValueForPixel(Math.min(s.y, p.y)), 1000),
+    });
+  });
+  canvas.addEventListener('pointercancel', () => { start = null; box.hidden = true; });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && start) { start = null; box.hidden = true; } });
+}
+
+function renderTab(tab) {
+  const rows = visibleRows(tab);
+  renderTable(tab, rows);
+  renderCount(tab, rows);
+  renderKpis(tab);
+  renderSpecChips(tab);
+  renderSelection(tab, rows);
+  if (tab._panel.classList.contains('active')) renderChart(tab, rows);
+  else tab._chartDirty = true;
+}
+
+function setRows(tab, rows) {
+  tab.rows = rows.map(prepRow);
+  tab._years = [...new Set(tab.rows.map(d => d.year).filter(y => y != null))].sort((a, b) => a - b);
+  if (tab.live) {
+    tab.rows.forEach(r => { r.score = scoreRow(r, tab.tokens, tab.alts); });
+  }
+  applyModel(tab);
+  renderColorOptions(tab);
+  renderAnalysis(tab);
+  tab._btn.innerHTML = escapeHtml(tab.live ? 'Search' : tab.title) + (tab.rows.length ? `<span class="count-pill">${tab.rows.length}</span>` : '');
+}
+
+function renderColorOptions(tab) {
+  const sel = tab._panel && tab._panel.querySelector('[data-role=color]');
+  if (!sel) return;
+  const counts = {};
+  tab.rows.forEach(r => { counts[r.color] = (counts[r.color] || 0) + 1; });
+  const names = COLOR_WORDS.map(c => c[0]).filter(n => counts[n]);
+  if (counts.Unknown) names.push('Unknown');
+  const cur = sel.value;
+  sel.innerHTML = '<option value="">Any</option>' +
+    names.map(n => `<option value="${escapeHtml(n)}">${escapeHtml(n)} (${counts[n]})</option>`).join('');
+  sel.value = names.includes(cur) ? cur : '';
+}
+
+function activateTab(slug) {
+  TABS.forEach(tab => {
+    const on = tab.slug === slug;
+    tab._btn.classList.toggle('active', on);
+    tab._panel.classList.toggle('active', on);
+  });
+  const tab = TABS.find(t => t.slug === slug);
+  if (!tab || tab.kind === 'readme') return;
+  if (tab._chartDirty || !tab._chart) renderChart(tab, visibleRows(tab));
+  else tab._chart.resize();
+  if (tab.live) tab._panel.querySelector('[data-role=q]').focus();
+}
+
+// ---------- live search ----------
+function renderChips(tab, info) {
+  const chips = tab._panel.querySelector('[data-role=chips]');
+  const parts = [];
+  if (info.make) parts.push(['make', info.make]);
+  if (info.model) parts.push(['model', info.model]);
+  if (info.years) parts.push(['years', info.years]);
+  if (info.color) parts.push(['color', info.color]);
+  if (info.keywords && info.keywords.length) parts.push(['keywords', info.keywords.join(' / ')]);
+  if (info.note) parts.push(['note', info.note]);
+  chips.innerHTML = parts.map(([k, v]) => `<span class="chip"><b>${escapeHtml(k)}</b>${escapeHtml(v)}</span>`).join('');
+}
+
+async function runSearch(tab) {
+  const panel = tab._panel;
+  const q = panel.querySelector('[data-role=q]').value.trim();
+  const zip = panel.querySelector('[data-role=zip]').value.trim() || DEFAULT_ZIP;
+  const status = panel.querySelector('[data-role=status]');
+  const go = panel.querySelector('[data-role=go]');
+  if (!q) { status.className = 'status'; status.textContent = 'Type something to search, e.g. 930 porsche white'; return; }
+
+  go.disabled = true;
+  status.className = 'status busy';
+  status.textContent = 'Searching AutoTempest... this takes 10-20 seconds.';
+  try {
+    const res = await fetch(`${SEARCH_API}/api/search?` + new URLSearchParams({ q, zip }));
+    let data = {};
+    try { data = await res.json(); } catch (_) { /* non-JSON error body */ }
+    if (!res.ok) throw new Error(data.error || `Server error ${res.status}`);
+
+    tab.urls = data.at_urls || [];
+    tab.tokens = data.tokens || [];
+    tab.alts = data.token_alternatives || {};
+    setRows(tab, data.rows || []);
+    renderAtLinks(tab);
+    renderChips(tab, data.interpreted || {});
+    status.className = 'status';
+    status.textContent = `${tab.rows.length} listings for "${q}"` + (data.cached ? ' (cached, under 10 min old)' : ` in ${data.elapsed_s}s`) + '. Use the filters below to narrow down.';
+    renderTab(tab);
+  } catch (err) {
+    status.className = 'status error';
+    status.textContent = err instanceof TypeError
+      ? 'Search server is not running. Start it with: python3 search_server.py, then open http://127.0.0.1:8766'
+      : err.message;
+  } finally {
+    go.disabled = false;
+  }
+}
+
+// ---------- saved snapshot, then a background refresh when it is stale ----------
+function formatAsOf(iso) {
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return '';
+  const parts = new Intl.DateTimeFormat('en-US', {
+    timeZone: 'America/Chicago', month: 'short', day: 'numeric', year: 'numeric',
+    hour: 'numeric', minute: '2-digit', hour12: true, timeZoneName: 'short'
+  }).formatToParts(d);
+  const get = type => (parts.find(part => part.type === type) || {}).value || '';
+  return `${get('month')} ${get('day')}, ${get('year')}, ${get('hour')}:${get('minute')} ${get('dayPeriod')} ${get('timeZoneName')}`.trim();
+}
+function ageMs(iso) {
+  const t = Date.parse(iso || '');
+  return Number.isNaN(t) ? Infinity : Date.now() - t;
+}
+function isStale(tab, days) {
+  if (tab.live || !tab.saved_slug) return false;
+  return ageMs(tab.scraped_at) > Number(days) * 24 * 60 * 60 * 1000;
+}
+function paintAsOf(tab, extra) {
+  const el = tab._panel && tab._panel.querySelector('[data-role=asof]');
+  if (!el) return;
+  if (tab.live || !tab.scraped_at) { el.hidden = true; el.textContent = ''; return; }
+  el.hidden = false;
+  el.textContent = 'Data as of ' + formatAsOf(tab.scraped_at) + (extra ? ' · ' + extra : '');
+}
+function paintWarning(tab, warnings) {
+  const el = tab._panel && tab._panel.querySelector('[data-role=datawarn]');
+  if (!el) return;
+  const text = (warnings || []).filter(Boolean).join(' ');
+  el.hidden = !text;
+  el.textContent = text;
+}
+function paintHeaderAsOf() {
+  const el = document.getElementById('dataAsOf');
+  if (!el) return;
+  const times = TABS.filter(tab => !tab.live && tab.scraped_at).map(tab => Date.parse(tab.scraped_at)).filter(t => !Number.isNaN(t));
+  el.textContent = times.length ? 'Data as of ' + formatAsOf(new Date(Math.min(...times)).toISOString()) + ' · ' : '';
+}
+function applySnapshot(tab, data) {
+  if (data.scraped_at) tab.scraped_at = data.scraped_at;
+  tab.warnings = data.warnings || [];
+  if (Array.isArray(data.rows)) {
+    tab._allRows = data.rows;
+    const include = !!(tab._state && tab._state.filters.sr20);
+    setRows(tab, data.rows.filter(r => include || r.family !== 'sr20'));
+    if (Array.isArray(data.bat)) {
+      tab.bat = data.bat;
+      tab.bat.forEach(prepBatRow);
+      tab._range = searchRange(tab.rows);
+      computeMarketIndex(tab);
+      applyBatValues(tab);
+    }
+    renderTab(tab);
+  }
+  paintAsOf(tab);
+  paintWarning(tab, tab.warnings);
+  paintHeaderAsOf();
+}
+function watchRefresh(tab) {
+  const tick = async () => {
+    try {
+      const res = await fetch(`${SEARCH_API}/api/refresh?slug=${encodeURIComponent(tab.saved_slug)}`, { cache: 'no-store' });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Refresh failed');
+      if (data.running) return;
+      clearInterval(tab._refreshTimer);
+      tab._refreshTimer = null;
+      applySnapshot(tab, data);
+      if (data.ok === false) paintWarning(tab, (data.warnings && data.warnings.length) ? data.warnings : ['Refresh failed. Showing saved data.']);
+    } catch (err) {
+      clearInterval(tab._refreshTimer);
+      tab._refreshTimer = null;
+      paintAsOf(tab);
+      paintWarning(tab, [err instanceof TypeError ? 'Refresh failed. Showing saved data.' : (err.message || 'Refresh failed. Showing saved data.')]);
+    }
+  };
+  if (tab._refreshTimer) clearInterval(tab._refreshTimer);
+  tab._refreshTimer = setInterval(tick, 1500);
+  tick();
+}
+async function startRefresh(tab, force) {
+  paintAsOf(tab, force ? 'Updating…' : 'Refreshing in the background…');
+  try {
+    const res = await fetch(`${SEARCH_API}/api/refresh?slug=${encodeURIComponent(tab.saved_slug)}&force=${force ? 1 : 0}`, { method: 'POST' });
+    const data = await res.json().catch(() => ({}));
+    if (!res.ok) throw new Error(data.error || 'Refresh failed');
+    watchRefresh(tab);
+  } catch (err) {
+    paintAsOf(tab);
+    paintWarning(tab, [err instanceof TypeError ? 'Refresh failed. Showing saved data.' : (err.message || 'Refresh failed. Showing saved data.')]);
+  }
+}
+async function refreshIfStale() {
+  if (!SEARCH_API) return;
+  let days = FRESH_DAYS;
+  try {
+    const res = await fetch(`${SEARCH_API}/api/health`, { cache: 'no-store' });
+    if (!res.ok) return;
+    const body = await res.json();
+    if (body.fresh_days) days = Number(body.fresh_days);
+  } catch (_) {
+    return;
+  }
+  TABS.forEach(tab => { if (isStale(tab, days)) startRefresh(tab, false); });
+}
+
+// ---------- UPDATE button (needs search_server_v2.py running locally) ----------
+function setupUpdate() {
+  const box = document.getElementById('updateBox');
+  const btn = document.getElementById('updateBtn');
+  const status = document.getElementById('updateStatus');
+  if (!SEARCH_API) return;
+  box.hidden = false;
+  let sawRunning = false, timer = null;
+  const clock = s => `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`;
+  const offline = 'Start the local server first: python3 search_server.py, then open http://127.0.0.1:8766';
+
+  const show = st => {
+    status.classList.remove('error');
+    if (st.running) {
+      sawRunning = true;
+      btn.disabled = true;
+      btn.textContent = 'UPDATING…';
+      const step = st.current === 'Building report' ? 'Building report' : `Search ${Math.max(st.done, 1)} of ${st.total || '?'}: ${st.current}`;
+      status.textContent = `${step} · ${clock(st.elapsed_s || 0)}`;
+      return;
+    }
+    clearInterval(timer); timer = null;
+    btn.disabled = false;
+    btn.textContent = 'UPDATE';
+    if (!sawRunning) return;
+    if (st.ok) {
+      status.textContent = `Updated in ${clock(st.elapsed_s || 0)}. Reloading…`;
+      setTimeout(() => location.reload(), 800);
+    } else {
+      status.classList.add('error');
+      status.textContent = st.current || 'Update failed; see output/update.log';
+    }
+  };
+  const poll = async () => {
+    try { show(await (await fetch(`${SEARCH_API}/api/update`)).json()); }
+    catch (_) { /* server restarted or stopped; keep trying until it answers */ }
+  };
+  const follow = () => { if (!timer) timer = setInterval(poll, 2000); };
+
+  btn.addEventListener('click', async () => {
+    btn.disabled = true;
+    status.classList.remove('error');
+    status.textContent = 'Starting…';
+    try {
+      const res = await fetch(`${SEARCH_API}/api/update`, { method: 'POST' });
+      const st = await res.json();
+      if (!res.ok) throw new Error(st.error || `Server error ${res.status}`);
+      sawRunning = true;
+      show(st);
+      follow();
+    } catch (err) {
+      btn.disabled = false;
+      status.classList.add('error');
+      status.textContent = err instanceof TypeError ? offline : err.message;
+    }
+  });
+
+  // Pick up an update that was already running when this page opened.
+  fetch(`${SEARCH_API}/api/update`).then(r => r.json()).then(st => { if (st.running) { show(st); follow(); } }).catch(() => {});
+}
+setupUpdate();
+
+// ---------- init ----------
+const tabButtons = document.getElementById('tabButtons');
+const tabPanels = document.getElementById('tabPanels');
+
+TABS.forEach((tab, idx) => {
+  tab._state = newState(!!tab.live);
+  tab.urls = tab.urls && tab.urls.length ? tab.urls : (tab.url ? tab.url.split(/\s+/).filter(Boolean) : []);
+
+  const btn = document.createElement('button');
+  btn.className = 'tab-btn' + (tab.live ? ' live' : '') + (idx === 0 ? ' active' : '');
+  btn.addEventListener('click', () => activateTab(tab.slug));
+  tabButtons.appendChild(btn);
+  tab._btn = btn;
+
+  const panel = document.createElement('div');
+  panel.className = 'tab-panel' + (idx === 0 ? ' active' : '');
+  panel.innerHTML = panelHTML(tab);
+  tabPanels.appendChild(panel);
+  tab._panel = panel;
+  if (tab.kind === 'readme') {
+    const article = panel.querySelector('[data-role=readme]');
+    if (article) article.innerHTML = tab.html || '';
+    tab._btn.textContent = tab.title || 'README';
+    return;
+  }
+
+  tab._allRows = (tab.rows || []).slice();
+  setRows(tab, tab._allRows.filter(r => r.family !== 'sr20'));
+  renderAtLinks(tab);
+  paintAsOf(tab);
+  paintWarning(tab, tab.warnings);
+
+  const batToggle = panel.querySelector('[data-role=bat]');
+  if (batToggle) {
+    (tab.bat || []).forEach(prepBatRow);
+    tab._range = searchRange(tab.rows);
+    computeMarketIndex(tab);
+    applyBatValues(tab);
+    const batFilters = panel.querySelector('[data-role=batfilters]');
+    if (!tab._market) {
+      const wrap = panel.querySelector('[data-role=adjustwrap]');
+      wrap.title = 'Needs at least 3 BaT sales in the last 12 months';
+      wrap.style.opacity = 0.5;
+      wrap.querySelector('input').disabled = true;
+    }
+    batToggle.addEventListener('change', () => {
+      tab._state.showBat = batToggle.checked;
+      batFilters.hidden = !batToggle.checked;
+      renderChart(tab, visibleRows(tab));
+      renderKpis(tab);
+    });
+    const onBatFilter = debounce(() => {
+      const b = tab._state.bat;
+      batFilters.querySelectorAll('[data-bf]').forEach(el => {
+        const k = el.dataset.bf;
+        b[k] = el.type === 'checkbox' ? el.checked : k === 'days' ? numOrNull(el.value) : el.value;
+      });
+      renderChart(tab, visibleRows(tab));
+      renderKpis(tab);
+    }, 150);
+    batFilters.querySelectorAll('[data-bf]').forEach(el => {
+      el.addEventListener('input', onBatFilter);
+      el.addEventListener('change', onBatFilter);
+    });
+  }
+
+  const onFilter = debounce(() => {
+    const f = tab._state.filters;
+    const wasSr20 = !!f.sr20;
+    panel.querySelectorAll('[data-f]').forEach(el => {
+      const k = el.dataset.f;
+      if (el.type === 'checkbox') f[k] = el.checked;
+      else f[k] = (k === 'deal' || k === 'color' || k === 'vs' || k === 'text') ? el.value : numOrNull(el.value);
+    });
+    if (!!f.sr20 !== wasSr20) {
+      const base = (tab._allRows || []).filter(r => f.sr20 || r.family !== 'sr20');
+      setRows(tab, base);
+    }
+    renderTab(tab);
+  }, 150);
+  panel.querySelectorAll('[data-f]').forEach(el => {
+    el.addEventListener('input', onFilter);
+    el.addEventListener('change', onFilter);
+  });
+
+  panel.querySelector('[data-role=reset]').addEventListener('click', () => {
+    panel.querySelectorAll('[data-f]').forEach(el => {
+      if (el.type === 'checkbox') el.checked = false;
+      else el.value = '';
+    });
+    tab._state.filters = newState(false).filters;
+    setRows(tab, (tab._allRows || []).filter(r => r.family !== 'sr20'));
+    renderTab(tab);
+  });
+
+  panel.addEventListener('click', e => {
+    if (e.target.closest('a, button, input, select, label')) return;
+    const tr = e.target.closest('tr[data-href]');
+    if (!tr || !panel.contains(tr)) return;
+    window.open(tr.getAttribute('data-href'), '_blank', 'noopener');
+  });
+
+  panel.querySelectorAll('th[data-key]').forEach(th => {
+    th.addEventListener('click', () => {
+      const key = th.dataset.key, st = tab._state;
+      if (st.sortKey === key) st.sortDir *= -1;
+      else { st.sortKey = key; st.sortDir = key === 'score' ? -1 : 1; }
+      renderTab(tab);
+    });
+  });
+
+  if (tab.live) {
+    panel.querySelector('[data-role=go]').addEventListener('click', () => runSearch(tab));
+    panel.querySelector('[data-role=q]').addEventListener('keydown', e => { if (e.key === 'Enter') runSearch(tab); });
+  }
+
+  setupBrush(tab);
+  panel.querySelector('[data-role=resetview]').addEventListener('click', () => setArea(tab, null));
+  renderTab(tab);
+});
+paintHeaderAsOf();
+refreshIfStale();
+</script>
+</body>
+</html>
