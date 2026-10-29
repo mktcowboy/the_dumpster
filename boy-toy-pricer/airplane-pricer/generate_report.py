@@ -186,6 +186,20 @@ def client_row(row):
         "sources": sources,
         "family": row.get("family") or "",
         "serial": row.get("serial_number") or "",
+        "state": str(row.get("state") or "").strip(),
+        "engineHours": _hours(row.get("engine_hours")),
+        "engineTimeType": str(row.get("engine_time_type") or "").strip(),
+        "engineTbo": _hours(row.get("engine_tbo")),
+        "generation": str(row.get("generation") or "").strip(),
+        "model": str(row.get("model") or "").strip(),
+        "variant": str(row.get("variant") or "").strip(),
+        "turbo": str(row.get("turbo") or "").strip().lower() == "yes",
+        "gear": str(row.get("gear") or "").strip(),
+        "avionics": str(row.get("avionics") or "").strip(),
+        "autopilot": str(row.get("autopilot") or "").strip(),
+        "fiki": str(row.get("fiki") or "").strip().lower() == "yes",
+        "tks": str(row.get("tks") or "").strip().lower() == "yes",
+        "airConditioning": str(row.get("air_conditioning") or "").strip().lower() == "yes",
     }
 
 
