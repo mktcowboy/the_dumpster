@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.venv/
+data/
+output/update.log
+output/launchd.log
+saved/**/*.tmp
