@@ -1,6 +1,6 @@
 [![Yes No GIF](https://media1.tenor.com/m/GQBgOkfrMZ8AAAAC/yes-no.gif)](https://tenor.com/view/yes-no-gif-23142380)
 
-*Last updated: October 29, 2026*
+*Last updated: October 30, 2026*
 
 # Project index
 
@@ -57,10 +57,11 @@ Most projects are self-contained HTML pages that open directly in a browser.
 | --- | --- |
 | [Beyond arXiv digest](research/reading/beyond-arxiv-digest/) | Top papers from six preprint servers beyond arXiv, one tab per server |
 
-## Aircraft
+## Boy toys
 
 | Project | What it is |
 | --- | --- |
+| [Car search tracker](boy-toy-pricer/Car-pricer.html) | For-sale AutoTempest listings and Bring a Trailer sold comps for cars, trucks, and SUVs, from the Audi RS6 and G63 to the SF90, Huracan STO, and RUF Porsches |
 | [Aircraft for-sale tracker](boy-toy-pricer/airplane-pricer/) | Cirrus SR22, Vision Jet, CubCrafters, and Piper PA-28-180/181 listings in one HTML report |
 
 ## Misc
