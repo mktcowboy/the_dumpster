@@ -1,0 +1,71 @@
+{
+  "slug": "cubcrafters",
+  "title": "CubCrafters",
+  "scraped_at": "2026-10-28T23:17:21.044076+00:00",
+  "warnings": [
+    "Controller failed (Controller.com blocked automated access (Cloudflare challenge)); no saved Controller listings",
+    "Trade-A-Plane failed (Trade-A-Plane blocked automated access (bot check)); no saved Trade-A-Plane listings",
+    "Aircraft.com failed (Aircraft.com blocked automated access (Cloudflare challenge)); no saved Aircraft.com listings",
+    "Aerotrader failed (Aerotrader blocked automated access (bot check)); no saved Aerotrader listings",
+    "eBay failed (eBay Motors blocked automated access (blocked automated access)); no saved eBay listings"
+  ],
+  "last_attempt_at": "2026-10-28T23:17:21.044076+00:00",
+  "sources": {
+    "cubcrafters": {
+      "scraped_at": "2026-10-28T23:17:21.044076+00:00",
+      "ok": true,
+      "rows": 17,
+      "warning": ""
+    },
+    "aso": {
+      "scraped_at": "2026-10-28T23:17:21.044076+00:00",
+      "ok": true,
+      "rows": 11,
+      "warning": ""
+    },
+    "globalair": {
+      "scraped_at": "2026-10-28T23:17:21.044076+00:00",
+      "ok": true,
+      "rows": 14,
+      "warning": ""
+    },
+    "aircraftdealer": {
+      "scraped_at": "2026-10-28T23:17:21.044076+00:00",
+      "ok": true,
+      "rows": 5,
+      "warning": ""
+    },
+    "barnstormers": {
+      "scraped_at": "2026-10-28T23:17:21.044076+00:00",
+      "ok": true,
+      "rows": 11,
+      "warning": ""
+    },
+    "controller": {
+      "ok": false,
+      "warning": "Controller.com blocked automated access (Cloudflare challenge)"
+    },
+    "tradeaplane": {
+      "ok": false,
+      "warning": "Trade-A-Plane blocked automated access (bot check)"
+    },
+    "aircraftcom": {
+      "ok": false,
+      "warning": "Aircraft.com blocked automated access (Cloudflare challenge)"
+    },
+    "aerotrader": {
+      "ok": false,
+      "warning": "Aerotrader blocked automated access (bot check)"
+    },
+    "ebay": {
+      "ok": false,
+      "warning": "eBay Motors blocked automated access (blocked automated access)"
+    },
+    "merged": {
+      "scraped_at": "2026-10-28T23:17:21.044076+00:00",
+      "ok": true,
+      "rows": 45,
+      "warning": ""
+    }
+  }
+}

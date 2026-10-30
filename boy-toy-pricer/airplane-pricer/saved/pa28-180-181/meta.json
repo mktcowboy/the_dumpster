@@ -1,0 +1,65 @@
+{
+  "slug": "pa28-180-181",
+  "title": "Piper PA-28-180/181",
+  "scraped_at": "2026-10-29T18:01:06.736036+00:00",
+  "warnings": [
+    "Controller failed (Controller.com blocked automated access (Cloudflare challenge)); no saved Controller listings",
+    "Trade-A-Plane failed (Trade-A-Plane blocked automated access (bot check)); no saved Trade-A-Plane listings",
+    "Aircraft.com failed (Aircraft.com blocked automated access (Cloudflare challenge)); no saved Aircraft.com listings",
+    "Aerotrader failed (Aerotrader blocked automated access (bot check)); no saved Aerotrader listings",
+    "eBay failed (eBay Motors blocked automated access (blocked automated access)); no saved eBay listings"
+  ],
+  "last_attempt_at": "2026-10-29T18:01:06.736036+00:00",
+  "sources": {
+    "aso": {
+      "scraped_at": "2026-10-29T18:01:06.736036+00:00",
+      "ok": true,
+      "rows": 8,
+      "warning": ""
+    },
+    "globalair": {
+      "scraped_at": "2026-10-29T18:01:06.736036+00:00",
+      "ok": true,
+      "rows": 9,
+      "warning": ""
+    },
+    "aircraftdealer": {
+      "scraped_at": "2026-10-29T18:01:06.736036+00:00",
+      "ok": true,
+      "rows": 9,
+      "warning": ""
+    },
+    "barnstormers": {
+      "scraped_at": "2026-10-29T18:01:06.736036+00:00",
+      "ok": true,
+      "rows": 15,
+      "warning": ""
+    },
+    "controller": {
+      "ok": false,
+      "warning": "Controller.com blocked automated access (Cloudflare challenge)"
+    },
+    "tradeaplane": {
+      "ok": false,
+      "warning": "Trade-A-Plane blocked automated access (bot check)"
+    },
+    "aircraftcom": {
+      "ok": false,
+      "warning": "Aircraft.com blocked automated access (Cloudflare challenge)"
+    },
+    "aerotrader": {
+      "ok": false,
+      "warning": "Aerotrader blocked automated access (bot check)"
+    },
+    "ebay": {
+      "ok": false,
+      "warning": "eBay Motors blocked automated access (blocked automated access)"
+    },
+    "merged": {
+      "scraped_at": "2026-10-29T18:01:06.736036+00:00",
+      "ok": true,
+      "rows": 32,
+      "warning": ""
+    }
+  }
+}
