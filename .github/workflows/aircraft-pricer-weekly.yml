@@ -1,0 +1,73 @@
+name: Refresh aircraft for-sale report
+
+on:
+  schedule:
+    # GitHub Actions cron is UTC. Both hours are checked so this stays at
+    # 7:00 AM America/Chicago across daylight-saving changes.
+    - cron: '0 12 * * 1'
+    - cron: '0 13 * * 1'
+  workflow_dispatch:
+    # Manual runs are not path-filtered. The job only reads and writes
+    # boy-toy-pricer/airplane-pricer/.
+
+permissions:
+  contents: write
+
+jobs:
+  refresh-report:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: boy-toy-pricer/airplane-pricer
+    steps:
+      - name: Run only at 7 AM Central on scheduled runs
+        id: schedule
+        working-directory: ${{ github.workspace }}
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          if [ "$EVENT_NAME" = "workflow_dispatch" ] || [ "$(TZ=America/Chicago date +%H)" = "07" ]; then
+            echo "should_run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "should_run=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/checkout@v4
+        if: steps.schedule.outputs.should_run == 'true'
+
+      - uses: actions/setup-python@v5
+        if: steps.schedule.outputs.should_run == 'true'
+        with:
+          python-version: '3.12'
+
+      - name: Install browser dependency
+        if: steps.schedule.outputs.should_run == 'true'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y xvfb
+          python3 -m pip install --upgrade pip
+          python3 -m pip install -r requirements.txt
+          python3 -m playwright install --with-deps chromium
+
+      - name: Refresh report data
+        if: steps.schedule.outputs.should_run == 'true'
+        run: ./run_sr22_weekly.sh
+
+      - name: Check privacy
+        if: steps.schedule.outputs.should_run == 'true'
+        working-directory: ${{ github.workspace }}
+        run: python3 scripts/check_privacy.py
+
+      - name: Commit refreshed report
+        if: steps.schedule.outputs.should_run == 'true'
+        working-directory: ${{ github.workspace }}
+        run: |
+          git add boy-toy-pricer/airplane-pricer/output/report.html boy-toy-pricer/airplane-pricer/saved
+          if git diff --cached --quiet; then
+            echo "No report changes to commit."
+            exit 0
+          fi
+          git config user.name "data-refresh-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git commit -m "Refresh aircraft for-sale report"
+          git push
