@@ -23,6 +23,7 @@
     --c-estate: #b8a26a;
     --c-biz: #c9764a;
     --c-research: #8c97ae;
+    --c-toys: #b48aa6;
     --noise: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .5 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   }
   * { box-sizing: border-box; }
@@ -166,6 +167,7 @@ const GROUPS = {
   estate:   { name: "Real estate",        c: "var(--c-estate)" },
   biz:      { name: "Business & infrastructure", c: "var(--c-biz)" },
   research: { name: "Research & reading", c: "var(--c-research)" },
+  toys:     { name: "Boy toys",           c: "var(--c-toys)" },
 };
 
 const PAGES = [
@@ -228,6 +230,12 @@ const PAGES = [
     x: [["2026-10-18 edition", "research/reading/beyond-arxiv-digest/editions/2026-10-18/beyond-arxiv-top-papers.html"]] },
   { g: "research", t: "Spikeandred prompt guide", thumb: "spikeandred", href: "research/spikeandred-prompt-guide/",
     d: "Field guide to a visual style: 12 photographic prompts, a consistency system, and a campaign playbook." },
+
+  // Boy toys
+  { g: "toys", t: "Car search tracker", thumb: "cars", href: "boy-toy-pricer/Car-pricer.html",
+    d: "For-sale listings and sold comps for cars, trucks, and SUVs, from the Audi RS6 and G63 to the SF90, Huracan STO, and RUF Porsches." },
+  { g: "toys", t: "Aircraft for sale", thumb: "aircraft", href: "boy-toy-pricer/airplane-pricer/output/report.html",
+    d: "Used-plane tracker for the Cirrus SR22, Vision Jet, CubCrafters, and Piper PA-28, refreshed weekly." },
 ];
 
 const $ = s => document.querySelector(s);
