@@ -1,0 +1,3 @@
+earnings_date,timing,timing_inferred,pre_close_date,reaction_date,pre_close,react_open,react_close,move_close_pct,move_open_pct,abs_close_pct,abs_open_pct,eps_surprise_pct
+2026-08-04,AMC,False,2026-08-04,2026-08-05,125.33,112.37,108.27,-13.612,-10.341,13.612,10.341,68.89
+2026-10-20,AMC,False,2026-10-20,2026-10-21,147.79,160.56,159.31,7.795,8.641,7.795,8.641,112.49
