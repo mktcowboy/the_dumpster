@@ -6,12 +6,12 @@ Reads the state projects in place (they stay separate) and writes:
   land-listings-combined.csv
   land-listings-combined.json
 
-Sources:
-  ../colorado-land-listings   (10+ acres, land)
-  ../utah-land-listings       (10+ acres, land)
-  ../texas-triangle-land      (5+ acres, several property types)
+Sources (siblings under real-estate/):
+  ../colorado          (10+ acres, land)
+  ../utah              (10+ acres, land)
+  ../texas-triangle    (5+ acres, several property types)
 
-Run from anywhere: python3 build_combined.py
+Run from anywhere: python3 real-estate/land-listings-combined/build_combined.py
 """
 
 import csv
@@ -22,9 +22,9 @@ import os
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 
-CO_DIR = os.path.join(ROOT, "colorado-land-listings")
-UT_DIR = os.path.join(ROOT, "utah-land-listings")
-TX_DIR = os.path.join(ROOT, "texas-triangle-land")
+CO_DIR = os.path.join(ROOT, "colorado")
+UT_DIR = os.path.join(ROOT, "utah")
+TX_DIR = os.path.join(ROOT, "texas-triangle")
 
 FIELDS = [
     "state",

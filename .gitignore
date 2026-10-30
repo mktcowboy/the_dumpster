@@ -12,4 +12,4 @@ node_modules/
 .venv/
 .venv-*/
 venv/
-/texas-triangle-land/data/cache/
+real-estate/texas-triangle/data/cache/
