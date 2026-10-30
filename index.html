@@ -44,6 +44,12 @@
   .eyebrow { display: none; }
   h1 { font: 400 52px/1 "Instrument Serif", Georgia, serif; margin: 0; letter-spacing: -.01em; text-transform: lowercase; }
   h1 em { color: var(--ink-2); }
+  .site-url { margin: 12px 0 0; display: flex; align-items: center; gap: 10px; font: 12.5px "JetBrains Mono", monospace; }
+  .site-url[hidden] { display: none; }
+  .site-url a { color: var(--ink-2); text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 3px; word-break: break-all; }
+  .site-url a:hover { color: var(--ink); text-decoration-color: var(--accent); }
+  .site-url button { font: inherit; font-size: 11px; color: var(--ink-3); background: none; border: 1px solid var(--line); border-radius: 4px; padding: 3px 7px; cursor: pointer; }
+  .site-url button:hover { color: var(--ink); border-color: var(--ink-3); }
   .lede { color: var(--ink-2); margin: 18px 0 0; max-width: 520px; }
   .stats { display: flex; gap: 16px; margin-top: 14px; font: 12px "JetBrains Mono", monospace; color: var(--ink-3); }
   .stat b { font-weight: 400; color: var(--ink-2); margin-right: 5px; }
@@ -119,6 +125,7 @@
       <img class="gif" src="dumpster.gif" alt="Animated dumpster fire">
       <h1>the dumpster</h1>
     </div>
+    <p class="site-url" id="site-url" hidden><a id="site-url-link"></a><button type="button" id="copy-url">copy</button></p>
     <p class="lede">Reports, data, maps, and small tools. Some of it is pretty good.</p>
     <div class="stats" id="stats"></div>
   </div>
@@ -284,6 +291,20 @@ function renderMain() {
 
 try { const s = localStorage.getItem("dumpster-pile"); if (s && (s === "all" || GROUPS[s])) active = s; } catch (e) {}
 $("#q").addEventListener("input", renderMain);
+
+// Show this page's own address so it is easy to share
+if (location.protocol.startsWith("http")) {
+  const url = location.origin + location.pathname.replace(/index\.html$/, "");
+  const link = $("#site-url-link");
+  link.href = url; link.textContent = url.replace(/^https?:\/\//, "");
+  $("#copy-url").onclick = () => {
+    navigator.clipboard.writeText(url).then(() => {
+      $("#copy-url").textContent = "copied";
+      setTimeout(() => $("#copy-url").textContent = "copy", 1500);
+    }).catch(() => {});
+  };
+  $("#site-url").hidden = false;
+}
 renderStats(); renderChips(); renderMain();
 </script>
 </body>
