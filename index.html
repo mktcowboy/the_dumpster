@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Dumpster</title>
+<meta name="description" content="Reports, data snapshots, maps, and small tools. Every page in one place.">
+<link rel="icon" href="dumpster.gif">
+<meta name="color-scheme" content="dark">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #11100e;
+    --card: #161512;
+    --line: #26241f;
+    --ink: #e7e1d5;
+    --ink-2: #9a9387;
+    --ink-3: #625d54;
+    --accent: #c9764a;
+    --c-markets: #8fa889;
+    --c-estate: #b8a26a;
+    --c-biz: #c9764a;
+    --c-research: #8c97ae;
+    --noise: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .5 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; color-scheme: dark; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 15px/1.55 "Inter Tight", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  body::after { content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 50; background: var(--noise); opacity: .05; mix-blend-mode: overlay; }
+  a { color: inherit; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+  .mono { font-family: "JetBrains Mono", monospace; }
+
+  /* Hero */
+  header.hero { padding-top: 72px; }
+  .hero-grid { display: flex; align-items: center; gap: 18px; }
+  .gif { width: 56px; height: 56px; object-fit: cover; border-radius: 6px; opacity: .9; }
+  .eyebrow { display: none; }
+  h1 { font: 400 52px/1 "Instrument Serif", Georgia, serif; margin: 0; letter-spacing: -.01em; text-transform: lowercase; }
+  h1 em { color: var(--ink-2); }
+  .lede { color: var(--ink-2); margin: 18px 0 0; max-width: 520px; }
+  .stats { display: flex; gap: 16px; margin-top: 14px; font: 12px "JetBrains Mono", monospace; color: var(--ink-3); }
+  .stat b { font-weight: 400; color: var(--ink-2); margin-right: 5px; }
+
+  /* Video */
+  .tv { padding-block: 40px 16px; }
+  .tv-screen { position: relative; aspect-ratio: 16 / 9; max-width: 760px; background: #000; border: 1px solid var(--line); border-radius: 4px; overflow: hidden; }
+  .tv-screen iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; display: block; }
+  .tv-label { margin-top: 10px; font: 12px "JetBrains Mono", monospace; color: var(--ink-3); }
+  .tv-label .rec::before { content: ""; display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); margin-right: 8px; vertical-align: 1px; }
+
+  /* Toolbar */
+  .bar { position: sticky; top: 0; z-index: 5; background: color-mix(in srgb, var(--bg) 90%, transparent); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); margin-top: 40px; }
+  .bar-inner { display: flex; gap: 16px; align-items: center; padding-block: 12px; flex-wrap: wrap; }
+  .chips { display: flex; gap: 4px 18px; flex-wrap: wrap; flex: 1; }
+  .chip { font: 13px/1 "Inter Tight", sans-serif; color: var(--ink-3); background: none; border: 0; padding: 6px 0; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; border-bottom: 1px solid transparent; }
+  .chip:hover { color: var(--ink-2); }
+  .chip[aria-pressed="true"] { color: var(--ink); border-bottom-color: var(--c, var(--ink)); }
+  .chip .dot { display: none; }
+  .chip .n { font: 11px "JetBrains Mono", monospace; opacity: .7; }
+  .search { position: relative; }
+  .search input { font: 13px "Inter Tight", sans-serif; color: var(--ink); background: transparent; border: 1px solid var(--line); border-radius: 4px; padding: 7px 10px 7px 30px; width: 200px; outline: none; }
+  .search input::placeholder { color: var(--ink-3); }
+  .search input:focus { border-color: var(--ink-3); }
+  .search svg { position: absolute; left: 10px; top: 50%; transform: translateY(-50%); color: var(--ink-3); }
+
+  /* Sections & grid */
+  main { padding-block: 8px 96px; }
+  section.group { padding-top: 48px; }
+  .group-head { display: flex; align-items: baseline; gap: 10px; margin-bottom: 18px; }
+  .group-head h2 { font: 400 26px/1 "Instrument Serif", serif; margin: 0; }
+  .group-head .count { font: 11px "JetBrains Mono", monospace; color: var(--ink-3); }
+  .group-head .swatch { width: 6px; height: 6px; border-radius: 50%; background: var(--c); align-self: center; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 18px; }
+
+  .card { position: relative; display: flex; flex-direction: column; background: var(--card); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; transition: border-color .2s ease; }
+  .card:hover { border-color: color-mix(in srgb, var(--c) 45%, var(--line)); }
+  .thumb { aspect-ratio: 16/10; overflow: hidden; background: #0c0b0a; border-bottom: 1px solid var(--line); }
+  .thumb img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; filter: grayscale(.85) brightness(.8); transition: filter .4s ease; }
+  .card:hover .thumb img { filter: none; }
+  .body { padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 5px; flex: 1; }
+  .tag { display: none; }
+  .card h3 { font: 500 16px/1.3 "Inter Tight", sans-serif; margin: 0; }
+  .card h3 a { text-decoration: none; }
+  .card h3 a::after { content: ""; position: absolute; inset: 0; z-index: 1; }
+  .card p { margin: 0; color: var(--ink-2); font-size: 13.5px; }
+  .extras { display: flex; flex-wrap: wrap; gap: 4px 12px; margin-top: auto; padding-top: 8px; position: relative; z-index: 2; }
+  .extras a { font: 11.5px "JetBrains Mono", monospace; color: var(--ink-3); text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 3px; }
+  .extras a:hover { color: var(--ink); text-decoration-color: var(--c); }
+  .note { font: 11.5px "JetBrains Mono", monospace; color: var(--ink-3); }
+  .empty { text-align: center; color: var(--ink-3); padding: 80px 0; display: none; }
+
+  footer { border-top: 1px solid var(--line); padding: 24px 0 40px; color: var(--ink-3); font: 12px "JetBrains Mono", monospace; }
+  footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  footer a { color: var(--ink-3); }
+
+  @media (max-width: 720px) {
+    .wrap { padding: 0 16px; }
+    header.hero { padding-top: 44px; }
+    h1 { font-size: 42px; }
+    .gif { width: 46px; height: 46px; }
+    .search, .search input { width: 100%; }
+    .grid { grid-template-columns: 1fr; }
+  }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <img class="gif" src="dumpster.gif" alt="Animated dumpster fire">
+      <h1>the dumpster</h1>
+    </div>
+    <p class="lede">Reports, data, maps, and small tools. Some of it is pretty good.</p>
+    <div class="stats" id="stats"></div>
+  </div>
+</header>
+
+<section class="wrap tv" aria-label="Video">
+  <div class="tv-screen">
+    <iframe src="https://www.youtube.com/embed/9EKi2E9dVY8?rel=0" title="Alice In Chains, Nutshell (MTV Unplugged)"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+  </div>
+  <div class="tv-label"><span class="rec">alice in chains · nutshell · unplugged</span></div>
+</section>
+
+<div class="bar">
+  <div class="wrap bar-inner">
+    <div class="chips" id="chips" role="group" aria-label="Filter by category"></div>
+    <label class="search">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="q" type="search" placeholder="Search pages" aria-label="Search pages">
+    </label>
+  </div>
+</div>
+
+<main class="wrap" id="main"></main>
+<p class="empty wrap" id="empty">Nothing matches that.</p>
+
+<footer>
+  <div class="wrap">
+    <span>served as is.</span>
+    <a href="#top" onclick="scrollTo({top:0,behavior:'smooth'});return false">back to top</a>
+  </div>
+</footer>
+
+<script>
+const GROUPS = {
+  markets:  { name: "Markets",            c: "var(--c-markets)" },
+  estate:   { name: "Real estate",        c: "var(--c-estate)" },
+  biz:      { name: "Business & infrastructure", c: "var(--c-biz)" },
+  research: { name: "Research & reading", c: "var(--c-research)" },
+};
+
+const PAGES = [
+  // Markets
+  { g: "markets", t: "Crypto deep dive", thumb: "crypto", href: "markets/crypto-deep-dive/",
+    d: "Industry-wide crypto map: market structure, the top 100, stablecoins, yields, wallet and trader tracking, and risk frameworks." },
+  { g: "markets", t: "S&P 500 tracker", thumb: "sp500", href: "markets/sp500-tracker/",
+    d: "Constituent changes from 2007 to 2026, removed-stock performance, and ticker comparisons." },
+  { g: "markets", t: "Dow weighting history", thumb: "djia", href: "markets/djia-weights/",
+    d: "Price-weighted Dow member weights from 2004 to 2026, with era snapshots and a membership log." },
+  { g: "markets", t: "SPY × QQQ max pain", thumb: "options", href: "markets/options/",
+    d: "Max-pain map for SPY and QQQ options, built from option chains, with a reproducible snapshot pipeline." },
+  { g: "markets", t: "QQQ max-pain board", thumb: "qqq-board", href: "markets/options/qqq-max-pain.html",
+    d: "Ranked max-pain board for every loadable QQQ holding." },
+  { g: "markets", t: "Max pain live", thumb: "options-live", href: "markets/options-live/",
+    d: "Self-refreshing max-pain dashboard with click-through ticker details and charts.",
+    note: "Live data needs the local server.py" },
+  { g: "markets", t: "QXO fundamentals", thumb: "qxo", href: "markets/qxo-fundamentals/",
+    d: "QXO overview, income statement, balance sheet, cash flow, quarterly data, and a downloadable SQLite database." },
+
+  // Real estate
+  { g: "estate", t: "Texas Triangle land", thumb: "texas", href: "real-estate/texas-triangle/texas-triangle-land.html",
+    d: "16,048 parcels of 5+ acres inside the Dallas, San Antonio, Houston triangle and its 50-mile ring." },
+  { g: "estate", t: "Colorado land", thumb: "colorado", href: "real-estate/colorado/colorado-land-10ac.html",
+    d: "999 for-sale land listings of 10+ acres, captured October 2026." },
+  { g: "estate", t: "Utah land", thumb: "utah", href: "real-estate/utah/utah-land-10ac.html",
+    d: "1,184 for-sale land listings of 10+ acres, captured October 2026." },
+  { g: "estate", t: "Cleveland County land map", thumb: "onx-cleveland", href: "real-estate/onx-cleveland-county/",
+    d: "Public-land and parcel web map for Cleveland County, OK: PAD-US, WMAs, PLSS, parcels, waypoints, GPX export." },
+  { g: "estate", t: "Oklahoma County land map", thumb: "onx-oklahoma", href: "real-estate/onx-oklahoma-county/",
+    d: "Public-land and parcel web map for Oklahoma County, OK: assessor parcels, public areas, PLSS, waypoints, GPX export." },
+
+  // Business & infrastructure
+  { g: "biz", t: "Data center deals", thumb: "datacenters", href: "biz-other/infrastructure/data-center-deals/data-center-deals-all.html",
+    d: "Searchable database of publicly announced data center deals, 2025 through 2026, with company profiles and sources.",
+    x: [["2025 H1", "biz-other/infrastructure/data-center-deals/data-center-deals-2025-h1.html"],
+        ["2025 H2", "biz-other/infrastructure/data-center-deals/data-center-deals-2025-h2.html"],
+        ["2026 H1", "biz-other/infrastructure/data-center-deals/data-center-deals-2026-h1.html"],
+        ["2026 H2", "biz-other/infrastructure/data-center-deals/data-center-deals-2026-h2.html"]] },
+  { g: "biz", t: "Solar farm proforma", thumb: "solar", href: "biz-other/infrastructure/solar-farm-proforma/solar-farm-proforma.html",
+    d: "Interactive 30-year proforma for a 1,000-acre utility-scale solar farm near Wichita Falls, Texas.",
+    x: [["Outcome range (v2)", "biz-other/infrastructure/solar-farm-proforma/solar-farm-proforma-v2.html"]] },
+  { g: "biz", t: "Arby's deal deep dive", thumb: "arbys", href: "biz-other/arby-s-deal-deep-dive/arby-s-deal-deep-dive.html",
+    d: "The Roark turnaround, the deal history behind it, and the LongRange myth." },
+  { g: "biz", t: "Diesel wholesale market", thumb: "diesel", href: "biz-other/diesel-wholesale-market-analysis/diesel-wholesale-market-analysis.html",
+    d: "Market analysis of mixed on-road and off-road wholesale diesel." },
+  { g: "biz", t: "Rent-seeking report", thumb: "rent", href: "biz-other/rent-seeking-report/rent-seeking-report.html",
+    d: "Economic rents, their history, and the top 50 ways to collect rent today." },
+
+  // Research & reading
+  { g: "research", t: "The Chain of Tradition", thumb: "tanakh", href: "research/religion/tanakh-atlas/",
+    d: "Interactive atlas of the Jewish library: Tanakh, Mishnah, Talmud, Midrash, commentaries, and how they connect." },
+  { g: "research", t: "Epigenetics deep dive", thumb: "epigenetics", href: "research/religion/epigenetics-deep-dive/epigenetics-deep-dive.html",
+    d: "Long-form, journal-style review of epigenetics with 72 cited papers and linked sources.",
+    x: [["Journal", "research/religion/epigenetics-deep-dive/epigenetics-deep-dive.option-1-journal.html"],
+        ["Data sheet", "research/religion/epigenetics-deep-dive/epigenetics-deep-dive.option-2-datasheet.html"],
+        ["Reader", "research/religion/epigenetics-deep-dive/epigenetics-deep-dive.option-3-reader.html"]] },
+  { g: "research", t: "Beyond arXiv digest", thumb: "arxiv", href: "research/reading/beyond-arxiv-digest/beyond-arxiv-top-papers.html",
+    d: "Top papers from six preprint servers beyond arXiv, one tab per server.",
+    x: [["2026-10-18 edition", "research/reading/beyond-arxiv-digest/editions/2026-10-18/beyond-arxiv-top-papers.html"]] },
+  { g: "research", t: "Spikeandred prompt guide", thumb: "spikeandred", href: "research/spikeandred-prompt-guide/",
+    d: "Field guide to a visual style: 12 photographic prompts, a consistency system, and a campaign playbook." },
+];
+
+const $ = s => document.querySelector(s);
+const esc = s => s.replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+let active = "all";
+
+function counts() {
+  const n = {}; PAGES.forEach(p => n[p.g] = (n[p.g] || 0) + 1); return n;
+}
+
+function renderStats() {
+  const total = PAGES.reduce((a, p) => a + 1 + (p.x ? p.x.length : 0), 0);
+  $("#stats").innerHTML = [
+    [PAGES.length, "projects"], [total, "pages"],
+  ].map(([b, s]) => `<div class="stat"><b>${b}</b><span>${s}</span></div>`).join("");
+}
+
+function renderChips() {
+  const n = counts();
+  const chip = (key, label, c, count) =>
+    `<button class="chip" data-g="${key}" aria-pressed="${active === key}" style="--c:${c}">` +
+    (key === "all" ? "" : `<span class="dot"></span>`) + `${label}<span class="n">${count}</span></button>`;
+  $("#chips").innerHTML = chip("all", "All", "var(--fire)", PAGES.length) +
+    Object.entries(GROUPS).map(([k, g]) => chip(k, g.name, g.c, n[k])).join("");
+  $("#chips").querySelectorAll(".chip").forEach(b => b.onclick = () => {
+    active = b.dataset.g; renderChips(); renderMain();
+    try { localStorage.setItem("dumpster-pile", active); } catch (e) {}
+  });
+}
+
+function card(p) {
+  const c = GROUPS[p.g].c;
+  const extras = p.x ? `<div class="extras">${p.x.map(([l, h]) => `<a href="${h}">${esc(l)}</a>`).join("")}</div>` : "";
+  const note = p.note ? `<span class="note">${esc(p.note)}</span>` : "";
+  return `<article class="card" style="--c:${c}">
+    <div class="thumb"><img src="site-assets/thumbs/${p.thumb}.webp" alt="" loading="lazy" width="720" height="450"></div>
+    <div class="body">
+      <span class="tag">${esc(GROUPS[p.g].name)}</span>
+      <h3><a href="${p.href}">${esc(p.t)}</a></h3>
+      <p>${esc(p.d)}</p>${note}${extras}
+    </div>
+  </article>`;
+}
+
+function renderMain() {
+  const q = $("#q").value.trim().toLowerCase();
+  const hit = p => (active === "all" || p.g === active) &&
+    (!q || (p.t + " " + p.d + " " + GROUPS[p.g].name).toLowerCase().includes(q));
+  let shown = 0;
+  $("#main").innerHTML = Object.entries(GROUPS).map(([k, g]) => {
+    const items = PAGES.filter(p => p.g === k && hit(p));
+    shown += items.length;
+    if (!items.length) return "";
+    return `<section class="group">
+      <div class="group-head" style="--c:${g.c}"><span class="swatch"></span><h2>${g.name}</h2><span class="count">${items.length}</span></div>
+      <div class="grid">${items.map(card).join("")}</div>
+    </section>`;
+  }).join("");
+  $("#empty").style.display = shown ? "none" : "block";
+}
+
+try { const s = localStorage.getItem("dumpster-pile"); if (s && (s === "all" || GROUPS[s])) active = s; } catch (e) {}
+$("#q").addEventListener("input", renderMain);
+renderStats(); renderChips(); renderMain();
+</script>
+</body>
+</html>
