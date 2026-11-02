@@ -16,15 +16,15 @@ separate; this directory only reads them and writes a merged table.
 Rebuild from the repository root:
 
 ```sh
-python3 land-listings-combined/build_combined.py
+python3 real-estate/land-listings-combined/build_combined.py
 ```
 
 The script reads:
 
-- `colorado-land-listings/colorado-land-over-10ac.json` (or its `.part*` files)
+- `real-estate/colorado/colorado-land-over-10ac.json` (or its `.part*` files)
   and `colorado-land-geocodes.json`
-- `texas-triangle-land/data/listings.json`
-- `utah-land-listings/utah-land-over-10ac.json`
+- `real-estate/texas-triangle/data/listings.json`
+- `real-estate/utah/utah-land-over-10ac.json`
 
 ## Columns
 
