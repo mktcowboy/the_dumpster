@@ -1,6 +1,6 @@
 [![Yes No GIF](https://media1.tenor.com/m/GQBgOkfrMZ8AAAAC/yes-no.gif)](https://tenor.com/view/yes-no-gif-23142380)
 
-*Last updated: October 30, 2026*
+*Last updated: November 3, 2026*
 
 # Project index
 
@@ -23,7 +23,7 @@ Most projects are self-contained HTML pages that open directly in a browser.
 | [S&P 500 correlation](markets/sp500-correlation/) | One-year pairwise correlation grid and pair-trade screen across S&P 500 constituents |
 | [S&P 500 tracker](markets/sp500-tracker/) | Constituent changes from 2007–2026, removed-stock performance, and ticker comparisons |
 | [Dow weighting history](markets/djia-weights/) | Price-weighted Dow member weights from 2004–2026, with era snapshots and a membership log |
-| [Nasdaq-100 weighting history](markets/nasdaq-100-weights/) | Modified market-cap Nasdaq-100 weights from 2004–2026, compared with uncapped market-cap shares and QQQ holdings |
+| [Nasdaq-100 weighting history](markets/nasdaq-100-weights/) | Work in progress toward a Dow-weights-style Nasdaq-100 / QQQ page: an unwired shell plus collected source dumps, with no built report yet |
 | [Options — max pain](markets/options/) | SPY × QQQ max-pain report, QQQ universe scanner, and reproducible snapshot pipeline |
 | [QQQ max-pain board](markets/options/qqq-max-pain.html) | Ranked max-pain board for all loadable QQQ holdings |
 | [Options — live board](markets/options-live/) | Self-refreshing max-pain dashboard with click-through ticker details and charts |
@@ -75,4 +75,5 @@ Most projects are self-contained HTML pages that open directly in a browser.
 
 - `scripts/` holds the privacy checker.
 - Run `python3 scripts/check_privacy.py` before committing, per [AGENTS.md](AGENTS.md).
+- [`index.html`](index.html) is the GitHub Pages catalog of the HTML projects. Card thumbnails live in [`site-assets/thumbs/`](site-assets/thumbs/).
 - Each project folder contains its source files and, where available, a README with build or refresh instructions.
