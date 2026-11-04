@@ -1,0 +1,139 @@
+{
+  "slug": "aquanaut_bluegreen",
+  "title": "Patek Philippe Aquanaut, blue and green dials",
+  "model": "aquanaut",
+  "scraped_at": "2026-10-31T00:33:35.393655+00:00",
+  "data_as_of": "2026-10-30 19:33 CDT",
+  "warnings": [
+    "eBay failed (eBay blocked the scraper (HTTP 403))",
+    "WatchCharts failed (WatchCharts blocked the scraper (HTTP 403, Just a moment...))",
+    "Crown & Caliber failed (Crown & Caliber: page not found (HTTP 404); site search may have moved)",
+    "Bezel failed (Bezel: page loaded (HTTP 200) but listings are rendered by JavaScript from an API this scanner does not call)",
+    "Wristcheck failed (Wristcheck: page loaded (HTTP 200) but listings are rendered by JavaScript from an API this scanner does not call)",
+    "Luxury Bazaar failed (Luxury Bazaar: search page loads but shows no blue or green Aquanauts to a script (results are rendered by JavaScript))",
+    "European Watch Co. failed (European Watch Co.: page loaded (HTTP 200) but listings are rendered by JavaScript from an API this scanner does not call)"
+  ],
+  "last_attempt_at": "2026-10-31T00:33:35.393655+00:00",
+  "merged_rows": 786,
+  "sources": {
+    "chrono24": {
+      "label": "Chrono24",
+      "scraped_at": "2026-10-31T00:33:35.393655+00:00",
+      "ok": true,
+      "rows": 780,
+      "warning": "",
+      "detail": {
+        "rows": 780,
+        "search_results": 781,
+        "site_total": 826,
+        "details_fetched": 3,
+        "details_failed": 0
+      }
+    },
+    "bobs": {
+      "label": "Bob's Watches",
+      "scraped_at": "2026-10-31T00:33:35.393655+00:00",
+      "ok": true,
+      "rows": 0,
+      "warning": "Bob's Watches answered but listed no blue or green Aquanauts"
+    },
+    "the1916": {
+      "label": "The 1916 Company (WatchBox)",
+      "scraped_at": "2026-10-31T00:33:35.393655+00:00",
+      "ok": true,
+      "rows": 0,
+      "warning": "The 1916 Company (WatchBox) answered but listed no blue or green Aquanauts"
+    },
+    "swe": {
+      "label": "Swiss Watch Expo",
+      "scraped_at": "2026-10-31T00:33:35.393655+00:00",
+      "ok": true,
+      "rows": 0,
+      "warning": "Swiss Watch Expo answered but listed no blue or green Aquanauts"
+    },
+    "davidsw": {
+      "label": "DavidSW",
+      "scraped_at": "2026-10-31T00:33:35.393655+00:00",
+      "ok": true,
+      "rows": 1,
+      "warning": ""
+    },
+    "analogshift": {
+      "label": "Analog Shift",
+      "scraped_at": "2026-10-31T00:33:35.393655+00:00",
+      "ok": true,
+      "rows": 0,
+      "warning": "Analog Shift answered but listed no blue or green Aquanauts"
+    },
+    "hodinkee": {
+      "label": "Hodinkee Shop",
+      "scraped_at": "2026-10-31T00:33:35.393655+00:00",
+      "ok": true,
+      "rows": 0,
+      "warning": "Hodinkee Shop answered but listed no blue or green Aquanauts"
+    },
+    "watchfinder": {
+      "label": "Watchfinder & Co.",
+      "scraped_at": "2026-10-31T00:33:35.393655+00:00",
+      "ok": true,
+      "rows": 1,
+      "warning": ""
+    },
+    "jomashop": {
+      "label": "Jomashop",
+      "scraped_at": "2026-10-31T00:33:35.393655+00:00",
+      "ok": true,
+      "rows": 0,
+      "warning": "Jomashop answered but listed no blue or green Aquanauts"
+    },
+    "grailzee": {
+      "label": "Grailzee",
+      "scraped_at": "2026-10-31T00:33:35.393655+00:00",
+      "ok": true,
+      "rows": 4,
+      "warning": ""
+    },
+    "ebay": {
+      "label": "eBay",
+      "ok": false,
+      "warning": "eBay blocked the scraper (HTTP 403)",
+      "last_attempt_at": "2026-10-31T00:33:35.393655+00:00"
+    },
+    "watchcharts": {
+      "label": "WatchCharts",
+      "ok": false,
+      "warning": "WatchCharts blocked the scraper (HTTP 403, Just a moment...)",
+      "last_attempt_at": "2026-10-31T00:33:35.393655+00:00"
+    },
+    "crown": {
+      "label": "Crown & Caliber",
+      "ok": false,
+      "warning": "Crown & Caliber: page not found (HTTP 404); site search may have moved",
+      "last_attempt_at": "2026-10-31T00:33:35.393655+00:00"
+    },
+    "bezel": {
+      "label": "Bezel",
+      "ok": false,
+      "warning": "Bezel: page loaded (HTTP 200) but listings are rendered by JavaScript from an API this scanner does not call",
+      "last_attempt_at": "2026-10-31T00:33:35.393655+00:00"
+    },
+    "wristcheck": {
+      "label": "Wristcheck",
+      "ok": false,
+      "warning": "Wristcheck: page loaded (HTTP 200) but listings are rendered by JavaScript from an API this scanner does not call",
+      "last_attempt_at": "2026-10-31T00:33:35.393655+00:00"
+    },
+    "luxurybazaar": {
+      "label": "Luxury Bazaar",
+      "ok": false,
+      "warning": "Luxury Bazaar: search page loads but shows no blue or green Aquanauts to a script (results are rendered by JavaScript)",
+      "last_attempt_at": "2026-10-31T00:33:35.393655+00:00"
+    },
+    "europeanwatch": {
+      "label": "European Watch Co.",
+      "ok": false,
+      "warning": "European Watch Co.: page loaded (HTTP 200) but listings are rendered by JavaScript from an API this scanner does not call",
+      "last_attempt_at": "2026-10-31T00:33:35.393655+00:00"
+    }
+  }
+}
