@@ -2,7 +2,7 @@
 
 Cite-first bibliography for biochar and activated carbon in water treatment and filtration.
 
-This set is separate from soil and carbon-dioxide-removal science. The papers audit describes the broader top-20 list as mostly soil and climate work. That list can support carbon-dioxide-removal notes. It is the wrong default for filtration claims. Use this folder for water and filtration citations.
+This set is separate from soil and carbon-dioxide-removal science. The papers audit says most of the biochar top 10 are soil and climate work: fine for carbon-dioxide-removal notes, and misleading as a water shortlist. Use this folder for water and filtration citations.
 
 ## Tiers
 
