@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>James Beard Award Graphs</title>
+<style>
+  :root { --bg:#0f1115; --card:#161a22; --border:#2a3344; --text:#e8ecf4; --muted:#9aa3b5; --accent:#c9a227; --a:#7aa2ff; --b:#5ecf9a; }
+  * { box-sizing: border-box; }
+  body { margin:0; min-height:100vh; background:radial-gradient(ellipse at top,#1a1f2b,#0b0d12 70%); color:var(--text); font:16px/1.5 Inter,system-ui,sans-serif; }
+  main { max-width:880px; margin:0 auto; padding:48px 24px; }
+  h1 { font-size:28px; margin:0 0 8px; }
+  .sub { color:var(--muted); margin-bottom:32px; }
+  .grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  @media (max-width:700px){ .grid { grid-template-columns:1fr; } }
+  a.card { display:block; text-decoration:none; color:inherit; background:var(--card); border:1px solid var(--border); border-radius:14px; padding:22px; transition:border-color .15s, transform .15s; }
+  a.card:hover { border-color:var(--accent); transform:translateY(-2px); }
+  .tag { font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--accent); margin-bottom:8px; }
+  h2 { margin:0 0 8px; font-size:20px; }
+  p { margin:0; color:var(--muted); font-size:14px; }
+  .dot { display:inline-block; width:10px; height:10px; border-radius:50%; margin-right:6px; }
+  footer { margin-top:40px; color:var(--muted); font-size:13px; }
+  footer a { color:var(--a); }
+</style>
+</head>
+<body>
+<main>
+  <h1>James Beard Award Graphs</h1>
+  <p class="sub">Unofficial Obsidian-style knowledge graphs of public James Beard Foundation award results. Pick a graph:</p>
+  <div class="grid">
+    <a class="card" href="restaurant-chef/">
+      <div class="tag"><span class="dot" style="background:var(--a)"></span>Restaurant &amp; Chef</div>
+      <h2>Restaurant &amp; Chef Awards</h2>
+      <p>Winners, nominees, and semifinalists (1991–2025). People, restaurants, cities, categories, years.</p>
+    </a>
+    <a class="card" href="book-media/">
+      <div class="tag"><span class="dot" style="background:var(--b)"></span>Book / Media</div>
+      <h2>Book, Broadcast &amp; Journalism</h2>
+      <p>Winners and nominees (1991–2024). Authors, books, shows, publishers, publications, outlets.</p>
+    </a>
+  </div>
+  <footer>
+    Data from <a href="https://www.jamesbeard.org/awards/search-past-awards">jamesbeard.org</a> (via public CSV). Unofficial fan/research visualization — not affiliated with the James Beard Foundation.
+  </footer>
+</main>
+</body>
+</html>
