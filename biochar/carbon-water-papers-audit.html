@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Audit: Carbon-Based Water Filtration Paper Collection</title>
+<style>
+  :root{--ink:#1d2329;--muted:#5b6670;--accent:#1f6f5c;--accent2:#8a5a1f;--bg:#fbfaf7;--card:#ffffff;--line:#e3e0d8;--warn:#9a3b2e;}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 Georgia,"Iowan Old Style","Palatino Linotype",serif}
+  header{background:linear-gradient(135deg,#17332c,#1f6f5c);color:#f4f1ea;padding:56px 24px 44px}
+  header .wrap{max-width:980px;margin:0 auto}
+  header h1{font-family:"Helvetica Neue",Arial,sans-serif;font-weight:700;font-size:2.0rem;line-height:1.2;margin:0 0 10px}
+  header p{margin:4px 0;color:#d9e6e0;font-family:"Helvetica Neue",Arial,sans-serif;font-size:.95rem}
+  main{max-width:980px;margin:0 auto;padding:28px 24px 80px}
+  h2{font-family:"Helvetica Neue",Arial,sans-serif;color:var(--accent);font-size:1.5rem;margin:48px 0 12px;padding-top:8px;border-top:2px solid var(--line)}
+  h3{font-family:"Helvetica Neue",Arial,sans-serif;font-size:1.12rem;margin:26px 0 8px;color:#23413a}
+  a{color:var(--accent)}
+  .toc{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px 26px;margin:20px 0}
+  .toc h2{border:0;margin:0 0 6px;padding:0;font-size:1.1rem}
+  .toc ol{margin:0;padding-left:22px;columns:2;column-gap:36px;font-family:"Helvetica Neue",Arial,sans-serif;font-size:.93rem}
+  .toc li{margin:3px 0;break-inside:avoid}
+  .summary{background:#eef5f2;border-left:5px solid var(--accent);padding:16px 22px;border-radius:6px;margin:22px 0}
+  .summary ul{margin:6px 0 0;padding-left:20px}
+  .callout{background:#fff6ec;border-left:5px solid var(--accent2);padding:12px 18px;border-radius:6px;margin:18px 0}
+  .warn{background:#fbeeec;border-left:5px solid var(--warn);padding:12px 18px;border-radius:6px;margin:18px 0}
+  table{width:100%;border-collapse:collapse;margin:16px 0 8px;background:var(--card);font-family:"Helvetica Neue",Arial,sans-serif;font-size:.86rem;line-height:1.45}
+  th,td{border:1px solid var(--line);padding:9px 11px;vertical-align:top;text-align:left}
+  th{background:#23413a;color:#fff;font-weight:600}
+  tr:nth-child(even) td{background:#f7f5f0}
+  .caption{font-family:"Helvetica Neue",Arial,sans-serif;font-size:.82rem;color:var(--muted);margin:4px 0 18px}
+  .score{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin:18px 0}
+  .score .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;font-family:"Helvetica Neue",Arial,sans-serif}
+  .score .card strong{display:block;font-size:1.6rem;color:var(--accent);margin-bottom:4px}
+  .score .card span{color:var(--muted);font-size:.82rem}
+  .in-yes{color:#1f6f5c;font-weight:700}
+  .in-partial{color:#8a5a1f;font-weight:700}
+  .in-no{color:#9a3b2e;font-weight:700}
+  .meta{color:var(--muted);font-size:.85rem}
+  .refs{font-family:"Helvetica Neue",Arial,sans-serif;font-size:.86rem;line-height:1.5;padding-left:28px}
+  .refs li{margin:8px 0}
+  footer{max-width:980px;margin:0 auto;padding:0 24px 40px;color:var(--muted);font-family:"Helvetica Neue",Arial,sans-serif;font-size:.8rem}
+  @media (max-width:640px){.toc ol{columns:1}header h1{font-size:1.55rem}body{font-size:16px}}
+  @media print{header{background:#1f6f5c !important;-webkit-print-color-adjust:exact}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <h1>Audit: Science Papers on Carbon-Based Water Filtration</h1>
+  <p>Is the work repository's <code>biochar/research</code> collection the best it can be for citing biochar and activated-carbon water treatment?</p>
+  <p>Prepared November 5, 2026 (America/Chicago) &middot; Read-only GitHub inventory + Crossref/OpenAlex verification</p>
+</div></header>
+
+<main>
+
+<div class="summary">
+<strong>Verdict</strong>
+<ul>
+  <li><strong>No — not for water filtration citing.</strong> The <code>Science/</code> and <code>Sources/</code> hubs are strong for permanence, CDR and soil, but they are not a curated library of peer-reviewed water-treatment papers.</li>
+  <li>For carbon-based contaminant removal, usable assets are thin: two Water-purification HTML notes, a vendor Norit pack, Production notes (<code>PFAS.md</code>, <code>Biochar vs Activated Carbon.md</code>), and a “top 20” list that is mostly soil/climate or off-topic for filtration.</li>
+  <li>No peer-reviewed paper PDFs were found under <code>biochar/research/</code> (GitHub code search for <code>extension:pdf</code> returned 0). The only PDFs are Norit marketing/case-study PDFs.</li>
+  <li>There is no master BibTeX / CSL-JSON / CSV bibliography for water. Citation metadata is scattered across Markdown/HTML notes.</li>
+  <li>Your standalone report at <code>/workspace/biochar-activated-carbon-water-report.html</code> already cites a stronger water set (25 sources) than the Science folder; most of those DOIs are not curated as first-class entries in the repo.</li>
+</ul>
+</div>
+
+<nav class="toc" aria-label="Table of contents">
+<h2>Contents</h2>
+<ol>
+  <li><a href="#scorecard">Scorecard</a></li>
+  <li><a href="#inventory">Inventory</a></li>
+  <li><a href="#problems">Problems found</a></li>
+  <li><a href="#shortlist">Cite these first</a></li>
+  <li><a href="#gaps">Gap list</a></li>
+  <li><a href="#vs-report">Coverage vs water report</a></li>
+  <li><a href="#plan">Improvement plan</a></li>
+  <li><a href="#methods">Methods and limits</a></li>
+</ol>
+</nav>
+
+<h2 id="scorecard">1. Scorecard</h2>
+<div class="score">
+  <div class="card"><strong>3 / 10</strong><span>Overall for water citing</span></div>
+  <div class="card"><strong>2 / 10</strong><span>Topic coverage (water)</span></div>
+  <div class="card"><strong>4 / 10</strong><span>Citation metadata quality</span></div>
+  <div class="card"><strong>7 / 10</strong><span>CDR / permanence science (adjacent)</span></div>
+  <div class="card"><strong>6 / 10</strong><span>Practical water notes (NSF 61, Norit, PFAS)</span></div>
+  <div class="card"><strong>1 / 10</strong><span>Machine-readable bibliography</span></div>
+</div>
+<p class="caption">Scores are auditor judgment against the goal “cite the best studies on biochar and activated carbon for water contaminant removal,” not against soil/CDR excellence.</p>
+
+<h2 id="inventory">2. Inventory</h2>
+<p>Repo: work repository, <code>biochar/research</code>. Counts below are from the research README file table and directory listings (November 5, 2026). MD+HTML pairs for the same note are counted as files in README totals.</p>
+
+<table>
+<thead><tr><th>Location</th><th>Files (README)</th><th>What is actually there for water filtration</th></tr></thead>
+<tbody>
+<tr><td><code>Science/</code></td><td>28</td><td>Permanence, CDR, Terra Preta, H/C–O/C, recent permanence research. <strong>Not</strong> a water-paper library. Foundational Papers list is soil/climate.</td></tr>
+<tr><td><code>Sources/</code></td><td>62</td><td>Soil GHG, yield metas, IUPAC terminology, lab standards. Almost no water-treatment paper notes.</td></tr>
+<tr><td><code>Water-purification/</code></td><td>1 listed / 2 on disk</td><td><code>biochar-water-purification-summary.html</code> (synthesis with ~20 DOIs) and <code>drinking-water-certification.html</code> (NSF/ANSI 61, Oklahoma, AWWA, certifiers). Best water assets in the repo.</td></tr>
+<tr><td><code>Activated_Carbon/</code></td><td>54</td><td>Gulf Coast market HTML + <code>Norit/</code> (35 vendor summaries, 18 public PDFs). Marketing/case studies, not peer-reviewed literature.</td></tr>
+<tr><td><code>Standards/</code></td><td>1</td><td>Gold Standard PARC biochar methodology (credits). Missing NSF/ANSI 42/53/61, AWWA B604, IBI/EBC product standards as water-media docs.</td></tr>
+<tr><td><code>Applications/</code></td><td>52</td><td>Soil/agronomy. No dedicated water-filtration application notes.</td></tr>
+<tr><td><code>Production/</code></td><td>29</td><td>Strong related notes: <code>PFAS.md</code>, <code>Biochar vs Activated Carbon.md</code>, contaminants/testing. Cite-worthy but not a paper database.</td></tr>
+<tr><td><code>sludge_processing/</code></td><td>10</td><td>Municipal sludge costs/pyrolysis concepts; peripheral to filtration media.</td></tr>
+<tr><td><code>vault-imports/</code></td><td>—</td><td>Does not exist yet (README says future imports go there).</td></tr>
+<tr><td>Root lists</td><td>2 MD</td><td><code>top 20 cited papers…</code> + <code>…summaries.md</code>. Mixed soil/AC fundamentals; only a minority are water sorption papers.</td></tr>
+</tbody>
+</table>
+<p class="caption">Table 1. Folder inventory focused on water-filtration relevance.</p>
+
+<div class="callout">
+<strong>File types:</strong> Almost entirely Markdown + mirrored HTML notes. No BibTeX/CSL-JSON/CSV master bibliography for papers. Peer-reviewed PDFs: none found under <code>biochar/research/</code>. Vendor PDFs: ~18 in <code>Activated_Carbon/Norit/source_pdfs/</code>.
+</div>
+
+<h3>Top-20 list — DOI verification (spot-check)</h3>
+<p>All 22 DOI strings in the top-20 + bridge list resolve in Crossref. OpenAlex citation counts (checked November 5, 2026) are far higher than the WoS-style numbers printed in the list. The companion <code>summaries.md</code> already documents three broken/wrong links that were <strong>not</strong> fixed in the source list:</p>
+<table>
+<thead><tr><th>#</th><th>Listed DOI</th><th>Problem (verified)</th><th>Correct DOI</th></tr></thead>
+<tbody>
+<tr><td>15</td><td><code>10.1016/S0008-6223(97)00190-5</code></td><td>Resolves to Rubio et al. SO<sub>2</sub> flue-gas chars, not Rodríguez-Reinoso catalysis</td><td><code>10.1016/S0008-6223(97)00173-5</code></td></tr>
+<tr><td>19</td><td><code>10.1016/j.cej.2013.01.073</code></td><td>Resolves to Tao et al. methane reforming, not Bhatnagar AC modification</td><td><code>10.1016/j.cej.2012.12.038</code></td></tr>
+<tr><td>18</td><td>Taylor &amp; Francis chapter link</td><td>404 in summaries note</td><td><code>10.1201/9781482270129-11</code> (Radovic chapter)</td></tr>
+</tbody>
+</table>
+<p class="caption">Table 2. Confirmed DOI errors in the top-20 source list (corrections already known in summaries.md).</p>
+<p>Off-topic for water filtration in the same list (summaries.md also flags these): Frackowiak capacitors (#11), Rodríguez-Reinoso catalysis (#15), Baker carbon filaments (#17). Most of the biochar “top 10” are soil/climate, not water treatment—fine for CDR work, misleading if used as a water shortlist.</p>
+
+<h2 id="problems">3. Problems found</h2>
+<ol>
+  <li><strong>Wrong mental model of the folder.</strong> <code>Science/</code> = permanence/CDR knowledge base, not a filtration paper database.</li>
+  <li><strong>No full texts of the studies you need to cite</strong> (paywall/access limits noted in summaries.md; Elsevier denied; most entries abstract-only).</li>
+  <li><strong>Wrong or stale DOIs</strong> still live in the editable top-20 list.</li>
+  <li><strong>Over-weight on vendor evidence</strong> (Norit) relative to peer-reviewed primary studies for performance claims.</li>
+  <li><strong>Duplicate MD/HTML</strong> without a single canonical bibliography row (title, authors, year, journal, DOI, topic tags, tier, PDF path).</li>
+  <li><strong>Missing standards corpus for drinking water:</strong> NSF/ANSI 42/53/61, AWWA B604 (GAC), EPA PFAS BAT documents are cited in notes/report but not filed under <code>Standards/</code>.</li>
+  <li><strong>Weak recent (2022–2026) water coverage</strong> as curated paper entries, despite useful Production/PFAS narrative notes.</li>
+  <li><strong>Summaries honesty is good</strong> (basis tags, corrections)—but the source list was left uncorrected, so a hurried citer can still grab a wrong DOI.</li>
+</ol>
+
+<h2 id="shortlist">4. Cite these first (~25)</h2>
+<p>Prioritized shortlist for biochar + activated carbon in water. Citation counts are <strong>OpenAlex <code>cited_by_count</code></strong> checked November 5, 2026. Every DOI below was resolved via OpenAlex (and Crossref where previously tested). Machine-readable twin: <code>/workspace/carbon-water-papers-shortlist.csv</code>.</p>
+<p><strong>Tier A</strong> = default citations for claims. <strong>Tier B</strong> = contaminant-class specialists. <strong>Tier C</strong> = carbon surface-chemistry foundations (mechanisms, not performance).</p>
+
+<table>
+<thead><tr><th>#</th><th>Tier</th><th>Citation</th><th>Topic / type</th><th>OpenAlex cites</th><th>In collection?</th><th>Why it matters</th></tr></thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>A</strong></td>
+<td>Ahmad M, Rajapaksha AU, Lim JE, Zhang M, Bolan N, Mohan D, Vithanage M, Lee SS, Ok YS (2014). Biochar as a sorbent for contaminant management in soil and water: A review. <em>Chemosphere</em>. <a href="https://doi.org/10.1016/j.chemosphere.2013.10.071">10.1016/j.chemosphere.2013.10.071</a></td>
+<td>biochar sorption overview<br><span class="meta">review</span></td>
+<td>4,724 <span class='meta'>(OpenAlex cited_by_count checked 2026-11-05)</span></td>
+<td class="in-yes">yes</td>
+<td>Most-cited biochar sorption review; default starting citation for contaminant removal.</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>A</strong></td>
+<td>Mohan D, Sarswat A, Ok YS, Pittman CU (2014). Organic and inorganic contaminants removal from water with biochar, a renewable, low cost and sustainable adsorbent – A critical review. <em>Bioresource Technology</em>. <a href="https://doi.org/10.1016/j.biortech.2014.01.120">10.1016/j.biortech.2014.01.120</a></td>
+<td>biochar water organics+inorganics<br><span class="meta">review</span></td>
+<td>2,343 <span class='meta'>(OpenAlex cited_by_count checked 2026-11-05)</span></td>
+<td class="in-yes">yes</td>
+<td>Water-focused companion to Ahmad; best early review for aqueous treatment claims.</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>A</strong></td>
+<td>Moreno-Castilla C (2004). Adsorption of organic molecules from aqueous solutions on carbon materials. <em>Carbon</em>. <a href="https://doi.org/10.1016/j.carbon.2003.09.022">10.1016/j.carbon.2003.09.022</a></td>
+<td>AC organics aqueous<br><span class="meta">review</span></td>
+<td>1,428 <span class='meta'>(OpenAlex cited_by_count checked 2026-11-05)</span></td>
+<td class="in-yes">yes</td>
+<td>Classic activated-carbon aqueous organics adsorption mechanisms.</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>A</strong></td>
+<td>Bhatnagar A, Hogland W, Marques M, Sillanpää M (2013). An overview of the modification methods of activated carbon for its water treatment applications. <em>Chemical Engineering Journal</em>. <a href="https://doi.org/10.1016/j.cej.2012.12.038">10.1016/j.cej.2012.12.038</a></td>
+<td>AC modification for water<br><span class="meta">review</span></td>
+<td>1,237 <span class='meta'>(OpenAlex cited_by_count checked 2026-11-05)</span></td>
+<td class="in-partial">partial</td>
+<td>Listed in top-20 with WRONG DOI; summaries.md has the correct DOI. Cite this DOI, not 10.1016/j.cej.2013.01.073.</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>A</strong></td>
+<td>Heidarinejad Z, Dehghani MH, Heidari M, Javedan G, Ali I, Sillanpää M (2020). Methods for preparation and activation of activated carbon: a review. <em>Environmental Chemistry Letters</em>. <a href="https://doi.org/10.1007/s10311-019-00955-0">10.1007/s10311-019-00955-0</a></td>
+<td>AC production/activation<br><span class="meta">review</span></td>
+<td>1,502 <span class='meta'>(OpenAlex cited_by_count checked 2026-11-05)</span></td>
+<td class="in-no">no</td>
+<td>Authoritative survey of physical/chemical activation routes used in your water report.</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>A</strong></td>
+<td>Li H, Dong X, da Silva EB, de Oliveira LM, Chen Y, Ma LQ (2017). Mechanisms of metal sorption by biochars: Biochar characteristics and modifications. <em>Chemosphere</em>. <a href="https://doi.org/10.1016/j.chemosphere.2017.03.072">10.1016/j.chemosphere.2017.03.072</a></td>
+<td>heavy metals mechanisms<br><span class="meta">review</span></td>
+<td>1,843 <span class='meta'>(OpenAlex cited_by_count checked 2026-11-05)</span></td>
+<td class="in-no">no</td>
+<td>Standard mechanism map for Pb/Cd/As/Cr/Hg on biochar.</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>A</strong></td>
+<td>Rajapaksha AU, Chen SS, Tsang DCW, Zhang M, Vithanage M, Mandal S, Gao B, Bolan NS, Ok YS (2016). Engineered/designer biochar for contaminant removal/immobilization from soil and water: Potential and promise of engineered biochar. <em>Chemosphere</em>. <a href="https://doi.org/10.1016/j.chemosphere.2016.01.043">10.1016/j.chemosphere.2016.01.043</a></td>
+<td>engineered biochar<br><span class="meta">review</span></td>
+<td>1,324 <span class='meta'>(OpenAlex cited_by_count checked 2026-11-05)</span></td>
+<td class="in-no">no</td>
+<td>Landmark engineered/designer biochar review; cite when discussing modified chars.</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>A</strong></td>
+<td>Ambaye TG, Vaccari M, van Hullebusch ED, Amrane A, Rtimi S (2020). Mechanisms and adsorption capacities of biochar for the removal of organic and inorganic pollutants from industrial wastewater. <em>International Journal of Environmental Science and Technology</em>. <a href="https://doi.org/10.1007/s13762-020-03060-w">10.1007/s13762-020-03060-w</a></td>
+<td>biochar capacity mechanisms WW<br><span class="meta">review</span></td>
+<td>909 <span class='meta'>(OpenAlex cited_by_count checked 2026-11-05)</span></td>
+<td class="in-no">no</td>
+<td>High-cited (~909 OpenAlex) modern review of capacities and mechanisms for industrial wastewater.</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>A</strong></td>
+<td>Qiu M, Liu L, Ling Q, Cai Y, Yu S, Wang S, Fu D, Hu B, Wang X (2022). Biochar for the removal of contaminants from soil and water: a review. <em>Biochar</em>. <a href="https://doi.org/10.1007/s42773-022-00146-1">10.1007/s42773-022-00146-1</a></td>
+<td>recent biochar contaminants review<br><span class="meta">review</span></td>
+<td>706 <span class='meta'>(OpenAlex cited_by_count checked 2026-11-05)</span></td>
+<td class="in-no">no</td>
+<td>2022 Springer Nature Biochar review updating the Ahmad/Mohan era.</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>A</strong></td>
+<td>Zhang M, Song G, Gelardi DL, Huang L, Khan E, Mašek O, Parikh SJ, Ok YS (2020). Evaluating biochar and its modifications for the removal of ammonium, nitrate, and phosphate in water. <em>Water Research</em>. <a href="https://doi.org/10.1016/j.watres.2020.116303">10.1016/j.watres.2020.116303</a></td>
+<td>nutrients N/P<br><span class="meta">review</span></td>
+<td>587 <span class='meta'>(OpenAlex cited_by_count checked 2026-11-05)</span></td>
+<td class="in-no">no</td>
+<td>Best single review for NH4+/NO3−/PO4^3− removal with unmodified and modified biochar.</td>
+</tr>
+<tr>
+<td>11</td>
+<td><strong>A</strong></td>
+<td>Alhashimi HA, Aktas CB (2017). Life cycle environmental and economic performance of biochar compared with activated carbon: A meta-analysis. <em>Resources, Conservation and Recycling</em>. <a href="https://doi.org/10.1016/j.resconrec.2016.11.016">10.1016/j.resconrec.2016.11.016</a></td>
+<td>LCA biochar vs AC<br><span class="meta">meta-analysis</span></td>
+<td>554 <span class='meta'>(OpenAlex cited_by_count checked 2026-11-05)</span></td>
+<td class="in-yes">yes</td>
+<td>Source of the energy/CO2e and cost-per-pollutant comparisons used across your notes and report.</td>
+</tr>
+<tr>
+<td>12</td>
+<td><strong>A</strong></td>
+<td>Thompson KA, Shimabuku KK, Kearns JP, Knappe DRU, Summers RS, Cook SM (2016). Environmental Comparison of Biochar and Activated Carbon for Tertiary Wastewater Treatment. <em>Environmental Science &amp; Technology</em>. <a href="https://doi.org/10.1021/acs.est.6b03239">10.1021/acs.est.6b03239</a></td>
+<td>biochar vs AC tertiary WW<br><span class="meta">primary+LCA</span></td>
+<td>350 <span class='meta'>(OpenAlex cited_by_count checked 2026-11-05)</span></td>
+<td class="in-yes">yes</td>
+<td>Peer-reviewed head-to-head environmental comparison for tertiary wastewater.</td>
+</tr>
+<tr>
+<td>13</td>
+<td><strong>A</strong></td>
+<td>Huggins TM, Haeger A, Biffinger JC, Ren ZJ (2016). Granular biochar compared with activated carbon for wastewater treatment and resource recovery. <em>Water Research</em>. <a href="https://doi.org/10.1016/j.watres.2016.02.059">10.1016/j.watres.2016.02.059</a></td>
+<td>granular biochar vs GAC WW<br><span class="meta">primary study</span></td>
+<td>318 <span class='meta'>(OpenAlex cited_by_count checked 2026-11-05)</span></td>
+<td class="in-yes">yes</td>
+<td>Direct granular biochar vs GAC performance in wastewater; cited in your water-purification summary.</td>
+</tr>
+<tr>
+<td>14</td>
+<td><strong>A</strong></td>
+<td>Cantoni B, Turolla A, Wellmitz J, Ruhl AS, Antonelli M (2021). Perfluoroalkyl substances (PFAS) adsorption in drinking water by granular activated carbon: Influence of activated carbon characteristics and competing substances. <em>Science of the Total Environment</em>. <a href="https://doi.org/10.1016/j.scitotenv.2021.148821">10.1016/j.scitotenv.2021.148821</a></td>
+<td>GAC PFAS drinking water<br><span class="meta">review</span></td>
+<td>270 <span class='meta'>(OpenAlex cited_by_count checked 2026-11-05)</span></td>
+<td class="in-no">no</td>
+<td>Critical review of GAC for PFAS in drinking water; pair with EPA BAT documents.</td>
+</tr>
+<tr>
+<td>15</td>
+<td><strong>B</strong></td>
+<td>Zhang D, He Q, Wang M, Zhang W, Liang Y (2019). Sorption of perfluoroalkylated substances (PFASs) onto granular activated carbon and biochar. <em>Environmental Technology</em>. <a href="https://doi.org/10.1080/09593330.2019.1680744">10.1080/09593330.2019.1680744</a></td>
+<td>PFAS GAC vs biochar primary<br><span class="meta">primary study</span></td>
+<td>166 <span class='meta'>(OpenAlex cited_by_count checked 2026-11-05)</span></td>
+<td class="in-no">no</td>
+<td>Direct Langmuir comparison of GAC vs softwood biochar for PFOS/PFOA.</td>
+</tr>
+<tr>
+<td>16</td>
+<td><strong>B</strong></td>
+<td>Liu N, Wu C, Lyu G, Li M (2021). Efficient adsorptive removal of short-chain perfluoroalkyl acids using reed straw-derived biochar (RESCA). <em>Science of the Total Environment</em>. <a href="https://doi.org/10.1016/j.scitotenv.2021.149191">10.1016/j.scitotenv.2021.149191</a></td>
+<td>short-chain PFAS engineered biochar<br><span class="meta">primary study</span></td>
+<td>116 <span class='meta'>(OpenAlex cited_by_count checked 2026-11-05)</span></td>
+<td class="in-no">no</td>
+<td>Shows engineered high-T biochar can beat GAC on some short-chain PFAS in batch tests.</td>
+</tr>
+<tr>
+<td>17</td>
+<td><strong>B</strong></td>
+<td>Wang Z, Alinezhad A, Sun R, Xiao F, et al. (2023). Pre- and Postapplication Thermal Treatment Strategies for Sorption Enhancement and Reactivation of Biochars for Removal of Per- and Polyfluoroalkyl Substances from Water. <em>ACS ES&amp;T Engineering</em>. <a href="https://doi.org/10.1021/acsestengg.2c00271">10.1021/acsestengg.2c00271</a></td>
+<td>PFAS biochar thermal activation<br><span class="meta">primary study</span></td>
+<td>47 <span class='meta'>(OpenAlex cited_by_count checked 2026-11-05)</span></td>
+<td class="in-no">no</td>
+<td>Air oxidation/thermal strategies that raise PFAS Kd toward GAC levels.</td>
+</tr>
+<tr>
+<td>18</td>
+<td><strong>B</strong></td>
+<td>Liang D, Li C, Chen H, Sørmo E, Cornelissen G, Gao Y, Reguyal F, Sarmah AK (2024). A critical review of biochar for the remediation of PFAS-contaminated soil and water. <em>Science of the Total Environment</em>. <a href="https://doi.org/10.1016/j.scitotenv.2024.174962">10.1016/j.scitotenv.2024.174962</a></td>
+<td>PFAS biochar recent review<br><span class="meta">review</span></td>
+<td>77 <span class='meta'>(OpenAlex cited_by_count checked 2026-11-05)</span></td>
+<td class="in-no">no</td>
+<td>2024 critical review; fills the post-2021 PFAS-biochar gap in the collection.</td>
+</tr>
+<tr>
+<td>19</td>
+<td><strong>B</strong></td>
+<td>Peiris C, Gunatilake SR, Mlsna TE, Mohan D, Vithanage M (2017). Biochar based removal of antibiotic sulfonamides and tetracyclines in aquatic environments: A critical review. <em>Bioresource Technology</em>. <a href="https://doi.org/10.1016/j.biortech.2017.07.150">10.1016/j.biortech.2017.07.150</a></td>
+<td>pharmaceuticals antibiotics<br><span class="meta">review</span></td>
+<td>600 <span class='meta'>(OpenAlex cited_by_count checked 2026-11-05)</span></td>
+<td class="in-no">no</td>
+<td>Key review for sulfonamide/tetracycline sorption mechanisms on biochar.</td>
+</tr>
+<tr>
+<td>20</td>
+<td><strong>B</strong></td>
+<td>Cook D, Newcombe G, Sztajnbok P (2001). The application of powdered activated carbon for MIB and geosmin removal: predicting PAC doses in four raw waters. <em>Water Research</em>. <a href="https://doi.org/10.1016/S0043-1354(00)00363-8">10.1016/S0043-1354(00)00363-8</a></td>
+<td>taste/odor MIB geosmin PAC<br><span class="meta">primary study</span></td>
+<td>314 <span class='meta'>(OpenAlex cited_by_count checked 2026-11-05)</span></td>
+<td class="in-no">no</td>
+<td>Classic PAC taste-and-odor paper for drinking-water practice.</td>
+</tr>
+<tr>
+<td>21</td>
+<td><strong>B</strong></td>
+<td>Kranner BP, Afrooz ARMN, Fitzgerald NJM, Boehm AB (2019). Fecal indicator bacteria and virus removal in stormwater biofilters: Effects of biochar, media saturation, and field conditioning. <em>PLOS ONE</em>. <a href="https://doi.org/10.1371/journal.pone.0222719">10.1371/journal.pone.0222719</a></td>
+<td>pathogens stormwater biofilters<br><span class="meta">primary study</span></td>
+<td>40 <span class='meta'>(OpenAlex cited_by_count checked 2026-11-05)</span></td>
+<td class="in-no">no</td>
+<td>Field-relevant stormwater pathogen/virus data with biochar amendments.</td>
+</tr>
+<tr>
+<td>22</td>
+<td><strong>B</strong></td>
+<td>Kamali M, Appels L, Kwon EE, Aminabhavi TM, Dewil R (2021). Biochar in water and wastewater treatment - a sustainability assessment. <em>Chemical Engineering Journal</em>. <a href="https://doi.org/10.1016/j.cej.2021.129946">10.1016/j.cej.2021.129946</a></td>
+<td>sustainability assessment<br><span class="meta">review/assessment</span></td>
+<td>226 <span class='meta'>(OpenAlex cited_by_count checked 2026-11-05)</span></td>
+<td class="in-no">no</td>
+<td>Sustainability framing for water/wastewater uses beyond sorption capacity alone.</td>
+</tr>
+<tr>
+<td>23</td>
+<td><strong>B</strong></td>
+<td>Wang X, Guo Z, Hu Z, Zhang J (2020). Recent advances in biochar application for water and wastewater treatment: a review. <em>PeerJ</em>. <a href="https://doi.org/10.7717/peerj.9164">10.7717/peerj.9164</a></td>
+<td>biochar WW advances<br><span class="meta">review</span></td>
+<td>214 <span class='meta'>(OpenAlex cited_by_count checked 2026-11-05)</span></td>
+<td class="in-no">no</td>
+<td>Open-access overview used in your water report; easy to cite and share.</td>
+</tr>
+<tr>
+<td>24</td>
+<td><strong>C</strong></td>
+<td>Boehm HP (1994). Some aspects of the surface chemistry of carbon blacks and other carbons. <em>Carbon</em>. <a href="https://doi.org/10.1016/0008-6223(94)90031-0">10.1016/0008-6223(94)90031-0</a></td>
+<td>AC surface chemistry fundamentals<br><span class="meta">review/methods</span></td>
+<td>3,038 <span class='meta'>(OpenAlex cited_by_count checked 2026-11-05)</span></td>
+<td class="in-yes">yes</td>
+<td>Foundational surface-chemistry methods (Boehm titration); cite for mechanism depth, not performance claims.</td>
+</tr>
+<tr>
+<td>25</td>
+<td><strong>C</strong></td>
+<td>Figueiredo JL, Pereira MFR, Freitas MMA, Órfão JJM (1999). Modification of the surface chemistry of activated carbons. <em>Carbon</em>. <a href="https://doi.org/10.1016/S0008-6223(98)00333-9">10.1016/S0008-6223(98)00333-9</a></td>
+<td>AC surface modification<br><span class="meta">review/primary</span></td>
+<td>3,105 <span class='meta'>(OpenAlex cited_by_count checked 2026-11-05)</span></td>
+<td class="in-yes">yes</td>
+<td>Classic AC surface-oxidation/modification paper underlying later water-treatment AC design.</td>
+</tr>
+
+</tbody>
+</table>
+<p class="caption">Table 3. Cite-first shortlist. “In collection” = yes if present as a curated top-20/bridge entry or clearly used in Water-purification notes; partial = correct paper known in summaries but wrong DOI still in source list.</p>
+
+<div class="callout">
+<strong>Also cite (non-DOI / standards — keep beside the papers):</strong>
+EPA 2024 PFAS NPDWR treatment fact sheet and PFAS tech/cost TSD; CDC home water-filter guidance; NSF/ANSI/CAN 61 (health effects of process media); NSF/ANSI 42/53 for POU claims; AWWA B604 (GAC); IBI/EBC product standards when discussing biochar quality for media. These appear in your water report and certification note but are not organized under <code>Standards/</code>.
+</div>
+
+<h2 id="gaps">5. Gap list</h2>
+<ul>
+  <li><strong>Landmark water reviews missing as first-class entries:</strong> Li 2017 metals; Rajapaksha 2016 engineered biochar; Ambaye 2020 capacities; Qiu 2022; Zhang 2020 nutrients; Heidarinejad 2020 AC activation; Cantoni 2021 GAC–PFAS; Peiris 2017 antibiotics.</li>
+  <li><strong>Recent PFAS work (2022–2026):</strong> Liang et al. 2024 critical review; Wang 2023 thermal enhancement; Mortazavian 2025 RSSCT GAC (in water report, not curated); short-chain PFAS engineered biochars.</li>
+  <li><strong>Pathogens / household filters:</strong> only lightly covered (Kranner 2019 in report; CDC/NSF in certification note). No systematic literature folder.</li>
+  <li><strong>Taste/odor:</strong> Cook 2001 PAC MIB/geosmin in report only.</li>
+  <li><strong>Stormwater biofilters:</strong> Chen 2022 review in report; not curated in Science.</li>
+  <li><strong>Meta-analyses and column/field validation</strong> beyond Huggins/Thompson/Alhashimi.</li>
+  <li><strong>Master bibliography + PDF vault</strong> for any paper you actually quote.</li>
+</ul>
+
+<h2 id="vs-report">6. Coverage vs <code>biochar-activated-carbon-water-report.html</code></h2>
+<p>The October 22, 2026 water report lists 25 references. Of the DOI-bearing ones, only Ahmad 2014 and Alhashimi 2017 (plus bridge papers appearing in the top-20 list) are clearly curated in the research “paper list.” Most report refs (Wang PeerJ, Qiu, Heidarinejad, Thomas, Li, Peiris, Castiglioni, Zhang PFAS, Liu RESCA, Wang 2023, Mortazavian, Zhang nutrients, Chen stormwater, Kranner, Cook, Mayer, …) live in the report and/or Water-purification HTML, <strong>not</strong> as entries under Science/Sources.</p>
+<p>Implication: the report is currently a better cite pack for water than the Science hub. Fold the report’s bibliography into a master water bibliography in the repo rather than treating Science as the authority.</p>
+
+<h2 id="plan">7. Concrete improvement plan</h2>
+<h3>7.1 Folder structure (proposed)</h3>
+<pre style="background:#f7f5f0;border:1px solid #e3e0d8;padding:14px;border-radius:8px;overflow:auto;font-size:.85rem;font-family:ui-monospace,Menlo,monospace">biochar/research/
+  Water-purification/
+    README.md                 # hub + how to cite
+    bibliography/
+      water-carbon.bib        # or references.json (CSL-JSON)
+      shortlist.csv           # start from /workspace/carbon-water-papers-shortlist.csv
+    papers/                   # one folder or note per paper
+      2014-ahmad-chemosphere/
+        META.yaml             # authors, year, journal, DOI, tier, topics[]
+        notes.md              # 5–10 bullet evidence summary + quote limits
+        pdf/                  # only if legally obtained
+    standards/
+      NSF-ANSI-61.md
+      NSF-ANSI-42-53.md
+      AWWA-B604.md
+      EPA-PFAS-BAT-2024.md
+      IBI-EBC-product.md
+    vendor/                   # keep Norit here; never mix with Tier A papers
+  Science/                    # leave as CDR/permanence hub (do not overload)
+</pre>
+
+<h3>7.2 Metadata template (META.yaml)</h3>
+<pre style="background:#f7f5f0;border:1px solid #e3e0d8;padding:14px;border-radius:8px;overflow:auto;font-size:.85rem;font-family:ui-monospace,Menlo,monospace">title: ""
+authors: []
+year: 2014
+journal: ""
+doi: "10.1016/..."
+url: "https://doi.org/..."
+topics: [metals, organics, PFAS, nutrients, pathogens, taste-odor, stormwater, LCA]
+evidence_type: review | primary | meta-analysis | standard | vendor
+tier: A | B | C | vendor | do-not-cite-alone
+openalex_cites: null
+openalex_checked: "2026-11-05"
+summary_basis: full-text | abstract | secondary
+in_report: true|false
+pdf_path: null
+notes: ""
+</pre>
+
+<h3>7.3 Quality tiers</h3>
+<table>
+<thead><tr><th>Tier</th><th>Allowed use</th></tr></thead>
+<tbody>
+<tr><td>A</td><td>Default peer-reviewed reviews / metas / head-to-heads for general claims</td></tr>
+<tr><td>B</td><td>Contaminant-specific primary studies and niche reviews</td></tr>
+<tr><td>C</td><td>Foundational carbon chemistry (Boehm, Figueiredo, Dubinin) — mechanisms only</td></tr>
+<tr><td>standard</td><td>EPA, NSF, AWWA, IBI/EBC — regulatory/product claims</td></tr>
+<tr><td>vendor</td><td>Norit etc. — product context only; always pair with Tier A/B</td></tr>
+<tr><td>do-not-cite-alone</td><td>Conference abstracts, preprints without peer review, gated marketing pages</td></tr>
+</tbody>
+</table>
+
+<h3>7.4 Immediate actions (priority order)</h3>
+<ol>
+  <li>Fix the three wrong DOIs in <code>top 20 cited papers biochar and activated carbon.md</code> (already diagnosed in summaries.md).</li>
+  <li>Import <code>/workspace/carbon-water-papers-shortlist.csv</code> into <code>Water-purification/bibliography/</code> and expand META for each Tier A paper.</li>
+  <li>Move or copy the water report’s 25 refs into that bibliography; mark which have full-text access.</li>
+  <li>Relabel the top-20 list as “Foundational biochar &amp; carbon science (mixed domains)” and add a separate “Water filtration cite pack.”</li>
+  <li>File EPA/NSF/AWWA/IBI-EBC docs under <code>Standards/</code> (or <code>Water-purification/standards/</code>).</li>
+  <li>Keep Norit under <code>vendor/</code>; never let brochure numbers stand alone in client-facing claims.</li>
+</ol>
+
+<h3>7.5 Recurring literature-alert routine (suggestion)</h3>
+<ul>
+  <li><strong>Monthly (30–45 min):</strong> OpenAlex/Crossref queries for <code>biochar AND (PFAS OR wastewater OR drinking water OR adsorption)</code> and <code>granular activated carbon AND PFAS</code>, sort by publication date; add anything Tier A/B to the CSV.</li>
+  <li><strong>Quarterly:</strong> Refresh OpenAlex citation counts; re-check DOIs; skim EPA/NSF updates on PFAS and drinking-water media.</li>
+  <li><strong>On every new claim:</strong> require DOI + tier + summary_basis before the number enters a client report.</li>
+</ul>
+
+<div class="warn">
+<strong>Access limits this audit hit:</strong> No cloning of the repo; GitHub Contents API only. Peer-reviewed PDFs were not present to read. Most top-20 full texts remain paywalled (as documented in summaries.md). Norit PDFs were inventoried by filename/README only, not re-read in full for this audit. One OpenAlex title for Cantoni 2021 was taken from the API (subtitle emphasizes “Influence of activated carbon characteristics…”).
+</div>
+
+<h2 id="methods">8. Methods and limits</h2>
+<ul>
+  <li>Inventory via cursor-github <code>get_file_contents</code> / <code>search_code</code> on the work repository, paths under <code>biochar/research/</code>.</li>
+  <li>DOI resolution: Crossref Works API and OpenAlex Works API (November 5, 2026).</li>
+  <li>Compared against the 25-reference water report at <code>/workspace/biochar-activated-carbon-water-report.html</code>.</li>
+  <li>Did not invent citations; every shortlist DOI was API-verified. Non-DOI standards are listed separately and flagged as such.</li>
+  <li>This audit did not modify the GitHub repo.</li>
+</ul>
+
+</main>
+<footer>
+Deliverables: this file (<code>/workspace/carbon-water-papers-audit.html</code>) and <code>/workspace/carbon-water-papers-shortlist.csv</code>.
+Not a substitute for reading the primary papers before high-stakes claims.
+</footer>
+</body>
+</html>
