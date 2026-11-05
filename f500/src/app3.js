@@ -1,4 +1,4 @@
-let map, clusterLayer, plainLayer, stateLayer, stateGeo, mstate = {mode: 'cluster', metric: 'count', sector: ''}, mapReady = false, tileLayer, mapAgg, mapSel = null;
+let map, clusterLayer, plainLayer, stateLayer, stateGeo, mstate = {mode: 'cluster', metric: 'count', sector: '', color: 'sector'}, mapReady = false, tileLayer, mapAgg, mapSel = null;
 const TILE = () => 'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/' + (root.dataset.theme === 'dark' ? 'World_Dark_Gray_Base' : 'World_Light_Gray_Base') + '/MapServer/tile/{z}/{y}/{x}';
 const rScale = d3.scaleSqrt([0, d3.max(C, c => c.revenue)], [5, 34]);
 const nk = s => (s||'').toLowerCase();
@@ -9,16 +9,18 @@ function mapInit(){
   stateGeo = topojson.feature(DATA.states, DATA.states.objects.states);
   SECT.forEach(s => $('#m-sector').insertAdjacentHTML('beforeend', `<option>${esc(s)}</option>`));
   $$('#m-mode button').forEach(b => b.onclick = () => { $$('#m-mode button').forEach(x => x.classList.remove('on')); b.classList.add('on'); mstate.mode = b.dataset.v; mapDraw(); });
+  $$('#m-color button').forEach(b => b.onclick = () => { $$('#m-color button').forEach(x => x.classList.remove('on')); b.classList.add('on'); mstate.color = b.dataset.v; mapLegend(); mapDraw(); });
   $('#m-metric').onchange = e => { mstate.metric = e.target.value; mapDraw(); }; $('#m-sector').onchange = e => { mstate.sector = e.target.value; mapDraw(); };
-  $('#m-legend').innerHTML = SECT.map(s => `<span class="chip" data-s="${esc(s)}"><i style="background:${scol(s)}"></i>${esc(s)}</span>`).join('');
-  $$('#m-legend .chip').forEach(ch => ch.onclick = () => { mstate.sector = mstate.sector === ch.dataset.s ? '' : ch.dataset.s; $('#m-sector').value = mstate.sector; mapDraw(); });
-  mapReady = true; mapDraw();
+  mapLegend(); mapReady = true; mapDraw();
 }
-function marker(c){ const r = Math.round(rScale(c.revenue)); const m = L.marker([c.lat, c.lon], {icon: L.divIcon({className: '', html: `<div class="hqdot" style="width:${r}px;height:${r}px;background:${scol(c.sector)}"></div>`, iconSize: [r, r], iconAnchor: [r/2, r/2]}), riseOnHover: true, title: c.name});
-  m._c = c; m.bindPopup(`<b style="font-size:14px">#${c.rank} ${esc(c.name)}</b><br>${esc(c.industry)}<br>${esc(c.city)}, ${esc(c.st||'')}<br>Revenue <b>${fmtM(c.revenue)}</b> · Profit ${fmtM(c.profit)}<br>Employees ${fmtN(c.employees)}<br><a href="${href(c)}">Open full profile →</a>`); return m; }
+function mapLegend(){ if (mstate.color === 'own') { $('#m-legend').innerHTML = OWNK.map(k => `<span class="chip"><i style="background:${ocol(k)}"></i>${esc(OWN[k].n)} · ${C.filter(c => c.own === k).length}</span>`).join(''); return; }
+  $('#m-legend').innerHTML = SECT.map(s => `<span class="chip" data-s="${esc(s)}"><i style="background:${scol(s)}"></i>${esc(s)}</span>`).join('');
+  $$('#m-legend .chip').forEach(ch => ch.onclick = () => { mstate.sector = mstate.sector === ch.dataset.s ? '' : ch.dataset.s; $('#m-sector').value = mstate.sector; mapDraw(); }); }
+function marker(c, colorBy){ const r = Math.round(rScale(c.revenue)); const m = L.marker([c.lat, c.lon], {icon: L.divIcon({className: '', html: `<div class="hqdot" style="width:${r}px;height:${r}px;background:${(colorBy || mstate.color) === 'own' ? ocol(c.own) : scol(c.sector)}"></div>`, iconSize: [r, r], iconAnchor: [r/2, r/2]}), riseOnHover: true, title: c.name});
+  m._c = c; m.bindPopup(`<b style="font-size:14px">#${c.rank} ${esc(c.name)}</b><br>${esc(c.industry)}<br>${esc(c.city)}, ${esc(c.st||'')}<br>Revenue <b>${fmtM(c.revenue)}</b> · Profit ${fmtM(c.profit)}<br>Employees ${fmtN(c.employees)}<br>Ownership: ${esc((OWN[c.own]||OWN.unknown).n)}${c.ownDetail ? ' · ' + esc(c.ownDetail) : ''}<br><a href="${href(c)}">Open full profile →</a>`); return m; }
 function mapDraw(){ if (!mapReady) return; [clusterLayer, plainLayer, stateLayer].forEach(l => l && map.removeLayer(l)); clusterLayer = plainLayer = stateLayer = null;
   const list = C.filter(c => c.lat != null && (!mstate.sector || c.sector === mstate.sector));
-  $$('#m-legend .chip').forEach(ch => ch.classList.toggle('off', !!mstate.sector && ch.dataset.s !== mstate.sector));
+  $$('#m-legend .chip[data-s]').forEach(ch => ch.classList.toggle('off', !!mstate.sector && ch.dataset.s !== mstate.sector));
   const agg = d3.rollup(list, v => ({count: v.length, revenue: sum(v, c => c.revenue), profit: sum(v, c => c.profit), employees: sum(v, c => c.employees), mktcap: sum(v, c => c.mktcap), list: v}), c => nk(c.state));
   mapAgg = agg;
   if (mstate.metric !== 'off') { const vals = Array.from(agg.values()).map(a => a[mstate.metric]); const dark = root.dataset.theme === 'dark'; const cs = d3.scaleSequentialSqrt([0, d3.max(vals) || 1], d3.interpolateRgb(dark ? '#232838' : '#fbe9e3', '#d6332c'));

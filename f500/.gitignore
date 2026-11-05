@@ -4,3 +4,5 @@ data/*.zip
 data/2024_Gaz_*.txt
 __pycache__/
 *.log
+*.bundle
+*bundle.tar.gz

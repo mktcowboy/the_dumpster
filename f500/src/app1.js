@@ -24,6 +24,12 @@ const ETYPES = {peer:{n:'Industry peers',c:'#9aa0ad',d:'Same Fortune industry; e
   board:{n:'Shared board member',c:'#8e44ad',d:'A person listed as board member (P3320) of both companies on Wikidata (statements without an end date).'},
   spinoff:{n:'Spin-off / succession',c:'#17a589',d:'Wikidata "separated from" (P807), "replaces" (P1365), "replaced by" (P1366).'},
   parent:{n:'Parent / subsidiary',c:'#f1a208',d:'Wikidata parent organization (P749) / has subsidiary (P355).'}};
+const OWN = {public: {s: 'Public', n: 'Publicly traded', c: '#2e86de'}, gse: {s: 'GSE', n: 'Government-sponsored', c: '#f1a208'}, delisted: {s: 'Acquired', n: 'Acquired / delisted since list', c: '#7f8c8d'},
+  mutual: {s: 'Mutual', n: 'Mutual / policyholder-owned', c: '#17a589'}, coop: {s: 'Co-op', n: 'Cooperative', c: '#8e44ad'}, employee: {s: 'Employee', n: 'Employee- / partner-owned', c: '#e84393'},
+  nonprofit: {s: 'Nonprofit', n: 'Nonprofit-owned', c: '#b8860b'}, private: {s: 'Private', n: 'Private (other)', c: '#e4572e'}, unknown: {s: 'Unknown', n: 'Unknown', c: '#aaaaaa'}};
+const OWNK = Object.keys(OWN).filter(k => C.some(c => c.own === k));
+const ocol = k => (OWN[k] || OWN.unknown).c;
+const ownChip = c => `<span class="chip" title="${esc(c.ownDetail||'')}"><i style="background:${ocol(c.own)}"></i>${esc((OWN[c.own]||OWN.unknown).n)}</span>`;
 const adj = new Map(C.map(c => [c.id, []]));
 E.forEach(e => { if (adj.has(e.s) && adj.has(e.t)) { adj.get(e.s).push({e, o: e.t, dir: 'out'}); adj.get(e.t).push({e, o: e.s, dir: 'in'}); } });
 const tt = $('#tt');

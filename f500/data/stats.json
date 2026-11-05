@@ -29,5 +29,15 @@
   "parent": 1,
   "board": 175,
   "customer": 28
+ },
+ "ownership": {
+  "public": 467,
+  "gse": 2,
+  "mutual": 19,
+  "employee": 4,
+  "nonprofit": 1,
+  "delisted": 3,
+  "coop": 3,
+  "private": 1
  }
 }

@@ -126,6 +126,19 @@
 ],
 "chair": [
 "Andy Jassy"
+],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/amazon-com/"
+}
+],
+"secExchanges": [
+"Nasdaq"
 ]
 },
 {
@@ -263,6 +276,19 @@
 "chair": [
 "Sam Walton",
 "S. Robson Walton"
+],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/walmart/"
+}
+],
+"secExchanges": [
+"Nasdaq"
 ]
 },
 {
@@ -393,7 +419,20 @@
 "wdIndustry": [
 "health insurance"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/unitedhealth-group/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 4,
@@ -534,6 +573,19 @@
 ],
 "chair": [
 "Arthur D. Levinson"
+],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/apple/"
+}
+],
+"secExchanges": [
+"Nasdaq"
 ]
 },
 {
@@ -654,7 +706,20 @@
 "wdIndustry": [
 "information technology"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/alphabet/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 6,
@@ -784,7 +849,20 @@
 "wdIndustry": [
 "retail"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/cvs-health/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 7,
@@ -918,6 +996,19 @@
 ],
 "chair": [
 "Howard Graham Buffett"
+],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/berkshire-hathaway/"
+}
+],
+"secExchanges": [
+"NYSE"
 ]
 },
 {
@@ -1047,7 +1138,20 @@
 "health care industry",
 "product distribution"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/mckesson/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 9,
@@ -1138,7 +1242,20 @@
 "wdIndustry": [
 "petroleum industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/exxon-mobil/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 10,
@@ -1267,7 +1384,20 @@
 "wdIndustry": [
 "pharmaceutical industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/amerisourcebergen/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 11,
@@ -1400,7 +1530,20 @@
 "software industry",
 "technology industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/microsoft/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 12,
@@ -1533,7 +1676,20 @@
 "financial sector",
 "financial services"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/jpmorgan-chase/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 13,
@@ -1665,7 +1821,20 @@
 "wdIndustry": [
 "retail"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/costco/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 14,
@@ -1794,7 +1963,20 @@
 "wdIndustry": [
 "managed care"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/cigna/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 15,
@@ -1925,7 +2107,20 @@
 "wdIndustry": [
 "health care"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/cardinal-health/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 16,
@@ -2051,7 +2246,20 @@
 "wdIndustry": [
 "semiconductor industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/nvidia/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 17,
@@ -2171,6 +2379,19 @@
 ],
 "chair": [
 "Mark Zuckerberg"
+],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/facebook/"
+}
+],
+"secExchanges": [
+"Nasdaq"
 ]
 },
 {
@@ -2301,7 +2522,20 @@
 "wdIndustry": [
 "health insurance"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/elevance-health/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 19,
@@ -2417,7 +2651,20 @@
 "wdIndustry": [
 "health care"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/centene/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 20,
@@ -2550,7 +2797,21 @@
 "financial sector",
 "financial services"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/bank-of-america-corp/"
+}
+],
+"secExchanges": [
+"NYSE",
+"OTC"
+]
 },
 {
 "id": 21,
@@ -2674,7 +2935,20 @@
 "wdIndustry": [
 "petroleum industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/chevron/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 22,
@@ -2804,6 +3078,19 @@
 ],
 "chair": [
 "William Clay Ford"
+],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/ford-motor/"
+}
+],
+"secExchanges": [
+"NYSE"
 ]
 },
 {
@@ -2935,6 +3222,19 @@
 ],
 "chair": [
 "Mary Barra"
+],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/general-motors/"
+}
+],
+"secExchanges": [
+"NYSE"
 ]
 },
 {
@@ -3069,6 +3369,19 @@
 ],
 "chair": [
 "John Dugan"
+],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/citigroup/"
+}
+],
+"secExchanges": [
+"NYSE"
 ]
 },
 {
@@ -3204,7 +3517,20 @@
 "hardware store",
 "retail"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/home-depot/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 26,
@@ -3328,7 +3654,25 @@
 "wdIndustry": [
 "financial services"
 ],
-"chair": []
+"chair": [],
+"own": "gse",
+"ownLabel": "Government-sponsored enterprise",
+"ownDetail": "Shares trade OTC; under FHFA conservatorship",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange OTC",
+"url": "https://fortune.com/company/fannie-mae/"
+},
+{
+"src": "Fortune description",
+"text": "\u2026wide crash in housing values, Fannie Mae was delisted from the New York Stock Exchange and entered government conservatorship. It returned to profitability in 2012.",
+"url": "https://fortune.com/company/fannie-mae/"
+}
+],
+"secExchanges": [
+"OTC"
+]
 },
 {
 "id": 27,
@@ -3457,7 +3801,20 @@
 "manufacture of bakery and farinaceous products",
 "retail"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/kroger/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 28,
@@ -3580,7 +3937,20 @@
 "wdIndustry": [
 "telecommunications industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/verizon/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 29,
@@ -3690,7 +4060,20 @@
 "downstream",
 "petroleum industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/phillips/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 30,
@@ -3800,7 +4183,20 @@
 "wdIndustry": [
 "petroleum industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/marathon-petroleum/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 31,
@@ -3905,7 +4301,20 @@
 "wdIndustry": [
 "financial services"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/stonex-group/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 32,
@@ -4001,7 +4410,23 @@
 "wdIndustry": [
 "insurance"
 ],
-"chair": []
+"chair": [],
+"own": "mutual",
+"ownLabel": "Mutual / policyholder-owned",
+"ownDetail": "Mutual insurer",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Private",
+"url": "https://fortune.com/company/state-farm-insurance-cos/"
+},
+{
+"src": "Fortune description",
+"text": "\u2026\u2019s largest providers of home and auto insurance, with 96 million policies and accounts in force as of 2025. A mutual insurance company, State Farm is not publicly traded, and is instead owned by its policyholders. The company is made up\u2026",
+"url": "https://fortune.com/company/state-farm-insurance-cos/"
+}
+],
+"secExchanges": []
 },
 {
 "id": 33,
@@ -4121,7 +4546,25 @@
 "wdIndustry": [
 "financial services"
 ],
-"chair": []
+"chair": [],
+"own": "gse",
+"ownLabel": "Government-sponsored enterprise",
+"ownDetail": "Shares trade OTC; under FHFA conservatorship",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange OTC",
+"url": "https://fortune.com/company/freddie-mac/"
+},
+{
+"src": "Fortune description",
+"text": "Freddie Mac is a government-backed enterprise established to provide the U.S. housing market with liquidity, stability, and affordability. It pools mortgag\u2026",
+"url": "https://fortune.com/company/freddie-mac/"
+}
+],
+"secExchanges": [
+"OTC"
+]
 },
 {
 "id": 34,
@@ -4249,7 +4692,20 @@
 "wdIndustry": [
 "insurance industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/humana/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 35,
@@ -4381,7 +4837,20 @@
 "postal and telecommunications services",
 "telecommunications industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/att/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 36,
@@ -4513,6 +4982,20 @@
 ],
 "chair": [
 "David M. Solomon"
+],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/goldman-sachs-group/"
+}
+],
+"secExchanges": [
+"NYSE",
+"OTC"
 ]
 },
 {
@@ -4644,7 +5127,21 @@
 "wdIndustry": [
 "telecommunications industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/comcast/"
+}
+],
+"secExchanges": [
+"NYSE",
+"Nasdaq"
+]
 },
 {
 "id": 38,
@@ -4778,7 +5275,21 @@
 "financial sector",
 "financial services"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/wells-fargo/"
+}
+],
+"secExchanges": [
+"NYSE",
+"OTC"
+]
 },
 {
 "id": 39,
@@ -4915,7 +5426,20 @@
 "financial sector",
 "financial services"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/morgan-stanley/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 40,
@@ -5041,7 +5565,20 @@
 "wdIndustry": [
 "petroleum industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/valero-energy/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 41,
@@ -5170,7 +5707,20 @@
 "computer hardware industry",
 "software industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/dell-technologies/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 42,
@@ -5302,7 +5852,20 @@
 "retail",
 "retail chain"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/target/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 43,
@@ -5419,6 +5982,19 @@
 ],
 "chair": [
 "Robyn Denholm"
+],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/tesla/"
+}
+],
+"secExchanges": [
+"Nasdaq"
 ]
 },
 {
@@ -5558,6 +6134,19 @@
 ],
 "chair": [
 "Susan Arnold"
+],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/disney/"
+}
+],
+"secExchanges": [
+"NYSE"
 ]
 },
 {
@@ -5691,7 +6280,20 @@
 "medical technology industry",
 "pharmaceutical industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/johnson-johnson/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 46,
@@ -5821,7 +6423,20 @@
 "fast-moving consumer goods",
 "food industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/pepsico/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 47,
@@ -5954,7 +6569,20 @@
 "space industry",
 "space-based economy"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/boeing/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 48,
@@ -6085,6 +6713,19 @@
 ],
 "chair": [
 "David Abney"
+],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/ups/"
+}
+],
+"secExchanges": [
+"NYSE"
 ]
 },
 {
@@ -6215,7 +6856,20 @@
 "aerospace industry",
 "arms industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/raytheon-technologies/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 50,
@@ -6347,6 +7001,19 @@
 "chair": [
 "Frederick W. Smith",
 "David J. Bronczek"
+],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/fedex/"
+}
+],
+"secExchanges": [
+"NYSE"
 ]
 },
 {
@@ -6473,7 +7140,20 @@
 "wdIndustry": [
 "vehicle insurance"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/progressive/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 52,
@@ -6591,7 +7271,20 @@
 "wdIndustry": [
 "hardware store"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/lowes/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 53,
@@ -6711,7 +7404,20 @@
 "wdIndustry": [
 "energy industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/energy-transfer-equity/"
+}
+],
+"secExchanges": [
+"TXSE"
+]
 },
 {
 "id": 54,
@@ -6841,7 +7547,20 @@
 "fast-moving consumer goods",
 "pharmaceutical industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/procter-gamble/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 55,
@@ -6971,7 +7690,20 @@
 "wdIndustry": [
 "wholesale"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/sysco/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 56,
@@ -7105,6 +7837,19 @@
 ],
 "chair": [
 "Stephen Squeri"
+],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/american-express/"
+}
+],
+"secExchanges": [
+"NYSE"
 ]
 },
 {
@@ -7216,7 +7961,20 @@
 "wdIndustry": [
 "retail"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/albertsons-cos/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 58,
@@ -7347,7 +8105,20 @@
 "wdIndustry": [
 "food processing"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/archer-daniels-midland/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 59,
@@ -7473,7 +8244,20 @@
 "wdIndustry": [
 "insurance industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/metlife/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 60,
@@ -7606,7 +8390,20 @@
 "wdIndustry": [
 "health care"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/hca-holdings/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 61,
@@ -7737,7 +8534,20 @@
 "electronics industry",
 "information security"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/lockheed-martin/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 62,
@@ -7833,7 +8643,23 @@
 "insurance",
 "life insurance"
 ],
-"chair": []
+"chair": [],
+"own": "mutual",
+"ownLabel": "Mutual / policyholder-owned",
+"ownDetail": "Mutual insurer",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Private",
+"url": "https://fortune.com/company/new-york-life-insurance/"
+},
+{
+"src": "Fortune description",
+"text": "New York Life is one of the oldest mutual life insurance companies in the U.S. Founded in 1845, it offers a range of insurance options, financial products,\u2026",
+"url": "https://fortune.com/company/new-york-life-insurance/"
+}
+],
+"secExchanges": []
 },
 {
 "id": 63,
@@ -7961,7 +8787,20 @@
 "wdIndustry": [
 "financial services"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/capital-one-financial/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 64,
@@ -8087,7 +8926,20 @@
 "wdIndustry": [
 "insurance"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/allstate/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 65,
@@ -8213,7 +9065,20 @@
 "wdIndustry": [
 "mechanical engineering"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/caterpillar/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 66,
@@ -8348,6 +9213,19 @@
 ],
 "chair": [
 "Ginni Rometty"
+],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/ibm/"
+}
+],
+"secExchanges": [
+"NYSE"
 ]
 },
 {
@@ -8479,7 +9357,20 @@
 "wdIndustry": [
 "pharmaceutical industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/eli-lilly/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 68,
@@ -8610,7 +9501,20 @@
 "wdIndustry": [
 "pharmaceutical industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/merck/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 69,
@@ -8705,7 +9609,23 @@
 "wdIndustry": [
 "financial services"
 ],
-"chair": []
+"chair": [],
+"own": "mutual",
+"ownLabel": "Mutual / policyholder-owned",
+"ownDetail": "Mutual (Fortune industry label)",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Private",
+"url": "https://fortune.com/company/nationwide/"
+},
+{
+"src": "Fortune industry label",
+"text": "Insurance: Property and Casualty (Mutual)",
+"url": "https://fortune.com/company/nationwide/"
+}
+],
+"secExchanges": []
 },
 {
 "id": 70,
@@ -8827,6 +9747,19 @@
 ],
 "chair": [
 "Henry Samueli"
+],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/broadcom/"
+}
+],
+"secExchanges": [
+"Nasdaq"
 ]
 },
 {
@@ -8958,6 +9891,19 @@
 ],
 "chair": [
 "Frank [redacted]"
+],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/delta-air-lines/"
+}
+],
+"secExchanges": [
+"NYSE"
 ]
 },
 {
@@ -9055,7 +10001,23 @@
 "wdIndustry": [
 "retail"
 ],
-"chair": []
+"chair": [],
+"own": "employee",
+"ownLabel": "Employee- / partner-owned",
+"ownDetail": "Employee-owned",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Private",
+"url": "https://fortune.com/company/publix-super-markets/"
+},
+{
+"src": "Fortune description",
+"text": "\u2026cery stores in the southeastern U.S.\u2014nearly two-thirds of which are in Florida\u2014Publix is the nation\u2019s largest employee-owned company. Publix has won dozens of awards for how well it treats both its customers and its employees. The gro\u2026",
+"url": "https://fortune.com/company/publix-super-markets/"
+}
+],
+"secExchanges": []
 },
 {
 "id": 73,
@@ -9186,7 +10148,20 @@
 "wdIndustry": [
 "pharmaceutical industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/pfizer/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 74,
@@ -9304,7 +10279,20 @@
 "wdIndustry": [
 "information technology"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/synnex/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 75,
@@ -9427,7 +10415,20 @@
 "wdIndustry": [
 "petroleum industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/conocophillips/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 76,
@@ -9507,7 +10508,20 @@
 "logo": null,
 "foundedBy": [],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/galaxy-digital/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 77,
@@ -9616,7 +10630,20 @@
 "biotechnology",
 "pharmaceutical industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/abbvie/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 78,
@@ -9739,7 +10766,20 @@
 "financial sector",
 "life insurance"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/prudential-financial/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 79,
@@ -9867,7 +10907,20 @@
 "wdIndustry": [
 "retail"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/tjx/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 80,
@@ -9985,7 +11038,20 @@
 "Robert Sledd"
 ],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/performance-food-group/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 81,
@@ -10099,7 +11165,20 @@
 "wdIndustry": [
 "air transport"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/united-continental-holdings/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 82,
@@ -10234,6 +11313,19 @@
 ],
 "chair": [
 "Larry Ellison"
+],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/oracle/"
+}
+],
+"secExchanges": [
+"NYSE"
 ]
 },
 {
@@ -10368,7 +11460,20 @@
 "networking hardware",
 "telecommunications industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/cisco-systems-inc/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 84,
@@ -10502,7 +11607,20 @@
 "information technology industry",
 "software industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/hp/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 85,
@@ -10625,7 +11743,20 @@
 "wdIndustry": [
 "telecommunications industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/charter-communications/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 86,
@@ -10736,7 +11867,20 @@
 "air transport",
 "aviation"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/american-airlines-group/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 87,
@@ -10867,7 +12011,20 @@
 "agriculture",
 "meatpacking industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/tyson-foods/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 88,
@@ -10998,7 +12155,20 @@
 "electrical industry",
 "semiconductor industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/intel/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 89,
@@ -11120,7 +12290,21 @@
 "wdIndustry": [
 "petroleum industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/enterprise-products-partners/"
+}
+],
+"secExchanges": [
+"NYSE",
+"OTC"
+]
 },
 {
 "id": 90,
@@ -11206,7 +12390,20 @@
 "wdIndustry": [
 "Wholesale of computers, computer peripheral equipment and software"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/ingram-micro/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 91,
@@ -11337,7 +12534,20 @@
 "mechanical engineering",
 "shipbuilding"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/general-dynamics/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 92,
@@ -11443,7 +12653,20 @@
 "information technology",
 "passenger transport"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/uber-technologies/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 93,
@@ -11543,7 +12766,23 @@
 ],
 "chair": [
 "Lester Lyles"
-]
+],
+"own": "mutual",
+"ownLabel": "Mutual / policyholder-owned",
+"ownDetail": "Reciprocal exchange",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Private",
+"url": "https://fortune.com/company/usaa/"
+},
+{
+"src": "Wikipedia infobox type",
+"text": "Private (Reciprocal inter-insurance exchange)",
+"url": "https://en.wikipedia.org/wiki/USAA"
+}
+],
+"secExchanges": []
 },
 {
 "id": 94,
@@ -11640,7 +12879,23 @@
 "wdIndustry": [
 "financial services"
 ],
-"chair": []
+"chair": [],
+"own": "nonprofit",
+"ownLabel": "Nonprofit-owned",
+"ownDetail": "Nonprofit parent",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Private",
+"url": "https://fortune.com/company/tiaa/"
+},
+{
+"src": "Fortune description",
+"text": "\u2026insurance services for workers in academic, governmental, health care, and nonprofit organizations. TIAA was founded as a nonprofit in 1918, through the philanthropy of Andrew Carnegie, to provide a fully funded pension system for faculty in\u2026",
+"url": "https://fortune.com/company/tiaa/"
+}
+],
+"secExchanges": []
 },
 {
 "id": 95,
@@ -11735,7 +12990,23 @@
 "wdIndustry": [
 "insurance"
 ],
-"chair": []
+"chair": [],
+"own": "mutual",
+"ownLabel": "Mutual / policyholder-owned",
+"ownDetail": "Mutual holding company",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Private",
+"url": "https://fortune.com/company/liberty-mutual-insurance-group/"
+},
+{
+"src": "Wikipedia lead",
+"text": "\u2026Mutual acts as the insurer for Countrywide Legal Indemnities).\nIn the United States, Liberty Mutual remains a mutual company in which policyholders holding contracts for insurance are considered shareholders in the company. However, L\u2026",
+"url": "https://en.wikipedia.org/wiki/Liberty_Mutual"
+}
+],
+"secExchanges": []
 },
 {
 "id": 96,
@@ -11856,7 +13127,20 @@
 "wdIndustry": [
 "insurance"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/travelers-cos/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 97,
@@ -11982,7 +13266,20 @@
 "wdIndustry": [
 "pharmaceutical industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/bristol-myers-squibb/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 98,
@@ -12112,7 +13409,20 @@
 "beverage industry",
 "fast-moving consumer goods"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/coca-cola/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 99,
@@ -12245,7 +13555,20 @@
 "industry",
 "retail"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/nike/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 100,
@@ -12343,7 +13666,23 @@
 "financial services",
 "insurance industry"
 ],
-"chair": []
+"chair": [],
+"own": "mutual",
+"ownLabel": "Mutual / policyholder-owned",
+"ownDetail": "Mutual (Fortune industry label)",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Private",
+"url": "https://fortune.com/company/massachusetts-mutual-life-insurance/"
+},
+{
+"src": "Fortune industry label",
+"text": "Insurance: Life, Health (Mutual)",
+"url": "https://fortune.com/company/massachusetts-mutual-life-insurance/"
+}
+],
+"secExchanges": []
 },
 {
 "id": 101,
@@ -12474,7 +13813,20 @@
 "wdIndustry": [
 "aerospace industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/general-electric/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 102,
@@ -12602,7 +13954,20 @@
 "wdIndustry": [
 "manufacture of machinery and equipment"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/deere/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 103,
@@ -12708,7 +14073,20 @@
 "logo": null,
 "foundedBy": [],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/plains-gp-holdings/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 104,
@@ -12826,7 +14204,20 @@
 "wdIndustry": [
 "health care industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/molina-healthcare/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 105,
@@ -12947,7 +14338,20 @@
 "streaming media",
 "television production"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/netflix/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 106,
@@ -13075,7 +14479,20 @@
 "wdIndustry": [
 "biotechnology industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/thermo-fisher-scientific/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 107,
@@ -13201,7 +14618,20 @@
 "wdIndustry": [
 "medical technology industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/abbott-laboratories/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 108,
@@ -13332,6 +14762,19 @@
 ],
 "chair": [
 "Paul E. Jacobs"
+],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/qualcomm/"
+}
+],
+"secExchanges": [
+"Nasdaq"
 ]
 },
 {
@@ -13427,7 +14870,23 @@
 "wdIndustry": [
 "financial services"
 ],
-"chair": []
+"chair": [],
+"own": "mutual",
+"ownLabel": "Mutual / policyholder-owned",
+"ownDetail": "Mutual insurer",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Private",
+"url": "https://fortune.com/company/northwestern-mutual/"
+},
+{
+"src": "Fortune description",
+"text": "\u2026izes in life insurance, disability income, wealth management, and long-term-care insurance. The company has a mutual ownership structure, meaning it operates for the benefit of policyholders rather than shareholders. It has maintained t\u2026",
+"url": "https://fortune.com/company/northwestern-mutual/"
+}
+],
+"secExchanges": []
 },
 {
 "id": 110,
@@ -13557,7 +15016,20 @@
 "financial sector",
 "financial services"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/u-s-bancorp/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 111,
@@ -13683,7 +15155,20 @@
 "wdIndustry": [
 "retail"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/dollar-general/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 112,
@@ -13818,7 +15303,20 @@
 "electronics industry",
 "shipbuilding"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/northrop-grumman/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 113,
@@ -13946,7 +15444,20 @@
 "wdIndustry": [
 "retail"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/best-buy/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 114,
@@ -14067,7 +15578,20 @@
 "email marketing",
 "enterprise software"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/salesforce-com/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 115,
@@ -14193,7 +15717,20 @@
 "wdIndustry": [
 "economics of banking"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/bank-of-new-york-mellon-corp/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 116,
@@ -14330,7 +15867,20 @@
 "manufacturing industry",
 "retail"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/honeywell-international/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 117,
@@ -14446,7 +15996,20 @@
 "fast-moving consumer goods",
 "tobacco industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/philip-morris-international/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 118,
@@ -14562,6 +16125,19 @@
 ],
 "chair": [
 "Darcy Stacom"
+],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/cbre-group/"
+}
+],
+"secExchanges": [
+"NYSE"
 ]
 },
 {
@@ -14679,6 +16255,19 @@
 ],
 "chair": [
 "John F. Lundgren"
+],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/visa/"
+}
+],
+"secExchanges": [
+"NYSE"
 ]
 },
 {
@@ -14783,7 +16372,20 @@
 "wdIndustry": [
 "chemical industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/dow/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 121,
@@ -14890,7 +16492,20 @@
 "food industry",
 "wholesale"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/us-foods-holding/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 122,
@@ -15008,6 +16623,19 @@
 ],
 "chair": [
 "Dirk Van de Put"
+],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/mondelez-international/"
+}
+],
+"secExchanges": [
+"Nasdaq"
 ]
 },
 {
@@ -15130,7 +16758,20 @@
 "wdIndustry": [
 "car dealership"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/lithia-motors/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 124,
@@ -15217,7 +16858,20 @@
 "energy industry",
 "energy technology"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/gevernova/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 125,
@@ -15341,7 +16995,20 @@
 "logo": "http://commons.wikimedia.org/wiki/Special:FilePath/Micron%20Technology%20logo%202024.svg",
 "foundedBy": [],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/micron-technology/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 126,
@@ -15424,7 +17091,28 @@
 "mass media",
 "media industry"
 ],
-"chair": []
+"chair": [],
+"own": "delisted",
+"ownLabel": "Acquired / delisted since list",
+"ownDetail": "Public at list time; SEC 15-15D 2026-10-16, SEC 15-15D 2026-10-16",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Private",
+"url": "https://fortune.com/company/discovery/"
+},
+{
+"src": "SEC EDGAR filings",
+"text": "Form 15-15D filed 2026-10-16; Form 15-15D filed 2026-10-16; Form 15-15D filed 2026-10-16; Form 15-15D filed 2026-10-16",
+"url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1437107"
+},
+{
+"src": "Wikipedia lead",
+"text": "Warner Bros. Discovery, Inc. was an American multinational mass media and entertainment conglomerate headquartered in New York City. It was formed on Apri\u2026",
+"url": "https://en.wikipedia.org/wiki/Warner_Bros._Discovery"
+}
+],
+"secExchanges": []
 },
 {
 "id": 127,
@@ -15551,7 +17239,20 @@
 "wdIndustry": [
 "coffee industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/starbucks/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 128,
@@ -15677,7 +17378,20 @@
 "wdIndustry": [
 "energy industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/world-fuel-services/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 129,
@@ -15803,7 +17517,20 @@
 "wdIndustry": [
 "pharmaceutical industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/amgen/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 130,
@@ -15890,7 +17617,25 @@
 "wdIndustry": [
 "food industry"
 ],
-"chair": []
+"chair": [],
+"own": "coop",
+"ownLabel": "Cooperative",
+"ownDetail": "Cooperative",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Private",
+"url": "https://fortune.com/company/chs/"
+},
+{
+"src": "Fortune description",
+"text": "CHS is an agricultural company owned by ranchers, farmers, and cooperatives throughout the U.S. The company processes and markets grain, seeds, seed oil, crop protecti\u2026",
+"url": "https://fortune.com/company/chs/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 131,
@@ -16022,7 +17767,20 @@
 "electrical industry",
 "semiconductor industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/advanced-micro-devices/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 132,
@@ -16119,7 +17877,20 @@
 "wdIndustry": [
 "e-commerce"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/coupang/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 133,
@@ -16229,7 +18000,20 @@
 "information technology industry",
 "software industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/hewlett-packard-enterprise/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 134,
@@ -16354,7 +18138,20 @@
 "wdIndustry": [
 "construction"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/d-r-horton/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 135,
@@ -16481,7 +18278,20 @@
 "wdIndustry": [
 "construction"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/lennar/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 136,
@@ -16612,7 +18422,20 @@
 "financial sector",
 "financial services"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/pnc-financial-services/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 137,
@@ -16742,7 +18565,20 @@
 "wdIndustry": [
 "manufacture of machinery and equipment"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/cummins/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 138,
@@ -16870,7 +18706,20 @@
 "wdIndustry": [
 "public utility"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/oneok/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 139,
@@ -16978,6 +18827,19 @@
 ],
 "chair": [
 "John Donahoe"
+],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/paypal-holdings/"
+}
+],
+"secExchanges": [
+"Nasdaq"
 ]
 },
 {
@@ -17044,7 +18906,23 @@
 "wdIndustry": [
 "insurance"
 ],
-"chair": []
+"chair": [],
+"own": "mutual",
+"ownLabel": "Mutual / policyholder-owned",
+"ownDetail": "Mutual holding company",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Private",
+"url": "https://fortune.com/company/guidewell-mutual-holding/"
+},
+{
+"src": "Wikipedia lead",
+"text": "GuideWell, formally GuideWell Mutual Holding Corporation (holding company for Florida Blue), is a mutual insurance holding company primarily focused on health insurance in Florida. It was created in 2013 by a reorganization\u2026",
+"url": "https://en.wikipedia.org/wiki/GuideWell"
+}
+],
+"secExchanges": []
 },
 {
 "id": 141,
@@ -17163,6 +19041,19 @@
 ],
 "chair": [
 "Merit Janow"
+],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/mastercard/"
+}
+],
+"secExchanges": [
+"NYSE"
 ]
 },
 {
@@ -17289,7 +19180,20 @@
 "wdIndustry": [
 "iron and steel industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/nucor/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 143,
@@ -17395,7 +19299,20 @@
 "wdIndustry": [
 "asset management"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/apollo-global-management/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 144,
@@ -17514,7 +19431,20 @@
 "wdIndustry": [
 "automotive industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/penske-automotive-group/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 145,
@@ -17646,7 +19576,20 @@
 "electricity generation",
 "energy supply"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/duke-energy/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 146,
@@ -17767,7 +19710,20 @@
 "food distribution",
 "wholesale"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/united-natural-foods/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 147,
@@ -17849,7 +19805,20 @@
 "logo": null,
 "foundedBy": [],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/ferguson/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 148,
@@ -17978,7 +19947,20 @@
 "wdIndustry": [
 "product distribution"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/arrow-electronics/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 149,
@@ -18098,7 +20080,20 @@
 "wdIndustry": [
 "electricity supply company"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/nrg-energy/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 150,
@@ -18206,7 +20201,20 @@
 "wdIndustry": [
 "financial services"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/bbt-corp/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 151,
@@ -18330,7 +20338,20 @@
 "wdIndustry": [
 "electronics"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/jabil-circuit/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 152,
@@ -18459,7 +20480,20 @@
 "electric power industry",
 "energy industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/southern/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 153,
@@ -18580,6 +20614,19 @@
 ],
 "chair": [
 "Daniel O'Day"
+],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/gilead-sciences/"
+}
+],
+"secExchanges": [
+"Nasdaq"
 ]
 },
 {
@@ -18689,7 +20736,20 @@
 "wdIndustry": [
 "petroleum industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/pbf-energy/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 155,
@@ -18781,7 +20841,18 @@
 "wdIndustry": [
 "film industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/cbs/"
+}
+],
+"secExchanges": []
 },
 {
 "id": 156,
@@ -18896,7 +20967,20 @@
 "investment management",
 "private equity firm"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/kkr/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 157,
@@ -19016,7 +21100,20 @@
 "logo": "http://commons.wikimedia.org/wiki/Special:FilePath/QScolorjpg.jpg",
 "foundedBy": [],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/quanta-services/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 158,
@@ -19144,7 +21241,20 @@
 "wdIndustry": [
 "automotive industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/paccar/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 159,
@@ -19224,7 +21334,20 @@
 "wdIndustry": [
 "medical equipment"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/medline/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 160,
@@ -19348,7 +21471,20 @@
 "logo": "http://commons.wikimedia.org/wiki/Special:FilePath/Applied%20Materials%20Logo.svg",
 "foundedBy": [],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/applied-materials/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 161,
@@ -19467,7 +21603,20 @@
 "wdIndustry": [
 "insurance"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/hartford-financial-services/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 162,
@@ -19583,7 +21732,20 @@
 "logo": "http://commons.wikimedia.org/wiki/Special:FilePath/CarMax%20New%20Logo.svg",
 "foundedBy": [],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/carmax/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 163,
@@ -19711,7 +21873,20 @@
 "wdIndustry": [
 "air transport"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/southwest-airlines/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 164,
@@ -19819,7 +21994,20 @@
 "wdIndustry": [
 "petroleum industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/baker-hughes/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 165,
@@ -19947,7 +22135,20 @@
 "wdIndustry": [
 "financial services"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/charles-schwab/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 166,
@@ -20076,7 +22277,20 @@
 "wdIndustry": [
 "retail"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/auto-nation/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 167,
@@ -20204,7 +22418,20 @@
 "wdIndustry": [
 "energy company"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/nextera-energy/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 168,
@@ -20330,7 +22557,20 @@
 "logo": "http://commons.wikimedia.org/wiki/Special:FilePath/MarshMcLennan%20h%20rgb%20c.svg",
 "foundedBy": [],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/marsh-mclennan/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 169,
@@ -20449,7 +22689,20 @@
 "wdIndustry": [
 "travel industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/booking-holdings/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 170,
@@ -20575,7 +22828,20 @@
 "food service",
 "quick service restaurant sector"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/mcdonalds/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 171,
@@ -20678,7 +22944,20 @@
 "wdIndustry": [
 "petroleum industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/hollyfrontier/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 172,
@@ -20807,7 +23086,20 @@
 "wdIndustry": [
 "financial services"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/aig/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 173,
@@ -20933,7 +23225,20 @@
 "wdIndustry": [
 "petroleum industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/occidental-petroleum/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 174,
@@ -21065,7 +23370,20 @@
 "hospitality industry",
 "tourism industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/marriott-international/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 175,
@@ -21180,7 +23498,20 @@
 "logo": "http://commons.wikimedia.org/wiki/Special:FilePath/JLL%20logo.svg",
 "foundedBy": [],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/jones-lang-lasalle/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 176,
@@ -21308,7 +23639,21 @@
 "wdIndustry": [
 "pulp and paper industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/international-paper/"
+}
+],
+"secExchanges": [
+"NYSE",
+"OTC"
+]
 },
 {
 "id": 177,
@@ -21436,7 +23781,20 @@
 "wdIndustry": [
 "mining"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/freeport-mcmoran/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 178,
@@ -21541,7 +23899,20 @@
 "logo": null,
 "foundedBy": [],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/constellation-energy/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 179,
@@ -21670,7 +24041,20 @@
 "wdIndustry": [
 "waste management industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/waste-management/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 180,
@@ -21788,7 +24172,20 @@
 "wdIndustry": [
 "show business"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/live-nation-entertainment/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 181,
@@ -21912,7 +24309,20 @@
 "wdIndustry": [
 "medical technology"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/stryker/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 182,
@@ -22039,7 +24449,20 @@
 "wdIndustry": [
 "retail"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/dollar-tree/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 183,
@@ -22164,7 +24587,20 @@
 "mining industry",
 "occupational safety"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/3m/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 184,
@@ -22276,6 +24712,19 @@
 "chair": [
 "Alex Behring",
 "John T. Cahill"
+],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/kraft-heinz/"
+}
+],
+"secExchanges": [
+"NYSE"
 ]
 },
 {
@@ -22388,7 +24837,20 @@
 "logo": null,
 "foundedBy": [],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/pge-corp/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 186,
@@ -22517,7 +24979,20 @@
 "wdIndustry": [
 "conglomerate"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/danaher/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 187,
@@ -22644,7 +25119,20 @@
 "rail transport",
 "transport"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/union-pacific/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 188,
@@ -22768,7 +25256,20 @@
 "logo": "http://commons.wikimedia.org/wiki/Special:FilePath/Genuine%20Parts%20Company%20logo.svg",
 "foundedBy": [],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/genuine-parts/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 189,
@@ -22894,7 +25395,20 @@
 "wdIndustry": [
 "energy industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/exelon/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 190,
@@ -23003,7 +25517,20 @@
 "wdIndustry": [
 "asset management"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/blackrock/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 191,
@@ -23113,7 +25640,21 @@
 "financial services",
 "mobile payment industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/square/"
+}
+],
+"secExchanges": [
+"NYSE",
+"OTC"
+]
 },
 {
 "id": 192,
@@ -23242,7 +25783,20 @@
 "software development",
 "software industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/adobe-systems/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 193,
@@ -23354,7 +25908,20 @@
 "wdIndustry": [
 "insurance industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/reinsurance-group-of-america/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 194,
@@ -23484,7 +26051,20 @@
 "chemical industry",
 "manufacture of paints, varnishes and similar coatings, printing ink a mastics"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/sherwin-williams/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 195,
@@ -23609,7 +26189,20 @@
 "wdIndustry": [
 "maintenance"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/wesco-international/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 196,
@@ -23737,7 +26330,20 @@
 "wdIndustry": [
 "automotive supplier"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/lear/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 197,
@@ -23835,7 +26441,20 @@
 "wdIndustry": [
 "financial services"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/synchrony-financial/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 198,
@@ -23956,7 +26575,20 @@
 "wdIndustry": [
 "electronics"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/amphenol/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 199,
@@ -24084,7 +26716,20 @@
 "wdIndustry": [
 "retail"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/ross-stores/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 200,
@@ -24215,7 +26860,21 @@
 "metal",
 "mining"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/newmont-mining/"
+}
+],
+"secExchanges": [
+"NYSE",
+"OTC"
+]
 },
 {
 "id": 201,
@@ -24339,7 +26998,20 @@
 "wdIndustry": [
 "petroleum industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/eog-resources/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 202,
@@ -24469,7 +27141,20 @@
 "wdIndustry": [
 "financial services"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/state-street-corp/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 203,
@@ -24585,7 +27270,20 @@
 "wdIndustry": [
 "retail"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/macys/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 204,
@@ -24708,7 +27406,20 @@
 "wdIndustry": [
 "car dealership"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/group-1-automotive/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 205,
@@ -24826,7 +27537,20 @@
 "wdIndustry": [
 "business-to-business"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/cdw/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 206,
@@ -24954,7 +27678,20 @@
 "wdIndustry": [
 "electronics"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/avnet/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 207,
@@ -25082,7 +27819,20 @@
 "wdIndustry": [
 "petroleum"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/halliburton/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 208,
@@ -25188,7 +27938,20 @@
 "computer hardware industry",
 "computer industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/super-micro-computer/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 209,
@@ -25318,7 +28081,20 @@
 "electricity generation",
 "public utility"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/american-electric-power/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 210,
@@ -25448,7 +28224,20 @@
 "defence industry",
 "geospatial industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/harris/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 211,
@@ -25577,7 +28366,20 @@
 "wdIndustry": [
 "biotechnology"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/becton-dickinson/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 212,
@@ -25680,7 +28482,20 @@
 "construction industry",
 "heating, ventilation, and air conditioning"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/carrier-global/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 213,
@@ -25795,7 +28610,20 @@
 "wdIndustry": [
 "retail"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/bjs-wholesale-club/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 214,
@@ -25922,7 +28750,20 @@
 "wdIndustry": [
 "health care"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/tenet-healthcare/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 215,
@@ -26045,7 +28886,20 @@
 "wdIndustry": [
 "financial services"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/fiserv/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 216,
@@ -26164,7 +29018,20 @@
 "consulting industry",
 "information technology industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/cognizant-technology-solutions/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 217,
@@ -26259,6 +29126,19 @@
 ],
 "chair": [
 "Kieran Murphy"
+],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/ge-healthcare-technologies/"
+}
+],
+"secExchanges": [
+"Nasdaq"
 ]
 },
 {
@@ -26390,7 +29270,20 @@
 "human resource management",
 "software industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/adp/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 219,
@@ -26520,7 +29413,20 @@
 "wdIndustry": [
 "personal care product"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/colgate-palmolive/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 220,
@@ -26625,7 +29531,20 @@
 "wdIndustry": [
 "e-commerce"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/carvana/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 221,
@@ -26752,7 +29671,20 @@
 "food industry",
 "tobacco industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/altria-group/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 222,
@@ -26885,7 +29817,20 @@
 "medical device",
 "neuromodulation"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/boston-scientific/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 223,
@@ -26990,7 +29935,20 @@
 "logo": null,
 "foundedBy": [],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/cheniere-energy/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 224,
@@ -27120,7 +30078,20 @@
 "wdIndustry": [
 "industrial manufacturing"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/parker-hannifin/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 225,
@@ -27250,7 +30221,20 @@
 "wdIndustry": [
 "personal care product"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/kimberly-clark/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 226,
@@ -27344,7 +30328,23 @@
 "wdIndustry": [
 "insurance"
 ],
-"chair": []
+"chair": [],
+"own": "mutual",
+"ownLabel": "Mutual / policyholder-owned",
+"ownDetail": "Mutual insurer",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Private",
+"url": "https://fortune.com/company/american-family-insurance-group/"
+},
+{
+"src": "Fortune description",
+"text": "American Family Insurance Group, also known as AmFam, is a private mutual insurance company that provides casualty, property, and auto insurance in the U.S. AmFam also offers asset accumulation\u2026",
+"url": "https://fortune.com/company/american-family-insurance-group/"
+}
+],
+"secExchanges": []
 },
 {
 "id": 227,
@@ -27472,7 +30472,20 @@
 "wdIndustry": [
 "food industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/general-mills/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 228,
@@ -27600,7 +30613,20 @@
 "wdIndustry": [
 "electricity generation"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/edison-international/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 229,
@@ -27730,7 +30756,20 @@
 "wdIndustry": [
 "automotive industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/autozone/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 230,
@@ -27851,6 +30890,19 @@
 ],
 "chair": [
 "James Cracchiolo"
+],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/ameriprise-financial/"
+}
+],
+"secExchanges": [
+"NYSE"
 ]
 },
 {
@@ -27976,7 +31028,20 @@
 "wdIndustry": [
 "enterprise software"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/intuit/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 232,
@@ -28071,7 +31136,23 @@
 "wdIndustry": [
 "life insurance"
 ],
-"chair": []
+"chair": [],
+"own": "mutual",
+"ownLabel": "Mutual / policyholder-owned",
+"ownDetail": "Mutual insurer",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Private",
+"url": "https://fortune.com/company/guardian-life-ins-co-of-america/"
+},
+{
+"src": "Fortune description",
+"text": "\u2026dismemberment, and short- and long-term disability) and investment advisory services. It\u2019s one of the largest mutual life insurance companies in the U.S. and has been around since 1860 when it issued its first policy to a cigar mer\u2026",
+"url": "https://fortune.com/company/guardian-life-ins-co-of-america/"
+}
+],
+"secExchanges": []
 },
 {
 "id": 233,
@@ -28182,7 +31263,20 @@
 "wdIndustry": [
 "iron and steel industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/cleveland-cliffs/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 234,
@@ -28297,7 +31391,20 @@
 "wdIndustry": [
 "petroleum industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/global-partners/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 235,
@@ -28424,7 +31531,20 @@
 "wdIndustry": [
 "food service"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/aramark/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 236,
@@ -28516,7 +31636,20 @@
 "wdIndustry": [
 "financial services"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/corebridge-financial/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 237,
@@ -28640,7 +31773,20 @@
 "logo": "http://commons.wikimedia.org/wiki/Special:FilePath/Loews-Corporation-Logo.svg",
 "foundedBy": [],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/loews/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 238,
@@ -28758,7 +31904,20 @@
 "David K. Lam"
 ],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/lam-research/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 239,
@@ -28874,7 +32033,20 @@
 "industrial manufacturing",
 "plastics and rubber industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/goodyear-tire-rubber/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 240,
@@ -28968,7 +32140,23 @@
 "insurance",
 "life insurance"
 ],
-"chair": []
+"chair": [],
+"own": "mutual",
+"ownLabel": "Mutual / policyholder-owned",
+"ownDetail": "Mutual holding company",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Private",
+"url": "https://fortune.com/company/pacific-life/"
+},
+{
+"src": "Wikipedia infobox type",
+"text": "Mutual Holding Company",
+"url": "https://en.wikipedia.org/wiki/Pacific_Life"
+}
+],
+"secExchanges": []
 },
 {
 "id": 241,
@@ -29057,7 +32245,23 @@
 "wdIndustry": [
 "financial services"
 ],
-"chair": []
+"chair": [],
+"own": "mutual",
+"ownLabel": "Mutual / policyholder-owned",
+"ownDetail": "Mutual (Fortune industry label)",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Private",
+"url": "https://fortune.com/company/auto-owners-insurance/"
+},
+{
+"src": "Fortune industry label",
+"text": "Insurance: Property and Casualty (Mutual)",
+"url": "https://fortune.com/company/auto-owners-insurance/"
+}
+],
+"secExchanges": []
 },
 {
 "id": 242,
@@ -29145,7 +32349,23 @@
 "wdIndustry": [
 "construction"
 ],
-"chair": []
+"chair": [],
+"own": "employee",
+"ownLabel": "Employee- / partner-owned",
+"ownDetail": "Employee-owned",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Private",
+"url": "https://fortune.com/company/peter-kiewit-sons/"
+},
+{
+"src": "Wikipedia lead",
+"text": "\u2026rivately held, it is one of the largest construction and engineering organizations in North America. It is an employee-owned company.",
+"url": "https://en.wikipedia.org/wiki/Kiewit_Corporation"
+}
+],
+"secExchanges": []
 },
 {
 "id": 243,
@@ -29273,7 +32493,20 @@
 "wdIndustry": [
 "insurance"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/lincoln-national/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 244,
@@ -29392,7 +32625,20 @@
 "wdIndustry": [
 "iron and steel industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/steel-dynamics/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 245,
@@ -29502,7 +32748,20 @@
 "wdIndustry": [
 "electrical industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/emerson-electric/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 246,
@@ -29621,7 +32880,20 @@
 "wdIndustry": [
 "car dealership"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/asbury-automotive-group/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 247,
@@ -29752,7 +33024,20 @@
 "wdIndustry": [
 "staffing industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/manpowergroup/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 248,
@@ -29880,7 +33165,20 @@
 "William W. Grainger"
 ],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/w-w-grainger/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 249,
@@ -29964,7 +33262,23 @@
 "wdIndustry": [
 "financial services"
 ],
-"chair": []
+"chair": [],
+"own": "employee",
+"ownLabel": "Employee- / partner-owned",
+"ownDetail": "Partnership",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Private",
+"url": "https://fortune.com/company/edward-jones/"
+},
+{
+"src": "Wikipedia lead",
+"text": "Edward D. Jones & Co., L.P. (d.b.a Edward Jones Investments), commonly referred to as Edward Jones, is an American financial services fir\u2026",
+"url": "https://en.wikipedia.org/wiki/Edward_Jones_Investments"
+}
+],
+"secExchanges": []
 },
 {
 "id": 250,
@@ -30084,7 +33398,20 @@
 "wdIndustry": [
 "retail"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/oreilly-automotive/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 251,
@@ -30190,7 +33517,20 @@
 "logo": null,
 "foundedBy": [],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/vistra-energy/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 252,
@@ -30322,6 +33662,19 @@
 ],
 "chair": [
 "Rich Templeton"
+],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/texas-instruments/"
+}
+],
+"secExchanges": [
+"Nasdaq"
 ]
 },
 {
@@ -30438,7 +33791,20 @@
 "wdIndustry": [
 "hospitality industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/mgm-resorts-international/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 254,
@@ -30541,7 +33907,20 @@
 "Pesticide and Other Agricultural Chemical Manufacturing",
 "Soil Preparation, Planting, and Cultivating"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/corteva/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 255,
@@ -30665,7 +34044,20 @@
 "logo": "http://commons.wikimedia.org/wiki/Special:FilePath/UHS%20logo.svg",
 "foundedBy": [],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/universal-health-services/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 256,
@@ -30794,7 +34186,20 @@
 "Q4910558"
 ],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/pultegroup/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 257,
@@ -30924,7 +34329,20 @@
 "mass media",
 "public relations"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/omnicom-group/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 258,
@@ -31044,7 +34462,20 @@
 "wdIndustry": [
 "retail"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/dicks-sporting-goods/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 259,
@@ -31170,7 +34601,20 @@
 "wdIndustry": [
 "petroleum industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/devon-energy/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 260,
@@ -31283,7 +34727,20 @@
 "aerospace engineering",
 "defense contractor"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/leidos-holdings/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 261,
@@ -31407,7 +34864,20 @@
 "logo": null,
 "foundedBy": [],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/aflac/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 262,
@@ -31522,7 +34992,20 @@
 "logo": null,
 "foundedBy": [],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/targa-resources/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 263,
@@ -31630,7 +35113,20 @@
 "wdIndustry": [
 "petroleum industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/murphy-usa/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 264,
@@ -31744,7 +35240,20 @@
 "wdIndustry": [
 "financial services"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/lpl-financial-holdings/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 265,
@@ -31873,7 +35382,20 @@
 "wdIndustry": [
 "engineering"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/emcor-group/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 266,
@@ -31993,7 +35515,20 @@
 "wdIndustry": [
 "petroleum industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/kinder-morgan/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 267,
@@ -32117,7 +35652,20 @@
 "wdIndustry": [
 "energy industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/consolidated-edison/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 268,
@@ -32233,7 +35781,20 @@
 "wdIndustry": [
 "beverage industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/dr-pepper-snapple-group/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 269,
@@ -32357,7 +35918,20 @@
 "wdIndustry": [
 "waste management"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/republic-services/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 270,
@@ -32480,7 +36054,20 @@
 "wdIndustry": [
 "insurance"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/markel/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 271,
@@ -32558,7 +36145,23 @@
 "wdIndustry": [
 "financial services"
 ],
-"chair": []
+"chair": [],
+"own": "mutual",
+"ownLabel": "Mutual / policyholder-owned",
+"ownDetail": "Mutual (Fortune industry label)",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Private",
+"url": "https://fortune.com/company/farmers-insurance-exchange/"
+},
+{
+"src": "Fortune industry label",
+"text": "Insurance: Property and Casualty (Mutual)",
+"url": "https://fortune.com/company/farmers-insurance-exchange/"
+}
+],
+"secExchanges": []
 },
 {
 "id": 272,
@@ -32687,7 +36290,20 @@
 "wdIndustry": [
 "energy industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/dominion-resources/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 273,
@@ -32774,7 +36390,23 @@
 "wdIndustry": [
 "food industry"
 ],
-"chair": []
+"chair": [],
+"own": "coop",
+"ownLabel": "Cooperative",
+"ownDetail": "Cooperative",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Private",
+"url": "https://fortune.com/company/land-olakes/"
+},
+{
+"src": "Fortune description",
+"text": "Land O\u2019Lakes is a member-owned, farmer-owned co-op best known for its dairy business, especially its butter. The agriculture company is 104 years old, with 1,19\u2026",
+"url": "https://fortune.com/company/land-olakes/"
+}
+],
+"secExchanges": []
 },
 {
 "id": 274,
@@ -32894,7 +36526,20 @@
 "wdIndustry": [
 "pharmaceutical industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/quintiles-ims-holdings/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 275,
@@ -33000,6 +36645,19 @@
 ],
 "chair": [
 "Lachlan Murdoch"
+],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/fox/"
+}
+],
+"secExchanges": [
+"Nasdaq"
 ]
 },
 {
@@ -33116,7 +36774,20 @@
 "wdIndustry": [
 "construction"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/aecom/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 277,
@@ -33241,7 +36912,20 @@
 "wdIndustry": [
 "logistics"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/c-h-robinson-worldwide/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 278,
@@ -33310,7 +36994,20 @@
 "Mike Belshe"
 ],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/bitgo-holdings/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 279,
@@ -33436,7 +37133,20 @@
 "wdIndustry": [
 "equipment rental"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/united-rentals/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 280,
@@ -33564,7 +37274,20 @@
 "wdIndustry": [
 "conglomerate"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/ecolab/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 281,
@@ -33690,7 +37413,20 @@
 "wdIndustry": [
 "industrial manufacturing"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/illinois-tool-works/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 282,
@@ -33810,7 +37546,20 @@
 "wdIndustry": [
 "retail"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/caseys-general-stores/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 283,
@@ -33934,7 +37683,20 @@
 "wdIndustry": [
 "investment"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/raymond-james-financial/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 284,
@@ -34065,7 +37827,20 @@
 "glass",
 "paint"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/ppg-industries/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 285,
@@ -34193,7 +37968,20 @@
 "wdIndustry": [
 "energy industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/dte-energy/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 286,
@@ -34318,7 +38106,20 @@
 "biotechnology",
 "industrial manufacturing"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/corning/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 287,
@@ -34441,7 +38242,20 @@
 "Q131440663"
 ],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/principal-financial/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 288,
@@ -34520,7 +38334,23 @@
 "wdIndustry": [
 "insurance"
 ],
-"chair": []
+"chair": [],
+"own": "mutual",
+"ownLabel": "Mutual / policyholder-owned",
+"ownDetail": "Mutual insurer",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Private",
+"url": "https://fortune.com/company/mutual-of-omaha-insurance/"
+},
+{
+"src": "Fortune description",
+"text": "Mutual of Omaha Insurance Company is a mutual life insurance company that offers services to individuals, families, and businesses in the United States. Its pro\u2026",
+"url": "https://fortune.com/company/mutual-of-omaha-insurance/"
+}
+],
+"secExchanges": []
 },
 {
 "id": 289,
@@ -34641,7 +38471,20 @@
 "wdIndustry": [
 "retail"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/kohls/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 290,
@@ -34760,7 +38603,20 @@
 "wdIndustry": [
 "retail"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/tractor-supply/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 291,
@@ -34889,7 +38745,20 @@
 "wdIndustry": [
 "home appliance industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/whirlpool/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 292,
@@ -35015,7 +38884,20 @@
 "wdIndustry": [
 "construction"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/fluor/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 293,
@@ -35145,7 +39027,20 @@
 "fast fashion",
 "retail"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/gap/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 294,
@@ -35275,7 +39170,20 @@
 "wdIndustry": [
 "financial services"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/sp-global/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 295,
@@ -35391,7 +39299,20 @@
 "Consumer Lending",
 "financial services"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/ally-financial/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 296,
@@ -35499,7 +39420,20 @@
 "wdIndustry": [
 "building materials trade"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/builders-firstsource/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 297,
@@ -35624,7 +39558,20 @@
 "wdIndustry": [
 "automotive industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/sonic-automotive/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 298,
@@ -35755,7 +39702,20 @@
 "bricolage",
 "power tool"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/stanley-black-decker/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 299,
@@ -35819,7 +39779,25 @@
 "logo": "http://commons.wikimedia.org/wiki/Special:FilePath/Kenvue%20logo.svg",
 "foundedBy": [],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "delisted",
+"ownLabel": "Acquired / delisted since list",
+"ownDetail": "Public at list time; SEC 25-NSE 2026-11-02",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Private",
+"url": "https://fortune.com/company/kenvue/"
+},
+{
+"src": "SEC EDGAR filings",
+"text": "Form 25-NSE filed 2026-11-02",
+"url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1944048"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 300,
@@ -35915,7 +39893,20 @@
 "logo": "http://commons.wikimedia.org/wiki/Special:FilePath/Kyndryl%20logo.svg",
 "foundedBy": [],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/kyndryl-holdings/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 301,
@@ -36020,7 +40011,20 @@
 "wdIndustry": [
 "petroleum industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/diamondback-energy/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 302,
@@ -36124,7 +40128,20 @@
 "wdIndustry": [
 "telecommunications industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/echostar/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 303,
@@ -36252,7 +40269,20 @@
 "wdIndustry": [
 "automotive industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/textron/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 304,
@@ -36373,6 +40403,19 @@
 ],
 "chair": [
 "Barry Diller"
+],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/expedia-group/"
+}
+],
+"secExchanges": [
+"Nasdaq"
 ]
 },
 {
@@ -36501,7 +40544,20 @@
 "wdIndustry": [
 "insurance"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/w-r-berkley/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 306,
@@ -36629,7 +40685,20 @@
 "wdIndustry": [
 "public utility"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/xcel-energy/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 307,
@@ -36743,7 +40812,20 @@
 "wdIndustry": [
 "electricity supply company"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/firstenergy/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 308,
@@ -36838,7 +40920,23 @@
 "wdIndustry": [
 "insurance"
 ],
-"chair": []
+"chair": [],
+"own": "mutual",
+"ownLabel": "Mutual / policyholder-owned",
+"ownDetail": "Mutual (Fortune industry label)",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Private",
+"url": "https://fortune.com/company/erie-insurance-group/"
+},
+{
+"src": "Fortune industry label",
+"text": "Insurance: Property and Casualty (Mutual)",
+"url": "https://fortune.com/company/erie-insurance-group/"
+}
+],
+"secExchanges": []
 },
 {
 "id": 309,
@@ -36932,7 +41030,21 @@
 "logo": null,
 "foundedBy": [],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/first-citizens-bancshares/"
+}
+],
+"secExchanges": [
+"Nasdaq",
+"OTC"
+]
 },
 {
 "id": 310,
@@ -37046,7 +41158,20 @@
 "wdIndustry": [
 "financial services"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/blackstone-group/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 311,
@@ -37169,7 +41294,20 @@
 "logo": null,
 "foundedBy": [],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/fidelity-national-financial/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 312,
@@ -37269,7 +41407,20 @@
 "Elisha Otis"
 ],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/otis-worldwide/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 313,
@@ -37354,7 +41505,20 @@
 "wdIndustry": [
 "professional services industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/amentum-holdings/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 314,
@@ -37464,7 +41628,20 @@
 "wdIndustry": [
 "pharmaceutical industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/regeneron-pharmaceuticals/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 315,
@@ -37587,7 +41764,20 @@
 "wdIndustry": [
 "cosmetics industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/estee-lauder/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 316,
@@ -37713,6 +41903,19 @@
 ],
 "chair": [
 "Fr\u00e9d\u00e9ric Lissalde"
+],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/borgwarner/"
+}
+],
+"secExchanges": [
+"NYSE"
 ]
 },
 {
@@ -37839,7 +42042,20 @@
 "wdIndustry": [
 "financial services"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/northern-trust/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 318,
@@ -37942,7 +42158,20 @@
 "health care industry",
 "pharmaceutical industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/viatris/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 319,
@@ -38060,7 +42289,20 @@
 "wdIndustry": [
 "construction"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/mastec/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 320,
@@ -38183,7 +42425,20 @@
 "logo": null,
 "foundedBy": [],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/reliance-steel-aluminum/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 321,
@@ -38260,7 +42515,23 @@
 "financial services",
 "insurance"
 ],
-"chair": []
+"chair": [],
+"own": "mutual",
+"ownLabel": "Mutual / policyholder-owned",
+"ownDetail": "Mutual (Fortune industry label)",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Private",
+"url": "https://fortune.com/company/western-southern-financial/"
+},
+{
+"src": "Fortune industry label",
+"text": "Insurance: Life, Health (Mutual)",
+"url": "https://fortune.com/company/western-southern-financial/"
+}
+],
+"secExchanges": []
 },
 {
 "id": 322,
@@ -38388,7 +42659,20 @@
 "wdIndustry": [
 "transport"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/alaska-air-group/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 323,
@@ -38473,7 +42757,20 @@
 "wdIndustry": [
 "Healthcare"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/brightspring-health-services/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 324,
@@ -38599,7 +42896,20 @@
 "wdIndustry": [
 "rail transport"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/csx/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 325,
@@ -38714,7 +43024,20 @@
 "wdIndustry": [
 "automotive industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/lkq/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 326,
@@ -38843,7 +43166,20 @@
 "wdIndustry": [
 "health care"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/laboratory-corp-of-america/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 327,
@@ -38959,7 +43295,20 @@
 "logo": null,
 "foundedBy": [],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/arthur-j-gallagher/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 328,
@@ -39038,7 +43387,20 @@
 "logo": null,
 "foundedBy": [],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/venutre-global/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 329,
@@ -39144,7 +43506,20 @@
 "food delivery",
 "logistics"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/doordash/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 330,
@@ -39273,7 +43648,20 @@
 "wdIndustry": [
 "public utility"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/sempra-energy/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 331,
@@ -39398,7 +43786,20 @@
 "wdIndustry": [
 "health care industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/davita/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 332,
@@ -39508,7 +43909,20 @@
 "wdIndustry": [
 "public utility"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/eversource-energy/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 333,
@@ -39614,7 +44028,20 @@
 "wdIndustry": [
 "enterprise software"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/servicenow/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 334,
@@ -39734,7 +44161,20 @@
 "financial sector",
 "financial services"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/mt-bank-corp/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 335,
@@ -39858,7 +44298,20 @@
 "logo": null,
 "foundedBy": [],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/henry-schein/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 336,
@@ -39956,7 +44409,20 @@
 "logistics",
 "supply chain"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/gxo-logistics/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 337,
@@ -40082,7 +44548,20 @@
 "wdIndustry": [
 "mechanical engineering"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/ball/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 338,
@@ -40203,7 +44682,20 @@
 "logo": "http://commons.wikimedia.org/wiki/Special:FilePath/Unum%20Group%20logo.svg",
 "foundedBy": [],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/unum-group/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 339,
@@ -40322,7 +44814,20 @@
 "gambling",
 "tourism"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/las-vegas-sands/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 340,
@@ -40450,7 +44955,20 @@
 "wdIndustry": [
 "energy company"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/entergy/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 341,
@@ -40574,7 +45092,20 @@
 "logo": null,
 "foundedBy": [],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/fifth-third-bancorp/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 342,
@@ -40671,7 +45202,23 @@
 "wdIndustry": [
 "logistics"
 ],
-"chair": []
+"chair": [],
+"own": "employee",
+"ownLabel": "Employee- / partner-owned",
+"ownDetail": "Employee-owned",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Private",
+"url": "https://fortune.com/company/graybar-electric/"
+},
+{
+"src": "Fortune description",
+"text": "\u2026in construction, commercial, government, industrial, and other markets. Founded in 1869, Graybar Electric is employee owned.",
+"url": "https://fortune.com/company/graybar-electric/"
+}
+],
+"secExchanges": []
 },
 {
 "id": 343,
@@ -40777,7 +45324,20 @@
 "wdIndustry": [
 "quaternary sector of the economy"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/dxc-technology/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 344,
@@ -40909,7 +45469,20 @@
 "Aluminium production",
 "aluminium industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/alcoa/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 345,
@@ -41028,7 +45601,20 @@
 "wdIndustry": [
 "insurance"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/assurant/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 346,
@@ -41158,7 +45744,20 @@
 "transport management",
 "vehicle leasing"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/ryder-system/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 347,
@@ -41267,7 +45866,20 @@
 "Jeffrey Sprecher"
 ],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/intercontinental-exchange/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 348,
@@ -41393,7 +46005,20 @@
 "wdIndustry": [
 "insurance"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/cincinnati-financial/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 349,
@@ -41497,7 +46122,20 @@
 "wdIndustry": [
 "retail"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/chewy/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 350,
@@ -41620,7 +46258,20 @@
 "wdIndustry": [
 "health care industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/community-health-systems/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 351,
@@ -41752,7 +46403,20 @@
 "economics of banking",
 "financial services"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/huntington-bancshares/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 352,
@@ -41864,7 +46528,20 @@
 "wdIndustry": [
 "shipbuilding"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/huntington-ingalls-industries/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 353,
@@ -41970,7 +46647,20 @@
 "wdIndustry": [
 "e-commerce"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/wayfair/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 354,
@@ -42096,7 +46786,20 @@
 "wdIndustry": [
 "technology company"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/centurylink/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 355,
@@ -42203,7 +46906,20 @@
 "wdIndustry": [
 "cosmetics industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/ulta-beauty/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 356,
@@ -42326,7 +47042,20 @@
 "wdIndustry": [
 "product packaging industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/crown-holdings/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 357,
@@ -42429,7 +47158,20 @@
 "wdIndustry": [
 "tourism industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/airbnb/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 358,
@@ -42556,7 +47298,20 @@
 "wdIndustry": [
 "electricity generation"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/aes/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 359,
@@ -42680,7 +47435,20 @@
 "logo": null,
 "foundedBy": [],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/norfolk-southern/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 360,
@@ -42806,7 +47574,20 @@
 "wdIndustry": [
 "public utility"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/public-service-enterprise-group/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 361,
@@ -42930,7 +47711,20 @@
 "wdIndustry": [
 "electronics"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/kla-tencor/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 362,
@@ -43053,7 +47847,20 @@
 "wdIndustry": [
 "petroleum industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/chesapeake-energy/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 363,
@@ -43183,7 +47990,20 @@
 "wdIndustry": [
 "food processing"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/hormel-foods/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 364,
@@ -43310,7 +48130,20 @@
 "wdIndustry": [
 "system catering"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/darden-restaurants/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 365,
@@ -43420,7 +48253,20 @@
 "financial sector",
 "financial services"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/citizens-financial-group/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 366,
@@ -43529,7 +48375,20 @@
 "wdIndustry": [
 "agriculture"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/mosaic/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 367,
@@ -43652,6 +48511,19 @@
 ],
 "chair": [
 "Jonathan D. Gray"
+],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/hilton-worldwide-holdings/"
+}
+],
+"secExchanges": [
+"NYSE"
 ]
 },
 {
@@ -43778,7 +48650,20 @@
 "logo": "http://commons.wikimedia.org/wiki/Special:FilePath/Logo%20Air%20Products.svg",
 "foundedBy": [],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/air-products-chemicals/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 369,
@@ -43890,7 +48775,20 @@
 "engineering",
 "professional services industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/jacobs-engineering-group/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 370,
@@ -43996,7 +48894,20 @@
 "health care industry",
 "pharmaceutical industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/vertex-pharmaceuticals/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 371,
@@ -44122,7 +49033,20 @@
 "Johnnie Bryan Hunt"
 ],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/j-b-hunt-transport-services/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 372,
@@ -44239,7 +49163,20 @@
 "wdIndustry": [
 "consulting company"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/booz-allen-hamilton/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 373,
@@ -44348,7 +49285,20 @@
 "wdIndustry": [
 "petroleum industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/williams/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 374,
@@ -44461,7 +49411,20 @@
 "wdIndustry": [
 "fast food"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/chipotle-mexican-grill/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 375,
@@ -44568,7 +49531,20 @@
 "wdIndustry": [
 "fast food"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/yum-china-holdings/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 376,
@@ -44666,7 +49642,20 @@
 "wdIndustry": [
 "insurance industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/oscar-health/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 377,
@@ -44787,7 +49776,20 @@
 "wdIndustry": [
 "manufacture of cocoa, chocolate and sugar confectionery"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/hershey/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 378,
@@ -44904,7 +49906,20 @@
 "electronics industry",
 "telecommunications industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/motorola-solutions/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 379,
@@ -45012,7 +50027,20 @@
 "insurance",
 "life insurance"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/equitable-holdings/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 380,
@@ -45132,7 +50160,20 @@
 "wdIndustry": [
 "car rental company"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/avis-budget-group/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 381,
@@ -45244,7 +50285,20 @@
 "wdIndustry": [
 "food industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/conagra-brands/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 382,
@@ -45370,7 +50424,20 @@
 "wdIndustry": [
 "medical equipment"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/baxter-international/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 383,
@@ -45480,7 +50547,20 @@
 "wdIndustry": [
 "retail"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/burlington-stores/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 384,
@@ -45586,7 +50666,20 @@
 "wdIndustry": [
 "gambling"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/eldorado-resorts/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 385,
@@ -45712,7 +50805,20 @@
 "logo": "http://commons.wikimedia.org/wiki/Special:FilePath/Owens%20Corning%20logo.jpg",
 "foundedBy": [],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/owens-corning/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 386,
@@ -45843,7 +50949,20 @@
 "financial sector",
 "financial services"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/keycorp/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 387,
@@ -45931,7 +51050,23 @@
 "wdIndustry": [
 "insurance industry"
 ],
-"chair": []
+"chair": [],
+"own": "mutual",
+"ownLabel": "Mutual / policyholder-owned",
+"ownDetail": "Mutual (Fortune industry label)",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Private",
+"url": "https://fortune.com/company/thrivent-financial-for-lutherans/"
+},
+{
+"src": "Fortune industry label",
+"text": "Insurance: Life, Health (Mutual)",
+"url": "https://fortune.com/company/thrivent-financial-for-lutherans/"
+}
+],
+"secExchanges": []
 },
 {
 "id": 388,
@@ -46051,7 +51186,20 @@
 "chemical industry",
 "petroleum industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/westlake-chemical/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 389,
@@ -46164,7 +51312,20 @@
 "wdIndustry": [
 "transport industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/westinghouse-air-brake/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 390,
@@ -46284,7 +51445,20 @@
 "wdIndustry": [
 "brewing industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/molson-coors-brewing/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 391,
@@ -46389,7 +51563,20 @@
 "wdIndustry": [
 "retail"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/lululemon-athletica/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 392,
@@ -46467,7 +51654,23 @@
 "wdIndustry": [
 "insurance company"
 ],
-"chair": []
+"chair": [],
+"own": "mutual",
+"ownLabel": "Mutual / policyholder-owned",
+"ownDetail": "Mutual insurer",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Private",
+"url": "https://fortune.com/company/fm-global/"
+},
+{
+"src": "Wikipedia lead",
+"text": "FM (formerly FM Global) is an American mutual insurance company based in Johnston, Rhode Island, United States, with offices worldwide, that specializes in loss prev\u2026",
+"url": "https://en.wikipedia.org/wiki/FM_(insurance)"
+}
+],
+"secExchanges": []
 },
 {
 "id": 393,
@@ -46589,7 +51792,20 @@
 "e-commerce",
 "retail"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/ebay/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 394,
@@ -46711,7 +51927,20 @@
 "wdIndustry": [
 "logistics"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/expeditors-intl-of-washington/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 395,
@@ -46839,7 +52068,20 @@
 "wdIndustry": [
 "health care"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/quest-diagnostics/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 396,
@@ -46967,7 +52209,20 @@
 "wdIndustry": [
 "semiconductor industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/analog-devices/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 397,
@@ -47077,7 +52332,20 @@
 "wdIndustry": [
 "conglomerate"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/andersons/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 398,
@@ -47186,7 +52454,20 @@
 "Steven Markoff"
 ],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/a-mark-precious-metals/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 399,
@@ -47309,7 +52590,20 @@
 "Robert I. Toll"
 ],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/toll-brothers/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 400,
@@ -47435,7 +52729,20 @@
 "wdIndustry": [
 "specialty chemicals"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/international-flavors-fragrances/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 401,
@@ -47546,7 +52853,20 @@
 "wdIndustry": [
 "real estate investment trust"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/welltower/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 402,
@@ -47663,7 +52983,20 @@
 "wdIndustry": [
 "investment"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/leucadia-national/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 403,
@@ -47788,7 +53121,20 @@
 "wdIndustry": [
 "automotive supplier"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/autoliv/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 404,
@@ -47917,7 +53263,20 @@
 "conglomerate",
 "rug and carpet industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/mohawk-industries/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 405,
@@ -48028,7 +53387,20 @@
 "wdIndustry": [
 "petroleum industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/delek-us-holdings/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 406,
@@ -48145,7 +53517,20 @@
 "wdIndustry": [
 "financial services"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/fidelity-national-information-services/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 407,
@@ -48275,7 +53660,20 @@
 "wdIndustry": [
 "health care"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/owens-minor/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 408,
@@ -48389,7 +53787,20 @@
 "wdIndustry": [
 "real estate investment trust"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/american-tower/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 409,
@@ -48515,7 +53926,20 @@
 "Dwight Schar"
 ],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/nvr/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 410,
@@ -48623,7 +54047,20 @@
 "wdIndustry": [
 "financial services"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/interactive-brokers-group/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 411,
@@ -48747,7 +54184,20 @@
 "wdIndustry": [
 "automotive industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/oshkosh/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 412,
@@ -48870,7 +54320,20 @@
 "wdIndustry": [
 "tertiary sector of the economy"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/cintas/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 413,
@@ -49000,7 +54463,20 @@
 "wdIndustry": [
 "food industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/campbell-soup/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 414,
@@ -49109,6 +54585,19 @@
 ],
 "chair": [
 "David M. Cote"
+],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/vertiv-holdings/"
+}
+],
+"secExchanges": [
+"NYSE"
 ]
 },
 {
@@ -49219,7 +54708,20 @@
 "logo": "http://commons.wikimedia.org/wiki/Special:FilePath/Global%20Payments%20Inc.%20logo.svg",
 "foundedBy": [],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/global-payments/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 416,
@@ -49347,7 +54849,20 @@
 "wdIndustry": [
 "alcohol industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/constellation-brands/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 417,
@@ -49473,7 +54988,20 @@
 "wdIndustry": [
 "industrial manufacturing"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/agco/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 418,
@@ -49581,7 +55109,20 @@
 "logo": "http://commons.wikimedia.org/wiki/Special:FilePath/Intuitive%20Surgical%20logo.svg",
 "foundedBy": [],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/intuitive-surgical/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 419,
@@ -49655,7 +55196,23 @@
 "wdIndustry": [
 "hardware store"
 ],
-"chair": []
+"chair": [],
+"own": "coop",
+"ownLabel": "Cooperative",
+"ownDetail": "Cooperative",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Private",
+"url": "https://fortune.com/company/ace-hardware-corporation/"
+},
+{
+"src": "Fortune description",
+"text": "\u2026owner services and products. A majority of these locations are independently owned, and the company itself is owned solely by these same independent owners. Product offerings include building materials, remodeling equipment, home repai\u2026",
+"url": "https://fortune.com/company/ace-hardware-corporation/"
+}
+],
+"secExchanges": []
 },
 {
 "id": 420,
@@ -49777,7 +55334,20 @@
 "wdIndustry": [
 "automotive industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/dana/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 421,
@@ -49905,7 +55475,20 @@
 "wdIndustry": [
 "pharmaceutical industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/biogen/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 422,
@@ -50021,6 +55604,20 @@
 "chair": [
 "Lachlan Murdoch",
 "Rupert Murdoch"
+],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/news-corp/"
+}
+],
+"secExchanges": [
+"Nasdaq",
+"OTC"
 ]
 },
 {
@@ -50115,7 +55712,20 @@
 "logo": "http://commons.wikimedia.org/wiki/Special:FilePath/Concentrix%20logo.svg",
 "foundedBy": [],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/concentrix/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 424,
@@ -50222,7 +55832,20 @@
 "logo": null,
 "foundedBy": [],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/wec-energy-group/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 425,
@@ -50351,7 +55974,20 @@
 "wdIndustry": [
 "clothing industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/vf/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 426,
@@ -50477,7 +56113,20 @@
 "wdIndustry": [
 "agriculture"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE American",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSEAM",
+"url": "https://fortune.com/company/seaboard/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 427,
@@ -50593,7 +56242,20 @@
 "wdIndustry": [
 "conglomerate"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/icahn-enterprises/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 428,
@@ -50721,7 +56383,20 @@
 "financial sector",
 "financial services"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/regions-financial/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 429,
@@ -50842,7 +56517,20 @@
 "Travel Trailer and Camper Manufacturing",
 "leisure industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/thor-industries/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 430,
@@ -50952,7 +56640,20 @@
 "wdIndustry": [
 "software industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/workday/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 431,
@@ -51070,7 +56771,20 @@
 "wdIndustry": [
 "chemical industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/celanese/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 432,
@@ -51196,7 +56910,20 @@
 "wdIndustry": [
 "computer storage media"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/western-digital/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 433,
@@ -51269,7 +56996,18 @@
 "wdIndustry": [
 "broadcasting"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/qurate-retail/"
+}
+],
+"secExchanges": []
 },
 {
 "id": 434,
@@ -51376,7 +57114,20 @@
 "wdIndustry": [
 "pharmaceutical industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/zoetis/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 435,
@@ -51498,7 +57249,20 @@
 "wdIndustry": [
 "electricity generation"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/centerpoint-energy/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 436,
@@ -51609,7 +57373,20 @@
 "wdIndustry": [
 "Internet"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/equinix/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 437,
@@ -51716,7 +57493,20 @@
 "wdIndustry": [
 "computer security"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/palo-alto-networks/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 438,
@@ -51832,7 +57622,20 @@
 "gas industry",
 "petroleum industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/apache/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 439,
@@ -51958,7 +57761,20 @@
 "wdIndustry": [
 "insurance"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/old-republic-international/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 440,
@@ -52066,7 +57882,20 @@
 "wdIndustry": [
 "heating, ventilation, and air conditioning"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/comfort-systems-usa/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 441,
@@ -52182,7 +58011,20 @@
 "David Neeleman"
 ],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/jetblue-airways/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 442,
@@ -52306,7 +58148,20 @@
 "wdIndustry": [
 "electricity supply company"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/ppl/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 443,
@@ -52418,7 +58273,20 @@
 "wdIndustry": [
 "industrial manufacturing"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/xylem/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 444,
@@ -52521,7 +58389,20 @@
 "wdIndustry": [
 "computer network"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/arista-networks/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 445,
@@ -52642,7 +58523,20 @@
 "wdIndustry": [
 "paper mill"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/packaging-corp-of-america/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 446,
@@ -52753,7 +58647,20 @@
 "fashion",
 "textile industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/pvh/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 447,
@@ -52855,7 +58762,20 @@
 "logo": "http://commons.wikimedia.org/wiki/Special:FilePath/Ovintiv%20logo.png",
 "foundedBy": [],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/ovintiv/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 448,
@@ -52985,7 +58905,20 @@
 "wdIndustry": [
 "product packaging industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/avery-dennison/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 449,
@@ -53097,7 +59030,20 @@
 "aerospace industry",
 "industrial manufacturing"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/transdigm-group/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 450,
@@ -53207,7 +59153,20 @@
 "wdIndustry": [
 "grocery store"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/sprouts-farmers-market/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 451,
@@ -53322,7 +59281,21 @@
 "wdIndustry": [
 "real estate investment trust"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/prologis/"
+}
+],
+"secExchanges": [
+"NYSE",
+"OTC"
+]
 },
 {
 "id": 452,
@@ -53449,7 +59422,20 @@
 "wdIndustry": [
 "financial services"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/franklin-resources/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 453,
@@ -53577,7 +59563,20 @@
 "wdIndustry": [
 "industrial manufacturing"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/eastman-chemical/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 454,
@@ -53688,7 +59687,20 @@
 "wdIndustry": [
 "facility management"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/abm-industries/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 455,
@@ -53810,7 +59822,20 @@
 "logo": "http://commons.wikimedia.org/wiki/Special:FilePath/National-Oilwell-Varco-Logo.svg",
 "foundedBy": [],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/national-oilwell-varco/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 456,
@@ -53919,7 +59944,20 @@
 "Jerome Monroe Smucker"
 ],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/j-m-smucker/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 457,
@@ -54002,7 +60040,23 @@
 "wdIndustry": [
 "financial services"
 ],
-"chair": []
+"chair": [],
+"own": "mutual",
+"ownLabel": "Mutual / policyholder-owned",
+"ownDetail": "Mutual holding company",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Private",
+"url": "https://fortune.com/company/securian-financial-group/"
+},
+{
+"src": "Wikipedia lead",
+"text": "\u2026provides a range of financial products and services such as insurance and investments. It is structured as a mutual holding company that operates a number of subsidiaries. \nAs of 2018, Securian Financial provided insurance, investmen\u2026",
+"url": "https://en.wikipedia.org/wiki/Securian_Financial_Group"
+}
+],
+"secExchanges": []
 },
 {
 "id": 458,
@@ -54110,7 +60164,20 @@
 "wdIndustry": [
 "petroleum industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/eqt/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 459,
@@ -54232,7 +60299,20 @@
 "information technology industry",
 "professional services industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/caci-international/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 460,
@@ -54352,7 +60432,20 @@
 "logo": null,
 "foundedBy": [],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/graphic-packaging-holding/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 461,
@@ -54472,7 +60565,20 @@
 "Arthur Taubman"
 ],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/advance-auto-parts/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 462,
@@ -54579,7 +60685,20 @@
 "wdIndustry": [
 "telecommunications industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/altice-usa/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 463,
@@ -54685,7 +60804,20 @@
 "wdIndustry": [
 "radio broadcasting"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/sirius-xm-holdings/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 464,
@@ -54809,7 +60941,20 @@
 "logo": null,
 "foundedBy": [],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/cms-energy/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 465,
@@ -54925,7 +61070,20 @@
 "wdIndustry": [
 "car dealership"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/hertz-global-holdings/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 466,
@@ -55051,7 +61209,20 @@
 "energy industry",
 "public utility"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/ameren/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 467,
@@ -55174,7 +61345,20 @@
 "logo": "http://commons.wikimedia.org/wiki/Special:FilePath/Rockwell%20Automation%20logo%20%282019%29.svg",
 "foundedBy": [],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/rockwell-automation/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 468,
@@ -55264,6 +61448,19 @@
 ],
 "chair": [
 "Carrie Cox"
+],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/solventum/"
+}
+],
+"secExchanges": [
+"NYSE"
 ]
 },
 {
@@ -55375,7 +61572,20 @@
 "wdIndustry": [
 "beverage industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/monster-beverage/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 470,
@@ -55486,7 +61696,20 @@
 "financial services",
 "fintech"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/nasdaq/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 471,
@@ -55597,7 +61820,20 @@
 "wdIndustry": [
 "aerospace industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/arconic/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 472,
@@ -55717,7 +61953,20 @@
 "logo": null,
 "foundedBy": [],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/insight-enterprises/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 473,
@@ -55838,7 +62087,20 @@
 "wdIndustry": [
 "biomedical engineering"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/zimmer-biomet-holdings-3/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 474,
@@ -55961,7 +62223,20 @@
 "retail",
 "system catering"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/yum-brands/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 475,
@@ -56079,7 +62354,20 @@
 "Q16105134"
 ],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/fastenal/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 476,
@@ -56178,7 +62466,20 @@
 "electronics",
 "semiconductor industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/marvell-technology/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 477,
@@ -56287,7 +62588,20 @@
 "wdIndustry": [
 "financial services"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/voya-financial/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 478,
@@ -56415,7 +62729,20 @@
 "wdIndustry": [
 "financial services"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/american-financial-group/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 479,
@@ -56522,7 +62849,20 @@
 "wdIndustry": [
 "food processing"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/post-holdings/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 480,
@@ -56638,6 +62978,19 @@
 ],
 "chair": [
 "Brad Jacobs"
+],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/xpo-logistics/"
+}
+],
+"secExchanges": [
+"NYSE"
 ]
 },
 {
@@ -56750,6 +63103,19 @@
 ],
 "chair": [
 "Edward D. Breen"
+],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/dow-chemical/"
+}
+],
+"secExchanges": [
+"NYSE"
 ]
 },
 {
@@ -56874,7 +63240,20 @@
 "Milan Mandari\u0107"
 ],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/sanmina/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 483,
@@ -56949,7 +63328,18 @@
 "logo": null,
 "foundedBy": [],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/taylor-morrison-home/"
+}
+],
+"secExchanges": []
 },
 {
 "id": 484,
@@ -57075,7 +63465,20 @@
 "wdIndustry": [
 "mechanical engineering"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/dover/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 485,
@@ -57203,7 +63606,20 @@
 "wdIndustry": [
 "list of building materials"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/vulcan-materials/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 486,
@@ -57301,7 +63717,20 @@
 "logo": null,
 "foundedBy": [],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/api-group/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 487,
@@ -57412,7 +63841,20 @@
 "wdIndustry": [
 "conglomerate"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "Nasdaq",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NASDAQ",
+"url": "https://fortune.com/company/roper-technologies/"
+}
+],
+"secExchanges": [
+"Nasdaq"
+]
 },
 {
 "id": 488,
@@ -57526,7 +63968,20 @@
 "wdIndustry": [
 "construction"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/kbr/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 489,
@@ -57654,7 +64109,20 @@
 "wdIndustry": [
 "product packaging industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/sonoco-products/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 490,
@@ -57777,7 +64245,20 @@
 "wdIndustry": [
 "home furnishing"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/williams-sonoma/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 491,
@@ -57903,7 +64384,20 @@
 "wdIndustry": [
 "iron and steel industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/commercial-metals/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 492,
@@ -58034,7 +64528,20 @@
 "wdIndustry": [
 "financial services"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/moodys/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 493,
@@ -58116,7 +64623,23 @@
 "gas industry",
 "petroleum industry"
 ],
-"chair": []
+"chair": [],
+"own": "private",
+"ownLabel": "Private (other / unspecified)",
+"ownDetail": "Taken private",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Private",
+"url": "https://fortune.com/company/continental-resources/"
+},
+{
+"src": "Fortune description",
+"text": "\u2026lly horizontal drilling and hydraulic fracturing in key U.S. plays. The company became public in 2007 and was taken private in 2022.",
+"url": "https://fortune.com/company/continental-resources/"
+}
+],
+"secExchanges": []
 },
 {
 "id": 494,
@@ -58227,7 +64750,20 @@
 "logo": null,
 "foundedBy": [],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/gardner-denver/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 495,
@@ -58323,7 +64859,20 @@
 "wdIndustry": [
 "infrastructure industry"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/core-main/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 496,
@@ -58392,7 +64941,28 @@
 "wdIndustry": [
 "petroleum industry"
 ],
-"chair": []
+"chair": [],
+"own": "delisted",
+"ownLabel": "Acquired / delisted since list",
+"ownDetail": "Public at list time; SEC 15-12G 2026-05-19, SEC 25-NSE 2026-05-07",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Private; exchange NYSE",
+"url": "https://fortune.com/company/coterra-energy/"
+},
+{
+"src": "SEC EDGAR filings",
+"text": "Form 15-12G filed 2026-05-19; Form 25-NSE filed 2026-05-07",
+"url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=858470"
+},
+{
+"src": "Fortune description",
+"text": "\u2026res; in the Marcellus, about 186,000 net acres; and in the Anadarko, around 182,000 net acres. Coterra Energy was acquired by Devon Energy in May 2026.",
+"url": "https://fortune.com/company/coterra-energy/"
+}
+],
+"secExchanges": []
 },
 {
 "id": 497,
@@ -58502,7 +65072,20 @@
 "logo": null,
 "foundedBy": [],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/primoris-services/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 498,
@@ -58628,7 +65211,20 @@
 "Alex Manoogian"
 ],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/masco/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 499,
@@ -58741,7 +65337,20 @@
 "bedding",
 "mattress"
 ],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/tempur-sealy-international/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 },
 {
 "id": 500,
@@ -58844,6 +65453,19 @@
 "logo": null,
 "foundedBy": [],
 "wdIndustry": [],
-"chair": []
+"chair": [],
+"own": "public",
+"ownLabel": "Publicly traded",
+"ownDetail": "NYSE",
+"ownEv": [
+{
+"src": "Fortune company page",
+"text": "Company type: Public; exchange NYSE",
+"url": "https://fortune.com/company/resideo-technologies/"
+}
+],
+"secExchanges": [
+"NYSE"
+]
 }
 ]
