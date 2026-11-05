@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>James Beard Media Award Graph</title>
+<meta name="description" content="Obsidian-style interactive graph of James Beard Restaurant & Chef Award winners, nominees, and semifinalists." />
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+<style>
+  :root {
+    --bg: #0f1115;
+    --bg2: #161a22;
+    --bg3: #1c2230;
+    --border: #2a3344;
+    --text: #e8ecf4;
+    --muted: #9aa3b5;
+    --accent: #c9a227;
+    --person: #7aa2ff;
+    --book: #5ecf9a;
+    --show: #4ecdc4;
+    --publisher: #e0a060;
+    --publication: #d08050;
+    --outlet: #f0a0c0;
+    --program: #f5d76e;
+    
+        --category: #c77dff;
+    --year: #6bc6e0;
+        --won: #f5d76e;
+    --panel-w: 360px;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: var(--bg); color: var(--text); font: 14px/1.45 "Inter", system-ui, -apple-system, sans-serif; }
+  #app { display: grid; grid-template-columns: 280px 1fr var(--panel-w); height: 100vh; }
+  aside, #profile { background: var(--bg2); border-color: var(--border); overflow: auto; }
+  aside { border-right: 1px solid var(--border); padding: 16px; }
+  #profile { border-left: 1px solid var(--border); padding: 16px; display: none; }
+  #profile.open { display: block; }
+  #main { position: relative; min-width: 0; }
+  #graph { width: 100%; height: 100%; display: block; background:
+    radial-gradient(ellipse at center, #151a24 0%, #0b0d12 100%); }
+  h1 { font-size: 16px; margin: 0 0 4px; font-weight: 650; letter-spacing: 0.02em; }
+  .sub { color: var(--muted); font-size: 12px; margin-bottom: 16px; }
+  label { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin: 12px 0 6px; }
+  input[type="search"], input[type="number"], select {
+    width: 100%; background: var(--bg3); border: 1px solid var(--border); color: var(--text);
+    border-radius: 8px; padding: 8px 10px; outline: none;
+  }
+  input:focus, select:focus { border-color: var(--accent); }
+  .row { display: flex; gap: 8px; }
+  .row > * { flex: 1; }
+  .checks { display: grid; gap: 6px; }
+  .checks label { text-transform: none; letter-spacing: 0; font-size: 13px; color: var(--text); display: flex; align-items: center; gap: 8px; margin: 0; cursor: pointer; }
+  .swatch { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+  .btn {
+    background: var(--bg3); border: 1px solid var(--border); color: var(--text);
+    border-radius: 8px; padding: 8px 10px; cursor: pointer; width: 100%; margin-top: 8px;
+  }
+  .btn:hover { border-color: var(--accent); }
+  .btn.primary { background: #2a2410; border-color: var(--accent); color: var(--accent); }
+  #stats { margin-top: 14px; font-size: 12px; color: var(--muted); line-height: 1.6; }
+  #toolbar {
+    position: absolute; top: 12px; left: 12px; right: 12px; display: flex; gap: 8px; flex-wrap: wrap; z-index: 2; pointer-events: none;
+  }
+  #toolbar > * { pointer-events: auto; }
+  .pill {
+    background: rgba(22,26,34,0.9); border: 1px solid var(--border); border-radius: 999px;
+    padding: 6px 12px; font-size: 12px; color: var(--muted); backdrop-filter: blur(8px);
+  }
+  .pill strong { color: var(--text); font-weight: 600; }
+  #searchBox { min-width: 220px; flex: 1; max-width: 360px; }
+  .legend { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+  .legend span { display: inline-flex; align-items: center; gap: 5px; font-size: 11px; color: var(--muted); }
+  #profile h2 { margin: 0 0 4px; font-size: 18px; }
+  #profile .type-tag { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); margin-bottom: 12px; }
+  #profile .meta { color: var(--muted); font-size: 13px; margin-bottom: 14px; }
+  #profile h3 { font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin: 18px 0 8px; border-bottom: 1px solid var(--border); padding-bottom: 4px; }
+  .backlink, .award-row {
+    display: block; padding: 8px 10px; border-radius: 8px; background: var(--bg3);
+    border: 1px solid transparent; margin-bottom: 6px; cursor: pointer; text-decoration: none; color: inherit;
+  }
+  .backlink:hover, .award-row:hover { border-color: var(--border); }
+  .award-row .yr { color: var(--year); font-variant-numeric: tabular-nums; margin-right: 8px; }
+  .badge {
+    display: inline-block; font-size: 10px; padding: 2px 6px; border-radius: 999px;
+    margin-left: 6px; border: 1px solid var(--border); color: var(--muted); text-transform: uppercase;
+  }
+  .badge.winner { color: #1a1400; background: var(--won); border-color: transparent; }
+  .badge.nominee { color: var(--person); }
+  .badge.semifinalist { color: var(--muted); }
+  a.src { color: var(--person); font-size: 12px; }
+  #closeProfile { float: right; }
+  link-line, .empty { color: var(--muted); font-size: 13px; }
+  text { pointer-events: none; font-size: 10px; fill: #c5cad6; }
+  .node circle { stroke-width: 1.25px; cursor: pointer; }
+  .node.dim circle { opacity: 0.15; }
+  .node.dim text { opacity: 0.05; }
+  .link { stroke: #3a4558; stroke-opacity: 0.45; }
+  .link.dim { stroke-opacity: 0.05; }
+  .link.hi { stroke: var(--accent); stroke-opacity: 0.85; stroke-width: 2px; }
+  #mapView { display: none; position: absolute; inset: 0; padding: 24px; overflow: auto; background: var(--bg); }
+  #mapView.open { display: block; }
+  .state-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 8px; }
+  .state-card {
+    background: var(--bg2); border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; cursor: pointer;
+  }
+  .state-card .n { font-size: 20px; font-weight: 650; }
+  .state-card .s { color: var(--muted); font-size: 12px; }
+  @media (max-width: 960px) {
+    #app { grid-template-columns: 1fr; grid-template-rows: auto 1fr auto; }
+    aside { border-right: none; border-bottom: 1px solid var(--border); max-height: 40vh; }
+    #profile { border-left: none; border-top: 1px solid var(--border); max-height: 40vh; }
+  }
+</style>
+</head>
+<body>
+<div id="app">
+  <aside>
+    <h1>James Beard Media Award Graph</h1>
+    <div class="sub">Book · Broadcast Media · Journalism · Obsidian-style graph</div>
+
+    <label>Search</label>
+    <input id="q" type="search" placeholder="Author, book, show, outlet…" />
+
+    <label>Year range</label>
+    <div class="row">
+      <input id="yearMin" type="number" min="1991" max="2024" value="2010" />
+      <input id="yearMax" type="number" min="1991" max="2025" value="2024" />
+    </div>
+
+    <label>Status</label>
+    <div class="checks" id="statusChecks">
+      <label><input type="checkbox" value="winner" checked /> Winners</label>
+      <label><input type="checkbox" value="nominee" /> Nominees</label>
+      <label><input type="checkbox" value="semifinalist" /> Semifinalists</label>
+    </div>
+
+    <label>Node types</label>
+    <div class="checks" id="typeChecks">
+      <label><span class="swatch" style="background:var(--person)"></span><input type="checkbox" value="person" checked /> People</label>
+      <label><span class="swatch" style="background:var(--book)"></span><input type="checkbox" value="book" checked /> Books</label>
+      <label><span class="swatch" style="background:var(--show)"></span><input type="checkbox" value="show" checked /> Shows</label>
+      <label><span class="swatch" style="background:var(--publisher)"></span><input type="checkbox" value="publisher" checked /> Publishers</label>
+      <label><span class="swatch" style="background:var(--publication)"></span><input type="checkbox" value="publication" checked /> Publications</label>
+      <label><span class="swatch" style="background:var(--outlet)"></span><input type="checkbox" value="outlet" /> Broadcast outlets</label>
+      <label><span class="swatch" style="background:var(--category)"></span><input type="checkbox" value="category" checked /> Categories</label>
+      <label><span class="swatch" style="background:var(--program)"></span><input type="checkbox" value="program" checked /> Programs</label>
+      <label><span class="swatch" style="background:var(--year)"></span><input type="checkbox" value="year" /> Years</label>
+    </div>
+
+    <label>Program filter</label>
+    <select id="programFilter">
+      <option value="">All programs</option>
+      <option value="Book">Book</option>
+      <option value="Broadcast Media">Broadcast Media</option>
+      <option value="Journalism">Journalism</option>
+    </select>
+
+    <label>Local graph</label>
+    <div class="row">
+      <select id="hops">
+        <option value="0" selected>Full filtered graph</option>
+        <option value="1">1 hop from focus</option>
+        <option value="2">2 hops from focus</option>
+      </select>
+    </div>
+
+    <button class="btn primary" id="applyBtn">Apply filters</button>
+    <button class="btn" id="resetBtn">Reset camera</button>
+    <button class="btn" id="toggleMap" style="display:none">Map</button>
+
+    <div id="stats"></div>
+    <div class="legend">
+      <span><span class="swatch" style="background:var(--person)"></span>Person</span>
+      <span><span class="swatch" style="background:var(--book)"></span>Book</span>
+      <span><span class="swatch" style="background:var(--show)"></span>Show</span>
+      <span><span class="swatch" style="background:var(--publisher)"></span>Publisher</span>
+      <span><span class="swatch" style="background:var(--category)"></span>Category</span>
+    </div>
+  </aside>
+
+  <div id="main">
+    <div id="toolbar">
+      <div class="pill" id="countPill">Loading…</div>
+      <input id="searchBox" class="pill" type="search" placeholder="Jump to node…" style="background:rgba(22,26,34,0.9);border:1px solid var(--border);color:var(--text);border-radius:999px;padding:6px 14px;" />
+    </div>
+    <svg id="graph"></svg>
+    <div id="mapView">
+      <h2 style="margin-top:0">Awards by state (filtered)</h2>
+      <p class="sub">Based on place/state links in the current filter set. Click a state to focus.</p>
+      <div class="state-grid" id="stateGrid"></div>
+    </div>
+  </div>
+
+  <div id="profile">
+    <button class="btn" id="closeProfile" style="width:auto;float:right;margin:0">Close</button>
+    <div id="profileBody"></div>
+  </div>
+</div>
+
+<script>
+const COLORS = {
+  person: '#7aa2ff',
+  book: '#5ecf9a',
+  show: '#4ecdc4',
+  publisher: '#e0a060',
+  publication: '#d08050',
+  outlet: '#f0a0c0',
+  category: '#c77dff',
+  program: '#f5d76e',
+  year: '#6bc6e0',
+};
+
+const state = {
+  graph: null,
+  awards: null,
+  focusId: null,
+  simulation: null,
+  transform: d3.zoomIdentity,
+};
+
+async function load() {
+  const [graph, awards] = await Promise.all([
+    fetch('data/graph.json').then(r => r.json()),
+    fetch('data/awards.json').then(r => r.json()),
+  ]);
+  state.graph = graph;
+  state.awards = awards;
+  const years = graph.meta.coverage.years;
+  document.getElementById('yearMin').min = years[0];
+  document.getElementById('yearMin').max = years[years.length - 1];
+  document.getElementById('yearMax').min = years[0];
+  document.getElementById('yearMax').max = years[years.length - 1];
+  renderStats();
+  applyAndDraw();
+}
+
+function checkedValues(id) {
+  return [...document.querySelectorAll(`#${id} input:checked`)].map(i => i.value);
+}
+
+function renderStats() {
+  const m = state.graph.meta.coverage;
+  document.getElementById('stats').innerHTML =
+    `<div><strong>${m.award_count.toLocaleString()}</strong> award records</div>` +
+    `<div>${m.winners} winners · ${m.nominees} nominees · ${m.semifinalists} semifinalists</div>` +
+    `<div>Years ${m.years[0]}–${m.years[m.years.length - 1]} · Book / Broadcast / Journalism</div>` +
+    `<div>${m.by_program ? Object.entries(m.by_program).map(([k,v]) => k+': '+v).join(' · ') : ''}</div>` +
+    `<div style="margin-top:8px">Source: JBF search-past-awards (via public CSV through 2024).</div>`;
+}
+
+function filterGraph() {
+  const y0 = +document.getElementById('yearMin').value;
+  const y1 = +document.getElementById('yearMax').value;
+  const statuses = new Set(checkedValues('statusChecks'));
+  const types = new Set(checkedValues('typeChecks'));
+  const program = document.getElementById('programFilter').value;
+  const q = document.getElementById('q').value.trim().toLowerCase();
+  const hops = +document.getElementById('hops').value;
+
+  // Status filter via edges that carry status/year
+  const statusEdges = state.graph.edges.filter(e =>
+    (e.rel === 'won' || e.rel === 'nominated' || e.rel === 'semifinalist') &&
+    e.year >= y0 && e.year <= y1 &&
+    statuses.has(e.status)
+  );
+
+  let keep = new Set();
+  statusEdges.forEach(e => { keep.add(e.source); keep.add(e.target); });
+
+  // Expand along structural edges within year-filtered subjects
+  const bySrc = d3.group(state.graph.edges, d => d.source);
+  const byTgt = d3.group(state.graph.edges, d => d.target);
+  const seed = new Set(keep);
+  seed.forEach(id => {
+    (bySrc.get(id) || []).forEach(e => {
+      if (['authored','credited-on','published-by','aired-on','appeared-in','wrote-for','affiliated-with','in-year','in-program'].includes(e.rel)) {
+        if (e.year && (e.year < y0 || e.year > y1)) return;
+        keep.add(e.target);
+      }
+    });
+    (byTgt.get(id) || []).forEach(e => {
+      if (['authored','credited-on','published-by','aired-on','appeared-in','wrote-for','affiliated-with','in-program'].includes(e.rel)) keep.add(e.source);
+    });
+  });
+
+  if (program) {
+    const progNode = state.graph.nodes.find(n => n.type === 'program' && n.label === program);
+    if (progNode) {
+      const inProg = new Set([progNode.id]);
+      state.graph.edges.forEach(e => {
+        if (e.rel === 'in-program' && (e.target === progNode.id || e.source === progNode.id)) {
+          inProg.add(e.source); inProg.add(e.target);
+        }
+        if (e.program === program) { inProg.add(e.source); inProg.add(e.target); }
+      });
+      // also categories with program attr
+      state.graph.nodes.forEach(n => {
+        if (n.program === program) inProg.add(n.id);
+      });
+      keep = new Set([...keep].filter(id => {
+        const n = state.graph.nodes.find(x => x.id === id);
+        if (!n) return false;
+        if (n.type === 'year') return true;
+        return inProg.has(id);
+      }));
+    }
+  }
+
+  let nodes = state.graph.nodes.filter(n => keep.has(n.id) && types.has(n.type));
+  if (q) {
+    const matched = nodes.filter(n => n.label.toLowerCase().includes(q));
+    if (matched.length) {
+      // Prefer focusing first match
+      if (!state.focusId || !matched.some(m => m.id === state.focusId)) {
+        state.focusId = matched[0].id;
+      }
+    }
+  }
+
+  // Local hops from focus
+  if (hops > 0 && state.focusId) {
+    const nbr = new Map();
+    state.graph.edges.forEach(e => {
+      if (!keep.has(e.source) || !keep.has(e.target)) return;
+      if (!nbr.has(e.source)) nbr.set(e.source, new Set());
+      if (!nbr.has(e.target)) nbr.set(e.target, new Set());
+      nbr.get(e.source).add(e.target);
+      nbr.get(e.target).add(e.source);
+    });
+    const local = new Set([state.focusId]);
+    let frontier = new Set([state.focusId]);
+    for (let h = 0; h < hops; h++) {
+      const next = new Set();
+      frontier.forEach(id => (nbr.get(id) || []).forEach(x => { if (!local.has(x)) next.add(x); }));
+      next.forEach(x => local.add(x));
+      frontier = next;
+    }
+    nodes = nodes.filter(n => local.has(n.id));
+  }
+
+  const nodeIds = new Set(nodes.map(n => n.id));
+  const links = state.graph.edges
+    .filter(e => nodeIds.has(e.source) && nodeIds.has(e.target))
+    .map(e => ({ ...e }));
+
+  // Cap for performance
+  const MAX_NODES = 800;
+  if (nodes.length > MAX_NODES) {
+    // Prefer people/restaurants with more wins, keep categories/years/places connected
+    const score = n => (n.win_count || 0) * 3 + (n.award_count || 0) + (n.type === 'category' || n.type === 'year' ? 50 : 0);
+    nodes = [...nodes].sort((a, b) => score(b) - score(a)).slice(0, MAX_NODES);
+    const ids = new Set(nodes.map(n => n.id));
+    return {
+      nodes,
+      links: links.filter(e => ids.has(e.source) && ids.has(e.target)),
+      truncated: true,
+      totalBeforeCap: nodeIds.size,
+    };
+  }
+  return { nodes, links, truncated: false, totalBeforeCap: nodes.length };
+}
+
+function applyAndDraw() {
+  const sub = filterGraph();
+  draw(sub);
+  document.getElementById('countPill').innerHTML =
+    `<strong>${sub.nodes.length}</strong> nodes · <strong>${sub.links.length}</strong> edges` +
+    (sub.truncated ? ` · capped (from ${sub.totalBeforeCap})` : '');
+  updateMap(sub);
+}
+
+function draw(sub) {
+  const svg = d3.select('#graph');
+  const wrap = document.getElementById('main');
+  const width = wrap.clientWidth;
+  const height = wrap.clientHeight;
+  svg.attr('viewBox', [0, 0, width, height]);
+  svg.selectAll('*').remove();
+
+  const gRoot = svg.append('g');
+  const zoom = d3.zoom().scaleExtent([0.1, 6]).on('zoom', (event) => {
+    state.transform = event.transform;
+    gRoot.attr('transform', event.transform);
+  });
+  svg.call(zoom);
+  svg.call(zoom.transform, state.transform);
+
+  const nodes = sub.nodes.map(d => ({ ...d }));
+  const nodeById = new Map(nodes.map(d => [d.id, d]));
+  const links = sub.links
+    .map(d => ({ ...d, source: nodeById.get(d.source), target: nodeById.get(d.target) }))
+    .filter(d => d.source && d.target);
+
+  const link = gRoot.append('g').attr('stroke-linecap', 'round')
+    .selectAll('line').data(links).join('line').attr('class', 'link')
+    .attr('stroke-width', d => d.rel === 'won' ? 1.6 : 1);
+
+  const node = gRoot.append('g').selectAll('g')
+    .data(nodes).join('g').attr('class', 'node')
+    .call(d3.drag()
+      .on('start', (event, d) => { if (!event.active) simulation.alphaTarget(0.3).restart(); d.fx = d.x; d.fy = d.y; })
+      .on('drag', (event, d) => { d.fx = event.x; d.fy = event.y; })
+      .on('end', (event, d) => { if (!event.active) simulation.alphaTarget(0); d.fx = null; d.fy = null; }));
+
+  node.append('circle')
+    .attr('r', d => radius(d))
+    .attr('fill', d => COLORS[d.type] || '#888')
+    .attr('stroke', d => d.id === state.focusId ? '#fff' : '#0b0d12')
+    .attr('stroke-width', d => d.id === state.focusId ? 2.5 : 1.2)
+    .on('click', (event, d) => { event.stopPropagation(); focusNode(d.id); })
+    .on('mouseenter', (event, d) => highlight(d.id, links, node, link))
+    .on('mouseleave', () => clearHighlight(node, link));
+
+  node.append('title').text(d => `${d.label} (${d.type})`);
+
+  node.append('text')
+    .attr('x', d => radius(d) + 4)
+    .attr('y', 3)
+    .text(d => trimLabel(d.label, d.type));
+
+  const simulation = d3.forceSimulation(nodes)
+    .force('link', d3.forceLink(links).id(d => d.id).distance(d => d.rel === 'works-at' ? 40 : 70).strength(0.4))
+    .force('charge', d3.forceManyBody().strength(-120))
+    .force('center', d3.forceCenter(width / 2, height / 2))
+    .force('collision', d3.forceCollide().radius(d => radius(d) + 4))
+    .on('tick', () => {
+      link.attr('x1', d => d.source.x).attr('y1', d => d.source.y)
+          .attr('x2', d => d.target.x).attr('y2', d => d.target.y);
+      node.attr('transform', d => `translate(${d.x},${d.y})`);
+    });
+  state.simulation = simulation;
+
+  svg.on('click', () => { /* click empty */ });
+}
+
+function radius(d) {
+  if (d.type === 'person' || d.type === 'book' || d.type === 'show') return 5 + Math.min(12, (d.win_count || 0) * 1.8 + (d.award_count || 0) * 0.15);
+  if (d.type === 'category') return 8;
+  if (d.type === 'year') return 7;
+  if (d.type === 'place') return 5;
+  return 6;
+}
+
+function trimLabel(s, type) {
+  if (type === 'year') return s;
+  return s.length > 28 ? s.slice(0, 26) + '…' : s;
+}
+
+function highlight(id, links, nodeSel, linkSel) {
+  const neighbors = new Set([id]);
+  links.forEach(l => {
+    const s = typeof l.source === 'object' ? l.source.id : l.source;
+    const t = typeof l.target === 'object' ? l.target.id : l.target;
+    if (s === id) neighbors.add(t);
+    if (t === id) neighbors.add(s);
+  });
+  nodeSel.classed('dim', d => !neighbors.has(d.id));
+  linkSel.classed('dim', l => {
+    const s = typeof l.source === 'object' ? l.source.id : l.source;
+    const t = typeof l.target === 'object' ? l.target.id : l.target;
+    return !(neighbors.has(s) && neighbors.has(t));
+  }).classed('hi', l => {
+    const s = typeof l.source === 'object' ? l.source.id : l.source;
+    const t = typeof l.target === 'object' ? l.target.id : l.target;
+    return s === id || t === id;
+  });
+}
+function clearHighlight(nodeSel, linkSel) {
+  nodeSel.classed('dim', false);
+  linkSel.classed('dim', false).classed('hi', false);
+}
+
+function focusNode(id) {
+  state.focusId = id;
+  openProfile(id);
+  applyAndDraw();
+}
+
+function openProfile(id) {
+  const n = state.graph.nodes.find(x => x.id === id);
+  if (!n) return;
+  document.getElementById('profile').classList.add('open');
+  const body = document.getElementById('profileBody');
+
+  // Backlinks
+  const incoming = state.graph.edges.filter(e => e.target === id);
+  const outgoing = state.graph.edges.filter(e => e.source === id);
+  const relatedIds = new Set();
+  incoming.forEach(e => relatedIds.add(e.source));
+  outgoing.forEach(e => relatedIds.add(e.target));
+  const related = [...relatedIds].map(rid => state.graph.nodes.find(x => x.id === rid)).filter(Boolean)
+    .sort((a, b) => a.type.localeCompare(b.type) || a.label.localeCompare(b.label));
+
+  // Award timeline from awards.json
+  let awards = [];
+  if (n.type === 'person') {
+    awards = state.awards.awards.filter(a => a.person === n.label);
+  } else if (n.type === 'book') {
+    awards = state.awards.awards.filter(a => a.book === n.label || a.work === n.label);
+  } else if (n.type === 'show') {
+    awards = state.awards.awards.filter(a => a.show === n.label || a.work === n.label);
+  } else if (n.type === 'publisher') {
+    awards = state.awards.awards.filter(a => a.publisher === n.label);
+  } else if (n.type === 'publication') {
+    awards = state.awards.awards.filter(a => a.publication === n.label);
+  } else if (n.type === 'outlet') {
+    awards = state.awards.awards.filter(a => a.company === n.label || a.outlet === n.label);
+  } else if (n.type === 'category') {
+    awards = state.awards.awards.filter(a => a.category === n.label && (!n.program || a.program === n.program));
+  } else if (n.type === 'program') {
+    awards = state.awards.awards.filter(a => a.program === n.label);
+  } else if (n.type === 'year') {
+    awards = state.awards.awards.filter(a => a.year === +n.label);
+  }
+  awards = awards.slice().sort((a, b) => b.year - a.year || a.category.localeCompare(b.category));
+
+  const sources = [...new Set(awards.map(a => a.source_url).filter(Boolean))];
+
+  body.innerHTML = `
+    <div class="type-tag">${n.type}</div>
+    <h2>${escapeHtml(n.label)}</h2>
+    <div class="meta">
+      ${n.program ? escapeHtml(n.program) : ''}
+      ${n.award_count ? ` · ${n.award_count} award mentions` : ''}
+      ${n.win_count ? ` · ${n.win_count} wins` : ''}
+    </div>
+    <h3>Award history</h3>
+    <div>${awards.length ? awards.slice(0, 80).map(a => `
+      <div class="award-row">
+        <span class="yr">${a.year}</span>
+        <strong>${escapeHtml(a.category)}</strong>
+        <span class="badge ${a.status}">${a.status}</span>
+        <div style="color:var(--muted);font-size:12px;margin-top:2px">
+          ${a.program ? '<em>'+escapeHtml(a.program)+'</em> · ' : ''}${a.person ? escapeHtml(a.person) : ''}
+          ${a.work ? ' · ' + escapeHtml(a.work) : ''}${a.outlet ? ' · ' + escapeHtml(a.outlet) : ''}
+        </div>
+      </div>`).join('') : '<div class="empty">No award rows for this node under current data.</div>'}
+      ${awards.length > 80 ? `<div class="empty">Showing 80 of ${awards.length}</div>` : ''}
+    </div>
+    <h3>Connected notes</h3>
+    <div>${related.slice(0, 60).map(r => `
+      <a class="backlink" href="#" data-id="${r.id}">
+        <span class="badge">${r.type}</span> ${escapeHtml(r.label)}
+      </a>`).join('') || '<div class="empty">No connections in full graph.</div>'}
+    </div>
+    <h3>Sources</h3>
+    <div>${sources.map(s => `<div><a class="src" href="${s}" target="_blank" rel="noopener">${s}</a></div>`).join('') || '<div class="empty">See data/awards.json provenance.</div>'}</div>
+  `;
+  body.querySelectorAll('[data-id]').forEach(el => {
+    el.addEventListener('click', (e) => { e.preventDefault(); focusNode(el.getAttribute('data-id')); });
+  });
+}
+
+function escapeHtml(s) {
+  return String(s || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function updateMap(sub) { /* media site: no geo map */ }
+
+document.getElementById('applyBtn').addEventListener('click', () => applyAndDraw());
+document.getElementById('resetBtn').addEventListener('click', () => {
+  state.transform = d3.zoomIdentity;
+  applyAndDraw();
+});
+document.getElementById('closeProfile').addEventListener('click', () => {
+  document.getElementById('profile').classList.remove('open');
+});
+document.getElementById('toggleMap').addEventListener('click', () => {
+  document.getElementById('mapView').classList.toggle('open');
+});
+document.getElementById('q').addEventListener('keydown', e => { if (e.key === 'Enter') applyAndDraw(); });
+document.getElementById('searchBox').addEventListener('keydown', e => {
+  if (e.key !== 'Enter') return;
+  const q = e.target.value.trim().toLowerCase();
+  const hit = state.graph.nodes.find(n => n.label.toLowerCase().includes(q));
+  if (hit) focusNode(hit.id);
+});
+window.addEventListener('resize', () => applyAndDraw());
+
+load().catch(err => {
+  document.getElementById('countPill').textContent = 'Failed to load data: ' + err.message;
+  console.error(err);
+});
+</script>
+</body>
+</html>
