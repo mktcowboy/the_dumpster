@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biochar and Activated Carbon for Water Treatment: An Evidence Review</title>
+<style>
+  :root{--ink:#1d2329;--muted:#5b6670;--accent:#1f6f5c;--accent2:#8a5a1f;--bg:#fbfaf7;--card:#ffffff;--line:#e3e0d8;--warn:#9a3b2e;}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 Georgia,"Iowan Old Style","Palatino Linotype",serif}
+  header{background:linear-gradient(135deg,#17332c,#1f6f5c);color:#f4f1ea;padding:56px 24px 44px}
+  header .wrap{max-width:900px;margin:0 auto}
+  header h1{font-family:"Helvetica Neue",Arial,sans-serif;font-weight:700;font-size:2.1rem;line-height:1.2;margin:0 0 10px}
+  header p{margin:4px 0;color:#d9e6e0;font-family:"Helvetica Neue",Arial,sans-serif;font-size:.95rem}
+  main{max-width:900px;margin:0 auto;padding:28px 24px 80px}
+  h2{font-family:"Helvetica Neue",Arial,sans-serif;color:var(--accent);font-size:1.5rem;margin:48px 0 12px;padding-top:8px;border-top:2px solid var(--line)}
+  h3{font-family:"Helvetica Neue",Arial,sans-serif;font-size:1.12rem;margin:26px 0 8px;color:#23413a}
+  a{color:var(--accent)}
+  sup.c, a.c{font-family:"Helvetica Neue",Arial,sans-serif;font-size:.78em;text-decoration:none;font-weight:600}
+  .toc{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px 26px;margin:20px 0}
+  .toc h2{border:0;margin:0 0 6px;padding:0;font-size:1.1rem}
+  .toc ol{margin:0;padding-left:22px;columns:2;column-gap:36px;font-family:"Helvetica Neue",Arial,sans-serif;font-size:.93rem}
+  .toc li{margin:3px 0;break-inside:avoid}
+  .summary{background:#eef5f2;border-left:5px solid var(--accent);padding:16px 22px;border-radius:6px;margin:22px 0}
+  .summary ul{margin:6px 0 0;padding-left:20px}
+  .callout{background:#fff6ec;border-left:5px solid var(--accent2);padding:12px 18px;border-radius:6px;margin:18px 0}
+  .warn{background:#fbeeec;border-left:5px solid var(--warn);padding:12px 18px;border-radius:6px;margin:18px 0}
+  table{width:100%;border-collapse:collapse;margin:16px 0 8px;background:var(--card);font-family:"Helvetica Neue",Arial,sans-serif;font-size:.88rem;line-height:1.45}
+  th,td{border:1px solid var(--line);padding:9px 11px;vertical-align:top;text-align:left}
+  th{background:#23413a;color:#fff;font-weight:600}
+  tr:nth-child(even) td{background:#f7f5f0}
+  td:first-child{font-weight:600;width:20%}
+  .caption{font-family:"Helvetica Neue",Arial,sans-serif;font-size:.82rem;color:var(--muted);margin:4px 0 18px}
+  .figure{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px;margin:20px 0}
+  .figure svg{width:100%;height:auto;display:block}
+  .refs{font-family:"Helvetica Neue",Arial,sans-serif;font-size:.86rem;line-height:1.5;padding-left:28px}
+  .refs li{margin:8px 0;scroll-margin-top:20px}
+  .refs li:target{background:#fff3c4}
+  .meta{color:var(--muted);font-size:.85rem}
+  footer{max-width:900px;margin:0 auto;padding:0 24px 40px;color:var(--muted);font-family:"Helvetica Neue",Arial,sans-serif;font-size:.8rem}
+  @media (max-width:640px){.toc ol{columns:1}header h1{font-size:1.6rem}body{font-size:16px}}
+  @media print{header{background:#1f6f5c !important;-webkit-print-color-adjust:exact}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <h1>Biochar and Activated Carbon for Water Cleaning and Contaminant Removal</h1>
+  <p>An evidence review of materials, mechanisms, performance, applications, risks and research gaps</p>
+  <p>Prepared October 22, 2026 &middot; Numbered citations link to the reference list at the end</p>
+</div></header>
+
+<main>
+
+<div class="summary">
+<strong>Key findings at a glance</strong>
+<ul>
+  <li>Both materials are carbon-rich solids made by heating biomass (or, for activated carbon, also coal) with little oxygen. Activated carbon goes through an extra <em>activation</em> step that greatly expands its internal surface area <a class="c" href="#ref5">[5]</a><a class="c" href="#ref6">[6]</a><a class="c" href="#ref7">[7]</a>.</li>
+  <li>Activated carbon is the established, regulated workhorse. The U.S. EPA lists granular activated carbon (GAC) as a Best Available Technology for PFAS, and it is widely used for organic chemicals, taste, odor and chlorine <a class="c" href="#ref6">[6]</a><a class="c" href="#ref13">[13]</a>.</li>
+  <li>Pound for pound, biochar usually adsorbs less than activated carbon. It is much cheaper and has a far smaller carbon footprint, and one review found it removes about 3.7&times; more pollutant per euro spent <a class="c" href="#ref11">[11]</a><a class="c" href="#ref24">[24]</a>. Performance varies hugely with feedstock and production conditions <a class="c" href="#ref8">[8]</a><a class="c" href="#ref23">[23]</a>.</li>
+  <li>Neither material disinfects water. Carbon filters do not reliably remove bacteria or viruses, so microbiologically unsafe water still needs disinfection or a suitable membrane <a class="c" href="#ref6">[6]</a><a class="c" href="#ref21">[21]</a>.</li>
+</ul>
+</div>
+
+<nav class="toc" aria-label="Table of contents">
+<h2>Contents</h2>
+<ol>
+  <li><a href="#materials">What the materials are and how they are made</a></li>
+  <li><a href="#mechanisms">How they remove contaminants</a></li>
+  <li><a href="#performance">Performance by contaminant class</a></li>
+  <li><a href="#applications">Applications</a></li>
+  <li><a href="#comparison">Biochar vs activated carbon: comparison</a></li>
+  <li><a href="#engineered">Modified and engineered biochar</a></li>
+  <li><a href="#risks">Limitations and risks</a></li>
+  <li><a href="#takeaways">Practical takeaways</a></li>
+  <li><a href="#gaps">Research gaps</a></li>
+  <li><a href="#references">References</a></li>
+</ol>
+</nav>
+
+<h2 id="materials">1. What the materials are and how they are made</h2>
+
+<h3>Biochar</h3>
+<p>Biochar is the solid, carbon-rich product left when biomass is heated with little or no oxygen (pyrolysis). Feedstocks include woodchips, crop straws, nut shells, bagasse, manures and other solid wastes <a class="c" href="#ref2">[2]</a>. Pyrolysis temperature, heating rate, residence time and feedstock type control its properties <a class="c" href="#ref1">[1]</a><a class="c" href="#ref3">[3]</a>. Higher temperatures generally give more surface area, porosity, pH and mineral content but fewer oxygen-containing functional groups <a class="c" href="#ref9">[9]</a>. Typical biochar has a low apparent density (0.30&ndash;0.45 g/cm&sup3;) and a surface area of about 200&ndash;400 m&sup2;/g, with micro-, meso- and macropores <a class="c" href="#ref4">[4]</a>. Feedstock chemistry matters too. In one comparison at the same temperature, cellulose-derived biochar had a larger micropore area (280 m&sup2;/g) than lignin-derived biochar (200 m&sup2;/g) <a class="c" href="#ref2">[2]</a>.</p>
+
+<h3>Activated carbon (activated charcoal)</h3>
+<p>Activated carbon (AC) covers a broad family of carbonized materials with high porosity and surface area <a class="c" href="#ref5">[5]</a>. Drinking-water GAC is made from bituminous coal, lignite, peat, wood, coconut shells and other porous raw materials. Physical and/or chemical processing creates and enlarges its pores <a class="c" href="#ref7">[7]</a>.</p>
+<ul>
+  <li><strong>Physical activation:</strong> the char is treated with an oxidizing gas such as steam or CO<sub>2</sub>.</li>
+  <li><strong>Chemical activation:</strong> the precursor is impregnated with an agent such as KOH, H<sub>3</sub>PO<sub>4</sub>, ZnCl<sub>2</sub>, K<sub>2</sub>CO<sub>3</sub> or NaOH. A review of 81 studies found phosphoric acid commonly used for lignocellulosic materials at lower temperatures. Zinc chloride gave more surface area than phosphoric acid but is used less because of environmental concerns, and KOH outperformed NaOH on surface area and efficiency <a class="c" href="#ref5">[5]</a>.</li>
+</ul>
+<p>The result is an extremely porous material. A University of Georgia Extension bulletin notes that AC may have about 1,000 m&sup2; of surface area per gram <a class="c" href="#ref6">[6]</a>. That is several times the 200&ndash;400 m&sup2;/g typical of raw biochar <a class="c" href="#ref4">[4]</a>. In short, biochar is pyrolyzed but usually not activated. Activated carbon is a char that has been deliberately activated to maximize pore development, and biochar itself can be used as the starting material for activated carbon <a class="c" href="#ref5">[5]</a>.</p>
+
+<h2 id="mechanisms">2. How they remove contaminants</h2>
+<p>Which removal mechanisms dominate depends on the contaminant and on the sorbent's surface chemistry. The main ones are:</p>
+<table>
+<thead><tr><th>Mechanism</th><th>What happens</th><th>Typical targets</th></tr></thead>
+<tbody>
+<tr><td>Pore filling / physical adsorption</td><td>Molecules accumulate in micropores. Sorption capacity scales with micropore surface area <a class="c" href="#ref2">[2]</a>.</td><td>Organic compounds (e.g., naphthalene), taste/odor compounds</td></tr>
+<tr><td>Hydrophobic partitioning</td><td>Water-"disliking" molecules partition onto carbon surfaces <a class="c" href="#ref2">[2]</a><a class="c" href="#ref6">[6]</a>.</td><td>Non-polar organics, PFAS tails <a class="c" href="#ref7">[7]</a></td></tr>
+<tr><td>&pi;&ndash;&pi; / electron donor&ndash;acceptor interactions</td><td>Aromatic contaminants interact with the graphitic, &pi;-electron-rich domains of the carbon <a class="c" href="#ref3">[3]</a><a class="c" href="#ref8">[8]</a>.</td><td>Aromatic pesticides, antibiotics (sulfonamides, tetracyclines) <a class="c" href="#ref10">[10]</a></td></tr>
+<tr><td>Electrostatic attraction</td><td>Surface charge depends on pH relative to the point of zero charge (pH<sub>PZC</sub>). Below pH<sub>PZC</sub> the surface is positive and binds anions such as HAsO<sub>4</sub><sup>2&minus;</sup> and HCrO<sub>4</sub><sup>&minus;</sup>. Above it the surface is negative and binds cations such as Pb<sup>2+</sup>, Cd<sup>2+</sup> and Hg<sup>2+</sup> <a class="c" href="#ref2">[2]</a>.</td><td>Metal ions, PFAS head groups <a class="c" href="#ref7">[7]</a></td></tr>
+<tr><td>Ion (cation) exchange</td><td>Metals swap with alkali/alkaline-earth cations or protons on the surface <a class="c" href="#ref2">[2]</a>.</td><td>Pb, Cd, NH<sub>4</sub><sup>+</sup> <a class="c" href="#ref18">[18]</a></td></tr>
+<tr><td>Surface complexation</td><td>Contaminants bind to carboxyl, hydroxyl and phenolic groups or to &pi;-electron domains <a class="c" href="#ref2">[2]</a><a class="c" href="#ref9">[9]</a>.</td><td>As, Cd, Pb, Hg, Cr(III)</td></tr>
+<tr><td>Precipitation / co-precipitation</td><td>Minerals in biochar (carbonates, phosphates, metal oxides) form insoluble compounds with contaminants <a class="c" href="#ref2">[2]</a><a class="c" href="#ref18">[18]</a>.</td><td>Pb, Cd, phosphate</td></tr>
+<tr><td>Reduction</td><td>Surface electron donors reduce Cr(VI) to less toxic Cr(III), which is then complexed <a class="c" href="#ref9">[9]</a>. AC catalytically reduces free chlorine to chloride <a class="c" href="#ref6">[6]</a>.</td><td>Cr(VI), Hg, chlorine/chloramine</td></tr>
+</tbody>
+</table>
+<p class="caption">Table 1. Principal removal mechanisms for carbon sorbents.</p>
+<div class="callout">Production temperature sets the dominant mechanisms. Biochar made at low pyrolysis temperatures keeps oxygen functional groups and suits inorganic and polar contaminants (electrostatics, precipitation, ion exchange). High-temperature biochar has more surface area, microporosity and hydrophobicity and suits organic contaminants <a class="c" href="#ref1">[1]</a><a class="c" href="#ref3">[3]</a>.</div>
+
+<h2 id="performance">3. Performance by contaminant class</h2>
+
+<h3>3.1 Heavy metals (Pb, Cd, As, Cr, Hg)</h3>
+<p>Different mechanisms dominate for different metals <a class="c" href="#ref9">[9]</a>:</p>
+<ul>
+  <li><strong>As:</strong> complexation and electrostatic interactions.</li>
+  <li><strong>Cr:</strong> electrostatic interactions, reduction and complexation.</li>
+  <li><strong>Cd and Pb:</strong> complexation, cation exchange and precipitation.</li>
+  <li><strong>Hg:</strong> complexation and reduction.</li>
+</ul>
+<p>A synthesis of 559 Langmuir isotherms from 133 studies, covering 17 metals, found the highest sorption values for Pb(II), Cr and Cd(II) <a class="c" href="#ref8">[8]</a>. Biochar sorbed Pb(II) and Cd(II) better than As(V) and Zn(II). Feedstock was the key determinant: biochars from nutrient-dense feedstocks (animal biowaste, sludge, manure) outperformed woody-plant biochars, and chemical modification was the most effective post-treatment <a class="c" href="#ref8">[8]</a>.</p>
+<p>Anionic arsenic is the weak point of unmodified biochar. One pinewood biochar (600 &deg;C) had a maximum As(V) capacity of only 0.3 mg/g at pH 7 <a class="c" href="#ref2">[2]</a>. Activated carbon, for its part, removes "a few metals like mercury" and metals bound to organic molecules but not most metal ions <a class="c" href="#ref6">[6]</a>. Even so, the CDC notes that many carbon pitcher filters are marketed to remove lead <a class="c" href="#ref21">[21]</a>, so certification labels should be checked for the specific metal. A life-cycle meta-analysis concluded that, per unit mass, biochar's heavy-metal capacity can compete with or exceed activated carbon for the metals it analyzed <a class="c" href="#ref24">[24]</a>.</p>
+
+<h3>3.2 Organic chemicals, pesticides and pharmaceuticals</h3>
+<p>Activated carbon is described as the best method available for removing organic chemicals from household water. It also removes VOCs, some pesticides, gasoline components, trihalomethanes and benzene <a class="c" href="#ref6">[6]</a>. EPA notes that GAC also removes natural organic matter, synthetic organic compounds and disinfection-byproduct precursors <a class="c" href="#ref7">[7]</a>.</p>
+<p>For organics, biochar generally adsorbs somewhat less than AC. In a boxplot meta-review, mean maximum equilibrium capacities were about 95,000 mg/kg for biochars versus 176,800 mg/kg for activated carbons <a class="c" href="#ref11">[11]</a>. The gap was largest for more hydrophobic compounds. For medium non-polar compounds, average biochar efficiencies fell in the same range as AC, which suggests biochar could replace AC in some tertiary treatment <a class="c" href="#ref11">[11]</a>. For antibiotics such as sulfonamides and tetracyclines, the main pathways are &pi;&ndash;&pi; electron donor&ndash;acceptor interactions, hydrogen bonding and electrostatic/hydrophobic effects <a class="c" href="#ref10">[10]</a>.</p>
+<p>In field-oriented work in Thailand, high-temperature gasifier biochars removed the herbicide 2,4-D below detection (2 &micro;g/L, i.e., ~100%) from water starting at 100 &micro;g/L with background organic matter. Traditional kiln charcoals ranged from essentially no uptake to ~80% removal <a class="c" href="#ref23">[23]</a>.</p>
+
+<h3>3.3 PFAS ("forever chemicals")</h3>
+<p>EPA identified GAC, anion exchange, reverse osmosis and nanofiltration as Best Available Technologies for its 2024 PFAS drinking-water standards <a class="c" href="#ref13">[13]</a>. GAC works well on longer-chain PFAS such as PFOA and PFOS. Shorter-chain PFAS such as PFBS and PFBA adsorb less well <a class="c" href="#ref12">[12]</a>. Powdered activated carbon (PAC) is less efficient and economical than GAC for PFAS <a class="c" href="#ref12">[12]</a>.</p>
+<p>Biochar's record on PFAS is mixed:</p>
+<ul>
+  <li><strong>GAC ahead:</strong> in a direct comparison, GAC's maximum Langmuir capacities for PFOS (123.5 &micro;mol/g) and PFOA (86.2 &micro;mol/g) were 43% and 39.6% greater than a softwood biochar's. GAC also reached equilibrium faster (3&ndash;24 h vs 12&ndash;48 h) <a class="c" href="#ref14">[14]</a>.</li>
+  <li><strong>Commercial biochar ineffective:</strong> in rapid small-scale column tests on municipal wastewater effluent, a commercial biochar was ineffective for PFOA, PFOS, PFHxA and PFHxS <a class="c" href="#ref17">[17]</a>.</li>
+  <li><strong>Engineered biochar can compete:</strong> a reed-straw biochar made at 900 &deg;C removed >92% of short-chain PFAS at ~1 &micro;g/L. At 100 &micro;g/L, GAC removed 87% of PFOA but only 13% of PFBA <a class="c" href="#ref15">[15]</a>. Brief air oxidation of biochar at 400 &deg;C raised PFAS solid&ndash;water distribution ratios by up to three orders of magnitude, in some cases to GAC-comparable levels <a class="c" href="#ref16">[16]</a>.</li>
+</ul>
+
+<div class="figure">
+<svg viewBox="0 0 760 300" role="img" aria-label="PFAS removal at 100 micrograms per liter: GAC 87 percent PFOA, 13 percent PFBA; reed straw biochar greater than 92 percent short-chain">
+  <text x="20" y="26" font-family="Helvetica, Arial" font-size="15" font-weight="700" fill="#1d2329">PFAS removal: chain length matters (batch tests) [15]</text>
+  <line x1="200" y1="50" x2="200" y2="250" stroke="#999"/>
+  <line x1="200" y1="250" x2="720" y2="250" stroke="#999"/>
+  <!-- scale 0-100% across 500px -->
+  <g font-family="Helvetica, Arial" font-size="12" fill="#5b6670">
+    <text x="196" y="268">0%</text><text x="440" y="268">50%</text><text x="690" y="268">100%</text>
+  </g>
+  <line x1="450" y1="50" x2="450" y2="250" stroke="#eee"/>
+  <line x1="700" y1="50" x2="700" y2="250" stroke="#eee"/>
+  <g font-family="Helvetica, Arial" font-size="13" fill="#1d2329">
+    <text x="20" y="85">GAC &ndash; PFOA (long)</text>
+    <rect x="200" y="68" width="435" height="26" fill="#23413a"/><text x="642" y="86">87%</text>
+    <text x="20" y="140">GAC &ndash; PFBA (short)</text>
+    <rect x="200" y="123" width="65" height="26" fill="#23413a"/><text x="272" y="141">13%</text>
+    <text x="20" y="195">Reed-straw biochar &ndash;</text><text x="20" y="211">short-chain PFAAs</text>
+    <rect x="200" y="182" width="460" height="26" fill="#8a5a1f"/><text x="667" y="200">&gt;92%</text>
+  </g>
+  <text x="20" y="292" font-family="Helvetica, Arial" font-size="11" fill="#5b6670">GAC values at 100 &micro;g/L initial concentration; biochar (RESCA-900) value at environmentally relevant ~1 &micro;g/L. Bars drawn to scale from reported values.</text>
+</svg>
+</div>
+<p class="caption">Figure 1. Short-chain PFAS slip through GAC far more readily than long-chain PFAS. A purpose-made, high-temperature biochar performed well on short chains in one study <a class="c" href="#ref15">[15]</a>. A commercial biochar was ineffective in a separate wastewater test <a class="c" href="#ref17">[17]</a>.</p>
+
+<h3>3.4 Nutrients (nitrogen and phosphorus)</h3>
+<p>A Water Research review found that unmodified biochars adsorb ammonium (NH<sub>4</sub>-N) poorly, generally below 20 mg/g, mainly via ion exchange and oxygen functional groups <a class="c" href="#ref18">[18]</a>. Nitrate affinity is even lower because negatively charged biochar surfaces repel it. Phosphate is removed mainly by precipitation with metals and metal oxides. Metal-modified biochars remove NH<sub>4</sub>-N, NO<sub>3</sub>-N and PO<sub>4</sub>-P significantly better. Biochar can also <em>release</em> its own N and P into water <a class="c" href="#ref18">[18]</a>. Activated carbon does not remove nitrate <a class="c" href="#ref6">[6]</a>.</p>
+
+<h3>3.5 Pathogens</h3>
+<p>Carbon is not a disinfectant.</p>
+<ul>
+  <li><strong>Activated carbon:</strong> AC does not remove bacteria <a class="c" href="#ref6">[6]</a>. The CDC states that most pitcher and fridge filters, which typically use carbon, are not designed to remove germs <a class="c" href="#ref21">[21]</a>. Tightly compressed solid-block carbon can physically strain out <em>Giardia</em> and <em>Cryptosporidium</em> cysts <a class="c" href="#ref6">[6]</a>. Carbon filters can also become breeding grounds for bacteria if poorly maintained <a class="c" href="#ref6">[6]</a>.</li>
+  <li><strong>Biochar in stormwater:</strong> amendment can improve retention of fecal indicators. A review of bioretention studies reported E. coli removal ranging from about 30% to 98% depending on biochar type and modification <a class="c" href="#ref19">[19]</a>. A 61-week simulated-field study found that biochar's E. coli advantage over sand disappeared after about 31 weeks, likely because of biofilm growth. After conditioning, biochar filters out-performed sand by only ~0.3 log units <a class="c" href="#ref20">[20]</a>.</li>
+</ul>
+
+<h3>3.6 Color, taste, odor and chlorine</h3>
+<p>This is AC's signature strength. Activated carbon removes unpleasant tastes, odors (e.g., trace hydrogen sulfide) and residual chlorine <a class="c" href="#ref6">[6]</a>, and GAC can improve water's color, taste and smell <a class="c" href="#ref13">[13]</a>. Chlorine is destroyed by catalytic reduction to chloride within seconds in the first few inches of a new bed. Chloramine reacts more slowly <a class="c" href="#ref6">[6]</a>. Utilities dose PAC against the algal earthy/musty compounds MIB and geosmin, which conventional treatment does not remove. Higher doses are needed when turbidity rises above ~26 NTU <a class="c" href="#ref22">[22]</a>.</p>
+
+<h2 id="applications">4. Applications</h2>
+<h3>Point-of-use (POU) and household filters</h3>
+<p>Pour-through, faucet-mount, under-sink and whole-house (point-of-entry) carbon devices are common <a class="c" href="#ref6">[6]</a>. Small faucet units hold too little carbon for adequate contact time and are not recommended for organic-chemical removal <a class="c" href="#ref6">[6]</a>. The CDC advises checking for NSF certification: Standard 42 covers taste and odor, and Standard 53 covers cyst reduction <a class="c" href="#ref21">[21]</a>.</p>
+<h3>Municipal GAC and PAC</h3>
+<p>Utilities pass water through GAC contactors or filter beds, usually near the end of the treatment train <a class="c" href="#ref13">[13]</a>. When contaminant "breakthrough" reaches an unacceptable level, the spent carbon is replaced with virgin or reactivated GAC. Reactivation is typically high-temperature thermal treatment in a multiple-hearth furnace or rotary kiln <a class="c" href="#ref7">[7]</a>. PAC is dosed directly into water and removed with the clarification sludge, which is useful for seasonal taste and odor events <a class="c" href="#ref12">[12]</a><a class="c" href="#ref22">[22]</a>.</p>
+<h3>Stormwater biofilters</h3>
+<p>Biochar is increasingly used as an amendment in bioretention systems and rain gardens. It improves retention of microbes and some nutrients, but performance declines with aging and biofilm formation <a class="c" href="#ref19">[19]</a><a class="c" href="#ref20">[20]</a>.</p>
+<h3>Wastewater polishing</h3>
+<p>GAC can polish municipal effluent for PFAS but is costly. One study estimated US$900&ndash;1,400 per million gallons (30-year amortized) for 50% PFOA/PFOS removal, roughly a 60% increase over the estimated current wastewater-handling costs for the City of Toronto <a class="c" href="#ref17">[17]</a>. The authors suggested upstream source control may be more feasible <a class="c" href="#ref17">[17]</a>. Biochar has been proposed as a cheaper tertiary sorbent for moderately non-polar organics <a class="c" href="#ref11">[11]</a>.</p>
+<h3>Low-cost household and community filters in developing regions</h3>
+<p>Aqueous Solutions has deployed multi-barrier systems in Thailand and on the Thai&ndash;Burma border that use gravel, biologically active sand and locally made gasifier char <a class="c" href="#ref23">[23]</a>:</p>
+<ul>
+  <li>A portable 300 L/day system that costs about US$125 to build. It meets minimum drinking needs for ~100 people.</li>
+  <li>A 3,000 L/day farm system that costs under US$500. Its char is refurbished every two to three years.</li>
+</ul>
+<p>Gasifier stoves reach the 650&ndash;950 &deg;C needed for well-developed porosity <a class="c" href="#ref23">[23]</a>. The biosand stage, not the char, provides the biological barrier in these designs.</p>
+
+<h2 id="comparison">5. Biochar vs activated carbon: comparison</h2>
+<table>
+<thead><tr><th>Attribute</th><th>Biochar</th><th>Activated carbon (GAC/PAC)</th></tr></thead>
+<tbody>
+<tr><td>Production</td><td>Pyrolysis of biomass with limited oxygen; properties depend on temperature, residence time and feedstock <a class="c" href="#ref1">[1]</a></td><td>Carbonization plus physical (steam/CO<sub>2</sub>) or chemical (KOH, H<sub>3</sub>PO<sub>4</sub>, ZnCl<sub>2</sub>&hellip;) activation <a class="c" href="#ref5">[5]</a><a class="c" href="#ref7">[7]</a></td></tr>
+<tr><td>Feedstocks</td><td>Wood, straw, shells, bagasse, manure, sludge <a class="c" href="#ref2">[2]</a></td><td>Bituminous coal, lignite, peat, wood, coconut shell <a class="c" href="#ref7">[7]</a></td></tr>
+<tr><td>Surface area</td><td>~200&ndash;400 m&sup2;/g typical <a class="c" href="#ref4">[4]</a></td><td>~1,000 m&sup2;/g cited as typical <a class="c" href="#ref6">[6]</a></td></tr>
+<tr><td>Mean adsorption capacity (organics, literature mean)</td><td>~95,000 mg/kg <a class="c" href="#ref11">[11]</a></td><td>~176,800 mg/kg <a class="c" href="#ref11">[11]</a></td></tr>
+<tr><td>Production cost</td><td>&euro;0.15&ndash;0.42/kg (mean &euro;0.29/kg) <a class="c" href="#ref11">[11]</a>; US$350&ndash;1,200/t reported <a class="c" href="#ref4">[4]</a></td><td>&euro;1.35&ndash;2.6/kg (mean &euro;1.98/kg) <a class="c" href="#ref11">[11]</a>; US$1,100&ndash;1,700/t <a class="c" href="#ref4">[4]</a></td></tr>
+<tr><td>Cost-effectiveness</td><td>~3.3&times;10<sup>5</sup> mg removed per &euro;; ~3.7&times; AC <a class="c" href="#ref11">[11]</a></td><td>~8.9&times;10<sup>4</sup> mg removed per &euro; <a class="c" href="#ref11">[11]</a></td></tr>
+<tr><td>Strengths</td><td>Metals (especially manure/sludge biochars) <a class="c" href="#ref8">[8]</a>; low cost; tunable by modification <a class="c" href="#ref3">[3]</a></td><td>Organics, taste/odor, chlorine, long-chain PFAS; proven at full scale <a class="c" href="#ref6">[6]</a><a class="c" href="#ref12">[12]</a><a class="c" href="#ref13">[13]</a></td></tr>
+<tr><td>Consistency</td><td>Highly variable between products <a class="c" href="#ref8">[8]</a><a class="c" href="#ref23">[23]</a></td><td>Standardized commercial grades; EPA BAT for PFAS <a class="c" href="#ref13">[13]</a></td></tr>
+<tr><td>Regeneration</td><td>Thermal reactivation demonstrated in research (e.g., 500 &deg;C for PFAS-laden biochar) <a class="c" href="#ref16">[16]</a>; spent filter char composting proposed for low-tech settings <a class="c" href="#ref23">[23]</a></td><td>Established off-site thermal reactivation (multiple-hearth furnace, rotary kiln) <a class="c" href="#ref7">[7]</a></td></tr>
+<tr><td>Energy demand (cradle-to-gate)</td><td>~6.1 MJ/kg <a class="c" href="#ref24">[24]</a></td><td>~97 MJ/kg <a class="c" href="#ref24">[24]</a></td></tr>
+<tr><td>Carbon footprint</td><td>~&minus;0.9 kg CO<sub>2</sub>-eq/kg (net sequestration) <a class="c" href="#ref24">[24]</a></td><td>~6.6 kg CO<sub>2</sub>-eq/kg <a class="c" href="#ref24">[24]</a></td></tr>
+</tbody>
+</table>
+<p class="caption">Table 2. Side-by-side comparison. Values are literature averages or typical ranges. Individual products vary widely.</p>
+
+<div class="figure">
+<svg viewBox="0 0 760 330" role="img" aria-label="Bar chart comparing biochar and activated carbon on adsorption capacity, cost, energy demand and greenhouse gas emissions">
+  <text x="20" y="26" font-family="Helvetica, Arial" font-size="15" font-weight="700" fill="#1d2329">Biochar (BC) vs activated carbon (AC): literature averages</text>
+  <g font-family="Helvetica, Arial" font-size="12">
+    <rect x="520" y="12" width="14" height="14" fill="#8a5a1f"/><text x="540" y="24" fill="#1d2329">Biochar</text>
+    <rect x="610" y="12" width="14" height="14" fill="#23413a"/><text x="630" y="24" fill="#1d2329">Activated carbon</text>
+  </g>
+  <!-- Panel 1: capacity g/kg; max 176.8 -> 180px -->
+  <g font-family="Helvetica, Arial" font-size="12" fill="#1d2329">
+    <line x1="30" y1="260" x2="190" y2="260" stroke="#999"/>
+    <rect x="55" y="163.3" width="45" height="96.7" fill="#8a5a1f"/><text x="58" y="157">95</text>
+    <rect x="115" y="80" width="45" height="180" fill="#23413a"/><text x="113" y="74">176.8</text>
+    <text x="30" y="282" font-weight="700">Adsorption capacity</text><text x="30" y="298" fill="#5b6670">g/kg (organics) [11]</text>
+  </g>
+  <!-- Panel 2: cost EUR/kg; max 1.98 -> 180px -->
+  <g font-family="Helvetica, Arial" font-size="12" fill="#1d2329">
+    <line x1="215" y1="260" x2="375" y2="260" stroke="#999"/>
+    <rect x="240" y="233.6" width="45" height="26.4" fill="#8a5a1f"/><text x="245" y="227">0.29</text>
+    <rect x="300" y="80" width="45" height="180" fill="#23413a"/><text x="305" y="74">1.98</text>
+    <text x="215" y="282" font-weight="700">Production cost</text><text x="215" y="298" fill="#5b6670">&euro;/kg [11]</text>
+  </g>
+  <!-- Panel 3: energy MJ/kg; max 97 -> 180px -->
+  <g font-family="Helvetica, Arial" font-size="12" fill="#1d2329">
+    <line x1="400" y1="260" x2="560" y2="260" stroke="#999"/>
+    <rect x="425" y="248.7" width="45" height="11.3" fill="#8a5a1f"/><text x="432" y="242">6.1</text>
+    <rect x="485" y="80" width="45" height="180" fill="#23413a"/><text x="494" y="74">97</text>
+    <text x="400" y="282" font-weight="700">Energy demand</text><text x="400" y="298" fill="#5b6670">MJ/kg [24]</text>
+  </g>
+  <!-- Panel 4: GHG kg CO2e/kg; scale 6.6 -> 180px; -0.9 -> 24.5px below axis -->
+  <g font-family="Helvetica, Arial" font-size="12" fill="#1d2329">
+    <line x1="585" y1="260" x2="745" y2="260" stroke="#999"/>
+    <rect x="610" y="260" width="45" height="24.5" fill="#8a5a1f"/><text x="612" y="252">&minus;0.9</text>
+    <rect x="670" y="80" width="45" height="180" fill="#23413a"/><text x="679" y="74">6.6</text>
+    <text x="585" y="302" font-weight="700">GHG emissions</text><text x="585" y="318" fill="#5b6670">kg CO&#8322;-eq/kg [24]</text>
+  </g>
+</svg>
+</div>
+<p class="caption">Figure 2. Each panel is scaled to its own maximum, and bar heights are proportional to the cited averages. Capacity and cost come from Castiglioni et al. <a class="c" href="#ref11">[11]</a>. Energy and GHG come from the Alhashimi &amp; Aktas meta-analysis <a class="c" href="#ref24">[24]</a>. Biochar's negative GHG value reflects carbon stored in the char.</p>
+
+<div class="callout"><strong>Reading the comparison:</strong> AC wins on capacity per kilogram and on track record. Biochar wins on cost and climate footprint. The Alhashimi &amp; Aktas meta-analysis found biochar's adsorption cost lower than AC's for chromium and zinc (95% confidence) and comparable for lead and copper. It concluded that biochar "if engineered correctly for the task, could be at least as effective as activated carbon and at a lower cost" <a class="c" href="#ref24">[24]</a>.</div>
+
+<h2 id="engineered">6. Modified and engineered biochar</h2>
+<p>Pristine biochar has limited selectivity, so researchers modify it to enrich surface sites, pore structure and functional groups <a class="c" href="#ref3">[3]</a>. Documented strategies include:</p>
+<ul>
+  <li><strong>Mineral, metal-oxide and nanoparticle loading:</strong> loading with minerals, reductants, organic functional groups and nanoparticles, plus alkali activation, to raise metal sorption <a class="c" href="#ref9">[9]</a>. Metal-modified biochars capture far more NH<sub>4</sub>-N, NO<sub>3</sub>-N and PO<sub>4</sub>-P because surface charge shifts and metal oxides increase <a class="c" href="#ref18">[18]</a>.</li>
+  <li><strong>Chemical post-treatment:</strong> the best post-pyrolysis option in the 133-study metals synthesis. Chemically modified, washed or magnetized biochars showed higher metal affinity <a class="c" href="#ref8">[8]</a>.</li>
+  <li><strong>Thermal oxidation:</strong> brief 400 &deg;C air oxidation enlarged pores and boosted PFAS sorption up to 1,000-fold. Spent biochar could then be thermally reactivated at 500 &deg;C, with even higher PFAS affinity in a second cycle <a class="c" href="#ref16">[16]</a>.</li>
+  <li><strong>High-temperature, long-residence pyrolysis:</strong> 900 &deg;C for 5 h produced the reed-straw biochar that removed short-chain PFAS <a class="c" href="#ref15">[15]</a>. Longer pyrolysis was also linked to better metal sorption <a class="c" href="#ref8">[8]</a>.</li>
+  <li><strong>Activation:</strong> chemically activating biochar effectively turns it into activated carbon, which narrows the performance gap but adds cost <a class="c" href="#ref2">[2]</a><a class="c" href="#ref5">[5]</a>.</li>
+</ul>
+
+<h2 id="risks">7. Limitations and risks</h2>
+<div class="warn"><strong>No pathogen kill.</strong> Neither biochar nor AC disinfects water. Activated carbon does not remove bacteria <a class="c" href="#ref6">[6]</a>. The CDC recommends ultrafiltration, nanofiltration or reverse osmosis for bacteria, and nanofiltration or reverse osmosis for viruses <a class="c" href="#ref21">[21]</a>. Carbon filters can harbor bacterial growth <a class="c" href="#ref6">[6]</a>, and removing chlorine can let germs grow in plumbing <a class="c" href="#ref21">[21]</a>.</div>
+<ul>
+  <li><strong>Saturation and breakthrough:</strong> sorbents fill up. Once effluent exceeds a target concentration, the carbon is "spent" and must be replaced or reactivated <a class="c" href="#ref7">[7]</a>. A saturated GAC filter can release organics back into treated water <a class="c" href="#ref6">[6]</a>, and other "stickier" contaminants such as organic carbon can displace PFAS <a class="c" href="#ref13">[13]</a>. Household cartridges must be changed on schedule; a six-month interval is common <a class="c" href="#ref6">[6]</a>.</li>
+  <li><strong>Competition and water chemistry:</strong> background organic matter lowered short-chain PFAS removal by biochar above ~8 mg/L dissolved organic carbon <a class="c" href="#ref15">[15]</a>. Turbidity raises the PAC dose needed for taste and odor control <a class="c" href="#ref22">[22]</a>. pH and co-existing ions strongly affect sorption <a class="c" href="#ref3">[3]</a>.</li>
+  <li><strong>Leaching from the sorbent:</strong>
+    <ul>
+      <li>GAC can release certain metals (particularly arsenic, antimony and iron) and cause pH swings and loss of disinfectant residual <a class="c" href="#ref13">[13]</a>.</li>
+      <li>Biochar can release its own nitrogen and phosphorus <a class="c" href="#ref18">[18]</a>.</li>
+      <li>PAHs formed during pyrolysis are a concern for biochar, but they are bound so strongly that freely dissolved PAH concentrations measured by equilibrium sampling were in the pg&ndash;ng/L range, generally near or below environmental background <a class="c" href="#ref25">[25]</a>.</li>
+      <li>Biochars made from sludges or contaminated feedstocks warrant testing before drinking-water use.</li>
+    </ul>
+  </li>
+  <li><strong>Variability:</strong> biochar quality differs widely by feedstock and process. Traditional kiln charcoals ranged from no herbicide uptake to ~80% removal <a class="c" href="#ref23">[23]</a>, and metal sorption results were highly variable across studies <a class="c" href="#ref8">[8]</a>.</li>
+  <li><strong>Lab-to-field gap:</strong> biochar's E. coli advantage in stormwater filters faded after ~7 months of field-like conditioning <a class="c" href="#ref20">[20]</a>. Most studies test single contaminants in clean water, unlike real mixtures <a class="c" href="#ref3">[3]</a>.</li>
+  <li><strong>Regeneration and disposal:</strong> spent carbon holds whatever it captured. Some filters (e.g., those used for radon) may need hazardous-waste handling <a class="c" href="#ref6">[6]</a>. PAC used for PFAS produces PFAS-laden sludge <a class="c" href="#ref12">[12]</a>. GAC reactivation needs specialized high-temperature facilities <a class="c" href="#ref7">[7]</a>. Composting and land application of spent filter char has been suggested for pesticide-laden char in rural settings <a class="c" href="#ref23">[23]</a>, but it would be inappropriate for persistent contaminants such as PFAS or metals.</li>
+  <li><strong>Removing beneficial substances:</strong> filters can strip chlorine (a disinfectant) and fluoride <a class="c" href="#ref21">[21]</a>.</li>
+</ul>
+
+<h2 id="takeaways">8. Practical takeaways</h2>
+<ol>
+  <li><strong>Test first, then choose.</strong> Identify the specific contaminants, and pick a device certified for them (NSF 42 for taste/odor, NSF 53 for health-related claims such as cysts) <a class="c" href="#ref21">[21]</a>.</li>
+  <li><strong>For taste, odor, chlorine and most organic chemicals, activated carbon is the proven choice</strong> <a class="c" href="#ref6">[6]</a>. Use enough carbon and contact time. Larger under-sink or point-of-entry units outperform small faucet units <a class="c" href="#ref6">[6]</a>.</li>
+  <li><strong>For PFAS,</strong> use treatment validated for PFAS: GAC, anion exchange or RO for utilities <a class="c" href="#ref13">[13]</a>. Expect short-chain PFAS to break through GAC earlier <a class="c" href="#ref12">[12]</a>. Do not assume a generic biochar will work <a class="c" href="#ref17">[17]</a>.</li>
+  <li><strong>Always pair carbon with disinfection or a suitable membrane</strong> if the source may carry pathogens <a class="c" href="#ref21">[21]</a>.</li>
+  <li><strong>Replace media on schedule</strong> and flush units that sit unused, because spent or idle carbon can release contaminants or grow bacteria <a class="c" href="#ref6">[6]</a>.</li>
+  <li><strong>Biochar fits best where cost, local production or carbon footprint dominate:</strong> metal-laden industrial or mine water <a class="c" href="#ref8">[8]</a>, stormwater biofilters <a class="c" href="#ref19">[19]</a>, and off-grid multi-barrier systems for pesticides <a class="c" href="#ref23">[23]</a>. Make it at high temperature (e.g., gasifiers at 650&ndash;950 &deg;C) and from consistent feedstock <a class="c" href="#ref23">[23]</a>.</li>
+  <li><strong>Match the biochar to the target.</strong> Use high-temperature char for organics, low-temperature or mineral-rich (manure, sludge) char for cationic metals, and metal-modified char for phosphate or anions <a class="c" href="#ref1">[1]</a><a class="c" href="#ref8">[8]</a><a class="c" href="#ref18">[18]</a>.</li>
+</ol>
+
+<h2 id="gaps">9. Research gaps</h2>
+<ul>
+  <li><strong>Field and column validation:</strong> most biochar data are from batch tests. Column tests at realistic scale and long-term field studies are needed <a class="c" href="#ref4">[4]</a><a class="c" href="#ref11">[11]</a><a class="c" href="#ref20">[20]</a>.</li>
+  <li><strong>Multi-contaminant, real-water performance:</strong> competitive sorption among co-existing metals and mixed pollutants is poorly understood <a class="c" href="#ref3">[3]</a><a class="c" href="#ref9">[9]</a>.</li>
+  <li><strong>Standardized characterization:</strong> the lack of consistent physicochemical and performance characterization prevents robust links between biochar properties and removal capacity <a class="c" href="#ref11">[11]</a>.</li>
+  <li><strong>Regeneration, reuse and end-of-life:</strong> biochar reuse and cost reduction are open questions <a class="c" href="#ref9">[9]</a>. Safe disposal of spent sorbents loaded with persistent contaminants (PFAS, metals) needs study <a class="c" href="#ref16">[16]</a>.</li>
+  <li><strong>Short-chain PFAS:</strong> promising engineered biochars need scale-up and validation in natural waters with organic matter <a class="c" href="#ref15">[15]</a><a class="c" href="#ref16">[16]</a>.</li>
+  <li><strong>Nutrient leaching and selectivity:</strong> endogenous N/P release and competing ions limit nutrient applications <a class="c" href="#ref18">[18]</a>.</li>
+  <li><strong>Aging and biofilm effects</strong> on biochar filters, and in-situ regeneration strategies <a class="c" href="#ref20">[20]</a>.</li>
+  <li><strong>Decentralized quality control:</strong> simple field methods to verify that locally made char is adequately sorptive <a class="c" href="#ref23">[23]</a>.</li>
+</ul>
+
+<h2 id="references">10. References</h2>
+<ol class="refs">
+  <li id="ref1">Ahmad M, Rajapaksha AU, Lim JE, Zhang M, et al. (2014). Biochar as a sorbent for contaminant management in soil and water: A review. <em>Chemosphere</em>, 99, 19&ndash;33. <a href="https://doi.org/10.1016/j.chemosphere.2013.10.071">https://doi.org/10.1016/j.chemosphere.2013.10.071</a></li>
+  <li id="ref2">Wang X, Guo Z, Hu Z, Zhang J. (2020). Recent advances in biochar application for water and wastewater treatment: a review. <em>PeerJ</em>, 8, e9164. <a href="https://doi.org/10.7717/peerj.9164">https://doi.org/10.7717/peerj.9164</a></li>
+  <li id="ref3">Qiu M, Liu L, Ling Q, Cai Y, et al. (2022). Biochar for the removal of contaminants from soil and water: a review. <em>Biochar</em> (Springer Nature). <a href="https://doi.org/10.1007/s42773-022-00146-1">https://doi.org/10.1007/s42773-022-00146-1</a></li>
+  <li id="ref4">Fdez-Sanrom&aacute;n A, Pazos M, Rosales E, Sanrom&aacute;n MA. (2020). Unravelling the Environmental Application of Biochar as Low-Cost Biosorbent: A Review. <em>Applied Sciences</em>, 10(21), 7810. <a href="https://doi.org/10.3390/app10217810">https://doi.org/10.3390/app10217810</a></li>
+  <li id="ref5">Heidarinejad Z, Dehghani MH, Heidari M, Javedan G, Ali I, Sillanp&auml;&auml; M. (2020). Methods for preparation and activation of activated carbon: a review. <em>Environmental Chemistry Letters</em>. <a href="https://doi.org/10.1007/s10311-019-00955-0">https://doi.org/10.1007/s10311-019-00955-0</a></li>
+  <li id="ref6">Saha UK, Hawkins GL, Burnsed J. University of Georgia Cooperative Extension. (2021; full review 2024). Activated Carbon Water Filtration Devices (Bulletin 1542). UGA CAES Field Report. <a href="https://fieldreport.caes.uga.edu/publications/B1542/activated-carbon-water-filtration-devices/">https://fieldreport.caes.uga.edu/publications/B1542/activated-carbon-water-filtration-devices/</a></li>
+  <li id="ref7">U.S. Environmental Protection Agency. (2024). Technical Support Document: Technologies and Cost for Removing Per- and Polyfluoroalkyl Substances (PFAS) from Drinking Water. EPA Office of Water. <a href="https://www.epa.gov/system/files/documents/2024-04/2024-pfas-tech-cost_final-508.pdf">https://www.epa.gov/system/files/documents/2024-04/2024-pfas-tech-cost_final-508.pdf</a></li>
+  <li id="ref8">Thomas E, Borchard N, Sarmiento C, Atkinson R, et al. (2020). Key factors determining biochar sorption capacity for metal contaminants: a literature synthesis. <em>Biochar</em> (Springer Nature). <a href="https://doi.org/10.1007/s42773-020-00053-3">https://doi.org/10.1007/s42773-020-00053-3</a></li>
+  <li id="ref9">Li H, Dong X, da Silva EB, de Oliveira LM, Chen Y, Ma LQ. (2017). Mechanisms of metal sorption by biochars: Biochar characteristics and modifications. <em>Chemosphere</em>, 178. <a href="https://doi.org/10.1016/j.chemosphere.2017.03.072">https://doi.org/10.1016/j.chemosphere.2017.03.072</a></li>
+  <li id="ref10">Peiris C, Gunatilake S, Mlsna T, Mohan D, et al. (2017). Biochar based removal of antibiotic sulfonamides and tetracyclines in aquatic environments: A critical review. <em>Bioresource Technology</em>. <a href="https://doi.org/10.1016/j.biortech.2017.07.150">https://doi.org/10.1016/j.biortech.2017.07.150</a></li>
+  <li id="ref11">Castiglioni M, Rivoira L, Ingrando I, Del Bubba M, et al. (2021). Characterization Techniques as Supporting Tools for the Interpretation of Biochar Adsorption Efficiency in Water Treatment: A Critical Review. <em>Molecules</em>, 26(16), 5063. <a href="https://doi.org/10.3390/molecules26165063">https://doi.org/10.3390/molecules26165063</a></li>
+  <li id="ref12">U.S. Environmental Protection Agency (Science Matters). (n.d., accessed Oct 2026). Reducing PFAS in Drinking Water with Treatment Technologies. EPA Office of Research and Development. <a href="https://www.epa.gov/sciencematters/reducing-pfas-drinking-water-treatment-technologies">https://www.epa.gov/sciencematters/reducing-pfas-drinking-water-treatment-technologies</a></li>
+  <li id="ref13">U.S. Environmental Protection Agency. (2024). Fact Sheet: PFAS National Primary Drinking Water Regulation &mdash; Treatment. EPA. <a href="https://www.epa.gov/system/files/documents/2024-04/pfas-npdwr_fact-sheet_treatment_4.8.24.pdf">https://www.epa.gov/system/files/documents/2024-04/pfas-npdwr_fact-sheet_treatment_4.8.24.pdf</a></li>
+  <li id="ref14">Zhang D, He Q, Wang M, Zhang W, et al. (2019). Sorption of perfluoroalkylated substances (PFASs) onto granular activated carbon and biochar. <em>Environmental Technology</em>. <a href="https://doi.org/10.1080/09593330.2019.1680744">https://doi.org/10.1080/09593330.2019.1680744</a></li>
+  <li id="ref15">Liu N, Wu C, Lyu G, Li M. (2021). Efficient adsorptive removal of short-chain perfluoroalkyl acids using reed straw-derived biochar (RESCA). <em>Science of the Total Environment</em>. <a href="https://doi.org/10.1016/j.scitotenv.2021.149191">https://doi.org/10.1016/j.scitotenv.2021.149191</a></li>
+  <li id="ref16">Wang Z, Alinezhad A, Sun R, Xiao F, et al. (2023). Pre- and Postapplication Thermal Treatment Strategies for Sorption Enhancement and Reactivation of Biochars for Removal of Per- and Polyfluoroalkyl Substances from Water. <em>ACS ES&amp;T Engineering</em>. <a href="https://doi.org/10.1021/acsestengg.2c00271">https://doi.org/10.1021/acsestengg.2c00271</a></li>
+  <li id="ref17">Mortazavian S, Hooper J, Abusallout I, Hofmann R, et al. (2025). Granular Activated Carbon for PFAS Removal in Municipal Wastewater: A Rapid Small-Scale Column Test Study. <em>ACS ES&amp;T Water</em>. <a href="https://doi.org/10.1021/acsestwater.4c00919">https://doi.org/10.1021/acsestwater.4c00919</a></li>
+  <li id="ref18">Zhang M, Song G, Gelardi DL, Huang L, Khan E, Ma&scaron;ek O, Parikh SJ, Ok YS. (2020). Evaluating biochar and its modifications for the removal of ammonium, nitrate, and phosphate in water. <em>Water Research</em>, 186, 116303. <a href="https://doi.org/10.1016/j.watres.2020.116303">https://doi.org/10.1016/j.watres.2020.116303</a></li>
+  <li id="ref19">Chen Y, Wu Q, Tang Y, Liu Z, et al. (2022). Application of biochar as an innovative soil ameliorant in bioretention system for stormwater treatment: A review of performance and its influencing factors. <em>Water Science and Technology</em>, 86(5), 1232. <a href="https://doi.org/10.2166/wst.2022.245">https://doi.org/10.2166/wst.2022.245</a></li>
+  <li id="ref20">Kranner BP, Afrooz ARMN, Fitzgerald NJM, Boehm AB. (2019). Fecal indicator bacteria and virus removal in stormwater biofilters: Effects of biochar, media saturation, and field conditioning. <em>PLOS ONE</em>, 14(9), e0222719. <a href="https://doi.org/10.1371/journal.pone.0222719">https://doi.org/10.1371/journal.pone.0222719</a></li>
+  <li id="ref21">U.S. Centers for Disease Control and Prevention. (2024). About Choosing Home Water Filters. CDC Drinking Water. <a href="https://www.cdc.gov/drinking-water/prevention/about-choosing-home-water-filters.html">https://www.cdc.gov/drinking-water/prevention/about-choosing-home-water-filters.html</a></li>
+  <li id="ref22">Cook D, Newcombe G, Sztajnbok P. (2001). The application of powdered activated carbon for MIB and geosmin removal: predicting PAC doses in four raw waters. <em>Water Research</em>. <a href="https://doi.org/10.1016/S0043-1354(00)00363-8">https://doi.org/10.1016/S0043-1354(00)00363-8</a></li>
+  <li id="ref23">Kearns J (Aqueous Solutions). (2012). Sustainable Decentralized Water Treatment for Rural and Developing Communities Using Locally Generated Biochar Adsorbents. <em>Water Conditioning &amp; Purification Magazine</em>. <a href="https://wcponline.com/2012/10/24/sustainable-decentralized-water-treatment-for-rural-and-developing-communities-using-locally-generated-biochar-adsorbents/">https://wcponline.com/2012/10/24/sustainable-decentralized-water-treatment-for-rural-and-developing-communities-using-locally-generated-biochar-adsorbents/</a></li>
+  <li id="ref24">Alhashimi HA, Aktas CB. (2017). Life cycle environmental and economic performance of biochar compared with activated carbon: A meta-analysis. <em>Resources, Conservation and Recycling</em>, 118, 13&ndash;26. <a href="https://doi.org/10.1016/j.resconrec.2016.11.016">https://doi.org/10.1016/j.resconrec.2016.11.016</a></li>
+  <li id="ref25">Mayer P, Hilber I, Gouliarmou V, Hale SE, et al. (2016). How to Determine the Environmental Exposure of PAHs Originating from Biochar. <em>Environmental Science &amp; Technology</em>, 50(4), 1941. <a href="https://doi.org/10.1021/acs.est.5b05603">https://doi.org/10.1021/acs.est.5b05603</a></li>
+</ol>
+<p class="meta">All sources were located and checked via web search/fetch on October 22, 2026. Quantitative values are as reported by the cited source. Figures are drawn to scale from those values.</p>
+</main>
+<footer>This report summarizes published evidence for general information and is not a substitute for water testing or advice from a qualified water-treatment professional.</footer>
+</body>
+</html>
