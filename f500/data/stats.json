@@ -1,0 +1,33 @@
+{
+ "companies": 500,
+ "coverage": {
+  "ticker": 471,
+  "sector": 500,
+  "industry": 500,
+  "city": 500,
+  "lat": 500,
+  "revenue": 500,
+  "profit": 500,
+  "assets": 500,
+  "equity": 500,
+  "mktcap": 472,
+  "employees": 500,
+  "ceo": 500,
+  "founded": 483,
+  "desc": 483,
+  "website": 500,
+  "qid": 498,
+  "cik": 466,
+  "revHist": 461,
+  "wiki": 487,
+  "rankHist": 500
+ },
+ "edges": {
+  "peer": 929,
+  "owner": 109,
+  "spinoff": 5,
+  "parent": 1,
+  "board": 175,
+  "customer": 28
+ }
+}
