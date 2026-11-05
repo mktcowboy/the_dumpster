@@ -1,6 +1,6 @@
 [![Yes No GIF](https://media1.tenor.com/m/GQBgOkfrMZ8AAAAC/yes-no.gif)](https://tenor.com/view/yes-no-gif-23142380)
 
-*Last updated: November 3, 2026*
+*Last updated: November 4, 2026*
 
 # Project index
 
@@ -19,6 +19,7 @@ Most reports open directly in a browser; the live options board requires its loc
 
 | Project | What it is |
 | --- | --- |
+| [Crypto deep dive](markets/crypto-deep-dive/data/raw/) | Raw CoinGecko, DefiLlama, Fear and Greed, and Hyperliquid caches covering prices, categories, stablecoins, TVL, pools, and protocols |
 | [Options — max pain](markets/options/) | SPY × QQQ max-pain report, QQQ universe scanner, and reproducible snapshot pipeline |
 | [QQQ max-pain board](markets/options/qqq-max-pain.html) | Ranked max-pain board for all loadable QQQ holdings |
 | [Options — live board](markets/options-live/) | Max-pain dashboard with click-through ticker details and charts; requires the [local server](markets/options-live/README.md) |
@@ -27,10 +28,7 @@ Most reports open directly in a browser; the live options board requires its loc
 
 | Project | What it is |
 | --- | --- |
-| [Colorado land](real-estate/colorado/colorado-land-10ac.html) | 999 for-sale land listings, 10+ acres, captured October 2026 |
 | [Texas Triangle land](real-estate/texas-triangle/texas-triangle-land.html) | 16,048 parcels, 5+ acres, inside the Dallas–San Antonio–Houston triangle and its 50-mile ring |
-| [Utah land](real-estate/utah/utah-land-10ac.html) | 1,184 for-sale land listings, 10+ acres, captured October 2026 |
-| [Combined land listings](real-estate/land-listings-combined/) | 18,231 Colorado, Texas, and Utah listings merged into one common-schema table; [CSV](real-estate/land-listings-combined/land-listings-combined.csv) · [JSON](real-estate/land-listings-combined/land-listings-combined.json) |
 
 ## Research and reports
 
@@ -40,7 +38,6 @@ Most reports open directly in a browser; the live options board requires its loc
 | [Tanakh atlas](research/religion/tanakh-atlas/) | Single-file interactive atlas of the Tanakh and the later Jewish library, with the full JPS 1917 text, themes, people, places, and essays |
 | [Rent-seeking report](biz-other/rent-seeking-report/rent-seeking-report.html) | Economic rents, their history, and 50 ways to create rental income today |
 | [Arby's deal deep dive](biz-other/arbys-deal-deep-dive/arby-s-deal-deep-dive.html) | Sourced account of the Arby's acquisition and turnaround, including Roark's 2011 purchase |
-| [Diesel wholesale market](biz-other/diesel-wholesale-market-analysis/diesel-wholesale-market-analysis.html) | Self-contained page on buying diesel wholesale: red versus clear, the price stack, futures, hedging, and working calculators |
 
 ## Reading
 
@@ -54,6 +51,7 @@ Most reports open directly in a browser; the live options board requires its loc
 | --- | --- |
 | [Car search tracker](boy-toy-pricer/Car-pricer.html) | For-sale AutoTempest listings and Bring a Trailer sold comps for cars, trucks, and SUVs, from the Audi RS6 and G63 to the SF90, Huracan STO, and RUF Porsches |
 | [Aircraft for-sale tracker](boy-toy-pricer/airplane-pricer/output/report.html) | Cirrus SR22, Vision Jet, CubCrafters, and Piper PA-28-180/181 listings in one HTML report |
+| [Watch for-sale tracker](boy-toy-pricer/watch-pricer/output/report.html) | Patek Philippe Nautilus 5711 and blue or green Aquanaut listings in one HTML report |
 
 ## Misc
 
