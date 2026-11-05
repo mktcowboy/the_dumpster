@@ -1,7 +1,7 @@
 <header class="top"><div class="bar">
  <a class="brand" href="#/overview"><b>Fortune <i>500</i></b><span>2026 Atlas</span></a>
  <nav class="tabs" id="tabs">
-  <a href="#/overview" data-v="overview">Overview</a><a href="#/companies" data-v="companies">Companies</a><a href="#/map" data-v="map">Map</a><a href="#/industries" data-v="industries">Industries</a><a href="#/network" data-v="network">Network</a><a href="#/about" data-v="about">Sources</a>
+  <a href="#/overview" data-v="overview">Overview</a><a href="#/companies" data-v="companies">Companies</a><a href="#/map" data-v="map">Map</a><a href="#/industries" data-v="industries">Industries</a><a href="#/network" data-v="network">Network</a><a href="#/ownership" data-v="ownership">Public vs Private</a><a href="#/about" data-v="about">Sources</a>
  </nav>
  <div class="spacer"></div>
  <div class="search"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="gq" placeholder="Search 500 companies…  /" autocomplete="off"><div class="sugg" id="sugg"></div></div>
@@ -31,7 +31,7 @@
   <input type="search" id="t-q" placeholder="Filter by name, ticker, CEO, city…" style="min-width:260px">
   <select id="t-sector"><option value="">All sectors</option></select>
   <select id="t-state"><option value="">All states</option></select>
-  <div class="seg" id="t-type"><button data-v="" class="on">All</button><button data-v="Public">Public</button><button data-v="Private">Private</button></div>
+  <select id="t-own"><option value="">All ownership types</option></select>
   <label class="chip"><input type="checkbox" id="t-new"> Newcomers</label><label class="chip"><input type="checkbox" id="t-fem"> Female CEO</label><label class="chip"><input type="checkbox" id="t-loss"> Unprofitable</label>
   <span class="spacer"></span><span class="muted" id="t-count"></span><button class="btn" id="t-csv">Export CSV</button>
  </div>
@@ -45,6 +45,7 @@
   <span class="muted">State shading:</span>
   <select id="m-metric"><option value="count">Number of HQs</option><option value="revenue">Total revenue</option><option value="profit">Total profit</option><option value="employees">Employees</option><option value="mktcap">Market value</option><option value="off">Off</option></select>
   <select id="m-sector"><option value="">All sectors</option></select>
+  <span class="muted">Colour by</span><div class="seg" id="m-color"><button data-v="sector" class="on">Sector</button><button data-v="own">Ownership</button></div>
  </div>
  <div class="mapgrid"><div id="map"></div><div class="card side" id="m-side"></div></div>
  <div class="legend" id="m-legend" style="margin-top:12px"></div>
@@ -75,6 +76,30 @@
   <svg id="net"></svg>
   <div class="card netside" id="n-info"></div>
  </div>
+</section>
+
+<section class="view" id="v-ownership">
+ <div class="kicker">Who owns the Fortune 500</div><h2 style="margin-bottom:4px">Public vs. private</h2>
+ <p class="lede" id="o-lede" style="font-size:15px"></p>
+ <div class="grid g4" id="o-kpis"></div>
+ <div class="grid g12" style="margin-top:16px">
+  <div class="card c12"><h3>Share of the list by ownership type</h3><div id="o-stack"></div><div class="legend" id="o-legend" style="margin-top:10px"></div></div>
+  <div class="card c12"><h3>Totals and medians by type</h3><div style="overflow:auto"><table class="data" id="o-cmp"><thead></thead><tbody></tbody></table></div><div class="note">Medians are per company. Margin = profit ÷ revenue (aggregate and median). $ in Fortune list values.</div></div>
+  <div class="card c8"><h3>Sector mix by ownership type</h3><div id="o-sector" style="overflow:auto"></div><div class="note">Number of companies; click a cell to filter the table below.</div></div>
+  <div class="card c4"><h3>Rank distribution by type</h3><div id="o-rank"></div><div class="note">Each mark is a company at its 2026 rank (1 = largest). Hover for details, click to open.</div></div>
+  <div class="card c7"><h3>Headquarters by ownership type</h3><div id="o-map" style="height:440px;border-radius:12px;overflow:hidden;border:1px solid var(--line)"></div><div class="note">Bubble size = revenue. The main <a href="#/map">Map</a> tab also has a “Colour by: Ownership” toggle.</div></div>
+  <div class="card c5" id="o-tops" style="max-height:540px;overflow:auto"></div>
+ </div>
+ <div class="kicker" style="margin-top:28px">Publicly traded companies</div><h2 style="margin-bottom:12px">Market value, exchanges and valuation</h2>
+ <div class="grid g4" id="o-pkpis"></div>
+ <div class="grid g12" style="margin-top:16px">
+  <div class="card c4"><h3>Listing venue</h3><div id="o-exch"></div><div class="note">Primary exchange from Fortune's company page; Fannie Mae and Freddie Mac trade OTC.</div></div>
+  <div class="card c8"><h3>Market value vs revenue</h3><div id="o-scatter"></div><div class="note">Log–log. Dashed lines mark price-to-sales of 0.1×, 1× and 10×. Colour = sector. Market value as reported by Fortune.</div></div>
+  <div class="card c6"><h3>Most valuable</h3><div id="o-mctop"></div></div>
+  <div class="card c6"><h3>Highest price-to-sales (revenue > $20B)</h3><div id="o-pstop"></div></div>
+ </div>
+ <div class="card" style="margin-top:16px"><div class="controls" style="margin-bottom:10px"><h3 style="margin:0">All companies by ownership</h3><span class="spacer"></span><select id="o-ftype"><option value="">All types</option></select><select id="o-fsector"><option value="">All sectors</option></select><input type="search" id="o-q" placeholder="Filter…"><span class="muted" id="o-count"></span></div>
+  <div class="tablewrap" style="box-shadow:none"><table class="data" id="o-tbl"><thead></thead><tbody></tbody></table></div></div>
 </section>
 
 <section class="view" id="v-company"></section>

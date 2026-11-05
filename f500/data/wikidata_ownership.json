@@ -1,0 +1,12463 @@
+{
+"Q101983981": {
+"p31": [
+{
+"id": "Q161726",
+"label": "multinational corporation",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q19644607",
+"label": "pharmaceutical company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q1022711": {
+"p31": [
+{
+"id": "Q167037",
+"label": "corporation",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q1023013": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q134161",
+"label": "joint-stock company",
+"country": null
+}
+]
+},
+"Q1023155": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+]
+},
+"Q1024454": {
+"p31": [
+{
+"id": "Q43229",
+"label": "organization",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264748",
+"label": "Q130264748",
+"country": null
+}
+]
+},
+"Q1030544": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264116",
+"label": "Q130264116",
+"country": null
+}
+]
+},
+"Q1034654": {
+"p31": [
+{
+"id": "Q730038",
+"label": "credit institution",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+},
+{
+"id": "Q107884298",
+"label": "private limited company",
+"country": "Belgium"
+},
+{
+"id": "Q130264183",
+"label": "Q130264183",
+"country": null
+}
+]
+},
+"Q1039380": {
+"p31": [
+{
+"id": "Q783794",
+"label": "company",
+"country": null
+},
+{
+"id": "Q2143354",
+"label": "insurance company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q695318",
+"label": "mutual insurance",
+"country": null
+}
+]
+},
+"Q104158381": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q104664954": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q64027599",
+"label": "gas station chain",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q57655560",
+"label": "corporation",
+"country": null
+}
+]
+},
+"Q1046951": {
+"p31": [
+{
+"id": "Q783794",
+"label": "company",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q18043413",
+"label": "supermarket chain",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264113",
+"label": "Q130264113",
+"country": null
+}
+]
+},
+"Q1053560": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264293",
+"label": "For-Profit Corporation",
+"country": null
+}
+]
+},
+"Q1056637": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q1057464": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q1631129",
+"label": "hotel chain",
+"country": null
+},
+{
+"id": "Q161726",
+"label": "multinational corporation",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q1061903": {
+"p31": [
+{
+"id": "Q18127",
+"label": "record label",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q20739124",
+"label": "entertainment company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q106239594": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q106472108": {
+"p31": [
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q57655560",
+"label": "corporation",
+"country": null
+}
+]
+},
+"Q106581385": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q1066028": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q2073644",
+"label": "brokerage firm",
+"country": null
+},
+{
+"id": "Q4230006",
+"label": "asset management company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q107074885": {
+"p31": [
+{
+"id": "Q778575",
+"label": "conglomerate",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+},
+{
+"id": "Q11396960",
+"label": "production company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+}
+]
+},
+"Q108535726": {
+"p31": [
+{
+"id": "Q167037",
+"label": "corporation",
+"country": null
+},
+{
+"id": "Q783794",
+"label": "company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q117112914",
+"label": "Q117112914",
+"country": "United States"
+}
+]
+},
+"Q1092571": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+]
+},
+"Q110443096": {
+"p31": [
+{
+"id": "Q783794",
+"label": "company",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+]
+},
+"Q1107035": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+},
+{
+"id": "Q18388277",
+"label": "technology company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q11074156": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264621",
+"label": "Q130264621",
+"country": null
+}
+]
+},
+"Q110778747": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q1194970",
+"label": "dot-com company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q1113804": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q2401749",
+"label": "telecommunications company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264119",
+"label": "Q130264119",
+"country": null
+}
+]
+},
+"Q1123399": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q1127536": {
+"p31": [
+{
+"id": "Q219577",
+"label": "holding company",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q108103696",
+"label": "New York Business Corporation",
+"country": null
+}
+]
+},
+"Q1128160": {
+"p31": [
+{
+"id": "Q783794",
+"label": "company",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q1132272": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q1134069": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264116",
+"label": "Q130264116",
+"country": null
+}
+]
+},
+"Q1141173": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q1631129",
+"label": "hotel chain",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q11463": {
+"p31": [
+{
+"id": "Q377688",
+"label": "type foundry",
+"country": null
+},
+{
+"id": "Q1058914",
+"label": "software company",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+},
+{
+"id": "Q59859818",
+"label": "data controller",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q1152374": {
+"p31": [
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+},
+{
+"id": "Q63383584",
+"label": "medical device company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q6832945",
+"label": "private company limited by shares",
+"country": "United Kingdom"
+}
+]
+},
+"Q115803672": {
+"p31": [
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+]
+},
+"Q1159256": {
+"p31": [
+{
+"id": "Q778575",
+"label": "conglomerate",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q21980538",
+"label": "commercial organization",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q116452644": {
+"p31": [
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q368290",
+"label": "film distributor",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+},
+{
+"id": "Q10689397",
+"label": "television production company",
+"country": "http://www.wikidata.org/.well-known/genid/b92fae4e6dd8e76bf9f7a22450034ce3"
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q116550003": {
+"p31": [
+{
+"id": "Q783794",
+"label": "company",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+}
+]
+},
+"Q117419474": {
+"p31": [
+{
+"id": "Q22687",
+"label": "bank",
+"country": null
+}
+],
+"parent": [
+{
+"id": "Q5452733",
+"label": "First Citizens BancShares",
+"country": "United States"
+}
+]
+},
+"Q118905792": {
+"p31": [
+{
+"id": "Q783794",
+"label": "company",
+"country": null
+}
+]
+},
+"Q118957699": {
+"p31": [
+{
+"id": "Q43229",
+"label": "organization",
+"country": null
+},
+{
+"id": "Q783794",
+"label": "company",
+"country": null
+}
+]
+},
+"Q1197548": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q1389311",
+"label": "integrated device manufacturer",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q119991": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q1206980": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q124795355": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q121770336",
+"label": "health care organization",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q57655560",
+"label": "corporation",
+"country": null
+}
+]
+},
+"Q1254149": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q1260606": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q12620655": {
+"p31": [
+{
+"id": "Q35127",
+"label": "website",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q1264404": {
+"p31": [
+{
+"id": "Q219577",
+"label": "holding company",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q117151090",
+"label": "limited liability company",
+"country": null
+}
+]
+},
+"Q127256056": {
+"p31": [
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+]
+},
+"Q1275577": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q1278687": {
+"p31": [
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q955214",
+"label": "mutual organization",
+"country": null
+}
+]
+},
+"Q1280748": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264619",
+"label": "Q130264619",
+"country": null
+}
+]
+},
+"Q1282031": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q1283291": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+},
+{
+"id": "Q64027599",
+"label": "gas station chain",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q166280",
+"label": "S.A.",
+"country": null
+}
+]
+},
+"Q12857502": {
+"p31": [
+{
+"id": "Q762548",
+"label": "chocolaterie",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q1252971",
+"label": "food manufacturer",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q654502",
+"label": "simplified joint-stock company",
+"country": null
+}
+]
+},
+"Q1285819": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q128896": {
+"p31": [
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+},
+{
+"id": "Q18388277",
+"label": "technology company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q130624258": {
+"p31": [
+{
+"id": "Q219577",
+"label": "holding company",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+}
+]
+},
+"Q1318848": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q1058914",
+"label": "software company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q1325987": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q1335585": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264291",
+"label": "Q130264291",
+"country": null
+}
+]
+},
+"Q1342041": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q1344587": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q1347782": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q129983396",
+"label": "Q129983396",
+"country": null
+}
+]
+},
+"Q135325": {
+"p31": [
+{
+"id": "Q778575",
+"label": "conglomerate",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q135683211": {
+"p31": [
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q136374867": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+}
+]
+},
+"Q1369955": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q1373493": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q27970162",
+"label": "hardware store chain",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q149789",
+"label": "limited liability company",
+"country": null
+}
+]
+},
+"Q138026190": {
+"p31": [
+{
+"id": "Q783794",
+"label": "company",
+"country": null
+}
+]
+},
+"Q138212837": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+]
+},
+"Q1383669": {
+"p31": [
+{
+"id": "Q219577",
+"label": "holding company",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+},
+{
+"id": "Q130264119",
+"label": "Q130264119",
+"country": null
+}
+]
+},
+"Q1384324": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264624",
+"label": "Q130264624",
+"country": null
+}
+]
+},
+"Q1391731": {
+"p31": [
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q955214",
+"label": "mutual organization",
+"country": null
+}
+]
+},
+"Q1396863": {
+"p31": [
+{
+"id": "Q2143354",
+"label": "insurance company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+]
+},
+"Q140870592": {
+"p31": [
+{
+"id": "Q2143354",
+"label": "insurance company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q57655560",
+"label": "corporation",
+"country": null
+}
+]
+},
+"Q1411295": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264345",
+"label": "Q130264345",
+"country": null
+}
+]
+},
+"Q1419248": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264220",
+"label": "Q130264220",
+"country": null
+}
+]
+},
+"Q1420513": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264124",
+"label": "Q130264124",
+"country": null
+}
+]
+},
+"Q14289857": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q134161",
+"label": "joint-stock company",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q57655560",
+"label": "corporation",
+"country": null
+}
+]
+},
+"Q143435": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q145168": {
+"p31": [
+{
+"id": "Q261428",
+"label": "discount store",
+"country": null
+},
+{
+"id": "Q507619",
+"label": "retail chain",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+},
+{
+"id": "Q108255949",
+"label": "variety store chain",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264292",
+"label": "Q130264292",
+"country": null
+}
+]
+},
+"Q1453620": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q1454852": {
+"p31": [
+{
+"id": "Q783794",
+"label": "company",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q14662364": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q131784011",
+"label": "biopharmaceutical company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q1470619": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+},
+{
+"id": "Q130264220",
+"label": "Q130264220",
+"country": null
+}
+]
+},
+"Q1471346": {
+"p31": [
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+}
+]
+},
+"Q1472539": {
+"p31": [
+{
+"id": "Q59545",
+"label": "temporary work agency",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264124",
+"label": "Q130264124",
+"country": null
+}
+],
+"parent": [
+{
+"id": "Q138209205",
+"label": "ManpowerGroup",
+"country": null
+}
+]
+},
+"Q1472929": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q1477661": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q2005696",
+"label": "commercial vehicle manufacturer",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q1485061": {
+"p31": [
+{
+"id": "Q936518",
+"label": "aerospace manufacturer",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q108103696",
+"label": "New York Business Corporation",
+"country": null
+}
+]
+},
+"Q1486956": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264113",
+"label": "Q130264113",
+"country": null
+}
+]
+},
+"Q1506045": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264619",
+"label": "Q130264619",
+"country": null
+}
+]
+},
+"Q1510378": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q15109925": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q1516450": {
+"p31": [
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q13641190",
+"label": "open joint-stock company",
+"country": "Russia"
+},
+{
+"id": "Q13641190",
+"label": "open joint-stock company",
+"country": "Ukraine"
+},
+{
+"id": "Q13641190",
+"label": "open joint-stock company",
+"country": "Kazakhstan"
+},
+{
+"id": "Q13641190",
+"label": "open joint-stock company",
+"country": "Soviet Union"
+}
+]
+},
+"Q1519267": {
+"p31": [
+{
+"id": "Q216931",
+"label": "advertising agency",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q108103696",
+"label": "New York Business Corporation",
+"country": null
+}
+]
+},
+"Q1529234": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q153417": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+},
+{
+"id": "Q18043413",
+"label": "supermarket chain",
+"country": null
+},
+{
+"id": "Q64027599",
+"label": "gas station chain",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264220",
+"label": "Q130264220",
+"country": null
+}
+]
+},
+"Q155026": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q156238": {
+"p31": [
+{
+"id": "Q161726",
+"label": "multinational corporation",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+},
+{
+"id": "Q64027599",
+"label": "gas station chain",
+"country": null
+},
+{
+"id": "Q14941854",
+"label": "oil company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q57655560",
+"label": "corporation",
+"country": null
+}
+]
+},
+"Q1570773": {
+"p31": [
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q1752459",
+"label": "investment company",
+"country": null
+},
+{
+"id": "Q3591545",
+"label": "financial services company",
+"country": null
+},
+{
+"id": "Q4230006",
+"label": "asset management company",
+"country": null
+},
+{
+"id": "Q5418962",
+"label": "private equity firm",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q3178478",
+"label": "incorporation",
+"country": null
+}
+]
+},
+"Q159433": {
+"p31": [
+{
+"id": "Q778575",
+"label": "conglomerate",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q159846": {
+"p31": [
+{
+"id": "Q1762059",
+"label": "film production company",
+"country": null
+},
+{
+"id": "Q2537117",
+"label": "major film studios",
+"country": "United States"
+},
+{
+"id": "Q368290",
+"label": "film distributor",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q658255",
+"label": "subsidiary company",
+"country": null
+}
+],
+"parent": [
+{
+"id": "Q214346",
+"label": "Viacom",
+"country": "United States"
+},
+{
+"id": "Q3088127",
+"label": "Viacom",
+"country": "United States"
+},
+{
+"id": "Q3486445",
+"label": "Skydance Media",
+"country": "United States"
+},
+{
+"id": "Q76846862",
+"label": "Paramount Global",
+"country": "United States"
+}
+]
+},
+"Q161086": {
+"p31": [
+{
+"id": "Q43229",
+"label": "organization",
+"country": null
+},
+{
+"id": "Q46970",
+"label": "airline",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q16247191": {
+"p31": [
+{
+"id": "Q786803",
+"label": "car dealership",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+}
+]
+},
+"Q1627894": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q27970162",
+"label": "hardware store chain",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q118444579",
+"label": "Domestic BCA",
+"country": "United States"
+}
+]
+},
+"Q1630166": {
+"p31": [
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q695318",
+"label": "mutual insurance",
+"country": null
+}
+]
+},
+"Q1630431": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+}
+]
+},
+"Q1645081": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q1656230": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+},
+{
+"id": "Q64027599",
+"label": "gas station chain",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+},
+{
+"id": "Q130264460",
+"label": "Q130264460",
+"country": null
+}
+]
+},
+"Q1666331": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130238922",
+"label": "Q130238922",
+"country": null
+}
+]
+},
+"Q1666568": {
+"p31": [
+{
+"id": "Q43229",
+"label": "organization",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q57655560",
+"label": "corporation",
+"country": null
+}
+]
+},
+"Q1685287": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264116",
+"label": "Q130264116",
+"country": null
+}
+]
+},
+"Q16932392": {
+"p31": [
+{
+"id": "Q778575",
+"label": "conglomerate",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q16974527": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q16979157": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q16981175": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+]
+},
+"Q16983334": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q16983765": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+]
+},
+"Q16988133": {
+"p31": [
+{
+"id": "Q1589009",
+"label": "privately held company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q1589009",
+"label": "privately held company",
+"country": null
+}
+]
+},
+"Q1703389": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q1555574",
+"label": "private limited liability company",
+"country": "Belgium"
+},
+{
+"id": "Q130264747",
+"label": "Q130264747",
+"country": null
+}
+]
+},
+"Q17108173": {
+"p31": [
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q695318",
+"label": "mutual insurance",
+"country": null
+}
+]
+},
+"Q17326957": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q173395": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q173476": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264290",
+"label": "Q130264290",
+"country": null
+}
+]
+},
+"Q1740314": {
+"p31": [
+{
+"id": "Q22687",
+"label": "bank",
+"country": null
+},
+{
+"id": "Q650241",
+"label": "financial institution",
+"country": null
+},
+{
+"id": "Q730038",
+"label": "credit institution",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264220",
+"label": "Q130264220",
+"country": null
+}
+]
+},
+"Q1741142": {
+"p31": [
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q1741634": {
+"p31": [
+{
+"id": "Q219577",
+"label": "holding company",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q1785405": {
+"p31": [
+{
+"id": "Q783794",
+"label": "company",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q1786345": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q1793182": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264291",
+"label": "Q130264291",
+"country": null
+}
+]
+},
+"Q1817174": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q1055701",
+"label": "computer manufacturer",
+"country": null
+},
+{
+"id": "Q1149029",
+"label": "systems integrator",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q1817417": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+},
+{
+"id": "Q94532151",
+"label": "oilfield service company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q182477": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q1825763": {
+"p31": [
+{
+"id": "Q219577",
+"label": "holding company",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264290",
+"label": "Q130264290",
+"country": null
+}
+]
+},
+"Q18349283": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q18387139": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q1852556": {
+"p31": [
+{
+"id": "Q43229",
+"label": "organization",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264748",
+"label": "Q130264748",
+"country": null
+}
+]
+},
+"Q18636524": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q18674747": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q188920": {
+"p31": [
+{
+"id": "Q46970",
+"label": "airline",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q192314": {
+"p31": [
+{
+"id": "Q141145821",
+"label": "global systemically important bank",
+"country": null
+},
+{
+"id": "Q22687",
+"label": "bank",
+"country": null
+},
+{
+"id": "Q43229",
+"label": "organization",
+"country": null
+},
+{
+"id": "Q730038",
+"label": "credit institution",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q193326": {
+"p31": [
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q141145821",
+"label": "global systemically important bank",
+"country": null
+},
+{
+"id": "Q11691",
+"label": "stock exchange",
+"country": null
+},
+{
+"id": "Q22687",
+"label": "bank",
+"country": null
+},
+{
+"id": "Q319845",
+"label": "investment bank",
+"country": null
+},
+{
+"id": "Q730038",
+"label": "credit institution",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q193412": {
+"p31": [
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q18388277",
+"label": "technology company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q194360": {
+"p31": [
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q161726",
+"label": "multinational corporation",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q5038204",
+"label": "card association",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q57655560",
+"label": "corporation",
+"country": null
+}
+]
+},
+"Q1945295": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q19604459": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q64027599",
+"label": "gas station chain",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q19604577": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q19647854": {
+"p31": [
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+]
+},
+"Q19681433": {
+"p31": [
+{
+"id": "Q43229",
+"label": "organization",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+],
+"parent": [
+{
+"id": "Q121307826",
+"label": "Berkshire Hathaway",
+"country": "United States"
+}
+]
+},
+"Q1969091": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264124",
+"label": "Q130264124",
+"country": null
+}
+]
+},
+"Q19730939": {
+"p31": [
+{
+"id": "Q43229",
+"label": "organization",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+]
+},
+"Q1975799": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q19900": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q19923099": {
+"p31": [
+{
+"id": "Q1055701",
+"label": "computer manufacturer",
+"country": null
+},
+{
+"id": "Q1058914",
+"label": "software company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+}
+]
+},
+"Q20011294": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q2073644",
+"label": "brokerage firm",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+}
+]
+},
+"Q2007336": {
+"p31": [
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q76226154",
+"label": "car insurance company",
+"country": null
+},
+{
+"id": "Q76226590",
+"label": "life insurance company",
+"country": null
+},
+{
+"id": "Q76227063",
+"label": "property insurance company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q955214",
+"label": "mutual organization",
+"country": null
+}
+]
+},
+"Q2013357": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q20183163": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264622",
+"label": "Q130264622",
+"country": null
+}
+]
+},
+"Q202972": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q108103696",
+"label": "New York Business Corporation",
+"country": null
+}
+],
+"parent": [
+{
+"id": "Q117023081",
+"label": "International Power and Paper Company",
+"country": "United States"
+}
+]
+},
+"Q2032800": {
+"p31": [
+{
+"id": "Q22687",
+"label": "bank",
+"country": null
+},
+{
+"id": "Q730038",
+"label": "credit institution",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q134161",
+"label": "joint-stock company",
+"country": null
+}
+]
+},
+"Q203552": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q2037125": {
+"p31": [
+{
+"id": "Q141145821",
+"label": "global systemically important bank",
+"country": null
+},
+{
+"id": "Q730038",
+"label": "credit institution",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q130264988",
+"label": "Q130264988",
+"country": null
+}
+]
+},
+"Q2044512": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q112176862",
+"label": "soci\u00e9t\u00e9 par actions simplifi\u00e9e",
+"country": null
+}
+]
+},
+"Q20486917": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q57655560",
+"label": "corporation",
+"country": null
+}
+]
+},
+"Q2059537": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q108103696",
+"label": "New York Business Corporation",
+"country": null
+}
+]
+},
+"Q206921": {
+"p31": [
+{
+"id": "Q43229",
+"label": "organization",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q131784011",
+"label": "biopharmaceutical company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q2070689": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q20711490": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q20714323": {
+"p31": [
+{
+"id": "Q10932402",
+"label": "food delivery",
+"country": null
+},
+{
+"id": "Q783794",
+"label": "company",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q20714950": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q20800404": {
+"p31": [
+{
+"id": "Q219577",
+"label": "holding company",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q20858163": {
+"p31": [
+{
+"id": "Q219577",
+"label": "holding company",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264748",
+"label": "Q130264748",
+"country": null
+}
+]
+},
+"Q2103926": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q2114414": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+},
+{
+"id": "Q76226590",
+"label": "life insurance company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264116",
+"label": "Q130264116",
+"country": null
+}
+]
+},
+"Q212235": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q212405": {
+"p31": [
+{
+"id": "Q187939",
+"label": "industrial manufacturing",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264220",
+"label": "Q130264220",
+"country": null
+}
+]
+},
+"Q2140315": {
+"p31": [
+{
+"id": "Q778575",
+"label": "conglomerate",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q167037",
+"label": "corporation",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+}
+]
+},
+"Q214763": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q2171646": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q217583": {
+"p31": [
+{
+"id": "Q219577",
+"label": "holding company",
+"country": null
+},
+{
+"id": "Q783794",
+"label": "company",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q2178198": {
+"p31": [
+{
+"id": "Q507619",
+"label": "retail chain",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264616",
+"label": "Q130264616",
+"country": null
+}
+]
+},
+"Q219508": {
+"p31": [
+{
+"id": "Q141145821",
+"label": "global systemically important bank",
+"country": null
+},
+{
+"id": "Q219577",
+"label": "holding company",
+"country": null
+},
+{
+"id": "Q730038",
+"label": "credit institution",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+},
+{
+"id": "Q117151090",
+"label": "limited liability company",
+"country": null
+}
+]
+},
+"Q219635": {
+"p31": [
+{
+"id": "Q783794",
+"label": "company",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q22077752": {
+"p31": [
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+]
+},
+"Q221062": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q2283": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q1058914",
+"label": "software company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q18388277",
+"label": "technology company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q98927546",
+"label": "Washington corporation",
+"country": null
+}
+]
+},
+"Q2304693": {
+"p31": [
+{
+"id": "Q1341478",
+"label": "energy company",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q2357515": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q63383584",
+"label": "medical device company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264219",
+"label": "Q130264219",
+"country": null
+}
+]
+},
+"Q2376711": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q24204297": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+]
+},
+"Q247489": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+},
+{
+"id": "Q19644607",
+"label": "pharmaceutical company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264116",
+"label": "Q130264116",
+"country": null
+}
+]
+},
+"Q248": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q25104597": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q2552219": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q2581220": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q259011": {
+"p31": [
+{
+"id": "Q161726",
+"label": "multinational corporation",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+}
+]
+},
+"Q26311": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q1480166",
+"label": "kabushiki gaisha",
+"country": "Japan"
+}
+]
+},
+"Q2645636": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q266423": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+},
+{
+"id": "Q131784011",
+"label": "biopharmaceutical company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q2743863": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q63383584",
+"label": "medical device company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q2744099": {
+"p31": [
+{
+"id": "Q43229",
+"label": "organization",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q19644607",
+"label": "pharmaceutical company",
+"country": null
+}
+]
+},
+"Q27686100": {
+"p31": [
+{
+"id": "Q507619",
+"label": "retail chain",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q27926500": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q27988145": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q167037",
+"label": "corporation",
+"country": null
+}
+]
+},
+"Q28130158": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4382945",
+"label": "online shop",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q2825507": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q2831861": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+},
+{
+"id": "Q18043413",
+"label": "supermarket chain",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q149789",
+"label": "limited liability company",
+"country": null
+}
+],
+"parent": [
+{
+"id": "Q289362",
+"label": "Cerberus Capital Management",
+"country": "United States"
+}
+]
+},
+"Q2843129": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q2861324": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q2874395": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q28782856": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264619",
+"label": "Q130264619",
+"country": null
+}
+]
+},
+"Q291508": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q292292": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q2940968": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264618",
+"label": "Q130264618",
+"country": null
+}
+]
+},
+"Q2961234": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q166280",
+"label": "S.A.",
+"country": null
+}
+]
+},
+"Q2962826": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264621",
+"label": "Q130264621",
+"country": null
+}
+]
+},
+"Q30291091": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q57655560",
+"label": "corporation",
+"country": null
+}
+]
+},
+"Q30298154": {
+"p31": [
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+]
+},
+"Q305473": {
+"p31": [
+{
+"id": "Q760102",
+"label": "contract research organization",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q30645592": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q30647067": {
+"p31": [
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+]
+},
+"Q3067119": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q134161",
+"label": "joint-stock company",
+"country": null
+}
+]
+},
+"Q306764": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+},
+{
+"id": "Q63383584",
+"label": "medical device company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q118444579",
+"label": "Domestic BCA",
+"country": "United States"
+},
+{
+"id": "Q125121529",
+"label": "limited liability company",
+"country": null
+}
+]
+},
+"Q30873": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+],
+"parent": [
+{
+"id": "Q27500963",
+"label": "Dell Technologies",
+"country": "United States"
+}
+]
+},
+"Q3118789": {
+"p31": [
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q955214",
+"label": "mutual organization",
+"country": null
+}
+]
+},
+"Q312": {
+"p31": [
+{
+"id": "Q167037",
+"label": "corporation",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q18388277",
+"label": "technology company",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q57655560",
+"label": "corporation",
+"country": null
+}
+]
+},
+"Q3146975": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264290",
+"label": "Q130264290",
+"country": null
+}
+]
+},
+"Q3157622": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q319642": {
+"p31": [
+{
+"id": "Q43229",
+"label": "organization",
+"country": null
+},
+{
+"id": "Q167037",
+"label": "corporation",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+},
+{
+"id": "Q14941854",
+"label": "oil company",
+"country": null
+},
+{
+"id": "Q64027599",
+"label": "gas station chain",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q130264119",
+"label": "Q130264119",
+"country": null
+}
+]
+},
+"Q324616": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+],
+"parent": [
+{
+"id": "Q787239",
+"label": "Platinum Equity",
+"country": "United States"
+}
+]
+},
+"Q325789": {
+"p31": [
+{
+"id": "Q730038",
+"label": "credit institution",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+}
+]
+},
+"Q3272257": {
+"p31": [
+{
+"id": "Q22687",
+"label": "bank",
+"country": null
+},
+{
+"id": "Q650241",
+"label": "financial institution",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+]
+},
+"Q3277465": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q328840": {
+"p31": [
+{
+"id": "Q161726",
+"label": "multinational corporation",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q5038204",
+"label": "card association",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q3295867": {
+"p31": [
+{
+"id": "Q219577",
+"label": "holding company",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q1252971",
+"label": "food manufacturer",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q329953": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q936518",
+"label": "aerospace manufacturer",
+"country": null
+},
+{
+"id": "Q1934969",
+"label": "defense contractor",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q3319685": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q333718": {
+"p31": [
+{
+"id": "Q63383584",
+"label": "medical device company",
+"country": null
+},
+{
+"id": "Q43229",
+"label": "organization",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+},
+{
+"id": "Q19644607",
+"label": "pharmaceutical company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q6832945",
+"label": "private company limited by shares",
+"country": "United Kingdom"
+},
+{
+"id": "Q130264116",
+"label": "Q130264116",
+"country": null
+}
+]
+},
+"Q334204": {
+"p31": [
+{
+"id": "Q141145821",
+"label": "global systemically important bank",
+"country": null
+},
+{
+"id": "Q22687",
+"label": "bank",
+"country": null
+},
+{
+"id": "Q730038",
+"label": "credit institution",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q3344199": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264756",
+"label": "Q130264756",
+"country": null
+}
+]
+},
+"Q334800": {
+"p31": [
+{
+"id": "Q778575",
+"label": "conglomerate",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264117",
+"label": "Business Corporation",
+"country": null
+}
+]
+},
+"Q3403513": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q3442791": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q2549179",
+"label": "department store chain",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q3518066": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264619",
+"label": "Q130264619",
+"country": null
+}
+]
+},
+"Q3540193": {
+"p31": [
+{
+"id": "Q35127",
+"label": "website",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q35476": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q2401749",
+"label": "telecommunications company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q57655560",
+"label": "corporation",
+"country": null
+}
+]
+},
+"Q37156": {
+"p31": [
+{
+"id": "Q43229",
+"label": "organization",
+"country": null
+},
+{
+"id": "Q161726",
+"label": "multinational corporation",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q1058914",
+"label": "software company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+},
+{
+"id": "Q18388277",
+"label": "technology company",
+"country": null
+},
+{
+"id": "Q23670565",
+"label": "professional services firm",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q57655560",
+"label": "corporation",
+"country": null
+}
+]
+},
+"Q37158": {
+"p31": [
+{
+"id": "Q507619",
+"label": "retail chain",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q76212517",
+"label": "caf\u00e9 chain",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264624",
+"label": "Q130264624",
+"country": null
+}
+]
+},
+"Q380": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q1641122",
+"label": "online service provider",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q18388277",
+"label": "technology company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q38076": {
+"p31": [
+{
+"id": "Q43229",
+"label": "organization",
+"country": null
+},
+{
+"id": "Q167270",
+"label": "trademark",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q18509232",
+"label": "fast food restaurant chain",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q3884": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+},
+{
+"id": "Q118140435",
+"label": "very large online platform",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q167037",
+"label": "corporation",
+"country": null
+}
+]
+},
+"Q38928": {
+"p31": [
+{
+"id": "Q22687",
+"label": "bank",
+"country": null
+},
+{
+"id": "Q730038",
+"label": "credit institution",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264119",
+"label": "Q130264119",
+"country": null
+}
+]
+},
+"Q4033665": {
+"p31": [
+{
+"id": "Q219577",
+"label": "holding company",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q134161",
+"label": "joint-stock company",
+"country": null
+}
+]
+},
+"Q4034815": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264290",
+"label": "Q130264290",
+"country": null
+}
+]
+},
+"Q4035714": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q4041705": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264288",
+"label": "Q130264288",
+"country": null
+}
+]
+},
+"Q407744": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q420822": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+},
+{
+"id": "Q76213285",
+"label": "clothing store chain",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q426583": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q4385833": {
+"p31": [
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q1589009",
+"label": "privately held company",
+"country": null
+}
+]
+},
+"Q44294": {
+"p31": [
+{
+"id": "Q43229",
+"label": "organization",
+"country": null
+},
+{
+"id": "Q219577",
+"label": "holding company",
+"country": null
+},
+{
+"id": "Q786820",
+"label": "automobile manufacturer",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q444110": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q445007": {
+"p31": [
+{
+"id": "Q161726",
+"label": "multinational corporation",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264748",
+"label": "Q130264748",
+"country": null
+}
+]
+},
+"Q457960": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264119",
+"label": "Q130264119",
+"country": null
+}
+]
+},
+"Q458363": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q64027599",
+"label": "gas station chain",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q459477": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q1447463",
+"label": "package delivery",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q166280",
+"label": "S.A.",
+"country": null
+}
+]
+},
+"Q459965": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q462984": {
+"p31": [
+{
+"id": "Q219577",
+"label": "holding company",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264291",
+"label": "Q130264291",
+"country": null
+}
+]
+},
+"Q464092": {
+"p31": [
+{
+"id": "Q219577",
+"label": "holding company",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+},
+{
+"id": "Q108103696",
+"label": "New York Business Corporation",
+"country": null
+}
+]
+},
+"Q4650338": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q4655171": {
+"p31": [
+{
+"id": "Q219577",
+"label": "holding company",
+"country": null
+},
+{
+"id": "Q519076",
+"label": "real estate agent",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q2143354",
+"label": "insurance company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q465751": {
+"p31": [
+{
+"id": "Q43229",
+"label": "organization",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+},
+{
+"id": "Q18534542",
+"label": "restaurant chain",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q166280",
+"label": "S.A.",
+"country": null
+}
+]
+},
+"Q4672981": {
+"p31": [
+{
+"id": "Q43229",
+"label": "organization",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q2746361",
+"label": "retailers' cooperative",
+"country": null
+},
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q467752": {
+"p31": [
+{
+"id": "Q11371",
+"label": "internet service provider",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q1331793",
+"label": "media company",
+"country": null
+},
+{
+"id": "Q2401749",
+"label": "telecommunications company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q4686051": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q132180130",
+"label": "car parts shop chain",
+"country": null
+}
+]
+},
+"Q470156": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q470517": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+},
+{
+"id": "Q131784011",
+"label": "biopharmaceutical company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q4742937": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q4743730": {
+"p31": [
+{
+"id": "Q2143354",
+"label": "insurance company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+]
+},
+"Q4743779": {
+"p31": [
+{
+"id": "Q219577",
+"label": "holding company",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264220",
+"label": "Q130264220",
+"country": null
+}
+]
+},
+"Q4745263": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q474621": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q478214": {
+"p31": [
+{
+"id": "Q167037",
+"label": "corporation",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264293",
+"label": "For-Profit Corporation",
+"country": null
+}
+]
+},
+"Q4799191": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q4803735": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q4810399": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q4826032": {
+"p31": [
+{
+"id": "Q695318",
+"label": "mutual insurance",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q695318",
+"label": "mutual insurance",
+"country": null
+}
+]
+},
+"Q4826087": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q132180130",
+"label": "car parts shop chain",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264619",
+"label": "Q130264619",
+"country": null
+}
+]
+},
+"Q4829076": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q108103696",
+"label": "New York Business Corporation",
+"country": null
+}
+]
+},
+"Q483551": {
+"p31": [
+{
+"id": "Q43229",
+"label": "organization",
+"country": null
+},
+{
+"id": "Q507619",
+"label": "retail chain",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+},
+{
+"id": "Q105615608",
+"label": "hypermarket chain",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q4835754": {
+"p31": [
+{
+"id": "Q507619",
+"label": "retail chain",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q18043413",
+"label": "supermarket chain",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q483915": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q134161",
+"label": "joint-stock company",
+"country": null
+},
+{
+"id": "Q130264118",
+"label": "Q130264118",
+"country": null
+}
+]
+},
+"Q484930": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264988",
+"label": "Q130264988",
+"country": null
+}
+]
+},
+"Q48754": {
+"p31": [
+{
+"id": "Q43229",
+"label": "organization",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264119",
+"label": "Q130264119",
+"country": null
+}
+]
+},
+"Q487907": {
+"p31": [
+{
+"id": "Q141145821",
+"label": "global systemically important bank",
+"country": null
+},
+{
+"id": "Q22687",
+"label": "bank",
+"country": null
+},
+{
+"id": "Q730038",
+"label": "credit institution",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q48881": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264220",
+"label": "Q130264220",
+"country": null
+}
+]
+},
+"Q489080": {
+"p31": [
+{
+"id": "Q974828",
+"label": "accounting software",
+"country": null
+},
+{
+"id": "Q1058914",
+"label": "software company",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q489921": {
+"p31": [
+{
+"id": "Q986008",
+"label": "payment system",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q5038204",
+"label": "card association",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+},
+{
+"id": "Q43229",
+"label": "organization",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q496302": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q4999220": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q5011381": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q64027599",
+"label": "gas station chain",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264195",
+"label": "Q130264195",
+"country": null
+}
+]
+},
+"Q5013012": {
+"p31": [
+{
+"id": "Q43229",
+"label": "organization",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264219",
+"label": "Q130264219",
+"country": null
+}
+]
+},
+"Q502132": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q502344": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q502940": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q503308": {
+"p31": [
+{
+"id": "Q46970",
+"label": "airline",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264293",
+"label": "For-Profit Corporation",
+"country": null
+}
+]
+},
+"Q5037190": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+]
+},
+"Q5059102": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q5063092": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+}
+]
+},
+"Q5120253": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+]
+},
+"Q5122694": {
+"p31": [
+{
+"id": "Q22687",
+"label": "bank",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264120",
+"label": "Q130264120",
+"country": null
+}
+]
+},
+"Q5133094": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+]
+},
+"Q5151691": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q5152510": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q5154770": {
+"p31": [
+{
+"id": "Q4287745",
+"label": "medical organization",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264549",
+"label": "Q130264549",
+"country": null
+}
+]
+},
+"Q5165314": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264621",
+"label": "Q130264621",
+"country": null
+}
+]
+},
+"Q5189378": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264119",
+"label": "Q130264119",
+"country": null
+}
+]
+},
+"Q5203782": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+]
+},
+"Q5206232": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264219",
+"label": "Q130264219",
+"country": null
+}
+]
+},
+"Q5207184": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q5214701": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q5272601": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q5289230": {
+"p31": [
+{
+"id": "Q507619",
+"label": "retail chain",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264748",
+"label": "Q130264748",
+"country": null
+}
+]
+},
+"Q5323987": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264119",
+"label": "Q130264119",
+"country": null
+}
+]
+},
+"Q533415": {
+"p31": [
+{
+"id": "Q507619",
+"label": "retail chain",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264113",
+"label": "Q130264113",
+"country": null
+}
+]
+},
+"Q5343830": {
+"p31": [
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+]
+},
+"Q5370289": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+]
+},
+"Q5370909": {
+"p31": [
+{
+"id": "Q161726",
+"label": "multinational corporation",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+]
+},
+"Q5376999": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+]
+},
+"Q5380346": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264460",
+"label": "Q130264460",
+"country": null
+}
+]
+},
+"Q5388314": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q2143354",
+"label": "insurance company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+]
+},
+"Q5444235": {
+"p31": [
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+]
+},
+"Q5446791": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q544847": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q547450": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q5479360": {
+"p31": [
+{
+"id": "Q219577",
+"label": "holding company",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q5533818": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264617",
+"label": "Q130264617",
+"country": null
+}
+]
+},
+"Q5570537": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+]
+},
+"Q5570544": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264617",
+"label": "Q130264617",
+"country": null
+}
+]
+},
+"Q5597139": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+]
+},
+"Q5598285": {
+"p31": [
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+]
+},
+"Q5611081": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q568532": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q570473": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q58024": {
+"p31": [
+{
+"id": "Q43229",
+"label": "organization",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q3390477",
+"label": "online marketplace",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6576792",
+"label": "online community",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+},
+{
+"id": "Q125265855",
+"label": "classified advertising website",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q167037",
+"label": "corporation",
+"country": null
+}
+]
+},
+"Q5842736": {
+"p31": [
+{
+"id": "Q43229",
+"label": "organization",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q108103696",
+"label": "New York Business Corporation",
+"country": null
+}
+]
+},
+"Q5881864": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q589288": {
+"p31": [
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q596499": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q1057214",
+"label": "private military company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q5972276": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q5985017": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q6785141",
+"label": "master limited partnership",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q6785141",
+"label": "master limited partnership",
+"country": null
+}
+]
+},
+"Q60238941": {
+"p31": [
+{
+"id": "Q219577",
+"label": "holding company",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q1331793",
+"label": "media company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q134161",
+"label": "joint-stock company",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q57655560",
+"label": "corporation",
+"country": null
+}
+]
+},
+"Q6038080": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+},
+{
+"id": "Q18388277",
+"label": "technology company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q607131": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q609466": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q619121": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q5418962",
+"label": "private equity firm",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q909695",
+"label": "limited partnership",
+"country": null
+}
+]
+},
+"Q620875": {
+"p31": [
+{
+"id": "Q161726",
+"label": "multinational corporation",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264220",
+"label": "Q130264220",
+"country": null
+}
+]
+},
+"Q621096": {
+"p31": [
+{
+"id": "Q22687",
+"label": "bank",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q48851989",
+"label": "state-owned enterprise of the United States",
+"country": "United States"
+}
+],
+"legal": [
+{
+"id": "Q130264125",
+"label": "Q130264125",
+"country": null
+}
+]
+},
+"Q621610": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q624375": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+},
+{
+"id": "Q43229",
+"label": "organization",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q624649": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q625708": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q62739842": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q629998": {
+"p31": [
+{
+"id": "Q161726",
+"label": "multinational corporation",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q63197674": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q632240": {
+"p31": [
+{
+"id": "Q43229",
+"label": "organization",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q19644607",
+"label": "pharmaceutical company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264290",
+"label": "Q130264290",
+"country": null
+}
+]
+},
+"Q632694": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q63327": {
+"p31": [
+{
+"id": "Q35127",
+"label": "website",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+},
+{
+"id": "Q57590076",
+"label": "hotel booking website",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q642271": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q166280",
+"label": "S.A.",
+"country": null
+}
+]
+},
+"Q643674": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q166280",
+"label": "S.A.",
+"country": null
+}
+]
+},
+"Q644289": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q6459734": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+]
+},
+"Q6466630": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q6483918": {
+"p31": [
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264195",
+"label": "Q130264195",
+"country": null
+}
+]
+},
+"Q65050916": {
+"p31": [
+{
+"id": "Q2143354",
+"label": "insurance company",
+"country": null
+}
+]
+},
+"Q65066106": {
+"p31": [
+{
+"id": "Q783794",
+"label": "company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q909695",
+"label": "limited partnership",
+"country": null
+}
+],
+"parent": [
+{
+"id": "Q5629392",
+"label": "Home Depot Supply",
+"country": "United States"
+}
+]
+},
+"Q65091423": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q14941854",
+"label": "oil company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q653581": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q6541837": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+]
+},
+"Q656165": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q66": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q936518",
+"label": "aerospace manufacturer",
+"country": null
+},
+{
+"id": "Q2995256",
+"label": "rail vehicle manufacturer",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q57655560",
+"label": "corporation",
+"country": null
+}
+]
+},
+"Q662095": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q117112914",
+"label": "Q117112914",
+"country": "United States"
+}
+]
+},
+"Q663596": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+},
+{
+"id": "Q19644607",
+"label": "pharmaceutical company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q6647881": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264118",
+"label": "Q130264118",
+"country": null
+}
+]
+},
+"Q668737": {
+"p31": [
+{
+"id": "Q167037",
+"label": "corporation",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q17326725",
+"label": "group of companies",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264117",
+"label": "Business Corporation",
+"country": null
+}
+]
+},
+"Q6702957": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q76213285",
+"label": "clothing store chain",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q672170": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q18043413",
+"label": "supermarket chain",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q1589009",
+"label": "privately held company",
+"country": null
+}
+]
+},
+"Q675585": {
+"p31": [
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q6770621": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264119",
+"label": "Q130264119",
+"country": null
+}
+]
+},
+"Q677464": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264748",
+"label": "Q130264748",
+"country": null
+}
+]
+},
+"Q677488": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+},
+{
+"id": "Q43229",
+"label": "organization",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264290",
+"label": "Q130264290",
+"country": null
+}
+]
+},
+"Q6782217": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264616",
+"label": "Q130264616",
+"country": null
+}
+]
+},
+"Q6782872": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q6807236": {
+"p31": [
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q57655560",
+"label": "corporation",
+"country": null
+}
+]
+},
+"Q6893780": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q6896175": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q6955139": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q6955706": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+]
+},
+"Q6979886": {
+"p31": [
+{
+"id": "Q2143354",
+"label": "insurance company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q955214",
+"label": "mutual organization",
+"country": null
+}
+]
+},
+"Q706094": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264746",
+"label": "Q130264746",
+"country": null
+}
+]
+},
+"Q7071951": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264291",
+"label": "Q130264291",
+"country": null
+}
+]
+},
+"Q7084833": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q7114733": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264748",
+"label": "Q130264748",
+"country": null
+}
+]
+},
+"Q7114736": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q7128508": {
+"p31": [
+{
+"id": "Q1058914",
+"label": "software company",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q715583": {
+"p31": [
+{
+"id": "Q507619",
+"label": "retail chain",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264624",
+"label": "Q130264624",
+"country": null
+}
+]
+},
+"Q7240": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q1934969",
+"label": "defense contractor",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q57655560",
+"label": "corporation",
+"country": null
+}
+]
+},
+"Q7248721": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q2143354",
+"label": "insurance company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+]
+},
+"Q7257522": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q7259716": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+]
+},
+"Q7268886": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q7271456": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q7298901": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q166280",
+"label": "S.A.",
+"country": null
+}
+]
+},
+"Q7308054": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q108103696",
+"label": "New York Business Corporation",
+"country": null
+}
+]
+},
+"Q7311031": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q7314415": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q731912": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q738770": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q739084": {
+"p31": [
+{
+"id": "Q650241",
+"label": "financial institution",
+"country": null
+},
+{
+"id": "Q730038",
+"label": "credit institution",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q740999": {
+"p31": [
+{
+"id": "Q2143354",
+"label": "insurance company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+]
+},
+"Q7414": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q1762059",
+"label": "film production company",
+"country": null
+},
+{
+"id": "Q1916382",
+"label": "media conglomerate",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q21980538",
+"label": "commercial organization",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q741707": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q2995256",
+"label": "rail vehicle manufacturer",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q742196": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264616",
+"label": "Q130264616",
+"country": null
+}
+]
+},
+"Q7440183": {
+"p31": [
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q744149": {
+"p31": [
+{
+"id": "Q141145821",
+"label": "global systemically important bank",
+"country": null
+},
+{
+"id": "Q22687",
+"label": "bank",
+"country": null
+},
+{
+"id": "Q650241",
+"label": "financial institution",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q744683": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q7449804": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q117112914",
+"label": "Q117112914",
+"country": "United States"
+}
+]
+},
+"Q7455653": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q7561788": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q7562151": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130265063",
+"label": "Q130265063",
+"country": null
+}
+]
+},
+"Q7581369": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q18043413",
+"label": "supermarket chain",
+"country": null
+},
+{
+"id": "Q50969307",
+"label": "health food store chain",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q134161",
+"label": "joint-stock company",
+"country": null
+}
+]
+},
+"Q7605667": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264290",
+"label": "Q130264290",
+"country": null
+}
+]
+},
+"Q761965": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+}
+]
+},
+"Q7662493": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q7685824": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+]
+},
+"Q7690075": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q7713699": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264220",
+"label": "Q130264220",
+"country": null
+}
+]
+},
+"Q7742790": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264220",
+"label": "Q130264220",
+"country": null
+}
+]
+},
+"Q7752327": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q7796068": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q780442": {
+"p31": [
+{
+"id": "Q7397",
+"label": "software",
+"country": null
+},
+{
+"id": "Q27973",
+"label": "ridesharing company",
+"country": null
+},
+{
+"id": "Q43229",
+"label": "organization",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q1668023",
+"label": "Internet booking engine",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+},
+{
+"id": "Q10932402",
+"label": "food delivery",
+"country": null
+},
+{
+"id": "Q59859818",
+"label": "data controller",
+"country": null
+},
+{
+"id": "Q65295049",
+"label": "online taxi service",
+"country": null
+},
+{
+"id": "Q110029326",
+"label": "platform company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q1589009",
+"label": "privately held company",
+"country": null
+}
+]
+},
+"Q7814310": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+]
+},
+"Q7833612": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q784804": {
+"p31": [
+{
+"id": "Q786803",
+"label": "car dealership",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+]
+},
+"Q7865722": {
+"p31": [
+{
+"id": "Q22687",
+"label": "bank",
+"country": null
+},
+{
+"id": "Q650241",
+"label": "financial institution",
+"country": null
+},
+{
+"id": "Q2143354",
+"label": "insurance company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q695318",
+"label": "mutual insurance",
+"country": null
+}
+]
+},
+"Q787044": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q21980538",
+"label": "commercial organization",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q422007",
+"label": "aktiebolag",
+"country": "Sweden"
+}
+]
+},
+"Q7880076": {
+"p31": [
+{
+"id": "Q507619",
+"label": "retail chain",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q270791",
+"label": "state-owned enterprise",
+"country": null
+}
+]
+},
+"Q7888979": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q7889101": {
+"p31": [
+{
+"id": "Q507619",
+"label": "retail chain",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q7893967": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q790060": {
+"p31": [
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+}
+]
+},
+"Q790650": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q7949044": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q795486": {
+"p31": [
+{
+"id": "Q22687",
+"label": "bank",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q2512624",
+"label": "bank holding company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264117",
+"label": "Business Corporation",
+"country": null
+},
+{
+"id": "Q130264170",
+"label": "Q130264170",
+"country": null
+}
+]
+},
+"Q7987429": {
+"p31": [
+{
+"id": "Q783794",
+"label": "company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q695318",
+"label": "mutual insurance",
+"country": null
+}
+]
+},
+"Q798819": {
+"p31": [
+{
+"id": "Q22687",
+"label": "bank",
+"country": null
+},
+{
+"id": "Q650241",
+"label": "financial institution",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+]
+},
+"Q8027166": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264124",
+"label": "Q130264124",
+"country": null
+}
+]
+},
+"Q8034666": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q8035757": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q57655560",
+"label": "corporation",
+"country": null
+}
+]
+},
+"Q8042415": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q1468664",
+"label": "logistics company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q804353": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+}
+]
+},
+"Q8073337": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q8085893": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264624",
+"label": "Q130264624",
+"country": null
+}
+]
+},
+"Q80978": {
+"p31": [
+{
+"id": "Q1055701",
+"label": "computer manufacturer",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+},
+{
+"id": "Q1058914",
+"label": "software company",
+"country": null
+},
+{
+"id": "Q11294827",
+"label": "camera manufacturer",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+}
+]
+},
+"Q813780": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q63383584",
+"label": "medical device company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264116",
+"label": "Q130264116",
+"country": null
+}
+]
+},
+"Q81965": {
+"p31": [
+{
+"id": "Q786820",
+"label": "automobile manufacturer",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q825943": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q826526": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q841458": {
+"p31": [
+{
+"id": "Q475000",
+"label": "stock market",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q5466628",
+"label": "for-profit corporation",
+"country": null
+},
+{
+"id": "Q57655560",
+"label": "corporation",
+"country": null
+}
+],
+"parent": [
+{
+"id": "Q1519402",
+"label": "ICE Futures U.S.",
+"country": "United States"
+}
+]
+},
+"Q851641": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q864338": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q131784011",
+"label": "biopharmaceutical company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q864407": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q27970162",
+"label": "hardware store chain",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q868587": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q134161",
+"label": "joint-stock company",
+"country": null
+},
+{
+"id": "Q57655560",
+"label": "corporation",
+"country": null
+}
+]
+},
+"Q871700": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q880942": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4230006",
+"label": "asset management company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q909695",
+"label": "limited partnership",
+"country": null
+}
+]
+},
+"Q893221": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q89368734": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q1934969",
+"label": "defense contractor",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q57655560",
+"label": "corporation",
+"country": null
+}
+]
+},
+"Q894585": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+},
+{
+"id": "Q63383584",
+"label": "medical device company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q898208": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q899022": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q902397": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+},
+{
+"id": "Q63383584",
+"label": "medical device company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264220",
+"label": "Q130264220",
+"country": null
+}
+]
+},
+"Q905086": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q422053",
+"label": "Public limited company (Belgium)",
+"country": "Belgium"
+},
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q910866": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q917131": {
+"p31": [
+{
+"id": "Q730038",
+"label": "credit institution",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q930639": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q1341478",
+"label": "energy company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q930919": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264116",
+"label": "Q130264116",
+"country": null
+}
+]
+},
+"Q931032": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q931200": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+}
+]
+},
+"Q935969": {
+"p31": [
+{
+"id": "Q22687",
+"label": "bank",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q48851989",
+"label": "state-owned enterprise of the United States",
+"country": "United States"
+}
+],
+"legal": [
+{
+"id": "Q134161",
+"label": "joint-stock company",
+"country": null
+}
+]
+},
+"Q941127": {
+"p31": [
+{
+"id": "Q183888",
+"label": "software developer",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q1058914",
+"label": "software company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+},
+{
+"id": "Q18388277",
+"label": "technology company",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q57655560",
+"label": "corporation",
+"country": null
+}
+]
+},
+"Q942471": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264113",
+"label": "Q130264113",
+"country": null
+}
+]
+},
+"Q967265": {
+"p31": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q2549179",
+"label": "department store chain",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q130264124",
+"label": "Q130264124",
+"country": null
+}
+]
+},
+"Q967868": {
+"p31": [
+{
+"id": "Q219577",
+"label": "holding company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+}
+]
+},
+"Q970695": {
+"p31": [
+{
+"id": "Q650241",
+"label": "financial institution",
+"country": null
+},
+{
+"id": "Q730038",
+"label": "credit institution",
+"country": null
+},
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q4830453",
+"label": "business",
+"country": null
+},
+{
+"id": "Q6881511",
+"label": "enterprise",
+"country": null
+}
+],
+"legal": [
+{
+"id": "Q891723",
+"label": "public company",
+"country": null
+},
+{
+"id": "Q88537331",
+"label": "Delaware corporation",
+"country": "United States"
+},
+{
+"id": "Q111108938",
+"label": "Trust",
+"country": "Switzerland"
+}
+]
+}
+}

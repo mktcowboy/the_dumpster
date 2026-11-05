@@ -7,7 +7,7 @@ function overview(){
   const k = [['Total revenue', fmtM(rev), `Median ${fmtM(d3.median(C, c => c.revenue))} · cutoff ${fmtM(d3.min(C, c => c.revenue))}`],
     ['Total profit', fmtM(prof), `Aggregate margin ${(prof/rev*100).toFixed(1)}% · ${loss} lost money`],
     ['Employees', fmtN(emp), `Largest employer: ${esc(d3.greatest(C, c => c.employees).name)}`],
-    ['Market value', fmtM(mc), `${pub} public · ${500-pub} private / mutual`],
+    ['Market value', fmtM(mc), `${C.filter(c => c.own === 'public' || c.own === 'gse').length} traded · <a href="#/ownership">${C.filter(c => !['public','gse'].includes(c.own)).length} not traded →</a>`],
     ['Total assets', fmtM(sum(C, c => c.assets)), `${esc(d3.greatest(C, c => c.assets).name)} holds the most`],
     ['Newcomers', newc, 'Companies new to the list in 2026'],
     ['Female CEOs', fem, `${(fem/5).toFixed(1)}% of the list`],
@@ -44,25 +44,26 @@ function overview(){
   $('#toplists').innerHTML = lists.map(([t, f, fm]) => `<div class="card"><h3>${t}</h3><ul class="toplist">${C.filter(c => f(c) != null).sort((a,b) => f(b)-f(a)).slice(0,10).map((c,i) => `<li><span class="n">${i+1}</span><i style="width:8px;height:8px;border-radius:50%;background:${scol(c.sector)};flex:none"></i>${link(c)}<span class="x">${fm(f(c))}</span></li>`).join('')}</ul></div>`).join('');
 }
 const COLS = [['rank','#',1,c=>c.rank],['name','Company',0,c=>c.name],['ticker','Ticker',0,c=>c.ticker],['sector','Sector',0,c=>c.sector],['industry','Industry',0,c=>c.industry],['hq','HQ',0,c=>c.city+', '+(c.st||'')],
-  ['revenue','Revenue',1,c=>c.revenue],['revChg','Rev Δ',1,c=>c.revChg],['profit','Profit',1,c=>c.profit],['margin','Margin',1,c=>c.margin],['assets','Assets',1,c=>c.assets],['mktcap','Mkt value',1,c=>c.mktcap],['employees','Employees',1,c=>c.employees],['trend','Rev. trend (SEC)',0,null],['ceo','CEO',0,c=>c.ceo],['founded','Founded',1,c=>c.founded]];
-let tsort = {k: 'rank', dir: 1}, tstate = {q: '', sector: '', state: '', type: '', nw: false, fem: false, loss: false};
+  ['revenue','Revenue',1,c=>c.revenue],['revChg','Rev Δ',1,c=>c.revChg],['profit','Profit',1,c=>c.profit],['margin','Margin',1,c=>c.margin],['assets','Assets',1,c=>c.assets],['mktcap','Mkt value',1,c=>c.mktcap],['employees','Employees',1,c=>c.employees],['trend','Rev. trend (SEC)',0,null],['own','Ownership',0,c=>OWNK.indexOf(c.own)],['ceo','CEO',0,c=>c.ceo],['founded','Founded',1,c=>c.founded]];
+let tsort = {k: 'rank', dir: 1}, tstate = {q: '', sector: '', state: '', own: '', nw: false, fem: false, loss: false};
 function tableInit(){
   SECT.slice().sort().forEach(s => $('#t-sector').insertAdjacentHTML('beforeend', `<option>${esc(s)}</option>`));
   Array.from(new Set(C.map(c => c.state))).sort().forEach(s => $('#t-state').insertAdjacentHTML('beforeend', `<option>${esc(s)}</option>`));
   $('#tbl thead').innerHTML = '<tr>' + COLS.map(c => `<th data-k="${c[0]}" class="${c[2]?'num':''}">${c[1]}</th>`).join('') + '</tr>';
   $$('#tbl th').forEach(th => th.onclick = () => { const k = th.dataset.k; if (k === 'trend') return; tsort = {k, dir: tsort.k === k ? -tsort.dir : (COLS.find(c=>c[0]===k)[2] && k !== 'rank' ? -1 : 1)}; tableDraw(); });
   $('#t-q').oninput = e => { tstate.q = e.target.value; tableDraw(); }; $('#t-sector').onchange = e => { tstate.sector = e.target.value; tableDraw(); }; $('#t-state').onchange = e => { tstate.state = e.target.value; tableDraw(); };
-  $$('#t-type button').forEach(b => b.onclick = () => { $$('#t-type button').forEach(x => x.classList.remove('on')); b.classList.add('on'); tstate.type = b.dataset.v; tableDraw(); });
+  OWNK.forEach(k => $('#t-own').insertAdjacentHTML('beforeend', `<option value="${k}">${esc(OWN[k].n)} (${C.filter(c => c.own === k).length})</option>`));
+  $('#t-own').onchange = e => { tstate.own = e.target.value; tableDraw(); };
   $('#t-new').onchange = e => { tstate.nw = e.target.checked; tableDraw(); }; $('#t-fem').onchange = e => { tstate.fem = e.target.checked; tableDraw(); }; $('#t-loss').onchange = e => { tstate.loss = e.target.checked; tableDraw(); };
   $('#tbl tbody').onclick = e => { const tr = e.target.closest('tr'); if (tr && !e.target.closest('a')) location.hash = href(byId.get(+tr.dataset.id)); };
-  $('#t-csv').onclick = () => { const rows = tableRows(); const keys = ['rank','name','ticker','type','sector','industry','city','state','lat','lon','revenue','revChg','profit','profitChg','margin','assets','equity','mktcap','employees','ceo','founded','website','cik','qid'];
+  $('#t-csv').onclick = () => { const rows = tableRows(); const keys = ['rank','name','ticker','type','sector','industry','city','state','lat','lon','revenue','revChg','profit','profitChg','margin','assets','equity','mktcap','employees','ceo','founded','website','cik','qid','ownLabel','ownDetail'];
     const csv = [keys.join(',')].concat(rows.map(c => keys.map(k => { const v = c[k]; return v == null ? '' : /[",\n]/.test(String(v)) ? '"' + String(v).replace(/"/g,'""') + '"' : v; }).join(','))).join('\n');
     const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([csv], {type: 'text/csv'})); a.download = 'fortune500_2026_filtered.csv'; a.click(); };
 }
 function tableRows(){ const q = tstate.q.trim().toLowerCase();
-  const r = C.filter(c => (!q || [c.name,c.ticker,c.ceo,c.city,c.state,c.industry,c.sector].join(' ').toLowerCase().includes(q)) && (!tstate.sector || c.sector === tstate.sector) && (!tstate.state || c.state === tstate.state) && (!tstate.type || c.type === tstate.type) && (!tstate.nw || c.newcomer) && (!tstate.fem || c.femaleCeo) && (!tstate.loss || c.profit < 0));
+  const r = C.filter(c => (!q || [c.name,c.ticker,c.ceo,c.city,c.state,c.industry,c.sector].join(' ').toLowerCase().includes(q)) && (!tstate.sector || c.sector === tstate.sector) && (!tstate.state || c.state === tstate.state) && (!tstate.own || c.own === tstate.own) && (!tstate.nw || c.newcomer) && (!tstate.fem || c.femaleCeo) && (!tstate.loss || c.profit < 0));
   const f = COLS.find(c => c[0] === tsort.k)[3]; return r.sort((a,b) => { const x = f(a), y = f(b); if (x == null) return 1; if (y == null) return -1; return (x > y ? 1 : x < y ? -1 : 0) * tsort.dir; }); }
 function tableDraw(){ const r = tableRows(); $('#t-count').textContent = `${r.length} of 500`;
   $$('#tbl th').forEach(th => { th.classList.toggle('sorted', th.dataset.k === tsort.k); th.textContent = COLS.find(c => c[0] === th.dataset.k)[1] + (th.dataset.k === tsort.k ? (tsort.dir > 0 ? ' ↑' : ' ↓') : ''); });
   $('#tbl tbody').innerHTML = r.map(c => { const rh = Object.values(c.revHist||{}); return `<tr data-id="${c.id}"><td class="num mono">${c.rank}</td><td class="nm"><a href="${href(c)}" style="text-decoration:none">${esc(c.name)}</a></td><td class="mono">${esc(c.ticker||'—')}</td><td><span class="chip"><i style="background:${scol(c.sector)}"></i>${esc(c.sector)}</span></td><td class="muted" style="max-width:220px;overflow:hidden;text-overflow:ellipsis">${esc(c.industry)}</td><td>${esc(c.city)}, ${esc(c.st||'')}</td>
-   <td class="num mono">${fmtM(c.revenue)}</td><td class="num mono ${pctCls(c.revChg)}">${fmtP(c.revChg)}</td><td class="num mono ${c.profit<0?'neg':''}">${fmtM(c.profit)}</td><td class="num mono">${c.margin==null?'n/a':c.margin.toFixed(1)+'%'}</td><td class="num mono">${fmtM(c.assets)}</td><td class="num mono">${fmtM(c.mktcap)}</td><td class="num mono">${fmtN(c.employees)}</td><td>${spark(rh)}</td><td>${esc(c.ceo||'n/a')}</td><td class="num mono">${c.founded||'n/a'}</td></tr>`; }).join(''); }
+   <td class="num mono">${fmtM(c.revenue)}</td><td class="num mono ${pctCls(c.revChg)}">${fmtP(c.revChg)}</td><td class="num mono ${c.profit<0?'neg':''}">${fmtM(c.profit)}</td><td class="num mono">${c.margin==null?'n/a':c.margin.toFixed(1)+'%'}</td><td class="num mono">${fmtM(c.assets)}</td><td class="num mono">${fmtM(c.mktcap)}</td><td class="num mono">${fmtN(c.employees)}</td><td>${spark(rh)}</td><td>${ownChip(c)}</td><td>${esc(c.ceo||'n/a')}</td><td class="num mono">${c.founded||'n/a'}</td></tr>`; }).join(''); }

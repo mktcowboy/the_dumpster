@@ -1,0 +1,6797 @@
+{
+"1": {
+"cik": 1018724,
+"sec_name": "AMAZON COM INC",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"AMZN"
+],
+"dereg": [],
+"last10k": "2026-02-06"
+},
+"2": {
+"cik": 104169,
+"sec_name": "Walmart Inc.",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"WMT"
+],
+"dereg": [
+{
+"form": "25-NSE",
+"date": "2026-09-16"
+},
+{
+"form": "25-NSE",
+"date": "2026-04-07"
+},
+{
+"form": "25",
+"date": "2025-12-08"
+}
+],
+"last10k": "2026-03-13"
+},
+"3": {
+"cik": 731766,
+"sec_name": "UNITEDHEALTH GROUP INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"UNH"
+],
+"dereg": [],
+"last10k": "2026-03-02"
+},
+"4": {
+"cik": 320193,
+"sec_name": "Apple Inc.",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"AAPL"
+],
+"dereg": [
+{
+"form": "25-NSE",
+"date": "2025-11-14"
+}
+],
+"last10k": "2026-11-03"
+},
+"5": {
+"cik": 1652044,
+"sec_name": "Alphabet Inc.",
+"exchanges": [
+"Nasdaq",
+"Nasdaq",
+"Nasdaq",
+"Nasdaq"
+],
+"tickers": [
+"GOOGL",
+"GOOG",
+"GOOGM",
+"GOOGN"
+],
+"dereg": [],
+"last10k": "2026-02-05"
+},
+"6": {
+"cik": 64803,
+"sec_name": "CVS HEALTH Corp",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"CVS"
+],
+"dereg": [],
+"last10k": "2026-02-10"
+},
+"7": {
+"cik": 1067983,
+"sec_name": "BERKSHIRE HATHAWAY INC",
+"exchanges": [
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"BRK-B",
+"BRK-A"
+],
+"dereg": [],
+"last10k": "2026-03-02"
+},
+"8": {
+"cik": 927653,
+"sec_name": "MCKESSON CORP",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"MCK"
+],
+"dereg": [
+{
+"form": "25-NSE",
+"date": "2026-10-30"
+},
+{
+"form": "25-NSE",
+"date": "2025-11-17"
+}
+],
+"last10k": "2026-05-08"
+},
+"9": {
+"cik": 2115436,
+"sec_name": "ExxonMobil Holdings Corp",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"XOM"
+],
+"dereg": [],
+"last10k": null
+},
+"10": {
+"cik": 1140859,
+"sec_name": "Cencora, Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"COR"
+],
+"dereg": [],
+"last10k": "2025-11-25"
+},
+"11": {
+"cik": 789019,
+"sec_name": "MICROSOFT CORP",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"MSFT"
+],
+"dereg": [],
+"last10k": "2026-07-29"
+},
+"12": {
+"cik": 19617,
+"sec_name": "JPMORGAN CHASE & CO",
+"exchanges": [
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"JPM",
+"JPM-PC",
+"AMJB",
+"JPM-PD",
+"JPM-PJ",
+"JPM-PK",
+"JPM-PL",
+"JPM-PM",
+"VYLD"
+],
+"dereg": [],
+"last10k": "2026-02-13"
+},
+"13": {
+"cik": 909832,
+"sec_name": "COSTCO WHOLESALE CORP /NEW",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"COST"
+],
+"dereg": [],
+"last10k": "2026-10-07"
+},
+"14": {
+"cik": 1739940,
+"sec_name": "Cigna Group",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"CI"
+],
+"dereg": [],
+"last10k": "2026-02-26"
+},
+"15": {
+"cik": 721371,
+"sec_name": "CARDINAL HEALTH INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"CAH"
+],
+"dereg": [],
+"last10k": "2026-08-11"
+},
+"16": {
+"cik": 1045810,
+"sec_name": "NVIDIA CORP",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"NVDA"
+],
+"dereg": [],
+"last10k": "2026-02-25"
+},
+"17": {
+"cik": 1326801,
+"sec_name": "Meta Platforms, Inc.",
+"exchanges": [
+"Nasdaq",
+"Nasdaq"
+],
+"tickers": [
+"META",
+"METAM"
+],
+"dereg": [],
+"last10k": "2026-01-29"
+},
+"18": {
+"cik": 1156039,
+"sec_name": "Elevance Health, Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"ELV"
+],
+"dereg": [],
+"last10k": "2026-02-06"
+},
+"19": {
+"cik": 1071739,
+"sec_name": "CENTENE CORP",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"CNC"
+],
+"dereg": [],
+"last10k": "2026-02-17"
+},
+"20": {
+"cik": 70858,
+"sec_name": "BANK OF AMERICA CORP /DE/",
+"exchanges": [
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"OTC",
+"NYSE",
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"BAC",
+"BML-PG",
+"BML-PL",
+"BAC-PB",
+"BAC-PK",
+"BAC-PE",
+"BAC-PL",
+"BAC-PM",
+"BAC-PN",
+"BAC-PO",
+"BAC-PP",
+"BAC-PQ",
+"BAC-PS",
+"BACRP",
+"BML-PH",
+"BML-PJ",
+"MER-PK"
+],
+"dereg": [],
+"last10k": "2026-02-25"
+},
+"21": {
+"cik": 93410,
+"sec_name": "CHEVRON CORP",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"CVX"
+],
+"dereg": [],
+"last10k": "2026-02-24"
+},
+"22": {
+"cik": 37996,
+"sec_name": "FORD MOTOR CO",
+"exchanges": [
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"F",
+"F-PB",
+"F-PC",
+"F-PD"
+],
+"dereg": [],
+"last10k": "2026-02-11"
+},
+"23": {
+"cik": 1467858,
+"sec_name": "General Motors Co",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"GM"
+],
+"dereg": [],
+"last10k": "2026-01-27"
+},
+"24": {
+"cik": 831001,
+"sec_name": "CITIGROUP INC",
+"exchanges": [
+"NYSE",
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"C",
+"C-PN",
+"C-PR"
+],
+"dereg": [
+{
+"form": "25-NSE",
+"date": "2026-09-17"
+}
+],
+"last10k": "2026-02-20"
+},
+"25": {
+"cik": 354950,
+"sec_name": "HOME DEPOT, INC.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"HD"
+],
+"dereg": [],
+"last10k": "2026-03-18"
+},
+"26": {
+"cik": 310522,
+"sec_name": "FEDERAL NATIONAL MORTGAGE ASSOCIATION FANNIE MAE",
+"exchanges": [
+"OTC",
+"OTC",
+"OTC",
+"OTC",
+"OTC",
+"OTC",
+"OTC",
+"OTC",
+"OTC",
+"OTC",
+"OTC",
+"OTC",
+"OTC",
+"OTC",
+"OTC",
+"OTC"
+],
+"tickers": [
+"FNMA",
+"FNMFN",
+"FNMAM",
+"FNMAN",
+"FNMAI",
+"FNMAT",
+"FNMAK",
+"FNMAL",
+"FNMFM",
+"FNMAO",
+"FNMAG",
+"FNMFO",
+"FNMAH",
+"FNMAJ",
+"FNMAP",
+"FNMAS"
+],
+"dereg": [],
+"last10k": "2026-02-11",
+"wiki_type": "Government-sponsored public company under FHFA conservatorship"
+},
+"27": {
+"cik": 56873,
+"sec_name": "KROGER CO",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"KR"
+],
+"dereg": [],
+"last10k": "2026-03-31"
+},
+"28": {
+"cik": 732712,
+"sec_name": "VERIZON COMMUNICATIONS INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"VZ"
+],
+"dereg": [
+{
+"form": "25-NSE",
+"date": "2026-10-27"
+},
+{
+"form": "25-NSE",
+"date": "2025-09-03"
+}
+],
+"last10k": "2026-02-17"
+},
+"29": {
+"cik": 1534701,
+"sec_name": "Phillips 66",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"PSX"
+],
+"dereg": [],
+"last10k": "2026-02-20"
+},
+"30": {
+"cik": 1510295,
+"sec_name": "Marathon Petroleum Corp",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"MPC"
+],
+"dereg": [],
+"last10k": "2026-02-26"
+},
+"31": {
+"cik": 913760,
+"sec_name": "StoneX Group Inc.",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"SNEX"
+],
+"dereg": [],
+"last10k": "2025-11-28"
+},
+"32": {
+"cik": 2011492,
+"sec_name_match": "State Farm Insurance Companies Employee Retirement Trust",
+"sec_name": "State Farm Insurance Companies Employee Retirement Trust",
+"exchanges": [],
+"tickers": [],
+"dereg": [],
+"last10k": null,
+"wiki_type": "Private (mutual)",
+"wiki_intro": "State Farm Insurance is a group of mutual insurance companies throughout the United States with corporate headquarters in Bloomington, Illinois. Founded in 1922, it is the largest property, casualty and auto insurance provider in the United States.\n\n"
+},
+"33": {
+"cik": 1026214,
+"sec_name": "FEDERAL HOME LOAN MORTGAGE CORP",
+"exchanges": [
+"OTC",
+"OTC",
+"OTC",
+"OTC",
+"OTC",
+"OTC",
+"OTC",
+"OTC",
+"OTC",
+"OTC",
+"OTC",
+"OTC",
+"OTC",
+"OTC",
+"OTC",
+"OTC",
+"OTC",
+"OTC",
+"OTC",
+"OTC",
+"OTC",
+"OTC",
+"OTC",
+"OTC",
+"OTC"
+],
+"tickers": [
+"FMCC",
+"FREJO",
+"FMCCG",
+"FMCCJ",
+"FMCCL",
+"FMCKL",
+"FMCCS",
+"FMCCO",
+"FMCKN",
+"FREJN",
+"FMCCN",
+"FMCKO",
+"FMCKJ",
+"FMCKM",
+"FREGP",
+"FMCCH",
+"FMCCK",
+"FMCCP",
+"FMCCM",
+"FMCKP",
+"FMCCI",
+"FMCCT",
+"FMCKI",
+"FMCKK",
+"FREJP"
+],
+"dereg": [],
+"last10k": "2026-02-12",
+"wiki_type": "Government-sponsored public company under FHFA conservatorship"
+},
+"34": {
+"cik": 49071,
+"sec_name": "HUMANA INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"HUM"
+],
+"dereg": [],
+"last10k": "2026-02-19"
+},
+"35": {
+"cik": 732717,
+"sec_name": "AT&T INC.",
+"exchanges": [
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"T",
+"TBB",
+"T-PA",
+"T-PC"
+],
+"dereg": [
+{
+"form": "25-NSE",
+"date": "2026-09-08"
+},
+{
+"form": "25-NSE",
+"date": "2026-03-04"
+},
+{
+"form": "25-NSE",
+"date": "2025-12-17"
+},
+{
+"form": "25-NSE",
+"date": "2025-11-18"
+}
+],
+"last10k": "2026-02-09"
+},
+"36": {
+"cik": 886982,
+"sec_name": "GOLDMAN SACHS GROUP INC",
+"exchanges": [
+"NYSE",
+"OTC",
+"NYSE",
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"GS",
+"GSCE",
+"GS-PA",
+"GS-PC",
+"GS-PD"
+],
+"dereg": [],
+"last10k": "2026-02-25"
+},
+"37": {
+"cik": 1166691,
+"sec_name": "COMCAST CORP",
+"exchanges": [
+"Nasdaq",
+"NYSE"
+],
+"tickers": [
+"CMCSA",
+"CCZ"
+],
+"dereg": [
+{
+"form": "25-NSE",
+"date": "2026-09-14"
+}
+],
+"last10k": "2026-02-03"
+},
+"38": {
+"cik": 72971,
+"sec_name": "WELLS FARGO & COMPANY/MN",
+"exchanges": [
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"OTC",
+"NYSE",
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"WFC",
+"WFC-PY",
+"WFC-PL",
+"WFC-PC",
+"WFCNP",
+"WFC-PA",
+"WFC-PD",
+"WFC-PZ"
+],
+"dereg": [],
+"last10k": "2026-02-24"
+},
+"39": {
+"cik": 895421,
+"sec_name": "MORGAN STANLEY",
+"exchanges": [
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"MS",
+"MS-PK",
+"MS-PE",
+"MS-PA",
+"MS-PF",
+"MS-PI",
+"MS-PL",
+"MS-PO",
+"MS-PP",
+"MS-PQ"
+],
+"dereg": [
+{
+"form": "25-NSE",
+"date": "2026-02-23"
+}
+],
+"last10k": "2026-02-19"
+},
+"40": {
+"cik": 1035002,
+"sec_name": "VALERO ENERGY CORP/TX",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"VLO"
+],
+"dereg": [],
+"last10k": "2026-02-25"
+},
+"41": {
+"cik": 1571996,
+"sec_name": "Dell Technologies Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"DELL"
+],
+"dereg": [],
+"last10k": "2026-03-16"
+},
+"42": {
+"cik": 27419,
+"sec_name": "TARGET CORP",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"TGT"
+],
+"dereg": [],
+"last10k": "2026-03-11"
+},
+"43": {
+"cik": 1318605,
+"sec_name": "Tesla, Inc.",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"TSLA"
+],
+"dereg": [],
+"last10k": "2026-01-29"
+},
+"44": {
+"cik": 1744489,
+"sec_name": "Walt Disney Co",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"DIS"
+],
+"dereg": [],
+"last10k": "2025-11-13"
+},
+"45": {
+"cik": 200406,
+"sec_name": "JOHNSON & JOHNSON",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"JNJ"
+],
+"dereg": [],
+"last10k": "2026-02-11"
+},
+"46": {
+"cik": 77476,
+"sec_name": "PEPSICO INC",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"PEP"
+],
+"dereg": [
+{
+"form": "25-NSE",
+"date": "2026-04-27"
+}
+],
+"last10k": "2026-02-03"
+},
+"47": {
+"cik": 12927,
+"sec_name": "BOEING CO",
+"exchanges": [
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"BA",
+"BA-PA"
+],
+"dereg": [],
+"last10k": "2026-01-30"
+},
+"48": {
+"cik": 1090727,
+"sec_name": "UNITED PARCEL SERVICE INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"UPS"
+],
+"dereg": [
+{
+"form": "25-NSE",
+"date": "2025-11-17"
+}
+],
+"last10k": "2026-02-17"
+},
+"49": {
+"cik": 101829,
+"sec_name": "RTX Corp",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"RTX"
+],
+"dereg": [],
+"last10k": "2026-02-06"
+},
+"50": {
+"cik": 1048911,
+"sec_name": "FEDEX CORP",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"FDX"
+],
+"dereg": [
+{
+"form": "25-NSE",
+"date": "2026-05-28"
+},
+{
+"form": "25-NSE",
+"date": "2025-08-05"
+}
+],
+"last10k": "2026-07-20"
+},
+"51": {
+"cik": 80661,
+"sec_name": "PROGRESSIVE CORP/OH/",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"PGR"
+],
+"dereg": [],
+"last10k": "2026-03-02"
+},
+"52": {
+"cik": 60667,
+"sec_name": "LOWES COMPANIES INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"LOW"
+],
+"dereg": [],
+"last10k": "2026-03-23"
+},
+"53": {
+"cik": 1276187,
+"sec_name": "Energy Transfer LP",
+"exchanges": [
+"TXSE",
+"TXSE"
+],
+"tickers": [
+"ET",
+"ET-PI"
+],
+"dereg": [
+{
+"form": "25",
+"date": "2026-09-28"
+}
+],
+"last10k": "2026-02-19"
+},
+"54": {
+"cik": 80424,
+"sec_name": "PROCTER & GAMBLE Co",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"PG"
+],
+"dereg": [
+{
+"form": "25-NSE",
+"date": "2026-08-03"
+}
+],
+"last10k": "2026-08-04"
+},
+"55": {
+"cik": 96021,
+"sec_name": "SYSCO CORP",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"SYY"
+],
+"dereg": [],
+"last10k": "2026-08-21"
+},
+"56": {
+"cik": 4962,
+"sec_name": "AMERICAN EXPRESS CO",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"AXP"
+],
+"dereg": [],
+"last10k": "2026-02-06"
+},
+"57": {
+"cik": 1646972,
+"sec_name": "Albertsons Companies, Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"ACI"
+],
+"dereg": [],
+"last10k": "2026-04-27"
+},
+"58": {
+"cik": 7084,
+"sec_name": "Archer-Daniels-Midland Co",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"ADM"
+],
+"dereg": [
+{
+"form": "25-NSE",
+"date": "2025-09-12"
+}
+],
+"last10k": "2026-02-17"
+},
+"59": {
+"cik": 1099219,
+"sec_name": "METLIFE INC",
+"exchanges": [
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"MET",
+"MET-PA",
+"MET-PE",
+"MET-PF"
+],
+"dereg": [],
+"last10k": "2026-02-19"
+},
+"60": {
+"cik": 860730,
+"sec_name": "HCA Healthcare, Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"HCA"
+],
+"dereg": [],
+"last10k": "2026-02-10"
+},
+"61": {
+"cik": 936468,
+"sec_name": "LOCKHEED MARTIN CORP",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"LMT"
+],
+"dereg": [],
+"last10k": "2026-01-29"
+},
+"62": {
+"cik": 71633,
+"sec_name_match": "NEW YORK LIFE INSURANCE CO",
+"sec_name": "NEW YORK LIFE INSURANCE CO",
+"exchanges": [],
+"tickers": [],
+"dereg": [],
+"last10k": null,
+"wiki_type": "Private",
+"wiki_intro": "New York Life Insurance Company (NYLIC), most commonly known as New York Life, is the second-largest life insurance company and the largest mutual life insurance company in the United States,  and is ranked #69 on the 2025 Fortune 500 list of the largest U.S. corporations by total revenue. In 2025, NYLIC achieved the best possible ratings by the four independent rating companies (Standard & Poor's, AM Best, Moody's and Fitch Ratings). Other New York Life affiliates provide an array of securities products and services, as well as institutional and retail mutual funds."
+},
+"63": {
+"cik": 927628,
+"sec_name": "CAPITAL ONE FINANCIAL CORP",
+"exchanges": [
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"COF",
+"COF-PI",
+"COF-PJ",
+"COF-PK",
+"COF-PL",
+"COF-PN"
+],
+"dereg": [],
+"last10k": "2026-02-19"
+},
+"64": {
+"cik": 899051,
+"sec_name": "ALLSTATE CORP",
+"exchanges": [
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"ALL",
+"ALL-PH",
+"ALL-PB",
+"ALL-PI",
+"ALL-PJ"
+],
+"dereg": [],
+"last10k": "2026-02-20"
+},
+"65": {
+"cik": 18230,
+"sec_name": "CATERPILLAR INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"CAT"
+],
+"dereg": [],
+"last10k": "2026-02-13"
+},
+"66": {
+"cik": 51143,
+"sec_name": "INTERNATIONAL BUSINESS MACHINES CORP",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"IBM"
+],
+"dereg": [
+{
+"form": "25-NSE",
+"date": "2026-11-02"
+},
+{
+"form": "25-NSE",
+"date": "2025-11-07"
+},
+{
+"form": "25-NSE",
+"date": "2025-10-30"
+}
+],
+"last10k": "2026-02-24"
+},
+"67": {
+"cik": 59478,
+"sec_name": "ELI LILLY & Co",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"LLY"
+],
+"dereg": [
+{
+"form": "25-NSE",
+"date": "2026-06-02"
+},
+{
+"form": "25-NSE",
+"date": "2025-06-02"
+}
+],
+"last10k": "2026-02-12"
+},
+"68": {
+"cik": 310158,
+"sec_name": "Merck & Co., Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"MRK"
+],
+"dereg": [
+{
+"form": "25-NSE",
+"date": "2026-10-15"
+}
+],
+"last10k": "2026-02-24"
+},
+"69": {
+"cik": 70696,
+"sec_name_match": "NATIONWIDE CORP",
+"sec_name": "NATIONWIDE CORP",
+"exchanges": [],
+"tickers": [],
+"dereg": [],
+"last10k": null,
+"wiki_type": "Private (mutual)",
+"wiki_intro": "Nationwide Mutual Insurance Company and affiliated companies, commonly shortened to Nationwide, is a group of large U.S. insurance and financial services companies based in Columbus, Ohio. The company also operates regional headquarters in Scottsdale, Arizona and Des Moines, Iowa. Nationwide currently has approximately 24,000 employees, and is ranked 69th in the 2026 Fortune 500 list.\nNationwide Financial Services (NFS), a component of the group, was partially floated on the New York Stock Exchange prior to being repurchased by Nationwide Mutual in 2009. It had owned the majority of NFS common stock since it had gone public in 1997."
+},
+"70": {
+"cik": 1730168,
+"sec_name": "Broadcom Inc.",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"AVGO"
+],
+"dereg": [],
+"last10k": "2025-12-18"
+},
+"71": {
+"cik": 27904,
+"sec_name": "DELTA AIR LINES, INC.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"DAL"
+],
+"dereg": [],
+"last10k": "2026-02-11"
+},
+"72": {
+"cik": 81061,
+"sec_name_match": "PUBLIX SUPER MARKETS INC",
+"sec_name": "PUBLIX SUPER MARKETS INC",
+"exchanges": [],
+"tickers": [],
+"dereg": [],
+"last10k": "2026-03-02",
+"wiki_type": "Private, employee-owned",
+"wiki_intro": "Publix Super Markets, Inc., doing business as Publix, is an employee-owned American supermarket chain headquartered in Lakeland, Florida. Founded in 1930 by George W. Jenkins, Publix is a private corporation that is wholly owned by present and past employees and members of the Jenkins family. Publix operates throughout the Southeastern United States, with locations in Florida (898), Georgia (220), Alabama (97), South Carolina (74), Tennessee (62), North Carolina (66), Virginia (24), and Kentucky (11). Kentucky is the most recent addition to the Publix footprint, with the company's first store in that state having opened on January 10, 2024, in Louisville.\nPublix operates 1,452 store locations across the Southeast. As of May 2026, Publix employs about 260,000 people at its retail locations, cooking schools, corporate offices, nine grocery distribution centers, and eleven manufacturing facilities. The manufacturing facilities produce its dairy, deli, bakery, and other food products. \nThe National Center for Employee Ownership states that Publix has the largest employee stock ownership plan of almost 6,500 organizations in the U.S."
+},
+"73": {
+"cik": 78003,
+"sec_name": "PFIZER INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"PFE"
+],
+"dereg": [],
+"last10k": "2026-02-26"
+},
+"74": {
+"cik": 1177394,
+"sec_name": "TD SYNNEX CORP",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"SNX"
+],
+"dereg": [],
+"last10k": "2026-01-27"
+},
+"75": {
+"cik": 1163165,
+"sec_name": "CONOCOPHILLIPS",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"COP"
+],
+"dereg": [],
+"last10k": "2026-02-17"
+},
+"76": {
+"cik": 1859392,
+"sec_name": "Galaxy Digital Inc.",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"GLXY"
+],
+"dereg": [],
+"last10k": "2026-02-26"
+},
+"77": {
+"cik": 1551152,
+"sec_name": "AbbVie Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"ABBV"
+],
+"dereg": [],
+"last10k": "2026-02-20"
+},
+"78": {
+"cik": 1137774,
+"sec_name": "PRUDENTIAL FINANCIAL INC",
+"exchanges": [
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"PRU",
+"PFH",
+"PRH",
+"PRS"
+],
+"dereg": [],
+"last10k": "2026-02-12"
+},
+"79": {
+"cik": 109198,
+"sec_name": "TJX COMPANIES INC /DE/",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"TJX"
+],
+"dereg": [],
+"last10k": "2026-03-31"
+},
+"80": {
+"cik": 1618673,
+"sec_name": "Performance Food Group Co",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"PFGC"
+],
+"dereg": [],
+"last10k": "2026-08-12"
+},
+"81": {
+"cik": 100517,
+"sec_name": "United Airlines Holdings, Inc.",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"UAL"
+],
+"dereg": [],
+"last10k": "2026-02-12"
+},
+"82": {
+"cik": 1341439,
+"sec_name": "ORACLE CORP",
+"exchanges": [
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"ORCL",
+"ORCL-PD"
+],
+"dereg": [
+{
+"form": "25-NSE",
+"date": "2025-07-10"
+}
+],
+"last10k": "2026-06-22"
+},
+"83": {
+"cik": 858877,
+"sec_name": "CISCO SYSTEMS, INC.",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"CSCO"
+],
+"dereg": [],
+"last10k": "2026-09-02"
+},
+"84": {
+"cik": 47217,
+"sec_name": "HP INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"HPQ"
+],
+"dereg": [],
+"last10k": "2025-12-10"
+},
+"85": {
+"cik": 1091667,
+"sec_name": "CHARTER COMMUNICATIONS, INC. /MO/",
+"exchanges": [
+"Nasdaq",
+"Nasdaq"
+],
+"tickers": [
+"CHTR",
+"CHTRP"
+],
+"dereg": [],
+"last10k": "2026-01-30"
+},
+"86": {
+"cik": 6201,
+"sec_name": "American Airlines Group Inc.",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"AAL"
+],
+"dereg": [],
+"last10k": "2026-02-18"
+},
+"87": {
+"cik": 100493,
+"sec_name": "TYSON FOODS, INC.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"TSN"
+],
+"dereg": [],
+"last10k": "2025-11-10"
+},
+"88": {
+"cik": 50863,
+"sec_name": "INTEL CORP",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"INTC"
+],
+"dereg": [],
+"last10k": "2026-01-23"
+},
+"89": {
+"cik": 1061219,
+"sec_name": "ENTERPRISE PRODUCTS PARTNERS L.P.",
+"exchanges": [
+"NYSE",
+"OTC"
+],
+"tickers": [
+"EPD",
+"EPDU"
+],
+"dereg": [],
+"last10k": "2026-02-27"
+},
+"90": {
+"cik": 1897762,
+"sec_name": "Ingram Micro Holding Corp",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"INGM"
+],
+"dereg": [],
+"last10k": "2026-03-03"
+},
+"91": {
+"cik": 40533,
+"sec_name": "GENERAL DYNAMICS CORP",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"GD"
+],
+"dereg": [],
+"last10k": "2026-01-30"
+},
+"92": {
+"cik": 1543151,
+"sec_name": "Uber Technologies, Inc",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"UBER"
+],
+"dereg": [],
+"last10k": "2026-02-13"
+},
+"93": {
+"cik": null,
+"wiki_type": "Private (Reciprocal inter-insurance exchange)",
+"wiki_intro": "The United Services Automobile Association (USAA) is an American financial services company providing insurance, including personal property and casualty and life insurance, and banking products exclusively to members of the military, veterans and their families. It was founded in 1922 in San Antonio, Texas, by a group of 25 U.S. Army officers as a mechanism for mutual self-insurance, when they were unable to secure auto insurance due to insurer\u2019s inability to accommodate their frequent relocations.\nUSAA is headquartered in northwest San Antonio. USAA Federal Savings Bank, which provides banking services and is one of the largest banks in the United States, is headquartered on a 575-acre (233 ha) campus in Phoenix, Arizona. USAA is ranked 93rd on the Fortune 500. USAA is a pioneer of the concept of direct marketing; most of its business is conducted over the Internet or telephone using employees instead of agents."
+},
+"94": {
+"cik": 1711615,
+"sec_name_match": "TIAA, FSB",
+"sec_name": "TIAA, FSB",
+"exchanges": [],
+"tickers": [],
+"dereg": [],
+"last10k": null,
+"wiki_type": "Non-profit corporation owning subsidiaries for-profit",
+"wiki_intro": "The Teachers Insurance and Annuity Association of America-College Retirement Equities Fund (TIAA, formerly TIAA-CREF) is an American financial services organization that is a private provider of financial retirement services in the academic, research, medical, cultural and governmental fields. TIAA is listed on the Fortune 100 and serves over 5 million active and retired employees participating at more than 15,000 institutions and has $1 trillion in combined assets under management with holdings in more than 50 countries (as of December 31, 2017)."
+},
+"95": {
+"cik": null,
+"wiki_type": "Private",
+"wiki_intro": "Liberty Mutual Insurance Company, often referred to as Liberty Mutual Insurance, is an American diversified global insurer and the sixth-largest property and casualty insurer in the world as of 2021. It ranks 91st on the Fortune 100 list of largest corporations in the United States based on 2025 revenue. Based in Boston, Massachusetts, it employs over 45,000 people in more than 900 locations throughout the world. As of December 31, 2021, Liberty Mutual Insurance had $156.043 billion in consolidated assets, $128.195 billion in consolidated liabilities and $48.2 billion in annual consolidated revenue.\nThe company, founded in 1912, offers a wide range of insurance products and services, including personal automobile, homeowners, renters, workers' compensation, commercial multiple peril, commercial automobile, general liability, global specialty, group disability, fire insurance and surety.\nLiberty Mutual Group owns, wholly or in part, local insurance companies in Brazil, Chile, China (including Hong Kong), Colombia, Ecuador, India, Ireland, Malaysia, Portugal, Peru, Singapore, Spain, Thailand, the United Kingdom, and Vietnam.  (In the UK, Liberty Mutual acts as the insurer for Countrywide Legal Indemnities).\nIn the United States, Liberty Mutual remains a mutual company in which policyholders holding contracts for insurance are considered shareholders in the company. However, Liberty Mutual Group's brand usually operates as a separate entity outside the United States, where a sub"
+},
+"96": {
+"cik": 86312,
+"sec_name": "TRAVELERS COMPANIES, INC.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"TRV"
+],
+"dereg": [],
+"last10k": "2026-02-12"
+},
+"97": {
+"cik": 14272,
+"sec_name": "BRISTOL MYERS SQUIBB CO",
+"exchanges": [
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"BMY",
+"CELG-RI"
+],
+"dereg": [
+{
+"form": "15-12G",
+"date": "2026-03-27"
+}
+],
+"last10k": "2026-02-11"
+},
+"98": {
+"cik": 21344,
+"sec_name": "COCA COLA CO",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"KO"
+],
+"dereg": [
+{
+"form": "25-NSE",
+"date": "2026-09-22"
+}
+],
+"last10k": "2026-02-20"
+},
+"99": {
+"cik": 320187,
+"sec_name": "NIKE, Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"NKE"
+],
+"dereg": [],
+"last10k": "2026-07-15"
+},
+"100": {
+"cik": 225602,
+"sec_name_match": "MASSACHUSETTS MUTUAL LIFE INSURANCE CO",
+"sec_name": "MASSACHUSETTS MUTUAL LIFE INSURANCE CO",
+"exchanges": [],
+"tickers": [],
+"dereg": [],
+"last10k": null,
+"wiki_type": "Private",
+"wiki_intro": "The Massachusetts Mutual Life Insurance Company, also known as MassMutual, is an American life insurance company.\nMassMutual provides financial products such as life insurance, disability income insurance, long term care insurance, and annuities. Major affiliate includes Barings LLC.\nMassMutual ranks at 100 in the 2022 Fortune 500 list of the largest United States corporations by total revenue. The company has revenues of $10.7 billion and assets under management of $312 billion (as of 2022). The company employs more than 7,000 in the United States, and a total of 10,614 internationally."
+},
+"101": {
+"cik": 40545,
+"sec_name": "GENERAL ELECTRIC CO",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"GE"
+],
+"dereg": [],
+"last10k": "2026-01-29"
+},
+"102": {
+"cik": 315189,
+"sec_name": "DEERE & CO",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"DE"
+],
+"dereg": [],
+"last10k": "2025-12-18"
+},
+"103": {
+"cik": 1581990,
+"sec_name": "PLAINS GP HOLDINGS LP",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"PAGP"
+],
+"dereg": [],
+"last10k": "2026-02-27"
+},
+"104": {
+"cik": 1179929,
+"sec_name": "MOLINA HEALTHCARE, INC.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"MOH"
+],
+"dereg": [],
+"last10k": "2026-02-10"
+},
+"105": {
+"cik": 1065280,
+"sec_name": "NETFLIX INC",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"NFLX"
+],
+"dereg": [],
+"last10k": "2026-01-23"
+},
+"106": {
+"cik": 97745,
+"sec_name": "THERMO FISHER SCIENTIFIC INC.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"TMO"
+],
+"dereg": [
+{
+"form": "25-NSE",
+"date": "2026-01-23"
+},
+{
+"form": "25-NSE",
+"date": "2026-01-21"
+}
+],
+"last10k": "2026-02-26"
+},
+"107": {
+"cik": 1800,
+"sec_name": "ABBOTT LABORATORIES",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"ABT"
+],
+"dereg": [],
+"last10k": "2026-02-20"
+},
+"108": {
+"cik": 804328,
+"sec_name": "QUALCOMM INC/DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"QCOM"
+],
+"dereg": [],
+"last10k": "2026-11-04"
+},
+"109": {
+"cik": 1302744,
+"sec_name_match": "NORTHWESTERN MUTUAL TRUST CO",
+"sec_name": "NORTHWESTERN MUTUAL TRUST CO",
+"exchanges": [],
+"tickers": [],
+"dereg": [],
+"last10k": null,
+"wiki_type": "Private",
+"wiki_intro": "Northwestern Mutual is an American financial services mutual organization headquartered in Milwaukee, Wisconsin. The financial security company provides consultation on wealth and asset income protection, education planning, retirement planning, investment advisory services, Financial Planning trust and private client services, estate planning and business planning. Its products include life insurance, permanent life insurance, disability income, and long-term care insurance; annuities; investments; and investment advisory products and services. Northwestern Mutual ranks No. 110 on the Fortune 500 list of the largest United States corporations by total revenue and is in the top 30 by assets held. The firm distributes a portion of its earnings to eligible policyholders as annual dividends. The hiring and sales policies and practices of Northwestern Mutual have attracted controversy."
+},
+"110": {
+"cik": 36104,
+"sec_name": "US BANCORP \\DE\\",
+"exchanges": [
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"USB",
+"USB-PA",
+"USB-PH",
+"USB-PP",
+"USB-PQ",
+"USB-PR",
+"USB-PS"
+],
+"dereg": [],
+"last10k": "2026-02-23"
+},
+"111": {
+"cik": 29534,
+"sec_name": "DOLLAR GENERAL CORP",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"DG"
+],
+"dereg": [],
+"last10k": "2026-03-20"
+},
+"112": {
+"cik": 1133421,
+"sec_name": "NORTHROP GRUMMAN CORP /DE/",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"NOC"
+],
+"dereg": [],
+"last10k": "2026-01-27"
+},
+"113": {
+"cik": 764478,
+"sec_name": "BEST BUY CO INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"BBY"
+],
+"dereg": [],
+"last10k": "2026-03-18"
+},
+"114": {
+"cik": 1108524,
+"sec_name": "Salesforce, Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"CRM"
+],
+"dereg": [],
+"last10k": "2026-03-02"
+},
+"115": {
+"cik": 1390777,
+"sec_name": "Bank of New York Mellon Corp",
+"exchanges": [
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"BNY",
+"BNY-PK"
+],
+"dereg": [],
+"last10k": "2026-02-25"
+},
+"116": {
+"cik": 773840,
+"sec_name": "HONEYWELL INTERNATIONAL INC",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"HON"
+],
+"dereg": [
+{
+"form": "25-NSE",
+"date": "2026-04-10"
+}
+],
+"last10k": "2026-02-17"
+},
+"117": {
+"cik": 1413329,
+"sec_name": "Philip Morris International Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"PM"
+],
+"dereg": [
+{
+"form": "25-NSE",
+"date": "2026-08-03"
+},
+{
+"form": "25-NSE",
+"date": "2026-03-03"
+},
+{
+"form": "25-NSE",
+"date": "2026-02-25"
+},
+{
+"form": "25-NSE",
+"date": "2025-08-11"
+}
+],
+"last10k": "2026-02-06"
+},
+"118": {
+"cik": 1138118,
+"sec_name": "CBRE GROUP, INC.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"CBRE"
+],
+"dereg": [],
+"last10k": "2026-02-12"
+},
+"119": {
+"cik": 1403161,
+"sec_name": "VISA INC.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"V"
+],
+"dereg": [
+{
+"form": "25-NSE",
+"date": "2026-06-15"
+}
+],
+"last10k": "2026-11-05"
+},
+"120": {
+"cik": 1751788,
+"sec_name": "DOW INC.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"DOW"
+],
+"dereg": [],
+"last10k": "2026-02-03"
+},
+"121": {
+"cik": 1665918,
+"sec_name": "US Foods Holding Corp.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"USFD"
+],
+"dereg": [],
+"last10k": "2026-02-12"
+},
+"122": {
+"cik": 1103982,
+"sec_name": "Mondelez International, Inc.",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"MDLZ"
+],
+"dereg": [],
+"last10k": "2026-02-04"
+},
+"123": {
+"cik": 1023128,
+"sec_name": "LITHIA MOTORS INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"LAD"
+],
+"dereg": [],
+"last10k": "2026-02-25"
+},
+"124": {
+"cik": 1996810,
+"sec_name": "GE Vernova Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"GEV"
+],
+"dereg": [],
+"last10k": "2026-01-29"
+},
+"125": {
+"cik": 723125,
+"sec_name": "MICRON TECHNOLOGY INC",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"MU"
+],
+"dereg": [],
+"last10k": "2026-10-09"
+},
+"126": {
+"cik": 1437107,
+"sec_name_match": "Warner Bros. Discovery, Inc.",
+"sec_name": "Warner Bros. Discovery, Inc.",
+"exchanges": [],
+"tickers": [],
+"dereg": [
+{
+"form": "15-15D",
+"date": "2026-10-16"
+},
+{
+"form": "15-15D",
+"date": "2026-10-16"
+},
+{
+"form": "15-15D",
+"date": "2026-10-16"
+},
+{
+"form": "15-15D",
+"date": "2026-10-16"
+}
+],
+"last10k": "2026-02-27",
+"wiki_type": "Public",
+"wiki_intro": "Warner Bros. Discovery, Inc. was an American multinational mass media and entertainment conglomerate headquartered in New York City. It was formed on April 8, 2022, by the merger of Discovery, Inc. with AT&T subsidiary WarnerMedia, with the latter being the successor of Kinney National Company and Time Inc.\nWarner Bros. Discovery operated via two divisions: Streaming & Studios and Global Linear Networks. Streaming & Studios included the flagship Warner Bros. studios, HBO, DC Entertainment, and streaming services such as HBO Max and Discovery+. Global Linear Networks largely included advertising-supported cable networks. Those networks were inherited from its predecessors Discovery (such as the Discovery Channel among others), Scripps Networks Interactive (such as HGTV among others), and Turner Broadcasting System (such as CNN, TBS, and TNT among others). Warner Bros. Discovery International was also included in the division, which managed broadcasting operations outside of the United States.\nIn June 2025, Warner Bros. Discovery announced plans to spin off the less-profitable Global Linear Networks division, and its debt\u2013 into a separate company called Discovery Global, retaining the more profitable Streaming & Studios division as Warner Bros. However, on October 21, 2025, the company changed course and was put up for sale, resulting in a bidding war that involved Paramount Skydance, Comcast, and Netflix. In December 2025, Netflix won the bidding war to buy the Streaming & Stu"
+},
+"127": {
+"cik": 829224,
+"sec_name": "STARBUCKS CORP",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"SBUX"
+],
+"dereg": [],
+"last10k": "2025-11-14"
+},
+"128": {
+"cik": 789460,
+"sec_name": "WORLD KINECT CORP",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"WKC"
+],
+"dereg": [],
+"last10k": "2026-02-24"
+},
+"129": {
+"cik": 318154,
+"sec_name": "AMGEN INC",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"AMGN"
+],
+"dereg": [
+{
+"form": "25-NSE",
+"date": "2026-02-24"
+}
+],
+"last10k": "2026-02-13"
+},
+"130": {
+"cik": 823277,
+"sec_name_match": "CHS INC (CHSCP, CHSCO, CHSCN, CHSCM, CHSCL)",
+"sec_name": "CHS INC",
+"exchanges": [
+"Nasdaq",
+"Nasdaq",
+"Nasdaq",
+"Nasdaq",
+"Nasdaq"
+],
+"tickers": [
+"CHSCP",
+"CHSCL",
+"CHSCM",
+"CHSCN",
+"CHSCO"
+],
+"dereg": [],
+"last10k": "2026-11-04",
+"wiki_type": "Public",
+"wiki_intro": "CHS Inc. is a Fortune 500 secondary cooperative owned by United States agricultural cooperatives, farmers, ranchers, and thousands of preferred stock holders. Based in Inver Grove Heights, Minnesota, CHS owns and operates various food processing and wholesale, farm supply, financial services and retail businesses. It also distributes Cenex brand fuel in 19 midwestern and western states as one of North America's largest c-store networks. It is a co-owner (with Mitsui & Co.) of Ventura Foods, a vegetable oil processor.\nCHS is ranked 1st on the National Cooperative Bank Co-op 100 list of mutuals and cooperatives (ranked by 2012 revenue), and 96th (by 2017 revenue) in Fortune 500's 2018 list of U.S. corporations."
+},
+"131": {
+"cik": 2488,
+"sec_name": "ADVANCED MICRO DEVICES INC",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"AMD"
+],
+"dereg": [],
+"last10k": "2026-02-04"
+},
+"132": {
+"cik": 1834584,
+"sec_name": "Coupang, Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"CPNG"
+],
+"dereg": [],
+"last10k": "2026-02-26"
+},
+"133": {
+"cik": 1645590,
+"sec_name": "Hewlett Packard Enterprise Co",
+"exchanges": [
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"HPE",
+"HPE-PC"
+],
+"dereg": [],
+"last10k": "2025-12-18"
+},
+"134": {
+"cik": 882184,
+"sec_name": "HORTON D R INC /DE/",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"DHI"
+],
+"dereg": [],
+"last10k": "2025-11-19"
+},
+"135": {
+"cik": 920760,
+"sec_name": "LENNAR CORP /NEW/",
+"exchanges": [
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"LEN",
+"LEN-B"
+],
+"dereg": [],
+"last10k": "2026-01-28"
+},
+"136": {
+"cik": 713676,
+"sec_name": "PNC FINANCIAL SERVICES GROUP, INC.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"PNC"
+],
+"dereg": [],
+"last10k": "2026-02-20"
+},
+"137": {
+"cik": 26172,
+"sec_name": "CUMMINS INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"CMI"
+],
+"dereg": [],
+"last10k": "2026-02-10"
+},
+"138": {
+"cik": 1039684,
+"sec_name": "ONEOK INC /NEW/",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"OKE"
+],
+"dereg": [
+{
+"form": "15-12G",
+"date": "2026-09-28"
+},
+{
+"form": "25-NSE",
+"date": "2026-09-18"
+}
+],
+"last10k": "2026-02-24"
+},
+"139": {
+"cik": 1633917,
+"sec_name": "PayPal Holdings, Inc.",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"PYPL"
+],
+"dereg": [],
+"last10k": "2026-02-03"
+},
+"140": {
+"cik": null,
+"wiki_type": "Mutual",
+"wiki_intro": "GuideWell, formally GuideWell Mutual Holding Corporation (holding company for Florida Blue), is a mutual insurance holding company primarily focused on health insurance in Florida. It was created in 2013 by a reorganization initiated by Florida Blue, a member company of the Blue Cross Blue Shield Association.By health insurance premiums written, it is 7th largest in providing health insurance in the United States with about $30b in health insurance sales as of 2024."
+},
+"141": {
+"cik": 1141391,
+"sec_name": "Mastercard Inc",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"MA"
+],
+"dereg": [],
+"last10k": "2026-02-11"
+},
+"142": {
+"cik": 73309,
+"sec_name": "NUCOR CORP",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"NUE"
+],
+"dereg": [],
+"last10k": "2026-02-25"
+},
+"143": {
+"cik": 1858681,
+"sec_name": "Apollo Global Management, Inc.",
+"exchanges": [
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"APO",
+"APOS"
+],
+"dereg": [
+{
+"form": "15-12G",
+"date": "2026-08-11"
+},
+{
+"form": "25-NSE",
+"date": "2026-07-31"
+}
+],
+"last10k": "2026-02-25"
+},
+"144": {
+"cik": 1019849,
+"sec_name": "PENSKE AUTOMOTIVE GROUP, INC.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"PAG"
+],
+"dereg": [],
+"last10k": "2026-02-27"
+},
+"145": {
+"cik": 1326160,
+"sec_name": "Duke Energy CORP",
+"exchanges": [
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"DUK",
+"DUKB",
+"DUK-PA",
+"DUKU"
+],
+"dereg": [],
+"last10k": "2026-02-26"
+},
+"146": {
+"cik": 1020859,
+"sec_name": "UNITED NATURAL FOODS INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"UNFI"
+],
+"dereg": [],
+"last10k": "2026-09-14"
+},
+"147": {
+"cik": 2011641,
+"sec_name": "Ferguson Enterprises Inc. /DE/",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"FERG"
+],
+"dereg": [],
+"last10k": "2025-09-26"
+},
+"148": {
+"cik": 7536,
+"sec_name": "ARROW ELECTRONICS, INC.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"ARW"
+],
+"dereg": [],
+"last10k": "2026-02-11"
+},
+"149": {
+"cik": 1013871,
+"sec_name": "NRG ENERGY, INC.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"NRG"
+],
+"dereg": [],
+"last10k": "2026-02-24"
+},
+"150": {
+"cik": 92230,
+"sec_name": "TRUIST FINANCIAL CORP",
+"exchanges": [
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"TFC",
+"TFC-PI",
+"TFC-PO",
+"TFC-PR"
+],
+"dereg": [],
+"last10k": "2026-02-24"
+},
+"151": {
+"cik": 898293,
+"sec_name": "JABIL INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"JBL"
+],
+"dereg": [],
+"last10k": "2026-10-23"
+},
+"152": {
+"cik": 92122,
+"sec_name": "SOUTHERN CO",
+"exchanges": [
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"SO",
+"SOJC",
+"SOJD",
+"SOJE",
+"SOJF",
+"SOMN"
+],
+"dereg": [],
+"last10k": "2026-02-19"
+},
+"153": {
+"cik": 882095,
+"sec_name": "GILEAD SCIENCES, INC.",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"GILD"
+],
+"dereg": [],
+"last10k": "2026-02-24"
+},
+"154": {
+"cik": 1534504,
+"sec_name": "PBF Energy Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"PBF"
+],
+"dereg": [],
+"last10k": "2026-02-12"
+},
+"155": {
+"cik": null
+},
+"156": {
+"cik": 1404912,
+"sec_name": "KKR & Co. Inc.",
+"exchanges": [
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"KKR",
+"KKR-PD",
+"KKRS",
+"KKRT"
+],
+"dereg": [],
+"last10k": "2026-02-27"
+},
+"157": {
+"cik": 1050915,
+"sec_name": "QUANTA SERVICES, INC.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"PWR"
+],
+"dereg": [],
+"last10k": "2026-02-19"
+},
+"158": {
+"cik": 75362,
+"sec_name": "PACCAR INC",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"PCAR"
+],
+"dereg": [],
+"last10k": "2026-02-18"
+},
+"159": {
+"cik": 2046386,
+"sec_name": "Medline Inc.",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"MDLN"
+],
+"dereg": [],
+"last10k": "2026-02-25"
+},
+"160": {
+"cik": 6951,
+"sec_name": "APPLIED MATERIALS INC /DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"AMAT"
+],
+"dereg": [],
+"last10k": "2025-12-12"
+},
+"161": {
+"cik": 874766,
+"sec_name": "HARTFORD INSURANCE GROUP, INC.",
+"exchanges": [
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"HIG",
+"HIG-PG"
+],
+"dereg": [],
+"last10k": "2026-02-20"
+},
+"162": {
+"cik": 1170010,
+"sec_name": "CARMAX INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"KMX"
+],
+"dereg": [],
+"last10k": "2026-04-15"
+},
+"163": {
+"cik": 92380,
+"sec_name": "SOUTHWEST AIRLINES CO",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"LUV"
+],
+"dereg": [],
+"last10k": "2026-02-05"
+},
+"164": {
+"cik": 1701605,
+"sec_name": "Baker Hughes Co",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"BKR"
+],
+"dereg": [],
+"last10k": "2026-02-05"
+},
+"165": {
+"cik": 316709,
+"sec_name": "SCHWAB CHARLES CORP",
+"exchanges": [
+"NYSE",
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"SCHW",
+"SCHW-PD",
+"SCHW-PJ"
+],
+"dereg": [],
+"last10k": "2026-02-25"
+},
+"166": {
+"cik": 350698,
+"sec_name": "AUTONATION, INC.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"AN"
+],
+"dereg": [],
+"last10k": "2026-02-12"
+},
+"167": {
+"cik": 753308,
+"sec_name": "NEXTERA ENERGY INC",
+"exchanges": [
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"NEE",
+"NEE-PN",
+"NEE-PS",
+"NEE-PT",
+"NEE-PU",
+"NEE-PV",
+"NEE-PW"
+],
+"dereg": [
+{
+"form": "25-NSE",
+"date": "2025-09-02"
+}
+],
+"last10k": "2026-02-13"
+},
+"168": {
+"cik": 62709,
+"sec_name": "MARSH & MCLENNAN COMPANIES, INC.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"MRSH"
+],
+"dereg": [
+{
+"form": "25-NSE",
+"date": "2026-09-21"
+}
+],
+"last10k": "2026-02-09"
+},
+"169": {
+"cik": 1075531,
+"sec_name": "Booking Holdings Inc.",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"BKNG"
+],
+"dereg": [],
+"last10k": "2026-02-18"
+},
+"170": {
+"cik": 63908,
+"sec_name": "MCDONALDS CORP",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"MCD"
+],
+"dereg": [],
+"last10k": "2026-02-24"
+},
+"171": {
+"cik": 1915657,
+"sec_name": "HF Sinclair Corp",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"DINO"
+],
+"dereg": [],
+"last10k": "2026-02-27"
+},
+"172": {
+"cik": 5272,
+"sec_name": "AMERICAN INTERNATIONAL GROUP, INC.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"AIG"
+],
+"dereg": [],
+"last10k": "2026-02-12"
+},
+"173": {
+"cik": 797468,
+"sec_name": "OCCIDENTAL PETROLEUM CORP /DE/",
+"exchanges": [
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"OXY",
+"OXY-WT"
+],
+"dereg": [],
+"last10k": "2026-02-18"
+},
+"174": {
+"cik": 1048286,
+"sec_name": "MARRIOTT INTERNATIONAL INC /MD/",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"MAR"
+],
+"dereg": [],
+"last10k": "2026-02-10"
+},
+"175": {
+"cik": 1037976,
+"sec_name": "JONES LANG LASALLE INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"JLL"
+],
+"dereg": [],
+"last10k": "2026-02-19"
+},
+"176": {
+"cik": 51434,
+"sec_name": "INTERNATIONAL PAPER CO /NEW/",
+"exchanges": [
+"NYSE",
+"OTC"
+],
+"tickers": [
+"IP",
+"INPAP"
+],
+"dereg": [],
+"last10k": "2026-02-27"
+},
+"177": {
+"cik": 831259,
+"sec_name": "FREEPORT-MCMORAN INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"FCX"
+],
+"dereg": [],
+"last10k": "2026-02-13"
+},
+"178": {
+"cik": 1868275,
+"sec_name": "Constellation Energy Corp",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"CEG"
+],
+"dereg": [],
+"last10k": "2026-02-24"
+},
+"179": {
+"cik": 823768,
+"sec_name": "WASTE MANAGEMENT INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"WM"
+],
+"dereg": [],
+"last10k": "2026-02-09"
+},
+"180": {
+"cik": 1335258,
+"sec_name": "Live Nation Entertainment, Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"LYV"
+],
+"dereg": [],
+"last10k": "2026-02-19"
+},
+"181": {
+"cik": 310764,
+"sec_name": "STRYKER CORP",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"SYK"
+],
+"dereg": [],
+"last10k": "2026-02-11"
+},
+"182": {
+"cik": 935703,
+"sec_name": "DOLLAR TREE, INC.",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"DLTR"
+],
+"dereg": [],
+"last10k": "2026-03-16"
+},
+"183": {
+"cik": 66740,
+"sec_name": "3M CO",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"MMM"
+],
+"dereg": [],
+"last10k": "2026-02-03"
+},
+"184": {
+"cik": 1637459,
+"sec_name": "Kraft Heinz Co",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"KHC"
+],
+"dereg": [
+{
+"form": "25",
+"date": "2026-09-08"
+}
+],
+"last10k": "2026-02-12"
+},
+"185": {
+"cik": 1004980,
+"sec_name": "PG&E Corp",
+"exchanges": [
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"PCG",
+"PCG-PE",
+"PCG-PD",
+"PCG-PC",
+"PCG-PH",
+"PCG-PG",
+"PCG-PI",
+"PCG-PA",
+"PCG-PB",
+"PCG-PX"
+],
+"dereg": [],
+"last10k": "2026-02-12"
+},
+"186": {
+"cik": 313616,
+"sec_name": "DANAHER CORP /DE/",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"DHR"
+],
+"dereg": [
+{
+"form": "25-NSE",
+"date": "2026-09-30"
+},
+{
+"form": "25-NSE",
+"date": "2026-03-18"
+}
+],
+"last10k": "2026-02-24"
+},
+"187": {
+"cik": 100885,
+"sec_name": "UNION PACIFIC CORP",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"UNP"
+],
+"dereg": [],
+"last10k": "2026-02-06"
+},
+"188": {
+"cik": 40987,
+"sec_name": "GENUINE PARTS CO",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"GPC"
+],
+"dereg": [],
+"last10k": "2026-02-20"
+},
+"189": {
+"cik": 1109357,
+"sec_name": "EXELON CORP",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"EXC"
+],
+"dereg": [],
+"last10k": "2026-02-12"
+},
+"190": {
+"cik": 2012383,
+"sec_name": "BlackRock, Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"BLK"
+],
+"dereg": [],
+"last10k": "2026-02-25"
+},
+"191": {
+"cik": 1512673,
+"sec_name": "Block, Inc.",
+"exchanges": [
+"NYSE",
+"OTC"
+],
+"tickers": [
+"XYZ",
+"BSQKZ"
+],
+"dereg": [],
+"last10k": "2026-02-26"
+},
+"192": {
+"cik": 796343,
+"sec_name": "ADOBE INC.",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"ADBE"
+],
+"dereg": [],
+"last10k": "2026-01-15"
+},
+"193": {
+"cik": 898174,
+"sec_name": "REINSURANCE GROUP OF AMERICA INC",
+"exchanges": [
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"RGA",
+"RZC"
+],
+"dereg": [
+{
+"form": "25-NSE",
+"date": "2026-06-15"
+}
+],
+"last10k": "2026-02-20"
+},
+"194": {
+"cik": 89800,
+"sec_name": "SHERWIN WILLIAMS CO",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"SHW"
+],
+"dereg": [],
+"last10k": "2026-02-19"
+},
+"195": {
+"cik": 929008,
+"sec_name": "WESCO INTERNATIONAL INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"WCC"
+],
+"dereg": [
+{
+"form": "25-NSE",
+"date": "2025-06-23"
+}
+],
+"last10k": "2026-02-13"
+},
+"196": {
+"cik": 842162,
+"sec_name": "LEAR CORP",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"LEA"
+],
+"dereg": [],
+"last10k": "2026-02-13"
+},
+"197": {
+"cik": 1601712,
+"sec_name": "Synchrony Financial",
+"exchanges": [
+"NYSE",
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"SYF",
+"SYF-PA",
+"SYF-PB"
+],
+"dereg": [],
+"last10k": "2026-02-06"
+},
+"198": {
+"cik": 820313,
+"sec_name": "AMPHENOL CORP /DE/",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"APH"
+],
+"dereg": [],
+"last10k": "2026-02-11"
+},
+"199": {
+"cik": 745732,
+"sec_name": "ROSS STORES, INC.",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"ROST"
+],
+"dereg": [],
+"last10k": "2026-03-31"
+},
+"200": {
+"cik": 1164727,
+"sec_name": "NEWMONT Corp /DE/",
+"exchanges": [
+"NYSE",
+"OTC"
+],
+"tickers": [
+"NEM",
+"NEMCL"
+],
+"dereg": [],
+"last10k": "2026-02-19"
+},
+"201": {
+"cik": 821189,
+"sec_name": "EOG RESOURCES INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"EOG"
+],
+"dereg": [],
+"last10k": "2026-02-24"
+},
+"202": {
+"cik": 93751,
+"sec_name": "STATE STREET CORP",
+"exchanges": [
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"STT",
+"STT-PG"
+],
+"dereg": [],
+"last10k": "2026-02-19"
+},
+"203": {
+"cik": 794367,
+"sec_name": "Macy's, Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"M"
+],
+"dereg": [],
+"last10k": "2026-03-27"
+},
+"204": {
+"cik": 1031203,
+"sec_name": "GROUP 1 AUTOMOTIVE INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"GPI"
+],
+"dereg": [],
+"last10k": "2026-02-13"
+},
+"205": {
+"cik": 1402057,
+"sec_name": "CDW Corp",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"CDW"
+],
+"dereg": [],
+"last10k": "2026-02-20"
+},
+"206": {
+"cik": 8858,
+"sec_name": "AVNET INC",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"AVT"
+],
+"dereg": [],
+"last10k": "2026-08-14"
+},
+"207": {
+"cik": 45012,
+"sec_name": "HALLIBURTON CO",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"HAL"
+],
+"dereg": [],
+"last10k": "2026-02-06"
+},
+"208": {
+"cik": 1375365,
+"sec_name": "Super Micro Computer, Inc.",
+"exchanges": [
+"Nasdaq",
+"Nasdaq"
+],
+"tickers": [
+"SMCI",
+"SMCIP"
+],
+"dereg": [],
+"last10k": "2026-08-31"
+},
+"209": {
+"cik": 4904,
+"sec_name": "AMERICAN ELECTRIC POWER CO INC",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"AEP"
+],
+"dereg": [],
+"last10k": "2026-02-12"
+},
+"210": {
+"cik": 202058,
+"sec_name": "L3HARRIS TECHNOLOGIES, INC. /DE/",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"LHX"
+],
+"dereg": [],
+"last10k": "2026-02-12"
+},
+"211": {
+"cik": 10795,
+"sec_name": "BECTON DICKINSON & CO",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"BDX"
+],
+"dereg": [
+{
+"form": "25-NSE",
+"date": "2026-06-04"
+},
+{
+"form": "25-NSE",
+"date": "2025-08-13"
+}
+],
+"last10k": "2025-11-25"
+},
+"212": {
+"cik": 1783180,
+"sec_name": "CARRIER GLOBAL Corp",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"CARR"
+],
+"dereg": [],
+"last10k": "2026-02-05"
+},
+"213": {
+"cik": 1531152,
+"sec_name": "BJ's Wholesale Club Holdings, Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"BJ"
+],
+"dereg": [],
+"last10k": "2026-03-12"
+},
+"214": {
+"cik": 70318,
+"sec_name": "TENET HEALTHCARE CORP",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"THC"
+],
+"dereg": [],
+"last10k": "2026-02-17"
+},
+"215": {
+"cik": 798354,
+"sec_name": "FISERV INC",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"FISV"
+],
+"dereg": [
+{
+"form": "25",
+"date": "2025-11-10"
+},
+{
+"form": "25-NSE",
+"date": "2025-07-01"
+}
+],
+"last10k": "2026-02-19"
+},
+"216": {
+"cik": 1058290,
+"sec_name": "COGNIZANT TECHNOLOGY SOLUTIONS CORP",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"CTSH"
+],
+"dereg": [],
+"last10k": "2026-02-12"
+},
+"217": {
+"cik": 1932393,
+"sec_name": "GE HealthCare Technologies Inc.",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"GEHC"
+],
+"dereg": [],
+"last10k": "2026-02-04"
+},
+"218": {
+"cik": 8670,
+"sec_name": "AUTOMATIC DATA PROCESSING INC",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"ADP"
+],
+"dereg": [],
+"last10k": "2026-08-05"
+},
+"219": {
+"cik": 21665,
+"sec_name": "COLGATE PALMOLIVE CO",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"CL"
+],
+"dereg": [
+{
+"form": "25-NSE",
+"date": "2026-03-06"
+}
+],
+"last10k": "2026-02-23"
+},
+"220": {
+"cik": 1690820,
+"sec_name": "CARVANA CO.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"CVNA"
+],
+"dereg": [],
+"last10k": "2026-02-18"
+},
+"221": {
+"cik": 764180,
+"sec_name": "ALTRIA GROUP, INC.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"MO"
+],
+"dereg": [
+{
+"form": "25-NSE",
+"date": "2025-06-16"
+}
+],
+"last10k": "2026-02-25"
+},
+"222": {
+"cik": 885725,
+"sec_name": "BOSTON SCIENTIFIC CORP",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"BSX"
+],
+"dereg": [],
+"last10k": "2026-02-17"
+},
+"223": {
+"cik": 3570,
+"sec_name": "Cheniere Energy, Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"LNG"
+],
+"dereg": [],
+"last10k": "2026-02-26"
+},
+"224": {
+"cik": 76334,
+"sec_name": "Parker-Hannifin Corp",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"PH"
+],
+"dereg": [],
+"last10k": "2026-08-21"
+},
+"225": {
+"cik": 55785,
+"sec_name": "KIMBERLY CLARK CORP",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"KMB"
+],
+"dereg": [],
+"last10k": "2026-02-12"
+},
+"226": {
+"cik": null,
+"wiki_type": "Private",
+"wiki_intro": "American Family Mutual Insurance Company, also abbreviated as AmFam, is an American private mutual company headquartered in Madison, Wisconsin. It focuses on property, casualty, and auto insurance, and also offers commercial insurance, life, health, and homeowners coverage as well as investment and retirement-planning products. The company is listed in the Fortune 500, with reported revenues of over $9.5 billion in 2017."
+},
+"227": {
+"cik": 40704,
+"sec_name": "GENERAL MILLS INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"GIS"
+],
+"dereg": [
+{
+"form": "25-NSE",
+"date": "2026-01-15"
+},
+{
+"form": "25-NSE",
+"date": "2025-11-18"
+}
+],
+"last10k": "2026-07-01"
+},
+"228": {
+"cik": 827052,
+"sec_name": "EDISON INTERNATIONAL",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"EIX"
+],
+"dereg": [],
+"last10k": "2026-02-18"
+},
+"229": {
+"cik": 866787,
+"sec_name": "AUTOZONE INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"AZO"
+],
+"dereg": [],
+"last10k": "2026-10-26"
+},
+"230": {
+"cik": 820027,
+"sec_name": "AMERIPRISE FINANCIAL INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"AMP"
+],
+"dereg": [],
+"last10k": "2026-02-19"
+},
+"231": {
+"cik": 896878,
+"sec_name": "INTUIT INC.",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"INTU"
+],
+"dereg": [],
+"last10k": "2026-09-09"
+},
+"232": {
+"cik": 901849,
+"sec_name_match": "GUARDIAN LIFE INSURANCE CO OF AMERICA",
+"sec_name": "GUARDIAN LIFE INSURANCE CO OF AMERICA",
+"exchanges": [],
+"tickers": [],
+"dereg": [],
+"last10k": null,
+"wiki_type": "Mutual",
+"wiki_intro": "The Guardian Life Insurance Company of America is an American insurance company and one of the largest mutual life insurance companies in the world. Based in Manhattan, it has approximately 8,000 employees in the United States, and a network of over 3,000 financial representatives in more than 70 agencies nationwide. As of 2018, it ranks 239th on the Fortune 500 list of largest American corporations by revenue. In 2015, Guardian reported the highest earnings in its 155-year history with $7.3 billion in capital and $1.5 billion in operating costs. Founded in Manhattan in 1860, the company offers life insurance, disability income insurance, annuities, investments, and dental and vision insurance coverage."
+},
+"233": {
+"cik": 764065,
+"sec_name": "CLEVELAND-CLIFFS INC.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"CLF"
+],
+"dereg": [],
+"last10k": "2026-02-09"
+},
+"234": {
+"cik": 1323468,
+"sec_name": "GLOBAL PARTNERS LP",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"GLP"
+],
+"dereg": [
+{
+"form": "15-12G",
+"date": "2026-08-10"
+},
+{
+"form": "25-NSE",
+"date": "2026-07-30"
+}
+],
+"last10k": "2026-02-27"
+},
+"235": {
+"cik": 1584509,
+"sec_name": "Aramark",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"ARMK"
+],
+"dereg": [],
+"last10k": "2025-11-25"
+},
+"236": {
+"cik": 1889539,
+"sec_name": "Corebridge Financial, Inc.",
+"exchanges": [
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"CRBG",
+"CRBD"
+],
+"dereg": [],
+"last10k": "2026-02-11"
+},
+"237": {
+"cik": 60086,
+"sec_name": "LOEWS CORP",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"L"
+],
+"dereg": [],
+"last10k": "2026-02-10"
+},
+"238": {
+"cik": 707549,
+"sec_name": "LAM RESEARCH CORP",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"LRCX"
+],
+"dereg": [],
+"last10k": "2026-08-07"
+},
+"239": {
+"cik": 42582,
+"sec_name": "GOODYEAR TIRE & RUBBER CO /OH/",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"GT"
+],
+"dereg": [],
+"last10k": "2026-02-10"
+},
+"240": {
+"cik": 1094010,
+"sec_name_match": "PACIFIC LIFE & ANNUITY CO",
+"sec_name": "PACIFIC LIFE & ANNUITY CO",
+"exchanges": [],
+"tickers": [],
+"dereg": [],
+"last10k": null,
+"wiki_type": "Mutual Holding Company",
+"wiki_intro": "Pacific Life Insurance Company is an American insurance company."
+},
+"241": {
+"cik": 1964189,
+"sec_name_match": "Auto-Owners Insurance Co",
+"sec_name": "Auto-Owners Insurance Co",
+"exchanges": [],
+"tickers": [],
+"dereg": [],
+"last10k": null,
+"wiki_type": "Mutual (main company)",
+"wiki_intro": "Auto-Owners Insurance Group is a mutual insurance company that provides life, home, car and business insurance. Its policies are sold exclusively through local and independent insurance agents within their 26 operating states.\n\n"
+},
+"242": {
+"cik": 1180181,
+"sec_name_match": "PETER KIEWIT SONS LP",
+"sec_name": "PETER KIEWIT SONS LP",
+"exchanges": [],
+"tickers": [],
+"dereg": [],
+"last10k": null,
+"wiki_type": "Private",
+"wiki_intro": "Kiewit Corporation is an American construction company based in Omaha, Nebraska, and founded in 1884. It was ranked 247th on the Fortune 500 list in 2025. Privately held, it is one of the largest construction and engineering organizations in North America. It is an employee-owned company.\n\n"
+},
+"243": {
+"cik": 59558,
+"sec_name": "LINCOLN NATIONAL CORP",
+"exchanges": [
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"LNC",
+"LNC-PD"
+],
+"dereg": [],
+"last10k": "2026-02-19"
+},
+"244": {
+"cik": 1022671,
+"sec_name": "STEEL DYNAMICS INC",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"STLD"
+],
+"dereg": [],
+"last10k": "2026-02-27"
+},
+"245": {
+"cik": 32604,
+"sec_name": "EMERSON ELECTRIC CO",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"EMR"
+],
+"dereg": [
+{
+"form": "25-NSE",
+"date": "2025-10-15"
+}
+],
+"last10k": "2025-11-10"
+},
+"246": {
+"cik": 1144980,
+"sec_name": "ASBURY AUTOMOTIVE GROUP INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"ABG"
+],
+"dereg": [],
+"last10k": "2026-02-20"
+},
+"247": {
+"cik": 871763,
+"sec_name": "ManpowerGroup Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"MAN"
+],
+"dereg": [],
+"last10k": "2026-02-23"
+},
+"248": {
+"cik": 277135,
+"sec_name": "W.W. GRAINGER, INC.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"GWW"
+],
+"dereg": [],
+"last10k": "2026-02-19"
+},
+"249": {
+"cik": null,
+"wiki_type": "Private",
+"wiki_intro": "Edward D. Jones & Co., L.P. (d.b.a Edward Jones Investments), commonly referred to as Edward Jones, is an American financial services firm headquartered in the St. Louis, Missouri, area. Founded in 1922 by Edward D. Jones Sr., the firm operates a large network of branch offices in the United States and Canada, primarily serving individual investors and small businesses.\nEdward Jones introduced the branch-office brokerage model in the United States and is a member of the Securities Investor Protection Corporation (SIPC). As of 2025, the firm employed about 55,000 people, reported revenue of $16.3 billion, and managed client assets of approximately $2.2 trillion. Edward Jones ranks #260 on the Fortune 500 list, which ranks the largest U.S. companies by revenue.\nThe company employs more than 20,000 financial advisors across North America. In addition to its advisory business, Edward Jones also operates a venture arm that invests in early-stage companies."
+},
+"250": {
+"cik": 898173,
+"sec_name": "O REILLY AUTOMOTIVE INC",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"ORLY"
+],
+"dereg": [],
+"last10k": "2026-02-27"
+},
+"251": {
+"cik": 1692819,
+"sec_name": "Vistra Corp.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"VST"
+],
+"dereg": [],
+"last10k": "2026-02-27"
+},
+"252": {
+"cik": 97476,
+"sec_name": "TEXAS INSTRUMENTS INC",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"TXN"
+],
+"dereg": [],
+"last10k": "2026-02-06"
+},
+"253": {
+"cik": 789570,
+"sec_name": "MGM Resorts International",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"MGM"
+],
+"dereg": [],
+"last10k": "2026-02-11"
+},
+"254": {
+"cik": 1755672,
+"sec_name": "Corteva, Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"CTVA"
+],
+"dereg": [],
+"last10k": "2026-02-12"
+},
+"255": {
+"cik": 352915,
+"sec_name": "UNIVERSAL HEALTH SERVICES INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"UHS"
+],
+"dereg": [],
+"last10k": "2026-02-25"
+},
+"256": {
+"cik": 822416,
+"sec_name": "PULTEGROUP INC/MI/",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"PHM"
+],
+"dereg": [
+{
+"form": "25-NSE",
+"date": "2025-06-02"
+}
+],
+"last10k": "2026-02-04"
+},
+"257": {
+"cik": 29989,
+"sec_name": "OMNICOM GROUP INC.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"OMC"
+],
+"dereg": [],
+"last10k": "2026-02-20"
+},
+"258": {
+"cik": 1089063,
+"sec_name": "DICK'S SPORTING GOODS, INC.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"DKS"
+],
+"dereg": [],
+"last10k": "2026-03-27"
+},
+"259": {
+"cik": 1090012,
+"sec_name": "DEVON ENERGY CORP/DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"DVN"
+],
+"dereg": [],
+"last10k": "2026-02-18"
+},
+"260": {
+"cik": 1336920,
+"sec_name": "Leidos Holdings, Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"LDOS"
+],
+"dereg": [],
+"last10k": "2026-02-17"
+},
+"261": {
+"cik": 4977,
+"sec_name": "AFLAC INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"AFL"
+],
+"dereg": [],
+"last10k": "2026-02-25"
+},
+"262": {
+"cik": 1389170,
+"sec_name": "Targa Resources Corp.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"TRGP"
+],
+"dereg": [],
+"last10k": "2026-02-19"
+},
+"263": {
+"cik": 1573516,
+"sec_name": "Murphy USA Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"MUSA"
+],
+"dereg": [],
+"last10k": "2026-02-18"
+},
+"264": {
+"cik": 1397911,
+"sec_name": "LPL Financial Holdings Inc.",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"LPLA"
+],
+"dereg": [],
+"last10k": "2026-02-23"
+},
+"265": {
+"cik": 105634,
+"sec_name": "EMCOR Group, Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"EME"
+],
+"dereg": [],
+"last10k": "2026-02-26"
+},
+"266": {
+"cik": 1506307,
+"sec_name": "KINDER MORGAN, INC.",
+"exchanges": [
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"KMI",
+"EP-PC"
+],
+"dereg": [],
+"last10k": "2026-02-13"
+},
+"267": {
+"cik": 1047862,
+"sec_name": "CONSOLIDATED EDISON INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"ED"
+],
+"dereg": [],
+"last10k": "2026-02-19"
+},
+"268": {
+"cik": 1418135,
+"sec_name": "Keurig Dr Pepper Inc.",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"KDP"
+],
+"dereg": [],
+"last10k": "2026-02-24"
+},
+"269": {
+"cik": 1060391,
+"sec_name": "REPUBLIC SERVICES, INC.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"RSG"
+],
+"dereg": [],
+"last10k": "2026-02-18"
+},
+"270": {
+"cik": 1096343,
+"sec_name": "MARKEL GROUP INC.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"MKL"
+],
+"dereg": [
+{
+"form": "15-12G",
+"date": "2025-08-01"
+}
+],
+"last10k": "2026-02-26"
+},
+"271": {
+"cik": null,
+"wiki_type": "Private",
+"wiki_intro": "Farmers Insurance Group (also known as Farmers) is an American insurer providing coverage for vehicles, homes and small businesses including other insurance and financial services products. The group operates through more than 48,000 exclusive and independent agents and approximately 21,000 employees. \nFarmers is the trade name for three reciprocal exchanges, Farmers Insurance Exchange, Fire Insurance Exchange, and Truck Insurance Exchange -- each managed by Farmers Group, Inc. as attorney-in-fact on behalf of their respective policyholders. Farmers Group, Inc. is a wholly owned subsidiary of Swiss-based Zurich Insurance Group."
+},
+"272": {
+"cik": 715957,
+"sec_name": "DOMINION ENERGY, INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"D"
+],
+"dereg": [],
+"last10k": "2026-02-23"
+},
+"273": {
+"cik": null,
+"wiki_type": "Agricultural cooperative",
+"wiki_intro": "Land O'Lakes, Inc. is an American member-owned agricultural cooperative based in the Minneapolis\u2013Saint Paul suburb of Arden Hills, Minnesota, United States, focusing on the dairy industry. The cooperative has 1,959 direct producer-members, 751 member-cooperatives, and about 9,000 employees who process and distribute products for about 300,000 agricultural producers, handling 12 billion pounds of milk annually. It is ranked third on the National Cooperative Bank Co-op 100 list of mutuals and cooperatives. \nThe co-op is one of the largest producers of butter and cheese in the United States through its dairy foods business; serves producers, animal owners and their families through more than 4,700 local cooperatives, independent dealers and other large retailers through its Purina Animal Nutrition (Purina Mills) business; and delivers seed, crop protection products, agricultural services and agronomic insights to 1,300 locally owned and operated cooperative and independent agricultural retailers and their grower customers through its WinField United business."
+},
+"274": {
+"cik": 1478242,
+"sec_name": "IQVIA HOLDINGS INC.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"IQV"
+],
+"dereg": [],
+"last10k": "2026-02-17"
+},
+"275": {
+"cik": 1754301,
+"sec_name": "Fox Corp",
+"exchanges": [
+"Nasdaq",
+"Nasdaq"
+],
+"tickers": [
+"FOXA",
+"FOX"
+],
+"dereg": [],
+"last10k": "2026-08-06"
+},
+"276": {
+"cik": 868857,
+"sec_name": "AECOM",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"ACM"
+],
+"dereg": [],
+"last10k": "2025-11-19"
+},
+"277": {
+"cik": 1043277,
+"sec_name": "C. H. ROBINSON WORLDWIDE, INC.",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"CHRW"
+],
+"dereg": [],
+"last10k": "2026-02-13"
+},
+"278": {
+"cik": 1740604,
+"sec_name": "BITGO HOLDINGS, INC.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"BTGO"
+],
+"dereg": [],
+"last10k": "2026-03-27"
+},
+"279": {
+"cik": 1067701,
+"sec_name": "UNITED RENTALS, INC.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"URI"
+],
+"dereg": [],
+"last10k": "2026-01-28"
+},
+"280": {
+"cik": 31462,
+"sec_name": "ECOLAB INC.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"ECL"
+],
+"dereg": [
+{
+"form": "25-NSE",
+"date": "2025-07-08"
+}
+],
+"last10k": "2026-02-23"
+},
+"281": {
+"cik": 49826,
+"sec_name": "ILLINOIS TOOL WORKS INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"ITW"
+],
+"dereg": [],
+"last10k": "2026-02-13"
+},
+"282": {
+"cik": 726958,
+"sec_name": "CASEYS GENERAL STORES INC",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"CASY"
+],
+"dereg": [],
+"last10k": "2026-06-22"
+},
+"283": {
+"cik": 720005,
+"sec_name": "RAYMOND JAMES FINANCIAL INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"RJF"
+],
+"dereg": [
+{
+"form": "25-NSE",
+"date": "2026-01-02"
+}
+],
+"last10k": "2025-11-25"
+},
+"284": {
+"cik": 79879,
+"sec_name": "PPG INDUSTRIES INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"PPG"
+],
+"dereg": [
+{
+"form": "25-NSE",
+"date": "2025-11-03"
+},
+{
+"form": "25-NSE",
+"date": "2025-06-02"
+}
+],
+"last10k": "2026-02-19"
+},
+"285": {
+"cik": 936340,
+"sec_name": "DTE ENERGY CO",
+"exchanges": [
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"DTE",
+"DTW",
+"DTB",
+"DTG",
+"DTK"
+],
+"dereg": [],
+"last10k": "2026-02-17"
+},
+"286": {
+"cik": 24741,
+"sec_name": "CORNING INC /NY",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"GLW"
+],
+"dereg": [
+{
+"form": "25-NSE",
+"date": "2026-05-15"
+}
+],
+"last10k": "2026-02-12"
+},
+"287": {
+"cik": 1126328,
+"sec_name": "PRINCIPAL FINANCIAL GROUP INC",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"PFG"
+],
+"dereg": [],
+"last10k": "2026-02-18"
+},
+"288": {
+"cik": 1861988,
+"sec_name_match": "Mutual of Omaha OF Cayman, Ltd.",
+"sec_name": "Mutual of Omaha OF Cayman, Ltd.",
+"exchanges": [],
+"tickers": [],
+"dereg": [],
+"last10k": null,
+"wiki_type": "Private",
+"wiki_intro": "Mutual of Omaha Insurance Company is an American Fortune 500 mutual insurance and financial services company based in Omaha, Nebraska, United States. Founded in 1909, as Mutual Benefit Health & Accident Association, Mutual of Omaha is a financial organization offering a variety of insurance and financial products for individuals, businesses and groups throughout the United States.\nThe company provides a variety of financial services, including Medicare Supplement, life insurance, long-term care coverage and annuities, as well as group coverage including life, disability and 401(k)."
+},
+"289": {
+"cik": 885639,
+"sec_name": "KOHLS Corp",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"KSS"
+],
+"dereg": [],
+"last10k": "2026-03-19"
+},
+"290": {
+"cik": 916365,
+"sec_name": "TRACTOR SUPPLY CO /DE/",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"TSCO"
+],
+"dereg": [],
+"last10k": "2026-02-19"
+},
+"291": {
+"cik": 106640,
+"sec_name": "WHIRLPOOL CORP /DE/",
+"exchanges": [
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"WHR",
+"WHR-PA"
+],
+"dereg": [],
+"last10k": "2026-02-11"
+},
+"292": {
+"cik": 1124198,
+"sec_name": "FLUOR CORP",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"FLR"
+],
+"dereg": [],
+"last10k": "2026-02-17"
+},
+"293": {
+"cik": 39911,
+"sec_name": "GAP INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"GAP"
+],
+"dereg": [],
+"last10k": "2026-03-17"
+},
+"294": {
+"cik": 64040,
+"sec_name": "S&P Global Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"SPGI"
+],
+"dereg": [],
+"last10k": "2026-02-11"
+},
+"295": {
+"cik": 40729,
+"sec_name": "Ally Financial Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"ALLY"
+],
+"dereg": [],
+"last10k": "2026-02-25"
+},
+"296": {
+"cik": 1316835,
+"sec_name": "Builders FirstSource, Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"BLDR"
+],
+"dereg": [],
+"last10k": "2026-02-17"
+},
+"297": {
+"cik": 1043509,
+"sec_name": "SONIC AUTOMOTIVE INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"SAH"
+],
+"dereg": [],
+"last10k": "2026-02-23"
+},
+"298": {
+"cik": 93556,
+"sec_name": "STANLEY BLACK & DECKER, INC.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"SWK"
+],
+"dereg": [],
+"last10k": "2026-02-24"
+},
+"299": {
+"cik": 1944048,
+"sec_name_match": "Kenvue Inc. (KVUE)",
+"sec_name": "Kenvue Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"KVUE"
+],
+"dereg": [
+{
+"form": "25-NSE",
+"date": "2026-11-02"
+}
+],
+"last10k": "2026-02-20",
+"wiki_type": "Private",
+"wiki_intro": "Kenvue Inc. is an American consumer health company. Formerly the Consumer Healthcare division of Johnson & Johnson, Kenvue owns well-known brands such as Aveeno, Band-Aid, Benadryl, Zyrtec, Johnson's, Listerine, Lactaid, Mylanta, Neutrogena, Trosyd, Calpol, Tylenol, and Visine. Kenvue is incorporated in Delaware and was originally headquartered in the Skillman section of Montgomery Township, New Jersey, before relocating to Summit, New Jersey.\nJohnson & Johnson announced in November 2021 that it would spin off its consumer health division as a separate company. The new company was named Kenvue in September 2022, and its initial public offering took place in May 2023, raising $3.8 billion in the largest U.S. IPO since 2021, with an initial valuation of about $41 billion. Johnson & Johnson initially retained more than 90% ownership before completing a full separation through a share exchange in July 2023. Kenvue was subsequently added to the S&P 500 Dividend Aristocrats index.\nCEO Thibaut Mongon initially led Kenvue, which employed about 22,200 people in 2022. Following Mongon\u2019s termination in 2025, Kirk Perry was named interim CEO. Perry was appointed the company's permanent CEO in November 2025.\nThe company has also faced controversy, including a securities class action filed in 2023 alleging misleading disclosures regarding risks related to phenylephrine, which led to its stock trading below IPO levels.\nOn November 3, 2025, Kimberly-Clark announced that it was acquiring Kenv"
+},
+"300": {
+"cik": 1867072,
+"sec_name": "Kyndryl Holdings, Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"KD"
+],
+"dereg": [],
+"last10k": "2026-05-29"
+},
+"301": {
+"cik": 1539838,
+"sec_name": "Diamondback Energy, Inc.",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"FANG"
+],
+"dereg": [],
+"last10k": "2026-02-25"
+},
+"302": {
+"cik": 1920406,
+"sec_name": "Strive, Inc.",
+"exchanges": [
+"Nasdaq",
+"Nasdaq",
+"Nasdaq"
+],
+"tickers": [
+"ASST",
+"SATS",
+"SATA"
+],
+"dereg": [],
+"last10k": "2026-03-19"
+},
+"303": {
+"cik": 217346,
+"sec_name": "TEXTRON INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"TXT"
+],
+"dereg": [],
+"last10k": "2026-02-11"
+},
+"304": {
+"cik": 1324424,
+"sec_name": "Expedia Group, Inc.",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"EXPE"
+],
+"dereg": [],
+"last10k": "2026-02-13"
+},
+"305": {
+"cik": 11544,
+"sec_name": "BERKLEY W R CORP",
+"exchanges": [
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"WRB",
+"WRB-PE",
+"WRB-PF",
+"WRB-PG",
+"WRB-PH"
+],
+"dereg": [],
+"last10k": "2026-02-27"
+},
+"306": {
+"cik": 72903,
+"sec_name": "XCEL ENERGY INC",
+"exchanges": [
+"Nasdaq",
+"Nasdaq"
+],
+"tickers": [
+"XEL",
+"XELLL"
+],
+"dereg": [],
+"last10k": "2026-02-25"
+},
+"307": {
+"cik": 1031296,
+"sec_name": "FIRSTENERGY CORP",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"FE"
+],
+"dereg": [],
+"last10k": "2026-02-18"
+},
+"308": {
+"cik": null,
+"wiki_type": "Public",
+"wiki_intro": "Erie Insurance Group, based in Erie, Pennsylvania, is a property and casualty insurance company offering auto, home, business and life insurance through a network of independent insurance agents. As of 2021, Erie Insurance Group is ranked 347th on the 2021 Fortune 500 list of largest American corporations, based on total revenue for the 2020 fiscal year.\nRated A+ (Superior) by A.M. Best, Erie has more than 6 million policies in force and operates in 12 states and the District of Columbia, including Illinois, Indiana, Kentucky, Maryland, New York, North Carolina, Ohio, Pennsylvania, Tennessee, Virginia, West Virginia and Wisconsin. It also owns the naming rights to the Erie Insurance Arena in downtown Erie, Pennsylvania."
+},
+"309": {
+"cik": 798941,
+"sec_name": "FIRST CITIZENS BANCSHARES INC /DE/",
+"exchanges": [
+"Nasdaq",
+"OTC",
+"Nasdaq",
+"Nasdaq",
+"Nasdaq"
+],
+"tickers": [
+"FCNCA",
+"FCNCB",
+"FCNCN",
+"FCNCO",
+"FCNCP"
+],
+"dereg": [],
+"last10k": "2026-02-24"
+},
+"310": {
+"cik": 1393818,
+"sec_name": "Blackstone Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"BX"
+],
+"dereg": [],
+"last10k": "2026-02-27"
+},
+"311": {
+"cik": 1331875,
+"sec_name": "Fidelity National Financial, Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"FNF"
+],
+"dereg": [],
+"last10k": "2026-02-26"
+},
+"312": {
+"cik": 1781335,
+"sec_name": "Otis Worldwide Corp",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"OTIS"
+],
+"dereg": [],
+"last10k": "2026-02-05"
+},
+"313": {
+"cik": 2011286,
+"sec_name": "Amentum Holdings, Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"AMTM"
+],
+"dereg": [],
+"last10k": "2025-11-25"
+},
+"314": {
+"cik": 872589,
+"sec_name": "REGENERON PHARMACEUTICALS, INC.",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"REGN"
+],
+"dereg": [],
+"last10k": "2026-02-04"
+},
+"315": {
+"cik": 1001250,
+"sec_name": "ESTEE LAUDER COMPANIES INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"EL"
+],
+"dereg": [],
+"last10k": "2026-08-19"
+},
+"316": {
+"cik": 908255,
+"sec_name": "BORGWARNER INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"BWA"
+],
+"dereg": [],
+"last10k": "2026-02-11"
+},
+"317": {
+"cik": 73124,
+"sec_name": "NORTHERN TRUST CORP",
+"exchanges": [
+"Nasdaq",
+"Nasdaq"
+],
+"tickers": [
+"NTRS",
+"NTRSO"
+],
+"dereg": [],
+"last10k": "2026-02-24"
+},
+"318": {
+"cik": 1792044,
+"sec_name": "Viatris Inc",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"VTRS"
+],
+"dereg": [],
+"last10k": "2026-02-26"
+},
+"319": {
+"cik": 15615,
+"sec_name": "MASTEC INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"MTZ"
+],
+"dereg": [],
+"last10k": "2026-02-26"
+},
+"320": {
+"cik": 861884,
+"sec_name": "RELIANCE, INC.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"RS"
+],
+"dereg": [],
+"last10k": "2026-02-26"
+},
+"321": {
+"cik": null,
+"wiki_type": "Mutual",
+"wiki_intro": "Western & Southern Financial Group, also commonly referred to as Western & Southern, is the Cincinnati, Ohio-based parent company of a diversified group of financial services subsidiaries. Through its subsidiaries, Western & Southern offers a variety of financial services such as life insurance, annuities, mutual funds, retirement planning and investment management.\nWestern & Southern subsidiaries include Western & Southern Life Insurance Co, Western-Southern Life Assurance Co, Columbus Life Insurance Co, Gerber Life Insurance Company, Integrity Life Insurance Co, National Integrity Life Insurance Co, Lafayette Life Insurance Co, IFS Financial Services, Fort Washington Investment Advisors, Touchstone Investments, Eagle Realty Group, Fabric by Gerber Life and W&S Financial Group Distributors. Its subsidiaries held over $112.2 billion in assets owned and managed as of 2023.\nWestern & Southern is a Fortune 500 company at No. 284. As of June 2024, it held a \"AA- Very Strong\" rating from Standard & Poor's, a \"A+ Superior\" from A.M. Best, a \"AA Very Strong\" from Fitch, a \"Aa3 Excellent\" from Moody's, and a \"96 out of 100\" Comdex ranking."
+},
+"322": {
+"cik": 766421,
+"sec_name": "ALASKA AIR GROUP, INC.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"ALK"
+],
+"dereg": [],
+"last10k": "2026-02-12"
+},
+"323": {
+"cik": 1865782,
+"sec_name": "BrightSpring Health Services, Inc.",
+"exchanges": [
+"Nasdaq",
+"Nasdaq"
+],
+"tickers": [
+"BTSG",
+"BTSGU"
+],
+"dereg": [],
+"last10k": "2026-02-27"
+},
+"324": {
+"cik": 277948,
+"sec_name": "CSX CORP",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"CSX"
+],
+"dereg": [],
+"last10k": "2026-02-12"
+},
+"325": {
+"cik": 1065696,
+"sec_name": "LKQ CORP",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"LKQ"
+],
+"dereg": [],
+"last10k": "2026-02-19"
+},
+"326": {
+"cik": 920148,
+"sec_name": "LABCORP HOLDINGS INC.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"LH"
+],
+"dereg": [],
+"last10k": "2026-02-24"
+},
+"327": {
+"cik": 354190,
+"sec_name": "Arthur J. Gallagher & Co.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"AJG"
+],
+"dereg": [],
+"last10k": "2026-02-17"
+},
+"328": {
+"cik": 2007855,
+"sec_name": "Venture Global, Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"VG"
+],
+"dereg": [],
+"last10k": "2026-03-02"
+},
+"329": {
+"cik": 1792789,
+"sec_name": "DoorDash, Inc.",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"DASH"
+],
+"dereg": [],
+"last10k": "2026-02-18"
+},
+"330": {
+"cik": 1032208,
+"sec_name": "SEMPRA",
+"exchanges": [
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"SRE",
+"SREA"
+],
+"dereg": [],
+"last10k": "2026-02-26"
+},
+"331": {
+"cik": 927066,
+"sec_name": "DAVITA INC.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"DVA"
+],
+"dereg": [],
+"last10k": "2026-02-11"
+},
+"332": {
+"cik": 72741,
+"sec_name": "EVERSOURCE ENERGY",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"ES"
+],
+"dereg": [],
+"last10k": "2026-02-17"
+},
+"333": {
+"cik": 1373715,
+"sec_name": "ServiceNow, Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"NOW"
+],
+"dereg": [],
+"last10k": "2026-01-29"
+},
+"334": {
+"cik": 36270,
+"sec_name": "M&T BANK CORP",
+"exchanges": [
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"MTB",
+"MTB-PH",
+"MTB-PJ",
+"MTB-PK",
+"MTB-PL"
+],
+"dereg": [],
+"last10k": "2026-02-18"
+},
+"335": {
+"cik": 1000228,
+"sec_name": "HENRY SCHEIN INC",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"HSIC"
+],
+"dereg": [],
+"last10k": "2026-02-24"
+},
+"336": {
+"cik": 1852244,
+"sec_name": "GXO Logistics, Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"GXO"
+],
+"dereg": [],
+"last10k": "2026-02-25"
+},
+"337": {
+"cik": 9389,
+"sec_name": "BALL Corp",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"BALL"
+],
+"dereg": [],
+"last10k": "2026-02-19"
+},
+"338": {
+"cik": 5513,
+"sec_name": "Unum Group",
+"exchanges": [
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"UNM",
+"UNMA"
+],
+"dereg": [],
+"last10k": "2026-02-17"
+},
+"339": {
+"cik": 1300514,
+"sec_name": "LAS VEGAS SANDS CORP",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"LVS"
+],
+"dereg": [],
+"last10k": "2026-02-06"
+},
+"340": {
+"cik": 65984,
+"sec_name": "ENTERGY CORP /DE/",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"ETR"
+],
+"dereg": [],
+"last10k": "2026-02-19"
+},
+"341": {
+"cik": 35527,
+"sec_name": "FIFTH THIRD BANCORP",
+"exchanges": [
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"FITB",
+"FITB-PA",
+"FITB-PI",
+"FITB-PK",
+"FITB-PM"
+],
+"dereg": [
+{
+"form": "25",
+"date": "2026-06-11"
+}
+],
+"last10k": "2026-02-24"
+},
+"342": {
+"cik": 205402,
+"sec_name_match": "GRAYBAR ELECTRIC CO INC",
+"sec_name": "GRAYBAR ELECTRIC CO INC",
+"exchanges": [],
+"tickers": [],
+"dereg": [],
+"last10k": "2026-03-18",
+"wiki_type": "Private",
+"wiki_intro": "Graybar Electric Company, Inc. is an American wholesale electrical, communications and data networking products distribution business, which also supplies related supply-chain management and logistics services. The company is based in Clayton, Missouri and is an employee-owned corporation.\nGraybar was incorporated on December 11, 1925, as the successor company of the general electric supply business of the Western Electric Company, which was founded in 1869 in Cleveland, Ohio, by Elisha Gray and Enos M. Barton. The separation of product lines was intended to provide a separate identity from the telephone supply function of Western Electric to the Bell System, given its importance as the largest merchandiser of electrical apparatus and related equipment in the world in the 1920s.\n\n"
+},
+"343": {
+"cik": 1688568,
+"sec_name": "DXC Technology Co",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"DXC"
+],
+"dereg": [
+{
+"form": "25-NSE",
+"date": "2025-12-29"
+}
+],
+"last10k": "2026-05-08"
+},
+"344": {
+"cik": 1675149,
+"sec_name": "Alcoa Corp",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"AA"
+],
+"dereg": [],
+"last10k": "2026-02-26"
+},
+"345": {
+"cik": 1267238,
+"sec_name": "ASSURANT, INC.",
+"exchanges": [
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"AIZ",
+"AIZN"
+],
+"dereg": [],
+"last10k": "2026-02-19"
+},
+"346": {
+"cik": 85961,
+"sec_name": "RYDER SYSTEM INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"R"
+],
+"dereg": [],
+"last10k": "2026-02-11"
+},
+"347": {
+"cik": 1571949,
+"sec_name": "Intercontinental Exchange, Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"ICE"
+],
+"dereg": [],
+"last10k": "2026-02-05"
+},
+"348": {
+"cik": 20286,
+"sec_name": "CINCINNATI FINANCIAL CORP",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"CINF"
+],
+"dereg": [],
+"last10k": "2026-02-23"
+},
+"349": {
+"cik": 1766502,
+"sec_name": "Chewy, Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"CHWY"
+],
+"dereg": [],
+"last10k": "2026-03-25"
+},
+"350": {
+"cik": 1108109,
+"sec_name": "COMMUNITY HEALTH SYSTEMS INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"CYH"
+],
+"dereg": [],
+"last10k": "2026-02-19"
+},
+"351": {
+"cik": 49196,
+"sec_name": "HUNTINGTON BANCSHARES INC /MD/",
+"exchanges": [
+"Nasdaq",
+"Nasdaq",
+"Nasdaq",
+"Nasdaq",
+"Nasdaq"
+],
+"tickers": [
+"HBAN",
+"HBANL",
+"HBANM",
+"HBANP",
+"HBANZ"
+],
+"dereg": [],
+"last10k": "2026-02-13"
+},
+"352": {
+"cik": 1501585,
+"sec_name": "HUNTINGTON INGALLS INDUSTRIES, INC.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"HII"
+],
+"dereg": [],
+"last10k": "2026-02-05"
+},
+"353": {
+"cik": 1616707,
+"sec_name": "Wayfair Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"W"
+],
+"dereg": [],
+"last10k": "2026-02-19"
+},
+"354": {
+"cik": 18926,
+"sec_name": "Lumen Technologies, Inc.",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"LUMN"
+],
+"dereg": [
+{
+"form": "25",
+"date": "2026-10-05"
+}
+],
+"last10k": "2026-02-20"
+},
+"355": {
+"cik": 1403568,
+"sec_name": "Ulta Beauty, Inc.",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"ULTA"
+],
+"dereg": [],
+"last10k": "2026-03-26"
+},
+"356": {
+"cik": 1219601,
+"sec_name": "CROWN HOLDINGS, INC.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"CCK"
+],
+"dereg": [
+{
+"form": "25-NSE",
+"date": "2025-12-22"
+}
+],
+"last10k": "2026-02-27"
+},
+"357": {
+"cik": 1559720,
+"sec_name": "Airbnb, Inc.",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"ABNB"
+],
+"dereg": [],
+"last10k": "2026-02-12"
+},
+"358": {
+"cik": 874761,
+"sec_name": "AES CORP",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"AES"
+],
+"dereg": [],
+"last10k": "2026-03-02"
+},
+"359": {
+"cik": 702165,
+"sec_name": "NORFOLK SOUTHERN CORP",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"NSC"
+],
+"dereg": [],
+"last10k": "2026-02-09"
+},
+"360": {
+"cik": 788784,
+"sec_name": "PUBLIC SERVICE ENTERPRISE GROUP INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"PEG"
+],
+"dereg": [],
+"last10k": "2026-02-26"
+},
+"361": {
+"cik": 319201,
+"sec_name": "KLA CORP",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"KLAC"
+],
+"dereg": [],
+"last10k": "2026-08-06"
+},
+"362": {
+"cik": 895126,
+"sec_name": "EXPAND ENERGY Corp",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"EXE"
+],
+"dereg": [
+{
+"form": "15-12G",
+"date": "2026-02-18"
+},
+{
+"form": "25-NSE",
+"date": "2026-02-06"
+}
+],
+"last10k": "2026-02-18"
+},
+"363": {
+"cik": 48465,
+"sec_name": "HORMEL FOODS CORP /DE/",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"HRL"
+],
+"dereg": [],
+"last10k": "2025-12-05"
+},
+"364": {
+"cik": 940944,
+"sec_name": "DARDEN RESTAURANTS INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"DRI"
+],
+"dereg": [],
+"last10k": "2026-07-24"
+},
+"365": {
+"cik": 759944,
+"sec_name": "CITIZENS FINANCIAL GROUP INC/RI",
+"exchanges": [
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"CFG",
+"CFG-PE",
+"CFG-PH",
+"CFG-PI"
+],
+"dereg": [],
+"last10k": "2026-02-12"
+},
+"366": {
+"cik": 1285785,
+"sec_name": "MOSAIC CO",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"MOS"
+],
+"dereg": [],
+"last10k": "2026-02-27"
+},
+"367": {
+"cik": 1585689,
+"sec_name": "Hilton Worldwide Holdings Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"HLT"
+],
+"dereg": [
+{
+"form": "25",
+"date": "2026-11-04"
+}
+],
+"last10k": "2026-02-11"
+},
+"368": {
+"cik": 2969,
+"sec_name": "Air Products & Chemicals, Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"APD"
+],
+"dereg": [],
+"last10k": "2025-11-20"
+},
+"369": {
+"cik": 52988,
+"sec_name": "JACOBS SOLUTIONS INC.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"J"
+],
+"dereg": [],
+"last10k": "2025-11-20"
+},
+"370": {
+"cik": 875320,
+"sec_name": "VERTEX PHARMACEUTICALS INC / MA",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"VRTX"
+],
+"dereg": [],
+"last10k": "2026-02-13"
+},
+"371": {
+"cik": 728535,
+"sec_name": "HUNT J B TRANSPORT SERVICES INC",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"JBHT"
+],
+"dereg": [],
+"last10k": "2026-02-24"
+},
+"372": {
+"cik": 1443646,
+"sec_name": "Booz Allen Hamilton Holding Corp",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"BAH"
+],
+"dereg": [],
+"last10k": "2026-05-22"
+},
+"373": {
+"cik": 107263,
+"sec_name": "WILLIAMS COMPANIES, INC.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"WMB"
+],
+"dereg": [],
+"last10k": "2026-02-24"
+},
+"374": {
+"cik": 1058090,
+"sec_name": "CHIPOTLE MEXICAN GRILL INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"CMG"
+],
+"dereg": [],
+"last10k": "2026-02-04"
+},
+"375": {
+"cik": 1673358,
+"sec_name": "Yum China Holdings, Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"YUMC"
+],
+"dereg": [],
+"last10k": "2026-02-27"
+},
+"376": {
+"cik": 1568651,
+"sec_name": "Oscar Health, Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"OSCR"
+],
+"dereg": [],
+"last10k": "2026-02-13"
+},
+"377": {
+"cik": 47111,
+"sec_name": "HERSHEY CO",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"HSY"
+],
+"dereg": [],
+"last10k": "2026-02-17"
+},
+"378": {
+"cik": 68505,
+"sec_name": "Motorola Solutions, Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"MSI"
+],
+"dereg": [],
+"last10k": "2026-02-12"
+},
+"379": {
+"cik": 1333986,
+"sec_name": "Equitable Holdings, Inc.",
+"exchanges": [
+"NYSE",
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"EQH",
+"EQH-PA",
+"EQH-PC"
+],
+"dereg": [],
+"last10k": "2026-02-25"
+},
+"380": {
+"cik": 723612,
+"sec_name": "AVIS BUDGET GROUP, INC.",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"CAR"
+],
+"dereg": [],
+"last10k": "2026-02-19"
+},
+"381": {
+"cik": 23217,
+"sec_name": "CONAGRA BRANDS INC.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"CAG"
+],
+"dereg": [],
+"last10k": "2026-07-15"
+},
+"382": {
+"cik": 10456,
+"sec_name": "BAXTER INTERNATIONAL INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"BAX"
+],
+"dereg": [],
+"last10k": "2026-02-12"
+},
+"383": {
+"cik": 1579298,
+"sec_name": "Burlington Stores, Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"BURL"
+],
+"dereg": [],
+"last10k": "2026-03-19"
+},
+"384": {
+"cik": 1590895,
+"sec_name": "Caesars Entertainment, Inc.",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"CZR"
+],
+"dereg": [],
+"last10k": "2026-02-17"
+},
+"385": {
+"cik": 1370946,
+"sec_name": "Owens Corning",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"OC"
+],
+"dereg": [],
+"last10k": "2026-02-25"
+},
+"386": {
+"cik": 91576,
+"sec_name": "KEYCORP /NEW/",
+"exchanges": [
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"KEY",
+"KEY-PK",
+"KEY-PI",
+"KEY-PJ",
+"KEY-PL"
+],
+"dereg": [],
+"last10k": "2026-02-23"
+},
+"387": {
+"cik": 314984,
+"sec_name_match": "THRIVENT FINANCIAL FOR LUTHERANS",
+"sec_name": "THRIVENT FINANCIAL FOR LUTHERANS",
+"exchanges": [],
+"tickers": [],
+"dereg": [],
+"last10k": null
+},
+"388": {
+"cik": 1262823,
+"sec_name": "WESTLAKE CORP",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"WLK"
+],
+"dereg": [],
+"last10k": "2026-02-26"
+},
+"389": {
+"cik": 943452,
+"sec_name": "WESTINGHOUSE AIR BRAKE TECHNOLOGIES CORP",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"WAB"
+],
+"dereg": [],
+"last10k": "2026-02-13"
+},
+"390": {
+"cik": 24545,
+"sec_name": "MOLSON COORS BEVERAGE CO",
+"exchanges": [
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"TAP",
+"TAP-A"
+],
+"dereg": [],
+"last10k": "2026-02-18"
+},
+"391": {
+"cik": 1397187,
+"sec_name": "lululemon athletica inc.",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"LULU"
+],
+"dereg": [],
+"last10k": "2026-03-17"
+},
+"392": {
+"cik": 37785,
+"sec_name_match": "FMC CORP (FMC)",
+"sec_name": "FMC CORP",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"FMC"
+],
+"dereg": [],
+"last10k": "2026-02-27",
+"wiki_type": "Private",
+"wiki_intro": "FM (formerly FM Global) is an American mutual insurance company based in Johnston, Rhode Island, United States, with offices worldwide, that specializes in loss prevention services primarily to large corporations throughout the world in the Highly Protected Risk (HPR) property insurance market sector. \"FM\" is the communicative name of the company, whereas the legal name is \"Factory Mutual Insurance Company\". FM has been named the \"Best Property Insurer in the World\" by Euromoney Magazine.\nThe company employs a non-traditional business model whereby risk and premiums are determined by engineering analysis as opposed to historically based actuarial calculations. This business approach is centered on the belief that property losses can be prevented or mitigated. FM engineering personnel regularly visit insured locations to evaluate hazards and recommend improvements to their property or work practices to reduce physical and financial risks if a loss occurs."
+},
+"393": {
+"cik": 1065088,
+"sec_name": "EBAY INC",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"EBAY"
+],
+"dereg": [],
+"last10k": "2026-02-19"
+},
+"394": {
+"cik": 746515,
+"sec_name": "EXPEDITORS INTERNATIONAL OF WASHINGTON INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"EXPD"
+],
+"dereg": [],
+"last10k": "2026-02-25"
+},
+"395": {
+"cik": 1022079,
+"sec_name": "QUEST DIAGNOSTICS INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"DGX"
+],
+"dereg": [],
+"last10k": "2026-02-26"
+},
+"396": {
+"cik": 6281,
+"sec_name": "ANALOG DEVICES INC",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"ADI"
+],
+"dereg": [],
+"last10k": "2025-11-25"
+},
+"397": {
+"cik": 821026,
+"sec_name": "Andersons, Inc.",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"ANDE"
+],
+"dereg": [],
+"last10k": "2026-02-18"
+},
+"398": {
+"cik": 1591588,
+"sec_name": "Gold.com, Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"GOLD"
+],
+"dereg": [
+{
+"form": "25",
+"date": "2025-12-01"
+}
+],
+"last10k": "2026-09-10"
+},
+"399": {
+"cik": 794170,
+"sec_name": "Toll Brothers, Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"TOL"
+],
+"dereg": [],
+"last10k": "2025-12-19"
+},
+"400": {
+"cik": 51253,
+"sec_name": "INTERNATIONAL FLAVORS & FRAGRANCES INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"IFF"
+],
+"dereg": [
+{
+"form": "25-NSE",
+"date": "2026-09-25"
+}
+],
+"last10k": "2026-02-27"
+},
+"401": {
+"cik": 766704,
+"sec_name": "WELLTOWER INC.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"WELL"
+],
+"dereg": [],
+"last10k": "2026-02-12"
+},
+"402": {
+"cik": 96223,
+"sec_name": "Jefferies Financial Group Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"JEF"
+],
+"dereg": [],
+"last10k": "2026-01-28"
+},
+"403": {
+"cik": 1034670,
+"sec_name": "AUTOLIV INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"ALV"
+],
+"dereg": [],
+"last10k": "2026-02-19"
+},
+"404": {
+"cik": 851968,
+"sec_name": "MOHAWK INDUSTRIES INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"MHK"
+],
+"dereg": [],
+"last10k": "2026-02-24"
+},
+"405": {
+"cik": 1694426,
+"sec_name": "Delek US Holdings, Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"DK"
+],
+"dereg": [],
+"last10k": "2026-02-27"
+},
+"406": {
+"cik": 1136893,
+"sec_name": "Fidelity National Information Services, Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"FIS"
+],
+"dereg": [
+{
+"form": "25-NSE",
+"date": "2025-12-03"
+}
+],
+"last10k": "2026-02-24"
+},
+"407": {
+"cik": 75252,
+"sec_name": "ACCENDRA HEALTH INC/VA/",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"ACH"
+],
+"dereg": [],
+"last10k": "2026-02-20"
+},
+"408": {
+"cik": 1053507,
+"sec_name": "AMERICAN TOWER CORP /MA/",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"AMT"
+],
+"dereg": [
+{
+"form": "25-NSE",
+"date": "2026-05-22"
+}
+],
+"last10k": "2026-02-24"
+},
+"409": {
+"cik": 906163,
+"sec_name": "NVR INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"NVR"
+],
+"dereg": [],
+"last10k": "2026-02-11"
+},
+"410": {
+"cik": 1381197,
+"sec_name": "Interactive Brokers Group, Inc.",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"IBKR"
+],
+"dereg": [],
+"last10k": "2026-02-27"
+},
+"411": {
+"cik": 775158,
+"sec_name": "OSHKOSH CORP",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"OSK"
+],
+"dereg": [],
+"last10k": "2026-02-17"
+},
+"412": {
+"cik": 723254,
+"sec_name": "CINTAS CORP",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"CTAS"
+],
+"dereg": [],
+"last10k": "2026-07-29"
+},
+"413": {
+"cik": 16732,
+"sec_name": "CAMPBELL'S Co",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"CPB"
+],
+"dereg": [],
+"last10k": "2026-09-24"
+},
+"414": {
+"cik": 1674101,
+"sec_name": "Vertiv Holdings Co",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"VRT"
+],
+"dereg": [],
+"last10k": "2026-02-13"
+},
+"415": {
+"cik": 1123360,
+"sec_name": "GLOBAL PAYMENTS INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"GPN"
+],
+"dereg": [],
+"last10k": "2026-02-20"
+},
+"416": {
+"cik": 16918,
+"sec_name": "CONSTELLATION BRANDS, INC.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"STZ"
+],
+"dereg": [],
+"last10k": "2026-04-22"
+},
+"417": {
+"cik": 880266,
+"sec_name": "AGCO CORP /DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"AGCO"
+],
+"dereg": [],
+"last10k": "2026-02-13"
+},
+"418": {
+"cik": 1035267,
+"sec_name": "INTUITIVE SURGICAL INC",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"ISRG"
+],
+"dereg": [],
+"last10k": "2026-02-03"
+},
+"419": {
+"cik": 2024,
+"sec_name_match": "ACE HARDWARE CORP",
+"sec_name": "ACE HARDWARE CORP",
+"exchanges": [],
+"tickers": [],
+"dereg": [],
+"last10k": "2003-03-24",
+"wiki_type": "Privately held company; retailers' cooperative",
+"wiki_intro": "Ace Hardware Corporation is an American hardware retailers' cooperative based in Oak Brook, Illinois, United States. It is the largest non-grocery retail cooperative in the United States.\nFounded on October 25, 1924, as \"Ace Stores\", the company changed its name to \"Ace Hardware Corporation\" in 1931. It grew dramatically following World War II, more than tripling its sales between the late 1940s and 1959. After the retirement of longtime president and founder Richard Hesse in 1973, Ace was sold to its retailers, becoming a retailer-owned cooperative. It first reached $1 billion in wholesale sales in 1985 and $5 billion in 2015. As of 2019, it has over 5,200 locations in 60 countries. Ace operates 17 distribution centers in the United States, and additional distribution facilities in China, Panama, and the United Arab Emirates.\n\n"
+},
+"420": {
+"cik": 26780,
+"sec_name": "DANA Inc",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"DAN"
+],
+"dereg": [],
+"last10k": "2026-02-27"
+},
+"421": {
+"cik": 875045,
+"sec_name": "BIOGEN INC.",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"BIIB"
+],
+"dereg": [],
+"last10k": "2026-02-06"
+},
+"422": {
+"cik": 1564708,
+"sec_name": "NEWS CORP",
+"exchanges": [
+"Nasdaq",
+"Nasdaq",
+"OTC"
+],
+"tickers": [
+"NWSA",
+"NWS",
+"NWSLL"
+],
+"dereg": [],
+"last10k": "2026-08-07"
+},
+"423": {
+"cik": 1803599,
+"sec_name": "Concentrix Corp",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"CNXC"
+],
+"dereg": [],
+"last10k": "2026-01-28"
+},
+"424": {
+"cik": 783325,
+"sec_name": "WEC ENERGY GROUP, INC.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"WEC"
+],
+"dereg": [],
+"last10k": "2026-02-20"
+},
+"425": {
+"cik": 103379,
+"sec_name": "V F CORP",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"VFC"
+],
+"dereg": [
+{
+"form": "25-NSE",
+"date": "2026-02-09"
+}
+],
+"last10k": "2026-05-20"
+},
+"426": {
+"cik": 88121,
+"sec_name": "SEABOARD CORP /DE/",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"SEB"
+],
+"dereg": [],
+"last10k": "2026-02-12"
+},
+"427": {
+"cik": 813762,
+"sec_name": "ICAHN ENTERPRISES L.P.",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"IEP"
+],
+"dereg": [],
+"last10k": "2026-02-26"
+},
+"428": {
+"cik": 1281761,
+"sec_name": "REGIONS FINANCIAL CORP",
+"exchanges": [
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"RF",
+"RF-PC",
+"RF-PE",
+"RF-PF"
+],
+"dereg": [],
+"last10k": "2026-02-24"
+},
+"429": {
+"cik": 730263,
+"sec_name": "THOR INDUSTRIES INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"THO"
+],
+"dereg": [],
+"last10k": "2026-09-22"
+},
+"430": {
+"cik": 1327811,
+"sec_name": "Workday, Inc.",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"WDAY"
+],
+"dereg": [],
+"last10k": "2026-03-06"
+},
+"431": {
+"cik": 1306830,
+"sec_name": "Celanese Corp",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"CE"
+],
+"dereg": [
+{
+"form": "25-NSE",
+"date": "2026-06-25"
+}
+],
+"last10k": "2026-02-24"
+},
+"432": {
+"cik": 106040,
+"sec_name": "WESTERN DIGITAL CORP",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"WDC"
+],
+"dereg": [],
+"last10k": "2026-08-14"
+},
+"433": {
+"cik": null
+},
+"434": {
+"cik": 1555280,
+"sec_name": "Zoetis Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"ZTS"
+],
+"dereg": [],
+"last10k": "2026-02-12"
+},
+"435": {
+"cik": 1130310,
+"sec_name": "CENTERPOINT ENERGY INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"CNP"
+],
+"dereg": [],
+"last10k": "2026-02-19"
+},
+"436": {
+"cik": 1101239,
+"sec_name": "EQUINIX INC",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"EQIX"
+],
+"dereg": [],
+"last10k": "2026-02-11"
+},
+"437": {
+"cik": 1327567,
+"sec_name": "Palo Alto Networks Inc",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"PANW"
+],
+"dereg": [],
+"last10k": "2026-09-10"
+},
+"438": {
+"cik": 1841666,
+"sec_name": "APA Corp",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"APA"
+],
+"dereg": [],
+"last10k": "2026-02-26"
+},
+"439": {
+"cik": 74260,
+"sec_name": "OLD REPUBLIC INTERNATIONAL CORP",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"ORI"
+],
+"dereg": [],
+"last10k": "2026-02-26"
+},
+"440": {
+"cik": 1035983,
+"sec_name": "COMFORT SYSTEMS USA INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"FIX"
+],
+"dereg": [],
+"last10k": "2026-02-19"
+},
+"441": {
+"cik": 1158463,
+"sec_name": "JETBLUE AIRWAYS CORP",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"JBLU"
+],
+"dereg": [],
+"last10k": "2026-02-12"
+},
+"442": {
+"cik": 922224,
+"sec_name": "PPL Corp",
+"exchanges": [
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"PPL",
+"PPLC"
+],
+"dereg": [],
+"last10k": "2026-02-20"
+},
+"443": {
+"cik": 1524472,
+"sec_name": "Xylem Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"XYL"
+],
+"dereg": [],
+"last10k": "2026-02-25"
+},
+"444": {
+"cik": 1596532,
+"sec_name": "Arista Networks, Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"ANET"
+],
+"dereg": [],
+"last10k": "2026-02-17"
+},
+"445": {
+"cik": 75677,
+"sec_name": "PACKAGING CORP OF AMERICA",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"PKG"
+],
+"dereg": [],
+"last10k": "2026-02-26"
+},
+"446": {
+"cik": 78239,
+"sec_name": "PVH CORP. /DE/",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"PVH"
+],
+"dereg": [],
+"last10k": "2026-03-31"
+},
+"447": {
+"cik": 1792580,
+"sec_name": "Ovintiv Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"OVV"
+],
+"dereg": [],
+"last10k": "2026-02-23"
+},
+"448": {
+"cik": 8818,
+"sec_name": "Avery Dennison Corp",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"AVY"
+],
+"dereg": [],
+"last10k": "2026-02-25"
+},
+"449": {
+"cik": 1260221,
+"sec_name": "TransDigm Group INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"TDG"
+],
+"dereg": [],
+"last10k": "2025-11-12"
+},
+"450": {
+"cik": 1575515,
+"sec_name": "Sprouts Farmers Market, Inc.",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"SFM"
+],
+"dereg": [],
+"last10k": "2026-02-19"
+},
+"451": {
+"cik": 1045609,
+"sec_name": "Prologis, Inc.",
+"exchanges": [
+"NYSE",
+"OTC"
+],
+"tickers": [
+"PLD",
+"PLDGP"
+],
+"dereg": [
+{
+"form": "25-NSE",
+"date": "2026-01-09"
+}
+],
+"last10k": "2026-02-13"
+},
+"452": {
+"cik": 38777,
+"sec_name": "FRANKLIN TEMPLETON INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"BEN"
+],
+"dereg": [],
+"last10k": "2025-11-10"
+},
+"453": {
+"cik": 915389,
+"sec_name": "EASTMAN CHEMICAL CO",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"EMN"
+],
+"dereg": [],
+"last10k": "2026-02-13"
+},
+"454": {
+"cik": 771497,
+"sec_name": "ABM INDUSTRIES INC /DE/",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"ABM"
+],
+"dereg": [],
+"last10k": "2025-12-19"
+},
+"455": {
+"cik": 1021860,
+"sec_name": "NOV Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"NOV"
+],
+"dereg": [],
+"last10k": "2026-02-12"
+},
+"456": {
+"cik": 91419,
+"sec_name": "J M SMUCKER Co",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"SJM"
+],
+"dereg": [],
+"last10k": "2026-06-09"
+},
+"457": {
+"cik": null,
+"wiki_type": "Private",
+"wiki_intro": "Securian Financial Group is an American financial service group that provides a range of financial products and services such as insurance and investments. It is structured as a mutual holding company that operates a number of subsidiaries. \nAs of 2018, Securian Financial provided insurance, investment retirement products and trust services to more than 19 million clients in the United States, Puerto Rico and Canada."
+},
+"458": {
+"cik": 33213,
+"sec_name": "EQT Corp",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"EQT"
+],
+"dereg": [],
+"last10k": "2026-02-18"
+},
+"459": {
+"cik": 16058,
+"sec_name": "CACI INTERNATIONAL INC /DE/",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"CACI"
+],
+"dereg": [],
+"last10k": "2026-08-06"
+},
+"460": {
+"cik": 1408075,
+"sec_name": "GRAPHIC PACKAGING HOLDING CO",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"GPK"
+],
+"dereg": [],
+"last10k": "2026-03-02"
+},
+"461": {
+"cik": 1158449,
+"sec_name": "ADVANCE AUTO PARTS INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"AAP"
+],
+"dereg": [],
+"last10k": "2026-02-13"
+},
+"462": {
+"cik": 1702780,
+"sec_name": "Optimum Communications, Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"OPTU"
+],
+"dereg": [],
+"last10k": "2026-02-13"
+},
+"463": {
+"cik": 908937,
+"sec_name": "SIRIUS XM HOLDINGS INC.",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"SIRI"
+],
+"dereg": [],
+"last10k": "2026-02-05"
+},
+"464": {
+"cik": 811156,
+"sec_name": "CMS ENERGY CORP",
+"exchanges": [
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"CMS",
+"CMSA",
+"CMSC",
+"CMSD",
+"CMS-PC"
+],
+"dereg": [],
+"last10k": "2026-02-10"
+},
+"465": {
+"cik": 1657853,
+"sec_name": "HERTZ GLOBAL HOLDINGS, INC",
+"exchanges": [
+"Nasdaq",
+"Nasdaq"
+],
+"tickers": [
+"HTZ",
+"HTZWW"
+],
+"dereg": [],
+"last10k": "2026-02-26"
+},
+"466": {
+"cik": 1002910,
+"sec_name": "AMEREN CORP",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"AEE"
+],
+"dereg": [],
+"last10k": "2026-02-18"
+},
+"467": {
+"cik": 1024478,
+"sec_name": "ROCKWELL AUTOMATION, INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"ROK"
+],
+"dereg": [],
+"last10k": "2025-11-12"
+},
+"468": {
+"cik": 1964738,
+"sec_name": "Solventum Corp",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"SOLV"
+],
+"dereg": [],
+"last10k": "2026-02-27"
+},
+"469": {
+"cik": 865752,
+"sec_name": "Monster Beverage Corp",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"MNST"
+],
+"dereg": [],
+"last10k": "2026-02-27"
+},
+"470": {
+"cik": 1120193,
+"sec_name": "NASDAQ, INC.",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"NDAQ"
+],
+"dereg": [],
+"last10k": "2026-02-12"
+},
+"471": {
+"cik": 4281,
+"sec_name": "Howmet Aerospace Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"HWM"
+],
+"dereg": [
+{
+"form": "25-NSE",
+"date": "2025-12-17"
+}
+],
+"last10k": "2026-02-12"
+},
+"472": {
+"cik": 932696,
+"sec_name": "INSIGHT ENTERPRISES INC",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"NSIT"
+],
+"dereg": [],
+"last10k": "2026-02-12"
+},
+"473": {
+"cik": 1136869,
+"sec_name": "ZIMMER BIOMET HOLDINGS, INC.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"ZBH"
+],
+"dereg": [],
+"last10k": "2026-02-20"
+},
+"474": {
+"cik": 1041061,
+"sec_name": "YUM BRANDS INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"YUM"
+],
+"dereg": [],
+"last10k": "2026-02-20"
+},
+"475": {
+"cik": 815556,
+"sec_name": "FASTENAL CO",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"FAST"
+],
+"dereg": [],
+"last10k": "2026-02-05"
+},
+"476": {
+"cik": 1835632,
+"sec_name": "Marvell Technology, Inc.",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"MRVL"
+],
+"dereg": [],
+"last10k": "2026-03-11"
+},
+"477": {
+"cik": 1535929,
+"sec_name": "Voya Financial, Inc.",
+"exchanges": [
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"VOYA",
+"VOYA-PB"
+],
+"dereg": [],
+"last10k": "2026-02-20"
+},
+"478": {
+"cik": 1042046,
+"sec_name": "AMERICAN FINANCIAL GROUP INC",
+"exchanges": [
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"AFG",
+"AFGB",
+"AFGC",
+"AFGD",
+"AFGE"
+],
+"dereg": [],
+"last10k": "2026-02-25"
+},
+"479": {
+"cik": 1530950,
+"sec_name": "Post Holdings, Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"POST"
+],
+"dereg": [],
+"last10k": "2025-11-21"
+},
+"480": {
+"cik": 1166003,
+"sec_name": "XPO, Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"XPO"
+],
+"dereg": [],
+"last10k": "2026-02-05"
+},
+"481": {
+"cik": 1666700,
+"sec_name": "DuPont de Nemours, Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"DD"
+],
+"dereg": [],
+"last10k": "2026-02-17"
+},
+"482": {
+"cik": 897723,
+"sec_name": "SANMINA CORP",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"SANM"
+],
+"dereg": [],
+"last10k": "2025-11-13"
+},
+"483": {
+"cik": null
+},
+"484": {
+"cik": 29905,
+"sec_name": "DOVER Corp",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"DOV"
+],
+"dereg": [],
+"last10k": "2026-02-13"
+},
+"485": {
+"cik": 1396009,
+"sec_name": "Vulcan Materials CO",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"VMC"
+],
+"dereg": [],
+"last10k": "2026-02-19"
+},
+"486": {
+"cik": 1796209,
+"sec_name": "APi Group Corp",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"APG"
+],
+"dereg": [],
+"last10k": "2026-02-25"
+},
+"487": {
+"cik": 882835,
+"sec_name": "ROPER TECHNOLOGIES INC",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"ROP"
+],
+"dereg": [],
+"last10k": "2026-02-24"
+},
+"488": {
+"cik": 1357615,
+"sec_name": "KBR, INC.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"KBR"
+],
+"dereg": [],
+"last10k": "2026-02-26"
+},
+"489": {
+"cik": 91767,
+"sec_name": "SONOCO PRODUCTS CO",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"SON"
+],
+"dereg": [],
+"last10k": "2026-02-26"
+},
+"490": {
+"cik": 719955,
+"sec_name": "WILLIAMS SONOMA INC",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"WSM"
+],
+"dereg": [],
+"last10k": "2026-03-26"
+},
+"491": {
+"cik": 22444,
+"sec_name": "COMMERCIAL METALS Co",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"CMC"
+],
+"dereg": [],
+"last10k": "2026-10-16"
+},
+"492": {
+"cik": 1059556,
+"sec_name": "MOODYS CORP /DE/",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"MCO"
+],
+"dereg": [],
+"last10k": "2026-02-18"
+},
+"493": {
+"cik": 732834,
+"sec_name_match": "CONTINENTAL RESOURCES, INC",
+"sec_name": "CONTINENTAL RESOURCES, INC",
+"exchanges": [],
+"tickers": [],
+"dereg": [],
+"last10k": "2026-02-23",
+"wiki_type": "Privately held company",
+"wiki_intro": "Continental Resources, Inc. is an American petroleum and natural gas exploration and production company headquartered in Oklahoma City. The company was founded by Harold Hamm in 1967 at the age of 21 as Shelly Dean Oil Company, originally named for Hamm's two daughters. In 1990, Shelly Dean re-branded itself as Continental Resources. It primarily used hydraulic fracturing and directional drilling to produce from low permeability formations. In May 2007, the company became a public company but in November 2022, the company was acquired by affiliates of Harold Hamm."
+},
+"494": {
+"cik": 1699150,
+"sec_name": "Ingersoll Rand Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"IR"
+],
+"dereg": [],
+"last10k": "2026-02-17"
+},
+"495": {
+"cik": 1856525,
+"sec_name": "Core & Main, Inc.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"CNM"
+],
+"dereg": [],
+"last10k": "2026-03-24"
+},
+"496": {
+"cik": 858470,
+"sec_name_match": "Coterra Energy Inc.",
+"sec_name": "Coterra Energy Inc.",
+"exchanges": [],
+"tickers": [],
+"dereg": [
+{
+"form": "15-12G",
+"date": "2026-05-19"
+},
+{
+"form": "25-NSE",
+"date": "2026-05-07"
+}
+],
+"last10k": "2026-02-27",
+"wiki_type": null,
+"wiki_intro": "Coterra Energy Inc. was an American company engaged in hydrocarbon exploration. The company had operations in the Permian Basin, Marcellus Shale, and the Anadarko Basin. In May 2026, while ranked 496th in the Fortune 500, the company merged with Devon Energy, and the Coterra name was retired.\nAs of December 31, 2024, the company had 2,271 million barrels of oil equivalent (1.389\u00d71010 GJ) of estimated proved reserves, of which 85% was natural gas, 7% was petroleum, and 8% was natural gas liquids."
+},
+"497": {
+"cik": 1361538,
+"sec_name": "Primoris Services Corp",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"PRIM"
+],
+"dereg": [],
+"last10k": "2026-02-24"
+},
+"498": {
+"cik": 62996,
+"sec_name": "MASCO CORP /DE/",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"MAS"
+],
+"dereg": [],
+"last10k": "2026-02-10"
+},
+"499": {
+"cik": 1206264,
+"sec_name": "SOMNIGROUP INTERNATIONAL INC.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"SGI"
+],
+"dereg": [],
+"last10k": "2026-02-27"
+},
+"500": {
+"cik": 1740332,
+"sec_name": "RESIDEO TECHNOLOGIES, INC.",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"REZI"
+],
+"dereg": [],
+"last10k": "2026-02-24"
+}
+}
