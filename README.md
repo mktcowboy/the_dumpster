@@ -5,7 +5,7 @@
 # Project index
 
 Reports, data snapshots, visualizations, and small tools, grouped by topic.
-The [HTML catalog](index.html) links to 19 projects and 28 report pages.
+The [HTML catalog](index.html) links to 20 projects and 31 report pages.
 Most reports open directly in a browser; the live options board requires its local server.
 
 ## Infrastructure
@@ -40,6 +40,7 @@ Most reports open directly in a browser; the live options board requires its loc
 | [Tanakh atlas](research/religion/tanakh-atlas/) | Single-file interactive atlas of the Tanakh and the later Jewish library, with the full JPS 1917 text, themes, people, places, and essays |
 | [Rent-seeking report](biz-other/rent-seeking-report/rent-seeking-report.html) | Economic rents, their history, and 50 ways to create rental income today |
 | [Arby's deal deep dive](biz-other/arbys-deal-deep-dive/arby-s-deal-deep-dive.html) | Sourced account of the Arby's acquisition and turnaround, including Roark's 2011 purchase |
+| [James Beard award graphs](James-Beard/) | Unofficial Obsidian-style graphs of public James Beard Foundation award results: restaurants and chefs, 1991–2025, and books, broadcast, and journalism, 1991–2024 |
 
 ## Reading
 
