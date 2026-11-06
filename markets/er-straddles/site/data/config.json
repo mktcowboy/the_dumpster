@@ -1,0 +1,19 @@
+{
+  "_doc": "Edit to tune costs/liquidity. Fractions are of the HALF-spread of the ATM straddle (call spread + put spread). Commission is per contract per leg per side.",
+  "commission_per_contract": 0.65,
+  "entry_slippage_frac_of_half_spread": 0.5,
+  "exit_slippage_frac_of_half_spread": 0.5,
+  "exit_spread_multiplier": 1.0,
+  "default_spread_pct_of_mid_if_unknown": 10.0,
+  "liquidity_grades": {
+    "A": {"min_oi": 5000, "min_volume": 1000, "max_spread_pct": 5.0},
+    "B": {"min_oi": 1000, "min_volume": 200, "max_spread_pct": 10.0},
+    "C": {"min_oi": 250, "min_volume": 25, "max_spread_pct": 20.0}
+  },
+  "rich_allowed_liquidity_grades": ["A", "B", "C"],
+  "rich_min_score": 1.25,
+  "rich_min_net_hit_rate": 70.0,
+  "rich_min_quarters": 6,
+  "nasdaq_calendar_horizon_days": 120,
+  "morning_session_cutoff_hour_ct": 12
+}
