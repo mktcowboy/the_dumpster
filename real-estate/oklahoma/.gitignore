@@ -1,0 +1,9 @@
+node_modules/
+data/geocode-cache.json
+data/sheriff-feeds.json
+data/vrm.json
+data/payne-sheriff.json
+data/mcclain-sheriff.json
+data/assessor-cache.json
+data/sync.log
+data/listings.json.tmp
