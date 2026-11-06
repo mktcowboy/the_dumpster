@@ -25,6 +25,7 @@ Most reports open directly in a browser; the live options board requires its loc
 | [Options — live board](markets/options-live/) | Max-pain dashboard with click-through ticker details and charts; requires the [local server](markets/options-live/README.md) |
 | [Size & style ETFs](markets/size-style/styles.html) | Nine iShares S&P style-box ETFs charted together, with a 6M, 1Y, 3Y, and 5Y total-return table. Yahoo Finance through November 4, 2026 |
 | [SPDR sector ETFs](markets/size-style/sectors.html) | Companion chart of the 11 Select Sector SPDRs, daily and dividend-adjusted, with period returns. Yahoo Finance through November 4, 2026 |
+| [Fortune 500 2026 Atlas](f500/f500_explorer.html) | Single-file interactive explorer of the 2026 Fortune 500, with a dashboard, sortable table, HQ map, industry treemap, relationship network, Public vs Private ownership tab, and a profile for every company |
 
 ## Real estate
 
@@ -41,6 +42,7 @@ Most reports open directly in a browser; the live options board requires its loc
 | [Rent-seeking report](biz-other/rent-seeking-report/rent-seeking-report.html) | Economic rents, their history, and 50 ways to create rental income today |
 | [Arby's deal deep dive](biz-other/arbys-deal-deep-dive/arby-s-deal-deep-dive.html) | Sourced account of the Arby's acquisition and turnaround, including Roark's 2011 purchase |
 | [James Beard award graphs](James-Beard/) | Unofficial Obsidian-style graphs of public James Beard Foundation award results: restaurants and chefs, 1991–2025, and books, broadcast, and journalism, 1991–2024 |
+| [Biochar water filtration](biochar/) | Staging pack for carbon-based water filtration: an evidence review of biochar and activated carbon, PPP notes, a papers audit, and a cite-first bibliography |
 
 ## Reading
 
