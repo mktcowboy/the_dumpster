@@ -1,0 +1,82 @@
+{
+ "ticker": "FER",
+ "as_of": "2026-10-21T16:29:16-05:00",
+ "notes": [
+  "Post-earnings expiry is 17 trading days after the reaction day; straddle includes material non-earnings time value."
+ ],
+ "error": null,
+ "spot": 50.02,
+ "history": [],
+ "date_check": {
+  "yahoo_date": "2026-10-27",
+  "yahoo_timing": "AMC",
+  "yahoo_is_estimate": false,
+  "nasdaq_date": null,
+  "nasdaq_timing": null,
+  "status": "Unconfirmed",
+  "detail": "Yahoo only; not found in Nasdaq calendar window",
+  "date": "2026-10-27",
+  "timing": "AMC",
+  "timing_src": "Yahoo",
+  "nasdaq_meta": {
+   "days_queried": 87,
+   "days_failed": 0,
+   "start": "2026-10-21",
+   "end": "2027-02-18"
+  }
+ },
+ "date_status": "Unconfirmed",
+ "next_earnings": "2026-10-27",
+ "timing": "AMC",
+ "timing_src": "Yahoo",
+ "days_to_earnings": 6,
+ "reaction_day": "2026-10-28",
+ "post": {
+  "expiry": "2026-11-20",
+  "strike": 50.0,
+  "call": 2.1,
+  "put": 2.275,
+  "price_src": "mid",
+  "straddle": 4.375,
+  "implied_move_pct": 8.747,
+  "T_years": 0.0873,
+  "iv_straddle": 0.3717,
+  "iv_yf": 0.6718,
+  "spread": 6.85,
+  "spread_pct_of_straddle": 156.6,
+  "call_oi": 14,
+  "put_oi": 19,
+  "call_vol": 1,
+  "put_vol": 2
+ },
+ "implied_move_pct": 8.747,
+ "days_event_to_expiry": 17,
+ "liquidity": {
+  "atm_oi": 33,
+  "atm_volume": 3,
+  "spread_pct_of_mid": 156.6,
+  "grade": "F"
+ },
+ "hist_vol_ex_earnings": 0.2394,
+ "model": {
+  "sigma_ex": 0.2394,
+  "sigma_ex_src": "63d realized vol ex-earnings (proxy: no pre-earnings expiry)",
+  "E_std_pct": 8.535,
+  "t_rem_days": 17,
+  "entry_premium_pct": 8.422,
+  "flag": null
+ },
+ "costs": {
+  "entry_slip_pct": 3.4236,
+  "exit_slip_pct": 3.4236,
+  "commission_pct": 0.052,
+  "total_cost_pct": 6.8992,
+  "spread_estimated": false,
+  "spread_used": 6.85
+ },
+ "pnl_per_quarter": [],
+ "pnl_stats": {},
+ "stats": {},
+ "name": "Ferrovial N.V.",
+ "chart_png": null
+}
