@@ -1,8 +1,0 @@
-data/fortune2026.html
-data/next2026.json
-data/*.zip
-data/2024_Gaz_*.txt
-__pycache__/
-*.log
-*.bundle
-*bundle.tar.gz
