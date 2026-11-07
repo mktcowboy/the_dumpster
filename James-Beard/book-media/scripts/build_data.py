@@ -2,9 +2,9 @@
 """Build Book / Broadcast Media / Journalism awards + graph JSON from raw CSV."""
 from __future__ import annotations
 import csv, json, re
-from html import unescape
 from pathlib import Path
 from collections import Counter, defaultdict
+from html import unescape
 
 ROOT = Path(__file__).resolve().parents[1]
 RAW = ROOT / "raw" / "james-beard-awards.csv"
@@ -12,6 +12,44 @@ OUT = ROOT / "data"
 SOURCE_CSV = "https://github.com/cjwinchester/james-beard (from jamesbeard.org/awards/search-past-awards)"
 SOURCE_URL = "https://www.jamesbeard.org/awards/search-past-awards"
 MEDIA_CATS = {"Book", "Broadcast Media", "Journalism"}
+
+# The source CSV has UTF-8 text that was decoded as Windows-1252 (sometimes repeatedly),
+# e.g. "Bullyâ€™s" for "Bully’s". Reverse that until the telltale pairs are gone.
+MOJIBAKE = re.compile("[ÃÂâÆË][\x80-\xbf\u0152\u0153\u0160\u0161\u0178\u017d\u017e\u0192\u02c6\u02dc\u2013-\u203a\u20ac\u2122]")
+# Garbled past repair (truncated mid-character); every other row names it this way.
+TEXT_OVERRIDES = {"Union Square CafÃƒÆ’Ã‹â€": "Union Square Cafe"}
+# Garbled text whose non-breaking space was flattened to a plain space, so it no longer round-trips.
+FRAGMENT_FIXES = [("Â ", " "), ("LÃ Trattoria", "Là Trattoria"), ("TavolÃ ta", "Tavolàta")]
+
+def cp1252_bytes(s: str) -> bytes:
+    out = bytearray()
+    for c in s:
+        try:
+            out += c.encode("cp1252")
+        except UnicodeEncodeError:
+            if ord(c) > 0xFF:
+                raise
+            out.append(ord(c))  # bytes cp1252 leaves undefined (0x81, 0x8d, ...)
+    return bytes(out)
+
+def clean_text(s: str) -> str:
+    s = unescape((s or "").strip())
+    if s in TEXT_OVERRIDES:
+        return TEXT_OVERRIDES[s]
+    for bad, good in FRAGMENT_FIXES:
+        s = s.replace(bad, good)
+    for _ in range(4):
+        if not MOJIBAKE.search(s):
+            break
+        try:
+            s = cp1252_bytes(s).decode("utf-8")
+        except UnicodeError:
+            break
+    # Some names are doubled around a pipe ("Jose Enrique|Jose Enrique")
+    parts = s.split("|")
+    if len(parts) > 1 and len(set(parts)) == 1:
+        s = parts[0]
+    return s
 
 def slug(s: str) -> str:
     s = (s or "").strip().lower()
@@ -21,7 +59,8 @@ def nid(kind: str, *parts: str) -> str:
     return f"{kind}:{slug('-'.join(p for p in parts if p))}"
 
 def clean(s: str) -> str:
-    return unescape(re.sub(r"\s+", " ", (s or "").strip()))
+    # Repair first: collapsing whitespace would also flatten the non-breaking spaces inside garbled text
+    return re.sub(r"\s+", " ", clean_text(s))
 
 def clean_subcat(s: str) -> str:
     s = clean(s)
@@ -142,10 +181,10 @@ def main():
             "sources": [SOURCE_CSV, SOURCE_URL],
             "notes": [
                 "Primary dataset: public CSV from jamesbeard.org search-past-awards via cjwinchester/james-beard (through 2024).",
-                "Includes Book, Broadcast Media, and Journalism only.",
-                "2025 media winners exist on JBF site but are not yet merged into this CSV-based build.",
+                "Includes Book, Broadcast Media, and Journalism only — not Restaurant & Chef.",
+                "2025 media winners exist on JBF site but are not yet merged into this v1 CSV-based build.",
                 "No invented fields; blank when unknown.",
-                "Journalism rows typically have person + publication; article titles often absent from source CSV.",
+                "Journalism rows typically have person + publication (outlet); article titles are often absent from the source CSV.",
             ],
         },
     }

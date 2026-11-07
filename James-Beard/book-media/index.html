@@ -30,7 +30,8 @@
   }
   * { box-sizing: border-box; }
   html, body { margin: 0; height: 100%; background: var(--bg); color: var(--text); font: 14px/1.45 "Inter", system-ui, -apple-system, sans-serif; }
-  #app { display: grid; grid-template-columns: 280px 1fr var(--panel-w); height: 100vh; }
+  #app { display: grid; grid-template-columns: 280px 1fr; height: 100vh; }
+  #app.profile-open { grid-template-columns: 280px 1fr var(--panel-w); }
   aside, #profile { background: var(--bg2); border-color: var(--border); overflow: auto; }
   aside { border-right: 1px solid var(--border); padding: 16px; }
   #profile { border-left: 1px solid var(--border); padding: 16px; display: none; }
@@ -91,6 +92,7 @@
   #closeProfile { float: right; }
   link-line, .empty { color: var(--muted); font-size: 13px; }
   text { pointer-events: none; font-size: 10px; fill: #c5cad6; }
+  #graph:not(.zoomed) text.minor { display: none; }
   .node circle { stroke-width: 1.25px; cursor: pointer; }
   .node.dim circle { opacity: 0.15; }
   .node.dim text { opacity: 0.05; }
@@ -106,9 +108,10 @@
   .state-card .n { font-size: 20px; font-weight: 650; }
   .state-card .s { color: var(--muted); font-size: 12px; }
   @media (max-width: 960px) {
-    #app { grid-template-columns: 1fr; grid-template-rows: auto 1fr auto; }
-    aside { border-right: none; border-bottom: 1px solid var(--border); max-height: 40vh; }
-    #profile { border-left: none; border-top: 1px solid var(--border); max-height: 40vh; }
+    #app, #app.profile-open { grid-template-columns: 1fr; height: auto; min-height: 100vh; }
+    #main { order: -1; height: 75vh; }
+    aside { border-right: none; border-top: 1px solid var(--border); }
+    #profile { order: -1; border-left: none; border-top: 1px solid var(--border); }
   }
 </style>
 </head>
@@ -119,11 +122,11 @@
     <div class="sub">Book · Broadcast Media · Journalism · Obsidian-style graph</div>
 
     <label>Search</label>
-    <input id="q" type="search" placeholder="Author, book, show, outlet…" />
+    <input id="q" type="search" placeholder="Author, book, show, outlet… (Enter)" />
 
     <label>Year range</label>
     <div class="row">
-      <input id="yearMin" type="number" min="1991" max="2024" value="2010" />
+      <input id="yearMin" type="number" min="1991" max="2024" value="1991" />
       <input id="yearMax" type="number" min="1991" max="2025" value="2024" />
     </div>
 
@@ -164,7 +167,14 @@
       </select>
     </div>
 
-    <button class="btn primary" id="applyBtn">Apply filters</button>
+    <label>Max nodes</label>
+    <select id="maxNodes">
+      <option value="500">500</option>
+      <option value="1500">1,500</option>
+      <option value="4000" selected>4,000</option>
+      <option value="100000">All (slower)</option>
+    </select>
+
     <button class="btn" id="resetBtn">Reset camera</button>
     <button class="btn" id="toggleMap" style="display:none">Map</button>
 
@@ -213,9 +223,11 @@ const COLORS = {
 const state = {
   graph: null,
   awards: null,
+  nodeById: new Map(),
   focusId: null,
   simulation: null,
-  transform: d3.zoomIdentity,
+  view: null,       // current drawing: { nodes, svg, zoom }
+  userMoved: false, // stop auto-fitting once the user pans, zooms or drags
 };
 
 async function load() {
@@ -225,6 +237,12 @@ async function load() {
   ]);
   state.graph = graph;
   state.awards = awards;
+  state.nodeById = new Map(graph.nodes.map(n => [n.id, n]));
+  // Media awards have no semifinalists; hide statuses with no rows instead of offering a no-op box
+  const statuses = new Set(graph.meta.coverage.statuses);
+  document.querySelectorAll('#statusChecks input').forEach(i => {
+    if (!statuses.has(i.value)) i.closest('label').style.display = 'none';
+  });
   const years = graph.meta.coverage.years;
   document.getElementById('yearMin').min = years[0];
   document.getElementById('yearMin').max = years[years.length - 1];
@@ -248,6 +266,32 @@ function renderStats() {
     `<div style="margin-top:8px">Source: JBF search-past-awards (via public CSV through 2024).</div>`;
 }
 
+const REL = { winner: 'won', nominee: 'nominated', semifinalist: 'semifinalist' };
+
+function slug(s) {
+  return String(s || '').trim().toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') || 'unknown';
+}
+function nid(kind, ...parts) {
+  return `${kind}:${slug(parts.filter(Boolean).join('-'))}`;
+}
+
+// Links one award row contributes, as [source, target, rel] (same rules as scripts/build_data.py).
+function awardLinks(a) {
+  const year = nid('year', String(a.year));
+  const prog = nid('program', a.program);
+  const cat = nid('category', a.program, a.category || 'Uncategorized');
+  const pid = a.person && nid('person', a.person);
+  const wid = a.work && nid(a.work_type || 'work', a.work);
+  const oid = a.outlet && nid(a.outlet_type || 'outlet', a.outlet);
+  const subject = pid || wid || oid;
+  const out = [[cat, prog, 'in-program']];
+  if (subject) out.push([subject, cat, REL[a.status]], [subject, year, 'in-year'], [subject, prog, 'in-program']);
+  if (pid && wid) out.push([pid, wid, a.program === 'Book' ? 'authored' : 'credited-on']);
+  if (wid && oid) out.push([wid, oid, a.program === 'Book' ? 'published-by' : a.program === 'Broadcast Media' ? 'aired-on' : 'appeared-in']);
+  if (pid && oid && !wid) out.push([pid, oid, a.program === 'Journalism' ? 'wrote-for' : 'affiliated-with']);
+  return out;
+}
+
 function filterGraph() {
   const y0 = +document.getElementById('yearMin').value;
   const y1 = +document.getElementById('yearMax').value;
@@ -257,108 +301,113 @@ function filterGraph() {
   const q = document.getElementById('q').value.trim().toLowerCase();
   const hops = +document.getElementById('hops').value;
 
-  // Status filter via edges that carry status/year
-  const statusEdges = state.graph.edges.filter(e =>
-    (e.rel === 'won' || e.rel === 'nominated' || e.rel === 'semifinalist') &&
-    e.year >= y0 && e.year <= y1 &&
-    statuses.has(e.status)
-  );
+  // The view is the graph of the award rows that match the filters: no links from other years or statuses.
+  const rows = state.awards.awards.filter(a =>
+    a.year >= y0 && a.year <= y1 && statuses.has(a.status) && (!program || a.program === program));
+  const edgeMap = new Map();
+  rows.forEach(a => awardLinks(a).forEach(([source, target, rel]) => {
+    if (source && target && source !== target) edgeMap.set(`${source}|${target}|${rel}`, { source, target, rel });
+  }));
+  const edges = [...edgeMap.values()];
+  const touched = new Set();
+  edges.forEach(e => { touched.add(e.source); touched.add(e.target); });
 
-  let keep = new Set();
-  statusEdges.forEach(e => { keep.add(e.source); keep.add(e.target); });
-
-  // Expand along structural edges within year-filtered subjects
-  const bySrc = d3.group(state.graph.edges, d => d.source);
-  const byTgt = d3.group(state.graph.edges, d => d.target);
-  const seed = new Set(keep);
-  seed.forEach(id => {
-    (bySrc.get(id) || []).forEach(e => {
-      if (['authored','credited-on','published-by','aired-on','appeared-in','wrote-for','affiliated-with','in-year','in-program'].includes(e.rel)) {
-        if (e.year && (e.year < y0 || e.year > y1)) return;
-        keep.add(e.target);
-      }
-    });
-    (byTgt.get(id) || []).forEach(e => {
-      if (['authored','credited-on','published-by','aired-on','appeared-in','wrote-for','affiliated-with','in-program'].includes(e.rel)) keep.add(e.source);
-    });
-  });
-
-  if (program) {
-    const progNode = state.graph.nodes.find(n => n.type === 'program' && n.label === program);
-    if (progNode) {
-      const inProg = new Set([progNode.id]);
-      state.graph.edges.forEach(e => {
-        if (e.rel === 'in-program' && (e.target === progNode.id || e.source === progNode.id)) {
-          inProg.add(e.source); inProg.add(e.target);
-        }
-        if (e.program === program) { inProg.add(e.source); inProg.add(e.target); }
-      });
-      // also categories with program attr
-      state.graph.nodes.forEach(n => {
-        if (n.program === program) inProg.add(n.id);
-      });
-      keep = new Set([...keep].filter(id => {
-        const n = state.graph.nodes.find(x => x.id === id);
-        if (!n) return false;
-        if (n.type === 'year') return true;
-        return inProg.has(id);
-      }));
-    }
-  }
-
-  let nodes = state.graph.nodes.filter(n => keep.has(n.id) && types.has(n.type));
+  let nodes = [...touched].map(id => state.nodeById.get(id)).filter(n => n && types.has(n.type));
   if (q) {
     const matched = nodes.filter(n => n.label.toLowerCase().includes(q));
-    if (matched.length) {
-      // Prefer focusing first match
-      if (!state.focusId || !matched.some(m => m.id === state.focusId)) {
-        state.focusId = matched[0].id;
-      }
-    }
+    if (matched.length && !matched.some(m => m.id === state.focusId)) state.focusId = matched[0].id;
   }
 
   // Local hops from focus
   if (hops > 0 && state.focusId) {
     const nbr = new Map();
-    state.graph.edges.forEach(e => {
-      if (!keep.has(e.source) || !keep.has(e.target)) return;
+    edges.forEach(e => {
       if (!nbr.has(e.source)) nbr.set(e.source, new Set());
       if (!nbr.has(e.target)) nbr.set(e.target, new Set());
       nbr.get(e.source).add(e.target);
       nbr.get(e.target).add(e.source);
     });
     const local = new Set([state.focusId]);
-    let frontier = new Set([state.focusId]);
+    let frontier = [state.focusId];
     for (let h = 0; h < hops; h++) {
-      const next = new Set();
-      frontier.forEach(id => (nbr.get(id) || []).forEach(x => { if (!local.has(x)) next.add(x); }));
-      next.forEach(x => local.add(x));
+      const next = [];
+      frontier.forEach(id => (nbr.get(id) || []).forEach(x => { if (!local.has(x)) { local.add(x); next.push(x); } }));
       frontier = next;
     }
     nodes = nodes.filter(n => local.has(n.id));
   }
 
-  const nodeIds = new Set(nodes.map(n => n.id));
-  const links = state.graph.edges
-    .filter(e => nodeIds.has(e.source) && nodeIds.has(e.target))
-    .map(e => ({ ...e }));
-
-  // Cap for performance
-  const MAX_NODES = 800;
-  if (nodes.length > MAX_NODES) {
-    // Prefer people/restaurants with more wins, keep categories/years/places connected
-    const score = n => (n.win_count || 0) * 3 + (n.award_count || 0) + (n.type === 'category' || n.type === 'year' ? 50 : 0);
-    nodes = [...nodes].sort((a, b) => score(b) - score(a)).slice(0, MAX_NODES);
-    const ids = new Set(nodes.map(n => n.id));
-    return {
-      nodes,
-      links: links.filter(e => ids.has(e.source) && ids.has(e.target)),
-      truncated: true,
-      totalBeforeCap: nodeIds.size,
-    };
+  // Cap for performance, keeping what is shown linked together
+  const totalBeforeCap = nodes.length;
+  const maxNodes = +document.getElementById('maxNodes').value;
+  let ids = new Set(nodes.map(n => n.id));
+  let links = edges.filter(e => ids.has(e.source) && ids.has(e.target));
+  if (nodes.length > maxNodes) {
+    nodes = capConnected(nodes, links, maxNodes, nodeScore);
+    ids = new Set(nodes.map(n => n.id));
+    links = links.filter(e => ids.has(e.source) && ids.has(e.target));
   }
-  return { nodes, links, truncated: false, totalBeforeCap: nodes.length };
+  return { nodes, links, truncated: totalBeforeCap > maxNodes, totalBeforeCap };
 }
+
+// Award-holders rank by their record; hubs (categories, places, years, programs…) by how many visible links they carry.
+function nodeScore(n, degree) {
+  if (n.id === state.focusId) return Infinity;
+  return n.award_count != null ? (n.win_count || 0) * 3 + n.award_count : degree;
+}
+
+// Keep at most `max` nodes, growing outward from the strongest node and always preferring nodes linked to what
+// is already kept, so nothing is left floating on its own. A new cluster starts only when nothing linked is left.
+function capConnected(nodes, links, max, score) {
+  if (nodes.length <= max) return nodes;
+  const byId = new Map(nodes.map(n => [n.id, n]));
+  const adj = new Map(nodes.map(n => [n.id, []]));
+  links.forEach(l => { adj.get(l.source).push(l.target); adj.get(l.target).push(l.source); });
+  const LINKED = 1e9;
+  const heap = [];
+  nodes.forEach(n => heapPush(heap, [score(n, adj.get(n.id).length), n.id]));
+  const kept = new Set();
+  while (kept.size < max && heap.length) {
+    const [, id] = heapPop(heap);
+    if (kept.has(id)) continue;
+    kept.add(id);
+    for (const x of adj.get(id)) {
+      if (!kept.has(x)) heapPush(heap, [LINKED + score(byId.get(x), adj.get(x).length), x]);
+    }
+  }
+  return nodes.filter(n => kept.has(n.id));
+}
+
+// Max-heap of [priority, id] pairs for capConnected.
+function heapPush(h, item) {
+  h.push(item);
+  let i = h.length - 1;
+  while (i > 0) {
+    const p = (i - 1) >> 1;
+    if (h[p][0] >= h[i][0]) break;
+    [h[p], h[i]] = [h[i], h[p]];
+    i = p;
+  }
+}
+function heapPop(h) {
+  const top = h[0];
+  const last = h.pop();
+  if (h.length) {
+    h[0] = last;
+    let i = 0;
+    for (;;) {
+      const l = 2 * i + 1, r = l + 1;
+      let m = i;
+      if (l < h.length && h[l][0] > h[m][0]) m = l;
+      if (r < h.length && h[r][0] > h[m][0]) m = r;
+      if (m === i) break;
+      [h[m], h[i]] = [h[i], h[m]];
+      i = m;
+    }
+  }
+  return top;
+}
+
 
 function applyAndDraw() {
   const sub = filterGraph();
@@ -370,6 +419,7 @@ function applyAndDraw() {
 }
 
 function draw(sub) {
+  if (state.simulation) state.simulation.stop();
   const svg = d3.select('#graph');
   const wrap = document.getElementById('main');
   const width = wrap.clientWidth;
@@ -378,12 +428,13 @@ function draw(sub) {
   svg.selectAll('*').remove();
 
   const gRoot = svg.append('g');
-  const zoom = d3.zoom().scaleExtent([0.1, 6]).on('zoom', (event) => {
-    state.transform = event.transform;
+  const zoom = d3.zoom().scaleExtent([0.05, 6]).on('zoom', (event) => {
+    if (event.sourceEvent) state.userMoved = true;
     gRoot.attr('transform', event.transform);
+    svg.classed('zoomed', event.transform.k >= 1.5);
   });
   svg.call(zoom);
-  svg.call(zoom.transform, state.transform);
+  state.userMoved = false;
 
   const nodes = sub.nodes.map(d => ({ ...d }));
   const nodeById = new Map(nodes.map(d => [d.id, d]));
@@ -398,7 +449,7 @@ function draw(sub) {
   const node = gRoot.append('g').selectAll('g')
     .data(nodes).join('g').attr('class', 'node')
     .call(d3.drag()
-      .on('start', (event, d) => { if (!event.active) simulation.alphaTarget(0.3).restart(); d.fx = d.x; d.fy = d.y; })
+      .on('start', (event, d) => { state.userMoved = true; if (!event.active) simulation.alphaTarget(0.3).restart(); d.fx = d.x; d.fy = d.y; })
       .on('drag', (event, d) => { d.fx = event.x; d.fy = event.y; })
       .on('end', (event, d) => { if (!event.active) simulation.alphaTarget(0); d.fx = null; d.fy = null; }));
 
@@ -413,24 +464,64 @@ function draw(sub) {
 
   node.append('title').text(d => `${d.label} (${d.type})`);
 
+  // Small nodes get labels only when zoomed in (or focused)
   node.append('text')
     .attr('x', d => radius(d) + 4)
     .attr('y', 3)
+    .classed('minor', d => d.id !== state.focusId && radius(d) < 7 && !['category', 'program', 'year'].includes(d.type))
     .text(d => trimLabel(d.label, d.type));
 
   const simulation = d3.forceSimulation(nodes)
     .force('link', d3.forceLink(links).id(d => d.id).distance(d => d.rel === 'works-at' ? 40 : 70).strength(0.4))
     .force('charge', d3.forceManyBody().strength(-120))
     .force('center', d3.forceCenter(width / 2, height / 2))
+    // Gentle pull toward the middle so unconnected nodes don't drift out of view
+    .force('x', d3.forceX(width / 2).strength(0.04))
+    .force('y', d3.forceY(height / 2).strength(0.04))
     .force('collision', d3.forceCollide().radius(d => radius(d) + 4))
     .on('tick', () => {
       link.attr('x1', d => d.source.x).attr('y1', d => d.source.y)
           .attr('x2', d => d.target.x).attr('y2', d => d.target.y);
       node.attr('transform', d => `translate(${d.x},${d.y})`);
+      fitView(false); // camera follows the layout as it spreads out
     });
   state.simulation = simulation;
+  state.view = { nodes, svg, zoom };
+  fitView(false);
+}
 
-  svg.on('click', () => { /* click empty */ });
+// Zoom so every node fits the graph area (below the toolbar), unless the user has taken over the camera.
+function fitView(animate, force) {
+  if (!state.view || (state.userMoved && !force)) return;
+  const { nodes, svg, zoom } = state.view;
+  if (!nodes.length) return;
+  const wrap = document.getElementById('main');
+  const pad = { top: 56, right: 24, bottom: 24, left: 24 };
+  const w = wrap.clientWidth - pad.left - pad.right;
+  const h = wrap.clientHeight - pad.top - pad.bottom;
+  const [x0, x1] = d3.extent(nodes, d => d.x);
+  const [y0, y1] = d3.extent(nodes, d => d.y);
+  const k = Math.max(0.05, Math.min(2, w / Math.max(1, x1 - x0), h / Math.max(1, y1 - y0)));
+  const t = d3.zoomIdentity
+    .translate(pad.left + w / 2 - k * (x0 + x1) / 2, pad.top + h / 2 - k * (y0 + y1) / 2)
+    .scale(k);
+  (animate ? svg.transition().duration(500) : svg).call(zoom.transform, t);
+}
+
+function resizeGraph() {
+  const wrap = document.getElementById('main');
+  d3.select('#graph').attr('viewBox', [0, 0, wrap.clientWidth, wrap.clientHeight]);
+  // The camera absorbs size changes; the layout itself stays put.
+  fitView(false);
+}
+
+// Opening or closing the profile changes the graph's width, so refit after the layout reflows.
+function setProfileOpen(open) {
+  const profile = document.getElementById('profile');
+  if (profile.classList.contains('open') === open) return;
+  profile.classList.toggle('open', open);
+  document.getElementById('app').classList.toggle('profile-open', open);
+  requestAnimationFrame(resizeGraph);
 }
 
 function radius(d) {
@@ -477,9 +568,9 @@ function focusNode(id) {
 }
 
 function openProfile(id) {
-  const n = state.graph.nodes.find(x => x.id === id);
+  const n = state.nodeById.get(id);
   if (!n) return;
-  document.getElementById('profile').classList.add('open');
+  setProfileOpen(true);
   const body = document.getElementById('profileBody');
 
   // Backlinks
@@ -488,7 +579,7 @@ function openProfile(id) {
   const relatedIds = new Set();
   incoming.forEach(e => relatedIds.add(e.source));
   outgoing.forEach(e => relatedIds.add(e.target));
-  const related = [...relatedIds].map(rid => state.graph.nodes.find(x => x.id === rid)).filter(Boolean)
+  const related = [...relatedIds].map(rid => state.nodeById.get(rid)).filter(Boolean)
     .sort((a, b) => a.type.localeCompare(b.type) || a.label.localeCompare(b.label));
 
   // Award timeline from awards.json
@@ -557,14 +648,18 @@ function escapeHtml(s) {
 
 function updateMap(sub) { /* media site: no geo map */ }
 
-document.getElementById('applyBtn').addEventListener('click', () => applyAndDraw());
+// Filters apply as soon as they change; search runs on Enter.
+let filterTimer;
+document.querySelector('aside').addEventListener('input', e => {
+  if (e.target.id === 'q') return;
+  clearTimeout(filterTimer);
+  filterTimer = setTimeout(applyAndDraw, 200);
+});
 document.getElementById('resetBtn').addEventListener('click', () => {
-  state.transform = d3.zoomIdentity;
-  applyAndDraw();
+  state.userMoved = false;
+  fitView(true, true);
 });
-document.getElementById('closeProfile').addEventListener('click', () => {
-  document.getElementById('profile').classList.remove('open');
-});
+document.getElementById('closeProfile').addEventListener('click', () => setProfileOpen(false));
 document.getElementById('toggleMap').addEventListener('click', () => {
   document.getElementById('mapView').classList.toggle('open');
 });
@@ -572,10 +667,15 @@ document.getElementById('q').addEventListener('keydown', e => { if (e.key === 'E
 document.getElementById('searchBox').addEventListener('keydown', e => {
   if (e.key !== 'Enter') return;
   const q = e.target.value.trim().toLowerCase();
+  if (!q) return;
   const hit = state.graph.nodes.find(n => n.label.toLowerCase().includes(q));
   if (hit) focusNode(hit.id);
 });
-window.addEventListener('resize', () => applyAndDraw());
+let resizeTimer;
+window.addEventListener('resize', () => {
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(resizeGraph, 150);
+});
 
 load().catch(err => {
   document.getElementById('countPill').textContent = 'Failed to load data: ' + err.message;

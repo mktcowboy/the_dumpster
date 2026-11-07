@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build awards + graph JSON from James Beard public data sources.
+"""Build the awards JSON for the Restaurant & Chef graph from James Beard public data sources.
 
 Primary: cjwinchester/james-beard CSV (scraped from jamesbeard.org search-past-awards).
 Supplement: 2025 Restaurant & Chef winners from the official JBF winners story page.
@@ -10,10 +10,11 @@ from __future__ import annotations
 import csv
 import json
 import re
-import hashlib
-from collections import defaultdict
 from pathlib import Path
 from html import unescape
+from collections import Counter
+from difflib import SequenceMatcher
+import unicodedata
 
 ROOT = Path(__file__).resolve().parents[1]
 RAW = ROOT / "raw" / "james-beard-awards.csv"
@@ -54,6 +55,44 @@ REGION_HINTS = {
     "Texas":"Texas",
 }
 
+# The source CSV has UTF-8 text that was decoded as Windows-1252 (sometimes repeatedly),
+# e.g. "Bullyâ€™s" for "Bully’s". Reverse that until the telltale pairs are gone.
+MOJIBAKE = re.compile("[ÃÂâÆË][\x80-\xbf\u0152\u0153\u0160\u0161\u0178\u017d\u017e\u0192\u02c6\u02dc\u2013-\u203a\u20ac\u2122]")
+# Garbled past repair (truncated mid-character); every other row names it this way.
+TEXT_OVERRIDES = {"Union Square CafÃƒÆ’Ã‹â€": "Union Square Cafe"}
+# Garbled text whose non-breaking space was flattened to a plain space, so it no longer round-trips.
+FRAGMENT_FIXES = [("Â ", " "), ("LÃ Trattoria", "Là Trattoria"), ("TavolÃ ta", "Tavolàta")]
+
+def cp1252_bytes(s: str) -> bytes:
+    out = bytearray()
+    for c in s:
+        try:
+            out += c.encode("cp1252")
+        except UnicodeEncodeError:
+            if ord(c) > 0xFF:
+                raise
+            out.append(ord(c))  # bytes cp1252 leaves undefined (0x81, 0x8d, ...)
+    return bytes(out)
+
+def clean_text(s: str) -> str:
+    s = unescape((s or "").strip())
+    if s in TEXT_OVERRIDES:
+        return TEXT_OVERRIDES[s]
+    for bad, good in FRAGMENT_FIXES:
+        s = s.replace(bad, good)
+    for _ in range(4):
+        if not MOJIBAKE.search(s):
+            break
+        try:
+            s = cp1252_bytes(s).decode("utf-8")
+        except UnicodeError:
+            break
+    # Some names are doubled around a pipe ("Jose Enrique|Jose Enrique")
+    parts = s.split("|")
+    if len(parts) > 1 and len(set(parts)) == 1:
+        s = parts[0]
+    return s
+
 def slug(s: str) -> str:
     s = (s or "").strip().lower()
     s = re.sub(r"[^a-z0-9]+", "-", s)
@@ -64,7 +103,7 @@ def nid(kind: str, *parts: str) -> str:
     return f"{kind}:{base}"
 
 def parse_location(loc: str):
-    loc = unescape((loc or "").strip())
+    loc = clean_text(loc)
     if not loc:
         return "", "", ""
     # "City, State" or "City, ST"
@@ -87,7 +126,7 @@ def parse_location(loc: str):
     return loc, "", ""
 
 def clean_category(sub: str) -> str:
-    s = unescape((sub or "").strip())
+    s = clean_text(sub)
     s = re.sub(r"\s+", " ", s)
     # strip sponsor suffixes later if needed
     s = re.sub(r"\s+presented by .+$", "", s, flags=re.I)
@@ -100,11 +139,13 @@ def clean_category(sub: str) -> str:
     s = s.replace("Northwest & Pacific", "Northwest & Pacific")
     return s
 
+REGIONS = {**{v: v for v in REGION_HINTS.values()}, **REGION_HINTS}
+
 def region_from_category(cat: str) -> str:
-    for k, v in REGION_HINTS.items():
-        if k.lower() in cat.lower() and cat.lower().startswith("best chef"):
-            return v
-    return ""
+    # Exact match on the part after "Best Chef": a substring match would file "Southeast" under "South"
+    if not cat.lower().startswith("best chef"):
+        return ""
+    return REGIONS.get(cat[len("Best Chef"):].strip(" :"), "")
 
 def add_award(awards, **kw):
     awards.append(kw)
@@ -116,11 +157,11 @@ def load_csv(awards):
                 continue
             year = int(row["year"])
             status = row["award_status"].strip()  # Winner / Nominee / Semifinalist
-            person = unescape((row.get("recipient_name") or "").strip())
-            restaurant = unescape((row.get("restaurant_name") or "").strip())
+            person = clean_text(row.get("recipient_name"))
+            restaurant = clean_text(row.get("restaurant_name"))
             # sometimes restaurant is blank and recipient is the restaurant (Outstanding Restaurant etc.)
             subcategory = clean_category(row.get("subcategory") or "")
-            location = unescape((row.get("location") or "").strip())
+            location = clean_text(row.get("location"))
             city, state, state_name = parse_location(location)
             # Heuristic: restaurant-only awards often put restaurant in recipient_name
             restaurant_only_cats = {
@@ -199,112 +240,142 @@ def load_2025(awards):
             source_url=SOURCE_2025,
         )
 
-def build_graph(awards):
-    nodes = {}
-    edges = []
-    edge_keys = set()
+# Fields dropped from the published rows: the page derives them or reads them from meta.
+DROP_FIELDS = {"location", "source", "state_name"}
+SOURCE_URLS = ["https://www.jamesbeard.org/awards/search-past-awards", SOURCE_2025]
 
-    def ensure(node_id, typ, label, **extra):
-        if node_id not in nodes:
-            nodes[node_id] = {"id": node_id, "type": typ, "label": label, **extra}
-        else:
-            # merge non-empty extras
-            for k, v in extra.items():
-                if v and not nodes[node_id].get(k):
-                    nodes[node_id][k] = v
-        return node_id
 
-    def link(src, tgt, rel, **extra):
-        if not src or not tgt or src == tgt:
-            return
-        key = (src, tgt, rel)
-        if key in edge_keys:
-            return
-        edge_keys.add(key)
-        edges.append({"source": src, "target": tgt, "rel": rel, **extra})
+def compact(a):
+    """Published row: blank fields omitted; `src` indexes meta.sources (omitted for the CSV)."""
+    row = {k: v for k, v in a.items() if k not in DROP_FIELDS and k != "source_url" and v not in ("", None)}
+    src = SOURCE_URLS.index(a["source_url"])
+    if src:
+        row["src"] = src
+    return row
 
+
+# ---- Spelling variants -------------------------------------------------------------------------
+# The source spells many names several ways ("Charlie Trotter's" / "Charlie Trotters", "Magnolia Grill" /
+# "Magnolia Grlll", "Rob" / "Robert Connoley"). Variants are merged so each restaurant and person has one record:
+#   restaurants: same city, and identical once case/accents/punctuation are ignored, or ≥ RESTAURANT_SIMILARITY alike;
+#   people: identical once folded, or ≥ PERSON_SIMILARITY alike while credited at the same restaurant.
+# Pairs below were reviewed and are different restaurants or people despite similar names.
+RESTAURANT_SIMILARITY = 0.85
+PERSON_SIMILARITY = 0.8
+KEEP_APART = {
+    frozenset({"Momofuku", "Momofuku Ko"}),
+    frozenset({"Public", "Republic"}),
+    frozenset({"Itamae", "Itamae AO"}),
+    frozenset({"Bin 36", "Bin 365"}),
+    frozenset({"The Dining Room at Chico Hot Springs", "The Tasting Room at Chico Hot Springs"}),
+    frozenset({"Fisher's at Orange Beach Marina", "Fisher's Upstairs at Orange Beach Marina"}),
+    frozenset({"Fisher's at Orange Beach Marina", "Fisher’s Upstairs at Orange Beach Marina"}),
+    frozenset({"Diana Widjojo", "Ena Widjojo"}),      # siblings
+    frozenset({"Quynh-Vy Pham", "Yenvy Pham"}),       # siblings
+    frozenset({"Quynh-Vy Pham", "YENVY PHAM"}),
+}
+# Reviewed spellings to keep when the source used a typo more often than the correct form.
+PREFERRED = {
+    "Saffron de Twah", "The Original Ninfa's on Navigation", "Yabu Pushelberg",
+    "Old Chatham Sheepherding Co. Inn", "BJ Lieberman", "Clare de Boer", "Louise Fili, Ltd.",
+}
+GARBLED = re.compile("[?\ufffd–Ÿžç«Œ]")  # leftovers of text damaged past repair, e.g. "Caf?Juanita"
+
+
+def fold(s: str) -> str:
+    s = unicodedata.normalize("NFKD", s.replace("’", "'"))
+    return re.sub(r"[^a-z0-9]", "", "".join(c for c in s if not unicodedata.combining(c)).lower())
+
+
+class Clusters:
+    """Union-find over names."""
+    def __init__(self):
+        self.parent = {}
+
+    def find(self, x):
+        self.parent.setdefault(x, x)
+        while self.parent[x] != x:
+            self.parent[x] = self.parent[self.parent[x]]
+            x = self.parent[x]
+        return x
+
+    def union(self, a, b):
+        self.parent[self.find(a)] = self.find(b)
+
+
+def similar(a: str, b: str, threshold: float) -> bool:
+    fa, fb = fold(a), fold(b)
+    if fa == fb:
+        return True
+    if min(len(fa), len(fb)) < 5 or frozenset({a, b}) in KEEP_APART:
+        return False
+    m = SequenceMatcher(None, fa, fb)
+    return m.real_quick_ratio() >= threshold and m.quick_ratio() >= threshold and m.ratio() >= threshold
+
+
+def canonical(names, rows_of):
+    """Spelling to keep: a reviewed one, else never a garbled one if a clean one exists, then the most used, then the most recent."""
+    return max(names, key=lambda n: (n in PREFERRED, not GARBLED.search(n), len(rows_of[n]), max(a["year"] for a in rows_of[n])))
+
+
+def merge_variants(awards, field, groups, threshold):
+    """Rewrite `field` so every variant in a cluster uses its canonical spelling. Returns names merged away."""
+    rows_of = {}
     for a in awards:
-        year = a["year"]
-        cat = a["category"] or "Unknown category"
-        status = a["status"]
-        person = a["person"]
-        restaurant = a["restaurant"]
-        city = a["city"]
-        state = a["state"]
-        state_name = a["state_name"]
-        region = a["region"]
+        if a[field]:
+            rows_of.setdefault(a[field], []).append(a)
+    clusters = Clusters()
+    for names in groups:
+        names = sorted(names)
+        for i, x in enumerate(names):
+            for y in names[i + 1:]:
+                if similar(x, y, threshold):
+                    clusters.union(x, y)
+    members = {}
+    for name in rows_of:
+        members.setdefault(clusters.find(name), []).append(name)
+    merged = 0
+    for names in members.values():
+        if len(names) < 2:
+            continue
+        keep = canonical(names, rows_of)
+        for name in names:
+            if name != keep:
+                merged += 1
+                for a in rows_of[name]:
+                    a[field] = keep
+    return merged
 
-        yid = ensure(nid("year", str(year)), "year", str(year), year=year)
-        cid = ensure(nid("category", cat), "category", cat)
 
-        pid = rid = place_id = state_id = None
-        if person:
-            pid = ensure(nid("person", person), "person", person)
-        if restaurant:
-            rid = ensure(nid("restaurant", restaurant, city or "", state or ""), "restaurant", restaurant,
-                         city=city, state=state)
-        if city and state:
-            place_id = ensure(nid("place", city, state), "place", f"{city}, {state}",
-                              city=city, state=state, state_name=state_name)
-        elif city:
-            place_id = ensure(nid("place", city), "place", city, city=city)
-        if state:
-            state_id = ensure(nid("state", state), "state", state_name or state, state=state)
+def merge_name_variants(awards):
+    by_city = {}
+    for a in awards:
+        if a["restaurant"]:
+            by_city.setdefault((a["city"], a["state"]), set()).add(a["restaurant"])
+    restaurants = merge_variants(awards, "restaurant", by_city.values(), RESTAURANT_SIMILARITY)
 
-        # award edges
-        rel = {"winner": "won", "nominee": "nominated", "semifinalist": "semifinalist"}.get(status, status)
-        subject = pid or rid
-        if subject:
-            link(subject, cid, rel, year=year, status=status)
-            link(subject, yid, "in-year", year=year, status=status)
-        if pid and rid:
-            link(pid, rid, "works-at", year=year)
-        if rid and place_id:
-            link(rid, place_id, "located-in")
-        elif pid and place_id and not rid:
-            link(pid, place_id, "located-in")
-        if place_id and state_id:
-            link(place_id, state_id, "in-state")
-        if region:
-            reg_id = ensure(nid("region", region), "region", region)
-            if subject:
-                link(subject, reg_id, "in-region", year=year)
-            link(cid, reg_id, "covers-region")
+    # People: case/punctuation variants anywhere, near matches only among people credited at the same restaurant.
+    by_fold = {}
+    by_restaurant = {}
+    for a in awards:
+        if a["person"]:
+            by_fold.setdefault(fold(a["person"]), set()).add(a["person"])
+            if a["restaurant"]:
+                by_restaurant.setdefault((a["restaurant"], a["city"]), set()).add(a["person"])
+    people = merge_variants(awards, "person", [*by_fold.values(), *by_restaurant.values()], PERSON_SIMILARITY)
+    return restaurants, people
 
-        # attach award refs onto person/restaurant for profiles
-        for target in (pid, rid):
-            if not target:
-                continue
-            nodes[target].setdefault("awards", [])
-            nodes[target]["awards"].append({
-                "year": year,
-                "category": cat,
-                "status": status,
-                "person": person,
-                "restaurant": restaurant,
-                "city": city,
-                "state": state,
-                "region": region,
-                "source_url": a.get("source_url", ""),
-            })
 
-    # dedupe award lists
-    for n in nodes.values():
-        if "awards" in n:
-            seen = set()
-            uniq = []
-            for aw in n["awards"]:
-                key = (aw["year"], aw["category"], aw["status"], aw.get("person"), aw.get("restaurant"))
-                if key in seen:
-                    continue
-                seen.add(key)
-                uniq.append(aw)
-            uniq.sort(key=lambda x: (-x["year"], x["category"], x["status"]))
-            n["awards"] = uniq
-            n["award_count"] = len(uniq)
-            n["win_count"] = sum(1 for x in uniq if x["status"] == "winner")
-
-    return {"nodes": list(nodes.values()), "edges": edges}
+def dedupe(awards):
+    """The CSV repeats some awards under different recipient IDs; keep one of each identical published row."""
+    seen = set()
+    out = []
+    for a in awards:
+        key = tuple(sorted(compact(a).items()))
+        if key not in seen:
+            seen.add(key)
+            out.append(a)
+    return out
 
 
 def main():
@@ -312,6 +383,9 @@ def main():
     awards = []
     load_csv(awards)
     load_2025(awards)
+    raw_count = len(awards)
+    restaurants_merged, people_merged = merge_name_variants(awards)
+    awards = dedupe(awards)
 
     # Filter: Restaurant & Chef only already; keep all years for data file
     awards.sort(key=lambda a: (a["year"], a["category"], a["status"], a["person"], a["restaurant"]))
@@ -320,47 +394,34 @@ def main():
         "title": "James Beard Award Graph",
         "description": "Interactive Obsidian-style graph of James Beard Restaurant & Chef Awards recipients and nominees.",
         "generated": "2026-11-05",
+        "sources": [
+            {"label": "JBF search-past-awards (via cjwinchester/james-beard CSV)", "url": SOURCE_URLS[0]},
+            {"label": "James Beard Foundation 2025 winners story", "url": SOURCE_URLS[1]},
+        ],
+        "state_names": dict(sorted({a["state"]: a["state_name"] for a in awards if a["state"]}.items())),
         "coverage": {
             "years": sorted({a["year"] for a in awards}),
-            "statuses": sorted({a["status"] for a in awards}),
             "award_count": len(awards),
+            "duplicates_merged": raw_count - len(awards),
+            "name_variants_merged": {"restaurants": restaurants_merged, "people": people_merged},
             "winners": sum(1 for a in awards if a["status"] == "winner"),
             "nominees": sum(1 for a in awards if a["status"] == "nominee"),
             "semifinalists": sum(1 for a in awards if a["status"] == "semifinalist"),
-            "categories": sorted({a["category"] for a in awards if a["category"]}),
-            "sources": [SOURCE_CSV, SOURCE_2025],
             "notes": [
                 "Primary dataset: public CSV derived from jamesbeard.org search-past-awards (1991–2024).",
                 "2025 Restaurant & Chef winners appended from the official JBF winners story page.",
                 "2025 nominees/semifinalists and 2026 cycle not yet included.",
-                "Book/Media/Journalism awards excluded from v1 (category filter Restaurant & Chef).",
-                "No invented fields; blank when unknown.",
+                "Book/Media/Journalism awards excluded (category filter Restaurant & Chef).",
+                "No invented fields; omitted when unknown.",
             ],
         },
     }
 
+    # The page builds the graph from these rows in the browser.
     with (OUT / "awards.json").open("w", encoding="utf-8") as f:
-        json.dump({"meta": meta, "awards": awards}, f, ensure_ascii=False, indent=None, separators=(",", ":"))
-
-    graph = build_graph(awards)
-    graph["meta"] = meta
-    with (OUT / "graph.json").open("w", encoding="utf-8") as f:
-        json.dump(graph, f, ensure_ascii=False, indent=None, separators=(",", ":"))
-
-    # compact stats for README
-    stats = {
-        "awards": len(awards),
-        "nodes": len(graph["nodes"]),
-        "edges": len(graph["edges"]),
-        "by_type": {},
-    }
-    for n in graph["nodes"]:
-        stats["by_type"][n["type"]] = stats["by_type"].get(n["type"], 0) + 1
-    with (OUT / "stats.json").open("w", encoding="utf-8") as f:
-        json.dump(stats, f, indent=2)
-    print(json.dumps(stats, indent=2))
-    print("years", meta["coverage"]["years"][0], "-", meta["coverage"]["years"][-1])
-    print("winners", meta["coverage"]["winners"], "nominees", meta["coverage"]["nominees"], "semi", meta["coverage"]["semifinalists"])
+        json.dump({"meta": meta, "awards": [compact(a) for a in awards]}, f,
+                  ensure_ascii=False, indent=None, separators=(",", ":"))
+    print(json.dumps(meta["coverage"] | {"years": f"{meta['coverage']['years'][0]}-{meta['coverage']['years'][-1]}"}, indent=2, ensure_ascii=False))
 
 if __name__ == "__main__":
     main()
