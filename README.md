@@ -1,6 +1,6 @@
 [![Yes No GIF](https://media1.tenor.com/m/GQBgOkfrMZ8AAAAC/yes-no.gif)](https://tenor.com/view/yes-no-gif-23142380)
 
-*Last updated: November 5, 2026*
+*Last updated: November 6, 2026*
 
 # Project index
 
@@ -33,6 +33,7 @@ Most reports open directly in a browser; the live options board requires its loc
 | Project | What it is |
 | --- | --- |
 | [Texas Triangle land](real-estate/texas-triangle/texas-triangle-land.html) | 16,048 parcels, 5+ acres, inside the Dallas–San Antonio–Houston triangle and its 50-mile ring |
+| [Oklahoma for-sale tracker](real-estate/oklahoma/) | Statewide Oklahoma listings in one local page: sheriff sales, VA and bank REO, optional keyed listing APIs, a map, filters, and nearby comps; requires the [local server](real-estate/oklahoma/README.md) |
 
 ## Research and reports
 
@@ -50,6 +51,7 @@ Most reports open directly in a browser; the live options board requires its loc
 | Project | What it is |
 | --- | --- |
 | [Beyond arXiv digest](research/reading/beyond-arxiv-digest/beyond-arxiv-top-papers.html) | Top papers from six preprint servers beyond arXiv, one tab per server |
+| [Public weekly research briefs](research/reading/public-brief/public-brief-2026-11-06.html) | Public weekly briefs of new papers from arXiv and other preprint sites, one tab per source, for the weeks ending [October 23](research/reading/public-brief/public-brief-2026-10-23.html), [October 30](research/reading/public-brief/public-brief-2026-10-30.html), and November 6, 2026 |
 
 ## Boy toys
 
