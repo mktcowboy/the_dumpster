@@ -183,14 +183,15 @@ const PAGES = [
     d: "Nine iShares S&P style-box ETFs charted together, with a 6M, 1Y, 3Y, and 5Y total-return table. Yahoo Finance through November 4, 2026." },
   { g: "markets", t: "SPDR sector ETFs", thumb: "sectors", href: "markets/size-style/sectors.html",
     d: "Daily dividend-adjusted price history for the 11 Select Sector SPDRs, with period returns. Yahoo Finance through November 4, 2026." },
+  { g: "markets", t: "Nasdaq-100 earnings straddles", thumb: "er-straddles", href: "markets/er-straddles/site/",
+    d: "Seller's-view ATM earnings-straddle screen for Nasdaq-100 names, with cost-aware P&L, liquidity grades, and the October 21, 2026 snapshot." },
 
   // Real estate
   { g: "estate", t: "Texas Triangle land", thumb: "texas", href: "real-estate/texas-triangle/texas-triangle-land.html",
     d: "16,048 parcels of 5+ acres inside the Dallas, San Antonio, Houston triangle and its 50-mile ring." },
-  { g: "estate", t: "Colorado land", thumb: "colorado", href: "real-estate/colorado/colorado-land-10ac.html",
-    d: "999 for-sale land listings of 10+ acres, captured October 2026." },
-  { g: "estate", t: "Utah land", thumb: "utah", href: "real-estate/utah/utah-land-10ac.html",
-    d: "1,184 for-sale land listings of 10+ acres, captured October 2026." },
+  { g: "estate", t: "Oklahoma for-sale tracker", thumb: "oklahoma", href: "real-estate/oklahoma/oklahoma.html",
+    d: "Statewide Oklahoma listings: sheriff sales, VA and bank REO, optional keyed listing APIs, a map, filters, and nearby comps.",
+    note: "Needs the local server" },
 
   // Business & infrastructure
   { g: "biz", t: "Data center deals", thumb: "datacenters", href: "biz-other/infrastructure/data-center-deals/data-center-deals-all.html",
@@ -204,8 +205,6 @@ const PAGES = [
     x: [["Outcome range (v2)", "biz-other/infrastructure/solar-farm-proforma/solar-farm-proforma-v2.html"]] },
   { g: "biz", t: "Arby's deal deep dive", thumb: "arbys", href: "biz-other/arbys-deal-deep-dive/arby-s-deal-deep-dive.html",
     d: "Sourced account of Arby's acquisition and turnaround, including Roark's 2011 purchase and the LongRange correction." },
-  { g: "biz", t: "Diesel wholesale market", thumb: "diesel", href: "biz-other/diesel-wholesale-market-analysis/diesel-wholesale-market-analysis.html",
-    d: "Market analysis of mixed on-road and off-road wholesale diesel." },
   { g: "biz", t: "Rent-seeking report", thumb: "rent", href: "biz-other/rent-seeking-report/rent-seeking-report.html",
     d: "Economic rents, their history, and the top 50 ways to collect rent today." },
 
@@ -226,12 +225,22 @@ const PAGES = [
     d: "Unofficial Obsidian-style graphs of James Beard Award winners, nominees, and semifinalists for restaurants, chefs, books, and media.",
     x: [["Restaurant & Chef", "James-Beard/restaurant-chef/"],
         ["Book / media", "James-Beard/book-media/"]] },
+  { g: "research", t: "Biochar water filtration", thumb: "biochar", href: "biochar/biochar-activated-carbon-water-report.html",
+    d: "Evidence review of biochar and activated carbon for water treatment, with PPP notes and a papers audit.",
+    x: [["PPP notes", "biochar/water-infrastructure-ppp-notes.html"],
+        ["Papers audit", "biochar/carbon-water-papers-audit.html"]] },
+  { g: "research", t: "Public weekly research briefs", thumb: "public-brief", href: "research/reading/public-brief/public-brief-2026-11-06.html",
+    d: "Public weekly briefs of new papers from arXiv and other preprint sites, one tab per source.",
+    x: [["October 23", "research/reading/public-brief/public-brief-2026-10-23.html"],
+        ["October 30", "research/reading/public-brief/public-brief-2026-10-30.html"]] },
 
   // Boy toys
   { g: "toys", t: "Car search tracker", thumb: "cars", href: "boy-toy-pricer/Car-pricer.html",
     d: "For-sale listings and sold comps for cars, trucks, and SUVs, from the Audi RS6 and G63 to the SF90, Huracan STO, and RUF Porsches." },
   { g: "toys", t: "Aircraft for sale", thumb: "aircraft", href: "boy-toy-pricer/airplane-pricer/output/report.html",
     d: "Used-plane tracker for the Cirrus SR22, Vision Jet, CubCrafters, and Piper PA-28, refreshed weekly." },
+  { g: "toys", t: "Watch for-sale tracker", thumb: "watches", href: "boy-toy-pricer/watch-pricer/output/report.html",
+    d: "Patek Philippe Nautilus 5711 and blue or green Aquanaut listings in one HTML report." },
 ];
 
 const $ = s => document.querySelector(s);

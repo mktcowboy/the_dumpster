@@ -1,11 +1,11 @@
 [![Yes No GIF](https://media1.tenor.com/m/GQBgOkfrMZ8AAAAC/yes-no.gif)](https://tenor.com/view/yes-no-gif-23142380)
 
-*Last updated: November 6, 2026*
+*Last updated: November 7, 2026*
 
 # Project index
 
 Reports, data snapshots, visualizations, and small tools, grouped by topic.
-The [HTML catalog](index.html) links to 20 projects and 31 report pages.
+The [HTML catalog](index.html) links to 22 projects and 37 report pages.
 Most reports open directly in a browser; the live options board requires its local server.
 
 ## Infrastructure
@@ -26,7 +26,6 @@ Most reports open directly in a browser; the live options board requires its loc
 | [Nasdaq-100 earnings straddles](markets/er-straddles/) | Seller's-view ATM earnings-straddle screen for Nasdaq-100 names, with cost-aware P&L, liquidity grades, and the October 21, 2026 snapshot |
 | [Size & style ETFs](markets/size-style/styles.html) | Nine iShares S&P style-box ETFs charted together, with a 6M, 1Y, 3Y, and 5Y total-return table. Yahoo Finance through November 4, 2026 |
 | [SPDR sector ETFs](markets/size-style/sectors.html) | Companion chart of the 11 Select Sector SPDRs, daily and dividend-adjusted, with period returns. Yahoo Finance through November 4, 2026 |
-| [Fortune 500 2026 Atlas](f500/f500_explorer.html) | Single-file interactive explorer of the 2026 Fortune 500, with a dashboard, sortable table, HQ map, industry treemap, relationship network, Public vs Private ownership tab, and a profile for every company |
 
 ## Real estate
 
