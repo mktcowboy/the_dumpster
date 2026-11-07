@@ -6,7 +6,7 @@ Book, Broadcast Media, and Journalism awards — Obsidian-style force graph (sta
 python3 -m http.server 8080
 ```
 
-Rebuild from CSV:
+Rebuild from `raw/james-beard-awards.csv` (the build also repairs the source's garbled accents and apostrophes, e.g. `Bon AppÃ©tit`):
 
 ```bash
 python3 scripts/build_data.py

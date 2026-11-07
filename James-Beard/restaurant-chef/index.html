@@ -17,7 +17,6 @@
     --accent: #c9a227;
     --person: #7aa2ff;
     --restaurant: #5ecf9a;
-    
     --place: #e0a060;
     --state: #d08050;
     --category: #c77dff;
@@ -25,10 +24,13 @@
     --region: #f0a0c0;
     --won: #f5d76e;
     --panel-w: 360px;
+    --panel-w-wide: 460px;
   }
   * { box-sizing: border-box; }
   html, body { margin: 0; height: 100%; background: var(--bg); color: var(--text); font: 14px/1.45 "Inter", system-ui, -apple-system, sans-serif; }
-  #app { display: grid; grid-template-columns: 280px 1fr var(--panel-w); height: 100vh; }
+  #app { display: grid; grid-template-columns: 280px 1fr; height: 100vh; }
+  #app.profile-open { grid-template-columns: 280px 1fr var(--panel-w); }
+  #app.profile-open.profile-wide { grid-template-columns: 280px 1fr var(--panel-w-wide); }
   aside, #profile { background: var(--bg2); border-color: var(--border); overflow: auto; }
   aside { border-right: 1px solid var(--border); padding: 16px; }
   #profile { border-left: 1px solid var(--border); padding: 16px; display: none; }
@@ -87,8 +89,31 @@
   .badge.semifinalist { color: var(--muted); }
   a.src { color: var(--person); font-size: 12px; }
   #closeProfile { float: right; }
-  link-line, .empty { color: var(--muted); font-size: 13px; }
+  .empty { color: var(--muted); font-size: 13px; }
+  /* Expanded profile for restaurants with many awards */
+  .stat-tiles { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; }
+  .stat-tile { background: var(--bg3); border-radius: 8px; padding: 8px 10px; }
+  .stat-tile .n { font-size: 20px; font-weight: 650; font-variant-numeric: tabular-nums; }
+  .stat-tile .s { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; }
+  .stat-tile.winner .n { color: var(--won); }
+  .stat-tile.nominee .n { color: var(--person); }
+  .timeline { display: flex; gap: 2px; height: 26px; }
+  .timeline span { flex: 1; min-width: 3px; border-radius: 2px; background: var(--bg3); }
+  .timeline span.winner { background: var(--won); }
+  .timeline span.nominee { background: var(--person); }
+  .timeline span.semifinalist { background: var(--muted); }
+  .timeline-axis { display: flex; justify-content: space-between; color: var(--muted); font-size: 11px; margin-top: 4px; }
+  .timeline-key { display: flex; gap: 10px; color: var(--muted); font-size: 11px; margin-top: 6px; }
+  .timeline-key i { display: inline-block; width: 9px; height: 9px; border-radius: 2px; margin-right: 4px; vertical-align: -1px; }
+  .summary-row { display: flex; justify-content: space-between; gap: 10px; padding: 7px 0; border-bottom: 1px solid var(--border); font-size: 13px; }
+  .summary-row:last-child { border-bottom: none; }
+  .summary-row .what { min-width: 0; }
+  .summary-row .what a { color: var(--text); }
+  .summary-row .when { color: var(--muted); font-size: 12px; }
+  .summary-row .tally { color: var(--muted); font-size: 12px; white-space: nowrap; text-align: right; }
+  .summary-row .tally b { color: var(--won); font-weight: 600; }
   text { pointer-events: none; font-size: 10px; fill: #c5cad6; }
+  #graph:not(.zoomed) text.minor { display: none; }
   .node circle { stroke-width: 1.25px; cursor: pointer; }
   .node.dim circle { opacity: 0.15; }
   .node.dim text { opacity: 0.05; }
@@ -97,6 +122,30 @@
   .link.hi { stroke: var(--accent); stroke-opacity: 0.85; stroke-width: 2px; }
   #mapView { display: none; position: absolute; inset: 0; padding: 24px; overflow: auto; background: var(--bg); }
   #mapView.open { display: block; }
+  #standouts { display: none; position: absolute; inset: 0; padding: 24px; overflow: auto; background: var(--bg); z-index: 3; }
+  #standouts.open { display: block; }
+  .overlay-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+  .overlay-head h2 { margin: 0; }
+  .lb-controls { display: flex; flex-wrap: wrap; gap: 8px; margin: 4px 0 14px; align-items: center; }
+  .seg { display: inline-flex; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+  .seg button { background: var(--bg2); color: var(--muted); border: 0; padding: 7px 12px; cursor: pointer; font: inherit; }
+  .seg button + button { border-left: 1px solid var(--border); }
+  .seg button.on { background: #2a2410; color: var(--accent); }
+  .lb-controls select { width: auto; }
+  .lb-list { list-style: none; margin: 0; padding: 0; max-width: 760px; }
+  .lb-row { display: grid; grid-template-columns: 34px 1fr auto; gap: 10px; align-items: center; width: 100%; text-align: left;
+    background: var(--bg2); border: 1px solid var(--border); border-radius: 10px; padding: 9px 12px; margin-bottom: 6px; color: inherit; font: inherit; cursor: pointer; }
+  .lb-row:hover { border-color: var(--accent); }
+  .lb-row .rank { color: var(--muted); font-variant-numeric: tabular-nums; text-align: right; }
+  .lb-row .who { min-width: 0; }
+  .lb-row .who strong { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .lb-row .who span, .lb-row .nums span { color: var(--muted); font-size: 12px; }
+  .lb-row .nums { text-align: right; white-space: nowrap; }
+  .lb-row .nums b { color: var(--won); font-weight: 650; }
+  .achievements { display: flex; flex-wrap: wrap; gap: 6px; margin: -4px 0 14px; }
+  .achv { font-size: 12px; padding: 3px 9px; border-radius: 999px; background: var(--bg3); border: 1px solid var(--border); color: var(--text); }
+  .achv.gold { border-color: var(--won); color: var(--won); }
+  .achv.rank { border-color: var(--accent); color: var(--accent); }
   .state-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 8px; }
   .state-card {
     background: var(--bg2); border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; cursor: pointer;
@@ -104,9 +153,10 @@
   .state-card .n { font-size: 20px; font-weight: 650; }
   .state-card .s { color: var(--muted); font-size: 12px; }
   @media (max-width: 960px) {
-    #app { grid-template-columns: 1fr; grid-template-rows: auto 1fr auto; }
-    aside { border-right: none; border-bottom: 1px solid var(--border); max-height: 40vh; }
-    #profile { border-left: none; border-top: 1px solid var(--border); max-height: 40vh; }
+    #app, #app.profile-open, #app.profile-open.profile-wide { grid-template-columns: 1fr; height: auto; min-height: 100vh; }
+    #main { order: -1; height: 75vh; }
+    aside { border-right: none; border-top: 1px solid var(--border); }
+    #profile { order: -1; border-left: none; border-top: 1px solid var(--border); }
   }
 </style>
 </head>
@@ -117,11 +167,11 @@
     <div class="sub">Restaurant &amp; Chef · Obsidian-style knowledge graph</div>
 
     <label>Search</label>
-    <input id="q" type="search" placeholder="Chef, restaurant, city…" />
+    <input id="q" type="search" placeholder="Chef, restaurant, city… (Enter)" />
 
     <label>Year range</label>
     <div class="row">
-      <input id="yearMin" type="number" min="1991" max="2025" value="2010" />
+      <input id="yearMin" type="number" min="1991" max="2025" value="1991" />
       <input id="yearMax" type="number" min="1991" max="2025" value="2025" />
     </div>
 
@@ -155,7 +205,15 @@
       </select>
     </div>
 
-    <button class="btn primary" id="applyBtn">Apply filters</button>
+    <label>Max nodes</label>
+    <select id="maxNodes">
+      <option value="500">500</option>
+      <option value="1500">1,500</option>
+      <option value="4000" selected>4,000</option>
+      <option value="100000">All (slower)</option>
+    </select>
+
+    <button class="btn primary" id="toggleStandouts">Standouts leaderboard</button>
     <button class="btn" id="resetBtn">Reset camera</button>
     <button class="btn" id="toggleMap">Toggle US map (counts)</button>
 
@@ -179,6 +237,27 @@
       <p class="sub">Based on place/state links in the current filter set. Click a state to focus.</p>
       <div class="state-grid" id="stateGrid"></div>
     </div>
+    <div id="standouts">
+      <div class="overlay-head">
+        <h2>Standouts</h2>
+        <button class="btn" id="closeStandouts" style="width:auto;margin:0">Close</button>
+      </div>
+      <p class="sub">All years and statuses. Score = 5 per win, 2 per nomination, 1 per semifinalist nod. Click a row to open it.</p>
+      <div class="lb-controls">
+        <div class="seg" id="standoutsType">
+          <button type="button" data-type="restaurant" class="on">Restaurants</button>
+          <button type="button" data-type="person">Chefs</button>
+          <button type="button" data-type="place">Cities</button>
+        </div>
+        <select id="standoutsSort" aria-label="Sort by">
+          <option value="score">By score</option>
+          <option value="wins">By wins</option>
+          <option value="streak">By longest run</option>
+          <option value="categories">By categories won</option>
+        </select>
+      </div>
+      <ol class="lb-list" id="standoutsList"></ol>
+    </div>
   </div>
 
   <div id="profile">
@@ -188,43 +267,116 @@
 </div>
 
 <script>
-const COLORS = {
-  person: getComputedStyle(document.documentElement).getPropertyValue('--person').trim() || '#7aa2ff',
-  restaurant: '#5ecf9a',
-  place: '#e0a060',
-  state: '#d08050',
-  category: '#c77dff',
-  year: '#6bc6e0',
-  region: '#f0a0c0',
-};
+const rootStyle = getComputedStyle(document.documentElement);
+const COLORS = Object.fromEntries(
+  ['person', 'restaurant', 'place', 'state', 'category', 'year', 'region']
+    .map(t => [t, rootStyle.getPropertyValue('--' + t).trim()])
+);
+const REL = { winner: 'won', nominee: 'nominated', semifinalist: 'semifinalist' };
 
 const state = {
-  graph: null,
-  awards: null,
+  meta: null,
+  awards: [],
+  nodeById: new Map(),    // full graph, built once from awards.json
+  adjacency: new Map(),   // node id → Set of neighbor ids (full graph)
+  awardsByNode: new Map(),// node id → award rows touching it
   focusId: null,
   simulation: null,
-  transform: d3.zoomIdentity,
+  scene: null,            // created once: { svg, linkLayer, nodeLayer, zoom, drag, simulation }
+  placed: new Map(),      // node id → simulation node; kept across filter changes so positions persist
+  view: null,             // current drawing: { ids, nodes, nodeSel, linkSel, neighbors }
+  userMoved: false,       // stop auto-fitting once the user pans, zooms or drags
 };
 
+function slug(s) {
+  return String(s || '').trim().toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') || 'unknown';
+}
+function nid(kind, ...parts) {
+  return `${kind}:${slug(parts.filter(Boolean).join('-'))}`;
+}
+
+// Ids of the nodes one award row touches (cached on the row).
+function refs(a) {
+  return a._refs ||= {
+    year: `year:${a.year}`,
+    category: nid('category', a.category),
+    person: a.person && nid('person', a.person),
+    restaurant: a.restaurant && nid('restaurant', a.restaurant, a.city, a.state),
+    place: a.city && nid('place', a.city, a.state),
+    state: a.state && nid('state', a.state),
+    region: a.region && nid('region', a.region),
+  };
+}
+
+function buildGraph(awards) {
+  const nodes = new Map();
+  const edges = new Map();
+  const ensure = (id, type, label, extra) => {
+    if (id && !nodes.has(id)) nodes.set(id, { id, type, label, ...extra });
+  };
+  const link = (source, target, rel) => {
+    if (!source || !target || source === target) return;
+    const key = `${source}|${target}|${rel}`;
+    if (!edges.has(key)) edges.set(key, { source, target, rel });
+  };
+  for (const a of awards) {
+    const r = refs(a);
+    ensure(r.year, 'year', String(a.year));
+    ensure(r.category, 'category', a.category);
+    ensure(r.person, 'person', a.person);
+    ensure(r.restaurant, 'restaurant', a.restaurant, { city: a.city, state: a.state });
+    ensure(r.place, 'place', a.state ? `${a.city}, ${a.state}` : a.city, { city: a.city, state: a.state });
+    ensure(r.state, 'state', state.meta.state_names[a.state] || a.state, { state: a.state });
+    ensure(r.region, 'region', a.region);
+    const subject = r.person || r.restaurant;
+    link(subject, r.category, REL[a.status]);
+    link(subject, r.year, 'in-year');
+    link(r.person, r.restaurant, 'works-at');
+    link(r.restaurant || r.person, r.place, 'located-in');
+    link(r.place, r.state, 'in-state');
+    link(subject, r.region, 'in-region');
+    link(r.category, r.region, 'covers-region');
+  }
+  return { nodes, edges: [...edges.values()] };
+}
+
+function neighborMap(edges) {
+  const nbr = new Map();
+  const add = (a, b) => { if (!nbr.has(a)) nbr.set(a, new Set()); nbr.get(a).add(b); };
+  edges.forEach(e => { add(e.source, e.target); add(e.target, e.source); });
+  return nbr;
+}
+
 async function load() {
-  const [graph, awards] = await Promise.all([
-    fetch('data/graph.json').then(r => r.json()),
-    fetch('data/awards.json').then(r => r.json()),
-  ]);
-  state.graph = graph;
-  state.awards = awards;
-  const regions = [...new Set(graph.nodes.filter(n => n.type === 'region').map(n => n.label))].sort();
+  const data = await fetch('data/awards.json').then(r => r.json());
+  state.meta = data.meta;
+  state.awards = data.awards;
+
+  const full = buildGraph(state.awards);
+  state.nodeById = full.nodes;
+  state.adjacency = neighborMap(full.edges);
+  for (const a of state.awards) {
+    for (const id of Object.values(refs(a))) {
+      if (!id) continue;
+      if (!state.awardsByNode.has(id)) state.awardsByNode.set(id, []);
+      state.awardsByNode.get(id).push(a);
+    }
+  }
+  computeRecords();
+
+  const regions = [...new Set(state.awards.map(a => a.region).filter(Boolean))].sort();
   const sel = document.getElementById('regionFilter');
   regions.forEach(r => {
     const o = document.createElement('option');
     o.value = r; o.textContent = r; sel.appendChild(o);
   });
-  const years = graph.meta.coverage.years;
-  document.getElementById('yearMin').min = years[0];
-  document.getElementById('yearMin').max = years[years.length - 1];
-  document.getElementById('yearMax').min = years[0];
-  document.getElementById('yearMax').max = years[years.length - 1];
+  const years = state.meta.coverage.years;
+  for (const id of ['yearMin', 'yearMax']) {
+    document.getElementById(id).min = years[0];
+    document.getElementById(id).max = years[years.length - 1];
+  }
   renderStats();
+  initGraph();
   applyAndDraw();
 }
 
@@ -233,7 +385,7 @@ function checkedValues(id) {
 }
 
 function renderStats() {
-  const m = state.graph.meta.coverage;
+  const m = state.meta.coverage;
   document.getElementById('stats').innerHTML =
     `<div><strong>${m.award_count.toLocaleString()}</strong> award records</div>` +
     `<div>${m.winners} winners · ${m.nominees} nominees · ${m.semifinalists} semifinalists</div>` +
@@ -250,103 +402,133 @@ function filterGraph() {
   const q = document.getElementById('q').value.trim().toLowerCase();
   const hops = +document.getElementById('hops').value;
 
-  // Status filter via edges that carry status/year
-  const statusEdges = state.graph.edges.filter(e =>
-    (e.rel === 'won' || e.rel === 'nominated' || e.rel === 'semifinalist') &&
-    e.year >= y0 && e.year <= y1 &&
-    statuses.has(e.status)
-  );
+  // The view is the graph of the award rows that match the filters.
+  const rows = state.awards.filter(a =>
+    a.year >= y0 && a.year <= y1 && statuses.has(a.status) && (!region || a.region === region));
+  const sub = buildGraph(rows);
 
-  let keep = new Set();
-  statusEdges.forEach(e => { keep.add(e.source); keep.add(e.target); });
-
-  // Expand along structural edges within year-filtered subjects
-  const bySrc = d3.group(state.graph.edges, d => d.source);
-  const byTgt = d3.group(state.graph.edges, d => d.target);
-  const seed = new Set(keep);
-  seed.forEach(id => {
-    (bySrc.get(id) || []).forEach(e => {
-      if (['works-at', 'located-in', 'in-state', 'in-region', 'in-year', 'covers-region'].includes(e.rel)) {
-        if (e.year && (e.year < y0 || e.year > y1)) return;
-        keep.add(e.target);
-      }
-    });
-    (byTgt.get(id) || []).forEach(e => {
-      if (['works-at', 'located-in', 'in-state', 'in-region'].includes(e.rel)) keep.add(e.source);
-    });
-  });
-
-  if (region) {
-    const regNode = state.graph.nodes.find(n => n.type === 'region' && n.label === region);
-    if (regNode) {
-      const inRegion = new Set();
-      state.graph.edges.forEach(e => {
-        if (e.rel === 'in-region' && e.target === regNode.id) inRegion.add(e.source);
-      });
-      keep = new Set([...keep].filter(id => {
-        const n = state.graph.nodes.find(x => x.id === id);
-        if (!n) return false;
-        if (n.type === 'region') return n.id === regNode.id;
-        if (n.type === 'category' || n.type === 'year' || n.type === 'state' || n.type === 'place') return true;
-        return inRegion.has(id);
-      }));
-      keep.add(regNode.id);
-    }
-  }
-
-  let nodes = state.graph.nodes.filter(n => keep.has(n.id) && types.has(n.type));
+  let nodes = [...sub.nodes.keys()].map(id => state.nodeById.get(id)).filter(n => types.has(n.type));
   if (q) {
     const matched = nodes.filter(n => n.label.toLowerCase().includes(q));
-    if (matched.length) {
-      // Prefer focusing first match
-      if (!state.focusId || !matched.some(m => m.id === state.focusId)) {
-        state.focusId = matched[0].id;
-      }
-    }
+    if (matched.length && !matched.some(m => m.id === state.focusId)) state.focusId = matched[0].id;
   }
 
   // Local hops from focus
   if (hops > 0 && state.focusId) {
-    const nbr = new Map();
-    state.graph.edges.forEach(e => {
-      if (!keep.has(e.source) || !keep.has(e.target)) return;
-      if (!nbr.has(e.source)) nbr.set(e.source, new Set());
-      if (!nbr.has(e.target)) nbr.set(e.target, new Set());
-      nbr.get(e.source).add(e.target);
-      nbr.get(e.target).add(e.source);
-    });
+    const nbr = neighborMap(sub.edges);
     const local = new Set([state.focusId]);
-    let frontier = new Set([state.focusId]);
+    let frontier = [state.focusId];
     for (let h = 0; h < hops; h++) {
-      const next = new Set();
-      frontier.forEach(id => (nbr.get(id) || []).forEach(x => { if (!local.has(x)) next.add(x); }));
-      next.forEach(x => local.add(x));
+      const next = [];
+      frontier.forEach(id => (nbr.get(id) || []).forEach(x => { if (!local.has(x)) { local.add(x); next.push(x); } }));
       frontier = next;
     }
     nodes = nodes.filter(n => local.has(n.id));
   }
 
-  const nodeIds = new Set(nodes.map(n => n.id));
-  const links = state.graph.edges
-    .filter(e => nodeIds.has(e.source) && nodeIds.has(e.target))
-    .map(e => ({ ...e }));
-
-  // Cap for performance
-  const MAX_NODES = 800;
-  if (nodes.length > MAX_NODES) {
-    // Prefer people/restaurants with more wins, keep categories/years/places connected
-    const score = n => (n.win_count || 0) * 3 + (n.award_count || 0) + (n.type === 'category' || n.type === 'year' ? 50 : 0);
-    nodes = [...nodes].sort((a, b) => score(b) - score(a)).slice(0, MAX_NODES);
-    const ids = new Set(nodes.map(n => n.id));
-    return {
-      nodes,
-      links: links.filter(e => ids.has(e.source) && ids.has(e.target)),
-      truncated: true,
-      totalBeforeCap: nodeIds.size,
-    };
+  const totalBeforeCap = nodes.length;
+  const maxNodes = +document.getElementById('maxNodes').value;
+  let ids = new Set(nodes.map(n => n.id));
+  let links = sub.edges.filter(e => ids.has(e.source) && ids.has(e.target));
+  if (nodes.length > maxNodes) {
+    nodes = capConnected(nodes, links, maxNodes, nodeScore);
+    ids = new Set(nodes.map(n => n.id));
+    links = links.filter(e => ids.has(e.source) && ids.has(e.target));
   }
-  return { nodes, links, truncated: false, totalBeforeCap: nodes.length };
+  return { nodes, links, rows, truncated: totalBeforeCap > maxNodes, totalBeforeCap };
 }
+
+// Chefs, restaurants and cities rank by their score; hubs (categories, states, years…) by how many visible links they carry.
+function nodeScore(n, degree) {
+  if (n.id === state.focusId) return Infinity;
+  return n.score != null ? n.score : degree;
+}
+
+const SCORE = { winner: 5, nominee: 2, semifinalist: 1 };
+const byDistinction = (a, b) => b.score - a.score || b.win_count - a.win_count || a.label.localeCompare(b.label);
+
+// Record for every chef, restaurant and city: counts, distinction score, longest run of consecutive
+// award years, categories won, and rank by score among its type.
+function computeRecords() {
+  const years = state.meta.coverage.years; // award years in the data (there were no awards in 2021)
+  const yearIndex = new Map(years.map((y, i) => [y, i]));
+  const holders = [...state.nodeById.values()].filter(n => n.type === 'person' || n.type === 'restaurant' || n.type === 'place');
+  for (const n of holders) {
+    const rows = state.awardsByNode.get(n.id) || [];
+    n.award_count = rows.length;
+    n.win_count = rows.filter(a => a.status === 'winner').length;
+    n.score = d3.sum(rows, a => SCORE[a.status]);
+    n.win_categories = new Set(rows.filter(a => a.status === 'winner').map(a => a.category)).size;
+    n.streak = longestStreak(rows, years, yearIndex);
+  }
+  for (const type of ['person', 'restaurant', 'place']) {
+    holders.filter(n => n.type === type).sort(byDistinction).forEach((n, i) => { n.rank = i + 1; });
+  }
+}
+
+function longestStreak(rows, years, yearIndex) {
+  const idx = [...new Set(rows.map(a => yearIndex.get(a.year)))].sort((a, b) => a - b);
+  let best = { length: 0 };
+  let start = 0;
+  idx.forEach((v, i) => {
+    if (i > 0 && v !== idx[i - 1] + 1) start = i;
+    if (i - start + 1 > best.length) best = { length: i - start + 1, from: years[idx[start]], to: years[v] };
+  });
+  return best;
+}
+
+// Keep at most `max` nodes, growing outward from the strongest node and always preferring nodes linked to what
+// is already kept, so nothing is left floating on its own. A new cluster starts only when nothing linked is left.
+function capConnected(nodes, links, max, score) {
+  if (nodes.length <= max) return nodes;
+  const byId = new Map(nodes.map(n => [n.id, n]));
+  const adj = new Map(nodes.map(n => [n.id, []]));
+  links.forEach(l => { adj.get(l.source).push(l.target); adj.get(l.target).push(l.source); });
+  const LINKED = 1e9;
+  const heap = [];
+  nodes.forEach(n => heapPush(heap, [score(n, adj.get(n.id).length), n.id]));
+  const kept = new Set();
+  while (kept.size < max && heap.length) {
+    const [, id] = heapPop(heap);
+    if (kept.has(id)) continue;
+    kept.add(id);
+    for (const x of adj.get(id)) {
+      if (!kept.has(x)) heapPush(heap, [LINKED + score(byId.get(x), adj.get(x).length), x]);
+    }
+  }
+  return nodes.filter(n => kept.has(n.id));
+}
+
+// Max-heap of [priority, id] pairs for capConnected.
+function heapPush(h, item) {
+  h.push(item);
+  let i = h.length - 1;
+  while (i > 0) {
+    const p = (i - 1) >> 1;
+    if (h[p][0] >= h[i][0]) break;
+    [h[p], h[i]] = [h[i], h[p]];
+    i = p;
+  }
+}
+function heapPop(h) {
+  const top = h[0];
+  const last = h.pop();
+  if (h.length) {
+    h[0] = last;
+    let i = 0;
+    for (;;) {
+      const l = 2 * i + 1, r = l + 1;
+      let m = i;
+      if (l < h.length && h[l][0] > h[m][0]) m = l;
+      if (r < h.length && h[r][0] > h[m][0]) m = r;
+      if (m === i) break;
+      [h[m], h[i]] = [h[i], h[m]];
+      i = m;
+    }
+  }
+  return top;
+}
+
 
 function applyAndDraw() {
   const sub = filterGraph();
@@ -354,75 +536,202 @@ function applyAndDraw() {
   document.getElementById('countPill').innerHTML =
     `<strong>${sub.nodes.length}</strong> nodes · <strong>${sub.links.length}</strong> edges` +
     (sub.truncated ? ` · capped (from ${sub.totalBeforeCap})` : '');
-  updateMap(sub);
+  updateMap(sub.rows);
 }
 
-function draw(sub) {
+const SETTLE_TICKS = 120;     // the layout cools in about this many frames (d3's default is 300)
+const REPULSION_THETA = 1.2;  // coarser grouping of distant nodes for repulsion (d3's default is 0.9)
+
+// The SVG layers, zoom and simulation are created once; draw() updates them in place.
+function initGraph() {
   const svg = d3.select('#graph');
+  const gRoot = svg.append('g');
+  const linkLayer = gRoot.append('g').attr('stroke-linecap', 'round');
+  const nodeLayer = gRoot.append('g');
+  const zoom = d3.zoom().scaleExtent([0.05, 6]).on('zoom', (event) => {
+    if (event.sourceEvent) state.userMoved = true;
+    gRoot.attr('transform', event.transform);
+    const zoomed = event.transform.k >= 1.5;
+    if (zoomed !== svg.classed('zoomed')) {
+      svg.classed('zoomed', zoomed);
+      if (zoomed && state.view) ensureLabels(state.view.nodeSel);
+    }
+  });
+  svg.call(zoom);
+
+  const simulation = d3.forceSimulation()
+    .alphaDecay(1 - Math.pow(0.001, 1 / SETTLE_TICKS))
+    .force('link', d3.forceLink().id(d => d.id).distance(d => d.rel === 'works-at' ? 40 : 70).strength(0.4))
+    .force('charge', d3.forceManyBody().strength(-120).theta(REPULSION_THETA))
+    .force('collision', d3.forceCollide().radius(d => radius(d) + 4))
+    .on('tick', () => {
+      const { nodeSel, linkSel } = state.view;
+      linkSel.attr('x1', d => d.source.x).attr('y1', d => d.source.y)
+          .attr('x2', d => d.target.x).attr('y2', d => d.target.y);
+      nodeSel.attr('transform', d => `translate(${d.x},${d.y})`);
+      fitView(false); // camera follows the layout as it spreads out
+    });
+  const drag = d3.drag()
+    .on('start', (event, d) => { state.userMoved = true; if (!event.active) simulation.alphaTarget(0.3).restart(); d.fx = d.x; d.fy = d.y; })
+    .on('drag', (event, d) => { d.fx = event.x; d.fy = event.y; })
+    .on('end', (event, d) => { if (!event.active) simulation.alphaTarget(0); d.fx = null; d.fy = null; });
+
+  state.simulation = simulation;
+  state.scene = { svg, linkLayer, nodeLayer, zoom, drag, simulation };
+}
+
+const TOP_LABELS = 60;        // chefs and restaurants labelled while zoomed out
+
+const linkKey = d => `${d.source.id || d.source}|${d.target.id || d.target}|${d.rel}`;
+
+function draw(sub) {
+  const { svg, linkLayer, nodeLayer, drag, simulation } = state.scene;
   const wrap = document.getElementById('main');
   const width = wrap.clientWidth;
   const height = wrap.clientHeight;
   svg.attr('viewBox', [0, 0, width, height]);
-  svg.selectAll('*').remove();
 
-  const gRoot = svg.append('g');
-  const zoom = d3.zoom().scaleExtent([0.1, 6]).on('zoom', (event) => {
-    state.transform = event.transform;
-    gRoot.attr('transform', event.transform);
+  // Reuse simulation nodes from earlier draws so nodes keep their places when filters change.
+  const prevIds = state.view ? state.view.ids : new Set();
+  const nodes = sub.nodes.map(d => {
+    let n = state.placed.get(d.id);
+    if (!n) state.placed.set(d.id, n = { ...d });
+    else if (!prevIds.has(d.id)) n.vx = n.vy = 0; // returning node: drop stale momentum
+    return n;
   });
-  svg.call(zoom);
-  svg.call(zoom.transform, state.transform);
+  const neighbors = neighborMap(sub.links);
+  placeNewNodes(nodes, neighbors);
+  const ids = new Set(nodes.map(d => d.id));
+  const added = nodes.filter(d => !prevIds.has(d.id)).length;
+  const removed = [...prevIds].filter(id => !ids.has(id)).length;
+  // A mostly different view gets the camera back even if the user had moved it.
+  if ((added + removed) / Math.max(1, prevIds.size, ids.size) > 0.5) state.userMoved = false;
 
-  const nodes = sub.nodes.map(d => ({ ...d }));
-  const nodeById = new Map(nodes.map(d => [d.id, d]));
-  const links = sub.links
-    .map(d => ({ ...d, source: nodeById.get(d.source), target: nodeById.get(d.target) }))
-    .filter(d => d.source && d.target);
-
-  const link = gRoot.append('g').attr('stroke-linecap', 'round')
-    .selectAll('line').data(links).join('line').attr('class', 'link')
+  const links = sub.links.map(d => ({ ...d }));
+  const linkSel = linkLayer.selectAll('line')
+    .data(links, linkKey)
+    .join('line')
+    .attr('class', 'link')
     .attr('stroke-width', d => d.rel === 'won' ? 1.6 : 1);
 
-  const node = gRoot.append('g').selectAll('g')
-    .data(nodes).join('g').attr('class', 'node')
-    .call(d3.drag()
-      .on('start', (event, d) => { if (!event.active) simulation.alphaTarget(0.3).restart(); d.fx = d.x; d.fy = d.y; })
-      .on('drag', (event, d) => { d.fx = event.x; d.fy = event.y; })
-      .on('end', (event, d) => { if (!event.active) simulation.alphaTarget(0); d.fx = null; d.fy = null; }));
+  const nodeSel = nodeLayer.selectAll('g.node')
+    .data(nodes, d => d.id)
+    .join(enter => {
+      const g = enter.append('g').attr('class', 'node').call(drag);
+      g.append('circle')
+        .attr('r', d => radius(d))
+        .attr('fill', d => COLORS[d.type] || '#888')
+        .on('click', (event, d) => { event.stopPropagation(); focusNode(d.id); })
+        .on('mouseenter', (event, d) => { addTooltip(event.currentTarget, d); highlight(d.id); })
+        .on('mouseleave', clearHighlight);
+      return g;
+    });
 
-  node.append('circle')
-    .attr('r', d => radius(d))
-    .attr('fill', d => COLORS[d.type] || '#888')
+  simulation.nodes(nodes);
+  simulation.force('link').links(links);
+  simulation
+    .force('center', d3.forceCenter(width / 2, height / 2))
+    // Gentle pull toward the middle so unconnected nodes don't drift out of view
+    .force('x', d3.forceX(width / 2).strength(0.04))
+    .force('y', d3.forceY(height / 2).strength(0.04));
+  const labelled = new Set(nodes.filter(d => d.type === 'person' || d.type === 'restaurant')
+    .sort(byDistinction).slice(0, TOP_LABELS).map(d => d.id));
+  state.view = { ids, nodes, nodeSel, linkSel, neighbors, labelled };
+  styleFocus();
+  // The first layout starts hot; later ones only as hot as the share of new nodes needs.
+  simulation.alpha(prevIds.size ? Math.min(1, 0.3 + added / Math.max(1, nodes.length)) : 1).restart();
+  fitView(false);
+}
+
+// Start each new node beside a linked node that already has a position, so it joins the layout
+// instead of flying in. On the first draw nothing is placed yet and d3's default spiral is used.
+const GOLDEN_ANGLE = Math.PI * (3 - Math.sqrt(5));
+
+function placeNewNodes(nodes, neighbors) {
+  const placed = nodes.filter(n => n.x != null);
+  if (!placed.length) return;
+  const byId = new Map(nodes.map(n => [n.id, n]));
+  // New nodes around one anchor spiral outward from it, so a hub gaining hundreds of nodes doesn't stack them.
+  const spun = new Map();
+  const spiralAround = (n, cx, cy, gap) => {
+    const k = (spun.get(cx + ',' + cy) || 0) + 1;
+    spun.set(cx + ',' + cy, k);
+    const r = gap * Math.sqrt(k + 2);
+    n.x = cx + r * Math.cos(k * GOLDEN_ANGLE);
+    n.y = cy + r * Math.sin(k * GOLDEN_ANGLE);
+  };
+  let pending = nodes.filter(n => n.x == null);
+  while (pending.length) {
+    const unplaced = [];
+    for (const n of pending) {
+      let anchor = null;
+      for (const id of neighbors.get(n.id) || []) {
+        const m = byId.get(id);
+        if (m && m.x != null) { anchor = m; break; }
+      }
+      if (anchor) spiralAround(n, anchor.x, anchor.y, 12);
+      else unplaced.push(n);
+    }
+    if (unplaced.length === pending.length) break;
+    pending = unplaced;
+  }
+  // Nothing linked is placed: spiral out from the middle of the current layout.
+  const cx = d3.mean(placed, n => n.x);
+  const cy = d3.mean(placed, n => n.y);
+  pending.forEach(n => spiralAround(n, cx, cy, 12));
+}
+
+// Tooltips are created on first hover rather than for every node up front.
+function addTooltip(circle, d) {
+  if (!circle.firstChild) d3.select(circle).append('title').text(`${d.label} (${d.type})`);
+}
+
+// Zoom so every node fits the graph area (below the toolbar), unless the user has taken over the camera.
+function fitView(animate, force) {
+  if (!state.view || (state.userMoved && !force)) return;
+  const { nodes } = state.view;
+  const { svg, zoom } = state.scene;
+  if (!nodes.length) return;
+  const wrap = document.getElementById('main');
+  const pad = { top: 56, right: 24, bottom: 24, left: 24 };
+  const w = wrap.clientWidth - pad.left - pad.right;
+  const h = wrap.clientHeight - pad.top - pad.bottom;
+  const [x0, x1] = d3.extent(nodes, d => d.x);
+  const [y0, y1] = d3.extent(nodes, d => d.y);
+  const k = Math.max(0.05, Math.min(2, w / Math.max(1, x1 - x0), h / Math.max(1, y1 - y0)));
+  const t = d3.zoomIdentity
+    .translate(pad.left + w / 2 - k * (x0 + x1) / 2, pad.top + h / 2 - k * (y0 + y1) / 2)
+    .scale(k);
+  (animate ? svg.transition().duration(500) : svg).call(zoom.transform, t);
+}
+
+function styleFocus() {
+  const { nodeSel } = state.view;
+  nodeSel.select('circle')
     .attr('stroke', d => d.id === state.focusId ? '#fff' : '#0b0d12')
-    .attr('stroke-width', d => d.id === state.focusId ? 2.5 : 1.2)
-    .on('click', (event, d) => { event.stopPropagation(); focusNode(d.id); })
-    .on('mouseenter', (event, d) => highlight(d.id, links, node, link))
-    .on('mouseleave', () => clearHighlight(node, link));
+    .attr('stroke-width', d => d.id === state.focusId ? 2.5 : 1.2);
+  ensureLabels(nodeSel);
+}
 
-  node.append('title').text(d => `${d.label} (${d.type})`);
+// Only the highest-scoring chefs and restaurants in view are labelled until you zoom in (or focus); see `.minor` in the CSS.
+function isMinor(d) {
+  return d.id !== state.focusId && (d.type === 'person' || d.type === 'restaurant' || d.type === 'place') && !state.view.labelled.has(d.id);
+}
 
-  node.append('text')
+// Label elements are created only for nodes that show one, so unzoomed views skip thousands of hidden labels.
+function ensureLabels(nodeSel) {
+  const zoomed = state.scene.svg.classed('zoomed');
+  nodeSel
+    .filter(function (d) { return (zoomed || !isMinor(d)) && !this.querySelector('text'); })
+    .append('text')
     .attr('x', d => radius(d) + 4)
     .attr('y', 3)
     .text(d => trimLabel(d.label, d.type));
-
-  const simulation = d3.forceSimulation(nodes)
-    .force('link', d3.forceLink(links).id(d => d.id).distance(d => d.rel === 'works-at' ? 40 : 70).strength(0.4))
-    .force('charge', d3.forceManyBody().strength(-120))
-    .force('center', d3.forceCenter(width / 2, height / 2))
-    .force('collision', d3.forceCollide().radius(d => radius(d) + 4))
-    .on('tick', () => {
-      link.attr('x1', d => d.source.x).attr('y1', d => d.source.y)
-          .attr('x2', d => d.target.x).attr('y2', d => d.target.y);
-      node.attr('transform', d => `translate(${d.x},${d.y})`);
-    });
-  state.simulation = simulation;
-
-  svg.on('click', () => { /* click empty */ });
+  nodeSel.select('text').classed('minor', isMinor);
 }
 
 function radius(d) {
-  if (d.type === 'person' || d.type === 'restaurant') return 5 + Math.min(12, (d.win_count || 0) * 1.8 + (d.award_count || 0) * 0.15);
+  if (d.type === 'person' || d.type === 'restaurant') return 4 + Math.min(14, Math.sqrt(d.score || 0) * 1.7);
   if (d.type === 'category') return 8;
   if (d.type === 'year') return 7;
   if (d.type === 'place') return 5;
@@ -434,80 +743,56 @@ function trimLabel(s, type) {
   return s.length > 28 ? s.slice(0, 26) + '…' : s;
 }
 
-function highlight(id, links, nodeSel, linkSel) {
-  const neighbors = new Set([id]);
-  links.forEach(l => {
-    const s = typeof l.source === 'object' ? l.source.id : l.source;
-    const t = typeof l.target === 'object' ? l.target.id : l.target;
-    if (s === id) neighbors.add(t);
-    if (t === id) neighbors.add(s);
-  });
-  nodeSel.classed('dim', d => !neighbors.has(d.id));
-  linkSel.classed('dim', l => {
-    const s = typeof l.source === 'object' ? l.source.id : l.source;
-    const t = typeof l.target === 'object' ? l.target.id : l.target;
-    return !(neighbors.has(s) && neighbors.has(t));
-  }).classed('hi', l => {
-    const s = typeof l.source === 'object' ? l.source.id : l.source;
-    const t = typeof l.target === 'object' ? l.target.id : l.target;
-    return s === id || t === id;
-  });
+function highlight(id) {
+  const { nodeSel, linkSel, neighbors } = state.view;
+  const near = new Set(neighbors.get(id) || []).add(id);
+  nodeSel.classed('dim', d => !near.has(d.id));
+  linkSel
+    .classed('dim', l => !(near.has(l.source.id) && near.has(l.target.id)))
+    .classed('hi', l => l.source.id === id || l.target.id === id);
 }
-function clearHighlight(nodeSel, linkSel) {
-  nodeSel.classed('dim', false);
-  linkSel.classed('dim', false).classed('hi', false);
+function clearHighlight() {
+  state.view.nodeSel.classed('dim', false);
+  state.view.linkSel.classed('dim', false).classed('hi', false);
 }
 
 function focusNode(id) {
   state.focusId = id;
   openProfile(id);
-  applyAndDraw();
+  // Only re-layout when the view depends on the focus; otherwise restyle in place.
+  if (+document.getElementById('hops').value > 0 || !state.view.ids.has(id)) applyAndDraw();
+  else styleFocus();
 }
 
 function openProfile(id) {
-  const n = state.graph.nodes.find(x => x.id === id);
+  const n = state.nodeById.get(id);
   if (!n) return;
-  document.getElementById('profile').classList.add('open');
+  setProfileOpen(true);
   const body = document.getElementById('profileBody');
 
-  // Backlinks
-  const incoming = state.graph.edges.filter(e => e.target === id);
-  const outgoing = state.graph.edges.filter(e => e.source === id);
-  const relatedIds = new Set();
-  incoming.forEach(e => relatedIds.add(e.source));
-  outgoing.forEach(e => relatedIds.add(e.target));
-  const related = [...relatedIds].map(rid => state.graph.nodes.find(x => x.id === rid)).filter(Boolean)
+  const related = [...(state.adjacency.get(id) || [])].map(rid => state.nodeById.get(rid))
     .sort((a, b) => a.type.localeCompare(b.type) || a.label.localeCompare(b.label));
-
-  // Award timeline from awards.json
-  let awards = [];
-  if (n.type === 'person') {
-    awards = state.awards.awards.filter(a => a.person === n.label);
-  } else if (n.type === 'restaurant') {
-    awards = state.awards.awards.filter(a => a.restaurant === n.label);
-  } else if (n.type === 'category') {
-    awards = state.awards.awards.filter(a => a.category === n.label);
-  } else if (n.type === 'year') {
-    awards = state.awards.awards.filter(a => a.year === +n.label);
-  } else if (n.type === 'place') {
-    awards = state.awards.awards.filter(a => a.city === n.city && a.state === n.state);
-  } else if (n.type === 'state') {
-    awards = state.awards.awards.filter(a => a.state === n.state);
-  } else if (n.type === 'region') {
-    awards = state.awards.awards.filter(a => a.region === n.label);
+  const awards = (state.awardsByNode.get(id) || []).slice()
+    .sort((a, b) => b.year - a.year || a.category.localeCompare(b.category));
+  const sources = [...new Set(awards.map(a => a.src || 0))].map(i => state.meta.sources[i]);
+  const rich = n.type === 'restaurant' && awards.length >= RICH_PROFILE_MIN;
+  const app = document.getElementById('app');
+  if (app.classList.contains('profile-wide') !== rich) {
+    app.classList.toggle('profile-wide', rich);
+    requestAnimationFrame(resizeGraph);
   }
-  awards = awards.slice().sort((a, b) => b.year - a.year || a.category.localeCompare(b.category));
-
-  const sources = [...new Set(awards.map(a => a.source_url).filter(Boolean))];
 
   body.innerHTML = `
     <div class="type-tag">${n.type}</div>
     <h2>${escapeHtml(n.label)}</h2>
     <div class="meta">
       ${n.city ? escapeHtml(n.city) + (n.state ? ', ' + n.state : '') : ''}
-      ${n.award_count ? ` · ${n.award_count} award mentions` : ''}
-      ${n.win_count ? ` · ${n.win_count} wins` : ''}
+      ${n.award_count ? ` · ${plural(n.award_count, 'award mention')}` : ''}
+      ${n.win_count ? ` · ${plural(n.win_count, 'win')}` : ''}
+      ${n.score ? ` · score ${n.score}` : ''}
     </div>
+    ${achievementsHtml(n, awards)}
+    ${rich ? restaurantDetails(awards) : ''}
     <h3>Award history</h3>
     <div>${awards.length ? awards.slice(0, 80).map(a => `
       <div class="award-row">
@@ -528,28 +813,162 @@ function openProfile(id) {
       </a>`).join('') || '<div class="empty">No connections in full graph.</div>'}
     </div>
     <h3>Sources</h3>
-    <div>${sources.map(s => `<div><a class="src" href="${s}" target="_blank" rel="noopener">${s}</a></div>`).join('') || '<div class="empty">See data/awards.json provenance.</div>'}</div>
+    <div>${sources.map(s => `<div><a class="src" href="${s.url}" target="_blank" rel="noopener">${escapeHtml(s.label)}</a></div>`).join('') || '<div class="empty">See data/awards.json provenance.</div>'}</div>
   `;
   body.querySelectorAll('[data-id]').forEach(el => {
     el.addEventListener('click', (e) => { e.preventDefault(); focusNode(el.getAttribute('data-id')); });
   });
 }
 
+// Short factual callouts drawn from the record; nothing here is inferred beyond the award rows.
+function achievements(n, rows) {
+  const out = [];
+  const kind = { person: 'chef', restaurant: 'restaurant', place: 'city' }[n.type];
+  if (!kind || !n.score) return out;
+  if (n.rank <= 100) out.push(['rank', `#${n.rank} ${kind} by score`]);
+  if (n.win_count >= 2) out.push(['gold', `${n.win_count}-time winner`]);
+  if (n.win_categories >= 2) out.push(['gold', `Won in ${n.win_categories} categories`]);
+  if (n.streak.length >= 5) out.push(['', `Recognized ${n.streak.length} straight award years (${n.streak.from}–${n.streak.to})`]);
+  if (n.type === 'person') {
+    const rising = d3.min(rows.filter(a => a.category.startsWith('Rising Star')), a => a.year);
+    const bestChef = d3.min(rows.filter(a => a.status === 'winner' && a.category.startsWith('Best Chef') && a.year > rising), a => a.year);
+    if (rising && bestChef) out.push(['gold', `Rising Star (${rising}) → Best Chef winner (${bestChef})`]);
+  }
+  return out;
+}
+
+function achievementsHtml(n, rows) {
+  const list = achievements(n, rows);
+  return list.length ? `<div class="achievements">${list.map(([cls, text]) => `<span class="achv ${cls}">${escapeHtml(text)}</span>`).join('')}</div>` : '';
+}
+
+// ---- Standouts leaderboard
+const STANDOUT_SORTS = {
+  score: byDistinction,
+  wins: (a, b) => b.win_count - a.win_count || byDistinction(a, b),
+  streak: (a, b) => b.streak.length - a.streak.length || byDistinction(a, b),
+  categories: (a, b) => b.win_categories - a.win_categories || byDistinction(a, b),
+};
+let standoutsType = 'restaurant';
+
+function renderStandouts() {
+  const sort = document.getElementById('standoutsSort').value;
+  const rows = [...state.nodeById.values()]
+    .filter(n => n.type === standoutsType && n.score)
+    .sort(STANDOUT_SORTS[sort])
+    .slice(0, 50);
+  const sub = n => {
+    if (n.type === 'restaurant') return n.city ? `${n.city}${n.state ? ', ' + n.state : ''}` : '';
+    if (n.type === 'person') {
+      const places = d3.rollups(state.awardsByNode.get(n.id) || [], v => v.length, a => a.restaurant).filter(([r]) => r).sort((a, b) => b[1] - a[1]);
+      return places.length ? places.slice(0, 2).map(([r]) => r).join(', ') : '';
+    }
+    return plural(new Set((state.awardsByNode.get(n.id) || []).map(a => a.restaurant).filter(Boolean)).size, 'restaurant') + ' recognized';
+  };
+  const main = n => sort === 'streak' ? `<b>${n.streak.length}-year run</b>`
+    : sort === 'categories' ? `<b>${plural(n.win_categories, 'category', 'categories')} won</b>`
+    : sort === 'wins' ? `<b>${plural(n.win_count, 'win')}</b>`
+    : `<b>score ${n.score}</b>`;
+  const rest = n => [sort !== 'wins' && plural(n.win_count, 'win'), sort !== 'score' && `score ${n.score}`,
+    sort !== 'streak' && n.streak.length >= 2 && `${n.streak.length}-yr run`].filter(Boolean).join(' · ');
+  document.getElementById('standoutsList').innerHTML = rows.map((n, i) => `
+    <li><button type="button" class="lb-row" data-id="${n.id}">
+      <span class="rank">${i + 1}</span>
+      <span class="who"><strong>${escapeHtml(n.label)}</strong><span>${escapeHtml(sub(n))}</span></span>
+      <span class="nums">${main(n)}<br><span>${rest(n)}</span></span>
+    </button></li>`).join('');
+}
+
+function setStandoutsOpen(open) {
+  document.getElementById('standouts').classList.toggle('open', open);
+  if (open) {
+    document.getElementById('mapView').classList.remove('open');
+    renderStandouts();
+  }
+}
+
+const RICH_PROFILE_MIN = 6;  // restaurants with more than 5 award mentions get the expanded profile
+const STATUS_RANK = { winner: 3, nominee: 2, semifinalist: 1 };
+const bestStatus = rows => rows.reduce((best, a) => STATUS_RANK[a.status] > STATUS_RANK[best] ? a.status : best, 'semifinalist');
+const yearSpan = years => years[0] === years[years.length - 1] ? `${years[0]}` : `${years[0]}–${years[years.length - 1]}`;
+
+function tally(rows) {
+  const c = { winner: 0, nominee: 0, semifinalist: 0 };
+  rows.forEach(a => { c[a.status]++; });
+  return [c.winner && `<b>${plural(c.winner, 'win')}</b>`, c.nominee && `${c.nominee} nom`, c.semifinalist && `${c.semifinalist} semi`]
+    .filter(Boolean).join(' · ');
+}
+
+// Summary tiles, a year-by-year timeline, and breakdowns by category and by person, all from the award rows.
+function restaurantDetails(awards) {
+  const count = s => awards.filter(a => a.status === s).length;
+  const years = [...new Set(awards.map(a => a.year))].sort((a, b) => a - b);
+  const first = years[0], last = years[years.length - 1];
+  const byYear = d3.group(awards, a => a.year);
+  const cells = d3.range(first, last + 1).map(y => {
+    const rows = byYear.get(y);
+    if (!rows) return `<span title="${y}: no award mentions"></span>`;
+    const tip = rows.map(a => `${a.category} (${a.status})`).join(', ');
+    return `<span class="${bestStatus(rows)}" title="${y}: ${escapeHtml(tip)}"></span>`;
+  }).join('');
+
+  const groupRows = (key, sortKey) => [...d3.group(awards.filter(a => a[key]), a => a[key])]
+    .map(([name, rows]) => ({ name, rows, best: STATUS_RANK[bestStatus(rows)], years: [...new Set(rows.map(a => a.year))].sort((a, b) => a - b) }))
+    .sort((a, b) => b.best - a.best || b.rows.length - a.rows.length || sortKey(a, b));
+  const categories = groupRows('category', (a, b) => a.name.localeCompare(b.name));
+  const people = groupRows('person', (a, b) => a.name.localeCompare(b.name));
+
+  const row = (label, g) => `
+    <div class="summary-row">
+      <div class="what">${label}<div class="when">${yearSpan(g.years)}</div></div>
+      <div class="tally">${tally(g.rows)}</div>
+    </div>`;
+  const personLabel = name => {
+    const id = nid('person', name);
+    return state.nodeById.has(id) ? `<a href="#" data-id="${id}">${escapeHtml(name)}</a>` : escapeHtml(name);
+  };
+
+  return `
+    <div class="stat-tiles">
+      <div class="stat-tile winner"><div class="n">${count('winner')}</div><div class="s">Wins</div></div>
+      <div class="stat-tile nominee"><div class="n">${count('nominee')}</div><div class="s">Nominee</div></div>
+      <div class="stat-tile"><div class="n">${count('semifinalist')}</div><div class="s">Semifinal</div></div>
+      <div class="stat-tile"><div class="n">${years.length}</div><div class="s">Years</div></div>
+    </div>
+    <h3>Timeline · ${yearSpan(years)}</h3>
+    <div class="timeline">${cells}</div>
+    <div class="timeline-axis"><span>${first}</span><span>${last}</span></div>
+    <div class="timeline-key">
+      <span><i style="background:var(--won)"></i>Won</span>
+      <span><i style="background:var(--person)"></i>Nominee</span>
+      <span><i style="background:var(--muted)"></i>Semifinalist</span>
+      <span><i style="background:var(--bg3)"></i>None</span>
+    </div>
+    <h3>By category</h3>
+    <div>${categories.map(g => row(`<strong>${escapeHtml(g.name)}</strong>`, g)).join('')}</div>
+    ${people.length ? `<h3>People</h3><div>${people.map(g => row(personLabel(g.name), g)).join('')}</div>` : ''}`;
+}
+
+// Opening or closing the profile changes the graph's width, so refit after the layout reflows.
+function setProfileOpen(open) {
+  const profile = document.getElementById('profile');
+  if (profile.classList.contains('open') === open) return;
+  profile.classList.toggle('open', open);
+  document.getElementById('app').classList.toggle('profile-open', open);
+  requestAnimationFrame(resizeGraph);
+}
+
+function plural(n, word, many = word + 's') {
+  return `${n} ${n === 1 ? word : many}`;
+}
+
 function escapeHtml(s) {
   return String(s || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 }
 
-function updateMap(sub) {
+function updateMap(rows) {
   const counts = new Map();
-  sub.nodes.filter(n => n.type === 'state').forEach(n => counts.set(n.state || n.label, 0));
-  // count people/restaurants linked to each state via awards in filter year/status
-  const y0 = +document.getElementById('yearMin').value;
-  const y1 = +document.getElementById('yearMax').value;
-  const statuses = new Set(checkedValues('statusChecks'));
-  state.awards.awards.forEach(a => {
-    if (a.year < y0 || a.year > y1 || !statuses.has(a.status) || !a.state) return;
-    counts.set(a.state, (counts.get(a.state) || 0) + 1);
-  });
+  rows.forEach(a => { if (a.state) counts.set(a.state, (counts.get(a.state) || 0) + 1); });
   const max = Math.max(1, ...counts.values());
   const grid = document.getElementById('stateGrid');
   grid.innerHTML = [...counts.entries()].sort((a, b) => b[1] - a[1]).map(([st, n]) => {
@@ -558,33 +977,66 @@ function updateMap(sub) {
       <div class="n">${n}</div><div class="s">${st}</div></div>`;
   }).join('');
   grid.querySelectorAll('.state-card').forEach(card => {
-    card.addEventListener('click', () => {
-      const st = card.getAttribute('data-state');
-      const node = state.graph.nodes.find(n => n.type === 'state' && n.state === st);
-      if (node) focusNode(node.id);
-    });
+    card.addEventListener('click', () => focusNode(nid('state', card.getAttribute('data-state'))));
   });
 }
 
-document.getElementById('applyBtn').addEventListener('click', () => applyAndDraw());
+function resizeGraph() {
+  const wrap = document.getElementById('main');
+  const width = wrap.clientWidth;
+  const height = wrap.clientHeight;
+  d3.select('#graph').attr('viewBox', [0, 0, width, height]);
+  // The camera absorbs size changes; the layout itself stays put.
+  fitView(false);
+}
+
+// Filters apply as soon as they change; search runs on Enter.
+let filterTimer;
+document.querySelector('aside').addEventListener('input', e => {
+  if (e.target.id === 'q') return;
+  clearTimeout(filterTimer);
+  filterTimer = setTimeout(applyAndDraw, 200);
+});
 document.getElementById('resetBtn').addEventListener('click', () => {
-  state.transform = d3.zoomIdentity;
-  applyAndDraw();
+  state.userMoved = false;
+  fitView(true, true);
 });
-document.getElementById('closeProfile').addEventListener('click', () => {
-  document.getElementById('profile').classList.remove('open');
-});
+document.getElementById('closeProfile').addEventListener('click', () => setProfileOpen(false));
 document.getElementById('toggleMap').addEventListener('click', () => {
+  setStandoutsOpen(false);
   document.getElementById('mapView').classList.toggle('open');
+});
+document.getElementById('toggleStandouts').addEventListener('click', () =>
+  setStandoutsOpen(!document.getElementById('standouts').classList.contains('open')));
+document.getElementById('closeStandouts').addEventListener('click', () => setStandoutsOpen(false));
+document.getElementById('standoutsSort').addEventListener('change', renderStandouts);
+document.getElementById('standoutsType').addEventListener('click', e => {
+  const b = e.target.closest('button[data-type]');
+  if (!b) return;
+  standoutsType = b.dataset.type;
+  document.querySelectorAll('#standoutsType button').forEach(x => x.classList.toggle('on', x === b));
+  renderStandouts();
+});
+document.getElementById('standoutsList').addEventListener('click', e => {
+  const row = e.target.closest('[data-id]');
+  if (!row) return;
+  setStandoutsOpen(false);
+  focusNode(row.dataset.id);
 });
 document.getElementById('q').addEventListener('keydown', e => { if (e.key === 'Enter') applyAndDraw(); });
 document.getElementById('searchBox').addEventListener('keydown', e => {
   if (e.key !== 'Enter') return;
   const q = e.target.value.trim().toLowerCase();
-  const hit = state.graph.nodes.find(n => n.label.toLowerCase().includes(q));
-  if (hit) focusNode(hit.id);
+  if (!q) return;
+  for (const n of state.nodeById.values()) {
+    if (n.label.toLowerCase().includes(q)) { focusNode(n.id); break; }
+  }
 });
-window.addEventListener('resize', () => applyAndDraw());
+let resizeTimer;
+window.addEventListener('resize', () => {
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(resizeGraph, 150);
+});
 
 load().catch(err => {
   document.getElementById('countPill').textContent = 'Failed to load data: ' + err.message;

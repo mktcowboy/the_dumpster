@@ -25,9 +25,9 @@ python3 -m http.server 8080
 |-------|--------|
 | Scope | Restaurant & Chef Awards only |
 | Years | 1991–2025 |
-| Records | ~9,904 |
-| Winners / nominees / semifinalists | ~1,273 / ~3,153 / ~5,478 |
-| Graph | ~8,100 nodes · ~24,500 edges |
+| Records | 9,178 (726 duplicate source rows merged) |
+| Winners / nominees / semifinalists | 1,087 / 2,673 / 5,418 |
+| Graph | ~8,000 nodes, built in the browser from `data/awards.json` (1.4 MB) |
 
 **Sources (no invented fields):**
 
@@ -40,17 +40,22 @@ python3 -m http.server 8080
 - 2026 cycle not published / not included
 - Book, Broadcast Media, Journalism, Leadership awards deferred to a later phase
 - Some older rows have blank restaurant or location when the source CSV lacked them
+- The source CSV repeats some awards under different recipient IDs; identical rows are merged at build time
+- The source CSV has garbled accents and apostrophes (e.g. `Bullyâ€™s`); the build repairs them (`clean_text` in `scripts/build_data.py`)
+- The source spells many names several ways (`Charlie Trotter's` / `Charlie Trotters`, `Magnolia Grill` / `Magnolia Grlll`, `Rob` / `Robert Connoley`). The build merges them (`merge_name_variants`): 320 restaurant spellings within the same city and 37 person spellings (near matches only when credited at the same restaurant). Reviewed look-alikes that are different places or people are listed in `KEEP_APART`.
 - America’s Classics and restaurant-only categories may list the restaurant as the “recipient” in source data; the build script reassigns those when the category is restaurant-centric
 
 ## Rebuild data
 
 ```bash
-# refresh CSV
+# refresh CSV (from this directory)
 curl -sL -A "JamesBeardGraphBot/1.0" \
   "https://raw.githubusercontent.com/cjwinchester/james-beard/master/james-beard-awards.csv" \
   -o raw/james-beard-awards.csv
 python3 scripts/build_data.py
 ```
+
+The build writes only `data/awards.json`: one row per award, blank fields omitted, sources listed once in `meta.sources` (rows from the 2025 story carry `"src": 1`). The page derives graph nodes and edges from these rows.
 
 ## License / attribution
 

@@ -14,6 +14,6 @@ Open locally with any static server from this folder (JSON is loaded via `fetch`
 python3 -m http.server 8080
 ```
 
-Each subgraph is self-contained (`index.html` + `data/*.json`). Relative paths only — works under GitHub Pages subpaths.
+Each subgraph folder is self-contained: its page (`index.html` + `data/*.json`), its own copy of the source CSV in `raw/`, and its own build script in `scripts/`. Relative paths only — works under GitHub Pages subpaths. Publishing notes are in [`docs/PUBLISH.md`](./docs/PUBLISH.md).
 
 **Attribution:** Award names/results are trademarks of the James Beard Foundation. Primary data via [cjwinchester/james-beard](https://github.com/cjwinchester/james-beard) from the official search-past-awards page.

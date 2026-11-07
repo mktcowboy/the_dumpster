@@ -1,11 +1,11 @@
 {
   "awards": 4968,
-  "nodes": 6066,
-  "edges": 21322,
+  "nodes": 6065,
+  "edges": 21321,
   "by_type": {
     "year": 33,
     "program": 3,
-    "category": 261,
+    "category": 260,
     "person": 2947,
     "book": 1228,
     "publisher": 309,
