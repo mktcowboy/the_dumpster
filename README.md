@@ -28,7 +28,6 @@
 | Project | What it is |
 | --- | --- |
 | [Texas Triangle land](real-estate/texas-triangle/texas-triangle-land.html) | 16,048 parcels, 5+ acres, inside the Dallas–San Antonio–Houston triangle and its 50-mile ring |
-| [Oklahoma for-sale tracker](real-estate/oklahoma/) | Statewide Oklahoma listings in one local page: sheriff sales, VA and bank REO, optional keyed listing APIs, a map, filters, and nearby comps; requires the [local server](real-estate/oklahoma/README.md) |
 
 ## Research and reports
 
