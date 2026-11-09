@@ -52,6 +52,7 @@
   .site-url button { font: inherit; font-size: 11px; color: var(--ink-3); background: none; border: 1px solid var(--line); border-radius: 4px; padding: 3px 7px; cursor: pointer; }
   .site-url button:hover { color: var(--ink); border-color: var(--ink-3); }
   .lede { color: var(--ink-2); margin: 18px 0 0; max-width: 520px; }
+  .updated { margin: 6px 0 0; font: 12px "JetBrains Mono", monospace; color: var(--ink-3); }
   .stats { display: flex; gap: 16px; margin-top: 14px; font: 12px "JetBrains Mono", monospace; color: var(--ink-3); }
   .stat b { font-weight: 400; color: var(--ink-2); margin-right: 5px; }
 
@@ -127,7 +128,8 @@
       <h1>the dumpster</h1>
     </div>
     <p class="site-url" id="site-url" hidden><a id="site-url-link"></a><button type="button" id="copy-url">copy</button></p>
-    <p class="lede">Reports, data, maps, and small tools. Some of it is pretty good.</p>
+    <p class="lede">if I throw a dog a bone, I don't want to know if it tastes good or not</p>
+    <p class="updated">last updated <time id="updated">November 9, 2026</time></p>
     <div class="stats" id="stats"></div>
   </div>
 </header>
@@ -317,6 +319,10 @@ if (location.protocol.startsWith("http")) {
     }).catch(() => {});
   };
   $("#site-url").hidden = false;
+
+  // Date this copy of the page was published, from the server's Last-Modified header
+  const mod = new Date(document.lastModified);
+  if (!isNaN(mod)) $("#updated").textContent = mod.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
 }
 renderStats(); renderChips(); renderMain();
 </script>
