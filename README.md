@@ -4,10 +4,6 @@
 
 # Project index
 
-Reports, data snapshots, visualizations, and small tools, grouped by topic.
-The [HTML catalog](index.html) links to 22 projects and 37 report pages.
-Most reports open directly in a browser; the live options board requires its local server.
-
 ## Infrastructure
 
 | Project | What it is |
