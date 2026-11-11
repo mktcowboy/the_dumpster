@@ -1,6 +1,6 @@
 [![Yes No GIF](https://media1.tenor.com/m/GQBgOkfrMZ8AAAAC/yes-no.gif)](https://tenor.com/view/yes-no-gif-23142380)
 
-*Last updated: November 9, 2026*
+*Last updated: November 11, 2026*
 
 # Project index
 
@@ -22,6 +22,7 @@
 | [Nasdaq-100 earnings straddles](markets/er-straddles/) | Seller's-view ATM earnings-straddle screen for Nasdaq-100 names, with cost-aware P&L, liquidity grades, and the October 21, 2026 snapshot |
 | [Size & style ETFs](markets/size-style/styles.html) | Nine iShares S&P style-box ETFs charted together, with a 6M, 1Y, 3Y, and 5Y total-return table. Yahoo Finance through November 4, 2026 |
 | [SPDR sector ETFs](markets/size-style/sectors.html) | Companion chart of the 11 Select Sector SPDRs, daily and dividend-adjusted, with period returns. Yahoo Finance through November 4, 2026 |
+| [Drawdown check](drawdown-check/drawdown.html) | Current and max drawdown from all-time highs for one or more tickers, with a local HTML chart and a Yahoo Finance proxy Worker |
 
 ## Real estate
 
@@ -68,5 +69,5 @@
 - `scripts/` holds the privacy checker and local setup script.
 - Run `sh scripts/setup_privacy.sh` in each fresh checkout to install privacy hooks and the anonymous repository commit identity.
 - Run `python3 scripts/check_privacy.py` before committing, per [AGENTS.md](AGENTS.md).
-- [`index.html`](index.html) is the GitHub Pages catalog of the HTML projects. It links to 22 projects and 37 report pages. Card thumbnails live in [`site-assets/thumbs/`](site-assets/thumbs/).
+- [`index.html`](index.html) is the GitHub Pages catalog of the HTML projects. It links to 23 projects and 38 report pages. Card thumbnails live in [`site-assets/thumbs/`](site-assets/thumbs/).
 - Each project folder contains its source files and, where available, a README with build or refresh instructions.

@@ -1,0 +1,8 @@
+{
+  "$schema": "https://developers.cloudflare.com/schemas/wrangler.jsonc",
+  "name": "drawdown-check",
+  "main": "src/index.js",
+  "compatibility_date": "2026-11-11",
+  "workers_dev": true,
+  "account_id": "67aace28a52c8db9ce2fb9334f7c516b"
+}
