@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Futures Curves · Term Structure Report</title>
+<style>
+:root{--mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;--sans:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;--r:14px}
+[data-theme=dark]{--bg:#0a0e16;--bg2:#0d121c;--panel:#111724;--panel2:#161d2d;--line:#222b3d;--line2:#2b3650;--text:#e7ebf3;--muted:#8d98ae;--dim:#5f6a80;
+  --up:#2ebd85;--down:#f6465d;--accent:#5b8cff;--accent2:#8b5cf6;--con:#7c8cff;--back:#f5a524;--flat:#8d98ae;--hdr:rgba(10,14,22,.86);--shadow:0 1px 0 rgba(255,255,255,.03) inset,0 10px 30px rgba(0,0,0,.25);--grid:rgba(141,152,174,.12);--tipbg:#0b1019}
+[data-theme=light]{--bg:#f4f6fa;--bg2:#eef1f7;--panel:#ffffff;--panel2:#f7f9fc;--line:#e3e8f0;--line2:#d4dbe7;--text:#0f172a;--muted:#5b6579;--dim:#8a93a6;
+  --up:#0f9d6b;--down:#e0364f;--accent:#3366ff;--accent2:#7c3aed;--con:#4f5ee8;--back:#d98200;--flat:#5b6579;--hdr:rgba(244,246,250,.86);--shadow:0 1px 2px rgba(15,23,42,.04),0 8px 24px rgba(15,23,42,.06);--grid:rgba(15,23,42,.07);--tipbg:#ffffff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:120px}
+body{margin:0;background:var(--bg);color:var(--text);font:14px/1.5 var(--sans);-webkit-font-smoothing:antialiased;transition:background .2s,color .2s}
+a{color:inherit}
+header{position:sticky;top:0;z-index:30;background:var(--hdr);backdrop-filter:saturate(1.4) blur(12px);-webkit-backdrop-filter:saturate(1.4) blur(12px);border-bottom:1px solid var(--line)}
+.wrap{max-width:1360px;margin:0 auto;padding:0 28px}
+.bar{display:flex;align-items:center;gap:18px;padding:14px 0 10px}
+.logo{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:grid;place-items:center;flex:none;box-shadow:0 6px 18px rgba(91,140,255,.35)}
+.brand h1{margin:0;font-size:17px;font-weight:700;letter-spacing:-.01em}
+.brand .sub{font-size:12px;color:var(--muted)}
+.sp{flex:1}
+.search{position:relative}
+.search input{background:var(--panel);border:1px solid var(--line);border-radius:10px;color:var(--text);padding:8px 12px 8px 32px;font:inherit;font-size:13px;width:220px;outline:none;transition:border-color .15s}
+.search input:focus{border-color:var(--accent)}
+.search svg{position:absolute;left:10px;top:50%;transform:translateY(-50%);opacity:.5}
+.tbtn{background:var(--panel);border:1px solid var(--line);color:var(--text);border-radius:10px;height:36px;padding:0 12px;display:inline-flex;align-items:center;gap:8px;cursor:pointer;font:inherit;font-size:12.5px}
+.tbtn:hover{border-color:var(--accent)}
+nav.tabs{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;padding-bottom:0}
+nav.tabs::-webkit-scrollbar{display:none}
+nav.tabs a{flex:none;text-decoration:none;color:var(--muted);font-size:13px;font-weight:550;padding:9px 12px 11px;border-bottom:2px solid transparent;display:inline-flex;gap:7px;align-items:center;white-space:nowrap}
+nav.tabs a:hover{color:var(--text)}
+nav.tabs a.on{color:var(--text);border-bottom-color:var(--accent)}
+nav.tabs a .n{font-size:10.5px;color:var(--dim);background:var(--panel2);border:1px solid var(--line);padding:0 6px;border-radius:20px;line-height:16px}
+main{padding:26px 0 30px}
+.view{display:none}.view.on{display:block;animation:fade .25s ease}
+@keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow)}
+.kpis{display:grid;grid-template-columns:1.1fr 1fr 1fr 1fr;gap:14px;margin-bottom:16px}
+.kpi{padding:16px 18px}
+.kpi h3,.ttl{margin:0 0 10px;font-size:11px;text-transform:uppercase;letter-spacing:.09em;color:var(--dim);font-weight:650}
+.big{font-size:32px;font-weight:700;font-family:var(--mono);letter-spacing:-.02em;line-height:1.1}
+.big small{font-size:16px;color:var(--dim);font-weight:500}
+.split{height:8px;border-radius:5px;overflow:hidden;display:flex;margin:12px 0 8px;background:var(--panel2)}
+.split i{display:block;height:100%}
+.leg{display:flex;gap:14px;font-size:12px;color:var(--muted);flex-wrap:wrap}
+.leg b{font-weight:600;color:var(--text);font-family:var(--mono)}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;vertical-align:1px}
+.mv{display:flex;align-items:center;gap:8px;padding:5px 0;cursor:pointer;font-size:13px;border-radius:6px}
+.mv:hover .s{color:var(--accent)}
+.mv .s{font-family:var(--mono);font-weight:700;width:34px}
+.mv .nm{color:var(--muted);font-size:12px;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mv .v{font-family:var(--mono);font-size:12.5px;font-weight:600}
+.up{color:var(--up)}.down{color:var(--down)}.flatc{color:var(--muted)}
+.panel{padding:18px 20px;margin-bottom:16px}
+.phead{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:8px}
+.phead h2{margin:0;font-size:15px;font-weight:650;letter-spacing:-.01em}
+.phead .note{font-size:12px;color:var(--dim)}
+#rybar{height:250px}
+.tw{overflow-x:auto;border-radius:var(--r)}
+table{width:100%;border-collapse:separate;border-spacing:0;font-variant-numeric:tabular-nums}
+th,td{padding:9px 12px;text-align:right;white-space:nowrap}
+thead th{position:sticky;top:0;font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--dim);font-weight:650;background:var(--panel2);border-bottom:1px solid var(--line);user-select:none}
+th.srt{cursor:pointer}th.srt:hover{color:var(--text)}
+th.on{color:var(--accent)}
+th.on::after{content:attr(data-dir);margin-left:4px}
+.al{text-align:left}
+td{border-bottom:1px solid var(--line);font-size:13px}
+tbody tr:last-child td{border-bottom:0}
+tbody tr{transition:background .1s}
+tbody tr:hover td{background:var(--panel2)}
+#ovt tbody tr{cursor:pointer}
+td.sym{font-family:var(--mono);font-weight:700;color:var(--accent)}
+td.num{font-family:var(--mono);font-size:12.5px}
+td.nm{font-weight:500}
+#ovt td{padding:7px 10px}#ovt th{padding:9px 10px}#ovt td:first-child,#ovt th:first-child{padding-left:20px}#ovt td:last-child,#ovt th:last-child{padding-right:20px}.grp{color:var(--dim);font-size:11px;font-weight:500;line-height:1.2}
+.badge{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:650;padding:3px 9px 3px 8px;border-radius:20px;border:1px solid;white-space:nowrap}
+.badge::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+.b-con{color:var(--con);border-color:color-mix(in srgb,var(--con) 35%,transparent);background:color-mix(in srgb,var(--con) 10%,transparent)}
+.b-back{color:var(--back);border-color:color-mix(in srgb,var(--back) 40%,transparent);background:color-mix(in srgb,var(--back) 10%,transparent)}
+.b-flat,.b-na{color:var(--flat);border-color:var(--line2);background:var(--panel2)}
+.ry{display:inline-flex;align-items:center;justify-content:flex-end;gap:8px}
+.rybar{width:60px;height:6px;border-radius:3px;background:var(--panel2);position:relative;overflow:hidden;border:1px solid var(--line)}
+.rybar i{position:absolute;top:0;bottom:0}
+.rybar::after{content:"";position:absolute;left:50%;top:-1px;bottom:-1px;width:1px;background:var(--line2)}
+svg.spark{display:block}
+.ghost{color:var(--dim)}
+footer{border-top:1px solid var(--line);color:var(--dim);font-size:12px;padding:20px 0 40px;line-height:1.65}
+footer b{color:var(--muted);font-weight:600}
+/* group view */
+.gintro{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:16px;flex-wrap:wrap}
+.gintro h2{margin:0;font-size:24px;letter-spacing:-.02em}
+.gintro p{margin:2px 0 0;color:var(--muted);font-size:13px}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chip{font-family:var(--mono);font-size:12px;font-weight:650;text-decoration:none;color:var(--muted);background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:5px 10px;display:inline-flex;gap:6px;align-items:center}
+.chip:hover{color:var(--text);border-color:var(--accent)}
+.chip i{width:6px;height:6px;border-radius:50%}
+.mkt{margin-bottom:22px;overflow:hidden}
+.mh{display:flex;align-items:flex-start;gap:18px;padding:18px 22px 14px;flex-wrap:wrap;border-bottom:1px solid var(--line)}
+.mh .id{flex:1;min-width:240px}
+.mh .tk{font-family:var(--mono);font-size:11.5px;color:var(--accent);font-weight:700;letter-spacing:.06em}
+.mh h3{margin:2px 0 6px;font-size:20px;font-weight:700;letter-spacing:-.015em}
+.mh .meta{display:flex;gap:8px;flex-wrap:wrap;align-items:center;font-size:12px;color:var(--muted)}
+.mh .meta span.sep{color:var(--line2)}
+.mh .px{text-align:right}
+.mh .px .p{font-family:var(--mono);font-size:26px;font-weight:700;letter-spacing:-.02em}
+.mh .px .c{font-family:var(--mono);font-size:12.5px}
+.stats{display:grid;grid-template-columns:repeat(6,1fr);border-bottom:1px solid var(--line)}
+.stats div{padding:11px 22px;border-right:1px solid var(--line)}
+.stats div:last-child{border-right:0}
+.stats small{display:block;font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--dim);font-weight:600}
+.stats b{font-family:var(--mono);font-size:14.5px;font-weight:650}
+.charts{display:grid;grid-template-columns:1.35fr 1fr;border-bottom:1px solid var(--line)}
+.charts>div{padding:14px 18px 12px;min-width:0}
+.charts>div+div{border-left:1px solid var(--line)}
+.ch-h{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:6px;flex-wrap:wrap}
+.ch-h .ttl{margin:0}
+.cbox{position:relative;height:270px}
+.lg{display:flex;gap:12px;font-size:11.5px;color:var(--muted);align-items:center;flex-wrap:wrap}
+.lg i{display:inline-block;width:16px;height:0;border-top:2px solid;margin-right:5px;vertical-align:middle}
+.seg{display:inline-flex;background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:2px;gap:2px}
+.seg button{background:none;border:0;color:var(--muted);font:inherit;font-size:11.5px;font-weight:600;padding:3px 9px;border-radius:6px;cursor:pointer}
+.seg button:hover{color:var(--text)}
+.seg button.on{background:var(--accent);color:#fff}
+.ctab th:first-child,.ctab td:first-child{padding-left:22px}
+.ctab th:last-child,.ctab td:last-child{padding-right:22px}
+.tag{display:inline-block;font-size:9.5px;font-weight:700;letter-spacing:.06em;padding:1px 6px;border-radius:4px;margin-left:6px;vertical-align:1px}
+.tag.f{background:color-mix(in srgb,var(--accent) 16%,transparent);color:var(--accent)}
+.tag.x{background:var(--panel2);color:var(--dim);border:1px solid var(--line)}
+.tag.s{background:transparent;color:var(--dim);border:1px dashed var(--line2)}
+tr.front td{background:color-mix(in srgb,var(--accent) 6%,transparent)}
+tr.pre td{opacity:.62}
+.spb{display:inline-flex;align-items:center;gap:8px;justify-content:flex-end}
+.spb .bb{width:64px;height:6px;position:relative;background:var(--panel2);border-radius:3px;border:1px solid var(--line)}
+.spb .bb i{position:absolute;top:0;bottom:0;border-radius:2px}
+.spb .bb::after{content:"";position:absolute;left:50%;top:-2px;bottom:-2px;width:1px;background:var(--line2)}
+.na{padding:40px;text-align:center;color:var(--dim)}
+.more{display:block;width:100%;background:var(--panel2);border:0;border-top:1px solid var(--line);color:var(--muted);font:inherit;font-size:12px;font-weight:600;padding:9px;cursor:pointer}
+.more:hover{color:var(--text)}
+.ctab tr.hid{display:none}
+@media(max-width:1080px){.kpis{grid-template-columns:1fr 1fr}.charts{grid-template-columns:1fr}.charts>div+div{border-left:0;border-top:1px solid var(--line)}.stats{grid-template-columns:repeat(3,1fr)}.stats div:nth-child(3n){border-right:0}.stats div:nth-child(-n+3){border-bottom:1px solid var(--line)}}
+@media(max-width:640px){.stats div{border-right:1px solid var(--line)!important;border-bottom:1px solid var(--line)!important}.stats div:nth-child(2n){border-right:0!important}.stats div:nth-last-child(-n+2){border-bottom:0!important}.wrap{padding:0 16px}.kpis{grid-template-columns:1fr}.search input{width:140px}.brand .sub{display:none}.stats{grid-template-columns:repeat(2,1fr)}.mh .px{text-align:left}.tbtn span{display:none}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="bar">
+      <div class="logo"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17c3-1 4.5-7 8-8s5 3 10-5"/><circle cx="3" cy="17" r="1.2" fill="#fff"/><circle cx="11" cy="9" r="1.2" fill="#fff"/><circle cx="21" cy="4" r="1.2" fill="#fff"/></svg></div>
+      <div class="brand"><h1>Futures Curves</h1><div class="sub" id="asof"></div></div>
+      <div class="sp"></div>
+      <div class="search"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="q" placeholder="Search market…" autocomplete="off"></div>
+      <button class="tbtn" id="theme" title="Toggle light / dark"><svg id="ticon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"></svg><span id="tlabel"></span></button>
+    </div>
+    <nav class="tabs" id="tabs"></nav>
+  </div>
+</header>
+<main class="wrap">
+  <section class="view" id="v-overview">
+    <div class="kpis" id="kpis"></div>
+    <div class="card panel">
+      <div class="phead"><h2>Annualized roll yield by market</h2><span class="note">Front vs ~12-month contract (or furthest listed) · positive = backwardation · click a bar to open</span></div>
+      <div style="position:relative" id="rybar"><canvas></canvas></div>
+    </div>
+    <div class="card">
+      <div class="phead" style="padding:16px 20px 6px"><h2>All markets</h2><span class="note" id="ovnote">Click a column to sort · click a row for the full curve</span></div>
+      <div class="tw"><table id="ovt"><thead></thead><tbody></tbody></table></div>
+    </div>
+  </section>
+  <div id="gviews"></div>
+  <footer id="foot"></footer>
+</main>
+<script>/*__CHARTJS__*/</script>
+<script>
+const DATA=__DATA__;
+const MN=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const GROUPS=Object.keys(DATA.groups), ALL=[];
+GROUPS.forEach(g=>DATA.groups[g].forEach(r=>{r.g=g;ALL.push(r)}));
+const BY=Object.fromEntries(ALL.map(r=>[r.s,r]));
+const $=s=>document.querySelector(s);
+const css=v=>getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const mi=c=>c.y*12+c.m-1, lab=i=>MN[((i%12)+12)%12]+" "+String(Math.floor(i/12)%100).padStart(2,"0");
+// ---------- formatting ----------
+function dec(r){const v=Math.abs(r.ok?r.c[r.fi].last:(r.h?r.h[r.h.length-1]:1));return v<0.05?6:v<2?4:v<20?3:v<1000?2:v<10000?1:0}
+const F=(v,d)=>v==null||isNaN(v)?"–":v.toLocaleString("en-US",{minimumFractionDigits:d,maximumFractionDigits:d});
+const S=(v,d)=>v==null||isNaN(v)?"–":(v>0?"+":v<0?"−":"")+F(Math.abs(v),d);
+const PC=(v,d=2)=>v==null||isNaN(v)?"–":S(v,d)+"%";
+const cl=v=>v==null||Math.abs(v)<1e-12?"flatc":v>0?"up":"down";
+const badge=r=>{if(!r.ok)return`<span class="badge b-na">No curve data</span>`;const k=r.st==="Contango"?"con":r.st==="Backwardation"?"back":"flat";return`<span class="badge b-${k}">${r.st}</span>`};
+const stCol=r=>r.st==="Contango"?css("--con"):r.st==="Backwardation"?css("--back"):css("--flat");
+function ryCell(v){if(v==null)return"–";const w=Math.min(Math.abs(v)/30,1)*50,c=v>=0?"var(--up)":"var(--down)";
+  return`<span class="ry"><span class="${cl(v)}">${PC(v,1)}</span><span class="rybar"><i style="background:${c};${v>=0?`left:50%;width:${w}%`:`right:50%;width:${w}%`}"></i></span></span>`}
+// ---------- theme ----------
+const SUN='<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>',MOON='<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>';
+let theme=localStorage.getItem("fc-theme")||(matchMedia("(prefers-color-scheme: light)").matches?"light":"dark");
+function applyTheme(){document.documentElement.dataset.theme=theme;$("#ticon").innerHTML=theme==="dark"?SUN:MOON;$("#tlabel").textContent=theme==="dark"?"Light":"Dark";
+  Chart.defaults.color=css("--muted");Chart.defaults.borderColor=css("--grid");Chart.defaults.font.family=getComputedStyle(document.body).fontFamily;Chart.defaults.font.size=11}
+$("#theme").onclick=()=>{theme=theme==="dark"?"light":"dark";localStorage.setItem("fc-theme",theme);applyTheme();redrawAll()};
+applyTheme();
+// ---------- header / tabs ----------
+$("#asof").textContent=`Term structure · prices as of ${DATA.asof_nice} · generated ${DATA.gen_ct}`;
+$("#tabs").innerHTML=`<a href="#overview" data-v="overview">Overview<span class="n">${ALL.length}</span></a>`+GROUPS.map(g=>`<a href="#${g}" data-v="${g}">${g}<span class="n">${DATA.groups[g].length}</span></a>`).join("");
+// ---------- sparkline ----------
+function spark(r,w=118,h=34){
+  if(!r.ok||r.c.length<2)return`<svg class="spark" width="${w}" height="${h}"><line x1="4" x2="${w-4}" y1="${h/2}" y2="${h/2}" stroke="var(--line2)" stroke-dasharray="3 3"/></svg>`;
+  const cs=r.c.slice(r.fi),x0=mi(cs[0]),xs=cs.map(c=>mi(c)-x0),xm=Math.max(...xs)||1;
+  const vals=cs.flatMap(c=>[c.last,c.m1].filter(v=>v!=null)),mn=Math.min(...vals),mx=Math.max(...vals),rg=mx-mn||1;
+  const X=i=>3+xs[i]/xm*(w-6),Y=v=>h-3-(v-mn)/rg*(h-6);
+  const line=k=>cs.map((c,i)=>c[k]==null?null:[X(i),Y(c[k])]).filter(Boolean).map((p,i)=>(i?"L":"M")+p[0].toFixed(1)+" "+p[1].toFixed(1)).join("");
+  const col=stCol(r);
+  return`<svg class="spark" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}"><path d="${line("m1")}" fill="none" stroke="var(--dim)" stroke-width="1" stroke-dasharray="2 2" opacity=".8"/><path d="${line("last")}" fill="none" stroke="${col}" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><circle cx="${X(0)}" cy="${Y(cs[0].last)}" r="2.2" fill="${col}"/></svg>`}
+function fspark(r,w=90,h=28){if(!r.h)return"–";const d=r.h,mn=Math.min(...d),mx=Math.max(...d);
+  const p=d.map((v,i)=>(i/(d.length-1)*w).toFixed(1)+","+(h-2-(v-mn)/(mx-mn||1)*(h-4)).toFixed(1)).join(" ");
+  return`<svg class="spark" width="${w}" height="${h}"><polyline points="${p}" fill="none" stroke="${d[d.length-1]>=d[0]?css("--up"):css("--down")}" stroke-width="1.3" stroke-linejoin="round"/></svg>`}
+// ---------- overview ----------
+const ok=ALL.filter(r=>r.ok&&r.ry!=null);
+function kpis(){
+  const nb=ok.filter(r=>r.st==="Backwardation").length,nc=ok.filter(r=>r.st==="Contango").length,nf=ok.length-nb-nc,na=ALL.length-ok.length;
+  const top=(arr,t,f)=>`<div class="card kpi"><h3>${t}</h3>${arr.map(r=>`<div class="mv" data-go="${r.s}"><span class="s">${r.s}</span><span class="nm">${r.n}</span><span class="v ${cl(f(r))}">${PC(f(r),1)}</span></div>`).join("")}</div>`;
+  const srt=[...ok].sort((a,b)=>b.ry-a.ry);
+  const sh=ok.filter(r=>r.ry1m!=null).sort((a,b)=>Math.abs(b.ry-b.ry1m)-Math.abs(a.ry-a.ry1m)).slice(0,5);
+  $("#kpis").innerHTML=`<div class="card kpi"><h3>Market structure</h3><div class="big">${nb}<small> / ${ok.length} backwardated</small></div>
+   <div class="split"><i style="width:${nb/ok.length*100}%;background:var(--back)"></i><i style="width:${nf/ok.length*100}%;background:var(--flat);opacity:.5"></i><i style="width:${nc/ok.length*100}%;background:var(--con)"></i></div>
+   <div class="leg"><span><i class="dot" style="background:var(--back)"></i>Backwardation <b>${nb}</b></span><span><i class="dot" style="background:var(--con)"></i>Contango <b>${nc}</b></span>${nf?`<span><i class="dot" style="background:var(--flat)"></i>Flat <b>${nf}</b></span>`:""}${na?`<span>No data <b>${na}</b></span>`:""}</div>
+   <div style="margin-top:12px;font-size:12px;color:var(--muted)">Median roll yield <b style="font-family:var(--mono);color:var(--text)">${PC(srt[Math.floor(srt.length/2)].ry,1)}</b>/yr · ${ALL.reduce((a,r)=>a+r.c.length,0)} contracts priced</div></div>`+
+   top(srt.slice(0,5),"Steepest backwardation · ann.",r=>r.ry)+top(srt.slice(-5).reverse(),"Steepest contango · ann.",r=>r.ry)+
+   top(sh,"1M shift in roll yield",r=>r.ry-r.ry1m)}
+let ovSort={k:"def",d:1};
+const COLS=[["s","Symbol","al"],["n","Market","al"],["front","Front","al"],["last","Last",""],["chgp","1D",""],["curve","Curve · now vs 1M",""],["st","Structure","al"],["ry","Roll yield ann.",""],["f2","Front→2nd",""],["fsp","Front→far",""],["trend","Front 1Y",""],["p1y","1Y",""],["nc","Contracts",""]];
+const NOSORT=new Set(["trend","curve"]);
+function ovTable(){
+  const q=$("#q").value.trim().toLowerCase();
+  $("#ovt thead").innerHTML="<tr>"+COLS.map(([k,l,a])=>`<th class="${a} ${NOSORT.has(k)?"":"srt"} ${ovSort.k===k?"on":""}" data-k="${k}" data-dir="${ovSort.d>0?"▲":"▼"}">${l}</th>`).join("")+"</tr>";
+  let rows=ALL.filter(r=>!q||r.s.toLowerCase().includes(q)||r.n.toLowerCase().includes(q)||r.g.toLowerCase().includes(q));
+  const val=(r,k)=>k==="nc"?r.c.length:k==="st"?(r.ok?r.st:"~"):r[k];
+  if(ovSort.k!=="def")rows=[...rows].sort((a,b)=>{const x=val(a,ovSort.k),y=val(b,ovSort.k);if(x==null&&y==null)return 0;if(x==null)return 1;if(y==null)return-1;return typeof x==="string"?ovSort.d*x.localeCompare(y):ovSort.d*(x-y)});
+  $("#ovt tbody").innerHTML=rows.map(r=>{const d=dec(r);return`<tr data-go="${r.s}"><td class="sym al">${r.s}</td><td class="nm al">${r.n}<div class="grp">${r.g}</div></td><td class="al num" style="color:var(--muted)">${r.ok?r.front:"–"}</td>
+   <td class="num">${r.ok?F(r.last,d):"–"}</td><td class="num ${cl(r.chgp)}">${PC(r.chgp)}</td><td>${spark(r)}</td><td class="al">${badge(r)}</td><td class="num">${ryCell(r.ry)}</td>
+   <td class="num ${cl(r.f2)}">${PC(r.f2)}</td><td class="num ${cl(r.fsp)}" title="vs ${r.far||""}">${PC(r.fsp)} <span style="color:var(--dim);font-size:10.5px">${r.far?r.fardm+"m":""}</span></td>
+   <td>${fspark(r,80)}</td><td class="num ${cl(r.p1y)}">${PC(r.p1y,1)}</td><td class="num" style="color:var(--muted)">${r.c.length}</td></tr>`}).join("")||`<tr><td colspan="13" class="na">No markets match “${q}”.</td></tr>`;
+  $("#ovnote").textContent=q?`${rows.length} of ${ALL.length} markets match “${q}”`:"Click a column to sort · click a row for the full curve";
+}
+$("#ovt").addEventListener("click",e=>{const th=e.target.closest("th.srt");if(th){const k=th.dataset.k;ovSort=ovSort.k===k?{k,d:-ovSort.d}:{k,d:["s","n","g","front","st"].includes(k)?1:-1};ovTable();return}});
+let ryChart=null;
+function drawRy(){
+  ryChart&&ryChart.destroy();const arr=[...ok].sort((a,b)=>b.ry-a.ry);
+  ryChart=new Chart($("#rybar canvas"),{type:"bar",data:{labels:arr.map(r=>r.s),datasets:[{data:arr.map(r=>r.ry),backgroundColor:arr.map(r=>r.ry>=0?css("--back"):css("--con")),borderRadius:4,maxBarThickness:22}]},
+   options:{maintainAspectRatio:false,animation:{duration:400},plugins:{legend:{display:false},tooltip:tip({callbacks:{title:i=>{const r=arr[i[0].dataIndex];return r.s+" · "+r.n},label:i=>{const r=arr[i.dataIndex];return[`Roll yield ${PC(r.ry,2)}/yr`,`${r.front} → ${r.far} (${r.fardm}m) ${PC(r.fsp)}`,r.st]}}})},
+    scales:{x:{grid:{display:false},ticks:{font:{family:css("--mono"),size:10.5,weight:"600"},autoSkip:false,maxRotation:90,minRotation:0}},y:{grid:{color:css("--grid")},border:{display:false},ticks:{callback:v=>v+"%"}}},
+    onClick:(e,el)=>{if(el.length)go(arr[el[0].index].s)},onHover:(e,el)=>{e.native.target.style.cursor=el.length?"pointer":"default"}}})}
+function tip(o){return Object.assign({backgroundColor:css("--tipbg"),titleColor:css("--text"),bodyColor:css("--muted"),borderColor:css("--line2"),borderWidth:1,padding:10,cornerRadius:8,titleFont:{weight:"700"},bodyFont:{family:css("--mono"),size:11.5},boxPadding:4,usePointStyle:true},o)}
+// ---------- group / market views ----------
+const charts={}; // id -> chart
+const ranges={}; // sym -> range
+function stat(l,v,c=""){return`<div><small>${l}</small><b class="${c}">${v}</b></div>`}
+function mktCard(r){
+  const d=dec(r);
+  if(!r.ok)return`<article class="card mkt" id="m-${r.s}"><div class="mh"><div class="id"><div class="tk">${r.s} · ${r.g.toUpperCase()}</div><h3>${r.n}</h3><div class="meta">${badge(r)}</div></div></div><div class="na">No per-contract quotes were returned for ${r.s} (probed ${r.cand} listed months on .${r.ex}). Curve shown as unavailable rather than estimated.</div></article>`;
+  const f=r.c[r.fi],hsrc=r.hsrc.endsWith("=F")?`front-month continuous (${r.hsrc})`:`spot index (${r.hsrc})`;
+  const N=r.c.length,LIM=14;
+  const rows=r.c.map((c,i)=>{const pre=i<r.fi,fr=i===r.fi,w=Math.min(Math.abs(c.spp)/Math.max(...r.c.map(x=>Math.abs(x.spp)),1e-9),1)*50;
+    const tags=(fr?`<span class="tag f">FRONT</span>`:"")+(pre?`<span class="tag x">EXPIRING</span>`:"")+(c.stale?`<span class="tag s" title="No trade on ${DATA.asof_bar}; last print ${c.d}">STALE</span>`:"");
+    const dw=c.w1!=null?c.last-c.w1:null,dm=c.m1!=null?c.last-c.m1:null;
+    return`<tr class="${fr?"front":""} ${pre?"pre":""} ${i>=LIM?"hid":""}"><td class="al"><b>${c.lab}</b>${tags}</td><td class="al num" style="color:var(--muted)">${c.t}</td><td class="num"><b>${F(c.last,d)}</b></td><td class="num ${cl(c.chg)}">${S(c.chg,d)}</td><td class="num ${cl(c.chgp)}">${PC(c.chgp)}</td>
+     <td class="num ${fr?"flatc":cl(c.sp)}">${fr?"–":S(c.sp,d)}</td><td class="num"><span class="spb"><span class="${fr?"flatc":cl(c.spp)}">${fr?"–":PC(c.spp)}</span><span class="bb"><i style="background:${c.spp>=0?"var(--con)":"var(--back)"};${c.spp>=0?`left:50%;width:${w}%`:`right:50%;width:${w}%`}"></i></span></span></td>
+     <td class="num ${cl(dw)}" title="${c.w1!=null?"1W ago "+F(c.w1,d):""}">${dw==null?"–":PC(dw/c.w1*100,1)}</td><td class="num ${cl(dm)}" title="${c.m1!=null?"1M ago "+F(c.m1,d):""}">${dm==null?"–":PC(dm/c.m1*100,1)}</td>
+     <td class="num" style="color:var(--muted)">${c.vol?c.vol.toLocaleString("en-US"):"0"}</td><td class="num" style="color:${c.stale?"var(--dim)":"var(--muted)"}">${c.d.slice(5).replace("-","/")}</td></tr>`}).join("");
+  return`<article class="card mkt" id="m-${r.s}" data-s="${r.s}">
+  <div class="mh"><div class="id"><div class="tk">${r.s} · ${r.g.toUpperCase()} · ${r.ex}</div><h3>${r.n}</h3>
+    <div class="meta">${badge(r)}<span>${r.shape||""}</span><span class="sep">|</span><span>${N} contracts · cycle ${r.cyc.length===12?"monthly":r.cyc.split("").join(" ")}</span><span class="sep">|</span><span>${r.u}</span></div></div>
+    <div class="px"><div style="font-size:11px;color:var(--dim);text-transform:uppercase;letter-spacing:.08em;font-weight:600">Front · ${f.lab}</div><div class="p">${F(f.last,d)}</div><div class="c ${cl(f.chg)}">${S(f.chg,d)} (${PC(f.chgp)})</div></div></div>
+  <div class="stats">${stat("Roll yield ann.",r.ry==null?"–":PC(r.ry,2),cl(r.ry))}${stat(`Front → ${r.far||"–"}`,r.fsp==null?"–":PC(r.fsp),cl(r.fsp))}${stat("Front → 2nd",r.f2==null?"–":PC(r.f2),cl(r.f2))}
+   ${stat("Roll yield 1M ago",r.ry1m==null?"–":PC(r.ry1m,2),cl(r.ry1m))}${stat("Front 1M",PC(r.p1m,1),cl(r.p1m))}${stat("Front 1Y",PC(r.p1y,1),cl(r.p1y))}</div>
+  <div class="charts">
+   <div><div class="ch-h"><h4 class="ttl">Forward curve</h4><div class="lg"><span><i style="border-color:${stCol(r)}"></i>Now</span><span><i style="border-color:var(--muted);border-top-style:dashed"></i>1W ago</span><span><i style="border-color:var(--dim);border-top-style:dotted"></i>1M ago</span>${r.c.some((c,i)=>c.stale&&i>=r.fi)?`<span><span style="display:inline-block;width:8px;height:8px;border-radius:50%;border:1.6px solid ${stCol(r)};margin-right:5px;vertical-align:-1px"></span>Stale</span>`:""}</div></div><div class="cbox"><canvas id="cc-${r.s}"></canvas></div></div>
+   <div><div class="ch-h"><h4 class="ttl" title="${hsrc}">${r.hsrc.endsWith("=F")?"Front month":"Spot index"} · ${r.hsrc}</h4><span class="seg" data-s="${r.s}">${["3M","6M","1Y"].map(k=>`<button data-r="${k}" class="${(ranges[r.s]||"1Y")===k?"on":""}">${k}</button>`).join("")}</span></div><div class="cbox"><canvas id="fc-${r.s}"></canvas></div></div>
+  </div>
+  <div class="tw"><table class="ctab"><thead><tr><th class="al">Contract</th><th class="al">Ticker</th><th>Last</th><th>Chg</th><th>Chg %</th><th>vs Front</th><th>vs Front %</th><th>1W</th><th>1M</th><th>Volume</th><th>Last trade</th></tr></thead><tbody>${rows}</tbody></table></div>
+  ${N>LIM?`<button class="more" data-more="${r.s}">Show all ${N} contracts ▾</button>`:""}
+  </article>`}
+function buildGroups(){
+  $("#gviews").innerHTML=GROUPS.map(g=>{const L=DATA.groups[g];return`<section class="view" id="v-${g}"><div class="gintro"><div><h2>${g}</h2><p>${L.length} markets · ${L.reduce((a,r)=>a+r.c.length,0)} contracts · ${L.filter(r=>r.st==="Backwardation").length} backwardated, ${L.filter(r=>r.st==="Contango").length} in contango</p></div>
+   <div class="chips">${L.map(r=>`<a class="chip" href="#${g}/${r.s}"><i style="background:${r.ok?stCol(r):"var(--line2)"}"></i>${r.s}</a>`).join("")}</div></div>${L.map(mktCard).join("")}</section>`}).join("")}
+function curveChart(r){
+  const id="cc-"+r.s,el=document.getElementById(id);if(!el)return;charts[id]&&charts[id].destroy();
+  const f=r.c[r.fi],x0=mi(f),d=dec(r),col=stCol(r);
+  const pts=k=>r.c.map((c,i)=>c[k]==null?null:{x:mi(c)-x0,y:c[k],i}).filter(Boolean);
+  const all_=pts("last"),now=all_.filter(p=>p.i>=r.fi&&!r.c[p.i].stale),stale=all_.filter(p=>p.i>=r.fi&&r.c[p.i].stale),pre=all_.filter(p=>p.i<r.fi);
+  const xs=r.c.map(c=>mi(c)-x0),step=Math.ceil(xs.length/12);
+  charts[id]=new Chart(el,{type:"line",data:{datasets:[
+    {label:"1M ago",data:pts("m1"),borderColor:css("--dim"),borderDash:[2,3],borderWidth:1.5,pointRadius:0,pointHoverRadius:3,tension:.25,order:3},
+    {label:"1W ago",data:pts("w1"),borderColor:css("--muted"),borderDash:[6,4],borderWidth:1.5,pointRadius:0,pointHoverRadius:3,tension:.25,order:2},
+    {label:"Now",data:now,borderColor:col,backgroundColor:ctx=>{const c=ctx.chart,{ctx:g,chartArea:a}=c;if(!a)return"transparent";const gr=g.createLinearGradient(0,a.top,0,a.bottom);gr.addColorStop(0,col+"38");gr.addColorStop(1,col+"00");return gr},fill:"start",borderWidth:2.4,tension:.25,order:1,
+     pointRadius:now.map(p=>p.i===r.fi?5:3),pointHoverRadius:6,pointBackgroundColor:col,pointBorderColor:col},
+    {label:"Stale print",data:stale,showLine:false,pointRadius:3.5,pointHoverRadius:5,pointBackgroundColor:css("--panel"),pointBorderColor:col,pointBorderWidth:1.6,order:0},
+    {label:"Expiring",data:pre,showLine:false,pointRadius:4,pointHoverRadius:5,pointBackgroundColor:css("--panel"),pointBorderColor:css("--dim"),pointBorderWidth:1.6,order:0}]},
+   options:{maintainAspectRatio:false,animation:{duration:350},interaction:{mode:"nearest",axis:"x",intersect:false},
+    plugins:{legend:{display:false},tooltip:tip({callbacks:{title:it=>{const c=r.c[it[0].raw.i];return c.lab+"  ·  "+c.t},label:it=>{const c=r.c[it.raw.i],sp=it.raw.y-f.last;return` ${it.dataset.label}: ${F(it.raw.y,d)}`+(it.datasetIndex>=2&&it.raw.i!==r.fi?`  (${S(sp,d)} / ${PC(sp/f.last*100)} vs front)`:"")}}})},
+    scales:{x:{type:"linear",min:Math.min(...xs)-.4,max:Math.max(...xs)+.4,grid:{color:css("--grid")},border:{display:false},afterBuildTicks:ax=>{ax.ticks=xs.filter((_,i)=>i%step===0).map(v=>({value:v}))},ticks:{callback:v=>lab(x0+v),maxRotation:0,autoSkip:true,font:{size:10.5}}},
+     y:{position:"right",grid:{color:css("--grid")},border:{display:false},ticks:{callback:v=>F(v,Math.max(0,d-1)),font:{family:css("--mono"),size:10.5}}}}}})}
+function frontChart(r){
+  const id="fc-"+r.s,el=document.getElementById(id);if(!el)return;charts[id]&&charts[id].destroy();
+  if(!r.h){el.parentNode.innerHTML='<div class="na">No continuous series available.</div>';return}
+  const n={"3M":63,"6M":126,"1Y":260}[ranges[r.s]||"1Y"],h=r.h.slice(-n),hd=r.hd.slice(-n),d=dec(r);
+  const up=h[h.length-1]>=h[0],col=up?css("--up"):css("--down");
+  charts[id]=new Chart(el,{type:"line",data:{labels:hd,datasets:[{data:h,borderColor:col,borderWidth:1.8,pointRadius:0,pointHoverRadius:4,pointHoverBackgroundColor:col,tension:.15,fill:"start",
+    backgroundColor:ctx=>{const c=ctx.chart,{ctx:g,chartArea:a}=c;if(!a)return"transparent";const gr=g.createLinearGradient(0,a.top,0,a.bottom);gr.addColorStop(0,col+"40");gr.addColorStop(1,col+"00");return gr}}]},
+   options:{maintainAspectRatio:false,animation:{duration:350},interaction:{mode:"index",intersect:false},
+    plugins:{legend:{display:false},tooltip:tip({displayColors:false,callbacks:{title:it=>new Date(it[0].label+"T12:00").toLocaleDateString("en-US",{month:"short",day:"numeric",year:"numeric"}),label:it=>`${F(it.raw,d)}   ${PC((it.raw/h[0]-1)*100)} vs ${ranges[r.s]||"1Y"} start`}})},
+    scales:{x:{grid:{display:false},border:{display:false},ticks:{maxTicksLimit:6,maxRotation:0,callback:function(v){const s=this.getLabelForValue(v);const dt=new Date(s+"T12:00");return MN[dt.getMonth()]+" "+String(dt.getFullYear()).slice(2)},font:{size:10.5}}},
+     y:{position:"right",grid:{color:css("--grid")},border:{display:false},ticks:{callback:v=>F(v,Math.max(0,d-1)),font:{family:css("--mono"),size:10.5}}}}}})}
+// lazy chart creation when cards scroll into view
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const r=BY[e.target.dataset.s];if(r&&r.ok&&!charts["cc-"+r.s]){curveChart(r);frontChart(r)}}}),{rootMargin:"300px"});
+function observe(){document.querySelectorAll("article.mkt[data-s]").forEach(a=>io.observe(a))}
+document.addEventListener("click",e=>{
+  const b=e.target.closest(".seg[data-s] button");if(b){const s=b.parentNode.dataset.s;ranges[s]=b.dataset.r;b.parentNode.querySelectorAll("button").forEach(x=>x.classList.toggle("on",x===b));frontChart(BY[s]);return}
+  const m=e.target.closest("[data-more]");if(m){const a=document.getElementById("m-"+m.dataset.more);a.querySelectorAll("tr.hid").forEach(t=>t.classList.remove("hid"));m.remove();return}
+  const g=e.target.closest("[data-go]");if(g)go(g.dataset.go);
+});
+function go(s){const r=BY[s];location.hash=r.g+"/"+r.s}
+function redrawAll(){Object.keys(charts).forEach(k=>{const r=BY[k.slice(3)];const vis=document.getElementById(k)&&document.getElementById(k).offsetParent;if(vis)(k[0]==="c"?curveChart:frontChart)(r);else{charts[k].destroy();delete charts[k]}});
+  if($("#v-overview").classList.contains("on"))drawRy();ovTable();kpis();
+  document.querySelectorAll(".chip i").forEach(i=>{});}
+function route(){
+  const h=decodeURIComponent(location.hash.slice(1))||"overview",[v,s]=h.split("/"),view=GROUPS.includes(v)?v:"overview";
+  document.querySelectorAll(".view").forEach(x=>x.classList.toggle("on",x.id==="v-"+view));
+  document.querySelectorAll("#tabs a").forEach(a=>a.classList.toggle("on",a.dataset.v===view));
+  const ta=document.querySelector(`#tabs a[data-v="${view}"]`);ta&&ta.scrollIntoView({block:"nearest",inline:"nearest"});
+  if(view==="overview"){drawRy();window.scrollTo({top:0})}
+  else{if(s){const el=document.getElementById("m-"+s);if(el){const r=BY[s];if(r.ok&&!charts["cc-"+s]){curveChart(r);frontChart(r)}setTimeout(()=>el.scrollIntoView({behavior:"instant",block:"start"}),0)}}else window.scrollTo({top:0})}
+}
+$("#q").addEventListener("input",()=>{if(!$("#v-overview").classList.contains("on"))location.hash="overview";ovTable()});
+$("#q").addEventListener("keydown",e=>{if(e.key==="Enter"){const r=ALL.find(r=>r.s.toLowerCase()===e.target.value.trim().toLowerCase())||ALL.find(r=>r.n.toLowerCase().includes(e.target.value.trim().toLowerCase()));if(r)go(r.s)}});
+window.addEventListener("hashchange",route);
+// footer
+const nonC=ALL.filter(r=>!r.hsrc.endsWith("=F")).map(r=>`${r.s} uses ${r.hsrc}`);
+$("#foot").innerHTML=`<b>Data.</b> Per-contract daily quotes from Yahoo Finance (tickers like <code>CLF27.NYM</code>, <code>ESH27.CME</code>, <code>GCG27.CMX</code>, <code>ZCH27.CBT</code>, <code>KCH27.NYB</code>), probed across each product's listed-month cycle; ${DATA.probed} candidate tickers checked, ${ALL.reduce((a,r)=>a+r.c.length,0)} returned live quotes. Front-month history is Yahoo's continuous <code>ROOT=F</code> series${nonC.length?" ("+nonC.join("; ")+", spot, because Yahoo has no continuous series)":""}. Latest bar ${DATA.asof_nice}; quotes during the session are delayed and the latest bar may be intraday. Generated ${DATA.gen_ct}.<br>
+<b>Method.</b> Front = the contract Yahoo's continuous series currently tracks; earlier delivery-month contracts are marked <i>expiring</i>. <b>STALE</b> = no print on the latest date (illiquid back month; last available print shown). Roll yield (annualized) = (front ÷ far)<sup>12/m</sup> − 1, where far is the contract nearest 12 months out (9–15m) or the furthest listed if none; positive = backwardation, negative = contango. Curves "1W/1M ago" use each contract's own close 7/30 calendar days earlier. Seasonal curves (natural gas, hogs, gasoline) can mix both shapes; the badge reflects front vs ~12M. No values are estimated or interpolated. For information only, not investment advice.`;
+buildGroups();observe();kpis();ovTable();route();
+</script>
+</body>
+</html>
