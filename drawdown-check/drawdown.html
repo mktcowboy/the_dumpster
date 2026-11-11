@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Drawdown Check</title>
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+  <style>
+    :root {
+      --bg: #131a2e;
+      --bg-raised: #1a2340;
+      --line: #6fa8f5;
+      --text: #c8d0e0;
+      --muted: #8b95ad;
+      --spine: #3d4a66;
+      --fill: rgba(111, 168, 245, 0.32);
+      --danger: #f58aa8;
+      --ok: #7ee0a8;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, "Segoe UI", system-ui, -apple-system, sans-serif;
+    }
+    body { padding: 20px 28px 36px; }
+    header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 18px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 1.15rem;
+      font-weight: 650;
+      letter-spacing: 0.02em;
+      color: #e6ebf5;
+    }
+    .search {
+      display: flex;
+      gap: 8px;
+      flex: 1;
+      min-width: 280px;
+      max-width: 820px;
+    }
+    #ticker {
+      flex: 1;
+      background: var(--bg-raised);
+      color: var(--text);
+      border: 1px solid var(--spine);
+      border-radius: 8px;
+      padding: 10px 12px;
+      font-size: 15px;
+      outline: none;
+    }
+    #ticker:focus { border-color: var(--line); }
+    #ticker::placeholder { color: var(--muted); }
+    #proxy {
+      width: 280px;
+      background: var(--bg-raised);
+      color: var(--text);
+      border: 1px solid var(--spine);
+      border-radius: 8px;
+      padding: 10px 12px;
+      font-size: 13px;
+      outline: none;
+    }
+    #proxy:focus { border-color: var(--line); }
+    #proxy::placeholder { color: var(--muted); }
+    button {
+      background: var(--bg-raised);
+      color: var(--text);
+      border: 1px solid var(--spine);
+      border-radius: 8px;
+      padding: 8px 12px;
+      font-size: 13px;
+      cursor: pointer;
+    }
+    button:hover, button.active {
+      border-color: var(--line);
+      color: #fff;
+    }
+    button.active { background: #243056; }
+    button.go {
+      background: #2a4a86;
+      border-color: #6fa8f5;
+      font-weight: 600;
+    }
+    .toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin: 8px 0 6px;
+    }
+    .ranges, .toggles { display: flex; gap: 6px; flex-wrap: wrap; }
+    .status {
+      min-height: 1.2em;
+      color: var(--muted);
+      font-size: 13px;
+      margin: 0 0 10px;
+    }
+    .status.error { color: var(--danger); }
+    #results { display: none; }
+    #results.visible { display: block; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 14px;
+      margin-bottom: 8px;
+    }
+    .card {
+      background: var(--bg-raised);
+      border: 1px solid var(--spine);
+      border-radius: 12px;
+      padding: 14px 16px 16px;
+    }
+    .card-ticker {
+      font-size: 13px;
+      font-weight: 650;
+      letter-spacing: 0.04em;
+      color: var(--muted);
+    }
+    .headline {
+      font-size: 42px;
+      font-weight: 700;
+      line-height: 1.05;
+      color: var(--line);
+      margin: 4px 0 2px;
+      letter-spacing: -0.02em;
+    }
+    .headline-sub { color: var(--muted); font-size: 13px; margin-bottom: 12px; }
+    .metrics {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px 16px;
+      font-size: 13px;
+    }
+    .metrics dt { color: var(--muted); margin: 0; }
+    .metrics dd { margin: 0 0 6px; color: #e6ebf5; font-variant-numeric: tabular-nums; }
+    #chart { width: 100%; height: 760px; }
+    footer {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+    footer code { color: var(--text); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Drawdown Check</h1>
+    <form class="search" id="form" autocomplete="off">
+      <input id="ticker" type="text" autofocus spellcheck="false"
+             placeholder="Ticker — e.g. QQQ or QQQ, NVDA" />
+      <input id="proxy" type="url" spellcheck="false"
+             placeholder="Proxy URL (Cloudflare Worker)" title="Yahoo chart proxy Worker URL" />
+      <button class="go" type="submit">Look up</button>
+    </form>
+  </header>
+
+  <p class="status" id="status">Enter a ticker and press Enter. Charts use adjusted close.</p>
+
+  <div id="results">
+    <div class="cards" id="cards"></div>
+    <div class="toolbar">
+      <div class="ranges" id="ranges">
+        <button type="button" data-range="1">1Y</button>
+        <button type="button" data-range="5">5Y</button>
+        <button type="button" data-range="10">10Y</button>
+        <button type="button" data-range="max" class="active">Max</button>
+      </div>
+      <div class="toggles">
+        <button type="button" id="btn-linear" class="active">Linear</button>
+        <button type="button" id="btn-log">Log</button>
+      </div>
+    </div>
+    <div id="chart"></div>
+  </div>
+
+  <footer>
+    Open this file locally (double-click / <code>file://</code>). Price is adjusted close
+    (total-return-ish) from Yahoo Finance, proxied by a Cloudflare Worker to work in the browser.
+    Range buttons and chart zoom apply to both panels together. The log/linear toggle is for the price chart only.
+  </footer>
+
+  <script>
+    const PROXY_KEY = "drawdown-proxy";
+    function getProxy() {
+      const q = new URLSearchParams(location.search).get("proxy");
+      if (q) {
+        try { localStorage.setItem(PROXY_KEY, q.replace(/\/$/, "")); } catch (e) {}
+        return q.replace(/\/$/, "");
+      }
+      try { return (localStorage.getItem(PROXY_KEY) || "").replace(/\/$/, ""); }
+      catch (e) { return ""; }
+    }
+    const COLORS = ["#6fa8f5", "#f5c56f", "#7ee0a8", "#f58aa8", "#c9a0f5", "#7ed6df"];
+    const BG = "#131a2e";
+    const TEXT = "#c8d0e0";
+    const GRID = "rgba(255,255,255,0.09)";
+    const SPINE = "#3d4a66";
+    const LEGEND = "#1a2340";
+
+    const form = document.getElementById("form");
+    const input = document.getElementById("ticker");
+    const statusEl = document.getElementById("status");
+    const resultsEl = document.getElementById("results");
+    const cardsEl = document.getElementById("cards");
+    let series = [];
+    let logScale = false;
+    let rangeMode = "max";
+
+    const proxyInput = document.getElementById("proxy");
+    proxyInput.value = getProxy();
+    proxyInput.addEventListener("change", () => {
+      const v = proxyInput.value.trim().replace(/\/$/, "");
+      try { if (v) localStorage.setItem(PROXY_KEY, v); else localStorage.removeItem(PROXY_KEY); }
+      catch (e) {}
+    });
+
+    form.addEventListener("submit", (ev) => {
+      ev.preventDefault();
+      const v = proxyInput.value.trim().replace(/\/$/, "");
+      try { if (v) localStorage.setItem(PROXY_KEY, v); } catch (e) {}
+      lookup(input.value);
+    });
+
+    document.getElementById("ranges").addEventListener("click", (ev) => {
+      const btn = ev.target.closest("button[data-range]");
+      if (!btn || !series.length) return;
+      rangeMode = btn.dataset.range;
+      document.querySelectorAll("#ranges button").forEach((b) => b.classList.toggle("active", b === btn));
+      applyRange();
+    });
+
+    document.getElementById("btn-linear").addEventListener("click", () => setScale(false));
+    document.getElementById("btn-log").addEventListener("click", () => setScale(true));
+
+    function setScale(log) {
+      logScale = log;
+      document.getElementById("btn-linear").classList.toggle("active", !log);
+      document.getElementById("btn-log").classList.toggle("active", log);
+      if (!series.length) return;
+      Plotly.relayout("chart", { "yaxis.type": log ? "log" : "linear" });
+    }
+
+    function parseTickers(raw) {
+      const seen = new Set();
+      const out = [];
+      for (const part of String(raw).split(/[,\s]+/)) {
+        const t = part.trim().toUpperCase();
+        if (!t || seen.has(t)) continue;
+        seen.add(t);
+        out.push(t);
+      }
+      return out;
+    }
+
+    function fmtPrice(v) {
+      if (!Number.isFinite(v)) return "—";
+      const abs = Math.abs(v);
+      const digits = abs >= 1000 || abs >= 1 ? 2 : 4;
+      return v.toLocaleString("en-US", { minimumFractionDigits: digits, maximumFractionDigits: digits });
+    }
+
+    function fmtPct(v) {
+      if (!Number.isFinite(v)) return "—";
+      if (Math.abs(v) < 5e-5) return "0.00%";
+      return (v * 100).toFixed(2) + "%";
+    }
+
+    function tsToDate(ts, gmtOffset) {
+      const offset = Number.isFinite(gmtOffset) ? gmtOffset : 0;
+      const d = new Date((ts + offset) * 1000);
+      return d.toISOString().slice(0, 10);
+    }
+
+    function analyze(dates, prices) {
+      let ath = -Infinity, athIdx = -1;
+      let peak = -Infinity, peakIdx = -1;
+      let maxDd = 0, maxDdTrough = 0, maxDdPeak = 0;
+      const dd = new Array(prices.length);
+      for (let i = 0; i < prices.length; i++) {
+        const p = prices[i];
+        if (p > ath) { ath = p; athIdx = i; }
+        if (p >= peak) { peak = p; peakIdx = i; }
+        const d = p / peak - 1;
+        dd[i] = d;
+        if (d < maxDd) {
+          maxDd = d;
+          maxDdTrough = i;
+          maxDdPeak = peakIdx;
+        }
+      }
+      const last = prices.length - 1;
+      const daysSince = Math.round((Date.parse(dates[last]) - Date.parse(dates[athIdx])) / 86400000);
+      return {
+        ath, athIdx, athDate: dates[athIdx],
+        last: prices[last], lastDate: dates[last],
+        currentDd: dd[last],
+        maxDd, maxDdPeakDate: dates[maxDdPeak], maxDdTroughDate: dates[maxDdTrough],
+        daysSince, dd, dates, prices,
+      };
+    }
+
+    function parseYahoo(json, ticker) {
+      const err = json && json.chart && json.chart.error;
+      if (err) throw new Error(err.description || err.code || "Yahoo error");
+      const result = json && json.chart && json.chart.result && json.chart.result[0];
+      if (!result) throw new Error("No chart data returned");
+      const timestamps = result.timestamp || [];
+      const adj = (((result.indicators || {}).adjclose || [])[0] || {}).adjclose || [];
+      const close = (((result.indicators || {}).quote || [])[0] || {}).close || [];
+      const src = (adj.length ? adj : close);
+      const offset = result.meta && result.meta.gmtoffset;
+      const dates = [];
+      const prices = [];
+      for (let i = 0; i < timestamps.length; i++) {
+        const p = src[i];
+        if (p == null || !Number.isFinite(p) || p <= 0) continue;
+        dates.push(tsToDate(timestamps[i], offset));
+        prices.push(p);
+      }
+      if (!prices.length) throw new Error("No adjusted-close observations");
+      const stats = analyze(dates, prices);
+      stats.ticker = (result.meta && result.meta.symbol) || ticker;
+      stats.basis = adj.length ? "adjusted close (Yahoo, total-return-ish)" : "close (Yahoo; Adj Close not provided)";
+      return stats;
+    }
+
+    async function fetchTicker(ticker) {
+      const url = getProxy() + "/chart/" + encodeURIComponent(ticker);
+      const resp = await fetch(url);
+      let json;
+      try { json = await resp.json(); }
+      catch { throw new Error("Proxy returned a non-JSON response (" + resp.status + ")"); }
+      if (!resp.ok && !(json && json.chart)) {
+        throw new Error((json && (json.error || json.detail)) || ("HTTP " + resp.status));
+      }
+      return parseYahoo(json, ticker);
+    }
+
+    async function lookup(raw) {
+      const tickers = parseTickers(raw);
+      if (!tickers.length) {
+        setStatus("Enter a ticker, or several separated by commas.", true);
+        return;
+      }
+      input.value = tickers.join(", ");
+      const proxy = getProxy();
+      if (!proxy) {
+        setStatus("Set the Yahoo chart proxy URL first (Cloudflare Worker). You can paste it in the Proxy field or add ?proxy=https://your-worker.workers.dev to the page URL.", true);
+        return;
+      }
+      resultsEl.classList.remove("visible");
+      setStatus("Loading " + tickers.join(", ") + "…");
+      const loaded = [];
+      const failures = [];
+      for (const t of tickers) {
+        try { loaded.push(await fetchTicker(t)); }
+        catch (err) { failures.push(t + ": " + (err && err.message ? err.message : err)); }
+      }
+      if (!loaded.length) {
+        setStatus("Could not load data. " + failures.join(" · "), true);
+        return;
+      }
+      series = loaded;
+      rangeMode = "max";
+      document.querySelectorAll("#ranges button").forEach((b) => b.classList.toggle("active", b.dataset.range === "max"));
+      renderCards(loaded);
+      resultsEl.classList.add("visible");
+      renderCharts(loaded);
+      if (window.Plotly && Plotly.Plots) {
+        requestAnimationFrame(() => Plotly.Plots.resize("chart"));
+      }
+      const extra = failures.length ? " Some failed: " + failures.join(" · ") : "";
+      setStatus("Using " + loaded[0].basis + " via " + proxy + "." + extra, failures.length > 0);
+    }
+
+    function setStatus(text, isError) {
+      statusEl.textContent = text;
+      statusEl.classList.toggle("error", !!isError);
+    }
+
+    function renderCards(items) {
+      cardsEl.innerHTML = items.map((s) => `
+        <article class="card">
+          <div class="card-ticker">${escapeHtml(s.ticker)}</div>
+          <div class="headline" data-ticker="${escapeHtml(s.ticker)}">${fmtPct(s.currentDd)}</div>
+          <div class="headline-sub">current drawdown from all-time high</div>
+          <dl class="metrics">
+            <div><dt>ATH</dt><dd>${fmtPrice(s.ath)} on ${s.athDate}</dd></div>
+            <div><dt>Latest</dt><dd>${fmtPrice(s.last)} on ${s.lastDate}</dd></div>
+            <div><dt>Max drawdown</dt><dd>${fmtPct(s.maxDd)}<br>(${s.maxDdPeakDate} → ${s.maxDdTroughDate})</dd></div>
+            <div><dt>Days since ATH</dt><dd>${s.daysSince}</dd></div>
+          </dl>
+        </article>
+      `).join("");
+    }
+
+    function escapeHtml(s) {
+      return String(s).replace(/[&<>"']/g, (c) => ({
+        "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+      }[c]));
+    }
+
+    function xRange() {
+      let last = series[0].dates[series[0].dates.length - 1];
+      let first = series[0].dates[0];
+      for (const s of series) {
+        if (s.dates[s.dates.length - 1] > last) last = s.dates[s.dates.length - 1];
+        if (s.dates[0] < first) first = s.dates[0];
+      }
+      if (rangeMode === "max") return [first, last];
+      const years = Number(rangeMode);
+      const end = new Date(last + "T00:00:00");
+      const start = new Date(end);
+      start.setFullYear(start.getFullYear() - years);
+      const startStr = start.toISOString().slice(0, 10);
+      return [startStr < first ? first : startStr, last];
+    }
+
+    function applyRange() {
+      const [a, b] = xRange();
+      Plotly.relayout("chart", { "xaxis.range": [a, b], "xaxis.autorange": false });
+    }
+
+    function renderCharts(items) {
+      const traces = [];
+      const annotations = [];
+      let ddMin = 0;
+      items.forEach((s, i) => {
+        const color = COLORS[i % COLORS.length];
+        const fill = items.length === 1;
+        traces.push({
+          x: s.dates,
+          y: s.prices,
+          name: s.ticker,
+          type: "scatter",
+          mode: "lines",
+          xaxis: "x",
+          yaxis: "y",
+          line: { color, width: 1.7, shape: "linear" },
+          hovertemplate: s.ticker + " %{x}<br>%{y:.2f}<extra></extra>",
+        });
+        traces.push({
+          x: [s.athDate],
+          y: [s.ath],
+          name: s.ticker + " ATH",
+          type: "scatter",
+          mode: "markers",
+          xaxis: "x",
+          yaxis: "y",
+          marker: {
+            color: color,
+            size: 11,
+            symbol: "diamond",
+            line: { color: "#e6ebf5", width: 1.2 },
+          },
+          hovertemplate: s.ticker + " ATH<br>%{x}<br>" + fmtPrice(s.ath) + "<extra></extra>",
+          legendgroup: s.ticker,
+          showlegend: items.length === 1,
+        });
+        traces.push({
+          x: s.dates,
+          y: s.dd.map((d) => d * 100),
+          name: s.ticker,
+          type: "scatter",
+          mode: "lines",
+          xaxis: "x",
+          yaxis: "y2",
+          line: { color, width: 1.6 },
+          fill: fill ? "tozeroy" : "none",
+          fillcolor: fill ? "rgba(111,168,245,0.32)" : undefined,
+          hovertemplate: s.ticker + " %{x}<br>%{y:.2f}%<extra></extra>",
+          showlegend: false,
+        });
+        annotations.push({
+          x: s.athDate,
+          y: s.ath,
+          xref: "x",
+          yref: "y",
+          text: items.length === 1 ? "ATH" : (s.ticker + " ATH"),
+          showarrow: true,
+          arrowhead: 0,
+          arrowcolor: color,
+          ax: 0,
+          ay: -22,
+          font: { size: 11, color: TEXT, family: "Inter, system-ui, sans-serif" },
+          bgcolor: LEGEND,
+          bordercolor: SPINE,
+          borderwidth: 1,
+          borderpad: 3,
+        });
+        const lo = Math.min(...s.dd) * 100;
+        if (lo < ddMin) ddMin = lo;
+      });
+
+      const [x0, x1] = xRange();
+      const layout = {
+        paper_bgcolor: BG,
+        plot_bgcolor: BG,
+        font: { color: TEXT, family: "Inter, system-ui, sans-serif", size: 12 },
+        margin: { l: 68, r: 24, t: 28, b: 44 },
+        hovermode: "x unified",
+        hoverlabel: { bgcolor: LEGEND, bordercolor: SPINE, font: { color: TEXT } },
+        legend: {
+          bgcolor: LEGEND,
+          bordercolor: SPINE,
+          borderwidth: 1,
+          font: { color: TEXT, size: 11 },
+          x: 0,
+          y: 1,
+          xanchor: "left",
+          yanchor: "top",
+          orientation: "h",
+        },
+        annotations,
+        xaxis: {
+          anchor: "y2",
+          range: [x0, x1],
+          autorange: false,
+          showgrid: true,
+          gridcolor: GRID,
+          gridwidth: 0.6,
+          linecolor: SPINE,
+          tickcolor: SPINE,
+          zeroline: false,
+          showspikes: true,
+          spikemode: "across",
+          spikecolor: "#6a7694",
+          spikethickness: 1,
+        },
+        yaxis: {
+          title: { text: "Adjusted close", font: { size: 12, color: TEXT } },
+          type: logScale ? "log" : "linear",
+          domain: [0.42, 1],
+          showgrid: true,
+          gridcolor: GRID,
+          gridwidth: 0.6,
+          linecolor: SPINE,
+          tickcolor: SPINE,
+          zeroline: false,
+          separatethousands: true,
+        },
+        yaxis2: {
+          title: { text: "Drawdown", font: { size: 12, color: TEXT } },
+          ticksuffix: "%",
+          domain: [0, 0.34],
+          range: [Math.min(ddMin * 1.08, -1), 0],
+          showgrid: true,
+          gridcolor: GRID,
+          gridwidth: 0.6,
+          linecolor: SPINE,
+          tickcolor: SPINE,
+          zeroline: true,
+          zerolinecolor: "rgba(111,168,245,0.55)",
+          zerolinewidth: 0.8,
+        },
+      };
+
+      const config = {
+        responsive: true,
+        displaylogo: false,
+        modeBarButtonsToRemove: ["lasso2d", "select2d", "autoScale2d"],
+      };
+      Plotly.react("chart", traces, layout, config);
+    }
+
+    const q = new URLSearchParams(location.search).get("ticker");
+    if (q) {
+      input.value = q;
+      lookup(q);
+    }
+  </script>
+</body>
+</html>
