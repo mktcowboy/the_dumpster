@@ -22,7 +22,7 @@
 | [Nasdaq-100 earnings straddles](markets/er-straddles/) | Seller's-view ATM earnings-straddle screen for Nasdaq-100 names, with cost-aware P&L, liquidity grades, and the October 21, 2026 snapshot |
 | [Size & style ETFs](markets/size-style/styles.html) | Nine iShares S&P style-box ETFs charted together, with a 6M, 1Y, 3Y, and 5Y total-return table. Yahoo Finance through November 4, 2026 |
 | [SPDR sector ETFs](markets/size-style/sectors.html) | Companion chart of the 11 Select Sector SPDRs, daily and dividend-adjusted, with period returns. Yahoo Finance through November 4, 2026 |
-| [Drawdown check](drawdown-check/drawdown.html) | Current and max drawdown from all-time highs for one or more tickers, with a local HTML chart and a Yahoo Finance proxy Worker |
+| [Drawdown check](drawdown-check/drawdown.html) | Current and max drawdown from all-time highs, plus live 30-day ATM and 25-delta implied volatility and official vol-index history, with a local HTML chart and a Yahoo Finance proxy Worker |
 | [Futures curves](futures-curves/futures-curves.html) | Term structure for 41 futures markets in eight groups, with forward curves, front-month history, and annualized roll yield. Yahoo Finance through November 11, 2026 |
 
 ## Real estate
