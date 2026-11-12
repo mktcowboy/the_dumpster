@@ -23,6 +23,7 @@
 | [Size & style ETFs](markets/size-style/styles.html) | Nine iShares S&P style-box ETFs charted together, with a 6M, 1Y, 3Y, and 5Y total-return table. Yahoo Finance through November 4, 2026 |
 | [SPDR sector ETFs](markets/size-style/sectors.html) | Companion chart of the 11 Select Sector SPDRs, daily and dividend-adjusted, with period returns. Yahoo Finance through November 4, 2026 |
 | [Drawdown check](drawdown-check/drawdown.html) | Current and max drawdown from all-time highs for one or more tickers, with a local HTML chart and a Yahoo Finance proxy Worker |
+| [Futures curves](futures-curves/futures-curves.html) | Term structure for 41 futures markets in eight groups, with forward curves, front-month history, and annualized roll yield. Yahoo Finance through November 11, 2026 |
 
 ## Real estate
 
@@ -69,5 +70,5 @@
 - `scripts/` holds the privacy checker and local setup script.
 - Run `sh scripts/setup_privacy.sh` in each fresh checkout to install privacy hooks and the anonymous repository commit identity.
 - Run `python3 scripts/check_privacy.py` before committing, per [CONTRIBUTING.md](CONTRIBUTING.md).
-- [`index.html`](index.html) is the GitHub Pages catalog of the HTML projects. It links to 23 projects and 38 report pages. Card thumbnails live in [`site-assets/thumbs/`](site-assets/thumbs/).
+- [`index.html`](index.html) is the GitHub Pages catalog of the HTML projects. It links to 24 projects and 39 report pages. Card thumbnails live in [`site-assets/thumbs/`](site-assets/thumbs/).
 - Each project folder contains its source files and, where available, a README with build or refresh instructions.
