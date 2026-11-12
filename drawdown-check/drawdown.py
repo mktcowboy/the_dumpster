@@ -413,6 +413,16 @@ def parse_args(argv: Iterable[str] | None = None) -> argparse.Namespace:
         action="store_true",
         help="Skip writing chart PNGs; print stats only.",
     )
+    parser.add_argument(
+        "--iv",
+        action="store_true",
+        help="Also print 30-day ATM / 25-delta implied volatility from the live option chain.",
+    )
+    parser.add_argument(
+        "--iv-snapshot",
+        action="store_true",
+        help="With --iv, append today's IV metrics to data/iv_snapshots.csv.",
+    )
     return parser.parse_args(list(argv) if argv is not None else None)
 
 
@@ -484,13 +494,26 @@ def main(argv: Iterable[str] | None = None) -> int:
 
     exit_code = 0
     blocks: list[str] = []
+    iv_rows = []
     for ticker in tickers:
         try:
             text, _ = process_ticker(ticker, args.start, args.end, args.out_dir, args.no_chart)
+            if args.iv or args.iv_snapshot:
+                from iv import analyze_ticker, format_report as format_iv, append_snapshot
+                try:
+                    ivm = analyze_ticker(ticker)
+                    iv_rows.append(ivm)
+                    text = text + "\n\n" + format_iv(ivm)
+                except Exception as iv_exc:  # noqa: BLE001
+                    text = text + f"\n\n{ticker} implied volatility\n  Error: {iv_exc}"
             blocks.append(text)
         except Exception as exc:  # noqa: BLE001
             exit_code = 1
             blocks.append(f"{ticker}\n  Error: {exc}")
+    if args.iv_snapshot and iv_rows:
+        from iv import append_snapshot
+        path = append_snapshot(iv_rows)
+        blocks.append(f"IV snapshot appended to {path}")
     print("\n\n".join(blocks))
     return exit_code
 

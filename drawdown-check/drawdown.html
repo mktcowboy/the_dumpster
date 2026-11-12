@@ -144,6 +144,8 @@
     .metrics dt { color: var(--muted); margin: 0; }
     .metrics dd { margin: 0 0 6px; color: #e6ebf5; font-variant-numeric: tabular-nums; }
     #chart { width: 100%; height: 760px; }
+    #ivchart { width: 100%; height: 320px; margin-top: 8px; display: none; }
+    #ivchart.visible { display: block; }
     footer {
       margin-top: 10px;
       color: var(--muted);
@@ -181,12 +183,16 @@
       </div>
     </div>
     <div id="chart"></div>
+    <div id="ivchart"></div>
   </div>
 
   <footer>
     Open this file locally (double-click / <code>file://</code>). Price is adjusted close
     (total-return-ish) from Yahoo Finance, proxied by a Cloudflare Worker to work in the browser.
-    Range buttons and chart zoom apply to both panels together. The log/linear toggle is for the price chart only.
+    Paste that Worker URL into the Proxy field, or add <code>?proxy=</code> to the page URL.
+    Range buttons and chart zoom apply to the price and drawdown panels together (and to the IV history chart when one is shown).
+    The log/linear toggle is for the price chart only. Live 30-day IV comes from the CBOE delayed option chain.
+    Official vol-index history (VIX, VXN, and a few single-stock equity VIX series) is shown when a ticker has a free proxy.
   </footer>
 
   <script>
@@ -346,6 +352,20 @@
       return parseYahoo(json, ticker);
     }
 
+    async function fetchIv(ticker) {
+      const resp = await fetch(getProxy() + "/iv/" + encodeURIComponent(ticker));
+      const json = await resp.json();
+      if (!resp.ok) throw new Error((json && (json.error || json.detail)) || ("HTTP " + resp.status));
+      return json;
+    }
+
+    async function fetchVolindex(index) {
+      const resp = await fetch(getProxy() + "/volindex/" + encodeURIComponent(index));
+      const json = await resp.json();
+      if (!resp.ok) throw new Error((json && json.error) || ("HTTP " + resp.status));
+      return json;
+    }
+
     async function lookup(raw) {
       const tickers = parseTickers(raw);
       if (!tickers.length) {
@@ -363,7 +383,16 @@
       const loaded = [];
       const failures = [];
       for (const t of tickers) {
-        try { loaded.push(await fetchTicker(t)); }
+        try {
+          const stats = await fetchTicker(t);
+          try { stats.iv = await fetchIv(t); }
+          catch (ivErr) { stats.ivError = ivErr && ivErr.message ? ivErr.message : String(ivErr); }
+          if (stats.iv && stats.iv.volindex) {
+            try { stats.volHistory = await fetchVolindex(stats.iv.volindex); }
+            catch (hErr) { stats.ivError = (stats.ivError ? stats.ivError + "; " : "") + (hErr && hErr.message ? hErr.message : String(hErr)); }
+          }
+          loaded.push(stats);
+        }
         catch (err) { failures.push(t + ": " + (err && err.message ? err.message : err)); }
       }
       if (!loaded.length) {
@@ -376,8 +405,12 @@
       renderCards(loaded);
       resultsEl.classList.add("visible");
       renderCharts(loaded);
+      renderIvChart(loaded);
       if (window.Plotly && Plotly.Plots) {
-        requestAnimationFrame(() => Plotly.Plots.resize("chart"));
+        requestAnimationFrame(() => {
+          Plotly.Plots.resize("chart");
+          if (document.getElementById("ivchart").classList.contains("visible")) Plotly.Plots.resize("ivchart");
+        });
       }
       const extra = failures.length ? " Some failed: " + failures.join(" · ") : "";
       setStatus("Using " + loaded[0].basis + " via " + proxy + "." + extra, failures.length > 0);
@@ -399,6 +432,9 @@
             <div><dt>Latest</dt><dd>${fmtPrice(s.last)} on ${s.lastDate}</dd></div>
             <div><dt>Max drawdown</dt><dd>${fmtPct(s.maxDd)}<br>(${s.maxDdPeakDate} → ${s.maxDdTroughDate})</dd></div>
             <div><dt>Days since ATH</dt><dd>${s.daysSince}</dd></div>
+            ${s.iv && s.iv.put25_iv_30d != null ? `<div><dt>30-day 25Δ put IV</dt><dd>${fmtPct(s.iv.put25_iv_30d)}</dd></div>` : ""}
+            ${s.iv && s.iv.atm_iv_30d != null ? `<div><dt>30-day ATM IV</dt><dd>${fmtPct(s.iv.atm_iv_30d)}${s.iv.cboe_iv30 != null ? ` <span style="color:var(--muted)">(CBOE iv30 ${fmtPct(s.iv.cboe_iv30)})</span>` : ""}</dd></div>` : ""}
+            ${s.iv && s.iv.skew_25d != null ? `<div><dt>25Δ put−call skew</dt><dd>${fmtPct(s.iv.skew_25d)}</dd></div>` : (s.ivError ? `<div><dt>IV</dt><dd>${escapeHtml(s.ivError)}</dd></div>` : "")}
           </dl>
         </article>
       `).join("");
@@ -429,6 +465,41 @@
     function applyRange() {
       const [a, b] = xRange();
       Plotly.relayout("chart", { "xaxis.range": [a, b], "xaxis.autorange": false });
+      if (document.getElementById("ivchart").classList.contains("visible")) {
+        Plotly.relayout("ivchart", { "xaxis.range": [a, b], "xaxis.autorange": false });
+      }
+    }
+
+    function renderIvChart(items) {
+      const el = document.getElementById("ivchart");
+      const seriesIv = items.filter((s) => s.volHistory && s.volHistory.points && s.volHistory.points.length);
+      if (!seriesIv.length) {
+        el.classList.remove("visible");
+        el.innerHTML = "";
+        return;
+      }
+      el.classList.add("visible");
+      const traces = seriesIv.map((s, i) => ({
+        x: s.volHistory.points.map((p) => p.date),
+        y: s.volHistory.points.map((p) => p.close),
+        name: (s.iv && s.iv.volindex ? s.iv.volindex : s.ticker) + " (" + s.ticker + ")",
+        type: "scatter",
+        mode: "lines",
+        line: { color: COLORS[i % COLORS.length], width: 1.6 },
+        hovertemplate: "%{x}<br>%{y:.2f}<extra>" + (s.iv && s.iv.volindex ? s.iv.volindex : s.ticker) + "</extra>",
+      }));
+      const [x0, x1] = xRange();
+      const layout = {
+        paper_bgcolor: BG, plot_bgcolor: BG,
+        font: { color: TEXT, family: "Inter, system-ui, sans-serif", size: 12 },
+        margin: { l: 68, r: 24, t: 28, b: 40 },
+        hovermode: "x unified",
+        hoverlabel: { bgcolor: LEGEND, bordercolor: SPINE, font: { color: TEXT } },
+        legend: { bgcolor: LEGEND, bordercolor: SPINE, borderwidth: 1, font: { color: TEXT, size: 11 }, x: 0, y: 1, orientation: "h" },
+        xaxis: { range: [x0, x1], autorange: false, showgrid: true, gridcolor: GRID, gridwidth: 0.6, linecolor: SPINE, zeroline: false },
+        yaxis: { title: { text: "Vol index", font: { size: 12, color: TEXT } }, ticksuffix: "", showgrid: true, gridcolor: GRID, gridwidth: 0.6, linecolor: SPINE, zeroline: false },
+      };
+      Plotly.react("ivchart", traces, layout, { responsive: true, displaylogo: false, modeBarButtonsToRemove: ["lasso2d", "select2d", "autoScale2d"] });
     }
 
     function renderCharts(items) {
