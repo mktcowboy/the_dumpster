@@ -1,0 +1,414 @@
+site_no,name,type,active_realtime,drainage_sqmi,huc8,county,lat,lon
+07148128,"Arkansas River at Kaw City, OK",Stream,False,8670.0,11060001,Kay,36.76892498,-96.834756
+07148140,"Arkansas River near Ponca City, OK",Stream,False,46345.0,11060001,Kay,36.6933717,-96.930314
+07148350,"Salt Fork Arkansas River nr Winchester, OK",Stream,False,856.0,11060002,Woods,36.96169595,-98.7823116
+07148400,"Salt Fork Arkansas River nr Alva, OK",Stream,True,982.0,11060002,Woods,36.81503056,-98.6481395
+07148450,"Salt Fork Arkansas River nr Ingersoll, OK",Stream,False,1140.0,11060002,Alfalfa,36.8216959,-98.3600733
+07149500,"Salt Fork Arkansas River nr Cherokee, OK",Stream,False,2439.0,11060004,Alfalfa,36.81836246,-98.3192386
+07149520,"Salt Fork Arkansas River at SH 11 nr Cherokee, OK",Stream,False,2365.0,11060004,Alfalfa,36.80555556,-98.2472222
+07149850,"Subwatershed W-7 & W-13 nr Cherokee, OK",Stream,False,0.01,11060004,Alfalfa,36.73475276,-98.3789633
+07150500,"Salt Fork Arkansas River nr Jet, OK",Stream,False,3202.0,11060004,Alfalfa,36.75252938,-98.1289547
+07150580,"Sand Creek Trib near Kremlin, OK",Stream,False,7.21,11060004,Garfield,36.55003149,-97.8108894
+07150870,"Salt Fork Arkansas River Trib nr Eddy, OK",Stream,False,2.35,11060004,Kay,36.6950327,-97.4253239
+07151000,"Salt Fork Arkansas River at Tonkawa, OK",Stream,True,4470.0,11060004,Kay,36.6719792,-97.3094887
+07152000,"Chikaskia River near Blackwell, OK",Stream,True,1876.0,11060005,Kay,36.8114211,-97.277265
+07152290,"Greasy Creek near Watchorn, OK",Stream,False,,11060006,Pawnee,36.45615664,-96.9942052
+07152360,"Elm Creek near Foraker, OK",Stream,False,18.2,11060006,Osage,36.8689293,-96.6141885
+07152410,"Rock Creek near Shidler, OK",Stream,False,9.13,11060006,Osage,36.7478208,-96.6275255
+07152500,"Arkansas River at Ralston, OK",Stream,True,54208.0,11060006,Pawnee,36.50421677,-96.7283672
+07153000,"Black Bear Creek at Pawnee, OK",Stream,True,538.0,11060006,Pawnee,36.34366537,-96.7994788
+07153100,"Ranch Creek at Clev Dam nr Cleveland, OK",Stream,False,21.9,11060006,Pawnee,36.28339844,-96.576693
+07154500,"Cimarron River near Kenton, OK",Stream,False,1208.0,110400011006,Cimarron,36.92669908,-102.9590988
+07155000,"Cimarron River ab Ute Creek nr Boise City, OK",Stream,False,1955.0,11040002,Cimarron,36.91279869,-102.6193595
+07155500,"Cimarron River near Boise City, OK",Stream,False,2214.0,11040002,Cimarron,36.91890984,-102.5196334
+07157000,"Cimarron River near Mocane, OK",Stream,False,8670.0,11040006,Beaver,36.97586114,-100.3143115
+07157580,"Cimarron River near Englewood, KS",Stream,False,10096.0,11040008,Harper,36.97725196,-99.9759682
+07157950,"Cimarron River near Buffalo, OK",Stream,True,12205.0,11050001,Woods,36.85197484,-99.315387
+07157960,"Buffalo Creek near Lovedale, OK",Stream,False,408.0,11050001,Harper,36.7705872,-99.3670537
+07157980,"Cimarron River at Freedom, OK",Stream,False,12917.0,11050001,Woodward,36.75503165,-99.1164899
+07158000,"Cimarron River near Waynoka, OK",Stream,True,13399.0,11050001,Woods,36.51725644,-98.8795366
+07158150,"Salt Creek near Hitchcock, OK",Stream,False,44.4,11050002,Blaine,36.01559404,-98.370352
+07158400,"Salt Creek near OKeene, OK",Stream,False,196.0,11050002,Kingfisher,36.1030923,-98.193678
+07158500,"Preacher Creek near Dover, OK  18N-08W-13 BBB",Stream,False,14.5,11050002,Kingfisher,36.04170507,-98.0136703
+07159000,"Turkey Creek near Drummond, OK",Stream,False,248.0,11050002,Garfield,36.31808997,-98.001172
+07159100,"Cimarron River near Dover, OK",Stream,True,15809.0,11050002,Kingfisher,35.95170756,-97.9144994
+07159200,"Kingfisher Creek near Kingfisher, OK",Stream,False,157.0,11050002,Kingfisher,35.83420965,-98.0661687
+07159400,"Cimarron River near Crescent, OK",Stream,False,16453.0,11050002,Logan,35.88671184,-97.5894898
+07159500,"Bluff Creek ab Lake Hefner nr Oklahoma City, OK",Stream,False,1.62,11050002,Oklahoma,35.5425565,-97.5964301
+07159550,"Lake Hefner at Oklahoma City, OK",Lake/Reservoir,True,8.99,11050002,Oklahoma,35.5828329,-97.5955972
+07159720,"Cottonwood Creek near Navina, OK",Stream,False,247.0,11050002,Logan,35.7767158,-97.5461539
+07159750,"Cottonwood Creek near Seward, OK",Stream,True,320.0,11050002,Logan,35.81366006,-97.478097
+07160000,"Cimarron River near Guthrie, OK",Stream,True,17006.0,11050002,Logan,35.9206023,-97.4258746
+07160280,"Boggy Creek at Enid Ave at Enid, OK",Stream,True,21.7,11050002,Garfield,36.37711667,-97.8726056
+07160290,"North Boggy Creek at Garriott Rd at Enid, OK",Stream,True,10.5,11050002,Garfield,36.3906333,-97.8683556
+07160300,"Boggy Creek at 30th St at Enid, OK",Stream,True,36.2,11050002,Garfield,36.38983889,-97.8368611
+07160350,"Skeleton Creek at Enid, OK",Stream,True,70.0,11050002,Garfield,36.3761449,-97.8003332
+07160500,"Skeleton Creek near Lovell, OK",Stream,True,412.0,11050002,Logan,36.06004045,-97.5850471
+07160810,"Wildhorse Creek near Perkins, Ok",Stream,False,39.9,11050003,Payne,35.98555556,-97.1191667
+07161000,"Cimarron River at Perkins, OK",Stream,False,17852.0,11050003,Payne,35.9575563,-97.031975
+07161450,"Cimarron River near Ripley, OK",Stream,True,18117.0,11050003,Payne,35.9858927,-96.9122504
+07162000,"Stillwater Creek at Stillwater, OK",Stream,False,168.0,11050003,Payne,36.0981078,-97.0469784
+07162500,"West Fork Brush Creek near Stillwater, OK",Stream,False,13.1,11050003,Payne,36.11616384,-97.0136448
+07163000,"Council Creek near Stillwater, OK",Stream,False,31.0,11050003,Payne,36.116169,-96.8678088
+07163300,"Cimarron River near Yale, OK",Stream,False,18586.0,11050003,Payne,36.0922222,-96.7136111
+07163500,"Cimarron River at Oilton, OK",Stream,False,18669.0,11050003,Creek,36.09395648,-96.5814098
+07164000,"Cimarron River at Mannford, OK",Stream,False,18849.0,11050003,Creek,36.15896349,-96.3986265
+07164480,"Arkansas River at SH 344 nr Tulsa, OK",Stream,True,74448.0,111101010303,Tulsa,36.141911,-96.057369
+07164500,"Arkansas River at Tulsa, OK",Stream,True,74460.0,11110101,Tulsa,36.14064807,-96.0063866
+07164600,"Joe Creek at 61st St at Tulsa, OK",Stream,True,11.6,11110101,Tulsa,36.07565044,-95.9605501
+07164650,"Fred Creek at Evanston Avenue, at Tulsa, OK",Stream,False,1.87,11110101,Tulsa,36.05231784,-95.9469381
+07165500,"Polecat Creek blw Heyburn Res near Heyburn, OK",Stream,False,123.0,11110101,Creek,35.94508147,-96.2944499
+07165550,"Snake Creek near Bixby, OK",Stream,False,50.0,11110101,Okmulgee,35.8189891,-95.8886011
+07165562,"Haikey Creek at 101st St South at Tulsa, OK",Stream,True,17.9,11110101,Tulsa,36.01704297,-95.8488777
+07165564,"Little Haikey Tributary at S. Memorial, Tulsa, OK",Stream,False,0.5,11110101,Tulsa,36.03620844,-95.8861018
+07165565,"Little Haikey Creek at 101st St South at Tulsa, OK",Stream,True,5.48,11110101,Tulsa,36.01759824,-95.8608227
+07165570,"Arkansas River near Haskell, OK",Stream,True,75293.0,11110101,Wagoner,35.82277778,-95.6377778
+07165600,"Arkansas River near Tullahassee, OK",Stream,False,75815.0,11110101,Muskogee,35.80426607,-95.4030257
+07171000,"Verdigris River near Lenapah, OK",Stream,True,3584.0,11070103,Nowata,36.85119615,-95.5860882
+07171400,"Verdigris River near Oologah, OK",Stream,False,4339.0,11070105,Rogers,36.42065028,-95.6844255
+07171500,"Verdigris River near Sageeyah, OK",Stream,False,4402.0,11070105,Rogers,36.3917618,-95.6710918
+07173000,"Caney River near Hulah, OK",Stream,False,733.0,11070106,Osage,36.92701394,-96.085264
+07174000,"Little Caney River near Copan, OK",Stream,False,424.0,11070106,Washington,36.97090766,-95.9349807
+07174200,"Little Caney River blw Cotton Cr, nr Copan, OK",Stream,False,502.0,11070106,Washington,36.89507859,-95.9694266
+07174310,"Little Caney River below Copan Lake nr Copan, OK",Stream,False,,11070106,Washington,36.88480145,-95.9747046
+07174400,"Caney River above Coon Creek at Bartlesville, OK",Stream,True,1369.0,11070106,Washington,36.75564425,-95.9722064
+07174470,"Caney River at Tuxedo Blvd at Bartlesville, OK",Stream,True,1445.0,11070106,Washington,36.75666667,-95.9563889
+07174500,"Caney River at Bartlesville, OK",Stream,False,1465.0,11070106,Washington,36.7450891,-95.960262
+07174600,"Sand Creek at Okesa, OK",Stream,False,139.0,11070106,Osage,36.71952346,-96.1324935
+07174618,"Sand Creek Below Little Rock Creek near Okesa, OK",Stream,True,171.0,11070106,Osage,36.73277778,-96.08
+07174700,"Caney River near Ochelata, OK",Stream,False,1753.0,11070106,Washington,36.64064595,-95.934153
+07175000,"Double Creek Sws 5 near Ramona, OK",Stream,False,2.39,11070106,Washington,36.5139808,-95.9405453
+07175500,"Caney River near Ramona, OK",Stream,True,1936.0,11070106,Washington,36.5089816,-95.8419306
+07175550,"Caney River near Collinsville, OK",Stream,False,2046.0,11070106,Tulsa,36.39509419,-95.8102638
+07176000,"Verdigris River near Claremore, OK",Stream,True,6451.0,11070105,Rogers,36.3075,-95.6997222
+07176321,"Bird Creek at SH 99 at Pawhuska, OK",Stream,True,161.0,11070107,Osage,36.66694444,-96.3138889
+07176465,"Birch Creek blw Birch Lake nr Barnsdall, OK",Stream,False,66.0,11070107,Osage,36.53341427,-96.1622239
+07176500,"Bird Creek at Avant, OK",Stream,True,369.0,11070107,Osage,36.48508798,-96.0602743
+07176800,"Candy Creek near Wolco, OK",Stream,False,30.6,11070107,Osage,36.53508818,-96.0486054
+07176950,"Hominy Creek near Hominy, OK",Stream,True,115.0,11070107,Osage,36.4736793,-96.3789064
+07177000,"Hominy Creek near Skiatook, OK",Stream,False,340.0,11070107,Osage,36.34869699,-96.1100024
+07177410,"Hominy Creek below Skiatook Lake nr Skiatook, OK",Stream,False,354.0,11070107,Osage,36.35258689,-96.0886122
+07177500,"Bird Creek near Sperry, OK",Stream,True,907.0,11070107,Tulsa,36.27842534,-95.954162
+07177600,"Bird Creek at 66th Street near Tulsa, OK",Stream,False,967.0,11070107,Tulsa,36.24925896,-95.9433287
+07177650,"Flat Rock Creek at Cincinnati Ave at Tulsa, OK",Stream,True,8.11,11070107,Tulsa,36.21536936,-95.9952759
+07177700,"Flat Rock Creek at Us Hwy 75 at Tulsa, OK",Stream,False,22.6,11070107,Tulsa,36.2256482,-95.9447175
+07177800,"Coal Creek at Tulsa, OK",Stream,True,8.23,11070107,Tulsa,36.1945384,-95.9141599
+07178000,"Bird Creek near Owasso, OK",Stream,True,1017.0,11070107,Tulsa,36.24870534,-95.867213
+07178035,"Mingo Creek at 36th Street North at Tulsa, OK",Stream,False,56.0,11070107,Tulsa,36.20620625,-95.8591567
+07178040,"Mingo Creek at 46th Street North at Tulsa, OK",Stream,False,59.9,11070107,Tulsa,36.22065047,-95.8586012
+07178200,"Bird Ck at State Highway 266 near Catoosa, OK",Stream,True,1123.0,11070107,Tulsa,36.2231514,-95.8194322
+07178452,"Verdigris River near Catoosa, OK",Stream,True,7651.0,11070105,Rogers,36.20388889,-95.7066667
+07178520,"Dog Creek South of Claremore, OK",Stream,False,74.9,11070105,Rogers,36.27870806,-95.6113677
+07178600,"Verdigris River near Inola, OK",Stream,False,7911.0,11070105,Rogers,36.16426519,-95.619979
+07178645,"Verdigris River near Wagoner, OK",Stream,True,8100.0,11070105,Wagoner,35.95555556,-95.4941667
+07185000,"Neosho River near Commerce, OK",Stream,True,5926.0,11070206,Ottawa,36.92868144,-94.9574574
+07185030,"Elm Creek near Commerce, OK",Stream,True,18.5,11070206,Ottawa,36.92166667,-94.9183333
+07185080,"Neosho River at Miami, OK",Stream,True,6011.0,11070206,Ottawa,36.86479264,-94.8788446
+07185090,"Tar Creek near Commerce, OK",Stream,True,34.4,11070206,Ottawa,36.94367956,-94.8532862
+07185095,"Tar Creek at 22nd Street Bridge at Miami, OK",Stream,True,44.7,11070206,Ottawa,36.90006955,-94.8682878
+07185100,"Tar Creek at Miami, OK",Stream,False,52.0,11070206,Ottawa,36.87479219,-94.8624548
+07188000,"Spring River near Quapaw, OK",Stream,True,2516.0,11070207,Ottawa,36.93451148,-94.7471711
+07188005,"Beaver Creek near Quapaw, OK",Stream,True,6.27,11070207,Ottawa,36.93388889,-94.7538889
+07188007,"Beaver Creek abv Spring River near Quapaw, Ok",Stream,False,6.36,11070207,Ottawa,36.9325,-94.7505556
+07189500,"Neosho River near Grove, OK",Stream,False,9969.0,11070206,Delaware,36.6125757,-94.8238434
+07189540,"Cave Springs Branch near South West City, MO",Stream,True,8.0,11070206,Delaware,36.547297,-94.6180004
+07189542,"Honey Creek near South West City, MO",Stream,True,48.7,11070206,Delaware,36.54888889,-94.6836111
+07189700,"Horse Creek at Afton, OK",Stream,True,21.9,11070206,Ottawa,36.6931972,-94.9453944
+07189710,"Horse Creek at 540 Rd near Afton, OK",Stream,True,49.424,110702060403,Ottawa,36.677742,-94.909214
+07190000,"Lake O' the Cherokees at Langley, OK",Lake/Reservoir,True,10345.0,11070206,Mayes,36.46869549,-95.0413511
+07190100,"Neosho River (service road) near Langley, OK",Stream,True,10345.0,11070209,Mayes,36.4620288,-95.033573
+07190500,"Neosho River near Langley, OK",Stream,True,10385.0,11070209,Mayes,36.4389742,-95.048573
+07190600,"Big Cabin Creek near Pyramid Corners, OK",Stream,False,71.1,11070209,Craig,36.8017448,-95.1635779
+07191000,"Big Cabin Creek near Big Cabin, OK",Stream,True,450.0,11070209,Craig,36.56841789,-95.1521891
+07191200,"Spavinaw Creek near Row, OK",Stream,False,128.0,11070209,Delaware,36.33063538,-94.6243881
+07191220,"Spavinaw Creek near Sycamore, OK",Stream,True,132.0,11070209,Delaware,36.3347222,-94.6413889
+071912213,"Spavinaw Creek near Colcord, OK",Stream,True,163.0,11070209,Delaware,36.32256869,-94.6852334
+07191222,"Beaty Creek near Jay, OK",Stream,True,59.1,11070209,Delaware,36.35535924,-94.7763388
+07191265,"Brush Ck at Brush Ck Rd. nr Jay, OK",Stream,True,27.19,11070209,Delaware,36.4053333,-94.7955611
+07191285,"Lake Eucha near Eucha, OK",Lake/Reservoir,True,358.0,11070209,Delaware,36.3750672,-94.9352413
+07191288,"Spavinaw Creek near Eucha, OK",Stream,True,359.0,11070209,Delaware,36.37925097,-94.936901
+07191297,"Black Hollow near Spavinaw,Ok",Stream,False,6.05,11070209,Mayes,36.37647476,-95.0060705
+07191300,"Spavinaw Lake at Spavinaw, OK",Lake/Reservoir,True,388.0,11070209,Mayes,36.38314228,-95.0480165
+07191315,"Saline Creek near Bull Hollow, OK",Stream,True,23.87,110702090504,Delaware,36.304039,-94.878761
+07191322,"Saline Ck at CR 490 nr Kenwood, OK",Stream,True,57.14,110702090506,Delaware,36.311619,-94.989214
+07191400,"Lake Hudson near Locust Grove, OK",Lake/Reservoir,True,11580.0,11070209,Mayes,36.23009344,-95.1821854
+07191500,"Neosho River near Chouteau, OK",Stream,True,11580.0,11070209,Mayes,36.2295379,-95.182741
+07192000,"Pryor Creek near Pryor, OK",Stream,False,229.0,11070209,Mayes,36.28120597,-95.3258024
+07192100,"Spring Creek near Locust Grove, OK",Stream,False,114.85,11070209,Mayes,36.1484276,-95.1574613
+07192500,"Neosho River near Wagoner, OK",Stream,False,12307.0,11070209,Cherokee,35.92898816,-95.2691284
+07193500,"Neosho River blw Ft Gibson Lake nr Ft Gibson, OK",Stream,False,12495.0,11070209,Cherokee,35.85287617,-95.2291275
+07194500,"Arkansas River near Muskogee, OK",Stream,True,96472.0,11110102,Muskogee,35.7695432,-95.2971867
+07194555,"Arkansas River at Gore, OK",Stream,True,96841.0,11110102,Muskogee,35.5186111,-95.1272222
+07195495,"Lake Frances at Pump Station near Watts, OK",Lake/Reservoir,True,623.39,,Adair,36.13059444,-94.5609806
+07195500,"Illinois River near Watts, OK",Stream,True,630.0,11110103,Adair,36.13008185,-94.5721645
+07195855,"Flint Creek near West Siloam Springs, OK",Stream,True,59.8,11110103,Delaware,36.2161111,-94.6052778
+07195865,"Sager Creek near West Siloam Springs, OK",Stream,True,19.1,11110103,Delaware,36.20174844,-94.6052207
+07196000,"Flint Creek near Kansas, OK",Stream,True,116.0,11110103,Delaware,36.18647245,-94.7068913
+07196090,"Illinois River at Chewey, OK",Stream,True,825.0,11110103,Adair,36.1042527,-94.7827283
+07196320,"Illinois River near Moodys, OK",Stream,True,895.0,11110103,Cherokee,36.03175654,-94.9107885
+07196500,"Illinois River near Tahlequah, OK",Stream,True,950.0,11110103,Cherokee,35.9255472,-94.9217028
+07196973,"Peacheater Creek at Christie, OK",Stream,False,25.0,11110103,Adair,35.95480814,-94.6963369
+07197000,"Baron Fork at Eldon, OK",Stream,True,312.0,11110103,Cherokee,35.9216222,-94.8372472
+07197360,"Caney Creek near Barber, OK",Stream,True,90.2,11110103,Cherokee,35.7850906,-94.8563398
+07198000,"Illinois River near Gore, OK",Stream,True,1615.0,11110103,Sequoyah,35.5731511,-95.0688458
+07198500,"Dirty Creek near Warner, OK",Stream,False,227.0,11110102,Muskogee,35.55509794,-95.3080233
+07228400,"Deer Creek at Hydro, OK",Stream,False,274.0,11090201,Caddo,35.5411626,-98.5781257
+07228500,"Canadian River at Bridgeport, OK",Stream,True,24698.0,11090202,Caddo,35.54366175,-98.3178388
+07228650,"Canadian River near Cogar, OK",Stream,True,,110902020103,Canadian,35.454892,-98.149283
+07228940,"Canadian River near Mustang, OK",Stream,True,25134.0,11090202,Grady,35.32416667,-97.7236111
+07229000,"Canadian River near Newcastle, OK",Stream,False,25763.0,11090202,McClain,35.30089659,-97.5986496
+07229050,"Canadian River at Norman, OK",Stream,True,25296.0,11090202,Cleveland,35.19451115,-97.4850339
+07229100,"Canadian River near Noble, OK",Stream,False,25911.0,11090202,McClain,35.08201478,-97.3814186
+07229200,"Canadian River at Purcell, OK",Stream,True,25394.0,11090202,Cleveland,35.01396104,-97.3475281
+07229300,"Walnut Creek at Purcell, OK",Stream,True,202.0,11090202,McClain,34.99896109,-97.3669727
+07229427,"Canadian Sandy Creek near Ada, OK",Stream,False,198.0,11090202,Pontotoc,34.78453037,-96.7139018
+07229445,"Stanley Draper Lake near Oklahoma City, OK",Lake/Reservoir,True,11.8,11090203,Cleveland,35.3283988,-97.3566992
+07229500,"Little River near Norman, OK",Stream,False,120.0,11090203,Cleveland,35.2278462,-97.3058632
+07229900,"Lake Thunderbird near Norman, OK",Lake/Reservoir,True,257.0,11090203,Cleveland,35.22340296,-97.2175277
+07230000,"Little River blw Lk Thunderbird nr Norman, OK",Stream,True,257.0,11090203,Cleveland,35.22173637,-97.2139165
+07230500,"Little River near Tecumseh, OK",Stream,True,463.0,11090203,Pottawatomie,35.17257416,-96.9319662
+07230597,"Little River near Bowlegs, OK",Stream,False,550.0,11090203,Seminole,35.10535666,-96.668628
+07230800,"Salt Creek near Dewright, OK",Stream,False,210.0,11090203,Seminole,35.05008038,-96.666961
+07231000,"Little River near Sasakwa, OK",Stream,True,888.0,11090203,Seminole,34.9653615,-96.5125113
+07231500,"Canadian River at Calvin, OK",Stream,True,27417.0,11090202,Hughes,34.97786698,-96.2436172
+07231965,"Ti Creek near Blanco, OK",Stream,False,4.82,11090204,Pittsburg,34.76259795,-95.7499872
+07231975,"Brushy Creek near Haileyville, OK",Stream,False,139.0,11090204,Pittsburg,34.8014871,-95.6547065
+07231990,"Peaceable Creek near Haileyville, OK",Stream,False,134.0,11090204,Pittsburg,34.8520423,-95.6544294
+07232000,"Gaines Creek near Krebs, OK",Stream,False,588.0,11090204,Pittsburg,34.98343036,-95.6169298
+07232010,"Blue Creek near Blocker, OK",Stream,False,12.1,11090204,Pittsburg,35.04065278,-95.5727616
+07232024,"Deer Creek near McAlester, OK",Stream,False,38.3,11090204,Pittsburg,34.94953965,-95.8502718
+07232250,"Beaver River near Felt, OK",Stream,False,879.0,11100101,Cimarron,36.6297466,-102.6815815
+07232470,"Beaver River near Goodwell, OK",Stream,True,2281.0,11100101,Texas,36.7058583,-101.6368274
+07232500,"Beaver River near Guymon, OK",Stream,False,2139.0,11100101,Texas,36.72141497,-101.4896047
+07232900,"Coldwater Creek near Guymon, OK",Stream,False,1903.0,11100103,Texas,36.57197137,-101.3815489
+07233000,"Coldwater Creek near Hardesty, OK",Stream,False,1967.0,11100103,Texas,36.64391566,-101.210993
+07233210,"Beaver River near Hardesty, OK",Stream,False,5029.0,11100102,Texas,36.65641567,-101.1354374
+07233650,"Palo Duro Creek at Range, OK",Stream,False,1513.0,11100104,Texas,36.54391674,-101.0809905
+07234000,"Beaver River at Beaver, OK",Stream,True,7986.0,11100102,Beaver,36.82224819,-100.5193158
+07234100,"Clear Creek near Elmwood, OK",Stream,False,170.0,11100201,Beaver,36.64502788,-100.5023688
+07234500,"Beaver River near Fort Supply, OK",Stream,False,9615.0,11100201,Woodward,36.59170129,-99.5920598
+07235500,"Wolf Creek near Shattuck, OK",Stream,False,1183.0,11100203,Ellis,36.2861504,-99.9128999
+07235600,"Wolf Creek nr Gage, OK",Stream,True,1457.0,11100203,Ellis,36.32666667,-99.7611111
+07236000,"Wolf Creek near Fargo, OK",Stream,False,1624.0,11100203,Ellis,36.39920437,-99.6231707
+07237000,"Wolf Creek near Fort Supply, OK",Stream,False,1739.0,11100203,Woodward,36.5667017,-99.5517805
+07237500,"North Canadian River at Woodward, OK",Stream,True,11883.0,11100301,Woodward,36.43670336,-99.2784383
+07237800,"Bent Creek near Seiling, OK",Stream,False,139.0,11100301,Woodward,36.19059525,-99.0103753
+07238000,"North Canadian River near Seiling, OK",Stream,True,12555.0,11100301,Major,36.18337277,-98.9212057
+07238500,"Canton Lake near Canton, OK",Lake/Reservoir,True,12782.0,11100301,Blaine,36.08170627,-98.6023058
+07239000,"North Canadian River at Canton, OK",Stream,True,12786.0,11100301,Blaine,36.07698408,-98.59675
+07239200,"North Canadian River near Watonga, OK",Stream,False,12692.0,11100301,Blaine,35.84504365,-98.4653524
+07239300,"North Canadian River blw Weavers Ck nr Watonga, OK",Stream,True,13023.0,11100301,Blaine,35.8119886,-98.4209053
+07239450,"North Canadian River near Calumet, OK",Stream,True,13239.0,11100301,Canadian,35.6169933,-98.0653316
+07239500,"North Canadian River near El Reno, OK",Stream,True,13317.0,11100301,Canadian,35.56310656,-97.9575498
+07239700,"North Canadian River near Yukon, OK",Stream,True,13456.0,11100301,Canadian,35.5394985,-97.7425442
+07239750,"North Canadian River at Morgan Rd nr Yukon, OK",Stream,True,,111003010706,Canadian,35.54729918,-97.68921093
+07240000,"Lake Hefner Canal near Oklahoma City, OK",,True,,110500020801,Oklahoma,35.55305556,-97.61972222
+07240200,"North Canadian R at Hwy 66 at Oklahoma City, OK",Stream,True,13480.0,11100301,Oklahoma,35.5145007,-97.6636534
+07240500,"Lake Overholser near Oklahoma City, OK",Lake/Reservoir,True,13487.0,11100301,Oklahoma,35.48644598,-97.6664309
+07241000,"North Canadian River blw Lk Overholser nr OKC, OK",Stream,True,13493.0,11100301,Oklahoma,35.47866848,-97.6633752
+07241500,"North Canadian River near Oklahoma City, OK",Stream,False,13354.0,11100302,Oklahoma,35.49450514,-97.4280923
+07241504,"Crutcho Creek at SE 50th st. at Boone Township, OK",Stream,False,,111003020104,Oklahoma,35.415017,-97.418475
+07241506,"Crutcho Creek at SE 29th St. at Boone Township, OK",Stream,True,11.078,111003020104,Oklahoma,35.435025,-97.417222
+07241513,"Soldier Creek S of SE 15th St. Boone Township, OK",Stream,True,4.58,111003020104,Oklahoma,35.446894,-97.373267
+07241520,"North Canadian River at Britton Rd at OKC, OK",Stream,True,13688.0,11100302,Oklahoma,35.5656147,-97.367258
+07241550,"North Canadian River near Harrah, OK",Stream,True,13775.0,11100302,Oklahoma,35.5003412,-97.1939194
+07241588,"Wes Watkins Reservoir near McLoud, OK",Lake/Reservoir,True,38.5,11100302,Pottawatomie,35.40194444,-97.0988889
+07241600,"Shawnee Reservoir at Shawnee, OK",Lake/Reservoir,True,32.7,11100302,Pottawatomie,35.3472908,-97.0628034
+07241750,"Tecumseh Creek at Tecumseh, OK",Stream,False,2.38,11100302,Pottawatomie,35.28145995,-96.9708561
+07241780,"Squirrel Creek at Shawnee, OK",Stream,True,24.68,11100302,Pottawatomie,35.30416667,-96.9122222
+07241800,"North Canadian River at Shawnee, OK",Stream,True,14005.0,11100302,Pottawatomie,35.33312675,-96.8694661
+07242000,"North Canadian River near Wetumka, OK",Stream,True,14549.0,11100302,Hughes,35.2656454,-96.2061167
+07242100,"Wewoka Creek near Wetumka, OK",Stream,False,396.0,11100302,Hughes,35.2209225,-96.2197282
+07242247,"Deep Fork at Hefner Rd at Oklahoma City, Ok",Stream,False,66.6,11100303,Oklahoma,35.58005785,-97.4272599
+07242350,"Deep Fork near Arcadia, OK",Stream,False,105.0,11100303,Oklahoma,35.64727889,-97.3600365
+07242380,"Deep Fork at Warwick, OK",Stream,True,527.0,11100303,Lincoln,35.68089589,-97.0083615
+07242500,"Bellcow Creek at Chandler, OK",Stream,False,46.0,11100303,Lincoln,35.70228675,-96.8891917
+07243000,"Dry Creek near Kendrick, OK",Stream,False,69.0,11100303,Lincoln,35.78200855,-96.8541915
+07243500,"Deep Fork near Beggs, OK",Stream,True,2004.0,11100303,Okmulgee,35.6739876,-96.0686077
+07244000,"Deep Fork near Dewar, OK",Stream,False,2307.0,11100303,Okmulgee,35.478715,-95.882773
+07244100,"Coal Creek near Henryetta, OK",Stream,False,22.3,11100303,Okmulgee,35.45288179,-95.9558309
+07244500,"North Canadian River near Eufaula, OK",Stream,False,17657.0,11100302,McIntosh,35.31676527,-95.5724838
+07245000,"Canadian River near Whitefield, OK",Stream,True,47283.0,11090204,Haskell,35.26231927,-95.2371891
+07245030,"Taloka Creek near Stigler, OK",Stream,False,20.1,11090204,Haskell,35.29620795,-95.1324615
+07245500,"Sallisaw Creek near Sallisaw, OK",Stream,False,182.0,11110104,Sequoyah,35.46453847,-94.8621712
+07246000,"Sans Bois Creek near Keota, OK",Stream,False,346.0,11110104,Haskell,35.26037455,-94.9657875
+07246500,"Arkansas River near Sallisaw, OK",Stream,False,143729.0,11110104,Le Flore,35.3497222,-94.7711111
+07246615,"Coal Creek near Spiro, OK",Stream,False,15.4,11110104,Le Flore,35.25315236,-94.7552254
+07247015,"Poteau River at Loving, OK",Stream,True,268.0,11110105,Le Flore,34.87982388,-94.4841112
+07247250,"Black Fork below Big Creek nr Page, OK",Stream,True,94.3,11110105,Le Flore,34.7737148,-94.5121685
+07247450,"Fourche Maline near Wilburton, OK",Stream,False,56.2,11110105,Latimer,34.92371015,-95.2530249
+07247500,"Fourche Maline near Red Oak, OK",Stream,True,120.0,11110105,Latimer,34.91259909,-95.1557985
+07247550,"Red Oak Creek near Red Oak, OK",Stream,False,12.8,11110105,Latimer,34.93982099,-95.0330155
+07248500,"Poteau River near Wister, OK",Stream,False,993.0,11110105,Le Flore,34.93759954,-94.715228
+07248600,"Caston Creek at Wister, OK",Stream,False,72.9,11110105,Le Flore,34.9575991,-94.7385618
+07248620,"Morris Creek at Howe, OK",Stream,False,19.4,11110105,Le Flore,34.95954406,-94.6293924
+07248700,"Sugarloaf Creek near Monroe, OK",Stream,False,53.6,11110105,Le Flore,35.00565484,-94.5227227
+07249080,"Brazil Creek near Walls, OK",Stream,False,69.1,11110105,Latimer,35.02259814,-94.944401
+07249100,"Owl Creek near McCurtain, OK",Stream,False,27.9,11110105,Le Flore,35.12787535,-94.8843978
+07249413,"Poteau River near Panama, OK",Stream,True,1785.0,11110105,Le Flore,35.16565268,-94.6530016
+07249422,"Holi-tuska Creek near Panama, OK",Stream,False,4.39,11110105,Le Flore,35.2128745,-94.6727237
+07249800,"Lee Creek at Short, OK",Stream,True,236.0,11110104,Sequoyah,35.5658333,-94.5319444
+07249870,"Little Lee Creek near Greasy, OK",Stream,False,51.3,11110104,Adair,35.6520322,-94.6224426
+07249920,"Little Lee Creek near Nicut, OK",Stream,True,102.0,11110104,Sequoyah,35.57305556,-94.5569444
+07249985,"Lee Creek near Short, OK",Stream,True,420.0,11110104,Sequoyah,35.5172222,-94.4641667
+07299710,"Sandy Creek near Eldorado, OK",Stream,False,280.0,11130101,Jackson,34.4792389,-99.6787044
+07300500,"Salt Fork Red River at Mangum, OK",Stream,True,1454.0,11120202,Greer,34.85839374,-99.5087007
+07300530,"Bitter Creek near Martha, OK",Stream,False,42.7,11120202,Jackson,34.716733,-99.3695314
+07300580,"Bitter Creek West of Altus, OK",Stream,False,91.9,11120202,Jackson,34.62340346,-99.3825876
+07301100,"Turkey Creek at Olustee, OK",Stream,False,317.0,11120202,Jackson,34.59423756,-99.4367556
+07301110,"Salt Fork Red River near Elmer, OK",Stream,True,1983.0,11120202,Jackson,34.47896485,-99.38231
+07301420,"Sweetwater Creek near Sweetwater, OK",Stream,True,437.0,11120302,Beckham,35.42227237,-99.9692772
+07301481,"North Fork Red River near Sayre, OK",Stream,True,2464.0,11120302,Beckham,35.2847732,-99.6220406
+07301500,"North Fork Red River near Carter, OK",Stream,True,2652.0,11120302,Beckham,35.16810838,-99.5073128
+07302000,"North Fork Red River near Granite, OK",Stream,False,2494.0,11120302,Kiowa,34.97339057,-99.3336943
+07302500,"Lake Altus at Lugert, OK",Lake/Reservoir,True,2832.0,11120302,Kiowa,34.88561609,-99.2956388
+07302520,"Lugert Drainage Ditch at Lugert, OK",,True,,11120302,Kiowa,34.89019444,-99.2779333
+07303000,"North Fork Red River blw Altus Dam nr Lugert, OK",Stream,True,2832.0,11120302,Greer,34.88950479,-99.307028
+07303400,"Elm Fork of North Fork Red River nr Carl, OK",Stream,True,438.0,11120304,Harmon,35.01172,-99.9037143
+07303420,"Elm Fork of North Fork Red River nr Reed, OK",Stream,False,579.0,11120304,Greer,34.961167,-99.6948182
+07303500,"Elm Fork of North Fork Red River nr Mangum, OK",Stream,False,838.0,11120304,Greer,34.92672485,-99.5003669
+07304500,"Elk Creek near Hobart, OK",Stream,False,549.0,11120303,Kiowa,34.9142267,-99.1139666
+07305000,"North Fork Red River near Headrick, OK",Stream,True,4560.0,11120303,Jackson,34.6381266,-99.103691
+07305500,"West Otter Creek at Snyder Lk nr Mt Park, OK",Stream,False,132.0,11120303,Kiowa,34.73395564,-98.9864655
+07306500,"Otter Creek at Mountain Park, OK",Stream,False,164.0,11120303,Kiowa,34.6950686,-98.984243
+07307010,"Otter Creek near Snyder, OK",Stream,True,162.0,11120303,Kiowa,34.63784918,-98.9986876
+07307026,"Ozark Canal at Altus, OK, Altus AFB IRP Ch005",,False,,11120303,Jackson,34.65701406,-99.2650849
+07307028,"North Fork Red River near Tipton, OK",Stream,True,5010.0,11120303,Jackson,34.50702089,-99.2081389
+07308990,"Lake Ellsworth near Elgin, OK",Lake/Reservoir,True,249.0,111302020209,Comanche,34.794514,-98.368942
+07309000,"East Cache Creek near Elgin, OK",Stream,False,248.0,11130202,Comanche,34.78201295,-98.3669979
+07309435,"Jimmy Creek nr Meers, OK",Stream,False,3.19,11130202,Comanche,34.79694444,-98.5841667
+07309500,"Lake Lawtonka near Lawton, OK",Lake/Reservoir,True,93.1,11130202,Comanche,34.7361799,-98.5033913
+07309990,"East Cache Creek nr Lawton, OK",Stream,False,476.0,11130202,Comanche,34.59416667,-98.3691667
+07310000,"Little Medicine Bluff Creek nr Lawton, OK",Stream,False,7.0,11130202,Comanche,34.7292356,-98.514225
+07310500,"Medicine Bluff Creek near Lawton, OK",Stream,False,101.0,11130202,Comanche,34.72506927,-98.5003355
+07311000,"East Cache Creek near Walters, OK",Stream,True,694.0,11130202,Cotton,34.36230747,-98.2825468
+07311200,"Blue Beaver Creek near Cache, OK",Stream,False,24.6,11130203,Comanche,34.62340607,-98.5636712
+07311230,"West Cache Creek at Faxon, Ok",Stream,False,285.0,11130203,Comanche,34.46305556,-98.5713889
+07311240,"West Cache Creek near Cookietown, OK",Stream,False,454.0,11130203,Cotton,34.275,-98.3875
+07311415,"Lake Frederick nr Frederick, OK",Lake/Reservoir,False,57.1,11130203,Tillman,34.51204025,-98.8867424
+07311500,"Deep Red Creek near Randlett, OK",Stream,True,604.0,11130203,Cotton,34.22092454,-98.4531104
+07312920,"Beaver Creek nr Hulen, OK",Stream,True,218.0,11130208,Cotton,34.47805556,-98.1775
+07313000,"Little Beaver Creek near Duncan, OK",Stream,True,157.0,11130208,Stephens,34.49313567,-98.1142068
+07313500,"Beaver Creek near Waurika, OK",Stream,False,563.0,11130208,Jefferson,34.216758,-98.0494822
+07313585,"Cow Creek nr Addington, OK",Stream,True,162.0,11130208,Jefferson,34.245,-97.9741667
+07313600,"Cow Creek at Waurika, OK",Stream,False,193.0,11130208,Jefferson,34.1820367,-98.0017028
+07315500,"Red River near Terral, OK",Stream,True,28723.0,11130201,Jefferson,33.8787106,-97.9344798
+07315650,"Red River nr Courtney, OK",Stream,True,29365.0,11130201,Love,33.9175,-97.5083333
+07315700,"Mud Creek near Courtney, OK",Stream,True,574.0,11130201,Jefferson,34.00426516,-97.566968
+07315900,"Walnut Bayou near Burneyville, OK",Stream,False,314.0,11130201,Love,33.941767,-97.3058504
+07316000,"Red River near Gainesville, TX",Stream,True,30728.0,11130201,Love,33.7278833,-97.1600129
+07316500,"Washita River near Cheyenne, OK",Stream,True,775.0,11130301,Roger Mills,35.62643705,-99.6684386
+07317500,"Sandstone Creek SWS 16A nr Cheyenne, OK",Stream,False,8.78,11130301,Roger Mills,35.46949378,-99.669824
+07318000,"Sandstone Creek SWS 16 nr Cheyenne, OK",Stream,False,20.3,11130301,Roger Mills,35.48060484,-99.6114893
+07318500,"Sandstone Creek SWS 14 nr Cheyenne, OK",Stream,False,1.02,11130301,Roger Mills,35.4778271,-99.6031556
+07319000,"Sandstone Creek SWS 17 nr Cheyenne, OK",Stream,False,10.1,11130301,Roger Mills,35.5083824,-99.6114899
+07319500,"Sandstone Creek near Berlin, OK",Stream,False,44.9,11130301,Beckham,35.50727134,-99.5578773
+07320000,"Sandstone Creek SWS 10A nr Elk City, OK",Stream,False,2.87,11130301,Beckham,35.4667161,-99.5559317
+07320500,"Sandstone Creek SWS 6 near Elk City, OK",Stream,False,6.46,11130301,Beckham,35.48616044,-99.5031529
+07321000,"Sandstone Creek SWS 5 near Elk City, OK",Stream,False,3.89,11130301,Beckham,35.49171594,-99.4892638
+07321500,"Sandstone Creek SWS 3 near Elk City, OK",Stream,False,0.62,11130301,Roger Mills,35.51116025,-99.5114872
+07322000,"Sandstone Creek SWS 9 near Elk City, OK",Stream,False,3.5,11130301,Beckham,35.49449367,-99.5337096
+07322500,"East Branch Sandstone Creek nr Elk City, OK",Stream,False,23.0,11130301,Roger Mills,35.52227127,-99.5303769
+07323000,"Sandstone Creek near Cheyenne, OK",Stream,False,87.1,11130301,Roger Mills,35.55282665,-99.5309333
+07324000,"Sandstone Creek SWS 1 near Cheyenne, OK",Stream,False,5.33,11130301,Roger Mills,35.5667155,-99.5031552
+07324200,"Washita River near Hammon, OK",Stream,True,1367.0,11130301,Custer,35.65643696,-99.3062086
+07324300,"Foss Reservoir near Foss, OK",Lake/Reservoir,True,1473.0,11130301,Custer,35.53893787,-99.186202
+07324400,"Washita River near Foss, OK",Stream,True,1526.0,11130302,Custer,35.5389379,-99.1698128
+07324500,"Barnitz Creek near Arapaho, OK",Stream,False,243.0,11130302,Custer,35.58060446,-99.0434224
+07325000,"Washita River near Clinton, OK",Stream,True,1961.0,11130302,Custer,35.5308832,-98.9670296
+07325500,"Washita River at Carnegie, OK",Stream,True,3116.0,11130302,Caddo,35.11728108,-98.5639503
+07325800,"Cobb Creek near Eakly, OK",Stream,True,132.0,11130302,Caddo,35.2906111,-98.5942308
+07325840,"Lake Creek near Sickles, OK",Stream,True,19.1,11130302,Caddo,35.39172078,-98.5178418
+07325850,"Lake Creek near Eakly, OK",Stream,True,52.5,11130302,Caddo,35.29088918,-98.5292287
+07325860,"Willow Creek near Albert, OK",Stream,True,28.2,11130302,Caddo,35.23339066,-98.4661702
+07325900,"Fort Cobb Reservoir near Fort Cobb, OK",Lake/Reservoir,True,308.0,11130302,Caddo,35.15783665,-98.4567251
+07326000,"Cobb Creek near Fort Cobb, OK",Stream,True,311.0,11130302,Caddo,35.14367036,-98.4428358
+07326500,"Washita River at Anadarko, OK",Stream,True,3640.0,11130302,Caddo,35.08422846,-98.2433849
+07327000,"Sugar Creek near Gracemont, OK",Stream,False,208.0,11130302,Caddo,35.17506,-98.255886
+07327050,"Spring Creek near Gracemont, OK",Stream,False,34.4,11130302,Caddo,35.18922707,-98.1764397
+073274406,"Little Washita River ab SCS Pond No 26 nr Cyril,OK",Stream,False,3.65,11130302,Caddo,34.9147879,-98.2508838
+073274408,"Little Washita River Tributary near Cyril, OK",Stream,False,1.1,11130302,Caddo,34.92589885,-98.2336611
+07327441,"SCS Pond No. 26 near Cyril, OK",Lake/Reservoir,False,7.05,11130302,Caddo,34.90228836,-98.2397722
+07327442,"Little Washita River near Cyril, OK",Stream,True,13.3,11130302,Caddo,34.89256647,-98.2331053
+07327445,"Chetonia Creek Tributary blw Cyril, OK",Stream,False,3.34,11130302,Caddo,34.88312264,-98.1922706
+073274458,"Little Washita River Tributary near Cement, OK",Stream,False,6.2,11130302,Caddo,34.8625681,-98.1411577
+07327446,"SCS Pond No 31 near Cement, OK",Lake/Reservoir,False,7.62,11130302,Comanche,34.85201288,-98.1411576
+07327447,"Little Washita River near Cement, OK",Stream,True,62.3,11130302,Comanche,34.83784678,-98.1244903
+07327483,"Boggy Creek near Ninnekah, OK",Stream,False,1.66,11130302,Grady,34.88395768,-97.9953202
+07327484,"SCS Pond No. 11 near Ninnekah, OK",Lake/Reservoir,False,,11130302,Grady,34.89479067,-97.9969871
+07327490,"Little Washita River near Ninnekah, OK",Stream,False,208.0,11130302,Grady,34.9447896,-97.9525425
+07327500,"Little Washita River at Ninnekah, OK",Stream,False,227.0,11130302,Grady,34.95673396,-97.926431
+07327550,"Little Washita River East of Ninnekah, OK",Stream,True,232.0,11130302,Grady,34.9634007,-97.8994861
+07328000,"Washita River near Tabler, OK",Stream,False,4706.0,11130302,Grady,34.97256768,-97.8469852
+07328070,"Winter Creek near Alex, OK",Stream,False,33.0,11130303,Grady,34.9931236,-97.7614282
+07328100,"Washita River at Alex, OK",Stream,True,4768.0,11130303,Grady,34.92590298,-97.7739273
+07328180,"North Criner Creek near Criner, OK",Stream,True,7.19,11130303,McClain,34.9714592,-97.5847555
+07328500,"Washita River near Pauls Valley, OK",Stream,True,5306.0,11130303,Garvin,34.75480245,-97.2514124
+07328550,"Washington Creek near Pauls Valley, OK",Stream,False,7.56,11130303,Garvin,34.82591236,-97.2022457
+07329000,"Rush Creek at Purdy, OK",Stream,False,145.0,11130303,Garvin,34.69618864,-97.5989189
+07329500,"Rush Creek near Maysville, OK",Stream,False,206.0,11130303,Garvin,34.74341184,-97.4053039
+07329605,"Lake Humphreys near Duncan, OK",Lake/Reservoir,True,32.0,11130303,Stephens,34.58444444,-97.8855556
+07329610,"Lake Fuqua near Duncan, OK",Lake/Reservoir,True,37.5,11130303,Stephens,34.59975,-97.6710278
+07329700,"Wildhorse Creek near Hoover, OK",Stream,True,600.0,11130303,Garvin,34.54147378,-97.2472436
+07329780,"Honey Creek below Turner Falls near Davis, OK",Stream,True,16.4,11130303,Murray,34.4317552,-97.1472406
+073298507,Travertine Creek above U.S. 177 at Sulphur,Stream,False,3.73,111303030602,Murray,34.504444,-96.968889
+07329851,"Outflow From Vendome Well at Sulphur, OK",Stream,False,,11130303,Murray,34.50592244,-96.9722387
+07329852,"Rock Creek at Sulphur, OK",Stream,True,44.1,11130303,Murray,34.49536695,-96.9886281
+07329900,"Rock Creek at Dougherty, OK",Stream,False,138.0,11130303,Murray,34.39731266,-97.0364049
+07330500,"Caddo Creek near Ardmore, OK",Stream,False,298.0,11130303,Carter,34.24259287,-97.1080698
+07330700,"Caddo Creek Site 7cmp near Gene Autry, OK",Stream,False,326.4,11130303,Carter,34.24037109,-97.0516798
+07331000,"Washita River near Dickson, OK",Stream,True,7172.0,11130303,Carter,34.23342725,-96.9758447
+07331185,"Mill Creek near Sulphur, OK",Stream,False,21.07,111303040102,Murray,34.477336,-96.905781
+07331200,"Mill Creek near Mill Creek, OK",Stream,True,46.8,11130304,Johnston,34.40509165,-96.8633439
+07331205,"Mill Cr at Mouth of 3Mile Cr near Mill Cr , OK",Stream,False,49.51,111303040102,Johnston,34.388836,-96.845761
+07331250,"Mill Creek near Ravia, OK",Stream,False,89.2,11130304,Johnston,34.25981628,-96.8105619
+07331290,"Washita River near Tishomingo, OK",Stream,True,7480.9,11130304,Johnston,34.21926148,-96.701669
+07331293,"Pennington Creek North of Mill Creek, OK",Stream,True,11.92,11130304,Johnston,34.47745278,-96.8113167
+07331295,"Pennington Creek East of Mill Creek, OK",Stream,True,33.0,11130304,Johnston,34.42036998,-96.7588959
+07331299,"Spring Creek abv Pennington Ck nr Mill Creek, OK",Stream,True,19.53,,Johnston,34.3727222,-96.7173139
+07331300,"Pennington Creek near Reagan, OK",Stream,True,66.2,11130304,Johnston,34.3513333,-96.7103889
+07331383,"Pennington Creek at Capitol Ave at Tishomingo, OK",Stream,False,94.3,11130304,Johnston,34.2347222,-96.6825
+07331455,"Lake Texoma at Cumberland Cut nr Cumberland, OK",Lake/Reservoir,True,7696.79,11130304,Bryan,34.09691389,-96.5532694
+07331500,"Lake Texoma near Denison, Tx",Lake/Reservoir,False,39719.0,11130210,,33.81815797,-96.5724934
+07332000,"Red River near Colbert, OK",Stream,False,39777.0,11140101,Bryan,33.8184355,-96.5233252
+07332305,"Blue River West of Fittstown, OK",Stream,False,44.9,111401020103,Pontotoc,34.593056,-96.705833
+07332307,"Blue River near Franks, OK",Stream,True,49.2,11140102,Pontotoc,34.5781455,-96.6988971
+07332310,"Blue River near Fittstown, OK",Stream,True,,11140102,Pontotoc,34.54953497,-96.6927852
+07332335,"Blue River Abv Little W Blue Ck Nr Connerville, OK",Stream,True,,111401020103,Johnston,34.477781,-96.673792
+07332340,"Little West Blue Creek nr Connerville, OK",Stream,True,,111401020102,Johnston,34.475753,-96.681544
+07332348,"Blue River North of Connerville, OK",Stream,False,122.96,111401020104,Johnston,34.45441944,-96.63563889
+07332390,"Blue River near Connerville, OK",Stream,True,162.0,11140102,Johnston,34.383426,-96.6005579
+07332400,"Blue River at Milburn, OK",Stream,False,203.0,11140102,Johnston,34.2506492,-96.5488877
+07332440,"Blue River near Kenefic, OK",Stream,True,,111401020110,Bryan,34.1425,-96.401111
+07332500,"Blue River near Blue, OK",Stream,True,477.0,11140102,Bryan,33.99704088,-96.2410985
+07332900,"Coal Creek near Lehigh, OK",Stream,False,8.1,11140103,Coal,34.4517584,-96.2324963
+07332950,"Muddy Boggy Creek at Atoka, OK",Stream,False,445.0,11140103,Atoka,34.38981479,-96.1202695
+07333000,"North Boggy Creek near Stringtown, OK",Stream,False,136.0,11140103,Atoka,34.5189822,-96.0608265
+07333010,"Atoka Reservoir near Stringtown, OK",Lake/Reservoir,True,172.0,11140103,Atoka,34.44537087,-96.0836033
+07333500,"Chickasaw Creek near Stringtown, OK",Stream,False,32.7,11140103,Atoka,34.46148246,-96.0269354
+07333800,"McGee Creek near Stringtown, OK",Stream,False,86.6,11140103,Atoka,34.44259625,-95.8697066
+07333900,"McGee Creek Reservoir near Farris, OK",Lake/Reservoir,True,176.0,11140103,Atoka,34.31565246,-95.8747042
+07333910,"McGee Creek near Farris, OK",Stream,False,176.0,11140103,Atoka,34.3150969,-95.8752598
+07334000,"Muddy Boggy Creek near Farris, OK",Stream,True,1089.0,11140103,Atoka,34.27148539,-95.9122049
+07334428,"Delaware Cr Blw Del Cr Site 9 RSVR nr Bromide, OK",Stream,True,17.21,11140104,Johnston,34.40701667,-96.5399306
+07334800,"Clear Boggy Creek abv Caney Creek nr Caney, OK",Stream,True,649.0,11140104,Atoka,34.2550899,-96.2127678
+07335000,"Clear Boggy Creek near Caney, OK",Stream,False,713.0,11140104,Atoka,34.25259007,-96.2055454
+07335300,"Muddy Boggy Creek near Unger, OK",Stream,True,2262.0,11140103,Choctaw,34.02676714,-95.7502479
+07335500,"Red River at Arthur City, TX",Stream,True,44445.0,11140101,Choctaw,33.8751049,-95.5019023
+07335700,"Kiamichi River near Big Cedar, OK",Stream,True,39.6,11140105,Le Flore,34.63843685,-94.6127236
+07335790,"Kiamichi River near Clayton, OK",Stream,True,699.0,11140105,Pushmataha,34.5748229,-95.3408025
+07335840,"Pine Creek at Eubanks, OK",Stream,False,70.08,11140105,Pushmataha,34.40527778,-95.5933306
+07336000,"Tenmile Creek near Miller, OK",Stream,False,68.0,11140105,Pushmataha,34.29871038,-95.7446983
+07336200,"Kiamichi River near Antlers, OK",Stream,True,1129.0,11140105,Pushmataha,34.24871203,-95.6052475
+07336500,"Kiamichi River near Belzoni, OK",Stream,False,1423.0,11140105,Pushmataha,34.20065806,-95.4844085
+07336600,"Hugo Lake near Hugo, OK",Lake/Reservoir,False,1709.0,11140105,Choctaw,34.0117719,-95.3805128
+07337500,"Little River near Wright City, OK",Stream,False,645.0,11140107,McCurtain,34.06955059,-95.0466157
+07337900,"Glover River near Glover, OK",Stream,True,320.0,11140107,McCurtain,34.09760677,-94.9021667
+07338000,"Little River near Idabel, OK",Stream,False,1173.0,11140107,McCurtain,33.93566479,-94.8263285
+07338500,"Little River blw Lukfata Creek, nr Idabel, OK",Stream,True,1228.0,11140107,McCurtain,33.94122094,-94.7585482
+07338750,"Mountain Fork at Smithville, OK",Stream,True,322.0,11140108,McCurtain,34.4623262,-94.6352202
+07338905,"Mountain Fork at Highway 259A near Broken Bow, OK",Stream,False,,11140108,McCurtain,34.13760816,-94.6879943
+07338920,"Mountain Fork Re-regulation Dam nr Broken Bow, OK",Stream,False,767.2,11140108,McCurtain,34.0826099,-94.6349367
+07338960,"Mountain Fork at Presbyterian Falls nr Eagletown,",Stream,False,,11140108,McCurtain,34.07261019,-94.6285476
+07339000,"Mountain Fork near Eagletown, OK",Stream,True,800.0,11140108,McCurtain,34.04177757,-94.6199358
+350934094590801,"West Pond 3 ft below Surface near McCurtain, OK",Lake/Reservoir,False,,11110104,Haskell,35.1595418,-94.9857894

@@ -1,0 +1,155 @@
+{
+ "flowline_segments": 465304,
+ "total_flowline_miles": 169697.0,
+ "miles_by_type": {
+  "Connector": 127.0,
+  "Canal/Ditch": 464.0,
+  "Underground Conduit": 1.0,
+  "Pipeline": 448.0,
+  "Stream/River": 151501.0,
+  "Artificial Path": 17157.0
+ },
+ "miles_by_flow": {
+  "perennial": 33847.0,
+  "intermittent": 114413.0,
+  "ephemeral": 3232.0
+ },
+ "order_coverage_pct": 94.63,
+ "miles_by_order": {
+  "0": 3389.0,
+  "1": 97085.0,
+  "2": 32667.0,
+  "3": 17232.0,
+  "4": 8397.0,
+  "5": 4143.0,
+  "6": 2652.0,
+  "7": 2029.0,
+  "8": 1803.0,
+  "9": 253.0,
+  "10": 48.0
+ },
+ "named_streams": 3150,
+ "named_stream_miles": 36207.0,
+ "waterbodies": {
+  "polygons": 388655,
+  "acres": 879830.4097318165,
+  "by_type": {
+   "Playa": {
+    "count": 1,
+    "acres": 0.4
+   },
+   "Lake/Pond": {
+    "count": 382979,
+    "acres": 811772.8
+   },
+   "Reservoir": {
+    "count": 3822,
+    "acres": 50800.4
+   },
+   "Swamp/Marsh": {
+    "count": 1853,
+    "acres": 17256.8
+   }
+  },
+  "named": 2481,
+  "over_10_acres": 3123,
+  "over_100_acres": 217
+ },
+ "watersheds": {
+  "HUC2": 1,
+  "HUC4": 10,
+  "HUC6": 18,
+  "HUC8": 69,
+  "HUC10": 324,
+  "HUC12": 2074
+ },
+ "gauges": 413,
+ "gauges_active_realtime": 201,
+ "nhd_areas": 6611,
+ "nhd_lines": 1644,
+ "nhd_points": 4085,
+ "top_streams": [
+  [
+   "Washita River",
+   537.04
+  ],
+  [
+   "North Canadian River",
+   485.54
+  ],
+  [
+   "Canadian River",
+   478.27
+  ],
+  [
+   "Cimarron River",
+   418.21
+  ],
+  [
+   "Red River",
+   397.39
+  ],
+  [
+   "Arkansas River",
+   328.06
+  ],
+  [
+   "Beaver River",
+   269.29
+  ],
+  [
+   "Deep Fork",
+   242.65
+  ],
+  [
+   "North Fork Red River",
+   184.14
+  ],
+  [
+   "Kiamichi River",
+   177.88
+  ]
+ ],
+ "top_lakes": [
+  [
+   "Eufaula Lake",
+   100734.1
+  ],
+  [
+   "Grand Lake O' The Cherokees",
+   38902.4
+  ],
+  [
+   "Robert S Kerr Reservoir",
+   35795.9
+  ],
+  [
+   "Lake Texoma",
+   33450.9
+  ],
+  [
+   "Oologah Lake",
+   29728.7
+  ],
+  [
+   "Keystone Lake",
+   22970.2
+  ],
+  [
+   "Fort Gibson Lake",
+   17901.9
+  ],
+  [
+   "Kaw Lake",
+   16218.2
+  ],
+  [
+   "Broken Bow Lake",
+   14172.0
+  ],
+  [
+   "Sardis Lake",
+   13414.4
+  ]
+ ]
+}
