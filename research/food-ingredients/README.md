@@ -7,7 +7,7 @@
 `gs/build.py` reads `S.json`, `data.py`, `lit.json`, `lit_meta.py`, and `charts.py` from the current directory. It uses only the Python standard library and writes `/workspace/gas-solvent-food-ingredients.html`.
 
 ```sh
-cd food-ingredients/gs
+cd research/food-ingredients/gs
 python3 build.py
 ```
 

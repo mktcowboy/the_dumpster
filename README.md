@@ -8,8 +8,8 @@
 
 | Project | What it is |
 | --- | --- |
-| [Data center deals](biz-other/infrastructure/data-center-deals/data-center-deals-all.html) | Searchable database of 379 publicly announced data center deals, 2025 H1 through 2026 H2, with company profiles and source links |
-| [Solar farm proforma](biz-other/infrastructure/solar-farm-proforma/solar-farm-proforma.html) | Interactive 30-year proforma for a hypothetical 1,000-acre solar farm near Wichita Falls, TX, plus a decision-first companion model |
+| [Data center deals](biz-other/data-center-deals/data-center-deals-all.html) | Searchable database of 379 publicly announced data center deals, 2025 H1 through 2026 H2, with company profiles and source links |
+| [Solar farm proforma](biz-other/solar-farm-proforma/solar-farm-proforma.html) | Interactive 30-year proforma for a hypothetical 1,000-acre solar farm near Wichita Falls, TX, plus a decision-first companion model |
 
 ## Markets
 
@@ -22,8 +22,8 @@
 | [Nasdaq-100 earnings straddles](markets/er-straddles/) | Seller's-view ATM earnings-straddle screen for Nasdaq-100 names, with cost-aware P&L, liquidity grades, and the October 21, 2026 snapshot |
 | [Size & style ETFs](markets/size-style/styles.html) | Nine iShares S&P style-box ETFs charted together, with a 6M, 1Y, 3Y, and 5Y total-return table. Yahoo Finance through November 4, 2026 |
 | [SPDR sector ETFs](markets/size-style/sectors.html) | Companion chart of the 11 Select Sector SPDRs, daily and dividend-adjusted, with period returns. Yahoo Finance through November 4, 2026 |
-| [Drawdown check](drawdown-check/drawdown.html) | Current and max drawdown from all-time highs, plus live 30-day ATM and 25-delta implied volatility and official vol-index history, with a local HTML chart and a Yahoo Finance proxy Worker |
-| [Futures curves](futures-curves/futures-curves.html) | Term structure for 41 futures markets in eight groups, with forward curves, front-month history, and annualized roll yield. Yahoo Finance through November 11, 2026 |
+| [Drawdown check](markets/drawdown-check/drawdown.html) | Current and max drawdown from all-time highs, plus live 30-day ATM and 25-delta implied volatility and official vol-index history, with a local HTML chart and a Yahoo Finance proxy Worker |
+| [Futures curves](markets/futures-curves/futures-curves.html) | Term structure for 41 futures markets in eight groups, with forward curves, front-month history, and annualized roll yield. Yahoo Finance through November 11, 2026 |
 
 ## Real estate
 
@@ -40,8 +40,8 @@
 | [Rent-seeking report](biz-other/rent-seeking-report/rent-seeking-report.html) | Economic rents, their history, and 50 ways to create rental income today |
 | [Arby's deal deep dive](biz-other/arbys-deal-deep-dive/arby-s-deal-deep-dive.html) | Sourced account of the Arby's acquisition and turnaround, including Roark's 2011 purchase |
 | [James Beard award graphs](James-Beard/) | Unofficial Obsidian-style graphs of public James Beard Foundation award results: restaurants and chefs, 1991–2025, and books, broadcast, and journalism, 1991–2024 |
-| [Biochar water filtration](biochar/) | Staging pack for carbon-based water filtration: an evidence review of biochar and activated carbon, PPP notes, a papers audit, and a cite-first bibliography |
-| [Gas-solvent food ingredients](food-ingredients/gas-solvent-food-ingredients.html) | Exhaustive list of food ingredients made with gas solvents such as supercritical CO₂, propane, butane, dimethyl ether, HFC-134a, and nitrous oxide, with regulatory status, residue data, literature, and charts |
+| [Biochar water filtration](research/biochar/) | Staging pack for carbon-based water filtration: an evidence review of biochar and activated carbon, PPP notes, a papers audit, and a cite-first bibliography |
+| [Gas-solvent food ingredients](research/food-ingredients/gas-solvent-food-ingredients.html) | Exhaustive list of food ingredients made with gas solvents such as supercritical CO₂, propane, butane, dimethyl ether, HFC-134a, and nitrous oxide, with regulatory status, residue data, literature, and charts |
 
 ## Reading
 
