@@ -1,6 +1,0 @@
-{
-  "name": "oklahoma-waterways",
-  "main": "worker/index.js",
-  "compatibility_date": "2025-06-01",
-  "assets": { "directory": "./site", "binding": "ASSETS" }
-}
