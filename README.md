@@ -1,6 +1,6 @@
 [![Yes No GIF](https://media1.tenor.com/m/GQBgOkfrMZ8AAAAC/yes-no.gif)](https://tenor.com/view/yes-no-gif-23142380)
 
-*Last updated: November 11, 2026*
+*Last updated: November 12, 2026*
 
 # Project index
 
@@ -37,6 +37,7 @@
 | --- | --- |
 | [Epigenetics deep dive](research/religion/epigenetics-deep-dive/epigenetics-deep-dive.html) | Long-form, journal-style review of epigenetics, with 72 cited papers and linked sources |
 | [Tanakh atlas](research/religion/tanakh-atlas/) | Single-file interactive atlas of the Tanakh and the later Jewish library, with the full JPS 1917 text, themes, people, places, and essays |
+| [Oklahoma waterways](OK-waterways/site/) | Interactive map and searchable tables of every mapped waterway in Oklahoma: rivers, streams, lakes, watersheds (HUC2–HUC12), and USGS gauges |
 | [Rent-seeking report](biz-other/rent-seeking-report/rent-seeking-report.html) | Economic rents, their history, and 50 ways to create rental income today |
 | [Arby's deal deep dive](biz-other/arbys-deal-deep-dive/arby-s-deal-deep-dive.html) | Sourced account of the Arby's acquisition and turnaround, including Roark's 2011 purchase |
 | [James Beard award graphs](James-Beard/) | Unofficial Obsidian-style graphs of public James Beard Foundation award results: restaurants and chefs, 1991–2025, and books, broadcast, and journalism, 1991–2024 |
@@ -70,5 +71,5 @@
 - `scripts/` holds the privacy checker and local setup script.
 - Run `sh scripts/setup_privacy.sh` in each fresh checkout to install privacy hooks and the anonymous repository commit identity.
 - Run `python3 scripts/check_privacy.py` before committing, per [CONTRIBUTING.md](CONTRIBUTING.md).
-- [`index.html`](index.html) is the GitHub Pages catalog of the HTML projects. It links to 24 projects and 39 report pages. Card thumbnails live in [`site-assets/thumbs/`](site-assets/thumbs/).
+- [`index.html`](index.html) is the GitHub Pages catalog of the HTML projects. It links to 25 projects and 40 report pages. Card thumbnails live in [`site-assets/thumbs/`](site-assets/thumbs/).
 - Each project folder contains its source files and, where available, a README with build or refresh instructions.
