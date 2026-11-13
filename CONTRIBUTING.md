@@ -1,4 +1,4 @@
-# Repository privacy
+# Contributing
 
 These rules apply to every contributor working with this repository.
 
