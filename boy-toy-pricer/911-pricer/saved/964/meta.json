@@ -1,0 +1,28 @@
+{
+  "slug": "964",
+  "title": "964 (1989-94)",
+  "scraped_at": "2026-11-17T00:26:02.430096+00:00",
+  "warnings": [],
+  "last_attempt_at": "2026-11-17T00:26:02.430096+00:00",
+  "sources": {
+    "autotempest": {
+      "scraped_at": "2026-11-17T00:26:02.430096+00:00",
+      "ok": true,
+      "rows": 115,
+      "warning": ""
+    },
+    "autotrader": {},
+    "bat": {
+      "scraped_at": "2026-11-17T00:26:02.430096+00:00",
+      "ok": true,
+      "rows": 349,
+      "warning": ""
+    },
+    "merged": {
+      "scraped_at": "2026-11-17T00:26:02.430096+00:00",
+      "ok": true,
+      "rows": 87,
+      "warning": ""
+    }
+  }
+}

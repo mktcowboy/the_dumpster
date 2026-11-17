@@ -1,0 +1,28 @@
+{
+  "slug": "993",
+  "title": "993 (1995-98)",
+  "scraped_at": "2026-11-17T00:11:06.122560+00:00",
+  "warnings": [],
+  "last_attempt_at": "2026-11-17T00:11:06.122560+00:00",
+  "sources": {
+    "autotempest": {
+      "scraped_at": "2026-11-17T00:11:06.122560+00:00",
+      "ok": true,
+      "rows": 166,
+      "warning": ""
+    },
+    "autotrader": {},
+    "bat": {
+      "scraped_at": "2026-11-17T00:11:06.122560+00:00",
+      "ok": true,
+      "rows": 595,
+      "warning": ""
+    },
+    "merged": {
+      "scraped_at": "2026-11-17T00:11:06.122560+00:00",
+      "ok": true,
+      "rows": 149,
+      "warning": ""
+    }
+  }
+}

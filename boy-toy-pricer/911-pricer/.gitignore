@@ -1,0 +1,4 @@
+data/
+*_report.html
+update.log
+saved/**/*.tmp

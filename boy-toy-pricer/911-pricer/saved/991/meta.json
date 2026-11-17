@@ -1,0 +1,28 @@
+{
+  "slug": "991",
+  "title": "991 (2012-19)",
+  "scraped_at": "2026-11-16T23:08:14.365941+00:00",
+  "warnings": [],
+  "last_attempt_at": "2026-11-16T23:08:14.365941+00:00",
+  "sources": {
+    "autotempest": {
+      "scraped_at": "2026-11-16T23:08:14.365941+00:00",
+      "ok": true,
+      "rows": 1634,
+      "warning": ""
+    },
+    "autotrader": {},
+    "bat": {
+      "scraped_at": "2026-11-16T23:08:14.365941+00:00",
+      "ok": true,
+      "rows": 973,
+      "warning": ""
+    },
+    "merged": {
+      "scraped_at": "2026-11-16T23:08:14.365941+00:00",
+      "ok": true,
+      "rows": 1332,
+      "warning": ""
+    }
+  }
+}

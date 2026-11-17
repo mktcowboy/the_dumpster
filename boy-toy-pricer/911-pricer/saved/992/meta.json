@@ -1,0 +1,28 @@
+{
+  "slug": "992",
+  "title": "992 (2020+)",
+  "scraped_at": "2026-11-16T22:17:03.859316+00:00",
+  "warnings": [],
+  "last_attempt_at": "2026-11-16T22:17:03.859316+00:00",
+  "sources": {
+    "autotempest": {
+      "scraped_at": "2026-11-16T22:17:03.859316+00:00",
+      "ok": true,
+      "rows": 3272,
+      "warning": ""
+    },
+    "autotrader": {},
+    "bat": {
+      "scraped_at": "2026-11-16T22:17:03.859316+00:00",
+      "ok": true,
+      "rows": 688,
+      "warning": ""
+    },
+    "merged": {
+      "scraped_at": "2026-11-16T22:17:03.859316+00:00",
+      "ok": true,
+      "rows": 3221,
+      "warning": ""
+    }
+  }
+}

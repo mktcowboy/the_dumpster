@@ -1,0 +1,28 @@
+{
+  "slug": "997",
+  "title": "997 (2005-12)",
+  "scraped_at": "2026-11-16T23:22:39.345824+00:00",
+  "warnings": [],
+  "last_attempt_at": "2026-11-16T23:22:39.345824+00:00",
+  "sources": {
+    "autotempest": {
+      "scraped_at": "2026-11-16T23:22:39.345824+00:00",
+      "ok": true,
+      "rows": 912,
+      "warning": ""
+    },
+    "autotrader": {},
+    "bat": {
+      "scraped_at": "2026-11-16T23:22:39.345824+00:00",
+      "ok": true,
+      "rows": 1115,
+      "warning": ""
+    },
+    "merged": {
+      "scraped_at": "2026-11-16T23:22:39.345824+00:00",
+      "ok": true,
+      "rows": 754,
+      "warning": ""
+    }
+  }
+}
