@@ -129,7 +129,7 @@
     </div>
     <p class="site-url" id="site-url" hidden><a id="site-url-link"></a><button type="button" id="copy-url">copy</button></p>
     <p class="lede">if I throw a dog a bone, I don't want to know if it tastes good or not</p>
-    <p class="updated">last updated <time id="updated">November 13, 2026</time></p>
+    <p class="updated">last updated <time id="updated" datetime="2026-11-17">November 17, 2026</time></p>
     <div class="stats" id="stats"></div>
   </div>
 </header>
@@ -247,6 +247,9 @@ const PAGES = [
     d: "Used-plane tracker for the Cirrus SR22, Vision Jet, CubCrafters, and Piper PA-28, refreshed weekly." },
   { g: "toys", t: "Watch for-sale tracker", thumb: "watches", href: "boy-toy-pricer/watch-pricer/output/report.html",
     d: "Patek Philippe Nautilus 5711 and blue or green Aquanaut listings in one HTML report." },
+  { g: "toys", t: "Porsche 911 tracker", thumb: "porsche-911", href: "boy-toy-pricer/911-pricer/report.html",
+    d: "Porsche 911 listings by generation, from the early 911 to the 992, with Bring a Trailer sold comps and filters for trim, body, gearbox, and options.",
+    note: "Saved listings work here; live refresh needs the local server." },
 ];
 
 const $ = s => document.querySelector(s);
@@ -324,9 +327,6 @@ if (location.protocol.startsWith("http")) {
   };
   $("#site-url").hidden = false;
 
-  // Date this copy of the page was published, from the server's Last-Modified header
-  const mod = new Date(document.lastModified);
-  if (!isNaN(mod)) $("#updated").textContent = mod.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
 }
 renderStats(); renderChips(); renderMain();
 </script>
