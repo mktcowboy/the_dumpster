@@ -1,6 +1,6 @@
 [![Yes No GIF](https://media1.tenor.com/m/GQBgOkfrMZ8AAAAC/yes-no.gif)](https://tenor.com/view/yes-no-gif-23142380)
 
-*Last updated: November 17, 2026*
+*Last updated: November 20, 2026*
 
 # Project index
 
@@ -42,6 +42,7 @@
 | [James Beard award graphs](James-Beard/) | Unofficial Obsidian-style graphs of public James Beard Foundation award results: restaurants and chefs, 1991–2025, and books, broadcast, and journalism, 1991–2024 |
 | [Biochar water filtration](research/biochar/) | Staging pack for carbon-based water filtration: an evidence review of biochar and activated carbon, PPP notes, a papers audit, and a cite-first bibliography |
 | [Gas-solvent food ingredients](research/food-ingredients/gas-solvent-food-ingredients.html) | Exhaustive list of food ingredients made with gas solvents such as supercritical CO₂, propane, butane, dimethyl ether, HFC-134a, and nitrous oxide, with regulatory status, residue data, literature, and charts |
+| [Best of 2026](best-of-2026/Best_of_2026.html) | Directory of 95 published best-of-2026 lists across books, albums, film, television, and other topics, with the outlet and a checked link for each |
 
 ## Reading
 
@@ -71,5 +72,5 @@
 - `scripts/` holds the privacy checker and local setup script.
 - Run `sh scripts/setup_privacy.sh` in each fresh checkout to install privacy hooks and the anonymous repository commit identity.
 - Run `python3 scripts/check_privacy.py` before committing, per [CONTRIBUTING.md](CONTRIBUTING.md).
-- [`index.html`](index.html) is the GitHub Pages catalog of the HTML projects. It links to 25 projects and 40 report pages, with 101 additional ticker detail pages accessible through the earnings-straddle screen. Card thumbnails live in [`site-assets/thumbs/`](site-assets/thumbs/).
+- [`index.html`](index.html) is the GitHub Pages catalog of the HTML projects. It links to 26 projects and 41 report pages, with 101 additional ticker detail pages accessible through the earnings-straddle screen. Card thumbnails live in [`site-assets/thumbs/`](site-assets/thumbs/).
 - Each project folder contains its source files and, where available, a README with build or refresh instructions.
