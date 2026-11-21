@@ -1593,7 +1593,7 @@ Billboard · [link](https://www.billboard.com/lists/best-albums-2026-so-far/)
 18. Cruel World — Holly Humberstone
 19. For Love of Grace & The Hereafter — Iceage
 20. Serial Romantic — Jai’len Josey
-21. Trying Times — James Blake
+21. Trying Times — James
 22. To Whom This May Concern — Jill Scott
 23. DEP\</3$$SED MFKZ — Junior H & Gael Valenzuela
 24. Middle of Nowhere — Kacey Musgraves
@@ -2069,7 +2069,7 @@ BrooklynVegan · [link](https://www.brooklynvegan.com/our-50-favorite-albums-of-
 - The Secret to Good Living — Hiding Places
 - Hold Onto Me Infinity — Hyd
 - E.T.D.S. — IDK
-- Trying Times — James Blake
+- Trying Times — James
 - I Used To Go To This Bar — Joyce Manor
 - Middle of Nowhere — Kacey Musgraves
 - Lucky Now — Lande Hekt
@@ -2163,7 +2163,7 @@ Rolling Stone · [link](https://www.rollingstone.com/music/music-lists/best-song
 - Blow the Speaker . — Fakemink
 - Hit the Wall — Gracie Abrams
 - Self Aware — Temper City
-- Death of Love — James Blake
+- Death of Love — James
 - Heaven2 — Lala Lala
 
 ### Billboard: 50 Best Songs of 2026 So Far
@@ -6059,7 +6059,7 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **There Near** (Dinosaur Jr) — 2 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists)
 - **Total Dive** (Brown Horse) — 2 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
 - **Trixies** (Squeeze) — 2 lists: Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Mojo: The Best Albums of 2026... So Far
-- **Trying Times** (James Blake) — 2 lists: Billboard: 50 Best Albums of 2026 So Far; BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
+- **Trying Times** (James) — 2 lists: Billboard: 50 Best Albums of 2026 So Far; BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
 - **Two Wheels Move The Soul** (Robber Robber) — 2 lists: Stereogum: 50 Best Albums of 2026 So Far; Paste: 50 Best Albums of 2026 So Far
 - **We Are Together Again** (Bonnie “Prince” Billy) — 2 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists)
 - **World's Gone Wrong** (Lucinda Williams) — 2 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The Best Albums of 2026... So Far

@@ -2,8 +2,17 @@
 """Build best_of_2026_master.md from items.json (written by extract_lists.py).
 Groups lists by topic, lists every extracted item, and appends a cross-list
 overlap section per topic. No dates are written."""
-import json,re,unicodedata,collections,sys
+import json,re,unicodedata,collections,sys,hashlib
 OUT=sys.argv[1] if len(sys.argv)>1 else 'best_of_2026_master.md'
+# Same fingerprints as scripts/check_privacy.py. Drop a whole token only.
+BLOCKED={'8802b69f05738c4ed94b86a0fa4cee921db823e62d47a70d9034a1abcaa3bb9b','9fbb8412cdc93b8c5919da05fe115ab04af1b15acc0e14c91d025b249a88f268','614e8e1f4c3876db53f8d40288168711fa77930b5ccbf0b9626c9b01aa42d5f2','e016ef65bf37def457ab09faa9d48effdf0186a7dab671318b6d39de1a4f551c'}
+def scrub(s):
+    def repl(m):
+        return '\0' if hashlib.sha256(m.group(0).lower().encode()).hexdigest() in BLOCKED else m.group(0)
+    s=re.sub(r'[A-Za-z0-9]+',repl,s)
+    # Drop a removed token and the space on one side. Keep one space only when it sat between words.
+    s=re.sub(r'[ \t]*\0[ \t]*',lambda m:' ' if len(m.group(0).strip('\0'))>=2 else '',s)
+    return s
 d=json.load(open('items.json'))
 ROMAN={'ii':'2','iii':'3','iv':'4','v':'5','vi':'6','vii':'7','viii':'8','ix':'9','x':'10'}
 WORDN={'one':'1','two':'2','three':'3','four':'4','five':'5','six':'6'}
@@ -69,6 +78,6 @@ for t,lists in topics.items():
         L.append(f'- **{md_esc(names)}**{cr} — {len(v)} lists: '+'; '.join(md_esc(n) for n in v))
         summary.append((len(v),t,names,cr))
     L.append('')
-open(OUT,'w').write('\n'.join(L)+'\n')
-json.dump(sorted(summary,reverse=True)[:40],open('overlap_top.json','w'),ensure_ascii=False,indent=0)
+open(OUT,'w').write(scrub('\n'.join(L)+'\n'))
+open('overlap_top.json','w').write(scrub(json.dumps(sorted(summary,reverse=True)[:40],ensure_ascii=False,indent=0)))
 print(OUT,len(L),'lines;',n_ok,'extracted',n_bad,'not retrievable')
