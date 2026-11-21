@@ -32,6 +32,7 @@ for r in rows:
     ts = stamp(r['date'])
     items.append(dict(line=r['topic'], topic=[GROUP[k]], title=r['list'], desc=r['outlet'], kind=k, tags=[srctype(r['outlet'])], href=r['url'], date=ts))
 items.sort(key=lambda i: (i['line'], ORDER.index(i['kind']), -i['date'], i['title']))
+for i in items: del i['date']
 TAGS = ['Magazine & web outlet','Newspaper & broadcaster','Retailer & platform','Library','Aggregator & scores','Awards body']
 PENDING = [
  ['Books','NYT 10 Best Books and 100 Notable Books, Washington Post 10 Best, New Yorker and Guardian year-end lists; Goodreads Choice winners on Dec 3 (nominees only so far).'],
@@ -83,24 +84,12 @@ html = f'''<!doctype html>
       <button type="button" class="search-clear" id="search-clear" data-clear="q" hidden>Clear search</button>
       <kbd>/</kbd>
     </div>
-    <select id="when" aria-label="Date">
-      <option value="">Any date</option>
-      <option value="7">Past 7 days</option>
-      <option value="30">Past 30 days</option>
-      <option value="90">Past 90 days</option>
-      <option value="dated">Dated lists only</option>
-      <option value="custom">Custom range…</option>
-    </select>
     <select id="kind" aria-label="List type"></select>
     <select id="sort" aria-label="Sort">
       <option value="topic">Group by topic</option>
-      <option value="recent">Newest first</option>
       <option value="outlet">Outlet A–Z</option>
       <option value="title">List name A–Z</option>
     </select>
-  </div>
-  <div class="range" id="range" hidden>
-    <span>From</span><input type="date" id="from" aria-label="From date"><span>to</span><input type="date" id="to" aria-label="To date">
   </div>
   <div class="filterbar" aria-label="Active filters">
     <div class="pills" id="active-filters"></div>
@@ -110,7 +99,7 @@ html = f'''<!doctype html>
     </div>
   </div>
 </div>
-<p id="search-help" class="file-path">Search list names, outlets, topics and links. Common abbreviations (NYT, PW, RS, GOTY, LP) and small typos are supported. Dates are shown only where the outlet states one.</p>
+<p id="search-help" class="file-path">Search list names, outlets, topics and links. Common abbreviations (NYT, PW, RS, GOTY, LP) and small typos are supported.</p>
 <div class="chips" id="chips"></div>
 
 <div class="layout">

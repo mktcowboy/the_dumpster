@@ -54,7 +54,7 @@ select { -webkit-appearance:none; appearance:none; cursor:pointer; outline:none;
 select:last-child { border-right:0; }
 select option { color:var(--ink); background:var(--bg); }
 
-/* keyword chips + custom date range */
+/* keyword chips */
 .chips { display:flex; flex-wrap:wrap; gap:0; padding:12px 0 10px; border-bottom:1px solid var(--line); }
 .chips .lbl { flex:0 0 auto; align-self:center; padding:0 12px 0 0; font:600 10px var(--sans); text-transform:uppercase; letter-spacing:.18em; color:var(--muted); }
 .chip { flex:0 0 auto; display:inline-flex; align-items:baseline; gap:6px; cursor:pointer; white-space:nowrap; background:none; border:0;
@@ -62,9 +62,6 @@ select option { color:var(--ink); background:var(--bg); }
 .chip b { font-weight:400; opacity:.6; font-size:.85em; font-variant-numeric:tabular-nums; }
 .chip:hover { color:var(--ink); }
 .chip.on { color:var(--ink); border-bottom-color:var(--accent); font-weight:600; }
-.range { display:flex; align-items:center; gap:10px; padding-top:10px; font:11px var(--sans); text-transform:uppercase; letter-spacing:.14em; color:var(--muted); }
-.range[hidden] { display:none; }
-.range input { font:13px var(--sans); color:var(--ink); background:var(--bg); border:1px solid var(--line); padding:6px 8px; text-transform:none; letter-spacing:0; }
 .filterbar { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px 24px; padding-top:12px; font:12px var(--sans); }
 .pills { display:flex; flex:1 1 280px; min-width:0; flex-wrap:wrap; gap:8px; align-items:center; }
 .filter-label { color:var(--muted); margin-right:2px; }
@@ -130,23 +127,8 @@ h3.topic span { color:var(--faint); padding:0 6px; }
 .card .c { grid-area:c; margin-top:5px; color:var(--muted); font:11px/1.6 var(--sans); overflow-wrap:anywhere; }
 .file-path { color:var(--muted); font:11px/1.6 var(--sans); overflow-wrap:anywhere; }
 .card .m { grid-area:m; display:flex; flex-direction:column; align-items:flex-end; gap:4px; padding-top:4px; text-align:right; }
-.date { font-style:italic; font-size:14px; color:var(--ink); }
 .badge { font:600 9.5px var(--sans); letter-spacing:.16em; text-transform:uppercase; color:var(--accent); }
-.badge.new { color:var(--bg); background:var(--accent); padding:2px 6px; letter-spacing:.12em; }
 mark { background:var(--mark); color:inherit; padding:0 1px; }
-
-/* recently updated strip */
-.lately { margin-top:34px; }
-.lately .cathead h2 { font-size:28px; }
-.lately-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); border-bottom:1px solid var(--line); }
-.mini { display:flex; flex-direction:column; gap:4px; padding:16px 18px 18px; border-right:1px solid var(--line); transition:background .15s; }
-.mini:nth-child(3n) { border-right:0; }
-.mini:nth-child(n+4) { border-top:1px solid var(--line); }
-.mini:hover { background:var(--hover); }
-.mini:hover .t { color:var(--accent); }
-.mini .k { font:600 9.5px var(--sans); letter-spacing:.16em; text-transform:uppercase; color:var(--muted); }
-.mini .t { font-size:17px; line-height:1.25; transition:color .15s; }
-.mini .date { font-size:13px; color:var(--muted); margin-top:auto; padding-top:6px; }
 
 .empty { padding:90px 0; text-align:center; color:var(--muted); }
 .empty b { display:block; margin-bottom:6px; font:400 40px var(--display); color:var(--ink); }
@@ -161,10 +143,6 @@ footer { margin-top:80px; padding-top:22px; border-top:2px solid var(--rule); co
   .layout { display:block; }
   details.index { position:static; max-height:none; padding:14px 0 0; }
   details.index > summary { display:block; cursor:pointer; font:600 11px var(--sans); text-transform:uppercase; letter-spacing:.16em; padding:10px 0; border-bottom:1px solid var(--rule); }
-  .lately-grid { grid-template-columns:1fr 1fr; }
-  .mini:nth-child(3n) { border-right:1px solid var(--line); }
-  .mini:nth-child(2n) { border-right:0; }
-  .mini:nth-child(n+3) { border-top:1px solid var(--line); }
 }
 @media (max-width:640px) {
   .wrap { padding:28px 16px 60px; }
@@ -176,7 +154,4 @@ footer { margin-top:80px; padding-top:22px; border-top:2px solid var(--rule); co
   .filter-actions { width:100%; justify-content:space-between; }
   .card { grid-template-columns:30px minmax(0,1fr); grid-template-areas:"n t" "n d" "n c" "n m"; }
   .card .m { flex-direction:row; align-items:baseline; gap:12px; padding-top:6px; }
-  .lately-grid { grid-template-columns:1fr; }
-  .mini { border-right:0 !important; }
-  .mini:nth-child(n+2) { border-top:1px solid var(--line); }
 }

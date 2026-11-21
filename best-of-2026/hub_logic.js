@@ -1,6 +1,5 @@
 const TAGS = __TAGS__;
 const SEP = " › ";
-const DAY = 86400, NOW = Date.now() / 1000;
 const $ = id => document.getElementById(id);
 function syncThemeToggle() {
   const dark = document.documentElement.dataset.theme === "dark";
@@ -16,7 +15,6 @@ $("theme-toggle").addEventListener("click", () => {
 });
 syncThemeToggle();
 const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const fmt = t => t ? new Date(t * 1000).toLocaleDateString(undefined, {year:"numeric", month:"short", day:"numeric", timeZone:"UTC"}) : "Undated";
 const pathOf = i => [i.line, ...i.topic];
 const keyOf = parts => parts.join(SEP);
 const linkLabel = i => i.href.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "");
@@ -51,8 +49,8 @@ function searchMatches(i, query) {
 }
 const removeIcon = '<svg aria-hidden="true" width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m4 4 8 8m0-8-8 8"/></svg>';
 
-const state = { sel: [], q: "", kind: "", sort: "topic", open: new Set(), tags: new Set(), when: "", from: "", to: "" };
-const hasFilters = () => Boolean(state.sel.length || state.q || state.kind || state.tags.size || state.when);
+const state = { sel: [], q: "", kind: "", sort: "topic", open: new Set(), tags: new Set() };
+const hasFilters = () => Boolean(state.sel.length || state.q || state.kind || state.tags.size);
 
 function buildTree(items) {
   const root = { name: "", kids: new Map(), n: 0 };
@@ -65,18 +63,8 @@ function buildTree(items) {
   }
   return root;
 }
-function dateRange() {
-  const day = s => new Date(s + "T00:00:00Z").getTime() / 1000;
-  if (state.when === "custom") return [state.from ? day(state.from) : 0, state.to ? day(state.to) + DAY : Infinity];
-  if (state.when === "year") return [Date.UTC(2026, 0, 1) / 1000, Infinity];
-  if (state.when === "dated") return [1, Infinity];
-  if (state.when) return [NOW - Number(state.when) * DAY, Infinity];
-  return null;
-}
 function matches(i, skipTags) {
   if (state.kind && i.kind !== state.kind) return false;
-  const r = dateRange();
-  if (r && (!i.date || i.date < r[0] || i.date >= r[1])) return false;
   if (!skipTags && state.tags.size && !i.tags.some(t => state.tags.has(t))) return false;
   if (!state.q) return true;
   return searchMatches(i, state.q);
@@ -108,9 +96,6 @@ function activePills() {
   if (state.sel.length) pills.push(["sel", keyOf(state.sel)]);
   if (state.q) pills.push(["q", `“${state.q}”`]);
   state.tags.forEach(t => pills.push(["tag:" + t, t]));
-  if (state.when) pills.push(["when", state.when === "custom"
-    ? [state.from, state.to].map(d => d ? fmt(new Date(d + "T00:00:00Z") / 1000) : "…").join(" – ")
-    : $("when").selectedOptions[0].text]);
   if (state.kind) pills.push(["kind", state.kind]);
   return pills.map(([k, label]) => `<button type="button" class="pill" data-clear="${esc(k)}" aria-label="Remove ${esc(label)} filter" title="Remove this filter"><span>${esc(label)}</span>${removeIcon}</button>`).join("");
 }
@@ -128,18 +113,11 @@ function hl(s) {
     .map((part, n) => n % 2 ? `<mark>${esc(part)}</mark>` : esc(part)).join("");
 }
 function card(i) {
-  const isNew = i.date && NOW - i.date < 7 * DAY;
   const crumb = `<div class="c" aria-label="Link" title="${esc(i.href)}">${hl(linkLabel(i))}</div>`;
   return `<a class="card" href="${esc(i.href)}" target="_blank" rel="noopener">
     <div class="t">${hl(i.title)}<span class="arrow">↗</span></div>
     ${i.desc ? `<div class="d">${hl(i.desc)}</div>` : ""}${crumb}
-    <div class="m"><span class="date">${fmt(i.date)}</span><span class="badge">${esc(i.kind)}</span>${isNew ? '<span class="badge new">New</span>' : ""}</div></a>`;
-}
-function lately() {
-  const recent = ITEMS.filter(i => i.date).sort((a, b) => b.date - a.date).slice(0, 6);
-  return `<section class="lately"><div class="cathead"><h2>Recently published</h2><span class="n">Latest six</span></div>
-    <div class="lately-grid">${recent.map(i => `<a class="mini" href="${esc(i.href)}" target="_blank" rel="noopener">
-      <span class="k">${esc(i.line)} · ${esc(i.kind)}</span><span class="t">${esc(i.title)}</span><span class="file-path" aria-label="Outlet">${esc(i.desc)}</span><span class="date">${fmt(i.date)}</span></a>`).join("")}</div></section>`;
+    <div class="m"><span class="badge">${esc(i.kind)}</span></div></a>`;
 }
 function renderMain() {
   const list = ITEMS.filter(i => inSel(i) && matches(i));
@@ -152,8 +130,7 @@ function renderMain() {
     return;
   }
   if (state.sort !== "topic") {
-    const sorted = [...list].sort(state.sort === "recent" ? (a, b) => (b.date || 0) - (a.date || 0) || a.title.localeCompare(b.title)
-      : state.sort === "outlet" ? (a, b) => a.desc.localeCompare(b.desc) || a.title.localeCompare(b.title)
+    const sorted = [...list].sort(state.sort === "outlet" ? (a, b) => a.desc.localeCompare(b.desc) || a.title.localeCompare(b.title)
       : (a, b) => a.title.localeCompare(b.title));
     $("app").innerHTML = `<section class="cat">${sorted.map(i => card(i)).join("")}</section>`;
     return;
@@ -201,7 +178,6 @@ $("tree").addEventListener("click", e => {
 function clearFilter(key) {
   if (key === "q" || key === "all") { state.q = ""; $("q").value = ""; }
   if (key === "kind" || key === "all") { state.kind = ""; $("kind").value = ""; }
-  if (key === "when" || key === "all") { state.when = state.from = state.to = ""; $("when").value = $("from").value = $("to").value = ""; $("range").hidden = true; }
   if (key === "all") { state.sel = []; state.tags.clear(); state.open.clear(); }
   if (key === "sel") { state.sel = []; state.open.clear(); }
   if (key.startsWith("tag:")) state.tags.delete(key.slice(4));
@@ -218,14 +194,6 @@ $("chips").addEventListener("click", e => {
   state.tags.has(t) ? state.tags.delete(t) : state.tags.add(t);
   render();
 });
-$("when").addEventListener("change", e => {
-  state.when = e.target.value;
-  $("range").hidden = state.when !== "custom";
-  if (state.when === "custom") $("from").focus();
-  setCtl(); render();
-});
-$("from").addEventListener("change", e => { state.from = e.target.value; render(); });
-$("to").addEventListener("change", e => { state.to = e.target.value; render(); });
 $("q").addEventListener("input", e => {
   state.q = e.target.value.trim();
   if (state.q) state.sel = [];
@@ -261,7 +229,7 @@ window.addEventListener("hashchange", () => { applyHash(); render(); });
   $("kind").innerHTML = `<option value="">All list types</option>` +
     kinds.map(k => `<option value="${esc(k)}">${esc(k)} (${ITEMS.filter(i => i.kind === k).length})</option>`).join("");
   const topics = new Set(ITEMS.map(i => i.line));
-  $("stats").innerHTML = [[ITEMS.length, "Lists"], [topics.size, "Topics"], [new Set(ITEMS.map(i => i.desc)).size, "Outlets"], [ITEMS.filter(i => i.date).length, "Dated"]]
+  $("stats").innerHTML = [[ITEMS.length, "Lists"], [topics.size, "Topics"], [new Set(ITEMS.map(i => i.desc)).size, "Outlets"]]
     .map(([n, l]) => `<div class="stat"><b>${n}</b><span>${l}</span></div>`).join("");
   $("foot-n").textContent = ITEMS.length;
   const wide = matchMedia("(min-width: 901px)");
