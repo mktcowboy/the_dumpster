@@ -21,6 +21,23 @@ def fetch(url):
         subprocess.run(['curl','-s','-L','--compressed','--max-time','30','-A',UA,'-H','Accept-Language: en-US,en','-o',p,url])
     return open(p,encoding='utf8',errors='ignore').read() if os.path.exists(p) else ''
 BLOCK=re.compile(r'(Just a moment|Security Verification|captcha|Access Denied|Request Rejected)',re.I)
+def expand(url, html):
+    """Kirkus best-of book lists continue on ?page=2, ?page=3, and so on. Pull every page that adds books."""
+    if not html or 'kirkusreviews.com/best-of/' not in url or '/books' not in url or 'page=' in url:
+        return html
+    base=url.split('?')[0]
+    parts=[html]
+    seen=set(re.findall(r'href="(/book-reviews/[^"]+)" class="card-text"', html))
+    for n in range(2, 16):
+        if f'page={n}' not in parts[-1]:
+            break
+        nxt=fetch(base+f'?page={n}')
+        found=set(re.findall(r'href="(/book-reviews/[^"]+)" class="card-text"', nxt or ''))
+        if not found-seen:
+            break
+        seen |= found
+        parts.append(nxt)
+    return '\n'.join(parts)
 def main():
     os.makedirs(CACHE,exist_ok=True)
     rows=list(csv.DictReader(open(SRC)))
@@ -32,7 +49,7 @@ def main():
         if m.get('items'):
             items=[tuple(i) for i in m['items']];how=m.get('how','page reader')
         elif not note:
-            h=fetch(x['url'])
+            h=expand(x['url'], fetch(x['url']))
             if len(h)<3000 or (BLOCK.search(h[:20000]) and len(h)<150000):
                 note='items not retrievable: site blocks automated fetches'
             else:

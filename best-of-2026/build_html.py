@@ -1,4 +1,8 @@
-"""Build Best_of_2026.html from lists.csv, using the HTML Hub layout (hub_style.css + hub_logic.js)."""
+"""Build Best_of_2026.html from lists.csv and master_rank.json.
+
+The Lists tab is the directory. The Master list tab is every extracted title,
+merged by category, from master_rank.json (written by build_master.py).
+"""
 import csv, json, calendar, datetime, re
 rows = list(csv.DictReader(open('lists.csv')))
 TYPE = {
@@ -46,21 +50,39 @@ PENDING = [
  ['Restaurants & Food','Esquire Best New Restaurants (early Dec).'],
  ['Theater','No full-year 2026 best-of lists yet; NYT and Guardian critics\u2019 picks usually land in December.'],
 ]
+try:
+    master_file = json.load(open('master_rank.json'))
+except FileNotFoundError:
+    raise SystemExit('master_rank.json is missing. Run python3 build_master.py MASTER.md')
+if isinstance(master_file, dict):
+    source_lists = master_file['lists']
+    master = master_file['topics']
+else:
+    source_lists = []
+    master = master_file
+def js_json(obj):
+    # Keep the payload inside a script element: escape HTML-sensitive characters.
+    return (json.dumps(obj, ensure_ascii=False, separators=(',', ':'))
+            .replace('<', '\\u003c').replace('>', '\\u003e').replace('&', '\\u0026')
+            .replace('\u2028', '\\u2028').replace('\u2029', '\\u2029'))
+n_titles = sum(len(topic['items']) for topic in master)
 css = open('hub_style.css').read() + "\n.card.pending { display:block; cursor:default; } .card.pending::before { content:none; } .card.pending .t { font-size:18px; }\n"
 js = open('hub_logic.js').read().replace('__TAGS__', json.dumps(TAGS))
+master_js = open('master_logic.js').read()
 built = datetime.date.today().strftime('%b %-d, %Y')
 html = f'''<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Best of 2026 — List Directory</title>
+<title>Best of 2026</title>
 <script>
 (function () {{
   let theme;
   try {{ theme = localStorage.getItem("best-2026-theme"); }} catch (e) {{}}
   document.documentElement.dataset.theme = theme === "light" || theme === "dark"
     ? theme : (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  if (/[?&]view=master(?:&|$)/.test(location.search)) document.documentElement.dataset.view = "master";
 }})();
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -70,12 +92,18 @@ html = f'''<!doctype html>
 <body>
 <div class="wrap">
 <header class="hero">
-  <div class="eyebrow"><span>Best of 2026 · List directory</span><div class="header-actions"><span class="updated">Last built {built}</span><button type="button" class="theme-toggle" id="theme-toggle" aria-label="Dark mode" aria-pressed="false">Dark mode</button></div></div>
+  <div class="eyebrow"><span id="eyebrow-label">Best of 2026 · List directory</span><div class="header-actions"><span class="updated">Last built {built}</span><button type="button" class="theme-toggle" id="theme-toggle" aria-label="Dark mode" aria-pressed="false">Dark mode</button></div></div>
   <h1>Best of <em>2026</em></h1>
-  <p class="sub">Every published best-of-2026 list found so far, with a checked link to each. Pick a topic to open its lists, or search.</p>
+  <p class="sub" id="hero-sub">Every published best-of-2026 list found so far, with a checked link to each. Pick a topic to open its lists, or search.</p>
   <div class="stats" id="stats"></div>
 </header>
 
+<div class="viewtabs" role="tablist" aria-label="Views">
+  <button type="button" class="tab" id="tab-lists" role="tab" data-view="lists" aria-selected="true" aria-controls="panel-lists" tabindex="0">Lists</button>
+  <button type="button" class="tab" id="tab-master" role="tab" data-view="master" aria-selected="false" aria-controls="panel-master" tabindex="-1">Master list</button>
+</div>
+
+<div id="panel-lists" role="tabpanel" aria-labelledby="tab-lists">
 <div class="controls" id="controls">
   <div class="searchrow">
     <div class="search">
@@ -112,10 +140,29 @@ html = f'''<!doctype html>
     <div id="app"></div>
   </main>
 </div>
+</div>
+
+<div id="panel-master" role="tabpanel" aria-labelledby="tab-master" hidden>
+  <p class="file-path master-note">Each row is one work named inside the lists. The × badge is how many lists mention it, and higher counts rank first. Open a badge for links to those lists. Titles are matched within a category, ignoring case, punctuation, a leading The, A, or An, and season or part labels.</p>
+  <div class="controls" id="m-controls">
+    <div class="searchrow">
+      <div class="search">
+        <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <input id="mq" type="search" aria-label="Search titles" placeholder="Search titles, creators, lists…" autocomplete="off">
+        <button type="button" class="search-clear" id="m-clear" hidden>Clear search</button>
+        <kbd>/</kbd>
+      </div>
+      <select id="m-topic" aria-label="Category"></select>
+    </div>
+  </div>
+  <div class="chips scroll" id="m-chips"></div>
+  <div class="results" id="m-results" aria-live="polite" aria-atomic="true"></div>
+  <div id="m-app"></div>
+</div>
 
 <footer>
-  <div>Built {built} · <span id="foot-n"></span> lists · opens each list in a new tab</div>
-  <div>To refresh: edit lists.csv, then run python3 build_html.py in /workspace/best-2026</div>
+  <div>Built {built} · <span id="foot-n"></span> lists · {n_titles:,} titles on the master list · opens each list in a new tab</div>
+  <div>To refresh: edit lists.csv, then run python3 build_html.py. Master list: python3 build_master.py MASTER.md, then build_html.py.</div>
 </footer>
 </div>
 <button class="top" id="top" title="Back to top">↑</button>
@@ -124,6 +171,9 @@ html = f'''<!doctype html>
 const ITEMS = {json.dumps(items, ensure_ascii=False)};
 const PENDING = {json.dumps(PENDING, ensure_ascii=False)};
 {js}
+const LISTS = {js_json(source_lists)};
+const MASTER = {js_json(master)};
+{master_js}
 </script>
 </body>
 </html>

@@ -42,7 +42,7 @@
 | [James Beard award graphs](James-Beard/) | Unofficial Obsidian-style graphs of public James Beard Foundation award results: restaurants and chefs, 1991–2025, and books, broadcast, and journalism, 1991–2024 |
 | [Biochar water filtration](research/biochar/) | Staging pack for carbon-based water filtration: an evidence review of biochar and activated carbon, PPP notes, a papers audit, and a cite-first bibliography |
 | [Gas-solvent food ingredients](research/food-ingredients/gas-solvent-food-ingredients.html) | Exhaustive list of food ingredients made with gas solvents such as supercritical CO₂, propane, butane, dimethyl ether, HFC-134a, and nitrous oxide, with regulatory status, residue data, literature, and charts |
-| [Best of 2026](best-of-2026/Best_of_2026.html) | Directory of 147 published best-of-2026 lists across books, albums, film, television, and other topics, with the outlet and a checked link for each, plus a [master list](best-of-2026/MASTER.md) of the items those lists name and the titles that show up on more than one list |
+| [Best of 2026](best-of-2026/Best_of_2026.html) | Directory of 147 published best-of-2026 lists across books, albums, film, television, and other topics, with the outlet and a checked link for each. The Master list tab ranks every extracted title by how many lists include it, and links each one back to those lists. Long form: [MASTER.md](best-of-2026/MASTER.md) |
 
 ## Reading
 

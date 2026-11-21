@@ -172,9 +172,6 @@
  "Loudwire: 25 Best Rock + Metal Albums of 2026": {
   "note": "items not retrievable: the ranked albums are in a JavaScript photo gallery that neither a direct fetch nor the page reader returns"
  },
- "Decibel: Top 40 Albums of 2026": {
-  "note": "items not retrievable: site blocks automated fetches (403 to both curl and the page reader)"
- },
  "NYPL: Best Books of 2026": {
   "note": "items not retrievable: the list is rendered by JavaScript; the page returns no list content to automated fetches"
  },
@@ -1542,12 +1539,6 @@
  },
  "Tony Awards 2026 Winners": {
   "partial": "partial: only categories whose winner appears as a heading on the page are listed (most performer and design winners are not in the page text)"
- },
- "Kirkus: Best Fiction of 2026 (full list page)": {
-  "partial": "partial: only the first page of the 100-title list is in the page HTML"
- },
- "Kirkus: Best Nonfiction of 2026 (full list page)": {
-  "partial": "partial: only the first page of the 100-title list is in the page HTML"
  },
  "Wildlife Photographer of the Year 2026 Winners": {
   "partial": "partial: the press release names only the two overall winners in text; category winners are in image captions"

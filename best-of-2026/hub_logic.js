@@ -202,6 +202,7 @@ $("q").addEventListener("input", e => {
 $("kind").addEventListener("change", e => { state.kind = e.target.value; render(); });
 $("sort").addEventListener("change", e => { state.sort = e.target.value; render(); });
 document.addEventListener("keydown", e => {
+  if (document.documentElement.dataset.view === "master") return;
   if (e.isComposing || e.defaultPrevented) return;
   const editing = e.target.closest("input, textarea, select, [contenteditable]");
   if (e.key === "/" && !editing && !e.ctrlKey && !e.metaKey && !e.altKey) { e.preventDefault(); $("q").focus(); }

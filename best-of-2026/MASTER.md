@@ -2,7 +2,7 @@
 
 Every list in the Best of 2026 directory, grouped by topic, with the items each list names. Ranked lists keep their order (numbered); unranked lists are bulleted. Where a list could not be read, its heading stays with the reason. An overlap section at the end shows items that appear on two or more lists within the same topic.
 
-Lists: 147 total, 133 with items extracted, 14 not retrievable.
+Lists: 147 total, 134 with items extracted, 13 not retrievable.
 
 ## Contents
 
@@ -1185,28 +1185,210 @@ Electric Literature · [link](https://electricliterature.com/electric-lits-top-1
 ### Kirkus: Best Fiction of 2026 (full list page)
 Kirkus Reviews · [link](https://www.kirkusreviews.com/best-of/2026/fiction/books/)
 
-*Note: partial: only the first page of the 100-title list is in the page HTML*
-
-- A Splintering
-- Paradiso 17
-- The Complete Stories
-- The Dead Ringer
-- On The Calculation Of Volume
-- Dead Beat
-- The Weight Of Angels
-- All Hail Chaos
-- Famous Men
+- A SPLINTERING — Dur e Aziz Amna
+- PARADISO 17 — Hannah Lillith Assadi
+- THE COMPLETE STORIES — Ingeborg Bachmann ; translated by Philip Boehm & Tess Lewis
+- THE DEAD RINGER — Dane Bahr
+- ON THE CALCULATION OF VOLUME — Solvej Balle ; translated by Sophia Hersi Smith & Jennifer Russell
+- DEAD BEAT — Leigh Bardugo
+- THE WEIGHT OF ANGELS — John Boyne
+- ALL HAIL CHAOS — Sarah Rees Brennan
+- FAMOUS MEN — Julie Buntin
+- YESTERYEAR — Caro Claire Burke
+- DAYTONA TEDDY RIGGS — Drew Buxton
+- LOST LAMBS — Madeline Cash
+- HOW TO FAKE IT IN SOCIETY — KJ Charles
+- HOCUS POCUS — Brinda Charry
+- POOL HOUSE — Mary H.K. Choi
+- ALL THIS WANT (AND I CAN'T GET NONE) — T Clark
+- THE PARIS MATCH — Kate Clayborn
+- THE FAITH OF BEASTS — James S.A. Corey
+- TAKE WHAT YOU CAN — Naima Coster
+- THE SONG OF STORK AND DROMEDARY — Anjet Daanje ; translated by David McKay
+- PLY — Hernan Diaz
+- WEST OF LOVELAND — Tom Drury
+- MAZYWOOD — Tananarive Due
+- HOMEBOUND — Portia Elan
+- PYTHON'S KISS — Louise Erdrich ; illustrated by Aza Erdrich Abe
+- RASPUTIN SWIMS THE POTOMAC — Ben Fountain
+- MURDER ON 34TH STREET — Mariah Fredericks
+- WOLVES OF SUMMER — Donna Freitas
+- LAST NIGHT IN BROOKLYN — Xochitl Gonzalez
+- ONE & ONLY — Maurene Goo
+- THIS IS NOT ABOUT US — Allegra Goodman
+- BRAWLER — Lauren Groff
+- CALL ME ISHMAELLE — Xiaolu Guo
+- ADA — Mark Haber
+- REBEL ENGLISH ACADEMY — Mohammed Hanif
+- THE BRIGHTNESS — Chad Harbach
+- LAST ONE OUT — Jane Harper
+- WE WERE FORBIDDEN — Jacqueline Harpman ; translated by Ros Schwartz
+- NIGHT CALLS — Joe Hart
+- MOONLIGHT MURDER — Uzma Jalaluddin
+- THE DISAPPEARERS — Marlon James
+- THE OCCIDENTAL BOOK OF THE DEAD — T. Geronimo Johnson
+- KIN — Tayari Jones
+- MY DEAR YOU — Rachel Khong
+- ISN'T HE ROMANTIC? — Adib Khorram
+- PARTITA — Barbara Kingsolver
+- MULE BOY — Andrew Krivak
+- A TENDER AGE — Chang-rae Lee
+- AMERICAN HAGWON — Min Jin Lee
+- DEATH OF THE SOCCER GOD — Dimitry Elias Léger
+- THE BEHEADING GAME — Rebecca Lehmann
+- TRANSCRIPTION — Ben Lerner
+- MUSIC AGAINST THE NIGHT — Yiyun Li
+- BABYLON, SOUTH DAKOTA — Tom Lin
+- BEGINNING MIDDLE END — Valeria Luiselli
+- WHIDBEY — T Kira Madden
+- EXIT PARTY — Emily St. John Mandel
+- DOLLY ALL THE TIME — Annabel Monaghan
+- THE MURDER AT WORLD'S END — Ross Montgomery
+- CENTROEUROPA — Vicente Luis Mora ; translated by Rahul Bery
+- GHALEN — Walter Mosley
+- THIS IS WHERE THE SERPENT LIVES — Daniyal Mueenuddin
+- EVERY EXIT BRINGS YOU HOME — Naeem Murr
+- EATING ASHES — Brenda Navarro ; translated by Megan McDowell
+- A WALL IS ALSO A ROAD — Annalee Newitz
+- RANGE — Dorthe Nors ; translated by Caroline Waight
+- DIE FOR ME — Shirlene Obuobi
+- LAND — Maggie O'Farrell
+- LUNA, PHOENIX, QUEEN — Julie Orringer
+- WHISTLER — Ann Patchett
+- MAY WE FEED THE KING — Rebecca Perry
+- THE TRUE CONFESSIONS OF FIRST LADY FREEMAN — Deesha Philyaw
+- REAP & SOW — Charlotte B. Plumb
+- ANNIE PROULX STORIES — Annie Proulx
+- THE SALT KING — Natasha Pulley
+- WHAT WE ARE SEEKING — Cameron Reed
+- NIGHTJAR — Emily Ruskovich
+- SCORE — Kennedy Ryan
+- SONGS OF THE DEAD — Brandon Sanderson & Peter Orullian
+- VIGIL — George Saunders
+- LIVONIA CHOW MEIN — Abigail Savitch-Lew
+- PUBLIC ACCESS AFTERWORLD — Jane Schoenbrun
+- STAR SHIPPED — Cat Sebastian
+- SHOULD THE WATERS TAKE US — Stephanie Soileau
+- SEE YOU NEXT TUESDAY — Kate Stayman-London
+- JOHN OF JOHN — Douglas Stuart
+- THE TAILOR — Tim Sullivan
+- A PRIVATE MAN — Stephanie Sy-Quia
+- CRUX — Gabriel Tallent
+- GREEN CITY WARS — Adrian Tchaikovsky
+- MAD EDEN — Morgan Thomas
+- THE FOUR WIVES AND FIVE DEATHS OF RICHARD MILFORD — Nafissa Thompson-Spires
+- ALL THE HIDDEN PLACES — Cadwell Turnbull
+- THE MONROE GIRLS — Antoine Volodine ; translated by Alyson Waters
+- THE NAMES OF THE NEW WORLD — Kawai Strong Washburn
+- THE BOOK OF CHUCK — LaToya Watkins
+- ALL THEM DOGS — Djamel White
+- COOL MACHINE — Colson Whitehead
+- THE NIGHTINGALES — Emil Wilson ; illustrated by Emil Wilson
+- PROMISED LAND — Henry Wise
 
 ### Kirkus: Best Nonfiction of 2026 (full list page)
 Kirkus Reviews · [link](https://www.kirkusreviews.com/best-of/2026/nonfiction/books/)
 
-*Note: partial: only the first page of the 100-title list is in the page HTML*
-
-- The Future Is Peace
-- The Mayor
-- To See Beyond
-- Darkology
-- All The Presidents' Wars
+- THE FUTURE IS PEACE — Aziz Abu Sarah & Maoz Inon
+- 1873 — Liaquat Ahamed
+- THE MAYOR — Brian Alexander
+- RADICAL DUKE — Danielle Allen
+- THE BALLAD OF THE FUGITIVE WILLIAM PARKER — Cristin O'Keefe Aptowicz
+- YOU WON'T GET FREE OF IT — Rachel Aviv
+- TO SEE BEYOND — Anna Badkhen
+- DARKOLOGY — Rhae Lynn Barnes
+- ALL THE PRESIDENTS' WARS — Peter Bergen
+- COSMIC MUSIC — Andy Beta
+- AMERICAN SCOUNDREL — Kai Bird with Susan Goldmark
+- KINGS AND PAWNS — Howard Bryant
+- TAKE MY WORD FOR IT — LeVar Burton with Tracey Michae'l Lewis-Giggetts
+- STAY ALIVE — Ian Buruma
+- FLY, WILD SWANS — Jung Chang
+- HOW BRIGHT THE PATH GROWS — Marcia Chatelain
+- KOREAN MESSIAH — Jonathan Cheng
+- THEY STOLE A CITY — Lauren Collins
+- CATCH THE DEVIL — Pamela Colloff
+- THE BLACK SHIELD — Wilbert L. Cooper
+- TRUE CRIME — Patricia Cornwell
+- COUNTERTENOR — Anthony Roth Costanzo
+- HERE WHERE WE LIVE IS OUR COUNTRY — Molly Crabapple
+- DANGEROUS, DIRTY, VIOLENT, AND YOUNG — Zayd Ayers Dohrn
+- THE NERD REICH — Gil Durán
+- THE WONDERFUL WORLD THAT ALMOST WAS — Andrew Durbin
+- THE FRENCHMEN — Emily Eakin
+- HUNA — Abdelrahman ElGendy
+- A GUIDE TO OPEN WATER LIFESAVING — Virginia Eubanks
+- THIS VAST ENTERPRISE — Craig Fehrman
+- KEEPER OF MY KIN — Ada Ferrer
+- BETWEEN THE RIVER AND THE RAILROAD TRACKS — Nicole R. Fleetwood
+- THE CRUELEST GAME — Matthew Futterman
+- THE BEST KIND OF AMERICAN — Kim Ghattas
+- THE AMERICAN WAY OF KILLING — Malcolm Gladwell
+- DAYS OF LOVE AND RAGE — Anand Gopal
+- BIRTH OF A CULTURE — Grandmaster Flash with Robert “Scoop” Jackson
+- REGIME CHANGE — Maggie Haberman & Jonathan Swan
+- IF THIS BE MAGIC — Daniel Hahn
+- FROM LIFE ITSELF — Suzy Hansen
+- HOW FLOWERS MADE OUR WORLD — David George Haskell
+- THIS IS ALSO A LOVE STORY — Sally Hayden
+- THE WAR WITHIN A WAR — Wil Haygood
+- HOMESICK FOR A WORLD UNKNOWN — Miriam Horn
+- WEIMAR — Katja Hoyer
+- GLORIOUS COUNTRY — Victoria Johnson
+- THE CO-CREATION — Olivia Judson
+- IN THE DAYS OF MY YOUTH I WAS TOLD WHAT IT MEANS TO BE A MAN — Tom Junod
+- LONDON FALLING — Patrick Radden Keefe
+- END TIMES FASCISM — Naomi Klein & Astra Taylor
+- THE VANISHING FAMILY — Robert Kolker
+- THE BLUE HOURS — Stephanie Krzywonos
+- NONVIOLENT — James Lawson Jr. & Emily Yellin
+- ANITA BROOKNER — Hermione Lee
+- THE RISE AND FALL OF THE ARTIFICIAL STATE — Jill Lepore
+- PLACE ENVY — Michael Lowenthal
+- SACRED BETRAYAL — Aliza Luft
+- PRESENCE — Erin Maglaque
+- THE NEW DARK AGES — James Marriott
+- YOUNG KING — Lerone Martin
+- HYPERSCALE — Paris Marx
+- LIBERATION SUMMER — Micki McElya
+- VOLGA BLUES — Marzio G. Mian ; translated by Elettra Pauletto ; photographed by Alessandro Cosmelli
+- KIDS, WAIT TILL YOU HEAR THIS! — Liza Minnelli with Michael Feinstein , Josh Getlin & Heidi Evans
+- THE DANGER TO BE SANE — Rosa Montero ; translated by Lindsey Ford
+- A KINGDOM AND A VILLAGE — Simon Morrison
+- DEFIANCE — Loubna Mrie
+- THE VILLAGE ON THE EDGE OF THE WORLD — Herta Müller
+- THE LAST LEAF — Willie Nelson with David Ritz & Mia Tangredi
+- SCALE BOY — Patrice Nganang
+- MAJOR TAYLOR — Frederick Noland
+- MOTHER TONGUE — Sara Nović
+- A HYMN TO LIFE — Gisèle Pelicot with Judith Perrignon ; translated by Natasha Lehrer & Ruth Diver
+- THE EVOLUTION OF FIRE — Angela Pelster
+- THE RUSH — Nathaniel Philbrick
+- A WORLD APPEARS — Michael Pollan
+- TRAVERSAL — Maria Popova
+- THE INHERITANCE — Janet Reitman
+- THE BEST JOURNEY IN THE WORLD — Kim Stanley Robinson
+- HOTEL EXILE — Jane Rogoyska
+- THE AGI CHRONICLES — Kevin Roose
+- 53 DAYS — Timothy W. Ryback
+- BEFORE NEW YORK — Eric W. Sanderson
+- EMPIRE OF ASHES — James M. Scott
+- ON MORRISON — Namwali Serpell
+- WE THOUGHT THEY'D NEVER LEAVE — Tony Shalhoub with Josie Adams
+- THE INVISIBLE HAND OF MARIA EDGEWORTH — Jeanna Smialek
+- THE CITY WITHOUT JEWS — Douglas Smith
+- SISTERS OF THE MIDNIGHT SUN — Rebecca Wright Stevens
+- VOICE OF A CENTURY — Anthony Tommasini
+- THE SAVAGE MIND — David Treuer
+- EL PASO — Jazmine Ulloa
+- THE THEATER — James Verini
+- TORCHED — Jonathan Vigliotti
+- THE BOOK OF GENOCIDES — Dana Mashoian Walrath
+- A DEAD WHITE — Wendy S. Walters
+- ON WITNESS AND RESPAIR — Jesmyn Ward
+- THE JACKAL — Joby Warrick
+- PROFILES IN COWARDICE — Jacob Weisberg
+- REDEMPTION — Lawrence Wright
 
 ### Audible: The Best Audiobooks of 2026
 Audible · [link](https://www.audible.com/ep/best-of-the-year)
@@ -1516,7 +1698,46 @@ Mojo · [link](https://www.yearendlists.com/2026/mojo-the-75-best-albums-of-2026
 ### Decibel: Top 40 Albums of 2026
 Decibel · [link](https://www.decibelmagazine.com/2026/11/12/spoiler-here-are-decibels-top-40-albums-of-2026/)
 
-*items not retrievable: site blocks automated fetches (403 to both curl and the page reader)*
+1. An Undying Love for a Burning World — Neurosis
+2. The Last Nail — Disfear
+3. Verbolgen — Hulder
+4. Who Loves the Sun — Chat Pile
+5. Hymns from the Hills — Poison Ruïn
+6. The Ghost of a Future Dead — At the Gates
+7. Love Is Not Enough — Converge
+8. Devotion — The Keening
+9. The Light That Keeps Us — Mother of Graves
+10. Beckoning the Void of Eternal Silence — Funebrarum
+11. Shapes of Midnight — Uncle Acid and the Deadbeats
+12. Det Hjemsøkte Hjertet — Panopticon
+13. Descent — Immolation
+14. Coronach — Hellripper
+15. Khemmis — Khemmis
+16. Decay — Godflesh
+17. Wars of Spirit // Wards of Light — Dreadnought
+18. Rituals of Shame — Warning
+19. Volume V — Down
+20. Looking Glass Hymnal Blue — The Silver
+21. Infinite Illumination — Spirit Adrift
+22. Bloody Dreams — Devil Master
+23. Overspace & Supertime — Cryptic Shift
+24. Projections — Godthrymm
+25. Verdwazing der Dwazen — Bacht’n de Vulle Moane
+26. Cursum Perficio — Anthrax
+27. Panorama — Hällas
+28. Good God / Baad Man — Corrosion of Conformity
+29. Decrepitizing Din of the Cerebral Psyopticon — Fake Dust
+30. Sealed into None — Exxûl
+31. Riders of the Setting Sun — Wayfarer
+32. Goh-Ka — Sigh
+33. Existence Is Corruption — Street Tombs
+34. The Enchanting Winds of the Dreamweaving Masquerade — Night of the Vampire
+35. V bažinách vědomí — Sněť
+36. Marrow Deep — Mastodon
+37. Necropalace — Worm
+38. Too Fast to Die — Archspire
+39. The Ones We Follow — Sarcator
+40. Memories of Fire — Fire Magic
 
 ### Loudwire: 25 Best Rock + Metal Albums of 2026
 Loudwire · [link](https://loudwire.com/best-rock-metal-albums-2026/)
@@ -5687,117 +5908,143 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 
 ### Books
 
-- **The Disappearers** — 11 lists: Amazon Editors: Best Books of 2026 (Top 20); Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Books 2026 Top 10; Kirkus: Best Books of 2026 – The Holidays Start Early; Kirkus: Best Book Club Fiction of 2026; TIME: 100 Must-Read Books of 2026; BookPage: The Best Fiction of 2026; Barnes & Noble: The Best Fiction Books of 2026; The New Yorker: The Best Books of 2026 So Far; Esquire: The Best Books of 2026 (So Far); Audible: The Best Audiobooks of 2026
-- **John of John** — 10 lists: Amazon Editors: Best Books of 2026 (Top 20); TIME: 100 Must-Read Books of 2026; Chicago Public Library: Top 10 Favorite Books of 2026; Barnes & Noble: The Best Fiction Books of 2026; The New Yorker: The Best Books of 2026 So Far; Esquire: The Best Books of 2026 (So Far); BBC Culture: 14 of the Best Books of 2026 So Far; The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026; Audible: The Best Audiobooks of 2026
-- **Cool Machine** — 9 lists: Amazon Editors: Best Books of 2026 (Top 20); Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Books 2026 Top 10; TIME: 100 Must-Read Books of 2026; Chicago Public Library: Top 10 Favorite Books of 2026; Barnes & Noble: Book of the Year 2026 (Whale Harbor); Barnes & Noble: The Best Fiction Books of 2026; The New Yorker: The Best Books of 2026 So Far; BBC Culture: 14 of the Best Books of 2026 So Far
-- **Kin** (Tayari Jones) — 9 lists: Amazon Editors: Best Books of 2026 (Top 20); TIME: 100 Must-Read Books of 2026; Chicago Public Library: Top 10 Favorite Books of 2026; Barnes & Noble: The Best Fiction Books of 2026; The New Yorker: The Best Books of 2026 So Far; Esquire: The Best Books of 2026 (So Far); BBC Culture: 14 of the Best Books of 2026 So Far; Audible: The Best Audiobooks of 2026; Kirkus Prize 2026 Winners
-- **London Falling** — 9 lists: TIME: 100 Must-Read Books of 2026; BookPage: The Best Nonfiction of 2026; The New Yorker: The Best Books of 2026 So Far; Esquire: The Best Books of 2026 (So Far); The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026; Audible: The Best Audiobooks of 2026; Amazon Editors: Best Books of 2026 (Top 20); Barnes & Noble: Book of the Year 2026 (Whale Harbor)
-- **Transcription** — 9 lists: Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Books 2026 Top 10; TIME: 100 Must-Read Books of 2026; Barnes & Noble: The Best Fiction Books of 2026; The New Yorker: The Best Books of 2026 So Far; Esquire: The Best Books of 2026 (So Far); BBC Culture: 14 of the Best Books of 2026 So Far; The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
-- **Exit Party** (Emily St. John Mandel) — 7 lists: Amazon Editors: Best Books of 2026 (Top 20); Kirkus: Best Books of 2026 – The Holidays Start Early; Kirkus: Best Book Club Fiction of 2026; TIME: 100 Must-Read Books of 2026; Barnes & Noble: The Best Fiction Books of 2026; The New Yorker: The Best Books of 2026 So Far; Esquire: The Best Books of 2026 (So Far)
-- **On Morrison** — 7 lists: Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Nonfiction 2026; Kirkus: Best Books of 2026 – The Holidays Start Early; TIME: 100 Must-Read Books of 2026; BookPage: The Best Nonfiction of 2026; The New Yorker: The Best Books of 2026 So Far; Esquire: The Best Books of 2026 (So Far)
-- **Whistler** — 7 lists: TIME: 100 Must-Read Books of 2026; BookPage: The Best Fiction of 2026; Barnes & Noble: The Best Fiction Books of 2026; The New Yorker: The Best Books of 2026 So Far; Esquire: The Best Books of 2026 (So Far); The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
-- **American Hagwon** (Min Jin Lee) — 6 lists: Amazon Editors: Best Books of 2026 (Top 20); TIME: 100 Must-Read Books of 2026; Chicago Public Library: Top 10 Favorite Books of 2026; Barnes & Noble: The Best Fiction Books of 2026; The New Yorker: The Best Books of 2026 So Far; Audible: The Best Audiobooks of 2026
-- **Land** — 6 lists: Amazon Editors: Best Books of 2026 (Top 20); TIME: 100 Must-Read Books of 2026; Barnes & Noble: Book of the Year 2026 (Whale Harbor); Barnes & Noble: The Best Fiction Books of 2026; The New Yorker: The Best Books of 2026 So Far; BBC Culture: 14 of the Best Books of 2026 So Far
-- **Luna, Phoenix, Queen** (Julie Orringer) — 6 lists: Amazon Editors: Best Books of 2026 (Top 20); Kirkus: Best Book Club Fiction of 2026; TIME: 100 Must-Read Books of 2026; BookPage: The Best Fiction of 2026; Barnes & Noble: The Best Fiction Books of 2026; The New Yorker: The Best Books of 2026 So Far
-- **Yesteryear** (Caro Claire Burke) — 6 lists: Amazon Editors: Best Books of 2026 (Top 20); TIME: 100 Must-Read Books of 2026; Barnes & Noble: Book of the Year 2026 (Whale Harbor); Barnes & Noble: The Best Fiction Books of 2026; BBC Culture: 14 of the Best Books of 2026 So Far; Audible: The Best Audiobooks of 2026
-- **A Hymn to Life** — 5 lists: TIME: 100 Must-Read Books of 2026; The New Yorker: The Best Books of 2026 So Far; The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026; Audible: The Best Audiobooks of 2026
-- **A Tender Age** — 5 lists: Publishers Weekly: Best Books 2026 (all 150); TIME: 100 Must-Read Books of 2026; BookPage: The Best Fiction of 2026; Barnes & Noble: The Best Fiction Books of 2026; The New Yorker: The Best Books of 2026 So Far
+- **The Disappearers** — 12 lists: Amazon Editors: Best Books of 2026 (Top 20); Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Books 2026 Top 10; Kirkus: Best Books of 2026 – The Holidays Start Early; Kirkus: Best Book Club Fiction of 2026; TIME: 100 Must-Read Books of 2026; BookPage: The Best Fiction of 2026; Barnes & Noble: The Best Fiction Books of 2026; The New Yorker: The Best Books of 2026 So Far; Esquire: The Best Books of 2026 (So Far); Kirkus: Best Fiction of 2026 (full list page); Audible: The Best Audiobooks of 2026
+- **John of John** — 11 lists: Amazon Editors: Best Books of 2026 (Top 20); TIME: 100 Must-Read Books of 2026; Chicago Public Library: Top 10 Favorite Books of 2026; Barnes & Noble: The Best Fiction Books of 2026; The New Yorker: The Best Books of 2026 So Far; Esquire: The Best Books of 2026 (So Far); BBC Culture: 14 of the Best Books of 2026 So Far; The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026; Kirkus: Best Fiction of 2026 (full list page); Audible: The Best Audiobooks of 2026
+- **Cool Machine** — 10 lists: Amazon Editors: Best Books of 2026 (Top 20); Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Books 2026 Top 10; TIME: 100 Must-Read Books of 2026; Chicago Public Library: Top 10 Favorite Books of 2026; Barnes & Noble: Book of the Year 2026 (Whale Harbor); Barnes & Noble: The Best Fiction Books of 2026; The New Yorker: The Best Books of 2026 So Far; BBC Culture: 14 of the Best Books of 2026 So Far; Kirkus: Best Fiction of 2026 (full list page)
+- **Kin** (Tayari Jones) — 10 lists: Amazon Editors: Best Books of 2026 (Top 20); TIME: 100 Must-Read Books of 2026; Chicago Public Library: Top 10 Favorite Books of 2026; Barnes & Noble: The Best Fiction Books of 2026; The New Yorker: The Best Books of 2026 So Far; Esquire: The Best Books of 2026 (So Far); BBC Culture: 14 of the Best Books of 2026 So Far; Kirkus: Best Fiction of 2026 (full list page); Audible: The Best Audiobooks of 2026; Kirkus Prize 2026 Winners
+- **London Falling** — 10 lists: TIME: 100 Must-Read Books of 2026; BookPage: The Best Nonfiction of 2026; The New Yorker: The Best Books of 2026 So Far; Esquire: The Best Books of 2026 (So Far); The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026; Kirkus: Best Nonfiction of 2026 (full list page); Audible: The Best Audiobooks of 2026; Amazon Editors: Best Books of 2026 (Top 20); Barnes & Noble: Book of the Year 2026 (Whale Harbor)
+- **Transcription** — 10 lists: Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Books 2026 Top 10; TIME: 100 Must-Read Books of 2026; Barnes & Noble: The Best Fiction Books of 2026; The New Yorker: The Best Books of 2026 So Far; Esquire: The Best Books of 2026 (So Far); BBC Culture: 14 of the Best Books of 2026 So Far; The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026; Kirkus: Best Fiction of 2026 (full list page)
+- **Exit Party** (Emily St. John Mandel) — 8 lists: Amazon Editors: Best Books of 2026 (Top 20); Kirkus: Best Books of 2026 – The Holidays Start Early; Kirkus: Best Book Club Fiction of 2026; TIME: 100 Must-Read Books of 2026; Barnes & Noble: The Best Fiction Books of 2026; The New Yorker: The Best Books of 2026 So Far; Esquire: The Best Books of 2026 (So Far); Kirkus: Best Fiction of 2026 (full list page)
+- **On Morrison** — 8 lists: Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Nonfiction 2026; Kirkus: Best Books of 2026 – The Holidays Start Early; TIME: 100 Must-Read Books of 2026; BookPage: The Best Nonfiction of 2026; The New Yorker: The Best Books of 2026 So Far; Esquire: The Best Books of 2026 (So Far); Kirkus: Best Nonfiction of 2026 (full list page)
+- **Whistler** — 8 lists: TIME: 100 Must-Read Books of 2026; BookPage: The Best Fiction of 2026; Barnes & Noble: The Best Fiction Books of 2026; The New Yorker: The Best Books of 2026 So Far; Esquire: The Best Books of 2026 (So Far); The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026; Kirkus: Best Fiction of 2026 (full list page)
+- **American Hagwon** (Min Jin Lee) — 7 lists: Amazon Editors: Best Books of 2026 (Top 20); TIME: 100 Must-Read Books of 2026; Chicago Public Library: Top 10 Favorite Books of 2026; Barnes & Noble: The Best Fiction Books of 2026; The New Yorker: The Best Books of 2026 So Far; Kirkus: Best Fiction of 2026 (full list page); Audible: The Best Audiobooks of 2026
+- **Land** — 7 lists: Amazon Editors: Best Books of 2026 (Top 20); TIME: 100 Must-Read Books of 2026; Barnes & Noble: Book of the Year 2026 (Whale Harbor); Barnes & Noble: The Best Fiction Books of 2026; The New Yorker: The Best Books of 2026 So Far; BBC Culture: 14 of the Best Books of 2026 So Far; Kirkus: Best Fiction of 2026 (full list page)
+- **Luna, Phoenix, Queen** (Julie Orringer) — 7 lists: Amazon Editors: Best Books of 2026 (Top 20); Kirkus: Best Book Club Fiction of 2026; TIME: 100 Must-Read Books of 2026; BookPage: The Best Fiction of 2026; Barnes & Noble: The Best Fiction Books of 2026; The New Yorker: The Best Books of 2026 So Far; Kirkus: Best Fiction of 2026 (full list page)
+- **Yesteryear** (Caro Claire Burke) — 7 lists: Amazon Editors: Best Books of 2026 (Top 20); TIME: 100 Must-Read Books of 2026; Barnes & Noble: Book of the Year 2026 (Whale Harbor); Barnes & Noble: The Best Fiction Books of 2026; BBC Culture: 14 of the Best Books of 2026 So Far; Kirkus: Best Fiction of 2026 (full list page); Audible: The Best Audiobooks of 2026
+- **A Hymn to Life** — 6 lists: TIME: 100 Must-Read Books of 2026; The New Yorker: The Best Books of 2026 So Far; The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026; Kirkus: Best Nonfiction of 2026 (full list page); Audible: The Best Audiobooks of 2026
+- **A Tender Age** — 6 lists: Publishers Weekly: Best Books 2026 (all 150); TIME: 100 Must-Read Books of 2026; BookPage: The Best Fiction of 2026; Barnes & Noble: The Best Fiction Books of 2026; The New Yorker: The Best Books of 2026 So Far; Kirkus: Best Fiction of 2026 (full list page)
+- **Partita** — 6 lists: TIME: 100 Must-Read Books of 2026; Barnes & Noble: Book of the Year 2026 (Whale Harbor); Barnes & Noble: The Best Fiction Books of 2026; The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026; Kirkus: Best Fiction of 2026 (full list page)
+- **Public Access Afterworld** — 6 lists: Amazon Editors: Best Books of 2026 (Top 20); Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Books 2026 Top 10; TIME: 100 Must-Read Books of 2026; Chicago Public Library: Top 10 Favorite Books of 2026; Kirkus: Best Fiction of 2026 (full list page)
+- **This Is Where the Serpent Lives** (Daniyal Mueenuddin) — 6 lists: Kirkus: Best Book Club Fiction of 2026; Barnes & Noble: The Best Fiction Books of 2026; The New Yorker: The Best Books of 2026 So Far; Esquire: The Best Books of 2026 (So Far); BBC Culture: 14 of the Best Books of 2026 So Far; Kirkus: Best Fiction of 2026 (full list page)
+- **Catch the Devil** (Pamela Colloff) — 5 lists: TIME: 100 Must-Read Books of 2026; Chicago Public Library: Top 10 Favorite Books of 2026; BookPage: The Best Nonfiction of 2026; Kirkus: Best Nonfiction of 2026 (full list page); Kirkus Prize 2026 Winners
 - **Dèy** — 5 lists: Publishers Weekly: Best Books 2026 (all 150); TIME: 100 Must-Read Books of 2026; BookPage: The Best Fiction of 2026; Barnes & Noble: The Best Fiction Books of 2026; The New Yorker: The Best Books of 2026 So Far
+- **Music Against the Night** (Yiyun Li) — 5 lists: TIME: 100 Must-Read Books of 2026; BookPage: The Best Fiction of 2026; Barnes & Noble: The Best Fiction Books of 2026; The New Yorker: The Best Books of 2026 So Far; Kirkus: Best Fiction of 2026 (full list page)
 - **Paradiso 17** — 5 lists: Publishers Weekly: Best Books 2026 (all 150); Barnes & Noble: The Best Fiction Books of 2026; The New Yorker: The Best Books of 2026 So Far; Kirkus: Best Fiction of 2026 (full list page); National Book Awards 2026 Winners
-- **Partita** — 5 lists: TIME: 100 Must-Read Books of 2026; Barnes & Noble: Book of the Year 2026 (Whale Harbor); Barnes & Noble: The Best Fiction Books of 2026; The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
-- **Public Access Afterworld** — 5 lists: Amazon Editors: Best Books of 2026 (Top 20); Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Books 2026 Top 10; TIME: 100 Must-Read Books of 2026; Chicago Public Library: Top 10 Favorite Books of 2026
 - **Strangers** (Belle Burden) — 5 lists: TIME: 100 Must-Read Books of 2026; The New Yorker: The Best Books of 2026 So Far; Audible: The Best Audiobooks of 2026; Amazon Editors: Best Books of 2026 (Top 20); Barnes & Noble: Book of the Year 2026 (Whale Harbor)
 - **Switzy** — 5 lists: TIME: 100 Must-Read Books of 2026; Barnes & Noble: The Best Fiction Books of 2026; The New Yorker: The Best Books of 2026 So Far; The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
+- **The Rise and Fall of the Artificial State** — 5 lists: Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Books 2026 Top 10; TIME: 100 Must-Read Books of 2026; The New Yorker: The Best Books of 2026 So Far; Kirkus: Best Nonfiction of 2026 (full list page)
+- **The Rush** — 5 lists: TIME: 100 Must-Read Books of 2026; The New Yorker: The Best Books of 2026 So Far; Kirkus: Best Nonfiction of 2026 (full list page); Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Nonfiction 2026
 - **The Things We Never Say** — 5 lists: TIME: 100 Must-Read Books of 2026; Barnes & Noble: The Best Fiction Books of 2026; BBC Culture: 14 of the Best Books of 2026 So Far; The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
-- **This Is Where the Serpent Lives** (Daniyal Mueenuddin) — 5 lists: Kirkus: Best Book Club Fiction of 2026; Barnes & Noble: The Best Fiction Books of 2026; The New Yorker: The Best Books of 2026 So Far; Esquire: The Best Books of 2026 (So Far); BBC Culture: 14 of the Best Books of 2026 So Far
+- **The Vanishing Family** (Robert Kolker) — 5 lists: TIME: 100 Must-Read Books of 2026; BookPage: The Best Nonfiction of 2026; The New Yorker: The Best Books of 2026 So Far; Kirkus: Best Nonfiction of 2026 (full list page); Amazon Editors: Best Books of 2026 (Top 20)
+- **This Vast Enterprise: A New History of Lewis & Clark** — 5 lists: The New Yorker: The Best Books of 2026 So Far; Kirkus: Best Nonfiction of 2026 (full list page); Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Books 2026 Top 10; Barnes & Noble: Book of the Year 2026 (Whale Harbor)
 - **We** — 5 lists: Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Poetry 2026; TIME: 100 Must-Read Books of 2026; BookPage: The Best Fiction of 2026; Electric Lit: Top 10 Poetry Collections of 2026
-- **Catch the Devil** (Pamela Colloff) — 4 lists: TIME: 100 Must-Read Books of 2026; Chicago Public Library: Top 10 Favorite Books of 2026; BookPage: The Best Nonfiction of 2026; Kirkus Prize 2026 Winners
 - **Departure(s)** — 4 lists: The New Yorker: The Best Books of 2026 So Far; BBC Culture: 14 of the Best Books of 2026 So Far; The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
+- **Eating Ashes** — 4 lists: Kirkus: Best Fiction in Translation of 2026; TIME: 100 Must-Read Books of 2026; The New Yorker: The Best Books of 2026 So Far; Kirkus: Best Fiction of 2026 (full list page)
+- **End Times Fascism: And the Fight for the Living World** — 4 lists: Kirkus: Best Nonfiction of 2026 (full list page); Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Nonfiction 2026; Kirkus: Best of 2026 – Our Favorite Nonfiction
 - **Fruit Fly** — 4 lists: Amazon Editors: Best Books of 2026 (Top 20); Publishers Weekly: Best Books 2026 (all 150); TIME: 100 Must-Read Books of 2026; Audible: The Best Audiobooks of 2026
 - **In Trees** (Robert Moor (Simon & Schuster)) — 4 lists: The New Yorker: The Best Books of 2026 So Far; NPR: Staffers' Favorite Nonfiction of the Year So Far; Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Nonfiction 2026
+- **Keeper of My Kin** (Ada Ferrer) — 4 lists: TIME: 100 Must-Read Books of 2026; BookPage: The Best Nonfiction of 2026; Kirkus: Best Nonfiction of 2026 (full list page); Kirkus: Best of 2026 – Our Favorite Nonfiction
+- **Kids, Wait Till You Hear This!** (Biography & memoir) — 4 lists: The New Yorker: The Best Books of 2026 So Far; The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026; Kirkus: Best Nonfiction of 2026 (full list page)
 - **Life of M** — 4 lists: Publishers Weekly: Best Books 2026 (all 150); TIME: 100 Must-Read Books of 2026; The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
-- **Music Against the Night** (Yiyun Li) — 4 lists: TIME: 100 Must-Read Books of 2026; BookPage: The Best Fiction of 2026; Barnes & Noble: The Best Fiction Books of 2026; The New Yorker: The Best Books of 2026 So Far
+- **Lost Lambs** (Madeline Cash) — 4 lists: TIME: 100 Must-Read Books of 2026; Barnes & Noble: The Best Fiction Books of 2026; The New Yorker: The Best Books of 2026 So Far; Kirkus: Best Fiction of 2026 (full list page)
+- **May We Feed the King** (Rebecca Perry) — 4 lists: TIME: 100 Must-Read Books of 2026; Barnes & Noble: The Best Fiction Books of 2026; The New Yorker: The Best Books of 2026 So Far; Kirkus: Best Fiction of 2026 (full list page)
+- **Mazywood** — 4 lists: Publishers Weekly: Best Books 2026 (all 150); TIME: 100 Must-Read Books of 2026; Kirkus: Best Fiction of 2026 (full list page); Audible: The Best Audiobooks of 2026
 - **One Sun Only** — 4 lists: The New Yorker: The Best Books of 2026 So Far; Esquire: The Best Books of 2026 (So Far); The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **Redwood** — 4 lists: TIME: 100 Must-Read Books of 2026; The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026; Barnes & Noble: Book of the Year 2026 (Whale Harbor)
 - **The Castle** — 4 lists: TIME: 100 Must-Read Books of 2026; Audible: The Best Audiobooks of 2026; Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Books 2026 Top 10
 - **The End of Everything** — 4 lists: The New Yorker: The Best Books of 2026 So Far; The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026; Booker Prize 2026 Winner
+- **The Frenchmen: Or, My Life in Theory** — 4 lists: The New Yorker: The Best Books of 2026 So Far; Kirkus: Best Nonfiction of 2026 (full list page); Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Nonfiction 2026
+- **The Nightingales** — 4 lists: Amazon Editors: Best Books of 2026 (Top 20); Publishers Weekly: Best Books 2026 (all 150); BookPage: The Best Fiction of 2026; Kirkus: Best Fiction of 2026 (full list page)
+- **The Occidental Book of the Dead** — 4 lists: Publishers Weekly: Best Books 2026 (all 150); Kirkus: Best Book Club Fiction of 2026; TIME: 100 Must-Read Books of 2026; Kirkus: Best Fiction of 2026 (full list page)
 - **The Palm House** — 4 lists: Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Books 2026 Top 10; The New Yorker: The Best Books of 2026 So Far; BBC Culture: 14 of the Best Books of 2026 So Far
-- **The Rise and Fall of the Artificial State** — 4 lists: Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Books 2026 Top 10; TIME: 100 Must-Read Books of 2026; The New Yorker: The Best Books of 2026 So Far
-- **The Rush** — 4 lists: TIME: 100 Must-Read Books of 2026; The New Yorker: The Best Books of 2026 So Far; Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Nonfiction 2026
-- **The Vanishing Family** (Robert Kolker) — 4 lists: TIME: 100 Must-Read Books of 2026; BookPage: The Best Nonfiction of 2026; The New Yorker: The Best Books of 2026 So Far; Amazon Editors: Best Books of 2026 (Top 20)
+- **The Song of Stork and Dromedary** — 4 lists: Publishers Weekly: Best Books 2026 (all 150); Kirkus: Best Fiction in Translation of 2026; Chicago Public Library: Top 10 Favorite Books of 2026; Kirkus: Best Fiction of 2026 (full list page)
 - **The Yahoo Boys** — 4 lists: TIME: 100 Must-Read Books of 2026; The New Yorker: The Best Books of 2026 So Far; Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Nonfiction 2026
-- **This Vast Enterprise: A New History of Lewis & Clark** — 4 lists: The New Yorker: The Best Books of 2026 So Far; Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Books 2026 Top 10; Barnes & Noble: Book of the Year 2026 (Whale Harbor)
 - **Tree of Knowledge** — 4 lists: TIME: 100 Must-Read Books of 2026; The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026; Electric Lit: Top 10 Poetry Collections of 2026
+- **Vigil** (George Saunders) — 4 lists: TIME: 100 Must-Read Books of 2026; Barnes & Noble: The Best Fiction Books of 2026; NPR: Staffers' Favorite Fiction of the Year So Far; Kirkus: Best Fiction of 2026 (full list page)
+- **We Were Forbidden** — 4 lists: Kirkus: Best Fiction in Translation of 2026; Barnes & Noble: The Best Fiction Books of 2026; The New Yorker: The Best Books of 2026 So Far; Kirkus: Best Fiction of 2026 (full list page)
 - **Whale Harbor** (Mary Beth Keane) — 4 lists: Amazon Editors: Best Books of 2026 (Top 20); BookPage: The Best Fiction of 2026; Barnes & Noble: Book of the Year 2026 (Whale Harbor); Barnes & Noble: The Best Fiction Books of 2026
+- **1873: The Rothschilds, the First Great Depression, and the Making of the Modern World** — 3 lists: Kirkus: Best Nonfiction of 2026 (full list page); Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Nonfiction 2026
 - **Air** (Fiction) — 3 lists: The New Yorker: The Best Books of 2026 So Far; The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
+- **American Scoundrel** (Kai Bird with Susan Goldmark) — 3 lists: TIME: 100 Must-Read Books of 2026; The Telegraph: The Best Books of 2026; Kirkus: Best Nonfiction of 2026 (full list page)
+- **Anita Brookner** — 3 lists: The Telegraph: The Best Books of 2026 (critics' picks); Kirkus: Best Nonfiction of 2026 (full list page); The Telegraph: The Best Books of 2026
+- **Brawler** (Lauren Groff) — 3 lists: TIME: 100 Must-Read Books of 2026; BookPage: The Best Fiction of 2026; Kirkus: Best Fiction of 2026 (full list page)
+- **Centroeuropa** — 3 lists: Kirkus: Best Fiction in Translation of 2026; Kirkus: Best Fiction of 2026 (full list page); National Book Awards 2026 Winners
 - **Country People** — 3 lists: Publishers Weekly: Best Books 2026 (all 150); Barnes & Noble: The Best Fiction Books of 2026; BBC Culture: 14 of the Best Books of 2026 So Far
-- **Eating Ashes** — 3 lists: Kirkus: Best Fiction in Translation of 2026; TIME: 100 Must-Read Books of 2026; The New Yorker: The Best Books of 2026 So Far
-- **End Times Fascism: And the Fight for the Living World** (Naomi Klein and Astra Taylor (Norton)) — 3 lists: Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Nonfiction 2026; Kirkus: Best of 2026 – Our Favorite Nonfiction
+- **Dangerous, Dirty, Violent, and Young** (Zayd Ayers Dohrn) — 3 lists: Chicago Public Library: Top 10 Favorite Books of 2026; The New Yorker: The Best Books of 2026 So Far; Kirkus: Best Nonfiction of 2026 (full list page)
+- **Days of Love and Rage** (Anand Gopal) — 3 lists: TIME: 100 Must-Read Books of 2026; The New Yorker: The Best Books of 2026 So Far; Kirkus: Best Nonfiction of 2026 (full list page)
 - **Endless Endings** (Science) — 3 lists: The New Yorker: The Best Books of 2026 So Far; The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **Etna** (Paul Yoon) — 3 lists: TIME: 100 Must-Read Books of 2026; Barnes & Noble: The Best Fiction Books of 2026; The New Yorker: The Best Books of 2026 So Far
 - **Famesick** (Lena Dunham) — 3 lists: TIME: 100 Must-Read Books of 2026; The New Yorker: The Best Books of 2026 So Far; Audible: The Best Audiobooks of 2026
+- **Here Where We Live Is Our Country: The Story of the Jewish Bund** — 3 lists: Kirkus: Best Nonfiction of 2026 (full list page); Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Nonfiction 2026
 - **Holding Lightning: The Life, Loves, and Art of Whitney Houston** (Emily Lordi (Mariner)) — 3 lists: BookPage: The Best Nonfiction of 2026; Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Nonfiction 2026
-- **Keeper of My Kin** (Ada Ferrer) — 3 lists: TIME: 100 Must-Read Books of 2026; BookPage: The Best Nonfiction of 2026; Kirkus: Best of 2026 – Our Favorite Nonfiction
-- **Kids, Wait Till You Hear This!** (Biography & memoir) — 3 lists: The New Yorker: The Best Books of 2026 So Far; The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
-- **Lost Lambs** (Madeline Cash) — 3 lists: TIME: 100 Must-Read Books of 2026; Barnes & Noble: The Best Fiction Books of 2026; The New Yorker: The Best Books of 2026 So Far
+- **Homebound** (Portia Elan) — 3 lists: Kirkus: Best of 2026 – Our Favorite Fiction; The New Yorker: The Best Books of 2026 So Far; Kirkus: Best Fiction of 2026 (full list page)
+- **If This Be Magic** (Daniel Hahn) — 3 lists: The New Yorker: The Best Books of 2026 So Far; Kirkus: Best Nonfiction of 2026 (full list page); Kirkus: Best of 2026 – Our Favorite Nonfiction
+- **In the Days of My Youth I Was Told What It Means to Be a Man** (Tom Junod) — 3 lists: TIME: 100 Must-Read Books of 2026; The New Yorker: The Best Books of 2026 So Far; Kirkus: Best Nonfiction of 2026 (full list page)
+- **Kings and Pawns: Jackie Robinson and Paul Robeson in America** — 3 lists: Kirkus: Best Nonfiction of 2026 (full list page); Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Nonfiction 2026
+- **Last Night in Brooklyn** (Xochitl Gonzalez) — 3 lists: TIME: 100 Must-Read Books of 2026; Barnes & Noble: The Best Fiction Books of 2026; Kirkus: Best Fiction of 2026 (full list page)
 - **Lázár: A Novel** (Fiction) — 3 lists: Barnes & Noble: The Best Fiction Books of 2026; The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **Man in the Mirror: Hope, Struggle, and Belonging in an American City** (Anand Giridharadas (Knopf)) — 3 lists: The New Yorker: The Best Books of 2026 So Far; Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Nonfiction 2026
-- **May We Feed the King** (Rebecca Perry) — 3 lists: TIME: 100 Must-Read Books of 2026; Barnes & Noble: The Best Fiction Books of 2026; The New Yorker: The Best Books of 2026 So Far
-- **Mazywood** — 3 lists: Publishers Weekly: Best Books 2026 (all 150); TIME: 100 Must-Read Books of 2026; Audible: The Best Audiobooks of 2026
 - **Nothing Random: Bennett Cerf and the Publishing House He Built** (Gayle Feldman (Random House)) — 3 lists: The New Yorker: The Best Books of 2026 So Far; Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Nonfiction 2026
 - **On the Calculation of Volume** — 3 lists: Kirkus: Best Fiction in Translation of 2026; TIME: 100 Must-Read Books of 2026; Kirkus: Best Fiction of 2026 (full list page)
 - **One Leg on Earth** — 3 lists: Publishers Weekly: Best Books 2026 (all 150); TIME: 100 Must-Read Books of 2026; Esquire: The Best Books of 2026 (So Far)
+- **Ply** (Hernan Diaz) — 3 lists: Kirkus: Best Book Club Fiction of 2026; Barnes & Noble: The Best Fiction Books of 2026; Kirkus: Best Fiction of 2026 (full list page)
+- **Python’s Kiss** — 3 lists: The New Yorker: The Best Books of 2026 So Far; Esquire: The Best Books of 2026 (So Far); Kirkus: Best Fiction of 2026 (full list page)
 - **Questions 27 & 28** (Karen Tei Yamashita) — 3 lists: The New Yorker: The Best Books of 2026 So Far; Esquire: The Best Books of 2026 (So Far); BBC Culture: 14 of the Best Books of 2026 So Far
+- **Score** — 3 lists: Publishers Weekly: Best Books 2026 (all 150); Kirkus: Best Fiction of 2026 (full list page); Publishers Weekly: Best Nonfiction 2026
 - **Small Town Girls: A Writer’s Memoir** (Jayne Anne Phillips (Knopf)) — 3 lists: The New Yorker: The Best Books of 2026 So Far; Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Nonfiction 2026
 - **Spawning Season: An Experiment in Queer Parenthood** (Joseph Osmundson (Bloomsbury)) — 3 lists: The New Yorker: The Best Books of 2026 So Far; Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Nonfiction 2026
 - **Still House in the Desert: An Eco-Contemplation** — 3 lists: Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Poetry 2026; National Book Awards 2026 Winners
 - **Sunrise** (Téa Obreht) — 3 lists: TIME: 100 Must-Read Books of 2026; Barnes & Noble: The Best Fiction Books of 2026; Esquire: The Best Books of 2026 (So Far)
 - **The Absent Woman** (Biography & memoir) — 3 lists: The New Yorker: The Best Books of 2026 So Far; The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
+- **The AGI Chronicles: The Inside Story of the Race to Create an Artificial Superintelligence** — 3 lists: Kirkus: Best Nonfiction of 2026 (full list page); Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Books 2026 Top 10
 - **The Calamity Club: A Novel** (Kathryn Stockett) — 3 lists: TIME: 100 Must-Read Books of 2026; Barnes & Noble: Book of the Year 2026 (Whale Harbor); Barnes & Noble: The Best Fiction Books of 2026
-- **The Complete Stories** (Ingeborg Bachmann; tr. Philip Boehm & Tess Lewis) — 3 lists: Kirkus: Best Fiction in Translation of 2026; The New Yorker: The Best Books of 2026 So Far; Kirkus: Best Fiction of 2026 (full list page)
-- **The Frenchmen: Or, My Life in Theory** (Emily Eakin (Penguin Press)) — 3 lists: The New Yorker: The Best Books of 2026 So Far; Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Nonfiction 2026
+- **The Complete Stories** — 3 lists: Kirkus: Best Fiction in Translation of 2026; The New Yorker: The Best Books of 2026 So Far; Kirkus: Best Fiction of 2026 (full list page)
+- **The Danger to Be Sane: Creativity and the Eccentric Mind** (Rosa Montero ; translated by Lindsey Ford) — 3 lists: Kirkus: Best Nonfiction of 2026 (full list page); Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Books 2026 Top 10
 - **The Life You Want** (Ideas) — 3 lists: The New Yorker: The Best Books of 2026 So Far; The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **The News from Dublin** (Fiction) — 3 lists: The New Yorker: The Best Books of 2026 So Far; The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
-- **The Nightingales** (Emil Wilson (Avid Reader)) — 3 lists: Amazon Editors: Best Books of 2026 (Top 20); Publishers Weekly: Best Books 2026 (all 150); BookPage: The Best Fiction of 2026
-- **The Occidental Book of the Dead** — 3 lists: Publishers Weekly: Best Books 2026 (all 150); Kirkus: Best Book Club Fiction of 2026; TIME: 100 Must-Read Books of 2026
+- **The Savage Mind** (David Treuer) — 3 lists: TIME: 100 Must-Read Books of 2026; BookPage: The Best Nonfiction of 2026; Kirkus: Best Nonfiction of 2026 (full list page)
 - **The Shampoo Effect** (Jenny Jackson) — 3 lists: TIME: 100 Must-Read Books of 2026; Barnes & Noble: The Best Fiction Books of 2026; The New Yorker: The Best Books of 2026 So Far
-- **The Song of Stork and Dromedary** — 3 lists: Publishers Weekly: Best Books 2026 (all 150); Kirkus: Best Fiction in Translation of 2026; Chicago Public Library: Top 10 Favorite Books of 2026
-- **Vigil** (George Saunders) — 3 lists: TIME: 100 Must-Read Books of 2026; Barnes & Noble: The Best Fiction Books of 2026; NPR: Staffers' Favorite Fiction of the Year So Far
+- **The True Confessions of First Lady Freeman** (Deesha Philyaw) — 3 lists: TIME: 100 Must-Read Books of 2026; Barnes & Noble: The Best Fiction Books of 2026; Kirkus: Best Fiction of 2026 (full list page)
+- **The Village on the Edge of the World** — 3 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026; Kirkus: Best Nonfiction of 2026 (full list page)
+- **They Stole a City** (Lauren Collins) — 3 lists: BookPage: The Best Nonfiction of 2026; The New Yorker: The Best Books of 2026 So Far; Kirkus: Best Nonfiction of 2026 (full list page)
 - **Villa Coco** — 3 lists: BookPage: The Best Fiction of 2026; Barnes & Noble: The Best Fiction Books of 2026; NPR: Staffers' Favorite Fiction of the Year So Far
-- **We Were Forbidden** (Jacqueline Harpman; tr. Ros Schwartz) — 3 lists: Kirkus: Best Fiction in Translation of 2026; Barnes & Noble: The Best Fiction Books of 2026; The New Yorker: The Best Books of 2026 So Far
-- **1873: The Rothschilds, the First Great Depression, and the Making of the Modern World** (Liaquat Ahamed (Penguin Press)) — 2 lists: Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Nonfiction 2026
+- **Weimar** — 3 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026; Kirkus: Best Nonfiction of 2026 (full list page)
+- **Whidbey** (T Kira Madden) — 3 lists: TIME: 100 Must-Read Books of 2026; Esquire: The Best Books of 2026 (So Far); Kirkus: Best Fiction of 2026 (full list page)
 - **A History of the Novel in Britain** (Ideas) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
+- **A Private Man** (Stephanie Sy-Quia) — 2 lists: Kirkus: Best of 2026 – Our Favorite Fiction; Kirkus: Best Fiction of 2026 (full list page)
 - **A Splintering** (Dur e Aziz Amna) — 2 lists: Kirkus: Best Book Club Fiction of 2026; Kirkus: Best Fiction of 2026 (full list page)
 - **A Violent Masterpiece** (Jordan Harper (Mulholland)) — 2 lists: Publishers Weekly: Best Books 2026 (all 150); The New Yorker: The Best Books of 2026 So Far
 - **A Year with Gilbert White: The First Great Nature Writer** (Jenny Uglow (Farrar, Straus and Giroux)) — 2 lists: Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Nonfiction 2026
+- **All Them Dogs** (Djamel White) — 2 lists: The New Yorker: The Best Books of 2026 So Far; Kirkus: Best Fiction of 2026 (full list page)
+- **All This Want (and I Can’t Get None )** (T Clark) — 2 lists: Electric Lit: Top 10 Short Story Collections of 2026; Kirkus: Best Fiction of 2026 (full list page)
 - **America, A Love Story** — 2 lists: TIME: 100 Must-Read Books of 2026; Electric Lit: Top 10 Poetry Collections of 2026
-- **American Scoundrel** (Kai Bird with Susan Goldmark) — 2 lists: TIME: 100 Must-Read Books of 2026; The Telegraph: The Best Books of 2026
 - **Anger Is Only a Shadow** (Elizabeth Acevedo) — 2 lists: Audible: The Best Audiobooks of 2026; Kirkus Prize 2026 Winners
-- **Anita Brookner** (Biography & memoir) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
+- **Babylon, South Dakota** (Tom Lin) — 2 lists: BookPage: The Best Fiction of 2026; Kirkus: Best Fiction of 2026 (full list page)
 - **Backtalker** (Kimberlé Williams Crenshaw) — 2 lists: TIME: 100 Must-Read Books of 2026; BookPage: The Best Nonfiction of 2026
 - **Bad Words** (Ríoghnach Robinson (St. Martin’s)) — 2 lists: Amazon Editors: Best Books of 2026 (Top 20); Publishers Weekly: Best Books 2026 (all 150)
 - **Be Easy: New and Selected Poems** (Adrian Matejka (Liveright)) — 2 lists: Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Poetry 2026
 - **Becoming Martian** (Science) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
+- **Beginning Middle End** (Valeria Luiselli) — 2 lists: The New Yorker: The Best Books of 2026 So Far; Kirkus: Best Fiction of 2026 (full list page)
+- **Between the River and the Railroad Tracks** (Nicole R. Fleetwood) — 2 lists: BookPage: The Best Nonfiction of 2026; Kirkus: Best Nonfiction of 2026 (full list page)
 - **Big Little Truths** — 2 lists: Amazon Editors: Best Books of 2026 (Top 20); Barnes & Noble: The Best Fiction Books of 2026
 - **Birdlands** (Sport & children's (section labels unclear)) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **Blow by Blow** (Music) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
-- **Brawler** (Lauren Groff) — 2 lists: TIME: 100 Must-Read Books of 2026; BookPage: The Best Fiction of 2026
 - **Can We Be Rich Again?** (Politics) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **Can't Get You Out Of My Head** (Music) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
-- **Centroeuropa** — 2 lists: Kirkus: Best Fiction in Translation of 2026; National Book Awards 2026 Winners
 - **Chasing Aliens** (Science) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **Collected Poems** (Poetry) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
+- **Countertenor** (Anthony Roth Costanzo) — 2 lists: Kirkus: Best of 2026 – Our Favorite Nonfiction; Kirkus: Best Nonfiction of 2026 (full list page)
 - **Country of Lords: Neo-Aristocrats, Social Darwinists, Tech Utopians, and the Long Fight Against Equality in America** (Kim Phillips-Fein (Norton)) — 2 lists: Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Nonfiction 2026
 - **Dad Had a Bad Day** (Fiction) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
-- **Dangerous, Dirty, Violent, and Young** — 2 lists: Chicago Public Library: Top 10 Favorite Books of 2026; The New Yorker: The Best Books of 2026 So Far
-- **Days of Love and Rage** (Anand Gopal) — 2 lists: TIME: 100 Must-Read Books of 2026; The New Yorker: The Best Books of 2026 So Far
 - **Days of Miracle and Wonder** (Music) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
+- **Death of the Soccer God** (Dimitry Elias Léger) — 2 lists: The New Yorker: The Best Books of 2026 So Far; Kirkus: Best Fiction of 2026 (full list page)
 - **Depraved** (Ideas) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **Do Not Go Gentle** (Ideas) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **Dooneen** (Keith Ridgway (New Directions)) — 2 lists: Publishers Weekly: Best Books 2026 (all 150); The New Yorker: The Best Books of 2026 So Far
 - **Egrets, While War** (Poetry) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **Elizabeth II** (Biography & memoir) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **Enchantment** (Crime) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
+- **Every Exit Brings You Home** (Naeem Murr) — 2 lists: Kirkus: Best Book Club Fiction of 2026; Kirkus: Best Fiction of 2026 (full list page)
 - **Exit Stalin** (History) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **Faces** (Ideas) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **Famous Men** (Julie Buntin) — 2 lists: Kirkus: Best Book Club Fiction of 2026; Kirkus: Best Fiction of 2026 (full list page)
@@ -5811,25 +6058,23 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **Grandad's World** (Sport & children's (section labels unclear)) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **Guilty Pleasure** (Ideas) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **Haunting the Black Air** (Poetry) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
-- **Here Where We Live Is Our Country: The Story of the Jewish Bund** (Molly Crabapple (One World)) — 2 lists: Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Nonfiction 2026
 - **Hiroshima, 8:15** (Biography & memoir) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
-- **Homebound** (Portia Elan) — 2 lists: Kirkus: Best of 2026 – Our Favorite Fiction; The New Yorker: The Best Books of 2026 So Far
 - **Horses** (Jake Skeets) — 2 lists: TIME: 100 Must-Read Books of 2026; Electric Lit: Top 10 Poetry Collections of 2026
+- **How Flowers Made Our World** (David George Haskell) — 2 lists: BookPage: The Best Nonfiction of 2026; Kirkus: Best Nonfiction of 2026 (full list page)
+- **How To Fake It in Society** (KJ Charles) — 2 lists: Kirkus: Best of 2026 – Our Favorite Fiction; Kirkus: Best Fiction of 2026 (full list page)
 - **How to Kill a Language** (Ideas) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **Howl** (Fiction) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
+- **HUNA** — 2 lists: Kirkus: Best Nonfiction of 2026 (full list page); National Book Awards 2026 Winners
 - **I Eat the Stars: How to Live Fully and Beautifully in a Collapsing World** (Sarah Wilson (Penguin Life)) — 2 lists: Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Nonfiction 2026
-- **If This Be Magic** — 2 lists: The New Yorker: The Best Books of 2026 So Far; Kirkus: Best of 2026 – Our Favorite Nonfiction
 - **Imitation Games** (Ideas) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
-- **In the Days of My Youth I Was Told What It Means to Be a Man** (Tom Junod) — 2 lists: TIME: 100 Must-Read Books of 2026; The New Yorker: The Best Books of 2026 So Far
 - **Intifadas** (Edward Salem (Sarabande)) — 2 lists: Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Poetry 2026
 - **Island at the Edge of the World** (Mike Pitts) — 2 lists: The New Yorker: The Best Books of 2026 So Far; Esquire: The Best Books of 2026 (So Far)
 - **It Will Come Back to You** — 2 lists: Publishers Weekly: Best Books 2026 (all 150); TIME: 100 Must-Read Books of 2026
 - **Jan Morris** (Biography & memoir) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **Keeping the Dream Alive** (Politics) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **Killing Spree** (Poetry) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
-- **Kings and Pawns: Jackie Robinson and Paul Robeson in America** (Howard Bryant (Mariner)) — 2 lists: Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Nonfiction 2026
 - **Kitty and Mary** (Sport & children's (section labels unclear)) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
-- **Last Night in Brooklyn** (Xochitl Gonzalez) — 2 lists: TIME: 100 Must-Read Books of 2026; Barnes & Noble: The Best Fiction Books of 2026
+- **Korean Messiah** (Jonathan Cheng) — 2 lists: The New Yorker: The Best Books of 2026 So Far; Kirkus: Best Nonfiction of 2026 (full list page)
 - **Leaving Home: A Memoir in Full Colour** (Mark Haddon (Doubleday)) — 2 lists: Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Nonfiction 2026
 - **Lifeboat at the End of the World** (Politics) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **Little Blue Dot** (History) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
@@ -5837,52 +6082,63 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **Mad Tom's Rising** (History) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **Magnifica Humanitas** (Ideas) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **Metropolitans: New York Baseball, Class Struggle, and the People’s Team** (A.M. Gittlitz (Astra House)) — 2 lists: Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Nonfiction 2026
+- **Mother Tongue** (Sara Nović) — 2 lists: TIME: 100 Must-Read Books of 2026; Kirkus: Best Nonfiction of 2026 (full list page)
 - **Mouse Goes to the Mountains** (Sport & children's (section labels unclear)) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **Mussolini's Ghost** (History) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **Nary a Horse Left Standing** (Science) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **Nebraska** (Monica Datta (Astra House)) — 2 lists: Publishers Weekly: Best Books 2026 (all 150); The New Yorker: The Best Books of 2026 So Far
 - **Neptune’s Fortune** (History) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **New and Selected Poems** (Poetry) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
+- **Nightjar** (Emily Ruskovich) — 2 lists: Electric Lit: Top 10 Short Story Collections of 2026; Kirkus: Best Fiction of 2026 (full list page)
 - **No Second Chances** (Politics) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **On Another Planet They Can Save Me** (Biography & memoir) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
+- **On Witness and Respair** (Jesmyn Ward) — 2 lists: TIME: 100 Must-Read Books of 2026; Kirkus: Best Nonfiction of 2026 (full list page)
 - **One Morning in March** (History) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **Only Sing** (Poetry) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **Our Arab: On Longing, Belonging, and Hope** (Zaina Arafat (Little, Brown)) — 2 lists: Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Nonfiction 2026
 - **Outlawed** (Ideas) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **Palaces of the Crow** — 2 lists: Publishers Weekly: Best Books 2026 (all 150); Esquire: The Best Books of 2026 (So Far)
-- **Ply** (Hernan Diaz) — 2 lists: Kirkus: Best Book Club Fiction of 2026; Barnes & Noble: The Best Fiction Books of 2026
+- **Presence** (Erin Maglaque) — 2 lists: The New Yorker: The Best Books of 2026 So Far; Kirkus: Best Nonfiction of 2026 (full list page)
+- **PROFILES IN COWARDICE** (Jacob Weisberg) — 2 lists: Kirkus: Best Nonfiction of 2026 (full list page); Kirkus: Best of 2026 – Our Favorite Nonfiction
 - **Promise Me, America** (Politics) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
-- **Python’s Kiss** (Louise Erdrich) — 2 lists: The New Yorker: The Best Books of 2026 So Far; Esquire: The Best Books of 2026 (So Far)
 - **Q: The Hidden Power of Questions in a World That Wants Answers** (Lani Watson (Viking)) — 2 lists: Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Nonfiction 2026
 - **Queen Elizabeth II** (Biography & memoir) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
+- **Radical Duke** (Danielle Allen) — 2 lists: The New Yorker: The Best Books of 2026 So Far; Kirkus: Best Nonfiction of 2026 (full list page)
+- **Rasputin Swims the Potomac** (Ben Fountain) — 2 lists: Kirkus: Best Book Club Fiction of 2026; Kirkus: Best Fiction of 2026 (full list page)
+- **Rebel English Academy** (Mohammed Hanif) — 2 lists: NPR: Staffers' Favorite Fiction of the Year So Far; Kirkus: Best Fiction of 2026 (full list page)
 - **Rock Goes to College** (Music) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
-- **Score** — 2 lists: Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Nonfiction 2026
+- **Sacred Betrayal** (Aliza Luft) — 2 lists: The Telegraph: The Best Books of 2026; Kirkus: Best Nonfiction of 2026 (full list page)
+- **Scale Boy** (Patrice Nganang) — 2 lists: The New Yorker: The Best Books of 2026 So Far; Kirkus: Best Nonfiction of 2026 (full list page)
 - **Seasons of Fury** (Rozina Ali) — 2 lists: TIME: 100 Must-Read Books of 2026; The New Yorker: The Best Books of 2026 So Far
 - **Self-Help From the Middle Ages** (Ideas) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **Sisters in Yellow** — 2 lists: Publishers Weekly: Best Books 2026 (all 150); The New Yorker: The Best Books of 2026 So Far
 - **SolidGoldMagikarp** (Science) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **Stations: A Novel** — 2 lists: Barnes & Noble: The Best Fiction Books of 2026; The New Yorker: The Best Books of 2026 So Far
+- **Stay Alive** (Ian Buruma) — 2 lists: The New Yorker: The Best Books of 2026 So Far; Kirkus: Best Nonfiction of 2026 (full list page)
 - **Staying Still** (Hieu Minh Nguyen) — 2 lists: TIME: 100 Must-Read Books of 2026; Electric Lit: Top 10 Poetry Collections of 2026
 - **Stealing Hitler's Rocket** (History) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **Swan Song** (Biography & memoir) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **Swirl & Vortex** (Larry Levis, edited by David St. John (Graywolf)) — 2 lists: Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Poetry 2026
 - **Taipei Story** (R.F. Kuang) — 2 lists: TIME: 100 Must-Read Books of 2026; Barnes & Noble: The Best Fiction Books of 2026
+- **Take What You Can** (Naima Coster) — 2 lists: TIME: 100 Must-Read Books of 2026; Kirkus: Best Fiction of 2026 (full list page)
 - **The Adventures of Portly the Otter** (Sport & children's (section labels unclear)) — 2 lists: The Telegraph: The Best Books of 2026; The Telegraph: The Best Books of 2026 (critics' picks)
-- **The AGI Chronicles: The Inside Story of the Race to Create an Artificial Superintelligence** (Kevin Roose (Farrar, Straus and Giroux)) — 2 lists: Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Books 2026 Top 10
 - **The Aristocracy** (Crime) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
+- **The Black Shield** (Wilbert L. Cooper) — 2 lists: The New Yorker: The Best Books of 2026 So Far; Kirkus: Best Nonfiction of 2026 (full list page)
 - **The Blitz Sisters** (Sport & children's (section labels unclear)) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
+- **The Brightness** (Chad Harbach) — 2 lists: Kirkus: Best Book Club Fiction of 2026; Kirkus: Best Fiction of 2026 (full list page)
 - **The Cauldron** (History) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
+- **The Cruelest Game** (Matthew Futterman) — 2 lists: The Telegraph: The Best Books of 2026; Kirkus: Best Nonfiction of 2026 (full list page)
 - **The Cultural Marxism Conspiracy** (Ideas) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
-- **The Danger to Be Sane: Creativity and the Eccentric Mind** — 2 lists: Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Books 2026 Top 10
 - **The Deadly Inheritance of Everest Macdonald** (Crime) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **The Disease of Boredom** (Ideas) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **The Distance of a Shout** (Poetry) — 2 lists: The Telegraph: The Best Books of 2026; The Telegraph: The Best Books of 2026 (critics' picks)
 - **The Dreaded Pox** (History) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **The Drowning Place** (Crime) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **The Fight of Our Lives: AIDS in America** (Gabriel Duckels and David Levithan (Knopf)) — 2 lists: Publishers Weekly: Best Books 2026 (all 150); National Book Awards 2026 Winners
+- **The Four Wives and Five Deaths of Richard Milford** (Nafissa Thompson-Spires) — 2 lists: Kirkus: Best of 2026 – Our Favorite Fiction; Kirkus: Best Fiction of 2026 (full list page)
 - **The Frenzy** (Joyce Carol Oates (Hogarth)) — 2 lists: Publishers Weekly: Best Books 2026 (all 150); The New Yorker: The Best Books of 2026 So Far
 - **The Full English** (Ideas) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
-- **The Future Is Peace** — 2 lists: Kirkus: Best Nonfiction of 2026 (full list page); Kirkus: Best of 2026 – Our Favorite Nonfiction
+- **THE FUTURE IS PEACE** (Aziz Abu Sarah & Maoz Inon) — 2 lists: Kirkus: Best Nonfiction of 2026 (full list page); Kirkus: Best of 2026 – Our Favorite Nonfiction
 - **The Ghost of the Mountains** (Science) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **The Infinity Machine** — 2 lists: The New Yorker: The Best Books of 2026 So Far; NPR: Staffers' Favorite Nonfiction of the Year So Far
 - **The Kiss** (Ideas) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
@@ -5891,7 +6147,9 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **The Mattering Instinct: How Our Deepest Longing Drives Us and Divides Us** (Rebecca Newberger Goldstein (Liveright)) — 2 lists: Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Nonfiction 2026
 - **The Medieval Guide to Healthy Living** (History) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **The Messenger** (Sport & children's (section labels unclear)) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
+- **The Monroe Girls** — 2 lists: Kirkus: Best Fiction in Translation of 2026; Kirkus: Best Fiction of 2026 (full list page)
 - **The Murder Planner** (Crime) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
+- **The Nerd Reich** (Gil Durán) — 2 lists: TIME: 100 Must-Read Books of 2026; Kirkus: Best Nonfiction of 2026 (full list page)
 - **The New Dark Age** (Ideas) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **The Nord Stream Conspiracy** (Politics) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **The Oak and The Larch** (Science) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
@@ -5902,17 +6160,16 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **The Quest for El Dorado** (History) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **The Renoir Girls** (Catherine Ostler) — 2 lists: TIME: 100 Must-Read Books of 2026; The New Yorker: The Best Books of 2026 So Far
 - **The Renovation** (Kenan Orhan) — 2 lists: TIME: 100 Must-Read Books of 2026; The New Yorker: The Best Books of 2026 So Far
-- **The Savage Mind** (David Treuer) — 2 lists: TIME: 100 Must-Read Books of 2026; BookPage: The Best Nonfiction of 2026
 - **The Sceptic Isle** (History) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
-- **The True Confessions of First Lady Freeman** (Deesha Philyaw) — 2 lists: TIME: 100 Must-Read Books of 2026; Barnes & Noble: The Best Fiction Books of 2026
+- **The Theater** (James Verini) — 2 lists: NPR: Staffers' Favorite Nonfiction of the Year So Far; Kirkus: Best Nonfiction of 2026 (full list page)
 - **The Vanishing Girl of Kabul** (Biography & memoir) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
-- **The Village on the Edge of the World** (Biography & memoir) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **The Wall Dancers** (Yi-Ling Liu) — 2 lists: TIME: 100 Must-Read Books of 2026; The New Yorker: The Best Books of 2026 So Far
+- **The War Within a War** (Wil Haygood) — 2 lists: The New Yorker: The Best Books of 2026 So Far; Kirkus: Best Nonfiction of 2026 (full list page)
 - **they** (Fiction) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
-- **They Stole a City** — 2 lists: BookPage: The Best Nonfiction of 2026; The New Yorker: The Best Books of 2026 So Far
 - **This Book May Cause Side Effects** (Science) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **This Cursed Beautiful Land** — 2 lists: The New Yorker: The Best Books of 2026 So Far; Amazon Editors: Best Books of 2026 (Top 20)
 - **This Is a Door** — 2 lists: Publishers Weekly: Best Books 2026 (all 150); Barnes & Noble: Book of the Year 2026 (Whale Harbor)
+- **This Is Not About Us** (Allegra Goodman) — 2 lists: TIME: 100 Must-Read Books of 2026; Kirkus: Best Fiction of 2026 (full list page)
 - **This, My Second Life** (Fiction) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **To God** (Esther Yi) — 2 lists: The New Yorker: The Best Books of 2026 So Far; Electric Lit: Top 10 Short Story Collections of 2026
 - **To the Edge of the World** (History) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
@@ -5921,23 +6178,25 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **Valley of Death** (Ideas) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **Virtue and Rosalind** (Fiction) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **Vocal Break** (Music) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
+- **Volga Blues** — 2 lists: The New Yorker: The Best Books of 2026 So Far; Kirkus: Best Nonfiction of 2026 (full list page)
 - **Waiting on a Friend** (Natalie Adler) — 2 lists: TIME: 100 Must-Read Books of 2026; Barnes & Noble: The Best Fiction Books of 2026
-- **Weimar** (History) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
+- **West of Loveland** (Tom Drury) — 2 lists: Kirkus: Best Book Club Fiction of 2026; Kirkus: Best Fiction of 2026 (full list page)
 - **What If Reform Wins** (Politics) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
+- **What We Are Seeking** (Cameron Reed) — 2 lists: The New Yorker: The Best Books of 2026 So Far; Kirkus: Best Fiction of 2026 (full list page)
 - **When the World Sleeps: Stories, Words, and Wounds of Palestine** — 2 lists: Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Nonfiction 2026
 - **Where the Music Had to Go** (Music) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
-- **Whidbey** (T Kira Madden) — 2 lists: TIME: 100 Must-Read Books of 2026; Esquire: The Best Books of 2026 (So Far)
+- **You Won’t Get Free of It** (Rachel Aviv) — 2 lists: The New Yorker: The Best Books of 2026 So Far; Kirkus: Best Nonfiction of 2026 (full list page)
 - **Young Man in a Hurry** (Politics) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 
 ### Albums
 
 - **Train on the Island** (Aldous Harding) — 11 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Album of the Year: 2026 Critic Year-End List Aggregate; Rolling Stone: Best Albums of 2026 So Far; Pitchfork: The Best Music of 2026 So Far; Stereogum: 50 Best Albums of 2026 So Far; Paste: 50 Best Albums of 2026 So Far; Mojo: The Best Albums of 2026... So Far; NME: The Best Albums of 2026... So Far; Clash: The 60 Best Albums of 2026 (So Far); BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
+- **An Undying Love for a Burning World** (Neurosis) — 9 lists: Decibel: Top 40 Albums of 2026; Album of the Year: 2026 Critic Year-End List Aggregate; Rolling Stone: Best Albums of 2026 So Far; Pitchfork: The Best Music of 2026 So Far; Stereogum: 50 Best Albums of 2026 So Far; Consequence: 33 Best Albums of 2026 So Far; Paste: 50 Best Albums of 2026 So Far; NPR/MPR: Best Albums of 2026 So Far; BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
 - **Inferno** — 9 lists: Rough Trade: Albums of the Year 2026; Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Album of the Year: 2026 Critic Year-End List Aggregate; Rolling Stone: Best Albums of 2026 So Far; Pitchfork: The Best Music of 2026 So Far; Mojo: The Best Albums of 2026... So Far; Clash: The 60 Best Albums of 2026 (So Far); BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
 - **My New Band Believe** (My New Band Believe) — 9 lists: Rough Trade: Albums of the Year 2026; Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Pitchfork: The Best Music of 2026 So Far; Stereogum: 50 Best Albums of 2026 So Far; Paste: 50 Best Albums of 2026 So Far; The Guardian: The Best Albums of 2026 So Far; NME: The Best Albums of 2026... So Far; Clash: The 60 Best Albums of 2026 (So Far); BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
 - **Nothing’s About to Happen to Me** (Mitski) — 9 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Billboard: 50 Best Albums of 2026 So Far; Stereogum: 50 Best Albums of 2026 So Far; Consequence: 33 Best Albums of 2026 So Far; The Guardian: The Best Albums of 2026 So Far; NME: The Best Albums of 2026... So Far; Clash: The 60 Best Albums of 2026 (So Far); BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
 - **Singin’ to an Empty Chair** (Ratboys) — 9 lists: Rough Trade: Albums of the Year 2026; Uncut: 80 Best Albums of 2026 (via Year-End Lists); Billboard: 50 Best Albums of 2026 So Far; Rolling Stone: Best Albums of 2026 So Far; Pitchfork: The Best Music of 2026 So Far; Stereogum: 50 Best Albums of 2026 So Far; Consequence: 33 Best Albums of 2026 So Far; Paste: 50 Best Albums of 2026 So Far; BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
 - **Vol. II** (Angine de Poitrine) — 9 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Album of the Year: 2026 Critic Year-End List Aggregate; Billboard: 50 Best Albums of 2026 So Far; Rolling Stone: Best Albums of 2026 So Far; Pitchfork: The Best Music of 2026 So Far; The Guardian: The Best Albums of 2026 So Far; BrooklynVegan: Our 50 Favorite Albums of 2026 So Far; Polaris Music Prize 2026 Winner
-- **An Undying Love for a Burning World** (Neurosis) — 8 lists: Album of the Year: 2026 Critic Year-End List Aggregate; Rolling Stone: Best Albums of 2026 So Far; Pitchfork: The Best Music of 2026 So Far; Stereogum: 50 Best Albums of 2026 So Far; Consequence: 33 Best Albums of 2026 So Far; Paste: 50 Best Albums of 2026 So Far; NPR/MPR: Best Albums of 2026 So Far; BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
 - **My Days of 58** (Bill Callahan) — 8 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Album of the Year: 2026 Critic Year-End List Aggregate; Rolling Stone: Best Albums of 2026 So Far; Stereogum: 50 Best Albums of 2026 So Far; Paste: 50 Best Albums of 2026 So Far; Mojo: The Best Albums of 2026... So Far; BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
 - **Secret Love** (Dry Cleaning) — 8 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Album of the Year: 2026 Critic Year-End List Aggregate; Rolling Stone: Best Albums of 2026 So Far; Paste: 50 Best Albums of 2026 So Far; Mojo: The Best Albums of 2026... So Far; The Guardian: The Best Albums of 2026 So Far; Clash: The 60 Best Albums of 2026 (So Far)
 - **Sexistential** (Robyn) — 8 lists: Billboard: 50 Best Albums of 2026 So Far; Rolling Stone: Best Albums of 2026 So Far; Stereogum: 50 Best Albums of 2026 So Far; Consequence: 33 Best Albums of 2026 So Far; Paste: 50 Best Albums of 2026 So Far; The Guardian: The Best Albums of 2026 So Far; NME: The Best Albums of 2026... So Far; BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
@@ -5992,6 +6251,7 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **Hippies, Thugs and Heroes** (Richard Thompson) — 3 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Album of the Year: 2026 Critic Year-End List Aggregate
 - **It’s Been Awful** (Isaiah Rashad) — 3 lists: Consequence: 33 Best Albums of 2026 So Far; NME: The Best Albums of 2026... So Far; Clash: The 60 Best Albums of 2026 (So Far)
 - **Limbo** (Namasenda) — 3 lists: Stereogum: 50 Best Albums of 2026 So Far; Consequence: 33 Best Albums of 2026 So Far; Paste: 50 Best Albums of 2026 So Far
+- **Love Is Not Enough** (Converge) — 3 lists: Decibel: Top 40 Albums of 2026; Consequence: 33 Best Albums of 2026 So Far; Clash: The 60 Best Albums of 2026 (So Far)
 - **Masquerade** (Cardinals) — 3 lists: Rolling Stone: Best Albums of 2026 So Far; Stereogum: 50 Best Albums of 2026 So Far; BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
 - **My Name** (Tony Bontana) — 3 lists: Paste: 50 Best Albums of 2026 So Far; The Guardian: The Best Albums of 2026 So Far; Clash: The 60 Best Albums of 2026 (So Far)
 - **new avatar** (Kelela) — 3 lists: Album of the Year: 2026 Critic Year-End List Aggregate; Pitchfork: The Best Music of 2026 So Far; Clash: The 60 Best Albums of 2026 (So Far)
@@ -6010,6 +6270,7 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **Amaro** (Bibi Club) — 2 lists: BrooklynVegan: Our 50 Favorite Albums of 2026 So Far; Polaris Music Prize 2026 Winner
 - **Apples for Isaac** (Echo & the Bunnymen) — 2 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists)
 - **Archives** (Vanishing Twin) — 2 lists: Rough Trade: Albums of the Year 2026; Album of the Year: 2026 Critic Year-End List Aggregate
+- **Beckoning the Void of Eternal Silence** (Funebrarum) — 2 lists: Decibel: Top 40 Albums of 2026; Album of the Year: 2026 Critic Year-End List Aggregate
 - **Before the World Blows** — 2 lists: Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Album of the Year: 2026 Critic Year-End List Aggregate
 - **bitknot** — 2 lists: Pitchfork: The Best Music of 2026 So Far; Stereogum: 50 Best Albums of 2026 So Far
 - **Blame the Clown** (Twisted Teens) — 2 lists: Pitchfork: The Best Music of 2026 So Far; Paste: 50 Best Albums of 2026 So Far
@@ -6020,6 +6281,7 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **Dandelion** (Ella Langley) — 2 lists: Billboard: 50 Best Albums of 2026 So Far; Rolling Stone: Best Albums of 2026 So Far
 - **Detached From The Rest of You** (Loraine James) — 2 lists: Paste: 50 Best Albums of 2026 So Far; Clash: The 60 Best Albums of 2026 (So Far)
 - **Detour** (Kim Petras) — 2 lists: Billboard: 50 Best Albums of 2026 So Far; Paste: 50 Best Albums of 2026 So Far
+- **Devotion** (The Keening) — 2 lists: Decibel: Top 40 Albums of 2026; Album of the Year: 2026 Critic Year-End List Aggregate
 - **Distracted** (Thundercat) — 2 lists: The Guardian: The Best Albums of 2026 So Far; Clash: The 60 Best Albums of 2026 (So Far)
 - **Donde Es El After?** — 2 lists: Billboard: 50 Best Albums of 2026 So Far; Rolling Stone: Best Albums of 2026 So Far
 - **Fold** (Jump Source) — 2 lists: Stereogum: 50 Best Albums of 2026 So Far; Clash: The 60 Best Albums of 2026 (So Far)
@@ -6034,11 +6296,12 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **Kiss All the Time. Disco, Occasionally** (Harry Styles) — 2 lists: Billboard: 50 Best Albums of 2026 So Far; Rolling Stone: Best Albums of 2026 So Far
 - **Laughter in Summer** (Beverly Glenn-Copeland) — 2 lists: Pitchfork: The Best Music of 2026 So Far; Polaris Music Prize 2026 Winner
 - **Lavender Networks** (Fire-Toolz) — 2 lists: Stereogum: 50 Best Albums of 2026 So Far; Paste: 50 Best Albums of 2026 So Far
-- **Love Is Not Enough** (Converge) — 2 lists: Consequence: 33 Best Albums of 2026 So Far; Clash: The 60 Best Albums of 2026 (So Far)
+- **Looking Glass Hymnal Blue** (The Silver) — 2 lists: Decibel: Top 40 Albums of 2026; BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
 - **Luck… or Something** (Hilary Duff) — 2 lists: Billboard: 50 Best Albums of 2026 So Far; Rolling Stone: Best Albums of 2026 So Far
 - **Maid of Honour** (Drake) — 2 lists: Rolling Stone: Best Albums of 2026 So Far; Pitchfork: The Best Music of 2026 So Far
 - **Massive Champion** (Getdown Services) — 2 lists: Rough Trade: Albums of the Year 2026; Mojo: The 75 Best Albums of 2026 (via Year-End Lists)
 - **Music, Fashion, Film** — 2 lists: Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Pitchfork: The Best Music of 2026 So Far
+- **Necropalace** (Worm) — 2 lists: Decibel: Top 40 Albums of 2026; BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
 - **Peanut** (Otto Benson) — 2 lists: Pitchfork: The Best Music of 2026 So Far; The Guardian: The Best Albums of 2026 So Far
 - **Perfecth** (Queens of the Stone Age) — 2 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists)
 - **Philadelphia's Been Good to Me** (Kurt Vile) — 2 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists)
@@ -6052,6 +6315,9 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **Spontaneous Music Live** (SML) — 2 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists)
 - **The Color of Rain** — 2 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Pitchfork: The Best Music of 2026 So Far
 - **The Gem** (Julia Jacklin) — 2 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists)
+- **The Ghost of a Future Dead** (At the Gates) — 2 lists: Decibel: Top 40 Albums of 2026; Album of the Year: 2026 Critic Year-End List Aggregate
+- **The Last Nail** (Disfear) — 2 lists: Decibel: Top 40 Albums of 2026; Album of the Year: 2026 Critic Year-End List Aggregate
+- **The Light That Keeps Us** — 2 lists: Decibel: Top 40 Albums of 2026; Album of the Year: 2026 Critic Year-End List Aggregate
 - **The Mirror** (Buck Meek) — 2 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
 - **The Old Beloved Path** (Jake Xerxes Fussell) — 2 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists)
 - **The Way I Am** (Luke Combs) — 2 lists: Billboard: 50 Best Albums of 2026 So Far; Rolling Stone: Best Albums of 2026 So Far
@@ -6062,6 +6328,7 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **Trying Times** (James) — 2 lists: Billboard: 50 Best Albums of 2026 So Far; BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
 - **Two Wheels Move The Soul** (Robber Robber) — 2 lists: Stereogum: 50 Best Albums of 2026 So Far; Paste: 50 Best Albums of 2026 So Far
 - **We Are Together Again** (Bonnie “Prince” Billy) — 2 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists)
+- **Who Loves the Sun** (Chat Pile) — 2 lists: Decibel: Top 40 Albums of 2026; Album of the Year: 2026 Critic Year-End List Aggregate
 - **World's Gone Wrong** (Lucinda Williams) — 2 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The Best Albums of 2026... So Far
 - **Wuthering Heights** — 2 lists: Billboard: 50 Best Albums of 2026 So Far; BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
 - **Your Day Will Come** (Chanel Beads) — 2 lists: Pitchfork: The Best Music of 2026 So Far; Clash: The 60 Best Albums of 2026 (So Far)

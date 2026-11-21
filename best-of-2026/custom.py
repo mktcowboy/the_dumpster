@@ -203,8 +203,36 @@ def _(s,h,md):
 def _(s,h,md): return [split_by(t) for t in hs(s,'h2')+hs(s,'h3') if ' by ' in t and not t.startswith('Books by')]
 @reg('Kirkus: Best Fiction of 2026 (full list page)','Kirkus: Best Nonfiction of 2026 (full list page)')
 def _(s,h,md):
+    out=[]
+    for m in re.finditer(r'<a href="/book-reviews/[^"]+" class="card-text">\s*(.*?)\s*</a>\s*<span class="by-author">\s*by\s*(.*?)\s*</span>', h or '', re.S):
+        title=C(m.group(1))
+        author=re.sub(r'^by\s+','',C(m.group(2)),flags=re.I).strip()
+        if title: out.append((title,author))
+    if out: return out
     L=[l.strip() for l in md.splitlines()]
     return [(L[k-1].title(),'') for k,l in enumerate(L) if l=='Quickview' and k>0]
+@reg('Decibel: Top 40 Albums of 2026')
+def _(s,h,md):
+    # The page counts down: "40 Artist , Album , Label ... 1 Artist , Album , Label".
+    text=H.unescape(re.sub(r'<[^>]+>',' ',h or ''))
+    text=re.sub(r'\s+',' ',text)
+    start=None
+    idx=0
+    while True:
+        i=text.find('40 ', idx)
+        if i<0: break
+        if re.match(r'40\s+[^,]{2,80},\s+[^,]{2,140},\s+.{2,120}?39\s+', text[i:i+360]):
+            start=i
+            break
+        idx=i+3
+    if start is None: return []
+    end=text.find('Now,', start)
+    chunk=text[start:end if end>start else start+12000]
+    best={}
+    for n, artist, album, label in re.findall(r'(\d{1,2})\s+([^,]{1,80}?)\s+,\s+([^,]{1,140}?)\s+,\s+(.+?)(?=\s+\d{1,2}\s+|$)', chunk):
+        n=int(n)
+        if 1<=n<=40 and C(album): best[n]=(C(album), C(artist))
+    return [best[n] for n in sorted(best)]
 @reg('Booker Prize 2026 Winner')
 def _(s,h,md): return [('The End of Everything','M. John Harrison')]
 @reg('Kirkus Prize 2026 Winners')
