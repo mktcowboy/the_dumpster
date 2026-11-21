@@ -11,7 +11,7 @@ Kirkus: Best Books of 2026 – The Holidays Start Early,Books,Kirkus Reviews,,ht
 Kirkus: Best Book Club Fiction of 2026,Books,Kirkus Reviews,,https://www.kirkusreviews.com/book-lists/best-book-club-fiction-2026/,HTTP 200 (curl)
 Kirkus: Best Fiction in Translation of 2026,Books,Kirkus Reviews,,https://www.kirkusreviews.com/book-lists/best-fiction-translation-2026/,HTTP 200 (curl)
 TIME: 100 Must-Read Books of 2026,Books,TIME,2026-11-17,https://time.com/collection/must-read-books/2026/,HTTP 200 (curl)
-NYPL: Best Books of 2026,Books,New York Public Library,,https://www.nypl.org/spotlight/best-books-2026,HTTP 200 (curl)
+NYPL: Best Books of 2026,Books,New York Public Library,2026-11-18,https://www.nypl.org/spotlight/best-books-2026,HTTP 200 (curl)
 Chicago Public Library: Top 10 Favorite Books of 2026,Books,Chicago Public Library,2026-11-16,https://chipublib.bibliocommons.com/v2/list/display/199702383/3155970697,HTTP 200 (curl)
 BookPage: The Best Fiction of 2026,Books,BookPage,,https://www.bookpage.com/best-fiction/,HTTP 200 (curl)
 BookPage: The Best Nonfiction of 2026,Books,BookPage,,https://www.bookpage.com/best-nonfiction/,HTTP 200 (curl)
@@ -94,3 +94,55 @@ North America's 50 Best Bars 2026,Bars & Cocktails,The World's 50 Best,,https://
 PUNCH: Cocktail Recipes From the Best New Bars of 2026,Bars & Cocktails,PUNCH,,https://punchdrink.com/articles/cocktail-recipes-best-new-bars-2026/,HTTP 200 (curl)
 Broadway Scorecard: Critical Gold List 2025–2026,Theater,Broadway Scorecard,,https://broadwayscorecard.com/lists/critical-gold/2025-2026,HTTP 200 (curl)
 Tony Awards 2026 Winners,Theater,Tony Awards,,https://www.tonyawards.com/winners/year/2026/category/any/show/any/,HTTP 200 (curl)
+Financial Times: The Best Books of the Year 2026,Books,Financial Times,2026-11-16,https://www.ft.com/booksoftheyear2026,bot-blocked (403); confirmed via search index ×2
+The Telegraph: The Best Books of 2026 (critics' picks),Books,The Telegraph,,https://books.telegraph.co.uk/best-book-lists/best-of-2026,403 to curl; WebFetch OK
+The Telegraph: The Best Books of 2026,Books,The Telegraph,,https://www.telegraph.co.uk/books/non-fiction/best-books-2026/,200 ×2
+The Economist: The Best Books of 2026 So Far,Books,The Economist,2026-05-28,https://www.economist.com/culture/2026/05/28/the-best-books-of-2026-so-far,bot-blocked (403); confirmed via search index
+NPR: Staffers' Favorite Fiction of the Year So Far,Books,NPR,2026-08-02,https://www.npr.org/2026/08/02/nx-s1-5872432/npr-staffers-recommend-their-favorite-fiction-books-of-the-year-so-far,200 ×2
+NPR: Staffers' Favorite Nonfiction of the Year So Far,Books,NPR,2026-08-09,https://www.npr.org/2026/08/09/nx-s1-5877746/npr-staffers-recommend-their-favorite-nonfiction-books-of-the-year-so-far,200 ×2
+Electric Lit: Top 10 Poetry Collections of 2026,Books,Electric Literature,2026-11-20,https://electricliterature.com/electric-lits-top-10-poetry-collections-of-2026/,200 ×2
+Electric Lit: Top 10 Short Story Collections of 2026,Books,Electric Literature,,https://electricliterature.com/electric-lits-top-10-short-story-collections-of-2026/,200 ×2
+Kirkus: Best Fiction of 2026 (full list page),Books,Kirkus Reviews,,https://www.kirkusreviews.com/best-of/2026/fiction/books/,200 ×2; JS-loaded list
+Kirkus: Best Nonfiction of 2026 (full list page),Books,Kirkus Reviews,,https://www.kirkusreviews.com/best-of/2026/nonfiction/books/,200 ×2; JS-loaded list
+Audible: The Best Audiobooks of 2026,Books,Audible,,https://www.audible.com/ep/best-of-the-year,200 ×2
+National Book Awards 2026 Winners,Books,National Book Foundation,2026-11-18,https://www.nationalbook.org/awards2026/winners/,bot challenge (202) to curl; WebFetch OK
+Booker Prize 2026 Winner,Books,The Booker Prizes,,https://thebookerprizes.com/media-centre/press-releases/the-end-of-everything-by-m-john-harrison-wins-the-booker-prize-2026,200 ×2
+Kirkus Prize 2026 Winners,Books,Kirkus Reviews,,https://www.kirkusreviews.com/news-and-features/articles/winners-of-the-2026-kirkus-prize-revealed/,200 ×2
+Barnes & Noble: 2026 Children's & YA Book Awards Winners,Kids & YA Books,Barnes & Noble,,https://www.barnesandnoble.com/blog/the-2026-barnes-noble-childrens-ya-book-awards-winners/,200 ×2
+The Guardian: The Best Albums of 2026 So Far,Albums,The Guardian,2026-06-09,https://www.theguardian.com/music/ng-interactive/2026/jun/09/the-best-albums-of-2026-so-far,200 ×2
+NME: The Best Albums of 2026... So Far,Albums,NME,,https://www.nme.com/features/music-features/the-best-albums-2026-so-far-3951115,200 ×2
+Clash: The 60 Best Albums of 2026 (So Far),Albums,Clash,,https://www.clashmusic.com/features/the-60-best-albums-of-2026-so-far/,200 ×2
+BrooklynVegan: Our 50 Favorite Albums of 2026 So Far,Albums,BrooklynVegan,,https://www.brooklynvegan.com/our-50-favorite-albums-of-2026-so-far/,200 ×2
+Mercury Prize 2026 Winner,Albums,Mercury Prize,,https://www.mercuryprize.com/news/2026/raye-announced-as-overall-winner-of-the-2026-mercury-prize-album-of-the-year,200 ×2
+Polaris Music Prize 2026 Winner,Albums,Polaris Music Prize,,https://polarismusicprize.ca/blog/angine-de-poitrine-win-2026-polaris-album-prize-and-socan-polaris-song-prize/,200 ×2
+The Guardian: The Best Films of 2026 So Far,Movies,The Guardian,2026-06-10,https://www.theguardian.com/film/ng-interactive/2026/jun/10/the-best-films-of-2026-so-far,200 ×2
+Esquire: The 36 Best Movies of 2026 (So Far),Movies,Esquire,,https://www.esquire.com/entertainment/movies/a74180645/best-new-movies-of-2026/,200 ×2
+The A.V. Club: The Best Films of 2026 So Far,Movies,The A.V. Club,,https://www.avclub.com/best-films-2026-so-far,200 ×2
+/Film: 49 Best Movies of 2026 (So Far),Movies,/Film,,https://www.slashfilm.com/2168144/best-movies-2026/,200 ×2
+Rotten Tomatoes: Best New Documentaries of 2026,Documentaries,Rotten Tomatoes,,https://editorial.rottentomatoes.com/guide/best-new-documentary-movies-2026/,200 ×2
+Esquire: The Best Documentaries of 2026 So Far,Documentaries,Esquire,,https://www.esquire.com/entertainment/movies/g74093266/best-documentaries-of-2026/,200 ×2
+RogerEbert.com: The Best Documentaries of 2026,Documentaries,RogerEbert.com,,https://www.rogerebert.com/collections/the-best-documentaries-of-2026,403 to curl; WebFetch OK
+The A.V. Club: The Best TV of 2026 So Far,TV,The A.V. Club,,https://www.avclub.com/best-tv-2026-so-far-widows-bay-pitt-knight-of-seven-kingdoms,200 ×2
+TIME: The Best TV Shows of 2026 So Far,TV,TIME,2026-07-08,https://time.com/article/2026/06/23/best-tv-shows-2026-so-far/,406 to curl; WebFetch OK (updated 2026-11-02)
+Apple Podcasts: 2026 Show of the Year,Podcasts,Apple,2026-11,https://www.apple.com/newsroom/2026/11/apple-podcasts-names-baby-this-is-keke-palmer-the-2026-show-of-the-year/,200 ×2
+Polygon: Game of the Year 2026,Video Games,Polygon,,https://www.polygon.com/game-of-the-year-2026-nominees-editorial/,200 ×2
+"Google Play: Best of 2026 (apps, games, books)",Apps,Google,2026-11-18,https://blog.google/products-and-platforms/platforms/google-play/best-of-play-awards-2026/,200 ×2
+Apple: 2026 App Store Award Finalists,Apps,Apple,2026-11,https://www.apple.com/newsroom/2026/11/meet-the-2026-app-store-award-finalists/,200 ×2; winners pending
+Tom's Guide Awards 2026,Tech & Gadgets,Tom's Guide,,https://www.tomsguide.com/tech-events/toms-guide-hero-awards-2026,200 ×2
+CNET Group: 2026 Best of CES Winners,Tech & Gadgets,CNET (via CES),,https://www.ces.tech/articles/2026-best-of-ces-winners-awarded-by-cnet-group/,200 ×2
+Robb Report: The 10 Best New Restaurants in America for 2026,Restaurants & Food,Robb Report,,https://robbreport.com/food-drink/dining/lists/best-new-restaurants-2026-america-1238198235/,200 ×2
+Condé Nast Traveler: Best New Restaurants in the World (Hot List 2026),Restaurants & Food,Condé Nast Traveler,,https://www.cntraveler.com/story/best-new-restaurants-in-the-world-hot-list-2026,200 ×2; sub-list of existing Hot List entry
+Food & Wine: The 2026 Best New Chefs,Restaurants & Food,Food & Wine (GlobeNewswire),2026-09-15,https://www.globenewswire.com/news-release/2026/09/15/3362221/0/en/food-wine-reveals-the-2026-best-new-chefs.html,403 to curl; WebFetch OK
+Wine Spectator: Top 100 Wines of 2026,Wine & Spirits,Wine Spectator,,https://top100.winespectator.com/2026/,200 ×2
+Time Out: Top 500 Bars 2026,Bars & Cocktails,Time Out,2026-11-10,https://www.timeout.com/news/this-pop-culture-inspired-bar-is-officially-the-best-in-the-world-for-2026-111026,200 ×2
+Time Out: 50 Best Cities in the World 2026,Travel & Hotels,Time Out,,https://www.timeout.com/travel/best-cities-2026,200 ×2
+Condé Nast Traveler: The Gold List 2026,Travel & Hotels,Condé Nast Traveler,,https://www.cntraveler.com/story/gold-list-top-hotels-and-resorts-in-the-world,200 ×2
+CN Traveller (UK): 2026 Readers' Choice Awards Winners,Travel & Hotels,CN Traveller,,https://www.cntraveller.com/article/readers-choice-winners-2026,200 ×2
+Time Out New York: Best of the City 2026,Travel & Hotels,Time Out,,https://www.timeout.com/newyork/things-to-do/best-of-the-city-the-20-best-things-time-out-new-york-editors-saw-ate-and-visited-in-2026,200 ×2
+Allure: Best of Beauty 2026 Winners,Beauty,Allure,,https://www.allure.com/story/best-of-beauty-2026-all-winners-index,200 ×2
+Wildlife Photographer of the Year 2026 Winners,Photography,Natural History Museum,,https://www.nhm.ac.uk/press-office/press-releases/heartbreaking-photograph-of-an-elephant-and-deceased-calf-wins-wpy.html,200 ×2
+The Planetary Society: Best of 2026,Science,The Planetary Society,,https://www.planetary.org/best-of-2026,200 ×2
+Complex: The 20 Best Sports Moments of 2026 (So Far),Sports,Complex,,https://www.complex.com/bets/a/thomas-golianopoulos/best-sports-moments-2026-midyear,200 ×2
+Wargamer: The Best Board Games of 2026,Board Games,Wargamer,,https://www.wargamer.com/best-board-games,200 ×2
+Anime News Network: The Best Anime of Spring 2026,Anime,Anime News Network,,https://www.animenewsnetwork.com/seasonal/2026/spring/.237622,200 ×2
+Anime News Network: The Best Anime of Summer 2026,Anime,Anime News Network,,https://www.animenewsnetwork.com/seasonal/2026/summer/.242007,200 ×2

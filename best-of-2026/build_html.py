@@ -2,11 +2,11 @@
 import csv, json, calendar, datetime, re
 rows = list(csv.DictReader(open('lists.csv')))
 TYPE = {
- 'Retailer & platform': ['Amazon','Apple Podcasts','Audible','Barnes & Noble','Rough Trade','Spotify','Waterstones','iHeartRadio','Goodreads','Letterboxd'],
- 'Newspaper & broadcaster': ['BBC','New York Times','The Guardian','CNN (on Lonely Planet)','NPR (via WBUR)','The Current (MPR)','Time Out (on NYT list)'],
+ 'Retailer & platform': ['Amazon','Apple','Apple Podcasts','Audible','Barnes & Noble','Google','Rough Trade','Spotify','Waterstones','iHeartRadio','Goodreads','Letterboxd'],
+ 'Newspaper & broadcaster': ['BBC','Financial Times','NPR','New York Times','The Economist','The Guardian','The Telegraph','CNN (on Lonely Planet)','NPR (via WBUR)','The Current (MPR)','Time Out (on NYT list)'],
  'Library': ['New York Public Library','Chicago Public Library'],
  'Aggregator & scores': ['AlbumOfTheYear.org','Metacritic','Rotten Tomatoes','TV Guide','Broadway Scorecard'],
- 'Awards body': ['The Game Awards','Tony Awards',"The World's 50 Best"],
+ 'Awards body': ['Mercury Prize','National Book Foundation','Natural History Museum','Polaris Music Prize','The Booker Prizes','The Game Awards','Tony Awards',"The World's 50 Best"],
 }
 def srctype(o):
     for k,v in TYPE.items():
@@ -15,15 +15,21 @@ def srctype(o):
 def kind(r):
     n = r['list']
     if re.search(r'so far', n, re.I): return 'So far'
-    if re.search(r'award|nominee|winners|book of the year', n, re.I): return 'Awards'
+    if re.search(r'award|nominee|\bwinners?\b|\bprize\b|book of the year|game of the year|show of the year', n, re.I): return 'Awards'
     if r['outlet'] in ('AlbumOfTheYear.org','Metacritic','Rotten Tomatoes','TV Guide','Game Informer') or 'Critical Gold' in n: return 'Tracker'
     return 'Annual list'
 GROUP = {'Annual list':'Annual lists','So far':'So far · mid-year','Awards':'Awards & nominees','Tracker':'Trackers & aggregates'}
 ORDER = ['Annual list','Awards','Tracker','So far']
+def stamp(value):
+    value = (value or '').strip()
+    if not value: return 0
+    # Month-only dates (Apple newsroom uses YYYY-MM) sort as the 1st of that month.
+    if re.fullmatch(r'\d{4}-\d{2}', value): value += '-01'
+    return calendar.timegm(datetime.date.fromisoformat(value).timetuple())
 items = []
 for r in rows:
     k = kind(r)
-    ts = calendar.timegm(datetime.date.fromisoformat(r['date']).timetuple()) if r['date'] else 0
+    ts = stamp(r['date'])
     items.append(dict(line=r['topic'], topic=[GROUP[k]], title=r['list'], desc=r['outlet'], kind=k, tags=[srctype(r['outlet'])], href=r['url'], date=ts))
 items.sort(key=lambda i: (i['line'], ORDER.index(i['kind']), -i['date'], i['title']))
 TAGS = ['Magazine & web outlet','Newspaper & broadcaster','Retailer & platform','Library','Aggregator & scores','Awards body']
