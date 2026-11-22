@@ -74,5 +74,5 @@
 - `scripts/` holds the privacy checker and local setup script.
 - Run `sh scripts/setup_privacy.sh` in each fresh checkout to install privacy hooks and the anonymous repository commit identity.
 - Run `python3 scripts/check_privacy.py` before committing, per [CONTRIBUTING.md](CONTRIBUTING.md).
-- [`index.html`](index.html) is the GitHub Pages catalog of the HTML projects. It links to 26 projects and 41 report pages, with 101 additional ticker detail pages accessible through the earnings-straddle screen. Card thumbnails live in [`site-assets/thumbs/`](site-assets/thumbs/).
+- [`index.html`](index.html) is the GitHub Pages catalog of the HTML projects. It links to 28 projects and 43 report pages, with 101 additional ticker detail pages accessible through the earnings-straddle screen. Card thumbnails live in [`site-assets/thumbs/`](site-assets/thumbs/).
 - Each project folder contains its source files and, where available, a README with build or refresh instructions.
