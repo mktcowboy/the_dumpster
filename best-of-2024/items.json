@@ -13783,9 +13783,22 @@
   "topic": "Kids & YA Books",
   "outlet": "Barnes & Noble",
   "url": "https://www.barnesandnoble.com/blog/bn-kids-and-ya-award-winners-2024/",
-  "items": [],
-  "how": "recovered from MASTER.md",
-  "note": "items not retrievable: list is rendered by JavaScript or not present in the page HTML"
+  "items": [
+   [
+    "A Royal Conundrum",
+    "Lisa Yee"
+   ],
+   [
+    "I Lived Inside a Whale",
+    "Xin Li"
+   ],
+   [
+    "Powerless",
+    "Lauren Roberts"
+   ]
+  ],
+  "how": "page reader",
+  "note": ""
  },
  {
   "list": "Kirkus: Best Young Adult Books of 2024 (full list page)",
@@ -20075,18 +20088,116 @@
   "topic": "Books",
   "outlet": "Kirkus Reviews",
   "url": "https://www.kirkusreviews.com/book-lists/best-book-club-fiction-2024/",
-  "items": [],
-  "how": "recovered from MASTER.md",
-  "note": "items not retrievable: list is rendered by JavaScript"
+  "items": [
+   [
+    "ENTITLEMENT",
+    "Rumaan Alam"
+   ],
+   [
+    "BEAUTYLAND",
+    "Marie-Helene Bertino"
+   ],
+   [
+    "SAY HELLO TO MY LITTLE FRIEND",
+    "Jennine Capó Crucet"
+   ],
+   [
+    "SISTER SNAKE",
+    "Amanda Lee Koe"
+   ],
+   [
+    "HELD",
+    "Anne Michaels"
+   ],
+   [
+    "THE ROAD TO THE COUNTRY",
+    "Chigozie Obioma"
+   ],
+   [
+    "WANDERING STARS",
+    "Tommy Orange"
+   ],
+   [
+    "THE RICH PEOPLE HAVE GONE AWAY",
+    "Regina Porter"
+   ],
+   [
+    "PLAYGROUND",
+    "Richard Powers"
+   ],
+   [
+    "LEAVING",
+    "Roxana Robinson"
+   ],
+   [
+    "THE CLIFFS",
+    "J. Courtney Sullivan"
+   ],
+   [
+    "RAINBOW BLACK",
+    "Maggie Thrash"
+   ],
+   [
+    "LONG ISLAND",
+    "Colm Tóibín"
+   ],
+   [
+    "BLUE RUIN",
+    "Hari Kunzru"
+   ]
+  ],
+  "how": "page reader",
+  "note": ""
  },
  {
   "list": "Kirkus: Best Fiction in Translation of 2024",
   "topic": "Books",
   "outlet": "Kirkus Reviews",
   "url": "https://www.kirkusreviews.com/book-lists/best-fiction-translation-2024/",
-  "items": [],
-  "how": "recovered from MASTER.md",
-  "note": "items not retrievable: list is rendered by JavaScript"
+  "items": [
+   [
+    "WHAT KINGDOM",
+    "Fine Gråbøl ; translated by Martin Aitken"
+   ],
+   [
+    "JELLYFISH HAVE NO EARS",
+    "Adèle Rosenfeld ; translated by Jeffrey Zuckerman"
+   ],
+   [
+    "UNDER THE STORM",
+    "Christoffer Carlsson ; translated by Rachel Willson-Broyles"
+   ],
+   [
+    "HUDDUD'S HOUSE",
+    "Fadi Azzam ; translated by Ghada Alatrash"
+   ],
+   [
+    "YOUR UTOPIA",
+    "Bora Chung ; translated by Anton Hur"
+   ],
+   [
+    "HERSCHT 07769",
+    "László Krasznahorkai ; translated by Ottilie Mulzet"
+   ],
+   [
+    "THE CITY AND ITS UNCERTAIN WALLS",
+    "Haruki Murakami ; translated by Philip Gabriel"
+   ],
+   [
+    "MINA'S MATCHBOX",
+    "Yoko Ogawa ; translated by Stephen Snyder"
+   ],
+   [
+    "THE BURNING PLAIN",
+    "Juan Rulfo ; translated by Douglas J. Weatherford"
+   ],
+   [
+    "THE EMPUSIUM",
+    "Olga Tokarczuk ; translated by Antonia Lloyd-Jones"
+   ]
+  ],
+  "how": "page reader",
+  "note": ""
  },
  {
   "list": "Kirkus: Best Fiction of 2024 (full list page)",
