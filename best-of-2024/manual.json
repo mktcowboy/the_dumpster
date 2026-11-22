@@ -2079,10 +2079,110 @@
   "note": "items not retrievable: albums are in an image gallery that does not render as text"
  },
  "Kirkus: Best Book Club Fiction of 2024": {
-  "note": "items not retrievable: list is rendered by JavaScript"
+  "items": [
+   [
+    "ENTITLEMENT",
+    "Rumaan Alam"
+   ],
+   [
+    "BEAUTYLAND",
+    "Marie-Helene Bertino"
+   ],
+   [
+    "SAY HELLO TO MY LITTLE FRIEND",
+    "Jennine Capó Crucet"
+   ],
+   [
+    "SISTER SNAKE",
+    "Amanda Lee Koe"
+   ],
+   [
+    "HELD",
+    "Anne Michaels"
+   ],
+   [
+    "THE ROAD TO THE COUNTRY",
+    "Chigozie Obioma"
+   ],
+   [
+    "WANDERING STARS",
+    "Tommy Orange"
+   ],
+   [
+    "THE RICH PEOPLE HAVE GONE AWAY",
+    "Regina Porter"
+   ],
+   [
+    "PLAYGROUND",
+    "Richard Powers"
+   ],
+   [
+    "LEAVING",
+    "Roxana Robinson"
+   ],
+   [
+    "THE CLIFFS",
+    "J. Courtney Sullivan"
+   ],
+   [
+    "RAINBOW BLACK",
+    "Maggie Thrash"
+   ],
+   [
+    "LONG ISLAND",
+    "Colm Tóibín"
+   ],
+   [
+    "BLUE RUIN",
+    "Hari Kunzru"
+   ]
+  ],
+  "how": "page reader"
  },
  "Kirkus: Best Fiction in Translation of 2024": {
-  "note": "items not retrievable: list is rendered by JavaScript"
+  "items": [
+   [
+    "WHAT KINGDOM",
+    "Fine Gråbøl ; translated by Martin Aitken"
+   ],
+   [
+    "JELLYFISH HAVE NO EARS",
+    "Adèle Rosenfeld ; translated by Jeffrey Zuckerman"
+   ],
+   [
+    "UNDER THE STORM",
+    "Christoffer Carlsson ; translated by Rachel Willson-Broyles"
+   ],
+   [
+    "HUDDUD'S HOUSE",
+    "Fadi Azzam ; translated by Ghada Alatrash"
+   ],
+   [
+    "YOUR UTOPIA",
+    "Bora Chung ; translated by Anton Hur"
+   ],
+   [
+    "HERSCHT 07769",
+    "László Krasznahorkai ; translated by Ottilie Mulzet"
+   ],
+   [
+    "THE CITY AND ITS UNCERTAIN WALLS",
+    "Haruki Murakami ; translated by Philip Gabriel"
+   ],
+   [
+    "MINA'S MATCHBOX",
+    "Yoko Ogawa ; translated by Stephen Snyder"
+   ],
+   [
+    "THE BURNING PLAIN",
+    "Juan Rulfo ; translated by Douglas J. Weatherford"
+   ],
+   [
+    "THE EMPUSIUM",
+    "Olga Tokarczuk ; translated by Antonia Lloyd-Jones"
+   ]
+  ],
+  "how": "page reader"
  },
  "Allure: Best of Beauty 2024 Winners": {
   "partial": "partial: the landing page shows only a sample of winners per category"
@@ -2190,5 +2290,22 @@
  },
  "The Verge: 2024 in Review": {
   "note": "hub page linking separate year-in-review articles; no single list to extract"
+ },
+ "Barnes & Noble: 2024 Children's & YA Book Awards Winners": {
+  "items": [
+   [
+    "A Royal Conundrum",
+    "Lisa Yee"
+   ],
+   [
+    "I Lived Inside a Whale",
+    "Xin Li"
+   ],
+   [
+    "Powerless",
+    "Lauren Roberts"
+   ]
+  ],
+  "how": "page reader"
  }
 }
