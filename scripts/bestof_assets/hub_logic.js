@@ -10,7 +10,7 @@ function syncThemeToggle() {
 $("theme-toggle").addEventListener("click", () => {
   const theme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
   document.documentElement.dataset.theme = theme;
-  try { localStorage.setItem("best-2026-theme", theme); } catch (e) {}
+  try { localStorage.setItem("best-__YEAR__-theme", theme); } catch (e) {}
   syncThemeToggle();
 });
 syncThemeToggle();

@@ -4,6 +4,7 @@ The Lists tab is the directory. The Master list tab is every extracted title,
 merged by category, from master_rank.json (written by build_master.py).
 """
 import csv, json, re
+from pathlib import Path
 rows = list(csv.DictReader(open('lists.csv')))
 TYPE = {
  'Retailer & platform': ['Amazon','Apple','Apple Podcasts','Audible','Barnes & Noble','Google','Rough Trade','Spotify','Waterstones','iHeartRadio','Goodreads','Letterboxd','Apple Music','Crunchyroll','Google Play'],
@@ -47,9 +48,11 @@ def js_json(obj):
             .replace('<', '\\u003c').replace('>', '\\u003e').replace('&', '\\u0026')
             .replace('\u2028', '\\u2028').replace('\u2029', '\\u2029'))
 n_titles = sum(len(topic['items']) for topic in master)
-css = open('hub_style.css').read() + "\n.card.pending { display:block; cursor:default; } .card.pending::before { content:none; } .card.pending .t { font-size:18px; }\n"
-js = open('hub_logic.js').read().replace('__TAGS__', json.dumps(TAGS))
-master_js = open('master_logic.js').read()
+ASSETS = Path(__file__).resolve().parents[1] / 'scripts' / 'bestof_assets'
+def asset(name): return (ASSETS / name).read_text().replace('__YEAR__', '2024')
+css = asset('hub_style.css') + "\n.card.pending { display:block; cursor:default; } .card.pending::before { content:none; } .card.pending .t { font-size:18px; }\n"
+js = asset('hub_logic.js').replace('__TAGS__', json.dumps(TAGS))
+master_js = asset('master_logic.js')
 html = f'''<!doctype html>
 <html lang="en">
 <head>

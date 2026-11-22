@@ -11,6 +11,8 @@ python3 build_master.py MASTER.md
 python3 build_html.py
 ```
 
-`build_master.py` reads `items.json` (written by `extract_lists.py`) and writes `MASTER.md` and `master_rank.json`. `build_html.py` reads `lists.csv` and `master_rank.json` and writes `Best_of_2025.html`. It inlines `hub_style.css`, `hub_logic.js`, and `master_logic.js`. The page shows no dates.
+`build_master.py` reads `items.json` (written by `extract_lists.py`) and writes `MASTER.md` and `master_rank.json`. Before ranking, it passes the items through `scripts/item_cleanup.py`, which repairs known extraction mistakes. Titles are merged by `scripts/title_match.py`, with reviewed overrides in `scripts/bestof_merges.json`. Run `python3 ../scripts/near_miss.py .` after a refresh to list close titles that did not merge. `build_html.py` reads `lists.csv` and `master_rank.json` and writes `Best_of_2025.html`. It inlines `hub_style.css`, `hub_logic.js`, and `master_logic.js` from `scripts/bestof_assets/`. The page shows no dates.
 
 `candidates.tsv` is the candidate list used by `check_links.py`, which fetches each URL and writes `check.csv`.
+
+`build_master.py` and `extract_lists.py` are thin wrappers. The shared logic for every year is in `scripts/bestof_master.py` and `scripts/bestof_extract.py`; this folder keeps its own `custom.py` site parsers, `manual.json`, and `build_html.py`.

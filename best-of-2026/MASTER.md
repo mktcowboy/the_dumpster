@@ -793,7 +793,7 @@ The New Yorker · [link](https://www.newyorker.com/best-books-2026)
 - The Snakes That Ate Florida
 - Island at the Edge of the World
 - Jean
-- Hated — All the Right People
+- Hated by All the Right People
 - One Bad Mother
 - Bernie for Burlington
 - Everything Is Photograph
@@ -860,123 +860,123 @@ The Telegraph · [link](https://books.telegraph.co.uk/best-book-lists/best-of-20
 
 *Note: partial: the page reader showed titles only (no authors) and a few entries had no title text*
 
-- The Things We Never Say — Fiction
-- Partita — Fiction
-- Life of M — Fiction
-- The End of Everything — Fiction
-- John of John — Fiction
-- Transcription — Fiction
-- Switzy — Fiction
-- Whistler — Fiction
-- Virtue and Rosalind — Fiction
-- Departure(s) — Fiction
-- Lazar — Fiction
-- Air — Fiction
-- Dad Had a Bad Day — Fiction
-- The News from Dublin — Fiction
-- This, My Second Life — Fiction
-- Howl — Fiction
-- One Sun Only — Fiction
-- they — Fiction
-- The Deadly Inheritance of Everest Macdonald — Crime
-- Enchantment — Crime
-- The Murder Planner — Crime
-- The Aristocracy — Crime
-- The Drowning Place — Crime
-- The Cauldron — History
-- Fires in the Night — History
-- Weimar — History
-- The Quest for El Dorado — History
-- Mussolini's Ghost — History
-- The Sceptic Isle — History
-- Stealing Hitler's Rocket — History
-- Little Blue Dot — History
-- To the Edge of the World — History
-- Neptune’s Fortune — History
-- One Morning in March — History
-- Exit Stalin — History
-- Mad Tom's Rising — History
-- The Medieval Guide to Healthy Living — History
-- The Dreaded Pox — History
-- Swan Song — Biography & memoir
-- Redwood — Biography & memoir
-- On Another Planet They Can Save Me — Biography & memoir
-- London Falling — Biography & memoir
-- The Great Dictator — Biography & memoir
-- The Absent Woman — Biography & memoir
-- The Make-Believe — Biography & memoir
-- Hiroshima, 8:15 — Biography & memoir
-- The Village on the Edge of the World — Biography & memoir
-- The Last Emperor of China — Biography & memoir
-- The People's Emperor — Biography & memoir
-- The Vanishing Girl of Kabul — Biography & memoir
-- A Hymn to Life — Biography & memoir
-- Elizabeth II — Biography & memoir
-- Kids, Wait Till You Hear This! — Biography & memoir
-- Queen Elizabeth II — Biography & memoir
-- Jan Morris — Biography & memoir
-- Anita Brookner — Biography & memoir
-- Promise Me, America — Politics
-- The Nord Stream Conspiracy — Politics
-- Can We Be Rich Again? — Politics
-- Uneasy Streets — Politics
-- Lifeboat at the End of the World — Politics
-- What If Reform Wins — Politics
-- Gordon Brown — Politics
-- Keeping the Dream Alive — Politics
-- Young Man in a Hurry — Politics
-- No Second Chances — Politics
-- The Full English — Ideas
-- Guilty Pleasure — Ideas
-- Depraved — Ideas
-- Imitation Games — Ideas
-- Self-Help From the Middle Ages — Ideas
-- A History of the Novel in Britain — Ideas
-- Valley of Death — Ideas
-- Outlawed — Ideas
-- Flamboyance — Ideas
-- The Kiss — Ideas
-- The Disease of Boredom — Ideas
-- Faces — Ideas
-- How to Kill a Language — Ideas
-- The Life You Want — Ideas
-- Do Not Go Gentle — Ideas
-- The Cultural Marxism Conspiracy — Ideas
-- Magnifica Humanitas — Ideas
-- The New Dark Age — Ideas
-- Good Slut — Ideas
-- SolidGoldMagikarp — Science
-- Nary a Horse Left Standing — Science
-- The Ghost of the Mountains — Science
-- Endless Endings — Science
-- The Oak and The Larch — Science
-- Chasing Aliens — Science
-- Becoming Martian — Science
-- This Book May Cause Side Effects — Science
-- Gilgamesh — Poetry
-- Tree of Knowledge — Poetry
-- Haunting the Black Air — Poetry
-- Killing Spree — Poetry
-- The Distance of a Shout: Selected Poems — Poetry
-- Only Sing — Poetry
-- Egrets, While War — Poetry
-- Collected Poems — Poetry
-- New and Selected Poems — Poetry
-- Can't Get You Out Of My Head — Music
-- Blow by Blow — Music
-- The Other Side of the Dream — Music
-- Days of Miracle and Wonder — Music
-- Vocal Break — Music
-- Where the Music Had to Go — Music
-- Rock Goes to College — Music
-- Kitty and Mary — Sport & children's (section labels unclear)
-- The Messenger — Sport & children's (section labels unclear)
-- Mouse Goes to the Mountains — Sport & children's (section labels unclear)
-- The Odyssey — Sport & children's (section labels unclear)
-- The Adventures of Portly the Otter: Untold Tales from the Wind in the Willows — Sport & children's (section labels unclear)
-- Grandad's World — Sport & children's (section labels unclear)
-- The Blitz Sisters — Sport & children's (section labels unclear)
-- Birdlands — Sport & children's (section labels unclear)
+- The Things We Never Say
+- Partita
+- Life of M
+- The End of Everything
+- John of John
+- Transcription
+- Switzy
+- Whistler
+- Virtue and Rosalind
+- Departure(s)
+- Lazar
+- Air
+- Dad Had a Bad Day
+- The News from Dublin
+- This, My Second Life
+- Howl
+- One Sun Only
+- they
+- The Deadly Inheritance of Everest Macdonald
+- Enchantment
+- The Murder Planner
+- The Aristocracy
+- The Drowning Place
+- The Cauldron
+- Fires in the Night
+- Weimar
+- The Quest for El Dorado
+- Mussolini's Ghost
+- The Sceptic Isle
+- Stealing Hitler's Rocket
+- Little Blue Dot
+- To the Edge of the World
+- Neptune’s Fortune
+- One Morning in March
+- Exit Stalin
+- Mad Tom's Rising
+- The Medieval Guide to Healthy Living
+- The Dreaded Pox
+- Swan Song
+- Redwood
+- On Another Planet They Can Save Me
+- London Falling
+- The Great Dictator
+- The Absent Woman
+- The Make-Believe
+- Hiroshima, 8:15
+- The Village on the Edge of the World
+- The Last Emperor of China
+- The People's Emperor
+- The Vanishing Girl of Kabul
+- A Hymn to Life
+- Elizabeth II
+- Kids, Wait Till You Hear This!
+- Queen Elizabeth II
+- Jan Morris
+- Anita Brookner
+- Promise Me, America
+- The Nord Stream Conspiracy
+- Can We Be Rich Again?
+- Uneasy Streets
+- Lifeboat at the End of the World
+- What If Reform Wins
+- Gordon Brown
+- Keeping the Dream Alive
+- Young Man in a Hurry
+- No Second Chances
+- The Full English
+- Guilty Pleasure
+- Depraved
+- Imitation Games
+- Self-Help From the Middle Ages
+- A History of the Novel in Britain
+- Valley of Death
+- Outlawed
+- Flamboyance
+- The Kiss
+- The Disease of Boredom
+- Faces
+- How to Kill a Language
+- The Life You Want
+- Do Not Go Gentle
+- The Cultural Marxism Conspiracy
+- Magnifica Humanitas
+- The New Dark Age
+- Good Slut
+- SolidGoldMagikarp
+- Nary a Horse Left Standing
+- The Ghost of the Mountains
+- Endless Endings
+- The Oak and The Larch
+- Chasing Aliens
+- Becoming Martian
+- This Book May Cause Side Effects
+- Gilgamesh
+- Tree of Knowledge
+- Haunting the Black Air
+- Killing Spree
+- The Distance of a Shout: Selected Poems
+- Only Sing
+- Egrets, While War
+- Collected Poems
+- New and Selected Poems
+- Can't Get You Out Of My Head
+- Blow by Blow
+- The Other Side of the Dream
+- Days of Miracle and Wonder
+- Vocal Break
+- Where the Music Had to Go
+- Rock Goes to College
+- Kitty and Mary
+- The Messenger
+- Mouse Goes to the Mountains
+- The Odyssey
+- The Adventures of Portly the Otter: Untold Tales from the Wind in the Willows
+- Grandad's World
+- The Blitz Sisters
+- Birdlands
 
 ### The Telegraph: The Best Books of 2026
 The Telegraph · [link](https://www.telegraph.co.uk/books/non-fiction/best-books-2026/)
@@ -1877,7 +1877,7 @@ Rolling Stone · [link](https://www.rollingstone.com/music/music-lists/best-albu
 27. The Great Divide — Noah Kahan
 28. Dandelion — Ella Langley
 29. Hades — Melanie Martinez
-30. Paul McCartney,’The Boys of Dungeon Lane
+30. The Boys of Dungeon Lane — Paul McCartney
 31. All Clouds Bring Not Rain — Memorials
 32. Pompeii // Utility — MIKE, Earl Sweatshirt, and Surfgang
 33. Cloud 9 — Megan Moroney
@@ -2195,7 +2195,7 @@ NME · [link](https://www.nme.com/features/music-features/the-best-albums-2026-s
 - Theft World — Lip Critic
 - Nothing’s About To Happen To Me — Mitski
 - My New Band Believe — My New Band Believe
-- You Look Pretty Sad For A Girl So In Love — Olivia Rodrigo
+- You Seem Pretty Sad For A Girl So In Love — Olivia Rodrigo
 - This Music May Contain Hope — RAYE
 - Sexistential — Robyn
 - Wor$t Girl In America — Slayyyter
@@ -3008,7 +3008,7 @@ Esquire · [link](https://www.esquire.com/entertainment/movies/a74180645/best-ne
 ### The A.V. Club: The Best Films of 2026 So Far
 The A.V. Club · [link](https://www.avclub.com/best-films-2026-so-far)
 
-- 28 Days Later: The Bone Temple
+- 28 Years Later: The Bone Temple
 - All That’s Left Of You
 - Blue Heron
 - By Design
@@ -3265,7 +3265,7 @@ Esquire · [link](https://www.esquire.com/entertainment/tv/a73820242/best-new-tv
 - Chad Powers (season 2)
 - Sterling Point
 - Ponies
-- Star Wars: Visions Presents — The Ninth Jedi
+- Star Wars: Visions Presents – The Ninth Jedi
 - MobLand (season 2)
 - The Paper (season 2)
 - Running Point (season 2)
@@ -3959,11 +3959,6 @@ Polygon · [link](https://www.polygon.com/game-of-the-year-2026-nominees-editori
 - Ace Combat 8: Wings of Theve — Game Awards nominee: Best Score and Music, Best Audio Design, Best Action Game
 - Mixtape — Game Awards nominee: Best Score and Music, Games for Impact
 - Star Wars Galactic Racer — Game Awards nominee: Best Audio Design, Best Sports/Racing
-- Angela Sant’AlbanoResident Evil Requiem — Game Awards nominee: Best Performance
-- Liam McIntyreMarvel’s Wolverine — Game Awards nominee: Best Performance
-- Manni L. PerezGrand Theft Auto 6 — Game Awards nominee: Best Performance
-- Patrick Gibson007 First Light — Game Awards nominee: Best Performance
-- Rahul KohliSaros — Game Awards nominee: Best Performance
 - Big Walk — Game Awards nominee: Games for Impact, Best Independent Game, Best Family, Best Multiplayer
 - Cairn — Game Awards nominee: Games for Impact, Best Independent Game
 - Forever Ago — Game Awards nominee: Games for Impact
@@ -4023,37 +4018,11 @@ Polygon · [link](https://www.polygon.com/game-of-the-year-2026-nominees-editori
 - Call of Duty: Modern Warfare 4 — Game Awards nominee: Best Multiplayer
 - Marathon — Game Awards nominee: Best Multiplayer
 - Meccha Chameleon — Game Awards nominee: Best Multiplayer
-- Cyberpunk Edgerunners season 2 — Game Awards nominee: Best Adaptation
-- Fallout season 2 — Game Awards nominee: Best Adaptation
-- Mortal Kombat 2 — Game Awards nominee: Best Adaptation
-- Resident Evil — Game Awards nominee: Best Adaptation
-- The Super Mario Galaxy Movie — Game Awards nominee: Best Adaptation
-- A Dream of Silence: RevampedLizardpunk for Baldur’s Gate 3 — Game Awards nominee: Best User Creation
-- Create AeronauticsSimulated Team for Minecraft — Game Awards nominee: Best User Creation
-- Nopixel 5Nopixel Studios for Grand Theft Auto Online — Game Awards nominee: Best User Creation
-- Star Wars: Droid TycoonFOAD for Fortnite — Game Awards nominee: Best User Creation
-- TTKSable Digital for Roblox — Game Awards nominee: Best User Creation
-- Cdawg — Game Awards nominee: Content Creator of the Year
-- Cellbit — Game Awards nominee: Content Creator of the Year
-- IShowSpeed — Game Awards nominee: Content Creator of the Year
-- LilSimsie — Game Awards nominee: Content Creator of the Year
-- OhnePixel — Game Awards nominee: Content Creator of the Year
-- ChovyGen.G — Game Awards nominee: Best Esports Athlete
-- DonkTeam Spirit — Game Awards nominee: Best Esports Athlete
-- ErdeLOUD — Game Awards nominee: Best Esports Athlete
-- YatoroTeam Spirit — Game Awards nominee: Best Esports Athlete
-- ZywooTeam Vitality — Game Awards nominee: Best Esports Athlete
 - Counter-Strike 2 — Game Awards nominee: Best Esports Game
 - Dota 2 — Game Awards nominee: Best Esports Game
 - League of Legends — Game Awards nominee: Best Esports Game
 - Mobile Legends: Bang Bang — Game Awards nominee: Best Esports Game
 - Valorant — Game Awards nominee: Best Esports Game
-- Gen.GLeague of Legends — Game Awards nominee: Best Esports Team
-- LOUDValorant — Game Awards nominee: Best Esports Team
-- Team FalconsCounter-Strike 2 — Game Awards nominee: Best Esports Team
-- Team FalconsRocket League — Game Awards nominee: Best Esports Team
-- Team SpiritDota 2 — Game Awards nominee: Best Esports Team
-- Team VitalityCounter-Strike 2 — Game Awards nominee: Best Esports Team
 - Fable — Game Awards nominee: Most Anticipated Game
 - Final Fantasy 7 Revelation — Game Awards nominee: Most Anticipated Game
 - God of War Laufey — Game Awards nominee: Most Anticipated Game
@@ -4429,11 +4398,11 @@ Tom's Guide · [link](https://www.tomsguide.com/tech-events/toms-guide-hero-awar
 - MacBook Neo — Best new product
 - Nvidia RTX Spark — Innovation award
 - SharkNinja — Best company award
-- Framework — Sustainability in tech
+- Framework
 - Samsung Galaxy Z Fold 8 — Best product design
 - Adidas Adizero Adios Pro Evo 3 — Best fitness
 - Fitbit Air — Value award
-- United Airlines/Starlink — Travel
+- United Airlines/Starlink
 
 ### CNET Group: 2026 Best of CES Winners
 CNET (via CES) · [link](https://www.ces.tech/articles/2026-best-of-ces-winners-awarded-by-cnet-group/)
@@ -4995,26 +4964,26 @@ Condé Nast Traveler · [link](https://www.cntraveler.com/story/gold-list-top-ho
 CN Traveller · [link](https://www.cntraveller.com/article/readers-choice-winners-2026)
 
 - Claridge’s — London
-- Lucknam Park Hotel & Spa, Wiltshire — rest of UK
+- Lucknam Park Hotel & Spa, Wiltshire
 - Le Bristol Paris — Paris
-- Airelles Le Grand Contrôle, Château de Versailles — rest of France and Monaco
+- Airelles Le Grand Contrôle, Château de Versailles
 - Ballyfin, Co Laois — Ireland
 - Corinthia Rome — Rome
 - Il Tornabuoni Hotel — Florence
 - The Gritti Palace, a Luxury Collection Hotel — Venice
-- Grand Hotel Timeo, a Belmond Hotel, Taormina, Sicily — rest of Italy
+- Grand Hotel Timeo, a Belmond Hotel, Taormina, Sicily
 - Canaves Epitome, Canaves Collection, Santorini — Greece
 - Finca Cortesín, Málaga — Spain
 - São Lourenço do Barrocal, Alentejo — Portugal
 - The Peninsula Istanbul — Turkey
-- Storfjord Hotel, Ålesund, Norway — Nordics
-- Botanic Sanctuary Antwerp, Belgium — rest of Europe
+- Storfjord Hotel, Ålesund, Norway
+- Botanic Sanctuary Antwerp, Belgium
 - Capella Sydney, Australia
 - Hotel Fasano Rio de Janeiro, Brazil
-- La Mamounia Marrakech, Morocco — Northern Africa
-- Mount Nelson, A Belmond Hotel, Cape Town, South Africa — Eastern and Southern Africa
+- La Mamounia Marrakech, Morocco
+- Mount Nelson, A Belmond Hotel, Cape Town, South Africa
 - The Carlyle, A Rosewood Hotel — New York City
-- The St Regis Chicago, Illinois — rest of USA
+- The St Regis Chicago, Illinois
 - The Hazelton Hotel, Toronto, Ontario
 - Casa Polanco, Mexico City
 - The Ritz-Carlton, Turks & Caicos
@@ -5022,25 +4991,25 @@ CN Traveller · [link](https://www.cntraveller.com/article/readers-choice-winner
 - Mandarin Oriental The Landmark, Hong Kong — Hong Kong
 - Park Hyatt Tokyo — Japan
 - Capella Singapore — Singapore
-- Mandarin Oriental, Bangkok, Thailand — Southeast Asia
-- Uga Prava, Tangalle, Sri Lanka — rest of Asia
+- Mandarin Oriental, Bangkok, Thailand
+- Uga Prava, Tangalle, Sri Lanka
 - The Imperial, New Delhi
 - Jumeirah Marsa Al Arab, Dubai, UAE
 - Hotel Esencia, Riviera Maya, Quintana Roo — Mexico
-- Fairmont Banff Springs, Alberta, Canada — USA & Canada
-- Awasi Atacama, San Pedro de Atacama, Chile — Central & South America
-- Jade Mountain, St Lucia — Caribbean & Atlantic
+- Fairmont Banff Springs, Alberta, Canada
+- Awasi Atacama, San Pedro de Atacama, Chile
+- Jade Mountain, St Lucia
 - Suján Sher Bagh, Rajasthan — India
 - Ikos Odisia, Corfu — Greece
-- Vila Vita Parc, Algarve, Portugal — rest of Europe
+- Vila Vita Parc, Algarve, Portugal
 - Four Seasons Resort Bali at Jimbaran Bay — Indonesia
 - Four Seasons Tented Camp Golden Triangle, Chiang Rai — Thailand
-- andBeyond Punakha River Lodge, Bhutan — rest of Asia
-- Joali Maldives — Indian Ocean
-- Six Senses Fiji — Australasia and South Pacific
+- andBeyond Punakha River Lodge, Bhutan
+- Joali Maldives
+- Six Senses Fiji
 - Singita Lebombo Lodge, Kruger National Park — South Africa
-- Time + Tide Chinzombo, South Luangwa National Park, Zambia — rest of Africa
-- Nujuma, a Ritz-Carlton Reserve, Ummahat Islands, Saudi Arabia — the Middle East
+- Time + Tide Chinzombo, South Luangwa National Park, Zambia
+- Nujuma, a Ritz-Carlton Reserve, Ummahat Islands, Saudi Arabia
 - Edinburgh, Scotland
 - Paris, France
 - Bangkok, Thailand
@@ -5050,38 +5019,38 @@ CN Traveller · [link](https://www.cntraveller.com/article/readers-choice-winner
 - Ireland
 - Costa Rica
 - Italy
-- Sperlonga, Italy — Europe
+- Sperlonga, Italy
 - Llanddwyn Beach, Anglesey, Wales — UK
 - Ballyheigue, County Kerry — Ireland
-- Arugam Bay Beach, Sri Lanka — Asia
-- Hanauma Bay, Hawaii, US — the Americas
-- Barbados — Caribbean and the Atlantic
-- Palawan, Philippines — Asia
-- Galápagos Islands, Ecuador — Central and South America
-- Fiji — Australasia and the South Pacific
-- Vancouver Island, British Columbia, Canada — North America
+- Arugam Bay Beach, Sri Lanka
+- Hanauma Bay, Hawaii, US
+- Barbados
+- Palawan, Philippines
+- Galápagos Islands, Ecuador
+- Fiji
+- Vancouver Island, British Columbia, Canada
 - Isles of Scilly — UK
-- Hydra, Greece — Europe
-- Mauritius — Africa and the Indian Ocean
+- Hydra, Greece
+- Mauritius
 - Gleneagles, Perthshire — UK
-- Palazzo Fiuggi, Italy — Europe
-- Chiva-Som Hua Hin, Thailand — rest of world
-- Zermatt, Switzerland — Europe
-- Deer Valley, Utah, United States — North America
+- Palazzo Fiuggi, Italy
+- Chiva-Som Hua Hin, Thailand
+- Zermatt, Switzerland
+- Deer Valley, Utah, United States
 - Emirates, UAE
-- Istanbul (IST), Turkey — world
+- Istanbul (IST), Turkey
 - London Heathrow (LHR) — UK
 - Cathay Pacific The Pier First Class Lounge, Hong Kong International Airport, Hong Kong
 - Royal Scotsman, A Belmond Train, Scotland
-- Royal Caribbean — mega ships (more than 4,000 passengers)
-- Cunard — large ships (2,500 to 4,000 passengers)
-- Seabourn — medium ships (500 to 2,500 passengers)
-- Seabourn — small ships (fewer than 500 passengers)
-- Viking — river ships
-- Viking — expedition ships
+- Royal Caribbean
+- Cunard
+- Seabourn
+- Seabourn
+- Viking
+- Viking
 - The Thinking Traveller
-- The Turquoise Holiday Company — general tour operators
-- Scott Dunn — travel specialists
+- The Turquoise Holiday Company
+- Scott Dunn
 - Benefit Cosmetics
 
 ### Time Out New York: Best of the City 2026
@@ -5219,7 +5188,7 @@ PUNCH · [link](https://punchdrink.com/articles/cocktail-recipes-best-new-bars-2
 *Note: partial: bars named in the recipe intros only*
 
 - Peach Crease Club — Denver
-- Vandell — Los Angeles. Everyone
+- Vandell — Los Angeles
 - Echo Lake — New York City
 
 ### Time Out: Top 500 Bars 2026
@@ -5275,11 +5244,6 @@ Tony Awards · [link](https://www.tonyawards.com/winners/year/2026/category/any/
 - Schmigadoon! — Best Musical
 - Arthur Miller's Death of a Salesman — Best Revival of a Play
 - Ragtime — Best Revival of a Musical
-- André Bishop — Special Tony Award for Lifetime Achievement in the Theatre
-- League of Resident Theatres (LORT) — Special Tony Award
-- Mary-Mitchell Campbell — Isabelle Stevenson Tony Award
-- American Players Theatre — Regional Theatre Tony Award
-- 1/52 Project — Tony Honors for Excellence in the Theatre
 
 ## Kids & YA Books
 
@@ -5312,7 +5276,7 @@ Rotten Tomatoes · [link](https://editorial.rottentomatoes.com/guide/best-new-do
 - Knife: The Attempted Murder of Salman Rushdie
 - Nuisance Bear
 - American Pachuco: The Legend of Luis Valdez
-- Paralyzed — Hope: The Maria Bamford Story
+- Paralyzed by Hope: The Maria Bamford Story
 - Closure
 - All About the Money
 - I'm Chevy Chase and You're Not
@@ -5323,7 +5287,7 @@ Rotten Tomatoes · [link](https://editorial.rottentomatoes.com/guide/best-new-do
 - Louis Theroux: Inside The Manosphere
 - Ghost in the Machine
 - Lorne
-- Marc — Sofia
+- Marc by Sofia
 - Public Access
 - MELANIA
 
@@ -5442,18 +5406,18 @@ Apple · [link](https://www.apple.com/newsroom/2026/11/meet-the-2026-app-store-a
 - Case Solved: The London Files — Apple TV App of the Year
 - Letterboxd — Apple TV App of the Year
 - Pocket Casts — Apple TV App of the Year
-- Brilliant — Cultural Impact App
-- chilli — Cultural Impact App
-- Hearing Buddy — Cultural Impact App
-- Karrot — Cultural Impact App
-- setlog — Cultural Impact App
-- Unedo — Cultural Impact App
-- and Roger — Cultural Impact Game
-- Consume Me — Cultural Impact Game
-- PancitoMerge — Cultural Impact Game
-- Sago Mini Jinja’s Garden — Cultural Impact Game
-- Spilled! — Cultural Impact Game
-- Tiny Bookshop — Cultural Impact Game
+- Brilliant
+- chilli
+- Hearing Buddy
+- Karrot
+- setlog
+- Unedo
+- and Roger
+- Consume Me
+- PancitoMerge
+- Sago Mini Jinja’s Garden
+- Spilled!
+- Tiny Bookshop
 
 ## Wine & Spirits
 
@@ -6000,6 +5964,7 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **The Complete Stories** — 3 lists: Kirkus: Best Fiction in Translation of 2026; The New Yorker: The Best Books of 2026 So Far; Kirkus: Best Fiction of 2026 (full list page)
 - **The Danger to Be Sane: Creativity and the Eccentric Mind** (Rosa Montero ; translated by Lindsey Ford) — 3 lists: Publishers Weekly: Best Books 2026 (all 150); Publishers Weekly: Best Books 2026 Top 10; Kirkus: Best Nonfiction of 2026 (full list page)
 - **The Life You Want** — 3 lists: The New Yorker: The Best Books of 2026 So Far; The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
+- **The New Dark Age** (James Marriott) — 3 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026; Kirkus: Best Nonfiction of 2026 (full list page)
 - **The News from Dublin** — 3 lists: The New Yorker: The Best Books of 2026 So Far; The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **The Savage Mind** (David Treuer) — 3 lists: TIME: 100 Must-Read Books of 2026; BookPage: The Best Nonfiction of 2026; Kirkus: Best Nonfiction of 2026 (full list page)
 - **The Shampoo Effect** (Jenny Jackson) — 3 lists: TIME: 100 Must-Read Books of 2026; Barnes & Noble: The Best Fiction Books of 2026; The New Yorker: The Best Books of 2026 So Far
@@ -6042,7 +6007,7 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **Dooneen** (Keith Ridgway (New Directions)) — 2 lists: Publishers Weekly: Best Books 2026 (all 150); The New Yorker: The Best Books of 2026 So Far
 - **Egrets, While War** — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **Elizabeth II** — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
-- **Enchantment** (Crime) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
+- **Enchantment** — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **Every Exit Brings You Home** (Naeem Murr) — 2 lists: Kirkus: Best Book Club Fiction of 2026; Kirkus: Best Fiction of 2026 (full list page)
 - **Exit Stalin** — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **Faces** — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
@@ -6122,18 +6087,18 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **Taipei Story** (R.F. Kuang) — 2 lists: TIME: 100 Must-Read Books of 2026; Barnes & Noble: The Best Fiction Books of 2026
 - **Take What You Can** (Naima Coster) — 2 lists: TIME: 100 Must-Read Books of 2026; Kirkus: Best Fiction of 2026 (full list page)
 - **The Adventures of Portly the Otter** — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
-- **The Aristocracy** (Crime) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
+- **The Aristocracy** — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **The Black Shield** (Wilbert L. Cooper) — 2 lists: The New Yorker: The Best Books of 2026 So Far; Kirkus: Best Nonfiction of 2026 (full list page)
 - **The Blitz Sisters** — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **The Brightness** (Chad Harbach) — 2 lists: Kirkus: Best Book Club Fiction of 2026; Kirkus: Best Fiction of 2026 (full list page)
 - **The Cauldron** — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **The Cruelest Game** (Matthew Futterman) — 2 lists: The Telegraph: The Best Books of 2026; Kirkus: Best Nonfiction of 2026 (full list page)
 - **The Cultural Marxism Conspiracy** — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
-- **The Deadly Inheritance of Everest Macdonald** (Crime) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
+- **The Deadly Inheritance of Everest Macdonald** — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **The Disease of Boredom** — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **The Distance of a Shout** — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **The Dreaded Pox** — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
-- **The Drowning Place** (Crime) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
+- **The Drowning Place** — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **The Fight of Our Lives: AIDS in America** (Gabriel Duckels and David Levithan (Knopf)) — 2 lists: Publishers Weekly: Best Books 2026 (all 150); National Book Awards 2026 Winners
 - **The Four Wives and Five Deaths of Richard Milford** (Nafissa Thompson-Spires) — 2 lists: Kirkus: Best of 2026 – Our Favorite Fiction; Kirkus: Best Fiction of 2026 (full list page)
 - **The Frenzy** (Joyce Carol Oates (Hogarth)) — 2 lists: Publishers Weekly: Best Books 2026 (all 150); The New Yorker: The Best Books of 2026 So Far
@@ -6148,9 +6113,8 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **The Medieval Guide to Healthy Living** — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **The Messenger** — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **The Monroe Girls** — 2 lists: Kirkus: Best Fiction in Translation of 2026; Kirkus: Best Fiction of 2026 (full list page)
-- **The Murder Planner** (Crime) — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
+- **The Murder Planner** — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **The Nerd Reich** (Gil Durán) — 2 lists: TIME: 100 Must-Read Books of 2026; Kirkus: Best Nonfiction of 2026 (full list page)
-- **The New Dark Age** — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **The Nord Stream Conspiracy** — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **The Oak and The Larch** — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
 - **The Odyssey** — 2 lists: The Telegraph: The Best Books of 2026 (critics' picks); The Telegraph: The Best Books of 2026
@@ -6203,13 +6167,14 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **My Days of 58** (Bill Callahan) — 8 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Album of the Year: 2026 Critic Year-End List Aggregate; Rolling Stone: Best Albums of 2026 So Far; Stereogum: 50 Best Albums of 2026 So Far; Paste: 50 Best Albums of 2026 So Far; Mojo: The Best Albums of 2026... So Far; BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
 - **Secret Love** (Dry Cleaning) — 8 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Album of the Year: 2026 Critic Year-End List Aggregate; Rolling Stone: Best Albums of 2026 So Far; Paste: 50 Best Albums of 2026 So Far; Mojo: The Best Albums of 2026... So Far; The Guardian: The Best Albums of 2026 So Far; Clash: The 60 Best Albums of 2026 (So Far)
 - **Sexistential** (Robyn) — 8 lists: Billboard: 50 Best Albums of 2026 So Far; Rolling Stone: Best Albums of 2026 So Far; Stereogum: 50 Best Albums of 2026 So Far; Consequence: 33 Best Albums of 2026 So Far; Paste: 50 Best Albums of 2026 So Far; The Guardian: The Best Albums of 2026 So Far; NME: The Best Albums of 2026... So Far; BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
+- **You Seem Pretty Sad for a Girl So in Love** (Olivia Rodrigo) — 8 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Billboard: 50 Best Albums of 2026 So Far; Rolling Stone: Best Albums of 2026 So Far; Pitchfork: The Best Music of 2026 So Far; NME: The Best Albums of 2026... So Far; Clash: The 60 Best Albums of 2026 (So Far); BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
 - **Girlfriend** (Grace Ives) — 7 lists: Billboard: 50 Best Albums of 2026 So Far; Pitchfork: The Best Music of 2026 So Far; Stereogum: 50 Best Albums of 2026 So Far; Paste: 50 Best Albums of 2026 So Far; The Guardian: The Best Albums of 2026 So Far; Clash: The 60 Best Albums of 2026 (So Far); BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
 - **Middle of Nowhere** (Kacey Musgraves) — 7 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Billboard: 50 Best Albums of 2026 So Far; Rolling Stone: Best Albums of 2026 So Far; Consequence: 33 Best Albums of 2026 So Far; The Guardian: The Best Albums of 2026 So Far; NME: The Best Albums of 2026... So Far; BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
+- **Mutiny After Midnight** — 7 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Album of the Year: 2026 Critic Year-End List Aggregate; Rolling Stone: Best Albums of 2026 So Far; Stereogum: 50 Best Albums of 2026 So Far; Consequence: 33 Best Albums of 2026 So Far; Paste: 50 Best Albums of 2026 So Far; Mojo: The Best Albums of 2026... So Far
 - **The Boys of Dungeon Lane** (Paul McCartney) — 7 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Album of the Year: 2026 Critic Year-End List Aggregate; Billboard: 50 Best Albums of 2026 So Far; Rolling Stone: Best Albums of 2026 So Far; Mojo: The Best Albums of 2026... So Far; Clash: The 60 Best Albums of 2026 (So Far)
 - **The Mountain** (Gorillaz) — 7 lists: Rough Trade: Albums of the Year 2026; Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Album of the Year: 2026 Critic Year-End List Aggregate; Rolling Stone: Best Albums of 2026 So Far; Consequence: 33 Best Albums of 2026 So Far; Mojo: The Best Albums of 2026... So Far
 - **To Whom This May Concern** (Jill Scott) — 7 lists: Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Billboard: 50 Best Albums of 2026 So Far; Rolling Stone: Best Albums of 2026 So Far; Pitchfork: The Best Music of 2026 So Far; Consequence: 33 Best Albums of 2026 So Far; The Guardian: The Best Albums of 2026 So Far; Clash: The 60 Best Albums of 2026 (So Far)
 - **Wendy Eisenberg** (Wendy Eisenberg) — 7 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Pitchfork: The Best Music of 2026 So Far; Stereogum: 50 Best Albums of 2026 So Far; Paste: 50 Best Albums of 2026 So Far; The Guardian: The Best Albums of 2026 So Far; BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
-- **You Seem Pretty Sad for a Girl So in Love** (Olivia Rodrigo) — 7 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Billboard: 50 Best Albums of 2026 So Far; Rolling Stone: Best Albums of 2026 So Far; Pitchfork: The Best Music of 2026 So Far; Clash: The 60 Best Albums of 2026 (So Far); BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
 - **Play Me** (Kim Gordon) — 6 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Rolling Stone: Best Albums of 2026 So Far; Paste: 50 Best Albums of 2026 So Far; The Guardian: The Best Albums of 2026 So Far; Clash: The 60 Best Albums of 2026 (So Far)
 - **the apple tree under the sea** — 6 lists: Billboard: 50 Best Albums of 2026 So Far; Rolling Stone: Best Albums of 2026 So Far; Stereogum: 50 Best Albums of 2026 So Far; NME: The Best Albums of 2026... So Far; Clash: The 60 Best Albums of 2026 (So Far); BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
 - **This Music May Contain Hope** — 6 lists: Billboard: 50 Best Albums of 2026 So Far; Rolling Stone: Best Albums of 2026 So Far; Consequence: 33 Best Albums of 2026 So Far; NME: The Best Albums of 2026... So Far; Clash: The 60 Best Albums of 2026 (So Far); Mercury Prize 2026 Winner
@@ -6255,8 +6220,6 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **Limbo** (Namasenda) — 3 lists: Stereogum: 50 Best Albums of 2026 So Far; Consequence: 33 Best Albums of 2026 So Far; Paste: 50 Best Albums of 2026 So Far
 - **Love Is Not Enough** (Converge) — 3 lists: Decibel: Top 40 Albums of 2026; Consequence: 33 Best Albums of 2026 So Far; Clash: The 60 Best Albums of 2026 (So Far)
 - **Masquerade** (Cardinals) — 3 lists: Rolling Stone: Best Albums of 2026 So Far; Stereogum: 50 Best Albums of 2026 So Far; BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
-- **Mutiny After Midnight** — 3 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Album of the Year: 2026 Critic Year-End List Aggregate; Rolling Stone: Best Albums of 2026 So Far
-- **Mutiny After Midnight** (Johnny Blue Skies & The Dark Clouds) — 3 lists: Stereogum: 50 Best Albums of 2026 So Far; Paste: 50 Best Albums of 2026 So Far; Mojo: The Best Albums of 2026... So Far
 - **My Name** (Tony Bontana) — 3 lists: Paste: 50 Best Albums of 2026 So Far; The Guardian: The Best Albums of 2026 So Far; Clash: The 60 Best Albums of 2026 (So Far)
 - **new avatar** (Kelela) — 3 lists: Album of the Year: 2026 Critic Year-End List Aggregate; Pitchfork: The Best Music of 2026 So Far; Clash: The 60 Best Albums of 2026 (So Far)
 - **Nine Inch Noize** — 3 lists: Rolling Stone: Best Albums of 2026 So Far; Stereogum: 50 Best Albums of 2026 So Far; BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
@@ -6310,6 +6273,7 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **Massive Champion** (Getdown Services) — 2 lists: Rough Trade: Albums of the Year 2026; Mojo: The 75 Best Albums of 2026 (via Year-End Lists)
 - **Music, Fashion, Film** — 2 lists: Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Pitchfork: The Best Music of 2026 So Far
 - **Necropalace** (Worm) — 2 lists: Decibel: Top 40 Albums of 2026; BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
+- **Of Earth Wires** (Dua Saleh) — 2 lists: Consequence: 33 Best Albums of 2026 So Far; NME: The Best Albums of 2026... So Far
 - **Peanut** (Otto Benson) — 2 lists: Pitchfork: The Best Music of 2026 So Far; The Guardian: The Best Albums of 2026 So Far
 - **Perfecth** (Queens of the Stone Age) — 2 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists)
 - **Philadelphia's Been Good to Me** (Kurt Vile) — 2 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists)
@@ -6362,10 +6326,10 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 ### Movies
 
 - **Blue Heron** (Sophy Romvari) — 9 lists: Time Out: Best Movies of 2026 (So Far); Rotten Tomatoes: Best New Movies of 2026; Variety: Best Movies of 2026 (So Far); IndieWire: Best Movies of 2026 (So Far); Vulture: Best New Movies of 2026 (So Far); Rolling Stone: Best Movies of 2026 So Far; Esquire: The 36 Best Movies of 2026 (So Far); The A.V. Club: The Best Films of 2026 So Far; /Film: 49 Best Movies of 2026 (So Far)
+- **28 Years Later: The Bone Temple** (Nia DaCosta) — 8 lists: Time Out: Best Movies of 2026 (So Far); Rotten Tomatoes: Best New Movies of 2026; IndieWire: Best Movies of 2026 (So Far); Vulture: Best New Movies of 2026 (So Far); BBC Culture: 12 of the Best Films of 2026 So Far; The Guardian: The Best Films of 2026 So Far; The A.V. Club: The Best Films of 2026 So Far; /Film: 49 Best Movies of 2026 (So Far)
 - **Nirvanna the Band the Show the Movie** (Matt Johnson) — 8 lists: Time Out: Best Movies of 2026 (So Far); Rotten Tomatoes: Best New Movies of 2026; IndieWire: Best Movies of 2026 (So Far); Vulture: Best New Movies of 2026 (So Far); BBC Culture: 12 of the Best Films of 2026 So Far; Esquire: The 36 Best Movies of 2026 (So Far); The A.V. Club: The Best Films of 2026 So Far; /Film: 49 Best Movies of 2026 (So Far)
 - **Obsession** (Curry Barker) — 8 lists: Time Out: Best Movies of 2026 (So Far); Rotten Tomatoes: Best New Movies of 2026; Variety: Best Movies of 2026 (So Far); IndieWire: Best Movies of 2026 (So Far); Rolling Stone: Best Movies of 2026 So Far; The Guardian: The Best Films of 2026 So Far; The A.V. Club: The Best Films of 2026 So Far; /Film: 49 Best Movies of 2026 (So Far)
 - **Project Hail Mary** ((dirs. Phil Lord & Chris Miller) — 8 lists: Time Out: Best Movies of 2026 (So Far); Rotten Tomatoes: Best New Movies of 2026; IndieWire: Best Movies of 2026 (So Far); Vulture: Best New Movies of 2026 (So Far); Rolling Stone: Best Movies of 2026 So Far; BBC Culture: 12 of the Best Films of 2026 So Far; The A.V. Club: The Best Films of 2026 So Far; /Film: 49 Best Movies of 2026 (So Far)
-- **28 Years Later: The Bone Temple** (Nia DaCosta) — 7 lists: Time Out: Best Movies of 2026 (So Far); Rotten Tomatoes: Best New Movies of 2026; IndieWire: Best Movies of 2026 (So Far); Vulture: Best New Movies of 2026 (So Far); BBC Culture: 12 of the Best Films of 2026 So Far; The Guardian: The Best Films of 2026 So Far; /Film: 49 Best Movies of 2026 (So Far)
 - **The Christophers** (Steven Soderbergh) — 7 lists: Rotten Tomatoes: Best New Movies of 2026; IndieWire: Best Movies of 2026 (So Far); Vulture: Best New Movies of 2026 (So Far); Rolling Stone: Best Movies of 2026 So Far; The Guardian: The Best Films of 2026 So Far; Esquire: The 36 Best Movies of 2026 (So Far); The A.V. Club: The Best Films of 2026 So Far
 - **Exit 8** (Genki Kawamura) — 6 lists: Rotten Tomatoes: Best New Movies of 2026; IndieWire: Best Movies of 2026 (So Far); Vulture: Best New Movies of 2026 (So Far); Rolling Stone: Best Movies of 2026 So Far; The Guardian: The Best Films of 2026 So Far; Esquire: The 36 Best Movies of 2026 (So Far)
 - **Maddie’s Secret** (John Early) — 6 lists: Time Out: Best Movies of 2026 (So Far); Rotten Tomatoes: Best New Movies of 2026; IndieWire: Best Movies of 2026 (So Far); Vulture: Best New Movies of 2026 (So Far); Esquire: The 36 Best Movies of 2026 (So Far); The A.V. Club: The Best Films of 2026 So Far
@@ -6527,6 +6491,7 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **Cupertino** — 3 lists: TV Guide: Best Reviewed TV Shows of 2026 (Metacritic); Rotten Tomatoes: Best TV Shows of 2026; TIME: The Best TV Shows of 2026 So Far
 - **Dark Winds** — 3 lists: Vulture: Best New TV Shows and Returning Series of 2026; TV Guide: Best Reviewed TV Shows of 2026 (Metacritic); The A.V. Club: The Best TV of 2026 So Far
 - **For All Mankind: Season 5** — 3 lists: Vulture: Best New TV Shows and Returning Series of 2026; TV Guide: Best Reviewed TV Shows of 2026 (Metacritic); Rotten Tomatoes: Best TV Shows of 2026
+- **Jury Duty: Company Retreat** — 3 lists: Variety: 20 Best Shows of 2026 (So Far); Rotten Tomatoes: Best TV Shows of 2026; The A.V. Club: The Best TV of 2026 So Far
 - **King of the Hill Season 15** — 3 lists: Vulture: Best New TV Shows and Returning Series of 2026; TV Guide: Best Reviewed TV Shows of 2026 (Metacritic); TIME: The Best TV Shows of 2026 So Far
 - **Mel Brooks: The 99 Year Old Man** — 3 lists: TV Guide: Best Reviewed TV Shows of 2026 (Metacritic); Rotten Tomatoes: Best TV Shows of 2026; TIME: The Best TV Shows of 2026 So Far
 - **My Brilliant Career** — 3 lists: TV Guide: Best Reviewed TV Shows of 2026 (Metacritic); Rotten Tomatoes: Best TV Shows of 2026; TIME: The Best TV Shows of 2026 So Far
@@ -6537,6 +6502,7 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **Ted Lasso** — 3 lists: Time Out: 39 Best TV Shows of 2026 (So Far); BBC Culture: 19 of the Best TV Shows of 2026 So Far; Rotten Tomatoes: Best TV Shows of 2026
 - **The Audacity** — 3 lists: Variety: 20 Best Shows of 2026 (So Far); Rotten Tomatoes: Best TV Shows of 2026; TIME: The Best TV Shows of 2026 So Far
 - **The Night Manager** — 3 lists: Time Out: 39 Best TV Shows of 2026 (So Far); BBC Culture: 19 of the Best TV Shows of 2026 So Far; Rotten Tomatoes: Best TV Shows of 2026
+- **The Traitors** — 3 lists: Vulture: Best New TV Shows and Returning Series of 2026; The Guardian: The Best TV of 2026 So Far; TV Guide: Best Reviewed TV Shows of 2026 (Metacritic)
 - **The 'Burbs** — 3 lists: Variety: 20 Best Shows of 2026 (So Far); Rotten Tomatoes: Best TV Shows of 2026; TIME: The Best TV Shows of 2026 So Far
 - **Vladimir** — 3 lists: Vulture: Best New TV Shows and Returning Series of 2026; Rotten Tomatoes: Best TV Shows of 2026; TIME: The Best TV Shows of 2026 So Far
 - **A Different World** — 2 lists: Rotten Tomatoes: Best TV Shows of 2026; TIME: The Best TV Shows of 2026 So Far
@@ -6552,7 +6518,7 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **Dutton Ranch** — 2 lists: Esquire: Best TV Shows of 2026 So Far; Rotten Tomatoes: Best TV Shows of 2026
 - **Half Man** — 2 lists: Variety: 20 Best Shows of 2026 (So Far); Rotten Tomatoes: Best TV Shows of 2026
 - **Heated Rivalry** — 2 lists: Time Out: 39 Best TV Shows of 2026 (So Far); The Guardian: The Best TV of 2026 So Far
-- **Jury Duty Presents: Company Retreat** — 2 lists: Rotten Tomatoes: Best TV Shows of 2026; The A.V. Club: The Best TV of 2026 So Far
+- **Jo Nesbo's Detective Hole: Season 1** — 2 lists: Time Out: 39 Best TV Shows of 2026 (So Far); Rotten Tomatoes: Best TV Shows of 2026
 - **Lanterns** — 2 lists: Esquire: Best TV Shows of 2026 So Far; Rotten Tomatoes: Best TV Shows of 2026
 - **Legends (Netflix)** — 2 lists: Vulture: Best New TV Shows and Returning Series of 2026; Rotten Tomatoes: Best TV Shows of 2026
 - **Little House on the Prairie (Netflix)** — 2 lists: Vulture: Best New TV Shows and Returning Series of 2026; Rotten Tomatoes: Best TV Shows of 2026
@@ -6565,6 +6531,7 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **Scrubs** — 2 lists: The Guardian: The Best TV of 2026 So Far; Rotten Tomatoes: Best TV Shows of 2026
 - **Shrinking** — 2 lists: Rotten Tomatoes: Best TV Shows of 2026; The A.V. Club: The Best TV of 2026 So Far
 - **Star Trek: Starfleet Academy: Season 1** — 2 lists: Time Out: 39 Best TV Shows of 2026 (So Far); Rotten Tomatoes: Best TV Shows of 2026
+- **Star Wars: Visions Presents – The Ninth Jedi** — 2 lists: Esquire: Best TV Shows of 2026 So Far; TV Guide: Best Reviewed TV Shows of 2026 (Metacritic)
 - **Steal: Season 1** — 2 lists: Time Out: 39 Best TV Shows of 2026 (So Far); Rotten Tomatoes: Best TV Shows of 2026
 - **Sugar: Season 2** — 2 lists: Vulture: Best New TV Shows and Returning Series of 2026; Rotten Tomatoes: Best TV Shows of 2026
 - **The Beauty** — 2 lists: BBC Culture: 19 of the Best TV Shows of 2026 So Far; TIME: The Best TV Shows of 2026 So Far
@@ -6575,7 +6542,6 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **The Miniature Wife** — 2 lists: Rotten Tomatoes: Best TV Shows of 2026; TIME: The Best TV Shows of 2026 So Far
 - **The One About Matthew Perry** — 2 lists: Rotten Tomatoes: Best TV Shows of 2026; TIME: The Best TV Shows of 2026 So Far
 - **The Paper: Season 2** — 2 lists: Esquire: Best TV Shows of 2026 So Far; Rotten Tomatoes: Best TV Shows of 2026
-- **The Traitors** — 2 lists: Vulture: Best New TV Shows and Returning Series of 2026; The Guardian: The Best TV of 2026 So Far
 - **Trespasses** — 2 lists: Vulture: Best New TV Shows and Returning Series of 2026; TIME: The Best TV Shows of 2026 So Far
 - **Waiting for the Out** — 2 lists: Time Out: 39 Best TV Shows of 2026 (So Far); The Guardian: The Best TV of 2026 So Far
 - **X-Men '97 Season 2 (Disney+)** — 2 lists: Vulture: Best New TV Shows and Returning Series of 2026; TV Guide: Best Reviewed TV Shows of 2026 (Metacritic)
@@ -6588,10 +6554,12 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **A History of the United States in 100 Objects** — 2 lists: The Guardian: Best Podcasts of 2026 So Far; BBC Culture: 18 of the Best Podcasts of 2026 So Far
 - **City of Lights** — 2 lists: Audible: The 20 Best Podcasts of 2026; BBC Culture: 18 of the Best Podcasts of 2026 So Far
 - **Dan Taberski's Manifesto** — 2 lists: Audible: The 20 Best Podcasts of 2026; Vulture: Best New Podcasts of 2026 (So Far)
+- **Foundling** — 2 lists: Spotify: Best Podcasts of the Year (So Far); The Guardian: Best Podcasts of 2026 So Far
 - **Friends Keep Secrets** — 2 lists: Apple Podcasts: Best of 2026; Spotify: Best Podcasts of the Year (So Far)
 - **Get Birding With Sean Bean** — 2 lists: The Guardian: Best Podcasts of 2026 So Far; BBC Culture: 18 of the Best Podcasts of 2026 So Far
 - **Love+Radio: Blood Memory** — 2 lists: Vulture: Best New Podcasts of 2026 (So Far); The Guardian: Best Podcasts of 2026 So Far
 - **The Mindhunter** — 2 lists: Audible: The 20 Best Podcasts of 2026; BBC Culture: 18 of the Best Podcasts of 2026 So Far
+- **What to Carry, What to Burn** — 2 lists: Audible: The 20 Best Podcasts of 2026; BBC Culture: 18 of the Best Podcasts of 2026 So Far
 - **Where Is Austin Tice?** — 2 lists: Apple Podcasts: Best of 2026; BBC Culture: 18 of the Best Podcasts of 2026 So Far
 
 ### Video Games
@@ -6631,6 +6599,7 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **Pragmata** — 3 lists: GameSpot: Best Games of 2026 (So Far); IGN: Best Video Games of 2026 (So Far); Polygon: Game of the Year 2026
 - **Rhythm Heaven Groove** — 3 lists: GameSpot: Best Games of 2026 (So Far); IGN: Best Video Games of 2026 (So Far); Polygon: Game of the Year 2026
 - **Splatoon Raiders** — 3 lists: GameSpot: Best Games of 2026 (So Far); IGN: Best Video Games of 2026 (So Far); Game Informer: Top Scoring Reviews of 2026
+- **World of Warcraft: Midnight** — 3 lists: GameSpot: Best Games of 2026 (So Far); IGN: Best Video Games of 2026 (So Far); Game Informer: Top Scoring Reviews of 2026
 - **Assassin’s Creed Black Flag Resynced** — 2 lists: IGN: Best Video Games of 2026 (So Far); Polygon: Game of the Year 2026
 - **Avatar Legends: The Fighting Game** — 2 lists: IGN: Best Video Games of 2026 (So Far); Polygon: Game of the Year 2026
 - **Doom: The Dark Ages - Revelations** — 2 lists: IGN: Best Video Games of 2026 (So Far); Metacritic: Best Games of 2026
@@ -6653,18 +6622,20 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **Super Mario Bros. Wonder Nintendo Switch 2 Edition + Meetup in Bellabel Park** — 2 lists: IGN: Best Video Games of 2026 (So Far); Game Informer: Top Scoring Reviews of 2026
 - **The Witcher 3: Wild Hunt** — 2 lists: Metacritic: Best Games of 2026; Polygon: Game of the Year 2026
 - **Valheim** — 2 lists: IGN: Best Video Games of 2026 (So Far); Metacritic: Best Games of 2026
-- **World of Warcraft: Midnight** — 2 lists: GameSpot: Best Games of 2026 (So Far); Game Informer: Top Scoring Reviews of 2026
 - **Zero Parades: For Dead Spies** — 2 lists: Polygon: Best New Video Games of 2026 (So Far); GameSpot: Best Games of 2026 (So Far)
 
 ### Tech & Gadgets
 
+- **MacBook Neo** — 3 lists: The Verge: Best of 2026; Engadget: Best of 2026; Tom's Guide Awards 2026
 - **Samsung Galaxy Z Fold 8** — 3 lists: The Verge: Best of 2026; Engadget: Best of 2026; Tom's Guide Awards 2026
 - **Adidas Adizero Adios Pro Evo 3** — 2 lists: TIME: Best Inventions of 2026; Tom's Guide Awards 2026
 - **ASUS ROG Zephyrus Duo** — 2 lists: The Verge: Best of 2026; Engadget: Best of 2026
 - **Asus Zenbook Duo** — 2 lists: TIME: Best Inventions of 2026; Engadget: Best of 2026
 - **Fitbit Air** — 2 lists: The Verge: Best of 2026; Tom's Guide Awards 2026
 - **Framework Laptop 13 Pro** — 2 lists: TIME: Best Inventions of 2026; The Verge: Best of 2026
-- **MacBook Neo** — 2 lists: The Verge: Best of 2026; Tom's Guide Awards 2026
+- **iPhone 18 Pro** — 2 lists: The Verge: Best of 2026; Engadget: Best of 2026
+- **Samsung Galaxy Tab S12 Ultra** — 2 lists: Engadget: Best of 2026; Engadget: Review Recap – The Best of 2026
+- **Steam Controller** — 2 lists: The Verge: Best of 2026; Engadget: Best of 2026
 - **Xteink X4 Pro** — 2 lists: TIME: Best Inventions of 2026; The Verge: Best of 2026
 
 ### Restaurants & Food
@@ -6691,14 +6662,33 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 
 ### Travel & Hotels
 
+- **Claridge's** — 3 lists: The World's 50 Best Hotels 2026; Condé Nast Traveler: The Gold List 2026; CN Traveller (UK): 2026 Readers' Choice Awards Winners
+- **Jumeirah Marsa Al Arab** (Dubai) — 3 lists: Condé Nast Traveler: Hot List 2026; The World's 50 Best Hotels 2026; CN Traveller (UK): 2026 Readers' Choice Awards Winners
+- **Melbourne** — 3 lists: Travel + Leisure: 50 Best Places to Travel in 2026; Time Out: 50 Best Cities in the World 2026; CN Traveller (UK): 2026 Readers' Choice Awards Winners
 - **Mexico City** — 3 lists: Travel + Leisure: 50 Best Places to Travel in 2026; Lonely Planet: Best in Travel 2026 (CNN coverage); Time Out: 50 Best Cities in the World 2026
+- **Amangiri** — 2 lists: The World's 50 Best Hotels 2026; Condé Nast Traveler: The Gold List 2026
+- **Badrutt's Palace** — 2 lists: The World's 50 Best Hotels 2026; Condé Nast Traveler: The Gold List 2026
+- **Bangkok** — 2 lists: Time Out: 50 Best Cities in the World 2026; CN Traveller (UK): 2026 Readers' Choice Awards Winners
+- **Barbados** — 2 lists: Lonely Planet: Best in Travel 2026 (CNN coverage); CN Traveller (UK): 2026 Readers' Choice Awards Winners
 - **Capella Singapore** (Singapore) — 2 lists: Condé Nast Traveler: The Gold List 2026; CN Traveller (UK): 2026 Readers' Choice Awards Winners
-- **Claridge's** (London) — 2 lists: The World's 50 Best Hotels 2026; CN Traveller (UK): 2026 Readers' Choice Awards Winners
+- **Capella Sydney** (Sydney) — 2 lists: The World's 50 Best Hotels 2026; CN Traveller (UK): 2026 Readers' Choice Awards Winners
+- **Chiva-Som** (Thailand) — 2 lists: Condé Nast Traveler: The Gold List 2026; CN Traveller (UK): 2026 Readers' Choice Awards Winners
+- **Deer Valley, Utah** — 2 lists: Condé Nast Traveler: Best Places to Go in 2026; CN Traveller (UK): 2026 Readers' Choice Awards Winners
+- **Edinburgh** — 2 lists: Time Out: 50 Best Cities in the World 2026; CN Traveller (UK): 2026 Readers' Choice Awards Winners
+- **Four Seasons Astir Palace** — 2 lists: The World's 50 Best Hotels 2026; Condé Nast Traveler: The Gold List 2026
+- **Guadalajara** — 2 lists: Condé Nast Traveler: Best Places to Go in 2026; Time Out: 50 Best Cities in the World 2026
 - **Hong Kong** — 2 lists: Condé Nast Traveler: Best Places to Go in 2026; Time Out: 50 Best Cities in the World 2026
-- **Jumeirah Marsa Al Arab** (Dubai) — 2 lists: Condé Nast Traveler: Hot List 2026; The World's 50 Best Hotels 2026
-- **Melbourne** — 2 lists: Travel + Leisure: 50 Best Places to Travel in 2026; Time Out: 50 Best Cities in the World 2026
+- **Le Bristol** (Paris) — 2 lists: The World's 50 Best Hotels 2026; CN Traveller (UK): 2026 Readers' Choice Awards Winners
+- **Mandarin Oriental Bangkok** (Bangkok) — 2 lists: The World's 50 Best Hotels 2026; CN Traveller (UK): 2026 Readers' Choice Awards Winners
+- **Medellín** — 2 lists: Condé Nast Traveler: Best Places to Go in 2026; Time Out: 50 Best Cities in the World 2026
+- **Mount Nelson** (Cape Town) — 2 lists: The World's 50 Best Hotels 2026; CN Traveller (UK): 2026 Readers' Choice Awards Winners
 - **Oulu, Finland** — 2 lists: Condé Nast Traveler: Best Places to Go in 2026; Travel + Leisure: 50 Best Places to Travel in 2026
+- **Paris** — 2 lists: Time Out: 50 Best Cities in the World 2026; CN Traveller (UK): 2026 Readers' Choice Awards Winners
+- **Passalacqua** — 2 lists: The World's 50 Best Hotels 2026; Condé Nast Traveler: The Gold List 2026
+- **Porto** — 2 lists: Time Out: 50 Best Cities in the World 2026; CN Traveller (UK): 2026 Readers' Choice Awards Winners
 - **Singapore** — 2 lists: Travel + Leisure: 50 Best Places to Travel in 2026; Time Out: 50 Best Cities in the World 2026
+- **SUJÁN Sher Bagh** (India) — 2 lists: Condé Nast Traveler: The Gold List 2026; CN Traveller (UK): 2026 Readers' Choice Awards Winners
+- **The Peninsula Istanbul** — 2 lists: The World's 50 Best Hotels 2026; CN Traveller (UK): 2026 Readers' Choice Awards Winners
 
 ### Bars & Cocktails
 
@@ -6722,6 +6712,7 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **Line** (Athens) — 2 lists: The World's 50 Best Bars 2026; Time Out: Top 500 Bars 2026
 - **Locale Firenze** (Florence) — 2 lists: The World's 50 Best Bars 2026; Time Out: Top 500 Bars 2026
 - **Martiny's** (New York) — 2 lists: The World's 50 Best Bars 2026; North America's 50 Best Bars 2026
+- **Moebius** (Milan) — 2 lists: The World's 50 Best Bars 2026; Time Out: Top 500 Bars 2026
 - **Montana** (Hong Kong) — 2 lists: The World's 50 Best Bars 2026; Time Out: Top 500 Bars 2026
 - **Paradiso** (Barcelona) — 2 lists: The World's 50 Best Bars 2026; Time Out: Top 500 Bars 2026
 - **Schmuck** (New York) — 2 lists: The World's 50 Best Bars 2026; North America's 50 Best Bars 2026

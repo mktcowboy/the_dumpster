@@ -421,14 +421,14 @@
    "url": "https://www.vulture.com/article/best-new-podcasts-2026.html"
   },
   {
-   "name": "Apple Podcasts: Best of 2026",
-   "outlet": "Apple Podcasts",
-   "url": "https://podcasts.apple.com/us/multi-room/6818658667"
-  },
-  {
    "name": "Spotify: Best Podcasts of the Year (So Far)",
    "outlet": "Spotify",
    "url": "https://newsroom.spotify.com/2026-06-23/best-podcasts-of-the-year-list/"
+  },
+  {
+   "name": "Apple Podcasts: Best of 2026",
+   "outlet": "Apple Podcasts",
+   "url": "https://podcasts.apple.com/us/multi-room/6818658667"
   },
   {
    "name": "Apple Podcasts: 2026 Show of the Year",
@@ -526,19 +526,9 @@
    "url": "https://www.globenewswire.com/news-release/2026/09/15/3362221/0/en/food-wine-reveals-the-2026-best-new-chefs.html"
   },
   {
-   "name": "Travel + Leisure: 50 Best Places to Travel in 2026",
-   "outlet": "Travel + Leisure",
-   "url": "https://www.travelandleisure.com/best-places-to-go-2026-11840319"
-  },
-  {
-   "name": "Lonely Planet: Best in Travel 2026 (CNN coverage)",
-   "outlet": "CNN (on Lonely Planet)",
-   "url": "https://www.cnn.com/2025/10/21/travel/lonely-planet-best-in-travel-2026"
-  },
-  {
-   "name": "Time Out: 50 Best Cities in the World 2026",
-   "outlet": "Time Out",
-   "url": "https://www.timeout.com/travel/best-cities-2026"
+   "name": "The World's 50 Best Hotels 2026",
+   "outlet": "The World's 50 Best",
+   "url": "https://www.the50.com/stories/News/the-50-best-hotels-2026-the-list-revealed.html"
   },
   {
    "name": "Condé Nast Traveler: The Gold List 2026",
@@ -551,19 +541,29 @@
    "url": "https://www.cntraveller.com/article/readers-choice-winners-2026"
   },
   {
-   "name": "The World's 50 Best Hotels 2026",
-   "outlet": "The World's 50 Best",
-   "url": "https://www.the50.com/stories/News/the-50-best-hotels-2026-the-list-revealed.html"
+   "name": "Condé Nast Traveler: Hot List 2026",
+   "outlet": "Condé Nast Traveler",
+   "url": "https://www.cntraveler.com/story/hot-list-2026-winners"
+  },
+  {
+   "name": "Travel + Leisure: 50 Best Places to Travel in 2026",
+   "outlet": "Travel + Leisure",
+   "url": "https://www.travelandleisure.com/best-places-to-go-2026-11840319"
+  },
+  {
+   "name": "Time Out: 50 Best Cities in the World 2026",
+   "outlet": "Time Out",
+   "url": "https://www.timeout.com/travel/best-cities-2026"
+  },
+  {
+   "name": "Lonely Planet: Best in Travel 2026 (CNN coverage)",
+   "outlet": "CNN (on Lonely Planet)",
+   "url": "https://www.cnn.com/2025/10/21/travel/lonely-planet-best-in-travel-2026"
   },
   {
    "name": "Condé Nast Traveler: Best Places to Go in 2026",
    "outlet": "Condé Nast Traveler",
    "url": "https://www.cntraveler.com/story/the-best-places-to-go-in-2026"
-  },
-  {
-   "name": "Condé Nast Traveler: Hot List 2026",
-   "outlet": "Condé Nast Traveler",
-   "url": "https://www.cntraveler.com/story/hot-list-2026-winners"
   },
   {
    "name": "Time Out New York: Best of the City 2026",
@@ -1702,6 +1702,16 @@
      ]
     },
     {
+     "title": "The New Dark Age",
+     "creator": "James Marriott",
+     "count": 3,
+     "sources": [
+      14,
+      15,
+      19
+     ]
+    },
+    {
      "title": "The News from Dublin",
      "creator": "",
      "count": 3,
@@ -2090,7 +2100,7 @@
     },
     {
      "title": "Enchantment",
-     "creator": "Crime",
+     "creator": "",
      "count": 2,
      "sources": [
       14,
@@ -2810,7 +2820,7 @@
     },
     {
      "title": "The Aristocracy",
-     "creator": "Crime",
+     "creator": "",
      "count": 2,
      "sources": [
       14,
@@ -2873,7 +2883,7 @@
     },
     {
      "title": "The Deadly Inheritance of Everest Macdonald",
-     "creator": "Crime",
+     "creator": "",
      "count": 2,
      "sources": [
       14,
@@ -2909,7 +2919,7 @@
     },
     {
      "title": "The Drowning Place",
-     "creator": "Crime",
+     "creator": "",
      "count": 2,
      "sources": [
       14,
@@ -3044,7 +3054,7 @@
     },
     {
      "title": "The Murder Planner",
-     "creator": "Crime",
+     "creator": "",
      "count": 2,
      "sources": [
       14,
@@ -3058,15 +3068,6 @@
      "sources": [
       5,
       19
-     ]
-    },
-    {
-     "title": "The New Dark Age",
-     "creator": "",
-     "count": 2,
-     "sources": [
-      14,
-      15
      ]
     },
     {
@@ -3419,7 +3420,7 @@
      ]
     },
     {
-     "title": "53 DAYS",
+     "title": "53 Days",
      "creator": "Timothy W. Ryback",
      "count": 1,
      "sources": [
@@ -3443,7 +3444,7 @@
      ]
     },
     {
-     "title": "A DEAD WHITE",
+     "title": "A Dead White",
      "creator": "Wendy S. Walters",
      "count": 1,
      "sources": [
@@ -3459,7 +3460,7 @@
      ]
     },
     {
-     "title": "A GUIDE TO OPEN WATER LIFESAVING",
+     "title": "A Guide to Open Water Lifesaving",
      "creator": "Virginia Eubanks",
      "count": 1,
      "sources": [
@@ -3467,7 +3468,7 @@
      ]
     },
     {
-     "title": "A KINGDOM AND A VILLAGE",
+     "title": "A Kingdom and a Village",
      "creator": "Simon Morrison",
      "count": 1,
      "sources": [
@@ -3563,7 +3564,7 @@
      ]
     },
     {
-     "title": "A WALL IS ALSO A ROAD",
+     "title": "A Wall Is Also a Road",
      "creator": "Annalee Newitz",
      "count": 1,
      "sources": [
@@ -3571,7 +3572,7 @@
      ]
     },
     {
-     "title": "A WORLD APPEARS",
+     "title": "A World Appears",
      "creator": "Michael Pollan",
      "count": 1,
      "sources": [
@@ -3595,7 +3596,7 @@
      ]
     },
     {
-     "title": "ADA",
+     "title": "Ada",
      "creator": "Mark Haber",
      "count": 1,
      "sources": [
@@ -3619,7 +3620,7 @@
      ]
     },
     {
-     "title": "ALL HAIL CHAOS",
+     "title": "All Hail Chaos",
      "creator": "Sarah Rees Brennan",
      "count": 1,
      "sources": [
@@ -3627,7 +3628,7 @@
      ]
     },
     {
-     "title": "ALL THE HIDDEN PLACES",
+     "title": "All the Hidden Places",
      "creator": "Cadwell Turnbull",
      "count": 1,
      "sources": [
@@ -3635,7 +3636,7 @@
      ]
     },
     {
-     "title": "ALL THE PRESIDENTS' WARS",
+     "title": "All the Presidents' Wars",
      "creator": "Peter Bergen",
      "count": 1,
      "sources": [
@@ -3699,7 +3700,7 @@
      ]
     },
     {
-     "title": "ANNIE PROULX STORIES",
+     "title": "Annie Proulx Stories",
      "creator": "Annie Proulx",
      "count": 1,
      "sources": [
@@ -3827,7 +3828,7 @@
      ]
     },
     {
-     "title": "BEFORE NEW YORK",
+     "title": "Before New York",
      "creator": "Eric W. Sanderson",
      "count": 1,
      "sources": [
@@ -3859,7 +3860,7 @@
      ]
     },
     {
-     "title": "BIRTH OF A CULTURE",
+     "title": "Birth of a Culture",
      "creator": "Grandmaster Flash with Robert “Scoop” Jackson",
      "count": 1,
      "sources": [
@@ -3915,7 +3916,7 @@
      ]
     },
     {
-     "title": "CALL ME ISHMAELLE",
+     "title": "Call Me Ishmaelle",
      "creator": "Xiaolu Guo",
      "count": 1,
      "sources": [
@@ -3971,7 +3972,7 @@
      ]
     },
     {
-     "title": "COSMIC MUSIC",
+     "title": "Cosmic Music",
      "creator": "Andy Beta",
      "count": 1,
      "sources": [
@@ -3987,7 +3988,7 @@
      ]
     },
     {
-     "title": "CRUX",
+     "title": "Crux",
      "creator": "Gabriel Tallent",
      "count": 1,
      "sources": [
@@ -4003,7 +4004,7 @@
      ]
     },
     {
-     "title": "DARKOLOGY",
+     "title": "Darkology",
      "creator": "Rhae Lynn Barnes",
      "count": 1,
      "sources": [
@@ -4043,7 +4044,7 @@
      ]
     },
     {
-     "title": "DAYTONA TEDDY RIGGS",
+     "title": "Daytona Teddy Riggs",
      "creator": "Drew Buxton",
      "count": 1,
      "sources": [
@@ -4051,7 +4052,7 @@
      ]
     },
     {
-     "title": "DEAD BEAT",
+     "title": "Dead Beat",
      "creator": "Leigh Bardugo",
      "count": 1,
      "sources": [
@@ -4067,7 +4068,7 @@
      ]
     },
     {
-     "title": "DEFIANCE",
+     "title": "Defiance",
      "creator": "Loubna Mrie",
      "count": 1,
      "sources": [
@@ -4099,7 +4100,7 @@
      ]
     },
     {
-     "title": "DIE FOR ME",
+     "title": "Die for Me",
      "creator": "Shirlene Obuobi",
      "count": 1,
      "sources": [
@@ -4115,7 +4116,7 @@
      ]
     },
     {
-     "title": "DOLLY ALL THE TIME",
+     "title": "Dolly All the Time",
      "creator": "Annabel Monaghan",
      "count": 1,
      "sources": [
@@ -4147,7 +4148,7 @@
      ]
     },
     {
-     "title": "EL PASO",
+     "title": "El Paso",
      "creator": "Jazmine Ulloa",
      "count": 1,
      "sources": [
@@ -4163,7 +4164,7 @@
      ]
     },
     {
-     "title": "EMPIRE OF ASHES",
+     "title": "Empire of Ashes",
      "creator": "James M. Scott",
      "count": 1,
      "sources": [
@@ -4315,7 +4316,7 @@
      ]
     },
     {
-     "title": "FLY, WILD SWANS",
+     "title": "Fly, Wild Swans",
      "creator": "Jung Chang",
      "count": 1,
      "sources": [
@@ -4347,7 +4348,7 @@
      ]
     },
     {
-     "title": "FROM LIFE ITSELF",
+     "title": "From Life Itself",
      "creator": "Suzy Hansen",
      "count": 1,
      "sources": [
@@ -4363,7 +4364,7 @@
      ]
     },
     {
-     "title": "GHALEN",
+     "title": "Ghalen",
      "creator": "Walter Mosley",
      "count": 1,
      "sources": [
@@ -4387,7 +4388,7 @@
      ]
     },
     {
-     "title": "GLORIOUS COUNTRY",
+     "title": "Glorious Country",
      "creator": "Victoria Johnson",
      "count": 1,
      "sources": [
@@ -4411,7 +4412,7 @@
      ]
     },
     {
-     "title": "GREEN CITY WARS",
+     "title": "Green City Wars",
      "creator": "Adrian Tchaikovsky",
      "count": 1,
      "sources": [
@@ -4443,15 +4444,15 @@
      ]
     },
     {
-     "title": "Hated",
-     "creator": "All the Right People",
+     "title": "Hated by All the Right People",
+     "creator": "",
      "count": 1,
      "sources": [
       8
      ]
     },
     {
-     "title": "HOCUS POCUS",
+     "title": "Hocus Pocus",
      "creator": "Brinda Charry",
      "count": 1,
      "sources": [
@@ -4475,7 +4476,7 @@
      ]
     },
     {
-     "title": "HOMESICK FOR A WORLD UNKNOWN",
+     "title": "Homesick for a World Unknown",
      "creator": "Miriam Horn",
      "count": 1,
      "sources": [
@@ -4507,7 +4508,7 @@
      ]
     },
     {
-     "title": "HOTEL EXILE",
+     "title": "Hotel Exile",
      "creator": "Jane Rogoyska",
      "count": 1,
      "sources": [
@@ -4515,7 +4516,7 @@
      ]
     },
     {
-     "title": "HOW BRIGHT THE PATH GROWS",
+     "title": "How Bright the Path Grows",
      "creator": "Marcia Chatelain",
      "count": 1,
      "sources": [
@@ -4571,7 +4572,7 @@
      ]
     },
     {
-     "title": "HYPERSCALE",
+     "title": "Hyperscale",
      "creator": "Paris Marx",
      "count": 1,
      "sources": [
@@ -4675,7 +4676,7 @@
      ]
     },
     {
-     "title": "ISN'T HE ROMANTIC?",
+     "title": "Isn't He Romantic?",
      "creator": "Adib Khorram",
      "count": 1,
      "sources": [
@@ -4747,7 +4748,7 @@
      ]
     },
     {
-     "title": "LAST ONE OUT",
+     "title": "Last One Out",
      "creator": "Jane Harper",
      "count": 1,
      "sources": [
@@ -4771,7 +4772,7 @@
      ]
     },
     {
-     "title": "LIBERATION SUMMER",
+     "title": "Liberation Summer",
      "creator": "Micki McElya",
      "count": 1,
      "sources": [
@@ -4795,7 +4796,7 @@
      ]
     },
     {
-     "title": "LIVONIA CHOW MEIN",
+     "title": "Livonia Chow Mein",
      "creator": "Abigail Savitch-Lew",
      "count": 1,
      "sources": [
@@ -4827,7 +4828,7 @@
      ]
     },
     {
-     "title": "MAD EDEN",
+     "title": "Mad Eden",
      "creator": "Morgan Thomas",
      "count": 1,
      "sources": [
@@ -4851,7 +4852,7 @@
      ]
     },
     {
-     "title": "MAJOR TAYLOR",
+     "title": "Major Taylor",
      "creator": "Frederick Noland",
      "count": 1,
      "sources": [
@@ -4883,7 +4884,7 @@
      ]
     },
     {
-     "title": "MOONLIGHT MURDER",
+     "title": "Moonlight Murder",
      "creator": "Uzma Jalaluddin",
      "count": 1,
      "sources": [
@@ -4899,7 +4900,7 @@
      ]
     },
     {
-     "title": "MULE BOY",
+     "title": "Mule Boy",
      "creator": "Andrew Krivak",
      "count": 1,
      "sources": [
@@ -4915,7 +4916,7 @@
      ]
     },
     {
-     "title": "MURDER ON 34TH STREET",
+     "title": "Murder on 34th Street",
      "creator": "Mariah Fredericks",
      "count": 1,
      "sources": [
@@ -4931,7 +4932,7 @@
      ]
     },
     {
-     "title": "MY DEAR YOU",
+     "title": "My Dear You",
      "creator": "Rachel Khong",
      "count": 1,
      "sources": [
@@ -4987,7 +4988,7 @@
      ]
     },
     {
-     "title": "NIGHT CALLS",
+     "title": "Night Calls",
      "creator": "Joe Hart",
      "count": 1,
      "sources": [
@@ -5035,7 +5036,7 @@
      ]
     },
     {
-     "title": "NONVIOLENT",
+     "title": "Nonviolent",
      "creator": "James Lawson Jr. & Emily Yellin",
      "count": 1,
      "sources": [
@@ -5075,7 +5076,7 @@
      ]
     },
     {
-     "title": "ONE & ONLY",
+     "title": "One & Only",
      "creator": "Maurene Goo",
      "count": 1,
      "sources": [
@@ -5155,7 +5156,7 @@
      ]
     },
     {
-     "title": "PLACE ENVY",
+     "title": "Place Envy",
      "creator": "Michael Lowenthal",
      "count": 1,
      "sources": [
@@ -5171,7 +5172,7 @@
      ]
     },
     {
-     "title": "POOL HOUSE",
+     "title": "Pool House",
      "creator": "Mary H.K. Choi",
      "count": 1,
      "sources": [
@@ -5195,7 +5196,7 @@
      ]
     },
     {
-     "title": "PROMISED LAND",
+     "title": "Promised Land",
      "creator": "Henry Wise",
      "count": 1,
      "sources": [
@@ -5227,7 +5228,7 @@
      ]
     },
     {
-     "title": "RANGE",
+     "title": "Range",
      "creator": "Dorthe Nors ; translated by Caroline Waight",
      "count": 1,
      "sources": [
@@ -5235,7 +5236,7 @@
      ]
     },
     {
-     "title": "REAP & SOW",
+     "title": "Reap & Sow",
      "creator": "Charlotte B. Plumb",
      "count": 1,
      "sources": [
@@ -5243,7 +5244,7 @@
      ]
     },
     {
-     "title": "REDEMPTION",
+     "title": "Redemption",
      "creator": "Lawrence Wright",
      "count": 1,
      "sources": [
@@ -5251,7 +5252,7 @@
      ]
     },
     {
-     "title": "REGIME CHANGE",
+     "title": "Regime Change",
      "creator": "Maggie Haberman & Jonathan Swan",
      "count": 1,
      "sources": [
@@ -5323,7 +5324,7 @@
      ]
     },
     {
-     "title": "SEE YOU NEXT TUESDAY",
+     "title": "See You Next Tuesday",
      "creator": "Kate Stayman-London",
      "count": 1,
      "sources": [
@@ -5363,7 +5364,7 @@
      ]
     },
     {
-     "title": "SHOULD THE WATERS TAKE US",
+     "title": "Should the Waters Take Us",
      "creator": "Stephanie Soileau",
      "count": 1,
      "sources": [
@@ -5387,7 +5388,7 @@
      ]
     },
     {
-     "title": "SISTERS OF THE MIDNIGHT SUN",
+     "title": "Sisters of the Midnight Sun",
      "creator": "Rebecca Wright Stevens",
      "count": 1,
      "sources": [
@@ -5435,7 +5436,7 @@
      ]
     },
     {
-     "title": "SONGS OF THE DEAD",
+     "title": "Songs of the Dead",
      "creator": "Brandon Sanderson & Peter Orullian",
      "count": 1,
      "sources": [
@@ -5459,7 +5460,7 @@
      ]
     },
     {
-     "title": "STAR SHIPPED",
+     "title": "Star Shipped",
      "creator": "Cat Sebastian",
      "count": 1,
      "sources": [
@@ -5515,7 +5516,7 @@
      ]
     },
     {
-     "title": "TAKE MY WORD FOR IT",
+     "title": "Take My Word for It",
      "creator": "LeVar Burton with Tracey Michae'l Lewis-Giggetts",
      "count": 1,
      "sources": [
@@ -5563,7 +5564,7 @@
      ]
     },
     {
-     "title": "THE AMERICAN WAY OF KILLING",
+     "title": "The American Way of Killing",
      "creator": "Malcolm Gladwell",
      "count": 1,
      "sources": [
@@ -5579,7 +5580,7 @@
      ]
     },
     {
-     "title": "THE BALLAD OF THE FUGITIVE WILLIAM PARKER",
+     "title": "The Ballad of the Fugitive William Parker",
      "creator": "Cristin O'Keefe Aptowicz",
      "count": 1,
      "sources": [
@@ -5595,7 +5596,7 @@
      ]
     },
     {
-     "title": "THE BEHEADING GAME",
+     "title": "The Beheading Game",
      "creator": "Rebecca Lehmann",
      "count": 1,
      "sources": [
@@ -5603,7 +5604,7 @@
      ]
     },
     {
-     "title": "THE BEST JOURNEY IN THE WORLD",
+     "title": "The Best Journey in the World",
      "creator": "Kim Stanley Robinson",
      "count": 1,
      "sources": [
@@ -5611,7 +5612,7 @@
      ]
     },
     {
-     "title": "THE BEST KIND OF AMERICAN",
+     "title": "The Best Kind of American",
      "creator": "Kim Ghattas",
      "count": 1,
      "sources": [
@@ -5627,7 +5628,7 @@
      ]
     },
     {
-     "title": "THE BLUE HOURS",
+     "title": "The Blue Hours",
      "creator": "Stephanie Krzywonos",
      "count": 1,
      "sources": [
@@ -5643,7 +5644,7 @@
      ]
     },
     {
-     "title": "THE BOOK OF CHUCK",
+     "title": "The Book of Chuck",
      "creator": "LaToya Watkins",
      "count": 1,
      "sources": [
@@ -5651,7 +5652,7 @@
      ]
     },
     {
-     "title": "THE BOOK OF GENOCIDES",
+     "title": "The Book of Genocides",
      "creator": "Dana Mashoian Walrath",
      "count": 1,
      "sources": [
@@ -5715,7 +5716,7 @@
      ]
     },
     {
-     "title": "THE CITY WITHOUT JEWS",
+     "title": "The City Without Jews",
      "creator": "Douglas Smith",
      "count": 1,
      "sources": [
@@ -5723,7 +5724,7 @@
      ]
     },
     {
-     "title": "THE CO-CREATION",
+     "title": "The Co-Creation",
      "creator": "Olivia Judson",
      "count": 1,
      "sources": [
@@ -5763,7 +5764,7 @@
      ]
     },
     {
-     "title": "THE DEAD RINGER",
+     "title": "The Dead Ringer",
      "creator": "Dane Bahr",
      "count": 1,
      "sources": [
@@ -5827,7 +5828,7 @@
      ]
     },
     {
-     "title": "THE EVOLUTION OF FIRE",
+     "title": "The Evolution of Fire",
      "creator": "Angela Pelster",
      "count": 1,
      "sources": [
@@ -5835,7 +5836,7 @@
      ]
     },
     {
-     "title": "THE FAITH OF BEASTS",
+     "title": "The Faith of Beasts",
      "creator": "James S.A. Corey",
      "count": 1,
      "sources": [
@@ -5947,7 +5948,7 @@
      ]
     },
     {
-     "title": "THE INHERITANCE",
+     "title": "The Inheritance",
      "creator": "Janet Reitman",
      "count": 1,
      "sources": [
@@ -5963,7 +5964,7 @@
      ]
     },
     {
-     "title": "THE INVISIBLE HAND OF MARIA EDGEWORTH",
+     "title": "The Invisible Hand of Maria Edgeworth",
      "creator": "Jeanna Smialek",
      "count": 1,
      "sources": [
@@ -5971,7 +5972,7 @@
      ]
     },
     {
-     "title": "THE JACKAL",
+     "title": "The Jackal",
      "creator": "Joby Warrick",
      "count": 1,
      "sources": [
@@ -6011,7 +6012,7 @@
      ]
     },
     {
-     "title": "THE LAST LEAF",
+     "title": "The Last Leaf",
      "creator": "Willie Nelson with David Ritz & Mia Tangredi",
      "count": 1,
      "sources": [
@@ -6051,7 +6052,7 @@
      ]
     },
     {
-     "title": "THE MAYOR",
+     "title": "The Mayor",
      "creator": "Brian Alexander",
      "count": 1,
      "sources": [
@@ -6107,7 +6108,7 @@
      ]
     },
     {
-     "title": "THE MURDER AT WORLD'S END",
+     "title": "The Murder at World's End",
      "creator": "Ross Montgomery",
      "count": 1,
      "sources": [
@@ -6123,7 +6124,7 @@
      ]
     },
     {
-     "title": "THE NAMES OF THE NEW WORLD",
+     "title": "The Names of the New World",
      "creator": "Kawai Strong Washburn",
      "count": 1,
      "sources": [
@@ -6144,14 +6145,6 @@
      "count": 1,
      "sources": [
       15
-     ]
-    },
-    {
-     "title": "THE NEW DARK AGES",
-     "creator": "James Marriott",
-     "count": 1,
-     "sources": [
-      19
      ]
     },
     {
@@ -6179,7 +6172,7 @@
      ]
     },
     {
-     "title": "THE PARIS MATCH",
+     "title": "The Paris Match",
      "creator": "Kate Clayborn",
      "count": 1,
      "sources": [
@@ -6291,7 +6284,7 @@
      ]
     },
     {
-     "title": "THE SALT KING",
+     "title": "The Salt King",
      "creator": "Natasha Pulley",
      "count": 1,
      "sources": [
@@ -6355,7 +6348,7 @@
      ]
     },
     {
-     "title": "THE TAILOR",
+     "title": "The Tailor",
      "creator": "Tim Sullivan",
      "count": 1,
      "sources": [
@@ -6395,7 +6388,7 @@
      ]
     },
     {
-     "title": "THE WEIGHT OF ANGELS",
+     "title": "The Weight of Angels",
      "creator": "John Boyne",
      "count": 1,
      "sources": [
@@ -6427,7 +6420,7 @@
      ]
     },
     {
-     "title": "THE WONDERFUL WORLD THAT ALMOST WAS",
+     "title": "The Wonderful World That Almost Was",
      "creator": "Andrew Durbin",
      "count": 1,
      "sources": [
@@ -6451,7 +6444,7 @@
      ]
     },
     {
-     "title": "THIS IS ALSO A LOVE STORY",
+     "title": "This Is Also a Love Story",
      "creator": "Sally Hayden",
      "count": 1,
      "sources": [
@@ -6515,7 +6508,7 @@
      ]
     },
     {
-     "title": "TO SEE BEYOND",
+     "title": "To See Beyond",
      "creator": "Anna Badkhen",
      "count": 1,
      "sources": [
@@ -6531,7 +6524,7 @@
      ]
     },
     {
-     "title": "TORCHED",
+     "title": "Torched",
      "creator": "Jonathan Vigliotti",
      "count": 1,
      "sources": [
@@ -6563,7 +6556,7 @@
      ]
     },
     {
-     "title": "TRAVERSAL",
+     "title": "Traversal",
      "creator": "Maria Popova",
      "count": 1,
      "sources": [
@@ -6579,7 +6572,7 @@
      ]
     },
     {
-     "title": "TRUE CRIME",
+     "title": "True Crime",
      "creator": "Patricia Cornwell",
      "count": 1,
      "sources": [
@@ -6691,7 +6684,7 @@
      ]
     },
     {
-     "title": "VOICE OF A CENTURY",
+     "title": "Voice of a Century",
      "creator": "Anthony Tommasini",
      "count": 1,
      "sources": [
@@ -6723,7 +6716,7 @@
      ]
     },
     {
-     "title": "WE THOUGHT THEY'D NEVER LEAVE",
+     "title": "We Thought They'd Never Leave",
      "creator": "Tony Shalhoub with Josie Adams",
      "count": 1,
      "sources": [
@@ -6819,7 +6812,7 @@
      ]
     },
     {
-     "title": "WOLVES OF SUMMER",
+     "title": "Wolves of Summer",
      "creator": "Donna Freitas",
      "count": 1,
      "sources": [
@@ -6867,7 +6860,7 @@
      ]
     },
     {
-     "title": "YOUNG KING",
+     "title": "Young King",
      "creator": "Lerone Martin",
      "count": 1,
      "sources": [
@@ -7174,6 +7167,21 @@
      ]
     },
     {
+     "title": "You Seem Pretty Sad for a Girl So in Love",
+     "creator": "Olivia Rodrigo",
+     "count": 8,
+     "sources": [
+      33,
+      34,
+      49,
+      36,
+      37,
+      41,
+      42,
+      43
+     ]
+    },
+    {
      "title": "Girlfriend",
      "creator": "Grace Ives",
      "count": 7,
@@ -7199,6 +7207,20 @@
       48,
       41,
       43
+     ]
+    },
+    {
+     "title": "Mutiny After Midnight",
+     "creator": "Johnny Blue Skies & The Dark Clouds",
+     "count": 7,
+     "sources": [
+      33,
+      35,
+      36,
+      38,
+      45,
+      39,
+      40
      ]
     },
     {
@@ -7254,20 +7276,6 @@
       38,
       39,
       48,
-      43
-     ]
-    },
-    {
-     "title": "You Seem Pretty Sad for a Girl So in Love",
-     "creator": "Olivia Rodrigo",
-     "count": 7,
-     "sources": [
-      33,
-      34,
-      49,
-      36,
-      37,
-      42,
       43
      ]
     },
@@ -7769,26 +7777,6 @@
      ]
     },
     {
-     "title": "Mutiny After Midnight",
-     "creator": "Johnny Blue Skies",
-     "count": 3,
-     "sources": [
-      33,
-      35,
-      36
-     ]
-    },
-    {
-     "title": "Mutiny After Midnight",
-     "creator": "Johnny Blue Skies & The Dark Clouds",
-     "count": 3,
-     "sources": [
-      38,
-      39,
-      40
-     ]
-    },
-    {
      "title": "My Name",
      "creator": "Tony Bontana",
      "count": 3,
@@ -8275,6 +8263,15 @@
      "sources": [
       44,
       43
+     ]
+    },
+    {
+     "title": "Of Earth Wires",
+     "creator": "Dua Saleh",
+     "count": 2,
+     "sources": [
+      45,
+      41
      ]
     },
     {
@@ -9563,14 +9560,6 @@
      ]
     },
     {
-     "title": "Mutiny After Midnight",
-     "creator": "Sturgill Simpson",
-     "count": 1,
-     "sources": [
-      45
-     ]
-    },
-    {
      "title": "My Ghosts By Ghosts",
      "creator": "By Storm",
      "count": 1,
@@ -9640,22 +9629,6 @@
      "count": 1,
      "sources": [
       49
-     ]
-    },
-    {
-     "title": "Of Earth & Wires",
-     "creator": "Dua Saleh",
-     "count": 1,
-     "sources": [
-      41
-     ]
-    },
-    {
-     "title": "Of Earth Wires",
-     "creator": "Dua Saleh",
-     "count": 1,
-     "sources": [
-      45
      ]
     },
     {
@@ -10360,14 +10333,6 @@
      "count": 1,
      "sources": [
       35
-     ]
-    },
-    {
-     "title": "You Look Pretty Sad For A Girl So In Love",
-     "creator": "Olivia Rodrigo",
-     "count": 1,
-     "sources": [
-      41
      ]
     },
     {
@@ -11408,6 +11373,21 @@
      ]
     },
     {
+     "title": "28 Years Later: The Bone Temple",
+     "creator": "Nia DaCosta",
+     "count": 8,
+     "sources": [
+      56,
+      57,
+      59,
+      60,
+      65,
+      66,
+      63,
+      64
+     ]
+    },
+    {
      "title": "Nirvanna the Band the Show the Movie",
      "creator": "Matt Johnson",
      "count": 8,
@@ -11449,20 +11429,6 @@
       61,
       65,
       63,
-      64
-     ]
-    },
-    {
-     "title": "28 Years Later: The Bone Temple",
-     "creator": "Nia DaCosta",
-     "count": 7,
-     "sources": [
-      56,
-      57,
-      59,
-      60,
-      65,
-      66,
       64
      ]
     },
@@ -12636,14 +12602,6 @@
      "count": 1,
      "sources": [
       62
-     ]
-    },
-    {
-     "title": "28 Days Later: The Bone Temple",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      63
      ]
     },
     {
@@ -14414,6 +14372,16 @@
      ]
     },
     {
+     "title": "Jury Duty: Company Retreat",
+     "creator": "",
+     "count": 3,
+     "sources": [
+      69,
+      77,
+      78
+     ]
+    },
+    {
      "title": "King of the Hill Season 15",
      "creator": "",
      "count": 3,
@@ -14511,6 +14479,16 @@
       67,
       75,
       77
+     ]
+    },
+    {
+     "title": "The Traitors",
+     "creator": "",
+     "count": 3,
+     "sources": [
+      71,
+      74,
+      76
      ]
     },
     {
@@ -14651,12 +14629,12 @@
      ]
     },
     {
-     "title": "Jury Duty Presents: Company Retreat",
+     "title": "Jo Nesbo's Detective Hole: Season 1",
      "creator": "",
      "count": 2,
      "sources": [
-      77,
-      78
+      67,
+      77
      ]
     },
     {
@@ -14768,6 +14746,15 @@
      ]
     },
     {
+     "title": "Star Wars: Visions Presents – The Ninth Jedi",
+     "creator": "",
+     "count": 2,
+     "sources": [
+      73,
+      76
+     ]
+    },
+    {
      "title": "Steal: Season 1",
      "creator": "",
      "count": 2,
@@ -14855,15 +14842,6 @@
      "sources": [
       73,
       77
-     ]
-    },
-    {
-     "title": "The Traitors",
-     "creator": "",
-     "count": 2,
-     "sources": [
-      71,
-      74
      ]
     },
     {
@@ -15056,30 +15034,6 @@
      ]
     },
     {
-     "title": "Jo Nesbo's Detective Hole: Season 1",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      77
-     ]
-    },
-    {
-     "title": "Jo Nesbø’s Detective Hole (Netflix)",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      67
-     ]
-    },
-    {
-     "title": "Jury Duty: Company Retreat",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      69
-     ]
-    },
-    {
      "title": "Ladies of London: The New Reign",
      "creator": "",
      "count": 1,
@@ -15264,22 +15218,6 @@
      ]
     },
     {
-     "title": "Star Wars: Visions Presents",
-     "creator": "The Ninth Jedi",
-     "count": 1,
-     "sources": [
-      73
-     ]
-    },
-    {
-     "title": "Star Wars: Visions Presents - The Ninth Jedi (Disney+)",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      76
-     ]
-    },
-    {
      "title": "Stayer",
      "creator": "",
      "count": 1,
@@ -15408,14 +15346,6 @@
      ]
     },
     {
-     "title": "The Traitors U.K. Season 4 (Peacock)",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      76
-     ]
-    },
-    {
      "title": "The Zero Line",
      "creator": "",
      "count": 1,
@@ -15514,12 +15444,21 @@
      ]
     },
     {
-     "title": "Friends Keep Secrets",
+     "title": "Foundling",
      "creator": "",
      "count": 2,
      "sources": [
       84,
-      85
+      82
+     ]
+    },
+    {
+     "title": "Friends Keep Secrets",
+     "creator": "",
+     "count": 2,
+     "sources": [
+      85,
+      84
      ]
     },
     {
@@ -15550,11 +15489,20 @@
      ]
     },
     {
+     "title": "What to Carry, What to Burn",
+     "creator": "",
+     "count": 2,
+     "sources": [
+      80,
+      81
+     ]
+    },
+    {
      "title": "Where Is Austin Tice?",
      "creator": "",
      "count": 2,
      "sources": [
-      84,
+      85,
       81
      ]
     },
@@ -15563,7 +15511,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      85
+      84
      ]
     },
     {
@@ -15627,7 +15575,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      84
+      85
      ]
     },
     {
@@ -15651,7 +15599,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      85
+      84
      ]
     },
     {
@@ -15667,7 +15615,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      85
+      84
      ]
     },
     {
@@ -15675,27 +15623,11 @@
      "creator": "",
      "count": 1,
      "sources": [
-      84
+      85
      ]
     },
     {
      "title": "Formula 1: The History and Business",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      84
-     ]
-    },
-    {
-     "title": "Foundling",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      82
-     ]
-    },
-    {
-     "title": "Foundling | Tortoise Investigates",
      "creator": "",
      "count": 1,
      "sources": [
@@ -15707,7 +15639,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      84
+      85
      ]
     },
     {
@@ -15731,7 +15663,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      84
+      85
      ]
     },
     {
@@ -15747,7 +15679,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      84
+      85
      ]
     },
     {
@@ -15771,7 +15703,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      85
+      84
      ]
     },
     {
@@ -15787,7 +15719,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      84
+      85
      ]
     },
     {
@@ -15803,7 +15735,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      84
+      85
      ]
     },
     {
@@ -15851,7 +15783,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      84
+      85
      ]
     },
     {
@@ -15931,7 +15863,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      84
+      85
      ]
     },
     {
@@ -15939,7 +15871,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      84
+      85
      ]
     },
     {
@@ -15955,7 +15887,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      84
+      85
      ]
     },
     {
@@ -15995,7 +15927,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      84
+      85
      ]
     },
     {
@@ -16043,23 +15975,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      84
-     ]
-    },
-    {
-     "title": "What To Carry On, What to Burn",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      81
-     ]
-    },
-    {
-     "title": "What to Carry, What to Burn",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      80
+      85
      ]
     },
     {
@@ -16067,7 +15983,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      84
+      85
      ]
     },
     {
@@ -16075,7 +15991,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      84
+      85
      ]
     },
     {
@@ -16083,7 +15999,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      84
+      85
      ]
     },
     {
@@ -16091,7 +16007,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      84
+      85
      ]
     }
    ]
@@ -16496,6 +16412,16 @@
      ]
     },
     {
+     "title": "World of Warcraft: Midnight",
+     "creator": "",
+     "count": 3,
+     "sources": [
+      88,
+      89,
+      90
+     ]
+    },
+    {
      "title": "Assassin’s Creed Black Flag Resynced",
      "creator": "",
      "count": 2,
@@ -16694,15 +16620,6 @@
      ]
     },
     {
-     "title": "World of Warcraft: Midnight",
-     "creator": "",
-     "count": 2,
-     "sources": [
-      88,
-      90
-     ]
-    },
-    {
      "title": "Zero Parades: For Dead Spies",
      "creator": "",
      "count": 2,
@@ -16720,27 +16637,11 @@
      ]
     },
     {
-     "title": "A Dream of Silence: RevampedLizardpunk for Baldur’s Gate 3",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      92
-     ]
-    },
-    {
      "title": "and Roger",
      "creator": "",
      "count": 1,
      "sources": [
       91
-     ]
-    },
-    {
-     "title": "Angela Sant’AlbanoResident Evil Requiem",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      92
      ]
     },
     {
@@ -16800,39 +16701,7 @@
      ]
     },
     {
-     "title": "Cdawg",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      92
-     ]
-    },
-    {
-     "title": "Cellbit",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      92
-     ]
-    },
-    {
-     "title": "ChovyGen.G",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      92
-     ]
-    },
-    {
      "title": "Counter-Strike 2",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      92
-     ]
-    },
-    {
-     "title": "Create AeronauticsSimulated Team for Minecraft",
      "creator": "",
      "count": 1,
      "sources": [
@@ -16853,14 +16722,6 @@
      "count": 1,
      "sources": [
       91
-     ]
-    },
-    {
-     "title": "Cyberpunk Edgerunners season 2",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      92
      ]
     },
     {
@@ -16912,14 +16773,6 @@
      ]
     },
     {
-     "title": "DonkTeam Spirit",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      92
-     ]
-    },
-    {
      "title": "Dota 2",
      "creator": "",
      "count": 1,
@@ -16968,23 +16821,7 @@
      ]
     },
     {
-     "title": "ErdeLOUD",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      92
-     ]
-    },
-    {
      "title": "Fable",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      92
-     ]
-    },
-    {
-     "title": "Fallout season 2",
      "creator": "",
      "count": 1,
      "sources": [
@@ -17072,14 +16909,6 @@
      ]
     },
     {
-     "title": "Gen.GLeague of Legends",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      92
-     ]
-    },
-    {
      "title": "Ghost of Yotei: Echoes of Sekigahara and Most Wanted",
      "creator": "",
      "count": 1,
@@ -17144,14 +16973,6 @@
      ]
     },
     {
-     "title": "IShowSpeed",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      92
-     ]
-    },
-    {
      "title": "Kingdom Hearts Collection I ~ III",
      "creator": "",
      "count": 1,
@@ -17168,27 +16989,11 @@
      ]
     },
     {
-     "title": "Liam McIntyreMarvel’s Wolverine",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      92
-     ]
-    },
-    {
      "title": "Lies of P: Complete Edition",
      "creator": "",
      "count": 1,
      "sources": [
       91
-     ]
-    },
-    {
-     "title": "LilSimsie",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      92
      ]
     },
     {
@@ -17216,27 +17021,11 @@
      ]
     },
     {
-     "title": "LOUDValorant",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      92
-     ]
-    },
-    {
      "title": "Madden NFL 27",
      "creator": "",
      "count": 1,
      "sources": [
       89
-     ]
-    },
-    {
-     "title": "Manni L. PerezGrand Theft Auto 6",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      92
      ]
     },
     {
@@ -17304,14 +17093,6 @@
      ]
     },
     {
-     "title": "Mortal Kombat 2",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      92
-     ]
-    },
-    {
      "title": "Moss: The Forgotten Relic",
      "creator": "",
      "count": 1,
@@ -17352,22 +17133,6 @@
      ]
     },
     {
-     "title": "Nopixel 5Nopixel Studios for Grand Theft Auto Online",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      92
-     ]
-    },
-    {
-     "title": "OhnePixel",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      92
-     ]
-    },
-    {
      "title": "OPUS: Prism Peak",
      "creator": "",
      "count": 1,
@@ -17397,14 +17162,6 @@
      "count": 1,
      "sources": [
       90
-     ]
-    },
-    {
-     "title": "Patrick Gibson007 First Light",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      92
      ]
     },
     {
@@ -17440,23 +17197,7 @@
      ]
     },
     {
-     "title": "Rahul KohliSaros",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      92
-     ]
-    },
-    {
      "title": "Replaced",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      92
-     ]
-    },
-    {
-     "title": "Resident Evil",
      "creator": "",
      "count": 1,
      "sources": [
@@ -17544,51 +17285,11 @@
      ]
     },
     {
-     "title": "Star Wars: Droid TycoonFOAD for Fortnite",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      92
-     ]
-    },
-    {
      "title": "Super Meat Boy 3D",
      "creator": "",
      "count": 1,
      "sources": [
       89
-     ]
-    },
-    {
-     "title": "Team FalconsCounter-Strike 2",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      92
-     ]
-    },
-    {
-     "title": "Team FalconsRocket League",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      92
-     ]
-    },
-    {
-     "title": "Team SpiritDota 2",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      92
-     ]
-    },
-    {
-     "title": "Team VitalityCounter-Strike 2",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      92
      ]
     },
     {
@@ -17656,14 +17357,6 @@
      ]
     },
     {
-     "title": "The Super Mario Galaxy Movie",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      92
-     ]
-    },
-    {
      "title": "The Witcher 4",
      "creator": "",
      "count": 1,
@@ -17693,14 +17386,6 @@
      "count": 1,
      "sources": [
       89
-     ]
-    },
-    {
-     "title": "TTKSable Digital for Roblox",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      92
      ]
     },
     {
@@ -17776,14 +17461,6 @@
      ]
     },
     {
-     "title": "World of Warcraft: Midnight Review",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      89
-     ]
-    },
-    {
      "title": "WWE 2K26",
      "creator": "",
      "count": 1,
@@ -17800,23 +17477,7 @@
      ]
     },
     {
-     "title": "YatoroTeam Spirit",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      92
-     ]
-    },
-    {
      "title": "Yoshi and the Mysterious Book",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      92
-     ]
-    },
-    {
-     "title": "ZywooTeam Vitality",
      "creator": "",
      "count": 1,
      "sources": [
@@ -17829,6 +17490,16 @@
    "topic": "Tech & Gadgets",
    "lists": 6,
    "items": [
+    {
+     "title": "MacBook Neo",
+     "creator": "",
+     "count": 3,
+     "sources": [
+      93,
+      94,
+      95
+     ]
+    },
     {
      "title": "Samsung Galaxy Z Fold 8",
      "creator": "",
@@ -17885,12 +17556,30 @@
      ]
     },
     {
-     "title": "MacBook Neo",
+     "title": "iPhone 18 Pro",
      "creator": "",
      "count": 2,
      "sources": [
       93,
-      95
+      94
+     ]
+    },
+    {
+     "title": "Samsung Galaxy Tab S12 Ultra",
+     "creator": "",
+     "count": 2,
+     "sources": [
+      94,
+      97
+     ]
+    },
+    {
+     "title": "Steam Controller",
+     "creator": "",
+     "count": 2,
+     "sources": [
+      93,
+      94
      ]
     },
     {
@@ -18143,14 +17832,6 @@
      ]
     },
     {
-     "title": "Apple iPhone 18 Pro",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      94
-     ]
-    },
-    {
      "title": "Apple Mac mini M6",
      "creator": "",
      "count": 1,
@@ -18160,14 +17841,6 @@
     },
     {
      "title": "Apple MacBook Air M5",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      94
-     ]
-    },
-    {
-     "title": "Apple MacBook Neo",
      "creator": "",
      "count": 1,
      "sources": [
@@ -18864,7 +18537,7 @@
     },
     {
      "title": "Framework",
-     "creator": "Sustainability in tech",
+     "creator": "",
      "count": 1,
      "sources": [
       95
@@ -19092,14 +18765,6 @@
      "count": 1,
      "sources": [
       96
-     ]
-    },
-    {
-     "title": "iPhone 18 Pro",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      93
      ]
     },
     {
@@ -19943,27 +19608,11 @@
      ]
     },
     {
-     "title": "Samsung Galaxy Tab S12 Ultra",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      97
-     ]
-    },
-    {
      "title": "Samsung Odyssey G8 G80HS",
      "creator": "",
      "count": 1,
      "sources": [
       96
-     ]
-    },
-    {
-     "title": "Samsung Samsung Galaxy Tab S12 Ultra",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      94
      ]
     },
     {
@@ -20183,14 +19832,6 @@
      ]
     },
     {
-     "title": "Steam Controller",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      93
-     ]
-    },
-    {
      "title": "Strutt ev¹",
      "creator": "",
      "count": 1,
@@ -20392,7 +20033,7 @@
     },
     {
      "title": "United Airlines/Starlink",
-     "creator": "Travel",
+     "creator": "",
      "count": 1,
      "sources": [
       95
@@ -20428,14 +20069,6 @@
      "count": 1,
      "sources": [
       96
-     ]
-    },
-    {
-     "title": "Valve Steam Controller",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      94
      ]
     },
     {
@@ -21735,8 +21368,8 @@
    "lists": 9,
    "items": [
     {
-     "title": "Mexico City",
-     "creator": "",
+     "title": "Claridge's",
+     "creator": "London",
      "count": 3,
      "sources": [
       105,
@@ -21745,25 +21378,64 @@
      ]
     },
     {
-     "title": "Capella Singapore",
-     "creator": "Singapore",
-     "count": 2,
+     "title": "Jumeirah Marsa Al Arab",
+     "creator": "Dubai",
+     "count": 3,
      "sources": [
       108,
-      109
+      105,
+      107
      ]
     },
     {
-     "title": "Claridge's",
-     "creator": "London",
+     "title": "Melbourne",
+     "creator": "",
+     "count": 3,
+     "sources": [
+      109,
+      110,
+      107
+     ]
+    },
+    {
+     "title": "Mexico City",
+     "creator": "",
+     "count": 3,
+     "sources": [
+      109,
+      111,
+      110
+     ]
+    },
+    {
+     "title": "Amangiri",
+     "creator": "",
+     "count": 2,
+     "sources": [
+      105,
+      106
+     ]
+    },
+    {
+     "title": "Badrutt's Palace",
+     "creator": "",
+     "count": 2,
+     "sources": [
+      105,
+      106
+     ]
+    },
+    {
+     "title": "Bangkok",
+     "creator": "",
      "count": 2,
      "sources": [
       110,
-      109
+      107
      ]
     },
     {
-     "title": "Hong Kong",
+     "title": "Barbados",
      "creator": "",
      "count": 2,
      "sources": [
@@ -21772,8 +21444,62 @@
      ]
     },
     {
-     "title": "Jumeirah Marsa Al Arab",
-     "creator": "Dubai",
+     "title": "Capella Singapore",
+     "creator": "Singapore",
+     "count": 2,
+     "sources": [
+      106,
+      107
+     ]
+    },
+    {
+     "title": "Capella Sydney",
+     "creator": "Sydney",
+     "count": 2,
+     "sources": [
+      105,
+      107
+     ]
+    },
+    {
+     "title": "Chiva-Som",
+     "creator": "Thailand",
+     "count": 2,
+     "sources": [
+      106,
+      107
+     ]
+    },
+    {
+     "title": "Deer Valley, Utah",
+     "creator": "",
+     "count": 2,
+     "sources": [
+      112,
+      107
+     ]
+    },
+    {
+     "title": "Edinburgh",
+     "creator": "",
+     "count": 2,
+     "sources": [
+      110,
+      107
+     ]
+    },
+    {
+     "title": "Four Seasons Astir Palace",
+     "creator": "",
+     "count": 2,
+     "sources": [
+      105,
+      106
+     ]
+    },
+    {
+     "title": "Guadalajara",
+     "creator": "",
      "count": 2,
      "sources": [
       112,
@@ -21781,8 +21507,44 @@
      ]
     },
     {
-     "title": "Melbourne",
+     "title": "Hong Kong",
      "creator": "",
+     "count": 2,
+     "sources": [
+      112,
+      110
+     ]
+    },
+    {
+     "title": "Le Bristol",
+     "creator": "Paris",
+     "count": 2,
+     "sources": [
+      105,
+      107
+     ]
+    },
+    {
+     "title": "Mandarin Oriental Bangkok",
+     "creator": "Bangkok",
+     "count": 2,
+     "sources": [
+      105,
+      107
+     ]
+    },
+    {
+     "title": "Medellín",
+     "creator": "",
+     "count": 2,
+     "sources": [
+      112,
+      110
+     ]
+    },
+    {
+     "title": "Mount Nelson",
+     "creator": "Cape Town",
      "count": 2,
      "sources": [
       105,
@@ -21794,12 +21556,57 @@
      "creator": "",
      "count": 2,
      "sources": [
-      111,
-      105
+      112,
+      109
+     ]
+    },
+    {
+     "title": "Paris",
+     "creator": "",
+     "count": 2,
+     "sources": [
+      110,
+      107
+     ]
+    },
+    {
+     "title": "Passalacqua",
+     "creator": "",
+     "count": 2,
+     "sources": [
+      105,
+      106
+     ]
+    },
+    {
+     "title": "Porto",
+     "creator": "",
+     "count": 2,
+     "sources": [
+      110,
+      107
      ]
     },
     {
      "title": "Singapore",
+     "creator": "",
+     "count": 2,
+     "sources": [
+      109,
+      110
+     ]
+    },
+    {
+     "title": "SUJÁN Sher Bagh",
+     "creator": "India",
+     "count": 2,
+     "sources": [
+      106,
+      107
+     ]
+    },
+    {
+     "title": "The Peninsula Istanbul",
      "creator": "",
      "count": 2,
      "sources": [
@@ -21812,7 +21619,7 @@
      "creator": "Baa Atoll",
      "count": 1,
      "sources": [
-      112
+      108
      ]
     },
     {
@@ -21820,7 +21627,7 @@
      "creator": "Corsica",
      "count": 1,
      "sources": [
-      112
+      108
      ]
     },
     {
@@ -21828,15 +21635,15 @@
      "creator": "",
      "count": 1,
      "sources": [
-      107
+      110
      ]
     },
     {
-     "title": "Airelles Le Grand Contrôle, Château de Versailles",
-     "creator": "rest of France and Monaco",
+     "title": "Airelles Le Grand Contrôle",
+     "creator": "Château de Versailles",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -21844,7 +21651,7 @@
      "creator": "Spain",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -21852,7 +21659,7 @@
      "creator": "Egypt",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -21860,7 +21667,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      105
+      109
      ]
     },
     {
@@ -21868,7 +21675,7 @@
      "creator": "AmaWaterways",
      "count": 1,
      "sources": [
-      112
+      108
      ]
     },
     {
@@ -21876,7 +21683,7 @@
      "creator": "Bangkok",
      "count": 1,
      "sources": [
-      110
+      105
      ]
     },
     {
@@ -21884,23 +21691,7 @@
      "creator": "Tokyo",
      "count": 1,
      "sources": [
-      110
-     ]
-    },
-    {
-     "title": "Amangiri",
-     "creator": "Canyon Point",
-     "count": 1,
-     "sources": [
-      110
-     ]
-    },
-    {
-     "title": "Amangiri",
-     "creator": "Utah",
-     "count": 1,
-     "sources": [
-      108
+      105
      ]
     },
     {
@@ -21908,15 +21699,15 @@
      "creator": "",
      "count": 1,
      "sources": [
-      107
+      110
      ]
     },
     {
      "title": "andBeyond Punakha River Lodge, Bhutan",
-     "creator": "rest of Asia",
+     "creator": "",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -21924,7 +21715,7 @@
      "creator": "Laikipia",
      "count": 1,
      "sources": [
-      112
+      108
      ]
     },
     {
@@ -21932,7 +21723,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      105
+      109
      ]
     },
     {
@@ -21940,7 +21731,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      105
+      109
      ]
     },
     {
@@ -21948,7 +21739,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      107
+      110
      ]
     },
     {
@@ -21956,7 +21747,7 @@
      "creator": "Aqua Expeditions",
      "count": 1,
      "sources": [
-      112
+      108
      ]
     },
     {
@@ -21969,10 +21760,10 @@
     },
     {
      "title": "Arugam Bay Beach, Sri Lanka",
-     "creator": "Asia",
+     "creator": "",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -21980,7 +21771,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      112
      ]
     },
     {
@@ -21988,7 +21779,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      105
+      109
      ]
     },
     {
@@ -21996,7 +21787,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      105
+      109
      ]
     },
     {
@@ -22004,7 +21795,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      107
+      110
      ]
     },
     {
@@ -22012,7 +21803,7 @@
      "creator": "Dubai",
      "count": 1,
      "sources": [
-      110
+      105
      ]
     },
     {
@@ -22020,31 +21811,15 @@
      "creator": "",
      "count": 1,
      "sources": [
-      107
-     ]
-    },
-    {
-     "title": "Awasi Atacama, San Pedro de Atacama, Chile",
-     "creator": "Central & South America",
-     "count": 1,
-     "sources": [
-      109
-     ]
-    },
-    {
-     "title": "Badrutt's Palace",
-     "creator": "St. Moritz",
-     "count": 1,
-     "sources": [
       110
      ]
     },
     {
-     "title": "Badrutt’s Palace",
-     "creator": "Switzerland",
+     "title": "Awasi Atacama, San Pedro de Atacama, Chile",
+     "creator": "",
      "count": 1,
      "sources": [
-      108
+      107
      ]
     },
     {
@@ -22052,7 +21827,7 @@
      "creator": "Ireland",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -22060,23 +21835,7 @@
      "creator": "Ireland",
      "count": 1,
      "sources": [
-      109
-     ]
-    },
-    {
-     "title": "Bangkok",
-     "creator": "",
-     "count": 1,
-     "sources": [
       107
-     ]
-    },
-    {
-     "title": "Bangkok, Thailand",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      109
      ]
     },
     {
@@ -22088,27 +21847,11 @@
      ]
     },
     {
-     "title": "Barbados",
-     "creator": "Caribbean and the Atlantic",
-     "count": 1,
-     "sources": [
-      109
-     ]
-    },
-    {
-     "title": "Barbados, Caribbean",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      106
-     ]
-    },
-    {
      "title": "Bath",
      "creator": "",
      "count": 1,
      "sources": [
-      107
+      110
      ]
     },
     {
@@ -22116,7 +21859,7 @@
      "creator": "U.K.",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -22124,7 +21867,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      107
+      110
      ]
     },
     {
@@ -22132,7 +21875,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -22140,7 +21883,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      105
+      109
      ]
     },
     {
@@ -22148,7 +21891,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      107
+      110
      ]
     },
     {
@@ -22156,7 +21899,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      107
+      110
      ]
     },
     {
@@ -22164,7 +21907,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      105
+      109
      ]
     },
     {
@@ -22172,15 +21915,15 @@
      "creator": "",
      "count": 1,
      "sources": [
-      107
+      110
      ]
     },
     {
      "title": "Botanic Sanctuary Antwerp, Belgium",
-     "creator": "rest of Europe",
+     "creator": "",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -22188,7 +21931,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -22196,7 +21939,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      105
+      109
      ]
     },
     {
@@ -22204,7 +21947,7 @@
      "creator": "Virgin Voyages",
      "count": 1,
      "sources": [
-      112
+      108
      ]
     },
     {
@@ -22212,7 +21955,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      105
+      109
      ]
     },
     {
@@ -22220,7 +21963,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -22228,7 +21971,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      112
      ]
     },
     {
@@ -22236,7 +21979,7 @@
      "creator": "Indonesia",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -22244,7 +21987,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      107
+      110
      ]
     },
     {
@@ -22252,7 +21995,7 @@
      "creator": "Rome",
      "count": 1,
      "sources": [
-      110
+      105
      ]
     },
     {
@@ -22260,7 +22003,7 @@
      "creator": "Tokyo",
      "count": 1,
      "sources": [
-      110
+      105
      ]
     },
     {
@@ -22268,7 +22011,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -22284,7 +22027,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      107
+      110
      ]
     },
     {
@@ -22292,7 +22035,7 @@
      "creator": "Greece",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -22300,7 +22043,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      107
+      110
      ]
     },
     {
@@ -22308,7 +22051,7 @@
      "creator": "Sri Lanka",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -22316,23 +22059,7 @@
      "creator": "Bangkok",
      "count": 1,
      "sources": [
-      110
-     ]
-    },
-    {
-     "title": "Capella Sydney",
-     "creator": "Sydney",
-     "count": 1,
-     "sources": [
-      110
-     ]
-    },
-    {
-     "title": "Capella Sydney, Australia",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      109
+      105
      ]
     },
     {
@@ -22340,7 +22067,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      105
+      109
      ]
     },
     {
@@ -22348,7 +22075,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -22356,7 +22083,7 @@
      "creator": "Modena",
      "count": 1,
      "sources": [
-      110
+      105
      ]
     },
     {
@@ -22364,7 +22091,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -22372,7 +22099,7 @@
      "creator": "Dolomites",
      "count": 1,
      "sources": [
-      112
+      108
      ]
     },
     {
@@ -22380,7 +22107,7 @@
      "creator": "Italy",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -22388,7 +22115,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -22396,7 +22123,7 @@
      "creator": "Celebrity Cruises",
      "count": 1,
      "sources": [
-      112
+      108
      ]
     },
     {
@@ -22404,7 +22131,7 @@
      "creator": "Indonesia",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -22412,7 +22139,7 @@
      "creator": "Chocholá",
      "count": 1,
      "sources": [
-      110
+      105
      ]
     },
     {
@@ -22420,7 +22147,7 @@
      "creator": "Sils Maria",
      "count": 1,
      "sources": [
-      112
+      108
      ]
     },
     {
@@ -22428,7 +22155,7 @@
      "creator": "Paris",
      "count": 1,
      "sources": [
-      110
+      105
      ]
     },
     {
@@ -22436,7 +22163,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      107
+      110
      ]
     },
     {
@@ -22444,7 +22171,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      107
+      110
      ]
     },
     {
@@ -22452,23 +22179,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
-     ]
-    },
-    {
-     "title": "Chiva-Som",
-     "creator": "Thailand",
-     "count": 1,
-     "sources": [
-      108
-     ]
-    },
-    {
-     "title": "Chiva-Som Hua Hin, Thailand",
-     "creator": "rest of world",
-     "count": 1,
-     "sources": [
-      109
+      112
      ]
     },
     {
@@ -22480,19 +22191,11 @@
      ]
     },
     {
-     "title": "Claridge's",
-     "creator": "U.K.",
-     "count": 1,
-     "sources": [
-      108
-     ]
-    },
-    {
      "title": "Collegio alla Querce, Auberge Collection",
      "creator": "Florence",
      "count": 1,
      "sources": [
-      112
+      108
      ]
     },
     {
@@ -22500,7 +22203,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      105
+      109
      ]
     },
     {
@@ -22508,7 +22211,7 @@
      "creator": "Rio de Janeiro",
      "count": 1,
      "sources": [
-      110
+      105
      ]
     },
     {
@@ -22516,7 +22219,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      107
+      110
      ]
     },
     {
@@ -22524,7 +22227,7 @@
      "creator": "Bahamas",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -22532,7 +22235,7 @@
      "creator": "Rome",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -22540,7 +22243,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -22548,7 +22251,7 @@
      "creator": "U.K.",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -22556,7 +22259,7 @@
      "creator": "Seville",
      "count": 1,
      "sources": [
-      112
+      108
      ]
     },
     {
@@ -22569,10 +22272,10 @@
     },
     {
      "title": "Cunard",
-     "creator": "large ships",
+     "creator": "",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -22580,7 +22283,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      105
+      109
      ]
     },
     {
@@ -22588,7 +22291,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -22596,7 +22299,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      105
+      109
      ]
     },
     {
@@ -22604,7 +22307,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      105
+      109
      ]
     },
     {
@@ -22613,22 +22316,6 @@
      "count": 1,
      "sources": [
       113
-     ]
-    },
-    {
-     "title": "Deer Valley, Utah",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      111
-     ]
-    },
-    {
-     "title": "Deer Valley, Utah, United States",
-     "creator": "North America",
-     "count": 1,
-     "sources": [
-      109
      ]
     },
     {
@@ -22644,7 +22331,7 @@
      "creator": "Bali",
      "count": 1,
      "sources": [
-      110
+      105
      ]
     },
     {
@@ -22652,7 +22339,7 @@
      "creator": "Disney Cruise Line",
      "count": 1,
      "sources": [
-      112
+      108
      ]
     },
     {
@@ -22660,7 +22347,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      105
+      109
      ]
     },
     {
@@ -22668,7 +22355,7 @@
      "creator": "Aurora Expeditions",
      "count": 1,
      "sources": [
-      112
+      108
      ]
     },
     {
@@ -22676,7 +22363,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      107
+      110
      ]
     },
     {
@@ -22684,23 +22371,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
-     ]
-    },
-    {
-     "title": "Edinburgh",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      107
-     ]
-    },
-    {
-     "title": "Edinburgh, Scotland",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      109
+      112
      ]
     },
     {
@@ -22708,7 +22379,7 @@
      "creator": "Australia",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -22716,7 +22387,7 @@
      "creator": "Ojai, California",
      "count": 1,
      "sources": [
-      112
+      108
      ]
     },
     {
@@ -22724,7 +22395,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      105
+      109
      ]
     },
     {
@@ -22732,7 +22403,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -22740,23 +22411,23 @@
      "creator": "Witney",
      "count": 1,
      "sources": [
-      110
+      105
      ]
     },
     {
      "title": "Fairmont Banff Springs, Alberta, Canada",
-     "creator": "USA & Canada",
+     "creator": "",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
      "title": "Fiji",
-     "creator": "Australasia and the South Pacific",
+     "creator": "",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -22764,7 +22435,7 @@
      "creator": "Spain",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -22772,7 +22443,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -22780,23 +22451,7 @@
      "creator": "Italy",
      "count": 1,
      "sources": [
-      108
-     ]
-    },
-    {
-     "title": "Four Seasons Astir Palace",
-     "creator": "Athens",
-     "count": 1,
-     "sources": [
-      110
-     ]
-    },
-    {
-     "title": "Four Seasons Astir Palace Hotel Athens",
-     "creator": "Greece",
-     "count": 1,
-     "sources": [
-      108
+      106
      ]
     },
     {
@@ -22804,7 +22459,7 @@
      "creator": "Bangkok",
      "count": 1,
      "sources": [
-      110
+      105
      ]
     },
     {
@@ -22812,7 +22467,7 @@
      "creator": "Florence",
      "count": 1,
      "sources": [
-      110
+      105
      ]
     },
     {
@@ -22820,7 +22475,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      105
+      109
      ]
     },
     {
@@ -22828,7 +22483,7 @@
      "creator": "Indonesia",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -22836,7 +22491,7 @@
      "creator": "Thailand",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -22844,7 +22499,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      112
      ]
     },
     {
@@ -22852,15 +22507,15 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      112
      ]
     },
     {
      "title": "Galápagos Islands, Ecuador",
-     "creator": "Central and South America",
+     "creator": "",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -22868,7 +22523,7 @@
      "creator": "UK",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -22876,7 +22531,7 @@
      "creator": "Mount Fuji",
      "count": 1,
      "sources": [
-      112
+      108
      ]
     },
     {
@@ -22884,7 +22539,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      105
+      109
      ]
     },
     {
@@ -22892,7 +22547,7 @@
      "creator": "Italy",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -22900,15 +22555,15 @@
      "creator": "Spain",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
      "title": "Grand Hotel Timeo, a Belmond Hotel, Taormina, Sicily",
-     "creator": "rest of Italy",
+     "creator": "",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -22916,7 +22571,7 @@
      "creator": "Sweden",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -22924,23 +22579,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
-     ]
-    },
-    {
-     "title": "Guadalajara",
-     "creator": "",
-     "count": 1,
-     "sources": [
       107
-     ]
-    },
-    {
-     "title": "Guadalajara, Mexico",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      111
      ]
     },
     {
@@ -22948,7 +22587,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      105
+      109
      ]
     },
     {
@@ -22956,15 +22595,15 @@
      "creator": "",
      "count": 1,
      "sources": [
-      105
+      109
      ]
     },
     {
      "title": "Hanauma Bay, Hawaii, US",
-     "creator": "the Americas",
+     "creator": "",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -22972,7 +22611,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      107
+      110
      ]
     },
     {
@@ -22980,7 +22619,7 @@
      "creator": "Antigua",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -22988,7 +22627,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      107
+      110
      ]
     },
     {
@@ -22996,7 +22635,7 @@
      "creator": "Antibes",
      "count": 1,
      "sources": [
-      110
+      105
      ]
     },
     {
@@ -23004,7 +22643,7 @@
      "creator": "Mexico",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -23012,7 +22651,7 @@
      "creator": "Paris",
      "count": 1,
      "sources": [
-      112
+      108
      ]
     },
     {
@@ -23020,7 +22659,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -23028,7 +22667,7 @@
      "creator": "Italy",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -23036,7 +22675,7 @@
      "creator": "St. Barts",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -23044,7 +22683,7 @@
      "creator": "Vienna",
      "count": 1,
      "sources": [
-      110
+      105
      ]
     },
     {
@@ -23052,7 +22691,7 @@
      "creator": "Taos, New Mexico",
      "count": 1,
      "sources": [
-      112
+      108
      ]
     },
     {
@@ -23060,15 +22699,15 @@
      "creator": "New Zealand",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
      "title": "Hydra, Greece",
-     "creator": "Europe",
+     "creator": "",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -23076,7 +22715,7 @@
      "creator": "Paris",
      "count": 1,
      "sources": [
-      110
+      105
      ]
     },
     {
@@ -23084,7 +22723,7 @@
      "creator": "Monaco",
      "count": 1,
      "sources": [
-      110
+      105
      ]
     },
     {
@@ -23092,7 +22731,7 @@
      "creator": "Nice",
      "count": 1,
      "sources": [
-      110
+      105
      ]
     },
     {
@@ -23100,7 +22739,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -23108,7 +22747,7 @@
      "creator": "Greece",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -23116,7 +22755,7 @@
      "creator": "Italy",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -23124,7 +22763,7 @@
      "creator": "Florence",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -23132,7 +22771,7 @@
      "creator": "Cairo",
      "count": 1,
      "sources": [
-      112
+      108
      ]
     },
     {
@@ -23140,7 +22779,7 @@
      "creator": "Peru",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -23148,7 +22787,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -23156,7 +22795,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -23164,15 +22803,15 @@
      "creator": "UK",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
      "title": "Istanbul (IST), Turkey",
-     "creator": "world",
+     "creator": "",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -23180,15 +22819,15 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
      "title": "Jade Mountain, St Lucia",
-     "creator": "Caribbean & Atlantic",
+     "creator": "",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -23196,7 +22835,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -23204,7 +22843,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -23212,23 +22851,15 @@
      "creator": "Marrakech",
      "count": 1,
      "sources": [
-      112
+      108
      ]
     },
     {
      "title": "Joali Maldives",
-     "creator": "Indian Ocean",
-     "count": 1,
-     "sources": [
-      109
-     ]
-    },
-    {
-     "title": "Jumeirah Marsa Al Arab, Dubai, UAE",
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -23236,7 +22867,7 @@
      "creator": "Hong Kong",
      "count": 1,
      "sources": [
-      112
+      108
      ]
     },
     {
@@ -23244,7 +22875,7 @@
      "creator": "Kenya",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -23252,7 +22883,7 @@
      "creator": "Hawaii",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -23260,15 +22891,15 @@
      "creator": "",
      "count": 1,
      "sources": [
-      107
+      110
      ]
     },
     {
      "title": "La Mamounia Marrakech, Morocco",
-     "creator": "Northern Africa",
+     "creator": "",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -23276,7 +22907,7 @@
      "creator": "France",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -23284,7 +22915,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      107
+      110
      ]
     },
     {
@@ -23292,23 +22923,7 @@
      "creator": "Los Cabos",
      "count": 1,
      "sources": [
-      110
-     ]
-    },
-    {
-     "title": "Le Bristol",
-     "creator": "Paris",
-     "count": 1,
-     "sources": [
-      110
-     ]
-    },
-    {
-     "title": "Le Bristol Paris",
-     "creator": "Paris",
-     "count": 1,
-     "sources": [
-      109
+      105
      ]
     },
     {
@@ -23316,7 +22931,7 @@
      "creator": "California",
      "count": 1,
      "sources": [
-      112
+      108
      ]
     },
     {
@@ -23324,7 +22939,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -23332,7 +22947,7 @@
      "creator": "France",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -23340,7 +22955,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      107
+      110
      ]
     },
     {
@@ -23348,7 +22963,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      107
+      110
      ]
     },
     {
@@ -23356,7 +22971,7 @@
      "creator": "UK",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -23364,7 +22979,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      107
+      110
      ]
     },
     {
@@ -23372,15 +22987,15 @@
      "creator": "UK",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
      "title": "Lucknam Park Hotel & Spa, Wiltshire",
-     "creator": "rest of UK",
+     "creator": "",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -23388,7 +23003,7 @@
      "creator": "Ritz-Carlton Yacht Collection",
      "count": 1,
      "sources": [
-      112
+      108
      ]
     },
     {
@@ -23396,7 +23011,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      105
+      109
      ]
     },
     {
@@ -23404,7 +23019,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      107
+      110
      ]
     },
     {
@@ -23412,7 +23027,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      105
+      109
      ]
     },
     {
@@ -23420,7 +23035,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -23428,15 +23043,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      105
-     ]
-    },
-    {
-     "title": "Mandarin Oriental Bangkok",
-     "creator": "Bangkok",
-     "count": 1,
-     "sources": [
-      110
+      109
      ]
     },
     {
@@ -23444,7 +23051,7 @@
      "creator": "Beijing",
      "count": 1,
      "sources": [
-      110
+      105
      ]
     },
     {
@@ -23452,15 +23059,7 @@
      "creator": "Hong Kong",
      "count": 1,
      "sources": [
-      109
-     ]
-    },
-    {
-     "title": "Mandarin Oriental, Bangkok, Thailand",
-     "creator": "Southeast Asia",
-     "count": 1,
-     "sources": [
-      109
+      107
      ]
     },
     {
@@ -23468,7 +23067,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      112
      ]
     },
     {
@@ -23476,7 +23075,7 @@
      "creator": "Riviera Maya",
      "count": 1,
      "sources": [
-      110
+      105
      ]
     },
     {
@@ -23484,7 +23083,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      107
+      110
      ]
     },
     {
@@ -23492,15 +23091,15 @@
      "creator": "",
      "count": 1,
      "sources": [
-      105
+      109
      ]
     },
     {
      "title": "Mauritius",
-     "creator": "Africa and the Indian Ocean",
+     "creator": "",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -23508,7 +23107,7 @@
      "creator": "Florida",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -23516,31 +23115,7 @@
      "creator": "Türkiye",
      "count": 1,
      "sources": [
-      108
-     ]
-    },
-    {
-     "title": "Medellín",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      107
-     ]
-    },
-    {
-     "title": "Medellín, Colombia",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      111
-     ]
-    },
-    {
-     "title": "Melbourne, Australia",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      109
+      106
      ]
     },
     {
@@ -23548,7 +23123,7 @@
      "creator": "Jodhpur",
      "count": 1,
      "sources": [
-      112
+      108
      ]
     },
     {
@@ -23556,7 +23131,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      105
+      109
      ]
     },
     {
@@ -23564,7 +23139,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      105
+      109
      ]
     },
     {
@@ -23572,7 +23147,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      112
      ]
     },
     {
@@ -23580,7 +23155,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      105
+      109
      ]
     },
     {
@@ -23588,23 +23163,7 @@
      "creator": "Uganda",
      "count": 1,
      "sources": [
-      108
-     ]
-    },
-    {
-     "title": "Mount Nelson",
-     "creator": "Cape Town",
-     "count": 1,
-     "sources": [
-      110
-     ]
-    },
-    {
-     "title": "Mount Nelson, A Belmond Hotel, Cape Town, South Africa",
-     "creator": "Eastern and Southern Africa",
-     "count": 1,
-     "sources": [
-      109
+      106
      ]
     },
     {
@@ -23612,7 +23171,7 @@
      "creator": "MSC Cruises",
      "count": 1,
      "sources": [
-      112
+      108
      ]
     },
     {
@@ -23620,7 +23179,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      112
      ]
     },
     {
@@ -23628,7 +23187,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      107
+      110
      ]
     },
     {
@@ -23636,7 +23195,7 @@
      "creator": "Florida",
      "count": 1,
      "sources": [
-      112
+      108
      ]
     },
     {
@@ -23644,7 +23203,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      105
+      109
      ]
     },
     {
@@ -23652,7 +23211,7 @@
      "creator": "Lindblad Expeditions–National Geographic",
      "count": 1,
      "sources": [
-      112
+      108
      ]
     },
     {
@@ -23660,7 +23219,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -23668,7 +23227,7 @@
      "creator": "Philippines",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -23676,7 +23235,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      107
+      110
      ]
     },
     {
@@ -23684,7 +23243,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      105
+      109
      ]
     },
     {
@@ -23692,7 +23251,7 @@
      "creator": "Sumba Island",
      "count": 1,
      "sources": [
-      110
+      105
      ]
     },
     {
@@ -23700,7 +23259,7 @@
      "creator": "Gansu Province",
      "count": 1,
      "sources": [
-      112
+      108
      ]
     },
     {
@@ -23708,7 +23267,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      112
      ]
     },
     {
@@ -23716,7 +23275,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      112
      ]
     },
     {
@@ -23724,15 +23283,15 @@
      "creator": "Norwegian Cruise Line",
      "count": 1,
      "sources": [
-      112
+      108
      ]
     },
     {
      "title": "Nujuma, a Ritz-Carlton Reserve, Ummahat Islands, Saudi Arabia",
-     "creator": "the Middle East",
+     "creator": "",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -23740,7 +23299,7 @@
      "creator": "Oceania Cruises",
      "count": 1,
      "sources": [
-      112
+      108
      ]
     },
     {
@@ -23748,7 +23307,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      105
+      109
      ]
     },
     {
@@ -23756,7 +23315,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      105
+      109
      ]
     },
     {
@@ -23764,7 +23323,7 @@
      "creator": "Riviera Nayarit",
      "count": 1,
      "sources": [
-      110
+      105
      ]
     },
     {
@@ -23772,7 +23331,7 @@
      "creator": "Big Sky, Montana",
      "count": 1,
      "sources": [
-      112
+      108
      ]
     },
     {
@@ -23780,7 +23339,7 @@
      "creator": "Rome",
      "count": 1,
      "sources": [
-      112
+      108
      ]
     },
     {
@@ -23788,7 +23347,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      107
+      110
      ]
     },
     {
@@ -23796,23 +23355,23 @@
      "creator": "Saudi Arabia",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
      "title": "Palawan, Philippines",
-     "creator": "Asia",
+     "creator": "",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
      "title": "Palazzo Fiuggi, Italy",
-     "creator": "Europe",
+     "creator": "",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -23820,23 +23379,7 @@
      "creator": "Algarve",
      "count": 1,
      "sources": [
-      112
-     ]
-    },
-    {
-     "title": "Paris",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      107
-     ]
-    },
-    {
-     "title": "Paris, France",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      109
+      108
      ]
     },
     {
@@ -23844,7 +23387,7 @@
      "creator": "Cabo San Lucas",
      "count": 1,
      "sources": [
-      112
+      108
      ]
     },
     {
@@ -23852,7 +23395,7 @@
      "creator": "Kyoto",
      "count": 1,
      "sources": [
-      110
+      105
      ]
     },
     {
@@ -23860,7 +23403,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -23868,23 +23411,7 @@
      "creator": "Japan",
      "count": 1,
      "sources": [
-      109
-     ]
-    },
-    {
-     "title": "Passalacqua",
-     "creator": "Lake Como",
-     "count": 1,
-     "sources": [
-      110
-     ]
-    },
-    {
-     "title": "Passalacqua",
-     "creator": "Italy",
-     "count": 1,
-     "sources": [
-      108
+      107
      ]
     },
     {
@@ -23892,7 +23419,7 @@
      "creator": "Osaka",
      "count": 1,
      "sources": [
-      110
+      105
      ]
     },
     {
@@ -23900,7 +23427,7 @@
      "creator": "The Leading Hotels of the World — Forte dei Marmi",
      "count": 1,
      "sources": [
-      112
+      108
      ]
     },
     {
@@ -23908,7 +23435,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -23916,7 +23443,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      105
+      109
      ]
     },
     {
@@ -23924,7 +23451,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -23932,23 +23459,7 @@
      "creator": "Paris",
      "count": 1,
      "sources": [
-      110
-     ]
-    },
-    {
-     "title": "Porto",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      107
-     ]
-    },
-    {
-     "title": "Porto, Portugal",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      109
+      105
      ]
     },
     {
@@ -23956,7 +23467,7 @@
      "creator": "Milan",
      "count": 1,
      "sources": [
-      110
+      105
      ]
     },
     {
@@ -23964,7 +23475,7 @@
      "creator": "Uruguay",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -23972,7 +23483,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      112
      ]
     },
     {
@@ -23980,7 +23491,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      112
      ]
     },
     {
@@ -23988,7 +23499,7 @@
      "creator": "Abercrombie & Kent",
      "count": 1,
      "sources": [
-      112
+      108
      ]
     },
     {
@@ -23996,7 +23507,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -24004,7 +23515,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -24012,7 +23523,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -24020,7 +23531,7 @@
      "creator": "London",
      "count": 1,
      "sources": [
-      110
+      105
      ]
     },
     {
@@ -24028,7 +23539,7 @@
      "creator": "Singapore",
      "count": 1,
      "sources": [
-      110
+      105
      ]
     },
     {
@@ -24036,7 +23547,7 @@
      "creator": "Thailand",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -24044,7 +23555,7 @@
      "creator": "Shura Island",
      "count": 1,
      "sources": [
-      112
+      108
      ]
     },
     {
@@ -24052,7 +23563,7 @@
      "creator": "Chile",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -24068,7 +23579,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      105
+      109
      ]
     },
     {
@@ -24076,7 +23587,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      107
+      110
      ]
     },
     {
@@ -24084,7 +23595,7 @@
      "creator": "Florida",
      "count": 1,
      "sources": [
-      112
+      108
      ]
     },
     {
@@ -24092,7 +23603,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      105
+      109
      ]
     },
     {
@@ -24100,7 +23611,7 @@
      "creator": "Victoria, British Columbia",
      "count": 1,
      "sources": [
-      112
+      108
      ]
     },
     {
@@ -24108,7 +23619,7 @@
      "creator": "Hong Kong",
      "count": 1,
      "sources": [
-      110
+      105
      ]
     },
     {
@@ -24116,7 +23627,7 @@
      "creator": "Riviera Nayarit",
      "count": 1,
      "sources": [
-      112
+      108
      ]
     },
     {
@@ -24124,7 +23635,7 @@
      "creator": "São Paulo",
      "count": 1,
      "sources": [
-      110
+      105
      ]
     },
     {
@@ -24132,15 +23643,15 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      112
      ]
     },
     {
      "title": "Royal Caribbean",
-     "creator": "mega ships",
+     "creator": "",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -24148,7 +23659,7 @@
      "creator": "Marrakech",
      "count": 1,
      "sources": [
-      110
+      105
      ]
     },
     {
@@ -24156,7 +23667,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -24164,7 +23675,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -24172,7 +23683,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      112
      ]
     },
     {
@@ -24180,7 +23691,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      112
      ]
     },
     {
@@ -24188,7 +23699,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      105
+      109
      ]
     },
     {
@@ -24196,7 +23707,7 @@
      "creator": "India",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -24204,7 +23715,7 @@
      "creator": "Taormina",
      "count": 1,
      "sources": [
-      110
+      105
      ]
     },
     {
@@ -24212,7 +23723,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      107
+      110
      ]
     },
     {
@@ -24220,7 +23731,7 @@
      "creator": "Santa Barbara",
      "count": 1,
      "sources": [
-      110
+      105
      ]
     },
     {
@@ -24228,7 +23739,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      105
+      109
      ]
     },
     {
@@ -24236,7 +23747,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      105
+      109
      ]
     },
     {
@@ -24244,7 +23755,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      105
+      109
      ]
     },
     {
@@ -24252,31 +23763,23 @@
      "creator": "",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
      "title": "Scott Dunn",
-     "creator": "travel specialists",
+     "creator": "",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
      "title": "Seabourn",
-     "creator": "medium ships",
+     "creator": "",
      "count": 1,
      "sources": [
-      109
-     ]
-    },
-    {
-     "title": "Seabourn",
-     "creator": "small ships",
-     "count": 1,
-     "sources": [
-      109
+      107
      ]
     },
     {
@@ -24284,7 +23787,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      105
+      109
      ]
     },
     {
@@ -24292,7 +23795,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      107
+      110
      ]
     },
     {
@@ -24300,7 +23803,7 @@
      "creator": "Mexico",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -24308,7 +23811,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      105
+      109
      ]
     },
     {
@@ -24316,7 +23819,7 @@
      "creator": "Uttarakhand",
      "count": 1,
      "sources": [
-      112
+      108
      ]
     },
     {
@@ -24324,7 +23827,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      107
+      110
      ]
     },
     {
@@ -24332,7 +23835,7 @@
      "creator": "Alaska",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -24340,7 +23843,7 @@
      "creator": "Gotland",
      "count": 1,
      "sources": [
-      112
+      108
      ]
     },
     {
@@ -24348,7 +23851,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -24356,7 +23859,7 @@
      "creator": "South Africa",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -24364,15 +23867,15 @@
      "creator": "Portugal",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
      "title": "Six Senses Fiji",
-     "creator": "Australasia and South Pacific",
+     "creator": "",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -24388,7 +23891,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -24396,7 +23899,7 @@
      "creator": "Zimbabwe",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -24412,15 +23915,15 @@
      "creator": "",
      "count": 1,
      "sources": [
-      105
+      109
      ]
     },
     {
      "title": "Sperlonga, Italy",
-     "creator": "Europe",
+     "creator": "",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -24428,7 +23931,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      105
+      109
      ]
     },
     {
@@ -24436,7 +23939,7 @@
      "creator": "Royal Caribbean International",
      "count": 1,
      "sources": [
-      112
+      108
      ]
     },
     {
@@ -24444,7 +23947,7 @@
      "creator": "Princess Cruises",
      "count": 1,
      "sources": [
-      112
+      108
      ]
     },
     {
@@ -24452,31 +23955,15 @@
      "creator": "South Africa",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
      "title": "Storfjord Hotel, Ålesund, Norway",
-     "creator": "Nordics",
+     "creator": "",
      "count": 1,
      "sources": [
-      109
-     ]
-    },
-    {
-     "title": "SUJÁN Sher Bagh",
-     "creator": "India",
-     "count": 1,
-     "sources": [
-      108
-     ]
-    },
-    {
-     "title": "Suján Sher Bagh, Rajasthan",
-     "creator": "India",
-     "count": 1,
-     "sources": [
-      109
+      107
      ]
     },
     {
@@ -24484,7 +23971,7 @@
      "creator": "Mozambique",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -24492,7 +23979,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      107
+      110
      ]
     },
     {
@@ -24500,7 +23987,7 @@
      "creator": "Portugal",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -24508,7 +23995,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      107
+      110
      ]
     },
     {
@@ -24516,7 +24003,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      105
+      109
      ]
     },
     {
@@ -24524,7 +24011,7 @@
      "creator": "Crete",
      "count": 1,
      "sources": [
-      112
+      108
      ]
     },
     {
@@ -24532,7 +24019,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -24540,7 +24027,7 @@
      "creator": "New York City",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -24548,7 +24035,7 @@
      "creator": "Frankfurt",
      "count": 1,
      "sources": [
-      112
+      108
      ]
     },
     {
@@ -24556,7 +24043,7 @@
      "creator": "Florida",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -24564,7 +24051,7 @@
      "creator": "Venice",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -24572,7 +24059,7 @@
      "creator": "Nepal",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -24580,7 +24067,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -24588,7 +24075,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -24604,7 +24091,7 @@
      "creator": "North Carolina",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -24612,7 +24099,7 @@
      "creator": "Virginia",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -24620,7 +24107,7 @@
      "creator": "Gili Meno, Lombok",
      "count": 1,
      "sources": [
-      112
+      108
      ]
     },
     {
@@ -24628,7 +24115,7 @@
      "creator": "New York",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -24644,7 +24131,7 @@
      "creator": "Khajuraho",
      "count": 1,
      "sources": [
-      112
+      108
      ]
     },
     {
@@ -24652,7 +24139,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -24660,7 +24147,7 @@
      "creator": "Madrid",
      "count": 1,
      "sources": [
-      112
+      108
      ]
     },
     {
@@ -24668,7 +24155,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      112
      ]
     },
     {
@@ -24676,23 +24163,7 @@
      "creator": "Hong Kong",
      "count": 1,
      "sources": [
-      110
-     ]
-    },
-    {
-     "title": "The Peninsula Istanbul",
-     "creator": "Istanbul",
-     "count": 1,
-     "sources": [
-      110
-     ]
-    },
-    {
-     "title": "The Peninsula Istanbul",
-     "creator": "Turkey",
-     "count": 1,
-     "sources": [
-      109
+      105
      ]
     },
     {
@@ -24700,7 +24171,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -24708,7 +24179,7 @@
      "creator": "China",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -24724,7 +24195,7 @@
      "creator": "New York",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -24732,7 +24203,7 @@
      "creator": "UAE",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -24740,7 +24211,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -24748,15 +24219,15 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
      "title": "The St Regis Chicago, Illinois",
-     "creator": "rest of USA",
+     "creator": "",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -24764,7 +24235,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -24772,7 +24243,7 @@
      "creator": "Mumbai",
      "count": 1,
      "sources": [
-      110
+      105
      ]
     },
     {
@@ -24780,15 +24251,15 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
      "title": "The Turquoise Holiday Company",
-     "creator": "general tour operators",
+     "creator": "",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -24796,7 +24267,7 @@
      "creator": "Italy",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -24804,15 +24275,15 @@
      "creator": "",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
      "title": "Time + Tide Chinzombo, South Luangwa National Park, Zambia",
-     "creator": "rest of Africa",
+     "creator": "",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -24820,7 +24291,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -24836,7 +24307,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      107
+      110
      ]
     },
     {
@@ -24844,7 +24315,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -24852,15 +24323,15 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      112
      ]
     },
     {
      "title": "Uga Prava, Tangalle, Sri Lanka",
-     "creator": "rest of Asia",
+     "creator": "",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -24868,7 +24339,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      112
      ]
     },
     {
@@ -24876,7 +24347,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      105
+      109
      ]
     },
     {
@@ -24884,7 +24355,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      112
      ]
     },
     {
@@ -24892,7 +24363,7 @@
      "creator": "Hong Kong",
      "count": 1,
      "sources": [
-      110
+      105
      ]
     },
     {
@@ -24900,7 +24371,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -24908,7 +24379,7 @@
      "creator": "Brazil",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -24916,7 +24387,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      107
+      110
      ]
     },
     {
@@ -24924,15 +24395,15 @@
      "creator": "",
      "count": 1,
      "sources": [
-      107
+      110
      ]
     },
     {
      "title": "Vancouver Island, British Columbia, Canada",
-     "creator": "North America",
+     "creator": "",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -24940,7 +24411,7 @@
      "creator": "Greece",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -24948,7 +24419,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      112
      ]
     },
     {
@@ -24956,23 +24427,15 @@
      "creator": "",
      "count": 1,
      "sources": [
+      110
+     ]
+    },
+    {
+     "title": "Viking",
+     "creator": "",
+     "count": 1,
+     "sources": [
       107
-     ]
-    },
-    {
-     "title": "Viking",
-     "creator": "river ships",
-     "count": 1,
-     "sources": [
-      109
-     ]
-    },
-    {
-     "title": "Viking",
-     "creator": "expedition ships",
-     "count": 1,
-     "sources": [
-      109
      ]
     },
     {
@@ -24980,15 +24443,15 @@
      "creator": "Viking",
      "count": 1,
      "sources": [
-      112
+      108
      ]
     },
     {
      "title": "Vila Vita Parc, Algarve, Portugal",
-     "creator": "rest of Europe",
+     "creator": "",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -24996,7 +24459,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      112
+      108
      ]
     },
     {
@@ -25004,7 +24467,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      105
+      109
      ]
     },
     {
@@ -25020,7 +24483,7 @@
      "creator": "Germany",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -25028,7 +24491,7 @@
      "creator": "India",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -25036,7 +24499,7 @@
      "creator": "British Columbia, Canada",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -25044,7 +24507,7 @@
      "creator": "Rwanda",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
@@ -25052,7 +24515,7 @@
      "creator": "Akagera",
      "count": 1,
      "sources": [
-      112
+      108
      ]
     },
     {
@@ -25060,15 +24523,15 @@
      "creator": "Vietnam",
      "count": 1,
      "sources": [
-      108
+      106
      ]
     },
     {
      "title": "Zermatt, Switzerland",
-     "creator": "Europe",
+     "creator": "",
      "count": 1,
      "sources": [
-      109
+      107
      ]
     },
     {
@@ -25076,7 +24539,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      105
+      109
      ]
     },
     {
@@ -25084,7 +24547,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      107
+      110
      ]
     }
    ]
@@ -25273,6 +24736,15 @@
      "sources": [
       114,
       115
+     ]
+    },
+    {
+     "title": "Moebius",
+     "creator": "Milan",
+     "count": 2,
+     "sources": [
+      114,
+      116
      ]
     },
     {
@@ -25692,22 +25164,6 @@
      ]
     },
     {
-     "title": "Moebius",
-     "creator": "Milan",
-     "count": 1,
-     "sources": [
-      116
-     ]
-    },
-    {
-     "title": "Moebius Milano",
-     "creator": "Milan",
-     "count": 1,
-     "sources": [
-      114
-     ]
-    },
-    {
      "title": "Mother",
      "creator": "Toronto",
      "count": 1,
@@ -25861,7 +25317,7 @@
     },
     {
      "title": "Vandell",
-     "creator": "Los Angeles. Everyone",
+     "creator": "Los Angeles",
      "count": 1,
      "sources": [
       117
@@ -25923,30 +25379,6 @@
      ]
     },
     {
-     "title": "1/52 Project",
-     "creator": "Tony Honors for Excellence in the Theatre",
-     "count": 1,
-     "sources": [
-      119
-     ]
-    },
-    {
-     "title": "American Players Theatre",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      119
-     ]
-    },
-    {
-     "title": "André Bishop",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      119
-     ]
-    },
-    {
      "title": "Arthur Miller's Death of a Salesman",
      "creator": "",
      "count": 1,
@@ -25987,14 +25419,6 @@
      ]
     },
     {
-     "title": "League of Resident Theatres (LORT)",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      119
-     ]
-    },
-    {
      "title": "Liberation",
      "creator": "",
      "count": 1,
@@ -26016,14 +25440,6 @@
      "count": 1,
      "sources": [
       118
-     ]
-    },
-    {
-     "title": "Mary-Mitchell Campbell",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      119
      ]
     },
     {
@@ -26372,8 +25788,8 @@
      ]
     },
     {
-     "title": "Marc",
-     "creator": "Sofia",
+     "title": "Marc by Sofia",
+     "creator": "",
      "count": 1,
      "sources": [
       120
@@ -26468,8 +25884,8 @@
      ]
     },
     {
-     "title": "Paralyzed",
-     "creator": "Hope: The Maria Bamford Story",
+     "title": "Paralyzed by Hope: The Maria Bamford Story",
+     "creator": "",
      "count": 1,
      "sources": [
       120
@@ -26614,7 +26030,7 @@
     },
     {
      "title": "and Roger",
-     "creator": "Cultural Impact Game",
+     "creator": "",
      "count": 1,
      "sources": [
       124
@@ -26678,7 +26094,7 @@
     },
     {
      "title": "Brilliant",
-     "creator": "Cultural Impact App",
+     "creator": "",
      "count": 1,
      "sources": [
       124
@@ -26694,7 +26110,7 @@
     },
     {
      "title": "chilli",
-     "creator": "Cultural Impact App",
+     "creator": "",
      "count": 1,
      "sources": [
       124
@@ -26702,7 +26118,7 @@
     },
     {
      "title": "Consume Me",
-     "creator": "Cultural Impact Game",
+     "creator": "",
      "count": 1,
      "sources": [
       124
@@ -26758,7 +26174,7 @@
     },
     {
      "title": "Hearing Buddy",
-     "creator": "Cultural Impact App",
+     "creator": "",
      "count": 1,
      "sources": [
       124
@@ -26774,7 +26190,7 @@
     },
     {
      "title": "Karrot",
-     "creator": "Cultural Impact App",
+     "creator": "",
      "count": 1,
      "sources": [
       124
@@ -26822,7 +26238,7 @@
     },
     {
      "title": "PancitoMerge",
-     "creator": "Cultural Impact Game",
+     "creator": "",
      "count": 1,
      "sources": [
       124
@@ -26886,7 +26302,7 @@
     },
     {
      "title": "Sago Mini Jinja’s Garden",
-     "creator": "Cultural Impact Game",
+     "creator": "",
      "count": 1,
      "sources": [
       124
@@ -26902,7 +26318,7 @@
     },
     {
      "title": "setlog",
-     "creator": "Cultural Impact App",
+     "creator": "",
      "count": 1,
      "sources": [
       124
@@ -26934,7 +26350,7 @@
     },
     {
      "title": "Spilled!",
-     "creator": "Cultural Impact Game",
+     "creator": "",
      "count": 1,
      "sources": [
       124
@@ -26974,7 +26390,7 @@
     },
     {
      "title": "Tiny Bookshop",
-     "creator": "Cultural Impact Game",
+     "creator": "",
      "count": 1,
      "sources": [
       124
@@ -26982,7 +26398,7 @@
     },
     {
      "title": "Unedo",
-     "creator": "Cultural Impact App",
+     "creator": "",
      "count": 1,
      "sources": [
       124

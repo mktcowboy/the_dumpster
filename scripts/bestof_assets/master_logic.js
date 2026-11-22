@@ -165,7 +165,7 @@ function showView(view, focusTab) {
   }
   $("panel-lists").hidden = master;
   $("panel-master").hidden = !master;
-  $("eyebrow-label").textContent = master ? "Best of 2024 · Master list" : listEyebrow;
+  $("eyebrow-label").textContent = master ? "Best of __YEAR__ · Master list" : listEyebrow;
   $("hero-sub").textContent = master ? masterSub : listSub;
   $("stats").innerHTML = master ? masterStats : listStats;
   const url = new URL(location.href);
