@@ -123,7 +123,7 @@ html = f'''<!doctype html>
 </div>
 
 <div id="panel-master" role="tabpanel" aria-labelledby="tab-master" hidden>
-  <p class="file-path master-note">Each row is one work named inside the lists. The × badge is how many lists mention it, and higher counts rank first. Open a badge for links to those lists. Titles are matched within a category, ignoring case, punctuation, a leading The, A, or An, and season or part labels.</p>
+  <p class="file-path master-note">Each row is one work named inside the lists. The × badge is how many lists mention it, and higher counts rank first. Open a badge for links to those lists. Titles are matched within a category. Case, punctuation, diacritics, a leading The, A, or An, edition notes, and season labels are ignored, and close spellings merge when the creators agree.</p>
   <div class="controls" id="m-controls">
     <div class="searchrow">
       <div class="search">

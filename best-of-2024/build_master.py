@@ -9,7 +9,10 @@ that appear on only one list are included. No dates are written.
 
 Usage: python3 build_master.py [MASTER.md]
 """
-import json,re,unicodedata,collections,sys,hashlib
+import json,re,collections,sys,hashlib
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
+from title_match import canon_topic, cluster_topic, is_non_creator, title_penalty
 OUT=sys.argv[1] if len(sys.argv)>1 else 'best_of_2024_master.md'
 RANK='master_rank.json'
 # Same fingerprints as scripts/check_privacy.py. Drop a whole token only.
@@ -22,40 +25,22 @@ def scrub(s):
     s=re.sub(r'[ \t]*\0[ \t]*',lambda m:' ' if len(m.group(0).strip('\0'))>=2 else '',s)
     return s
 d=json.load(open('items.json'))
-ROMAN={'ii':'2','iii':'3','iv':'4','v':'5','vi':'6','vii':'7','viii':'8','ix':'9','x':'10'}
-WORDN={'one':'1','two':'2','three':'3','four':'4','five':'5','six':'6'}
-def norm(t):
-    t=unicodedata.normalize('NFKD',t).encode('ascii','ignore').decode().lower()
-    t=re.sub(r'\([^)]*\)|\[[^\]]*\]','',t)
-    t=re.sub(r'[:,]?\s*(a novel|a memoir|a cookbook|stories)$','',t.strip())
-    t=re.sub(r"[:\s,\-–]*(season|series|part)\s+(\w+)\b",lambda m:' s'+WORDN.get(m.group(2),m.group(2)),t)
-    t=re.sub(r'[:\s]*limited series$','',t)
-    w=re.sub(r"['’]",'',t); w=re.sub(r'&',' and ',w); w=re.split(r'\W+',w)
-    w=[ROMAN.get(x,x) if i==len(w)-1 or (i>0 and w[i-1] in('vol','volume')) else x for i,x in enumerate(w) if x]
-    if w and w[0] in('the','a','an') and len(w)>1: w=w[1:]
-    return ''.join(w)
-def base(t): return norm(t.split(':')[0]) if ':' in t else None
 def md_esc(t): return re.sub(r'([\\`*_\[\]<>|#])',r'\\\1',t)
-def topic_counts(lists):
-    """Map a normalized title to {list name: (display title, creator)}.
+def topic_counts(lists, category):
+    """Map each work to {list name: (display title, creator)}.
 
-    The same rules as the overlap section: ignore case, punctuation, a leading
-    The/A, parenthetical notes, and season or part labels. A bare title absorbs
-    the subtitled form when both were extracted."""
-    counts=collections.defaultdict(dict)
-    for x in lists:
-        for a,b in x['items']:
-            k=norm(a)
-            if len(k)<2: continue
-            counts[k].setdefault(x['list'],(a,b))
-    for x in lists:
-        for a,b in x['items']:
-            bk=base(a); k=norm(a)
-            if bk and bk!=k and bk in counts and k in counts:
-                for ln,v in counts.pop(k).items(): counts[bk].setdefault(ln,v)
-    return counts
+    Variants inside one category collapse: case, punctuation, diacritics,
+    a leading The/A/An, subtitles, edition and season suffixes, creator text
+    embedded in the title, and small typos. The same title stays split when
+    both creators are known and disagree. One list counts once."""
+    return cluster_topic(lists, category)
 def pick_title(v):
-    return collections.Counter(a for a,b in v.values()).most_common(1)[0][0]
+    counts=collections.Counter(a for a,b in v.values())
+    best=counts.most_common()
+    top=best[0][1]
+    cands=[t for t,n in best if n==top]
+    cands.sort(key=lambda t: (title_penalty(t), len(t), t.lower()))
+    return cands[0]
 def pick_creator(v):
     creators=sorted({b for a,b in v.values() if b and len(b)<60 and not b.startswith(('Game Awards','pick for','nominee','destination'))})
     return creators[0] if len(creators)==1 else ''
@@ -82,12 +67,15 @@ def display_creator(v):
         if not b or len(b)>=60 or b.startswith(('Game Awards','pick for','nominee','destination')): continue
         if 'section labels' in b.lower(): continue
         stem=tidy_creator(b)
-        if not stem or stem.lower() in LABELS: continue
+        if not stem or stem.lower() in LABELS or is_non_creator(stem): continue
         names.append(stem)
     if not names: return ''
-    top=collections.Counter(names).most_common(2)
-    if len(top)>1 and top[0][1]==top[1][1]: return ''
-    return top[0][0]
+    groups=collections.defaultdict(list)
+    for n in names: groups[n.casefold()].append(n)
+    ranked=sorted(groups.values(), key=len, reverse=True)
+    if len(ranked)>1 and len(ranked[0])==len(ranked[1]): return ''
+    freq=collections.Counter(ranked[0])
+    return sorted(freq, key=lambda s: (-freq[s], s.isupper(), len(s)))[0]
 def ranked_rows(counts):
     rows=[]
     for v in counts.values():
@@ -96,7 +84,7 @@ def ranked_rows(counts):
     rows.sort(key=lambda r:(-r[0], r[1]))
     return rows
 topics=collections.OrderedDict()
-for x in d: topics.setdefault(x['topic'],[]).append(x)
+for x in d: topics.setdefault(canon_topic(x['topic']),[]).append(x)
 L=['# Best of 2024: Master List of Items','',
 'Every list in the Best of 2024 directory, grouped by topic, with the items each list names. Ranked lists keep their order (numbered); unranked lists are bulleted. Where a list could not be read, its heading stays with the reason. An overlap section at the end shows items that appear on two or more lists within the same topic.','']
 n_ok=sum(1 for x in d if x['items']); n_bad=len(d)-n_ok
@@ -116,7 +104,7 @@ for t,lists in topics.items():
             s=md_esc(a)+(f' — {md_esc(b)}' if b else '')
             L.append(f'{i}. {s}' if ranked else f'- {s}')
         L.append('')
-L+=['## Overlap across lists','','Items on two or more lists within the same topic, most lists first. Titles are matched ignoring case, punctuation, leading "The/A", parenthetical notes and season/part labels; a title without a subtitle is merged with the subtitled version of the same title. Matching is by title only, so check the creator when a common title appears.','']
+L+=['## Overlap across lists','','Items on two or more lists within the same topic, most lists first. Titles are matched within a category, ignoring case, punctuation, diacritics, a leading The/A/An, edition notes, and season labels. A bare title is merged with a subtitled or lightly misspelled variant when the creators do not conflict. The same title stays split when both creators are known and name different people.','']
 summary=[]
 ranked=[]
 meta={x['list']:(x.get('outlet') or '', x.get('url') or '') for x in d}
@@ -129,7 +117,7 @@ def ref(name):
         catalog.append({'name':name,'outlet':outlet,'url':url})
     return index[name]
 for t,lists in topics.items():
-    counts=topic_counts(lists)
+    counts=topic_counts(lists, t)
     rows=ranked_rows(counts)
     if rows:
         ranked.append({'topic':t,'lists':len(lists),'items':[

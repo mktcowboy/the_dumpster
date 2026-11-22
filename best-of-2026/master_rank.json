@@ -341,31 +341,6 @@
    "url": "https://www.theguardian.com/film/ng-interactive/2026/jun/10/the-best-films-of-2026-so-far"
   },
   {
-   "name": "Variety: 20 Best Shows of 2026 (So Far)",
-   "outlet": "Variety",
-   "url": "https://variety.com/lists/best-tv-shows-of-2026-so-far/"
-  },
-  {
-   "name": "Esquire: Best TV Shows of 2026 So Far",
-   "outlet": "Esquire",
-   "url": "https://www.esquire.com/entertainment/tv/a73820242/best-new-tv-shows-of-2026/"
-  },
-  {
-   "name": "The Guardian: The Best TV of 2026 So Far",
-   "outlet": "The Guardian",
-   "url": "https://www.theguardian.com/tv-and-radio/ng-interactive/2026/jun/08/the-best-tv-of-2026-so-far"
-  },
-  {
-   "name": "BBC Culture: 19 of the Best TV Shows of 2026 So Far",
-   "outlet": "BBC",
-   "url": "https://www.bbc.com/culture/article/20260403-the-best-tv-shows-of-2026"
-  },
-  {
-   "name": "The A.V. Club: The Best TV of 2026 So Far",
-   "outlet": "The A.V. Club",
-   "url": "https://www.avclub.com/best-tv-2026-so-far-widows-bay-pitt-knight-of-seven-kingdoms"
-  },
-  {
    "name": "Time Out: 39 Best TV Shows of 2026 (So Far)",
    "outlet": "Time Out",
    "url": "https://www.timeout.com/film/best-streaming-and-tv-shows-of-2026-so-far"
@@ -374,6 +349,11 @@
    "name": "Empire: The Best TV Shows of 2026 (So Far)",
    "outlet": "Empire",
    "url": "https://www.empireonline.com/tv/features/best-tv-2026/"
+  },
+  {
+   "name": "Variety: 20 Best Shows of 2026 (So Far)",
+   "outlet": "Variety",
+   "url": "https://variety.com/lists/best-tv-shows-of-2026-so-far/"
   },
   {
    "name": "IndieWire: Best TV Series of 2026 (So Far)",
@@ -391,6 +371,21 @@
    "url": "https://www.rollingstone.com/tv-movies/tv-movie-lists/best-tv-shows-of-2026-so-far-1235580429/"
   },
   {
+   "name": "Esquire: Best TV Shows of 2026 So Far",
+   "outlet": "Esquire",
+   "url": "https://www.esquire.com/entertainment/tv/a73820242/best-new-tv-shows-of-2026/"
+  },
+  {
+   "name": "The Guardian: The Best TV of 2026 So Far",
+   "outlet": "The Guardian",
+   "url": "https://www.theguardian.com/tv-and-radio/ng-interactive/2026/jun/08/the-best-tv-of-2026-so-far"
+  },
+  {
+   "name": "BBC Culture: 19 of the Best TV Shows of 2026 So Far",
+   "outlet": "BBC",
+   "url": "https://www.bbc.com/culture/article/20260403-the-best-tv-shows-of-2026"
+  },
+  {
    "name": "TV Guide: Best Reviewed TV Shows of 2026 (Metacritic)",
    "outlet": "TV Guide",
    "url": "https://www.tvguide.com/galleries/the-best-reviewed-tv-shows-of-2026-according-to-metacritic/"
@@ -399,6 +394,11 @@
    "name": "Rotten Tomatoes: Best TV Shows of 2026",
    "outlet": "Rotten Tomatoes",
    "url": "https://editorial.rottentomatoes.com/guide/best-new-tv-series-shows/"
+  },
+  {
+   "name": "The A.V. Club: The Best TV of 2026 So Far",
+   "outlet": "The A.V. Club",
+   "url": "https://www.avclub.com/best-tv-2026-so-far-widows-bay-pitt-knight-of-seven-kingdoms"
   },
   {
    "name": "TIME: The Best TV Shows of 2026 So Far",
@@ -531,21 +531,6 @@
    "url": "https://www.globenewswire.com/news-release/2026/09/15/3362221/0/en/food-wine-reveals-the-2026-best-new-chefs.html"
   },
   {
-   "name": "The World's 50 Best Hotels 2026",
-   "outlet": "The World's 50 Best",
-   "url": "https://www.the50.com/stories/News/the-50-best-hotels-2026-the-list-revealed.html"
-  },
-  {
-   "name": "Condé Nast Traveler: The Gold List 2026",
-   "outlet": "Condé Nast Traveler",
-   "url": "https://www.cntraveler.com/story/gold-list-top-hotels-and-resorts-in-the-world"
-  },
-  {
-   "name": "CN Traveller (UK): 2026 Readers' Choice Awards Winners",
-   "outlet": "CN Traveller",
-   "url": "https://www.cntraveller.com/article/readers-choice-winners-2026"
-  },
-  {
    "name": "Travel + Leisure: 50 Best Places to Travel in 2026",
    "outlet": "Travel + Leisure",
    "url": "https://www.travelandleisure.com/best-places-to-go-2026-11840319"
@@ -559,6 +544,21 @@
    "name": "Time Out: 50 Best Cities in the World 2026",
    "outlet": "Time Out",
    "url": "https://www.timeout.com/travel/best-cities-2026"
+  },
+  {
+   "name": "Condé Nast Traveler: The Gold List 2026",
+   "outlet": "Condé Nast Traveler",
+   "url": "https://www.cntraveler.com/story/gold-list-top-hotels-and-resorts-in-the-world"
+  },
+  {
+   "name": "CN Traveller (UK): 2026 Readers' Choice Awards Winners",
+   "outlet": "CN Traveller",
+   "url": "https://www.cntraveller.com/article/readers-choice-winners-2026"
+  },
+  {
+   "name": "The World's 50 Best Hotels 2026",
+   "outlet": "The World's 50 Best",
+   "url": "https://www.the50.com/stories/News/the-50-best-hotels-2026-the-list-revealed.html"
   },
   {
    "name": "Condé Nast Traveler: Best Places to Go in 2026",
@@ -752,16 +752,16 @@
      "creator": "Patrick Radden Keefe",
      "count": 10,
      "sources": [
+      0,
       5,
       18,
+      16,
       8,
       9,
       14,
       15,
       19,
-      11,
-      0,
-      16
+      11
      ]
     },
     {
@@ -1000,11 +1000,11 @@
      "creator": "Belle Burden",
      "count": 5,
      "sources": [
-      5,
-      8,
-      11,
       0,
-      16
+      5,
+      16,
+      8,
+      11
      ]
     },
     {
@@ -1036,11 +1036,11 @@
      "creator": "Nathaniel Philbrick",
      "count": 5,
      "sources": [
+      1,
+      20,
       5,
       8,
-      19,
-      1,
-      20
+      19
      ]
     },
     {
@@ -1060,11 +1060,11 @@
      "creator": "Robert Kolker",
      "count": 5,
      "sources": [
+      0,
       5,
       18,
       8,
-      19,
-      0
+      19
      ]
     },
     {
@@ -1072,11 +1072,11 @@
      "creator": "Craig Fehrman",
      "count": 5,
      "sources": [
-      8,
-      19,
       1,
       2,
-      16
+      16,
+      8,
+      19
      ]
     },
     {
@@ -1118,10 +1118,10 @@
      "creator": "Naomi Klein and Astra Taylor",
      "count": 4,
      "sources": [
-      19,
       1,
       20,
-      25
+      25,
+      19
      ]
     },
     {
@@ -1140,10 +1140,10 @@
      "creator": "Robert Moor",
      "count": 4,
      "sources": [
-      8,
-      26,
       1,
-      20
+      20,
+      8,
+      26
      ]
     },
     {
@@ -1151,10 +1151,10 @@
      "creator": "Ada Ferrer",
      "count": 4,
      "sources": [
+      25,
       5,
       18,
-      19,
-      25
+      19
      ]
     },
     {
@@ -1229,9 +1229,9 @@
      "count": 4,
      "sources": [
       5,
+      16,
       14,
-      15,
-      16
+      15
      ]
     },
     {
@@ -1239,10 +1239,10 @@
      "creator": "Jon Ronson",
      "count": 4,
      "sources": [
-      5,
-      11,
       1,
-      2
+      2,
+      5,
+      11
      ]
     },
     {
@@ -1261,10 +1261,10 @@
      "creator": "Emily Eakin",
      "count": 4,
      "sources": [
-      8,
-      19,
       1,
-      20
+      20,
+      8,
+      19
      ]
     },
     {
@@ -1316,10 +1316,10 @@
      "creator": "Carlos Barragán",
      "count": 4,
      "sources": [
-      5,
-      8,
       1,
-      20
+      20,
+      5,
+      8
      ]
     },
     {
@@ -1371,9 +1371,9 @@
      "creator": "Liaquat Ahamed",
      "count": 3,
      "sources": [
-      19,
       1,
-      20
+      20,
+      19
      ]
     },
     {
@@ -1402,8 +1402,8 @@
      "count": 3,
      "sources": [
       14,
-      19,
-      15
+      15,
+      19
      ]
     },
     {
@@ -1491,9 +1491,9 @@
      "creator": "Molly Crabapple",
      "count": 3,
      "sources": [
-      19,
       1,
-      20
+      20,
+      19
      ]
     },
     {
@@ -1501,9 +1501,9 @@
      "creator": "Emily Lordi",
      "count": 3,
      "sources": [
-      18,
       1,
-      20
+      20,
+      18
      ]
     },
     {
@@ -1521,9 +1521,9 @@
      "creator": "Daniel Hahn",
      "count": 3,
      "sources": [
+      25,
       8,
-      19,
-      25
+      19
      ]
     },
     {
@@ -1541,9 +1541,9 @@
      "creator": "Howard Bryant",
      "count": 3,
      "sources": [
-      19,
       1,
-      20
+      20,
+      19
      ]
     },
     {
@@ -1557,7 +1557,7 @@
      ]
     },
     {
-     "title": "Lázár: A Novel",
+     "title": "Lazar",
      "creator": "",
      "count": 3,
      "sources": [
@@ -1571,9 +1571,9 @@
      "creator": "Anand Giridharadas",
      "count": 3,
      "sources": [
-      8,
       1,
-      20
+      20,
+      8
      ]
     },
     {
@@ -1581,9 +1581,9 @@
      "creator": "Gayle Feldman",
      "count": 3,
      "sources": [
-      8,
       1,
-      20
+      20,
+      8
      ]
     },
     {
@@ -1637,23 +1637,13 @@
      ]
     },
     {
-     "title": "Score",
-     "creator": "Kennedy Ryan",
-     "count": 3,
-     "sources": [
-      1,
-      10,
-      20
-     ]
-    },
-    {
      "title": "Small Town Girls: A Writer’s Memoir",
      "creator": "Jayne Anne Phillips",
      "count": 3,
      "sources": [
-      8,
       1,
-      20
+      20,
+      8
      ]
     },
     {
@@ -1661,9 +1651,9 @@
      "creator": "Joseph Osmundson",
      "count": 3,
      "sources": [
-      8,
       1,
-      20
+      20,
+      8
      ]
     },
     {
@@ -1701,9 +1691,9 @@
      "creator": "Kevin Roose",
      "count": 3,
      "sources": [
-      19,
       1,
-      2
+      2,
+      19
      ]
     },
     {
@@ -1731,9 +1721,9 @@
      "creator": "Rosa Montero ; translated by Lindsey Ford",
      "count": 3,
      "sources": [
-      19,
       1,
-      2
+      2,
+      19
      ]
     },
     {
@@ -2323,7 +2313,7 @@
      ]
     },
     {
-     "title": "HUNA",
+     "title": "Huna: A Memoir of Revolution, Prison, and Becoming",
      "creator": "",
      "count": 2,
      "sources": [
@@ -2638,12 +2628,12 @@
      ]
     },
     {
-     "title": "PROFILES IN COWARDICE",
+     "title": "Profiles in Cowardice: A Study of Collaboration in the Trump Era",
      "creator": "Jacob Weisberg",
      "count": 2,
      "sources": [
-      19,
-      25
+      25,
+      19
      ]
     },
     {
@@ -2728,6 +2718,15 @@
      ]
     },
     {
+     "title": "Score",
+     "creator": "Kennedy Ryan",
+     "count": 2,
+     "sources": [
+      1,
+      10
+     ]
+    },
+    {
      "title": "Seasons of Fury",
      "creator": "Rozina Ali",
      "count": 2,
@@ -2764,7 +2763,7 @@
      ]
     },
     {
-     "title": "Stations: A Novel",
+     "title": "Stations",
      "creator": "",
      "count": 2,
      "sources": [
@@ -2840,8 +2839,8 @@
      "creator": "",
      "count": 2,
      "sources": [
-      15,
-      14
+      14,
+      15
      ]
     },
     {
@@ -2930,8 +2929,8 @@
      "creator": "",
      "count": 2,
      "sources": [
-      15,
-      14
+      14,
+      15
      ]
     },
     {
@@ -2989,12 +2988,12 @@
      ]
     },
     {
-     "title": "THE FUTURE IS PEACE",
+     "title": "The Future Is Peace: A Shared Journey Across the Holy Land",
      "creator": "Aziz Abu Sarah & Maoz Inon",
      "count": 2,
      "sources": [
-      19,
-      25
+      25,
+      19
      ]
     },
     {
@@ -3196,6 +3195,15 @@
      ]
     },
     {
+     "title": "The Score: How to Stop Playing Somebody Else’s Game",
+     "creator": "C. Thi Nguyen",
+     "count": 2,
+     "sources": [
+      1,
+      20
+     ]
+    },
+    {
      "title": "The Theater",
      "creator": "James Verini",
      "count": 2,
@@ -3254,8 +3262,8 @@
      "creator": "",
      "count": 2,
      "sources": [
-      8,
-      0
+      0,
+      8
      ]
     },
     {
@@ -7354,6 +7362,22 @@
      ]
     },
     {
+     "title": "U",
+     "creator": "underscores",
+     "count": 9,
+     "sources": [
+      50,
+      38,
+      39,
+      40,
+      47,
+      49,
+      42,
+      43,
+      44
+     ]
+    },
+    {
      "title": "Vol. II",
      "creator": "Angine de Poitrine",
      "count": 9,
@@ -7367,6 +7391,22 @@
       49,
       44,
       51
+     ]
+    },
+    {
+     "title": "WOR$T GIRL IN AMERICA",
+     "creator": "Slayyyter",
+     "count": 9,
+     "sources": [
+      48,
+      50,
+      37,
+      38,
+      39,
+      40,
+      42,
+      43,
+      44
      ]
     },
     {
@@ -7415,21 +7455,6 @@
      ]
     },
     {
-     "title": "WOR$T GIRL IN AMERICA",
-     "creator": "Slayyyter",
-     "count": 8,
-     "sources": [
-      48,
-      50,
-      37,
-      38,
-      39,
-      40,
-      42,
-      44
-     ]
-    },
-    {
      "title": "Girlfriend",
      "creator": "Grace Ives",
      "count": 7,
@@ -7458,17 +7483,17 @@
      ]
     },
     {
-     "title": "Mutiny After Midnight",
-     "creator": "Johnny Blue Skies & The Dark Clouds",
+     "title": "The Boys of Dungeon Lane",
+     "creator": "Paul McCartney",
      "count": 7,
      "sources": [
       34,
+      35,
       36,
+      50,
       37,
-      39,
-      46,
-      40,
-      41
+      41,
+      43
      ]
     },
     {
@@ -7554,19 +7579,6 @@
      ]
     },
     {
-     "title": "The Boys of Dungeon Lane",
-     "creator": "Paul McCartney",
-     "count": 6,
-     "sources": [
-      34,
-      35,
-      36,
-      50,
-      41,
-      43
-     ]
-    },
-    {
      "title": "This Music May Contain Hope",
      "creator": "RAYE",
      "count": 6,
@@ -7590,6 +7602,19 @@
       46,
       40,
       49
+     ]
+    },
+    {
+     "title": "Ö",
+     "creator": "Fcukers",
+     "count": 6,
+     "sources": [
+      48,
+      36,
+      50,
+      46,
+      43,
+      44
      ]
     },
     {
@@ -7690,7 +7715,7 @@
     },
     {
      "title": "Written Into Changes",
-     "creator": "Avalon Emerson",
+     "creator": "",
      "count": 5,
      "sources": [
       37,
@@ -7734,8 +7759,8 @@
      ]
     },
     {
-     "title": "FENIAN",
-     "creator": "",
+     "title": "Fenian",
+     "creator": "Kneecap",
      "count": 4,
      "sources": [
       48,
@@ -8025,6 +8050,26 @@
      ]
     },
     {
+     "title": "Mutiny After Midnight",
+     "creator": "Johnny Blue Skies",
+     "count": 3,
+     "sources": [
+      34,
+      36,
+      37
+     ]
+    },
+    {
+     "title": "Mutiny After Midnight",
+     "creator": "Johnny Blue Skies & The Dark Clouds",
+     "count": 3,
+     "sources": [
+      39,
+      40,
+      41
+     ]
+    },
+    {
      "title": "My Name",
      "creator": "Tony Bontana",
      "count": 3,
@@ -8062,6 +8107,16 @@
       34,
       35,
       36
+     ]
+    },
+    {
+     "title": "Redstar Wu & The Worldwide Scourge",
+     "creator": "Genesis Owusu",
+     "count": 3,
+     "sources": [
+      46,
+      42,
+      43
      ]
     },
     {
@@ -8208,7 +8263,7 @@
     },
     {
      "title": "bitknot",
-     "creator": "",
+     "creator": "feeble little horse",
      "count": 2,
      "sources": [
       38,
@@ -8231,6 +8286,15 @@
      "sources": [
       48,
       36
+     ]
+    },
+    {
+     "title": "Casino",
+     "creator": "Baby Keem",
+     "count": 2,
+     "sources": [
+      37,
+      43
      ]
     },
     {
@@ -8324,6 +8388,15 @@
      ]
     },
     {
+     "title": "For Love Of Grace The Hereafter",
+     "creator": "Iceage",
+     "count": 2,
+     "sources": [
+      50,
+      46
+     ]
+    },
+    {
      "title": "Halo",
      "creator": "Tiffany Day",
      "count": 2,
@@ -8357,6 +8430,15 @@
      "sources": [
       34,
       51
+     ]
+    },
+    {
+     "title": "I Guess U Had To Be There",
+     "creator": "",
+     "count": 2,
+     "sources": [
+      40,
+      44
      ]
     },
     {
@@ -8460,7 +8542,7 @@
     },
     {
      "title": "Music, Fashion, Film",
-     "creator": "",
+     "creator": "Charli XCX",
      "count": 2,
      "sources": [
       35,
@@ -8510,15 +8592,6 @@
      "sources": [
       38,
       40
-     ]
-    },
-    {
-     "title": "Redstar Wu & The Worldwide Scourge",
-     "creator": "Genesis Owusu",
-     "count": 2,
-     "sources": [
-      42,
-      43
      ]
     },
     {
@@ -8577,7 +8650,7 @@
     },
     {
      "title": "The Color of Rain",
-     "creator": "",
+     "creator": "Aja Monet",
      "count": 2,
      "sources": [
       34,
@@ -8613,7 +8686,7 @@
     },
     {
      "title": "The Light That Keeps Us",
-     "creator": "",
+     "creator": "Mother of Graves",
      "count": 2,
      "sources": [
       45,
@@ -8730,7 +8803,7 @@
     },
     {
      "title": "Wuthering Heights",
-     "creator": "",
+     "creator": "Charli xcx",
      "count": 2,
      "sources": [
       50,
@@ -8931,14 +9004,6 @@
      ]
     },
     {
-     "title": "CA$INO",
-     "creator": "Baby Keem",
-     "count": 1,
-     "sources": [
-      43
-     ]
-    },
-    {
      "title": "Cannonball",
      "creator": "Man/Woman/Chainsaw",
      "count": 1,
@@ -8952,14 +9017,6 @@
      "count": 1,
      "sources": [
       47
-     ]
-    },
-    {
-     "title": "Casino",
-     "creator": "Baby Keem",
-     "count": 1,
-     "sources": [
-      37
      ]
     },
     {
@@ -9307,22 +9364,6 @@
      ]
     },
     {
-     "title": "For Love of Grace & The Hereafter",
-     "creator": "Iceage",
-     "count": 1,
-     "sources": [
-      50
-     ]
-    },
-    {
-     "title": "For Love Of Grace The Hereafter",
-     "creator": "Iceage",
-     "count": 1,
-     "sources": [
-      46
-     ]
-    },
-    {
      "title": "Forever",
      "creator": "Hekt",
      "count": 1,
@@ -9480,22 +9521,6 @@
      "count": 1,
      "sources": [
       43
-     ]
-    },
-    {
-     "title": "I Guess U Had To Be There",
-     "creator": "ELUCID & Sebb Bash",
-     "count": 1,
-     "sources": [
-      44
-     ]
-    },
-    {
-     "title": "I Guess You Had to Be There",
-     "creator": "E L U C I D & Sebb Bash",
-     "count": 1,
-     "sources": [
-      40
      ]
     },
     {
@@ -9819,6 +9844,14 @@
      ]
     },
     {
+     "title": "Mutiny After Midnight",
+     "creator": "Sturgill Simpson",
+     "count": 1,
+     "sources": [
+      46
+     ]
+    },
+    {
      "title": "My Ghosts By Ghosts",
      "creator": "By Storm",
      "count": 1,
@@ -9987,14 +10020,6 @@
      ]
     },
     {
-     "title": "Paul McCartney,’The Boys of Dungeon Lane",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      37
-     ]
-    },
-    {
      "title": "Peace In Place",
      "creator": "Poison The Well",
      "count": 1,
@@ -10088,14 +10113,6 @@
      "count": 1,
      "sources": [
       50
-     ]
-    },
-    {
-     "title": "Redstar Wu The Worldwide Scourge",
-     "creator": "Genesis Owusu",
-     "count": 1,
-     "sources": [
-      46
      ]
     },
     {
@@ -10619,14 +10636,6 @@
      ]
     },
     {
-     "title": "Worst Girl In America",
-     "creator": "SLAYYYYTER",
-     "count": 1,
-     "sources": [
-      43
-     ]
-    },
-    {
      "title": "XXXXX",
      "creator": "Arca",
      "count": 1,
@@ -10665,6 +10674,14 @@
      "sources": [
       43
      ]
+    },
+    {
+     "title": "ʅ͡͡͡͡͡͡͡͡͡͡͡(̸̢̛̼̞̭͋ͅ)̸͚̰͛̔̾̀̿͒͂:̴͓̞̑̌̂̆̊͋̀:̸͎̟̯̂̓̌ ҉ ͡ ͞ ͞ ͞ ҉● ࿀ ● ࿀ ● ҉⃝ ⃝͢ ͞ ͘ ͞⃝̕ ͢ ̛ ⃝ ̸ ̡ ͢⃝̧ ͡ ͡ ̀ ̧ ̢⃝͜ ҉ ͞ ͞ ⃝͞ ͘ ͞ ͡⃝ ⃝҉҈҉҈҉҈҉҈҉҈҉ :̶̢͙͙͕̠̩͆(̷̮͍͚̫͚͂̍)̵̳̗̊( ̟̞̝̜̙̘̗̖҉̵̴̨̧̢̡̼̻̺̹̳̲̱̰̯̮̭̬̫̪̩̦̥̤̣̠҈͈͇͉͍͎͓͔͕͖͙͚͜͢͢͢͢͢͢͢͢͢͢͢͢͢͢ͅ l̡̡̡ ̡͌ Ɵʅ͡͡͡͡͡͡͡͡͡͡͡(̸",
+     "creator": "Four Tet",
+     "count": 1,
+     "sources": [
+      38
+     ]
     }
    ]
   },
@@ -10683,7 +10700,7 @@
      ]
     },
     {
-     "title": "B.B.B.",
+     "title": "BBB",
      "creator": "",
      "count": 2,
      "sources": [
@@ -10692,7 +10709,7 @@
      ]
     },
     {
-     "title": "Choosin’ Texas",
+     "title": "Choosin' Texas",
      "creator": "Ella Langley",
      "count": 2,
      "sources": [
@@ -10739,6 +10756,15 @@
     {
      "title": "Idea 1",
      "creator": "Kelela",
+     "count": 2,
+     "sources": [
+      53,
+      54
+     ]
+    },
+    {
+     "title": "iloveitiloveiloveit",
+     "creator": "Bella Kay",
      "count": 2,
      "sources": [
       53,
@@ -11201,22 +11227,6 @@
      ]
     },
     {
-     "title": "iloveitiloveiloveit",
-     "creator": "Bella Kay",
-     "count": 1,
-     "sources": [
-      54
-     ]
-    },
-    {
-     "title": "iloveitiloveitiloveit",
-     "creator": "Bella Kay",
-     "count": 1,
-     "sources": [
-      53
-     ]
-    },
-    {
      "title": "In A Lake",
      "creator": "Mitski",
      "count": 1,
@@ -11647,6 +11657,14 @@
      "sources": [
       55
      ]
+    },
+    {
+     "title": "Ö (album)",
+     "creator": "Fcukers",
+     "count": 1,
+     "sources": [
+      56
+     ]
     }
    ]
   },
@@ -11992,10 +12010,10 @@
      "creator": "",
      "count": 4,
      "sources": [
-      64,
       58,
       59,
-      62
+      62,
+      64
      ]
     },
     {
@@ -12250,7 +12268,7 @@
      ]
     },
     {
-     "title": "Kontinental '25",
+     "title": "Kontinental 25",
      "creator": "Radu Jude",
      "count": 3,
      "sources": [
@@ -12435,7 +12453,7 @@
      ]
     },
     {
-     "title": "CAMP",
+     "title": "Camp",
      "creator": "Avalon Fast",
      "count": 2,
      "sources": [
@@ -14165,11 +14183,11 @@
      "count": 12,
      "sources": [
       68,
-      69,
       70,
       71,
       72,
       73,
+      74,
       75,
       76,
       77,
@@ -14183,17 +14201,17 @@
      "creator": "",
      "count": 12,
      "sources": [
-      73,
-      74,
       68,
-      75,
-      76,
-      77,
       69,
       70,
       71,
-      78,
       72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
       79
      ]
     },
@@ -14202,15 +14220,15 @@
      "creator": "",
      "count": 10,
      "sources": [
-      73,
-      74,
       68,
-      76,
-      77,
       69,
       70,
-      71,
       72,
+      73,
+      74,
+      75,
+      76,
+      78,
       79
      ]
     },
@@ -14219,13 +14237,13 @@
      "creator": "",
      "count": 8,
      "sources": [
+      68,
+      72,
       73,
+      75,
       76,
       77,
-      70,
-      71,
       78,
-      72,
       79
      ]
     },
@@ -14234,12 +14252,27 @@
      "creator": "",
      "count": 8,
      "sources": [
-      69,
+      68,
+      71,
       72,
       73,
+      74,
+      78,
+      79,
+      80
+     ]
+    },
+    {
+     "title": "Margo’s Got Money Troubles",
+     "creator": "",
+     "count": 8,
+     "sources": [
+      71,
+      73,
+      74,
       75,
       76,
-      77,
+      78,
       79,
       80
      ]
@@ -14251,7 +14284,7 @@
      "sources": [
       71,
       72,
-      75,
+      73,
       76,
       77,
       78,
@@ -14264,14 +14297,14 @@
      "creator": "",
      "count": 8,
      "sources": [
-      68,
-      75,
-      76,
-      77,
-      69,
+      70,
+      71,
       72,
-      80,
-      79
+      73,
+      74,
+      78,
+      79,
+      80
      ]
     },
     {
@@ -14279,14 +14312,14 @@
      "creator": "",
      "count": 8,
      "sources": [
+      71,
+      72,
       75,
       76,
-      70,
-      71,
+      77,
       78,
-      72,
-      80,
-      79
+      79,
+      80
      ]
     },
     {
@@ -14294,14 +14327,14 @@
      "creator": "",
      "count": 8,
      "sources": [
-      73,
       68,
-      75,
-      76,
-      78,
+      70,
+      71,
       72,
-      80,
-      79
+      77,
+      78,
+      79,
+      80
      ]
     },
     {
@@ -14309,26 +14342,12 @@
      "creator": "",
      "count": 7,
      "sources": [
-      73,
       68,
-      75,
-      69,
-      71,
-      72,
-      79
-     ]
-    },
-    {
-     "title": "Margo’s Got Money Troubles",
-     "creator": "",
-     "count": 7,
-     "sources": [
-      75,
-      77,
-      69,
       70,
-      72,
-      80,
+      71,
+      74,
+      76,
+      78,
       79
      ]
     },
@@ -14337,13 +14356,13 @@
      "creator": "",
      "count": 7,
      "sources": [
-      73,
+      68,
+      72,
+      74,
+      75,
       76,
-      69,
-      70,
-      71,
-      80,
-      79
+      78,
+      80
      ]
     },
     {
@@ -14351,13 +14370,13 @@
      "creator": "",
      "count": 7,
      "sources": [
-      73,
-      74,
       68,
-      75,
+      69,
       70,
-      78,
-      79
+      71,
+      75,
+      77,
+      78
      ]
     },
     {
@@ -14365,12 +14384,12 @@
      "creator": "",
      "count": 6,
      "sources": [
+      72,
+      74,
       76,
-      69,
-      71,
+      77,
       78,
-      80,
-      79
+      80
      ]
     },
     {
@@ -14378,12 +14397,12 @@
      "creator": "",
      "count": 6,
      "sources": [
-      72,
-      80,
-      75,
+      71,
+      73,
       77,
       78,
-      79
+      79,
+      80
      ]
     },
     {
@@ -14391,12 +14410,12 @@
      "creator": "",
      "count": 6,
      "sources": [
-      75,
-      76,
       71,
+      72,
+      76,
+      77,
       78,
-      80,
-      79
+      80
      ]
     },
     {
@@ -14404,24 +14423,24 @@
      "creator": "",
      "count": 6,
      "sources": [
-      73,
       68,
-      71,
+      70,
+      76,
+      77,
       78,
-      79,
       80
      ]
     },
     {
-     "title": "House of the Dragon (season 3)",
+     "title": "House Of The Dragon: Season 3",
      "creator": "",
      "count": 5,
      "sources": [
+      68,
       69,
-      73,
+      72,
       74,
-      76,
-      79
+      78
      ]
     },
     {
@@ -14429,11 +14448,11 @@
      "creator": "",
      "count": 5,
      "sources": [
-      75,
-      76,
-      80,
+      71,
+      72,
+      77,
       78,
-      79
+      80
      ]
     },
     {
@@ -14441,11 +14460,11 @@
      "creator": "",
      "count": 5,
      "sources": [
-      68,
       70,
-      71,
-      78,
-      79
+      75,
+      76,
+      77,
+      78
      ]
     },
     {
@@ -14453,11 +14472,11 @@
      "creator": "",
      "count": 5,
      "sources": [
-      73,
+      68,
+      72,
+      74,
       76,
-      69,
-      71,
-      79
+      78
      ]
     },
     {
@@ -14466,10 +14485,10 @@
      "count": 5,
      "sources": [
       69,
+      72,
       74,
-      76,
-      78,
-      79
+      77,
+      78
      ]
     },
     {
@@ -14477,11 +14496,11 @@
      "creator": "",
      "count": 5,
      "sources": [
+      71,
+      73,
       75,
-      77,
-      70,
-      80,
-      79
+      78,
+      80
      ]
     },
     {
@@ -14489,11 +14508,11 @@
      "creator": "",
      "count": 5,
      "sources": [
-      73,
-      76,
+      68,
+      72,
+      77,
       78,
-      80,
-      79
+      80
      ]
     },
     {
@@ -14501,21 +14520,21 @@
      "creator": "",
      "count": 4,
      "sources": [
-      76,
+      72,
+      77,
       78,
-      80,
-      79
+      80
      ]
     },
     {
-     "title": "Ponies (Peacock/Sky)",
+     "title": "Ponies",
      "creator": "",
      "count": 4,
      "sources": [
-      73,
-      76,
-      69,
-      79
+      68,
+      72,
+      74,
+      78
      ]
     },
     {
@@ -14523,10 +14542,10 @@
      "creator": "",
      "count": 4,
      "sources": [
+      68,
       69,
-      73,
       74,
-      79
+      78
      ]
     },
     {
@@ -14534,10 +14553,10 @@
      "creator": "",
      "count": 4,
      "sources": [
-      70,
+      75,
+      77,
       78,
-      80,
-      79
+      80
      ]
     },
     {
@@ -14545,21 +14564,21 @@
      "creator": "",
      "count": 4,
      "sources": [
-      76,
-      69,
-      80,
-      79
+      72,
+      74,
+      78,
+      80
      ]
     },
     {
-     "title": "The Five-Star Weekend (Peacock/Sky)",
+     "title": "The Five-Star Weekend",
      "creator": "",
      "count": 4,
      "sources": [
-      73,
-      76,
-      80,
-      79
+      68,
+      72,
+      78,
+      80
      ]
     },
     {
@@ -14567,20 +14586,20 @@
      "creator": "",
      "count": 4,
      "sources": [
-      68,
       70,
-      80,
-      79
+      75,
+      78,
+      80
      ]
     },
     {
-     "title": "This Is a Gardening Show (Netflix)",
+     "title": "This Is a Gardening Show",
      "creator": "",
      "count": 4,
      "sources": [
-      76,
-      70,
-      78,
+      72,
+      75,
+      77,
       80
      ]
     },
@@ -14589,19 +14608,19 @@
      "creator": "",
      "count": 4,
      "sources": [
-      74,
+      69,
+      77,
       78,
-      79,
       80
      ]
     },
     {
-     "title": "Adults, season two (FX and Hulu)",
+     "title": "Adults Season 2",
      "creator": "",
      "count": 3,
      "sources": [
-      76,
-      79,
+      72,
+      78,
       80
      ]
     },
@@ -14610,99 +14629,119 @@
      "creator": "",
      "count": 3,
      "sources": [
-      71,
-      80,
-      79
-     ]
-    },
-    {
-     "title": "Big Mistakes (Netflix)",
-     "creator": "",
-     "count": 3,
-     "sources": [
-      76,
-      77,
-      79
-     ]
-    },
-    {
-     "title": "Cape Fear (Apple TV)",
-     "creator": "",
-     "count": 3,
-     "sources": [
-      73,
-      74,
-      79
-     ]
-    },
-    {
-     "title": "Colin From Accounts season three (Paramount+)",
-     "creator": "",
-     "count": 3,
-     "sources": [
-      76,
-      78,
-      79
-     ]
-    },
-    {
-     "title": "Cupertino (CBS)",
-     "creator": "",
-     "count": 3,
-     "sources": [
-      78,
-      80,
-      79
-     ]
-    },
-    {
-     "title": "For All Mankind season five (Apple TV)",
-     "creator": "",
-     "count": 3,
-     "sources": [
-      76,
-      78,
-      79
-     ]
-    },
-    {
-     "title": "King of the Hill season 15 (Hulu)",
-     "creator": "",
-     "count": 3,
-     "sources": [
       76,
       78,
       80
      ]
     },
     {
-     "title": "My Brilliant Career (Netflix)",
+     "title": "Big Mistakes",
      "creator": "",
      "count": 3,
      "sources": [
-      78,
-      80,
-      79
-     ]
-    },
-    {
-     "title": "Paradise (season 2)",
-     "creator": "",
-     "count": 3,
-     "sources": [
-      69,
       72,
+      73,
+      78
+     ]
+    },
+    {
+     "title": "Cape Fear",
+     "creator": "",
+     "count": 3,
+     "sources": [
+      68,
+      69,
+      78
+     ]
+    },
+    {
+     "title": "Colin from Accounts: Season 3",
+     "creator": "",
+     "count": 3,
+     "sources": [
+      72,
+      77,
+      78
+     ]
+    },
+    {
+     "title": "Cupertino",
+     "creator": "",
+     "count": 3,
+     "sources": [
+      77,
+      78,
+      80
+     ]
+    },
+    {
+     "title": "Dark Winds",
+     "creator": "",
+     "count": 3,
+     "sources": [
+      72,
+      77,
       79
      ]
     },
     {
-     "title": "Slow Horses season 6 (Apple TV)",
+     "title": "For All Mankind: Season 5",
      "creator": "",
      "count": 3,
      "sources": [
-      73,
+      72,
+      77,
+      78
+     ]
+    },
+    {
+     "title": "King of the Hill Season 15",
+     "creator": "",
+     "count": 3,
+     "sources": [
+      72,
+      77,
+      80
+     ]
+    },
+    {
+     "title": "Mel Brooks: The 99 Year Old Man",
+     "creator": "",
+     "count": 3,
+     "sources": [
+      77,
+      78,
+      80
+     ]
+    },
+    {
+     "title": "My Brilliant Career",
+     "creator": "",
+     "count": 3,
+     "sources": [
+      77,
+      78,
+      80
+     ]
+    },
+    {
+     "title": "Paradise",
+     "creator": "",
+     "count": 3,
+     "sources": [
+      74,
       78,
       79
+     ]
+    },
+    {
+     "title": "Slow Horses: Season 6",
+     "creator": "",
+     "count": 3,
+     "sources": [
+      68,
+      77,
+      78
      ]
     },
     {
@@ -14710,19 +14749,19 @@
      "creator": "",
      "count": 3,
      "sources": [
-      75,
-      72,
+      71,
+      78,
       79
      ]
     },
     {
-     "title": "Spider-Noir (Prime Video)",
+     "title": "Spider-Noir",
      "creator": "",
      "count": 3,
      "sources": [
-      73,
-      74,
-      79
+      68,
+      69,
+      78
      ]
     },
     {
@@ -14730,9 +14769,9 @@
      "creator": "",
      "count": 3,
      "sources": [
-      71,
-      73,
-      79
+      68,
+      76,
+      78
      ]
     },
     {
@@ -14740,9 +14779,9 @@
      "creator": "",
      "count": 3,
      "sources": [
-      68,
-      80,
-      79
+      70,
+      78,
+      80
      ]
     },
     {
@@ -14750,29 +14789,29 @@
      "creator": "",
      "count": 3,
      "sources": [
-      71,
-      73,
-      79
-     ]
-    },
-    {
-     "title": "The ‘Burbs",
-     "creator": "",
-     "count": 3,
-     "sources": [
       68,
-      80,
-      79
+      76,
+      78
      ]
     },
     {
-     "title": "Vladimir (Netflix)",
+     "title": "The 'Burbs",
      "creator": "",
      "count": 3,
      "sources": [
-      76,
-      80,
-      79
+      70,
+      78,
+      80
+     ]
+    },
+    {
+     "title": "Vladimir",
+     "creator": "",
+     "count": 3,
+     "sources": [
+      72,
+      78,
+      80
      ]
     },
     {
@@ -14780,17 +14819,17 @@
      "creator": "",
      "count": 2,
      "sources": [
-      80,
-      79
+      78,
+      80
      ]
     },
     {
-     "title": "A Thousand Blows season 2 (Hulu/Disney+)",
+     "title": "A Thousand Blows season two (Hulu)",
      "creator": "",
      "count": 2,
      "sources": [
-      73,
-      76
+      68,
+      72
      ]
     },
     {
@@ -14798,17 +14837,35 @@
      "creator": "",
      "count": 2,
      "sources": [
-      76,
-      79
+      72,
+      78
      ]
     },
     {
-     "title": "Bridgerton season four (Netflix)",
+     "title": "Avatar: Seven Havens: Season 1",
      "creator": "",
      "count": 2,
      "sources": [
-      76,
-      79
+      77,
+      78
+     ]
+    },
+    {
+     "title": "Bookish",
+     "creator": "",
+     "count": 2,
+     "sources": [
+      68,
+      80
+     ]
+    },
+    {
+     "title": "Bridgerton: Season 4",
+     "creator": "",
+     "count": 2,
+     "sources": [
+      72,
+      78
      ]
     },
     {
@@ -14816,43 +14873,34 @@
      "creator": "",
      "count": 2,
      "sources": [
-      80,
-      79
-     ]
-    },
-    {
-     "title": "Conbody vs Everybody (Criterion Channel)",
-     "creator": "",
-     "count": 2,
-     "sources": [
-      76,
+      78,
       80
      ]
     },
     {
-     "title": "Daredevil: Born Again season 2 (Disney+)",
+     "title": "Conbody vs. Everybody",
      "creator": "",
      "count": 2,
      "sources": [
-      73,
-      79
+      72,
+      80
      ]
     },
     {
-     "title": "Dark Winds (AMC)",
+     "title": "Daredevil: Born Again: Season 2",
      "creator": "",
      "count": 2,
      "sources": [
-      76,
-      72
+      68,
+      78
      ]
     },
     {
-     "title": "Deli Boys Season 2 (Hulu)",
+     "title": "Deli Boys Season 2",
      "creator": "",
      "count": 2,
      "sources": [
-      78,
+      77,
       80
      ]
     },
@@ -14861,8 +14909,8 @@
      "creator": "",
      "count": 2,
      "sources": [
-      69,
-      79
+      74,
+      78
      ]
     },
     {
@@ -14870,17 +14918,26 @@
      "creator": "",
      "count": 2,
      "sources": [
-      68,
-      79
+      70,
+      78
      ]
     },
     {
-     "title": "Heated Rivalry (HBO Max/Sky Atlantic)",
+     "title": "Heated Rivalry",
      "creator": "",
      "count": 2,
      "sources": [
-      73,
-      70
+      68,
+      75
+     ]
+    },
+    {
+     "title": "Jury Duty Presents: Company Retreat",
+     "creator": "",
+     "count": 2,
+     "sources": [
+      78,
+      79
      ]
     },
     {
@@ -14888,8 +14945,8 @@
      "creator": "",
      "count": 2,
      "sources": [
-      69,
-      79
+      74,
+      78
      ]
     },
     {
@@ -14897,8 +14954,8 @@
      "creator": "",
      "count": 2,
      "sources": [
-      76,
-      79
+      72,
+      78
      ]
     },
     {
@@ -14906,30 +14963,12 @@
      "creator": "",
      "count": 2,
      "sources": [
-      76,
-      79
+      72,
+      78
      ]
     },
     {
      "title": "Lucky",
-     "creator": "",
-     "count": 2,
-     "sources": [
-      80,
-      79
-     ]
-    },
-    {
-     "title": "Malcolm in the Middle: Life’s Still Unfair",
-     "creator": "",
-     "count": 2,
-     "sources": [
-      70,
-      79
-     ]
-    },
-    {
-     "title": "Mel Brooks: The 99 Year Old Man! (HBO)",
      "creator": "",
      "count": 2,
      "sources": [
@@ -14938,39 +14977,48 @@
      ]
     },
     {
-     "title": "MobLand (season 2)",
+     "title": "Malcolm in the Middle: Life's Still Unfair: Limited Series",
      "creator": "",
      "count": 2,
      "sources": [
-      69,
-      79
+      75,
+      78
      ]
     },
     {
-     "title": "Off Campus (Prime Video)",
+     "title": "MobLand: Season 2",
      "creator": "",
      "count": 2,
      "sources": [
-      73,
-      79
+      74,
+      78
      ]
     },
     {
-     "title": "One Hundred Years of Solitude, season two (Netflix)",
+     "title": "Off Campus: Season 1",
      "creator": "",
      "count": 2,
      "sources": [
-      76,
+      68,
+      78
+     ]
+    },
+    {
+     "title": "One Hundred Years of Solitude Part 2",
+     "creator": "",
+     "count": 2,
+     "sources": [
+      72,
       80
      ]
     },
     {
-     "title": "Primal season three (Adult Swim)",
+     "title": "Primal Season 3 (Adult Swim)",
      "creator": "",
      "count": 2,
      "sources": [
-      76,
-      78
+      72,
+      77
      ]
     },
     {
@@ -14978,8 +15026,8 @@
      "creator": "",
      "count": 2,
      "sources": [
-      70,
-      79
+      75,
+      78
      ]
     },
     {
@@ -14987,26 +15035,35 @@
      "creator": "",
      "count": 2,
      "sources": [
+      78,
+      79
+     ]
+    },
+    {
+     "title": "Star Trek: Starfleet Academy: Season 1",
+     "creator": "",
+     "count": 2,
+     "sources": [
+      68,
+      78
+     ]
+    },
+    {
+     "title": "Steal: Season 1",
+     "creator": "",
+     "count": 2,
+     "sources": [
+      68,
+      78
+     ]
+    },
+    {
+     "title": "Sugar: Season 2",
+     "creator": "",
+     "count": 2,
+     "sources": [
       72,
-      79
-     ]
-    },
-    {
-     "title": "Steal (Prime Video)",
-     "creator": "",
-     "count": 2,
-     "sources": [
-      73,
-      79
-     ]
-    },
-    {
-     "title": "Sugar season two (Apple TV)",
-     "creator": "",
-     "count": 2,
-     "sources": [
-      76,
-      79
+      78
      ]
     },
     {
@@ -15014,7 +15071,7 @@
      "creator": "",
      "count": 2,
      "sources": [
-      71,
+      76,
       80
      ]
     },
@@ -15023,34 +15080,34 @@
      "creator": "",
      "count": 2,
      "sources": [
-      73,
-      79
+      68,
+      78
      ]
     },
     {
-     "title": "The Boys season 5 (Prime Video)",
+     "title": "The Boys: Season 5",
      "creator": "",
      "count": 2,
      "sources": [
-      73,
-      79
+      68,
+      78
      ]
     },
     {
-     "title": "The Diplomat Season 4 (Netflix)",
+     "title": "The Diplomat: Season 4",
      "creator": "",
      "count": 2,
      "sources": [
-      78,
-      79
+      77,
+      78
      ]
     },
     {
-     "title": "The Lowdown Season 2 (FX/Hulu)",
+     "title": "The Lowdown Season 2",
      "creator": "",
      "count": 2,
      "sources": [
-      78,
+      77,
       80
      ]
     },
@@ -15059,8 +15116,8 @@
      "creator": "",
      "count": 2,
      "sources": [
-      80,
-      79
+      78,
+      80
      ]
     },
     {
@@ -15068,44 +15125,53 @@
      "creator": "",
      "count": 2,
      "sources": [
-      80,
-      79
-     ]
-    },
-    {
-     "title": "The Paper (season 2)",
-     "creator": "",
-     "count": 2,
-     "sources": [
-      69,
-      79
-     ]
-    },
-    {
-     "title": "Trespasses (PBS)",
-     "creator": "",
-     "count": 2,
-     "sources": [
-      76,
+      78,
       80
      ]
     },
     {
-     "title": "Waiting for the Out (BBC)",
+     "title": "The Paper: Season 2",
      "creator": "",
      "count": 2,
      "sources": [
-      73,
-      70
+      74,
+      78
      ]
     },
     {
-     "title": "X-Men ’97, season two (Disney+)",
+     "title": "The Traitors",
      "creator": "",
      "count": 2,
      "sources": [
-      76,
-      78
+      72,
+      75
+     ]
+    },
+    {
+     "title": "Trespasses",
+     "creator": "",
+     "count": 2,
+     "sources": [
+      72,
+      80
+     ]
+    },
+    {
+     "title": "Waiting for the Out",
+     "creator": "",
+     "count": 2,
+     "sources": [
+      68,
+      75
+     ]
+    },
+    {
+     "title": "X-Men '97 Season 2 (Disney+)",
+     "creator": "",
+     "count": 2,
+     "sources": [
+      72,
+      77
      ]
     },
     {
@@ -15113,8 +15179,8 @@
      "creator": "",
      "count": 2,
      "sources": [
-      68,
-      79
+      70,
+      78
      ]
     },
     {
@@ -15122,8 +15188,8 @@
      "creator": "",
      "count": 2,
      "sources": [
-      68,
-      79
+      70,
+      78
      ]
     },
     {
@@ -15131,7 +15197,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      73
+      68
      ]
     },
     {
@@ -15139,7 +15205,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      70
+      75
      ]
     },
     {
@@ -15147,23 +15213,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      79
-     ]
-    },
-    {
-     "title": "Avatar: Seven Havens (Paramount+)",
-     "creator": "",
-     "count": 1,
-     "sources": [
       78
-     ]
-    },
-    {
-     "title": "Avatar: Seven Havens: Season 1",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      79
      ]
     },
     {
@@ -15171,7 +15221,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      79
+      78
      ]
     },
     {
@@ -15187,23 +15237,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      73
-     ]
-    },
-    {
-     "title": "Bookish",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      80
-     ]
-    },
-    {
-     "title": "Bookish season 2 (U&alibi)",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      73
+      68
      ]
     },
     {
@@ -15219,7 +15253,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      69
+      74
      ]
     },
     {
@@ -15227,7 +15261,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      70
+      75
      ]
     },
     {
@@ -15235,7 +15269,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      76
+      72
      ]
     },
     {
@@ -15243,19 +15277,11 @@
      "creator": "",
      "count": 1,
      "sources": [
-      79
+      78
      ]
     },
     {
      "title": "Dark Matter: Season 2",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      79
-     ]
-    },
-    {
-     "title": "Dark Winds Season 4 (AMC)",
      "creator": "",
      "count": 1,
      "sources": [
@@ -15267,7 +15293,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      73
+      68
      ]
     },
     {
@@ -15275,7 +15301,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      73
+      68
      ]
     },
     {
@@ -15291,7 +15317,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      76
+      72
      ]
     },
     {
@@ -15299,7 +15325,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      73
+      68
      ]
     },
     {
@@ -15307,7 +15333,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      68
+      70
      ]
     },
     {
@@ -15315,7 +15341,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      79
+      78
      ]
     },
     {
@@ -15323,23 +15349,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      73
-     ]
-    },
-    {
-     "title": "Jury Duty Presents: Company Retreat",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      72
-     ]
-    },
-    {
-     "title": "Jury Duty Presents: Company Retreat: Season 1",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      79
+      68
      ]
     },
     {
@@ -15347,7 +15357,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      68
+      70
      ]
     },
     {
@@ -15363,7 +15373,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      70
+      75
      ]
     },
     {
@@ -15371,7 +15381,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      79
+      78
      ]
     },
     {
@@ -15379,7 +15389,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      79
+      78
      ]
     },
     {
@@ -15387,7 +15397,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      78
+      77
      ]
     },
     {
@@ -15395,23 +15405,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      70
-     ]
-    },
-    {
-     "title": "Margot's Got Money Troubles",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      71
-     ]
-    },
-    {
-     "title": "Mel Brooks: The 99 Year Old Man!: Season 1",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      79
+      75
      ]
     },
     {
@@ -15419,7 +15413,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      79
+      78
      ]
     },
     {
@@ -15427,7 +15421,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      79
+      78
      ]
     },
     {
@@ -15435,7 +15429,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      68
+      70
      ]
     },
     {
@@ -15443,7 +15437,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      76
+      72
      ]
     },
     {
@@ -15451,7 +15445,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      79
+      78
      ]
     },
     {
@@ -15459,7 +15453,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      78
+      77
      ]
     },
     {
@@ -15467,7 +15461,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      78
+      77
      ]
     },
     {
@@ -15483,7 +15477,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      79
+      78
      ]
     },
     {
@@ -15491,7 +15485,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      79
+      78
      ]
     },
     {
@@ -15499,7 +15493,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      79
+      78
      ]
     },
     {
@@ -15507,7 +15501,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      79
+      78
      ]
     },
     {
@@ -15515,7 +15509,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      79
+      78
      ]
     },
     {
@@ -15523,7 +15517,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      69
+      74
      ]
     },
     {
@@ -15531,23 +15525,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      70
-     ]
-    },
-    {
-     "title": "Star Trek: Starfleet Academy (Paramount+)",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      73
-     ]
-    },
-    {
-     "title": "Star Trek: Starfleet Academy: Season 1",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      79
+      75
      ]
     },
     {
@@ -15555,7 +15533,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      79
+      78
      ]
     },
     {
@@ -15563,7 +15541,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      79
+      78
      ]
     },
     {
@@ -15571,7 +15549,7 @@
      "creator": "The Ninth Jedi",
      "count": 1,
      "sources": [
-      69
+      74
      ]
     },
     {
@@ -15579,7 +15557,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      78
+      77
      ]
     },
     {
@@ -15595,7 +15573,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      79
+      78
      ]
     },
     {
@@ -15611,7 +15589,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      69
+      74
      ]
     },
     {
@@ -15619,7 +15597,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      76
+      72
      ]
     },
     {
@@ -15627,7 +15605,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      70
+      75
      ]
     },
     {
@@ -15635,7 +15613,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      79
+      78
      ]
     },
     {
@@ -15643,7 +15621,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      70
+      75
      ]
     },
     {
@@ -15651,7 +15629,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      79
+      78
      ]
     },
     {
@@ -15659,7 +15637,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      79
+      78
      ]
     },
     {
@@ -15667,7 +15645,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      79
+      78
      ]
     },
     {
@@ -15675,7 +15653,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      78
+      77
      ]
     },
     {
@@ -15683,7 +15661,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      79
+      78
      ]
     },
     {
@@ -15691,7 +15669,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      68
+      70
      ]
     },
     {
@@ -15699,7 +15677,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      79
+      78
      ]
     },
     {
@@ -15707,23 +15685,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      76
-     ]
-    },
-    {
-     "title": "The Traitors",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      70
-     ]
-    },
-    {
-     "title": "The Traitors season four (Peacock)",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      76
+      72
      ]
     },
     {
@@ -15731,7 +15693,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      78
+      77
      ]
     },
     {
@@ -15739,7 +15701,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      70
+      75
      ]
     },
     {
@@ -15755,7 +15717,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      73
+      68
      ]
     },
     {
@@ -15763,7 +15725,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      79
+      78
      ]
     },
     {
@@ -15771,7 +15733,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      79
+      78
      ]
     },
     {
@@ -15787,7 +15749,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      79
+      78
      ]
     }
    ]
@@ -15851,6 +15813,15 @@
      ]
     },
     {
+     "title": "Love+Radio: Blood Memory",
+     "creator": "",
+     "count": 2,
+     "sources": [
+      84,
+      83
+     ]
+    },
+    {
      "title": "The Mindhunter",
      "creator": "",
      "count": 2,
@@ -15864,8 +15835,8 @@
      "creator": "",
      "count": 2,
      "sources": [
-      82,
-      85
+      85,
+      82
      ]
     },
     {
@@ -15879,6 +15850,14 @@
     {
      "title": "2001: A Space Odyssey’ with Steven Spielberg,” The Rewatchables",
      "creator": "",
+     "count": 1,
+     "sources": [
+      84
+     ]
+    },
+    {
+     "title": "A Road Trip Through the Data Center Debate",
+     "creator": "Search Engine",
      "count": 1,
      "sources": [
       84
@@ -16085,27 +16064,11 @@
      ]
     },
     {
-     "title": "Love and Radio: Blood Memory",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      83
-     ]
-    },
-    {
      "title": "Love Trapped",
      "creator": "",
      "count": 1,
      "sources": [
       85
-     ]
-    },
-    {
-     "title": "Love+Radio: Blood Memory",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      84
      ]
     },
     {
@@ -16210,14 +16173,6 @@
      "count": 1,
      "sources": [
       81
-     ]
-    },
-    {
-     "title": "Search Engine, “A Road Trip Through the Data Center Debate",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      84
      ]
     },
     {
@@ -16333,14 +16288,6 @@
      ]
     },
     {
-     "title": "The Test Case,” This American Life",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      84
-     ]
-    },
-    {
      "title": "The Unusual Suspects with Kenya Barris and Malcolm Gladwell",
      "creator": "",
      "count": 1,
@@ -16354,6 +16301,14 @@
      "count": 1,
      "sources": [
       81
+     ]
+    },
+    {
+     "title": "This American Life",
+     "creator": "The Test Case",
+     "count": 1,
+     "sources": [
+      84
      ]
     },
     {
@@ -16762,6 +16717,16 @@
      ]
     },
     {
+     "title": "Diablo 4: Lord of Hatred",
+     "creator": "",
+     "count": 3,
+     "sources": [
+      89,
+      90,
+      91
+     ]
+    },
+    {
      "title": "Final Fantasy Resonance",
      "creator": "",
      "count": 3,
@@ -16830,15 +16795,6 @@
      ]
     },
     {
-     "title": "Diablo 4: Lord of Hatred",
-     "creator": "",
-     "count": 2,
-     "sources": [
-      89,
-      90
-     ]
-    },
-    {
      "title": "Doom: The Dark Ages - Revelations",
      "creator": "",
      "count": 2,
@@ -16848,7 +16804,7 @@
      ]
     },
     {
-     "title": "Dragon’s Dogma 2: Dark Arisen",
+     "title": "Dragon's Dogma 2: Dark Arisen",
      "creator": "",
      "count": 2,
      "sources": [
@@ -16893,7 +16849,7 @@
      ]
     },
     {
-     "title": "Life is Strange: Reunion",
+     "title": "Life is Strange Reunion",
      "creator": "",
      "count": 2,
      "sources": [
@@ -16920,7 +16876,7 @@
      ]
     },
     {
-     "title": "Mouse: P.I. For Hire",
+     "title": "Mouse PI For Hire",
      "creator": "",
      "count": 2,
      "sources": [
@@ -16983,7 +16939,7 @@
      ]
     },
     {
-     "title": "Slay the Spire 2 (Early Access)",
+     "title": "Slay the Spire 2",
      "creator": "",
      "count": 2,
      "sources": [
@@ -16992,12 +16948,21 @@
      ]
     },
     {
-     "title": "Super Mario Bros. Wonder - Nintendo Switch 2 Edition + Meetup in Bellabel Park",
+     "title": "Super Mario Bros. Wonder Nintendo Switch 2 Edition + Meetup in Bellabel Park",
      "creator": "",
      "count": 2,
      "sources": [
       90,
       91
+     ]
+    },
+    {
+     "title": "The Witcher 3: Wild Hunt",
+     "creator": "",
+     "count": 2,
+     "sources": [
+      92,
+      93
      ]
     },
     {
@@ -17217,14 +17182,6 @@
      "count": 1,
      "sources": [
       92
-     ]
-    },
-    {
-     "title": "Diablo IV: Lord of Hatred",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      91
      ]
     },
     {
@@ -17988,22 +17945,6 @@
      ]
     },
     {
-     "title": "The Witcher 3: Wild Hunt",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      93
-     ]
-    },
-    {
-     "title": "The Witcher 3: Wild Hunt - Remastered",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      92
-     ]
-    },
-    {
      "title": "The Witcher 4",
      "creator": "",
      "count": 1,
@@ -18181,7 +18122,7 @@
     },
     {
      "title": "Adidas Adizero Adios Pro Evo 3",
-     "creator": "Best fitness",
+     "creator": "",
      "count": 2,
      "sources": [
       97,
@@ -18189,8 +18130,8 @@
      ]
     },
     {
-     "title": "Asus ROG Zephyrus Duo (2026)",
-     "creator": "Best gaming laptop",
+     "title": "ASUS ROG Zephyrus Duo",
+     "creator": "",
      "count": 2,
      "sources": [
       94,
@@ -18199,7 +18140,7 @@
     },
     {
      "title": "Asus Zenbook Duo",
-     "creator": "Best Windows laptop",
+     "creator": "",
      "count": 2,
      "sources": [
       97,
@@ -18208,7 +18149,7 @@
     },
     {
      "title": "Fitbit Air",
-     "creator": "Value award",
+     "creator": "",
      "count": 2,
      "sources": [
       94,
@@ -18226,7 +18167,7 @@
     },
     {
      "title": "MacBook Neo",
-     "creator": "Best new product",
+     "creator": "",
      "count": 2,
      "sources": [
       94,
@@ -18348,7 +18289,7 @@
     },
     {
      "title": "Alienware 39 5K",
-     "creator": "Best display",
+     "creator": "",
      "count": 1,
      "sources": [
       95
@@ -18476,7 +18417,7 @@
     },
     {
      "title": "Apple AirPods 5",
-     "creator": "Best earbuds",
+     "creator": "",
      "count": 1,
      "sources": [
       95
@@ -18484,7 +18425,7 @@
     },
     {
      "title": "Apple iPhone 18 Pro",
-     "creator": "Best iPhone",
+     "creator": "",
      "count": 1,
      "sources": [
       95
@@ -18492,7 +18433,7 @@
     },
     {
      "title": "Apple Mac mini M6",
-     "creator": "Best desktop",
+     "creator": "",
      "count": 1,
      "sources": [
       95
@@ -18500,7 +18441,7 @@
     },
     {
      "title": "Apple MacBook Air M5",
-     "creator": "Best macOS laptop",
+     "creator": "",
      "count": 1,
      "sources": [
       95
@@ -18508,7 +18449,7 @@
     },
     {
      "title": "Apple MacBook Neo",
-     "creator": "Best affordable laptop",
+     "creator": "",
      "count": 1,
      "sources": [
       95
@@ -18524,7 +18465,7 @@
     },
     {
      "title": "Apple Watch Series 12",
-     "creator": "Best wearable",
+     "creator": "",
      "count": 1,
      "sources": [
       95
@@ -18700,7 +18641,7 @@
     },
     {
      "title": "Breville Eye Q Toaster",
-     "creator": "Best kitchen tech",
+     "creator": "",
      "count": 1,
      "sources": [
       95
@@ -18972,7 +18913,7 @@
     },
     {
      "title": "DJI Lito X1",
-     "creator": "Best drone",
+     "creator": "",
      "count": 1,
      "sources": [
       95
@@ -18980,7 +18921,7 @@
     },
     {
      "title": "DJI Osmo Pocket 4",
-     "creator": "Best vlogging camera",
+     "creator": "",
      "count": 1,
      "sources": [
       95
@@ -19252,7 +19193,7 @@
     },
     {
      "title": "Google Pixel 11",
-     "creator": "Best Android phone",
+     "creator": "",
      "count": 1,
      "sources": [
       95
@@ -19940,7 +19881,7 @@
     },
     {
      "title": "Nvidia RTX Spark",
-     "creator": "Innovation award",
+     "creator": "",
      "count": 1,
      "sources": [
       96
@@ -20156,7 +20097,7 @@
     },
     {
      "title": "Ray-Ban Meta Audio",
-     "creator": "Best smart glasses",
+     "creator": "",
      "count": 1,
      "sources": [
       95
@@ -20300,7 +20241,7 @@
     },
     {
      "title": "Samsung Samsung Galaxy Tab S12 Ultra",
-     "creator": "Best tablet",
+     "creator": "",
      "count": 1,
      "sources": [
       95
@@ -20364,7 +20305,7 @@
     },
     {
      "title": "SharkNinja",
-     "creator": "Best company award",
+     "creator": "",
      "count": 1,
      "sources": [
       96
@@ -20436,7 +20377,7 @@
     },
     {
      "title": "Sonos Ace Ultra",
-     "creator": "Best headphones",
+     "creator": "",
      "count": 1,
      "sources": [
       95
@@ -20444,7 +20385,7 @@
     },
     {
      "title": "Sonos Beam Ultra",
-     "creator": "Best home theater",
+     "creator": "",
      "count": 1,
      "sources": [
       95
@@ -20452,7 +20393,7 @@
     },
     {
      "title": "Sony A7R VI",
-     "creator": "Best overall camera",
+     "creator": "",
      "count": 1,
      "sources": [
       95
@@ -20772,7 +20713,7 @@
     },
     {
      "title": "Valve Steam Controller",
-     "creator": "Best gaming accessory",
+     "creator": "",
      "count": 1,
      "sources": [
       95
@@ -20892,7 +20833,7 @@
     },
     {
      "title": "Xreal XBX a01+",
-     "creator": "Best headset",
+     "creator": "",
      "count": 1,
      "sources": [
       95
@@ -22075,41 +22016,13 @@
    "lists": 9,
    "items": [
     {
-     "title": "Claridge's",
-     "creator": "London",
+     "title": "Mexico City",
+     "creator": "",
      "count": 3,
      "sources": [
       106,
       107,
       108
-     ]
-    },
-    {
-     "title": "Mexico City",
-     "creator": "",
-     "count": 3,
-     "sources": [
-      109,
-      110,
-      111
-     ]
-    },
-    {
-     "title": "Amangiri",
-     "creator": "",
-     "count": 2,
-     "sources": [
-      106,
-      107
-     ]
-    },
-    {
-     "title": "Badrutt's Palace",
-     "creator": "",
-     "count": 2,
-     "sources": [
-      106,
-      107
      ]
     },
     {
@@ -22117,8 +22030,17 @@
      "creator": "Singapore",
      "count": 2,
      "sources": [
-      107,
-      108
+      109,
+      110
+     ]
+    },
+    {
+     "title": "Claridge's",
+     "creator": "London",
+     "count": 2,
+     "sources": [
+      111,
+      110
      ]
     },
     {
@@ -22127,7 +22049,7 @@
      "count": 2,
      "sources": [
       112,
-      111
+      108
      ]
     },
     {
@@ -22136,7 +22058,7 @@
      "count": 2,
      "sources": [
       113,
-      106
+      111
      ]
     },
     {
@@ -22144,8 +22066,8 @@
      "creator": "",
      "count": 2,
      "sources": [
-      109,
-      111
+      106,
+      108
      ]
     },
     {
@@ -22154,29 +22076,11 @@
      "count": 2,
      "sources": [
       112,
-      109
-     ]
-    },
-    {
-     "title": "Passalacqua",
-     "creator": "",
-     "count": 2,
-     "sources": [
-      106,
-      107
+      106
      ]
     },
     {
      "title": "Singapore",
-     "creator": "",
-     "count": 2,
-     "sources": [
-      109,
-      111
-     ]
-    },
-    {
-     "title": "The Peninsula Istanbul",
      "creator": "",
      "count": 2,
      "sources": [
@@ -22205,7 +22109,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      108
      ]
     },
     {
@@ -22213,7 +22117,7 @@
      "creator": "rest of France and Monaco",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -22221,7 +22125,7 @@
      "creator": "Spain",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -22229,7 +22133,7 @@
      "creator": "Egypt",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -22237,7 +22141,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      106
      ]
     },
     {
@@ -22253,7 +22157,7 @@
      "creator": "Bangkok",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -22261,7 +22165,23 @@
      "creator": "Tokyo",
      "count": 1,
      "sources": [
-      106
+      111
+     ]
+    },
+    {
+     "title": "Amangiri",
+     "creator": "Canyon Point",
+     "count": 1,
+     "sources": [
+      111
+     ]
+    },
+    {
+     "title": "Amangiri",
+     "creator": "Utah",
+     "count": 1,
+     "sources": [
+      109
      ]
     },
     {
@@ -22269,7 +22189,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      108
      ]
     },
     {
@@ -22277,7 +22197,7 @@
      "creator": "rest of Asia",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -22293,7 +22213,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      106
      ]
     },
     {
@@ -22301,7 +22221,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      106
      ]
     },
     {
@@ -22309,7 +22229,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      108
      ]
     },
     {
@@ -22322,7 +22242,7 @@
     },
     {
      "title": "Art of Manga",
-     "creator": "Best Exhibition of the Year",
+     "creator": "",
      "count": 1,
      "sources": [
       114
@@ -22333,7 +22253,7 @@
      "creator": "Asia",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -22349,7 +22269,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      106
      ]
     },
     {
@@ -22357,7 +22277,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      106
      ]
     },
     {
@@ -22365,7 +22285,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      108
      ]
     },
     {
@@ -22373,7 +22293,7 @@
      "creator": "Dubai",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -22381,7 +22301,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      108
      ]
     },
     {
@@ -22389,7 +22309,23 @@
      "creator": "Central & South America",
      "count": 1,
      "sources": [
-      108
+      110
+     ]
+    },
+    {
+     "title": "Badrutt's Palace",
+     "creator": "St. Moritz",
+     "count": 1,
+     "sources": [
+      111
+     ]
+    },
+    {
+     "title": "Badrutt’s Palace",
+     "creator": "Switzerland",
+     "count": 1,
+     "sources": [
+      109
      ]
     },
     {
@@ -22397,7 +22333,7 @@
      "creator": "Ireland",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -22405,7 +22341,7 @@
      "creator": "Ireland",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -22413,7 +22349,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      108
      ]
     },
     {
@@ -22421,12 +22357,12 @@
      "creator": "",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
      "title": "Bar Chucho",
-     "creator": "Best New Bar",
+     "creator": "",
      "count": 1,
      "sources": [
       114
@@ -22437,7 +22373,7 @@
      "creator": "Caribbean and the Atlantic",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -22445,7 +22381,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      110
+      107
      ]
     },
     {
@@ -22453,7 +22389,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      108
      ]
     },
     {
@@ -22461,7 +22397,7 @@
      "creator": "U.K.",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -22469,7 +22405,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      108
      ]
     },
     {
@@ -22477,7 +22413,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -22485,7 +22421,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      106
      ]
     },
     {
@@ -22493,7 +22429,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      108
      ]
     },
     {
@@ -22501,7 +22437,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      108
      ]
     },
     {
@@ -22509,7 +22445,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      106
      ]
     },
     {
@@ -22517,7 +22453,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      108
      ]
     },
     {
@@ -22525,7 +22461,7 @@
      "creator": "rest of Europe",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -22533,7 +22469,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      110
+      107
      ]
     },
     {
@@ -22541,7 +22477,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      106
      ]
     },
     {
@@ -22557,7 +22493,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      106
      ]
     },
     {
@@ -22565,7 +22501,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      110
+      107
      ]
     },
     {
@@ -22581,7 +22517,7 @@
      "creator": "Indonesia",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -22589,7 +22525,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      108
      ]
     },
     {
@@ -22597,7 +22533,7 @@
      "creator": "Rome",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -22605,7 +22541,7 @@
      "creator": "Tokyo",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -22613,12 +22549,12 @@
      "creator": "",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
      "title": "Bún Chả Hà Nội at Ngon Vietnamese Kitchen",
-     "creator": "Best New Dish",
+     "creator": "",
      "count": 1,
      "sources": [
       114
@@ -22629,7 +22565,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      108
      ]
     },
     {
@@ -22637,7 +22573,7 @@
      "creator": "Greece",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -22645,7 +22581,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      108
      ]
     },
     {
@@ -22653,7 +22589,7 @@
      "creator": "Sri Lanka",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -22661,7 +22597,7 @@
      "creator": "Bangkok",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -22669,7 +22605,7 @@
      "creator": "Sydney",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -22677,7 +22613,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -22685,7 +22621,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      106
      ]
     },
     {
@@ -22693,7 +22629,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      110
+      107
      ]
     },
     {
@@ -22701,7 +22637,7 @@
      "creator": "Modena",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -22709,7 +22645,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -22725,7 +22661,7 @@
      "creator": "Italy",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -22733,7 +22669,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -22749,7 +22685,7 @@
      "creator": "Indonesia",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -22757,7 +22693,7 @@
      "creator": "Chocholá",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -22773,7 +22709,7 @@
      "creator": "Paris",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -22781,7 +22717,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      108
      ]
     },
     {
@@ -22789,7 +22725,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      108
      ]
     },
     {
@@ -22805,7 +22741,7 @@
      "creator": "Thailand",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -22813,15 +22749,23 @@
      "creator": "rest of world",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
      "title": "Chloe Radcliffe’s Cheat at Joe’s Pub",
-     "creator": "Best New Comedy Show",
+     "creator": "",
      "count": 1,
      "sources": [
       114
+     ]
+    },
+    {
+     "title": "Claridge's",
+     "creator": "U.K.",
+     "count": 1,
+     "sources": [
+      109
      ]
     },
     {
@@ -22837,7 +22781,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      106
      ]
     },
     {
@@ -22845,7 +22789,7 @@
      "creator": "Rio de Janeiro",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -22853,7 +22797,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      108
      ]
     },
     {
@@ -22861,7 +22805,7 @@
      "creator": "Bahamas",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -22869,7 +22813,7 @@
      "creator": "Rome",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -22877,7 +22821,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -22885,7 +22829,7 @@
      "creator": "U.K.",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -22898,7 +22842,7 @@
     },
     {
      "title": "Culture of Bathe-ing",
-     "creator": "Best Pop-Up of the Year",
+     "creator": "",
      "count": 1,
      "sources": [
       114
@@ -22909,7 +22853,7 @@
      "creator": "large ships",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -22917,7 +22861,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      106
      ]
     },
     {
@@ -22925,7 +22869,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      110
+      107
      ]
     },
     {
@@ -22933,7 +22877,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      106
      ]
     },
     {
@@ -22941,12 +22885,12 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      106
      ]
     },
     {
      "title": "Death of a Salesman",
-     "creator": "Best Revival",
+     "creator": "",
      "count": 1,
      "sources": [
       114
@@ -22965,12 +22909,12 @@
      "creator": "North America",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
      "title": "Degenerates",
-     "creator": "Best New Play",
+     "creator": "",
      "count": 1,
      "sources": [
       114
@@ -22981,7 +22925,7 @@
      "creator": "Bali",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -22997,7 +22941,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      106
      ]
     },
     {
@@ -23013,7 +22957,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      108
      ]
     },
     {
@@ -23029,7 +22973,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      108
      ]
     },
     {
@@ -23037,7 +22981,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -23045,7 +22989,7 @@
      "creator": "Australia",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -23061,7 +23005,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      106
      ]
     },
     {
@@ -23069,7 +23013,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -23077,7 +23021,7 @@
      "creator": "Witney",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -23085,7 +23029,7 @@
      "creator": "USA & Canada",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -23093,7 +23037,7 @@
      "creator": "Australasia and the South Pacific",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -23101,7 +23045,7 @@
      "creator": "Spain",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -23109,7 +23053,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      110
+      107
      ]
     },
     {
@@ -23117,7 +23061,7 @@
      "creator": "Italy",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -23125,7 +23069,7 @@
      "creator": "Athens",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -23133,7 +23077,7 @@
      "creator": "Greece",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -23141,7 +23085,7 @@
      "creator": "Bangkok",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -23149,7 +23093,7 @@
      "creator": "Florence",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -23157,7 +23101,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      106
      ]
     },
     {
@@ -23165,7 +23109,7 @@
      "creator": "Indonesia",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -23173,7 +23117,7 @@
      "creator": "Thailand",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -23197,7 +23141,7 @@
      "creator": "Central and South America",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -23205,7 +23149,7 @@
      "creator": "UK",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -23221,7 +23165,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      106
      ]
     },
     {
@@ -23229,7 +23173,7 @@
      "creator": "Italy",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -23237,7 +23181,7 @@
      "creator": "Spain",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -23245,7 +23189,7 @@
      "creator": "rest of Italy",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -23253,7 +23197,7 @@
      "creator": "Sweden",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -23261,7 +23205,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -23269,7 +23213,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      108
      ]
     },
     {
@@ -23285,7 +23229,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      106
      ]
     },
     {
@@ -23293,7 +23237,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      106
      ]
     },
     {
@@ -23301,7 +23245,7 @@
      "creator": "the Americas",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -23309,7 +23253,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      108
      ]
     },
     {
@@ -23317,7 +23261,7 @@
      "creator": "Antigua",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -23325,7 +23269,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      108
      ]
     },
     {
@@ -23333,7 +23277,7 @@
      "creator": "Antibes",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -23341,7 +23285,7 @@
      "creator": "Mexico",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -23357,7 +23301,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -23365,7 +23309,7 @@
      "creator": "Italy",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -23373,7 +23317,7 @@
      "creator": "St. Barts",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -23381,7 +23325,7 @@
      "creator": "Vienna",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -23397,7 +23341,7 @@
      "creator": "New Zealand",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -23405,7 +23349,7 @@
      "creator": "Europe",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -23413,7 +23357,7 @@
      "creator": "Paris",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -23421,7 +23365,7 @@
      "creator": "Monaco",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -23429,7 +23373,7 @@
      "creator": "Nice",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -23437,7 +23381,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      110
+      107
      ]
     },
     {
@@ -23445,7 +23389,7 @@
      "creator": "Greece",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -23453,7 +23397,7 @@
      "creator": "Italy",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -23461,7 +23405,7 @@
      "creator": "Florence",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -23477,7 +23421,7 @@
      "creator": "Peru",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -23485,7 +23429,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -23493,7 +23437,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -23501,7 +23445,7 @@
      "creator": "UK",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -23509,7 +23453,7 @@
      "creator": "world",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -23517,7 +23461,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -23525,7 +23469,7 @@
      "creator": "Caribbean & Atlantic",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -23533,7 +23477,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      110
+      107
      ]
     },
     {
@@ -23541,7 +23485,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      110
+      107
      ]
     },
     {
@@ -23557,7 +23501,7 @@
      "creator": "Indian Ocean",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -23565,7 +23509,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -23581,7 +23525,7 @@
      "creator": "Kenya",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -23589,7 +23533,7 @@
      "creator": "Hawaii",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -23597,7 +23541,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      108
      ]
     },
     {
@@ -23605,7 +23549,7 @@
      "creator": "Northern Africa",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -23613,7 +23557,7 @@
      "creator": "France",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -23621,7 +23565,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      108
      ]
     },
     {
@@ -23629,7 +23573,7 @@
      "creator": "Los Cabos",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -23637,7 +23581,7 @@
      "creator": "Paris",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -23645,7 +23589,7 @@
      "creator": "Paris",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -23661,7 +23605,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      110
+      107
      ]
     },
     {
@@ -23669,7 +23613,7 @@
      "creator": "France",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -23677,7 +23621,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      108
      ]
     },
     {
@@ -23685,7 +23629,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      108
      ]
     },
     {
@@ -23693,7 +23637,7 @@
      "creator": "UK",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -23701,7 +23645,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      108
      ]
     },
     {
@@ -23709,7 +23653,7 @@
      "creator": "UK",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -23717,7 +23661,7 @@
      "creator": "rest of UK",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -23733,7 +23677,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      106
      ]
     },
     {
@@ -23741,7 +23685,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      108
      ]
     },
     {
@@ -23749,7 +23693,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      106
      ]
     },
     {
@@ -23757,7 +23701,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      110
+      107
      ]
     },
     {
@@ -23765,7 +23709,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      106
      ]
     },
     {
@@ -23773,7 +23717,7 @@
      "creator": "Bangkok",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -23781,7 +23725,7 @@
      "creator": "Beijing",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -23789,7 +23733,7 @@
      "creator": "Hong Kong",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -23797,7 +23741,7 @@
      "creator": "Southeast Asia",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -23813,7 +23757,7 @@
      "creator": "Riviera Maya",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -23821,7 +23765,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      108
      ]
     },
     {
@@ -23829,7 +23773,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      106
      ]
     },
     {
@@ -23837,7 +23781,7 @@
      "creator": "Africa and the Indian Ocean",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -23845,7 +23789,7 @@
      "creator": "Florida",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -23853,7 +23797,7 @@
      "creator": "Türkiye",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -23861,7 +23805,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      108
      ]
     },
     {
@@ -23877,7 +23821,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -23893,7 +23837,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      106
      ]
     },
     {
@@ -23901,7 +23845,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      106
      ]
     },
     {
@@ -23917,7 +23861,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      106
      ]
     },
     {
@@ -23925,7 +23869,7 @@
      "creator": "Uganda",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -23933,7 +23877,7 @@
      "creator": "Cape Town",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -23941,7 +23885,7 @@
      "creator": "Eastern and Southern Africa",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -23965,7 +23909,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      108
      ]
     },
     {
@@ -23981,7 +23925,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      106
      ]
     },
     {
@@ -23997,7 +23941,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -24005,7 +23949,7 @@
      "creator": "Philippines",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -24013,7 +23957,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      108
      ]
     },
     {
@@ -24021,7 +23965,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      106
      ]
     },
     {
@@ -24029,7 +23973,7 @@
      "creator": "Sumba Island",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -24069,7 +24013,7 @@
      "creator": "the Middle East",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -24085,7 +24029,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      106
      ]
     },
     {
@@ -24093,7 +24037,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      106
      ]
     },
     {
@@ -24101,7 +24045,7 @@
      "creator": "Riviera Nayarit",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -24125,7 +24069,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      108
      ]
     },
     {
@@ -24133,7 +24077,7 @@
      "creator": "Saudi Arabia",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -24141,7 +24085,7 @@
      "creator": "Asia",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -24149,7 +24093,7 @@
      "creator": "Europe",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -24165,7 +24109,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      108
      ]
     },
     {
@@ -24173,7 +24117,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -24189,7 +24133,7 @@
      "creator": "Kyoto",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -24197,7 +24141,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -24205,7 +24149,23 @@
      "creator": "Japan",
      "count": 1,
      "sources": [
-      108
+      110
+     ]
+    },
+    {
+     "title": "Passalacqua",
+     "creator": "Lake Como",
+     "count": 1,
+     "sources": [
+      111
+     ]
+    },
+    {
+     "title": "Passalacqua",
+     "creator": "Italy",
+     "count": 1,
+     "sources": [
+      109
      ]
     },
     {
@@ -24213,7 +24173,7 @@
      "creator": "Osaka",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -24229,7 +24189,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      110
+      107
      ]
     },
     {
@@ -24237,7 +24197,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      106
      ]
     },
     {
@@ -24245,7 +24205,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      110
+      107
      ]
     },
     {
@@ -24253,7 +24213,7 @@
      "creator": "Paris",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -24261,7 +24221,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      108
      ]
     },
     {
@@ -24269,7 +24229,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -24277,7 +24237,7 @@
      "creator": "Milan",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -24285,7 +24245,7 @@
      "creator": "Uruguay",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -24317,7 +24277,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      110
+      107
      ]
     },
     {
@@ -24325,7 +24285,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      110
+      107
      ]
     },
     {
@@ -24333,7 +24293,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -24341,7 +24301,7 @@
      "creator": "London",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -24349,7 +24309,7 @@
      "creator": "Singapore",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -24357,7 +24317,7 @@
      "creator": "Thailand",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -24373,12 +24333,12 @@
      "creator": "Chile",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
      "title": "Return of the Buffalo: Tatanka Owe Akupi",
-     "creator": "Best New Public Artwork",
+     "creator": "",
      "count": 1,
      "sources": [
       114
@@ -24389,7 +24349,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      106
      ]
     },
     {
@@ -24397,7 +24357,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      108
      ]
     },
     {
@@ -24413,7 +24373,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      106
      ]
     },
     {
@@ -24429,7 +24389,7 @@
      "creator": "Hong Kong",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -24445,7 +24405,7 @@
      "creator": "São Paulo",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -24461,7 +24421,7 @@
      "creator": "mega ships",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -24469,7 +24429,7 @@
      "creator": "Marrakech",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -24477,7 +24437,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -24485,7 +24445,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      110
+      107
      ]
     },
     {
@@ -24509,7 +24469,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      106
      ]
     },
     {
@@ -24517,7 +24477,7 @@
      "creator": "India",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -24525,7 +24485,7 @@
      "creator": "Taormina",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -24533,7 +24493,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      108
      ]
     },
     {
@@ -24541,7 +24501,7 @@
      "creator": "Santa Barbara",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -24549,7 +24509,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      106
      ]
     },
     {
@@ -24557,7 +24517,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      106
      ]
     },
     {
@@ -24565,7 +24525,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      106
      ]
     },
     {
@@ -24573,7 +24533,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      110
+      107
      ]
     },
     {
@@ -24581,7 +24541,7 @@
      "creator": "travel specialists",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -24589,7 +24549,15 @@
      "creator": "medium ships",
      "count": 1,
      "sources": [
-      108
+      110
+     ]
+    },
+    {
+     "title": "Seabourn",
+     "creator": "small ships",
+     "count": 1,
+     "sources": [
+      110
      ]
     },
     {
@@ -24597,7 +24565,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      106
      ]
     },
     {
@@ -24605,7 +24573,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      108
      ]
     },
     {
@@ -24613,7 +24581,7 @@
      "creator": "Mexico",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -24621,7 +24589,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      106
      ]
     },
     {
@@ -24637,7 +24605,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      108
      ]
     },
     {
@@ -24645,7 +24613,7 @@
      "creator": "Alaska",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -24661,7 +24629,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      110
+      107
      ]
     },
     {
@@ -24669,7 +24637,7 @@
      "creator": "South Africa",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -24677,7 +24645,7 @@
      "creator": "Portugal",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -24685,12 +24653,12 @@
      "creator": "Australasia and South Pacific",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
      "title": "Slam Frank",
-     "creator": "Best New Musical",
+     "creator": "",
      "count": 1,
      "sources": [
       114
@@ -24701,7 +24669,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      110
+      107
      ]
     },
     {
@@ -24709,12 +24677,12 @@
      "creator": "Zimbabwe",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
      "title": "Soul Summit Music Festival",
-     "creator": "Best Event of the Year",
+     "creator": "",
      "count": 1,
      "sources": [
       114
@@ -24725,7 +24693,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      106
      ]
     },
     {
@@ -24733,7 +24701,7 @@
      "creator": "Europe",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -24741,7 +24709,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      106
      ]
     },
     {
@@ -24765,7 +24733,7 @@
      "creator": "South Africa",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -24773,7 +24741,7 @@
      "creator": "Nordics",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -24781,7 +24749,7 @@
      "creator": "India",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -24789,7 +24757,7 @@
      "creator": "India",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -24797,7 +24765,7 @@
      "creator": "Mozambique",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -24805,7 +24773,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      108
      ]
     },
     {
@@ -24813,7 +24781,7 @@
      "creator": "Portugal",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -24821,7 +24789,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      108
      ]
     },
     {
@@ -24829,7 +24797,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      106
      ]
     },
     {
@@ -24845,7 +24813,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -24853,7 +24821,7 @@
      "creator": "New York City",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -24869,7 +24837,7 @@
      "creator": "Florida",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -24877,7 +24845,7 @@
      "creator": "Venice",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -24885,7 +24853,7 @@
      "creator": "Nepal",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -24893,7 +24861,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -24901,12 +24869,12 @@
      "creator": "",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
      "title": "The Infinite Table, Oaxaca: Tierra y Tiempo",
-     "creator": "Best Immersive Experience of the Year",
+     "creator": "",
      "count": 1,
      "sources": [
       114
@@ -24917,7 +24885,7 @@
      "creator": "North Carolina",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -24925,7 +24893,7 @@
      "creator": "Virginia",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -24941,12 +24909,12 @@
      "creator": "New York",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
      "title": "The New Museum reopening",
-     "creator": "Best New Gallery",
+     "creator": "",
      "count": 1,
      "sources": [
       114
@@ -24965,7 +24933,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -24989,7 +24957,23 @@
      "creator": "Hong Kong",
      "count": 1,
      "sources": [
-      106
+      111
+     ]
+    },
+    {
+     "title": "The Peninsula Istanbul",
+     "creator": "Istanbul",
+     "count": 1,
+     "sources": [
+      111
+     ]
+    },
+    {
+     "title": "The Peninsula Istanbul",
+     "creator": "Turkey",
+     "count": 1,
+     "sources": [
+      110
      ]
     },
     {
@@ -24997,7 +24981,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -25005,12 +24989,12 @@
      "creator": "China",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
      "title": "The Pocket",
-     "creator": "Best New Music Venue",
+     "creator": "",
      "count": 1,
      "sources": [
       114
@@ -25021,7 +25005,7 @@
      "creator": "New York",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -25029,7 +25013,7 @@
      "creator": "UAE",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -25037,7 +25021,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -25045,7 +25029,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -25053,7 +25037,7 @@
      "creator": "rest of USA",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -25061,7 +25045,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -25069,7 +25053,7 @@
      "creator": "Mumbai",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -25077,7 +25061,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -25085,7 +25069,7 @@
      "creator": "general tour operators",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -25093,7 +25077,7 @@
      "creator": "Italy",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -25101,7 +25085,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      110
+      107
      ]
     },
     {
@@ -25109,7 +25093,7 @@
      "creator": "rest of Africa",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -25117,12 +25101,12 @@
      "creator": "",
      "count": 1,
      "sources": [
-      110
+      107
      ]
     },
     {
      "title": "Titán",
-     "creator": "Best New Restaurant",
+     "creator": "",
      "count": 1,
      "sources": [
       114
@@ -25133,7 +25117,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      108
      ]
     },
     {
@@ -25141,7 +25125,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      110
+      107
      ]
     },
     {
@@ -25157,7 +25141,7 @@
      "creator": "rest of Asia",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -25173,7 +25157,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      106
      ]
     },
     {
@@ -25189,7 +25173,7 @@
      "creator": "Hong Kong",
      "count": 1,
      "sources": [
-      106
+      111
      ]
     },
     {
@@ -25197,7 +25181,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      110
+      107
      ]
     },
     {
@@ -25205,7 +25189,7 @@
      "creator": "Brazil",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -25213,7 +25197,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      108
      ]
     },
     {
@@ -25221,7 +25205,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      108
      ]
     },
     {
@@ -25229,7 +25213,7 @@
      "creator": "North America",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -25237,7 +25221,7 @@
      "creator": "Greece",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -25253,7 +25237,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      108
      ]
     },
     {
@@ -25261,7 +25245,15 @@
      "creator": "river ships",
      "count": 1,
      "sources": [
-      108
+      110
+     ]
+    },
+    {
+     "title": "Viking",
+     "creator": "expedition ships",
+     "count": 1,
+     "sources": [
+      110
      ]
     },
     {
@@ -25277,7 +25269,7 @@
      "creator": "rest of Europe",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -25293,12 +25285,12 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      106
      ]
     },
     {
      "title": "Watching the Knicks!",
-     "creator": "Best Nightlife Event",
+     "creator": "",
      "count": 1,
      "sources": [
       114
@@ -25309,7 +25301,7 @@
      "creator": "Germany",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -25317,7 +25309,7 @@
      "creator": "India",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -25325,7 +25317,7 @@
      "creator": "British Columbia, Canada",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -25333,7 +25325,7 @@
      "creator": "Rwanda",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -25349,7 +25341,7 @@
      "creator": "Vietnam",
      "count": 1,
      "sources": [
-      107
+      109
      ]
     },
     {
@@ -25357,7 +25349,7 @@
      "creator": "Europe",
      "count": 1,
      "sources": [
-      108
+      110
      ]
     },
     {
@@ -25365,7 +25357,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      109
+      106
      ]
     },
     {
@@ -25373,7 +25365,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      111
+      108
      ]
     }
    ]
@@ -25493,7 +25485,7 @@
      ]
     },
     {
-     "title": "Exímia",
+     "title": "Eximia",
      "creator": "São Paulo",
      "count": 2,
      "sources": [
@@ -26204,7 +26196,7 @@
    "items": [
     {
      "title": "Ragtime",
-     "creator": "Best Revival of a Musical",
+     "creator": "",
      "count": 2,
      "sources": [
       119,
@@ -26221,7 +26213,7 @@
     },
     {
      "title": "American Players Theatre",
-     "creator": "Regional Theatre Tony Award",
+     "creator": "",
      "count": 1,
      "sources": [
       120
@@ -26229,7 +26221,7 @@
     },
     {
      "title": "André Bishop",
-     "creator": "Special Tony Award for Lifetime Achievement in the Theatre",
+     "creator": "",
      "count": 1,
      "sources": [
       120
@@ -26237,7 +26229,7 @@
     },
     {
      "title": "Arthur Miller's Death of a Salesman",
-     "creator": "Best Revival of a Play",
+     "creator": "",
      "count": 1,
      "sources": [
       120
@@ -26277,7 +26269,7 @@
     },
     {
      "title": "League of Resident Theatres (LORT)",
-     "creator": "Special Tony Award",
+     "creator": "",
      "count": 1,
      "sources": [
       120
@@ -26309,7 +26301,7 @@
     },
     {
      "title": "Mary-Mitchell Campbell",
-     "creator": "Isabelle Stevenson Tony Award",
+     "creator": "",
      "count": 1,
      "sources": [
       120
@@ -26325,7 +26317,7 @@
     },
     {
      "title": "Schmigadoon!",
-     "creator": "Best Musical",
+     "creator": "",
      "count": 1,
      "sources": [
       120
@@ -26899,8 +26891,17 @@
      ]
     },
     {
+     "title": "Pocket Casts",
+     "creator": "",
+     "count": 2,
+     "sources": [
+      125,
+      126
+     ]
+    },
+    {
      "title": "(Not Boring) Camera",
-     "creator": "iPhone App of the Year",
+     "creator": "",
      "count": 1,
      "sources": [
       126
@@ -26908,7 +26909,7 @@
     },
     {
      "title": "Adobe Premiere",
-     "creator": "Apple Vision Pro App of the Year",
+     "creator": "",
      "count": 1,
      "sources": [
       126
@@ -26924,7 +26925,7 @@
     },
     {
      "title": "Aniimo",
-     "creator": "iPad Game of the Year",
+     "creator": "",
      "count": 1,
      "sources": [
       126
@@ -26932,7 +26933,7 @@
     },
     {
      "title": "Audible: Audiobooks & Podcasts",
-     "creator": "Best for Cars",
+     "creator": "",
      "count": 1,
      "sources": [
       125
@@ -26940,7 +26941,7 @@
     },
     {
      "title": "BALL x PIT",
-     "creator": "iPhone Game of the Year",
+     "creator": "",
      "count": 1,
      "sources": [
       126
@@ -26948,7 +26949,7 @@
     },
     {
      "title": "BandLab: Music Maker & Studio",
-     "creator": "Best for Large Screens",
+     "creator": "",
      "count": 1,
      "sources": [
       125
@@ -26956,7 +26957,7 @@
     },
     {
      "title": "Bevel",
-     "creator": "Apple Watch App of the Year",
+     "creator": "",
      "count": 1,
      "sources": [
       126
@@ -26964,7 +26965,7 @@
     },
     {
      "title": "Big Walk",
-     "creator": "Mac Game of the Year",
+     "creator": "",
      "count": 1,
      "sources": [
       126
@@ -26972,7 +26973,7 @@
     },
     {
      "title": "Blue Prince",
-     "creator": "Mac Game of the Year",
+     "creator": "",
      "count": 1,
      "sources": [
       126
@@ -26988,7 +26989,7 @@
     },
     {
      "title": "Case Solved: The London Files",
-     "creator": "Apple TV App of the Year",
+     "creator": "",
      "count": 1,
      "sources": [
       126
@@ -27012,7 +27013,7 @@
     },
     {
      "title": "Crimson Desert",
-     "creator": "Mac Game of the Year",
+     "creator": "",
      "count": 1,
      "sources": [
       126
@@ -27020,7 +27021,7 @@
     },
     {
      "title": "Cueva de las Manos",
-     "creator": "Apple Vision Pro Game of the Year",
+     "creator": "",
      "count": 1,
      "sources": [
       126
@@ -27028,7 +27029,7 @@
     },
     {
      "title": "DAVE THE DIVER",
-     "creator": "iPhone Game of the Year",
+     "creator": "",
      "count": 1,
      "sources": [
       126
@@ -27036,7 +27037,7 @@
     },
     {
      "title": "Deep Rock Galactic: Survivor",
-     "creator": "Best Indie",
+     "creator": "",
      "count": 1,
      "sources": [
       125
@@ -27044,7 +27045,7 @@
     },
     {
      "title": "ElevenReader",
-     "creator": "iPhone App of the Year",
+     "creator": "",
      "count": 1,
      "sources": [
       126
@@ -27052,7 +27053,7 @@
     },
     {
      "title": "Gambonanza",
-     "creator": "iPhone Game of the Year",
+     "creator": "",
      "count": 1,
      "sources": [
       126
@@ -27068,7 +27069,7 @@
     },
     {
      "title": "ibis Paint X",
-     "creator": "Best for Creative Expression",
+     "creator": "",
      "count": 1,
      "sources": [
       125
@@ -27084,7 +27085,7 @@
     },
     {
      "title": "Letterboxd",
-     "creator": "Apple TV App of the Year",
+     "creator": "",
      "count": 1,
      "sources": [
       126
@@ -27092,7 +27093,7 @@
     },
     {
      "title": "Moonlight Peaks",
-     "creator": "Best Cross-device Game",
+     "creator": "",
      "count": 1,
      "sources": [
       125
@@ -27100,7 +27101,7 @@
     },
     {
      "title": "Moonlitt",
-     "creator": "Apple Watch App of the Year",
+     "creator": "",
      "count": 1,
      "sources": [
       126
@@ -27108,7 +27109,7 @@
     },
     {
      "title": "Museas",
-     "creator": "Apple Vision Pro App of the Year",
+     "creator": "",
      "count": 1,
      "sources": [
       126
@@ -27116,7 +27117,7 @@
     },
     {
      "title": "Notability: AI & PDF Notes",
-     "creator": "Best Productivity Partner",
+     "creator": "",
      "count": 1,
      "sources": [
       125
@@ -27132,7 +27133,7 @@
     },
     {
      "title": "Perchang World",
-     "creator": "Apple Arcade Game of the Year",
+     "creator": "",
      "count": 1,
      "sources": [
       126
@@ -27140,31 +27141,15 @@
     },
     {
      "title": "Ping Pong Club",
-     "creator": "Apple Vision Pro Game of the Year",
+     "creator": "",
      "count": 1,
      "sources": [
       126
-     ]
-    },
-    {
-     "title": "Pocket Casts",
-     "creator": "Apple TV App of the Year",
-     "count": 1,
-     "sources": [
-      126
-     ]
-    },
-    {
-     "title": "Pocket Casts - Podcast App",
-     "creator": "Best for Watches",
-     "count": 1,
-     "sources": [
-      125
      ]
     },
     {
      "title": "PowerWash Simulator",
-     "creator": "Apple Arcade Game of the Year",
+     "creator": "",
      "count": 1,
      "sources": [
       126
@@ -27172,7 +27157,7 @@
     },
     {
      "title": "Pusheen’s Place",
-     "creator": "Apple Arcade Game of the Year",
+     "creator": "",
      "count": 1,
      "sources": [
       126
@@ -27180,7 +27165,7 @@
     },
     {
      "title": "Qobuz: Music & Editorial",
-     "creator": "Best for Entertainment",
+     "creator": "",
      "count": 1,
      "sources": [
       125
@@ -27188,7 +27173,7 @@
     },
     {
      "title": "Raylie",
-     "creator": "iPhone App of the Year",
+     "creator": "",
      "count": 1,
      "sources": [
       126
@@ -27196,7 +27181,7 @@
     },
     {
      "title": "Riley : Emotion & Mood Tracker",
-     "creator": "Best Under the Radar",
+     "creator": "",
      "count": 1,
      "sources": [
       125
@@ -27212,7 +27197,7 @@
     },
     {
      "title": "Sea of Stars",
-     "creator": "Best Story",
+     "creator": "",
      "count": 1,
      "sources": [
       125
@@ -27228,7 +27213,7 @@
     },
     {
      "title": "Sofascore: Live Sports Scores",
-     "creator": "Best for Sports Fans",
+     "creator": "",
      "count": 1,
      "sources": [
       125
@@ -27236,7 +27221,7 @@
     },
     {
      "title": "Spark: Daily Learning Puzzles",
-     "creator": "Best for Skill Building",
+     "creator": "",
      "count": 1,
      "sources": [
       125
@@ -27244,7 +27229,7 @@
     },
     {
      "title": "Spatial Ops",
-     "creator": "Apple Vision Pro Game of the Year",
+     "creator": "",
      "count": 1,
      "sources": [
       126
@@ -27260,7 +27245,7 @@
     },
     {
      "title": "Strava: Run, Bike, Walk",
-     "creator": "Best Cross-device App",
+     "creator": "",
      "count": 1,
      "sources": [
       125
@@ -27268,7 +27253,7 @@
     },
     {
      "title": "StressWatch",
-     "creator": "Apple Watch App of the Year",
+     "creator": "",
      "count": 1,
      "sources": [
       126
@@ -27276,7 +27261,7 @@
     },
     {
      "title": "Subway Surfers City",
-     "creator": "Best Pick Up & Play",
+     "creator": "",
      "count": 1,
      "sources": [
       125
@@ -27284,7 +27269,7 @@
     },
     {
      "title": "Superfonik: Kids Learn to Read",
-     "creator": "Best for Kids and Families",
+     "creator": "",
      "count": 1,
      "sources": [
       125
@@ -27308,7 +27293,7 @@
     },
     {
      "title": "Warframe",
-     "creator": "Best Multiplayer",
+     "creator": "",
      "count": 1,
      "sources": [
       125
@@ -27316,7 +27301,7 @@
     },
     {
      "title": "Where Winds Meet",
-     "creator": "iPad Game of the Year",
+     "creator": "",
      "count": 1,
      "sources": [
       126
@@ -27324,7 +27309,7 @@
     },
     {
      "title": "Wispr Flow: AI Voice-to-Text",
-     "creator": "Best Innovative App",
+     "creator": "",
      "count": 1,
      "sources": [
       125
@@ -27332,7 +27317,7 @@
     },
     {
      "title": "Zenless Zone Zero",
-     "creator": "Best Ongoing",
+     "creator": "",
      "count": 1,
      "sources": [
       125
@@ -28987,6 +28972,14 @@
     {
      "title": "Press-On Nails",
      "creator": "Glamnetic",
+     "count": 1,
+     "sources": [
+      127
+     ]
+    },
+    {
+     "title": "Press-On Nails",
+     "creator": "Kiss",
      "count": 1,
      "sources": [
       127
