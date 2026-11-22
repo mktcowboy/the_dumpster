@@ -1,0 +1,163 @@
+"""Build Best_of_2025.html from lists.csv and master_rank.json.
+
+The Lists tab is the directory. The Master list tab is every extracted title,
+merged by category, from master_rank.json (written by build_master.py).
+"""
+import csv, json, re
+rows = list(csv.DictReader(open('lists.csv')))
+TYPE = {
+ 'Retailer & platform': ['Amazon','Apple','Apple Podcasts','Audible','Barnes & Noble','Google','Rough Trade','Spotify','Waterstones','iHeartRadio','Goodreads','Letterboxd','Apple Music','Crunchyroll','Google Play'],
+ 'Newspaper & broadcaster': ['BBC','Financial Times','NPR','New York Times','The Economist','The Guardian','The Telegraph','CNN (on Lonely Planet)','NPR (via WBUR)','The Current (MPR)','Time Out (on NYT list)','CBS Sports','Los Angeles Times','Chicago Tribune','Washington Post','Wall Street Journal','CNN','Eater (on 50 Best)'],
+ 'Library': ['New York Public Library','Chicago Public Library'],
+ 'Aggregator & scores': ['AlbumOfTheYear.org','Metacritic','Rotten Tomatoes','TV Guide','Broadway Scorecard'],
+ 'Awards body': ['Mercury Prize','National Book Foundation','Natural History Museum','Polaris Music Prize','The Booker Prizes','The Game Awards','Tony Awards',"The World's 50 Best",'James Beard Foundation','Tales of the Cocktail','Spiel des Jahres','World Press Photo','Kirkus Prize','Science (AAAS)','Physics World'],
+}
+def srctype(o):
+    for k,v in TYPE.items():
+        if o in v: return k
+    return 'Magazine & web outlet'
+def kind(r):
+    n = r['list']
+    if re.search(r'so far', n, re.I): return 'So far'
+    if re.search(r'award|nominee|\bwinners?\b|\bprize\b|book of the year|game of the year|show of the year', n, re.I): return 'Awards'
+    if r['outlet'] in ('AlbumOfTheYear.org','Metacritic','Rotten Tomatoes','TV Guide','Game Informer') or 'Critical Gold' in n: return 'Tracker'
+    return 'Annual list'
+GROUP = {'Annual list':'Annual lists','So far':'So far · mid-year','Awards':'Awards & nominees','Tracker':'Trackers & aggregates'}
+ORDER = ['Annual list','Awards','Tracker','So far']
+items = []
+for r in rows:
+    k = kind(r)
+    items.append(dict(line=r['topic'], topic=[GROUP[k]], title=r['list'], desc=r['outlet'], kind=k, tags=[srctype(r['outlet'])], href=r['url']))
+items.sort(key=lambda i: (i['line'], ORDER.index(i['kind']), i['title']))
+TAGS = ['Magazine & web outlet','Newspaper & broadcaster','Retailer & platform','Library','Aggregator & scores','Awards body']
+PENDING = []
+try:
+    master_file = json.load(open('master_rank.json'))
+except FileNotFoundError:
+    raise SystemExit('master_rank.json is missing. Run python3 build_master.py MASTER.md')
+if isinstance(master_file, dict):
+    source_lists = master_file['lists']
+    master = master_file['topics']
+else:
+    source_lists = []
+    master = master_file
+def js_json(obj):
+    # Keep the payload inside a script element: escape HTML-sensitive characters.
+    return (json.dumps(obj, ensure_ascii=False, separators=(',', ':'))
+            .replace('<', '\\u003c').replace('>', '\\u003e').replace('&', '\\u0026')
+            .replace('\u2028', '\\u2028').replace('\u2029', '\\u2029'))
+n_titles = sum(len(topic['items']) for topic in master)
+css = open('hub_style.css').read() + "\n.card.pending { display:block; cursor:default; } .card.pending::before { content:none; } .card.pending .t { font-size:18px; }\n"
+js = open('hub_logic.js').read().replace('__TAGS__', json.dumps(TAGS))
+master_js = open('master_logic.js').read()
+html = f'''<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Best of 2025</title>
+<script>
+(function () {{
+  let theme;
+  try {{ theme = localStorage.getItem("best-2025-theme"); }} catch (e) {{}}
+  document.documentElement.dataset.theme = theme === "light" || theme === "dark"
+    ? theme : (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  if (/[?&]view=master(?:&|$)/.test(location.search)) document.documentElement.dataset.view = "master";
+}})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>{css}</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hero">
+  <div class="eyebrow"><span id="eyebrow-label">Best of 2025 · List directory</span><div class="header-actions"><button type="button" class="theme-toggle" id="theme-toggle" aria-label="Dark mode" aria-pressed="false">Dark mode</button></div></div>
+  <h1>Best of <em>2025</em></h1>
+  <p class="sub" id="hero-sub">Published best-of-2025 lists, with a checked link to each. Pick a topic to open its lists, or search.</p>
+  <div class="stats" id="stats"></div>
+</header>
+
+<div class="viewtabs" role="tablist" aria-label="Views">
+  <button type="button" class="tab" id="tab-lists" role="tab" data-view="lists" aria-selected="true" aria-controls="panel-lists" tabindex="0">Lists</button>
+  <button type="button" class="tab" id="tab-master" role="tab" data-view="master" aria-selected="false" aria-controls="panel-master" tabindex="-1">Master list</button>
+</div>
+
+<div id="panel-lists" role="tabpanel" aria-labelledby="tab-lists">
+<div class="controls" id="controls">
+  <div class="searchrow">
+    <div class="search">
+      <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      <input id="q" type="search" aria-label="Search lists" placeholder="Search lists, outlets, topics…" autocomplete="off" aria-describedby="search-help">
+      <button type="button" class="search-clear" id="search-clear" data-clear="q" hidden>Clear search</button>
+      <kbd>/</kbd>
+    </div>
+    <select id="kind" aria-label="List type"></select>
+    <select id="sort" aria-label="Sort">
+      <option value="topic">Group by topic</option>
+      <option value="outlet">Outlet A–Z</option>
+      <option value="title">List name A–Z</option>
+    </select>
+  </div>
+  <div class="filterbar" aria-label="Active filters">
+    <div class="pills" id="active-filters"></div>
+    <div class="filter-actions">
+      <button type="button" class="clear-all" id="clear-all" data-clear="all" aria-keyshortcuts="Escape" disabled>Clear all filters</button>
+      <span class="filter-hint" id="filter-hint" hidden>or press <kbd>Esc</kbd></span>
+    </div>
+  </div>
+</div>
+<p id="search-help" class="file-path">Search list names, outlets, topics and links. Common abbreviations (NYT, PW, RS, GOTY, LP) and small typos are supported.</p>
+<div class="chips" id="chips"></div>
+
+<div class="layout">
+  <details class="index" id="index" open>
+    <summary>Browse by topic</summary>
+    <nav id="tree"></nav>
+  </details>
+  <main>
+    <div class="results" id="results" aria-live="polite" aria-atomic="true"></div>
+    <div id="app"></div>
+  </main>
+</div>
+</div>
+
+<div id="panel-master" role="tabpanel" aria-labelledby="tab-master" hidden>
+  <p class="file-path master-note">Each row is one work named inside the lists. The × badge is how many lists mention it, and higher counts rank first. Open a badge for links to those lists. Titles are matched within a category, ignoring case, punctuation, a leading The, A, or An, and season or part labels.</p>
+  <div class="controls" id="m-controls">
+    <div class="searchrow">
+      <div class="search">
+        <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <input id="mq" type="search" aria-label="Search titles" placeholder="Search titles, creators, lists…" autocomplete="off">
+        <button type="button" class="search-clear" id="m-clear" hidden>Clear search</button>
+        <kbd>/</kbd>
+      </div>
+      <select id="m-topic" aria-label="Category"></select>
+    </div>
+  </div>
+  <div class="chips scroll" id="m-chips"></div>
+  <div class="results" id="m-results" aria-live="polite" aria-atomic="true"></div>
+  <div id="m-app"></div>
+</div>
+
+<footer>
+  <div><span id="foot-n"></span> lists · {n_titles:,} titles on the master list · opens each list in a new tab</div>
+  <div>To refresh: edit lists.csv, then run python3 build_html.py. Master list: python3 build_master.py MASTER.md, then build_html.py.</div>
+</footer>
+</div>
+<button class="top" id="top" title="Back to top">↑</button>
+
+<script>
+const ITEMS = {json.dumps(items, ensure_ascii=False)};
+const PENDING = {json.dumps(PENDING, ensure_ascii=False)};
+{js}
+const LISTS = {js_json(source_lists)};
+const MASTER = {js_json(master)};
+{master_js}
+</script>
+</body>
+</html>
+'''
+open('Best_of_2025.html','w').write(html)
+from collections import Counter
+print(len(items), Counter(i['kind'] for i in items))

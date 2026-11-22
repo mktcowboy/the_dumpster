@@ -1,0 +1,2194 @@
+{
+ "Mercury Prize 2024 Winner": {
+  "items": [
+   [
+    "This Could Be Texas",
+    "English Teacher"
+   ]
+  ],
+  "how": "read from the page text"
+ },
+ "Washington Post: 50 Notable Works of Fiction from 2024": {
+  "note": "items not retrievable: paywalled page; only the first title loads without a subscription"
+ },
+ "Washington Post: 50 Notable Works of Nonfiction from 2024": {
+  "note": "items not retrievable: paywalled page; only the first title loads without a subscription"
+ },
+ "Washington Post: The 10 Best Books of 2024": {
+  "note": "items not retrievable: paywalled page; only the first title loads without a subscription"
+ },
+ "Wall Street Journal: The 10 Best Books of 2024": {
+  "note": "items not retrievable: paywalled page; only the first title loads without a subscription"
+ },
+ "Goodreads Choice Awards 2024 Winners": {
+  "items": [
+   [
+    "The Wedding People",
+    "Alison Espach"
+   ],
+   [
+    "The Women",
+    "Kristin Hannah"
+   ],
+   [
+    "The God of the Woods",
+    "Liz Moore"
+   ],
+   [
+    "Funny Story",
+    "Emily Henry"
+   ],
+   [
+    "House of Flame and Shadow",
+    "Sarah J. Maas"
+   ],
+   [
+    "Somewhere Beyond the Sea",
+    "T.J. Klune"
+   ],
+   [
+    "The Ministry of Time",
+    "Kaliane Bradley"
+   ],
+   [
+    "You Like It Darker",
+    "Stephen King"
+   ],
+   [
+    "How to End a Love Story",
+    "Yulin Kuang"
+   ],
+   [
+    "Ruthless Vows",
+    "Rebecca Ross"
+   ],
+   [
+    "Heartstopper: Volume Five",
+    "Alice Oseman"
+   ],
+   [
+    "The Anxious Generation",
+    "Jonathan Haidt"
+   ],
+   [
+    "The Third Gilmore Girl",
+    "Kelly Bishop"
+   ],
+   [
+    "The Bookshop: A History of the American Bookstore",
+    "Evan Friss"
+   ]
+  ],
+  "how": "page reader (web fetch)"
+ },
+ "TIME: The 10 Best Nonfiction Books of 2024": {
+  "items": [
+   [
+    "The Barn",
+    "Wright Thompson"
+   ],
+   [
+    "Fi",
+    "Alexandra Fuller"
+   ],
+   [
+    "Soldiers and Kings",
+    "Jason De León"
+   ],
+   [
+    "The Lucky Ones",
+    "Zara Chowdhary"
+   ],
+   [
+    "The Light Eaters",
+    "Zoë Schlanger"
+   ],
+   [
+    "Whiskey Tender",
+    "Deborah Jackson Taffa"
+   ],
+   [
+    "Knife",
+    "Salman Rushdie"
+   ],
+   [
+    "There's Always This Year",
+    "Hanif Abdurraqib"
+   ],
+   [
+    "Grief is for People",
+    "Sloane Crosley"
+   ],
+   [
+    "The Friday Afternoon Club",
+    "Griffin Dunne"
+   ]
+  ],
+  "how": "page reader (web fetch)"
+ },
+ "TIME: The 10 Best Albums of 2024": {
+  "items": [
+   [
+    "Lives Outgrown",
+    "Beth Gibbons"
+   ],
+   [
+    "Tigers Blood",
+    "Waxahatchee"
+   ],
+   [
+    "I Lay Down My Life For You",
+    "JPEGMAFIA"
+   ],
+   [
+    "What Now",
+    "Brittany Howard"
+   ],
+   [
+    "BRAT",
+    "Charli XCX"
+   ],
+   [
+    "My Method Actor",
+    "Nilüfer Yanya"
+   ],
+   [
+    "Absolute Elsewhere",
+    "Blood Incantation"
+   ],
+   [
+    "Please Don’t Cry",
+    "Rapsody"
+   ],
+   [
+    "Night Reign",
+    "Arooj Aftab"
+   ],
+   [
+    "Malegría",
+    "Reyna Tropical"
+   ]
+  ],
+  "how": "page reader (web fetch)"
+ },
+ "TIME: The 10 Best Movies of 2024": {
+  "items": [
+   [
+    "Babygirl",
+    ""
+   ],
+   [
+    "All We Imagine as Light",
+    ""
+   ],
+   [
+    "The Seed of the Sacred Fig",
+    ""
+   ],
+   [
+    "Anora",
+    ""
+   ],
+   [
+    "A Complete Unknown",
+    ""
+   ],
+   [
+    "Hard Truths",
+    ""
+   ],
+   [
+    "Green Border",
+    ""
+   ],
+   [
+    "Emilia Pérez",
+    ""
+   ],
+   [
+    "Flow",
+    ""
+   ],
+   [
+    "DogMan",
+    ""
+   ]
+  ],
+  "how": "page reader (web fetch)"
+ },
+ "TIME: The 10 Best TV Shows of 2024": {
+  "items": [
+   [
+    "Shōgun (FX)",
+    ""
+   ],
+   [
+    "Industry (HBO)",
+    ""
+   ],
+   [
+    "Say Nothing (FX)",
+    ""
+   ],
+   [
+    "Penelope (Netflix)",
+    ""
+   ],
+   [
+    "Fantasmas (HBO)",
+    ""
+   ],
+   [
+    "Somebody Somewhere (HBO)",
+    ""
+   ],
+   [
+    "Interview With the Vampire (AMC)",
+    ""
+   ],
+   [
+    "The Sympathizer (HBO)",
+    ""
+   ],
+   [
+    "Baby Reindeer (Netflix)",
+    ""
+   ],
+   [
+    "Pachinko (Apple TV+)",
+    ""
+   ]
+  ],
+  "how": "page reader (web fetch)"
+ },
+ "TIME: 100 Must-Read Books of 2024": {
+  "items": [
+   [
+    "Absolution",
+    ""
+   ],
+   [
+    "Accordion Eulogies",
+    ""
+   ],
+   [
+    "All Fours",
+    ""
+   ],
+   [
+    "All Things Are Too Small",
+    ""
+   ],
+   [
+    "American Diva",
+    ""
+   ],
+   [
+    "Anita de Monte Laughs Last",
+    ""
+   ],
+   [
+    "Another Word for Love",
+    ""
+   ],
+   [
+    "The Anthropologists",
+    ""
+   ],
+   [
+    "The Anxious Generation",
+    ""
+   ],
+   [
+    "The Barn",
+    ""
+   ],
+   [
+    "Be Ready When the Luck Happens",
+    ""
+   ],
+   [
+    "Beautyland",
+    ""
+   ],
+   [
+    "The Black Utopians",
+    ""
+   ],
+   [
+    "Bluff",
+    ""
+   ],
+   [
+    "The Book Censor's Library",
+    ""
+   ],
+   [
+    "The Book of Love",
+    ""
+   ],
+   [
+    "The Bookshop",
+    ""
+   ],
+   [
+    "The Bright Sword",
+    ""
+   ],
+   [
+    "Catalina",
+    ""
+   ],
+   [
+    "The Coin",
+    ""
+   ],
+   [
+    "Colored Television",
+    ""
+   ],
+   [
+    "Coming Home",
+    ""
+   ],
+   [
+    "A Complicated Passion",
+    ""
+   ],
+   [
+    "Connie",
+    ""
+   ],
+   [
+    "Consent",
+    ""
+   ],
+   [
+    "Devil Is Fine",
+    ""
+   ],
+   [
+    "Didion and Babitz",
+    ""
+   ],
+   [
+    "Dinner for Vampires",
+    ""
+   ],
+   [
+    "The Eyes Are the Best Part",
+    ""
+   ],
+   [
+    "Feeding Ghosts",
+    ""
+   ],
+   [
+    "Fi",
+    ""
+   ],
+   [
+    "Fire Exit",
+    ""
+   ],
+   [
+    "The Friday Afternoon Club",
+    ""
+   ],
+   [
+    "Funny Story",
+    ""
+   ],
+   [
+    "Get the Picture",
+    ""
+   ],
+   [
+    "Ghostroots",
+    ""
+   ],
+   [
+    "The God of the Woods",
+    ""
+   ],
+   [
+    "The Great Divide",
+    ""
+   ],
+   [
+    "Greta & Valdin",
+    ""
+   ],
+   [
+    "Grief Is for People",
+    ""
+   ],
+   [
+    "Headshot",
+    ""
+   ],
+   [
+    "Health and Safety",
+    ""
+   ],
+   [
+    "Help Wanted",
+    ""
+   ],
+   [
+    "Hip-Hop Is History",
+    ""
+   ],
+   [
+    "How to End a Love Story",
+    ""
+   ],
+   [
+    "Hum",
+    ""
+   ],
+   [
+    "The Hypocrite",
+    ""
+   ],
+   [
+    "I Cannot Control Everything Forever",
+    ""
+   ],
+   [
+    "I'm Mostly Here to Enjoy Myself",
+    ""
+   ],
+   [
+    "Intermezzo",
+    ""
+   ]
+  ],
+  "how": "page reader (web fetch)",
+  "partial": "partial: the page reader returned the first 50 of the 100 titles (authors not shown on the collection page)"
+ },
+ "The Atlantic: The 10 Best Books of 2024": {
+  "items": [
+   [
+    "Martyr!",
+    "Kaveh Akbar"
+   ],
+   [
+    "James",
+    "Percival Everett"
+   ],
+   [
+    "The Hypocrite",
+    "Jo Hamya"
+   ],
+   [
+    "The Brush",
+    "Eliana Hernández-Pachón"
+   ],
+   [
+    "Challenger",
+    "Adam Higginbotham"
+   ],
+   [
+    "Creation Lake",
+    "Rachel Kushner"
+   ],
+   [
+    "Patriot",
+    "Alexei Navalny"
+   ],
+   [
+    "A Wilder Shore: The Romantic Odyssey of Fanny and Robert Louis Stevenson",
+    "Camille Peri"
+   ],
+   [
+    "The Unclaimed",
+    "Pamela Prickett and Stefan Timmermans"
+   ],
+   [
+    "Whiskey Tender",
+    "Deborah Jackson Taffa"
+   ]
+  ],
+  "how": "page reader (web fetch)"
+ },
+ "Waterstones Book of the Year 2024 (Guardian coverage)": {
+  "items": [
+   [
+    "Butter",
+    "Asako Yuzuki"
+   ],
+   [
+    "I Am Rebel",
+    "Ross Montgomery"
+   ]
+  ],
+  "how": "page reader (web fetch)"
+ },
+ "Barnes & Noble: Book of the Year 2024 (James)": {
+  "items": [
+   [
+    "James",
+    "Percival Everett"
+   ],
+   [
+    "Impossible Creatures",
+    "Katherine Rundell"
+   ],
+   [
+    "The Backyard Bird Chronicles",
+    "Amy Tan"
+   ]
+  ],
+  "how": "page reader (web fetch)"
+ },
+ "Apple Podcasts: 2024 Show of the Year": {
+  "items": [
+   [
+    "Hysterical",
+    "Dan Taberski"
+   ]
+  ],
+  "how": "page reader (web fetch)"
+ },
+ "Wildlife Photographer of the Year 2024 Winning Images": {
+  "items": [
+   [
+    "The Swarm of Life",
+    "Shane Gross"
+   ]
+  ],
+  "how": "page reader (web fetch)",
+  "partial": "partial: Grand Title image only; the page names Alexis Tinker-Tsavalas as Young Wildlife Photographer of the Year without an image title"
+ },
+ "Paste: The 100 Best Albums of 2024": {
+  "items": [
+   [
+    "Fabiana Palladino",
+    "Fabiana Palladino"
+   ],
+   [
+    "Soft Power",
+    "Ezra Feinberg"
+   ],
+   [
+    "Ten Fold",
+    "Yaya Bey"
+   ],
+   [
+    "Live in Amarillo, Texas",
+    "Hayden Pedigo"
+   ],
+   [
+    "Almighty So 2",
+    "Chief Keef"
+   ],
+   [
+    "Art of the Unseen Infinity Machine",
+    "Allegra Krieger"
+   ],
+   [
+    "Critterland",
+    "Willi Carlisle"
+   ],
+   [
+    "Songs About You Specifically",
+    "MICHELLE"
+   ],
+   [
+    "Watch Me Drive Them Dogs Wild",
+    "Merce Lemon"
+   ],
+   [
+    "Patterns in Repeat",
+    "Laura Marling"
+   ],
+   [
+    "Nobody Loves You More",
+    "Kim Deal"
+   ],
+   [
+    "Pinball",
+    "MIKE & Tony Seltzer"
+   ],
+   [
+    "Keeper of the Shepherd",
+    "Hannah Frances"
+   ],
+   [
+    "EELS",
+    "Being Dead"
+   ],
+   [
+    "The Thief Next to Jesus",
+    "Ka"
+   ],
+   [
+    "Lived Here For A While",
+    "Good Looks"
+   ],
+   [
+    "Mahashmashana",
+    "Father John Misty"
+   ],
+   [
+    "Triple Seven",
+    "Wishy"
+   ],
+   [
+    "Two Star & the Dream Police",
+    "Mk.gee"
+   ],
+   [
+    "BLUE LIPS",
+    "ScHoolboy Q"
+   ],
+   [
+    "Tomorrow’s Coffee",
+    "Jimmy Montague"
+   ],
+   [
+    "You Won’t Go Before You’re Supposed To",
+    "Knocked Loose"
+   ],
+   [
+    "paris paris, texas texas",
+    "More Eaze, pardo, Glass"
+   ],
+   [
+    "COWBOY CARTER",
+    "Beyoncé"
+   ],
+   [
+    "Hex Dealer",
+    "Lip Critic"
+   ],
+   [
+    "Perceive Its Beauty, Acknowledge Its Grace",
+    "Shabaka"
+   ],
+   [
+    "Umbilical",
+    "Thou"
+   ],
+   [
+    "Funeral for Justice",
+    "Mdou Moctar"
+   ],
+   [
+    "Hovvdy",
+    "Hovvdy"
+   ],
+   [
+    "Rong Weicknes",
+    "Fievel is Glauque"
+   ],
+   [
+    "Night Reign",
+    "Arooj Aftab"
+   ],
+   [
+    "The Collective",
+    "Kim Gordon"
+   ],
+   [
+    "ORQUÍDEAS",
+    "Kali Uchis"
+   ],
+   [
+    "No Depression in Heaven",
+    "Midwife"
+   ],
+   [
+    "Different Type Time",
+    "Cavalier"
+   ],
+   [
+    "HIT ME HARD AND SOFT",
+    "Billie Eilish"
+   ],
+   [
+    "Stay Golden",
+    "Combat"
+   ],
+   [
+    "All This and So Much More",
+    "Tasha"
+   ],
+   [
+    "Only God Was Above Us",
+    "Vampire Weekend"
+   ],
+   [
+    "If I don’t make it, I love u",
+    "Still House Plants"
+   ],
+   [
+    "Night Palace",
+    "Mount Eerie"
+   ],
+   [
+    "Challengers",
+    "Trent Reznor & Atticus Ross"
+   ],
+   [
+    "Ten Total",
+    "1010benja"
+   ],
+   [
+    "Charm",
+    "Clairo"
+   ],
+   [
+    "Minotaur",
+    "Tex Patrello"
+   ],
+   [
+    "Famous Lunch",
+    "Chris Acker"
+   ],
+   [
+    "Y’Y",
+    "Amaro Freitas"
+   ],
+   [
+    "What Now",
+    "Brittany Howard"
+   ],
+   [
+    "PALM WINE",
+    "YATTA"
+   ],
+   [
+    "Why Lawd?",
+    "NxWorries"
+   ],
+   [
+    "pink balloons",
+    "Ekko Astral"
+   ],
+   [
+    "What a Devastating Turn of Events",
+    "Rachel Chinouriri"
+   ],
+   [
+    "The Shovel Dance",
+    "Shovel Dance Collective"
+   ],
+   [
+    "Acadia",
+    "Yasmin Williams"
+   ],
+   [
+    "A Pawn Surrender",
+    "Rose Hotel"
+   ],
+   [
+    "sentiment",
+    "claire rousay"
+   ],
+   [
+    "Utopia Now!",
+    "Rosie Tucker"
+   ],
+   [
+    "Sky Hundred",
+    "Parannoul"
+   ],
+   [
+    "Seed of a Seed",
+    "Haley Heynderickx"
+   ],
+   [
+    "Ease the Work",
+    "Hour"
+   ],
+   [
+    "For Your Consideration",
+    "Empress Of"
+   ],
+   [
+    "The Fool",
+    "Young Jesus"
+   ],
+   [
+    "Bite Down",
+    "Rosali"
+   ],
+   [
+    "Silence Is Loud",
+    "Nia Archives"
+   ],
+   [
+    "Cold Visions",
+    "Bladee"
+   ],
+   [
+    "Everything Around You",
+    "Feeling Figures"
+   ],
+   [
+    "Alligator Bites Never Heal",
+    "Doechii"
+   ],
+   [
+    "She Reaches Out to She Reaches Out to She",
+    "Chelsea Wolfe"
+   ]
+  ],
+  "how": "page reader (web fetch)",
+  "partial": "partial: the page reader returned 68 of the 100 albums"
+ },
+ "GameSpot: The 10 Best Games of 2024": {
+  "items": [
+   [
+    "Astro Bot",
+    ""
+   ],
+   [
+    "Balatro",
+    ""
+   ],
+   [
+    "Elden Ring: Shadow of the Erdtree",
+    ""
+   ],
+   [
+    "Helldivers 2",
+    ""
+   ],
+   [
+    "Indiana Jones and The Great Circle",
+    ""
+   ],
+   [
+    "Lorelei and the Laser Eyes",
+    ""
+   ],
+   [
+    "Metaphor: ReFantazio",
+    ""
+   ],
+   [
+    "Prince of Persia: The Lost Crown",
+    ""
+   ],
+   [
+    "Silent Hill 2",
+    ""
+   ],
+   [
+    "Stalker 2: Heart Of Chornobyl",
+    ""
+   ]
+  ],
+  "how": "page reader (web fetch)"
+ },
+ "RogerEbert.com: The Best Films of 2024": {
+  "items": [
+   [
+    "The Brutalist",
+    ""
+   ],
+   [
+    "Nickel Boys",
+    ""
+   ],
+   [
+    "I Saw the TV Glow",
+    ""
+   ],
+   [
+    "No Other Land",
+    ""
+   ],
+   [
+    "Anora",
+    ""
+   ],
+   [
+    "Furiosa: A Mad Max Saga",
+    ""
+   ],
+   [
+    "Hard Truths",
+    ""
+   ],
+   [
+    "All We Imagine as Light",
+    ""
+   ],
+   [
+    "The Beast",
+    ""
+   ],
+   [
+    "Green Border",
+    ""
+   ]
+  ],
+  "how": "page reader (web fetch)"
+ },
+ "National Book Awards 2024 Winners": {
+  "items": [
+   [
+    "James",
+    "Percival Everett"
+   ],
+   [
+    "Soldiers and Kings",
+    "Jason De León"
+   ],
+   [
+    "Taiwan Travelogue",
+    "Yáng Shuāng-zǐ"
+   ],
+   [
+    "Kareem Between",
+    "Shifa Saltagi Safadi"
+   ]
+  ],
+  "how": "page reader (web fetch)",
+  "partial": "partial: the award page lists the Fiction, Nonfiction, Translated Literature and Young People's Literature winners; the Poetry winner is not named in the readable text"
+ },
+ "Science: 2024 Breakthrough of the Year": {
+  "items": [
+   [
+    "Lenacapavir: an injectable HIV prevention drug",
+    "Breakthrough of the Year"
+   ],
+   [
+    "Unleashing immune cells on autoimmune disease",
+    "Runner-up"
+   ],
+   [
+    "JWST probes the cosmic dawn",
+    "Runner-up"
+   ],
+   [
+    "RNA-based pesticides enter the field",
+    "Runner-up"
+   ],
+   [
+    "Organelle discovery adds an evolutionary twist",
+    "Runner-up"
+   ],
+   [
+    "A new type of magnetism emerges",
+    "Runner-up"
+   ],
+   [
+    "Starship sticks the landing",
+    "Runner-up"
+   ],
+   [
+    "Ancient DNA reveals family ties",
+    "Runner-up"
+   ]
+  ],
+  "how": "page reader (web fetch)"
+ },
+ "Tony Awards 2024 Winners": {
+  "items": [
+   [
+    "Stereophonic",
+    "Best Play – David Adjmi"
+   ],
+   [
+    "The Outsiders",
+    "Best Musical"
+   ],
+   [
+    "Suffs",
+    "Best Book; Best Original Score – Shaina Taub"
+   ],
+   [
+    "Appropriate",
+    "Best Revival of a Play"
+   ],
+   [
+    "Merrily We Roll Along",
+    "Best Revival of a Musical"
+   ],
+   [
+    "Jeremy Strong (An Enemy of the People)",
+    "Lead Actor, Play"
+   ],
+   [
+    "Sarah Paulson (Appropriate)",
+    "Lead Actress, Play"
+   ],
+   [
+    "Jonathan Groff (Merrily We Roll Along)",
+    "Lead Actor, Musical"
+   ],
+   [
+    "Maleah Joi Moon (Hell's Kitchen)",
+    "Lead Actress, Musical"
+   ],
+   [
+    "Will Brill (Stereophonic)",
+    "Featured Actor, Play"
+   ],
+   [
+    "Kara Young (Purlie Victorious)",
+    "Featured Actress, Play"
+   ],
+   [
+    "Daniel Radcliffe (Merrily We Roll Along)",
+    "Featured Actor, Musical"
+   ],
+   [
+    "Kecia Lewis (Hell's Kitchen)",
+    "Featured Actress, Musical"
+   ],
+   [
+    "Daniel Aukin (Stereophonic)",
+    "Direction of a Play"
+   ],
+   [
+    "Danya Taymor (The Outsiders)",
+    "Direction of a Musical"
+   ],
+   [
+    "Justin Peck (Illinoise)",
+    "Choreography"
+   ]
+  ],
+  "how": "page reader (web fetch)",
+  "partial": "main production, performance and direction categories only; design and special awards omitted"
+ },
+ "BBC Culture: The 24 Best Books of 2024": {
+  "items": [
+   [
+    "Intermezzo",
+    "Sally Rooney"
+   ],
+   [
+    "Flint Kill Creek",
+    "Joyce Carol Oates"
+   ],
+   [
+    "Small Rain",
+    "Garth Greenwell"
+   ],
+   [
+    "Creation Lake",
+    "Rachel Kushner"
+   ],
+   [
+    "All Fours",
+    "Miranda July"
+   ],
+   [
+    "Bright I Burn",
+    "Molly Aitken"
+   ],
+   [
+    "The Safekeep",
+    "Yael Van der Wouden"
+   ],
+   [
+    "The Hypocrite",
+    "Jo Hamya"
+   ],
+   [
+    "Martyr!",
+    "Kaveh Akbar"
+   ],
+   [
+    "Our Evenings",
+    "Alan Hollinghurst"
+   ],
+   [
+    "The Empusium",
+    "Olga Tokarczuk"
+   ],
+   [
+    "The Proof of my Innocence",
+    "Jonathan Coe"
+   ],
+   [
+    "Caledonian Road",
+    "Andrew O'Hagan"
+   ],
+   [
+    "My Heavenly Favourite",
+    "Lucas Rijneveld"
+   ],
+   [
+    "Green Dot",
+    "Madeleine Gray"
+   ],
+   [
+    "The Sleepwalkers",
+    "Scarlett Thomas"
+   ],
+   [
+    "Wild Houses",
+    "Colin Barrett"
+   ],
+   [
+    "Parasol Against the Axe",
+    "Helen Oyeyemi"
+   ],
+   [
+    "Change",
+    "Édouard Louis"
+   ],
+   [
+    "Choice",
+    "Neel Mukherjee"
+   ],
+   [
+    "Victim",
+    "Andrew Boryga"
+   ],
+   [
+    "Blessings",
+    "Chukwuebuka Ibeh"
+   ],
+   [
+    "James",
+    "Percival Everett"
+   ],
+   [
+    "Worry",
+    "Alexandra Tanner"
+   ]
+  ],
+  "how": "page reader (web fetch)"
+ },
+ "Wine Enthusiast: The Enthusiast 100 – Best Wines of 2024": {
+  "items": [
+   [
+    "Roco 2013 RMS Brut Delayed Disgorgement 10-Year Sparkling Blend",
+    ""
+   ],
+   [
+    "Col d'Orcia 2016 Poggio al Vento",
+    ""
+   ],
+   [
+    "Epoch 2021 Veracity Rhône-Style Red Blend",
+    ""
+   ],
+   [
+    "Castello di Neive 2019 Riserva Santo Stefano Albesani Nebbiolo",
+    ""
+   ],
+   [
+    "Vizcarra 2020 Celia Tempranillo Blend",
+    ""
+   ],
+   [
+    "Lucia by Pisoni 2022 Garys' Vineyard Pinot Noir",
+    ""
+   ],
+   [
+    "Markus Altenburger 2021 Ried Gritschenberg Leithakalk und Alte Reben",
+    ""
+   ],
+   [
+    "Domaine du Pegau 2019 Cuvée Réservée Rhône-Style Red Blend",
+    ""
+   ],
+   [
+    "Vasse Felix 2022 Heytesbury",
+    ""
+   ],
+   [
+    "Reynvaan Family Vineyards 2021 Foothills Reserve Foothills in the Sun Vineyard",
+    ""
+   ],
+   [
+    "Medici Ermete 2022 Phermento Lambrusco Rifermentato in Bottiglia",
+    ""
+   ],
+   [
+    "Paul Lato 2021 Stand by Me Drum Canyon Vineyard",
+    ""
+   ],
+   [
+    "Croix 2021 West Pyramid Pinot Noir",
+    ""
+   ],
+   [
+    "Nittnaus Anita und Hans 2022 Elektra",
+    ""
+   ],
+   [
+    "Neal Family 2019 Rutherford Dust Vineyards Cabernet Sauvignon",
+    ""
+   ],
+   [
+    "Tempos Vega Sicilia 2019 Macán",
+    ""
+   ],
+   [
+    "Farm Cottage 2022 Trout Gulch Vineyard",
+    ""
+   ],
+   [
+    "Altos Las Hormigas 2021 Jardin De Hormigas Meteora",
+    ""
+   ],
+   [
+    "Fattoria dei Barbi 2018 Vigna del Fiore",
+    ""
+   ],
+   [
+    "Chanin 2021 Wild King Vineyard",
+    ""
+   ],
+   [
+    "Inniskillin 2022 Icewine Cabernet Franc",
+    ""
+   ],
+   [
+    "J. Lohr 2021 Cuvée Pom Bordeaux-Style Red Blend",
+    ""
+   ],
+   [
+    "Billecart-Salmon 2012 Louis Salmon Blanc de Blancs",
+    ""
+   ],
+   [
+    "Paolo Scavino 2016 Riserva",
+    ""
+   ],
+   [
+    "Borgogno 2019 Nebbiolo",
+    ""
+   ],
+   [
+    "Roar 2022 Garys' Vineyard Pinot Noir",
+    ""
+   ],
+   [
+    "Chalone Vineyard 2022 Estate Pinot Noir",
+    ""
+   ],
+   [
+    "Clos du Val 2022",
+    ""
+   ],
+   [
+    "Xanadu 2021 Reserve",
+    ""
+   ],
+   [
+    "Cho 2018 Blanc de Noirs Sparkling",
+    ""
+   ],
+   [
+    "Lodali 2021 Rocche 7 Fratelli Nebbiolo",
+    ""
+   ],
+   [
+    "Fratelli Alessandria 2020 San Lorenzo di Verduno",
+    ""
+   ],
+   [
+    "Santa Rita 2021 Floresta",
+    ""
+   ],
+   [
+    "Corollary 2019 X-Omni Blanc des Blancs Sparkling",
+    ""
+   ],
+   [
+    "Sesti 2017 Phenomena Riserva",
+    ""
+   ],
+   [
+    "Vietti 2020 Monvigliero",
+    ""
+   ],
+   [
+    "Roux Père et Fils 2020 Clos De La Roche Grand Cru Pinot Noir",
+    ""
+   ],
+   [
+    "Domaine Serene 2015 Vintage Brut Sparkling Blend",
+    ""
+   ],
+   [
+    "Bibi Graetz 2021 Colore",
+    ""
+   ],
+   [
+    "Grgich Hills 2021 Fumé Blanc Estate Grown Sauvignon Blanc",
+    ""
+   ],
+   [
+    "Blandy's 1989 Sercial",
+    ""
+   ],
+   [
+    "Château la Fleur-Pétrus 2021",
+    ""
+   ],
+   [
+    "Tongue Dancer 2022 Magnolia Montrachet Chardonnay",
+    ""
+   ],
+   [
+    "J. Portugal Ramos 2019 Estremus",
+    ""
+   ],
+   [
+    "Aveleda 2022 Solos de Granito Alvarinho",
+    ""
+   ],
+   [
+    "Mazzei 2020 Phillip",
+    ""
+   ],
+   [
+    "District Series Edition No. 3 2022 Chardonnay",
+    ""
+   ],
+   [
+    "Fattoria Le Pupille 2020 Poggio Valente",
+    ""
+   ],
+   [
+    "Stéphane Aviron 2021 Vieilles Vignes",
+    ""
+   ],
+   [
+    "Wente Vineyards 2021 Wetmore Cabernet Sauvignon",
+    ""
+   ],
+   [
+    "Château Sainte Roseline 2023 Collection",
+    ""
+   ],
+   [
+    "Finca Flichman 2019 Dedicado Microterroir Sand & Silt",
+    ""
+   ],
+   [
+    "Robert Biale 2022 Black Chicken",
+    ""
+   ],
+   [
+    "Johannes Zillinger 2021 Numen Fumé Blanc",
+    ""
+   ],
+   [
+    "Philippe Colin 2020 Pinot Noir",
+    ""
+   ],
+   [
+    "Bodegas y Viñedos Tábula 2019 Gran Tábula",
+    ""
+   ],
+   [
+    "WeatherEye 2021 Estate",
+    ""
+   ],
+   [
+    "Abeja 2022 Skysill Vineyard Chardonnay",
+    ""
+   ],
+   [
+    "Sangiacomo 2022 Four Siblings Chardonnay",
+    ""
+   ],
+   [
+    "Edouard Delaunay 2021 Grèves Premier Cru",
+    ""
+   ],
+   [
+    "Hartford Court 2022 Velvet Sisters Veneyards Pinot Noir",
+    ""
+   ],
+   [
+    "Pahlmeyer 2021 Red Blend",
+    ""
+   ],
+   [
+    "Torbreck 2020 The Descendant Red Blend",
+    ""
+   ],
+   [
+    "Mouchão 2016 Mouchão Red",
+    ""
+   ],
+   [
+    "Dr. Bürklin-Wolf 2021 Gaisböhl [Monopol GC Trocken",
+    ""
+   ],
+   [
+    "CheckMate 2020 Opening Gambit",
+    ""
+   ],
+   [
+    "Irvine & Roberts 2018 Blanc de Blancs Chardonnay",
+    ""
+   ],
+   [
+    "Château de Tracy 2019 101 Rangs",
+    ""
+   ],
+   [
+    "Alexandre Bonnet 2019 Les Vignes Blanches Blanc de Noirs Extra Brut",
+    ""
+   ],
+   [
+    "Viña Tabalí 2019 Roca Madre Malbec",
+    ""
+   ],
+   [
+    "Antigal 2019 One La Dolores Single Vineyard",
+    ""
+   ],
+   [
+    "Ferrari-Carano 2021 PreVail West Face Cabernet Sauvignon",
+    ""
+   ],
+   [
+    "Salentein 2019 Single Vineyard La Pampa '97 Vineyard San Pablo",
+    ""
+   ],
+   [
+    "William Hill Estate 2020 Winemaker's Series Reserve Cabernet Sauvignon",
+    ""
+   ],
+   [
+    "Oremus 2014 Tokaji Azú 6 Puttonyos",
+    ""
+   ],
+   [
+    "Stratus 2021 Choose Love Reserve Red",
+    ""
+   ],
+   [
+    "Sadie Family 2021 Mev. Kirsten",
+    ""
+   ],
+   [
+    "Laporte 2022 Le Grand Rochoy",
+    ""
+   ],
+   [
+    "Meyer Family Cellars 2013 High Ground Reserve",
+    ""
+   ],
+   [
+    "Flowers 2022",
+    ""
+   ],
+   [
+    "Storm 2020 Vrede",
+    ""
+   ],
+   [
+    "Château de Pommard 2020 Clos Marey-Monge Nicolas-Joseph",
+    ""
+   ],
+   [
+    "Department 66 2018 D66 Grenache",
+    ""
+   ],
+   [
+    "Domaine Jaume 2021 Altitude 420",
+    ""
+   ],
+   [
+    "Buck Shack 2021",
+    ""
+   ],
+   [
+    "Bonterra 2022 Estate Collection Chardonnay",
+    ""
+   ],
+   [
+    "Brassfield Estate Winery 2023 High Serenity Ranch Sauvignon Blanc",
+    ""
+   ],
+   [
+    "Sirin 2021 Quarryhill Vineyard Cabernet Sauvignon",
+    ""
+   ],
+   [
+    "Phantom 2020 Special Release Cabernet Sauvignon",
+    ""
+   ],
+   [
+    "Michael David 2022 Chardonnay",
+    ""
+   ],
+   [
+    "Herdade dos Grous 2022 23 Barricas Portuguese Red",
+    ""
+   ],
+   [
+    "East Side Crossing 2021 Cabernet Sauvignon",
+    ""
+   ],
+   [
+    "BonAnno 2022 Cabernet Sauvignon",
+    ""
+   ],
+   [
+    "Silk Road 2016 Reserve Saperavi",
+    ""
+   ]
+  ],
+  "how": "page reader (web fetch)",
+  "partial": "partial: 94 of the 100 positions were readable"
+ },
+ "TIME: The World's Greatest Places of 2024": {
+  "items": [
+   [
+    "Modern Elder Academy",
+    "Santa Fe, N.M."
+   ],
+   [
+    "White Desert",
+    "Antarctica"
+   ],
+   [
+    "Angama Amboseli",
+    "Kimana Sanctuary, Kenya"
+   ],
+   [
+    "Bambu Indah",
+    "Ubud, Indonesia"
+   ],
+   [
+    "Vermelho Hotel",
+    "Melides, Portugal"
+   ],
+   [
+    "Sun Ranch",
+    "Coopers Shoot, Australia"
+   ],
+   [
+    "Our Habitas Ras Abrouq",
+    "Dukhan, Qatar"
+   ],
+   [
+    "Highland Base",
+    "Kerlingarfjoll, Iceland"
+   ],
+   [
+    "Snow Peak Long Beach Campfield",
+    "Long Beach Peninsula, Washington"
+   ],
+   [
+    "Anantara Convento di Amalfi Grand Hotel",
+    "Amalfi, Italy"
+   ],
+   [
+    "Belmond's Eastern & Oriental Express",
+    "Malaysia"
+   ],
+   [
+    "Sinchi Wayra",
+    "Yasuní National Park, Ecuador"
+   ],
+   [
+    "Boca de Agua",
+    "Bacalar, Mexico"
+   ],
+   [
+    "Kantishna Roadhouse",
+    "Denali National Park, Alaska"
+   ],
+   [
+    "Four Seasons Resort Koh Samui",
+    "Koh Samui, Thailand"
+   ],
+   [
+    "Burhan Wilderness Camps",
+    "Bardiya, Nepal"
+   ],
+   [
+    "Le Grand Mazarin",
+    "Paris"
+   ],
+   [
+    "Silversands Beach House",
+    "St. George's, Grenada"
+   ],
+   [
+    "Dunas de Formentera",
+    "Formentera, Spain"
+   ],
+   [
+    "Dar Tantora The House Hotel",
+    "AlUla, Saudi Arabia"
+   ],
+   [
+    "Cortina d'Ampezzo",
+    "the Dolomites, Italy"
+   ],
+   [
+    "Havila Polaris and Havila Pollux",
+    "Norway"
+   ],
+   [
+    "The Wayback",
+    "Pigeon Forge, Tenn."
+   ],
+   [
+    "Sangwa Camp",
+    "Haa Valley, Bhutan"
+   ],
+   [
+    "The Manchester",
+    "Lexington, Ky."
+   ],
+   [
+    "Raffles London at the OWO",
+    "London"
+   ],
+   [
+    "Under Canvas Lake Powell-Grand Staircase",
+    "Big Water, Utah"
+   ],
+   [
+    "100 Princes Street",
+    "Edinburgh"
+   ],
+   [
+    "Kwetu Nairobi",
+    "Nairobi"
+   ],
+   [
+    "Höfe Trail",
+    "Osttirol, Austria"
+   ],
+   [
+    "Natural Selection's Guided Cycling Safari",
+    "Okavango Delta, Botswana"
+   ],
+   [
+    "Fontainebleau",
+    "Las Vegas"
+   ],
+   [
+    "Mine + Farm Inn",
+    "Guerneville, Calif."
+   ],
+   [
+    "Casa Lucia",
+    "Buenos Aires"
+   ],
+   [
+    "wukalina Walk",
+    "Tasmania, Australia"
+   ],
+   [
+    "Melesin Distillery",
+    "Leskovik, Albania"
+   ],
+   [
+    "Potlatch Club",
+    "the Bahamas"
+   ],
+   [
+    "De Durgerdam",
+    "Durgerdam, the Netherlands"
+   ],
+   [
+    "Caiman House",
+    "Yupukari, Guyana"
+   ],
+   [
+    "Communal Kutaisi",
+    "Kutaisi, Georgia"
+   ],
+   [
+    "Warren Street Hotel",
+    "New York City"
+   ],
+   [
+    "One Za'abeel",
+    "Dubai"
+   ],
+   [
+    "Bowie House, Auberge Resorts Collection",
+    "Fort Worth"
+   ],
+   [
+    "Mt Cook Lakeside Retreat",
+    "Lake Pukaki, New Zealand"
+   ],
+   [
+    "Silvestre Nosara",
+    "Nosara, Costa Rica"
+   ],
+   [
+    "Reverb by Hard Rock",
+    "Hamburg"
+   ],
+   [
+    "World Equestrian Center",
+    "Ocala, Fla."
+   ],
+   [
+    "The Inn at Stonecliffe",
+    "Mackinac Island, Mich."
+   ],
+   [
+    "Omni Homestead Resort and Warm Springs Pools",
+    "Warm Springs, Va."
+   ]
+  ],
+  "how": "page reader (web fetch)",
+  "partial": "partial: the page reader returned 49 of the 100 places"
+ },
+ "Travel + Leisure: The 50 Best Places to Travel in 2024": {
+  "items": [
+   [
+    "Ålborg, Denmark",
+    ""
+   ],
+   [
+    "Cartagena, Colombia",
+    ""
+   ],
+   [
+    "Eastern & Oriental Express, a Belmond Train",
+    ""
+   ],
+   [
+    "Germany",
+    ""
+   ],
+   [
+    "Métis Crossing, Alberta",
+    ""
+   ],
+   [
+    "Ocmulgee Mounds National Historical Park, Georgia",
+    ""
+   ],
+   [
+    "Rajasthan, India",
+    ""
+   ],
+   [
+    "Shinta Mani Mustang, Nepal",
+    ""
+   ],
+   [
+    "Tallinn, Estonia",
+    ""
+   ],
+   [
+    "Warsaw, Poland",
+    ""
+   ],
+   [
+    "The Austrian Countryside",
+    ""
+   ],
+   [
+    "Mérida, Mexico",
+    ""
+   ],
+   [
+    "Sonoma County, California",
+    ""
+   ],
+   [
+    "Bangkok",
+    ""
+   ],
+   [
+    "Cleveland",
+    ""
+   ],
+   [
+    "Fort Worth, Texas",
+    ""
+   ],
+   [
+    "Istanbul",
+    ""
+   ],
+   [
+    "Kansas City, Missouri",
+    ""
+   ],
+   [
+    "Las Vegas",
+    ""
+   ],
+   [
+    "Louisville, Kentucky",
+    ""
+   ],
+   [
+    "Montreal",
+    ""
+   ],
+   [
+    "Paris",
+    ""
+   ],
+   [
+    "Coastal Alaska",
+    ""
+   ],
+   [
+    "Coastal Norway",
+    ""
+   ],
+   [
+    "Douro River, Portugal",
+    ""
+   ],
+   [
+    "Faroe Islands",
+    ""
+   ],
+   [
+    "Kimberley, Australia",
+    ""
+   ],
+   [
+    "The Mississippi River",
+    ""
+   ],
+   [
+    "Queen Anne",
+    ""
+   ],
+   [
+    "Seven Seas Grandeur",
+    ""
+   ],
+   [
+    "Amboseli National Park, Kenya",
+    ""
+   ],
+   [
+    "Aspen Mountain, Colorado",
+    ""
+   ],
+   [
+    "Big Sky, Montana",
+    ""
+   ],
+   [
+    "Hokkaido, Japan",
+    ""
+   ],
+   [
+    "KwaZulu-Natal, South Africa",
+    ""
+   ],
+   [
+    "Mababe, Botswana",
+    ""
+   ],
+   [
+    "New Zealand",
+    ""
+   ],
+   [
+    "Anna Maria Island, Florida",
+    ""
+   ],
+   [
+    "Coastal Campania, Italy",
+    ""
+   ],
+   [
+    "Costa Rica",
+    ""
+   ],
+   [
+    "Dominica",
+    ""
+   ],
+   [
+    "Hawai’i Island",
+    ""
+   ],
+   [
+    "Los Cabos, Mexico",
+    ""
+   ],
+   [
+    "Mallorca, Spain",
+    ""
+   ],
+   [
+    "AlUla, Saudi Arabia",
+    ""
+   ],
+   [
+    "Bahia, Brazil",
+    ""
+   ],
+   [
+    "Northern Pakistan",
+    ""
+   ],
+   [
+    "Peru’s Trekking Routes",
+    ""
+   ],
+   [
+    "South Australia",
+    ""
+   ],
+   [
+    "Sri Lanka",
+    ""
+   ]
+  ],
+  "how": "page reader (web fetch)"
+ },
+ "The Planetary Society: Best of 2024": {
+  "items": [
+   [
+    "Odysseus Leaves Earth",
+    "Best space exploration image"
+   ],
+   [
+    "Europa Clipper launch",
+    "Most exciting moment in planetary science"
+   ],
+   [
+    "2024 total solar eclipse viewership",
+    "Best Fact Worth Sharing"
+   ],
+   [
+    "A cloudy eclipse (Joshua Nichols)",
+    "Best astrophotography by members"
+   ],
+   [
+    "Europa Clipper",
+    "Most exciting upcoming mission"
+   ],
+   [
+    "Europa Clipper launched (advocacy)",
+    "Best Planetary Society accomplishment"
+   ]
+  ],
+  "how": "page reader (web fetch)"
+ },
+ "RogerEbert.com: The Best Documentaries of 2024": {
+  "items": [
+   [
+    "¡Casa Bonita Mi Amor!",
+    ""
+   ],
+   [
+    "After: Poetry Destroys Silence",
+    ""
+   ],
+   [
+    "American Conspiracy: The Octopus Murders",
+    ""
+   ],
+   [
+    "Apolonia, Apolonia",
+    ""
+   ],
+   [
+    "Bella",
+    ""
+   ],
+   [
+    "Black Barbie",
+    ""
+   ],
+   [
+    "Black Box Diaries",
+    ""
+   ],
+   [
+    "Blink",
+    ""
+   ],
+   [
+    "Brats",
+    ""
+   ],
+   [
+    "Bread & Roses",
+    ""
+   ],
+   [
+    "Carol Doda Topless at the Condor",
+    ""
+   ],
+   [
+    "Confessions of a Good Samaritan",
+    ""
+   ],
+   [
+    "Copa 71",
+    ""
+   ],
+   [
+    "Dahomey",
+    ""
+   ],
+   [
+    "Dario Argento Panico",
+    ""
+   ],
+   [
+    "Daughters",
+    ""
+   ],
+   [
+    "Ennio",
+    ""
+   ],
+   [
+    "Eno",
+    ""
+   ],
+   [
+    "Ernest Cole: Lost and Found",
+    ""
+   ],
+   [
+    "Flipside",
+    ""
+   ]
+  ],
+  "how": "page reader (web fetch)",
+  "partial": "partial: alphabetical collection; the page reader returned the first 20 titles (A–F)"
+ },
+ "TIME: Best Inventions of 2024": {
+  "note": "items not retrievable: the collection page shows headline teasers rather than invention names"
+ },
+ "Publishers Weekly: Best Children's Books 2024": {
+  "note": "items not retrievable: list is rendered by JavaScript or shown only as images"
+ },
+ "NPR: The 124 Best Songs of 2024": {
+  "note": "items not retrievable: list is rendered by JavaScript or shown only as images"
+ },
+ "Apple: Most Downloaded Apps and Games of 2024": {
+  "note": "items not retrievable: list is rendered by JavaScript or shown only as images"
+ },
+ "Loudwire: Best Rock + Metal Albums of 2024": {
+  "note": "items not retrievable: albums are in an image gallery that does not render as text"
+ },
+ "Kirkus: Best Book Club Fiction of 2024": {
+  "note": "items not retrievable: list is rendered by JavaScript"
+ },
+ "Kirkus: Best Fiction in Translation of 2024": {
+  "note": "items not retrievable: list is rendered by JavaScript"
+ },
+ "Allure: Best of Beauty 2024 Winners": {
+  "partial": "partial: the landing page shows only a sample of winners per category"
+ },
+ "Library Journal: Best Graphic Novels of 2024": {
+  "partial": "partial: 6 of the 8 picks parsed from the page text"
+ },
+ "Booker Prize 2024 Winner": {
+  "items": [
+   [
+    "Orbital",
+    "Samantha Harvey"
+   ]
+  ],
+  "how": "read from page text"
+ },
+ "Kirkus Prize 2024 Winners": {
+  "items": [
+   [
+    "James",
+    "Percival Everett"
+   ],
+   [
+    "Challenger: A True Story of Heroism and Disaster on the Edge of Space",
+    "Adam Higginbotham"
+   ],
+   [
+    "Gather",
+    "Kenneth M. Cadow"
+   ]
+  ],
+  "how": "read from page text"
+ },
+ "Food & Wine: The 2024 Best New Chefs": {
+  "note": "items not retrievable: chef profiles are rendered by JavaScript"
+ },
+ "New York Times: The Best Cookbooks of 2024": {
+  "note": "items not retrievable: site blocks automated fetches"
+ },
+ "IndieWire: The 21 Best Documentaries of 2024": {
+  "partial": "partial: gallery page; only the first slide is readable as text"
+ },
+ "Variety: The Best Documentaries of 2024": {
+  "partial": "partial: gallery page; only the first slide is readable as text"
+ },
+ "Kirkus: Best of 2024 – Our Favorite Nonfiction": {
+  "items": [
+   [
+    "Connie",
+    ""
+   ],
+   [
+    "Glad to the Brink of Fear: A Portrait of Ralph Waldo Emerson",
+    ""
+   ],
+   [
+    "Errand Into the Maze: The Life and Works of Martha Graham",
+    ""
+   ],
+   [
+    "Malcolm Before X",
+    ""
+   ],
+   [
+    "Character Limit: How Elon Musk Destroyed Twitter",
+    ""
+   ],
+   [
+    "Abortion: Our Bodies, Their Lies, and the Truths We Use To Win",
+    ""
+   ],
+   [
+    "Everyone Who Is Gone Is Here: The United States, Central America, and the Making of a Crisis",
+    ""
+   ],
+   [
+    "One Nation Under Guns: How Gun Culture Distorts Our History and Threatens Our Democracy",
+    ""
+   ],
+   [
+    "Metaracism: How Systemic Racism Devastates Black Lives―and How We Break Free",
+    ""
+   ],
+   [
+    "Night Magic: Adventures Among Glowworms, Moon Gardens, and Other Marvels of the Dark",
+    ""
+   ],
+   [
+    "The Artist’s Palette",
+    ""
+   ],
+   [
+    "Linguaphile: A Life of Language Love",
+    ""
+   ],
+   [
+    "Still Life at Eighty: The Next Interesting Thing",
+    ""
+   ]
+  ],
+  "how": "titles italicised in the article prose"
+ },
+ "Anime News Network: The Best Anime of 2024": {
+  "note": "items not retrievable: the critics’ picks did not render in the page text"
+ },
+ "The Verge: 2024 in Review": {
+  "note": "hub page linking separate year-in-review articles; no single list to extract"
+ }
+}
