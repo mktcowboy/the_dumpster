@@ -1,0 +1,70 @@
+{
+ "_doc": "Reviewed overrides for scripts/title_match.py. aliases: creator names that are one artist, applied in every category and year. merge: title pairs forced into one row within a category, even when the creators disagree. split: pairs kept apart within a category; a side is a title or [title, creator] when the title alone is shared. Titles match by the normalized key, so case, punctuation and edition suffixes do not matter. Run python3 scripts/near_miss.py --check best-of-2024 best-of-2025 best-of-2026 after an edit.",
+ "aliases": [
+  ["Johnny Blue Skies", "Sturgill Simpson", "Jonny Blue Skies", "Johnny Blue Skies & The Dark Clouds"]
+ ],
+ "merge": {
+  "Albums": [
+   ["Of Earth & Wires", "Of Earth Wires"]
+  ],
+  "Books": [
+   ["The New Dark Age", "THE NEW DARK AGES"]
+  ],
+  "Podcasts": [
+   ["What To Carry On, What to Burn", "What to Carry, What to Burn"]
+  ],
+  "TV": [
+   ["Hal & Harper", "Hal & Hal & Harper"]
+  ],
+  "Travel & Hotels": [
+   ["Voaara", "Voaara"],
+   ["Chiva-Som Hua Hin, Thailand", "Chiva-Som"],
+   ["Eriro", "Eriro Alpine Hide"],
+   ["Banyan Tree Valle de Guadalupe", "Banyan Tree Veya Valle de Guadalupe"],
+   ["Domaine Des Etangs, Auberge Resorts Collection : Massignac, France", "Domaine des Etangs, Auberge Resorts Collection – France"]
+  ],
+  "Video Games": [
+   ["The Legend of Zelda: Echoes of Wisdom", "Zelda: Echoes of Wisdom"]
+  ]
+ },
+ "split": {
+  "Albums": [
+   [["Take Care", "Drake"], ["Take Care", "BigXthaPlug"]],
+   ["Confessions II", "Confession"],
+   ["We Don't Trust You", "We Still Don't Trust You"]
+  ],
+  "Books": [
+   ["Long Island", "Long Island Compromise"],
+   ["Original Sin", "Original Sins"],
+   ["The Garden Against Time", "THE GARDEN"]
+  ],
+  "Movies": [
+   ["Hamlet", "Hamnet"]
+  ],
+  "Restaurants & Food": [
+   [["Sunny's", "Miami"], ["SUNN'S", "New York"]]
+  ],
+  "Songs": [
+   [["Houdini", "Eminem"], ["Houdini", "Dua Lipa"]]
+  ],
+  "Tech & Gadgets": [
+   ["Sony WF-1000XM5", "Sony WH-1000XM5"],
+   ["Samsung Galaxy Z Fold 7", "Samsung Galaxy Z Flip 7"],
+   ["Google Pixel 9", "Google Pixel 9 Pro"],
+   ["Apple iPhone 16 Pro", "Apple iPhone 16 Pro Max"]
+  ],
+  "Travel & Hotels": [
+   ["Andermatt, Switzerland", "Zermatt, Switzerland"],
+   ["Naples", "Naples, Florida"],
+   ["London", "London Heathrow (LHR)"],
+   ["Vancouver", "Vancouver Island, British Columbia, Canada"],
+   ["Park Hyatt Kyoto", "Park Hyatt Tokyo"]
+  ],
+  "Video Games": [
+   ["Silent Hill f", "Silent Hill 2"],
+   ["Call of Duty: Modern Warfare 4", "Call of Duty: Modern Warfare 4 DMZ"],
+   ["Resident Evil", "Resident Evil Requiem"],
+   ["Resident Evil", "Resident Evil Veronica"]
+  ]
+ }
+}
