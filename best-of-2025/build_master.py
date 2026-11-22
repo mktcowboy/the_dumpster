@@ -13,8 +13,11 @@ import json,re,collections,sys,hashlib
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 from title_match import canon_topic, cluster_topic, is_non_creator, title_penalty
+from item_cleanup import clean_items
+from display_fix import display_title
 OUT=sys.argv[1] if len(sys.argv)>1 else 'best_of_2025_master.md'
 RANK='master_rank.json'
+MIN_LISTS=2
 # Same fingerprints as scripts/check_privacy.py. Drop a whole token only.
 BLOCKED={'8802b69f05738c4ed94b86a0fa4cee921db823e62d47a70d9034a1abcaa3bb9b','9fbb8412cdc93b8c5919da05fe115ab04af1b15acc0e14c91d025b249a88f268','614e8e1f4c3876db53f8d40288168711fa77930b5ccbf0b9626c9b01aa42d5f2','e016ef65bf37def457ab09faa9d48effdf0186a7dab671318b6d39de1a4f551c'}
 def scrub(s):
@@ -24,7 +27,8 @@ def scrub(s):
     # Drop a removed token and the space on one side. Keep one space only when it sat between words.
     s=re.sub(r'[ \t]*\0[ \t]*',lambda m:' ' if len(m.group(0).strip('\0'))>=2 else '',s)
     return s
-d=json.load(open('items.json'))
+YEAR=2025
+d=clean_items(json.load(open('items.json')), YEAR)
 def md_esc(t): return re.sub(r'([\\`*_\[\]<>|#])',r'\\\1',t)
 def topic_counts(lists, category):
     """Map each work to {list name: (display title, creator)}.
@@ -76,11 +80,11 @@ def display_creator(v):
     if len(ranked)>1 and len(ranked[0])==len(ranked[1]): return ''
     freq=collections.Counter(ranked[0])
     return sorted(freq, key=lambda s: (-freq[s], s.isupper(), len(s)))[0]
-def ranked_rows(counts):
+def ranked_rows(counts, category):
     rows=[]
     for v in counts.values():
         if not v: continue
-        rows.append((len(v), list(v.values())[0][0].lower(), pick_title(v), pick_creator(v), display_creator(v), list(v)))
+        rows.append((len(v), list(v.values())[0][0].lower(), display_title(pick_title(v), category), pick_creator(v), display_creator(v), list(v)))
     rows.sort(key=lambda r:(-r[0], r[1]))
     return rows
 topics=collections.OrderedDict()
@@ -118,8 +122,9 @@ def ref(name):
     return index[name]
 for t,lists in topics.items():
     counts=topic_counts(lists, t)
-    rows=ranked_rows(counts)
-    if rows:
+    rows=ranked_rows(counts, t)
+    # A category needs two lists with items before a ranking means anything.
+    if rows and sum(1 for x in lists if x['items'])>=MIN_LISTS:
         ranked.append({'topic':t,'lists':len(lists),'items':[
             {'title':title,'creator':shown,'count':n,'sources':[ref(name) for name in sources]}
             for n,_sort,title,_md_creator,shown,sources in rows]})

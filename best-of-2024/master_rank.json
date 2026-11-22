@@ -776,11 +776,6 @@
    "url": "https://www.npr.org/2024/12/09/nx-s1-5168915/best-cookbooks-2024"
   },
   {
-   "name": "Allure: Best of Beauty 2024 Winners",
-   "outlet": "Allure",
-   "url": "https://www.allure.com/best-of-beauty-2024-winners"
-  },
-  {
    "name": "World Press Photo: 2024 Contest Global Winners",
    "outlet": "World Press Photo",
    "url": "https://www.worldpressphoto.org/media-center/media-release/2024/global-winners-announced"
@@ -799,11 +794,6 @@
    "name": "Science: 2024 Breakthrough of the Year",
    "outlet": "Science (AAAS)",
    "url": "https://www.science.org/content/article/breakthrough-2024"
-  },
-  {
-   "name": "Wine Enthusiast: The Enthusiast 100 – Best Wines of 2024",
-   "outlet": "Wine Enthusiast",
-   "url": "https://www.wineenthusiast.com/toplists/enthusiast-100-2024/"
   },
   {
    "name": "CBS Sports: 24 Biggest Sports Stories of 2024",
@@ -32055,76 +32045,6 @@
    ]
   },
   {
-   "topic": "Beauty",
-   "lists": 1,
-   "items": [
-    {
-     "title": "Best Antioxidant Protection Serum Dr. Dennis Gross Skincare Vitamin C Lactic 15% Vitamin C Firm & Bright Serum",
-     "creator": "Skin",
-     "count": 1,
-     "sources": [
-      155
-     ]
-    },
-    {
-     "title": "Best Balm Moisturizer Eau Thermale Avène Cicalfate+ Hydrating Skin Recovery Emulsion",
-     "creator": "Skin",
-     "count": 1,
-     "sources": [
-      155
-     ]
-    },
-    {
-     "title": "Best Color-Treated Hair Shampoo & Conditioner Redken Acidic Color Gloss Shampoo and Conditioner",
-     "creator": "Hair",
-     "count": 1,
-     "sources": [
-      155
-     ]
-    },
-    {
-     "title": "Best Eye Cream for Sensitive Skin Beekman 1802 Mushroom Milk Better Aging Eye Cream",
-     "creator": "Sensitive",
-     "count": 1,
-     "sources": [
-      155
-     ]
-    },
-    {
-     "title": "Best Hair-Care Steals Herbal Essences Pure Grapeseed Color Nurture Shampoo and Conditioner",
-     "creator": "Steals",
-     "count": 1,
-     "sources": [
-      155
-     ]
-    },
-    {
-     "title": "Best Lotion Moisturizer for Sensitive Skin The Inkey List Bio-Active Ceramide Repairing and Plumping Moisturizer",
-     "creator": "Sensitive",
-     "count": 1,
-     "sources": [
-      155
-     ]
-    },
-    {
-     "title": "Best Mascara Primer Maybelline New York Lash Sensational Sky High Tinted Primer",
-     "creator": "Eyes",
-     "count": 1,
-     "sources": [
-      155
-     ]
-    },
-    {
-     "title": "Best Powder Eye Shadow Too Faced Born This Way Natural Nudes Mini Eye Shadow Palette",
-     "creator": "Eyes",
-     "count": 1,
-     "sources": [
-      155
-     ]
-    }
-   ]
-  },
-  {
    "topic": "Photography",
    "lists": 2,
    "items": [
@@ -32133,7 +32053,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      156
+      155
      ]
     },
     {
@@ -32141,7 +32061,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      156
+      155
      ]
     },
     {
@@ -32149,7 +32069,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      156
+      155
      ]
     },
     {
@@ -32157,7 +32077,7 @@
      "creator": "Shane Gross",
      "count": 1,
      "sources": [
-      157
+      156
      ]
     },
     {
@@ -32165,7 +32085,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      156
+      155
      ]
     },
     {
@@ -32173,7 +32093,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      156
+      155
      ]
     },
     {
@@ -32181,7 +32101,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      156
+      155
      ]
     },
     {
@@ -32189,7 +32109,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      156
+      155
      ]
     }
    ]
@@ -32203,7 +32123,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      158
+      157
      ]
     },
     {
@@ -32211,7 +32131,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      158
+      157
      ]
     },
     {
@@ -32219,7 +32139,7 @@
      "creator": "Runner-up",
      "count": 1,
      "sources": [
-      159
+      158
      ]
     },
     {
@@ -32227,7 +32147,7 @@
      "creator": "Runner-up",
      "count": 1,
      "sources": [
-      159
+      158
      ]
     },
     {
@@ -32235,7 +32155,7 @@
      "creator": "Most exciting upcoming mission",
      "count": 1,
      "sources": [
-      158
+      157
      ]
     },
     {
@@ -32243,7 +32163,7 @@
      "creator": "Most exciting moment in planetary science",
      "count": 1,
      "sources": [
-      158
+      157
      ]
     },
     {
@@ -32251,7 +32171,7 @@
      "creator": "Runner-up",
      "count": 1,
      "sources": [
-      159
+      158
      ]
     },
     {
@@ -32259,7 +32179,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      159
+      158
      ]
     },
     {
@@ -32267,7 +32187,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      158
+      157
      ]
     },
     {
@@ -32275,7 +32195,7 @@
      "creator": "Runner-up",
      "count": 1,
      "sources": [
-      159
+      158
      ]
     },
     {
@@ -32283,7 +32203,7 @@
      "creator": "Runner-up",
      "count": 1,
      "sources": [
-      159
+      158
      ]
     },
     {
@@ -32291,7 +32211,7 @@
      "creator": "Runner-up",
      "count": 1,
      "sources": [
-      159
+      158
      ]
     },
     {
@@ -32299,765 +32219,7 @@
      "creator": "Runner-up",
      "count": 1,
      "sources": [
-      159
-     ]
-    }
-   ]
-  },
-  {
-   "topic": "Wine & Spirits",
-   "lists": 2,
-   "items": [
-    {
-     "title": "Abeja 2022 Skysill Vineyard Chardonnay",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Alexandre Bonnet 2019 Les Vignes Blanches Blanc de Noirs Extra Brut",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Altos Las Hormigas 2021 Jardin De Hormigas Meteora",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Antigal 2019 One La Dolores Single Vineyard",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Aveleda 2022 Solos de Granito Alvarinho",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Bibi Graetz 2021 Colore",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Billecart-Salmon 2012 Louis Salmon Blanc de Blancs",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Blandy's 1989 Sercial",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Bodegas y Viñedos Tábula 2019 Gran Tábula",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "BonAnno 2022 Cabernet Sauvignon",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Bonterra 2022 Estate Collection Chardonnay",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Borgogno 2019 Nebbiolo",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Brassfield Estate Winery 2023 High Serenity Ranch Sauvignon Blanc",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Buck Shack 2021",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Castello di Neive 2019 Riserva Santo Stefano Albesani Nebbiolo",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Chalone Vineyard 2022 Estate Pinot Noir",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Chanin 2021 Wild King Vineyard",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "CheckMate 2020 Opening Gambit",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Cho 2018 Blanc de Noirs Sparkling",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Château de Pommard 2020 Clos Marey-Monge Nicolas-Joseph",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Château de Tracy 2019 101 Rangs",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Château la Fleur-Pétrus 2021",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Château Sainte Roseline 2023 Collection",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Clos du Val 2022",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Col d'Orcia 2016 Poggio al Vento",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Corollary 2019 X-Omni Blanc des Blancs Sparkling",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Croix 2021 West Pyramid Pinot Noir",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Department 66 2018 D66 Grenache",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "District Series Edition No. 3 2022 Chardonnay",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Domaine du Pegau 2019 Cuvée Réservée Rhône-Style Red Blend",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Domaine Jaume 2021 Altitude 420",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Domaine Serene 2015 Vintage Brut Sparkling Blend",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Dr. Bürklin-Wolf 2021 Gaisböhl [Monopol GC Trocken",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "East Side Crossing 2021 Cabernet Sauvignon",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Edouard Delaunay 2021 Grèves Premier Cru",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Epoch 2021 Veracity Rhône-Style Red Blend",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Farm Cottage 2022 Trout Gulch Vineyard",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Fattoria dei Barbi 2018 Vigna del Fiore",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Fattoria Le Pupille 2020 Poggio Valente",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Ferrari-Carano 2021 PreVail West Face Cabernet Sauvignon",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Finca Flichman 2019 Dedicado Microterroir Sand & Silt",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Flowers 2022",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Fratelli Alessandria 2020 San Lorenzo di Verduno",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Grgich Hills 2021 Fumé Blanc Estate Grown Sauvignon Blanc",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Hartford Court 2022 Velvet Sisters Veneyards Pinot Noir",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Herdade dos Grous 2022 23 Barricas Portuguese Red",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Inniskillin 2022 Icewine Cabernet Franc",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Irvine & Roberts 2018 Blanc de Blancs Chardonnay",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "J. Lohr 2021 Cuvée Pom Bordeaux-Style Red Blend",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "J. Portugal Ramos 2019 Estremus",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Johannes Zillinger 2021 Numen Fumé Blanc",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Laporte 2022 Le Grand Rochoy",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Lodali 2021 Rocche 7 Fratelli Nebbiolo",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Lucia by Pisoni 2022 Garys' Vineyard Pinot Noir",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Markus Altenburger 2021 Ried Gritschenberg Leithakalk und Alte Reben",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Mazzei 2020 Phillip",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Medici Ermete 2022 Phermento Lambrusco Rifermentato in Bottiglia",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Meyer Family Cellars 2013 High Ground Reserve",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Michael David 2022 Chardonnay",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Mouchão 2016 Mouchão Red",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Neal Family 2019 Rutherford Dust Vineyards Cabernet Sauvignon",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Nittnaus Anita und Hans 2022 Elektra",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Oremus 2014 Tokaji Azú 6 Puttonyos",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Pahlmeyer 2021 Red Blend",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Paolo Scavino 2016 Riserva",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Paul Lato 2021 Stand",
-     "creator": "Me Drum Canyon Vineyard",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Phantom 2020 Special Release Cabernet Sauvignon",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Philippe Colin 2020 Pinot Noir",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Reynvaan Family Vineyards 2021 Foothills Reserve Foothills in the Sun Vineyard",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Roar 2022 Garys' Vineyard Pinot Noir",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Robert Biale 2022 Black Chicken",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Roco 2013 RMS Brut Delayed Disgorgement 10-Year Sparkling Blend",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Roux Père et Fils 2020 Clos De La Roche Grand Cru Pinot Noir",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Sadie Family 2021 Mev. Kirsten",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Salentein 2019 Single Vineyard La Pampa '97 Vineyard San Pablo",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Sangiacomo 2022 Four Siblings Chardonnay",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Santa Rita 2021 Floresta",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Sesti 2017 Phenomena Riserva",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Silk Road 2016 Reserve Saperavi",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Sirin 2021 Quarryhill Vineyard Cabernet Sauvignon",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Storm 2020 Vrede",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Stratus 2021 Choose Love Reserve Red",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Stéphane Aviron 2021 Vieilles Vignes",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Tempos Vega Sicilia 2019 Macán",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Tongue Dancer 2022 Magnolia Montrachet Chardonnay",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Torbreck 2020 The Descendant Red Blend",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Vasse Felix 2022 Heytesbury",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Vietti 2020 Monvigliero",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Vizcarra 2020 Celia Tempranillo Blend",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Viña Tabalí 2019 Roca Madre Malbec",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "WeatherEye 2021 Estate",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Wente Vineyards 2021 Wetmore Cabernet Sauvignon",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "William Hill Estate 2020 Winemaker's Series Reserve Cabernet Sauvignon",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
-     ]
-    },
-    {
-     "title": "Xanadu 2021 Reserve",
-     "creator": "",
-     "count": 1,
-     "sources": [
-      160
+      158
      ]
     }
    ]
@@ -33071,7 +32233,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      161
+      159
      ]
     },
     {
@@ -33079,7 +32241,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     },
     {
@@ -33087,7 +32249,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     },
     {
@@ -33095,7 +32257,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      161
+      159
      ]
     },
     {
@@ -33103,7 +32265,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     },
     {
@@ -33111,7 +32273,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      161
+      159
      ]
     },
     {
@@ -33119,7 +32281,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     },
     {
@@ -33127,7 +32289,7 @@
      "creator": "storm in rookie season",
      "count": 1,
      "sources": [
-      161
+      159
      ]
     },
     {
@@ -33135,7 +32297,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      161
+      159
      ]
     },
     {
@@ -33143,7 +32305,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     },
     {
@@ -33151,7 +32313,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     },
     {
@@ -33159,7 +32321,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     },
     {
@@ -33167,7 +32329,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     },
     {
@@ -33175,7 +32337,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      161
+      159
      ]
     },
     {
@@ -33183,7 +32345,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     },
     {
@@ -33191,7 +32353,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     },
     {
@@ -33199,7 +32361,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     },
     {
@@ -33207,7 +32369,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     },
     {
@@ -33215,7 +32377,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     },
     {
@@ -33223,7 +32385,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     },
     {
@@ -33231,7 +32393,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     },
     {
@@ -33239,7 +32401,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      161
+      159
      ]
     },
     {
@@ -33247,7 +32409,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     },
     {
@@ -33255,7 +32417,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      161
+      159
      ]
     },
     {
@@ -33263,7 +32425,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     },
     {
@@ -33271,7 +32433,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      161
+      159
      ]
     },
     {
@@ -33279,7 +32441,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     },
     {
@@ -33287,7 +32449,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     },
     {
@@ -33295,7 +32457,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      161
+      159
      ]
     },
     {
@@ -33303,7 +32465,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     },
     {
@@ -33311,7 +32473,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     },
     {
@@ -33319,7 +32481,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     },
     {
@@ -33327,7 +32489,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     },
     {
@@ -33335,7 +32497,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      161
+      159
      ]
     },
     {
@@ -33343,7 +32505,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      161
+      159
      ]
     },
     {
@@ -33351,7 +32513,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     },
     {
@@ -33359,7 +32521,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      161
+      159
      ]
     },
     {
@@ -33367,7 +32529,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      161
+      159
      ]
     },
     {
@@ -33375,7 +32537,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     },
     {
@@ -33383,7 +32545,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     },
     {
@@ -33391,7 +32553,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     },
     {
@@ -33399,7 +32561,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      161
+      159
      ]
     },
     {
@@ -33407,7 +32569,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     },
     {
@@ -33415,7 +32577,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     },
     {
@@ -33423,7 +32585,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     },
     {
@@ -33431,7 +32593,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     },
     {
@@ -33439,7 +32601,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     },
     {
@@ -33447,7 +32609,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      161
+      159
      ]
     },
     {
@@ -33455,7 +32617,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     },
     {
@@ -33463,7 +32625,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     },
     {
@@ -33471,7 +32633,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     },
     {
@@ -33479,7 +32641,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     },
     {
@@ -33487,7 +32649,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     },
     {
@@ -33495,7 +32657,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      161
+      159
      ]
     },
     {
@@ -33503,7 +32665,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      161
+      159
      ]
     },
     {
@@ -33511,7 +32673,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     },
     {
@@ -33519,7 +32681,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      161
+      159
      ]
     },
     {
@@ -33527,7 +32689,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     },
     {
@@ -33535,7 +32697,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     },
     {
@@ -33543,7 +32705,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     },
     {
@@ -33551,7 +32713,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     },
     {
@@ -33559,7 +32721,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     },
     {
@@ -33567,7 +32729,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     },
     {
@@ -33575,7 +32737,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     },
     {
@@ -33583,7 +32745,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     },
     {
@@ -33591,7 +32753,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     },
     {
@@ -33599,7 +32761,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     },
     {
@@ -33607,7 +32769,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     },
     {
@@ -33615,7 +32777,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     },
     {
@@ -33623,7 +32785,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      161
+      159
      ]
     },
     {
@@ -33631,7 +32793,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     },
     {
@@ -33639,7 +32801,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      161
+      159
      ]
     },
     {
@@ -33647,7 +32809,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      161
+      159
      ]
     },
     {
@@ -33655,7 +32817,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      161
+      159
      ]
     },
     {
@@ -33663,7 +32825,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     },
     {
@@ -33671,7 +32833,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     },
     {
@@ -33679,7 +32841,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      161
+      159
      ]
     },
     {
@@ -33687,7 +32849,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      162
+      160
      ]
     }
    ]
@@ -33701,8 +32863,8 @@
      "creator": "",
      "count": 2,
      "sources": [
-      163,
-      164
+      161,
+      162
      ]
     },
     {
@@ -33710,8 +32872,8 @@
      "creator": "",
      "count": 2,
      "sources": [
-      163,
-      164
+      161,
+      162
      ]
     },
     {
@@ -33719,8 +32881,8 @@
      "creator": "",
      "count": 2,
      "sources": [
-      163,
-      164
+      161,
+      162
      ]
     },
     {
@@ -33728,7 +32890,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      163
+      161
      ]
     },
     {
@@ -33736,7 +32898,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      163
+      161
      ]
     },
     {
@@ -33744,7 +32906,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      163
+      161
      ]
     },
     {
@@ -33752,7 +32914,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      163
+      161
      ]
     },
     {
@@ -33760,7 +32922,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      163
+      161
      ]
     },
     {
@@ -33768,7 +32930,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      163
+      161
      ]
     },
     {
@@ -33776,7 +32938,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      164
+      162
      ]
     },
     {
@@ -33784,7 +32946,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      163
+      161
      ]
     }
    ]
@@ -33798,7 +32960,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      165
+      163
      ]
     },
     {
@@ -33806,7 +32968,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      166
+      164
      ]
     },
     {
@@ -33814,7 +32976,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      166
+      164
      ]
     },
     {
@@ -33822,7 +32984,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      165
+      163
      ]
     },
     {
@@ -33830,7 +32992,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      165
+      163
      ]
     },
     {
@@ -33838,7 +33000,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      165
+      163
      ]
     },
     {
@@ -33846,7 +33008,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      165
+      163
      ]
     },
     {
@@ -33854,7 +33016,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      165
+      163
      ]
     },
     {
@@ -33862,7 +33024,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      165
+      163
      ]
     },
     {
@@ -33870,7 +33032,7 @@
      "creator": "Spiel des Jahres 2024 – Luc Rémond",
      "count": 1,
      "sources": [
-      166
+      164
      ]
     },
     {
@@ -33878,7 +33040,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      165
+      163
      ]
     },
     {
@@ -33886,7 +33048,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      165
+      163
      ]
     },
     {
@@ -33894,7 +33056,7 @@
      "creator": "",
      "count": 1,
      "sources": [
-      165
+      163
      ]
     }
    ]
