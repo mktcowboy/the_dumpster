@@ -17,3 +17,4 @@ real-estate/texas-triangle/data/cache/
 
 # Best-of build scratch output
 best-of-*/overlap_top.json
+.claude/worktrees/

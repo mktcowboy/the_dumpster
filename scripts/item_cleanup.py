@@ -7,10 +7,7 @@ Every rule names its list (the exact `list` value) and matches the extracted
 (title, creator) text exactly, so a rule that no longer matches does nothing.
 The one general rule is META: page text that is never a title in any list.
 """
-import collections
 import re
-
-from title_match import canon_topic, fold_chars
 
 ALL = '*'
 
@@ -109,6 +106,8 @@ EMPTY = {
     'Apple Music: Top Songs of 2024 – Global': 'the extracted rows were artist names, not song titles',
     'Apple Music: Top Songs of 2025 – Global': 'the extracted rows were artist names, not song titles',
     'NPR: The 25 Best Songs of 2025': 'the extracted rows were artist names, not song titles',
+    'Consequence: The 50 Best Albums of 2024': 'the extracted rows were artist names, not album titles',
+    'Consequence: The 50 Best Albums of 2025': 'the extracted rows were artist names, not album titles',
 }
 
 # Titles to drop: headings, bylines, article links, and works from another
@@ -193,15 +192,6 @@ CREATOR_SUB = {
     'Tony Awards 2025 Winners': r'^Best [^–]+ – ',
 }
 
-# These album lists give the artist as the title and no album. Use the album
-# when the other lists that year name exactly one album by that artist;
-# otherwise drop the row.
-ARTIST_ONLY = {'Consequence: The 50 Best Albums of 2024', 'Consequence: The 50 Best Albums of 2025'}
-
-
-def _key(s):
-    return re.sub(r'[^a-z0-9]+', '', fold_chars(s or '').lower())
-
 
 def _award_hit(rx, label):
     """A Game Awards nominee line can list several awards. Drop only when every one matches."""
@@ -240,33 +230,9 @@ def _fix_list(x):
     return out
 
 
-def _albums_by_artist(d, topic):
-    """Artist key -> {album key: first spelling} over the other lists in this category."""
-    by = collections.defaultdict(dict)
-    for x in d:
-        if x['list'] in ARTIST_ONLY or canon_topic(x['topic']) != topic:
-            continue
-        for a, b in x['items']:
-            if b:
-                by[_key(b)].setdefault(_key(a), a)
-    return by
-
-
 def clean_items(d, year):
     # Every list name carries its year, so the rule tables need no year key.
-    out =[dict(x, items=_fix_list(x)) for x in d]
-    for x in out:
-        if x['list'] not in ARTIST_ONLY:
-            continue
-        by = _albums_by_artist(out, canon_topic(x['topic']))
-        items = []
-        for a, b in x['items']:
-            albums = by.get(_key(a), {})
-            if b:
-                items.append([a, b])
-            elif len(albums) == 1:
-                items.append([next(iter(albums.values())), a])
-        x['items'] = items
+    out = [dict(x, items=_fix_list(x)) for x in d]
     # An emptied list would otherwise read as "items not retrievable" with no reason.
     for x, old in zip(out, d):
         if old['items'] and not x['items'] and not x.get('note'):
