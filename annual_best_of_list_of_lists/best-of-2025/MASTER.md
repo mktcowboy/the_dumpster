@@ -6007,46 +6007,44 @@ Allure · [link](https://www.allure.com/story/best-of-beauty-2025-all-winners-in
 
 ## Overlap across lists
 
-Items on two or more lists within the same topic, most lists first. Titles are matched within a category, ignoring case, punctuation, diacritics, a leading The/A/An, edition notes, and season labels. A bare title is merged with a subtitled or lightly misspelled variant when the creators do not conflict. The same title stays split when both creators are known and name different people.
+Items on two or more lists within the same topic, most lists first. Each outlet counts at most once per title. Titles are matched within a category, ignoring case, punctuation, diacritics, a leading The/A/An, edition notes, and season labels. A bare title is merged with a subtitled or lightly misspelled variant when the creators do not conflict. The same title stays split when both creators are known and name different people.
 
 ### Books
 
-- **Audition** — 11 lists: TIME: 100 Must-Read Books of 2025; TIME: The 10 Best Books of 2025; Los Angeles Times: The 15 Best Books of 2025; Chicago Public Library: Favorite Books of 2025; Barnes & Noble: The Best Fiction of 2025; Kirkus: Best Books of 2025 – Our Favorite Fiction; Publishers Weekly: Best Books 2025 Top 10; Kirkus: Best Fiction of 2025 (full list page); The New Yorker: The Best Books of 2025; Electric Lit: Best Novels of 2025; Book Riot: Best Books of 2025
-- **A Guardian and a Thief** (Megha Majumdar) — 8 lists: TIME: 100 Must-Read Books of 2025; TIME: The 10 Best Books of 2025; Chicago Tribune: The 10 Best Books of 2025; Barnes & Noble: The Best Fiction of 2025; Esquire: The 35 Best Books of 2025; Kirkus: Best Fiction of 2025 (full list page); The New Yorker: The Best Books of 2025; Book Riot: Best Books of 2025
-- **Baldwin: A Love Story** — 8 lists: TIME: 100 Must-Read Books of 2025; TIME: The 10 Best Books of 2025; The Atlantic: 10 Books That Made Us Think the Most This Year; Amazon Editors: Best Books of 2025; Chicago Public Library: Favorite Books of 2025; Publishers Weekly: Best Nonfiction 2025; Kirkus: Best Nonfiction of 2025 (full list page); The New Yorker: The Best Books of 2025
+- **Audition** — 9 lists: TIME: 100 Must-Read Books of 2025; Los Angeles Times: The 15 Best Books of 2025; Chicago Public Library: Favorite Books of 2025; Barnes & Noble: The Best Fiction of 2025; Kirkus: Best Fiction of 2025 (full list page); Publishers Weekly: Best Books 2025 Top 10; The New Yorker: The Best Books of 2025; Electric Lit: Best Novels of 2025; Book Riot: Best Books of 2025
 - **Flashlight** (Susan Choi) — 8 lists: TIME: 100 Must-Read Books of 2025; Los Angeles Times: The 15 Best Books of 2025; Barnes & Noble: The Best Fiction of 2025; BBC Culture: The 25 Best Books of 2025; Kirkus: Best Fiction of 2025 (full list page); The New Yorker: The Best Books of 2025; Electric Lit: Best Novels of 2025; Book Riot: Best Books of 2025
-- **King of Ashes** — 8 lists: TIME: 100 Must-Read Books of 2025; TIME: The 10 Best Books of 2025; Amazon Editors: Best Books of 2025; The Telegraph: The Greatest Books of 2025; Chicago Tribune: The 10 Best Books of 2025; Audible: The Best Audiobooks of 2025; Kirkus: Best Fiction of 2025 (full list page); Book Riot: Best Books of 2025
+- **A Guardian and a Thief** (Megha Majumdar) — 7 lists: TIME: 100 Must-Read Books of 2025; Chicago Tribune: The 10 Best Books of 2025; Barnes & Noble: The Best Fiction of 2025; Esquire: The 35 Best Books of 2025; Kirkus: Best Fiction of 2025 (full list page); The New Yorker: The Best Books of 2025; Book Riot: Best Books of 2025
+- **Baldwin** — 7 lists: TIME: 100 Must-Read Books of 2025; The Atlantic: 10 Books That Made Us Think the Most This Year; Amazon Editors: Best Books of 2025; Chicago Public Library: Favorite Books of 2025; Publishers Weekly: Best Nonfiction 2025; Kirkus: Best Nonfiction of 2025 (full list page); The New Yorker: The Best Books of 2025
 - **Flesh** (David Szalay) — 7 lists: Los Angeles Times: The 15 Best Books of 2025; The Telegraph: The Greatest Books of 2025; Barnes & Noble: The Best Fiction of 2025; Booker Prize 2025 Winner; BBC Culture: The 25 Best Books of 2025; Kirkus: Best Fiction of 2025 (full list page); The New Yorker: The Best Books of 2025
-- **Heart the Lover** (Lily King) — 7 lists: TIME: 100 Must-Read Books of 2025; TIME: The 10 Best Books of 2025; Amazon Editors: Best Books of 2025; Barnes & Noble: The Best Fiction of 2025; Kirkus: Best Fiction of 2025 (full list page); The New Yorker: The Best Books of 2025; Electric Lit: Best Novels of 2025
-- **Katabasis** — 7 lists: TIME: 100 Must-Read Books of 2025; TIME: The 10 Best Books of 2025; Amazon Editors: Best Books of 2025; Kirkus: Best Books of 2025 – Our Favorite Fiction; BBC Culture: The 25 Best Books of 2025; Kirkus: Best Fiction of 2025 (full list page); Book Riot: Best Books of 2025
+- **King of Ashes** — 7 lists: TIME: 100 Must-Read Books of 2025; Amazon Editors: Best Books of 2025; The Telegraph: The Greatest Books of 2025; Chicago Tribune: The 10 Best Books of 2025; Audible: The Best Audiobooks of 2025; Kirkus: Best Fiction of 2025 (full list page); Book Riot: Best Books of 2025
 - **The Director** — 7 lists: The Atlantic: 10 Books That Made Us Think the Most This Year; Los Angeles Times: The 15 Best Books of 2025; The Telegraph: The Greatest Books of 2025; Barnes & Noble: The Best Fiction of 2025; BBC Culture: The 25 Best Books of 2025; Kirkus: Best Fiction of 2025 (full list page); The New Yorker: The Best Books of 2025
 - **The Loneliness of Sonia and Sunny** (Kiran Desai) — 7 lists: TIME: 100 Must-Read Books of 2025; Amazon Editors: Best Books of 2025; The Telegraph: The Greatest Books of 2025; Barnes & Noble: The Best Fiction of 2025; BBC Culture: The 25 Best Books of 2025; Kirkus: Best Fiction of 2025 (full list page); The New Yorker: The Best Books of 2025
 - **A Marriage at Sea** (Sophie Elmhirst) — 6 lists: TIME: The 10 Best Books of 2025; Slate: The 10 Best Books of 2025; Chicago Tribune: The 10 Best Books of 2025; Kirkus: Best Nonfiction of 2025 (full list page); The New Yorker: The Best Books of 2025; Book Riot: Best Books of 2025
 - **Atmosphere** (Taylor Jenkins Reid) — 6 lists: TIME: 100 Must-Read Books of 2025; Amazon Editors: Best Books of 2025; Chicago Public Library: Favorite Books of 2025; Barnes & Noble: The Best Fiction of 2025; Goodreads Choice Awards 2025 Winners; Book Riot: Best Books of 2025
 - **Black in Blues** (Imani Perry) — 6 lists: TIME: 100 Must-Read Books of 2025; Chicago Public Library: Favorite Books of 2025; Audible: The Best Audiobooks of 2025; Kirkus: Best Nonfiction of 2025 (full list page); The New Yorker: The Best Books of 2025; Electric Lit: Best Nonfiction of 2025
+- **Heart the Lover** (Lily King) — 6 lists: TIME: 100 Must-Read Books of 2025; Amazon Editors: Best Books of 2025; Barnes & Noble: The Best Fiction of 2025; Kirkus: Best Fiction of 2025 (full list page); The New Yorker: The Best Books of 2025; Electric Lit: Best Novels of 2025
 - **Murderland: Crime and Bloodlust in the Time of Serial Killers** (Caroline Fraser) — 6 lists: Vulture: The Best Books of 2025; Los Angeles Times: The 15 Best Books of 2025; Slate: The 10 Best Books of 2025; Chicago Tribune: The 10 Best Books of 2025; Kirkus: Best Nonfiction of 2025 (full list page); The New Yorker: The Best Books of 2025
 - **The Buffalo Hunter Hunter** — 6 lists: TIME: 100 Must-Read Books of 2025; Chicago Public Library: Favorite Books of 2025; Audible: The Best Audiobooks of 2025; Publishers Weekly: Best Books 2025 Top 10; Kirkus: Best Fiction of 2025 (full list page); Book Riot: Best Books of 2025
 - **The Emperor of Gladness** (Ocean Vuong) — 6 lists: TIME: 100 Must-Read Books of 2025; Amazon Editors: Best Books of 2025; Barnes & Noble: The Best Fiction of 2025; BBC Culture: The 25 Best Books of 2025; Kirkus: Best Fiction of 2025 (full list page); The New Yorker: The Best Books of 2025
 - **The Wilderness** (Angela Flournoy) — 6 lists: Barnes & Noble: The Best Fiction of 2025; Audible: The Best Audiobooks of 2025; Kirkus: Best Fiction of 2025 (full list page); The New Yorker: The Best Books of 2025; Electric Lit: Best Novels of 2025; Book Riot: Best Books of 2025
 - **We Do Not Part** — 6 lists: Slate: The 10 Best Books of 2025; Barnes & Noble: The Best Fiction of 2025; BBC Culture: The 25 Best Books of 2025; Kirkus: Best Fiction of 2025 (full list page); The New Yorker: The Best Books of 2025; Book Riot: Best Books of 2025
 - **What We Can Know** (Ian McEwan) — 6 lists: Los Angeles Times: The 15 Best Books of 2025; Barnes & Noble: The Best Fiction of 2025; BBC Culture: The 25 Best Books of 2025; Audible: The Best Audiobooks of 2025; Kirkus: Best Fiction of 2025 (full list page); The New Yorker: The Best Books of 2025
-- **America, América: A New History of the New World** — 4 lists: Kirkus: Best Books of 2025 – Our Favorite Nonfiction; Publishers Weekly: Best Nonfiction 2025; Kirkus: Best Nonfiction of 2025 (full list page); The New Yorker: The Best Books of 2025
+- **Katabasis** — 5 lists: TIME: 100 Must-Read Books of 2025; Amazon Editors: Best Books of 2025; Kirkus: Best Fiction of 2025 (full list page); BBC Culture: The 25 Best Books of 2025; Book Riot: Best Books of 2025
 - **Bad Bad Girl** (Gish Jen) — 4 lists: TIME: 100 Must-Read Books of 2025; Los Angeles Times: The 15 Best Books of 2025; Chicago Public Library: Favorite Books of 2025; BBC Culture: The 25 Best Books of 2025
 - **Cursed Daughters** (Oyinkan Braithwaite) — 4 lists: TIME: 100 Must-Read Books of 2025; Amazon Editors: Best Books of 2025; Esquire: The 35 Best Books of 2025; The New Yorker: The Best Books of 2025
 - **Dream Count** (Chimamanda Ngozi Adichie) — 4 lists: Barnes & Noble: The Best Fiction of 2025; BBC Culture: The 25 Best Books of 2025; Kirkus: Best Fiction of 2025 (full list page); The New Yorker: The Best Books of 2025
 - **Is a River Alive?** — 4 lists: TIME: 100 Must-Read Books of 2025; Publishers Weekly: Best Nonfiction 2025; Kirkus: Best Nonfiction of 2025 (full list page); The New Yorker: The Best Books of 2025
-- **King of Kings** (Scott Anderson) — 4 lists: Kirkus: Best Books of 2025 – Our Favorite Nonfiction; Kirkus: Best Nonfiction of 2025 (full list page); Kirkus Prize 2025 Winners; The New Yorker: The Best Books of 2025
 - **Moderation** (Elaine Castillo) — 4 lists: The Atlantic: 10 Books That Made Us Think the Most This Year; Slate: The 10 Best Books of 2025; Kirkus: Best Fiction of 2025 (full list page); The New Yorker: The Best Books of 2025
 - **Mother Mary Comes to Me** (Arundhati Roy) — 4 lists: Audible: The Best Audiobooks of 2025; Kirkus: Best Nonfiction of 2025 (full list page); The New Yorker: The Best Books of 2025; Book Riot: Best Books of 2025
 - **My Friends** (Fredrik Backman) — 4 lists: NPR: Books We Love 2025; Barnes & Noble: The Best Fiction of 2025; Goodreads Choice Awards 2025 Winners; Audible: The Best Audiobooks of 2025
 - **One Day, Everyone Will Have Always Been Against This** (Omar El Akkad) — 4 lists: TIME: The 10 Best Books of 2025; Los Angeles Times: The 15 Best Books of 2025; National Book Awards 2025 Winners; Book Riot: Best Books of 2025
-- **Red Scare** (Clay Risen) — 4 lists: Chicago Tribune: The 10 Best Books of 2025; Kirkus: Best Books of 2025 – Our Favorite Nonfiction; Kirkus: Best Nonfiction of 2025 (full list page); The New Yorker: The Best Books of 2025
 - **Shadow Ticket** (Thomas Pynchon) — 4 lists: Vulture: The Best Books of 2025; Los Angeles Times: The 15 Best Books of 2025; The Telegraph: The Greatest Books of 2025; Barnes & Noble: The Best Fiction of 2025
 - **The Dream Hotel** (Laila Lalami) — 4 lists: TIME: 100 Must-Read Books of 2025; BBC Culture: The 25 Best Books of 2025; Kirkus: Best Fiction of 2025 (full list page); The New Yorker: The Best Books of 2025
 - **Things in Nature Merely Grow** (Yiyun Li) — 4 lists: TIME: The 10 Best Books of 2025; Kirkus: Best Nonfiction of 2025 (full list page); The New Yorker: The Best Books of 2025; Electric Lit: Best Nonfiction of 2025
 - **Wild Dark Shore** (Charlotte McConaghy) — 4 lists: Amazon Editors: Best Books of 2025; Barnes & Noble: The Best Fiction of 2025; Kirkus: Best Fiction of 2025 (full list page); Book Riot: Best Books of 2025
 - **A Flower Traveled in My Blood** (Haley Cohen Gilliland) — 3 lists: TIME: 100 Must-Read Books of 2025; Kirkus: Best Nonfiction of 2025 (full list page); The New Yorker: The Best Books of 2025
 - **A Truce That Is Not Peace** (Miriam Toews) — 3 lists: TIME: The 10 Best Books of 2025; The New Yorker: The Best Books of 2025; Electric Lit: Best Nonfiction of 2025
+- **America, América** — 3 lists: Kirkus: Best Nonfiction of 2025 (full list page); Publishers Weekly: Best Nonfiction 2025; The New Yorker: The Best Books of 2025
 - **Automatic Noodle** (Annalee Newitz) — 3 lists: Chicago Public Library: Favorite Books of 2025; Kirkus: Best Fiction of 2025 (full list page); Book Riot: Best Books of 2025
 - **Black Moses** — 3 lists: Chicago Public Library: Favorite Books of 2025; Publishers Weekly: Best Nonfiction 2025; Kirkus: Best Nonfiction of 2025 (full list page)
 - **Blob: A Love Story** (Maggie Su) — 3 lists: The New Yorker: The Best Books of 2025; Electric Lit: Best Novels of 2025; Book Riot: Best Books of 2025
@@ -6063,9 +6061,8 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **Joyride** (Susan Orlean) — 3 lists: TIME: 100 Must-Read Books of 2025; Kirkus: Best Nonfiction of 2025 (full list page); The New Yorker: The Best Books of 2025
 - **Minor Black Figures** (Brandon Taylor) — 3 lists: Los Angeles Times: The 15 Best Books of 2025; Kirkus: Best Fiction of 2025 (full list page); Electric Lit: Best Novels of 2025
 - **New and Collected Hell** (Shane McCrae) — 3 lists: The Telegraph: The Greatest Books of 2025; The New Yorker: The Best Books of 2025; Electric Lit: Best Poetry Collections of 2025
-- **Original Sin** (Jake Tapper & Alex Thompson) — 3 lists: Kirkus: Best Books of 2025 – Our Favorite Nonfiction; Kirkus: Best Nonfiction of 2025 (full list page); The New Yorker: The Best Books of 2025
 - **Paper Girl** (Beth Macy) — 3 lists: Amazon Editors: Best Books of 2025; Kirkus: Best Nonfiction of 2025 (full list page); The New Yorker: The Best Books of 2025
-- **Replaceable You** (Mary Roach) — 3 lists: Amazon Editors: Best Books of 2025; Kirkus: Best Books of 2025 – Our Favorite Nonfiction; Kirkus: Best Nonfiction of 2025 (full list page)
+- **Red Scare** (Clay Risen) — 3 lists: Chicago Tribune: The 10 Best Books of 2025; Kirkus: Best Nonfiction of 2025 (full list page); The New Yorker: The Best Books of 2025
 - **Stag Dance** (Torrey Peters) — 3 lists: BBC Culture: The 25 Best Books of 2025; Audible: The Best Audiobooks of 2025; Electric Lit: Best Short Story Collections of 2025
 - **Startlement: New and Selected Poems** (Ada Limón) — 3 lists: Esquire: The 35 Best Books of 2025; The New Yorker: The Best Books of 2025; Book Riot: Best Books of 2025
 - **Stone Yard Devotional** (Charlotte Wood) — 3 lists: Los Angeles Times: The 15 Best Books of 2025; The New Yorker: The Best Books of 2025; Book Riot: Best Books of 2025
@@ -6083,9 +6080,7 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **A Different Kind of Tension** (Jonathan Lethem) — 2 lists: The New Yorker: The Best Books of 2025; Electric Lit: Best Short Story Collections of 2025
 - **A Gorgeous Excitement** (Cynthia Weiner) — 2 lists: Kirkus: Best Fiction of 2025 (full list page); The New Yorker: The Best Books of 2025
 - **A/S/L** (Jeanne Thornton) — 2 lists: Kirkus: Best Fiction of 2025 (full list page); Electric Lit: Best Novels of 2025
-- **Abundance** (Ezra Klein & Derek Thompson) — 2 lists: Kirkus: Best Books of 2025 – Our Favorite Nonfiction; Kirkus: Best Nonfiction of 2025 (full list page)
 - **Aflame** (Pico Iyer) — 2 lists: Kirkus: Best Nonfiction of 2025 (full list page); The New Yorker: The Best Books of 2025
-- **American Scare: Florida’s Hidden Cold War on Black and Queer Lives** (Robert W. Fieseler) — 2 lists: Kirkus: Best Books of 2025 – Our Favorite Nonfiction; Kirkus: Best Nonfiction of 2025 (full list page)
 - **Are You Happy?** (Lori Ostlund) — 2 lists: Kirkus: Best Fiction of 2025 (full list page); Electric Lit: Best Short Story Collections of 2025
 - **Atavists** (Lydia Millet) — 2 lists: Kirkus: Best Fiction of 2025 (full list page); Electric Lit: Best Short Story Collections of 2025
 - **Authority** — 2 lists: Publishers Weekly: Best Nonfiction 2025; Electric Lit: Best Nonfiction of 2025
@@ -6127,8 +6122,8 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **I Gave You Eyes and You Looked Toward Darkness** — 2 lists: Esquire: The 35 Best Books of 2025; Kirkus: Best Fiction of 2025 (full list page)
 - **I Want to Burn This Place Down** (Maris Kreizman) — 2 lists: TIME: 100 Must-Read Books of 2025; Electric Lit: Best Nonfiction of 2025
 - **If Anyone Builds It, Everyone Dies** — 2 lists: Audible: The Best Audiobooks of 2025; The New Yorker: The Best Books of 2025
-- **It Had To Be Him** (Adib Khorram) — 2 lists: Kirkus: Best Books of 2025 – Our Favorite Fiction; Kirkus: Best Fiction of 2025 (full list page)
 - **Kaplan's Plot: A Novel** (Jason Diamond) — 2 lists: Barnes & Noble: The Best Fiction of 2025; Esquire: The 35 Best Books of 2025
+- **King of Kings** (Scott Anderson) — 2 lists: Kirkus: Best Nonfiction of 2025 (full list page); The New Yorker: The Best Books of 2025
 - **Languages of Home** (John Edgar Wideman) — 2 lists: Kirkus: Best Nonfiction of 2025 (full list page); The New Yorker: The Best Books of 2025
 - **Lessons in Magic and Disaster** (Charlie Jane Anders) — 2 lists: Kirkus: Best Fiction of 2025 (full list page); Book Riot: Best Books of 2025
 - **Lightbreakers** (Aja Gabel) — 2 lists: Esquire: The 35 Best Books of 2025; The New Yorker: The Best Books of 2025
@@ -6137,20 +6132,18 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **Love and Need** (Adam Plunkett) — 2 lists: Kirkus: Best Nonfiction of 2025 (full list page); The New Yorker: The Best Books of 2025
 - **Lower than the Angels** (Diarmaid MacCulloch) — 2 lists: Slate: The 10 Best Books of 2025; The New Yorker: The Best Books of 2025
 - **Make Your Way Home** (Carrie R. Moore) — 2 lists: Kirkus: Best Fiction of 2025 (full list page); Electric Lit: Best Short Story Collections of 2025
-- **Martha’s Daughter** (David Haynes) — 2 lists: Kirkus: Best Books of 2025 – Our Favorite Fiction; Kirkus: Best Fiction of 2025 (full list page)
 - **Memorial Days: A Memoir** — 2 lists: Publishers Weekly: Best Nonfiction 2025; Kirkus: Best Nonfiction of 2025 (full list page)
-- **Mona's Eyes (2025 B&N Book of the Year)** — 2 lists: Barnes & Noble: Book of the Year 2025 (Mona's Eyes); Barnes & Noble: The Best Fiction of 2025
 - **Mood Machine** — 2 lists: The Telegraph: The Greatest Books of 2025; The New Yorker: The Best Books of 2025
-- **More Everything Forever: AI Overlords, Space Empires, and Silicon Valley’s Crusade To Control the Fate of Humanity** (Adam Becker) — 2 lists: Kirkus: Best Books of 2025 – Our Favorite Nonfiction; Kirkus: Best Nonfiction of 2025 (full list page)
-- **Mother Emanuel: Two Centuries of Race, Resistance, and Forgiveness in One Charleston Church** (Kevin Sack) — 2 lists: Kirkus: Best Books of 2025 – Our Favorite Nonfiction; Kirkus: Best Nonfiction of 2025 (full list page)
 - **Murder Takes a Vacation** (Laura Lippman) — 2 lists: The Telegraph: The Greatest Books of 2025; Kirkus: Best Fiction of 2025 (full list page)
 - **My Documents** (Kevin Nguyen) — 2 lists: Esquire: The 35 Best Books of 2025; The New Yorker: The Best Books of 2025
 - **No Sense in Wishing** (Lawrence Burney) — 2 lists: Kirkus: Best Nonfiction of 2025 (full list page); The New Yorker: The Best Books of 2025
 - **On the Calculation of Volume, Book 3** — 2 lists: Publishers Weekly: Best Books 2025 Top 10; The New Yorker: The Best Books of 2025
 - **Open Socrates** — 2 lists: The Telegraph: The Greatest Books of 2025; The New Yorker: The Best Books of 2025
+- **Original Sin** (Jake Tapper & Alex Thompson) — 2 lists: Kirkus: Best Nonfiction of 2025 (full list page); The New Yorker: The Best Books of 2025
 - **Palaver** (Bryan Washington) — 2 lists: Kirkus: Best Fiction of 2025 (full list page); The New Yorker: The Best Books of 2025
 - **Pick a Color** (Souvankham Thammavongsa) — 2 lists: Kirkus: Best Fiction of 2025 (full list page); The New Yorker: The Best Books of 2025
 - **Raising Hare** (Chloe Dalton) — 2 lists: Slate: The 10 Best Books of 2025; Kirkus: Best Nonfiction of 2025 (full list page)
+- **Replaceable You** (Mary Roach) — 2 lists: Amazon Editors: Best Books of 2025; Kirkus: Best Nonfiction of 2025 (full list page)
 - **Rosarita** (Anita Desai) — 2 lists: Esquire: The 35 Best Books of 2025; The New Yorker: The Best Books of 2025
 - **Searches: Selfhood in the Digital Age** — 2 lists: Publishers Weekly: Best Books 2025 Top 10; Kirkus: Best Nonfiction of 2025 (full list page)
 - **Shattered** (Hanif Kureishi) — 2 lists: Kirkus: Best Nonfiction of 2025 (full list page); The New Yorker: The Best Books of 2025
@@ -6170,7 +6163,6 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **The CIA Book Club** (Charlie English) — 2 lists: The Telegraph: The Greatest Books of 2025; Kirkus: Best Nonfiction of 2025 (full list page)
 - **The Colonel and the King** — 2 lists: TIME: 100 Must-Read Books of 2025; Publishers Weekly: Best Nonfiction 2025
 - **The Conjuring of America** (Lindsey Stewart) — 2 lists: Kirkus: Best Nonfiction of 2025 (full list page); Book Riot: Best Books of 2025
-- **The Dentist** (Tim Sullivan) — 2 lists: Kirkus: Best Books of 2025 – Our Favorite Fiction; Kirkus: Best Fiction of 2025 (full list page)
 - **The Edge of Water** (Olufunke Grace Bankole) — 2 lists: TIME: 100 Must-Read Books of 2025; Electric Lit: Best Novels of 2025
 - **The Genius of Trees** — 2 lists: The Telegraph: The Greatest Books of 2025; The New Yorker: The Best Books of 2025
 - **The Gossip Columnist’s Daughter** (Peter Orner) — 2 lists: Chicago Tribune: The 10 Best Books of 2025; The New Yorker: The Best Books of 2025
@@ -6178,7 +6170,6 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **The Imagined Life** (Andrew Porter) — 2 lists: Esquire: The 35 Best Books of 2025; The New Yorker: The Best Books of 2025
 - **The Isle in the Silver Sea** (Tasha Suri) — 2 lists: Kirkus: Best Fiction of 2025 (full list page); Book Riot: Best Books of 2025
 - **The Last Supper** (Paul Elie) — 2 lists: Los Angeles Times: The 15 Best Books of 2025; The New Yorker: The Best Books of 2025
-- **The Listeners** (Maggie Stiefvater) — 2 lists: Kirkus: Best Books of 2025 – Our Favorite Fiction; Kirkus: Best Fiction of 2025 (full list page)
 - **The Mission** (Tim Weiner) — 2 lists: Kirkus: Best Nonfiction of 2025 (full list page); The New Yorker: The Best Books of 2025
 - **The New Economy** — 2 lists: Publishers Weekly: Best Poetry 2025; Electric Lit: Best Poetry Collections of 2025
 - **The Old Man by the Sea** (Domenico Starnone ; translated by Oonagh Stransky) — 2 lists: Kirkus: Best Fiction of 2025 (full list page); The New Yorker: The Best Books of 2025
@@ -6186,7 +6177,6 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **The River Has Roots** — 2 lists: Audible: The Best Audiobooks of 2025; Book Riot: Best Books of 2025
 - **The Running Ground** (Nicholas Thompson) — 2 lists: Kirkus: Best Nonfiction of 2025 (full list page); The New Yorker: The Best Books of 2025
 - **The Sisters** (Jonas Hassen Khemiri (Farrar, Straus and Giroux)) — 2 lists: Publishers Weekly: Best Books 2025 Top 10; The New Yorker: The Best Books of 2025
-- **The Slip** (Lucas Schaefer) — 2 lists: Kirkus: Best Fiction of 2025 (full list page); Kirkus Prize 2025 Winners
 - **The Ten Year Affair** (Erin Somers) — 2 lists: Esquire: The 35 Best Books of 2025; The New Yorker: The Best Books of 2025
 - **The Tragedy of True Crime** (John J. Lennon) — 2 lists: Kirkus: Best Nonfiction of 2025 (full list page); The New Yorker: The Best Books of 2025
 - **The True True Story of Raja the Gullible (and His Mother)** (Rabih Alameddine) — 2 lists: National Book Awards 2025 Winners; The New Yorker: The Best Books of 2025
@@ -6213,10 +6203,10 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **Euro-Country** (CMAT) — 9 lists: Rolling Stone: The 100 Best Albums of 2025; The Guardian: The 50 Best Albums of 2025; NME: The 50 Best Albums of 2025; Paste: The 50 Best Albums of 2025; Clash: Albums of the Year 2025; BrooklynVegan: Top 55 Albums of 2025; Rough Trade: Albums of the Year 2025; Uncut: Best Albums of 2025 (via Year-End Lists); Mojo: The 75 Best Albums of 2025 (via Year-End Lists)
 - **Bleeds** (Wednesday) — 8 lists: Stereogum: The 50 Best Albums of 2025; NPR: The Best Albums of 2025; The Guardian: The 50 Best Albums of 2025; NME: The 50 Best Albums of 2025; Paste: The 50 Best Albums of 2025; Pitchfork: The 50 Best Albums of 2025; BrooklynVegan: Top 55 Albums of 2025; Uncut: Best Albums of 2025 (via Year-End Lists)
 - **choke enough** (Oklou) — 8 lists: Stereogum: The 50 Best Albums of 2025; The Guardian: The 50 Best Albums of 2025; NME: The 50 Best Albums of 2025; Paste: The 50 Best Albums of 2025; Clash: Albums of the Year 2025; Pitchfork: The 50 Best Albums of 2025; Rough Trade: Albums of the Year 2025; Billboard: The 50 Best Albums of 2025
-- **Debí Tirar Más Fotos** (Bad Bunny) — 8 lists: Stereogum: The 50 Best Albums of 2025; The Guardian: The 50 Best Albums of 2025; NME: The 50 Best Albums of 2025; Paste: The 50 Best Albums of 2025; TIME: The 10 Best Albums of 2025; Pitchfork: The 50 Best Albums of 2025; Billboard: The 50 Best Albums of 2025; Billboard: Year-End Billboard 200 Albums 2025
 - **Never Enough** (Turnstile) — 8 lists: Stereogum: The 50 Best Albums of 2025; The Guardian: The 50 Best Albums of 2025; NME: The 50 Best Albums of 2025; Clash: Albums of the Year 2025; BrooklynVegan: Top 55 Albums of 2025; Rough Trade: Albums of the Year 2025; Uncut: Best Albums of 2025 (via Year-End Lists); Billboard: The 50 Best Albums of 2025
 - **The Passionate Ones** — 8 lists: Stereogum: The 50 Best Albums of 2025; NPR: The Best Albums of 2025; The Guardian: The 50 Best Albums of 2025; NME: The 50 Best Albums of 2025; Paste: The 50 Best Albums of 2025; Clash: Albums of the Year 2025; Pitchfork: The 50 Best Albums of 2025; BrooklynVegan: Top 55 Albums of 2025
 - **Addison** (Addison Rae) — 7 lists: Stereogum: The 50 Best Albums of 2025; The Guardian: The 50 Best Albums of 2025; NME: The 50 Best Albums of 2025; Paste: The 50 Best Albums of 2025; Clash: Albums of the Year 2025; Pitchfork: The 50 Best Albums of 2025; Billboard: The 50 Best Albums of 2025
+- **Debí Tirar Más Fotos** (Bad Bunny) — 7 lists: Stereogum: The 50 Best Albums of 2025; The Guardian: The 50 Best Albums of 2025; NME: The 50 Best Albums of 2025; Paste: The 50 Best Albums of 2025; TIME: The 10 Best Albums of 2025; Pitchfork: The 50 Best Albums of 2025; Billboard: The 50 Best Albums of 2025
 - **Moisturizer** (Wet Leg) — 7 lists: Rolling Stone: The 100 Best Albums of 2025; The Guardian: The 50 Best Albums of 2025; NME: The 50 Best Albums of 2025; Clash: Albums of the Year 2025; Pitchfork: The 50 Best Albums of 2025; Uncut: Best Albums of 2025 (via Year-End Lists); Mojo: The 75 Best Albums of 2025 (via Year-End Lists)
 - **Private Music** (Deftones) — 7 lists: Rolling Stone: The 100 Best Albums of 2025; Stereogum: The 50 Best Albums of 2025; The Guardian: The 50 Best Albums of 2025; NME: The 50 Best Albums of 2025; Clash: Albums of the Year 2025; BrooklynVegan: Top 55 Albums of 2025; Billboard: The 50 Best Albums of 2025
 - **Baby** (Dijon) — 6 lists: Stereogum: The 50 Best Albums of 2025; NME: The 50 Best Albums of 2025; Paste: The 50 Best Albums of 2025; Clash: Albums of the Year 2025; Pitchfork: The 50 Best Albums of 2025; Billboard: The 50 Best Albums of 2025
@@ -6226,7 +6216,6 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **Fancy That** (PinkPantheress) — 6 lists: Stereogum: The 50 Best Albums of 2025; The Guardian: The 50 Best Albums of 2025; NME: The 50 Best Albums of 2025; Clash: Albums of the Year 2025; Pitchfork: The 50 Best Albums of 2025; Billboard: The 50 Best Albums of 2025
 - **Glory** (Perfume Genius) — 6 lists: The Guardian: The 50 Best Albums of 2025; Paste: The 50 Best Albums of 2025; Clash: Albums of the Year 2025; Pitchfork: The 50 Best Albums of 2025; BrooklynVegan: Top 55 Albums of 2025; Uncut: Best Albums of 2025 (via Year-End Lists)
 - **Golliwog** — 6 lists: Stereogum: The 50 Best Albums of 2025; The Guardian: The 50 Best Albums of 2025; Paste: The 50 Best Albums of 2025; Pitchfork: The 50 Best Albums of 2025; BrooklynVegan: Top 55 Albums of 2025; Mojo: The 75 Best Albums of 2025 (via Year-End Lists)
-- **Mayhem** (Lady Gaga) — 6 lists: The Guardian: The 50 Best Albums of 2025; NME: The 50 Best Albums of 2025; Clash: Albums of the Year 2025; BrooklynVegan: Top 55 Albums of 2025; Billboard: The 50 Best Albums of 2025; Billboard: Year-End Billboard 200 Albums 2025
 - **More** (Pulp) — 6 lists: The Guardian: The 50 Best Albums of 2025; NME: The 50 Best Albums of 2025; BrooklynVegan: Top 55 Albums of 2025; Rough Trade: Albums of the Year 2025; Uncut: Best Albums of 2025 (via Year-End Lists); Mojo: The 75 Best Albums of 2025 (via Year-End Lists)
 - **New Threats From the Soul** — 6 lists: Stereogum: The 50 Best Albums of 2025; Paste: The 50 Best Albums of 2025; TIME: The 10 Best Albums of 2025; Pitchfork: The 50 Best Albums of 2025; BrooklynVegan: Top 55 Albums of 2025; Uncut: Best Albums of 2025 (via Year-End Lists)
 - **Sinister Grift** (Panda Bear) — 6 lists: Paste: The 50 Best Albums of 2025; Pitchfork: The 50 Best Albums of 2025; BrooklynVegan: Top 55 Albums of 2025; Uncut: Best Albums of 2025 (via Year-End Lists); Mojo: The 75 Best Albums of 2025 (via Year-End Lists); Billboard: The 50 Best Albums of 2025
@@ -6235,6 +6224,7 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **Hexed!** — 5 lists: Stereogum: The 50 Best Albums of 2025; The Guardian: The 50 Best Albums of 2025; Paste: The 50 Best Albums of 2025; Clash: Albums of the Year 2025; Pitchfork: The 50 Best Albums of 2025
 - **hooke’s law** — 5 lists: The Guardian: The 50 Best Albums of 2025; Paste: The 50 Best Albums of 2025; Clash: Albums of the Year 2025; Pitchfork: The 50 Best Albums of 2025; BrooklynVegan: Top 55 Albums of 2025
 - **Let God Sort Em Out** (Clipse) — 5 lists: The Guardian: The 50 Best Albums of 2025; NME: The 50 Best Albums of 2025; BrooklynVegan: Top 55 Albums of 2025; Rough Trade: Albums of the Year 2025; Billboard: The 50 Best Albums of 2025
+- **Mayhem** (Lady Gaga) — 5 lists: The Guardian: The 50 Best Albums of 2025; NME: The 50 Best Albums of 2025; Clash: Albums of the Year 2025; BrooklynVegan: Top 55 Albums of 2025; Billboard: The 50 Best Albums of 2025
 - **Sable, Fable** (Bon Iver) — 5 lists: Rolling Stone: The 100 Best Albums of 2025; The Guardian: The 50 Best Albums of 2025; Rough Trade: Albums of the Year 2025; Uncut: Best Albums of 2025 (via Year-End Lists); Mojo: The 75 Best Albums of 2025 (via Year-End Lists)
 - **Tether** (Annahstasia) — 5 lists: NME: The 50 Best Albums of 2025; Pitchfork: The 50 Best Albums of 2025; Rough Trade: Albums of the Year 2025; Uncut: Best Albums of 2025 (via Year-End Lists); Mojo: The 75 Best Albums of 2025 (via Year-End Lists)
 - **The BPM** (Sudan Archives) — 5 lists: Stereogum: The 50 Best Albums of 2025; The Guardian: The 50 Best Albums of 2025; Paste: The 50 Best Albums of 2025; Clash: Albums of the Year 2025; Pitchfork: The 50 Best Albums of 2025
@@ -6273,7 +6263,6 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **Man’s Best Friend** (Sabrina Carpenter) — 3 lists: The Guardian: The 50 Best Albums of 2025; Clash: Albums of the Year 2025; Billboard: The 50 Best Albums of 2025
 - **Michelangelo Dying** (Cate Le Bon) — 3 lists: The Guardian: The 50 Best Albums of 2025; Uncut: Best Albums of 2025 (via Year-End Lists); Mojo: The 75 Best Albums of 2025 (via Year-End Lists)
 - **People Watching** (Sam Fender) — 3 lists: NME: The 50 Best Albums of 2025; Mercury Prize 2025 Winner; Billboard: The 50 Best Albums of 2025
-- **Music** (Playboi Carti) — 3 lists: Pitchfork: The 50 Best Albums of 2025; Billboard: The 50 Best Albums of 2025; Billboard: Year-End Billboard 200 Albums 2025
 - **Sad and Beautiful World** (Mavis Staples) — 3 lists: Rolling Stone: The 100 Best Albums of 2025; Uncut: Best Albums of 2025 (via Year-End Lists); Mojo: The 75 Best Albums of 2025 (via Year-End Lists)
 - **Showbiz!** — 3 lists: Rolling Stone: The 100 Best Albums of 2025; Paste: The 50 Best Albums of 2025; Pitchfork: The 50 Best Albums of 2025
 - **Snocaps** (Snocaps) — 3 lists: Stereogum: The 50 Best Albums of 2025; The Guardian: The 50 Best Albums of 2025; BrooklynVegan: Top 55 Albums of 2025
@@ -6309,12 +6298,11 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **Humanhood** (The Weather Station) — 2 lists: Uncut: Best Albums of 2025 (via Year-End Lists); Mojo: The 75 Best Albums of 2025 (via Year-End Lists)
 - **I Barely Know Her** (Sombr) — 2 lists: Rolling Stone: The 100 Best Albums of 2025; Billboard: The 50 Best Albums of 2025
 - **I Love My Computer** (Ninajirachi) — 2 lists: Stereogum: The 50 Best Albums of 2025; Paste: The 50 Best Albums of 2025
-- **I'm the Problem** (Morgan Wallen) — 2 lists: Billboard: The 50 Best Albums of 2025; Billboard: Year-End Billboard 200 Albums 2025
 - **Interior Live Oak** (Cass McCombs) — 2 lists: Uncut: Best Albums of 2025 (via Year-End Lists); Mojo: The 75 Best Albums of 2025 (via Year-End Lists)
 - **I'll Be Waving as You Drive Away** (Hayden Pedigo) — 2 lists: Paste: The 50 Best Albums of 2025; Pitchfork: The 50 Best Albums of 2025
-- **KPop Demon Hunters** — 2 lists: Billboard: The 50 Best Albums of 2025; Billboard: Year-End Billboard 200 Albums 2025
 - **Love Chant** (The Lemonheads) — 2 lists: Rough Trade: Albums of the Year 2025; Mojo: The 75 Best Albums of 2025 (via Year-End Lists)
 - **Pirouette** (Model/Actriz) — 2 lists: Paste: The 50 Best Albums of 2025; Clash: Albums of the Year 2025
+- **Music** (Playboi Carti) — 2 lists: Pitchfork: The 50 Best Albums of 2025; Billboard: The 50 Best Albums of 2025
 - **Radio DDR** (Sharp Pins) — 2 lists: Pitchfork: The 50 Best Albums of 2025; Mojo: The 75 Best Albums of 2025 (via Year-End Lists)
 - **Raspberry Moon** (Hotline TNT) — 2 lists: Stereogum: The 50 Best Albums of 2025; Rough Trade: Albums of the Year 2025
 - **Remembering Now** (Van Morrison) — 2 lists: Uncut: Best Albums of 2025 (via Year-End Lists); Mojo: The 75 Best Albums of 2025 (via Year-End Lists)
@@ -6332,7 +6320,6 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **Talkin to the Trees** (Neil Young and the Chrome Hearts) — 2 lists: Uncut: Best Albums of 2025 (via Year-End Lists); Mojo: The 75 Best Albums of 2025 (via Year-End Lists)
 - **The Boy Who Played The Harp** (Dave) — 2 lists: NPR: The Best Albums of 2025; Clash: Albums of the Year 2025
 - **The Dreaming Prince in Ecstasy** (Lamp Of Murmuur) — 2 lists: Decibel: Top 40 Albums of 2025 (via Year-End Lists); BrooklynVegan: Top 55 Albums of 2025
-- **The Life of a Showgirl** (Taylor Swift) — 2 lists: Billboard: The 50 Best Albums of 2025; Billboard: Year-End Billboard 200 Albums 2025
 - **The Purple Bird** (Bonnie “Prince” Billy) — 2 lists: Uncut: Best Albums of 2025 (via Year-End Lists); Mojo: The 75 Best Albums of 2025 (via Year-End Lists)
 - **The Spin** (Messa) — 2 lists: Stereogum: The 50 Best Albums of 2025; Decibel: Top 40 Albums of 2025 (via Year-End Lists)
 - **The Universe Will Take Care of You** (Holden & Zimpel) — 2 lists: Uncut: Best Albums of 2025 (via Year-End Lists); Mojo: The 75 Best Albums of 2025 (via Year-End Lists)
@@ -6347,65 +6334,55 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 
 ### Songs
 
-- **Abracadabra** (Lady Gaga) — 4 lists: The Guardian: The 20 Best Songs of 2025; Pitchfork: The 100 Best Songs of 2025; Billboard: The 100 Best Songs of 2025; Billboard: Year-End Hot 100 Songs 2025
-- **Luther** — 4 lists: Spotify Wrapped 2025: Top Artists, Songs, Albums and Podcasts; iHeartRewind 2025: Top Artists & Songs of the Year; Billboard: The 100 Best Songs of 2025; Billboard: Year-End Hot 100 Songs 2025
-- **Nuevayol** (Bad Bunny) — 4 lists: The Guardian: The 20 Best Songs of 2025; Pitchfork: The 100 Best Songs of 2025; Billboard: The 100 Best Songs of 2025; Billboard: Year-End Hot 100 Songs 2025
-- **Ordinary** (Alex Warren) — 4 lists: Spotify Wrapped 2025: Top Artists, Songs, Albums and Podcasts; iHeartRewind 2025: Top Artists & Songs of the Year; Billboard: The 100 Best Songs of 2025; Billboard: Year-End Hot 100 Songs 2025
+- **Abracadabra** (Lady Gaga) — 3 lists: The Guardian: The 20 Best Songs of 2025; Pitchfork: The 100 Best Songs of 2025; Billboard: The 100 Best Songs of 2025
 - **Afterlife** (Alex G) — 3 lists: The Guardian: The 20 Best Songs of 2025; Pitchfork: The 100 Best Songs of 2025; Billboard: The 100 Best Songs of 2025
-- **Anxiety** (Doechii) — 3 lists: Rolling Stone: The 100 Best Songs of 2025; Billboard: The 100 Best Songs of 2025; Billboard: Year-End Hot 100 Songs 2025
-- **back to friends** — 3 lists: Spotify Wrapped 2025: Top Artists, Songs, Albums and Podcasts; Billboard: The 100 Best Songs of 2025; Billboard: Year-End Hot 100 Songs 2025
-- **Daisies** (Justin Bieber) — 3 lists: Pitchfork: The 100 Best Songs of 2025; Billboard: The 100 Best Songs of 2025; Billboard: Year-End Hot 100 Songs 2025
 - **Die With A Smile** — 3 lists: Spotify Wrapped 2025: Top Artists, Songs, Albums and Podcasts; iHeartRewind 2025: Top Artists & Songs of the Year; Billboard: Year-End Hot 100 Songs 2025
-- **DtMF** (Bad Bunny) — 3 lists: Spotify Wrapped 2025: Top Artists, Songs, Albums and Podcasts; Billboard: The 100 Best Songs of 2025; Billboard: Year-End Hot 100 Songs 2025
-- **Folded** (Kehlani) — 3 lists: Pitchfork: The 100 Best Songs of 2025; Billboard: The 100 Best Songs of 2025; Billboard: Year-End Hot 100 Songs 2025
-- **Golden** (HUNTR/X: EJAE, Audrey Nuna & REI AMI) — 3 lists: Spotify Wrapped 2025: Top Artists, Songs, Albums and Podcasts; Billboard: The 100 Best Songs of 2025; Billboard: Year-End Hot 100 Songs 2025
 - **Illegal** (PinkPantheress) — 3 lists: The Guardian: The 20 Best Songs of 2025; Pitchfork: The 100 Best Songs of 2025; Billboard: The 100 Best Songs of 2025
-- **Manchild** (Sabrina Carpenter) — 3 lists: Pitchfork: The 100 Best Songs of 2025; Billboard: The 100 Best Songs of 2025; Billboard: Year-End Hot 100 Songs 2025
+- **luther** — 3 lists: Spotify Wrapped 2025: Top Artists, Songs, Albums and Podcasts; iHeartRewind 2025: Top Artists & Songs of the Year; Billboard: The 100 Best Songs of 2025
+- **Nuevayol** (Bad Bunny) — 3 lists: The Guardian: The 20 Best Songs of 2025; Pitchfork: The 100 Best Songs of 2025; Billboard: The 100 Best Songs of 2025
+- **Ordinary** (Alex Warren) — 3 lists: Spotify Wrapped 2025: Top Artists, Songs, Albums and Podcasts; iHeartRewind 2025: Top Artists & Songs of the Year; Billboard: The 100 Best Songs of 2025
 - **Shake It to the Max (Fly) (Remix)** — 3 lists: Rolling Stone: The 100 Best Songs of 2025; Pitchfork: The 100 Best Songs of 2025; Billboard: The 100 Best Songs of 2025
 - **Spike Island** (Pulp) — 3 lists: The Guardian: The 20 Best Songs of 2025; Pitchfork: The 100 Best Songs of 2025; Billboard: The 100 Best Songs of 2025
-- **Sports Car** (Tate McRae) — 3 lists: Pitchfork: The 100 Best Songs of 2025; Billboard: The 100 Best Songs of 2025; Billboard: Year-End Hot 100 Songs 2025
 - **Sugar on My Tongue** — 3 lists: Rolling Stone: The 100 Best Songs of 2025; Pitchfork: The 100 Best Songs of 2025; Billboard: The 100 Best Songs of 2025
 - **That’s So True** (Gracie Abrams) — 3 lists: Spotify Wrapped 2025: Top Artists, Songs, Albums and Podcasts; iHeartRewind 2025: Top Artists & Songs of the Year; Billboard: Year-End Hot 100 Songs 2025
 - **The Subway** (Chappell Roan) — 3 lists: The Guardian: The 20 Best Songs of 2025; Pitchfork: The 100 Best Songs of 2025; Billboard: The 100 Best Songs of 2025
 - **You Got Time and I Got Money** (Smerz) — 3 lists: Rolling Stone: The 100 Best Songs of 2025; The Guardian: The 20 Best Songs of 2025; Pitchfork: The 100 Best Songs of 2025
 - **30 For 30** — 2 lists: iHeartRewind 2025: Top Artists & Songs of the Year; Billboard: Year-End Hot 100 Songs 2025
 - **All the Way** — 2 lists: Rolling Stone: The 100 Best Songs of 2025; Billboard: Year-End Hot 100 Songs 2025
+- **Anxiety** (Doechii) — 2 lists: Rolling Stone: The 100 Best Songs of 2025; Billboard: The 100 Best Songs of 2025
 - **APT.** — 2 lists: Spotify Wrapped 2025: Top Artists, Songs, Albums and Podcasts; Billboard: Year-End Hot 100 Songs 2025
+- **back to friends** — 2 lists: Spotify Wrapped 2025: Top Artists, Songs, Albums and Podcasts; Billboard: The 100 Best Songs of 2025
 - **Berghain** — 2 lists: The Guardian: The 20 Best Songs of 2025; Billboard: The 100 Best Songs of 2025
 - **Birds Of A Feather** (Billie Eilish) — 2 lists: Spotify Wrapped 2025: Top Artists, Songs, Albums and Podcasts; Billboard: Year-End Hot 100 Songs 2025
 - **blade bird** (Oklou) — 2 lists: Pitchfork: The 100 Best Songs of 2025; Billboard: The 100 Best Songs of 2025
-- **BMF** (SZA) — 2 lists: Billboard: The 100 Best Songs of 2025; Billboard: Year-End Hot 100 Songs 2025
-- **Burning Blue** — 2 lists: Billboard: The 100 Best Songs of 2025; Billboard: Year-End Hot 100 Songs 2025
 - **Catch These Fists** (Wet Leg) — 2 lists: The Guardian: The 20 Best Songs of 2025; Pitchfork: The 100 Best Songs of 2025
 - **Cry For Me** (The Weeknd) — 2 lists: iHeartRewind 2025: Top Artists & Songs of the Year; Billboard: Year-End Hot 100 Songs 2025
+- **Daisies** (Justin Bieber) — 2 lists: Pitchfork: The 100 Best Songs of 2025; Billboard: The 100 Best Songs of 2025
 - **Dark Thoughts** (Lil Tecca) — 2 lists: Rolling Stone: The 100 Best Songs of 2025; Billboard: Year-End Hot 100 Songs 2025
 - **David** (Lorde) — 2 lists: Pitchfork: The 100 Best Songs of 2025; Billboard: The 100 Best Songs of 2025
-- **Denial Is a River** (Doechii) — 2 lists: Billboard: The 100 Best Songs of 2025; Billboard: Year-End Hot 100 Songs 2025
+- **DtMF** (Bad Bunny) — 2 lists: Spotify Wrapped 2025: Top Artists, Songs, Albums and Podcasts; Billboard: The 100 Best Songs of 2025
 - **Florence + the Machine, ‘One of the Greats** — 2 lists: Rolling Stone: The 100 Best Songs of 2025; Billboard: The 100 Best Songs of 2025
+- **Folded** (Kehlani) — 2 lists: Pitchfork: The 100 Best Songs of 2025; Billboard: The 100 Best Songs of 2025
 - **Gabriela** — 2 lists: Rolling Stone: The 100 Best Songs of 2025; Billboard: The 100 Best Songs of 2025
-- **Good News** (Shaboozey) — 2 lists: Billboard: The 100 Best Songs of 2025; Billboard: Year-End Hot 100 Songs 2025
+- **Golden** (HUNTR/X: EJAE, Audrey Nuna & REI AMI) — 2 lists: Spotify Wrapped 2025: Top Artists, Songs, Albums and Podcasts; Billboard: The 100 Best Songs of 2025
 - **Headphones On** (Addison Rae) — 2 lists: The Guardian: The 20 Best Songs of 2025; Pitchfork: The 100 Best Songs of 2025
-- **I Never Lie** (Zach Top) — 2 lists: Billboard: The 100 Best Songs of 2025; Billboard: Year-End Hot 100 Songs 2025
 - **Julia's War** (Hotline TNT) — 2 lists: Rolling Stone: The 100 Best Songs of 2025; Pitchfork: The 100 Best Songs of 2025
-- **Just in Case** (Morgan Wallen) — 2 lists: Billboard: The 100 Best Songs of 2025; Billboard: Year-End Hot 100 Songs 2025
 - **Laho** (Shallipopi) — 2 lists: Rolling Stone: The 100 Best Songs of 2025; Billboard: The 100 Best Songs of 2025
 - **Loco** — 2 lists: Rolling Stone: The 100 Best Songs of 2025; Billboard: Year-End Hot 100 Songs 2025
-- **Love Me Not** (Ravyn Lenae) — 2 lists: Billboard: The 100 Best Songs of 2025; Billboard: Year-End Hot 100 Songs 2025
 - **Love Takes Miles** (Cameron Winter) — 2 lists: Pitchfork: The 100 Best Songs of 2025; Billboard: The 100 Best Songs of 2025
 - **Man I Need** (Olivia Dean) — 2 lists: The Guardian: The 20 Best Songs of 2025; Billboard: The 100 Best Songs of 2025
+- **Manchild** (Sabrina Carpenter) — 2 lists: Pitchfork: The 100 Best Songs of 2025; Billboard: The 100 Best Songs of 2025
 - **Mangetout** (Wet Leg) — 2 lists: Rolling Stone: The 100 Best Songs of 2025; Billboard: The 100 Best Songs of 2025
 - **Marlboro Rojo** — 2 lists: Rolling Stone: The 100 Best Songs of 2025; Billboard: The 100 Best Songs of 2025
-- **Messy** (Lola Young) — 2 lists: Billboard: The 100 Best Songs of 2025; Billboard: Year-End Hot 100 Songs 2025
 - **Mutt** (Leon Thomas) — 2 lists: iHeartRewind 2025: Top Artists & Songs of the Year; Billboard: Year-End Hot 100 Songs 2025
-- **Mystical Magical** (Benson Boone) — 2 lists: Billboard: The 100 Best Songs of 2025; Billboard: Year-End Hot 100 Songs 2025
 - **Never Enough** (Turnstile) — 2 lists: Pitchfork: The 100 Best Songs of 2025; Billboard: The 100 Best Songs of 2025
-- **Nokia** (Drake) — 2 lists: Billboard: The 100 Best Songs of 2025; Billboard: Year-End Hot 100 Songs 2025
 - **Off to the Esso** — 2 lists: The Guardian: The 20 Best Songs of 2025; Pitchfork: The 100 Best Songs of 2025
 - **Pink Pony Club** (Chappell Roan) — 2 lists: iHeartRewind 2025: Top Artists & Songs of the Year; Billboard: Year-End Hot 100 Songs 2025
 - **Plastic Box** — 2 lists: The Guardian: The 20 Best Songs of 2025; Pitchfork: The 100 Best Songs of 2025
 - **Pussy Palace** (Lily Allen) — 2 lists: The Guardian: The 20 Best Songs of 2025; Billboard: The 100 Best Songs of 2025
 - **Relationships** — 2 lists: Pitchfork: The 100 Best Songs of 2025; Billboard: The 100 Best Songs of 2025
 - **Sorry I'm Here For Someone Else** (Benson Boone) — 2 lists: iHeartRewind 2025: Top Artists & Songs of the Year; Billboard: Year-End Hot 100 Songs 2025
+- **Sports car** (Tate McRae) — 2 lists: Pitchfork: The 100 Best Songs of 2025; Billboard: The 100 Best Songs of 2025
 - **squabble up** (Kendrick Lamar) — 2 lists: iHeartRewind 2025: Top Artists & Songs of the Year; Billboard: Year-End Hot 100 Songs 2025
 - **Sue Me** (Audrey Hobert) — 2 lists: Rolling Stone: The 100 Best Songs of 2025; Billboard: The 100 Best Songs of 2025
 - **Taxes** (Geese) — 2 lists: The Guardian: The 20 Best Songs of 2025; Pitchfork: The 100 Best Songs of 2025
@@ -6413,7 +6390,6 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **Where Is My Husband!** — 2 lists: The Guardian: The 20 Best Songs of 2025; Billboard: The 100 Best Songs of 2025
 - **Whim Whamiee** — 2 lists: Pitchfork: The 100 Best Songs of 2025; Billboard: The 100 Best Songs of 2025
 - **Wildflower** (Billie Eilish) — 2 lists: Spotify Wrapped 2025: Top Artists, Songs, Albums and Podcasts; Billboard: Year-End Hot 100 Songs 2025
-- **Worst Way** (Riley Green) — 2 lists: Billboard: The 100 Best Songs of 2025; Billboard: Year-End Hot 100 Songs 2025
 - **Yamaha** (Dijon) — 2 lists: Pitchfork: The 100 Best Songs of 2025; Billboard: The 100 Best Songs of 2025
 
 ### Movies
@@ -6485,17 +6461,17 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 
 ### TV
 
-- **Pluribus** (Apple TV) — 11 lists: TIME: The 10 Best TV Shows of 2025; TV Guide: The 10 Best TV Shows of 2025; IndieWire: The Best Series of 2025, Ranked; Rolling Stone: Best TV Shows of 2025; The Guardian: The 50 Best TV Shows of 2025; The A.V. Club: The 25 Best TV Shows of 2025; Esquire: The 10 Best TV Shows of 2025; BBC Culture: The 25 Best TV Shows of 2025; Empire: The Best TV Shows of 2025; Metacritic: The 20 Best New TV Shows of 2025; TV Guide: Best Reviewed TV Shows of 2025 (Metacritic)
-- **Adolescence** — 10 lists: TV Guide: The 10 Best TV Shows of 2025; Variety: The Best TV Shows of 2025; Rolling Stone: Best TV Shows of 2025; The Guardian: The 50 Best TV Shows of 2025; The A.V. Club: The 25 Best TV Shows of 2025; Esquire: The 10 Best TV Shows of 2025; BBC Culture: The 25 Best TV Shows of 2025; Empire: The Best TV Shows of 2025; Metacritic: The 20 Best New TV Shows of 2025; TV Guide: Best Reviewed TV Shows of 2025 (Metacritic)
-- **Andor** — 9 lists: TV Guide: The 10 Best TV Shows of 2025; IndieWire: The Best Series of 2025, Ranked; Vulture: The Best TV Shows and Series of 2025; Rolling Stone: Best TV Shows of 2025; The Guardian: The 50 Best TV Shows of 2025; The A.V. Club: The 25 Best TV Shows of 2025; Esquire: The 10 Best TV Shows of 2025; Empire: The Best TV Shows of 2025; TV Guide: Best Reviewed TV Shows of 2025 (Metacritic)
+- **Pluribus** (Apple TV) — 10 lists: TIME: The 10 Best TV Shows of 2025; TV Guide: Best Reviewed TV Shows of 2025 (Metacritic); IndieWire: The Best Series of 2025, Ranked; Rolling Stone: Best TV Shows of 2025; The Guardian: The 50 Best TV Shows of 2025; The A.V. Club: The 25 Best TV Shows of 2025; Esquire: The 10 Best TV Shows of 2025; BBC Culture: The 25 Best TV Shows of 2025; Empire: The Best TV Shows of 2025; Metacritic: The 20 Best New TV Shows of 2025
+- **Adolescence** — 9 lists: TV Guide: Best Reviewed TV Shows of 2025 (Metacritic); Variety: The Best TV Shows of 2025; Rolling Stone: Best TV Shows of 2025; The Guardian: The 50 Best TV Shows of 2025; The A.V. Club: The 25 Best TV Shows of 2025; Esquire: The 10 Best TV Shows of 2025; BBC Culture: The 25 Best TV Shows of 2025; Empire: The Best TV Shows of 2025; Metacritic: The 20 Best New TV Shows of 2025
 - **Dying for Sex** (FX) — 9 lists: TIME: The 10 Best TV Shows of 2025; IndieWire: The Best Series of 2025, Ranked; Rolling Stone: Best TV Shows of 2025; The Guardian: The 50 Best TV Shows of 2025; The A.V. Club: The 25 Best TV Shows of 2025; BBC Culture: The 25 Best TV Shows of 2025; Empire: The Best TV Shows of 2025; Metacritic: The 20 Best New TV Shows of 2025; TV Guide: Best Reviewed TV Shows of 2025 (Metacritic)
-- **Severance** (Apple TV) — 9 lists: TIME: The 10 Best TV Shows of 2025; TV Guide: The 10 Best TV Shows of 2025; Rolling Stone: Best TV Shows of 2025; The Guardian: The 50 Best TV Shows of 2025; The A.V. Club: The 25 Best TV Shows of 2025; Esquire: The 10 Best TV Shows of 2025; BBC Culture: The 25 Best TV Shows of 2025; Empire: The Best TV Shows of 2025; TV Guide: Best Reviewed TV Shows of 2025 (Metacritic)
 - **The Studio** (Apple TV) — 9 lists: TIME: The 10 Best TV Shows of 2025; Rolling Stone: Best TV Shows of 2025; The Guardian: The 50 Best TV Shows of 2025; The A.V. Club: The 25 Best TV Shows of 2025; Esquire: The 10 Best TV Shows of 2025; BBC Culture: The 25 Best TV Shows of 2025; Empire: The Best TV Shows of 2025; Metacritic: The 20 Best New TV Shows of 2025; TV Guide: Best Reviewed TV Shows of 2025 (Metacritic)
-- **The Chair Company** — 8 lists: TV Guide: The 10 Best TV Shows of 2025; Rolling Stone: Best TV Shows of 2025; The Guardian: The 50 Best TV Shows of 2025; The A.V. Club: The 25 Best TV Shows of 2025; BBC Culture: The 25 Best TV Shows of 2025; Empire: The Best TV Shows of 2025; Metacritic: The 20 Best New TV Shows of 2025; TV Guide: Best Reviewed TV Shows of 2025 (Metacritic)
-- **The Lowdown** (FX) — 8 lists: TIME: The 10 Best TV Shows of 2025; TV Guide: The 10 Best TV Shows of 2025; IndieWire: The Best Series of 2025, Ranked; Rolling Stone: Best TV Shows of 2025; The A.V. Club: The 25 Best TV Shows of 2025; BBC Culture: The 25 Best TV Shows of 2025; Metacritic: The 20 Best New TV Shows of 2025; TV Guide: Best Reviewed TV Shows of 2025 (Metacritic)
+- **Andor** — 8 lists: TV Guide: Best Reviewed TV Shows of 2025 (Metacritic); IndieWire: The Best Series of 2025, Ranked; Vulture: The Best TV Shows and Series of 2025; Rolling Stone: Best TV Shows of 2025; The Guardian: The 50 Best TV Shows of 2025; The A.V. Club: The 25 Best TV Shows of 2025; Esquire: The 10 Best TV Shows of 2025; Empire: The Best TV Shows of 2025
+- **Severance** (Apple TV) — 8 lists: TIME: The 10 Best TV Shows of 2025; TV Guide: Best Reviewed TV Shows of 2025 (Metacritic); Rolling Stone: Best TV Shows of 2025; The Guardian: The 50 Best TV Shows of 2025; The A.V. Club: The 25 Best TV Shows of 2025; Esquire: The 10 Best TV Shows of 2025; BBC Culture: The 25 Best TV Shows of 2025; Empire: The Best TV Shows of 2025
 - **The Pitt** (HBO Max) — 8 lists: TIME: The 10 Best TV Shows of 2025; TV Guide: The 10 Best TV Shows of 2025; Variety: The Best TV Shows of 2025; Vulture: The Best TV Shows and Series of 2025; Rolling Stone: Best TV Shows of 2025; The A.V. Club: The 25 Best TV Shows of 2025; Esquire: The 10 Best TV Shows of 2025; BBC Culture: The 25 Best TV Shows of 2025
-- **Long Story Short (Netflix)** — 7 lists: TV Guide: The 10 Best TV Shows of 2025; IndieWire: The Best Series of 2025, Ranked; Rolling Stone: Best TV Shows of 2025; The A.V. Club: The 25 Best TV Shows of 2025; BBC Culture: The 25 Best TV Shows of 2025; Metacritic: The 20 Best New TV Shows of 2025; TV Guide: Best Reviewed TV Shows of 2025 (Metacritic)
+- **The Chair Company** — 7 lists: TV Guide: Best Reviewed TV Shows of 2025 (Metacritic); Rolling Stone: Best TV Shows of 2025; The Guardian: The 50 Best TV Shows of 2025; The A.V. Club: The 25 Best TV Shows of 2025; BBC Culture: The 25 Best TV Shows of 2025; Empire: The Best TV Shows of 2025; Metacritic: The 20 Best New TV Shows of 2025
+- **The Lowdown** (FX) — 7 lists: TIME: The 10 Best TV Shows of 2025; TV Guide: Best Reviewed TV Shows of 2025 (Metacritic); IndieWire: The Best Series of 2025, Ranked; Rolling Stone: Best TV Shows of 2025; The A.V. Club: The 25 Best TV Shows of 2025; BBC Culture: The 25 Best TV Shows of 2025; Metacritic: The 20 Best New TV Shows of 2025
 - **The Rehearsal** — 7 lists: IndieWire: The Best Series of 2025, Ranked; Rolling Stone: Best TV Shows of 2025; The Guardian: The 50 Best TV Shows of 2025; The A.V. Club: The 25 Best TV Shows of 2025; Esquire: The 10 Best TV Shows of 2025; BBC Culture: The 25 Best TV Shows of 2025; TV Guide: Best Reviewed TV Shows of 2025 (Metacritic)
+- **Long Story Short** — 6 lists: TV Guide: Best Reviewed TV Shows of 2025 (Metacritic); IndieWire: The Best Series of 2025, Ranked; Rolling Stone: Best TV Shows of 2025; The A.V. Club: The 25 Best TV Shows of 2025; BBC Culture: The 25 Best TV Shows of 2025; Metacritic: The 20 Best New TV Shows of 2025
 - **Mr. Scorsese** — 6 lists: Vulture: The Best TV Shows and Series of 2025; The A.V. Club: The 25 Best TV Shows of 2025; BBC Culture: The 25 Best TV Shows of 2025; Empire: The Best TV Shows of 2025; Metacritic: The 20 Best New TV Shows of 2025; TV Guide: Best Reviewed TV Shows of 2025 (Metacritic)
 - **Alien: Earth** — 5 lists: The Guardian: The 50 Best TV Shows of 2025; BBC Culture: The 25 Best TV Shows of 2025; Empire: The Best TV Shows of 2025; Metacritic: The 20 Best New TV Shows of 2025; TV Guide: Best Reviewed TV Shows of 2025 (Metacritic)
 - **Common Side Effects** — 5 lists: IndieWire: The Best Series of 2025, Ranked; Vulture: The Best TV Shows and Series of 2025; The Guardian: The 50 Best TV Shows of 2025; The A.V. Club: The 25 Best TV Shows of 2025; TV Guide: Best Reviewed TV Shows of 2025 (Metacritic)
@@ -6506,7 +6482,6 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **Mo** (Netflix) — 4 lists: TIME: The 10 Best TV Shows of 2025; The Guardian: The 50 Best TV Shows of 2025; The A.V. Club: The 25 Best TV Shows of 2025; TV Guide: Best Reviewed TV Shows of 2025 (Metacritic)
 - **Mussolini: Son of the Century** (Mubi) — 4 lists: TIME: The 10 Best TV Shows of 2025; Vulture: The Best TV Shows and Series of 2025; The Guardian: The 50 Best TV Shows of 2025; The A.V. Club: The 25 Best TV Shows of 2025
 - **The Last of Us** — 4 lists: Rolling Stone: Best TV Shows of 2025; The Guardian: The 50 Best TV Shows of 2025; Empire: The Best TV Shows of 2025; TV Guide: Best Reviewed TV Shows of 2025 (Metacritic)
-- **The Righteous Gemstones (HBO)** — 4 lists: TV Guide: The 10 Best TV Shows of 2025; IndieWire: The Best Series of 2025, Ranked; Vulture: The Best TV Shows and Series of 2025; TV Guide: Best Reviewed TV Shows of 2025 (Metacritic)
 - **Wolf Hall: The Mirror and the Light** — 4 lists: IndieWire: The Best Series of 2025, Ranked; BBC Culture: The 25 Best TV Shows of 2025; Metacritic: The 20 Best New TV Shows of 2025; TV Guide: Best Reviewed TV Shows of 2025 (Metacritic)
 - **A Thousand Blows** — 3 lists: Variety: The Best TV Shows of 2025; The Guardian: The 50 Best TV Shows of 2025; Empire: The Best TV Shows of 2025
 - **Blue Lights** — 3 lists: The Guardian: The 50 Best TV Shows of 2025; BBC Culture: The 25 Best TV Shows of 2025; TV Guide: Best Reviewed TV Shows of 2025 (Metacritic)
@@ -6516,6 +6491,7 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **Platonic** — 3 lists: IndieWire: The Best Series of 2025, Ranked; The Guardian: The 50 Best TV Shows of 2025; TV Guide: Best Reviewed TV Shows of 2025 (Metacritic)
 - **Such Brave Girls** (Hulu) — 3 lists: TIME: The 10 Best TV Shows of 2025; The Guardian: The 50 Best TV Shows of 2025; BBC Culture: The 25 Best TV Shows of 2025
 - **The American Revolution (PBS)** — 3 lists: The A.V. Club: The 25 Best TV Shows of 2025; Metacritic: The 20 Best New TV Shows of 2025; TV Guide: Best Reviewed TV Shows of 2025 (Metacritic)
+- **The Righteous Gemstones Season 4 (HBO)** — 3 lists: TV Guide: Best Reviewed TV Shows of 2025 (Metacritic); IndieWire: The Best Series of 2025, Ranked; Vulture: The Best TV Shows and Series of 2025
 - **The White Lotus** — 3 lists: The Guardian: The 50 Best TV Shows of 2025; BBC Culture: The 25 Best TV Shows of 2025; Empire: The Best TV Shows of 2025
 - **Asura** — 2 lists: The A.V. Club: The 25 Best TV Shows of 2025; TV Guide: Best Reviewed TV Shows of 2025 (Metacritic)
 - **Ballard (Prime Video)** — 2 lists: Metacritic: The 20 Best New TV Shows of 2025; TV Guide: Best Reviewed TV Shows of 2025 (Metacritic)
@@ -6550,33 +6526,31 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **Reclaiming With Monica Lewinsky** — 2 lists: The Guardian: The 20 Best Podcasts of 2025; BBC Culture: 10 of the Best Podcasts of 2025
 - **Sea of Lies** — 2 lists: The New Yorker: The Best Podcasts of 2025; Audible: The Best Podcasts of 2025
 - **Stalked** — 2 lists: The Guardian: The 20 Best Podcasts of 2025; BBC Culture: 10 of the Best Podcasts of 2025
-- **The Mel Robbins Podcast** — 2 lists: Apple Podcasts: Most Popular Shows of 2025; Apple Podcasts: Best of 2025
 - **The Retrievals: The C-sections** — 2 lists: Vulture: 10 Narrative Podcasts We Loved in 2025; The Guardian: The 20 Best Podcasts of 2025
 - **What We Spend** — 2 lists: Vulture: 10 Narrative Podcasts We Loved in 2025; The Guardian: The 20 Best Podcasts of 2025
 - **Wisecrack** — 2 lists: Apple Podcasts: Best of 2025; The Guardian: The 20 Best Podcasts of 2025
 
 ### Video Games
 
-- **Clair Obscur: Expedition 33** — 11 lists: The Game Awards 2025: Every Winner (Game Informer); IGN Awards 2025: The Winners; Polygon: The 50 Best Games of 2025; GameSpot: The 10 Best Games of 2025; TIME: The 10 Best Video Games of 2025; The Guardian: The 20 Best Video Games of 2025; Eurogamer: The 50 Best Games of 2025, Ranked; PC Gamer: Game of the Year Awards 2025; Game Informer: The Top Ten Games of 2025; Metacritic: Best Games of 2025; Game Informer: Top Scoring Reviews of 2025
-- **Hollow Knight: Silksong** — 11 lists: The Game Awards 2025: Every Winner (Game Informer); IGN Awards 2025: The Winners; Polygon: The 50 Best Games of 2025; GameSpot: The 10 Best Games of 2025; TIME: The 10 Best Video Games of 2025; The Guardian: The 20 Best Video Games of 2025; Eurogamer: The 50 Best Games of 2025, Ranked; PC Gamer: Game of the Year Awards 2025; Game Informer: The Top Ten Games of 2025; Metacritic: Best Games of 2025; Game Informer: Top Scoring Reviews of 2025
-- **Blue Prince** — 9 lists: IGN Awards 2025: The Winners; Polygon: The 50 Best Games of 2025; GameSpot: The 10 Best Games of 2025; The Guardian: The 20 Best Video Games of 2025; Eurogamer: The 50 Best Games of 2025, Ranked; PC Gamer: Game of the Year Awards 2025; Game Informer: The Top Ten Games of 2025; Metacritic: Best Games of 2025; Game Informer: Top Scoring Reviews of 2025
-- **Hades II** — 9 lists: The Game Awards 2025: Every Winner (Game Informer); IGN Awards 2025: The Winners; Polygon: The 50 Best Games of 2025; GameSpot: The 10 Best Games of 2025; The Guardian: The 20 Best Video Games of 2025; Eurogamer: The 50 Best Games of 2025, Ranked; Game Informer: The Top Ten Games of 2025; Metacritic: Best Games of 2025; Game Informer: Top Scoring Reviews of 2025
-- **Arc Raiders** — 8 lists: The Game Awards 2025: Every Winner (Game Informer); IGN Awards 2025: The Winners; Polygon: The 50 Best Games of 2025; Eurogamer: The 50 Best Games of 2025, Ranked; PC Gamer: Game of the Year Awards 2025; Game Informer: The Top Ten Games of 2025; Metacritic: Best Games of 2025; Game Informer: Top Scoring Reviews of 2025
+- **Clair Obscur: Expedition 33** — 10 lists: The Game Awards 2025: Every Winner (Game Informer); IGN Awards 2025: The Winners; Polygon: The 50 Best Games of 2025; GameSpot: The 10 Best Games of 2025; TIME: The 10 Best Video Games of 2025; The Guardian: The 20 Best Video Games of 2025; Eurogamer: The 50 Best Games of 2025, Ranked; PC Gamer: Game of the Year Awards 2025; Game Informer: Top Scoring Reviews of 2025; Metacritic: Best Games of 2025
+- **Hollow Knight: Silksong** — 10 lists: The Game Awards 2025: Every Winner (Game Informer); IGN Awards 2025: The Winners; Polygon: The 50 Best Games of 2025; GameSpot: The 10 Best Games of 2025; TIME: The 10 Best Video Games of 2025; The Guardian: The 20 Best Video Games of 2025; Eurogamer: The 50 Best Games of 2025, Ranked; PC Gamer: Game of the Year Awards 2025; Game Informer: Top Scoring Reviews of 2025; Metacritic: Best Games of 2025
+- **Blue Prince** — 8 lists: IGN Awards 2025: The Winners; Polygon: The 50 Best Games of 2025; GameSpot: The 10 Best Games of 2025; The Guardian: The 20 Best Video Games of 2025; Eurogamer: The 50 Best Games of 2025, Ranked; PC Gamer: Game of the Year Awards 2025; Game Informer: Top Scoring Reviews of 2025; Metacritic: Best Games of 2025
+- **Hades 2** — 8 lists: The Game Awards 2025: Every Winner (Game Informer); IGN Awards 2025: The Winners; Polygon: The 50 Best Games of 2025; GameSpot: The 10 Best Games of 2025; The Guardian: The 20 Best Video Games of 2025; Eurogamer: The 50 Best Games of 2025, Ranked; Game Informer: Top Scoring Reviews of 2025; Metacritic: Best Games of 2025
+- **Arc Raiders** — 7 lists: The Game Awards 2025: Every Winner (Game Informer); IGN Awards 2025: The Winners; Polygon: The 50 Best Games of 2025; Eurogamer: The 50 Best Games of 2025, Ranked; PC Gamer: Game of the Year Awards 2025; Game Informer: Top Scoring Reviews of 2025; Metacritic: Best Games of 2025
 - **Donkey Kong Bananza** — 7 lists: The Game Awards 2025: Every Winner (Game Informer); IGN Awards 2025: The Winners; Polygon: The 50 Best Games of 2025; The Guardian: The 20 Best Video Games of 2025; Eurogamer: The 50 Best Games of 2025, Ranked; Metacritic: Best Games of 2025; Game Informer: Top Scoring Reviews of 2025
 - **Death Stranding 2: On The Beach** — 6 lists: Polygon: The 50 Best Games of 2025; TIME: The 10 Best Video Games of 2025; The Guardian: The 20 Best Video Games of 2025; Eurogamer: The 50 Best Games of 2025, Ranked; Metacritic: Best Games of 2025; Game Informer: Top Scoring Reviews of 2025
 - **Dispatch** — 6 lists: Polygon: The 50 Best Games of 2025; GameSpot: The 10 Best Games of 2025; Eurogamer: The 50 Best Games of 2025, Ranked; PC Gamer: Game of the Year Awards 2025; Metacritic: Best Games of 2025; Game Informer: Top Scoring Reviews of 2025
 - **Ghost of Yotei** — 6 lists: Polygon: The 50 Best Games of 2025; TIME: The 10 Best Video Games of 2025; The Guardian: The 20 Best Video Games of 2025; Eurogamer: The 50 Best Games of 2025, Ranked; Game Informer: The Top Ten Games of 2025; Metacritic: Best Games of 2025
-- **Kingdom Come: Deliverance 2** — 6 lists: Polygon: The 50 Best Games of 2025; Eurogamer: The 50 Best Games of 2025, Ranked; PC Gamer: Game of the Year Awards 2025; Game Informer: The Top Ten Games of 2025; Metacritic: Best Games of 2025; Game Informer: Top Scoring Reviews of 2025
 - **Silent Hill f** — 6 lists: Polygon: The 50 Best Games of 2025; GameSpot: The 10 Best Games of 2025; TIME: The 10 Best Video Games of 2025; The Guardian: The 20 Best Video Games of 2025; Eurogamer: The 50 Best Games of 2025, Ranked; Metacritic: Best Games of 2025
 - **Split Fiction** — 6 lists: Polygon: The 50 Best Games of 2025; TIME: The 10 Best Video Games of 2025; The Guardian: The 20 Best Video Games of 2025; Eurogamer: The 50 Best Games of 2025, Ranked; Game Informer: The Top Ten Games of 2025; Metacritic: Best Games of 2025
+- **Kingdom Come: Deliverance 2** — 5 lists: Polygon: The 50 Best Games of 2025; Eurogamer: The 50 Best Games of 2025, Ranked; PC Gamer: Game of the Year Awards 2025; Game Informer: Top Scoring Reviews of 2025; Metacritic: Best Games of 2025
 - **Mario Kart World** — 5 lists: The Game Awards 2025: Every Winner (Game Informer); Polygon: The 50 Best Games of 2025; The Guardian: The 20 Best Video Games of 2025; Eurogamer: The 50 Best Games of 2025, Ranked; Metacritic: Best Games of 2025
-- **Shinobi: Art of Vengeance** — 5 lists: Polygon: The 50 Best Games of 2025; Eurogamer: The 50 Best Games of 2025, Ranked; Game Informer: The Top Ten Games of 2025; Metacritic: Best Games of 2025; Game Informer: Top Scoring Reviews of 2025
 - **Battlefield 6** — 4 lists: The Game Awards 2025: Every Winner (Game Informer); Eurogamer: The 50 Best Games of 2025, Ranked; PC Gamer: Game of the Year Awards 2025; Game Informer: Top Scoring Reviews of 2025
 - **Despelote** — 4 lists: Polygon: The 50 Best Games of 2025; The Guardian: The 20 Best Video Games of 2025; Eurogamer: The 50 Best Games of 2025, Ranked; Metacritic: Best Games of 2025
 - **Final Fantasy Tactics – The Ivalice Chronicles** — 4 lists: The Game Awards 2025: Every Winner (Game Informer); Eurogamer: The 50 Best Games of 2025, Ranked; Metacritic: Best Games of 2025; Game Informer: Top Scoring Reviews of 2025
 - **Metal Gear Solid Delta: Snake Eater** — 4 lists: IGN Awards 2025: The Winners; Eurogamer: The 50 Best Games of 2025, Ranked; Metacritic: Best Games of 2025; Game Informer: Top Scoring Reviews of 2025
+- **Shinobi: Art of Vengeance** — 4 lists: Polygon: The 50 Best Games of 2025; Eurogamer: The 50 Best Games of 2025, Ranked; Game Informer: Top Scoring Reviews of 2025; Metacritic: Best Games of 2025
 - **Sword of the Sea** — 4 lists: Polygon: The 50 Best Games of 2025; Eurogamer: The 50 Best Games of 2025, Ranked; Metacritic: Best Games of 2025; Game Informer: Top Scoring Reviews of 2025
-- **The Roottrees Are Dead** — 4 lists: Polygon: The 50 Best Games of 2025; Game Informer: The Top Ten Games of 2025; Metacritic: Best Games of 2025; Game Informer: Top Scoring Reviews of 2025
 - **The Seance of Manor** — 4 lists: GameSpot: The 10 Best Games of 2025; The Guardian: The 20 Best Video Games of 2025; Eurogamer: The 50 Best Games of 2025, Ranked; Metacritic: Best Games of 2025
 - **Abiotic Factor** — 3 lists: Eurogamer: The 50 Best Games of 2025, Ranked; PC Gamer: Game of the Year Awards 2025; Metacritic: Best Games of 2025
 - **Absolum** — 3 lists: GameSpot: The 10 Best Games of 2025; Metacritic: Best Games of 2025; Game Informer: Top Scoring Reviews of 2025
@@ -6591,6 +6565,7 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **Peak** — 3 lists: Polygon: The 50 Best Games of 2025; Eurogamer: The 50 Best Games of 2025, Ranked; Game Informer: Top Scoring Reviews of 2025
 - **Promise Mascot Agency** — 3 lists: Polygon: The 50 Best Games of 2025; Eurogamer: The 50 Best Games of 2025, Ranked; PC Gamer: Game of the Year Awards 2025
 - **The Outer Worlds 2** — 3 lists: Polygon: The 50 Best Games of 2025; Eurogamer: The 50 Best Games of 2025, Ranked; Game Informer: Top Scoring Reviews of 2025
+- **The Roottrees Are Dead** — 3 lists: Polygon: The 50 Best Games of 2025; Game Informer: Top Scoring Reviews of 2025; Metacritic: Best Games of 2025
 - **Two Point Museum** — 3 lists: Polygon: The 50 Best Games of 2025; The Guardian: The 20 Best Video Games of 2025; Eurogamer: The 50 Best Games of 2025, Ranked
 - **And Roger** — 2 lists: Polygon: The 50 Best Games of 2025; Game Informer: Top Scoring Reviews of 2025
 - **Assassin's Creed Shadows** — 2 lists: Eurogamer: The 50 Best Games of 2025, Ranked; Game Informer: Top Scoring Reviews of 2025
@@ -6653,15 +6628,10 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 
 - **Allegory** (Washington DC) — 2 lists: North America's 50 Best Bars 2025; Tales of the Cocktail: 2025 Spirited Awards Winners
 - **Bar Leone** (Hong Kong) — 2 lists: The World's 50 Best Bars 2025; Tales of the Cocktail: 2025 Spirited Awards Winners
-- **Double Chicken Please** (New York) — 2 lists: The World's 50 Best Bars 2025; North America's 50 Best Bars 2025
-- **Handshake Speakeasy** (Mexico City) — 2 lists: The World's 50 Best Bars 2025; North America's 50 Best Bars 2025
-- **Jewel of the South** (New Orleans) — 2 lists: The World's 50 Best Bars 2025; North America's 50 Best Bars 2025
 - **Kumiko** (Chicago) — 2 lists: North America's 50 Best Bars 2025; Tales of the Cocktail: 2025 Spirited Awards Winners
 - **Moebius Milano** (Milan) — 2 lists: The World's 50 Best Bars 2025; Tales of the Cocktail: 2025 Spirited Awards Winners
-- **Overstory** (New York) — 2 lists: The World's 50 Best Bars 2025; North America's 50 Best Bars 2025
 - **Panda & Sons** (Edinburgh) — 2 lists: The World's 50 Best Bars 2025; Tales of the Cocktail: 2025 Spirited Awards Winners
 - **Sip & Guzzle** (New York) — 2 lists: North America's 50 Best Bars 2025; Tales of the Cocktail: 2025 Spirited Awards Winners
-- **Tlecān** (Mexico City) — 2 lists: The World's 50 Best Bars 2025; North America's 50 Best Bars 2025
 
 ### Theater
 
@@ -6693,14 +6663,6 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **Pee-wee as Himself** — 2 lists: Variety: The Best Documentaries of 2025; Esquire: The 23 Best Documentaries of 2025
 - **Sly Lives! (aka The Burden of Black Genius)** — 2 lists: Variety: The Best Documentaries of 2025; Esquire: The 23 Best Documentaries of 2025
 - **The Perfect Neighbor** — 2 lists: Variety: The Best Documentaries of 2025; Esquire: The 23 Best Documentaries of 2025
-
-### Kids & YA Books
-
-- **And the River Drags Her Down** (Jihyun Yun) — 2 lists: Kirkus: Best of 2025 – Our Favorite Young Adult Books; Kirkus: Best Young Adult Books of 2025 (full list page)
-- **Self Portrait** (Ludwig Volbeda, translated by Lucy Scott) — 2 lists: Kirkus: Best of 2025 – Our Favorite Young Adult Books; Kirkus: Best Young Adult Books of 2025 (full list page)
-- **The Secret Astronomers** — 2 lists: Kirkus: Best of 2025 – Our Favorite Young Adult Books; Kirkus: Best Young Adult Books of 2025 (full list page)
-- **This Thing of Ours** (Frederick Joseph) — 2 lists: Kirkus: Best of 2025 – Our Favorite Young Adult Books; Kirkus: Best Young Adult Books of 2025 (full list page)
-- **Under a Fire-Red Sky** (Geraldine McCaughrean) — 2 lists: Kirkus: Best of 2025 – Our Favorite Young Adult Books; Kirkus: Best Young Adult Books of 2025 (full list page)
 
 ### Cookbooks
 

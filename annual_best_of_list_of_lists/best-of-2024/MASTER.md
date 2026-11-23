@@ -100,7 +100,7 @@ TIME · [link](https://time.com/7199834/best-fiction-books-2024/)
 5. All Fours , Miranda July
 6. Martyr! , Kaveh Akbar
 7. The Book of Love , Kelly Link
-8. Ghostroots , ’Pemi Aguda
+8. Ghostroots — Pemi Aguda
 9. The Anthropologists, Ayşegül Savas
 10. The Coin , Yasmin Zaher
 
@@ -6282,144 +6282,119 @@ Spiel des Jahres · [link](https://www.spiel-des-jahres.de/en/award-winners-2024
 
 ## Overlap across lists
 
-Items on two or more lists within the same topic, most lists first. Titles are matched within a category, ignoring case, punctuation, diacritics, a leading The/A/An, edition notes, and season labels. A bare title is merged with a subtitled or lightly misspelled variant when the creators do not conflict. The same title stays split when both creators are known and name different people.
+Items on two or more lists within the same topic, most lists first. Each outlet counts at most once per title. Titles are matched within a category, ignoring case, punctuation, diacritics, a leading The/A/An, edition notes, and season labels. A bare title is merged with a subtitled or lightly misspelled variant when the creators do not conflict. The same title stays split when both creators are known and name different people.
 
 ### Books
 
-- **James** — 20 lists: TIME: The 10 Best Fiction Books of 2024; Chicago Tribune: The 10 Best Books of 2024; The Telegraph: The 50 Best Books of 2024, Ranked; NPR: Books We Love 2024; Amazon Editors: Best Books of 2024; The Atlantic: The 10 Best Books of 2024; BookPage: The Best Fiction of 2024; Los Angeles Times: The 15 Best Books of 2024; Barnes & Noble: Book of the Year 2024 (James); National Book Awards 2024 Winners; Esquire: The 25 Best Books of 2024; BBC Culture: The 24 Best Books of 2024; Audible: The Best Audiobooks of 2024; Barnes & Noble: Best Fiction Books of 2024 (blog); Publishers Weekly: Best Books 2024 (all); Publishers Weekly: Best Books 2024 Top 10; Kirkus: Best Fiction of 2024 (full list page); Kirkus Prize 2024 Winners; The New Yorker: The Best Books of 2024; Electric Lit: Best Novels of 2024
-- **Martyr!** (Kaveh Akbar) — 14 lists: TIME: The 10 Best Fiction Books of 2024; NPR: Books We Love 2024; Amazon Editors: Best Books of 2024; Vulture: The Best Books of 2024; The Atlantic: The 10 Best Books of 2024; Slate: The 10 Best Books of 2024; Los Angeles Times: The 15 Best Books of 2024; BBC Culture: The 24 Best Books of 2024; Audible: The Best Audiobooks of 2024; Barnes & Noble: Best Fiction Books of 2024 (blog); Kirkus: Best of 2024 – Our Favorite Fiction; Kirkus: Best Fiction of 2024 (full list page); The New Yorker: The Best Books of 2024; Electric Lit: Best Novels of 2024
-- **All Fours** — 12 lists: TIME: 100 Must-Read Books of 2024; TIME: The 10 Best Fiction Books of 2024; NPR: Books We Love 2024; BookPage: The Best Fiction of 2024; BBC Culture: The 24 Best Books of 2024; Barnes & Noble: Best Fiction Books of 2024 (blog); Publishers Weekly: Best Books 2024 (all); Publishers Weekly: Best Books 2024 Top 10; Kirkus: Best of 2024 – Our Favorite Fiction; Kirkus: Best Fiction of 2024 (full list page); The New Yorker: The Best Books of 2024; Electric Lit: Best Novels of 2024
+- **James** — 17 lists: TIME: The 10 Best Fiction Books of 2024; Chicago Tribune: The 10 Best Books of 2024; The Telegraph: The 50 Best Books of 2024, Ranked; NPR: Books We Love 2024; Amazon Editors: Best Books of 2024; The Atlantic: The 10 Best Books of 2024; BookPage: The Best Fiction of 2024; Los Angeles Times: The 15 Best Books of 2024; Barnes & Noble: Best Fiction Books of 2024 (blog); National Book Awards 2024 Winners; Esquire: The 25 Best Books of 2024; BBC Culture: The 24 Best Books of 2024; Audible: The Best Audiobooks of 2024; Publishers Weekly: Best Books 2024 (all); Kirkus: Best Fiction of 2024 (full list page); The New Yorker: The Best Books of 2024; Electric Lit: Best Novels of 2024
+- **Martyr!** (Kaveh Akbar) — 13 lists: TIME: The 10 Best Fiction Books of 2024; NPR: Books We Love 2024; Amazon Editors: Best Books of 2024; Vulture: The Best Books of 2024; The Atlantic: The 10 Best Books of 2024; Slate: The 10 Best Books of 2024; Los Angeles Times: The 15 Best Books of 2024; BBC Culture: The 24 Best Books of 2024; Audible: The Best Audiobooks of 2024; Barnes & Noble: Best Fiction Books of 2024 (blog); Kirkus: Best Fiction of 2024 (full list page); The New Yorker: The Best Books of 2024; Electric Lit: Best Novels of 2024
+- **All Fours** — 9 lists: TIME: 100 Must-Read Books of 2024; NPR: Books We Love 2024; BookPage: The Best Fiction of 2024; BBC Culture: The 24 Best Books of 2024; Barnes & Noble: Best Fiction Books of 2024 (blog); Publishers Weekly: Best Books 2024 (all); Kirkus: Best Fiction of 2024 (full list page); The New Yorker: The Best Books of 2024; Electric Lit: Best Novels of 2024
 - **Colored Television** (Danzy Senna) — 8 lists: TIME: 100 Must-Read Books of 2024; NPR: Books We Love 2024; Vulture: The Best Books of 2024; Los Angeles Times: The 15 Best Books of 2024; Barnes & Noble: Best Fiction Books of 2024 (blog); Kirkus: Best Fiction of 2024 (full list page); The New Yorker: The Best Books of 2024; Electric Lit: Best Novels of 2024
-- **Grief Is for People** — 8 lists: TIME: 100 Must-Read Books of 2024; TIME: The 10 Best Nonfiction Books of 2024; NPR: Books We Love 2024; BookPage: The Best Nonfiction of 2024; Esquire: The 25 Best Books of 2024; Publishers Weekly: Best Books 2024 (all); Publishers Weekly: Best Nonfiction 2024; Kirkus: Best Nonfiction of 2024 (full list page)
 - **Intermezzo** (Sally Rooney) — 8 lists: TIME: 100 Must-Read Books of 2024; NPR: Books We Love 2024; BBC Culture: The 24 Best Books of 2024; Barnes & Noble: Best Fiction Books of 2024 (blog); Publishers Weekly: Best Books 2024 (all); Kirkus: Best Fiction of 2024 (full list page); The New Yorker: The Best Books of 2024; Electric Lit: Best Novels of 2024
-- **The Book of Love** — 8 lists: TIME: 100 Must-Read Books of 2024; TIME: The 10 Best Fiction Books of 2024; NPR: Books We Love 2024; Vulture: The Best Books of 2024; Esquire: The 25 Best Books of 2024; Publishers Weekly: Best Books 2024 (all); Publishers Weekly: Best Books 2024 Top 10; The New Yorker: The Best Books of 2024
-- **There’s Always This Year: On Basketball and Ascension** — 8 lists: TIME: The 10 Best Nonfiction Books of 2024; NPR: Books We Love 2024; Vulture: The Best Books of 2024; BookPage: The Best Nonfiction of 2024; Publishers Weekly: Best Books 2024 (all); Publishers Weekly: Best Nonfiction 2024; Kirkus: Best Nonfiction of 2024 (full list page); Electric Lit: Best Nonfiction of 2024
-- **Whiskey Tender** — 8 lists: TIME: The 10 Best Nonfiction Books of 2024; NPR: Books We Love 2024; The Atlantic: The 10 Best Books of 2024; Esquire: The 25 Best Books of 2024; Publishers Weekly: Best Books 2024 (all); Publishers Weekly: Best Nonfiction 2024; The New Yorker: The Best Books of 2024; Electric Lit: Best Nonfiction of 2024
 - **Great Expectations** (Vinson Cunningham) — 7 lists: NPR: Books We Love 2024; Slate: The 10 Best Books of 2024; Los Angeles Times: The 15 Best Books of 2024; Esquire: The 25 Best Books of 2024; Publishers Weekly: Best Books 2024 (all); Kirkus: Best Fiction of 2024 (full list page); Electric Lit: Best Novels of 2024
 - **Small Rain** (Garth Greenwell) — 7 lists: NPR: Books We Love 2024; BookPage: The Best Fiction of 2024; Los Angeles Times: The 15 Best Books of 2024; BBC Culture: The 24 Best Books of 2024; Publishers Weekly: Best Books 2024 (all); Kirkus: Best Fiction of 2024 (full list page); The New Yorker: The Best Books of 2024
-- **The Anthropologists** — 7 lists: TIME: 100 Must-Read Books of 2024; TIME: The 10 Best Fiction Books of 2024; Chicago Public Library: Favorite Books of 2024; Vulture: The Best Books of 2024; Publishers Weekly: Best Books 2024 (all); The New Yorker: The Best Books of 2024; Electric Lit: Best Novels of 2024
 - **The God of the Woods** (Liz Moore) — 7 lists: TIME: 100 Must-Read Books of 2024; NPR: Books We Love 2024; Amazon Editors: Best Books of 2024; Goodreads Choice Awards 2024 Winners; Barnes & Noble: Best Fiction Books of 2024 (blog); Kirkus: Best Fiction of 2024 (full list page); The New Yorker: The Best Books of 2024
-- **Wandering Stars** (Tommy Orange) — 7 lists: NPR: Books We Love 2024; Esquire: The 25 Best Books of 2024; Audible: The Best Audiobooks of 2024; Barnes & Noble: Best Fiction Books of 2024 (blog); Kirkus: Best Book Club Fiction of 2024; Kirkus: Best Fiction of 2024 (full list page); Electric Lit: Best Novels of 2024
-- **By the Fire We Carry: The Generations-Long Fight for Justice on Native Land** — 6 lists: NPR: Books We Love 2024; Esquire: The 25 Best Books of 2024; Publishers Weekly: Best Books 2024 (all); Publishers Weekly: Best Books 2024 Top 10; Kirkus: Best Nonfiction of 2024 (full list page); The New Yorker: The Best Books of 2024
-- **Challenger** (Adam Higginbotham) — 6 lists: Chicago Public Library: Favorite Books of 2024; The Atlantic: The 10 Best Books of 2024; BookPage: The Best Nonfiction of 2024; Kirkus: Best Nonfiction of 2024 (full list page); Kirkus Prize 2024 Winners; The New Yorker: The Best Books of 2024
+- **There’s Always This Year: On Basketball and Ascension** — 7 lists: TIME: The 10 Best Nonfiction Books of 2024; NPR: Books We Love 2024; Vulture: The Best Books of 2024; BookPage: The Best Nonfiction of 2024; Publishers Weekly: Best Books 2024 (all); Kirkus: Best Nonfiction of 2024 (full list page); Electric Lit: Best Nonfiction of 2024
+- **Whiskey Tender** — 7 lists: TIME: The 10 Best Nonfiction Books of 2024; NPR: Books We Love 2024; The Atlantic: The 10 Best Books of 2024; Esquire: The 25 Best Books of 2024; Publishers Weekly: Best Books 2024 (all); The New Yorker: The Best Books of 2024; Electric Lit: Best Nonfiction of 2024
+- **Grief Is for People** — 6 lists: TIME: 100 Must-Read Books of 2024; NPR: Books We Love 2024; BookPage: The Best Nonfiction of 2024; Esquire: The 25 Best Books of 2024; Publishers Weekly: Best Books 2024 (all); Kirkus: Best Nonfiction of 2024 (full list page)
 - **Our Evenings** (Alan Hollinghurst) — 6 lists: BookPage: The Best Fiction of 2024; Slate: The 10 Best Books of 2024; BBC Culture: The 24 Best Books of 2024; Publishers Weekly: Best Books 2024 (all); Kirkus: Best Fiction of 2024 (full list page); The New Yorker: The Best Books of 2024
 - **Rejection** (Tony Tulathimutte) — 6 lists: NPR: Books We Love 2024; Esquire: The 25 Best Books of 2024; Publishers Weekly: Best Books 2024 (all); Kirkus: Best Fiction of 2024 (full list page); The New Yorker: The Best Books of 2024; Electric Lit: Best Novels of 2024
-- **The Barn** (Wright Thompson) — 6 lists: TIME: 100 Must-Read Books of 2024; TIME: The 10 Best Nonfiction Books of 2024; BookPage: The Best Nonfiction of 2024; Slate: The 10 Best Books of 2024; Kirkus: Best Nonfiction of 2024 (full list page); The New Yorker: The Best Books of 2024
-- **The Coin** (Yasmin Zaher) — 6 lists: TIME: 100 Must-Read Books of 2024; TIME: The 10 Best Fiction Books of 2024; Vulture: The Best Books of 2024; Publishers Weekly: Best Books 2024 (all); The New Yorker: The Best Books of 2024; Electric Lit: Best Novels of 2024
+- **The Anthropologists** — 6 lists: TIME: 100 Must-Read Books of 2024; Chicago Public Library: Favorite Books of 2024; Vulture: The Best Books of 2024; Publishers Weekly: Best Books 2024 (all); The New Yorker: The Best Books of 2024; Electric Lit: Best Novels of 2024
+- **The Book of Love** — 6 lists: TIME: 100 Must-Read Books of 2024; NPR: Books We Love 2024; Vulture: The Best Books of 2024; Esquire: The 25 Best Books of 2024; Publishers Weekly: Best Books 2024 (all); The New Yorker: The Best Books of 2024
 - **The Ministry of Time** (Kaliane Bradley) — 6 lists: NPR: Books We Love 2024; Amazon Editors: Best Books of 2024; Slate: The 10 Best Books of 2024; Goodreads Choice Awards 2024 Winners; Kirkus: Best Fiction of 2024 (full list page); The New Yorker: The Best Books of 2024
-- **This Strange Eventful History** (Claire Messud) — 6 lists: BookPage: The Best Fiction of 2024; Slate: The 10 Best Books of 2024; Publishers Weekly: Best Books 2024 (all); Kirkus: Best of 2024 – Our Favorite Fiction; Kirkus: Best Fiction of 2024 (full list page); The New Yorker: The Best Books of 2024
+- **Wandering Stars** (Tommy Orange) — 6 lists: NPR: Books We Love 2024; Esquire: The 25 Best Books of 2024; Audible: The Best Audiobooks of 2024; Barnes & Noble: Best Fiction Books of 2024 (blog); Kirkus: Best Fiction of 2024 (full list page); Electric Lit: Best Novels of 2024
 - **Anita de Monte Laughs Last** (Xochitl Gonzalez) — 5 lists: TIME: 100 Must-Read Books of 2024; Chicago Public Library: Favorite Books of 2024; NPR: Books We Love 2024; Kirkus: Best Fiction of 2024 (full list page); Electric Lit: Best Novels of 2024
-- **Beautyland** (Marie-Helene Bertino) — 5 lists: TIME: 100 Must-Read Books of 2024; TIME: The 10 Best Fiction Books of 2024; Esquire: The 25 Best Books of 2024; Kirkus: Best Book Club Fiction of 2024; Kirkus: Best Fiction of 2024 (full list page)
+- **By the Fire We Carry** — 5 lists: NPR: Books We Love 2024; Esquire: The 25 Best Books of 2024; Publishers Weekly: Best Books 2024 (all); Kirkus: Best Nonfiction of 2024 (full list page); The New Yorker: The Best Books of 2024
 - **Cahokia Jazz** (Francis Spufford) — 5 lists: Chicago Public Library: Favorite Books of 2024; NPR: Books We Love 2024; Los Angeles Times: The 15 Best Books of 2024; Kirkus: Best Fiction of 2024 (full list page); The New Yorker: The Best Books of 2024
+- **Challenger** (Adam Higginbotham) — 5 lists: Chicago Public Library: Favorite Books of 2024; The Atlantic: The 10 Best Books of 2024; BookPage: The Best Nonfiction of 2024; Kirkus: Best Nonfiction of 2024 (full list page); The New Yorker: The Best Books of 2024
 - **Consent** (Jill Ciment) — 5 lists: TIME: 100 Must-Read Books of 2024; NPR: Books We Love 2024; Esquire: The 25 Best Books of 2024; The New Yorker: The Best Books of 2024; Electric Lit: Best Nonfiction of 2024
 - **Creation Lake** (Rachel Kushner) — 5 lists: The Telegraph: The 50 Best Books of 2024, Ranked; NPR: Books We Love 2024; The Atlantic: The 10 Best Books of 2024; BBC Culture: The 24 Best Books of 2024; Kirkus: Best Fiction of 2024 (full list page)
-- **Entitlement** (Rumaan Alam) — 5 lists: NPR: Books We Love 2024; Barnes & Noble: Best Fiction Books of 2024 (blog); Kirkus: Best Book Club Fiction of 2024; Kirkus: Best Fiction of 2024 (full list page); The New Yorker: The Best Books of 2024
-- **Fire Exit** (Morgan Talty) — 5 lists: TIME: 100 Must-Read Books of 2024; TIME: The 10 Best Fiction Books of 2024; NPR: Books We Love 2024; Amazon Editors: Best Books of 2024; The New Yorker: The Best Books of 2024
-- **Get the Picture: A Mind-Bending Journey Among the Inspired Artists and Obsessive Art Fiends Who Taught Me How to See** — 5 lists: TIME: 100 Must-Read Books of 2024; NPR: Books We Love 2024; Publishers Weekly: Best Books 2024 (all); Publishers Weekly: Best Nonfiction 2024; Kirkus: Best Nonfiction of 2024 (full list page)
 - **Knife** (Salman Rushdie) — 5 lists: TIME: The 10 Best Nonfiction Books of 2024; NPR: Books We Love 2024; Slate: The 10 Best Books of 2024; Kirkus: Best Nonfiction of 2024 (full list page); The New Yorker: The Best Books of 2024
-- **Long Island** (Colm Tóibín) — 5 lists: NPR: Books We Love 2024; Barnes & Noble: Best Fiction Books of 2024 (blog); Kirkus: Best Book Club Fiction of 2024; Kirkus: Best Fiction of 2024 (full list page); The New Yorker: The Best Books of 2024
-- **Mina’s Matchbox** (Yoko Ogawa ; translated by Stephen Snyder) — 5 lists: NPR: Books We Love 2024; BookPage: The Best Fiction of 2024; Kirkus: Best Fiction in Translation of 2024; Kirkus: Best Fiction of 2024 (full list page); The New Yorker: The Best Books of 2024
-- **My Friends** (Hisham Matar (Random House)) — 5 lists: NPR: Books We Love 2024; BookPage: The Best Fiction of 2024; Publishers Weekly: Best Books 2024 (all); Publishers Weekly: Best Books 2024 Top 10; The New Yorker: The Best Books of 2024
-- **The City and Its Uncertain Walls** (Haruki Murakami ; translated by Philip Gabriel) — 5 lists: NPR: Books We Love 2024; Barnes & Noble: Best Fiction Books of 2024 (blog); Kirkus: Best Fiction in Translation of 2024; Kirkus: Best Fiction of 2024 (full list page); The New Yorker: The Best Books of 2024
-- **The Empusium** — 5 lists: BookPage: The Best Fiction of 2024; BBC Culture: The 24 Best Books of 2024; Kirkus: Best Fiction in Translation of 2024; Kirkus: Best Fiction of 2024 (full list page); The New Yorker: The Best Books of 2024
-- **The Light Eaters** — 5 lists: TIME: The 10 Best Nonfiction Books of 2024; Vulture: The Best Books of 2024; Publishers Weekly: Best Books 2024 (all); Publishers Weekly: Best Nonfiction 2024; The New Yorker: The Best Books of 2024
+- **The Barn** (Wright Thompson) — 5 lists: TIME: 100 Must-Read Books of 2024; BookPage: The Best Nonfiction of 2024; Slate: The 10 Best Books of 2024; Kirkus: Best Nonfiction of 2024 (full list page); The New Yorker: The Best Books of 2024
+- **The Coin** (Yasmin Zaher) — 5 lists: TIME: 100 Must-Read Books of 2024; Vulture: The Best Books of 2024; Publishers Weekly: Best Books 2024 (all); The New Yorker: The Best Books of 2024; Electric Lit: Best Novels of 2024
 - **The Mighty Red** (Louise Erdrich) — 5 lists: NPR: Books We Love 2024; BookPage: The Best Fiction of 2024; Barnes & Noble: Best Fiction Books of 2024 (blog); Kirkus: Best Fiction of 2024 (full list page); The New Yorker: The Best Books of 2024
 - **The Safekeep** — 5 lists: BookPage: The Best Fiction of 2024; Los Angeles Times: The 15 Best Books of 2024; BBC Culture: The 24 Best Books of 2024; Kirkus: Best Fiction of 2024 (full list page); The New Yorker: The Best Books of 2024
 - **The Women** (Kristin Hannah) — 5 lists: NPR: Books We Love 2024; Amazon Editors: Best Books of 2024; Goodreads Choice Awards 2024 Winners; Audible: The Best Audiobooks of 2024; Barnes & Noble: Best Fiction Books of 2024 (blog)
-- **Wrong Norma** — 5 lists: The Telegraph: The 50 Best Books of 2024, Ranked; Publishers Weekly: Best Books 2024 (all); Publishers Weekly: Best Poetry 2024; The New Yorker: The Best Books of 2024; Electric Lit: Best Poetry Collections of 2024
+- **This Strange Eventful History** (Claire Messud) — 5 lists: BookPage: The Best Fiction of 2024; Slate: The 10 Best Books of 2024; Publishers Weekly: Best Books 2024 (all); Kirkus: Best Fiction of 2024 (full list page); The New Yorker: The Best Books of 2024
 - **Annie Bot** (Sierra Greer) — 4 lists: Chicago Public Library: Favorite Books of 2024; NPR: Books We Love 2024; Esquire: The 25 Best Books of 2024; Audible: The Best Audiobooks of 2024
-- **Bitter Crop: The Heartache and Triumph of Billie Holliday’s Last Year** — 4 lists: Publishers Weekly: Best Books 2024 (all); Publishers Weekly: Best Nonfiction 2024; Kirkus: Best Nonfiction of 2024 (full list page); The New Yorker: The Best Books of 2024
-- **Bluff** — 4 lists: TIME: 100 Must-Read Books of 2024; Publishers Weekly: Best Books 2024 (all); Publishers Weekly: Best Poetry 2024; Electric Lit: Best Poetry Collections of 2024
 - **Concerning the Future of Souls** (Joy Williams) — 4 lists: The Telegraph: The 50 Best Books of 2024, Ranked; Kirkus: Best Fiction of 2024 (full list page); The New Yorker: The Best Books of 2024; Electric Lit: Best Short Story Collections of 2024
-- **Everyone Who Is Gone Is Here** (Jonathan Blitzer) — 4 lists: Chicago Tribune: The 10 Best Books of 2024; Kirkus: Best of 2024 – Our Favorite Nonfiction; Kirkus: Best Nonfiction of 2024 (full list page); The New Yorker: The Best Books of 2024
+- **Entitlement** (Rumaan Alam) — 4 lists: NPR: Books We Love 2024; Barnes & Noble: Best Fiction Books of 2024 (blog); Kirkus: Best Fiction of 2024 (full list page); The New Yorker: The Best Books of 2024
+- **Fire Exit** (Morgan Talty) — 4 lists: TIME: 100 Must-Read Books of 2024; NPR: Books We Love 2024; Amazon Editors: Best Books of 2024; The New Yorker: The Best Books of 2024
 - **Funny Story** (Emily Henry) — 4 lists: TIME: 100 Must-Read Books of 2024; NPR: Books We Love 2024; Goodreads Choice Awards 2024 Winners; Audible: The Best Audiobooks of 2024
-- **God Bless You, Otis Spunkmeyer** (Joseph Earl Thomas) — 4 lists: NPR: Books We Love 2024; Publishers Weekly: Best Books 2024 (all); Kirkus: Best of 2024 – Our Favorite Fiction; Kirkus: Best Fiction of 2024 (full list page)
+- **Get the Picture: A Mind-Bending Journey Among the Inspired Artists and Obsessive Art Fiends Who Taught Me How to See** — 4 lists: TIME: 100 Must-Read Books of 2024; NPR: Books We Love 2024; Publishers Weekly: Best Books 2024 (all); Kirkus: Best Nonfiction of 2024 (full list page)
 - **Headshot** (Rita Bullwinkel) — 4 lists: TIME: 100 Must-Read Books of 2024; Chicago Tribune: The 10 Best Books of 2024; NPR: Books We Love 2024; The New Yorker: The Best Books of 2024
-- **Herscht 07769** (László Krasznahorkai ; translated by Ottilie Mulzet) — 4 lists: Publishers Weekly: Best Books 2024 (all); Publishers Weekly: Best Books 2024 Top 10; Kirkus: Best Fiction in Translation of 2024; Kirkus: Best Fiction of 2024 (full list page)
 - **I Heard Her Call My Name** (Lucy Sante) — 4 lists: Slate: The 10 Best Books of 2024; Esquire: The 25 Best Books of 2024; Kirkus: Best Nonfiction of 2024 (full list page); The New Yorker: The Best Books of 2024
-- **Leaving** (Roxana Robinson) — 4 lists: Los Angeles Times: The 15 Best Books of 2024; Kirkus: Best Book Club Fiction of 2024; Kirkus: Best Fiction of 2024 (full list page); The New Yorker: The Best Books of 2024
+- **Long Island** (Colm Tóibín) — 4 lists: NPR: Books We Love 2024; Barnes & Noble: Best Fiction Books of 2024 (blog); Kirkus: Best Fiction of 2024 (full list page); The New Yorker: The Best Books of 2024
 - **Long Island Compromise** (Taffy Brodesser-Akner) — 4 lists: NPR: Books We Love 2024; Barnes & Noble: Best Fiction Books of 2024 (blog); Kirkus: Best Fiction of 2024 (full list page); The New Yorker: The Best Books of 2024
+- **Mina’s Matchbox** (Yoko Ogawa ; translated by Stephen Snyder) — 4 lists: NPR: Books We Love 2024; BookPage: The Best Fiction of 2024; Kirkus: Best Fiction of 2024 (full list page); The New Yorker: The Best Books of 2024
+- **My Friends** (Hisham Matar (Random House)) — 4 lists: NPR: Books We Love 2024; BookPage: The Best Fiction of 2024; Publishers Weekly: Best Books 2024 (all); The New Yorker: The Best Books of 2024
 - **Ours** (Phillip B. Williams) — 4 lists: NPR: Books We Love 2024; Los Angeles Times: The 15 Best Books of 2024; Kirkus: Best Fiction of 2024 (full list page); The New Yorker: The Best Books of 2024
-- **Playground** (Richard Powers) — 4 lists: NPR: Books We Love 2024; Kirkus: Best Book Club Fiction of 2024; Kirkus: Best Fiction of 2024 (full list page); The New Yorker: The Best Books of 2024
-- **Smoke and Ashes: Opium’s Hidden Histories** (Amitav Ghosh (Farrar, Straus and Giroux)) — 4 lists: NPR: Books We Love 2024; Publishers Weekly: Best Books 2024 (all); Publishers Weekly: Best Nonfiction 2024; The New Yorker: The Best Books of 2024
 - **Soldiers and Kings** (Jason De León) — 4 lists: TIME: The 10 Best Nonfiction Books of 2024; NPR: Books We Love 2024; National Book Awards 2024 Winners; Kirkus: Best Nonfiction of 2024 (full list page)
-- **Survival Is a Promise: The Eternal Life of Audre Lorde** — 4 lists: BookPage: The Best Nonfiction of 2024; Publishers Weekly: Best Books 2024 (all); Publishers Weekly: Best Books 2024 Top 10; Electric Lit: Best Nonfiction of 2024
 - **The Bright Sword** (Lev Grossman) — 4 lists: TIME: 100 Must-Read Books of 2024; Chicago Public Library: Favorite Books of 2024; NPR: Books We Love 2024; Kirkus: Best Fiction of 2024 (full list page)
-- **The Familiar** (Leigh Bardugo) — 4 lists: NPR: Books We Love 2024; Amazon Editors: Best Books of 2024; Kirkus: Best of 2024 – Our Favorite Fiction; Kirkus: Best Fiction of 2024 (full list page)
-- **The Friday Afternoon Club** (Griffin Dunne) — 4 lists: TIME: 100 Must-Read Books of 2024; TIME: The 10 Best Nonfiction Books of 2024; NPR: Books We Love 2024; The New Yorker: The Best Books of 2024
-- **The Invention of the Darling** — 4 lists: Publishers Weekly: Best Books 2024 (all); Publishers Weekly: Best Poetry 2024; The New Yorker: The Best Books of 2024; Electric Lit: Best Poetry Collections of 2024
-- **We’re Alone: Essays** — 4 lists: NPR: Books We Love 2024; Publishers Weekly: Best Books 2024 (all); Publishers Weekly: Best Nonfiction 2024; Electric Lit: Best Nonfiction of 2024
+- **The City and Its Uncertain Walls** (Haruki Murakami ; translated by Philip Gabriel) — 4 lists: NPR: Books We Love 2024; Barnes & Noble: Best Fiction Books of 2024 (blog); Kirkus: Best Fiction of 2024 (full list page); The New Yorker: The Best Books of 2024
+- **The Empusium** — 4 lists: BookPage: The Best Fiction of 2024; BBC Culture: The 24 Best Books of 2024; Kirkus: Best Fiction of 2024 (full list page); The New Yorker: The Best Books of 2024
+- **The Light Eaters** — 4 lists: TIME: The 10 Best Nonfiction Books of 2024; Vulture: The Best Books of 2024; Publishers Weekly: Best Books 2024 (all); The New Yorker: The Best Books of 2024
 - **Worry** (Alexandra Tanner) — 4 lists: NPR: Books We Love 2024; BBC Culture: The 24 Best Books of 2024; The New Yorker: The Best Books of 2024; Electric Lit: Best Novels of 2024
+- **Wrong Norma** — 4 lists: The Telegraph: The 50 Best Books of 2024, Ranked; Publishers Weekly: Best Books 2024 (all); The New Yorker: The Best Books of 2024; Electric Lit: Best Poetry Collections of 2024
 - **A Fatal Inheritance** (Lawrence Ingrassia) — 3 lists: NPR: Books We Love 2024; BookPage: The Best Nonfiction of 2024; Kirkus: Best Nonfiction of 2024 (full list page)
 - **A Map of Future Ruins: On Borders and Belonging** (Lauren Markham) — 3 lists: NPR: Books We Love 2024; The New Yorker: The Best Books of 2024; Electric Lit: Best Nonfiction of 2024
 - **A Wilder Shore: The Romantic Odyssey of Fanny and Robert Louis Stevenson** (Camille Peri) — 3 lists: NPR: Books We Love 2024; The Atlantic: The 10 Best Books of 2024; Kirkus: Best Nonfiction of 2024 (full list page)
 - **Accordian Eulogies** — 3 lists: TIME: 100 Must-Read Books of 2024; Chicago Public Library: Favorite Books of 2024; NPR: Books We Love 2024
 - **Alphabetical Diaries** (Sheila Heti) — 3 lists: Los Angeles Times: The 15 Best Books of 2024; The New Yorker: The Best Books of 2024; Electric Lit: Best Nonfiction of 2024
 - **Be Ready When the Luck Happens** — 3 lists: TIME: 100 Must-Read Books of 2024; Amazon Editors: Best Books of 2024; The New Yorker: The Best Books of 2024
-- **Burdened: Student Debt and the Making of an American Crisis** (Ryann Liebenthal (Dey Street)) — 3 lists: Publishers Weekly: Best Books 2024 (all); Publishers Weekly: Best Nonfiction 2024; The New Yorker: The Best Books of 2024
+- **Beautyland** (Marie-Helene Bertino) — 3 lists: TIME: 100 Must-Read Books of 2024; Esquire: The 25 Best Books of 2024; Kirkus: Best Fiction of 2024 (full list page)
+- **Bitter Crop** — 3 lists: Publishers Weekly: Best Books 2024 (all); Kirkus: Best Nonfiction of 2024 (full list page); The New Yorker: The Best Books of 2024
+- **Bluff** — 3 lists: TIME: 100 Must-Read Books of 2024; Publishers Weekly: Best Books 2024 (all); Electric Lit: Best Poetry Collections of 2024
 - **Carson McCullers** (Mary V. Dearborn) — 3 lists: BookPage: The Best Nonfiction of 2024; Kirkus: Best Nonfiction of 2024 (full list page); The New Yorker: The Best Books of 2024
 - **Catalina** — 3 lists: TIME: 100 Must-Read Books of 2024; NPR: Books We Love 2024; The New Yorker: The Best Books of 2024
 - **Circle of Hope: A Reckoning with Love, Power, and Justice in an American Church** — 3 lists: NPR: Books We Love 2024; Publishers Weekly: Best Books 2024 (all); The New Yorker: The Best Books of 2024
 - **Clear** (Carys Davies) — 3 lists: NPR: Books We Love 2024; Barnes & Noble: Best Fiction Books of 2024 (blog); Kirkus: Best Fiction of 2024 (full list page)
-- **Code Dependent: Living in the Shadow of AI** — 3 lists: Esquire: The 25 Best Books of 2024; Publishers Weekly: Best Books 2024 (all); Publishers Weekly: Best Nonfiction 2024
 - **Come and Get It** (Kiley Reid) — 3 lists: NPR: Books We Love 2024; The New Yorker: The Best Books of 2024; Electric Lit: Best Novels of 2024
-- **Connie** (Connie Chung) — 3 lists: TIME: 100 Must-Read Books of 2024; Kirkus: Best of 2024 – Our Favorite Nonfiction; Kirkus: Best Nonfiction of 2024 (full list page)
 - **Cue the Sun!** (Emily Nussbaum) — 3 lists: Chicago Tribune: The 10 Best Books of 2024; NPR: Books We Love 2024; The New Yorker: The Best Books of 2024
 - **Didion and Babitz** (Lili Anolik) — 3 lists: TIME: 100 Must-Read Books of 2024; The Telegraph: The 50 Best Books of 2024, Ranked; Electric Lit: Best Nonfiction of 2024
-- **Errand into the Maze** (Deborah Jowitt) — 3 lists: Kirkus: Best of 2024 – Our Favorite Nonfiction; Kirkus: Best Nonfiction of 2024 (full list page); The New Yorker: The Best Books of 2024
+- **Everyone Who Is Gone Is Here** (Jonathan Blitzer) — 3 lists: Chicago Tribune: The 10 Best Books of 2024; Kirkus: Best Nonfiction of 2024 (full list page); The New Yorker: The Best Books of 2024
 - **Feeding Ghosts** (Tessa Hulls ; illustrated by Tessa Hulls) — 3 lists: TIME: 100 Must-Read Books of 2024; NPR: Books We Love 2024; Kirkus: Best Nonfiction of 2024 (full list page)
-- **Fi** (Alexandra Fuller) — 3 lists: TIME: 100 Must-Read Books of 2024; TIME: The 10 Best Nonfiction Books of 2024; Kirkus: Best Nonfiction of 2024 (full list page)
+- **God Bless You, Otis Spunkmeyer** (Joseph Earl Thomas) — 3 lists: NPR: Books We Love 2024; Publishers Weekly: Best Books 2024 (all); Kirkus: Best Fiction of 2024 (full list page)
 - **Greta & Valdin** (Rebecca K. Reilly) — 3 lists: TIME: 100 Must-Read Books of 2024; NPR: Books We Love 2024; Kirkus: Best Fiction of 2024 (full list page)
 - **Health and Safety** (Emily Witt) — 3 lists: TIME: 100 Must-Read Books of 2024; Kirkus: Best Nonfiction of 2024 (full list page); The New Yorker: The Best Books of 2024
-- **Held** (Anne Michaels) — 3 lists: Kirkus: Best Book Club Fiction of 2024; Kirkus: Best Fiction of 2024 (full list page); The New Yorker: The Best Books of 2024
 - **Help Wanted** — 3 lists: TIME: 100 Must-Read Books of 2024; NPR: Books We Love 2024; The New Yorker: The Best Books of 2024
-- **Homeland: The War on Terror in American Life** (Richard Beck (Crown)) — 3 lists: Publishers Weekly: Best Books 2024 (all); Publishers Weekly: Best Nonfiction 2024; The New Yorker: The Best Books of 2024
 - **How to End a Love Story** (Yulin Kuang) — 3 lists: TIME: 100 Must-Read Books of 2024; NPR: Books We Love 2024; Goodreads Choice Awards 2024 Winners
 - **Impossible Creatures** (Katherine Rundell) — 3 lists: Barnes & Noble: Book of the Year 2024 (James); Publishers Weekly: Best Books 2024 (all); The New Yorker: The Best Books of 2024
-- **In My Time of Dying: How I Came Face to Face with the Idea of an Afterlife** (Sebastian Junger (Simon & Schuster)) — 3 lists: NPR: Books We Love 2024; Publishers Weekly: Best Books 2024 (all); Publishers Weekly: Best Nonfiction 2024
-- **Isabel and the Rogue** (Liana De la Rosa) — 3 lists: NPR: Books We Love 2024; Kirkus: Best of 2024 – Our Favorite Fiction; Kirkus: Best Fiction of 2024 (full list page)
 - **John Lewis** (David Greenberg) — 3 lists: Amazon Editors: Best Books of 2024; Kirkus: Best Nonfiction of 2024 (full list page); The New Yorker: The Best Books of 2024
-- **Linguaphile** (Julie Sedivy) — 3 lists: Kirkus: Best of 2024 – Our Favorite Nonfiction; Kirkus: Best Nonfiction of 2024 (full list page); The New Yorker: The Best Books of 2024
+- **Leaving** (Roxana Robinson) — 3 lists: Los Angeles Times: The 15 Best Books of 2024; Kirkus: Best Fiction of 2024 (full list page); The New Yorker: The Best Books of 2024
 - **Madness** (Antonia Hylton) — 3 lists: BookPage: The Best Nonfiction of 2024; Kirkus: Best Nonfiction of 2024 (full list page); The New Yorker: The Best Books of 2024
-- **Miss May Does Not Exist: The Life and Work of Elaine May** — 3 lists: NPR: Books We Love 2024; Publishers Weekly: Best Books 2024 (all); Publishers Weekly: Best Nonfiction 2024
 - **Neighbors and Other Stories** (Diane Oliver) — 3 lists: Kirkus: Best Fiction of 2024 (full list page); The New Yorker: The Best Books of 2024; Electric Lit: Best Short Story Collections of 2024
 - **Patriot** (Alexei Navalny) — 3 lists: NPR: Books We Love 2024; The Atlantic: The 10 Best Books of 2024; The New Yorker: The Best Books of 2024
+- **Playground** (Richard Powers) — 3 lists: NPR: Books We Love 2024; Kirkus: Best Fiction of 2024 (full list page); The New Yorker: The Best Books of 2024
 - **Real Americans** (Rachel Khong) — 3 lists: NPR: Books We Love 2024; Barnes & Noble: Best Fiction Books of 2024 (blog); Kirkus: Best Fiction of 2024 (full list page)
 - **Sandwich** (Catherine Newman) — 3 lists: NPR: Books We Love 2024; Barnes & Noble: Best Fiction Books of 2024 (blog); Kirkus: Best Fiction of 2024 (full list page)
-- **Say Hello to My Little Friend** (Jennine Capó Crucet) — 3 lists: Vulture: The Best Books of 2024; Kirkus: Best Book Club Fiction of 2024; Kirkus: Best Fiction of 2024 (full list page)
-- **Slow Down: The Degrowth Manifesto** — 3 lists: Publishers Weekly: Best Books 2024 (all); Publishers Weekly: Best Nonfiction 2024; The New Yorker: The Best Books of 2024
-- **Solutions for the Problem of Bodies in Space** (Catherine Barnett (Graywolf)) — 3 lists: NPR: Books We Love 2024; Publishers Weekly: Best Books 2024 (all); Publishers Weekly: Best Poetry 2024
+- **Smoke and Ashes** (Amitav Ghosh (Farrar, Straus and Giroux)) — 3 lists: NPR: Books We Love 2024; Publishers Weekly: Best Books 2024 (all); The New Yorker: The Best Books of 2024
 - **Someone Like Us** — 3 lists: BookPage: The Best Fiction of 2024; Publishers Weekly: Best Books 2024 (all); The New Yorker: The Best Books of 2024
 - **Splinters** (Leslie Jamison) — 3 lists: Esquire: The 25 Best Books of 2024; The New Yorker: The Best Books of 2024; Electric Lit: Best Nonfiction of 2024
+- **Survival Is a Promise: The Eternal Life of Audre Lorde** — 3 lists: BookPage: The Best Nonfiction of 2024; Publishers Weekly: Best Books 2024 (all); Electric Lit: Best Nonfiction of 2024
 - **Swift River** — 3 lists: NPR: Books We Love 2024; Barnes & Noble: Best Fiction Books of 2024 (blog); The New Yorker: The Best Books of 2024
 - **The Achilles Trap** (Steve Coll) — 3 lists: Chicago Public Library: Favorite Books of 2024; Kirkus: Best Nonfiction of 2024 (full list page); The New Yorker: The Best Books of 2024
 - **The Adversary** (Michael Crummey) — 3 lists: Chicago Public Library: Favorite Books of 2024; Kirkus: Best Fiction of 2024 (full list page); The New Yorker: The Best Books of 2024
 - **The Black Utopians** — 3 lists: TIME: 100 Must-Read Books of 2024; Chicago Public Library: Favorite Books of 2024; The New Yorker: The Best Books of 2024
 - **The Bloodied Nightgown and Other Essays** (Joan Acocella) — 3 lists: Chicago Public Library: Favorite Books of 2024; Kirkus: Best Nonfiction of 2024 (full list page); The New Yorker: The Best Books of 2024
 - **The Bookshop** (Evan Friss) — 3 lists: TIME: 100 Must-Read Books of 2024; Goodreads Choice Awards 2024 Winners; The New Yorker: The Best Books of 2024
-- **The Cliffs** (J. Courtney Sullivan) — 3 lists: NPR: Books We Love 2024; Kirkus: Best Book Club Fiction of 2024; Kirkus: Best Fiction of 2024 (full list page)
+- **The Familiar** (Leigh Bardugo) — 3 lists: NPR: Books We Love 2024; Amazon Editors: Best Books of 2024; Kirkus: Best Fiction of 2024 (full list page)
+- **The Friday Afternoon Club** (Griffin Dunne) — 3 lists: TIME: 100 Must-Read Books of 2024; NPR: Books We Love 2024; The New Yorker: The Best Books of 2024
 - **The History of Sound: Stories** (Ben Shattuck) — 3 lists: Chicago Tribune: The 10 Best Books of 2024; NPR: Books We Love 2024; Kirkus: Best Fiction of 2024 (full list page)
 - **The Hypocrite** (Jo Hamya) — 3 lists: TIME: 100 Must-Read Books of 2024; The Atlantic: The 10 Best Books of 2024; BBC Culture: The 24 Best Books of 2024
+- **The Invention of the Darling** — 3 lists: Publishers Weekly: Best Books 2024 (all); The New Yorker: The Best Books of 2024; Electric Lit: Best Poetry Collections of 2024
 - **The Other Olympians** — 3 lists: NPR: Books We Love 2024; BookPage: The Best Nonfiction of 2024; The New Yorker: The Best Books of 2024
-- **The Playbook: The Story of Theater, Democracy, and the Making of a Culture War** (James Shapiro (Penguin Press)) — 3 lists: Publishers Weekly: Best Books 2024 (all); Publishers Weekly: Best Nonfiction 2024; The New Yorker: The Best Books of 2024
-- **The Rich People Have Gone Away** (Regina Porter) — 3 lists: Kirkus: Best Book Club Fiction of 2024; Kirkus: Best Fiction of 2024 (full list page); The New Yorker: The Best Books of 2024
 - **The Sequel** (Jean Hanff Korelitz) — 3 lists: Esquire: The 25 Best Books of 2024; Publishers Weekly: Best Books 2024 (all); The New Yorker: The Best Books of 2024
 - **The Stardust Grail** (Yume Kitasei) — 3 lists: NPR: Books We Love 2024; Esquire: The 25 Best Books of 2024; Kirkus: Best Fiction of 2024 (full list page)
 - **The Unclaimed** (Pamela Prickett and Stefan Timmermans) — 3 lists: NPR: Books We Love 2024; The Atlantic: The 10 Best Books of 2024; BookPage: The Best Nonfiction of 2024
 - **The Wide Wide Sea** (Hampton Sides) — 3 lists: NPR: Books We Love 2024; Kirkus: Best Nonfiction of 2024 (full list page); The New Yorker: The Best Books of 2024
-- **Traveling: On the Path of Joni Mitchell** (Ann Powers (Dey Street)) — 3 lists: NPR: Books We Love 2024; Publishers Weekly: Best Books 2024 (all); Publishers Weekly: Best Books 2024 Top 10
 - **We Solve Murders** — 3 lists: NPR: Books We Love 2024; Amazon Editors: Best Books of 2024; Publishers Weekly: Best Books 2024 (all)
-- **What Kingdom** (Fine Gråbøl ; translated by Martin Aitken) — 3 lists: Kirkus: Best Fiction in Translation of 2024; Kirkus: Best Fiction of 2024 (full list page); The New Yorker: The Best Books of 2024
-- **When the Clock Broke: Con Men, Conspiracists, and How America Cracked Up in the Early 1990s** — 3 lists: Slate: The 10 Best Books of 2024; Publishers Weekly: Best Books 2024 (all); Publishers Weekly: Best Books 2024 Top 10
+- **We’re Alone: Essays** — 3 lists: NPR: Books We Love 2024; Publishers Weekly: Best Books 2024 (all); Electric Lit: Best Nonfiction of 2024
 - **Who’s Afraid of Gender?** (Judith Butler) — 3 lists: NPR: Books We Love 2024; Esquire: The 25 Best Books of 2024; Electric Lit: Best Nonfiction of 2024
 - **Wild Houses** (Colin Barrett) — 3 lists: BBC Culture: The 24 Best Books of 2024; Publishers Weekly: Best Books 2024 (all); The New Yorker: The Best Books of 2024
-- **Your Utopia** — 3 lists: Kirkus: Best Fiction in Translation of 2024; Kirkus: Best Fiction of 2024 (full list page); Electric Lit: Best Short Story Collections of 2024
 - **2020** — 2 lists: Chicago Public Library: Favorite Books of 2024; The New Yorker: The Best Books of 2024
 - **A Love Song for Ricki Wilde** — 2 lists: NPR: Books We Love 2024; Publishers Weekly: Best Books 2024 (all)
 - **A Sunny Place for Shady People** (Mariana Enríquez, translated by Megan McDowell) — 2 lists: Publishers Weekly: Best Books 2024 (all); Electric Lit: Best Short Story Collections of 2024
-- **A Termination** (Honor Moore (A Public Space)) — 2 lists: Publishers Weekly: Best Books 2024 (all); Publishers Weekly: Best Nonfiction 2024
-- **A Year of Last Things** (Michael Ondaatje (Knopf)) — 2 lists: Publishers Weekly: Best Books 2024 (all); Publishers Weekly: Best Poetry 2024
-- **Abortion: Our Bodies, Their Lies, and the Truths We Use To Win** (Jessica Valenti) — 2 lists: Kirkus: Best of 2024 – Our Favorite Nonfiction; Kirkus: Best Nonfiction of 2024 (full list page)
 - **Absolution** (Jeff VanderMeer) — 2 lists: TIME: 100 Must-Read Books of 2024; Esquire: The 25 Best Books of 2024
 - **All the Colors of the Dark** (Chris Whitaker) — 2 lists: Amazon Editors: Best Books of 2024; Kirkus: Best Fiction of 2024 (full list page)
 - **All Things Are Too Small** — 2 lists: TIME: 100 Must-Read Books of 2024; The New Yorker: The Best Books of 2024
@@ -6430,22 +6405,24 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **Beautiful Days** (Zach Williams) — 2 lists: The New Yorker: The Best Books of 2024; Electric Lit: Best Short Story Collections of 2024
 - **Behind You Is the Sea** — 2 lists: NPR: Books We Love 2024; The New Yorker: The Best Books of 2024
 - **Blood Test** — 2 lists: NPR: Books We Love 2024; The New Yorker: The Best Books of 2024
-- **Blue Ruin** (Hari Kunzru) — 2 lists: Kirkus: Best Book Club Fiction of 2024; Kirkus: Best Fiction of 2024 (full list page)
 - **Bone of the Bone: Essays on America by a Daughter of the Working Class** (Sarah Smarsh) — 2 lists: Kirkus: Best Nonfiction of 2024 (full list page); Electric Lit: Best Nonfiction of 2024
 - **Bright I Burn** (Molly Aitken) — 2 lists: BBC Culture: The 24 Best Books of 2024; The New Yorker: The Best Books of 2024
 - **Bright Objects** — 2 lists: Publishers Weekly: Best Books 2024 (all); The New Yorker: The Best Books of 2024
+- **Burdened** (Ryann Liebenthal (Dey Street)) — 2 lists: Publishers Weekly: Best Books 2024 (all); The New Yorker: The Best Books of 2024
 - **Butter** (Asako Yuzuki) — 2 lists: Waterstones Book of the Year 2024 (Guardian coverage); The New Yorker: The Best Books of 2024
 - **Caledonian Road** (Andrew O'Hagan) — 2 lists: BBC Culture: The 24 Best Books of 2024; The New Yorker: The Best Books of 2024
 - **Change** (Édouard Louis) — 2 lists: BBC Culture: The 24 Best Books of 2024; The New Yorker: The Best Books of 2024
-- **Character Limit: How Elon Musk Destroyed Twitter** (Kate Conger & Ryan Mac) — 2 lists: Kirkus: Best of 2024 – Our Favorite Nonfiction; Kirkus: Best Nonfiction of 2024 (full list page)
 - **Christopher Isherwood Inside Out** (Katherine Bucknell) — 2 lists: Kirkus: Best Nonfiction of 2024 (full list page); The New Yorker: The Best Books of 2024
 - **Cinema Love** (Jiaming Tang) — 2 lists: Chicago Public Library: Favorite Books of 2024; Electric Lit: Best Novels of 2024
-- **Context Collapse: A Poem Containing a History of Poetry** (Ryan Ruby (Seven Stories)) — 2 lists: Publishers Weekly: Best Books 2024 (all); Publishers Weekly: Best Nonfiction 2024
+- **Code Dependent** — 2 lists: Esquire: The 25 Best Books of 2024; Publishers Weekly: Best Books 2024 (all)
+- **Connie** (Connie Chung) — 2 lists: TIME: 100 Must-Read Books of 2024; Kirkus: Best Nonfiction of 2024 (full list page)
 - **Devil Is Fine** (John Vercher) — 2 lists: TIME: 100 Must-Read Books of 2024; Electric Lit: Best Novels of 2024
 - **Double Exposure** (Robert Sullivan) — 2 lists: Kirkus: Best Nonfiction of 2024 (full list page); The New Yorker: The Best Books of 2024
 - **Enlightenment** — 2 lists: NPR: Books We Love 2024; The New Yorker: The Best Books of 2024
+- **Errand into the Maze** (Deborah Jowitt) — 2 lists: Kirkus: Best Nonfiction of 2024 (full list page); The New Yorker: The Best Books of 2024
 - **Everything We Never Had** — 2 lists: NPR: Books We Love 2024; Publishers Weekly: Best Books 2024 (all)
 - **Family Romance** (Jean Strouse) — 2 lists: Kirkus: Best Nonfiction of 2024 (full list page); The New Yorker: The Best Books of 2024
+- **Fi** (Alexandra Fuller) — 2 lists: TIME: 100 Must-Read Books of 2024; Kirkus: Best Nonfiction of 2024 (full list page)
 - **Fierce Desires** (Rebecca L. Davis) — 2 lists: Kirkus: Best Nonfiction of 2024 (full list page); The New Yorker: The Best Books of 2024
 - **Filterworld** (Kyle Chayka) — 2 lists: Esquire: The 25 Best Books of 2024; The New Yorker: The Best Books of 2024
 - **Final Cut** — 2 lists: Publishers Weekly: Best Books 2024 (all); The New Yorker: The Best Books of 2024
@@ -6454,26 +6431,26 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **Forest of Noise** (Mosab Abu Toha) — 2 lists: The New Yorker: The Best Books of 2024; Electric Lit: Best Poetry Collections of 2024
 - **Forgottenness** — 2 lists: NPR: Books We Love 2024; The New Yorker: The Best Books of 2024
 - **Ghostroots** (Pemi Aguda) — 2 lists: TIME: 100 Must-Read Books of 2024; Electric Lit: Best Short Story Collections of 2024
-- **Ghosts of Crook County: An Oil Fortune, a Phantom Child, and the Fight for Indigenous Land** (Russell Cobb (Beacon)) — 2 lists: Publishers Weekly: Best Books 2024 (all); Publishers Weekly: Best Nonfiction 2024
-- **Glad to the Brink of Fear: A Portrait of Ralph Waldo Emerson** (James Marcus) — 2 lists: Kirkus: Best of 2024 – Our Favorite Nonfiction; Kirkus: Best Nonfiction of 2024 (full list page)
 - **Godwin** (Joseph O’Neill) — 2 lists: Kirkus: Best Fiction of 2024 (full list page); The New Yorker: The Best Books of 2024
 - **Green Frog** (Gina Chung) — 2 lists: NPR: Books We Love 2024; Electric Lit: Best Short Story Collections of 2024
 - **Gretel and the Great War** (Adam Ehrlich Sachs) — 2 lists: Kirkus: Best Fiction of 2024 (full list page); The New Yorker: The Best Books of 2024
 - **Guide Me Home** (Attica Locke) — 2 lists: NPR: Books We Love 2024; Kirkus: Best Fiction of 2024 (full list page)
+- **Held** (Anne Michaels) — 2 lists: Kirkus: Best Fiction of 2024 (full list page); The New Yorker: The Best Books of 2024
 - **Here After: A Memoir** (Amy Lin) — 2 lists: NPR: Books We Love 2024; Kirkus: Best Nonfiction of 2024 (full list page)
 - **Here One Moment** — 2 lists: NPR: Books We Love 2024; Audible: The Best Audiobooks of 2024
+- **Herscht 07769** (László Krasznahorkai ; translated by Ottilie Mulzet) — 2 lists: Publishers Weekly: Best Books 2024 (all); Kirkus: Best Fiction of 2024 (full list page)
 - **Highway Thirteen** (Fiona McFarlane) — 2 lists: Kirkus: Best Fiction of 2024 (full list page); The New Yorker: The Best Books of 2024
 - **Hitler’s People** (Richard J. Evans) — 2 lists: Kirkus: Best Nonfiction of 2024 (full list page); The New Yorker: The Best Books of 2024
 - **Hombrecito** (Santiago Jose Sanchez) — 2 lists: NPR: Books We Love 2024; Kirkus: Best Fiction of 2024 (full list page)
+- **Homeland** (Richard Beck (Crown)) — 2 lists: Publishers Weekly: Best Books 2024 (all); The New Yorker: The Best Books of 2024
 - **House of Flame and Shadow** (Sarah J. Maas) — 2 lists: NPR: Books We Love 2024; Goodreads Choice Awards 2024 Winners
 - **Housemates** (Emma Copley Eisenberg) — 2 lists: Kirkus: Best Fiction of 2024 (full list page); Electric Lit: Best Novels of 2024
 - **How to Live Free in a Dangerous World: A Decolonial Memoir** (Shayla Lawson) — 2 lists: NPR: Books We Love 2024; Kirkus: Best Nonfiction of 2024 (full list page)
-- **Huddud's House** (Fadi Azzam ; translated by Ghada Alatrash) — 2 lists: Kirkus: Best Fiction in Translation of 2024; Kirkus: Best Fiction of 2024 (full list page)
 - **Hum** — 2 lists: TIME: 100 Must-Read Books of 2024; The New Yorker: The Best Books of 2024
 - **I Cannot Control Everything Forever** — 2 lists: TIME: 100 Must-Read Books of 2024; The New Yorker: The Best Books of 2024
 - **I Will Do Better** (Charles Bock) — 2 lists: Kirkus: Best Nonfiction of 2024 (full list page); The New Yorker: The Best Books of 2024
-- **Into the Unknown: The Quest to Understand the Mysteries of the Cosmos** (Kelsey Johnson (Basic)) — 2 lists: Publishers Weekly: Best Books 2024 (all); Publishers Weekly: Best Nonfiction 2024
-- **Jellyfish Have No Ears** (Adèle Rosenfeld ; translated by Jeffrey Zuckerman) — 2 lists: Kirkus: Best Fiction in Translation of 2024; Kirkus: Best Fiction of 2024 (full list page)
+- **In My Time of Dying: How I Came Face to Face with the Idea of an Afterlife** (Sebastian Junger (Simon & Schuster)) — 2 lists: NPR: Books We Love 2024; Publishers Weekly: Best Books 2024 (all)
+- **Isabel and the Rogue** (Liana De la Rosa) — 2 lists: NPR: Books We Love 2024; Kirkus: Best Fiction of 2024 (full list page)
 - **Keeping the Faith** (Brenda Wineapple) — 2 lists: Chicago Tribune: The 10 Best Books of 2024; The New Yorker: The Best Books of 2024
 - **Kent State** (Brian VanDeMark) — 2 lists: Kirkus: Best Nonfiction of 2024 (full list page); The New Yorker: The Best Books of 2024
 - **Kingmaker** (Sonia Purnell) — 2 lists: Kirkus: Best Nonfiction of 2024 (full list page); The New Yorker: The Best Books of 2024
@@ -6482,61 +6459,50 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **Let the Games Begin** (Rufaro Faith Mazarura) — 2 lists: NPR: Books We Love 2024; Kirkus: Best Fiction of 2024 (full list page)
 - **Letters** (Oliver Sacks ; edited by Kate Edgar) — 2 lists: Kirkus: Best Nonfiction of 2024 (full list page); The New Yorker: The Best Books of 2024
 - **Liars** (Sarah Manguso) — 2 lists: NPR: Books We Love 2024; Los Angeles Times: The 15 Best Books of 2024
+- **Linguaphile** (Julie Sedivy) — 2 lists: Kirkus: Best Nonfiction of 2024 (full list page); The New Yorker: The Best Books of 2024
 - **Long Live Evil** (Sarah Rees Brennan) — 2 lists: NPR: Books We Love 2024; Kirkus: Best Fiction of 2024 (full list page)
 - **Lovely One** — 2 lists: Audible: The Best Audiobooks of 2024; The New Yorker: The Best Books of 2024
 - **Magical/Realism: Essays on Music, Memory, Fantasy, and Borders** (Vanessa Angélica Villarreal) — 2 lists: NPR: Books We Love 2024; Kirkus: Best Nonfiction of 2024 (full list page)
-- **Malcolm Before X** (Patrick Parr) — 2 lists: Kirkus: Best of 2024 – Our Favorite Nonfiction; Kirkus: Best Nonfiction of 2024 (full list page)
 - **Margo's Got Money Troubles** (Rufi Thorpe) — 2 lists: NPR: Books We Love 2024; Kirkus: Best Fiction of 2024 (full list page)
 - **Memory Piece** (Lisa Ko) — 2 lists: NPR: Books We Love 2024; Electric Lit: Best Novels of 2024
 - **Metal from Heaven** — 2 lists: NPR: Books We Love 2024; Publishers Weekly: Best Books 2024 (all)
-- **Metaracism: How Systemic Racism Devastates Black Lives―and How We Break Free** (Tricia Rose) — 2 lists: Kirkus: Best of 2024 – Our Favorite Nonfiction; Kirkus: Best Nonfiction of 2024 (full list page)
+- **Miss May Does Not Exist: The Life and Work of Elaine May** (Hollywood's Hidden Genius) — 2 lists: NPR: Books We Love 2024; Publishers Weekly: Best Books 2024 (all)
 - **Missing Persons, or My Grandmother’s Secrets** (Clair Wills) — 2 lists: The Telegraph: The 50 Best Books of 2024, Ranked; Kirkus: Best Nonfiction of 2024 (full list page)
 - **Modern Poetry** (Diane Seuss) — 2 lists: The New Yorker: The Best Books of 2024; Electric Lit: Best Poetry Collections of 2024
 - **My Favorite Thing Is Monsters Book Two** — 2 lists: NPR: Books We Love 2024; The New Yorker: The Best Books of 2024
 - **My First Book** (Honor Levy) — 2 lists: The Telegraph: The 50 Best Books of 2024, Ranked; The New Yorker: The Best Books of 2024
-- **Night Magic: Adventures Among Glowworms, Moon Gardens, and Other Marvels of the Dark** (Leigh Ann Henion) — 2 lists: Kirkus: Best of 2024 – Our Favorite Nonfiction; Kirkus: Best Nonfiction of 2024 (full list page)
 - **No Judgment** (Lauren Oyler) — 2 lists: Kirkus: Best Nonfiction of 2024 (full list page); The New Yorker: The Best Books of 2024
 - **Old King** — 2 lists: NPR: Books We Love 2024; Publishers Weekly: Best Books 2024 (all)
-- **One Nation Under Guns: How Gun Culture Distorts Our History and Threatens Our Democracy** (Dominic Erdozain) — 2 lists: Kirkus: Best of 2024 – Our Favorite Nonfiction; Kirkus: Best Nonfiction of 2024 (full list page)
-- **Opus: The Cult of Dark Money, Human Trafficking, and Right Wing Conspiracy Inside the Catholic Church** (Gareth Gore (Simon & Schuster)) — 2 lists: Publishers Weekly: Best Books 2024 (all); Publishers Weekly: Best Nonfiction 2024
 - **Orbital** (Samantha Harvey) — 2 lists: Chicago Tribune: The 10 Best Books of 2024; Booker Prize 2024 Winner
 - **Out of the Darkness** (Frank Trentmann) — 2 lists: Kirkus: Best Nonfiction of 2024 (full list page); The New Yorker: The Best Books of 2024
-- **Overshoot: How the World Surrendered to Climate Breakdown** (Andreas Malm and Wim Carton (Verso)) — 2 lists: Publishers Weekly: Best Books 2024 (all); Publishers Weekly: Best Nonfiction 2024
 - **Piglet** — 2 lists: NPR: Books We Love 2024; The New Yorker: The Best Books of 2024
 - **Pink Slime** — 2 lists: NPR: Books We Love 2024; Publishers Weekly: Best Books 2024 (all)
-- **Planes Flying over a Monster: Essays** — 2 lists: Publishers Weekly: Best Books 2024 (all); Publishers Weekly: Best Nonfiction 2024
 - **Poor Deer** — 2 lists: NPR: Books We Love 2024; The New Yorker: The Best Books of 2024
-- **Question 7** (Richard Flanagan (Knopf)) — 2 lists: Publishers Weekly: Best Books 2024 (all); Publishers Weekly: Best Nonfiction 2024
-- **Rainbow Black** (Maggie Thrash) — 2 lists: Kirkus: Best Book Club Fiction of 2024; Kirkus: Best Fiction of 2024 (full list page)
 - **Reading Genesis** (Marilynne Robinson) — 2 lists: Kirkus: Best Nonfiction of 2024 (full list page); The New Yorker: The Best Books of 2024
 - **Remembering Peasants** (Patrick Joyce) — 2 lists: Kirkus: Best Nonfiction of 2024 (full list page); The New Yorker: The Best Books of 2024
 - **Rental House** — 2 lists: NPR: Books We Love 2024; The New Yorker: The Best Books of 2024
 - **Revenge of the Tipping Point** — 2 lists: Amazon Editors: Best Books of 2024; Audible: The Best Audiobooks of 2024
 - **Rough Trade** — 2 lists: Publishers Weekly: Best Books 2024 (all); The New Yorker: The Best Books of 2024
-- **Savings and Trust: The Rise and Betrayal of the Freedman’s Bank** (Justene Hill Edwards (Norton)) — 2 lists: Publishers Weekly: Best Books 2024 (all); Publishers Weekly: Best Nonfiction 2024
+- **Say Hello to My Little Friend** (Jennine Capó Crucet) — 2 lists: Vulture: The Best Books of 2024; Kirkus: Best Fiction of 2024 (full list page)
 - **Sidetracks** — 2 lists: NPR: Books We Love 2024; The New Yorker: The Best Books of 2024
-- **Sister Snake** (Amanda Lee Koe) — 2 lists: Kirkus: Best Book Club Fiction of 2024; Kirkus: Best Fiction of 2024 (full list page)
+- **Slow Down** — 2 lists: Publishers Weekly: Best Books 2024 (all); The New Yorker: The Best Books of 2024
+- **Solutions for the Problem of Bodies in Space** (Catherine Barnett (Graywolf)) — 2 lists: NPR: Books We Love 2024; Publishers Weekly: Best Books 2024 (all)
 - **Somewhere Beyond the Sea** (T.J. Klune) — 2 lists: NPR: Books We Love 2024; Goodreads Choice Awards 2024 Winners
 - **Sonny Boy** (Al Pacino) — 2 lists: Kirkus: Best Nonfiction of 2024 (full list page); The New Yorker: The Best Books of 2024
 - **State of Paradise** (Laura van den Berg) — 2 lists: NPR: Books We Love 2024; Kirkus: Best Fiction of 2024 (full list page)
-- **Still Life at Eighty: The Next Interesting Thing** (Abigail Thomas) — 2 lists: Kirkus: Best of 2024 – Our Favorite Nonfiction; Kirkus: Best Nonfiction of 2024 (full list page)
 - **Supercommunicators** — 2 lists: NPR: Books We Love 2024; Audible: The Best Audiobooks of 2024
 - **Taiwan Travelogue** (Yáng Shuāng-zǐ) — 2 lists: National Book Awards 2024 Winners; The New Yorker: The Best Books of 2024
 - **The American Daughters** (Maurice Carlos Ruffin) — 2 lists: Kirkus: Best Fiction of 2024 (full list page); Electric Lit: Best Novels of 2024
 - **The Anxious Generation** (Jonathan Haidt) — 2 lists: TIME: 100 Must-Read Books of 2024; Goodreads Choice Awards 2024 Winners
-- **The Artist’s Palette** (Alexandra Loske) — 2 lists: Kirkus: Best of 2024 – Our Favorite Nonfiction; Kirkus: Best Nonfiction of 2024 (full list page)
 - **The Backyard Bird Chronicles** (Amy Tan) — 2 lists: NPR: Books We Love 2024; Barnes & Noble: Book of the Year 2024 (James)
 - **The Bullet Swallower** (Elizabeth Gonzalez James) — 2 lists: NPR: Books We Love 2024; Esquire: The 25 Best Books of 2024
 - **The Burning Earth** — 2 lists: NPR: Books We Love 2024; The New Yorker: The Best Books of 2024
-- **The Burning Plain** (Juan Rulfo ; translated by Douglas J. Weatherford) — 2 lists: Kirkus: Best Fiction in Translation of 2024; Kirkus: Best Fiction of 2024 (full list page)
 - **The Cemetery of Untold Stories** — 2 lists: Chicago Public Library: Favorite Books of 2024; NPR: Books We Love 2024
 - **The City in Glass** — 2 lists: NPR: Books We Love 2024; Publishers Weekly: Best Books 2024 (all)
-- **The Everything War: Amazon’s Ruthless Quest to Own the World and Remake Corporate Power** (Dana Mattioli (Little, Brown)) — 2 lists: Publishers Weekly: Best Books 2024 (all); Publishers Weekly: Best Nonfiction 2024
+- **The Cliffs** (J. Courtney Sullivan) — 2 lists: NPR: Books We Love 2024; Kirkus: Best Fiction of 2024 (full list page)
 - **The Extinction of Irena Rey** (Jennifer Croft) — 2 lists: NPR: Books We Love 2024; Electric Lit: Best Novels of 2024
-- **The Fast: The History, Science, Philosophy, and Promise of Doing Without** (John Oakes (Avid Reader)) — 2 lists: Publishers Weekly: Best Books 2024 (all); Publishers Weekly: Best Nonfiction 2024
 - **The Freaks Came Out to Write** (Tricia Romano) — 2 lists: Vulture: The Best Books of 2024; The New Yorker: The Best Books of 2024
 - **The Garden Against Time** (Olivia Laing) — 2 lists: Kirkus: Best Nonfiction of 2024 (full list page); The New Yorker: The Best Books of 2024
-- **The Heart That Fed: A Father, a Son, and the Long Shadow of War** (Carl Sciacchitano (Gallery 13)) — 2 lists: Publishers Weekly: Best Books 2024 (all); Publishers Weekly: Best Books 2024 Top 10
 - **The Husbands** (Holly Gramazio) — 2 lists: NPR: Books We Love 2024; Esquire: The 25 Best Books of 2024
 - **The Impossible Man** (Patchen Barss) — 2 lists: Kirkus: Best Nonfiction of 2024 (full list page); The New Yorker: The Best Books of 2024
 - **The Long Run** (Stacey D’Erasmo) — 2 lists: The New Yorker: The Best Books of 2024; Electric Lit: Best Nonfiction of 2024
@@ -6544,7 +6510,8 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **The Mercy of Gods** (James S.A. Corey) — 2 lists: Publishers Weekly: Best Books 2024 (all); Kirkus: Best Fiction of 2024 (full list page)
 - **The Message** (Ta-Nehisi Coates) — 2 lists: NPR: Books We Love 2024; Electric Lit: Best Nonfiction of 2024
 - **The Most** — 2 lists: NPR: Books We Love 2024; Barnes & Noble: Best Fiction Books of 2024 (blog)
-- **The Road to the Country** (Chigozie Obioma) — 2 lists: Kirkus: Best Book Club Fiction of 2024; Kirkus: Best Fiction of 2024 (full list page)
+- **The Playbook** (James Shapiro (Penguin Press)) — 2 lists: Publishers Weekly: Best Books 2024 (all); The New Yorker: The Best Books of 2024
+- **The Rich People Have Gone Away** (Regina Porter) — 2 lists: Kirkus: Best Fiction of 2024 (full list page); The New Yorker: The Best Books of 2024
 - **The Secret History of Bigfoot: Field Notes on a North American Monster** (John O’Connor) — 2 lists: Chicago Tribune: The 10 Best Books of 2024; NPR: Books We Love 2024
 - **The Seventh Veil of Salome** — 2 lists: NPR: Books We Love 2024; BookPage: The Best Fiction of 2024
 - **The Showman** (Simon Shuster) — 2 lists: The Telegraph: The 50 Best Books of 2024, Ranked; NPR: Books We Love 2024
@@ -6556,13 +6523,15 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **There Are Rivers in the Sky** — 2 lists: NPR: Books We Love 2024; Amazon Editors: Best Books of 2024
 - **This American Ex-Wife** (Lyz Lenz) — 2 lists: Esquire: The 25 Best Books of 2024; Electric Lit: Best Nonfiction of 2024
 - **To Be a Jew Today** (Noah Feldman) — 2 lists: Kirkus: Best Nonfiction of 2024 (full list page); The New Yorker: The Best Books of 2024
+- **Traveling: On the Path of Joni Mitchell** (Ann Powers (Dey Street)) — 2 lists: NPR: Books We Love 2024; Publishers Weekly: Best Books 2024 (all)
 - **Twenty-Four Seconds from Now...** — 2 lists: NPR: Books We Love 2024; Publishers Weekly: Best Books 2024 (all)
-- **Under the Storm** (Christoffer Carlsson ; translated by Rachel Willson-Broyles) — 2 lists: Kirkus: Best Fiction in Translation of 2024; Kirkus: Best Fiction of 2024 (full list page)
 - **Unshrinking** — 2 lists: NPR: Books We Love 2024; The New Yorker: The Best Books of 2024
 - **Uprooted: A Memoir About What Happens When Your Family Moves Back** — 2 lists: NPR: Books We Love 2024; Publishers Weekly: Best Books 2024 (all)
 - **Victim** (Andrew Boryga) — 2 lists: NPR: Books We Love 2024; BBC Culture: The 24 Best Books of 2024
 - **Victory Parade** — 2 lists: NPR: Books We Love 2024; Publishers Weekly: Best Books 2024 (all)
 - **Whale Fall** — 2 lists: NPR: Books We Love 2024; The New Yorker: The Best Books of 2024
+- **What Kingdom** (Fine Gråbøl ; translated by Martin Aitken) — 2 lists: Kirkus: Best Fiction of 2024 (full list page); The New Yorker: The Best Books of 2024
+- **When the Clock Broke: Con Men, Conspiracists, and How America Cracked Up in the Early 1990s** — 2 lists: Slate: The 10 Best Books of 2024; Publishers Weekly: Best Books 2024 (all)
 - **With My Back to the World** (Victoria Chang) — 2 lists: NPR: Books We Love 2024; Electric Lit: Best Poetry Collections of 2024
 - **Woman of Interest** (Tracy O’Neill) — 2 lists: The New Yorker: The Best Books of 2024; Electric Lit: Best Nonfiction of 2024
 - **Women's Hotel** — 2 lists: NPR: Books We Love 2024; The New Yorker: The Best Books of 2024
@@ -6570,6 +6539,7 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **You Get What You Pay for: Essays** (Morgan Parker) — 2 lists: Kirkus: Best Nonfiction of 2024 (full list page); Electric Lit: Best Nonfiction of 2024
 - **You Like It Darker** (Stephen King) — 2 lists: Goodreads Choice Awards 2024 Winners; Kirkus: Best Fiction of 2024 (full list page)
 - **You Should Be So Lucky** (Cat Sebastian) — 2 lists: NPR: Books We Love 2024; Kirkus: Best Fiction of 2024 (full list page)
+- **Your Utopia** — 2 lists: Kirkus: Best Fiction of 2024 (full list page); Electric Lit: Best Short Story Collections of 2024
 
 ### Comics & Graphic Novels
 
@@ -6581,7 +6551,7 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 ### Albums
 
 - **Tigers Blood** (Waxahatchee) — 11 lists: Stereogum: The 50 Best Albums of 2024; NPR: The 50 Best Albums of 2024; The Guardian: The 50 Best Albums of 2024; NME: The 50 Best Albums of 2024; Clash: Albums of the Year 2024; BrooklynVegan: Top 50 Albums of 2024; Mojo: The Best Albums of 2024; TIME: The 10 Best Albums of 2024; Pitchfork: The 50 Best Albums of 2024; Uncut: Best Albums of 2024 (via Year-End Lists); Billboard: The 50 Best Albums of 2024
-- **Brat** — 10 lists: NPR: The 50 Best Albums of 2024; The Guardian: The 50 Best Albums of 2024; NME: The 50 Best Albums of 2024; BrooklynVegan: Top 50 Albums of 2024; Rough Trade: Albums of the Year 2024; TIME: The 10 Best Albums of 2024; Pitchfork: The 50 Best Albums of 2024; Uncut: Best Albums of 2024 (via Year-End Lists); Billboard: The 50 Best Albums of 2024; Billboard: Year-End Billboard 200 Albums 2024
+- **Brat** — 9 lists: NPR: The 50 Best Albums of 2024; The Guardian: The 50 Best Albums of 2024; NME: The 50 Best Albums of 2024; BrooklynVegan: Top 50 Albums of 2024; Rough Trade: Albums of the Year 2024; TIME: The 10 Best Albums of 2024; Pitchfork: The 50 Best Albums of 2024; Uncut: Best Albums of 2024 (via Year-End Lists); Billboard: Year-End Billboard 200 Albums 2024
 - **Manning Fireworks** (MJ Lenderman) — 9 lists: Stereogum: The 50 Best Albums of 2024; NPR: The 50 Best Albums of 2024; The Guardian: The 50 Best Albums of 2024; NME: The 50 Best Albums of 2024; Clash: Albums of the Year 2024; BrooklynVegan: Top 50 Albums of 2024; Pitchfork: The 50 Best Albums of 2024; Uncut: Best Albums of 2024 (via Year-End Lists); Billboard: The 50 Best Albums of 2024
 - **My Method Actor** — 9 lists: Stereogum: The 50 Best Albums of 2024; NPR: The 50 Best Albums of 2024; The Guardian: The 50 Best Albums of 2024; NME: The 50 Best Albums of 2024; Clash: Albums of the Year 2024; BrooklynVegan: Top 50 Albums of 2024; TIME: The 10 Best Albums of 2024; Pitchfork: The 50 Best Albums of 2024; Uncut: Best Albums of 2024 (via Year-End Lists)
 - **Night Reign** (Arooj Aftab) — 9 lists: Rolling Stone: The 100 Best Albums of 2024; The Guardian: The 50 Best Albums of 2024; NME: The 50 Best Albums of 2024; Paste: The 100 Best Albums of 2024; BrooklynVegan: Top 50 Albums of 2024; Mojo: The Best Albums of 2024; TIME: The 10 Best Albums of 2024; Pitchfork: The 50 Best Albums of 2024; Uncut: Best Albums of 2024 (via Year-End Lists)
@@ -6594,20 +6564,20 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **Two Star & The Dream Police** — 8 lists: Stereogum: The 50 Best Albums of 2024; NPR: The 50 Best Albums of 2024; The Guardian: The 50 Best Albums of 2024; NME: The 50 Best Albums of 2024; Paste: The 100 Best Albums of 2024; Clash: Albums of the Year 2024; Pitchfork: The 50 Best Albums of 2024; Billboard: The 50 Best Albums of 2024
 - **Alligator Bites Never Heal** (Doechii) — 7 lists: Stereogum: The 50 Best Albums of 2024; NPR: The 50 Best Albums of 2024; The Guardian: The 50 Best Albums of 2024; Paste: The 100 Best Albums of 2024; Clash: Albums of the Year 2024; BrooklynVegan: Top 50 Albums of 2024; Billboard: The 50 Best Albums of 2024
 - **Orquídeas** (Kali Uchis) — 7 lists: Rolling Stone: The 100 Best Albums of 2024; NPR: The 50 Best Albums of 2024; The Guardian: The 50 Best Albums of 2024; Paste: The 100 Best Albums of 2024; Pitchfork: The 50 Best Albums of 2024; Uncut: Best Albums of 2024 (via Year-End Lists); Billboard: The 50 Best Albums of 2024
-- **Short n' Sweet** (Sabrina Carpenter) — 7 lists: Stereogum: The 50 Best Albums of 2024; NPR: The 50 Best Albums of 2024; The Guardian: The 50 Best Albums of 2024; NME: The 50 Best Albums of 2024; Pitchfork: The 50 Best Albums of 2024; Billboard: The 50 Best Albums of 2024; Billboard: Year-End Billboard 200 Albums 2024
 - **Absolute Elsewhere** (Blood Incantation) — 6 lists: Stereogum: The 50 Best Albums of 2024; NPR: The 50 Best Albums of 2024; BrooklynVegan: Top 50 Albums of 2024; TIME: The 10 Best Albums of 2024; Decibel: Top 40 Albums of 2024 (via Year-End Lists); Pitchfork: The 50 Best Albums of 2024
 - **Blue Lips** (ScHoolboy Q) — 6 lists: Rolling Stone: The 100 Best Albums of 2024; NPR: The 50 Best Albums of 2024; NME: The 50 Best Albums of 2024; Paste: The 100 Best Albums of 2024; BrooklynVegan: Top 50 Albums of 2024; Billboard: The 50 Best Albums of 2024
 - **Charm** (Clairo) — 6 lists: The Guardian: The 50 Best Albums of 2024; NME: The 50 Best Albums of 2024; Paste: The 100 Best Albums of 2024; Rough Trade: Albums of the Year 2024; Pitchfork: The 50 Best Albums of 2024; Billboard: The 50 Best Albums of 2024
-- **Cowboy Carter** — 6 lists: NPR: The 50 Best Albums of 2024; The Guardian: The 50 Best Albums of 2024; NME: The 50 Best Albums of 2024; Paste: The 100 Best Albums of 2024; Billboard: The 50 Best Albums of 2024; Billboard: Year-End Billboard 200 Albums 2024
 - **Diamond Jubilee** (Cindy Lee) — 6 lists: Stereogum: The 50 Best Albums of 2024; The Guardian: The 50 Best Albums of 2024; NME: The 50 Best Albums of 2024; BrooklynVegan: Top 50 Albums of 2024; Pitchfork: The 50 Best Albums of 2024; Uncut: Best Albums of 2024 (via Year-End Lists)
 - **Endlessness** (Nala Sinephro) — 6 lists: Stereogum: The 50 Best Albums of 2024; NPR: The 50 Best Albums of 2024; The Guardian: The 50 Best Albums of 2024; Clash: Albums of the Year 2024; Pitchfork: The 50 Best Albums of 2024; Uncut: Best Albums of 2024 (via Year-End Lists)
-- **Hit Me Hard and Soft** (Billie Eilish) — 6 lists: The Guardian: The 50 Best Albums of 2024; NME: The 50 Best Albums of 2024; Paste: The 100 Best Albums of 2024; Uncut: Best Albums of 2024 (via Year-End Lists); Billboard: The 50 Best Albums of 2024; Billboard: Year-End Billboard 200 Albums 2024
 - **Lives Outgrown** (Beth Gibbons) — 6 lists: NPR: The 50 Best Albums of 2024; NME: The 50 Best Albums of 2024; BrooklynVegan: Top 50 Albums of 2024; Mojo: The Best Albums of 2024; TIME: The 10 Best Albums of 2024; Uncut: Best Albums of 2024 (via Year-End Lists)
 - **My Light, My Destroyer** (Cassandra Jenkins) — 6 lists: Stereogum: The 50 Best Albums of 2024; NPR: The 50 Best Albums of 2024; The Guardian: The 50 Best Albums of 2024; Mojo: The Best Albums of 2024; Pitchfork: The 50 Best Albums of 2024; Uncut: Best Albums of 2024 (via Year-End Lists)
 - **Patterns in Repeat** (Laura Marling) — 6 lists: The Guardian: The 50 Best Albums of 2024; Paste: The 100 Best Albums of 2024; Rough Trade: Albums of the Year 2024; Mojo: The Best Albums of 2024; Pitchfork: The 50 Best Albums of 2024; Uncut: Best Albums of 2024 (via Year-End Lists)
+- **Short n' Sweet** (Sabrina Carpenter) — 6 lists: Stereogum: The 50 Best Albums of 2024; NPR: The 50 Best Albums of 2024; The Guardian: The 50 Best Albums of 2024; NME: The 50 Best Albums of 2024; Pitchfork: The 50 Best Albums of 2024; Billboard: Year-End Billboard 200 Albums 2024
 - **Chromakopia** — 6 lists: Stereogum: The 50 Best Albums of 2024; NPR: The 50 Best Albums of 2024; The Guardian: The 50 Best Albums of 2024; NME: The 50 Best Albums of 2024; BrooklynVegan: Top 50 Albums of 2024; Billboard: The 50 Best Albums of 2024
+- **Cowboy Carter** — 5 lists: NPR: The 50 Best Albums of 2024; The Guardian: The 50 Best Albums of 2024; NME: The 50 Best Albums of 2024; Paste: The 100 Best Albums of 2024; Billboard: Year-End Billboard 200 Albums 2024
 - **Funeral for Justice** (Mdou Moctar) — 5 lists: The Guardian: The 50 Best Albums of 2024; Paste: The 100 Best Albums of 2024; Mojo: The Best Albums of 2024; Pitchfork: The 50 Best Albums of 2024; Uncut: Best Albums of 2024 (via Year-End Lists)
 - **GNX** (Kendrick Lamar) — 5 lists: Stereogum: The 50 Best Albums of 2024; NPR: The 50 Best Albums of 2024; NME: The 50 Best Albums of 2024; BrooklynVegan: Top 50 Albums of 2024; Billboard: The 50 Best Albums of 2024
+- **Hit Me Hard and Soft** (Billie Eilish) — 5 lists: The Guardian: The 50 Best Albums of 2024; NME: The 50 Best Albums of 2024; Paste: The 100 Best Albums of 2024; Uncut: Best Albums of 2024 (via Year-End Lists); Billboard: Year-End Billboard 200 Albums 2024
 - **Iechyd Da** — 5 lists: The Guardian: The 50 Best Albums of 2024; NME: The 50 Best Albums of 2024; BrooklynVegan: Top 50 Albums of 2024; Mojo: The Best Albums of 2024; Uncut: Best Albums of 2024 (via Year-End Lists)
 - **Imaginal Disk** (Magdalena Bay) — 5 lists: Stereogum: The 50 Best Albums of 2024; NME: The 50 Best Albums of 2024; BrooklynVegan: Top 50 Albums of 2024; Rough Trade: Albums of the Year 2024; Pitchfork: The 50 Best Albums of 2024
 - **Prelude To Ecstasy** (The Last Dinner Party) — 5 lists: Rolling Stone: The 100 Best Albums of 2024; NME: The 50 Best Albums of 2024; Rough Trade: Albums of the Year 2024; Mojo: The Best Albums of 2024; Billboard: The 50 Best Albums of 2024
@@ -6616,7 +6586,6 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **What Now** (Brittany Howard) — 5 lists: Rolling Stone: The 100 Best Albums of 2024; Paste: The 100 Best Albums of 2024; Mojo: The Best Albums of 2024; TIME: The 10 Best Albums of 2024; Uncut: Best Albums of 2024 (via Year-End Lists)
 - **Cartoon Darkness** — 4 lists: The Guardian: The 50 Best Albums of 2024; NME: The 50 Best Albums of 2024; Rough Trade: Albums of the Year 2024; Mojo: The Best Albums of 2024
 - **Cool World** (Chat Pile) — 4 lists: Stereogum: The 50 Best Albums of 2024; The Guardian: The 50 Best Albums of 2024; BrooklynVegan: Top 50 Albums of 2024; Decibel: Top 40 Albums of 2024 (via Year-End Lists)
-- **Eternal Sunshine** (Ariana Grande) — 4 lists: The Guardian: The 50 Best Albums of 2024; NME: The 50 Best Albums of 2024; Billboard: The 50 Best Albums of 2024; Billboard: Year-End Billboard 200 Albums 2024
 - **Fabiana Palladino** (Fabiana Palladino) — 4 lists: NPR: The 50 Best Albums of 2024; The Guardian: The 50 Best Albums of 2024; Paste: The 100 Best Albums of 2024; Rough Trade: Albums of the Year 2024
 - **I Got Heaven** (Mannequin Pussy) — 4 lists: Stereogum: The 50 Best Albums of 2024; BrooklynVegan: Top 50 Albums of 2024; Pitchfork: The 50 Best Albums of 2024; Billboard: The 50 Best Albums of 2024
 - **If I don't make it, I love u** (Still House Plants) — 4 lists: The Guardian: The 50 Best Albums of 2024; Paste: The 100 Best Albums of 2024; Pitchfork: The 50 Best Albums of 2024; Uncut: Best Albums of 2024 (via Year-End Lists)
@@ -6637,6 +6606,7 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **Bite Down** (Rosali) — 3 lists: Paste: The 100 Best Albums of 2024; BrooklynVegan: Top 50 Albums of 2024; Uncut: Best Albums of 2024 (via Year-End Lists)
 - **Born in the Wild** (Tems) — 3 lists: NPR: The 50 Best Albums of 2024; NME: The 50 Best Albums of 2024; Billboard: The 50 Best Albums of 2024
 - **Dark Times** (Vince Staples) — 3 lists: Rolling Stone: The 100 Best Albums of 2024; Clash: Albums of the Year 2024; Billboard: The 50 Best Albums of 2024
+- **Eternal Sunshine** (Ariana Grande) — 3 lists: The Guardian: The 50 Best Albums of 2024; NME: The 50 Best Albums of 2024; Billboard: Year-End Billboard 200 Albums 2024
 - **HEIS** (Rema) — 3 lists: NPR: The 50 Best Albums of 2024; NME: The 50 Best Albums of 2024; Billboard: The 50 Best Albums of 2024
 - **I Lay Down My Life For You** (JPEGMAFIA) — 3 lists: NPR: The 50 Best Albums of 2024; Clash: Albums of the Year 2024; TIME: The 10 Best Albums of 2024
 - **In Waves** (Jamie xx) — 3 lists: The Guardian: The 50 Best Albums of 2024; Clash: Albums of the Year 2024; Billboard: The 50 Best Albums of 2024
@@ -6650,16 +6620,12 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **POPtical Illusion** (John Cale) — 3 lists: Rolling Stone: The 100 Best Albums of 2024; Mojo: The Best Albums of 2024; Uncut: Best Albums of 2024 (via Year-End Lists)
 - **Revelator** — 3 lists: Rolling Stone: The 100 Best Albums of 2024; BrooklynVegan: Top 50 Albums of 2024; Uncut: Best Albums of 2024 (via Year-End Lists)
 - **TANGK** — 3 lists: NME: The 50 Best Albums of 2024; Rough Trade: Albums of the Year 2024; Uncut: Best Albums of 2024 (via Year-End Lists)
-- **The Tortured Poets Department** (Taylor Swift) — 3 lists: Uncut: Best Albums of 2024 (via Year-End Lists); Billboard: The 50 Best Albums of 2024; Billboard: Year-End Billboard 200 Albums 2024
 - **Utopia Now!** (Rosie Tucker) — 3 lists: Rolling Stone: The 100 Best Albums of 2024; NPR: The 50 Best Albums of 2024; Paste: The 100 Best Albums of 2024
 - **Wall Of Eyes** (The Smile) — 3 lists: NME: The 50 Best Albums of 2024; Mojo: The Best Albums of 2024; Uncut: Best Albums of 2024 (via Year-End Lists)
-- **Where I've Been, Isn't Where I'm Going** (Shaboozey) — 3 lists: Rolling Stone: The 100 Best Albums of 2024; Billboard: The 50 Best Albums of 2024; Billboard: Year-End Billboard 200 Albums 2024
 - **Woodland** (Gillian Welch & David Rawlings) — 3 lists: NPR: The 50 Best Albums of 2024; Mojo: The Best Albums of 2024; Uncut: Best Albums of 2024 (via Year-End Lists)
-- **The Great American Bar Scene** (Zach Bryan) — 3 lists: BrooklynVegan: Top 50 Albums of 2024; Billboard: The 50 Best Albums of 2024; Billboard: Year-End Billboard 200 Albums 2024
 - **3am (La La La)** (Confidence Man) — 2 lists: NME: The 50 Best Albums of 2024; Clash: Albums of the Year 2024
 - **Akoma** (Jlin) — 2 lists: Pitchfork: The 50 Best Albums of 2024; Uncut: Best Albums of 2024 (via Year-End Lists)
 - **All Hell** (Los Campesinos!) — 2 lists: Stereogum: The 50 Best Albums of 2024; The Guardian: The 50 Best Albums of 2024
-- **American Dream** (21 Savage) — 2 lists: Billboard: The 50 Best Albums of 2024; Billboard: Year-End Billboard 200 Albums 2024
 - **American Hero** (Towa Bird) — 2 lists: Rolling Stone: The 100 Best Albums of 2024; Clash: Albums of the Year 2024
 - **Art of the Unseen Infinity Machine** (Allegra Krieger) — 2 lists: Rolling Stone: The 100 Best Albums of 2024; Paste: The 100 Best Albums of 2024
 - **Big Ideas** (Remi Wolf) — 2 lists: NPR: The 50 Best Albums of 2024; Billboard: The 50 Best Albums of 2024
@@ -6673,7 +6639,6 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **Different Type Time** (Cavalier) — 2 lists: Rolling Stone: The 100 Best Albums of 2024; Paste: The 100 Best Albums of 2024
 - **Don't Forget Me** (Maggie Rogers) — 2 lists: Rolling Stone: The 100 Best Albums of 2024; Billboard: The 50 Best Albums of 2024
 - **Dunya** (Mustafa) — 2 lists: NPR: The 50 Best Albums of 2024; NME: The 50 Best Albums of 2024
-- **F-1 Trillion** (Post Malone) — 2 lists: Billboard: The 50 Best Albums of 2024; Billboard: Year-End Billboard 200 Albums 2024
 - **Fearless Movement** (Kamasi Washington) — 2 lists: Mojo: The Best Albums of 2024; Uncut: Best Albums of 2024 (via Year-End Lists)
 - **Fine Art** (Kneecap) — 2 lists: The Guardian: The 50 Best Albums of 2024; NME: The 50 Best Albums of 2024
 - **For Your Consideration** (Empress Of) — 2 lists: The Guardian: The 50 Best Albums of 2024; Paste: The 100 Best Albums of 2024
@@ -6695,7 +6660,6 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **Phasor** (Helado Negro) — 2 lists: Rolling Stone: The 100 Best Albums of 2024; Pitchfork: The 50 Best Albums of 2024
 - **plastic death** (glass beach) — 2 lists: Stereogum: The 50 Best Albums of 2024; BrooklynVegan: Top 50 Albums of 2024
 - **Post Human: Nex Gen** (Bring Me The Horizon) — 2 lists: NME: The 50 Best Albums of 2024; Clash: Albums of the Year 2024
-- **Radical Optimism** (Dua Lipa) — 2 lists: Billboard: The 50 Best Albums of 2024; Billboard: Year-End Billboard 200 Albums 2024
 - **Right Place, Wrong Person** (RM) — 2 lists: Rolling Stone: The 100 Best Albums of 2024; NME: The 50 Best Albums of 2024
 - **Rong Weicknes** — 2 lists: Paste: The 100 Best Albums of 2024; Uncut: Best Albums of 2024 (via Year-End Lists)
 - **Ship To Shore** (Richard Thompson) — 2 lists: Mojo: The Best Albums of 2024; Uncut: Best Albums of 2024 (via Year-End Lists)
@@ -6704,83 +6668,69 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 - **Take Care** (BigXthaPlug) — 2 lists: NPR: The 50 Best Albums of 2024; BrooklynVegan: Top 50 Albums of 2024
 - **The Auditorium Vol. 1** — 2 lists: Rolling Stone: The 100 Best Albums of 2024; Mojo: The Best Albums of 2024
 - **The Cleansing** (Peter Perrett) — 2 lists: Mojo: The Best Albums of 2024; Uncut: Best Albums of 2024 (via Year-End Lists)
-- **The Secret of Us** (Gracie Abrams) — 2 lists: Billboard: The 50 Best Albums of 2024; Billboard: Year-End Billboard 200 Albums 2024
 - **The Sky Will Still Be There Tomorrow** (Charles Lloyd) — 2 lists: Mojo: The Best Albums of 2024; Uncut: Best Albums of 2024 (via Year-End Lists)
+- **The Tortured Poets Department** (Taylor Swift) — 2 lists: Uncut: Best Albums of 2024 (via Year-End Lists); Billboard: Year-End Billboard 200 Albums 2024
 - **Timeless** (Kaytranada) — 2 lists: NPR: The 50 Best Albums of 2024; Billboard: The 50 Best Albums of 2024
 - **Todos Los Dias Todo El Dia** (Latin Mafia) — 2 lists: NPR: The 50 Best Albums of 2024; Billboard: The 50 Best Albums of 2024
 - **Triple Seven** (Wishy) — 2 lists: Stereogum: The 50 Best Albums of 2024; Paste: The 100 Best Albums of 2024
-- **Twisters: The Album** — 2 lists: Billboard: The 50 Best Albums of 2024; Billboard: Year-End Billboard 200 Albums 2024
 - **Umbilical** (Thou) — 2 lists: Paste: The 100 Best Albums of 2024; BrooklynVegan: Top 50 Albums of 2024
 - **More Insane** (Undeath) — 2 lists: BrooklynVegan: Top 50 Albums of 2024; Decibel: Top 40 Albums of 2024 (via Year-End Lists)
-- **We Don't Trust You** (Future & Metro Boomin) — 2 lists: Billboard: The 50 Best Albums of 2024; Billboard: Year-End Billboard 200 Albums 2024
 - **Weird Faith** (Madi Diaz) — 2 lists: Stereogum: The 50 Best Albums of 2024; NPR: The 50 Best Albums of 2024
 - **When I'm Called** (Jake Xerxes Fussell) — 2 lists: Stereogum: The 50 Best Albums of 2024; Uncut: Best Albums of 2024 (via Year-End Lists)
+- **Where I've Been, Isn't Where I'm Going** (Shaboozey) — 2 lists: Rolling Stone: The 100 Best Albums of 2024; Billboard: Year-End Billboard 200 Albums 2024
 - **Why Lawd?** — 2 lists: Paste: The 100 Best Albums of 2024; Billboard: The 50 Best Albums of 2024
+- **The Great American Bar Scene** (Zach Bryan) — 2 lists: BrooklynVegan: Top 50 Albums of 2024; Billboard: Year-End Billboard 200 Albums 2024
 - **Exodo** (Peso Pluma) — 2 lists: Rolling Stone: The 100 Best Albums of 2024; Billboard: Year-End Billboard 200 Albums 2024
 
 ### Songs
 
-- **Espresso** (Sabrina Carpenter) — 6 lists: Spotify Wrapped 2024: Top Artists, Songs, Albums and Podcasts; iHeartRewind 2024: Top Artists & Songs of the Year; The Guardian: The 20 Best Songs of 2024; Pitchfork: The 100 Best Songs of 2024; Billboard: The 100 Best Songs of 2024; Billboard: Year-End Hot 100 Songs 2024
-- **Beautiful Things** (Benson Boone) — 5 lists: Rolling Stone: The 100 Best Songs of 2024; Spotify Wrapped 2024: Top Artists, Songs, Albums and Podcasts; iHeartRewind 2024: Top Artists & Songs of the Year; Billboard: The 100 Best Songs of 2024; Billboard: Year-End Hot 100 Songs 2024
-- **BIRDS OF A FEATHER** (Billie Eilish) — 5 lists: Spotify Wrapped 2024: Top Artists, Songs, Albums and Podcasts; The Guardian: The 20 Best Songs of 2024; Pitchfork: The 100 Best Songs of 2024; Billboard: The 100 Best Songs of 2024; Billboard: Year-End Hot 100 Songs 2024
-- **Good Luck, Babe!** (Chappell Roan) — 5 lists: Spotify Wrapped 2024: Top Artists, Songs, Albums and Podcasts; The Guardian: The 20 Best Songs of 2024; Pitchfork: The 100 Best Songs of 2024; Billboard: The 100 Best Songs of 2024; Billboard: Year-End Hot 100 Songs 2024
-- **Not Like Us** (Kendrick Lamar) — 5 lists: Spotify Wrapped 2024: Top Artists, Songs, Albums and Podcasts; The Guardian: The 20 Best Songs of 2024; Pitchfork: The 100 Best Songs of 2024; Billboard: The 100 Best Songs of 2024; Billboard: Year-End Hot 100 Songs 2024
-- **A Bar Song (Tipsy)** (Shaboozey) — 4 lists: iHeartRewind 2024: Top Artists & Songs of the Year; Pitchfork: The 100 Best Songs of 2024; Billboard: The 100 Best Songs of 2024; Billboard: Year-End Hot 100 Songs 2024
-- **Get It Sexyy** (Sexyy Red) — 4 lists: Rolling Stone: The 100 Best Songs of 2024; Pitchfork: The 100 Best Songs of 2024; Billboard: The 100 Best Songs of 2024; Billboard: Year-End Hot 100 Songs 2024
-- **Lose Control** (Teddy Swims) — 4 lists: Spotify Wrapped 2024: Top Artists, Songs, Albums and Podcasts; iHeartRewind 2024: Top Artists & Songs of the Year; Billboard: The 100 Best Songs of 2024; Billboard: Year-End Hot 100 Songs 2024
-- **Saturn** (SZA) — 4 lists: iHeartRewind 2024: Top Artists & Songs of the Year; Pitchfork: The 100 Best Songs of 2024; Billboard: The 100 Best Songs of 2024; Billboard: Year-End Hot 100 Songs 2024
+- **Espresso** (Sabrina Carpenter) — 5 lists: Spotify Wrapped 2024: Top Artists, Songs, Albums and Podcasts; iHeartRewind 2024: Top Artists & Songs of the Year; The Guardian: The 20 Best Songs of 2024; Pitchfork: The 100 Best Songs of 2024; Billboard: The 100 Best Songs of 2024
+- **Beautiful Things** (Benson Boone) — 4 lists: Rolling Stone: The 100 Best Songs of 2024; Spotify Wrapped 2024: Top Artists, Songs, Albums and Podcasts; iHeartRewind 2024: Top Artists & Songs of the Year; Billboard: The 100 Best Songs of 2024
+- **BIRDS OF A FEATHER** (Billie Eilish) — 4 lists: Spotify Wrapped 2024: Top Artists, Songs, Albums and Podcasts; The Guardian: The 20 Best Songs of 2024; Pitchfork: The 100 Best Songs of 2024; Billboard: The 100 Best Songs of 2024
+- **Good Luck, Babe!** (Chappell Roan) — 4 lists: Spotify Wrapped 2024: Top Artists, Songs, Albums and Podcasts; The Guardian: The 20 Best Songs of 2024; Pitchfork: The 100 Best Songs of 2024; Billboard: The 100 Best Songs of 2024
+- **Not Like Us** (Kendrick Lamar) — 4 lists: Spotify Wrapped 2024: Top Artists, Songs, Albums and Podcasts; The Guardian: The 20 Best Songs of 2024; Pitchfork: The 100 Best Songs of 2024; Billboard: The 100 Best Songs of 2024
 - **Starburster** — 4 lists: Rolling Stone: The 100 Best Songs of 2024; The Guardian: The 20 Best Songs of 2024; Pitchfork: The 100 Best Songs of 2024; Billboard: The 100 Best Songs of 2024
-- **Too Sweet** (Hozier) — 4 lists: Spotify Wrapped 2024: Top Artists, Songs, Albums and Podcasts; iHeartRewind 2024: Top Artists & Songs of the Year; Billboard: The 100 Best Songs of 2024; Billboard: Year-End Hot 100 Songs 2024
-- **We Can't Be Friends (Wait for Your Love)** (Ariana Grande) — 4 lists: Spotify Wrapped 2024: Top Artists, Songs, Albums and Podcasts; The Guardian: The 20 Best Songs of 2024; Billboard: The 100 Best Songs of 2024; Billboard: Year-End Hot 100 Songs 2024
+- **A Bar Song (Tipsy)** (Shaboozey) — 3 lists: iHeartRewind 2024: Top Artists & Songs of the Year; Pitchfork: The 100 Best Songs of 2024; Billboard: The 100 Best Songs of 2024
 - **Angel of My Dreams** — 3 lists: The Guardian: The 20 Best Songs of 2024; Pitchfork: The 100 Best Songs of 2024; Billboard: The 100 Best Songs of 2024
-- **Die With A Smile** — 3 lists: Spotify Wrapped 2024: Top Artists, Songs, Albums and Podcasts; Billboard: The 100 Best Songs of 2024; Billboard: Year-End Hot 100 Songs 2024
 - **Diet Pepsi** (Addison Rae) — 3 lists: The Guardian: The 20 Best Songs of 2024; Pitchfork: The 100 Best Songs of 2024; Billboard: The 100 Best Songs of 2024
-- **End of Beginning** (Djo) — 3 lists: Spotify Wrapped 2024: Top Artists, Songs, Albums and Podcasts; Billboard: The 100 Best Songs of 2024; Billboard: Year-End Hot 100 Songs 2024
 - **Get in With Me** — 3 lists: Rolling Stone: The 100 Best Songs of 2024; Pitchfork: The 100 Best Songs of 2024; Billboard: The 100 Best Songs of 2024
-- **La Diabla** (Xavi) — 3 lists: Pitchfork: The 100 Best Songs of 2024; Billboard: The 100 Best Songs of 2024; Billboard: Year-End Hot 100 Songs 2024
+- **Get It Sexyy** (Sexyy Red) — 3 lists: Rolling Stone: The 100 Best Songs of 2024; Pitchfork: The 100 Best Songs of 2024; Billboard: The 100 Best Songs of 2024
+- **Lose Control** (Teddy Swims) — 3 lists: Spotify Wrapped 2024: Top Artists, Songs, Albums and Podcasts; iHeartRewind 2024: Top Artists & Songs of the Year; Billboard: The 100 Best Songs of 2024
 - **Love Me JeJe** (Tems) — 3 lists: Rolling Stone: The 100 Best Songs of 2024; Pitchfork: The 100 Best Songs of 2024; Billboard: The 100 Best Songs of 2024
-- **Million Dollar Baby** (Tommy Richman) — 3 lists: Pitchfork: The 100 Best Songs of 2024; Billboard: The 100 Best Songs of 2024; Billboard: Year-End Hot 100 Songs 2024
-- **Pink Skies** (Zach Bryan) — 3 lists: Pitchfork: The 100 Best Songs of 2024; Billboard: The 100 Best Songs of 2024; Billboard: Year-End Hot 100 Songs 2024
 - **Right Back to It** — 3 lists: The Guardian: The 20 Best Songs of 2024; Pitchfork: The 100 Best Songs of 2024; Billboard: The 100 Best Songs of 2024
-- **Texas Hold 'Em** — 3 lists: The Guardian: The 20 Best Songs of 2024; Billboard: The 100 Best Songs of 2024; Billboard: Year-End Hot 100 Songs 2024
+- **Saturn** (SZA) — 3 lists: iHeartRewind 2024: Top Artists & Songs of the Year; Pitchfork: The 100 Best Songs of 2024; Billboard: The 100 Best Songs of 2024
+- **Too Sweet** (Hozier) — 3 lists: Spotify Wrapped 2024: Top Artists, Songs, Albums and Podcasts; iHeartRewind 2024: Top Artists & Songs of the Year; Billboard: The 100 Best Songs of 2024
+- **We Can't Be Friends (Wait for Your Love)** (Ariana Grande) — 3 lists: Spotify Wrapped 2024: Top Artists, Songs, Albums and Podcasts; The Guardian: The 20 Best Songs of 2024; Billboard: The 100 Best Songs of 2024
 - **After Hours** (Kehlani) — 2 lists: Rolling Stone: The 100 Best Songs of 2024; Billboard: The 100 Best Songs of 2024
 - **Agora Hills** (Doja Cat) — 2 lists: iHeartRewind 2024: Top Artists & Songs of the Year; Billboard: Year-End Hot 100 Songs 2024
-- **Ain't No Love in Oklahoma** (Luke Combs) — 2 lists: Billboard: The 100 Best Songs of 2024; Billboard: Year-End Hot 100 Songs 2024
 - **Alone** (The Cure) — 2 lists: The Guardian: The 20 Best Songs of 2024; Pitchfork: The 100 Best Songs of 2024
-- **Austin** (Dasha) — 2 lists: Billboard: The 100 Best Songs of 2024; Billboard: Year-End Hot 100 Songs 2024
 - **Big Dawgs** — 2 lists: Rolling Stone: The 100 Best Songs of 2024; Billboard: The 100 Best Songs of 2024
 - **Booboo** (Yaeji) — 2 lists: The Guardian: The 20 Best Songs of 2024; Pitchfork: The 100 Best Songs of 2024
 - **Britpop** (A.G. Cook) — 2 lists: Rolling Stone: The 100 Best Songs of 2024; Billboard: The 100 Best Songs of 2024
 - **Fisherrr** (Cash Cobain & Bay Swag) — 2 lists: Pitchfork: The 100 Best Songs of 2024; Billboard: The 100 Best Songs of 2024
 - **Cruel Summer** (Taylor Swift) — 2 lists: Spotify Wrapped 2024: Top Artists, Songs, Albums and Podcasts; Billboard: Year-End Hot 100 Songs 2024
+- **Die With A Smile** — 2 lists: Spotify Wrapped 2024: Top Artists, Songs, Albums and Podcasts; Billboard: The 100 Best Songs of 2024
+- **End of Beginning** (Djo) — 2 lists: Spotify Wrapped 2024: Top Artists, Songs, Albums and Podcasts; Billboard: The 100 Best Songs of 2024
 - **Eusexa** — 2 lists: Pitchfork: The 100 Best Songs of 2024; Billboard: The 100 Best Songs of 2024
-- **Everybody** — 2 lists: Billboard: The 100 Best Songs of 2024; Billboard: Year-End Hot 100 Songs 2024
 - **Feather** (Sabrina Carpenter) — 2 lists: iHeartRewind 2024: Top Artists & Songs of the Year; Billboard: Year-End Hot 100 Songs 2024
-- **Fortnight** — 2 lists: Billboard: The 100 Best Songs of 2024; Billboard: Year-End Hot 100 Songs 2024
 - **Gata Only** — 2 lists: Spotify Wrapped 2024: Top Artists, Songs, Albums and Podcasts; Billboard: Year-End Hot 100 Songs 2024
 - **Girl So Confusing** — 2 lists: Pitchfork: The 100 Best Songs of 2024; Billboard: The 100 Best Songs of 2024
-- **Houdini** (Eminem) — 2 lists: Billboard: The 100 Best Songs of 2024; Billboard: Year-End Hot 100 Songs 2024
-- **I Am Not Okay** (Jelly Roll) — 2 lists: Billboard: The 100 Best Songs of 2024; Billboard: Year-End Hot 100 Songs 2024
-- **I Can Do It With a Broken Heart** (Taylor Swift) — 2 lists: Billboard: The 100 Best Songs of 2024; Billboard: Year-End Hot 100 Songs 2024
-- **I Had Some Help** — 2 lists: Billboard: The 100 Best Songs of 2024; Billboard: Year-End Hot 100 Songs 2024
-- **I Like the Way You Kiss Me** (Artemas) — 2 lists: Billboard: The 100 Best Songs of 2024; Billboard: Year-End Hot 100 Songs 2024
 - **Joyride** (Kesha) — 2 lists: Rolling Stone: The 100 Best Songs of 2024; Billboard: The 100 Best Songs of 2024
 - **Kehlani** (Jordan Adetunji) — 2 lists: Rolling Stone: The 100 Best Songs of 2024; Billboard: The 100 Best Songs of 2024
+- **La Diabla** (Xavi) — 2 lists: Pitchfork: The 100 Best Songs of 2024; Billboard: The 100 Best Songs of 2024
 - **Like I Say (I Runaway)** (Nilüfer Yanya) — 2 lists: Rolling Stone: The 100 Best Songs of 2024; The Guardian: The 20 Best Songs of 2024
-- **Like That** — 2 lists: Billboard: The 100 Best Songs of 2024; Billboard: Year-End Hot 100 Songs 2024
 - **Lovin On Me** (Jack Harlow) — 2 lists: iHeartRewind 2024: Top Artists & Songs of the Year; Billboard: Year-End Hot 100 Songs 2024
-- **Lunch** (Billie Eilish) — 2 lists: Billboard: The 100 Best Songs of 2024; Billboard: Year-End Hot 100 Songs 2024
-- **Made for Me** (Muni Long) — 2 lists: Billboard: The 100 Best Songs of 2024; Billboard: Year-End Hot 100 Songs 2024
+- **Million Dollar Baby** (Tommy Richman) — 2 lists: Pitchfork: The 100 Best Songs of 2024; Billboard: The 100 Best Songs of 2024
 - **Nasty** (Tinashe) — 2 lists: Pitchfork: The 100 Best Songs of 2024; Billboard: The 100 Best Songs of 2024
 - **Never Need Me** (Rachel Chinouriri) — 2 lists: Rolling Stone: The 100 Best Songs of 2024; Billboard: The 100 Best Songs of 2024
 - **Ozeba** (Rema) — 2 lists: Pitchfork: The 100 Best Songs of 2024; Billboard: The 100 Best Songs of 2024
-- **Please Please Please** (Sabrina Carpenter) — 2 lists: Billboard: The 100 Best Songs of 2024; Billboard: Year-End Hot 100 Songs 2024
+- **Pink Skies** (Zach Bryan) — 2 lists: Pitchfork: The 100 Best Songs of 2024; Billboard: The 100 Best Songs of 2024
 - **Reckless** (Kassie Krut) — 2 lists: The Guardian: The 20 Best Songs of 2024; Pitchfork: The 100 Best Songs of 2024
 - **Sexy to Someone** (Clairo) — 2 lists: The Guardian: The 20 Best Songs of 2024; Billboard: The 100 Best Songs of 2024
 - **Snooze** (SZA) — 2 lists: iHeartRewind 2024: Top Artists & Songs of the Year; Billboard: Year-End Hot 100 Songs 2024
+- **Texas Hold 'Em** (Beyoncé) — 2 lists: The Guardian: The 20 Best Songs of 2024; Billboard: The 100 Best Songs of 2024
 - **TGIF** (GloRilla) — 2 lists: Pitchfork: The 100 Best Songs of 2024; Billboard: The 100 Best Songs of 2024
 - **Wristwatch** (MJ Lenderman) — 2 lists: The Guardian: The 20 Best Songs of 2024; Pitchfork: The 100 Best Songs of 2024
-- **Yeah Glo!** (GloRilla) — 2 lists: Billboard: The 100 Best Songs of 2024; Billboard: Year-End Hot 100 Songs 2024
 
 ### Movies
 
@@ -6898,16 +6848,16 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 
 ### Video Games
 
-- **Balatro** — 10 lists: The Game Awards 2024: All Winners (NPR); IGN: The Best Game of 2024; Polygon: The 50 Best Video Games of 2024; GameSpot: The 10 Best Games of 2024; The Guardian: The 20 Best Video Games of 2024; Eurogamer: The 50 Best Games of 2024, Ranked; PC Gamer: Game of the Year Awards 2024; Game Informer: Top 10 Games of 2024 Awards; Metacritic: Best Games of 2024; Game Informer: Top Scoring Reviews of 2024
-- **Helldivers 2** — 10 lists: The Game Awards 2024: All Winners (NPR); IGN: The Best Game of 2024; Polygon: The 50 Best Video Games of 2024; GameSpot: The 10 Best Games of 2024; TIME: The 10 Best Video Games of 2024; The Guardian: The 20 Best Video Games of 2024; Eurogamer: The 50 Best Games of 2024, Ranked; PC Gamer: Game of the Year Awards 2024; Game Informer: Top 10 Games of 2024 Awards; Game Informer: Top Scoring Reviews of 2024
 - **Astro Bot** — 9 lists: The Game Awards 2024: All Winners (NPR); IGN: The Best Game of 2024; Polygon: The 50 Best Video Games of 2024; GameSpot: The 10 Best Games of 2024; TIME: The 10 Best Video Games of 2024; The Guardian: The 20 Best Video Games of 2024; Eurogamer: The 50 Best Games of 2024, Ranked; Game Informer: Top 10 Games of 2024 Awards; Metacritic: Best Games of 2024
-- **Final Fantasy VII Rebirth** — 9 lists: The Game Awards 2024: All Winners (NPR); IGN: The Best Game of 2024; Polygon: The 50 Best Video Games of 2024; TIME: The 10 Best Video Games of 2024; The Guardian: The 20 Best Video Games of 2024; Eurogamer: The 50 Best Games of 2024, Ranked; Game Informer: Top 10 Games of 2024 Awards; Metacritic: Best Games of 2024; Game Informer: Top Scoring Reviews of 2024
+- **Balatro** — 9 lists: The Game Awards 2024: All Winners (NPR); IGN: The Best Game of 2024; Polygon: The 50 Best Video Games of 2024; GameSpot: The 10 Best Games of 2024; The Guardian: The 20 Best Video Games of 2024; Eurogamer: The 50 Best Games of 2024, Ranked; PC Gamer: Game of the Year Awards 2024; Game Informer: Top Scoring Reviews of 2024; Metacritic: Best Games of 2024
+- **Helldivers 2** — 9 lists: The Game Awards 2024: All Winners (NPR); IGN: The Best Game of 2024; Polygon: The 50 Best Video Games of 2024; GameSpot: The 10 Best Games of 2024; TIME: The 10 Best Video Games of 2024; The Guardian: The 20 Best Video Games of 2024; Eurogamer: The 50 Best Games of 2024, Ranked; PC Gamer: Game of the Year Awards 2024; Game Informer: Top Scoring Reviews of 2024
 - **Metaphor: ReFantazio** — 9 lists: The Game Awards 2024: All Winners (NPR); IGN: The Best Game of 2024; Polygon: The 50 Best Video Games of 2024; GameSpot: The 10 Best Games of 2024; The Guardian: The 20 Best Video Games of 2024; Eurogamer: The 50 Best Games of 2024, Ranked; PC Gamer: Game of the Year Awards 2024; Game Informer: Top 10 Games of 2024 Awards; Metacritic: Best Games of 2024
-- **Prince of Persia: The Lost Crown** — 8 lists: The Game Awards 2024: All Winners (NPR); IGN: The Best Game of 2024; Polygon: The 50 Best Video Games of 2024; GameSpot: The 10 Best Games of 2024; Eurogamer: The 50 Best Games of 2024, Ranked; Game Informer: Top 10 Games of 2024 Awards; Metacritic: Best Games of 2024; Game Informer: Top Scoring Reviews of 2024
-- **Lorelei and the Laser Eyes** — 7 lists: Polygon: The 50 Best Video Games of 2024; GameSpot: The 10 Best Games of 2024; The Guardian: The 20 Best Video Games of 2024; Eurogamer: The 50 Best Games of 2024, Ranked; Game Informer: Top 10 Games of 2024 Awards; Metacritic: Best Games of 2024; Game Informer: Top Scoring Reviews of 2024
-- **Animal Well** — 6 lists: IGN: The Best Game of 2024; Polygon: The 50 Best Video Games of 2024; The Guardian: The 20 Best Video Games of 2024; Eurogamer: The 50 Best Games of 2024, Ranked; Game Informer: Top 10 Games of 2024 Awards; Game Informer: Top Scoring Reviews of 2024
+- **Final Fantasy VII Rebirth** — 8 lists: The Game Awards 2024: All Winners (NPR); IGN: The Best Game of 2024; Polygon: The 50 Best Video Games of 2024; TIME: The 10 Best Video Games of 2024; The Guardian: The 20 Best Video Games of 2024; Eurogamer: The 50 Best Games of 2024, Ranked; Game Informer: Top Scoring Reviews of 2024; Metacritic: Best Games of 2024
+- **Prince of Persia: The Lost Crown** — 7 lists: The Game Awards 2024: All Winners (NPR); IGN: The Best Game of 2024; Polygon: The 50 Best Video Games of 2024; GameSpot: The 10 Best Games of 2024; Eurogamer: The 50 Best Games of 2024, Ranked; Game Informer: Top Scoring Reviews of 2024; Metacritic: Best Games of 2024
 - **Elden Ring: Shadow of the Erdtree** — 6 lists: Polygon: The 50 Best Video Games of 2024; GameSpot: The 10 Best Games of 2024; The Guardian: The 20 Best Video Games of 2024; PC Gamer: Game of the Year Awards 2024; Metacritic: Best Games of 2024; Game Informer: Top Scoring Reviews of 2024
+- **Lorelei and the Laser Eyes** — 6 lists: Polygon: The 50 Best Video Games of 2024; GameSpot: The 10 Best Games of 2024; The Guardian: The 20 Best Video Games of 2024; Eurogamer: The 50 Best Games of 2024, Ranked; Game Informer: Top Scoring Reviews of 2024; Metacritic: Best Games of 2024
 - **Silent Hill 2** — 6 lists: IGN: The Best Game of 2024; Polygon: The 50 Best Video Games of 2024; GameSpot: The 10 Best Games of 2024; TIME: The 10 Best Video Games of 2024; Eurogamer: The 50 Best Games of 2024, Ranked; Metacritic: Best Games of 2024
+- **Animal Well** — 5 lists: IGN: The Best Game of 2024; Polygon: The 50 Best Video Games of 2024; The Guardian: The 20 Best Video Games of 2024; Eurogamer: The 50 Best Games of 2024, Ranked; Game Informer: Top Scoring Reviews of 2024
 - **Dragon's Dogma 2** — 5 lists: Polygon: The 50 Best Video Games of 2024; The Guardian: The 20 Best Video Games of 2024; Eurogamer: The 50 Best Games of 2024, Ranked; Metacritic: Best Games of 2024; Game Informer: Top Scoring Reviews of 2024
 - **Indiana Jones and the Great Circle** — 5 lists: IGN: The Best Game of 2024; GameSpot: The 10 Best Games of 2024; The Guardian: The 20 Best Video Games of 2024; Eurogamer: The 50 Best Games of 2024, Ranked; Metacritic: Best Games of 2024
 - **Neva** — 5 lists: The Game Awards 2024: All Winners (NPR); Polygon: The 50 Best Video Games of 2024; TIME: The 10 Best Video Games of 2024; The Guardian: The 20 Best Video Games of 2024; Metacritic: Best Games of 2024
@@ -7007,21 +6957,15 @@ Items on two or more lists within the same topic, most lists first. Titles are m
 
 ### Bars & Cocktails
 
-- **Handshake Speakeasy** (Mexico City) — 3 lists: The World's 50 Best Bars 2024; North America's 50 Best Bars 2024; Tales of the Cocktail: 2024 Spirited Awards Winners
-- **Jewel of the South** (New Orleans) — 3 lists: The World's 50 Best Bars 2024; North America's 50 Best Bars 2024; Tales of the Cocktail: 2024 Spirited Awards Winners
-- **Superbueno** (New York) — 3 lists: The World's 50 Best Bars 2024; North America's 50 Best Bars 2024; Tales of the Cocktail: 2024 Spirited Awards Winners
 - **Allegory** (Washington DC) — 2 lists: North America's 50 Best Bars 2024; Tales of the Cocktail: 2024 Spirited Awards Winners
 - **Alquímico** (Cartagena) — 2 lists: The World's 50 Best Bars 2024; Tales of the Cocktail: 2024 Spirited Awards Winners
 - **Baba au Rum** (Athens) — 2 lists: The World's 50 Best Bars 2024; Tales of the Cocktail: 2024 Spirited Awards Winners
 - **Bar Leone** (Hong Kong) — 2 lists: The World's 50 Best Bars 2024; Tales of the Cocktail: 2024 Spirited Awards Winners
 - **BKK Social Club** (Bangkok) — 2 lists: The World's 50 Best Bars 2024; Tales of the Cocktail: 2024 Spirited Awards Winners
 - **Danico** (Paris) — 2 lists: The World's 50 Best Bars 2024; Tales of the Cocktail: 2024 Spirited Awards Winners
-- **Double Chicken Please** (New York) — 2 lists: The World's 50 Best Bars 2024; North America's 50 Best Bars 2024
-- **El Gallo Altanero** (Guadalajara) — 2 lists: The World's 50 Best Bars 2024; North America's 50 Best Bars 2024
-- **Licorería Limantour** (Mexico City) — 2 lists: The World's 50 Best Bars 2024; North America's 50 Best Bars 2024
-- **Martiny's** (New York) — 2 lists: The World's 50 Best Bars 2024; North America's 50 Best Bars 2024
-- **Overstory** (New York) — 2 lists: The World's 50 Best Bars 2024; North America's 50 Best Bars 2024
-- **Tlecān** (Mexico City) — 2 lists: The World's 50 Best Bars 2024; North America's 50 Best Bars 2024
+- **Handshake Speakeasy** (Mexico City) — 2 lists: The World's 50 Best Bars 2024; Tales of the Cocktail: 2024 Spirited Awards Winners
+- **Jewel of the South** (New Orleans) — 2 lists: The World's 50 Best Bars 2024; Tales of the Cocktail: 2024 Spirited Awards Winners
+- **Superbueno** (New York) — 2 lists: The World's 50 Best Bars 2024; Tales of the Cocktail: 2024 Spirited Awards Winners
 
 ### Theater
 

@@ -17,8 +17,8 @@ function mStats(pairs) {
 const listStats = $("stats").innerHTML;
 const listEyebrow = $("eyebrow-label").textContent;
 const listSub = $("hero-sub").textContent;
-const masterStats = mStats([[titleCount, "Titles"], [MASTER.length, "Categories"], [multiCount, "On 2+ lists"]]);
-const masterSub = "Every work those lists name, merged by category. More mentions rank higher. Open a × count for the lists that name it.";
+const masterStats = mStats([[titleCount, "Titles"], [MASTER.length, "Categories"], [multiCount, "On 2+ outlets"]]);
+const masterSub = "Every work those lists name, merged by category. More mentions rank higher, counting each outlet once per work. Open a × count for the lists that name it.";
 
 function chipText(src, ids) {
   const group = ids.map(id => LISTS[id]);
@@ -58,7 +58,7 @@ function mRow(cat, it, query) {
     return `<a class="schip" href="${esc(src.url)}" target="_blank" rel="noopener" title="${esc(src.name)}">${esc(label)}</a>`;
   }).join("");
   const who = it.creator ? mHl(it.creator, query) : "";
-  const mention = `Mentioned on ${it.count} ${noun(it.count)}. Show those lists`;
+  const mention = `Mentioned by ${it.count} ${it.count === 1 ? "outlet" : "outlets"}. Show those lists`;
   return `<article class="mitem">
     <span class="rank">${it.rank}</span>
     <span class="mti">${mHl(it.title, query)}</span>

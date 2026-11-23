@@ -1,4 +1,4 @@
-"""Build Best_of_2024.html from lists.csv and master_rank.json.
+"""Build Best_of_2025.html from lists.csv and master_rank.json.
 
 The Lists tab is the directory. The Master list tab is every extracted title,
 merged by category, from master_rank.json (written by build_master.py).
@@ -49,7 +49,7 @@ def js_json(obj):
             .replace('\u2028', '\\u2028').replace('\u2029', '\\u2029'))
 n_titles = sum(len(topic['items']) for topic in master)
 ASSETS = Path(__file__).resolve().parents[1] / 'scripts' / 'bestof_assets'
-def asset(name): return (ASSETS / name).read_text().replace('__YEAR__', '2024')
+def asset(name): return (ASSETS / name).read_text().replace('__YEAR__', '2025')
 css = asset('hub_style.css') + "\n.card.pending { display:block; cursor:default; } .card.pending::before { content:none; } .card.pending .t { font-size:18px; }\n"
 js = asset('hub_logic.js').replace('__TAGS__', json.dumps(TAGS))
 master_js = asset('master_logic.js')
@@ -58,11 +58,11 @@ html = f'''<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Best of 2024</title>
+<title>Best of 2025</title>
 <script>
 (function () {{
   let theme;
-  try {{ theme = localStorage.getItem("best-2024-theme"); }} catch (e) {{}}
+  try {{ theme = localStorage.getItem("best-2025-theme"); }} catch (e) {{}}
   document.documentElement.dataset.theme = theme === "light" || theme === "dark"
     ? theme : (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
   if (/[?&]view=master(?:&|$)/.test(location.search)) document.documentElement.dataset.view = "master";
@@ -75,9 +75,9 @@ html = f'''<!doctype html>
 <body>
 <div class="wrap">
 <header class="hero">
-  <div class="eyebrow"><span id="eyebrow-label">Best of 2024 · List directory</span><div class="header-actions"><button type="button" class="theme-toggle" id="theme-toggle" aria-label="Dark mode" aria-pressed="false">Dark mode</button></div></div>
-  <h1>Best of <em>2024</em></h1>
-  <p class="sub" id="hero-sub">Published best-of-2024 lists, with a checked link to each. Pick a topic to open its lists, or search.</p>
+  <div class="eyebrow"><span id="eyebrow-label">Best of 2025 · List directory</span><div class="header-actions"><button type="button" class="theme-toggle" id="theme-toggle" aria-label="Dark mode" aria-pressed="false">Dark mode</button></div></div>
+  <h1>Best of <em>2025</em></h1>
+  <p class="sub" id="hero-sub">Published best-of-2025 lists, with a checked link to each. Pick a topic to open its lists, or search.</p>
   <div class="stats" id="stats"></div>
 </header>
 
@@ -126,7 +126,7 @@ html = f'''<!doctype html>
 </div>
 
 <div id="panel-master" role="tabpanel" aria-labelledby="tab-master" hidden>
-  <p class="file-path master-note">Each row is one work named inside the lists. The × badge is how many lists mention it, and higher counts rank first. Open a badge for links to those lists. Titles are matched within a category. Case, punctuation, diacritics, a leading The, A, or An, edition notes, and season labels are ignored, and close spellings merge when the creators agree.</p>
+  <p class="file-path master-note">Each row is one work named inside the lists. The × badge is how many outlets mention it (each outlet counts at most once per work), and higher counts rank first. Open a badge for links to those lists. Titles are matched within a category. Case, punctuation, diacritics, a leading The, A, or An, edition notes, and season labels are ignored, and close spellings merge when the creators agree.</p>
   <div class="controls" id="m-controls">
     <div class="searchrow">
       <div class="search">
@@ -161,6 +161,6 @@ const MASTER = {js_json(master)};
 </body>
 </html>
 '''
-open('Best_of_2024.html','w').write(html)
+open('Best_of_2025.html','w').write(html)
 from collections import Counter
 print(len(items), Counter(i['kind'] for i in items))

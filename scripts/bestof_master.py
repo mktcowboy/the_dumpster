@@ -81,13 +81,44 @@ def display_creator(v):
     if len(ranked)>1 and len(ranked[0])==len(ranked[1]): return ''
     freq=collections.Counter(ranked[0])
     return sorted(freq, key=lambda s: (-freq[s], s.isupper(), len(s)))[0]
-def ranked_rows(counts, category):
+def ranked_rows(counts, category, meta, list_size, list_order):
     rows=[]
     for v in counts.values():
         if not v: continue
+        v=dedup_outlets(v, meta, list_size, list_order)
         rows.append((len(v), list(v.values())[0][0].lower(), display_title(pick_title(v), category), pick_creator(v), display_creator(v), list(v)))
     rows.sort(key=lambda r:(-r[0], r[1]))
     return rows
+SO_FAR=re.compile(r'\bso far\b',re.I)
+def dedup_outlets(v, meta, list_size, list_order):
+    """Count each outlet at most once per work.
+
+    When an outlet names the same work on several lists in a category (such as
+    a full list and a Top 10 or genre subset), keep the main list (full-year
+    over 'So Far', larger list first, then directory order) while preserving a
+    creator name if the chosen list left it blank.
+    """
+    by_outlet=collections.OrderedDict()
+    for name,pair in v.items():
+        outlet=(meta.get(name,('',''))[0] or '').strip()
+        key=outlet.casefold() if outlet else f'\0{name}'
+        by_outlet.setdefault(key,[]).append((name,pair))
+    out=collections.OrderedDict()
+    for entries in by_outlet.values():
+        if len(entries)==1:
+            name,pair=entries[0]
+            out[name]=pair
+            continue
+        best_name,(best_title,best_creator)=min(
+            entries,
+            key=lambda e:(bool(SO_FAR.search(e[0])), -list_size.get(e[0],0), list_order.get(e[0],0)))
+        if not best_creator:
+            for _,(_,cr) in entries:
+                if cr:
+                    best_creator=cr
+                    break
+        out[best_name]=(best_title,best_creator)
+    return out
 topics=collections.OrderedDict()
 for x in d: topics.setdefault(canon_topic(x['topic']),[]).append(x)
 L=[f'# Best of {YEAR}: Master List of Items','',
@@ -109,10 +140,12 @@ for t,lists in topics.items():
             s=md_esc(a)+(f' — {md_esc(b)}' if b else '')
             L.append(f'{i}. {s}' if ranked else f'- {s}')
         L.append('')
-L+=['## Overlap across lists','','Items on two or more lists within the same topic, most lists first. Titles are matched within a category, ignoring case, punctuation, diacritics, a leading The/A/An, edition notes, and season labels. A bare title is merged with a subtitled or lightly misspelled variant when the creators do not conflict. The same title stays split when both creators are known and name different people.','']
+L+=['## Overlap across lists','','Items on two or more lists within the same topic, most lists first. Each outlet counts at most once per title. Titles are matched within a category, ignoring case, punctuation, diacritics, a leading The/A/An, edition notes, and season labels. A bare title is merged with a subtitled or lightly misspelled variant when the creators do not conflict. The same title stays split when both creators are known and name different people.','']
 summary=[]
 ranked=[]
 meta={x['list']:(x.get('outlet') or '', x.get('url') or '') for x in d}
+list_size={x['list']:len(x['items']) for x in d}
+list_order={x['list']:i for i,x in enumerate(d)}
 catalog=[]
 index={}
 def ref(name):
@@ -123,7 +156,7 @@ def ref(name):
     return index[name]
 for t,lists in topics.items():
     counts=topic_counts(lists, t)
-    rows=ranked_rows(counts, t)
+    rows=ranked_rows(counts, t, meta, list_size, list_order)
     # A category needs two lists with items before a ranking means anything.
     if rows and sum(1 for x in lists if x['items'])>=MIN_LISTS:
         ranked.append({'topic':t,'lists':len(lists),'items':[

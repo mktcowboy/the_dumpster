@@ -47,6 +47,8 @@ REWRITE = {
         ('Horizon: An American Saga', 'Chapter One'): ('Horizon: An American Saga – Chapter One', '')},
     'The Game Awards 2024: All Winners (NPR)': {
         ('Metaphor: ReFantanzio', 'Best Narrative'): ('Metaphor: ReFantazio', 'Best Narrative')},
+    'TIME: The 10 Best Fiction Books of 2024': {
+        ('Ghostroots , ’Pemi Aguda', ''): ('Ghostroots', 'Pemi Aguda')},
     # 2025
     'Pitchfork: The 100 Best Songs of 2025': {('Nourished', 'Time: “9 2 5'): ('9 2 5', 'Nourished By Time')},
     'Pitchfork: The 50 Best Albums of 2025': {

@@ -35,9 +35,13 @@
   aside { border-right: 1px solid var(--border); padding: 16px; }
   #profile { border-left: 1px solid var(--border); padding: 16px; display: none; }
   #profile.open { display: block; }
-  #main { position: relative; min-width: 0; }
-  #graph { width: 100%; height: 100%; display: block; background:
-    radial-gradient(ellipse at center, #151a24 0%, #0b0d12 100%); }
+  #main { position: relative; min-width: 0; overflow: hidden; }
+  #graph {
+    width: 100%; height: 100%; display: block; cursor: grab;
+    background: radial-gradient(ellipse at center, #151a24 0%, #0b0d12 100%);
+  }
+  #graph.dragging { cursor: grabbing; }
+  #graph.hovering { cursor: pointer; }
   h1 { font-size: 16px; margin: 0 0 4px; font-weight: 650; letter-spacing: 0.02em; }
   .sub { color: var(--muted); font-size: 12px; margin-bottom: 16px; }
   label { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin: 12px 0 6px; }
@@ -50,7 +54,7 @@
   .row > * { flex: 1; }
   .checks { display: grid; gap: 6px; }
   .checks label { text-transform: none; letter-spacing: 0; font-size: 13px; color: var(--text); display: flex; align-items: center; gap: 8px; margin: 0; cursor: pointer; }
-  .swatch { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+  .swatch { width: 10px; height: 10px; border-radius: 50%; display: inline-block; flex-shrink: 0; }
   .btn {
     background: var(--bg3); border: 1px solid var(--border); color: var(--text);
     border-radius: 8px; padding: 8px 10px; cursor: pointer; width: 100%; margin-top: 8px;
@@ -58,16 +62,50 @@
   .btn:hover { border-color: var(--accent); }
   .btn.primary { background: #2a2410; border-color: var(--accent); color: var(--accent); }
   #stats { margin-top: 14px; font-size: 12px; color: var(--muted); line-height: 1.6; }
+  #stats a { color: var(--person); text-decoration: none; }
+  #stats a:hover { text-decoration: underline; }
   #toolbar {
-    position: absolute; top: 12px; left: 12px; right: 12px; display: flex; gap: 8px; flex-wrap: wrap; z-index: 2; pointer-events: none;
+    position: absolute; top: 12px; left: 12px; right: 12px; display: flex; gap: 8px; flex-wrap: wrap; z-index: 2; pointer-events: none; align-items: flex-start;
   }
   #toolbar > * { pointer-events: auto; }
   .pill {
-    background: rgba(22,26,34,0.9); border: 1px solid var(--border); border-radius: 999px;
-    padding: 6px 12px; font-size: 12px; color: var(--muted); backdrop-filter: blur(8px);
+    background: rgba(22, 26, 34, 0.94); border: 1px solid var(--border); border-radius: 999px;
+    padding: 6px 12px; font-size: 12px; color: var(--muted);
   }
   .pill strong { color: var(--text); font-weight: 600; }
-  #searchBox { min-width: 220px; flex: 1; max-width: 360px; }
+  .search-wrap { position: relative; min-width: 220px; flex: 1; max-width: 360px; }
+  #searchBox {
+    width: 100%; background: rgba(22, 26, 34, 0.94); border: 1px solid var(--border);
+    color: var(--text); border-radius: 999px; padding: 6px 14px; font-size: 12px; outline: none;
+  }
+  #searchBox:focus { border-color: var(--accent); }
+  #searchResults {
+    display: none; position: absolute; top: calc(100% + 6px); left: 0; right: 0;
+    background: rgba(22, 26, 34, 0.98); border: 1px solid var(--border); border-radius: 10px;
+    overflow: hidden; box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45); max-height: 320px; overflow-y: auto;
+  }
+  #searchResults.open { display: block; }
+  .sr-item {
+    display: flex; align-items: center; justify-content: space-between; gap: 8px;
+    width: 100%; background: transparent; border: 0; border-bottom: 1px solid rgba(42, 51, 68, 0.6);
+    padding: 8px 12px; color: var(--text); font: inherit; font-size: 13px; text-align: left; cursor: pointer;
+  }
+  .sr-item:last-child { border-bottom: 0; }
+  .sr-item:hover, .sr-item.active { background: var(--bg3); }
+  .sr-item .sr-main { display: flex; align-items: center; gap: 8px; min-width: 0; }
+  .sr-item .sr-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .sr-item .sr-meta { color: var(--muted); font-size: 11px; white-space: nowrap; }
+  #tooltip {
+    display: none; position: absolute; pointer-events: none; z-index: 4;
+    background: rgba(15, 17, 21, 0.95); border: 1px solid var(--border); border-radius: 8px;
+    padding: 7px 10px; max-width: 260px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+    font-size: 12px; line-height: 1.35;
+  }
+  #tooltip.open { display: block; }
+  #tooltip .tt-title { font-weight: 600; color: var(--text); }
+  #tooltip .tt-type { font-size: 10px; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 2px; }
+  #tooltip .tt-sub { color: var(--muted); font-size: 11px; margin-top: 2px; }
+  #tooltip .tt-sub b { color: var(--won); font-weight: 600; }
   .legend { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
   .legend span { display: inline-flex; align-items: center; gap: 5px; font-size: 11px; color: var(--muted); }
   #profile h2 { margin: 0 0 4px; font-size: 18px; }
@@ -112,15 +150,7 @@
   .summary-row .when { color: var(--muted); font-size: 12px; }
   .summary-row .tally { color: var(--muted); font-size: 12px; white-space: nowrap; text-align: right; }
   .summary-row .tally b { color: var(--won); font-weight: 600; }
-  text { pointer-events: none; font-size: 10px; fill: #c5cad6; }
-  #graph:not(.zoomed) text.minor { display: none; }
-  .node circle { stroke-width: 1.25px; cursor: pointer; }
-  .node.dim circle { opacity: 0.15; }
-  .node.dim text { opacity: 0.05; }
-  .link { stroke: #3a4558; stroke-opacity: 0.45; }
-  .link.dim { stroke-opacity: 0.05; }
-  .link.hi { stroke: var(--accent); stroke-opacity: 0.85; stroke-width: 2px; }
-  #mapView { display: none; position: absolute; inset: 0; padding: 24px; overflow: auto; background: var(--bg); }
+  #mapView { display: none; position: absolute; inset: 0; padding: 24px; overflow: auto; background: var(--bg); z-index: 3; }
   #mapView.open { display: block; }
   #standouts { display: none; position: absolute; inset: 0; padding: 24px; overflow: auto; background: var(--bg); z-index: 3; }
   #standouts.open { display: block; }
@@ -210,7 +240,7 @@
       <option value="500">500</option>
       <option value="1500">1,500</option>
       <option value="4000" selected>4,000</option>
-      <option value="100000">All (slower)</option>
+      <option value="100000">All</option>
     </select>
 
     <button class="btn primary" id="toggleStandouts">Standouts leaderboard</button>
@@ -229,11 +259,18 @@
   <div id="main">
     <div id="toolbar">
       <div class="pill" id="countPill">Loading…</div>
-      <input id="searchBox" class="pill" type="search" placeholder="Jump to node…" style="background:rgba(22,26,34,0.9);border:1px solid var(--border);color:var(--text);border-radius:999px;padding:6px 14px;" />
+      <div class="search-wrap">
+        <input id="searchBox" type="search" placeholder="Jump to node…" autocomplete="off" />
+        <div id="searchResults" role="listbox"></div>
+      </div>
     </div>
-    <svg id="graph"></svg>
+    <canvas id="graph"></canvas>
+    <div id="tooltip"></div>
     <div id="mapView">
-      <h2 style="margin-top:0">Awards by state (filtered)</h2>
+      <div class="overlay-head">
+        <h2>Awards by state (filtered)</h2>
+        <button class="btn" id="closeMap" style="width:auto;margin:0">Close</button>
+      </div>
       <p class="sub">Based on place/state links in the current filter set. Click a state to focus.</p>
       <div class="state-grid" id="stateGrid"></div>
     </div>
@@ -272,20 +309,32 @@ const COLORS = Object.fromEntries(
   ['person', 'restaurant', 'place', 'state', 'category', 'year', 'region']
     .map(t => [t, rootStyle.getPropertyValue('--' + t).trim()])
 );
+const ACCENT = rootStyle.getPropertyValue('--accent').trim();
 const REL = { winner: 'won', nominee: 'nominated', semifinalist: 'semifinalist' };
 
 const state = {
   meta: null,
   awards: [],
   nodeById: new Map(),    // full graph, built once from awards.json
+  allNodesSorted: [],     // all nodes sorted by distinction score for fast search autocomplete
   adjacency: new Map(),   // node id → Set of neighbor ids (full graph)
   awardsByNode: new Map(),// node id → award rows touching it
   focusId: null,
+  hoverId: null,
   simulation: null,
-  scene: null,            // created once: { svg, linkLayer, nodeLayer, zoom, drag, simulation }
-  placed: new Map(),      // node id → simulation node; kept across filter changes so positions persist
-  view: null,             // current drawing: { ids, nodes, nodeSel, linkSel, neighbors }
+  scene: null,            // { canvas, canvasSel, ctx, zoom, drag, simulation }
+  transform: d3.zoomIdentity,
+  width: 0,
+  height: 0,
+  dpr: 1,
+  placed: new Map(),      // node id → simulation node; kept across filter changes
+  view: null,             // current drawing: { ids, nodeById, nodes, links, neighbors, labelled, byColor, labelOrder }
+  quadtree: null,
+  quadtreeDirty: true,
+  rafId: 0,
   userMoved: false,       // stop auto-fitting once the user pans, zooms or drags
+  lastRows: [],
+  mapDirty: true,
 };
 
 function slug(s) {
@@ -343,7 +392,12 @@ function buildGraph(awards) {
 function neighborMap(edges) {
   const nbr = new Map();
   const add = (a, b) => { if (!nbr.has(a)) nbr.set(a, new Set()); nbr.get(a).add(b); };
-  edges.forEach(e => { add(e.source, e.target); add(e.target, e.source); });
+  for (const e of edges) {
+    const s = e.source.id || e.source;
+    const t = e.target.id || e.target;
+    add(s, t);
+    add(t, s);
+  }
   return nbr;
 }
 
@@ -363,6 +417,15 @@ async function load() {
     }
   }
   computeRecords();
+  for (const n of state.nodeById.values()) {
+    n._labelLower = n.label.toLowerCase();
+    n._shortLabel = trimLabel(n.label, n.type);
+    n._r = radius(n);
+    n._color = COLORS[n.type] || '#888';
+  }
+  state.allNodesSorted = [...state.nodeById.values()].sort(
+    (a, b) => (b.score || 0) - (a.score || 0) || (b.win_count || 0) - (a.win_count || 0) || a.label.localeCompare(b.label)
+  );
 
   const regions = [...new Set(state.awards.map(a => a.region).filter(Boolean))].sort();
   const sel = document.getElementById('regionFilter');
@@ -378,6 +441,12 @@ async function load() {
   renderStats();
   initGraph();
   applyAndDraw();
+
+  // Support shareable hash links like #restaurant:alinea-chicago-il
+  if (location.hash.length > 1) {
+    const id = decodeURIComponent(location.hash.slice(1));
+    if (state.nodeById.has(id)) focusNode(id, { pan: true });
+  }
 }
 
 function checkedValues(id) {
@@ -402,14 +471,13 @@ function filterGraph() {
   const q = document.getElementById('q').value.trim().toLowerCase();
   const hops = +document.getElementById('hops').value;
 
-  // The view is the graph of the award rows that match the filters.
   const rows = state.awards.filter(a =>
     a.year >= y0 && a.year <= y1 && statuses.has(a.status) && (!region || a.region === region));
   const sub = buildGraph(rows);
 
   let nodes = [...sub.nodes.keys()].map(id => state.nodeById.get(id)).filter(n => types.has(n.type));
   if (q) {
-    const matched = nodes.filter(n => n.label.toLowerCase().includes(q));
+    const matched = nodes.filter(n => n._labelLower.includes(q));
     if (matched.length && !matched.some(m => m.id === state.focusId)) state.focusId = matched[0].id;
   }
 
@@ -438,25 +506,24 @@ function filterGraph() {
   return { nodes, links, rows, truncated: totalBeforeCap > maxNodes, totalBeforeCap };
 }
 
-// Chefs, restaurants and cities rank by their score; hubs (categories, states, years…) by how many visible links they carry.
 function nodeScore(n, degree) {
   if (n.id === state.focusId) return Infinity;
   return n.score != null ? n.score : degree;
 }
 
 const SCORE = { winner: 5, nominee: 2, semifinalist: 1 };
-const byDistinction = (a, b) => b.score - a.score || b.win_count - a.win_count || a.label.localeCompare(b.label);
+const byDistinction = (a, b) => (b.score || 0) - (a.score || 0) || (b.win_count || 0) - (a.win_count || 0) || a.label.localeCompare(b.label);
 
-// Record for every chef, restaurant and city: counts, distinction score, longest run of consecutive
-// award years, categories won, and rank by score among its type.
 function computeRecords() {
-  const years = state.meta.coverage.years; // award years in the data (there were no awards in 2021)
+  const years = state.meta.coverage.years;
   const yearIndex = new Map(years.map((y, i) => [y, i]));
   const holders = [...state.nodeById.values()].filter(n => n.type === 'person' || n.type === 'restaurant' || n.type === 'place');
   for (const n of holders) {
     const rows = state.awardsByNode.get(n.id) || [];
     n.award_count = rows.length;
     n.win_count = rows.filter(a => a.status === 'winner').length;
+    n.nom_count = rows.filter(a => a.status === 'nominee').length;
+    n.semi_count = rows.filter(a => a.status === 'semifinalist').length;
     n.score = d3.sum(rows, a => SCORE[a.status]);
     n.win_categories = new Set(rows.filter(a => a.status === 'winner').map(a => a.category)).size;
     n.streak = longestStreak(rows, years, yearIndex);
@@ -477,8 +544,6 @@ function longestStreak(rows, years, yearIndex) {
   return best;
 }
 
-// Keep at most `max` nodes, growing outward from the strongest node and always preferring nodes linked to what
-// is already kept, so nothing is left floating on its own. A new cluster starts only when nothing linked is left.
 function capConnected(nodes, links, max, score) {
   if (nodes.length <= max) return nodes;
   const byId = new Map(nodes.map(n => [n.id, n]));
@@ -499,7 +564,6 @@ function capConnected(nodes, links, max, score) {
   return nodes.filter(n => kept.has(n.id));
 }
 
-// Max-heap of [priority, id] pairs for capConnected.
 function heapPush(h, item) {
   h.push(item);
   let i = h.length - 1;
@@ -529,129 +593,559 @@ function heapPop(h) {
   return top;
 }
 
-
 function applyAndDraw() {
   const sub = filterGraph();
   draw(sub);
   document.getElementById('countPill').innerHTML =
-    `<strong>${sub.nodes.length}</strong> nodes · <strong>${sub.links.length}</strong> edges` +
-    (sub.truncated ? ` · capped (from ${sub.totalBeforeCap})` : '');
-  updateMap(sub.rows);
+    `<strong>${sub.nodes.length.toLocaleString()}</strong> nodes · <strong>${sub.links.length.toLocaleString()}</strong> edges` +
+    (sub.truncated ? ` · capped (from ${sub.totalBeforeCap.toLocaleString()})` : '');
+  state.lastRows = sub.rows;
+  state.mapDirty = true;
+  if (document.getElementById('mapView').classList.contains('open')) {
+    updateMap(state.lastRows);
+    state.mapDirty = false;
+  }
 }
 
-const SETTLE_TICKS = 120;     // the layout cools in about this many frames (d3's default is 300)
-const REPULSION_THETA = 1.2;  // coarser grouping of distant nodes for repulsion (d3's default is 0.9)
+const SETTLE_TICKS = 110;
+const REPULSION_THETA = 1.2;
+const REPULSION_DIST_MAX = 360;
+const COLLIDE_MAX_NODES = 1500;
+const PREWARM_MAX_TICKS = 50;
+const PREWARM_BUDGET_MS = 55;
+const TOP_LABELS = 60;
+const MAX_NODE_RADIUS = 18;
+const FONT_FAMILY = '"Inter", system-ui, -apple-system, sans-serif';
 
-// The SVG layers, zoom and simulation are created once; draw() updates them in place.
-function initGraph() {
-  const svg = d3.select('#graph');
-  const gRoot = svg.append('g');
-  const linkLayer = gRoot.append('g').attr('stroke-linecap', 'round');
-  const nodeLayer = gRoot.append('g');
-  const zoom = d3.zoom().scaleExtent([0.05, 6]).on('zoom', (event) => {
-    if (event.sourceEvent) state.userMoved = true;
-    gRoot.attr('transform', event.transform);
-    const zoomed = event.transform.k >= 1.5;
-    if (zoomed !== svg.classed('zoomed')) {
-      svg.classed('zoomed', zoomed);
-      if (zoomed && state.view) ensureLabels(state.view.nodeSel);
+function syncCanvasSize() {
+  const wrap = document.getElementById('main');
+  const w = Math.max(1, wrap.clientWidth);
+  const h = Math.max(1, wrap.clientHeight);
+  const dpr = Math.min(window.devicePixelRatio || 1, 2);
+  if (w === state.width && h === state.height && dpr === state.dpr) return false;
+  state.width = w;
+  state.height = h;
+  state.dpr = dpr;
+  const { canvas } = state.scene;
+  canvas.width = Math.round(w * dpr);
+  canvas.height = Math.round(h * dpr);
+  return true;
+}
+
+function scheduleDraw() {
+  if (!state.rafId) {
+    state.rafId = requestAnimationFrame(() => {
+      state.rafId = 0;
+      renderCanvas();
+    });
+  }
+}
+
+function ensureQuadtree() {
+  if (!state.quadtreeDirty || !state.view) return state.quadtree;
+  state.quadtree = d3.quadtree()
+    .x(d => d.x)
+    .y(d => d.y)
+    .addAll(state.view.nodes);
+  state.quadtreeDirty = false;
+  return state.quadtree;
+}
+
+function pickNode(screenX, screenY) {
+  if (!state.view || !state.view.nodes.length) return null;
+  const qt = ensureQuadtree();
+  const t = state.transform;
+  const wx = (screenX - t.x) / t.k;
+  const wy = (screenY - t.y) / t.k;
+  const pad = 6 / t.k;
+  const searchR = MAX_NODE_RADIUS + pad;
+  const x0 = wx - searchR, y0 = wy - searchR, x1 = wx + searchR, y1 = wy + searchR;
+
+  let best = null;
+  let bestDist2 = Infinity;
+  qt.visit((node, nx0, ny0, nx1, ny1) => {
+    if (nx0 > x1 || nx1 < x0 || ny0 > y1 || ny1 < y0) return true;
+    if (!node.length) {
+      let leaf = node;
+      do {
+        const d = leaf.data;
+        const dx = d.x - wx;
+        const dy = d.y - wy;
+        const hitR = d._r + pad;
+        const d2 = dx * dx + dy * dy;
+        if (d2 <= hitR * hitR && d2 < bestDist2) {
+          bestDist2 = d2;
+          best = d;
+        }
+      } while ((leaf = leaf.next));
     }
+    return false;
   });
-  svg.call(zoom);
+  return best;
+}
+
+function initGraph() {
+  const canvas = document.getElementById('graph');
+  const canvasSel = d3.select(canvas);
+  const ctx = canvas.getContext('2d');
 
   const simulation = d3.forceSimulation()
     .alphaDecay(1 - Math.pow(0.001, 1 / SETTLE_TICKS))
     .force('link', d3.forceLink().id(d => d.id).distance(d => d.rel === 'works-at' ? 40 : 70).strength(0.4))
-    .force('charge', d3.forceManyBody().strength(-120).theta(REPULSION_THETA))
-    .force('collision', d3.forceCollide().radius(d => radius(d) + 4))
+    .force('charge', d3.forceManyBody().strength(-120).theta(REPULSION_THETA).distanceMax(REPULSION_DIST_MAX))
     .on('tick', () => {
-      const { nodeSel, linkSel } = state.view;
-      linkSel.attr('x1', d => d.source.x).attr('y1', d => d.source.y)
-          .attr('x2', d => d.target.x).attr('y2', d => d.target.y);
-      nodeSel.attr('transform', d => `translate(${d.x},${d.y})`);
-      fitView(false); // camera follows the layout as it spreads out
+      state.quadtreeDirty = true;
+      scheduleDraw();
+    })
+    .on('end', () => {
+      state.quadtreeDirty = true;
+      if (!state.userMoved) fitView(true);
     });
+
+  let dragStartX = 0, dragStartY = 0, dragMoved = false, dragActive = false;
+
   const drag = d3.drag()
-    .on('start', (event, d) => { state.userMoved = true; if (!event.active) simulation.alphaTarget(0.3).restart(); d.fx = d.x; d.fy = d.y; })
-    .on('drag', (event, d) => { d.fx = event.x; d.fy = event.y; })
-    .on('end', (event, d) => { if (!event.active) simulation.alphaTarget(0); d.fx = null; d.fy = null; });
+    .container(canvas)
+    .subject(event => {
+      const node = pickNode(event.x, event.y);
+      if (!node) return null;
+      return {
+        node,
+        x: state.transform.applyX(node.x),
+        y: state.transform.applyY(node.y),
+      };
+    })
+    .on('start', event => {
+      dragStartX = event.x;
+      dragStartY = event.y;
+      dragMoved = false;
+      dragActive = true;
+      canvas.classList.add('dragging');
+      hideTooltip();
+    })
+    .on('drag', event => {
+      const node = event.subject.node;
+      if (!dragMoved) {
+        if (Math.hypot(event.x - dragStartX, event.y - dragStartY) < 3) return;
+        dragMoved = true;
+        state.userMoved = true;
+        if (!event.active) simulation.alphaTarget(0.25).restart();
+      }
+      const [wx, wy] = state.transform.invert([event.x, event.y]);
+      node.fx = wx;
+      node.fy = wy;
+      state.quadtreeDirty = true;
+      scheduleDraw();
+    })
+    .on('end', event => {
+      const node = event.subject.node;
+      dragActive = false;
+      canvas.classList.remove('dragging');
+      if (dragMoved) {
+        if (!event.active) simulation.alphaTarget(0);
+        node.fx = null;
+        node.fy = null;
+      } else {
+        focusNode(node.id);
+      }
+    });
+
+  const zoom = d3.zoom()
+    .scaleExtent([0.05, 8])
+    .on('zoom', event => {
+      if (event.sourceEvent) state.userMoved = true;
+      state.transform = event.transform;
+      if (event.sourceEvent) hideTooltip();
+      scheduleDraw();
+    });
+
+  // Register drag before zoom so dragging a node grabs the node while dragging empty space pans.
+  canvasSel.call(drag).call(zoom);
+
+  // Hover hit-testing throttled to once per animation frame.
+  let hoverPending = false;
+  let lastPointer = null;
+  canvas.addEventListener('pointermove', e => {
+    if (dragActive || e.buttons) return;
+    const rect = canvas.getBoundingClientRect();
+    lastPointer = { x: e.clientX - rect.left, y: e.clientY - rect.top };
+    if (!hoverPending) {
+      hoverPending = true;
+      requestAnimationFrame(() => {
+        hoverPending = false;
+        if (!lastPointer || dragActive) return;
+        const hit = pickNode(lastPointer.x, lastPointer.y);
+        const nextId = hit ? hit.id : null;
+        if (nextId !== state.hoverId) {
+          state.hoverId = nextId;
+          canvas.classList.toggle('hovering', !!nextId);
+          scheduleDraw();
+        }
+        if (hit) showTooltip(hit, lastPointer.x, lastPointer.y);
+        else hideTooltip();
+      });
+    }
+  });
+  canvas.addEventListener('pointerleave', () => {
+    lastPointer = null;
+    if (state.hoverId) {
+      state.hoverId = null;
+      canvas.classList.remove('hovering');
+      scheduleDraw();
+    }
+    hideTooltip();
+  });
 
   state.simulation = simulation;
-  state.scene = { svg, linkLayer, nodeLayer, zoom, drag, simulation };
+  state.scene = { canvas, canvasSel, ctx, zoom, drag, simulation };
+  syncCanvasSize();
 }
 
-const TOP_LABELS = 60;        // chefs and restaurants labelled while zoomed out
+function showTooltip(n, sx, sy) {
+  const el = document.getElementById('tooltip');
+  const bits = [];
+  if (n.city) bits.push(escapeHtml(n.city) + (n.state ? ', ' + escapeHtml(n.state) : ''));
+  if (n.win_count) bits.push(`<b>${plural(n.win_count, 'win')}</b>`);
+  if (n.nom_count) bits.push(`${n.nom_count} nom`);
+  if (n.semi_count) bits.push(`${n.semi_count} semi`);
+  if (!bits.length && state.view) {
+    const deg = state.view.neighbors.get(n.id)?.size || 0;
+    bits.push(plural(deg, 'connection'));
+  }
+  el.innerHTML =
+    `<div class="tt-type" style="color:${n._color}">${escapeHtml(n.type)}</div>` +
+    `<div class="tt-title">${escapeHtml(n.label)}</div>` +
+    (bits.length ? `<div class="tt-sub">${bits.join(' · ')}</div>` : '');
+  el.classList.add('open');
 
-const linkKey = d => `${d.source.id || d.source}|${d.target.id || d.target}|${d.rel}`;
+  const pad = 14;
+  const tw = el.offsetWidth || 180;
+  const th = el.offsetHeight || 52;
+  let left = sx + pad;
+  let top = sy + pad;
+  if (left + tw > state.width - 8) left = sx - tw - pad;
+  if (top + th > state.height - 8) top = sy - th - pad;
+  el.style.left = Math.max(8, left) + 'px';
+  el.style.top = Math.max(8, top) + 'px';
+}
+
+function hideTooltip() {
+  document.getElementById('tooltip').classList.remove('open');
+}
 
 function draw(sub) {
-  const { svg, linkLayer, nodeLayer, drag, simulation } = state.scene;
-  const wrap = document.getElementById('main');
-  const width = wrap.clientWidth;
-  const height = wrap.clientHeight;
-  svg.attr('viewBox', [0, 0, width, height]);
+  const { simulation } = state.scene;
+  syncCanvasSize();
+  const width = state.width;
+  const height = state.height;
 
   // Reuse simulation nodes from earlier draws so nodes keep their places when filters change.
   const prevIds = state.view ? state.view.ids : new Set();
   const nodes = sub.nodes.map(d => {
     let n = state.placed.get(d.id);
     if (!n) state.placed.set(d.id, n = { ...d });
-    else if (!prevIds.has(d.id)) n.vx = n.vy = 0; // returning node: drop stale momentum
+    else if (!prevIds.has(d.id)) n.vx = n.vy = 0;
     return n;
   });
   const neighbors = neighborMap(sub.links);
   placeNewNodes(nodes, neighbors);
   const ids = new Set(nodes.map(d => d.id));
+  const nodeById = new Map(nodes.map(d => [d.id, d]));
   const added = nodes.filter(d => !prevIds.has(d.id)).length;
   const removed = [...prevIds].filter(id => !ids.has(id)).length;
-  // A mostly different view gets the camera back even if the user had moved it.
   if ((added + removed) / Math.max(1, prevIds.size, ids.size) > 0.5) state.userMoved = false;
 
   const links = sub.links.map(d => ({ ...d }));
-  const linkSel = linkLayer.selectAll('line')
-    .data(links, linkKey)
-    .join('line')
-    .attr('class', 'link')
-    .attr('stroke-width', d => d.rel === 'won' ? 1.6 : 1);
 
-  const nodeSel = nodeLayer.selectAll('g.node')
-    .data(nodes, d => d.id)
-    .join(enter => {
-      const g = enter.append('g').attr('class', 'node').call(drag);
-      g.append('circle')
-        .attr('r', d => radius(d))
-        .attr('fill', d => COLORS[d.type] || '#888')
-        .on('click', (event, d) => { event.stopPropagation(); focusNode(d.id); })
-        .on('mouseenter', (event, d) => { addTooltip(event.currentTarget, d); highlight(d.id); })
-        .on('mouseleave', clearHighlight);
-      return g;
-    });
+  // Group nodes by fill color for batched canvas drawing.
+  const byColor = new Map();
+  for (const n of nodes) {
+    let arr = byColor.get(n._color);
+    if (!arr) byColor.set(n._color, arr = []);
+    arr.push(n);
+  }
 
+  const labelled = new Set(
+    nodes.filter(d => d.type === 'person' || d.type === 'restaurant')
+      .sort(byDistinction)
+      .slice(0, TOP_LABELS)
+      .map(d => d.id)
+  );
+
+  // Pre-sort label priority once per filter change: hubs & top scorers first, then remaining by score.
+  const labelRank = d => {
+    if (d.type === 'category' || d.type === 'state' || d.type === 'region' || d.type === 'year') return 2;
+    if (labelled.has(d.id)) return 1;
+    return 0;
+  };
+  const labelOrder = nodes.slice().sort((a, b) =>
+    labelRank(b) - labelRank(a) || (b.score || 0) - (a.score || 0) || (b.win_count || 0) - (a.win_count || 0)
+  );
+
+  state.view = { ids, nodeById, nodes, links, neighbors, labelled, byColor, labelOrder };
+  if (state.hoverId && !ids.has(state.hoverId)) {
+    state.hoverId = null;
+    hideTooltip();
+  }
+
+  simulation.stop();
   simulation.nodes(nodes);
   simulation.force('link').links(links);
   simulation
+    .force('collision', nodes.length <= COLLIDE_MAX_NODES ? d3.forceCollide().radius(d => d._r + 3).iterations(1) : null)
     .force('center', d3.forceCenter(width / 2, height / 2))
-    // Gentle pull toward the middle so unconnected nodes don't drift out of view
     .force('x', d3.forceX(width / 2).strength(0.04))
     .force('y', d3.forceY(height / 2).strength(0.04));
-  const labelled = new Set(nodes.filter(d => d.type === 'person' || d.type === 'restaurant')
-    .sort(byDistinction).slice(0, TOP_LABELS).map(d => d.id));
-  state.view = { ids, nodes, nodeSel, linkSel, neighbors, labelled };
-  styleFocus();
-  // The first layout starts hot; later ones only as hot as the share of new nodes needs.
-  simulation.alpha(prevIds.size ? Math.min(1, 0.3 + added / Math.max(1, nodes.length)) : 1).restart();
+
+  const startAlpha = prevIds.size ? Math.min(1, 0.3 + added / Math.max(1, nodes.length)) : 1;
+  simulation.alpha(startAlpha);
+
+  // Pre-warm layout off-screen within a tight time budget so the graph appears settled immediately.
+  const isInitialOrBigChange = !prevIds.size || added / Math.max(1, nodes.length) > 0.35;
+  if (isInitialOrBigChange) {
+    const t0 = performance.now();
+    for (let i = 0; i < PREWARM_MAX_TICKS; i++) {
+      simulation.tick();
+      if (simulation.alpha() <= simulation.alphaMin() || performance.now() - t0 >= PREWARM_BUDGET_MS) break;
+    }
+  }
+
+  state.quadtreeDirty = true;
   fitView(false);
+  renderCanvas();
+
+  if (simulation.alpha() > simulation.alphaMin()) {
+    simulation.restart();
+  }
 }
 
-// Start each new node beside a linked node that already has a position, so it joins the layout
-// instead of flying in. On the first draw nothing is placed yet and d3's default spiral is used.
+function renderCanvas() {
+  const view = state.view;
+  if (!view) return;
+  const { ctx } = state.scene;
+  const w = state.width;
+  const h = state.height;
+  const dpr = state.dpr;
+  const t = state.transform;
+  const k = t.k;
+
+  ctx.save();
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  ctx.clearRect(0, 0, w, h);
+
+  // World-space viewport bounds with padding for culling.
+  const pad = 40 / k;
+  const vx0 = -t.x / k - pad;
+  const vy0 = -t.y / k - pad;
+  const vx1 = (w - t.x) / k + pad;
+  const vy1 = (h - t.y) / k + pad;
+
+  const hoverId = state.hoverId;
+  const focusId = state.focusId;
+  const near = hoverId ? new Set(view.neighbors.get(hoverId) || []) : null;
+  if (near) near.add(hoverId);
+
+  // ---- World-space edges & nodes
+  ctx.save();
+  ctx.translate(t.x, t.y);
+  ctx.scale(k, k);
+
+  const baseLw = Math.max(0.45, Math.min(1.1, 0.9 / Math.sqrt(k)));
+  const wonLw = baseLw * 1.55;
+
+  // Edges
+  if (!near) {
+    ctx.strokeStyle = 'rgba(58, 69, 88, 0.42)';
+    ctx.lineWidth = baseLw;
+    ctx.beginPath();
+    for (const l of view.links) {
+      if (l.rel === 'won') continue;
+      const sx = l.source.x, sy = l.source.y, tx = l.target.x, ty = l.target.y;
+      if ((sx < vx0 && tx < vx0) || (sx > vx1 && tx > vx1) || (sy < vy0 && ty < vy0) || (sy > vy1 && ty > vy1)) continue;
+      ctx.moveTo(sx, sy);
+      ctx.lineTo(tx, ty);
+    }
+    ctx.stroke();
+
+    ctx.strokeStyle = 'rgba(84, 100, 126, 0.5)';
+    ctx.lineWidth = wonLw;
+    ctx.beginPath();
+    for (const l of view.links) {
+      if (l.rel !== 'won') continue;
+      const sx = l.source.x, sy = l.source.y, tx = l.target.x, ty = l.target.y;
+      if ((sx < vx0 && tx < vx0) || (sx > vx1 && tx > vx1) || (sy < vy0 && ty < vy0) || (sy > vy1 && ty > vy1)) continue;
+      ctx.moveTo(sx, sy);
+      ctx.lineTo(tx, ty);
+    }
+    ctx.stroke();
+  } else {
+    // Dimmed background edges
+    ctx.strokeStyle = 'rgba(58, 69, 88, 0.06)';
+    ctx.lineWidth = baseLw;
+    ctx.beginPath();
+    const hiLinks = [];
+    for (const l of view.links) {
+      const sId = l.source.id, tId = l.target.id;
+      if (sId === hoverId || tId === hoverId) {
+        hiLinks.push(l);
+        continue;
+      }
+      const sx = l.source.x, sy = l.source.y, tx = l.target.x, ty = l.target.y;
+      if ((sx < vx0 && tx < vx0) || (sx > vx1 && tx > vx1) || (sy < vy0 && ty < vy0) || (sy > vy1 && ty > vy1)) continue;
+      ctx.moveTo(sx, sy);
+      ctx.lineTo(tx, ty);
+    }
+    ctx.stroke();
+
+    // Highlighted edges touching hovered node
+    if (hiLinks.length) {
+      ctx.strokeStyle = 'rgba(201, 162, 39, 0.88)';
+      ctx.lineWidth = Math.max(1.2, Math.min(2.6, 2 / Math.sqrt(k)));
+      ctx.beginPath();
+      for (const l of hiLinks) {
+        ctx.moveTo(l.source.x, l.source.y);
+        ctx.lineTo(l.target.x, l.target.y);
+      }
+      ctx.stroke();
+    }
+  }
+
+  // Nodes (batched by color)
+  const strokeLw = Math.max(0.6, 1.1 / Math.sqrt(k));
+  const drawStroke = k >= 0.45;
+  ctx.strokeStyle = '#0b0d12';
+  ctx.lineWidth = strokeLw;
+
+  for (const [color, arr] of view.byColor) {
+    ctx.fillStyle = color;
+    ctx.globalAlpha = near ? 0.14 : 1;
+    ctx.beginPath();
+    for (const n of arr) {
+      if (near && near.has(n.id)) continue;
+      if (n.x < vx0 || n.x > vx1 || n.y < vy0 || n.y > vy1) continue;
+      const r = n._r;
+      ctx.moveTo(n.x + r, n.y);
+      ctx.arc(n.x, n.y, r, 0, Math.PI * 2);
+    }
+    ctx.fill();
+    if (drawStroke && !near) ctx.stroke();
+  }
+
+  // Active neighborhood nodes (full opacity on top)
+  if (near) {
+    ctx.globalAlpha = 1;
+    for (const id of near) {
+      const n = view.nodeById.get(id);
+      if (!n) continue;
+      ctx.beginPath();
+      ctx.arc(n.x, n.y, n._r, 0, Math.PI * 2);
+      ctx.fillStyle = n._color;
+      ctx.fill();
+      ctx.strokeStyle = id === hoverId ? '#ffffff' : '#0b0d12';
+      ctx.lineWidth = id === hoverId ? Math.max(1.8, 2.2 / Math.sqrt(k)) : strokeLw;
+      ctx.stroke();
+    }
+  }
+
+  // Focused node ring
+  if (focusId) {
+    const fn = view.nodeById.get(focusId);
+    if (fn) {
+      ctx.globalAlpha = 1;
+      ctx.beginPath();
+      ctx.arc(fn.x, fn.y, fn._r, 0, Math.PI * 2);
+      ctx.fillStyle = fn._color;
+      ctx.fill();
+      ctx.strokeStyle = '#ffffff';
+      ctx.lineWidth = Math.max(2, 2.6 / Math.sqrt(k));
+      ctx.stroke();
+    }
+  }
+
+  ctx.restore();
+
+  // ---- Screen-space collision-free labels (viewport culled)
+  ctx.globalAlpha = 1;
+  ctx.font = `11px ${FONT_FAMILY}`;
+  ctx.textBaseline = 'middle';
+
+  const placedBoxes = [];
+  const labelH = 14;
+  const overlaps = (x0, y0, x1, y1) => {
+    for (let i = 0; i < placedBoxes.length; i++) {
+      const b = placedBoxes[i];
+      if (x0 < b[2] && x1 > b[0] && y0 < b[3] && y1 > b[1]) return true;
+    }
+    return false;
+  };
+  const drawLabel = (n, prominent) => {
+    const sx = n.x * k + t.x;
+    const sy = n.y * k + t.y;
+    if (sx < -120 || sx > w + 40 || sy < -20 || sy > h + 20) return false;
+    const text = n._shortLabel;
+    const lx = sx + n._r * k + 5;
+    const ly = sy;
+    const tw = n._labelW || (n._labelW = ctx.measureText(text).width);
+    const x0 = lx - 3, y0 = ly - labelH / 2, x1 = lx + tw + 4, y1 = ly + labelH / 2;
+    if (!prominent && overlaps(x0, y0, x1, y1)) return false;
+    placedBoxes.push([x0, y0, x1, y1]);
+
+    if (prominent) {
+      ctx.fillStyle = 'rgba(15, 17, 21, 0.88)';
+      ctx.fillRect(x0, y0, x1 - x0, y1 - y0);
+      ctx.fillStyle = '#ffffff';
+    } else {
+      ctx.fillStyle = 'rgba(15, 17, 21, 0.65)';
+      ctx.fillText(text, lx + 1, ly + 1);
+      ctx.fillStyle = '#d3d9e6';
+    }
+    ctx.fillText(text, lx, ly);
+    return true;
+  };
+
+  // Always label hovered and focused nodes cleanly on top.
+  if (hoverId) {
+    const hn = view.nodeById.get(hoverId);
+    if (hn) drawLabel(hn, true);
+  }
+  if (focusId && focusId !== hoverId) {
+    const fn = view.nodeById.get(focusId);
+    if (fn) drawLabel(fn, true);
+  }
+
+  // When hovering, prioritize neighbor labels; otherwise show visible priority + zoomed labels.
+  if (near) {
+    const nbrNodes = [...near]
+      .filter(id => id !== hoverId && id !== focusId)
+      .map(id => view.nodeById.get(id))
+      .filter(Boolean)
+      .sort(byDistinction);
+    let shown = 0;
+    for (const n of nbrNodes) {
+      if (drawLabel(n, false) && ++shown >= 28) break;
+    }
+  } else {
+    const showMinor = k >= 1.15;
+    const maxLabels = showMinor ? 110 : 70;
+    let shown = 0;
+    for (const n of view.labelOrder) {
+      if (n.id === focusId) continue;
+      const isMajor = n.type === 'category' || n.type === 'state' || n.type === 'region' || n.type === 'year' || view.labelled.has(n.id);
+      if (!showMinor && !isMajor) break; // labelOrder puts all majors before minors
+      if (n.x < vx0 || n.x > vx1 || n.y < vy0 || n.y > vy1) continue;
+      if (drawLabel(n, false) && ++shown >= maxLabels) break;
+    }
+  }
+
+  ctx.restore();
+}
+
 const GOLDEN_ANGLE = Math.PI * (3 - Math.sqrt(5));
 
 function placeNewNodes(nodes, neighbors) {
   const placed = nodes.filter(n => n.x != null);
   if (!placed.length) return;
   const byId = new Map(nodes.map(n => [n.id, n]));
-  // New nodes around one anchor spiral outward from it, so a hub gaining hundreds of nodes doesn't stack them.
   const spun = new Map();
   const spiralAround = (n, cx, cy, gap) => {
     const k = (spun.get(cx + ',' + cy) || 0) + 1;
@@ -675,59 +1169,42 @@ function placeNewNodes(nodes, neighbors) {
     if (unplaced.length === pending.length) break;
     pending = unplaced;
   }
-  // Nothing linked is placed: spiral out from the middle of the current layout.
   const cx = d3.mean(placed, n => n.x);
   const cy = d3.mean(placed, n => n.y);
   pending.forEach(n => spiralAround(n, cx, cy, 12));
-}
-
-// Tooltips are created on first hover rather than for every node up front.
-function addTooltip(circle, d) {
-  if (!circle.firstChild) d3.select(circle).append('title').text(`${d.label} (${d.type})`);
 }
 
 // Zoom so every node fits the graph area (below the toolbar), unless the user has taken over the camera.
 function fitView(animate, force) {
   if (!state.view || (state.userMoved && !force)) return;
   const { nodes } = state.view;
-  const { svg, zoom } = state.scene;
+  const { canvasSel, zoom } = state.scene;
   if (!nodes.length) return;
-  const wrap = document.getElementById('main');
   const pad = { top: 56, right: 24, bottom: 24, left: 24 };
-  const w = wrap.clientWidth - pad.left - pad.right;
-  const h = wrap.clientHeight - pad.top - pad.bottom;
+  const w = Math.max(1, state.width - pad.left - pad.right);
+  const h = Math.max(1, state.height - pad.top - pad.bottom);
   const [x0, x1] = d3.extent(nodes, d => d.x);
   const [y0, y1] = d3.extent(nodes, d => d.y);
+  if (x0 == null || y0 == null) return;
   const k = Math.max(0.05, Math.min(2, w / Math.max(1, x1 - x0), h / Math.max(1, y1 - y0)));
   const t = d3.zoomIdentity
     .translate(pad.left + w / 2 - k * (x0 + x1) / 2, pad.top + h / 2 - k * (y0 + y1) / 2)
     .scale(k);
-  (animate ? svg.transition().duration(500) : svg).call(zoom.transform, t);
+  (animate ? canvasSel.transition().duration(450) : canvasSel).call(zoom.transform, t);
 }
 
-function styleFocus() {
-  const { nodeSel } = state.view;
-  nodeSel.select('circle')
-    .attr('stroke', d => d.id === state.focusId ? '#fff' : '#0b0d12')
-    .attr('stroke-width', d => d.id === state.focusId ? 2.5 : 1.2);
-  ensureLabels(nodeSel);
-}
-
-// Only the highest-scoring chefs and restaurants in view are labelled until you zoom in (or focus); see `.minor` in the CSS.
-function isMinor(d) {
-  return d.id !== state.focusId && (d.type === 'person' || d.type === 'restaurant' || d.type === 'place') && !state.view.labelled.has(d.id);
-}
-
-// Label elements are created only for nodes that show one, so unzoomed views skip thousands of hidden labels.
-function ensureLabels(nodeSel) {
-  const zoomed = state.scene.svg.classed('zoomed');
-  nodeSel
-    .filter(function (d) { return (zoomed || !isMinor(d)) && !this.querySelector('text'); })
-    .append('text')
-    .attr('x', d => radius(d) + 4)
-    .attr('y', 3)
-    .text(d => trimLabel(d.label, d.type));
-  nodeSel.select('text').classed('minor', isMinor);
+// Smoothly center and zoom the camera onto a specific node in view.
+function centerOnNode(id) {
+  if (!state.view) return;
+  const n = state.view.nodeById.get(id);
+  if (!n || n.x == null || n.y == null) return;
+  const { canvasSel, zoom } = state.scene;
+  state.userMoved = true;
+  const targetK = Math.max(state.transform.k, 1.8);
+  const t = d3.zoomIdentity
+    .translate(state.width / 2 - targetK * n.x, state.height / 2 - targetK * n.y)
+    .scale(targetK);
+  canvasSel.transition().duration(450).call(zoom.transform, t);
 }
 
 function radius(d) {
@@ -743,25 +1220,20 @@ function trimLabel(s, type) {
   return s.length > 28 ? s.slice(0, 26) + '…' : s;
 }
 
-function highlight(id) {
-  const { nodeSel, linkSel, neighbors } = state.view;
-  const near = new Set(neighbors.get(id) || []).add(id);
-  nodeSel.classed('dim', d => !near.has(d.id));
-  linkSel
-    .classed('dim', l => !(near.has(l.source.id) && near.has(l.target.id)))
-    .classed('hi', l => l.source.id === id || l.target.id === id);
-}
-function clearHighlight() {
-  state.view.nodeSel.classed('dim', false);
-  state.view.linkSel.classed('dim', false).classed('hi', false);
-}
-
-function focusNode(id) {
+function focusNode(id, opts = {}) {
   state.focusId = id;
+  if (history.replaceState) {
+    history.replaceState(null, '', '#' + encodeURIComponent(id));
+  }
   openProfile(id);
-  // Only re-layout when the view depends on the focus; otherwise restyle in place.
-  if (+document.getElementById('hops').value > 0 || !state.view.ids.has(id)) applyAndDraw();
-  else styleFocus();
+  if (+document.getElementById('hops').value > 0 || !state.view || !state.view.ids.has(id)) {
+    applyAndDraw();
+  } else {
+    scheduleDraw();
+  }
+  if (opts.pan) {
+    requestAnimationFrame(() => centerOnNode(id));
+  }
 }
 
 function openProfile(id) {
@@ -816,11 +1288,13 @@ function openProfile(id) {
     <div>${sources.map(s => `<div><a class="src" href="${s.url}" target="_blank" rel="noopener">${escapeHtml(s.label)}</a></div>`).join('') || '<div class="empty">See data/awards.json provenance.</div>'}</div>
   `;
   body.querySelectorAll('[data-id]').forEach(el => {
-    el.addEventListener('click', (e) => { e.preventDefault(); focusNode(el.getAttribute('data-id')); });
+    el.addEventListener('click', e => {
+      e.preventDefault();
+      focusNode(el.getAttribute('data-id'), { pan: true });
+    });
   });
 }
 
-// Short factual callouts drawn from the record; nothing here is inferred beyond the award rows.
 function achievements(n, rows) {
   const out = [];
   const kind = { person: 'chef', restaurant: 'restaurant', place: 'city' }[n.type];
@@ -887,7 +1361,7 @@ function setStandoutsOpen(open) {
   }
 }
 
-const RICH_PROFILE_MIN = 6;  // restaurants with more than 5 award mentions get the expanded profile
+const RICH_PROFILE_MIN = 6;
 const STATUS_RANK = { winner: 3, nominee: 2, semifinalist: 1 };
 const bestStatus = rows => rows.reduce((best, a) => STATUS_RANK[a.status] > STATUS_RANK[best] ? a.status : best, 'semifinalist');
 const yearSpan = years => years[0] === years[years.length - 1] ? `${years[0]}` : `${years[0]}–${years[years.length - 1]}`;
@@ -899,7 +1373,6 @@ function tally(rows) {
     .filter(Boolean).join(' · ');
 }
 
-// Summary tiles, a year-by-year timeline, and breakdowns by category and by person, all from the award rows.
 function restaurantDetails(awards) {
   const count = s => awards.filter(a => a.status === s).length;
   const years = [...new Set(awards.map(a => a.year))].sort((a, b) => a - b);
@@ -949,7 +1422,6 @@ function restaurantDetails(awards) {
     ${people.length ? `<h3>People</h3><div>${people.map(g => row(personLabel(g.name), g)).join('')}</div>` : ''}`;
 }
 
-// Opening or closing the profile changes the graph's width, so refit after the layout reflows.
 function setProfileOpen(open) {
   const profile = document.getElementById('profile');
   if (profile.classList.contains('open') === open) return;
@@ -977,25 +1449,106 @@ function updateMap(rows) {
       <div class="n">${n}</div><div class="s">${st}</div></div>`;
   }).join('');
   grid.querySelectorAll('.state-card').forEach(card => {
-    card.addEventListener('click', () => focusNode(nid('state', card.getAttribute('data-state'))));
+    card.addEventListener('click', () => {
+      document.getElementById('mapView').classList.remove('open');
+      focusNode(nid('state', card.getAttribute('data-state')), { pan: true });
+    });
   });
 }
 
 function resizeGraph() {
-  const wrap = document.getElementById('main');
-  const width = wrap.clientWidth;
-  const height = wrap.clientHeight;
-  d3.select('#graph').attr('viewBox', [0, 0, width, height]);
-  // The camera absorbs size changes; the layout itself stays put.
-  fitView(false);
+  if (!state.scene) return;
+  if (syncCanvasSize()) {
+    fitView(false);
+    scheduleDraw();
+  }
 }
+
+// ---- Autocomplete jump box
+const searchBox = document.getElementById('searchBox');
+const searchResults = document.getElementById('searchResults');
+let searchMatches = [];
+let searchActive = -1;
+
+function renderSearchResults(q) {
+  const needle = q.trim().toLowerCase();
+  if (!needle) {
+    searchMatches = [];
+    searchActive = -1;
+    searchResults.classList.remove('open');
+    return;
+  }
+  const hits = [];
+  for (const n of state.allNodesSorted) {
+    if (n._labelLower.includes(needle)) {
+      hits.push(n);
+      if (hits.length >= 10) break;
+    }
+  }
+  searchMatches = hits;
+  searchActive = hits.length ? 0 : -1;
+  if (!hits.length) {
+    searchResults.innerHTML = '<div class="sr-item"><span class="sr-meta">No matches</span></div>';
+    searchResults.classList.add('open');
+    return;
+  }
+  searchResults.innerHTML = hits.map((n, i) => `
+    <button type="button" class="sr-item${i === 0 ? ' active' : ''}" data-idx="${i}">
+      <span class="sr-main">
+        <span class="swatch" style="background:${n._color}"></span>
+        <span class="sr-name">${escapeHtml(n.label)}</span>
+      </span>
+      <span class="sr-meta">${n.city ? escapeHtml(n.city) + ' · ' : ''}${n.type}</span>
+    </button>`).join('');
+  searchResults.classList.add('open');
+}
+
+function chooseSearchMatch(idx) {
+  const n = searchMatches[idx];
+  if (!n) return;
+  searchBox.value = n.label;
+  searchResults.classList.remove('open');
+  focusNode(n.id, { pan: true });
+}
+
+searchBox.addEventListener('input', e => renderSearchResults(e.target.value));
+searchBox.addEventListener('focus', e => { if (e.target.value.trim()) renderSearchResults(e.target.value); });
+searchBox.addEventListener('keydown', e => {
+  if (!searchMatches.length) return;
+  if (e.key === 'ArrowDown') {
+    e.preventDefault();
+    searchActive = (searchActive + 1) % searchMatches.length;
+    updateSearchHighlight();
+  } else if (e.key === 'ArrowUp') {
+    e.preventDefault();
+    searchActive = (searchActive - 1 + searchMatches.length) % searchMatches.length;
+    updateSearchHighlight();
+  } else if (e.key === 'Enter') {
+    e.preventDefault();
+    chooseSearchMatch(searchActive >= 0 ? searchActive : 0);
+  } else if (e.key === 'Escape') {
+    searchResults.classList.remove('open');
+  }
+});
+function updateSearchHighlight() {
+  searchResults.querySelectorAll('.sr-item').forEach((el, i) => el.classList.toggle('active', i === searchActive));
+}
+searchResults.addEventListener('mousedown', e => {
+  const btn = e.target.closest('[data-idx]');
+  if (!btn) return;
+  e.preventDefault();
+  chooseSearchMatch(+btn.dataset.idx);
+});
+document.addEventListener('click', e => {
+  if (!e.target.closest('.search-wrap')) searchResults.classList.remove('open');
+});
 
 // Filters apply as soon as they change; search runs on Enter.
 let filterTimer;
 document.querySelector('aside').addEventListener('input', e => {
   if (e.target.id === 'q') return;
   clearTimeout(filterTimer);
-  filterTimer = setTimeout(applyAndDraw, 200);
+  filterTimer = setTimeout(applyAndDraw, 180);
 });
 document.getElementById('resetBtn').addEventListener('click', () => {
   state.userMoved = false;
@@ -1004,7 +1557,16 @@ document.getElementById('resetBtn').addEventListener('click', () => {
 document.getElementById('closeProfile').addEventListener('click', () => setProfileOpen(false));
 document.getElementById('toggleMap').addEventListener('click', () => {
   setStandoutsOpen(false);
-  document.getElementById('mapView').classList.toggle('open');
+  const mv = document.getElementById('mapView');
+  const open = !mv.classList.contains('open');
+  mv.classList.toggle('open', open);
+  if (open && state.mapDirty) {
+    updateMap(state.lastRows);
+    state.mapDirty = false;
+  }
+});
+document.getElementById('closeMap').addEventListener('click', () => {
+  document.getElementById('mapView').classList.remove('open');
 });
 document.getElementById('toggleStandouts').addEventListener('click', () =>
   setStandoutsOpen(!document.getElementById('standouts').classList.contains('open')));
@@ -1021,21 +1583,19 @@ document.getElementById('standoutsList').addEventListener('click', e => {
   const row = e.target.closest('[data-id]');
   if (!row) return;
   setStandoutsOpen(false);
-  focusNode(row.dataset.id);
+  focusNode(row.dataset.id, { pan: true });
 });
-document.getElementById('q').addEventListener('keydown', e => { if (e.key === 'Enter') applyAndDraw(); });
-document.getElementById('searchBox').addEventListener('keydown', e => {
-  if (e.key !== 'Enter') return;
-  const q = e.target.value.trim().toLowerCase();
-  if (!q) return;
-  for (const n of state.nodeById.values()) {
-    if (n.label.toLowerCase().includes(q)) { focusNode(n.id); break; }
+document.getElementById('q').addEventListener('keydown', e => {
+  if (e.key === 'Enter') {
+    applyAndDraw();
+    if (state.focusId) requestAnimationFrame(() => centerOnNode(state.focusId));
   }
 });
+
 let resizeTimer;
 window.addEventListener('resize', () => {
   clearTimeout(resizeTimer);
-  resizeTimer = setTimeout(resizeGraph, 150);
+  resizeTimer = setTimeout(resizeGraph, 120);
 });
 
 load().catch(err => {
