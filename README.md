@@ -62,6 +62,7 @@
 | [Aircraft for-sale tracker](boy-toy-pricer/airplane-pricer/output/report.html) | Cirrus SR22, Vision Jet, CubCrafters, and Piper PA-28-180/181 listings in one HTML report |
 | [Watch for-sale tracker](boy-toy-pricer/watch-pricer/output/report.html) | Patek Philippe Nautilus 5711 and blue or green Aquanaut listings in one HTML report |
 | [Porsche 911 tracker](boy-toy-pricer/911-pricer/report.html) | Every Porsche 911 for sale on AutoTempest, one tab per generation from the early 911 to the 992, with Bring a Trailer sold comps and chip filters for trim, body, gearbox, and options |
+| [Porsche 911 tracker (split)](boy-toy-pricer/911-pricer/report_v2.html) | November 23, 2026 rebuild of the same 911 report: 6,335 listings across eight generations, each generation in its own file, with Bring a Trailer comps and the same chip filters |
 
 ## Misc
 
@@ -75,5 +76,5 @@
 - `scripts/` holds the privacy checker, the local setup script, and the best-of title matcher.
 - Run `sh scripts/setup_privacy.sh` in each fresh checkout to install privacy hooks and the anonymous repository commit identity.
 - Run `python3 scripts/check_privacy.py` before committing, per [CONTRIBUTING.md](CONTRIBUTING.md).
-- [`index.html`](index.html) is the GitHub Pages catalog of the HTML projects. It links to 29 projects and 44 report pages, with 101 additional ticker detail pages accessible through the earnings-straddle screen. Card thumbnails live in [`site-assets/thumbs/`](site-assets/thumbs/).
+- [`index.html`](index.html) is the GitHub Pages catalog of the HTML projects. It links to 30 projects and 45 report pages, with 101 additional ticker detail pages accessible through the earnings-straddle screen. Card thumbnails live in [`site-assets/thumbs/`](site-assets/thumbs/).
 - Each project folder contains its source files and, where available, a README with build or refresh instructions.
