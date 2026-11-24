@@ -1,6 +1,6 @@
 [![Yes No GIF](https://media1.tenor.com/m/GQBgOkfrMZ8AAAAC/yes-no.gif)](https://tenor.com/view/yes-no-gif-23142380)
 
-*Last updated: November 22, 2026*
+*Last updated: November 24, 2026*
 
 # Project index
 
@@ -39,12 +39,13 @@
 | [Tanakh atlas](research/religion/tanakh-atlas/) | Single-file interactive atlas of the Tanakh and the later Jewish library, with the full JPS 1917 text, themes, people, places, and essays |
 | [Rent-seeking report](biz-other/rent-seeking-report/rent-seeking-report.html) | Economic rents, their history, and 50 ways to create rental income today |
 | [Arby's deal deep dive](biz-other/arbys-deal-deep-dive/arby-s-deal-deep-dive.html) | Sourced account of the Arby's acquisition and turnaround, including Roark's 2011 purchase |
+| [Onyx Coffee Lab](biz-other/onyx-coffee-deep-dive/onyx-coffee-deep-dive.html) | Visual deep dive on Onyx Coffee Lab, the Northwest Arkansas roaster ranked the world's best coffee shop in 2026: founders, timeline, cafés, business model, price transparency, and what's next |
 | [James Beard award graphs](James-Beard/) | Unofficial Obsidian-style graphs of public James Beard Foundation award results: restaurants and chefs, 1991–2025, and books, broadcast, and journalism, 1991–2024 |
 | [Biochar water filtration](research/biochar/) | Staging pack for carbon-based water filtration: an evidence review of biochar and activated carbon, PPP notes, a papers audit, and a cite-first bibliography |
 | [Gas-solvent food ingredients](research/food-ingredients/gas-solvent-food-ingredients.html) | Exhaustive list of food ingredients made with gas solvents such as supercritical CO₂, propane, butane, dimethyl ether, HFC-134a, and nitrous oxide, with regulatory status, residue data, literature, and charts |
-| [Best of 2026](best-of-2026/Best_of_2026.html) | Directory of 147 published best-of-2026 lists across books, albums, film, television, and other topics, with the outlet and a checked link for each. The Master list tab merges variant titles within a category and ranks 3,504 titles by how many lists include each one, with a link back to those lists. Long form: [MASTER.md](best-of-2026/MASTER.md) |
-| [Best of 2025](best-of-2025/Best_of_2025.html) | Directory of 202 published best-of-2025 lists across books, albums, film, television, and other topics, with the outlet and a checked link for each. The Master list tab merges variant titles within a category and ranks 3,991 titles by how many lists include each one, with a link back to those lists. Long form: [MASTER.md](best-of-2025/MASTER.md) |
-| [Best of 2024](best-of-2024/Best_of_2024.html) | Directory of 199 published best-of-2024 lists across books, albums, film, television, and other topics, with the outlet and a checked link for each. The Master list tab merges variant titles within a category and ranks 3,921 titles by how many lists include each one, with a link back to those lists. Long form: [MASTER.md](best-of-2024/MASTER.md) |
+| [Best of 2026](annual_best_of_list_of_lists/best-of-2026/Best_of_2026.html) | Directory of 147 published best-of-2026 lists across books, albums, film, television, and other topics, with the outlet and a checked link for each. The Master list tab merges variant titles within a category and ranks 3,019 titles by how many lists include each one, with a link back to those lists. Long form: [MASTER.md](annual_best_of_list_of_lists/best-of-2026/MASTER.md) |
+| [Best of 2025](annual_best_of_list_of_lists/best-of-2025/Best_of_2025.html) | Directory of 202 published best-of-2025 lists across books, albums, film, television, and other topics, with the outlet and a checked link for each. The Master list tab merges variant titles within a category and ranks 3,562 titles by how many lists include each one, with a link back to those lists. Long form: [MASTER.md](annual_best_of_list_of_lists/best-of-2025/MASTER.md) |
+| [Best of 2024](annual_best_of_list_of_lists/best-of-2024/Best_of_2024.html) | Directory of 199 published best-of-2024 lists across books, albums, film, television, and other topics, with the outlet and a checked link for each. The Master list tab merges variant titles within a category and ranks 3,612 titles by how many lists include each one, with a link back to those lists. Long form: [MASTER.md](annual_best_of_list_of_lists/best-of-2024/MASTER.md) |
 
 ## Reading
 
@@ -74,5 +75,5 @@
 - `scripts/` holds the privacy checker, the local setup script, and the best-of title matcher.
 - Run `sh scripts/setup_privacy.sh` in each fresh checkout to install privacy hooks and the anonymous repository commit identity.
 - Run `python3 scripts/check_privacy.py` before committing, per [CONTRIBUTING.md](CONTRIBUTING.md).
-- [`index.html`](index.html) is the GitHub Pages catalog of the HTML projects. It links to 28 projects and 43 report pages, with 101 additional ticker detail pages accessible through the earnings-straddle screen. Card thumbnails live in [`site-assets/thumbs/`](site-assets/thumbs/).
+- [`index.html`](index.html) is the GitHub Pages catalog of the HTML projects. It links to 29 projects and 44 report pages, with 101 additional ticker detail pages accessible through the earnings-straddle screen. Card thumbnails live in [`site-assets/thumbs/`](site-assets/thumbs/).
 - Each project folder contains its source files and, where available, a README with build or refresh instructions.
