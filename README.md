@@ -37,7 +37,6 @@
 | --- | --- |
 | [Epigenetics deep dive](research/religion/epigenetics-deep-dive/epigenetics-deep-dive.html) | Long-form, journal-style review of epigenetics, with 72 cited papers and linked sources |
 | [Tanakh atlas](research/religion/tanakh-atlas/) | Single-file interactive atlas of the Tanakh and the later Jewish library, with the full JPS 1917 text, themes, people, places, and essays |
-| [Rent-seeking report](biz-other/rent-seeking-report/rent-seeking-report.html) | Economic rents, their history, and 50 ways to create rental income today |
 | [Arby's deal deep dive](biz-other/arbys-deal-deep-dive/arby-s-deal-deep-dive.html) | Sourced account of the Arby's acquisition and turnaround, including Roark's 2011 purchase |
 | [Onyx Coffee Lab](biz-other/onyx-coffee-deep-dive/onyx-coffee-deep-dive.html) | Visual deep dive on Onyx Coffee Lab, the Northwest Arkansas roaster ranked the world's best coffee shop in 2026: founders, timeline, cafés, business model, price transparency, and what's next |
 | [James Beard award graphs](James-Beard/) | Unofficial Obsidian-style graphs of public James Beard Foundation award results: restaurants and chefs, 1991–2025, and books, broadcast, and journalism, 1991–2024 |
