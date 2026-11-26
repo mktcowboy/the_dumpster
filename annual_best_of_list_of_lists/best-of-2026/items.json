@@ -86,7 +86,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -696,7 +696,7 @@
     "Jenny Uglow (Farrar, Straus and Giroux)"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -746,7 +746,7 @@
     "Ben Lerner (Farrar, Straus and Giroux)"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -856,7 +856,7 @@
     "Jenny Uglow (Farrar, Straus and Giroux)"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -886,7 +886,7 @@
     "Layli Long Soldier (Graywolf)"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -916,7 +916,7 @@
     "Emil Wilson (Avid Reader)"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -942,7 +942,7 @@
     "Nafissa Thompson-Spires"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": "partial: only books cited in the editor's essay format are captured"
  },
  {
@@ -976,7 +976,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": "partial: essay format; titles captured where cited with publisher, authors mostly not parsed"
  },
  {
@@ -998,7 +998,7 @@
     "Emily St. John Mandel"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -1056,7 +1056,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "page reader",
   "note": "partial: one entry (by Jane Schoenbrun) had no title in the page reader output"
  },
  {
@@ -1094,7 +1094,7 @@
     "Antoine Volodine; tr. Alyson Waters"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "page reader",
   "note": "partial: one entry had no title in the page reader output; the Mora title is taken from the National Book Awards page, which names the same author and translator"
  },
  {
@@ -1504,7 +1504,7 @@
     "Caro Claire Burke"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -1513,7 +1513,7 @@
   "outlet": "New York Public Library",
   "url": "https://www.nypl.org/spotlight/best-books-2026",
   "items": [],
-  "how": "recovered from MASTER.md",
+  "how": "",
   "note": "items not retrievable: the list is rendered by JavaScript; the page returns no list content to automated fetches"
  },
  {
@@ -1563,7 +1563,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -1649,7 +1649,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -1731,7 +1731,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -1740,7 +1740,7 @@
   "outlet": "Barnes & Noble",
   "url": "https://www.barnesandnoble.com/collections/books/awards/best-books-of-the-year",
   "items": [],
-  "how": "recovered from MASTER.md",
+  "how": "",
   "note": "items not retrievable: the hub's carousels load their books by JavaScript (the separate B&N fiction, cookbook and Book of the Year pages are extracted)"
  },
  {
@@ -1814,7 +1814,7 @@
     "Colson Whitehead"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -2187,7 +2187,7 @@
   "outlet": "Waterstones",
   "url": "https://www.waterstones.com/blog/the-best-food-and-drink-books-of-2026",
   "items": [],
-  "how": "recovered from MASTER.md",
+  "how": "",
   "note": "items not retrievable: captcha page to curl; page reader timed out twice"
  },
  {
@@ -2196,7 +2196,7 @@
   "outlet": "Goodreads",
   "url": "https://www.goodreads.com/choiceawards/best-books-2026",
   "items": [],
-  "how": "recovered from MASTER.md",
+  "how": "",
   "note": "items not retrievable: this hub page lists only the categories; nominees sit on 15 separate category pages"
  },
  {
@@ -2205,7 +2205,7 @@
   "outlet": "New York Times",
   "url": "https://www.nytimes.com/2026/04/27/books/best-books-2026-so-far.html",
   "items": [],
-  "how": "recovered from MASTER.md",
+  "how": "",
   "note": "items not retrievable: paywall/bot check (403 to curl; page reader timed out twice)"
  },
  {
@@ -2214,6 +2214,14 @@
   "outlet": "The New Yorker",
   "url": "https://www.newyorker.com/best-books-2026",
   "items": [
+   [
+    "After the Flush",
+    ""
+   ],
+   [
+    "Learning",
+    ""
+   ],
    [
     "Said the Dead",
     ""
@@ -3047,7 +3055,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "structured data",
   "note": ""
  },
  {
@@ -3173,7 +3181,7 @@
     "Pemi Aguda"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "structured data",
   "note": ""
  },
  {
@@ -3269,7 +3277,7 @@
     "Ngozi Ukazu"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -3399,7 +3407,7 @@
     "MEMORIALS"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -3729,7 +3737,7 @@
     "Ezra Collective"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -4039,7 +4047,7 @@
     "Alela Diane"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -4209,7 +4217,7 @@
     "Fire Magic"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -4218,7 +4226,7 @@
   "outlet": "Loudwire",
   "url": "https://loudwire.com/best-rock-metal-albums-2026/",
   "items": [],
-  "how": "recovered from MASTER.md",
+  "how": "",
   "note": "items not retrievable: the ranked albums are in a JavaScript photo gallery that neither a direct fetch nor the page reader returns"
  },
  {
@@ -4392,7 +4400,7 @@
     "Ryuichi Sakamoto"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "page reader (site blocks curl)",
   "note": "partial: the page reader skipped some ranks (12, 22, 24–26, 28, 31–33) and some artist names; open the link for the full ranking"
  },
  {
@@ -4483,7 +4491,7 @@
    ],
    [
     "Trying Times",
-    "James"
+    "James Blake"
    ],
    [
     "To Whom This May Concern",
@@ -4602,7 +4610,7 @@
     "Zach Bryan"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -4812,7 +4820,7 @@
     "Sunn O)))"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -5070,7 +5078,7 @@
     "Agriculture"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -5280,7 +5288,7 @@
     "Slayyyter"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -5410,7 +5418,7 @@
     "Softcult"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -5620,7 +5628,7 @@
     "Dry Cleaning"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "page reader (site blocks curl)",
   "note": ""
  },
  {
@@ -5654,7 +5662,7 @@
     "Sandbox Percussion, Metropolis Ensemble and Erik Hall"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "page reader",
   "note": ""
  },
  {
@@ -5752,7 +5760,7 @@
     "Neil Young & The Chrome Hearts"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -5943,14 +5951,14 @@
    ],
    [
     "Death of Love",
-    "James"
+    "James Blake"
    ],
    [
     "Heaven2",
     "Lala Lala"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -6160,7 +6168,7 @@
     "Olivia Rodrigo"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -6210,7 +6218,7 @@
     "Justin Bieber"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -6340,7 +6348,7 @@
     "Kevin Morby"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -6350,7 +6358,27 @@
   "url": "https://www.timeout.com/film/the-best-movies-of-2026",
   "items": [
    [
+    "The Odyssey",
+    ""
+   ],
+   [
+    "La Bola Negra",
+    ""
+   ],
+   [
+    "The Voice of Hind Rajab",
+    ""
+   ],
+   [
+    "Wildwood",
+    ""
+   ],
+   [
     "You Can See Everything",
+    ""
+   ],
+   [
+    "I See Buildings Fall Like Lightning",
     ""
    ],
    [
@@ -6550,7 +6578,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "numbered headings",
   "note": ""
  },
  {
@@ -6559,7 +6587,7 @@
   "outlet": "Letterboxd",
   "url": "https://letterboxd.com/official/list/november-report-2026-top-25-films-of-the/detail/",
   "items": [],
-  "how": "recovered from MASTER.md",
+  "how": "",
   "note": "items not retrievable: bot check (403 to curl; page reader timed out twice)"
  },
  {
@@ -6638,6 +6666,10 @@
    ],
    [
     "The President's Cake",
+    ""
+   ],
+   [
+    "Rose",
     ""
    ],
    [
@@ -6749,6 +6781,14 @@
     ""
    ],
    [
+    "Josephine",
+    ""
+   ],
+   [
+    "You Can See Everything",
+    ""
+   ],
+   [
     "Minotaur",
     ""
    ],
@@ -6769,10 +6809,6 @@
     ""
    ],
    [
-    "Josephine",
-    ""
-   ],
-   [
     "Ken Russell's The Devils",
     ""
    ],
@@ -6785,11 +6821,11 @@
     ""
    ],
    [
-    "You Can See Everything",
+    "Your Mother Your Mother Your Mother",
     ""
    ],
    [
-    "Your Mother Your Mother Your Mother",
+    "The Cycle",
     ""
    ],
    [
@@ -6837,10 +6873,6 @@
     ""
    ],
    [
-    "The Cycle",
-    ""
-   ],
-   [
     "The Incomer",
     ""
    ],
@@ -6877,10 +6909,6 @@
     ""
    ],
    [
-    "Ray Gunn",
-    ""
-   ],
-   [
     "Silent Friend",
     ""
    ],
@@ -6894,6 +6922,10 @@
    ],
    [
     "Wicker",
+    ""
+   ],
+   [
+    "Ray Gunn",
     ""
    ],
    [
@@ -6961,15 +6993,15 @@
     ""
    ],
    [
+    "Queen at Sea",
+    ""
+   ],
+   [
     "Exit 8",
     ""
    ],
    [
     "Kontinental '25",
-    ""
-   ],
-   [
-    "Queen at Sea",
     ""
    ],
    [
@@ -6982,10 +7014,6 @@
    ],
    [
     "Toy Story 5",
-    ""
-   ],
-   [
-    "The Debut",
     ""
    ],
    [
@@ -7025,6 +7053,10 @@
     ""
    ],
    [
+    "The Debut",
+    ""
+   ],
+   [
     "Avatar Aang: The Last Airbender",
     ""
    ],
@@ -7054,6 +7086,14 @@
    ],
    [
     "The Last Viking",
+    ""
+   ],
+   [
+    "Being Heumann",
+    ""
+   ],
+   [
+    "I Play Rocky",
     ""
    ],
    [
@@ -7113,10 +7153,6 @@
     ""
    ],
    [
-    "Being Heumann",
-    ""
-   ],
-   [
     "The Rivals of Amziah King",
     ""
    ],
@@ -7129,7 +7165,11 @@
     ""
    ],
    [
-    "I Play Rocky",
+    "Paper Tiger",
+    ""
+   ],
+   [
+    "Elsinore",
     ""
    ],
    [
@@ -7149,10 +7189,6 @@
     ""
    ],
    [
-    "Paper Tiger",
-    ""
-   ],
-   [
     "Backrooms",
     ""
    ],
@@ -7169,15 +7205,15 @@
     ""
    ],
    [
-    "Bitter Christmas",
-    ""
-   ],
-   [
     "Heart of the Beast",
     ""
    ],
    [
     "Mile End Kicks",
+    ""
+   ],
+   [
+    "Bad Apples",
     ""
    ],
    [
@@ -7189,7 +7225,7 @@
     ""
    ],
    [
-    "Bad Apples",
+    "The Further Mis-Adventures of Cliff Booth",
     ""
    ],
    [
@@ -7217,6 +7253,10 @@
     ""
    ],
    [
+    "Bitter Christmas",
+    ""
+   ],
+   [
     "Cold Storage",
     ""
    ],
@@ -7241,14 +7281,6 @@
     ""
    ],
    [
-    "A Talent for Murder",
-    ""
-   ],
-   [
-    "Clayface",
-    ""
-   ],
-   [
     "Normal",
     ""
    ],
@@ -7258,6 +7290,14 @@
    ],
    [
     "Sense and Sensibility",
+    ""
+   ],
+   [
+    "A Talent for Murder",
+    ""
+   ],
+   [
+    "Clayface",
     ""
    ],
    [
@@ -7289,11 +7329,11 @@
     ""
    ],
    [
-    "Whalefall",
+    "Everest: The Other Side",
     ""
    ],
    [
-    "Everest: The Other Side",
+    "Whalefall",
     ""
    ],
    [
@@ -7313,11 +7353,11 @@
     ""
    ],
    [
-    "Ink",
+    "The Love Hypothesis",
     ""
    ],
    [
-    "The Love Hypothesis",
+    "Ink",
     ""
    ],
    [
@@ -7341,7 +7381,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -7391,7 +7431,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -7577,7 +7617,7 @@
     "Nadav Lapid"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -7859,7 +7899,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -7909,7 +7949,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -7967,7 +8007,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "numbered headings",
   "note": ""
  },
  {
@@ -8133,7 +8173,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "numbered headings",
   "note": ""
  },
  {
@@ -8183,7 +8223,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "numbered headings",
   "note": ""
  },
  {
@@ -8273,7 +8313,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -8347,7 +8387,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -8545,7 +8585,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -8603,7 +8643,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -8713,7 +8753,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "headings",
   "note": ""
  },
  {
@@ -8917,7 +8957,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "numbered headings",
   "note": ""
  },
  {
@@ -9087,7 +9127,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -9141,7 +9181,7 @@
     ""
    ],
    [
-    "The Other Bennet Sister: Season 1",
+    "The Other Bennet Sister: Limited Series",
     ""
    ],
    [
@@ -9165,15 +9205,15 @@
     ""
    ],
    [
-    "Rivals: Season 2",
-    ""
-   ],
-   [
     "Legends: Season 1",
     ""
    ],
    [
     "The Diplomat: Season 4",
+    ""
+   ],
+   [
+    "Tip Toe: Limited Series",
     ""
    ],
    [
@@ -9205,7 +9245,11 @@
     ""
    ],
    [
-    "Tip Toe: Limited Series",
+    "The Gilded Age: Season 4",
+    ""
+   ],
+   [
+    "Rivals: Season 2",
     ""
    ],
    [
@@ -9214,10 +9258,6 @@
    ],
    [
     "How to Get to Heaven From Belfast: Season 1",
-    ""
-   ],
-   [
-    "The Gilded Age: Season 4",
     ""
    ],
    [
@@ -9393,6 +9433,10 @@
     ""
    ],
    [
+    "The Lord of the Rings: The Rings of Power: Season 3",
+    ""
+   ],
+   [
     "The Greatest: Season 1",
     ""
    ],
@@ -9441,6 +9485,10 @@
     ""
    ],
    [
+    "Yellowjackets: Season 4",
+    ""
+   ],
+   [
     "Dark Matter: Season 2",
     ""
    ],
@@ -9465,10 +9513,6 @@
     ""
    ],
    [
-    "The Lord of the Rings: The Rings of Power: Season 3",
-    ""
-   ],
-   [
     "The Paper: Season 2",
     ""
    ],
@@ -9485,10 +9529,6 @@
     ""
    ],
    [
-    "YAGA: Season 1",
-    ""
-   ],
-   [
     "Steal: Season 1",
     ""
    ],
@@ -9501,11 +9541,19 @@
     ""
    ],
    [
+    "The Altruists: Limited Series",
+    ""
+   ],
+   [
     "The 'Burbs: Season 1",
     ""
    ],
    [
     "Monarch: Legacy of Monsters: Season 2",
+    ""
+   ],
+   [
+    "YAGA: Season 1",
     ""
    ],
    [
@@ -9525,7 +9573,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -9615,7 +9663,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "headings",
   "note": ""
  },
  {
@@ -9705,7 +9753,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -9739,7 +9787,7 @@
     "pick for U.S. and Canada"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -9789,7 +9837,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -9921,7 +9969,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "numbered headings",
   "note": ""
  },
  {
@@ -9930,7 +9978,7 @@
   "outlet": "The Game Awards",
   "url": "https://thegameawards.com/news/nominees-announced-tuesday-november-17",
   "items": [],
-  "how": "recovered from MASTER.md",
+  "how": "",
   "note": "items not retrievable: the page only embeds the nomination video; it does not list the nominees in text"
  },
  {
@@ -9980,7 +10028,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -10190,7 +10238,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "page reader (site blocks curl)",
   "note": ""
  },
  {
@@ -10488,7 +10536,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -10682,7 +10730,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -10720,6 +10768,10 @@
     ""
    ],
    [
+    "Queen's Domain",
+    ""
+   ],
+   [
     "Forza Horizon 6",
     ""
    ],
@@ -10736,11 +10788,11 @@
     ""
    ],
    [
-    "Lost and Found Co",
+    "The Binding of Isaac: Repentance + Online",
     ""
    ],
    [
-    "The Binding of Isaac: Repentance + Online",
+    "Lost and Found Co",
     ""
    ],
    [
@@ -10753,10 +10805,6 @@
    ],
    [
     "Final Fantasy VII Remake Intergrade",
-    ""
-   ],
-   [
-    "Resident Evil 4: Gold Edition",
     ""
    ],
    [
@@ -10820,10 +10868,6 @@
     ""
    ],
    [
-    "Queen's Domain",
-    ""
-   ],
-   [
     "SAROS",
     ""
    ],
@@ -10864,6 +10908,10 @@
     ""
    ],
    [
+    "World of Warcraft: Forever",
+    ""
+   ],
+   [
     "OPUS: Prism Peak",
     ""
    ],
@@ -10884,7 +10932,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "numbered headings",
   "note": ""
  },
  {
@@ -12078,7 +12126,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -12184,7 +12232,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "headings",
   "note": ""
  },
  {
@@ -12278,7 +12326,7 @@
     "Best kitchen tech"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -12304,7 +12352,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -12374,7 +12422,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "headings",
   "note": ""
  },
  {
@@ -12528,7 +12576,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "structured data",
   "note": ""
  },
  {
@@ -12537,7 +12585,7 @@
   "outlet": "Bon Appétit",
   "url": "https://www.bonappetit.com/story/best-new-restaurants-2026",
   "items": [],
-  "how": "recovered from MASTER.md",
+  "how": "",
   "note": "items not retrievable: the list is rendered by JavaScript; neither a direct fetch nor the page reader returns it"
  },
  {
@@ -12563,7 +12611,7 @@
     "New York City"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": "partial: this Time Out coverage names only the four New York City picks"
  },
  {
@@ -12773,7 +12821,7 @@
     "Sydney, Australia (New entry)"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -12991,7 +13039,7 @@
     "AmaWaterways"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -13197,7 +13245,7 @@
     "Taormina"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -13311,7 +13359,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "headings",
   "note": ""
  },
  {
@@ -13627,7 +13675,7 @@
     "destination"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": "partial: CNN coverage names the destinations it discusses; the full Best in Travel list is in the book"
  },
  {
@@ -13837,7 +13885,7 @@
     "Madrid"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -14047,7 +14095,7 @@
     "Nassau"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -14069,7 +14117,7 @@
     "New York City"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": "partial: bars named in the recipe intros only"
  },
  {
@@ -14079,11 +14127,11 @@
   "url": "https://broadwayscorecard.com/lists/critical-gold/2025-2026",
   "items": [
    [
-    "Death of a Salesman",
+    "CATS: The Jellicle Ball",
     ""
    ],
    [
-    "CATS: The Jellicle Ball",
+    "Death of a Salesman",
     ""
    ],
    [
@@ -14095,11 +14143,11 @@
     ""
    ],
    [
-    "Little Bear Ridge Road",
+    "Ragtime",
     ""
    ],
    [
-    "Ragtime",
+    "Little Bear Ridge Road",
     ""
    ],
    [
@@ -14119,7 +14167,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "structured data",
   "note": ""
  },
  {
@@ -14161,7 +14209,7 @@
     "Tony Honors for Excellence in the Theatre"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": "partial: only categories whose winner appears as a heading on the page are listed (most performer and design winners are not in the page text)"
  },
  {
@@ -14170,7 +14218,7 @@
   "outlet": "Financial Times",
   "url": "https://www.ft.com/booksoftheyear2026",
   "items": [],
-  "how": "recovered from MASTER.md",
+  "how": "",
   "note": "items not retrievable: paywall/bot check (403 to curl; page reader timed out twice)"
  },
  {
@@ -14648,7 +14696,7 @@
     "Sport & children's (section labels unclear)"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "page reader (site blocks curl)",
   "note": "partial: the page reader showed titles only (no authors) and a few entries had no title text"
  },
  {
@@ -15267,7 +15315,7 @@
   "outlet": "The Economist",
   "url": "https://www.economist.com/culture/2026/05/28/the-best-books-of-2026-so-far",
   "items": [],
-  "how": "recovered from MASTER.md",
+  "how": "",
   "note": "items not retrievable: site blocks automated fetches (403 to curl and the page reader)"
  },
  {
@@ -15297,7 +15345,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -15323,7 +15371,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -15373,7 +15421,7 @@
     "Layli Long Soldier"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -15423,7 +15471,7 @@
     "Lim Sunwoo, translated by Chi-Young Kim"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -15833,7 +15881,7 @@
     "Henry Wise"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -16243,7 +16291,7 @@
     "Lawrence Wright"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -16333,7 +16381,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "headings",
   "note": ""
  },
  {
@@ -16363,7 +16411,7 @@
     "David Levithan and Gabriel Duckels — Young People's Literature"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "page reader (site challenges curl)",
   "note": ""
  },
  {
@@ -16399,7 +16447,7 @@
     "Elizabeth Acevedo"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -16417,7 +16465,7 @@
     "X Fang"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -16657,7 +16705,7 @@
     "Xaviersobased"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -17095,7 +17143,7 @@
     "RAYE"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -17145,7 +17193,7 @@
     "Tanya Tagaq"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -17509,7 +17557,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "headings",
   "note": ""
  },
  {
@@ -17619,7 +17667,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -17677,11 +17725,15 @@
     ""
    ],
    [
-    "The Drama",
+    "Digger",
     ""
    ],
    [
     "Disclosure Day",
+    ""
+   ],
+   [
+    "The Drama",
     ""
    ],
    [
@@ -17694,6 +17746,14 @@
    ],
    [
     "The Furious",
+    ""
+   ],
+   [
+    "The Further Mis-Adventures of Cliff Booth",
+    ""
+   ],
+   [
+    "Godzilla Minus Zero",
     ""
    ],
    [
@@ -17741,6 +17801,10 @@
     ""
    ],
    [
+    "NAZA",
+    ""
+   ],
+   [
     "Nirvanna the Band the Show the Movie",
     ""
    ],
@@ -17758,6 +17822,10 @@
    ],
    [
     "Over Your Dead Body",
+    ""
+   ],
+   [
+    "Paper Tiger",
     ""
    ],
    [
@@ -17809,6 +17877,10 @@
     ""
    ],
    [
+    "Wild Horse Nine",
+    ""
+   ],
+   [
     "Wildwood",
     ""
    ],
@@ -17825,7 +17897,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "headings",
   "note": ""
  },
  {
@@ -17963,7 +18035,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -18085,7 +18157,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "headings",
   "note": ""
  },
  {
@@ -18175,7 +18247,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "page reader (site blocks curl)",
   "note": "partial: the page reader returned the first 20 titles of an alphabetical collection; it may continue past Natchez"
  },
  {
@@ -18257,7 +18329,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -18479,7 +18551,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "page reader (site blocks curl)",
   "note": ""
  },
  {
@@ -18493,7 +18565,7 @@
     "Keke Palmer"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -18951,7 +19023,7 @@
     "Game Awards nominee: Most Anticipated Game"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": "Polygon's guide lists The Game Awards 2026 nominees by category (no GOTY category shown in the page text); each game listed once with its categories"
  },
  {
@@ -19045,7 +19117,7 @@
     "Best Cross-device Game"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -19211,7 +19283,7 @@
     "Cultural Impact Game"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -19253,7 +19325,7 @@
     "Travel"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -19262,7 +19334,7 @@
   "outlet": "CNET (via CES)",
   "url": "https://www.ces.tech/articles/2026-best-of-ces-winners-awarded-by-cnet-group/",
   "items": [],
-  "how": "recovered from MASTER.md",
+  "how": "",
   "note": "items not retrievable: the winners grid loads by JavaScript; only the intro text comes through"
  },
  {
@@ -19312,7 +19384,7 @@
     "Carlsbad, Calif"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -19458,7 +19530,7 @@
     "Lagos, Nigeria"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "headings",
   "note": ""
  },
  {
@@ -19508,7 +19580,7 @@
     "Lucas McKinney; Houston, Texas"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -19517,7 +19589,7 @@
   "outlet": "Wine Spectator",
   "url": "https://top100.winespectator.com/2026/",
   "items": [],
-  "how": "recovered from MASTER.md",
+  "how": "",
   "note": "items not retrievable: wine names load by JavaScript; only rank numbers come through"
  },
  {
@@ -19627,7 +19699,7 @@
     "Lima"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -19837,7 +19909,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "numbered headings",
   "note": ""
  },
  {
@@ -20135,7 +20207,7 @@
     "British Columbia, Canada"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "headings",
   "note": ""
  },
  {
@@ -20501,7 +20573,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -20571,7 +20643,7 @@
     "Best New Public Artwork"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -21817,7 +21889,7 @@
     "Divi"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -21835,7 +21907,7 @@
     "Oscar Whitfield"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": "partial: the press release names only the two overall winners in text; category winners are in image captions"
  },
  {
@@ -21953,7 +22025,7 @@
     "nominee: Best Planetary Society accomplishment (thanks to the support of our members!)"
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": "these are voting nominees (ballot options), not winners"
  },
  {
@@ -22043,7 +22115,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -22121,7 +22193,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -22171,7 +22243,7 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
   "note": ""
  },
  {
@@ -22225,7 +22297,1463 @@
     ""
    ]
   ],
-  "how": "recovered from MASTER.md",
+  "how": "site parser",
+  "note": ""
+ },
+ {
+  "list": "TV Guide: The 10 Best TV Shows of 2026",
+  "topic": "TV",
+  "outlet": "TV Guide",
+  "url": "https://www.tvguide.com/news/features/best-tv-shows-2026/",
+  "items": [
+   [
+    "Adults",
+    "FX"
+   ],
+   [
+    "Spider-Noir",
+    "Prime Video"
+   ],
+   [
+    "Half Man",
+    "HBO"
+   ],
+   [
+    "The Fall and Rise of Reggie Dinkins",
+    "NBC"
+   ],
+   [
+    "Beef",
+    "Netflix"
+   ],
+   [
+    "Sterling Point",
+    "Prime Video"
+   ],
+   [
+    "The Vampire Lestat",
+    "AMC"
+   ],
+   [
+    "The Lowdown",
+    "FX"
+   ],
+   [
+    "Widow's Bay",
+    "Apple TV"
+   ],
+   [
+    "Industry",
+    "HBO"
+   ]
+  ],
+  "how": "site parser",
+  "note": ""
+ },
+ {
+  "list": "Collider: 10 Movies That Prove 2026 Is An All-Time Great Year for Film",
+  "topic": "Movies",
+  "outlet": "Collider",
+  "url": "https://collider.com/2026-movies-best/",
+  "items": [
+   [
+    "Spider-Man: Brand New Day",
+    ""
+   ],
+   [
+    "Digger",
+    ""
+   ],
+   [
+    "The Invite",
+    ""
+   ],
+   [
+    "Once Upon a Time in Harlem",
+    ""
+   ],
+   [
+    "La Bola Negra",
+    ""
+   ],
+   [
+    "Wildwood",
+    ""
+   ],
+   [
+    "Obsession",
+    ""
+   ],
+   [
+    "Project Hail Mary",
+    ""
+   ],
+   [
+    "You Can See Everything",
+    ""
+   ],
+   [
+    "The Odyssey",
+    ""
+   ]
+  ],
+  "how": "site parser",
+  "note": ""
+ },
+ {
+  "list": "TechRadar: Product of the Year 2026 Winners",
+  "topic": "Tech & Gadgets",
+  "outlet": "TechRadar",
+  "url": "https://www.techradar.com/tech/techradar-product-of-the-year-awards-2026-winners",
+  "items": [
+   [
+    "Apple iPhone 18 Pro",
+    "Phone of the Year"
+   ],
+   [
+    "Honor",
+    "Phone Brand of the Year"
+   ],
+   [
+    "Honor Robot Phone",
+    "Phones Innovation of the Year"
+   ],
+   [
+    "Motorola Edge 70 Fusion",
+    "Best Value Phone"
+   ],
+   [
+    "Apple iPhone 17",
+    "Best Mid-Range Phone"
+   ],
+   [
+    "Samsung Galaxy Z Fold 8",
+    "Best Folding Phone"
+   ],
+   [
+    "Motorola Razr Ultra 2026",
+    "Best Flip Phone"
+   ],
+   [
+    "Oppo Find X9 Ultra",
+    "Best Camera Phone"
+   ],
+   [
+    "RedMagic 11 Pro",
+    "Best Gaming Phone"
+   ],
+   [
+    "Google Pixel 11 Pro",
+    "Best AI Phone"
+   ],
+   [
+    "DJI Osmo Mobile 8P",
+    "Best Phone Accessory"
+   ],
+   [
+    "Honor MagicPad 4",
+    "Best Tablet"
+   ],
+   [
+    "Amazon Kindle Scribe (2025)",
+    "Best eReader"
+   ],
+   [
+    "Sony A7R VI",
+    "Camera of the Year"
+   ],
+   [
+    "Sony",
+    "Brand of the Year"
+   ],
+   [
+    "Antigravity A1",
+    "Camera Innovation of the Year"
+   ],
+   [
+    "OM System PEN",
+    "Best Beginner Camera"
+   ],
+   [
+    "Sony A7 V",
+    "Best Mid-range camera"
+   ],
+   [
+    "Sony A7R VI",
+    "Best Professional Camera"
+   ],
+   [
+    "Ricoh GR IV",
+    "Best Compact and Instant Camera"
+   ],
+   [
+    "DJI Osmo Pocket 4P",
+    "Best Action and Vlogging Camera"
+   ],
+   [
+    "Sigma 135mm f/1.4 DG | Art",
+    "Best Camera Lens"
+   ],
+   [
+    "Insta360 Mic Pro",
+    "Best Camera Accessory"
+   ],
+   [
+    "DJI Avata 360",
+    "Best Drone"
+   ],
+   [
+    "Apple MacBook Neo",
+    "Laptop of the Year"
+   ],
+   [
+    "Nvidia",
+    "Computing Brand of the Year"
+   ],
+   [
+    "Intel Arc G3 Extreme",
+    "Best Computing Innovation"
+   ],
+   [
+    "Dell XPS 13 (2026)",
+    "Best Value Laptop"
+   ],
+   [
+    "Samsung Galaxy Book6 Ultra",
+    "Best AI Laptop"
+   ],
+   [
+    "Razer Blade 18",
+    "Best Gaming Laptop"
+   ],
+   [
+    "MSI Claw 8 EX AI+",
+    "Best PC Gaming Handheld"
+   ],
+   [
+    "Corsair Makr Pro 75",
+    "Best Gaming Keyboard"
+   ],
+   [
+    "Razer Naga V3 Pro",
+    "Best Gaming Mouse"
+   ],
+   [
+    "Alienware AW3426DW QD-OLED",
+    "Best Gaming Monitor"
+   ],
+   [
+    "SteelSeries Arctis Nova Elite",
+    "Gaming Device of the Year"
+   ],
+   [
+    "Asus",
+    "Gaming Brand of the Year"
+   ],
+   [
+    "Nvidia DLSS 4.5",
+    "Gaming Innovation of the Year"
+   ],
+   [
+    "Corsair Novablade Pro",
+    "Best Console Accessory"
+   ],
+   [
+    "Amazon Luna",
+    "Best Gaming Service"
+   ],
+   [
+    "8BitDo Pro 3",
+    "Best Gaming Controller"
+   ],
+   [
+    "SteelSeries Arctis Nova Elite",
+    "Best Gaming Headset"
+   ],
+   [
+    "Secretlab Atlas",
+    "Best Gaming Chair"
+   ],
+   [
+    "LG C6",
+    "TV of the Year"
+   ],
+   [
+    "Sony",
+    "Home Entertainment Brand of the Year"
+   ],
+   [
+    "Sony True RGB",
+    "Home Entertainment Innovation of the Year"
+   ],
+   [
+    "LG C6",
+    "Best Gaming TV"
+   ],
+   [
+    "Sony Bravia 9 II",
+    "Best TV for Sound"
+   ],
+   [
+    "LG C6",
+    "Best OLED TV"
+   ],
+   [
+    "Sony Bravia 9 II",
+    "Best Mini-LED TV"
+   ],
+   [
+    "TCL QM7L/C7L",
+    "Best Value TV"
+   ],
+   [
+    "Hisense XR10",
+    "Best Projector"
+   ],
+   [
+    "Sonos Beam Ultra",
+    "Best Soundbar"
+   ],
+   [
+    "Sony Bravia Theater Trio",
+    "Best Wireless Home Theater Speakers"
+   ],
+   [
+    "HBO Max",
+    "Streaming Service of the Year"
+   ],
+   [
+    "Prime Video",
+    "Best for Movies"
+   ],
+   [
+    "Netflix",
+    "Best for Documentaries"
+   ],
+   [
+    "Apple TV",
+    "Best for TV Shows"
+   ],
+   [
+    "Tubi",
+    "Best Free Streaming Service"
+   ],
+   [
+    "Apple AirPods Max 2",
+    "Headphones of the Year"
+   ],
+   [
+    "iFi",
+    "Audio Brand of the Year"
+   ],
+   [
+    "Cambridge L/R S speakers",
+    "Audio Innovation of the Year"
+   ],
+   [
+    "Nothing Headphone (a)",
+    "Best Wireless Headphones"
+   ],
+   [
+    "Soundpeats H3",
+    "Best Wireless Earbuds"
+   ],
+   [
+    "Shokz OpenFit Pro",
+    "Best Open Earbuds"
+   ],
+   [
+    "CMF Headphone Pro",
+    "Best Value Headphones"
+   ],
+   [
+    "JLab JBuds Mini ANC",
+    "Best Value Earbuds"
+   ],
+   [
+    "Baseus Bowie MC2",
+    "Best Value Open Earbuds"
+   ],
+   [
+    "Meze Audio Strada",
+    "Best Wired Headphones"
+   ],
+   [
+    "Sennheiser CX 80U",
+    "Best Wired Earbuds"
+   ],
+   [
+    "JBL Xtreme 5",
+    "Best Bluetooth Speaker"
+   ],
+   [
+    "Denon Home 400",
+    "Best Wireless Speaker"
+   ],
+   [
+    "Astell & Kern PD5",
+    "Best Portable Audio Player"
+   ],
+   [
+    "Fluance RT87",
+    "Best Turntable"
+   ],
+   [
+    "iFi iDSD GR2",
+    "Best DAC"
+   ],
+   [
+    "Dali Sonik 1",
+    "Best Stereo Speakers"
+   ],
+   [
+    "Garmin Fenix 9 Pro",
+    "Health & Fitness Device of the year"
+   ],
+   [
+    "Garmin",
+    "Health & Fitness Brand of the Year"
+   ],
+   [
+    "Huawei Watch D3",
+    "Health & Fitness Innovation of the Year"
+   ],
+   [
+    "Apple Watch Ultra 4",
+    "Best Smartwatch"
+   ],
+   [
+    "Garmin Fenix 9 Pro",
+    "Best Running Watch"
+   ],
+   [
+    "Garmin Cirqa",
+    "Best Fitness Tracker"
+   ],
+   [
+    "Oura Ring 5",
+    "Best Smart Ring"
+   ],
+   [
+    "Suri Core 1.0",
+    "Best Electric Toothbrush"
+   ],
+   [
+    "Withings BodyScan 2",
+    "Best Connected Fitness Tech"
+   ],
+   [
+    "DJI Romo P",
+    "Home Device of the Year"
+   ],
+   [
+    "Philips Hue",
+    "Home Tech Brand of the Year"
+   ],
+   [
+    "Dyson Find+Follow Purifier Cool",
+    "Home Tech Innovation of the Year"
+   ],
+   [
+    "Philips Hue Omniglow Strip Light",
+    "Best Home Light Tech"
+   ],
+   [
+    "Aqara Camera Hub G350",
+    "Best Home Security Device"
+   ],
+   [
+    "DJI Romo P",
+    "Best Robot Vacuum"
+   ],
+   [
+    "Roborock F25 Ultra",
+    "Best Vacuum"
+   ],
+   [
+    "Ninja French Door Premier Air Fryer Convection Oven Toaster",
+    "Best Air Fryer"
+   ],
+   [
+    "Meraki Espresso Machine Gen 2",
+    "Best Coffee Machine"
+   ],
+   [
+    "Philips Baristina",
+    "Best Value Coffee Machine"
+   ],
+   [
+    "Dyson Find+Follow Purifier Cool",
+    "Best Fan"
+   ]
+  ],
+  "how": "site parser",
+  "note": ""
+ },
+ {
+  "list": "9to5Google: Best of 2026",
+  "topic": "Tech & Gadgets",
+  "outlet": "9to5Google",
+  "url": "https://9to5google.com/2026/11/25/9to5googles-best-of-2026/",
+  "items": [
+   [
+    "Fitbit Air",
+    ""
+   ],
+   [
+    "XGIMI Horizon 30 Pro",
+    ""
+   ],
+   [
+    "Steam Controller (2026)",
+    ""
+   ],
+   [
+    "Samsung Galaxy Z Fold 8",
+    ""
+   ],
+   [
+    "Nothing Ear (3) / Ear (3a)",
+    ""
+   ],
+   [
+    "Oppo Find X9 Ultra",
+    ""
+   ],
+   [
+    "Honor Magic V6",
+    ""
+   ],
+   [
+    "XREAL Aura",
+    ""
+   ],
+   [
+    "DroidDeck",
+    ""
+   ],
+   [
+    "Fitbit Edge",
+    ""
+   ],
+   [
+    "Google Pixel Tag",
+    ""
+   ],
+   [
+    "Keychron Thunderbolt 5 Dock (14-in-1)",
+    ""
+   ],
+   [
+    "Onyx Boox Picco",
+    ""
+   ],
+   [
+    "Amazon Alexa Tablet 12 Pro",
+    ""
+   ],
+   [
+    "XTEINK X4 Pro",
+    ""
+   ]
+  ],
+  "how": "site parser",
+  "note": ""
+ },
+ {
+  "list": "Stuff Gadget Awards 2026",
+  "topic": "Tech & Gadgets",
+  "outlet": "Stuff",
+  "url": "https://www.stuff.tv/award/the-stuff-gadget-awards-2026-our-gadget-of-the-year/",
+  "items": [
+   [
+    "Apple MacBook Neo",
+    "Gadget of the Year"
+   ],
+   [
+    "Oura Ring 5",
+    "Gadget of the Year highly commended"
+   ],
+   [
+    "BMW iX3",
+    "Gadget of the Year highly commended"
+   ],
+   [
+    "Samsung Galaxy S26 Ultra",
+    "Gadget of the Year shortlist"
+   ],
+   [
+    "Bowers Wilkins Px8 S2",
+    "Gadget of the Year shortlist"
+   ],
+   [
+    "Panasonic Lumix L10",
+    "Gadget of the Year shortlist"
+   ],
+   [
+    "Brompton Electric G-Line",
+    "Gadget of the Year shortlist"
+   ],
+   [
+    "Samsung Galaxy Z Fold8",
+    "2026 Design Award"
+   ],
+   [
+    "LG W6 Wallpaper TV",
+    "2026 Design Award highly commended"
+   ],
+   [
+    "Dyson PencilVac",
+    "2026 Design Award shortlist"
+   ],
+   [
+    "Shark ChillPill",
+    "2026 Design Award shortlist"
+   ],
+   [
+    "Sony Reon Pocket Pro Plus",
+    "2026 Design Award shortlist"
+   ],
+   [
+    "Honor Robot Phone",
+    "2026 Innovation Award"
+   ],
+   [
+    "Roborock Saros Rover",
+    "2026 Innovation Award highly commended"
+   ],
+   [
+    "LG Sound Suite",
+    "2026 Innovation Award shortlist"
+   ],
+   [
+    "Lego Smart Play",
+    "2026 Innovation Award shortlist"
+   ],
+   [
+    "Acer Vero 16 (2026)",
+    "2026 Sustainability Award"
+   ],
+   [
+    "Anker Solix C2000 Gen 2 Portable Power Station",
+    "2026 Sustainability Award highly commended"
+   ]
+  ],
+  "how": "page reader (site blocks curl)",
+  "note": ""
+ },
+ {
+  "list": "The Infatuation: America's Best New Restaurants of 2026",
+  "topic": "Restaurants & Food",
+  "outlet": "The Infatuation",
+  "url": "https://www.theinfatuation.com/all/guides/best-new-restaurants-america-2026",
+  "items": [
+   [
+    "Graciela",
+    "New York"
+   ],
+   [
+    "Phở Nam",
+    "Miami"
+   ],
+   [
+    "Wilde’s",
+    "Los Angeles"
+   ],
+   [
+    "All Well",
+    "Chicago"
+   ],
+   [
+    "Emelina",
+    "West Palm Beach"
+   ],
+   [
+    "Natsukashii",
+    "Tulsa"
+   ],
+   [
+    "Dolfy’s",
+    "New Orleans"
+   ],
+   [
+    "Chibanos",
+    "Philadelphia"
+   ],
+   [
+    "Roya",
+    "Austin"
+   ],
+   [
+    "Border Town",
+    "New York"
+   ],
+   [
+    "Casa Juani",
+    "Boulder"
+   ],
+   [
+    "OK Chicken & Khao Soi",
+    "Portland, OR"
+   ],
+   [
+    "Fat Cat & The Mantis",
+    "San Francisco"
+   ],
+   [
+    "Pizzeria Sei",
+    "Los Angeles"
+   ],
+   [
+    "Liars",
+    "Boston"
+   ],
+   [
+    "Yasu Omakase",
+    "Miami"
+   ],
+   [
+    "Ruki’s Kitchen",
+    "Atlanta"
+   ],
+   [
+    "Rye Bunny",
+    "Washington DC"
+   ],
+   [
+    "The Rebel",
+    "Seattle"
+   ],
+   [
+    "Olōyō",
+    "Dallas"
+   ],
+   [
+    "Maroon",
+    "Las Vegas"
+   ],
+   [
+    "Present Tense",
+    "Nashville"
+   ],
+   [
+    "À L’ouest",
+    "San Diego"
+   ],
+   [
+    "Zaranda",
+    "Houston"
+   ],
+   [
+    "Little Mountain",
+    "Montecito"
+   ]
+  ],
+  "how": "site parser",
+  "note": ""
+ },
+ {
+  "list": "Yelp: Best New Restaurants of 2026",
+  "topic": "Restaurants & Food",
+  "outlet": "Yelp",
+  "url": "https://www.yelp.com/article/best-new-restaurants-of-2026",
+  "items": [
+   [
+    "Filthy Animal",
+    "Tempe, Arizona"
+   ],
+   [
+    "Firstborn",
+    "Los Angeles, California"
+   ],
+   [
+    "Limusina",
+    "New York, New York"
+   ],
+   [
+    "Eylan",
+    "Menlo Park, California"
+   ],
+   [
+    "Lilo",
+    "Carlsbad, California"
+   ],
+   [
+    "1587 Prime",
+    "Kansas City, Missouri"
+   ],
+   [
+    "Bar Boheme",
+    "Las Vegas, Nevada"
+   ],
+   [
+    "Mezcla",
+    "Columbus, Ohio"
+   ],
+   [
+    "Dorothy’s Downtown",
+    "Jacksonville, Florida"
+   ],
+   [
+    "Ambassadors Clubhouse",
+    "New York, New York"
+   ],
+   [
+    "Toro Bravo",
+    "Reno, Nevada"
+   ],
+   [
+    "Agnes and Sherman",
+    "Houston, Texas"
+   ],
+   [
+    "Oh London",
+    "Creve Coeur, Missouri"
+   ],
+   [
+    "Society Swan",
+    "Scottsdale, Arizona"
+   ],
+   [
+    "Piedra",
+    "Indianapolis, Indiana"
+   ],
+   [
+    "Ah Ma’s Kitchen",
+    "San Francisco, California"
+   ],
+   [
+    "Lobby Bar",
+    "Washington, District of Columbia"
+   ],
+   [
+    "Johin’na",
+    "Birmingham, Alabama"
+   ],
+   [
+    "Lucia",
+    "Los Angeles, California"
+   ],
+   [
+    "The Crunkleton",
+    "Raleigh, North Carolina"
+   ],
+   [
+    "The Farmhouse Tuscan",
+    "Alexandria, Virginia"
+   ],
+   [
+    "Fish Shop",
+    "Washington, D.C."
+   ],
+   [
+    "Gianni & Mac’s Ristorante",
+    "Marietta, Georgia"
+   ],
+   [
+    "Palm Palm",
+    "Pittsburgh, Pennsylvania"
+   ],
+   [
+    "The Chapman",
+    "Winter Park, Florida"
+   ]
+  ],
+  "how": "site parser",
+  "note": ""
+ },
+ {
+  "list": "Time Out: The 29 Best Albums of 2026",
+  "topic": "Albums",
+  "outlet": "Time Out",
+  "url": "https://www.timeout.com/music/best-albums-of-2026",
+  "items": [
+   [
+    "Popstar",
+    "Tinashe"
+   ],
+   [
+    "Dopamine Chamber",
+    "Fontaines DC"
+   ],
+   [
+    "WOR$T GIRL IN AMERICA",
+    "Slayyyter"
+   ],
+   [
+    "Pugnello",
+    "Gilla Band"
+   ],
+   [
+    "you seem pretty sad for a girl so in love",
+    "Olivia Rodrigo"
+   ],
+   [
+    "An Undying Love for a Burning World",
+    "Neurosis"
+   ],
+   [
+    "Girlfriend",
+    "Grace Ives"
+   ],
+   [
+    "THIS MUSIC MAY CONTAIN HOPE.",
+    "RAYE"
+   ],
+   [
+    "Lost Weekend",
+    "Phoebe Bridgers"
+   ],
+   [
+    "Laughter in Summer",
+    "Beverly Glenn-Copeland"
+   ],
+   [
+    "Music, Fashion, Film",
+    "Charli xcx"
+   ],
+   [
+    "Westside Trapped",
+    "heavensouls"
+   ],
+   [
+    "Confessions II",
+    "Madonna"
+   ],
+   [
+    "Paddywhackery",
+    "Mary Wallopers"
+   ],
+   [
+    "Echo",
+    "Ecco2k"
+   ],
+   [
+    "Act II",
+    "Sasha Keable"
+   ],
+   [
+    "Remember the Humans",
+    "Broken Social Scene"
+   ],
+   [
+    "Before the World Blows",
+    "Erykah Badu & The Alchemist"
+   ],
+   [
+    "Florida Water Blues",
+    "Twisted Teens"
+   ],
+   [
+    "Beckoning the Void of Eternal Silence",
+    "Funebrarum"
+   ],
+   [
+    "My New Band Believe",
+    "My New Band Believe"
+   ],
+   [
+    "She’s the Best",
+    "Troye Sivan"
+   ],
+   [
+    "URGH",
+    "Mandy, Indiana"
+   ],
+   [
+    "Little Wide Open",
+    "Kevin Morby"
+   ],
+   [
+    "Written Into Changes",
+    "Avalon Emerson & the Charm"
+   ],
+   [
+    "An Eraser and a Maze",
+    "Modest Mouse"
+   ],
+   [
+    "Shhugar",
+    "Baby Nova"
+   ],
+   [
+    "Somewhere Good",
+    "Tara Clerkin Trio"
+   ],
+   [
+    "Piss in the Wind",
+    "Joji"
+   ]
+  ],
+  "how": "site parser",
+  "note": ""
+ },
+ {
+  "list": "Off the Record Press: CTRL+ALT+REPEAT 2026: 100 Best Songs",
+  "topic": "Songs",
+  "outlet": "Off the Record Press",
+  "url": "https://offtherecordpress.com/ctrl-alt-repeat/2026-100-best-songs",
+  "items": [
+   [
+    "Highs and Lows",
+    "Citizen"
+   ],
+   [
+    "Like A Kite",
+    "Sophia Stel"
+   ],
+   [
+    "Pin Up Boys",
+    "Westside Cowboy"
+   ],
+   [
+    "Two Fried",
+    "Blondshell"
+   ],
+   [
+    "brand new chanel$",
+    "Slayyyter"
+   ],
+   [
+    "Sarniezz",
+    "Angine de Poitrine"
+   ],
+   [
+    "Drone Song",
+    "Edgehill"
+   ],
+   [
+    "The moon",
+    "Lizzy McAlpine"
+   ],
+   [
+    "Do You Really Love Her",
+    "Spacey Jane"
+   ],
+   [
+    "FEELING SO NICE",
+    "MARO"
+   ],
+   [
+    "Icarus",
+    "Olivia O’Brien"
+   ],
+   [
+    "Sensational",
+    "Wishy"
+   ],
+   [
+    "Are We Ever Gonna Work Out, Baby?",
+    "Joshua Slone"
+   ],
+   [
+    "stick around",
+    "Abby Powledge"
+   ],
+   [
+    "The Governor’s Waltz",
+    "Phoebe Bridgers"
+   ],
+   [
+    "Kind of Girl I Am",
+    "Trophy Wife"
+   ],
+   [
+    "If I Had The Hand Of God",
+    "Julia Jacklin"
+   ],
+   [
+    "Hanging Out To Dry",
+    "Florence Road"
+   ],
+   [
+    "What’s Next",
+    "Rum Jungle"
+   ],
+   [
+    "Armor",
+    "Medium Build"
+   ],
+   [
+    "Denny’s",
+    "Palace"
+   ],
+   [
+    "Beaches In Tennessee",
+    "Cage The Elephant"
+   ],
+   [
+    "Wait It Out",
+    "Foxtide"
+   ],
+   [
+    "Marianne",
+    "Fontaines D.C."
+   ],
+   [
+    "Roar Of The Heliac Goat",
+    "mercury"
+   ],
+   [
+    "you woke me up",
+    "Kevin Kraemer"
+   ],
+   [
+    "Bottle",
+    "Remi Wolf"
+   ],
+   [
+    "STAMPEDE",
+    "Genesis Owusu"
+   ],
+   [
+    "Horse Country",
+    "The Nancys"
+   ],
+   [
+    "Seeds",
+    "Swapmeet"
+   ],
+   [
+    "MMA",
+    "Hannah Cole"
+   ],
+   [
+    "Keira Knightly",
+    "Basht"
+   ],
+   [
+    "Cold Blue Dawn",
+    "Kings of Leon"
+   ],
+   [
+    "Cowboy Without a Clue",
+    "Yumi Zouma"
+   ],
+   [
+    "Jet Lag Mouth",
+    "In Color"
+   ],
+   [
+    "Melatonin",
+    "Tinashe"
+   ],
+   [
+    "pick me up",
+    "public transport"
+   ],
+   [
+    "My Maker",
+    "Snail Mail"
+   ],
+   [
+    "Fire 2",
+    "Grace Ives"
+   ],
+   [
+    "Beluga Whale (Call Again)",
+    "hey, nothing"
+   ],
+   [
+    "Let You In",
+    "Marlon Funaki"
+   ],
+   [
+    "End of August",
+    "Noah Kahan"
+   ],
+   [
+    "What we want and need from love",
+    "Mila Bea"
+   ],
+   [
+    "Bleeding Gold",
+    "Wasia Project"
+   ],
+   [
+    "Billy Came Back",
+    "This Is Lorelei"
+   ],
+   [
+    "The Peace",
+    "underscores"
+   ],
+   [
+    "Royal Courts (Great Misfortune)",
+    "Portraits Of Tracy"
+   ],
+   [
+    "Good For Me",
+    "The Paradox"
+   ],
+   [
+    "Sun Has Set",
+    "beabadoobee"
+   ],
+   [
+    "forget him",
+    "josh conway"
+   ],
+   [
+    "Orchid",
+    "Lia Pappas-Kemps"
+   ],
+   [
+    "Certainty",
+    "Friko"
+   ],
+   [
+    "Projecting",
+    "Yot Club"
+   ],
+   [
+    "Try Try Try",
+    "Hovvdy"
+   ],
+   [
+    "think twice",
+    "strongboi"
+   ],
+   [
+    "Spill",
+    "Slow Pulp"
+   ],
+   [
+    "Whatever You Wanna",
+    "Annabelle Dinda"
+   ],
+   [
+    "Spinning",
+    "Winyah"
+   ],
+   [
+    "Closer",
+    "The Linda Lindas (feat. Hayley Williams)"
+   ],
+   [
+    "Fable",
+    "For Opal"
+   ],
+   [
+    "Lasagna",
+    "Babehoven"
+   ],
+   [
+    "How Did It Happen to You",
+    "Hathway"
+   ],
+   [
+    "Slacker in the Rye",
+    "Maya Hawke"
+   ],
+   [
+    "BedHead",
+    "Balu Brigada"
+   ],
+   [
+    "Two Hands",
+    "Pond"
+   ],
+   [
+    "Back To Us",
+    "Rec Hall"
+   ],
+   [
+    "Hands Tied",
+    "Emma Ogier"
+   ],
+   [
+    "That’s Me",
+    "Keo"
+   ],
+   [
+    "the cure",
+    "Olivia Rodrigo"
+   ],
+   [
+    "Yeah",
+    "Charli xcx"
+   ],
+   [
+    "snake the drain",
+    "Devon Again"
+   ],
+   [
+    "no more regrets",
+    "almost monday"
+   ],
+   [
+    "God in my Head",
+    "Kevin Atwater"
+   ],
+   [
+    "The Great Destroyer",
+    "Racing Mount Pleasant"
+   ],
+   [
+    "Cross My Heart",
+    "Lime Garden"
+   ],
+   [
+    "Cherry, Please",
+    "The Kilans"
+   ],
+   [
+    "Pop Tarts",
+    "Post Sex Nachos (feat. MARIS and Annelise Gonzalez)"
+   ],
+   [
+    "the cops are coming",
+    "Junior Mesa"
+   ],
+   [
+    "blue",
+    "girl in red"
+   ],
+   [
+    "Virtuoso",
+    "Ryan Beatty"
+   ],
+   [
+    "Too Easy",
+    "Tiger Lewis"
+   ],
+   [
+    "Radio",
+    "Junior Varsity"
+   ],
+   [
+    "Johnny’s Dreamworld",
+    "Modern Woman"
+   ],
+   [
+    "Golden Plain",
+    "Surf Trash"
+   ],
+   [
+    "Anything He Was",
+    "Tiny Habits"
+   ],
+   [
+    "Bitter Fruit",
+    "Young the Giant"
+   ],
+   [
+    "WALLFLOWER",
+    "Dominic Fike"
+   ],
+   [
+    "I’m Not In Pain",
+    "@"
+   ],
+   [
+    "Hellbent",
+    "Naomi Scott"
+   ],
+   [
+    "Holy Grail",
+    "Vacations"
+   ],
+   [
+    "tonight",
+    "girlsweetvoiced"
+   ],
+   [
+    "Darker Now",
+    "Conall Cafferty"
+   ],
+   [
+    "Pale Blue Eyes",
+    "Sydney Ross Mitchell"
+   ],
+   [
+    "Blood",
+    "mary in the junkyard"
+   ],
+   [
+    "Aperture",
+    "Harry Styles"
+   ],
+   [
+    "Pretty Girl",
+    "2oo7"
+   ],
+   [
+    "eat the pavement",
+    "Dev Lemons"
+   ],
+   [
+    "oh yeah?",
+    "Steve Lacy"
+   ],
+   [
+    "Anhedonia",
+    "Cardinals"
+   ],
+   [
+    "Problem Child",
+    "brakence"
+   ],
+   [
+    "Crumbs",
+    "Shallow Alcove"
+   ]
+  ],
+  "how": "site parser",
+  "note": ""
+ },
+ {
+  "list": "Brian Formo: 2026 Year in Review",
+  "topic": "Movies",
+  "outlet": "Brian Formo",
+  "url": "http://www.brianformo.com/year-ends/2026",
+  "items": [
+   [
+    "The Odyssey",
+    "Christopher Nolan"
+   ],
+   [
+    "You Can See Everything",
+    "Nathan Fielder and Lance Oppenheim"
+   ],
+   [
+    "Minotaur",
+    "Andrey Zvyagintsev"
+   ],
+   [
+    "Club Kid",
+    "Jordan Firstman"
+   ],
+   [
+    "Fatherland",
+    "Paweł Pawlikowski"
+   ],
+   [
+    "The End of Oak Street",
+    "David Robert Mitchell"
+   ],
+   [
+    "Paper Tiger",
+    "James Gray"
+   ],
+   [
+    "Rose",
+    "Markus Schleinzer"
+   ],
+   [
+    "Digger",
+    "Alejandro González Iñárritu"
+   ],
+   [
+    "The Debut",
+    "Jesse Eisenberg"
+   ],
+   [
+    "La Bola Negra",
+    "Javier Ambrossi and Javier Calvo"
+   ]
+  ],
+  "how": "site parser",
   "note": ""
  }
 ]

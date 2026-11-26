@@ -9,13 +9,13 @@
 12,
 "TV",
 "Widow’s Bay",
-""
+" (Apple TV)"
 ],
 [
 12,
 "TV",
 "Industry",
-""
+" (HBO)"
 ],
 [
 10,
@@ -32,8 +32,56 @@
 [
 10,
 "Albums",
+"WOR$T GIRL IN AMERICA",
+""
+],
+[
+10,
+"Albums",
 "Train on the Island",
 " (Aldous Harding)"
+],
+[
+10,
+"Albums",
+"My New Band Believe",
+" (My New Band Believe)"
+],
+[
+10,
+"Albums",
+"An Undying Love for a Burning World",
+" (Neurosis)"
+],
+[
+9,
+"TV",
+"The Fall and Rise of Reggie Dinkins",
+" (NBC)"
+],
+[
+9,
+"TV",
+"Beef",
+" (Netflix)"
+],
+[
+9,
+"Movies",
+"The Odyssey",
+" (Christopher Nolan)"
+],
+[
+9,
+"Movies",
+"Project Hail Mary",
+" ((dirs. Phil Lord & Chris Miller)"
+],
+[
+9,
+"Movies",
+"Obsession",
+" (Curry Barker)"
 ],
 [
 9,
@@ -62,8 +110,8 @@
 [
 9,
 "Albums",
-"WOR$T GIRL IN AMERICA",
-""
+"You Seem Pretty Sad for a Girl So in Love",
+" (Olivia Rodrigo)"
 ],
 [
 9,
@@ -90,33 +138,15 @@
 " (Mitski)"
 ],
 [
-9,
-"Albums",
-"My New Band Believe",
-" (My New Band Believe)"
-],
-[
-9,
-"Albums",
-"An Undying Love for a Burning World",
-" (Neurosis)"
-],
-[
 8,
 "TV",
 "The Vampire Lestat",
-""
+" (AMC)"
 ],
 [
 8,
 "TV",
 "The Other Bennet Sister",
-""
-],
-[
-8,
-"TV",
-"The Fall and Rise of Reggie Dinkins",
 ""
 ],
 [
@@ -134,26 +164,8 @@
 [
 8,
 "TV",
-"Beef Season 2",
-""
-],
-[
-8,
-"TV",
 "Bait",
 ""
-],
-[
-8,
-"Movies",
-"Project Hail Mary",
-" ((dirs. Phil Lord & Chris Miller)"
-],
-[
-8,
-"Movies",
-"Obsession",
-" (Curry Barker)"
 ],
 [
 8,
@@ -182,12 +194,6 @@
 [
 8,
 "Albums",
-"You Seem Pretty Sad for a Girl So in Love",
-" (Olivia Rodrigo)"
-],
-[
-8,
-"Albums",
 "Sexistential",
 " (Robyn)"
 ],
@@ -196,6 +202,12 @@
 "Albums",
 "Inferno",
 " (Boards of Canada)"
+],
+[
+8,
+"Albums",
+"Girlfriend",
+" (Grace Ives)"
 ],
 [
 7,
@@ -218,25 +230,13 @@
 [
 7,
 "Movies",
+"The Invite",
+" (Olivia Wilde)"
+],
+[
+7,
+"Movies",
 "The Christophers",
 " (Steven Soderbergh)"
-],
-[
-7,
-"Books",
-"Whistler",
-" (Ann Patchett)"
-],
-[
-7,
-"Books",
-"American Hagwon",
-" (Min Jin Lee)"
-],
-[
-7,
-"Albums",
-"Wendy Eisenberg",
-" (Wendy Eisenberg)"
 ]
 ]

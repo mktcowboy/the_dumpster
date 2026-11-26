@@ -2,21 +2,21 @@
 
 Every list in the Best of 2026 directory, grouped by topic, with the items each list names. Ranked lists keep their order (numbered); unranked lists are bulleted. Where a list could not be read, its heading stays with the reason. An overlap section at the end shows items that appear on two or more lists within the same topic.
 
-Lists: 147 total, 134 with items extracted, 13 not retrievable.
+Lists: 157 total, 144 with items extracted, 13 not retrievable.
 
 ## Contents
 
 - [Books](#books) (37 lists)
 - [Comics & Graphic Novels](#comics--graphic-novels) (2 lists)
 - [Cookbooks](#cookbooks) (2 lists)
-- [Albums](#albums) (20 lists)
-- [Songs](#songs) (4 lists)
-- [Movies](#movies) (12 lists)
-- [TV](#tv) (13 lists)
+- [Albums](#albums) (21 lists)
+- [Songs](#songs) (5 lists)
+- [Movies](#movies) (14 lists)
+- [TV](#tv) (14 lists)
 - [Podcasts](#podcasts) (7 lists)
 - [Video Games](#video-games) (7 lists)
-- [Tech & Gadgets](#tech--gadgets) (6 lists)
-- [Restaurants & Food](#restaurants--food) (8 lists)
+- [Tech & Gadgets](#tech--gadgets) (9 lists)
+- [Restaurants & Food](#restaurants--food) (10 lists)
 - [Travel & Hotels](#travel--hotels) (9 lists)
 - [Bars & Cocktails](#bars--cocktails) (4 lists)
 - [Theater](#theater) (2 lists)
@@ -590,6 +590,8 @@ New York Times · [link](https://www.nytimes.com/2026/04/27/books/best-books-202
 ### The New Yorker: The Best Books of 2026 So Far
 The New Yorker · [link](https://www.newyorker.com/best-books-2026)
 
+- After the Flush
+- Learning
 - Said the Dead
 - The Absent Woman
 - Valiant Men of War
@@ -2334,6 +2336,39 @@ Polaris Music Prize · [link](https://polarismusicprize.ca/blog/angine-de-poitri
 - No Lube So Rude — Peaches
 - Saputjiji — Tanya Tagaq
 
+### Time Out: The 29 Best Albums of 2026
+Time Out · [link](https://www.timeout.com/music/best-albums-of-2026)
+
+1. Popstar — Tinashe
+2. Dopamine Chamber — Fontaines DC
+3. WOR$T GIRL IN AMERICA — Slayyyter
+4. Pugnello — Gilla Band
+5. you seem pretty sad for a girl so in love — Olivia Rodrigo
+6. An Undying Love for a Burning World — Neurosis
+7. Girlfriend — Grace Ives
+8. THIS MUSIC MAY CONTAIN HOPE. — RAYE
+9. Lost Weekend — Phoebe Bridgers
+10. Laughter in Summer — Beverly Glenn-Copeland
+11. Music, Fashion, Film — Charli xcx
+12. Westside Trapped — heavensouls
+13. Confessions II — Madonna
+14. Paddywhackery — Mary Wallopers
+15. Echo — Ecco2k
+16. Act II — Sasha Keable
+17. Remember the Humans — Broken Social Scene
+18. Before the World Blows — Erykah Badu & The Alchemist
+19. Florida Water Blues — Twisted Teens
+20. Beckoning the Void of Eternal Silence — Funebrarum
+21. My New Band Believe — My New Band Believe
+22. She’s the Best — Troye Sivan
+23. URGH — Mandy, Indiana
+24. Little Wide Open — Kevin Morby
+25. Written Into Changes — Avalon Emerson & the Charm
+26. An Eraser and a Maze — Modest Mouse
+27. Shhugar — Baby Nova
+28. Somewhere Good — Tara Clerkin Trio
+29. Piss in the Wind — Joji
+
 ## Songs
 
 ### Rolling Stone: Best Songs of 2026 So Far
@@ -2489,61 +2524,171 @@ The Current (MPR) · [link](https://www.thecurrent.org/feature/2026/11/06/top-89
 29. Brennan Wedl (album) — Brennan Wedl
 30. Little Wide Open (album) — Kevin Morby
 
+### Off the Record Press: CTRL+ALT+REPEAT 2026: 100 Best Songs
+Off the Record Press · [link](https://offtherecordpress.com/ctrl-alt-repeat/2026-100-best-songs)
+
+1. Highs and Lows — Citizen
+2. Like A Kite — Sophia Stel
+3. Pin Up Boys — Westside Cowboy
+4. Two Fried — Blondshell
+5. brand new chanel$ — Slayyyter
+6. Sarniezz — Angine de Poitrine
+7. Drone Song — Edgehill
+8. The moon — Lizzy McAlpine
+9. Do You Really Love Her — Spacey Jane
+10. FEELING SO NICE — MARO
+11. Icarus — Olivia O’Brien
+12. Sensational — Wishy
+13. Are We Ever Gonna Work Out, Baby? — Joshua Slone
+14. stick around — Abby Powledge
+15. The Governor’s Waltz — Phoebe Bridgers
+16. Kind of Girl I Am — Trophy Wife
+17. If I Had The Hand Of God — Julia Jacklin
+18. Hanging Out To Dry — Florence Road
+19. What’s Next — Rum Jungle
+20. Armor — Medium Build
+21. Denny’s — Palace
+22. Beaches In Tennessee — Cage The Elephant
+23. Wait It Out — Foxtide
+24. Marianne — Fontaines D.C.
+25. Roar Of The Heliac Goat — mercury
+26. you woke me up — Kevin Kraemer
+27. Bottle — Remi Wolf
+28. STAMPEDE — Genesis Owusu
+29. Horse Country — The Nancys
+30. Seeds — Swapmeet
+31. MMA — Hannah Cole
+32. Keira Knightly — Basht
+33. Cold Blue Dawn — Kings of Leon
+34. Cowboy Without a Clue — Yumi Zouma
+35. Jet Lag Mouth — In Color
+36. Melatonin — Tinashe
+37. pick me up — public transport
+38. My Maker — Snail Mail
+39. Fire 2 — Grace Ives
+40. Beluga Whale (Call Again) — hey, nothing
+41. Let You In — Marlon Funaki
+42. End of August — Noah Kahan
+43. What we want and need from love — Mila Bea
+44. Bleeding Gold — Wasia Project
+45. Billy Came Back — This Is Lorelei
+46. The Peace — underscores
+47. Royal Courts (Great Misfortune) — Portraits Of Tracy
+48. Good For Me — The Paradox
+49. Sun Has Set — beabadoobee
+50. forget him — josh conway
+51. Orchid — Lia Pappas-Kemps
+52. Certainty — Friko
+53. Projecting — Yot Club
+54. Try Try Try — Hovvdy
+55. think twice — strongboi
+56. Spill — Slow Pulp
+57. Whatever You Wanna — Annabelle Dinda
+58. Spinning — Winyah
+59. Closer — The Linda Lindas (feat. Hayley Williams)
+60. Fable — For Opal
+61. Lasagna — Babehoven
+62. How Did It Happen to You — Hathway
+63. Slacker in the Rye — Maya Hawke
+64. BedHead — Balu Brigada
+65. Two Hands — Pond
+66. Back To Us — Rec Hall
+67. Hands Tied — Emma Ogier
+68. That’s Me — Keo
+69. the cure — Olivia Rodrigo
+70. Yeah — Charli xcx
+71. snake the drain — Devon Again
+72. no more regrets — almost monday
+73. God in my Head — Kevin Atwater
+74. The Great Destroyer — Racing Mount Pleasant
+75. Cross My Heart — Lime Garden
+76. Cherry, Please — The Kilans
+77. Pop Tarts — Post Sex Nachos (feat. MARIS and Annelise Gonzalez)
+78. the cops are coming — Junior Mesa
+79. blue — girl in red
+80. Virtuoso — Ryan Beatty
+81. Too Easy — Tiger Lewis
+82. Radio — Junior Varsity
+83. Johnny’s Dreamworld — Modern Woman
+84. Golden Plain — Surf Trash
+85. Anything He Was — Tiny Habits
+86. Bitter Fruit — Young the Giant
+87. WALLFLOWER — Dominic Fike
+88. I’m Not In Pain — @
+89. Hellbent — Naomi Scott
+90. Holy Grail — Vacations
+91. tonight — girlsweetvoiced
+92. Darker Now — Conall Cafferty
+93. Pale Blue Eyes — Sydney Ross Mitchell
+94. Blood — mary in the junkyard
+95. Aperture — Harry Styles
+96. Pretty Girl — 2oo7
+97. eat the pavement — Dev Lemons
+98. oh yeah? — Steve Lacy
+99. Anhedonia — Cardinals
+100. Problem Child — brakence
+101. Crumbs — Shallow Alcove
+
 ## Movies
 
 ### Time Out: Best Movies of 2026 (So Far)
 Time Out · [link](https://www.timeout.com/film/the-best-movies-of-2026)
 
-1. You Can See Everything
-2. Teenage Sex and Death at Camp Miasma
-3. Backrooms
-4. Sirât
-5. The Invite
-6. Naza
-7. Remake
-8. If I Had Legs I’d Kick You
-9. Sound of Falling
-10. The History of Concrete
-11. Oasis: Don’t Look Back in Anger
-12. La Grazia
-13. Project Hail Mary
-14. The Stranger
-15. Rose of Nevada
-16. Primetime
-17. Bitter Christmas
-18. The Testament of Ann Lee
-19. De Gaulle: Liberté
-20. 28 Years Later: The Bone Temple
-21. Obsession
-22. Super Nature
-23. Pressure
-24. The Devil Wears Prada 2
-25. Two Prosecutors
-26. The Furious
-27. Queen at Sea
-28. The End of Oak Street
-29. Kokuho
-30. Broken English
-31. Blue Heron
-32. Boorman and the Devil
-33. Little Amélie or the Character of Rain
-34. My Father’s Shadow
-35. Man on the Run
-36. Maddie's Secret
-37. Blades of the Guardians
-38. Toy Story 5
-39. Paper Tiger
-40. Crime 101
-41. Twinless
-42. Is This Thing On?
-43. Nirvanna the Band the Show the Movie
-44. Is God Is
-45. Nouvelle Vague
-46. Hoppers
-47. The Shepherd and the Bear
-48. Köln 75
-49. Normal
-50. Send Help
+1. The Odyssey
+2. La Bola Negra
+3. The Voice of Hind Rajab
+4. Wildwood
+5. You Can See Everything
+6. I See Buildings Fall Like Lightning
+7. Teenage Sex and Death at Camp Miasma
+8. Backrooms
+9. Sirât
+10. The Invite
+11. Naza
+12. Remake
+13. If I Had Legs I’d Kick You
+14. Sound of Falling
+15. The History of Concrete
+16. Oasis: Don’t Look Back in Anger
+17. La Grazia
+18. Project Hail Mary
+19. The Stranger
+20. Rose of Nevada
+21. Primetime
+22. Bitter Christmas
+23. The Testament of Ann Lee
+24. De Gaulle: Liberté
+25. 28 Years Later: The Bone Temple
+26. Obsession
+27. Super Nature
+28. Pressure
+29. The Devil Wears Prada 2
+30. Two Prosecutors
+31. The Furious
+32. Queen at Sea
+33. The End of Oak Street
+34. Kokuho
+35. Broken English
+36. Blue Heron
+37. Boorman and the Devil
+38. Little Amélie or the Character of Rain
+39. My Father’s Shadow
+40. Man on the Run
+41. Maddie's Secret
+42. Blades of the Guardians
+43. Toy Story 5
+44. Paper Tiger
+45. Crime 101
+46. Twinless
+47. Is This Thing On?
+48. Nirvanna the Band the Show the Movie
+49. Is God Is
+50. Nouvelle Vague
+51. Hoppers
+52. The Shepherd and the Bear
+53. Köln 75
+54. Normal
+55. Send Help
 
 ### Letterboxd: November Report 2026 – Top 25 Films So Far
 Letterboxd · [link](https://letterboxd.com/official/list/november-report-2026-top-25-films-of-the/detail/)
@@ -2571,6 +2716,7 @@ Rotten Tomatoes · [link](https://editorial.rottentomatoes.com/guide/best-new-mo
 - Pillion
 - Shaun the Sheep: The Beast of Mossy Bottom
 - The President's Cake
+- Rose
 - Boorman and the Devil
 - Club Kid
 - Ghost Elephants
@@ -2598,17 +2744,18 @@ Rotten Tomatoes · [link](https://editorial.rottentomatoes.com/guide/best-new-mo
 - Tenzing
 - The Furious
 - The Samurai and the Prisoner
+- Josephine
+- You Can See Everything
 - Minotaur
 - Coyote vs. Acme
 - I Swear
 - If I Go Will They Miss Me
 - Young Mothers
-- Josephine
 - Ken Russell's The Devils
 - Resident Evil
 - The History of Concrete
-- You Can See Everything
 - Your Mother Your Mother Your Mother
+- The Cycle
 - Coward
 - The Invite
 - Belén
@@ -2620,7 +2767,6 @@ Rotten Tomatoes · [link](https://editorial.rottentomatoes.com/guide/best-new-mo
 - Nirvanna the Band the Show the Movie
 - Project Hail Mary
 - The Christophers
-- The Cycle
 - The Incomer
 - The Love That Remains
 - The Mysterious Gaze of the Flamingo
@@ -2630,11 +2776,11 @@ Rotten Tomatoes · [link](https://editorial.rottentomatoes.com/guide/best-new-mo
 - Late Fame
 - Mother of Flies
 - Our Hero, Balthazar
-- Ray Gunn
 - Silent Friend
 - Teenage Sex and Death at Camp Miasma
 - The Odyssey
 - Wicker
+- Ray Gunn
 - Wild Horse Nine
 - Atonement
 - Don't Say Good Luck
@@ -2651,13 +2797,12 @@ Rotten Tomatoes · [link](https://editorial.rottentomatoes.com/guide/best-new-mo
 - The Weight
 - Tony
 - All of a Sudden
+- Queen at Sea
 - Exit 8
 - Kontinental '25
-- Queen at Sea
 - Romería
 - Send Help
 - Toy Story 5
-- The Debut
 - 28 Years Later: The Bone Temple
 - Ha-Chan, Shake Your Booty!
 - I Love Boosters
@@ -2667,6 +2812,7 @@ Rotten Tomatoes · [link](https://editorial.rottentomatoes.com/guide/best-new-mo
 - Time and Water
 - Filipiñana
 - Godzilla Minus Zero
+- The Debut
 - Avatar Aang: The Last Airbender
 - Deathstalker
 - Finding Emily
@@ -2675,6 +2821,8 @@ Rotten Tomatoes · [link](https://editorial.rottentomatoes.com/guide/best-new-mo
 - Ricky
 - Spider-Man: Brand New Day
 - The Last Viking
+- Being Heumann
+- I Play Rocky
 - Pressure
 - CAMP
 - Cookie Queens
@@ -2689,43 +2837,43 @@ Rotten Tomatoes · [link](https://editorial.rottentomatoes.com/guide/best-new-mo
 - Renoir
 - Sweetness
 - Heel (The Good Boy)
-- Being Heumann
 - The Rivals of Amziah King
 - Dead Lover
 - We Bury the Dead
-- I Play Rocky
+- Paper Tiger
+- Elsinore
 - The End of Oak Street
 - Jackass: Best and Last
 - Primetime
 - The AI Doc: Or How I Became an Apocaloptimist
-- Paper Tiger
 - Backrooms
 - Maddie's Secret
 - Stop! That! Train!
 - Sunny Dancer
-- Bitter Christmas
 - Heart of the Beast
 - Mile End Kicks
+- Bad Apples
 - GOAT
 - Mayday
-- Bad Apples
+- The Further Mis-Adventures of Cliff Booth
 - A Private Life
 - Erupcja
 - Fantasy Life
 - Good Luck, Have Fun, Don't Die
 - H Is for Hawk
 - Colony
+- Bitter Christmas
 - Cold Storage
 - Hope
 - The Magic Faraway Tree
 - Love of Your Life
 - Disclosure Day
 - The Sun Never Sets
-- A Talent for Murder
-- Clayface
 - Normal
 - People We Meet on Vacation
 - Sense and Sensibility
+- A Talent for Murder
+- Clayface
 - Primate
 - The Rip
 - Tow
@@ -2733,14 +2881,14 @@ Rotten Tomatoes · [link](https://editorial.rottentomatoes.com/guide/best-new-mo
 - Mike & Nick & Nick & Alice
 - The Dink
 - The Drama
-- Whalefall
 - Everest: The Other Side
+- Whalefall
 - Victorian Psycho
 - Franz
 - The Wrecking Crew
 - undertone
-- Ink
 - The Love Hypothesis
+- Ink
 - Fuze
 - Hamlet
 - Nightborn
@@ -3049,43 +3197,78 @@ The A.V. Club · [link](https://www.avclub.com/best-films-2026-so-far)
 10. The Death of Robin Hood
 11. The Debut
 12. Decorado
-13. The Drama
+13. Digger
 14. Disclosure Day
-15. Forbidden Fruits
-16. Forgotten Island
-17. The Furious
-18. Hokum
-19. Hope
-20. Hoppers
-21. I Play Rocky
-22. Ink
-23. The Incomer
-24. The Invite
-25. Is God Is
-26. Masters of the Universe
-27. Mother Mary
-28. The Musical
-29. Nirvanna the Band the Show the Movie
-30. Obsession
-31. The Odyssey
-32. The Only Living Pickpocket in New York
-33. Over Your Dead Body
-34. Primetime
-35. Project Hail Mary
-36. Resident Evil
-37. The Samurai and the Prisoner
-38. Send Help
-39. The Sheep Detectives
-40. Spider-Man: Brand New Day
-41. Tangles
-42. Time and Water
-43. Tony
-44. Toy Story 5
-45. Union County
-46. Wildwood
-47. Wuthering Heights
-48. You Can See Everything
-49. Your Mother Your Mother Your Mother
+15. The Drama
+16. Forbidden Fruits
+17. Forgotten Island
+18. The Furious
+19. The Further Mis-Adventures of Cliff Booth
+20. Godzilla Minus Zero
+21. Hokum
+22. Hope
+23. Hoppers
+24. I Play Rocky
+25. Ink
+26. The Incomer
+27. The Invite
+28. Is God Is
+29. Masters of the Universe
+30. Mother Mary
+31. The Musical
+32. NAZA
+33. Nirvanna the Band the Show the Movie
+34. Obsession
+35. The Odyssey
+36. The Only Living Pickpocket in New York
+37. Over Your Dead Body
+38. Paper Tiger
+39. Primetime
+40. Project Hail Mary
+41. Resident Evil
+42. The Samurai and the Prisoner
+43. Send Help
+44. The Sheep Detectives
+45. Spider-Man: Brand New Day
+46. Tangles
+47. Time and Water
+48. Tony
+49. Toy Story 5
+50. Union County
+51. Wild Horse Nine
+52. Wildwood
+53. Wuthering Heights
+54. You Can See Everything
+55. Your Mother Your Mother Your Mother
+
+### Collider: 10 Movies That Prove 2026 Is An All-Time Great Year for Film
+Collider · [link](https://collider.com/2026-movies-best/)
+
+- Spider-Man: Brand New Day
+- Digger
+- The Invite
+- Once Upon a Time in Harlem
+- La Bola Negra
+- Wildwood
+- Obsession
+- Project Hail Mary
+- You Can See Everything
+- The Odyssey
+
+### Brian Formo: 2026 Year in Review
+Brian Formo · [link](http://www.brianformo.com/year-ends/2026)
+
+- The Odyssey — Christopher Nolan
+- You Can See Everything — Nathan Fielder and Lance Oppenheim
+- Minotaur — Andrey Zvyagintsev
+- Club Kid — Jordan Firstman
+- Fatherland — Paweł Pawlikowski
+- The End of Oak Street — David Robert Mitchell
+- Paper Tiger — James Gray
+- Rose — Markus Schleinzer
+- Digger — Alejandro González Iñárritu
+- The Debut — Jesse Eisenberg
+- La Bola Negra — Javier Ambrossi and Javier Calvo
 
 ## TV
 
@@ -3398,15 +3581,15 @@ Rotten Tomatoes · [link](https://editorial.rottentomatoes.com/guide/best-new-tv
 - Furious: Season 1
 - Widow's Bay: Season 1
 - Star Wars: Maul - Shadow Lord: Season 1
-- The Other Bennet Sister: Season 1
+- The Other Bennet Sister: Limited Series
 - Slow Horses: Season 6
 - The Fall and Rise of Reggie Dinkins: Season 1
 - Hacks: Season 5
 - Sugar: Season 2
 - The Comeback: Season 3
-- Rivals: Season 2
 - Legends: Season 1
 - The Diplomat: Season 4
+- Tip Toe: Limited Series
 - The Bear: Season 5
 - The Boroughs: Season 1
 - Margo's Got Money Troubles: Season 1
@@ -3414,10 +3597,10 @@ Rotten Tomatoes · [link](https://editorial.rottentomatoes.com/guide/best-new-tv
 - The Vampire Lestat: Season 1
 - Industry: Season 4
 - Silo: Season 3
-- Tip Toe: Limited Series
+- The Gilded Age: Season 4
+- Rivals: Season 2
 - The One About Matthew Perry: Season 1
 - How to Get to Heaven From Belfast: Season 1
-- The Gilded Age: Season 4
 - Youth: Season 1
 - A Knight of the Seven Kingdoms: Season 1
 - BAIT: Season 1
@@ -3461,6 +3644,7 @@ Rotten Tomatoes · [link](https://editorial.rottentomatoes.com/guide/best-new-tv
 - The Gentlemen: Season 2
 - The Night Manager: Season 2
 - VisionQuest: Limited Series
+- The Lord of the Rings: The Rings of Power: Season 3
 - The Greatest: Season 1
 - American Hostage: Season 1
 - War: Season 1
@@ -3473,23 +3657,24 @@ Rotten Tomatoes · [link](https://editorial.rottentomatoes.com/guide/best-new-tv
 - Bridgerton: Season 4
 - Run Away: Season 1
 - Reality Check: Inside America's Next Top Model: Season 1
+- Yellowjackets: Season 4
 - Dark Matter: Season 2
 - A Different World: Season 1
 - Half Man: Season 1
 - Big Mistakes: Season 1
 - Love Story: John F. Kennedy Jr. & Carolyn Bessette
 - Lucky: Season 1
-- The Lord of the Rings: The Rings of Power: Season 3
 - The Paper: Season 2
 - Malcolm in the Middle: Life's Still Unfair: Limited Series
 - Little House on the Prairie: Season 1
 - Stuart Fails to Save the Universe: Season 1
-- YAGA: Season 1
 - Steal: Season 1
 - Crystal Lake: Season 1
 - The Audacity: Season 1
+- The Altruists: Limited Series
 - The 'Burbs: Season 1
 - Monarch: Legacy of Monsters: Season 2
+- YAGA: Season 1
 - Vladimir: Season 1
 - Cape Fear: Limited Series
 - Alice and Steve: Season 1
@@ -3573,6 +3758,20 @@ TIME · [link](https://time.com/article/2026/06/23/best-tv-shows-2026-so-far/)
 - Bookish
 - Industry Season 4
 - The Pitt Season 2
+
+### TV Guide: The 10 Best TV Shows of 2026
+TV Guide · [link](https://www.tvguide.com/news/features/best-tv-shows-2026/)
+
+1. Adults — FX
+2. Spider-Noir — Prime Video
+3. Half Man — HBO
+4. The Fall and Rise of Reggie Dinkins — NBC
+5. Beef — Netflix
+6. Sterling Point — Prime Video
+7. The Vampire Lestat — AMC
+8. The Lowdown — FX
+9. Widow's Bay — Apple TV
+10. Industry — HBO
 
 ## Podcasts
 
@@ -3900,16 +4099,16 @@ Metacritic · [link](https://www.metacritic.com/browse/game/all/all/2026/)
 5. Sektori
 6. Big Walk
 7. DOOM: The Dark Ages - Revelations
-8. Forza Horizon 6
-9. Mina the Hollower
-10. Elden Ring: Tarnished Edition
-11. Trails in the Sky 2nd Chapter
-12. Lost and Found Co
+8. Queen's Domain
+9. Forza Horizon 6
+10. Mina the Hollower
+11. Elden Ring: Tarnished Edition
+12. Trails in the Sky 2nd Chapter
 13. The Binding of Isaac: Repentance + Online
-14. and Roger
-15. Schrodinger's Call
-16. Final Fantasy VII Remake Intergrade
-17. Resident Evil 4: Gold Edition
+14. Lost and Found Co
+15. and Roger
+16. Schrodinger's Call
+17. Final Fantasy VII Remake Intergrade
 18. Valheim
 19. Pokemon Pokopia
 20. Resident Evil Requiem
@@ -3925,17 +4124,17 @@ Metacritic · [link](https://www.metacritic.com/browse/game/all/all/2026/)
 30. Kingdom Hearts Collection I ~ III
 31. Enshrouded
 32. 007 First Light
-33. Queen's Domain
-34. SAROS
-35. Hermit and Pig
-36. Resident Evil 7: biohazard - Gold Edition
-37. Gears of War: E-Day
-38. Welcome to Elderfield
-39. Cult of the Lamb: Woolhaven
-40. Perfect Tides: Station to Station
-41. DAVE THE DIVER: In the Jungle
-42. Mixtape
-43. Nioh 3
+33. SAROS
+34. Hermit and Pig
+35. Resident Evil 7: biohazard - Gold Edition
+36. Gears of War: E-Day
+37. Welcome to Elderfield
+38. Cult of the Lamb: Woolhaven
+39. Perfect Tides: Station to Station
+40. DAVE THE DIVER: In the Jungle
+41. Mixtape
+42. Nioh 3
+43. World of Warcraft: Forever
 44. OPUS: Prism Peak
 45. Dressmaker
 46. Monster Hunter Stories 3: Twisted Reflection
@@ -4409,6 +4608,146 @@ CNET (via CES) · [link](https://www.ces.tech/articles/2026-best-of-ces-winners-
 
 *items not retrievable: the winners grid loads by JavaScript; only the intro text comes through*
 
+### TechRadar: Product of the Year 2026 Winners
+TechRadar · [link](https://www.techradar.com/tech/techradar-product-of-the-year-awards-2026-winners)
+
+- Apple iPhone 18 Pro — Phone of the Year
+- Honor — Phone Brand of the Year
+- Honor Robot Phone — Phones Innovation of the Year
+- Motorola Edge 70 Fusion — Best Value Phone
+- Apple iPhone 17 — Best Mid-Range Phone
+- Samsung Galaxy Z Fold 8 — Best Folding Phone
+- Motorola Razr Ultra 2026 — Best Flip Phone
+- Oppo Find X9 Ultra — Best Camera Phone
+- RedMagic 11 Pro — Best Gaming Phone
+- Google Pixel 11 Pro — Best AI Phone
+- DJI Osmo Mobile 8P — Best Phone Accessory
+- Honor MagicPad 4 — Best Tablet
+- Amazon Kindle Scribe (2025) — Best eReader
+- Sony A7R VI — Camera of the Year
+- Sony — Brand of the Year
+- Antigravity A1 — Camera Innovation of the Year
+- OM System PEN — Best Beginner Camera
+- Sony A7 V — Best Mid-range camera
+- Sony A7R VI — Best Professional Camera
+- Ricoh GR IV — Best Compact and Instant Camera
+- DJI Osmo Pocket 4P — Best Action and Vlogging Camera
+- Sigma 135mm f/1.4 DG \| Art — Best Camera Lens
+- Insta360 Mic Pro — Best Camera Accessory
+- DJI Avata 360 — Best Drone
+- Apple MacBook Neo — Laptop of the Year
+- Nvidia — Computing Brand of the Year
+- Intel Arc G3 Extreme — Best Computing Innovation
+- Dell XPS 13 (2026) — Best Value Laptop
+- Samsung Galaxy Book6 Ultra — Best AI Laptop
+- Razer Blade 18 — Best Gaming Laptop
+- MSI Claw 8 EX AI+ — Best PC Gaming Handheld
+- Corsair Makr Pro 75 — Best Gaming Keyboard
+- Razer Naga V3 Pro — Best Gaming Mouse
+- Alienware AW3426DW QD-OLED — Best Gaming Monitor
+- SteelSeries Arctis Nova Elite — Gaming Device of the Year
+- Asus — Gaming Brand of the Year
+- Nvidia DLSS 4.5 — Gaming Innovation of the Year
+- Corsair Novablade Pro — Best Console Accessory
+- Amazon Luna — Best Gaming Service
+- 8BitDo Pro 3 — Best Gaming Controller
+- SteelSeries Arctis Nova Elite — Best Gaming Headset
+- Secretlab Atlas — Best Gaming Chair
+- LG C6 — TV of the Year
+- Sony — Home Entertainment Brand of the Year
+- Sony True RGB — Home Entertainment Innovation of the Year
+- LG C6 — Best Gaming TV
+- Sony Bravia 9 II — Best TV for Sound
+- LG C6 — Best OLED TV
+- Sony Bravia 9 II — Best Mini-LED TV
+- TCL QM7L/C7L — Best Value TV
+- Hisense XR10 — Best Projector
+- Sonos Beam Ultra — Best Soundbar
+- Sony Bravia Theater Trio — Best Wireless Home Theater Speakers
+- HBO Max — Streaming Service of the Year
+- Prime Video — Best for Movies
+- Netflix — Best for Documentaries
+- Apple TV — Best for TV Shows
+- Tubi — Best Free Streaming Service
+- Apple AirPods Max 2 — Headphones of the Year
+- iFi — Audio Brand of the Year
+- Cambridge L/R S speakers — Audio Innovation of the Year
+- Nothing Headphone (a) — Best Wireless Headphones
+- Soundpeats H3 — Best Wireless Earbuds
+- Shokz OpenFit Pro — Best Open Earbuds
+- CMF Headphone Pro — Best Value Headphones
+- JLab JBuds Mini ANC — Best Value Earbuds
+- Baseus Bowie MC2 — Best Value Open Earbuds
+- Meze Audio Strada — Best Wired Headphones
+- Sennheiser CX 80U — Best Wired Earbuds
+- JBL Xtreme 5 — Best Bluetooth Speaker
+- Denon Home 400 — Best Wireless Speaker
+- Astell & Kern PD5 — Best Portable Audio Player
+- Fluance RT87 — Best Turntable
+- iFi iDSD GR2 — Best DAC
+- Dali Sonik 1 — Best Stereo Speakers
+- Garmin Fenix 9 Pro — Health & Fitness Device of the year
+- Garmin — Health & Fitness Brand of the Year
+- Huawei Watch D3 — Health & Fitness Innovation of the Year
+- Apple Watch Ultra 4 — Best Smartwatch
+- Garmin Fenix 9 Pro — Best Running Watch
+- Garmin Cirqa — Best Fitness Tracker
+- Oura Ring 5 — Best Smart Ring
+- Suri Core 1.0 — Best Electric Toothbrush
+- Withings BodyScan 2 — Best Connected Fitness Tech
+- DJI Romo P — Home Device of the Year
+- Philips Hue — Home Tech Brand of the Year
+- Dyson Find+Follow Purifier Cool — Home Tech Innovation of the Year
+- Philips Hue Omniglow Strip Light — Best Home Light Tech
+- Aqara Camera Hub G350 — Best Home Security Device
+- DJI Romo P — Best Robot Vacuum
+- Roborock F25 Ultra — Best Vacuum
+- Ninja French Door Premier Air Fryer Convection Oven Toaster — Best Air Fryer
+- Meraki Espresso Machine Gen 2 — Best Coffee Machine
+- Philips Baristina — Best Value Coffee Machine
+- Dyson Find+Follow Purifier Cool — Best Fan
+
+### 9to5Google: Best of 2026
+9to5Google · [link](https://9to5google.com/2026/11/25/9to5googles-best-of-2026/)
+
+- Fitbit Air
+- XGIMI Horizon 30 Pro
+- Steam Controller (2026)
+- Samsung Galaxy Z Fold 8
+- Nothing Ear (3) / Ear (3a)
+- Oppo Find X9 Ultra
+- Honor Magic V6
+- XREAL Aura
+- DroidDeck
+- Fitbit Edge
+- Google Pixel Tag
+- Keychron Thunderbolt 5 Dock (14-in-1)
+- Onyx Boox Picco
+- Amazon Alexa Tablet 12 Pro
+- XTEINK X4 Pro
+
+### Stuff Gadget Awards 2026
+Stuff · [link](https://www.stuff.tv/award/the-stuff-gadget-awards-2026-our-gadget-of-the-year/)
+
+- Apple MacBook Neo — Gadget of the Year
+- Oura Ring 5 — Gadget of the Year highly commended
+- BMW iX3 — Gadget of the Year highly commended
+- Samsung Galaxy S26 Ultra — Gadget of the Year shortlist
+- Bowers Wilkins Px8 S2 — Gadget of the Year shortlist
+- Panasonic Lumix L10 — Gadget of the Year shortlist
+- Brompton Electric G-Line — Gadget of the Year shortlist
+- Samsung Galaxy Z Fold8 — 2026 Design Award
+- LG W6 Wallpaper TV — 2026 Design Award highly commended
+- Dyson PencilVac — 2026 Design Award shortlist
+- Shark ChillPill — 2026 Design Award shortlist
+- Sony Reon Pocket Pro Plus — 2026 Design Award shortlist
+- Honor Robot Phone — 2026 Innovation Award
+- Roborock Saros Rover — 2026 Innovation Award highly commended
+- LG Sound Suite — 2026 Innovation Award shortlist
+- Lego Smart Play — 2026 Innovation Award shortlist
+- Acer Vero 16 (2026) — 2026 Sustainability Award
+- Anker Solix C2000 Gen 2 Portable Power Station — 2026 Sustainability Award highly commended
+
 ## Restaurants & Food
 
 ### Eater: Best New Restaurants in America 2026
@@ -4604,6 +4943,64 @@ Food & Wine (GlobeNewswire) · [link](https://www.globenewswire.com/news-release
 8. Perry’s — Masako Morishita; Washington, D.C.
 9. Weltons Tiny Bakeshop — Zachary and Hannah Welton; Charleston, South Carolina
 10. Josephine’s — Lucas McKinney; Houston, Texas
+
+### The Infatuation: America's Best New Restaurants of 2026
+The Infatuation · [link](https://www.theinfatuation.com/all/guides/best-new-restaurants-america-2026)
+
+- Graciela — New York
+- Phở Nam — Miami
+- Wilde’s — Los Angeles
+- All Well — Chicago
+- Emelina — West Palm Beach
+- Natsukashii — Tulsa
+- Dolfy’s — New Orleans
+- Chibanos — Philadelphia
+- Roya — Austin
+- Border Town — New York
+- Casa Juani — Boulder
+- OK Chicken & Khao Soi — Portland, OR
+- Fat Cat & The Mantis — San Francisco
+- Pizzeria Sei — Los Angeles
+- Liars — Boston
+- Yasu Omakase — Miami
+- Ruki’s Kitchen — Atlanta
+- Rye Bunny — Washington DC
+- The Rebel — Seattle
+- Olōyō — Dallas
+- Maroon — Las Vegas
+- Present Tense — Nashville
+- À L’ouest — San Diego
+- Zaranda — Houston
+- Little Mountain — Montecito
+
+### Yelp: Best New Restaurants of 2026
+Yelp · [link](https://www.yelp.com/article/best-new-restaurants-of-2026)
+
+- Filthy Animal — Tempe, Arizona
+- Firstborn — Los Angeles, California
+- Limusina — New York, New York
+- Eylan — Menlo Park, California
+- Lilo — Carlsbad, California
+- 1587 Prime — Kansas City, Missouri
+- Bar Boheme — Las Vegas, Nevada
+- Mezcla — Columbus, Ohio
+- Dorothy’s Downtown — Jacksonville, Florida
+- Ambassadors Clubhouse — New York, New York
+- Toro Bravo — Reno, Nevada
+- Agnes and Sherman — Houston, Texas
+- Oh London — Creve Coeur, Missouri
+- Society Swan — Scottsdale, Arizona
+- Piedra — Indianapolis, Indiana
+- Ah Ma’s Kitchen — San Francisco, California
+- Lobby Bar — Washington, District of Columbia
+- Johin’na — Birmingham, Alabama
+- Lucia — Los Angeles, California
+- The Crunkleton — Raleigh, North Carolina
+- The Farmhouse Tuscan — Alexandria, Virginia
+- Fish Shop — Washington, D.C.
+- Gianni & Mac’s Ristorante — Marietta, Georgia
+- Palm Palm — Pittsburgh, Pennsylvania
+- The Chapman — Winter Park, Florida
 
 ## Travel & Hotels
 
@@ -5225,12 +5622,12 @@ Time Out · [link](https://www.timeout.com/news/this-pop-culture-inspired-bar-is
 ### Broadway Scorecard: Critical Gold List 2025–2026
 Broadway Scorecard · [link](https://broadwayscorecard.com/lists/critical-gold/2025-2026)
 
-- Death of a Salesman
 - CATS: The Jellicle Ball
+- Death of a Salesman
 - Liberation
 - Becky Shaw
-- Little Bear Ridge Road
 - Ragtime
+- Little Bear Ridge Road
 - Oedipus
 - Marjorie Prime
 - The Balusters
@@ -6037,42 +6434,44 @@ Items on two or more lists within the same topic, most lists first. Each outlet 
 
 ### Albums
 
+- **An Undying Love for a Burning World** (Neurosis) — 10 lists: Decibel: Top 40 Albums of 2026; Album of the Year: 2026 Critic Year-End List Aggregate; Rolling Stone: Best Albums of 2026 So Far; Pitchfork: The Best Music of 2026 So Far; Stereogum: 50 Best Albums of 2026 So Far; Consequence: 33 Best Albums of 2026 So Far; Paste: 50 Best Albums of 2026 So Far; NPR/MPR: Best Albums of 2026 So Far; BrooklynVegan: Our 50 Favorite Albums of 2026 So Far; Time Out: The 29 Best Albums of 2026
+- **My New Band Believe** (My New Band Believe) — 10 lists: Rough Trade: Albums of the Year 2026; Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Pitchfork: The Best Music of 2026 So Far; Stereogum: 50 Best Albums of 2026 So Far; Paste: 50 Best Albums of 2026 So Far; The Guardian: The Best Albums of 2026 So Far; NME: The Best Albums of 2026... So Far; Clash: The 60 Best Albums of 2026 (So Far); BrooklynVegan: Our 50 Favorite Albums of 2026 So Far; Time Out: The 29 Best Albums of 2026
 - **Train on the Island** (Aldous Harding) — 10 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Album of the Year: 2026 Critic Year-End List Aggregate; Rolling Stone: Best Albums of 2026 So Far; Pitchfork: The Best Music of 2026 So Far; Stereogum: 50 Best Albums of 2026 So Far; Paste: 50 Best Albums of 2026 So Far; NME: The Best Albums of 2026... So Far; Clash: The 60 Best Albums of 2026 (So Far); BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
-- **An Undying Love for a Burning World** (Neurosis) — 9 lists: Decibel: Top 40 Albums of 2026; Album of the Year: 2026 Critic Year-End List Aggregate; Rolling Stone: Best Albums of 2026 So Far; Pitchfork: The Best Music of 2026 So Far; Stereogum: 50 Best Albums of 2026 So Far; Consequence: 33 Best Albums of 2026 So Far; Paste: 50 Best Albums of 2026 So Far; NPR/MPR: Best Albums of 2026 So Far; BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
-- **My New Band Believe** (My New Band Believe) — 9 lists: Rough Trade: Albums of the Year 2026; Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Pitchfork: The Best Music of 2026 So Far; Stereogum: 50 Best Albums of 2026 So Far; Paste: 50 Best Albums of 2026 So Far; The Guardian: The Best Albums of 2026 So Far; NME: The Best Albums of 2026... So Far; Clash: The 60 Best Albums of 2026 (So Far); BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
+- **WOR$T GIRL IN AMERICA** — 10 lists: Rough Trade: Albums of the Year 2026; Billboard: 50 Best Albums of 2026 So Far; Rolling Stone: Best Albums of 2026 So Far; Pitchfork: The Best Music of 2026 So Far; Stereogum: 50 Best Albums of 2026 So Far; Paste: 50 Best Albums of 2026 So Far; NME: The Best Albums of 2026... So Far; Clash: The 60 Best Albums of 2026 (So Far); BrooklynVegan: Our 50 Favorite Albums of 2026 So Far; Time Out: The 29 Best Albums of 2026
 - **Nothing’s About to Happen to Me** (Mitski) — 9 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Billboard: 50 Best Albums of 2026 So Far; Stereogum: 50 Best Albums of 2026 So Far; Consequence: 33 Best Albums of 2026 So Far; The Guardian: The Best Albums of 2026 So Far; NME: The Best Albums of 2026... So Far; Clash: The 60 Best Albums of 2026 (So Far); BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
 - **Singin’ to an Empty Chair** (Ratboys) — 9 lists: Rough Trade: Albums of the Year 2026; Uncut: 80 Best Albums of 2026 (via Year-End Lists); Billboard: 50 Best Albums of 2026 So Far; Rolling Stone: Best Albums of 2026 So Far; Pitchfork: The Best Music of 2026 So Far; Stereogum: 50 Best Albums of 2026 So Far; Consequence: 33 Best Albums of 2026 So Far; Paste: 50 Best Albums of 2026 So Far; BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
 - **U** — 9 lists: Billboard: 50 Best Albums of 2026 So Far; Pitchfork: The Best Music of 2026 So Far; Stereogum: 50 Best Albums of 2026 So Far; Paste: 50 Best Albums of 2026 So Far; NPR/MPR: Best Albums of 2026 So Far; The Guardian: The Best Albums of 2026 So Far; NME: The Best Albums of 2026... So Far; Clash: The 60 Best Albums of 2026 (So Far); BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
 - **Vol. II** (Angine de Poitrine) — 9 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Album of the Year: 2026 Critic Year-End List Aggregate; Billboard: 50 Best Albums of 2026 So Far; Rolling Stone: Best Albums of 2026 So Far; Pitchfork: The Best Music of 2026 So Far; The Guardian: The Best Albums of 2026 So Far; BrooklynVegan: Our 50 Favorite Albums of 2026 So Far; Polaris Music Prize 2026 Winner
-- **WOR$T GIRL IN AMERICA** — 9 lists: Rough Trade: Albums of the Year 2026; Billboard: 50 Best Albums of 2026 So Far; Rolling Stone: Best Albums of 2026 So Far; Pitchfork: The Best Music of 2026 So Far; Stereogum: 50 Best Albums of 2026 So Far; Paste: 50 Best Albums of 2026 So Far; NME: The Best Albums of 2026... So Far; Clash: The 60 Best Albums of 2026 (So Far); BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
+- **You Seem Pretty Sad for a Girl So in Love** (Olivia Rodrigo) — 9 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Billboard: 50 Best Albums of 2026 So Far; Rolling Stone: Best Albums of 2026 So Far; Pitchfork: The Best Music of 2026 So Far; NME: The Best Albums of 2026... So Far; Clash: The 60 Best Albums of 2026 (So Far); BrooklynVegan: Our 50 Favorite Albums of 2026 So Far; Time Out: The 29 Best Albums of 2026
+- **Girlfriend** (Grace Ives) — 8 lists: Billboard: 50 Best Albums of 2026 So Far; Pitchfork: The Best Music of 2026 So Far; Stereogum: 50 Best Albums of 2026 So Far; Paste: 50 Best Albums of 2026 So Far; The Guardian: The Best Albums of 2026 So Far; Clash: The 60 Best Albums of 2026 (So Far); BrooklynVegan: Our 50 Favorite Albums of 2026 So Far; Time Out: The 29 Best Albums of 2026
 - **Inferno** (Boards of Canada) — 8 lists: Rough Trade: Albums of the Year 2026; Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Album of the Year: 2026 Critic Year-End List Aggregate; Rolling Stone: Best Albums of 2026 So Far; Pitchfork: The Best Music of 2026 So Far; Clash: The 60 Best Albums of 2026 (So Far); BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
 - **Sexistential** (Robyn) — 8 lists: Billboard: 50 Best Albums of 2026 So Far; Rolling Stone: Best Albums of 2026 So Far; Stereogum: 50 Best Albums of 2026 So Far; Consequence: 33 Best Albums of 2026 So Far; Paste: 50 Best Albums of 2026 So Far; The Guardian: The Best Albums of 2026 So Far; NME: The Best Albums of 2026... So Far; BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
-- **You Seem Pretty Sad for a Girl So in Love** (Olivia Rodrigo) — 8 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Billboard: 50 Best Albums of 2026 So Far; Rolling Stone: Best Albums of 2026 So Far; Pitchfork: The Best Music of 2026 So Far; NME: The Best Albums of 2026... So Far; Clash: The 60 Best Albums of 2026 (So Far); BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
-- **Girlfriend** (Grace Ives) — 7 lists: Billboard: 50 Best Albums of 2026 So Far; Pitchfork: The Best Music of 2026 So Far; Stereogum: 50 Best Albums of 2026 So Far; Paste: 50 Best Albums of 2026 So Far; The Guardian: The Best Albums of 2026 So Far; Clash: The 60 Best Albums of 2026 (So Far); BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
 - **Middle of Nowhere** (Kacey Musgraves) — 7 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Billboard: 50 Best Albums of 2026 So Far; Rolling Stone: Best Albums of 2026 So Far; Consequence: 33 Best Albums of 2026 So Far; The Guardian: The Best Albums of 2026 So Far; NME: The Best Albums of 2026... So Far; BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
 - **Mutiny After Midnight** — 7 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Album of the Year: 2026 Critic Year-End List Aggregate; Rolling Stone: Best Albums of 2026 So Far; Stereogum: 50 Best Albums of 2026 So Far; Consequence: 33 Best Albums of 2026 So Far; Paste: 50 Best Albums of 2026 So Far; Mojo: The Best Albums of 2026... So Far
 - **My Days of 58** (Bill Callahan) — 7 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Album of the Year: 2026 Critic Year-End List Aggregate; Rolling Stone: Best Albums of 2026 So Far; Stereogum: 50 Best Albums of 2026 So Far; Paste: 50 Best Albums of 2026 So Far; BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
 - **Secret Love** (Dry Cleaning) — 7 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Album of the Year: 2026 Critic Year-End List Aggregate; Rolling Stone: Best Albums of 2026 So Far; Paste: 50 Best Albums of 2026 So Far; The Guardian: The Best Albums of 2026 So Far; Clash: The 60 Best Albums of 2026 (So Far)
+- **This Music May Contain Hope** — 7 lists: Billboard: 50 Best Albums of 2026 So Far; Rolling Stone: Best Albums of 2026 So Far; Consequence: 33 Best Albums of 2026 So Far; NME: The Best Albums of 2026... So Far; Clash: The 60 Best Albums of 2026 (So Far); Mercury Prize 2026 Winner; Time Out: The 29 Best Albums of 2026
 - **To Whom This May Concern** (Jill Scott) — 7 lists: Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Billboard: 50 Best Albums of 2026 So Far; Rolling Stone: Best Albums of 2026 So Far; Pitchfork: The Best Music of 2026 So Far; Consequence: 33 Best Albums of 2026 So Far; The Guardian: The Best Albums of 2026 So Far; Clash: The 60 Best Albums of 2026 (So Far)
+- **URGH** (Mandy, Indiana) — 7 lists: Rough Trade: Albums of the Year 2026; Album of the Year: 2026 Critic Year-End List Aggregate; Pitchfork: The Best Music of 2026 So Far; Consequence: 33 Best Albums of 2026 So Far; Paste: 50 Best Albums of 2026 So Far; The Guardian: The Best Albums of 2026 So Far; Time Out: The 29 Best Albums of 2026
 - **Wendy Eisenberg** (Wendy Eisenberg) — 7 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Pitchfork: The Best Music of 2026 So Far; Stereogum: 50 Best Albums of 2026 So Far; Paste: 50 Best Albums of 2026 So Far; The Guardian: The Best Albums of 2026 So Far; BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
+- **Little Wide Open** (Kevin Morby) — 6 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Pitchfork: The Best Music of 2026 So Far; Stereogum: 50 Best Albums of 2026 So Far; Paste: 50 Best Albums of 2026 So Far; Time Out: The 29 Best Albums of 2026
 - **Play Me** (Kim Gordon) — 6 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Rolling Stone: Best Albums of 2026 So Far; Paste: 50 Best Albums of 2026 So Far; The Guardian: The Best Albums of 2026 So Far; Clash: The 60 Best Albums of 2026 (So Far)
 - **the apple tree under the sea** — 6 lists: Billboard: 50 Best Albums of 2026 So Far; Rolling Stone: Best Albums of 2026 So Far; Stereogum: 50 Best Albums of 2026 So Far; NME: The Best Albums of 2026... So Far; Clash: The 60 Best Albums of 2026 (So Far); BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
 - **The Boys of Dungeon Lane** (Paul McCartney) — 6 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Album of the Year: 2026 Critic Year-End List Aggregate; Billboard: 50 Best Albums of 2026 So Far; Rolling Stone: Best Albums of 2026 So Far; Clash: The 60 Best Albums of 2026 (So Far)
 - **The Mountain** (Gorillaz) — 6 lists: Rough Trade: Albums of the Year 2026; Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Album of the Year: 2026 Critic Year-End List Aggregate; Rolling Stone: Best Albums of 2026 So Far; Consequence: 33 Best Albums of 2026 So Far
-- **This Music May Contain Hope** — 6 lists: Billboard: 50 Best Albums of 2026 So Far; Rolling Stone: Best Albums of 2026 So Far; Consequence: 33 Best Albums of 2026 So Far; NME: The Best Albums of 2026... So Far; Clash: The 60 Best Albums of 2026 (So Far); Mercury Prize 2026 Winner
-- **URGH** (Mandy, Indiana) — 6 lists: Rough Trade: Albums of the Year 2026; Album of the Year: 2026 Critic Year-End List Aggregate; Pitchfork: The Best Music of 2026 So Far; Consequence: 33 Best Albums of 2026 So Far; Paste: 50 Best Albums of 2026 So Far; The Guardian: The Best Albums of 2026 So Far
+- **Written Into Changes** — 6 lists: Rolling Stone: Best Albums of 2026 So Far; Pitchfork: The Best Music of 2026 So Far; Paste: 50 Best Albums of 2026 So Far; The Guardian: The Best Albums of 2026 So Far; Clash: The 60 Best Albums of 2026 (So Far); Time Out: The 29 Best Albums of 2026
 - **Ö** (Fcukers) — 6 lists: Rough Trade: Albums of the Year 2026; Album of the Year: 2026 Critic Year-End List Aggregate; Billboard: 50 Best Albums of 2026 So Far; Consequence: 33 Best Albums of 2026 So Far; Clash: The 60 Best Albums of 2026 (So Far); BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
 - **Doctrine of Love** (Jalen Ngonda) — 5 lists: Rough Trade: Albums of the Year 2026; Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Album of the Year: 2026 Critic Year-End List Aggregate; Clash: The 60 Best Albums of 2026 (So Far)
 - **Happy Today** — 5 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Album of the Year: 2026 Critic Year-End List Aggregate; Pitchfork: The Best Music of 2026 So Far; Paste: 50 Best Albums of 2026 So Far
-- **Little Wide Open** (Kevin Morby) — 5 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Pitchfork: The Best Music of 2026 So Far; Stereogum: 50 Best Albums of 2026 So Far; Paste: 50 Best Albums of 2026 So Far
-- **Written Into Changes** — 5 lists: Rolling Stone: Best Albums of 2026 So Far; Pitchfork: The Best Music of 2026 So Far; Paste: 50 Best Albums of 2026 So Far; The Guardian: The Best Albums of 2026 So Far; Clash: The 60 Best Albums of 2026 (So Far)
+- **Lost Weekend** (Phoebe Bridgers) — 5 lists: Rough Trade: Albums of the Year 2026; Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Album of the Year: 2026 Critic Year-End List Aggregate; Time Out: The 29 Best Albums of 2026
 - **Beauty Land** (Greg Mendez) — 4 lists: Pitchfork: The Best Music of 2026 So Far; Stereogum: 50 Best Albums of 2026 So Far; Paste: 50 Best Albums of 2026 So Far; BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
+- **Confessions II** (Madonna) — 4 lists: Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Pitchfork: The Best Music of 2026 So Far; Clash: The 60 Best Albums of 2026 (So Far); Time Out: The 29 Best Albums of 2026
 - **Fenian** — 4 lists: Rough Trade: Albums of the Year 2026; Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Album of the Year: 2026 Critic Year-End List Aggregate; NME: The Best Albums of 2026... So Far
 - **Frozen Charlotte** (Jack White) — 4 lists: Rough Trade: Albums of the Year 2026; Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Album of the Year: 2026 Critic Year-End List Aggregate
 - **It Goes On** (Westside Cowboy) — 4 lists: Rough Trade: Albums of the Year 2026; Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Album of the Year: 2026 Critic Year-End List Aggregate
 - **Look for Your Mind!** (The Lemon Twigs) — 4 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Album of the Year: 2026 Critic Year-End List Aggregate; The Guardian: The Best Albums of 2026 So Far
-- **Lost Weekend** (Phoebe Bridgers) — 4 lists: Rough Trade: Albums of the Year 2026; Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Album of the Year: 2026 Critic Year-End List Aggregate
 - **Something Worth Waiting For** (Friko) — 4 lists: Rough Trade: Albums of the Year 2026; Stereogum: 50 Best Albums of 2026 So Far; Consequence: 33 Best Albums of 2026 So Far; Paste: 50 Best Albums of 2026 So Far
+- **Somewhere Good** (Tara Clerkin Trio) — 4 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Pitchfork: The Best Music of 2026 So Far; Time Out: The 29 Best Albums of 2026
 - **Sunn O)))** (Sunn O)))) — 4 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Rolling Stone: Best Albums of 2026 So Far; Pitchfork: The Best Music of 2026 So Far
 - **The Ground Above** (Beth Orton) — 4 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Clash: The 60 Best Albums of 2026 (So Far); BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
 - **The Pleasure Is Yours** — 4 lists: Pitchfork: The Best Music of 2026 So Far; Stereogum: 50 Best Albums of 2026 So Far; Paste: 50 Best Albums of 2026 So Far; Clash: The 60 Best Albums of 2026 (So Far)
@@ -6083,9 +6482,10 @@ Items on two or more lists within the same topic, most lists first. Each outlet 
 - **All Clouds Bring Not Rain** — 3 lists: Rough Trade: Albums of the Year 2026; Uncut: 80 Best Albums of 2026 (via Year-End Lists); Rolling Stone: Best Albums of 2026 So Far
 - **Ambiguous Desire** (Arlo Parks) — 3 lists: Billboard: 50 Best Albums of 2026 So Far; Consequence: 33 Best Albums of 2026 So Far; Clash: The 60 Best Albums of 2026 (So Far)
 - **Arirang** (BTS) — 3 lists: Billboard: 50 Best Albums of 2026 So Far; Rolling Stone: Best Albums of 2026 So Far; NME: The Best Albums of 2026... So Far
+- **Beckoning the Void of Eternal Silence** (Funebrarum) — 3 lists: Decibel: Top 40 Albums of 2026; Album of the Year: 2026 Critic Year-End List Aggregate; Time Out: The 29 Best Albums of 2026
+- **Before the World Blows** — 3 lists: Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Album of the Year: 2026 Critic Year-End List Aggregate; Time Out: The 29 Best Albums of 2026
 - **Birds of Paradise** (Thomas Dollbaum) — 3 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Rolling Stone: Best Albums of 2026 So Far; BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
 - **Companion** (Sluice) — 3 lists: Rolling Stone: Best Albums of 2026 So Far; Paste: 50 Best Albums of 2026 So Far; BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
-- **Confessions II** (Madonna) — 3 lists: Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Pitchfork: The Best Music of 2026 So Far; Clash: The 60 Best Albums of 2026 (So Far)
 - **Cry Baby** (Vince Staples) — 3 lists: Rough Trade: Albums of the Year 2026; NME: The Best Albums of 2026... So Far; Clash: The 60 Best Albums of 2026 (So Far)
 - **Crystalpunk** (Chalk) — 3 lists: The Guardian: The Best Albums of 2026 So Far; NME: The Best Albums of 2026... So Far; Clash: The 60 Best Albums of 2026 (So Far)
 - **Foreign Tongues** (The Rolling Stones) — 3 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Album of the Year: 2026 Critic Year-End List Aggregate
@@ -6094,9 +6494,11 @@ Items on two or more lists within the same topic, most lists first. Each outlet 
 - **Highway to Hell** (Star Moles) — 3 lists: Stereogum: 50 Best Albums of 2026 So Far; Paste: 50 Best Albums of 2026 So Far; BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
 - **Hippies, Thugs and Heroes** (Richard Thompson) — 3 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Album of the Year: 2026 Critic Year-End List Aggregate
 - **It’s Been Awful** (Isaiah Rashad) — 3 lists: Consequence: 33 Best Albums of 2026 So Far; NME: The Best Albums of 2026... So Far; Clash: The 60 Best Albums of 2026 (So Far)
+- **Laughter in Summer** (Beverly Glenn-Copeland) — 3 lists: Pitchfork: The Best Music of 2026 So Far; Polaris Music Prize 2026 Winner; Time Out: The 29 Best Albums of 2026
 - **Limbo** (Namasenda) — 3 lists: Stereogum: 50 Best Albums of 2026 So Far; Consequence: 33 Best Albums of 2026 So Far; Paste: 50 Best Albums of 2026 So Far
 - **Love Is Not Enough** (Converge) — 3 lists: Decibel: Top 40 Albums of 2026; Consequence: 33 Best Albums of 2026 So Far; Clash: The 60 Best Albums of 2026 (So Far)
 - **Masquerade** (Cardinals) — 3 lists: Rolling Stone: Best Albums of 2026 So Far; Stereogum: 50 Best Albums of 2026 So Far; BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
+- **Music, Fashion, Film** — 3 lists: Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Pitchfork: The Best Music of 2026 So Far; Time Out: The 29 Best Albums of 2026
 - **My Name** (Tony Bontana) — 3 lists: Paste: 50 Best Albums of 2026 So Far; The Guardian: The Best Albums of 2026 So Far; Clash: The 60 Best Albums of 2026 (So Far)
 - **new avatar** (Kelela) — 3 lists: Album of the Year: 2026 Critic Year-End List Aggregate; Pitchfork: The Best Music of 2026 So Far; Clash: The 60 Best Albums of 2026 (So Far)
 - **Nine Inch Noize** — 3 lists: Rolling Stone: Best Albums of 2026 So Far; Stereogum: 50 Best Albums of 2026 So Far; BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
@@ -6106,7 +6508,6 @@ Items on two or more lists within the same topic, most lists first. Each outlet 
 - **Renascent** (The Durutti Column) — 3 lists: Rough Trade: Albums of the Year 2026; Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists)
 - **Ride Lonesome** (Beck) — 3 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Album of the Year: 2026 Critic Year-End List Aggregate
 - **Second Song** — 3 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Album of the Year: 2026 Critic Year-End List Aggregate
-- **Somewhere Good** (Tara Clerkin Trio) — 3 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Pitchfork: The Best Music of 2026 So Far
 - **Spatial, No Problem** — 3 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists); BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
 - **The Great Divide** (Noah Kahan) — 3 lists: Billboard: 50 Best Albums of 2026 So Far; Rolling Stone: Best Albums of 2026 So Far; NPR/MPR: Best Albums of 2026 So Far
 - **TIGRAY FUNK** (Sideshow) — 3 lists: Rolling Stone: Best Albums of 2026 So Far; Pitchfork: The Best Music of 2026 So Far; Paste: 50 Best Albums of 2026 So Far
@@ -6119,8 +6520,6 @@ Items on two or more lists within the same topic, most lists first. Each outlet 
 - **Amaro** (Bibi Club) — 2 lists: BrooklynVegan: Our 50 Favorite Albums of 2026 So Far; Polaris Music Prize 2026 Winner
 - **Apples for Isaac** (Echo & the Bunnymen) — 2 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists)
 - **Archives** (Vanishing Twin) — 2 lists: Rough Trade: Albums of the Year 2026; Album of the Year: 2026 Critic Year-End List Aggregate
-- **Beckoning the Void of Eternal Silence** (Funebrarum) — 2 lists: Decibel: Top 40 Albums of 2026; Album of the Year: 2026 Critic Year-End List Aggregate
-- **Before the World Blows** — 2 lists: Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Album of the Year: 2026 Critic Year-End List Aggregate
 - **bitknot** — 2 lists: Pitchfork: The Best Music of 2026 So Far; Stereogum: 50 Best Albums of 2026 So Far
 - **Blame the Clown** (Twisted Teens) — 2 lists: Pitchfork: The Best Music of 2026 So Far; Paste: 50 Best Albums of 2026 So Far
 - **Cancel Me (I'm Tired)** (Fat Dog) — 2 lists: Rough Trade: Albums of the Year 2026; Album of the Year: 2026 Critic Year-End List Aggregate
@@ -6134,6 +6533,7 @@ Items on two or more lists within the same topic, most lists first. Each outlet 
 - **Devotion** (The Keening) — 2 lists: Decibel: Top 40 Albums of 2026; Album of the Year: 2026 Critic Year-End List Aggregate
 - **Distracted** (Thundercat) — 2 lists: The Guardian: The Best Albums of 2026 So Far; Clash: The 60 Best Albums of 2026 (So Far)
 - **Donde Es El After?** — 2 lists: Billboard: 50 Best Albums of 2026 So Far; Rolling Stone: Best Albums of 2026 So Far
+- **Dopamine Chamber** — 2 lists: Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Time Out: The 29 Best Albums of 2026
 - **Fold** (Jump Source) — 2 lists: Stereogum: 50 Best Albums of 2026 So Far; Clash: The 60 Best Albums of 2026 (So Far)
 - **For Love Of Grace The Hereafter** (Iceage) — 2 lists: Billboard: 50 Best Albums of 2026 So Far; Consequence: 33 Best Albums of 2026 So Far
 - **For The First Time, Again** (Tyler Ballgame) — 2 lists: Rough Trade: Albums of the Year 2026; Mojo: The 75 Best Albums of 2026 (via Year-End Lists)
@@ -6147,19 +6547,19 @@ Items on two or more lists within the same topic, most lists first. Each outlet 
 - **in filth your mystery is kingdom / far smile peasant in yellow music** (Dagmar Zuniga) — 2 lists: Pitchfork: The Best Music of 2026 So Far; Paste: 50 Best Albums of 2026 So Far
 - **Injury Episode** (Static Dress) — 2 lists: NME: The Best Albums of 2026... So Far; Clash: The 60 Best Albums of 2026 (So Far)
 - **Kiss All the Time. Disco, Occasionally** (Harry Styles) — 2 lists: Billboard: 50 Best Albums of 2026 So Far; Rolling Stone: Best Albums of 2026 So Far
-- **Laughter in Summer** (Beverly Glenn-Copeland) — 2 lists: Pitchfork: The Best Music of 2026 So Far; Polaris Music Prize 2026 Winner
 - **Lavender Networks** (Fire-Toolz) — 2 lists: Stereogum: 50 Best Albums of 2026 So Far; Paste: 50 Best Albums of 2026 So Far
 - **Looking Glass Hymnal Blue** (The Silver) — 2 lists: Decibel: Top 40 Albums of 2026; BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
 - **Luck… or Something** (Hilary Duff) — 2 lists: Billboard: 50 Best Albums of 2026 So Far; Rolling Stone: Best Albums of 2026 So Far
 - **Maid of Honour** (Drake) — 2 lists: Rolling Stone: Best Albums of 2026 So Far; Pitchfork: The Best Music of 2026 So Far
 - **Massive Champion** (Getdown Services) — 2 lists: Rough Trade: Albums of the Year 2026; Mojo: The 75 Best Albums of 2026 (via Year-End Lists)
-- **Music, Fashion, Film** — 2 lists: Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Pitchfork: The Best Music of 2026 So Far
 - **Necropalace** (Worm) — 2 lists: Decibel: Top 40 Albums of 2026; BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
 - **Of Earth Wires** (Dua Saleh) — 2 lists: Consequence: 33 Best Albums of 2026 So Far; NME: The Best Albums of 2026... So Far
+- **Paddywhackery** — 2 lists: Mojo: The 75 Best Albums of 2026 (via Year-End Lists); Time Out: The 29 Best Albums of 2026
 - **Peanut** (Otto Benson) — 2 lists: Pitchfork: The Best Music of 2026 So Far; The Guardian: The Best Albums of 2026 So Far
 - **Perfecth** (Queens of the Stone Age) — 2 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists)
 - **Philadelphia's Been Good to Me** (Kurt Vile) — 2 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists)
 - **Poem 1** (Ana Roxanne) — 2 lists: Pitchfork: The Best Music of 2026 So Far; Paste: 50 Best Albums of 2026 So Far
+- **Remember the Humans** (Broken Social Scene) — 2 lists: Pitchfork: The Best Music of 2026 So Far; Time Out: The 29 Best Albums of 2026
 - **Role Model Hermit** (mary in the junkyard) — 2 lists: Rough Trade: Albums of the Year 2026; Album of the Year: 2026 Critic Year-End List Aggregate
 - **Sd-3** (Loukeman) — 2 lists: Stereogum: 50 Best Albums of 2026 So Far; Clash: The 60 Best Albums of 2026 (So Far)
 - **Setting** (Setting) — 2 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists)
@@ -6177,9 +6577,10 @@ Items on two or more lists within the same topic, most lists first. Each outlet 
 - **The Womack Sisters** (The Womack Sisters) — 2 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists)
 - **There Near** (Dinosaur Jr) — 2 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists)
 - **Total Dive** (Brown Horse) — 2 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
-- **Trying Times** (James) — 2 lists: Billboard: 50 Best Albums of 2026 So Far; BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
+- **Trying Times** — 2 lists: Billboard: 50 Best Albums of 2026 So Far; BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
 - **Two Wheels Move The Soul** (Robber Robber) — 2 lists: Stereogum: 50 Best Albums of 2026 So Far; Paste: 50 Best Albums of 2026 So Far
 - **We Are Together Again** (Bonnie “Prince” Billy) — 2 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The 75 Best Albums of 2026 (via Year-End Lists)
+- **westside trapped** (heavensouls) — 2 lists: Paste: 50 Best Albums of 2026 So Far; Time Out: The 29 Best Albums of 2026
 - **Who Loves the Sun** (Chat Pile) — 2 lists: Decibel: Top 40 Albums of 2026; Album of the Year: 2026 Critic Year-End List Aggregate
 - **World's Gone Wrong** (Lucinda Williams) — 2 lists: Uncut: 80 Best Albums of 2026 (via Year-End Lists); Mojo: The Best Albums of 2026... So Far
 - **Wuthering Heights** — 2 lists: Billboard: 50 Best Albums of 2026 So Far; BrooklynVegan: Our 50 Favorite Albums of 2026 So Far
@@ -6188,7 +6589,10 @@ Items on two or more lists within the same topic, most lists first. Each outlet 
 ### Songs
 
 - **I Just Might** (Bruno Mars) — 3 lists: Rolling Stone: Best Songs of 2026 So Far; Billboard: 50 Best Songs of 2026 So Far; iHeartRewind 2026: Top Artists & Songs of the Year
+- **the cure** (Olivia Rodrigo) — 3 lists: Billboard: 50 Best Songs of 2026 So Far; The Current: Top 89 of 2026 – Gannon's Top Songs; Off the Record Press: CTRL+ALT+REPEAT 2026: 100 Best Songs
+- **Aperture** (Harry Styles) — 2 lists: Billboard: 50 Best Songs of 2026 So Far; Off the Record Press: CTRL+ALT+REPEAT 2026: 100 Best Songs
 - **BBB** — 2 lists: Rolling Stone: Best Songs of 2026 So Far; Billboard: 50 Best Songs of 2026 So Far
+- **Certainty** (Friko) — 2 lists: The Current: Top 89 of 2026 – Gannon's Top Songs; Off the Record Press: CTRL+ALT+REPEAT 2026: 100 Best Songs
 - **Choosin' Texas** (Ella Langley) — 2 lists: Rolling Stone: Best Songs of 2026 So Far; iHeartRewind 2026: Top Artists & Songs of the Year
 - **Drop Dead** (Olivia Rodrigo) — 2 lists: Rolling Stone: Best Songs of 2026 So Far; Billboard: 50 Best Songs of 2026 So Far
 - **E85** (Don Toliver) — 2 lists: Rolling Stone: Best Songs of 2026 So Far; Billboard: 50 Best Songs of 2026 So Far
@@ -6200,50 +6604,52 @@ Items on two or more lists within the same topic, most lists first. Each outlet 
 - **Motion Party** (Bossman Dlow) — 2 lists: Rolling Stone: Best Songs of 2026 So Far; Billboard: 50 Best Songs of 2026 So Far
 - **So Easy** (Olivia Dean) — 2 lists: Billboard: 50 Best Songs of 2026 So Far; iHeartRewind 2026: Top Artists & Songs of the Year
 - **Streets of Minneapolis** (Bruce Springsteen) — 2 lists: Rolling Stone: Best Songs of 2026 So Far; Billboard: 50 Best Songs of 2026 So Far
-- **The Cure** (Olivia Rodrigo) — 2 lists: Billboard: 50 Best Songs of 2026 So Far; The Current: Top 89 of 2026 – Gannon's Top Songs
 - **The Great Divide** (Noah Kahan) — 2 lists: Billboard: 50 Best Songs of 2026 So Far; The Current: Top 89 of 2026 – Gannon's Top Songs
 - **White Feather Hawk Tail Deer Hunter** (Lana Del Rey) — 2 lists: Rolling Stone: Best Songs of 2026 So Far; Billboard: 50 Best Songs of 2026 So Far
 
 ### Movies
 
 - **Blue Heron** (Sophy Romvari) — 9 lists: Time Out: Best Movies of 2026 (So Far); Rotten Tomatoes: Best New Movies of 2026; Variety: Best Movies of 2026 (So Far); IndieWire: Best Movies of 2026 (So Far); Vulture: Best New Movies of 2026 (So Far); Rolling Stone: Best Movies of 2026 So Far; Esquire: The 36 Best Movies of 2026 (So Far); The A.V. Club: The Best Films of 2026 So Far; /Film: 49 Best Movies of 2026 (So Far)
+- **Obsession** (Curry Barker) — 9 lists: Time Out: Best Movies of 2026 (So Far); Rotten Tomatoes: Best New Movies of 2026; Variety: Best Movies of 2026 (So Far); IndieWire: Best Movies of 2026 (So Far); Rolling Stone: Best Movies of 2026 So Far; The Guardian: The Best Films of 2026 So Far; The A.V. Club: The Best Films of 2026 So Far; /Film: 49 Best Movies of 2026 (So Far); Collider: 10 Movies That Prove 2026 Is An All-Time Great Year for Film
+- **Project Hail Mary** ((dirs. Phil Lord & Chris Miller) — 9 lists: Time Out: Best Movies of 2026 (So Far); Rotten Tomatoes: Best New Movies of 2026; IndieWire: Best Movies of 2026 (So Far); Vulture: Best New Movies of 2026 (So Far); Rolling Stone: Best Movies of 2026 So Far; BBC Culture: 12 of the Best Films of 2026 So Far; The A.V. Club: The Best Films of 2026 So Far; /Film: 49 Best Movies of 2026 (So Far); Collider: 10 Movies That Prove 2026 Is An All-Time Great Year for Film
+- **The Odyssey** (Christopher Nolan) — 9 lists: Time Out: Best Movies of 2026 (So Far); Rotten Tomatoes: Best New Movies of 2026; IndieWire: Best Movies of 2026 (So Far); Vulture: Best New Movies of 2026 (So Far); BBC Culture: 12 of the Best Films of 2026 So Far; Esquire: The 36 Best Movies of 2026 (So Far); /Film: 49 Best Movies of 2026 (So Far); Collider: 10 Movies That Prove 2026 Is An All-Time Great Year for Film; Brian Formo: 2026 Year in Review
 - **28 Years Later: The Bone Temple** (Nia DaCosta) — 8 lists: Time Out: Best Movies of 2026 (So Far); Rotten Tomatoes: Best New Movies of 2026; IndieWire: Best Movies of 2026 (So Far); Vulture: Best New Movies of 2026 (So Far); BBC Culture: 12 of the Best Films of 2026 So Far; The Guardian: The Best Films of 2026 So Far; The A.V. Club: The Best Films of 2026 So Far; /Film: 49 Best Movies of 2026 (So Far)
 - **Nirvanna the Band the Show the Movie** (Matt Johnson) — 8 lists: Time Out: Best Movies of 2026 (So Far); Rotten Tomatoes: Best New Movies of 2026; IndieWire: Best Movies of 2026 (So Far); Vulture: Best New Movies of 2026 (So Far); BBC Culture: 12 of the Best Films of 2026 So Far; Esquire: The 36 Best Movies of 2026 (So Far); The A.V. Club: The Best Films of 2026 So Far; /Film: 49 Best Movies of 2026 (So Far)
-- **Obsession** (Curry Barker) — 8 lists: Time Out: Best Movies of 2026 (So Far); Rotten Tomatoes: Best New Movies of 2026; Variety: Best Movies of 2026 (So Far); IndieWire: Best Movies of 2026 (So Far); Rolling Stone: Best Movies of 2026 So Far; The Guardian: The Best Films of 2026 So Far; The A.V. Club: The Best Films of 2026 So Far; /Film: 49 Best Movies of 2026 (So Far)
-- **Project Hail Mary** ((dirs. Phil Lord & Chris Miller) — 8 lists: Time Out: Best Movies of 2026 (So Far); Rotten Tomatoes: Best New Movies of 2026; IndieWire: Best Movies of 2026 (So Far); Vulture: Best New Movies of 2026 (So Far); Rolling Stone: Best Movies of 2026 So Far; BBC Culture: 12 of the Best Films of 2026 So Far; The A.V. Club: The Best Films of 2026 So Far; /Film: 49 Best Movies of 2026 (So Far)
 - **The Christophers** (Steven Soderbergh) — 7 lists: Rotten Tomatoes: Best New Movies of 2026; IndieWire: Best Movies of 2026 (So Far); Vulture: Best New Movies of 2026 (So Far); Rolling Stone: Best Movies of 2026 So Far; The Guardian: The Best Films of 2026 So Far; Esquire: The 36 Best Movies of 2026 (So Far); The A.V. Club: The Best Films of 2026 So Far
+- **The Invite** (Olivia Wilde) — 7 lists: Time Out: Best Movies of 2026 (So Far); Rotten Tomatoes: Best New Movies of 2026; Variety: Best Movies of 2026 (So Far); IndieWire: Best Movies of 2026 (So Far); BBC Culture: 12 of the Best Films of 2026 So Far; /Film: 49 Best Movies of 2026 (So Far); Collider: 10 Movies That Prove 2026 Is An All-Time Great Year for Film
 - **Exit 8** (Genki Kawamura) — 6 lists: Rotten Tomatoes: Best New Movies of 2026; IndieWire: Best Movies of 2026 (So Far); Vulture: Best New Movies of 2026 (So Far); Rolling Stone: Best Movies of 2026 So Far; The Guardian: The Best Films of 2026 So Far; Esquire: The 36 Best Movies of 2026 (So Far)
 - **Maddie’s Secret** (John Early) — 6 lists: Time Out: Best Movies of 2026 (So Far); Rotten Tomatoes: Best New Movies of 2026; IndieWire: Best Movies of 2026 (So Far); Vulture: Best New Movies of 2026 (So Far); Esquire: The 36 Best Movies of 2026 (So Far); The A.V. Club: The Best Films of 2026 So Far
 - **My Father’s Shadow** — 6 lists: Time Out: Best Movies of 2026 (So Far); Rotten Tomatoes: Best New Movies of 2026; Rolling Stone: Best Movies of 2026 So Far; BBC Culture: 12 of the Best Films of 2026 So Far; The Guardian: The Best Films of 2026 So Far; The A.V. Club: The Best Films of 2026 So Far
 - **The Drama** (Kristoffer Borgli) — 6 lists: Rotten Tomatoes: Best New Movies of 2026; IndieWire: Best Movies of 2026 (So Far); BBC Culture: 12 of the Best Films of 2026 So Far; The Guardian: The Best Films of 2026 So Far; The A.V. Club: The Best Films of 2026 So Far; /Film: 49 Best Movies of 2026 (So Far)
 - **The Furious** (Kenji Tanigaki) — 6 lists: Time Out: Best Movies of 2026 (So Far); Rotten Tomatoes: Best New Movies of 2026; IndieWire: Best Movies of 2026 (So Far); Vulture: Best New Movies of 2026 (So Far); The A.V. Club: The Best Films of 2026 So Far; /Film: 49 Best Movies of 2026 (So Far)
-- **The Invite** (Olivia Wilde) — 6 lists: Time Out: Best Movies of 2026 (So Far); Rotten Tomatoes: Best New Movies of 2026; Variety: Best Movies of 2026 (So Far); IndieWire: Best Movies of 2026 (So Far); BBC Culture: 12 of the Best Films of 2026 So Far; /Film: 49 Best Movies of 2026 (So Far)
-- **The Odyssey** (Christopher Nolan) — 6 lists: Rotten Tomatoes: Best New Movies of 2026; IndieWire: Best Movies of 2026 (So Far); Vulture: Best New Movies of 2026 (So Far); BBC Culture: 12 of the Best Films of 2026 So Far; Esquire: The 36 Best Movies of 2026 (So Far); /Film: 49 Best Movies of 2026 (So Far)
+- **You Can See Everything** (Nathan Fielder and Lance Oppenheim) — 6 lists: Time Out: Best Movies of 2026 (So Far); Rotten Tomatoes: Best New Movies of 2026; Esquire: The 36 Best Movies of 2026 (So Far); /Film: 49 Best Movies of 2026 (So Far); Collider: 10 Movies That Prove 2026 Is An All-Time Great Year for Film; Brian Formo: 2026 Year in Review
 - **Backrooms** — 5 lists: Time Out: Best Movies of 2026 (So Far); Rotten Tomatoes: Best New Movies of 2026; The Guardian: The Best Films of 2026 So Far; Esquire: The 36 Best Movies of 2026 (So Far); /Film: 49 Best Movies of 2026 (So Far)
 - **Is God Is** (Aleshea Harris) — 5 lists: Time Out: Best Movies of 2026 (So Far); Rotten Tomatoes: Best New Movies of 2026; Variety: Best Movies of 2026 (So Far); IndieWire: Best Movies of 2026 (So Far); /Film: 49 Best Movies of 2026 (So Far)
 - **Miroirs No. 3** (Christian Petzold) — 5 lists: Rotten Tomatoes: Best New Movies of 2026; IndieWire: Best Movies of 2026 (So Far); Vulture: Best New Movies of 2026 (So Far); The Guardian: The Best Films of 2026 So Far; Esquire: The 36 Best Movies of 2026 (So Far)
 - **Mother Mary** (David Lowery) — 5 lists: IndieWire: Best Movies of 2026 (So Far); Vulture: Best New Movies of 2026 (So Far); Esquire: The 36 Best Movies of 2026 (So Far); The A.V. Club: The Best Films of 2026 So Far; /Film: 49 Best Movies of 2026 (So Far)
+- **NAZA** — 5 lists: Time Out: Best Movies of 2026 (So Far); Rotten Tomatoes: Best New Movies of 2026; Vulture: Best New Movies of 2026 (So Far); Esquire: The 36 Best Movies of 2026 (So Far); /Film: 49 Best Movies of 2026 (So Far)
 - **Primetime** — 5 lists: Time Out: Best Movies of 2026 (So Far); Rotten Tomatoes: Best New Movies of 2026; Vulture: Best New Movies of 2026 (So Far); Esquire: The 36 Best Movies of 2026 (So Far); /Film: 49 Best Movies of 2026 (So Far)
 - **Rose of Nevada** (Mark Jenkin) — 5 lists: Time Out: Best Movies of 2026 (So Far); Variety: Best Movies of 2026 (So Far); IndieWire: Best Movies of 2026 (So Far); Vulture: Best New Movies of 2026 (So Far); The Guardian: The Best Films of 2026 So Far
 - **Send Help** — 5 lists: Time Out: Best Movies of 2026 (So Far); Rotten Tomatoes: Best New Movies of 2026; Vulture: Best New Movies of 2026 (So Far); The A.V. Club: The Best Films of 2026 So Far; /Film: 49 Best Movies of 2026 (So Far)
 - **Teenage Sex and Death at Camp Miasma** (Jane Schoenbrun) — 5 lists: Time Out: Best Movies of 2026 (So Far); Rotten Tomatoes: Best New Movies of 2026; IndieWire: Best Movies of 2026 (So Far); Vulture: Best New Movies of 2026 (So Far); Esquire: The 36 Best Movies of 2026 (So Far)
+- **The End of Oak Street** (David Robert Mitchell) — 5 lists: Time Out: Best Movies of 2026 (So Far); Rotten Tomatoes: Best New Movies of 2026; IndieWire: Best Movies of 2026 (So Far); Vulture: Best New Movies of 2026 (So Far); Brian Formo: 2026 Year in Review
 - **Toy Story 5** (Andrew Stanton) — 5 lists: Time Out: Best Movies of 2026 (So Far); Rotten Tomatoes: Best New Movies of 2026; Variety: Best Movies of 2026 (So Far); IndieWire: Best Movies of 2026 (So Far); /Film: 49 Best Movies of 2026 (So Far)
 - **Two Prosecutors** — 5 lists: Time Out: Best Movies of 2026 (So Far); Rotten Tomatoes: Best New Movies of 2026; Vulture: Best New Movies of 2026 (So Far); BBC Culture: 12 of the Best Films of 2026 So Far; The Guardian: The Best Films of 2026 So Far
 - **Boorman and the Devil** — 4 lists: Time Out: Best Movies of 2026 (So Far); Rotten Tomatoes: Best New Movies of 2026; Vulture: Best New Movies of 2026 (So Far); /Film: 49 Best Movies of 2026 (So Far)
 - **Coyote vs. Acme** (Dave Green) — 4 lists: Rotten Tomatoes: Best New Movies of 2026; IndieWire: Best Movies of 2026 (So Far); Vulture: Best New Movies of 2026 (So Far); /Film: 49 Best Movies of 2026 (So Far)
 - **Crime 101** — 4 lists: Time Out: Best Movies of 2026 (So Far); Rotten Tomatoes: Best New Movies of 2026; Vulture: Best New Movies of 2026 (So Far); The Guardian: The Best Films of 2026 So Far
+- **Digger** (Alejandro González Iñárritu) — 4 lists: Esquire: The 36 Best Movies of 2026 (So Far); /Film: 49 Best Movies of 2026 (So Far); Collider: 10 Movies That Prove 2026 Is An All-Time Great Year for Film; Brian Formo: 2026 Year in Review
 - **EPiC: Elvis Presley in Concert** — 4 lists: Rotten Tomatoes: Best New Movies of 2026; Variety: Best Movies of 2026 (So Far); Rolling Stone: Best Movies of 2026 So Far; The A.V. Club: The Best Films of 2026 So Far
 - **Hoppers** — 4 lists: Time Out: Best Movies of 2026 (So Far); Rotten Tomatoes: Best New Movies of 2026; BBC Culture: 12 of the Best Films of 2026 So Far; /Film: 49 Best Movies of 2026 (So Far)
-- **NAZA** — 4 lists: Time Out: Best Movies of 2026 (So Far); Rotten Tomatoes: Best New Movies of 2026; Vulture: Best New Movies of 2026 (So Far); Esquire: The 36 Best Movies of 2026 (So Far)
 - **Our Land** — 4 lists: Rotten Tomatoes: Best New Movies of 2026; Vulture: Best New Movies of 2026 (So Far); The Guardian: The Best Films of 2026 So Far; Esquire: The 36 Best Movies of 2026 (So Far)
+- **Paper Tiger** (James Gray) — 4 lists: Time Out: Best Movies of 2026 (So Far); Rotten Tomatoes: Best New Movies of 2026; /Film: 49 Best Movies of 2026 (So Far); Brian Formo: 2026 Year in Review
 - **Pillion** — 4 lists: Rotten Tomatoes: Best New Movies of 2026; Vulture: Best New Movies of 2026 (So Far); Esquire: The 36 Best Movies of 2026 (So Far); The A.V. Club: The Best Films of 2026 So Far
 - **Remake** (Ross McElwee) — 4 lists: Time Out: Best Movies of 2026 (So Far); Rotten Tomatoes: Best New Movies of 2026; IndieWire: Best Movies of 2026 (So Far); Vulture: Best New Movies of 2026 (So Far)
 - **Resident Evil** — 4 lists: Rotten Tomatoes: Best New Movies of 2026; Vulture: Best New Movies of 2026 (So Far); Esquire: The 36 Best Movies of 2026 (So Far); /Film: 49 Best Movies of 2026 (So Far)
-- **The End of Oak Street** (David Robert Mitchell) — 4 lists: Time Out: Best Movies of 2026 (So Far); Rotten Tomatoes: Best New Movies of 2026; IndieWire: Best Movies of 2026 (So Far); Vulture: Best New Movies of 2026 (So Far)
 - **The History of Concrete** — 4 lists: Time Out: Best Movies of 2026 (So Far); Rotten Tomatoes: Best New Movies of 2026; Vulture: Best New Movies of 2026 (So Far); Esquire: The 36 Best Movies of 2026 (So Far)
 - **The Stranger** — 4 lists: Time Out: Best Movies of 2026 (So Far); Rotten Tomatoes: Best New Movies of 2026; Vulture: Best New Movies of 2026 (So Far); The Guardian: The Best Films of 2026 So Far
 - **Tony** — 4 lists: Rotten Tomatoes: Best New Movies of 2026; Vulture: Best New Movies of 2026 (So Far); Esquire: The 36 Best Movies of 2026 (So Far); /Film: 49 Best Movies of 2026 (So Far)
-- **You Can See Everything** — 4 lists: Time Out: Best Movies of 2026 (So Far); Rotten Tomatoes: Best New Movies of 2026; Esquire: The 36 Best Movies of 2026 (So Far); /Film: 49 Best Movies of 2026 (So Far)
+- **Wildwood** — 4 lists: Time Out: Best Movies of 2026 (So Far); Rotten Tomatoes: Best New Movies of 2026; /Film: 49 Best Movies of 2026 (So Far); Collider: 10 Movies That Prove 2026 Is An All-Time Great Year for Film
 - **A Useful Ghost** (Ratchapoom Boonbunchachoke) — 3 lists: Rotten Tomatoes: Best New Movies of 2026; IndieWire: Best Movies of 2026 (So Far); Vulture: Best New Movies of 2026 (So Far)
 - **All That's Left of You** — 3 lists: Rotten Tomatoes: Best New Movies of 2026; Vulture: Best New Movies of 2026 (So Far); The A.V. Club: The Best Films of 2026 So Far
 - **American Doctor** (Poh Si Teng) — 3 lists: Rotten Tomatoes: Best New Movies of 2026; IndieWire: Best Movies of 2026 (So Far); Vulture: Best New Movies of 2026 (So Far)
@@ -6258,14 +6664,18 @@ Items on two or more lists within the same topic, most lists first. Each outlet 
 - **I Want Your Sex** — 3 lists: Rotten Tomatoes: Best New Movies of 2026; Vulture: Best New Movies of 2026 (So Far); Esquire: The 36 Best Movies of 2026 (So Far)
 - **Kokuho** — 3 lists: Time Out: Best Movies of 2026 (So Far); Rotten Tomatoes: Best New Movies of 2026; The Guardian: The Best Films of 2026 So Far
 - **Kontinental 25** (Radu Jude) — 3 lists: Rotten Tomatoes: Best New Movies of 2026; IndieWire: Best Movies of 2026 (So Far); Vulture: Best New Movies of 2026 (So Far)
+- **La Bola Negra** (Javier Ambrossi and Javier Calvo) — 3 lists: Time Out: Best Movies of 2026 (So Far); Collider: 10 Movies That Prove 2026 Is An All-Time Great Year for Film; Brian Formo: 2026 Year in Review
 - **Magellan** — 3 lists: Rotten Tomatoes: Best New Movies of 2026; Rolling Stone: Best Movies of 2026 So Far; The A.V. Club: The Best Films of 2026 So Far
 - **Pompei: Below the Clouds** — 3 lists: Rotten Tomatoes: Best New Movies of 2026; Vulture: Best New Movies of 2026 (So Far); The Guardian: The Best Films of 2026 So Far
 - **Power Ballad** — 3 lists: Rotten Tomatoes: Best New Movies of 2026; Variety: Best Movies of 2026 (So Far); The Guardian: The Best Films of 2026 So Far
 - **Pressure** — 3 lists: Time Out: Best Movies of 2026 (So Far); Rotten Tomatoes: Best New Movies of 2026; Vulture: Best New Movies of 2026 (So Far)
 - **Romería** — 3 lists: Rotten Tomatoes: Best New Movies of 2026; Vulture: Best New Movies of 2026 (So Far); The Guardian: The Best Films of 2026 So Far
 - **Silent Friend** — 3 lists: Rotten Tomatoes: Best New Movies of 2026; Variety: Best Movies of 2026 (So Far); Vulture: Best New Movies of 2026 (So Far)
+- **Spider-Man: Brand New Day** — 3 lists: Rotten Tomatoes: Best New Movies of 2026; /Film: 49 Best Movies of 2026 (So Far); Collider: 10 Movies That Prove 2026 Is An All-Time Great Year for Film
+- **The Debut** (Jesse Eisenberg) — 3 lists: Rotten Tomatoes: Best New Movies of 2026; /Film: 49 Best Movies of 2026 (So Far); Brian Formo: 2026 Year in Review
 - **The Samurai and the Prisoner** — 3 lists: Rotten Tomatoes: Best New Movies of 2026; Vulture: Best New Movies of 2026 (So Far); /Film: 49 Best Movies of 2026 (So Far)
 - **The Sheep Detectives** — 3 lists: Vulture: Best New Movies of 2026 (So Far); BBC Culture: 12 of the Best Films of 2026 So Far; /Film: 49 Best Movies of 2026 (So Far)
+- **The Voice of Hind Rajab** — 3 lists: Time Out: Best Movies of 2026 (So Far); The Guardian: The Best Films of 2026 So Far; Esquire: The 36 Best Movies of 2026 (So Far)
 - **Time and Water** (Sara Dosa) — 3 lists: Rotten Tomatoes: Best New Movies of 2026; IndieWire: Best Movies of 2026 (So Far); /Film: 49 Best Movies of 2026 (So Far)
 - **Tuner** — 3 lists: Vulture: Best New Movies of 2026 (So Far); The Guardian: The Best Films of 2026 So Far; The A.V. Club: The Best Films of 2026 So Far
 - **Union County** — 3 lists: Rotten Tomatoes: Best New Movies of 2026; Vulture: Best New Movies of 2026 (So Far); /Film: 49 Best Movies of 2026 (So Far)
@@ -6279,12 +6689,15 @@ Items on two or more lists within the same topic, most lists first. Each outlet 
 - **Camp** (Avalon Fast) — 2 lists: Rotten Tomatoes: Best New Movies of 2026; IndieWire: Best Movies of 2026 (So Far)
 - **Carolina Caroline** — 2 lists: The A.V. Club: The Best Films of 2026 So Far; /Film: 49 Best Movies of 2026 (So Far)
 - **Chronovisor** — 2 lists: Vulture: Best New Movies of 2026 (So Far); Esquire: The 36 Best Movies of 2026 (So Far)
+- **Club Kid** (Jordan Firstman) — 2 lists: Rotten Tomatoes: Best New Movies of 2026; Brian Formo: 2026 Year in Review
 - **Dead Lover** — 2 lists: Rotten Tomatoes: Best New Movies of 2026; Esquire: The 36 Best Movies of 2026 (So Far)
 - **Eagles of the Republic** — 2 lists: Rotten Tomatoes: Best New Movies of 2026; The Guardian: The Best Films of 2026 So Far
 - **Erupcja** (Pete Ohs) — 2 lists: Rotten Tomatoes: Best New Movies of 2026; IndieWire: Best Movies of 2026 (So Far)
 - **Faces of Death** (Daniel Goldhaber) — 2 lists: IndieWire: Best Movies of 2026 (So Far); Vulture: Best New Movies of 2026 (So Far)
+- **Fatherland** (Paweł Pawlikowski) — 2 lists: Rotten Tomatoes: Best New Movies of 2026; Brian Formo: 2026 Year in Review
 - **Finding Emily** — 2 lists: Rotten Tomatoes: Best New Movies of 2026; Vulture: Best New Movies of 2026 (So Far)
 - **Forgotten Island** — 2 lists: Rotten Tomatoes: Best New Movies of 2026; /Film: 49 Best Movies of 2026 (So Far)
+- **Godzilla Minus Zero** — 2 lists: Rotten Tomatoes: Best New Movies of 2026; /Film: 49 Best Movies of 2026 (So Far)
 - **Hokum** — 2 lists: The A.V. Club: The Best Films of 2026 So Far; /Film: 49 Best Movies of 2026 (So Far)
 - **I Am Frankelda** — 2 lists: Rotten Tomatoes: Best New Movies of 2026; The A.V. Club: The Best Films of 2026 So Far
 - **I Play Rocky** — 2 lists: Rotten Tomatoes: Best New Movies of 2026; /Film: 49 Best Movies of 2026 (So Far)
@@ -6297,19 +6710,20 @@ Items on two or more lists within the same topic, most lists first. Each outlet 
 - **Man on the Run** — 2 lists: Time Out: Best Movies of 2026 (So Far); The Guardian: The Best Films of 2026 So Far
 - **Mile End Kicks** (Chandler Levack) — 2 lists: Rotten Tomatoes: Best New Movies of 2026; IndieWire: Best Movies of 2026 (So Far)
 - **Minions & Monsters** — 2 lists: Rotten Tomatoes: Best New Movies of 2026; Vulture: Best New Movies of 2026 (So Far)
+- **Minotaur** (Andrey Zvyagintsev) — 2 lists: Rotten Tomatoes: Best New Movies of 2026; Brian Formo: 2026 Year in Review
 - **Normal** — 2 lists: Time Out: Best Movies of 2026 (So Far); Rotten Tomatoes: Best New Movies of 2026
 - **Oasis: Don’t Look Back in Anger** — 2 lists: Time Out: Best Movies of 2026 (So Far); Vulture: Best New Movies of 2026 (So Far)
+- **Once Upon a Time in Harlem** — 2 lists: Rotten Tomatoes: Best New Movies of 2026; Collider: 10 Movies That Prove 2026 Is An All-Time Great Year for Film
 - **Our Hero, Balthazar** — 2 lists: Rotten Tomatoes: Best New Movies of 2026; Variety: Best Movies of 2026 (So Far)
-- **Paper Tiger** — 2 lists: Time Out: Best Movies of 2026 (So Far); Rotten Tomatoes: Best New Movies of 2026
 - **Primate** — 2 lists: Rotten Tomatoes: Best New Movies of 2026; The Guardian: The Best Films of 2026 So Far
 - **Queen at Sea** — 2 lists: Time Out: Best Movies of 2026 (So Far); Rotten Tomatoes: Best New Movies of 2026
+- **Rose** (Markus Schleinzer) — 2 lists: Rotten Tomatoes: Best New Movies of 2026; Brian Formo: 2026 Year in Review
 - **Shaun the Sheep: The Beast of Mossy Bottom** — 2 lists: Rotten Tomatoes: Best New Movies of 2026; Vulture: Best New Movies of 2026 (So Far)
 - **Sound of Falling** — 2 lists: Time Out: Best Movies of 2026 (So Far); The Guardian: The Best Films of 2026 So Far
-- **Spider-Man: Brand New Day** — 2 lists: Rotten Tomatoes: Best New Movies of 2026; /Film: 49 Best Movies of 2026 (So Far)
 - **The Blue Trail** (Gabriel Mascaro) — 2 lists: Rotten Tomatoes: Best New Movies of 2026; IndieWire: Best Movies of 2026 (So Far)
 - **The Bride!** — 2 lists: The Guardian: The Best Films of 2026 So Far; /Film: 49 Best Movies of 2026 (So Far)
-- **The Debut** — 2 lists: Rotten Tomatoes: Best New Movies of 2026; /Film: 49 Best Movies of 2026 (So Far)
 - **The Devil Wears Prada 2** — 2 lists: Time Out: Best Movies of 2026 (So Far); Vulture: Best New Movies of 2026 (So Far)
+- **The Further Mis-Adventures of Cliff Booth** — 2 lists: Rotten Tomatoes: Best New Movies of 2026; /Film: 49 Best Movies of 2026 (So Far)
 - **The Incomer** — 2 lists: Rotten Tomatoes: Best New Movies of 2026; /Film: 49 Best Movies of 2026 (So Far)
 - **The Love That Remains** — 2 lists: Rotten Tomatoes: Best New Movies of 2026; Esquire: The 36 Best Movies of 2026 (So Far)
 - **The Magic Faraway Tree** — 2 lists: Rotten Tomatoes: Best New Movies of 2026; The Guardian: The Best Films of 2026 So Far
@@ -6319,28 +6733,27 @@ Items on two or more lists within the same topic, most lists first. Each outlet 
 - **The Python Hunt** — 2 lists: Esquire: The 36 Best Movies of 2026 (So Far); The A.V. Club: The Best Films of 2026 So Far
 - **The Rivals of Amziah King** — 2 lists: Rotten Tomatoes: Best New Movies of 2026; Vulture: Best New Movies of 2026 (So Far)
 - **The Sun Never Sets** (Joe Swanberg) — 2 lists: Rotten Tomatoes: Best New Movies of 2026; IndieWire: Best Movies of 2026 (So Far)
-- **The Voice of Hind Rajab** — 2 lists: The Guardian: The Best Films of 2026 So Far; Esquire: The 36 Best Movies of 2026 (So Far)
 - **The Weight** — 2 lists: Rotten Tomatoes: Best New Movies of 2026; Vulture: Best New Movies of 2026 (So Far)
 - **Twinless** — 2 lists: Time Out: Best Movies of 2026 (So Far); The Guardian: The Best Films of 2026 So Far
 - **undertone** — 2 lists: Rotten Tomatoes: Best New Movies of 2026; Vulture: Best New Movies of 2026 (So Far)
 - **Wasteman** — 2 lists: Rotten Tomatoes: Best New Movies of 2026; The Guardian: The Best Films of 2026 So Far
+- **Wild Horse Nine** — 2 lists: Rotten Tomatoes: Best New Movies of 2026; /Film: 49 Best Movies of 2026 (So Far)
 - **Wild Inside** (Penny Lane) — 2 lists: IndieWire: Best Movies of 2026 (So Far); Vulture: Best New Movies of 2026 (So Far)
-- **Wildwood** — 2 lists: Rotten Tomatoes: Best New Movies of 2026; /Film: 49 Best Movies of 2026 (So Far)
 - **Yes** (Nadav Lapid) — 2 lists: IndieWire: Best Movies of 2026 (So Far); Rolling Stone: Best Movies of 2026 So Far
 
 ### TV
 
 - **The Pitt** — 13 lists: Time Out: 39 Best TV Shows of 2026 (So Far); Empire: The Best TV Shows of 2026 (So Far); Variety: 20 Best Shows of 2026 (So Far); IndieWire: Best TV Series of 2026 (So Far); Vulture: Best New TV Shows and Returning Series of 2026; Rolling Stone: Best TV Shows of 2026 So Far; Esquire: Best TV Shows of 2026 So Far; The Guardian: The Best TV of 2026 So Far; BBC Culture: 19 of the Best TV Shows of 2026 So Far; TV Guide: Best Reviewed TV Shows of 2026 (Metacritic); Rotten Tomatoes: Best TV Shows of 2026; The A.V. Club: The Best TV of 2026 So Far; TIME: The Best TV Shows of 2026 So Far
-- **Industry** — 12 lists: Time Out: 39 Best TV Shows of 2026 (So Far); Variety: 20 Best Shows of 2026 (So Far); IndieWire: Best TV Series of 2026 (So Far); Vulture: Best New TV Shows and Returning Series of 2026; Rolling Stone: Best TV Shows of 2026 So Far; Esquire: Best TV Shows of 2026 So Far; The Guardian: The Best TV of 2026 So Far; BBC Culture: 19 of the Best TV Shows of 2026 So Far; TV Guide: Best Reviewed TV Shows of 2026 (Metacritic); Rotten Tomatoes: Best TV Shows of 2026; The A.V. Club: The Best TV of 2026 So Far; TIME: The Best TV Shows of 2026 So Far
-- **Widow’s Bay** — 12 lists: Time Out: 39 Best TV Shows of 2026 (So Far); Empire: The Best TV Shows of 2026 (So Far); Variety: 20 Best Shows of 2026 (So Far); IndieWire: Best TV Series of 2026 (So Far); Vulture: Best New TV Shows and Returning Series of 2026; Rolling Stone: Best TV Shows of 2026 So Far; Esquire: Best TV Shows of 2026 So Far; The Guardian: The Best TV of 2026 So Far; BBC Culture: 19 of the Best TV Shows of 2026 So Far; TV Guide: Best Reviewed TV Shows of 2026 (Metacritic); Rotten Tomatoes: Best TV Shows of 2026; The A.V. Club: The Best TV of 2026 So Far
+- **Industry** (HBO) — 12 lists: Time Out: 39 Best TV Shows of 2026 (So Far); Variety: 20 Best Shows of 2026 (So Far); IndieWire: Best TV Series of 2026 (So Far); Vulture: Best New TV Shows and Returning Series of 2026; Rolling Stone: Best TV Shows of 2026 So Far; Esquire: Best TV Shows of 2026 So Far; The Guardian: The Best TV of 2026 So Far; BBC Culture: 19 of the Best TV Shows of 2026 So Far; TV Guide: Best Reviewed TV Shows of 2026 (Metacritic); Rotten Tomatoes: Best TV Shows of 2026; The A.V. Club: The Best TV of 2026 So Far; TIME: The Best TV Shows of 2026 So Far
+- **Widow’s Bay** (Apple TV) — 12 lists: Time Out: 39 Best TV Shows of 2026 (So Far); Empire: The Best TV Shows of 2026 (So Far); Variety: 20 Best Shows of 2026 (So Far); IndieWire: Best TV Series of 2026 (So Far); Vulture: Best New TV Shows and Returning Series of 2026; Rolling Stone: Best TV Shows of 2026 So Far; Esquire: Best TV Shows of 2026 So Far; The Guardian: The Best TV of 2026 So Far; BBC Culture: 19 of the Best TV Shows of 2026 So Far; TV Guide: Best Reviewed TV Shows of 2026 (Metacritic); Rotten Tomatoes: Best TV Shows of 2026; The A.V. Club: The Best TV of 2026 So Far
 - **A Knight of the Seven Kingdoms** — 10 lists: Time Out: 39 Best TV Shows of 2026 (So Far); Empire: The Best TV Shows of 2026 (So Far); Variety: 20 Best Shows of 2026 (So Far); Vulture: Best New TV Shows and Returning Series of 2026; Rolling Stone: Best TV Shows of 2026 So Far; Esquire: Best TV Shows of 2026 So Far; The Guardian: The Best TV of 2026 So Far; BBC Culture: 19 of the Best TV Shows of 2026 So Far; Rotten Tomatoes: Best TV Shows of 2026; The A.V. Club: The Best TV of 2026 So Far
+- **Beef** (Netflix) — 9 lists: Time Out: 39 Best TV Shows of 2026 (So Far); IndieWire: Best TV Series of 2026 (So Far); Vulture: Best New TV Shows and Returning Series of 2026; Rolling Stone: Best TV Shows of 2026 So Far; Esquire: Best TV Shows of 2026 So Far; Rotten Tomatoes: Best TV Shows of 2026; The A.V. Club: The Best TV of 2026 So Far; TIME: The Best TV Shows of 2026 So Far; TV Guide: The 10 Best TV Shows of 2026
+- **The Fall and Rise of Reggie Dinkins** (NBC) — 9 lists: Variety: 20 Best Shows of 2026 (So Far); IndieWire: Best TV Series of 2026 (So Far); Vulture: Best New TV Shows and Returning Series of 2026; Rolling Stone: Best TV Shows of 2026 So Far; Esquire: Best TV Shows of 2026 So Far; Rotten Tomatoes: Best TV Shows of 2026; The A.V. Club: The Best TV of 2026 So Far; TIME: The Best TV Shows of 2026 So Far; TV Guide: The 10 Best TV Shows of 2026
 - **Bait** — 8 lists: Time Out: 39 Best TV Shows of 2026 (So Far); Vulture: Best New TV Shows and Returning Series of 2026; Rolling Stone: Best TV Shows of 2026 So Far; The Guardian: The Best TV of 2026 So Far; BBC Culture: 19 of the Best TV Shows of 2026 So Far; TV Guide: Best Reviewed TV Shows of 2026 (Metacritic); Rotten Tomatoes: Best TV Shows of 2026; The A.V. Club: The Best TV of 2026 So Far
-- **Beef Season 2** — 8 lists: Time Out: 39 Best TV Shows of 2026 (So Far); IndieWire: Best TV Series of 2026 (So Far); Vulture: Best New TV Shows and Returning Series of 2026; Rolling Stone: Best TV Shows of 2026 So Far; Esquire: Best TV Shows of 2026 So Far; Rotten Tomatoes: Best TV Shows of 2026; The A.V. Club: The Best TV of 2026 So Far; TIME: The Best TV Shows of 2026 So Far
 - **Margo’s Got Money Troubles** — 8 lists: IndieWire: Best TV Series of 2026 (So Far); Rolling Stone: Best TV Shows of 2026 So Far; Esquire: Best TV Shows of 2026 So Far; The Guardian: The Best TV of 2026 So Far; BBC Culture: 19 of the Best TV Shows of 2026 So Far; Rotten Tomatoes: Best TV Shows of 2026; The A.V. Club: The Best TV of 2026 So Far; TIME: The Best TV Shows of 2026 So Far
 - **The Comeback** — 8 lists: IndieWire: Best TV Series of 2026 (So Far); Vulture: Best New TV Shows and Returning Series of 2026; Rolling Stone: Best TV Shows of 2026 So Far; BBC Culture: 19 of the Best TV Shows of 2026 So Far; TV Guide: Best Reviewed TV Shows of 2026 (Metacritic); Rotten Tomatoes: Best TV Shows of 2026; The A.V. Club: The Best TV of 2026 So Far; TIME: The Best TV Shows of 2026 So Far
-- **The Fall and Rise of Reggie Dinkins** — 8 lists: Variety: 20 Best Shows of 2026 (So Far); IndieWire: Best TV Series of 2026 (So Far); Vulture: Best New TV Shows and Returning Series of 2026; Rolling Stone: Best TV Shows of 2026 So Far; Esquire: Best TV Shows of 2026 So Far; Rotten Tomatoes: Best TV Shows of 2026; The A.V. Club: The Best TV of 2026 So Far; TIME: The Best TV Shows of 2026 So Far
 - **The Other Bennet Sister** — 8 lists: IndieWire: Best TV Series of 2026 (So Far); Vulture: Best New TV Shows and Returning Series of 2026; The Guardian: The Best TV of 2026 So Far; BBC Culture: 19 of the Best TV Shows of 2026 So Far; TV Guide: Best Reviewed TV Shows of 2026 (Metacritic); Rotten Tomatoes: Best TV Shows of 2026; The A.V. Club: The Best TV of 2026 So Far; TIME: The Best TV Shows of 2026 So Far
-- **The Vampire Lestat** — 8 lists: Time Out: 39 Best TV Shows of 2026 (So Far); Variety: 20 Best Shows of 2026 (So Far); IndieWire: Best TV Series of 2026 (So Far); Vulture: Best New TV Shows and Returning Series of 2026; TV Guide: Best Reviewed TV Shows of 2026 (Metacritic); Rotten Tomatoes: Best TV Shows of 2026; The A.V. Club: The Best TV of 2026 So Far; TIME: The Best TV Shows of 2026 So Far
+- **The Vampire Lestat** (AMC) — 8 lists: Time Out: 39 Best TV Shows of 2026 (So Far); Variety: 20 Best Shows of 2026 (So Far); IndieWire: Best TV Series of 2026 (So Far); Vulture: Best New TV Shows and Returning Series of 2026; TV Guide: Best Reviewed TV Shows of 2026 (Metacritic); Rotten Tomatoes: Best TV Shows of 2026; The A.V. Club: The Best TV of 2026 So Far; TIME: The Best TV Shows of 2026 So Far
 - **DTF St. Louis** — 7 lists: Time Out: 39 Best TV Shows of 2026 (So Far); Variety: 20 Best Shows of 2026 (So Far); IndieWire: Best TV Series of 2026 (So Far); Esquire: Best TV Shows of 2026 So Far; BBC Culture: 19 of the Best TV Shows of 2026 So Far; Rotten Tomatoes: Best TV Shows of 2026; The A.V. Club: The Best TV of 2026 So Far
 - **Maximum Pleasure Guaranteed** — 7 lists: Time Out: 39 Best TV Shows of 2026 (So Far); Vulture: Best New TV Shows and Returning Series of 2026; Esquire: Best TV Shows of 2026 So Far; The Guardian: The Best TV of 2026 So Far; BBC Culture: 19 of the Best TV Shows of 2026 So Far; Rotten Tomatoes: Best TV Shows of 2026; TIME: The Best TV Shows of 2026 So Far
 - **Star City** — 7 lists: Time Out: 39 Best TV Shows of 2026 (So Far); Empire: The Best TV Shows of 2026 (So Far); Variety: 20 Best Shows of 2026 (So Far); IndieWire: Best TV Series of 2026 (So Far); The Guardian: The Best TV of 2026 So Far; TV Guide: Best Reviewed TV Shows of 2026 (Metacritic); Rotten Tomatoes: Best TV Shows of 2026
@@ -6352,19 +6765,20 @@ Items on two or more lists within the same topic, most lists first. Each outlet 
 - **Riot Women** — 5 lists: IndieWire: Best TV Series of 2026 (So Far); Vulture: Best New TV Shows and Returning Series of 2026; TV Guide: Best Reviewed TV Shows of 2026 (Metacritic); Rotten Tomatoes: Best TV Shows of 2026; TIME: The Best TV Shows of 2026 So Far
 - **Rivals** — 5 lists: Variety: 20 Best Shows of 2026 (So Far); The Guardian: The Best TV of 2026 So Far; BBC Culture: 19 of the Best TV Shows of 2026 So Far; TV Guide: Best Reviewed TV Shows of 2026 (Metacritic); Rotten Tomatoes: Best TV Shows of 2026
 - **Rooster** — 5 lists: Time Out: 39 Best TV Shows of 2026 (So Far); Vulture: Best New TV Shows and Returning Series of 2026; Esquire: Best TV Shows of 2026 So Far; BBC Culture: 19 of the Best TV Shows of 2026 So Far; Rotten Tomatoes: Best TV Shows of 2026
+- **Sterling Point** (Prime Video) — 5 lists: Vulture: Best New TV Shows and Returning Series of 2026; Esquire: Best TV Shows of 2026 So Far; Rotten Tomatoes: Best TV Shows of 2026; TIME: The Best TV Shows of 2026 So Far; TV Guide: The 10 Best TV Shows of 2026
 - **The Bear: Season 5** — 5 lists: Empire: The Best TV Shows of 2026 (So Far); Vulture: Best New TV Shows and Returning Series of 2026; Esquire: Best TV Shows of 2026 So Far; TV Guide: Best Reviewed TV Shows of 2026 (Metacritic); Rotten Tomatoes: Best TV Shows of 2026
 - **Wonder Man** — 5 lists: IndieWire: Best TV Series of 2026 (So Far); Rolling Stone: Best TV Shows of 2026 So Far; The Guardian: The Best TV of 2026 So Far; Rotten Tomatoes: Best TV Shows of 2026; TIME: The Best TV Shows of 2026 So Far
 - **Youth (HBO)** — 5 lists: Time Out: 39 Best TV Shows of 2026 (So Far); Vulture: Best New TV Shows and Returning Series of 2026; TV Guide: Best Reviewed TV Shows of 2026 (Metacritic); Rotten Tomatoes: Best TV Shows of 2026; TIME: The Best TV Shows of 2026 So Far
+- **Adults** (FX) — 4 lists: Vulture: Best New TV Shows and Returning Series of 2026; Rotten Tomatoes: Best TV Shows of 2026; TIME: The Best TV Shows of 2026 So Far; TV Guide: The 10 Best TV Shows of 2026
 - **East of Eden (Netflix)** — 4 lists: Vulture: Best New TV Shows and Returning Series of 2026; TV Guide: Best Reviewed TV Shows of 2026 (Metacritic); Rotten Tomatoes: Best TV Shows of 2026; TIME: The Best TV Shows of 2026 So Far
 - **Ponies** — 4 lists: Time Out: 39 Best TV Shows of 2026 (So Far); Vulture: Best New TV Shows and Returning Series of 2026; Esquire: Best TV Shows of 2026 So Far; Rotten Tomatoes: Best TV Shows of 2026
 - **Silo: Season 3** — 4 lists: Time Out: 39 Best TV Shows of 2026 (So Far); Empire: The Best TV Shows of 2026 (So Far); Esquire: Best TV Shows of 2026 So Far; Rotten Tomatoes: Best TV Shows of 2026
 - **Small Prophets** — 4 lists: The Guardian: The Best TV of 2026 So Far; TV Guide: Best Reviewed TV Shows of 2026 (Metacritic); Rotten Tomatoes: Best TV Shows of 2026; TIME: The Best TV Shows of 2026 So Far
-- **Sterling Point** — 4 lists: Vulture: Best New TV Shows and Returning Series of 2026; Esquire: Best TV Shows of 2026 So Far; Rotten Tomatoes: Best TV Shows of 2026; TIME: The Best TV Shows of 2026 So Far
+- **Spider-Noir** (Prime Video) — 4 lists: Time Out: 39 Best TV Shows of 2026 (So Far); Empire: The Best TV Shows of 2026 (So Far); Rotten Tomatoes: Best TV Shows of 2026; TV Guide: The 10 Best TV Shows of 2026
 - **The Five-Star Weekend** — 4 lists: Time Out: 39 Best TV Shows of 2026 (So Far); Vulture: Best New TV Shows and Returning Series of 2026; Rotten Tomatoes: Best TV Shows of 2026; TIME: The Best TV Shows of 2026 So Far
 - **The Testaments** — 4 lists: Variety: 20 Best Shows of 2026 (So Far); The Guardian: The Best TV of 2026 So Far; Rotten Tomatoes: Best TV Shows of 2026; TIME: The Best TV Shows of 2026 So Far
 - **This Is a Gardening Show** — 4 lists: Vulture: Best New TV Shows and Returning Series of 2026; The Guardian: The Best TV of 2026 So Far; TV Guide: Best Reviewed TV Shows of 2026 (Metacritic); TIME: The Best TV Shows of 2026 So Far
 - **Tip Toe** — 4 lists: Empire: The Best TV Shows of 2026 (So Far); TV Guide: Best Reviewed TV Shows of 2026 (Metacritic); Rotten Tomatoes: Best TV Shows of 2026; TIME: The Best TV Shows of 2026 So Far
-- **Adults Season 2** — 3 lists: Vulture: Best New TV Shows and Returning Series of 2026; Rotten Tomatoes: Best TV Shows of 2026; TIME: The Best TV Shows of 2026 So Far
 - **Alice and Steve** — 3 lists: BBC Culture: 19 of the Best TV Shows of 2026 So Far; Rotten Tomatoes: Best TV Shows of 2026; TIME: The Best TV Shows of 2026 So Far
 - **Big Mistakes** — 3 lists: Vulture: Best New TV Shows and Returning Series of 2026; Rolling Stone: Best TV Shows of 2026 So Far; Rotten Tomatoes: Best TV Shows of 2026
 - **Cape Fear** — 3 lists: Time Out: 39 Best TV Shows of 2026 (So Far); Empire: The Best TV Shows of 2026 (So Far); Rotten Tomatoes: Best TV Shows of 2026
@@ -6372,6 +6786,7 @@ Items on two or more lists within the same topic, most lists first. Each outlet 
 - **Cupertino** — 3 lists: TV Guide: Best Reviewed TV Shows of 2026 (Metacritic); Rotten Tomatoes: Best TV Shows of 2026; TIME: The Best TV Shows of 2026 So Far
 - **Dark Winds** — 3 lists: Vulture: Best New TV Shows and Returning Series of 2026; TV Guide: Best Reviewed TV Shows of 2026 (Metacritic); The A.V. Club: The Best TV of 2026 So Far
 - **For All Mankind: Season 5** — 3 lists: Vulture: Best New TV Shows and Returning Series of 2026; TV Guide: Best Reviewed TV Shows of 2026 (Metacritic); Rotten Tomatoes: Best TV Shows of 2026
+- **Half Man** (HBO) — 3 lists: Variety: 20 Best Shows of 2026 (So Far); Rotten Tomatoes: Best TV Shows of 2026; TV Guide: The 10 Best TV Shows of 2026
 - **Jury Duty: Company Retreat** — 3 lists: Variety: 20 Best Shows of 2026 (So Far); Rotten Tomatoes: Best TV Shows of 2026; The A.V. Club: The Best TV of 2026 So Far
 - **King of the Hill Season 15** — 3 lists: Vulture: Best New TV Shows and Returning Series of 2026; TV Guide: Best Reviewed TV Shows of 2026 (Metacritic); TIME: The Best TV Shows of 2026 So Far
 - **Mel Brooks: The 99 Year Old Man** — 3 lists: TV Guide: Best Reviewed TV Shows of 2026 (Metacritic); Rotten Tomatoes: Best TV Shows of 2026; TIME: The Best TV Shows of 2026 So Far
@@ -6379,7 +6794,6 @@ Items on two or more lists within the same topic, most lists first. Each outlet 
 - **Paradise** — 3 lists: Esquire: Best TV Shows of 2026 So Far; Rotten Tomatoes: Best TV Shows of 2026; The A.V. Club: The Best TV of 2026 So Far
 - **Slow Horses: Season 6** — 3 lists: Time Out: 39 Best TV Shows of 2026 (So Far); TV Guide: Best Reviewed TV Shows of 2026 (Metacritic); Rotten Tomatoes: Best TV Shows of 2026
 - **Something Very Bad Is Going to Happen** — 3 lists: IndieWire: Best TV Series of 2026 (So Far); Rotten Tomatoes: Best TV Shows of 2026; The A.V. Club: The Best TV of 2026 So Far
-- **Spider-Noir** — 3 lists: Time Out: 39 Best TV Shows of 2026 (So Far); Empire: The Best TV Shows of 2026 (So Far); Rotten Tomatoes: Best TV Shows of 2026
 - **Ted Lasso** — 3 lists: Time Out: 39 Best TV Shows of 2026 (So Far); BBC Culture: 19 of the Best TV Shows of 2026 So Far; Rotten Tomatoes: Best TV Shows of 2026
 - **The Audacity** — 3 lists: Variety: 20 Best Shows of 2026 (So Far); Rotten Tomatoes: Best TV Shows of 2026; TIME: The Best TV Shows of 2026 So Far
 - **The Night Manager** — 3 lists: Time Out: 39 Best TV Shows of 2026 (So Far); BBC Culture: 19 of the Best TV Shows of 2026 So Far; Rotten Tomatoes: Best TV Shows of 2026
@@ -6397,7 +6811,6 @@ Items on two or more lists within the same topic, most lists first. Each outlet 
 - **Daredevil: Born Again: Season 2** — 2 lists: Time Out: 39 Best TV Shows of 2026 (So Far); Rotten Tomatoes: Best TV Shows of 2026
 - **Deli Boys Season 2** — 2 lists: TV Guide: Best Reviewed TV Shows of 2026 (Metacritic); TIME: The Best TV Shows of 2026 So Far
 - **Dutton Ranch** — 2 lists: Esquire: Best TV Shows of 2026 So Far; Rotten Tomatoes: Best TV Shows of 2026
-- **Half Man** — 2 lists: Variety: 20 Best Shows of 2026 (So Far); Rotten Tomatoes: Best TV Shows of 2026
 - **Heated Rivalry** — 2 lists: Time Out: 39 Best TV Shows of 2026 (So Far); The Guardian: The Best TV of 2026 So Far
 - **Jo Nesbo's Detective Hole: Season 1** — 2 lists: Time Out: 39 Best TV Shows of 2026 (So Far); Rotten Tomatoes: Best TV Shows of 2026
 - **Lanterns** — 2 lists: Esquire: Best TV Shows of 2026 So Far; Rotten Tomatoes: Best TV Shows of 2026
@@ -6419,7 +6832,7 @@ Items on two or more lists within the same topic, most lists first. Each outlet 
 - **The Boroughs (Netflix)** — 2 lists: Time Out: 39 Best TV Shows of 2026 (So Far); Rotten Tomatoes: Best TV Shows of 2026
 - **The Boys: Season 5** — 2 lists: Time Out: 39 Best TV Shows of 2026 (So Far); Rotten Tomatoes: Best TV Shows of 2026
 - **The Diplomat: Season 4** — 2 lists: TV Guide: Best Reviewed TV Shows of 2026 (Metacritic); Rotten Tomatoes: Best TV Shows of 2026
-- **The Lowdown Season 2** — 2 lists: TV Guide: Best Reviewed TV Shows of 2026 (Metacritic); TIME: The Best TV Shows of 2026 So Far
+- **The Lowdown Season 2** (FX) — 2 lists: TV Guide: Best Reviewed TV Shows of 2026 (Metacritic); TIME: The Best TV Shows of 2026 So Far
 - **The Miniature Wife** — 2 lists: Rotten Tomatoes: Best TV Shows of 2026; TIME: The Best TV Shows of 2026 So Far
 - **The One About Matthew Perry** — 2 lists: Rotten Tomatoes: Best TV Shows of 2026; TIME: The Best TV Shows of 2026 So Far
 - **The Paper: Season 2** — 2 lists: Esquire: Best TV Shows of 2026 So Far; Rotten Tomatoes: Best TV Shows of 2026
@@ -6507,24 +6920,43 @@ Items on two or more lists within the same topic, most lists first. Each outlet 
 
 ### Tech & Gadgets
 
-- **MacBook Neo** — 3 lists: The Verge: Best of 2026; Engadget: Best of 2026; Tom's Guide Awards 2026
-- **Samsung Galaxy Z Fold 8** — 3 lists: The Verge: Best of 2026; Engadget: Best of 2026; Tom's Guide Awards 2026
+- **Samsung Galaxy Z Fold 8** — 6 lists: The Verge: Best of 2026; Engadget: Best of 2026; Tom's Guide Awards 2026; TechRadar: Product of the Year 2026 Winners; 9to5Google: Best of 2026; Stuff Gadget Awards 2026
+- **Apple MacBook Neo** — 5 lists: The Verge: Best of 2026; Engadget: Best of 2026; Tom's Guide Awards 2026; TechRadar: Product of the Year 2026 Winners; Stuff Gadget Awards 2026
+- **Fitbit Air** — 3 lists: The Verge: Best of 2026; Tom's Guide Awards 2026; 9to5Google: Best of 2026
+- **Honor Robot Phone** — 3 lists: TIME: Best Inventions of 2026; TechRadar: Product of the Year 2026 Winners; Stuff Gadget Awards 2026
+- **Apple iPhone 18 Pro** — 3 lists: The Verge: Best of 2026; Engadget: Best of 2026; TechRadar: Product of the Year 2026 Winners
+- **Oura Ring 5** — 3 lists: The Verge: Best of 2026; TechRadar: Product of the Year 2026 Winners; Stuff Gadget Awards 2026
+- **Steam Controller** — 3 lists: The Verge: Best of 2026; Engadget: Best of 2026; 9to5Google: Best of 2026
+- **Xteink X4 Pro** — 3 lists: TIME: Best Inventions of 2026; The Verge: Best of 2026; 9to5Google: Best of 2026
 - **Adidas Adizero Adios Pro Evo 3** — 2 lists: TIME: Best Inventions of 2026; Tom's Guide Awards 2026
 - **ASUS ROG Zephyrus Duo** — 2 lists: The Verge: Best of 2026; Engadget: Best of 2026
 - **Asus Zenbook Duo** — 2 lists: TIME: Best Inventions of 2026; Engadget: Best of 2026
-- **Fitbit Air** — 2 lists: The Verge: Best of 2026; Tom's Guide Awards 2026
 - **Framework Laptop 13 Pro** — 2 lists: TIME: Best Inventions of 2026; The Verge: Best of 2026
-- **iPhone 18 Pro** — 2 lists: The Verge: Best of 2026; Engadget: Best of 2026
-- **Steam Controller** — 2 lists: The Verge: Best of 2026; Engadget: Best of 2026
-- **Xteink X4 Pro** — 2 lists: TIME: Best Inventions of 2026; The Verge: Best of 2026
+- **Garmin Cirqa** — 2 lists: TIME: Best Inventions of 2026; TechRadar: Product of the Year 2026 Winners
+- **Lego Smart Play** — 2 lists: TIME: Best Inventions of 2026; Stuff Gadget Awards 2026
+- **Oppo Find X9 Ultra** — 2 lists: TechRadar: Product of the Year 2026 Winners; 9to5Google: Best of 2026
+- **Samsung Galaxy S26 Ultra** — 2 lists: TIME: Best Inventions of 2026; Stuff Gadget Awards 2026
+- **Sonos Beam Ultra** — 2 lists: Engadget: Best of 2026; TechRadar: Product of the Year 2026 Winners
+- **Sony A7R VI** — 2 lists: Engadget: Best of 2026; TechRadar: Product of the Year 2026 Winners
+- **Sony Bravia 9 II** — 2 lists: The Verge: Best of 2026; TechRadar: Product of the Year 2026 Winners
+- **Withings BodyScan 2** — 2 lists: TIME: Best Inventions of 2026; TechRadar: Product of the Year 2026 Winners
+- **XReal Aura** — 2 lists: TIME: Best Inventions of 2026; 9to5Google: Best of 2026
 
 ### Restaurants & Food
 
+- **All Well** (Chicago) — 2 lists: Eater Awards 2026 Winners, Mapped; The Infatuation: America's Best New Restaurants of 2026
 - **Creepies** (Chicago) — 2 lists: Eater Awards 2026 Winners, Mapped; Robb Report: The 10 Best New Restaurants in America for 2026
+- **Emelina** (West Palm Beach) — 2 lists: Eater Awards 2026 Winners, Mapped; The Infatuation: America's Best New Restaurants of 2026
 - **Junior** (Nashville) — 2 lists: Eater Awards 2026 Winners, Mapped; Robb Report: The 10 Best New Restaurants in America for 2026
 - **Kabawa** (New York City) — 2 lists: Robb Report: The 10 Best New Restaurants in America for 2026; Condé Nast Traveler: Best New Restaurants in the World (Hot List 2026)
+- **Lilo** — 2 lists: Robb Report: The 10 Best New Restaurants in America for 2026; Yelp: Best New Restaurants of 2026
+- **Maroon** (Las Vegas) — 2 lists: Eater Awards 2026 Winners, Mapped; The Infatuation: America's Best New Restaurants of 2026
+- **OK Chicken & Khao Soi** (Portland, OR) — 2 lists: Eater Awards 2026 Winners, Mapped; The Infatuation: America's Best New Restaurants of 2026
+- **Roya** (Austin) — 2 lists: Eater Awards 2026 Winners, Mapped; The Infatuation: America's Best New Restaurants of 2026
+- **Rye Bunny** (Washington DC) — 2 lists: Eater Awards 2026 Winners, Mapped; The Infatuation: America's Best New Restaurants of 2026
 - **The Happy Crane** (San Francisco) — 2 lists: Robb Report: The 10 Best New Restaurants in America for 2026; Condé Nast Traveler: Best New Restaurants in the World (Hot List 2026)
 - **Yamada** (New York City) — 2 lists: New York Times: The Restaurant List 2026 (coverage); Robb Report: The 10 Best New Restaurants in America for 2026
+- **Zaranda** (Houston) — 2 lists: Robb Report: The 10 Best New Restaurants in America for 2026; The Infatuation: America's Best New Restaurants of 2026
 
 ### Travel & Hotels
 

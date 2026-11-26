@@ -541,3 +541,93 @@ def _(s,h,md):
         if m: out.append((C(m.group(1)),C(m.group(2))))
         elif out and not l.startswith('- '): break
     return out
+@reg('TV Guide: The 10 Best TV Shows of 2026')
+def _(s,h,md):
+    out=[]
+    for t in article_headings(s):
+        m=re.match(r'^(\d+)\.\s+(.+?)\s+\(([^)]+)\)$',t)
+        if m and 1<=int(m.group(1))<=10: out.append((C(m.group(2)),C(m.group(3))))
+    return out
+@reg('Collider: 10 Movies That Prove 2026 Is An All-Time Great Year for Film')
+def _(s,h,md):
+    out=[]
+    for t in hs(s,'h2'):
+        # C() strips a closing quote, so the opening quote is what remains.
+        m=re.match(r"^(\d+)\s+[‘'“\"](.+?)[’'”\"]?$",t)
+        if m and 1<=int(m.group(1))<=10: out.append((C(m.group(2)),''))
+    return out
+@reg('TechRadar: Product of the Year 2026 Winners')
+def _(s,h,md):
+    art=s.find('article') or s
+    out=[]
+    for h2 in art.find_all('h2'):
+        cat=C(h2.get_text(' ',strip=True))
+        if not cat or re.search(r'useful links|follow us|about|contact|legal',cat,re.I): continue
+        winner=''
+        for el in h2.find_all_next():
+            if getattr(el,'name',None)=='h2': break
+            if getattr(el,'name',None)!='strong': continue
+            t=C(el.get_text(' ',strip=True))
+            if t and len(t)<100 and not re.match(r'^(follow |add us|sign up|read our)',t,re.I):
+                winner=t; break
+        if not winner:
+            p=h2.find_next('p')
+            txt=C(p.get_text(' ',strip=True)) if p else ''
+            m=re.search(r'\bit is ([A-Z][\w&+.’\'-]{1,40})\b',txt)
+            if m: winner=C(m.group(1))
+            elif txt.startswith('Apple TV'): winner='Apple TV'
+        if winner: out.append((winner,cat))
+    return uniq(out)
+@reg('9to5Google: Best of 2026')
+def _(s,h,md):
+    stop={'Featured','Podcasts','Videos','Comments','Guides','Author'}
+    return [(t,'') for t in hs(s,'h2') if t not in stop and '9to5' not in t and ok(t)]
+@reg("The Infatuation: America's Best New Restaurants of 2026")
+def _(s,h,md):
+    spots=next((x for x in s.find_all('h2') if C(x.get_text()).upper()=='THE SPOTS'),None)
+    if not spots: return []
+    names=[]
+    for el in spots.find_all_next(['h2','h3']):
+        if el.name=='h2': break
+        names.append(C(el.get_text(' ',strip=True)))
+    return [(names[i],names[i+1]) for i in range(0,len(names)-1,2) if names[i] and names[i+1]]
+@reg('Yelp: Best New Restaurants of 2026')
+def _(s,h,md):
+    out=[]
+    for t in article_headings(s):
+        m=re.match(r'^(\d+)\.\s+(.+?)\s*,\s*(.+)$',t)
+        if m: out.append((C(m.group(2)),C(m.group(3))))
+    return out
+@reg('Time Out: The 29 Best Albums of 2026')
+def _(s,h,md):
+    out=[]
+    for t in hs(s,'h3'):
+        m=re.match(r'^(\d+)\.\s+(.+)$',t)
+        if not m: continue
+        title,artist=split_dash(m.group(2),artist_first=True)
+        out.append((C(title.strip('‘’\'"“”')),C(artist)))
+    return out
+@reg('Off the Record Press: CTRL+ALT+REPEAT 2026: 100 Best Songs')
+def _(s,h,md):
+    root=s.find('article') or s.find('main') or s
+    out=[]
+    for st in root.find_all('strong'):
+        raw=re.sub(r'\s+',' ',st.get_text(' ',strip=True))
+        m=re.match(r'^[“"‘\'](.+?)[”"’\']\s+by\s+(.+)$',raw)
+        if not m: continue
+        parent=st.parent
+        pt=re.sub(r'\s+',' ',parent.get_text(' ',strip=True)) if parent else ''
+        if pt.lstrip('- ')!=raw: continue
+        out.append((C(m.group(1)),C(m.group(2))))
+    return uniq(out)
+@reg('Brian Formo: 2026 Year in Review')
+def _(s,h,md):
+    chunk=md.split('Best Film of the Year')[0]
+    out=[]
+    for m in re.finditer(r'\(dir:\s*([^)]+)\)',chunk):
+        pre=chunk[:m.start()].rstrip()
+        line=pre.splitlines()[-1] if pre else ''
+        line=re.sub(r'^.*:\s*','',line)
+        title=re.sub(r'^\d+\.\s+','',C(line))
+        if title: out.append((title,C(m.group(1))))
+    return uniq(out)

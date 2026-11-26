@@ -1563,5 +1563,28 @@
  },
  "PUNCH: Cocktail Recipes From the Best New Bars of 2026": {
   "partial": "partial: bars named in the recipe intros only"
+ },
+ "Stuff Gadget Awards 2026": {
+  "items": [
+   ["Apple MacBook Neo", "Gadget of the Year"],
+   ["Oura Ring 5", "Gadget of the Year highly commended"],
+   ["BMW iX3", "Gadget of the Year highly commended"],
+   ["Samsung Galaxy S26 Ultra", "Gadget of the Year shortlist"],
+   ["Bowers Wilkins Px8 S2", "Gadget of the Year shortlist"],
+   ["Panasonic Lumix L10", "Gadget of the Year shortlist"],
+   ["Brompton Electric G-Line", "Gadget of the Year shortlist"],
+   ["Samsung Galaxy Z Fold8", "2026 Design Award"],
+   ["LG W6 Wallpaper TV", "2026 Design Award highly commended"],
+   ["Dyson PencilVac", "2026 Design Award shortlist"],
+   ["Shark ChillPill", "2026 Design Award shortlist"],
+   ["Sony Reon Pocket Pro Plus", "2026 Design Award shortlist"],
+   ["Honor Robot Phone", "2026 Innovation Award"],
+   ["Roborock Saros Rover", "2026 Innovation Award highly commended"],
+   ["LG Sound Suite", "2026 Innovation Award shortlist"],
+   ["Lego Smart Play", "2026 Innovation Award shortlist"],
+   ["Acer Vero 16 (2026)", "2026 Sustainability Award"],
+   ["Anker Solix C2000 Gen 2 Portable Power Station", "2026 Sustainability Award highly commended"]
+  ],
+  "how": "page reader (site blocks curl)"
  }
 }
