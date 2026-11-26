@@ -1139,10 +1139,10 @@
       </header>
 
       <div class="card-grid">
-        <div class="card">
+        <div class="card clickable" role="button" tabindex="0" data-coin="bitcoin" style="cursor:pointer;">
           <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:10px;">
             <div>
-              <div class="k mono" style="color:var(--muted); font-size:10px; letter-spacing:.12em; text-transform:uppercase;">Bitcoin · BTC</div>
+              <div class="k mono" style="color:var(--muted); font-size:10px; letter-spacing:.12em; text-transform:uppercase;">Bitcoin · BTC ↗</div>
               <div class="v" style="font-family:var(--display); font-size:38px; font-weight:600; letter-spacing:-.04em; line-height:1.05; margin-top:6px;">__BTC_PRICE__</div>
               <div class="s" style="color:var(--muted); font-size:12px; margin-top:5px;">__BTC_MCAP__ market cap · __BTC_DOM__ dominance</div>
             </div>
@@ -1156,10 +1156,10 @@
           </div>
           <p class="small" style="margin:14px 0 0;">Scarcity, liquidity, and the ETF wrapper. Bitcoin’s demand is increasingly institutional and collateral-driven; its drawdown sets the beta for everything else.</p>
         </div>
-        <div class="card">
+        <div class="card clickable" role="button" tabindex="0" data-coin="ethereum" style="cursor:pointer;">
           <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:10px;">
             <div>
-              <div class="k mono" style="color:var(--muted); font-size:10px; letter-spacing:.12em; text-transform:uppercase;">Ethereum · ETH</div>
+              <div class="k mono" style="color:var(--muted); font-size:10px; letter-spacing:.12em; text-transform:uppercase;">Ethereum · ETH ↗</div>
               <div class="v" style="font-family:var(--display); font-size:38px; font-weight:600; letter-spacing:-.04em; line-height:1.05; margin-top:6px;">__ETH_PRICE__</div>
               <div class="s" style="color:var(--muted); font-size:12px; margin-top:5px;">__ETH_MCAP__ market cap · __ETH_DOM__ dominance</div>
             </div>
@@ -2147,19 +2147,31 @@
     'Bitcoin DeFi': '#f59e0b', Other: '#64748b'
   };
   const SECTOR_COPY = {
-    l1: { blurb: 'The base layers. BTC and ETH dominate the category; the rest is a long tail competing for apps and fees.', risk: 'Beta to liquidity; most L1 tokens have weak value capture.', tag: 'L1' },
-    stablecoins: { blurb: 'The dollar layer. Supply is the cleanest measure of capital waiting on the sidelines.', risk: 'Issuer, reserve, and regulatory risk.', tag: 'Stablecoin' },
-    rwa: { blurb: 'Tokenized credit, treasuries, and funds. Figure HELOC is now a top-10 asset by reported market cap.', risk: 'Legal claim, custody, and duration.', tag: 'RWA' },
-    defi: { blurb: 'Lending, DEXs, and on-chain credit. TVL holds up better than governance token prices.', risk: 'Token value capture is uneven.', tag: 'DeFi' },
-    privacy: { blurb: 'ZEC and XMR are the strongest large-cap narrative of the drawdown.', risk: 'Regulatory delisting and liquidity.', tag: 'Privacy' },
-    perps: { blurb: 'On-chain perpetuals are taking real volume and real fees.', risk: 'Volume is mercenary; tokens are high beta.', tag: 'Perp DEX' },
-    ai: { blurb: 'Compute, agents, and data networks. Small category, large narrative.', risk: 'Narrative premium; most tokens have no revenue.', tag: 'AI' },
-    memes: { blurb: 'Attention markets. Leadership is narrow and liquidity is fragile.', risk: 'Extreme drawdowns and exit liquidity.', tag: 'Meme' },
-    l2: { blurb: 'Scaling infrastructure. The technology works; the tokens have not captured the activity.', risk: 'Fee compression and token dilution.', tag: 'L2' },
-    cex: { blurb: 'Exchange tokens with buybacks, fee discounts, and regulatory exposure.', risk: 'Venue concentration and policy.', tag: 'CEX' },
-    yield: { blurb: 'Governance tokens of yield protocols; the category is small relative to stablecoin yield.', risk: 'Emissions and mercenary TVL.', tag: 'DeFi' },
-    depin: { blurb: 'Hardware networks for storage, compute, and wireless.', risk: 'Unit economics and demand.', tag: 'DePIN' }
+    l1: { blurb: 'Base settlement and smart-contract networks competing for apps, liquidity, and monetary premium.', risk: 'Liquidity beta; most L1 tokens struggle to retain fee value.', tag: 'L1' },
+    stablecoins: { blurb: 'The on-chain dollar layer. Supply growth is the cleanest gauge of capital entering or waiting.', risk: 'Issuer, reserve, banking, and regulatory risk.', tag: 'Stablecoin' },
+    rwa: { blurb: 'Tokenized treasuries, private credit, commodities, and money-market funds brought on-chain.', risk: 'Legal claim, custody, and duration.', tag: 'RWA' },
+    defi: { blurb: 'Lending markets, DEXs, liquid staking, and on-chain credit infrastructure.', risk: 'Uneven token value capture and smart-contract risk.', tag: 'DeFi' },
+    privacy: { blurb: 'Shielded-transaction and privacy-preserving monetary networks.', risk: 'Regulatory delisting and thinner venue liquidity.', tag: 'Privacy' },
+    perps: { blurb: 'On-chain perpetual futures venues competing directly with centralized derivatives books.', risk: 'Mercenary volume and high-beta token reflexivity.', tag: 'Perp DEX' },
+    ai: { blurb: 'Decentralized compute, inference, agent, and data networks.', risk: 'Narrative premium; revenue rarely matches valuation.', tag: 'AI' },
+    memes: { blurb: 'Pure attention and community liquidity markets with minimal fundamental floor.', risk: 'Extreme drawdowns and rapid exit-liquidity evaporation.', tag: 'Meme' },
+    l2: { blurb: 'Rollups and execution layers scaling base chains with cheaper blockspace.', risk: 'Fee compression and supply dilution.', tag: 'L2' },
+    cex: { blurb: 'Exchange ecosystem tokens linked to fee discounts, launchpads, or buybacks.', risk: 'Venue concentration and regulatory enforcement.', tag: 'CEX' },
+    yield: { blurb: 'Governance and revenue tokens of yield-routing and structured-product protocols.', risk: 'Token emissions and mercenary TVL.', tag: 'DeFi' },
+    depin: { blurb: 'Token-coordinated physical hardware networks for storage, compute, and wireless.', risk: 'Hardware unit economics and real end-user demand.', tag: 'DePIN' }
   };
+  const PROVIDER_URLS = {
+    CoinGecko: 'https://www.coingecko.com/',
+    DefiLlama: 'https://defillama.com/',
+    'Alternative.me': 'https://alternative.me/crypto/fear-and-greed-index/',
+    Hyperliquid: 'https://app.hyperliquid.xyz/',
+    'Yahoo Finance': 'https://finance.yahoo.com/'
+  };
+  const llamaProtoUrl = (slug) => slug ? `https://defillama.com/protocol/${encodeURIComponent(slug)}` : 'https://defillama.com/';
+  const llamaCexUrl = (slug) => slug ? `https://defillama.com/cex/${encodeURIComponent(slug)}` : 'https://defillama.com/cexs';
+  const llamaChainUrl = (name) => name ? `https://defillama.com/chain/${encodeURIComponent(name)}` : 'https://defillama.com/chains';
+  const cgCoinUrl = (id) => id ? `https://www.coingecko.com/en/coins/${encodeURIComponent(id)}` : 'https://www.coingecko.com/';
+  const cgCatUrl = (id) => id ? `https://www.coingecko.com/en/categories/${encodeURIComponent(id)}` : 'https://www.coingecko.com/en/categories';
 
   const esc = (value) => String(value == null ? '' : value).replace(/[&<>"']/g, (ch) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));
   const isNum = (value) => value != null && Number.isFinite(Number(value));
@@ -2264,18 +2276,19 @@
   window.addEventListener('scroll', updateProgress, { passive: true });
   updateProgress();
 
-  const tickerCoins = ['bitcoin', 'ethereum', 'solana', 'hyperliquid', 'zcash', 'binancecoin', 'ripple', 'dogecoin'];
   const tickerTrack = $('#tickerTrack');
-  const tickerItems = tickerCoins.map((id) => S.coins.find((coin) => coin.id === id)).filter(Boolean);
+  const tickerItems = S.coins.filter((coin) => coin.tag !== 'Stablecoin').slice(0, 10);
   const tickerHtml = tickerItems.map((coin) => (
-    `<span class="tick"><b>${esc(coin.symbol)}</b> ${price(coin.price)} <span class="${pctClass(coin.change_24h)}">${pct(coin.change_24h)}</span></span>`
+    `<button class="tick" type="button" data-coin="${esc(coin.id)}" title="Inspect ${esc(coin.name)}"><b>${esc(coin.symbol)}</b> ${price(coin.price)} <span class="${pctClass(coin.change_24h)}">${pct(coin.change_24h)}</span></button>`
   )).join('');
   tickerTrack.innerHTML = tickerHtml + tickerHtml;
 
   const perfBody = $('#perfTable');
-  perfBody.innerHTML = S.performance.map((row) => `
-    <tr>
-      <td class="left name">${esc(row.symbol)}</td>
+  const perfIdBySym = { BTC: 'bitcoin', ETH: 'ethereum', SOL: 'solana' };
+  perfBody.innerHTML = S.performance.map((row) => {
+    const cid = perfIdBySym[row.symbol] || '';
+    return `<tr class="clickable-row" data-coin="${esc(cid)}">
+      <td class="left name"><a class="row-link" href="${cgCoinUrl(cid)}" target="_blank" rel="noopener">${esc(row.symbol)} ↗</a></td>
       <td class="num">${pctCell(row.change_24h)}</td>
       <td class="num">${pctCell(row.change_7d)}</td>
       <td class="num">${pctCell(row.change_30d)}</td>
@@ -2285,8 +2298,8 @@
       <td class="num down">${pct(row.max_dd_1y, 1)}</td>
       <td class="num down">${pct(row.ath_change)}</td>
       <td class="num">${money(row.market_cap)}</td>
-    </tr>
-  `).join('');
+    </tr>`;
+  }).join('');
 
   const macroBody = $('#macroTable');
   if (macroBody) {
@@ -2306,17 +2319,19 @@
         if (isRate) return `<span class="${pctClass(n)}">${n >= 0 ? '+' : ''}${n.toFixed(2)} pp</span>`;
         return pctCell(n, 1);
       };
-      macroBody.innerHTML = macroRows.map((row) => `
-        <tr>
-          <td class="left name">${esc(row.symbol)} <span class="sym">${esc(row.label)}</span></td>
+      macroBody.innerHTML = macroRows.map((row) => {
+        const qSym = row.yahoo_symbol || row.symbol;
+        const yUrl = `https://finance.yahoo.com/quote/${encodeURIComponent(qSym)}`;
+        return `<tr>
+          <td class="left name"><a class="row-link" href="${yUrl}" target="_blank" rel="noopener">${esc(row.symbol)} ↗</a> <span class="sym">${esc(row.label)}</span></td>
           <td class="num">${row.is_rate ? `${Number(row.last).toFixed(2)}%` : price(row.last)}</td>
           <td class="num">${fmtChg(row.change_30d, row.is_rate)}</td>
           <td class="num">${fmtChg(row.change_90d, row.is_rate)}</td>
           <td class="num">${fmtChg(row.change_1y, row.is_rate)}</td>
           <td class="num">${fmtCorr(row.corr_btc_90d)}</td>
           <td class="num">${fmtCorr(row.corr_eth_90d)}</td>
-        </tr>
-      `).join('');
+        </tr>`;
+      }).join('');
     }
   }
 
@@ -2429,8 +2444,12 @@
       const endpoints = Array.isArray(source.endpoints)
         ? (source.endpoints.length ? source.endpoints.map((item) => esc(item)).join(', ') : '—')
         : (source.endpoints == null || source.endpoints === '' || typeof source.endpoints === 'object' ? '—' : esc(source.endpoints));
+      const pUrl = PROVIDER_URLS[source.provider];
+      const pCell = pUrl
+        ? `<a class="row-link" href="${pUrl}" target="_blank" rel="noopener">${esc(source.provider)} ↗</a>`
+        : esc(source.provider || '—');
       return `<tr>
-        <td class="left name">${esc(source.provider || '—')}</td>
+        <td class="left name">${pCell}</td>
         <td class="left small">${fetched ? esc(fetched) : '—'}</td>
         <td class="num">${esc(ageText(age))}</td>
         <td class="left small">${endpoints}</td>
@@ -2732,7 +2751,8 @@
     const clickTile = (event) => {
       const tile = event.target.closest('.tm-tile');
       if (!tile) return;
-      setTag(tile.dataset.tag);
+      if (tile.dataset.id && coinById.has(tile.dataset.id)) openCoinDrawer(tile.dataset.id);
+      else setTag(tile.dataset.tag);
     };
     container.addEventListener('click', clickTile);
     container.addEventListener('keydown', (event) => {
@@ -2809,11 +2829,11 @@
     $('#coinTableBody').innerHTML = rows.map((coin) => {
       const extra = coinExtras(coin);
       const circNote = isNum(coin.circ_pct) ? ` · ${Number(coin.circ_pct).toFixed(0)}% unlocked` : '';
-      return `<tr>
+      return `<tr class="clickable-row" data-coin="${esc(coin.id)}">
         <td class="left"><span class="rank">${coin.rank}</span></td>
         <td class="left"><div class="asset-cell">
           <span class="asset-badge" style="border-color:${tagColor(coin.tag)}66; background:${tagColor(coin.tag)}1c;">${esc(coin.symbol.slice(0, 4))}</span>
-          <div class="asset-name"><b><a href="https://www.coingecko.com/en/coins/${encodeURIComponent(coin.id)}" target="_blank" rel="noopener" style="color:inherit; text-decoration:none;">${esc(coin.name)}</a></b><span>${esc(coin.symbol)} · ${esc(coin.tag)}</span></div>
+          <div class="asset-name"><b><a class="row-link" href="${cgCoinUrl(coin.id)}" target="_blank" rel="noopener">${esc(coin.name)} ↗</a></b><span>${esc(coin.symbol)} · ${esc(coin.tag)}</span></div>
         </div></td>
         <td class="num">${price(coin.price)}</td>
         <td class="num">${pctCell(coin.change_24h)}</td>
@@ -2918,8 +2938,8 @@
   $('#lowFloatTable').innerHTML = lowFloat.map((coin) => {
     const ratio = coin.fdv / coin.market_cap;
     const circ = isNum(coin.circ_pct) ? Number(coin.circ_pct) : (coin.market_cap / coin.fdv) * 100;
-    return `<tr>
-      <td class="left name">${esc(coin.name)} <span class="sym">${esc(coin.symbol)}</span></td>
+    return `<tr class="clickable-row" data-coin="${esc(coin.id)}">
+      <td class="left name"><a class="row-link" href="${cgCoinUrl(coin.id)}" target="_blank" rel="noopener">${esc(coin.name)} ↗</a> <span class="sym">${esc(coin.symbol)}</span></td>
       <td class="num">${money(coin.market_cap)}</td>
       <td class="num">${money(coin.fdv)}</td>
       <td class="num warn-t">${ratio.toFixed(1)}×</td>
@@ -2932,7 +2952,7 @@
   $('#sectorGrid').innerHTML = S.sectors.map((sector) => {
     const copy = SECTOR_COPY[sector.key] || { blurb: '', risk: '', tag: 'Other' };
     const leaders = (sector.leaders || []).map((leader) => (
-      `<span class="leader">${esc(leader.symbol)} <b>${leader.change_7d == null ? '' : pct(leader.change_7d, 0)}</b></span>`
+      `<span class="leader" data-coin="${esc(leader.id)}" role="button" tabindex="0" title="Inspect ${esc(leader.name || leader.symbol)}">${esc(leader.symbol)} <b>${leader.change_7d == null ? '' : pct(leader.change_7d, 0)}</b></span>`
     )).join('');
     return `<article class="sector" data-tag="${esc(copy.tag)}">
       <div class="top">
@@ -2941,7 +2961,7 @@
           <div class="cap">${money(sector.market_cap)}</div>
           <div class="chg ${pctClass(sector.change_24h)}">${pct(sector.change_24h)} 24h</div>
         </div>
-        <span class="badge ${sector.key === 'stablecoins' ? 'medium' : 'tag'}">${sector.leaders.length} leaders</span>
+        <a class="badge ${sector.key === 'stablecoins' ? 'medium' : 'tag'}" href="${cgCatUrl(sector.id)}" target="_blank" rel="noopener" onclick="event.stopPropagation()" style="text-decoration:none;">CoinGecko ↗</a>
       </div>
       <h4>${esc(sector.label)}</h4>
       <p>${copy.blurb}</p>
@@ -2950,13 +2970,47 @@
     </article>`;
   }).join('');
   $('#sectorGrid').addEventListener('click', (event) => {
+    const leader = event.target.closest('.leader[data-coin]');
+    if (leader && coinById.has(leader.dataset.coin)) {
+      event.stopPropagation();
+      openCoinDrawer(leader.dataset.coin);
+      return;
+    }
     const card = event.target.closest('.sector');
     if (card) setTag(card.dataset.tag);
   });
 
+  // Dynamic "What is working / What is lagging" computed strictly from live sectors & coins
+  (() => {
+    const nonStableSectors = S.sectors.filter((s) => s.key !== 'stablecoins');
+    const scoredSectors = nonStableSectors.map((s) => {
+      const chgs = (s.leaders || []).map((l) => l.change_30d).filter(isNum).map(Number);
+      const avg30 = chgs.length ? chgs.reduce((a, b) => a + b, 0) / chgs.length : (isNum(s.change_24h) ? Number(s.change_24h) : 0);
+      return { ...s, score: avg30 };
+    }).sort((a, b) => b.score - a.score);
+    const working = scoredSectors.slice(0, 4);
+    const lagging = scoredSectors.slice(-4).reverse();
+    const dekEl = $('#sectorDek');
+    if (dekEl && working.length && lagging.length) {
+      dekEl.textContent = `Strongest 30d leader momentum: ${working.slice(0, 2).map((s) => s.label).join(' and ')}. Lagging: ${lagging.slice(0, 2).map((s) => s.label).join(' and ')}. Click any sector card to filter the top-100 table.`;
+    }
+    const fmtSectorLi = (s) => {
+      const leadersHtml = (s.leaders || []).map((l) => (
+        coinById.has(l.id)
+          ? `<a class="row-link" href="${cgCoinUrl(l.id)}" data-coin="${esc(l.id)}" target="_blank" rel="noopener">${esc(l.symbol)}</a>${isNum(l.change_30d) ? ` (${pct(l.change_30d, 0)} 30d)` : ''}`
+          : esc(l.symbol)
+      )).join(', ');
+      return `<li><strong><a class="row-link" href="${cgCatUrl(s.id)}" target="_blank" rel="noopener">${esc(s.label)}</a></strong> (${money(s.market_cap)} cap, <span class="${pctClass(s.change_24h)}">${pct(s.change_24h, 1)}</span> 24h) — leaders: ${leadersHtml || '—'}.</li>`;
+    };
+    const wEl = $('#workingList');
+    const nEl = $('#notWorkingList');
+    if (wEl) wEl.innerHTML = working.map(fmtSectorLi).join('');
+    if (nEl) nEl.innerHTML = lagging.map(fmtSectorLi).join('');
+  })();
+
   $('#categoryTable').innerHTML = S.categories.slice(0, 18).map((category) => `
     <tr>
-      <td class="left name">${esc(category.name)}</td>
+      <td class="left name"><a class="row-link" href="${cgCatUrl(category.id)}" target="_blank" rel="noopener">${esc(category.name)} ↗</a></td>
       <td class="num">${money(category.market_cap)}</td>
       <td class="num">${pctCell(category.change_24h)}</td>
       <td class="num">${money(category.volume_24h)}</td>
@@ -2966,23 +3020,26 @@
   const momentumCoins = S.coins.filter((coin) => coin.tag !== 'Stablecoin' && coin.market_cap > 500_000_000 && coin.change_7d != null);
   const up = momentumCoins.slice().sort((a, b) => b.change_7d - a.change_7d).slice(0, 7);
   const down = momentumCoins.slice().sort((a, b) => a.change_7d - b.change_7d).slice(0, 7);
-  const momentumRow = (coin) => `<tr><td class="left name">${esc(coin.symbol)} <span class="sym">${esc(coin.name)}</span></td><td class="num">${pctCell(coin.change_7d)}</td><td class="num">${pctCell(coin.change_30d)}</td></tr>`;
+  const momentumRow = (coin) => `<tr class="clickable-row" data-coin="${esc(coin.id)}"><td class="left name"><a class="row-link" href="${cgCoinUrl(coin.id)}" target="_blank" rel="noopener">${esc(coin.symbol)} ↗</a> <span class="sym">${esc(coin.name)}</span></td><td class="num">${pctCell(coin.change_7d)}</td><td class="num">${pctCell(coin.change_30d)}</td></tr>`;
   $('#momentumUp').innerHTML = up.map(momentumRow).join('');
   $('#momentumDown').innerHTML = down.map(momentumRow).join('');
 
   const feeTableEl = $('#feeTable');
   if (feeTableEl && S.fees && Array.isArray(S.fees.protocols)) {
-    feeTableEl.innerHTML = S.fees.protocols.slice(0, 14).map((p) => `
-      <tr>
-        <td class="left name">${esc(p.name)}${p.symbol ? ` <span class="sym">${esc(p.symbol)}</span>` : ''}</td>
+    feeTableEl.innerHTML = S.fees.protocols.slice(0, 14).map((p) => {
+      const symHtml = p.symbol && p.gecko_id
+        ? ` <a class="row-link sym" href="${cgCoinUrl(p.gecko_id)}" target="_blank" rel="noopener">${esc(p.symbol)}</a>`
+        : (p.symbol ? ` <span class="sym">${esc(p.symbol)}</span>` : '');
+      return `<tr>
+        <td class="left name"><a class="row-link" href="${llamaProtoUrl(p.slug)}" target="_blank" rel="noopener">${esc(p.name)} ↗</a>${symHtml}</td>
         <td class="left"><span class="badge">${esc(p.category || '—')}</span></td>
         <td class="num">${money(p.fees_24h)}</td>
         <td class="num">${money(p.fees_30d)}</td>
         <td class="num">${p.rev_30d > 0 ? money(p.rev_30d) : '<span class="flat">$0</span>'}</td>
         <td class="num">${isNum(p.take_rate) ? `${Number(p.take_rate).toFixed(0)}%` : '—'}</td>
         <td class="num">${p.ann_rev > 0 ? money(p.ann_rev) : '—'}</td>
-      </tr>
-    `).join('');
+      </tr>`;
+    }).join('');
   }
 
   const perpBarsEl = $('#perpShareBars');
@@ -2992,17 +3049,17 @@
     const maxP = Math.max(...pv.map((v) => v.fees_30d)) || 1;
     if (perpBarsEl) {
       perpBarsEl.innerHTML = pv.slice(0, 6).map((v) => `
-        <div class="bar-row">
+        <a class="bar-row clickable" href="${llamaProtoUrl(v.slug)}" target="_blank" rel="noopener">
           <div class="lbl">${esc(v.name)}</div>
           <div class="bar-track"><div class="bar-fill" style="width:${(v.fees_30d / maxP) * 100}%"></div></div>
           <div class="val">${money(v.fees_30d)} · ${Number(v.share_30d || 0).toFixed(1)}%</div>
-        </div>
+        </a>
       `).join('');
     }
     if (perpTableEl) {
       perpTableEl.innerHTML = pv.map((v) => `
         <tr>
-          <td class="left name">${esc(v.name)}</td>
+          <td class="left name"><a class="row-link" href="${llamaProtoUrl(v.slug)}" target="_blank" rel="noopener">${esc(v.name)} ↗</a></td>
           <td class="num">${money(v.fees_24h)}</td>
           <td class="num">${money(v.fees_30d)}</td>
           <td class="num">${v.rev_30d > 0 ? money(v.rev_30d) : '—'}</td>
@@ -3015,7 +3072,7 @@
 
   $('#dexTable').innerHTML = S.dexs.protocols.map((dex) => `
     <tr>
-      <td class="left name">${esc(dex.name)}</td>
+      <td class="left name"><a class="row-link" href="${llamaProtoUrl(dex.slug)}" target="_blank" rel="noopener">${esc(dex.name)} ↗</a></td>
       <td class="num">${money(dex.volume_24h)}</td>
       <td class="num">${money(dex.volume_7d)}</td>
       <td class="num">${pctCell(dex.change_7d)}</td>
@@ -3027,19 +3084,19 @@
   const chainSum = chainTop.reduce((sum, chain) => sum + chain.tvl, 0);
   const maxChain = Math.max(...chainTop.map((chain) => chain.tvl));
   $('#chainBars').innerHTML = chainTop.map((chain) => `
-    <div class="bar-row">
+    <a class="bar-row clickable" href="${llamaChainUrl(chain.name)}" target="_blank" rel="noopener">
       <div class="lbl">${esc(chain.name)}</div>
       <div class="bar-track"><div class="bar-fill" style="width:${(chain.tvl / maxChain) * 100}%"></div></div>
       <div class="val">${money(chain.tvl)}</div>
-    </div>
+    </a>
   `).join('');
   $('#chainTable').innerHTML = chainTop.map((chain) => `
-    <tr><td class="left name">${esc(chain.name)}</td><td class="num">${money(chain.tvl)}</td><td class="num">${((chain.tvl / chainSum) * 100).toFixed(1)}%</td></tr>
+    <tr><td class="left name"><a class="row-link" href="${llamaChainUrl(chain.name)}" target="_blank" rel="noopener">${esc(chain.name)} ↗</a></td><td class="num">${money(chain.tvl)}</td><td class="num">${((chain.tvl / chainSum) * 100).toFixed(1)}%</td></tr>
   `).join('');
 
   $('#protocolTable').innerHTML = S.defi.protocols.slice(0, 12).map((protocol) => `
     <tr>
-      <td class="left name">${esc(protocol.name)}</td>
+      <td class="left name"><a class="row-link" href="${llamaProtoUrl(protocol.slug)}" target="_blank" rel="noopener">${esc(protocol.name)} ↗</a></td>
       <td class="left"><span class="badge">${esc(protocol.category || '—')}</span></td>
       <td class="num">${money(protocol.tvl)}</td>
       <td class="num">${pctCell(protocol.change_1d)}</td>
@@ -3050,7 +3107,7 @@
 
   $('#exchangeTable').innerHTML = S.exchanges.map((exchange) => `
     <tr>
-      <td class="left name">${esc(exchange.name)}</td>
+      <td class="left name"><a class="row-link" href="${llamaCexUrl(exchange.slug)}" target="_blank" rel="noopener">${esc(exchange.name)} ↗</a></td>
       <td class="num">${money(exchange.tvl)}</td>
       <td class="num">${pctCell(exchange.change_1d)}</td>
       <td class="num">${pctCell(exchange.change_7d)}</td>
@@ -3077,18 +3134,20 @@
   const stableChainTop = S.stablecoins.chains.slice(0, 8);
   const maxStableChain = Math.max(...stableChainTop.map((chain) => chain.value));
   $('#stableChainBars').innerHTML = stableChainTop.map((chain) => `
-    <div class="bar-row">
+    <a class="bar-row clickable" href="https://defillama.com/stablecoins/${encodeURIComponent(chain.name)}" target="_blank" rel="noopener">
       <div class="lbl">${esc(chain.name)}</div>
       <div class="bar-track"><div class="bar-fill" style="width:${(chain.value / maxStableChain) * 100}%"></div></div>
       <div class="val">${money(chain.value)} · ${((chain.value / S.stablecoins.total) * 100).toFixed(1)}%</div>
-    </div>
+    </a>
   `).join('');
 
   $('#stableTable').innerHTML = S.stablecoins.assets.slice(0, 20).map((asset) => {
     const pegDev = (asset.price - 1) * 10000;
     const topChain = asset.top_chains && asset.top_chains[0] ? asset.top_chains[0][0] : '—';
-    return `<tr>
-      <td class="left name">${esc(asset.name)} <span class="sym">${esc(asset.symbol)}</span></td>
+    const stUrl = asset.gecko_id ? cgCoinUrl(asset.gecko_id) : 'https://defillama.com/stablecoins';
+    const hasCoin = asset.gecko_id && coinById.has(asset.gecko_id);
+    return `<tr class="${hasCoin ? 'clickable-row' : ''}" ${hasCoin ? `data-coin="${esc(asset.gecko_id)}"` : ''}>
+      <td class="left name"><a class="row-link" href="${stUrl}" target="_blank" rel="noopener">${esc(asset.name)} ↗</a> <span class="sym">${esc(asset.symbol)}</span></td>
       <td class="num">${money(asset.supply)}</td>
       <td class="num">${pctCell(asset.change_1d)}</td>
       <td class="num">${pctCell(asset.change_7d)}</td>
@@ -3097,7 +3156,7 @@
       <td class="num ${Math.abs(pegDev) > 50 ? 'warn-t' : ''}">${pegDev > 0 ? '+' : ''}${pegDev.toFixed(1)} bps</td>
       <td class="left"><span class="badge">${esc(asset.mechanism || '—')}</span></td>
       <td class="num">${asset.chains}</td>
-      <td class="left small">${esc(topChain)}</td>
+      <td class="left small">${topChain !== '—' ? `<a class="row-link" href="https://defillama.com/stablecoins/${encodeURIComponent(topChain)}" target="_blank" rel="noopener">${esc(topChain)}</a>` : '—'}</td>
     </tr>`;
   }).join('');
 
@@ -3330,8 +3389,9 @@
   $('#hlMarketTable').innerHTML = S.hyperliquid.markets.slice(0, 12).map((market) => {
     const funding = isNum(market.funding_ann) ? Number(market.funding_ann) : market.funding * 24 * 365 * 100;
     const oiRatio = isNum(market.oi_mcap_pct) ? `${Number(market.oi_mcap_pct).toFixed(2)}%` : '—';
+    const tradeUrl = `https://app.hyperliquid.xyz/trade/${encodeURIComponent(market.name)}`;
     return `<tr>
-      <td class="left name">${esc(market.name)}</td>
+      <td class="left name"><a class="row-link" href="${tradeUrl}" target="_blank" rel="noopener">${esc(market.name)} ↗</a></td>
       <td class="num">${money(market.volume_24h)}</td>
       <td class="num">${money(market.open_interest)}</td>
       <td class="num ${isNum(market.oi_mcap_pct) && market.oi_mcap_pct > 5 ? 'warn-t' : ''}">${oiRatio}</td>
@@ -3342,9 +3402,12 @@
 
   const valTableEl = $('#valuationTable');
   if (valTableEl && S.fees && Array.isArray(S.fees.valuation)) {
-    valTableEl.innerHTML = S.fees.valuation.slice(0, 14).map((row) => `
-      <tr>
-        <td class="left name">${esc(row.name)}${row.symbol ? ` <span class="sym">${esc(row.symbol)}</span>` : ''}</td>
+    valTableEl.innerHTML = S.fees.valuation.slice(0, 14).map((row) => {
+      const symHtml = row.symbol && row.gecko_id
+        ? ` <a class="row-link sym" href="${cgCoinUrl(row.gecko_id)}" target="_blank" rel="noopener">${esc(row.symbol)}</a>`
+        : (row.symbol ? ` <span class="sym">${esc(row.symbol)}</span>` : '');
+      return `<tr>
+        <td class="left name"><a class="row-link" href="${llamaProtoUrl(row.slug)}" target="_blank" rel="noopener">${esc(row.name)} ↗</a>${symHtml}</td>
         <td class="left"><span class="badge">${esc(row.category || '—')}</span></td>
         <td class="num">${money(row.fees_30d)}</td>
         <td class="num">${row.rev_30d > 0 ? money(row.rev_30d) : '<span class="flat">$0</span>'}</td>
@@ -3352,8 +3415,8 @@
         <td class="num">${money(row.fdv)}</td>
         <td class="num">${isNum(row.pf) ? `${Number(row.pf).toFixed(1)}×` : '—'}</td>
         <td class="num ${isNum(row.ps) && row.ps < 25 ? 'up' : ''}">${isNum(row.ps) ? `${Number(row.ps).toFixed(1)}×` : '—'}</td>
-      </tr>
-    `).join('');
+      </tr>`;
+    }).join('');
   }
 
   const scorecard = () => {
@@ -3386,15 +3449,366 @@
   ['sWin', 'sAvgWin', 'sAvgLoss', 'sTrades', 'sFees', 'sCapital', 'sDrawdown'].forEach((id) => $('#' + id).addEventListener('input', scorecard));
   scorecard();
 
-  $('#hackTable').innerHTML = S.hacks.recent.map((hack) => `
-    <tr>
+  $('#hackTable').innerHTML = S.hacks.recent.map((hack) => {
+    const hUrl = hack.source && /^https?:\/\//i.test(hack.source) ? hack.source : 'https://defillama.com/hacks';
+    return `<tr>
       <td class="left small">${esc(hack.date)}</td>
-      <td class="left name">${esc(hack.name)}</td>
+      <td class="left name"><a class="row-link" href="${esc(hUrl)}" target="_blank" rel="noopener">${esc(hack.name)} ↗</a></td>
       <td class="num">${hack.amount ? money(hack.amount) : '—'}</td>
       <td class="left small">${esc(hack.classification || '—')}</td>
       <td class="left small">${esc(hack.technique || '—')}</td>
-    </tr>
-  `).join('');
+    </tr>`;
+  }).join('');
+
+  // --- Universal Drill-Down Inspector Drawer & Click-Through Router ---
+  const drawerEl = $('#drawer');
+  const backdropEl = $('#drawerBackdrop');
+  const drawerKicker = $('#drawerKicker');
+  const drawerTitle = $('#drawerTitle');
+  const drawerSub = $('#drawerSub');
+  const drawerBody = $('#drawerBody');
+  let lastFocus = null;
+
+  const closeDrawer = () => {
+    if (!drawerEl) return;
+    drawerEl.classList.remove('open');
+    backdropEl.classList.remove('open');
+    drawerEl.setAttribute('aria-hidden', 'true');
+    backdropEl.setAttribute('aria-hidden', 'true');
+    if (lastFocus && typeof lastFocus.focus === 'function') lastFocus.focus();
+  };
+
+  const openDrawer = ({ kicker, title, sub, bodyHtml }) => {
+    if (!drawerEl) return;
+    lastFocus = document.activeElement;
+    drawerKicker.textContent = kicker || 'Inspector';
+    drawerTitle.textContent = title || '—';
+    drawerSub.textContent = sub || '';
+    drawerBody.innerHTML = bodyHtml || '';
+    drawerEl.classList.add('open');
+    backdropEl.classList.add('open');
+    drawerEl.setAttribute('aria-hidden', 'false');
+    backdropEl.setAttribute('aria-hidden', 'false');
+    const closeBtn = $('#drawerClose');
+    if (closeBtn) closeBtn.focus();
+  };
+
+  if ($('#drawerClose')) $('#drawerClose').addEventListener('click', closeDrawer);
+  if (backdropEl) backdropEl.addEventListener('click', closeDrawer);
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && drawerEl && drawerEl.classList.contains('open')) closeDrawer();
+  });
+
+  const miniLineSvg = (values, color, yMinFixed, yMaxFixed) => {
+    if (!values || values.length < 2) return '';
+    const w = 380, h = 92, pad = 8;
+    const min = yMinFixed != null ? yMinFixed : Math.min(...values);
+    const max = yMaxFixed != null ? yMaxFixed : Math.max(...values);
+    const span = max - min || 1;
+    const pts = values.map((v, i) => [
+      pad + (i / (values.length - 1)) * (w - pad * 2),
+      h - pad - ((v - min) / span) * (h - pad * 2)
+    ]);
+    const d = pts.map((p, i) => `${i ? 'L' : 'M'}${p[0].toFixed(1)} ${p[1].toFixed(1)}`).join(' ');
+    const area = `${d} L ${w - pad} ${h - pad} L ${pad} ${h - pad} Z`;
+    const last = pts[pts.length - 1];
+    return `<svg class="drawer-svg" viewBox="0 0 ${w} ${h}" aria-hidden="true">
+      <path d="${area}" fill="${color}" fill-opacity="0.14"></path>
+      <path d="${d}" fill="none" stroke="${color}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></path>
+      <circle cx="${last[0].toFixed(1)}" cy="${last[1].toFixed(1)}" r="3.5" fill="${color}"></circle>
+    </svg>`;
+  };
+
+  const scrollToEl = (selector) => {
+    const el = document.querySelector(selector);
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
+  const jumpAction = (key) => {
+    closeDrawer();
+    if (key === 'breadth_24h') {
+      tableState.tag = 'All'; tableState.sort = 'change_24h'; tableState.dir = -1;
+      renderTagChips(); renderCoins(); scrollToEl('#map');
+    } else if (key === 'breadth_30d') {
+      tableState.tag = 'All'; tableState.sort = 'change_30d'; tableState.dir = -1;
+      renderTagChips(); renderCoins(); scrollToEl('#map');
+    } else if (key === 'top10') {
+      tableState.tag = 'All'; tableState.sort = 'rank'; tableState.dir = 1; tableState.limit = 25;
+      const lim = $('#rowLimit'); if (lim) lim.value = '25';
+      renderTagChips(); renderCoins(); scrollToEl('#map');
+    } else if (key === 'dex') {
+      scrollToEl('#dexSection');
+    } else if (key === 'perps') {
+      scrollToEl('#perpSection');
+    } else if (key === 'hl') {
+      scrollToEl('#traders');
+    } else if (key === 'valuation') {
+      scrollToEl('#valuation');
+    } else if (key && key.startsWith('#')) {
+      scrollToEl(key);
+    }
+  };
+
+  const openCoinDrawer = (coinId) => {
+    const coin = coinById.get(coinId);
+    if (!coin) return;
+    const extra = coinExtras(coin);
+    const circ = isNum(coin.circ_pct) ? `${Number(coin.circ_pct).toFixed(1)}%` : '—';
+    const tvSym = encodeURIComponent(`${coin.symbol}USD`);
+    openDrawer({
+      kicker: `Rank #${coin.rank} · ${coin.tag}`,
+      title: `${coin.name} (${coin.symbol})`,
+      sub: `Snapshot ${S.generated_label}`,
+      bodyHtml: `
+        <div>
+          <div class="drawer-metric">${price(coin.price)}</div>
+          <div class="small" style="margin-top:4px;">24h ${pctCell(coin.change_24h)} · 7d ${pctCell(coin.change_7d)} · 30d ${pctCell(coin.change_30d)}</div>
+        </div>
+        ${miniLineSvg(coin.spark, coin.change_7d >= 0 ? '#4ade80' : '#fb7185')}
+        <div class="out-grid">
+          <div class="out"><div class="k">Market cap</div><div class="v">${money(coin.market_cap)}</div></div>
+          <div class="out"><div class="k">FDV</div><div class="v">${coin.fdv ? money(coin.fdv) : '—'}</div></div>
+          <div class="out"><div class="k">FDV / MC</div><div class="v ${extra.fdv_ratio > 3 ? 'warn-t' : ''}">${extra.fdv_ratio ? `${extra.fdv_ratio.toFixed(2)}×` : '—'}</div></div>
+          <div class="out"><div class="k">% Unlocked</div><div class="v">${circ}</div></div>
+          <div class="out"><div class="k">24h volume</div><div class="v">${money(coin.volume)}</div></div>
+          <div class="out"><div class="k">From ATH (${price(coin.ath)})</div><div class="v down">${pct(coin.ath_change, 1)}</div></div>
+        </div>
+        <div class="drawer-actions">
+          <button class="btn primary" type="button" data-filter-tag="${esc(coin.tag)}">Filter table by ${esc(coin.tag)}</button>
+          <a class="btn" href="${cgCoinUrl(coin.id)}" target="_blank" rel="noopener">CoinGecko ↗</a>
+          <a class="btn" href="https://www.tradingview.com/symbols/${tvSym}/" target="_blank" rel="noopener">TradingView ↗</a>
+        </div>
+      `
+    });
+  };
+
+  const openDrill = (key) => {
+    const g = S.global || {};
+    const comp = S.comparison && S.comparison.metrics ? S.comparison.metrics : {};
+    const priorLbl = S.comparison && S.comparison.prior_label ? S.comparison.prior_label : null;
+    const deltaBanner = (mKey, kind) => {
+      const m = comp[mKey];
+      if (!m || !isNum(m.delta)) return '';
+      const d = metricDelta(m, kind);
+      const p = metricPct(m);
+      return `<div class="drawer-item"><span class="lbl">Change since ${esc(priorLbl || 'prior snapshot')}</span><span class="val ${pctClass(m.delta)}">${esc(d)}${p != null ? ` (${esc(pct(p, 1))})` : ''}</span></div>`;
+    };
+
+    if (key === 'total_mcap') {
+      const top5 = S.coins.slice(0, 5);
+      openDrawer({
+        kicker: 'Global market cap · CoinGecko',
+        title: money(g.total_mcap),
+        sub: `${pct(g.mcap_change_24h)} over 24h · ${mm(g.active_cryptos)} active assets`,
+        bodyHtml: `
+          <div class="drawer-list">
+            ${deltaBanner('total_mcap', 'usd')}
+            <div class="drawer-item"><span class="lbl">Top-10 concentration</span><span class="val">${Number(S.concentration.top10_share).toFixed(2)}%</span></div>
+            <div class="drawer-item"><span class="lbl">Stablecoin share</span><span class="val">${Number(S.stablecoins.share_of_market).toFixed(2)}%</span></div>
+            <div class="drawer-item"><span class="lbl">24h / 30d breadth</span><span class="val">${S.breadth.change_24h.up}/100 · ${S.breadth.change_30d.up}/100</span></div>
+          </div>
+          <div class="small" style="margin-bottom:-8px; text-transform:uppercase; font-family:var(--mono); font-size:9.5px;">Largest 5 assets</div>
+          <div class="drawer-list">
+            ${top5.map((c) => `<button class="drawer-item" type="button" data-coin="${esc(c.id)}" style="cursor:pointer;width:100%;text-align:left;font:inherit;"><span class="lbl"><b>${esc(c.symbol)}</b> · ${esc(c.name)}</span><span class="val">${money(c.market_cap)} (${pctCell(c.change_24h, 1)})</span></button>`).join('')}
+          </div>
+          <div class="drawer-actions">
+            <button class="btn primary" type="button" data-jump="#map">Jump to Top 100 ↓</button>
+            <a class="btn" href="https://www.coingecko.com/en/global-charts" target="_blank" rel="noopener">CoinGecko Global ↗</a>
+          </div>
+        `
+      });
+    } else if (key === 'total_vol') {
+      const topVol = S.coins.filter((c) => c.tag !== 'Stablecoin').slice().sort((a, b) => b.volume - a.volume).slice(0, 5);
+      const dexShare = g.total_volume > 0 ? (S.dexs.volume_24h / g.total_volume) * 100 : 0;
+      openDrawer({
+        kicker: '24h global spot volume · CoinGecko + DefiLlama',
+        title: money(g.total_volume),
+        sub: `${pct(g.volume_change_24h)} vs prior day · ${mm(g.markets)} markets`,
+        bodyHtml: `
+          <div class="drawer-list">
+            ${deltaBanner('total_volume', 'usd')}
+            <div class="drawer-item"><span class="lbl">Spot DEX volume (24h)</span><span class="val">${money(S.dexs.volume_24h)} (${dexShare.toFixed(1)}% of spot)</span></div>
+            <div class="drawer-item"><span class="lbl">Hyperliquid perp volume (24h)</span><span class="val">${money(S.hyperliquid.volume_24h)}</span></div>
+            <div class="drawer-item"><span class="lbl">Turnover (24h vol / mcap)</span><span class="val">${g.total_mcap ? ((g.total_volume / g.total_mcap) * 100).toFixed(2) : '—'}%</span></div>
+          </div>
+          <div class="small" style="margin-bottom:-8px; text-transform:uppercase; font-family:var(--mono); font-size:9.5px;">Most traded non-stablecoins</div>
+          <div class="drawer-list">
+            ${topVol.map((c) => `<button class="drawer-item" type="button" data-coin="${esc(c.id)}" style="cursor:pointer;width:100%;text-align:left;font:inherit;"><span class="lbl"><b>${esc(c.symbol)}</b> · ${esc(c.name)}</span><span class="val">${money(c.volume)}</span></button>`).join('')}
+          </div>
+          <div class="drawer-actions">
+            <button class="btn primary" type="button" data-jump="#dexSection">Jump to DEX League ↓</button>
+            <a class="btn" href="https://defillama.com/dexs" target="_blank" rel="noopener">DefiLlama DEXs ↗</a>
+          </div>
+        `
+      });
+    } else if (key === 'btc_dom') {
+      const btcD = Number(g.btc_dominance || 0);
+      const ethD = Number(g.eth_dominance || 0);
+      const stD = Number(S.stablecoins.share_of_market || 0);
+      const restD = Math.max(0, 100 - btcD - ethD - stD);
+      openDrawer({
+        kicker: 'Market share & rotation · CoinGecko',
+        title: `${btcD.toFixed(2)}% BTC`,
+        sub: `ETH ${ethD.toFixed(2)}% · Stablecoins ${stD.toFixed(2)}% · Rest ${restD.toFixed(1)}%`,
+        bodyHtml: `
+          <div class="split-bar" style="margin:0;">
+            <div class="split-seg" style="width:${btcD.toFixed(1)}%;background:#f7931a;" title="BTC ${btcD.toFixed(1)}%"></div>
+            <div class="split-seg" style="width:${ethD.toFixed(1)}%;background:#8b9dff;" title="ETH ${ethD.toFixed(1)}%"></div>
+            <div class="split-seg" style="width:${stD.toFixed(1)}%;background:#34d399;" title="Stables ${stD.toFixed(1)}%"></div>
+            <div class="split-seg" style="width:${restD.toFixed(1)}%;background:#475569;" title="All other alts ${restD.toFixed(1)}%"></div>
+          </div>
+          <div class="drawer-list">
+            ${deltaBanner('btc_dominance', 'rate')}
+            <div class="drawer-item"><span class="lbl">ETH / BTC ratio</span><span class="val">${Number(S.internals.eth_btc).toFixed(4)} (${pct(S.internals.eth_btc_change_30d, 1)} 30d)</span></div>
+            <div class="drawer-item"><span class="lbl">Altcoin season (30d)</span><span class="val">${Number(S.internals.alt_season_30d || 0).toFixed(0)}% (${S.internals.alt_beating_btc}/${S.internals.alt_sample} beat BTC)</span></div>
+            <div class="drawer-item"><span class="lbl">BTC Mayer multiple</span><span class="val">${isNum(S.internals.btc_mayer) ? `${Number(S.internals.btc_mayer).toFixed(2)}×` : '—'}</span></div>
+          </div>
+          <div class="drawer-actions">
+            <button class="btn primary" type="button" data-jump="#anchors">Jump to BTC &amp; ETH ↓</button>
+            <button class="btn" type="button" data-coin="bitcoin">Inspect BTC</button>
+            <a class="btn" href="https://www.coingecko.com/en/global-charts" target="_blank" rel="noopener">CoinGecko Dominance ↗</a>
+          </div>
+        `
+      });
+    } else if (key === 'stablecoins') {
+      const splits = S.stablecoins.split || [];
+      const topChains = (S.stablecoins.chains || []).slice(0, 4);
+      openDrawer({
+        kicker: 'On-chain dollar supply · DefiLlama',
+        title: money(S.stablecoins.total),
+        sub: `${Number(S.stablecoins.share_of_market).toFixed(2)}% of total crypto market cap · ${pct(S.stablecoins.change_30d)} 30d`,
+        bodyHtml: `
+          <div class="drawer-list">
+            ${deltaBanner('stablecoin_total', 'usd')}
+            ${splits.map((b) => `<div class="drawer-item"><span class="lbl">${esc(b.label)}</span><span class="val">${money(b.supply)} (${Number(b.share).toFixed(1)}%)</span></div>`).join('')}
+          </div>
+          <div class="small" style="margin-bottom:-8px; text-transform:uppercase; font-family:var(--mono); font-size:9.5px;">Top settlement chains</div>
+          <div class="drawer-list">
+            ${topChains.map((c) => `<a class="drawer-item row-link" href="https://defillama.com/stablecoins/${encodeURIComponent(c.name)}" target="_blank" rel="noopener"><span class="lbl">${esc(c.name)} ↗</span><span class="val">${money(c.value)}</span></a>`).join('')}
+          </div>
+          <div class="drawer-actions">
+            <button class="btn primary" type="button" data-jump="#stablecoins">Jump to Stablecoins ↓</button>
+            <a class="btn" href="https://defillama.com/stablecoins" target="_blank" rel="noopener">DefiLlama Stablecoins ↗</a>
+          </div>
+        `
+      });
+    } else if (key === 'defi_tvl') {
+      const topChains = (S.defi.chains || []).slice(0, 4);
+      const topProtos = (S.defi.protocols || []).slice(0, 4);
+      openDrawer({
+        kicker: 'Total value locked · DefiLlama',
+        title: money(S.defi.tvl),
+        sub: `${pct(S.defi.change_30d)} over 30 days · excluding CEX reserves`,
+        bodyHtml: `
+          <div class="drawer-list">
+            ${deltaBanner('defi_tvl', 'usd')}
+            ${topChains.map((c) => `<a class="drawer-item row-link" href="${llamaChainUrl(c.name)}" target="_blank" rel="noopener"><span class="lbl">Chain · ${esc(c.name)} ↗</span><span class="val">${money(c.tvl)}</span></a>`).join('')}
+          </div>
+          <div class="small" style="margin-bottom:-8px; text-transform:uppercase; font-family:var(--mono); font-size:9.5px;">Largest protocols</div>
+          <div class="drawer-list">
+            ${topProtos.map((p) => `<a class="drawer-item row-link" href="${llamaProtoUrl(p.slug)}" target="_blank" rel="noopener"><span class="lbl">${esc(p.name)} ↗</span><span class="val">${money(p.tvl)} (${pctCell(p.change_7d, 1)} 7d)</span></a>`).join('')}
+          </div>
+          <div class="drawer-actions">
+            <button class="btn primary" type="button" data-jump="#chainSection">Jump to Chain TVL ↓</button>
+            <a class="btn" href="https://defillama.com/" target="_blank" rel="noopener">DefiLlama ↗</a>
+          </div>
+        `
+      });
+    } else if (key === 'fear_greed') {
+      const hist = (S.fear_greed.history || []).map((r) => Number(r.value));
+      const minV = hist.length ? Math.min(...hist) : null;
+      const maxV = hist.length ? Math.max(...hist) : null;
+      const avgV = hist.length ? (hist.reduce((a, b) => a + b, 0) / hist.length) : null;
+      const cgF = g.cg_fng && isNum(g.cg_fng.value) ? `${g.cg_fng.value} · ${g.cg_fng.sentiment}` : 'Unavailable';
+      openDrawer({
+        kicker: 'Sentiment gauge · Alternative.me (31d history)',
+        title: `${S.fear_greed.value} · ${S.fear_greed.label}`,
+        sub: '0 = Extreme Fear · 50 = Neutral · 100 = Extreme Greed',
+        bodyHtml: `
+          ${miniLineSvg(hist, S.fear_greed.value >= 55 ? '#4ade80' : S.fear_greed.value <= 30 ? '#fb7185' : '#fbbf24', 0, 100)}
+          <div class="drawer-list">
+            ${deltaBanner('fear_greed', 'int')}
+            <div class="drawer-item"><span class="lbl">31-day range (low / avg / high)</span><span class="val">${minV != null ? `${minV} / ${avgV.toFixed(0)} / ${maxV}` : '—'}</span></div>
+            <div class="drawer-item"><span class="lbl">CoinGecko sentiment</span><span class="val">${esc(cgF)}</span></div>
+            <div class="drawer-item"><span class="lbl">Hyperliquid OI-wtd funding</span><span class="val ${pctClass(S.hyperliquid.oi_weighted_funding_ann)}">${pct(S.hyperliquid.oi_weighted_funding_ann, 2)}</span></div>
+          </div>
+          <div class="drawer-actions">
+            <button class="btn primary" type="button" data-jump="#market">Jump to Market State ↓</button>
+            <a class="btn" href="https://alternative.me/crypto/fear-and-greed-index/" target="_blank" rel="noopener">Alternative.me ↗</a>
+          </div>
+        `
+      });
+    } else if (key === 'mayer') {
+      const m = S.internals.btc_mayer;
+      const zone = m < 0.8 ? 'Deep discount zone (<0.8×)' : m < 1.2 ? 'Accumulation / value zone (0.8–1.2×)' : m < 2.0 ? 'Mid-cycle expansion (1.2–2.0×)' : 'Stretched / euphoric (>2.0×)';
+      openDrawer({
+        kicker: 'BTC Cycle Gauge · 200-day SMA',
+        title: isNum(m) ? `${Number(m).toFixed(2)}× Mayer` : '—',
+        sub: zone,
+        bodyHtml: `
+          <div class="drawer-list">
+            <div class="drawer-item"><span class="lbl">BTC spot price</span><span class="val">${price((coinById.get('bitcoin') || {}).price)}</span></div>
+            <div class="drawer-item"><span class="lbl">BTC 200-day SMA</span><span class="val">${price(S.internals.btc_sma_200)}</span></div>
+            <div class="drawer-item"><span class="lbl">BTC 30d / 90d realized vol</span><span class="val">${Number(S.internals.btc_vol_30d || 0).toFixed(1)}% / ${Number(S.internals.btc_vol_90d || 0).toFixed(1)}%</span></div>
+            <div class="drawer-item"><span class="lbl">BTC drawdown from ATH</span><span class="val down">${pct(S.internals.btc_drawdown, 1)}</span></div>
+          </div>
+          <div class="drawer-actions">
+            <button class="btn primary" type="button" data-coin="bitcoin">Inspect BTC</button>
+            <button class="btn" type="button" data-jump="#market">Jump to Cycle Table ↓</button>
+          </div>
+        `
+      });
+    } else if (key === 'fees') {
+      const topF = (S.fees && S.fees.protocols ? S.fees.protocols : []).slice(0, 6);
+      openDrawer({
+        kicker: 'On-chain cash flows · DefiLlama Fees',
+        title: money(S.fees.total_30d),
+        sub: `30d fees · ${money(S.fees.revenue_30d)} protocol revenue`,
+        bodyHtml: `
+          <div class="drawer-list">
+            ${topF.map((p) => `<a class="drawer-item row-link" href="${llamaProtoUrl(p.slug)}" target="_blank" rel="noopener"><span class="lbl">${esc(p.name)} ↗</span><span class="val">${money(p.fees_30d)} fees · ${money(p.rev_30d)} rev</span></a>`).join('')}
+          </div>
+          <div class="drawer-actions">
+            <button class="btn primary" type="button" data-jump="#valuation">Jump to P/S Valuation ↓</button>
+            <a class="btn" href="https://defillama.com/fees" target="_blank" rel="noopener">DefiLlama Fees ↗</a>
+          </div>
+        `
+      });
+    }
+  };
+
+  // Delegated click & keyboard router for all interactive cards, rows, pills, and drawer buttons
+  const handleInteractive = (event) => {
+    if (event.target.closest('a[href]')) return;
+    const filterBtn = event.target.closest('[data-filter-tag]');
+    if (filterBtn) {
+      closeDrawer();
+      setTag(filterBtn.dataset.filterTag);
+      return;
+    }
+    const drillEl = event.target.closest('[data-drill]');
+    if (drillEl) {
+      openDrill(drillEl.dataset.drill);
+      return;
+    }
+    const jumpEl = event.target.closest('[data-jump]');
+    if (jumpEl) {
+      jumpAction(jumpEl.dataset.jump);
+      return;
+    }
+    const coinEl = event.target.closest('[data-coin]');
+    if (coinEl && coinEl.dataset.coin && coinById.has(coinEl.dataset.coin)) {
+      openCoinDrawer(coinEl.dataset.coin);
+      return;
+    }
+  };
+  document.addEventListener('click', handleInteractive);
+  document.addEventListener('keydown', (event) => {
+    if ((event.key === 'Enter' || event.key === ' ') && event.target.closest('[role="button"][data-drill], [role="button"][data-jump], [role="button"][data-coin]')) {
+      event.preventDefault();
+      handleInteractive(event);
+    }
+  });
 
   const tocLinks = $$('.toc a');
   const sections = tocLinks.map((link) => document.querySelector(link.getAttribute('href'))).filter(Boolean);

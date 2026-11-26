@@ -64,8 +64,7 @@
 | [Car search tracker](boy-toy-pricer/Car-pricer.html) | For-sale AutoTempest listings and Bring a Trailer sold comps for cars, trucks, and SUVs, from the Audi RS6 and G63 to the SF90, Huracan STO, and RUF Porsches |
 | [Aircraft for-sale tracker](boy-toy-pricer/airplane-pricer/output/report.html) | Cirrus SR22, Vision Jet, CubCrafters, and Piper PA-28-180/181 listings in one HTML report |
 | [Watch for-sale tracker](boy-toy-pricer/watch-pricer/output/report.html) | Patek Philippe Nautilus 5711 and blue or green Aquanaut listings in one HTML report |
-| [Porsche 911 tracker](boy-toy-pricer/911-pricer/report.html) | Every Porsche 911 for sale on AutoTempest, one tab per generation from the early 911 to the 992, with Bring a Trailer sold comps and chip filters for trim, body, gearbox, and options |
-| [Porsche 911 tracker (split)](boy-toy-pricer/911-pricer/report_v2.html) | November 23, 2026 rebuild of the same 911 report: 6,335 listings across eight generations, each generation in its own file, with Bring a Trailer comps and the same chip filters |
+| [Porsche 911 tracker](boy-toy-pricer/911-pricer/report_v2.html) | 6,335 Porsche 911 listings from AutoTempest, one tab per generation from the early 911 to the 992, with Bring a Trailer sold comps and chip filters for trim, body, gearbox, and options |
 
 ## Misc
 

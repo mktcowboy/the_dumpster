@@ -129,11 +129,12 @@ SERIAL_RE = re.compile(
     re.I,
 )
 TT_RE = re.compile(
-    r"(?:total\s*time|ttaf|aftt|ttsn|actt|airframe(?:\s*time)?)\s*[:#]?\s*([0-9][0-9,]*(?:\.\d+)?)",
+    r"(?:total\s*time|ttaf|aftt|ttsn|actt|airframe(?:\s*time)?|\btt)\s*[:#]\s*([0-9][0-9,]*(?:\.\d+)?)"
+    r"|(?:total\s*time|ttaf|aftt|ttsn|actt|airframe(?:\s*time)?)\s+([0-9][0-9,]*(?:\.\d+)?)",
     re.I,
 )
 TT_TAIL_RE = re.compile(
-    r"\b([0-9][0-9,]*(?:\.\d+)?)\s*(?:hrs?|hours)?\s*(?:TT|TTSN|TTAF(?:E(?:&P)?)?|ACTT)\b",
+    r"\b([0-9][0-9,]*(?:\.\d+)?)\s*(?:hrs?|hours)?\s*(?:TT|TTSN|TTAF(?:E(?:&P)?)?|AFTT|ACTT|total\s*time)\b",
     re.I,
 )
 ENGINE_TIME_RE = re.compile(
@@ -586,7 +587,10 @@ def _exact_number(match, text):
     prefix = (text or "")[max(0, match.start() - 24):match.start()]
     if re.search(r"less than|more than|about|approx|under|over|~", prefix, re.I):
         return ""
-    return number_text(match.group(1))
+    for group in match.groups():
+        if group:
+            return number_text(group)
+    return ""
 
 
 def _avionics(text):
@@ -745,6 +749,8 @@ def enrich(row):
         _fill(row, "price_drop", f"Reduced to {reduced.group(1)}")
     elif re.search(r"price\s+reduced|\bprice\s+drop\b", text, re.I):
         _fill(row, "price_drop", "Price reduced")
+    if re.search(r"starting\s+bid\b", text, re.I):
+        _fill(row, "price_note", "Auction starting bid")
     airport = AIRPORT_RE.search(text)
     if airport:
         _fill(row, "airport", (airport.group(1) or airport.group(2) or "").upper())

@@ -616,6 +616,59 @@ class CubCraftersTests(unittest.TestCase):
         self.assertEqual(cirrus[0], "cirrus")
         self.assertNotIn("cubcrafters", cirrus)
 
+    def test_controller_parser_reads_jsonld_and_card_specs(self):
+        from scrape_sources import parse_controller_html
+
+        page = """
+        <script type="application/ld+json">
+        {"@type":"Product","offers":{"@type":"AggregateOffer","offers":[
+          {"@type":"Offer","price":379900.0,"priceCurrency":"USD",
+           "url":"/listing/for-sale/257371079/2022-cubcrafters-xcub-piston-single-aircraft",
+           "availableAtOrFrom":{"address":{"addressRegion":"Wyoming","addressCountry":"USA"}},
+           "itemOffered":{"@id":"257371079","name":"2022 CUBCRAFTERS XCUB","manufacturer":"CUBCRAFTERS","model":"XCUB","description":"Tailwheel 215 HP XCub."}}
+        ]}}
+        </script>
+        <div data-listing-id="257371079">
+          Seller: Aerista
+          <span class="spec-label">Total Time<!-- -->:&nbsp;</span><span class="spec-value">616</span>
+          <span class="spec-label">Serial Number<!-- -->:&nbsp;</span><span class="spec-value">CCX-2300-0043</span>
+          <span class="spec-label">Registration #<!-- -->:&nbsp;</span><span class="spec-value">N243KM</span>
+          <span class="spec-label">Engine 1 Time<!-- -->:&nbsp;</span><span class="spec-value">480 SNEW</span>
+        </div>
+        """
+        rows = parse_controller_html(page, "https://www.controller.com/listings/for-sale/cubcrafters/aircraft", ("cubcrafters",))
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(rows[0]["n_number"], "N243KM")
+        self.assertEqual(rows[0]["serial_number"], "CCX-2300-0043")
+        self.assertEqual(rows[0]["ttaf"], "616")
+        self.assertEqual(rows[0]["engine_hours"], "480")
+        self.assertEqual(rows[0]["engine_time_type"], "SNEW")
+        self.assertEqual(rows[0]["price"], "$379,900")
+        self.assertEqual(rows[0]["state"], "WY")
+        self.assertEqual(rows[0]["model"], "XCub")
+
+    def test_cubcrafters_tabs_separate_tailwheel_and_nxcub_and_extract_hours(self):
+        from build_cubcrafters_report import cubcrafters_tabs, is_nosewheel, is_tailwheel
+
+        ss = apply_listing({
+            "title": "2013 CARBON CUB SS",
+            "description": "Only 170 Hours Total Time. Garmin G3X Touch.",
+            "price": "$245,000",
+        })
+        self.assertEqual(ss["ttaf"], "170")
+        self.assertTrue(is_tailwheel(ss))
+        nx = apply_listing({
+            "title": "2024 CUBCRAFTERS NXCUB",
+            "description": "TT: 48 hours. Nosewheel gear.",
+            "price": "$475,000",
+        })
+        self.assertEqual(nx["ttaf"], "48")
+        self.assertTrue(is_nosewheel(nx))
+        tabs = dict((meta["slug"], subset) for subset, meta in cubcrafters_tabs([ss, nx], {"scraped_at": "2026-11-26T19:00:00+00:00"}))
+        self.assertEqual(len(tabs["cubcrafters-tailwheel"]), 1)
+        self.assertEqual(len(tabs["cubcrafters"]), 2)
+        self.assertEqual(len(tabs["nxcub"]), 1)
+
 
 class Pa28Tests(unittest.TestCase):
     def test_180_and_181_are_kept_and_other_cherokees_are_not(self):

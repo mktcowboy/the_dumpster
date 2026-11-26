@@ -565,7 +565,97 @@ function quantile(sorted, q) {
 
 const MIN_YEAR_COUNT = 3;
 
+function cubModelSpecs(r) {
+  const out = [];
+  if (r.model === 'XCub') out.push('XCub');
+  else if (r.model === 'NXCub') out.push('NXCub');
+  else if (r.model === 'Sport Cub') out.push('Sport Cub');
+  else if (r.model === 'Top Cub') out.push('Top Cub');
+  else if (/\b(?:FX|EX)-?\s*3\b/i.test(stated(r))) out.push('FX-3 / EX-3');
+  else if (/\b(?:FX|EX)-?\s*2\b/i.test(stated(r))) out.push('FX-2 / EX-2');
+  const blob = gearBlob(r);
+  if (/\bfloats?\b|\bamphib/i.test(blob) && !/will add 80\s*k|float\s+fittings|float\s+kit/i.test(r.description || '')) {
+    out.push('Floats / Amphib');
+  }
+  return out;
+}
+
+function buildCubCraftersModel(rows) {
+  const priced = rows.filter(r => r.price != null && r.mileage != null && r.year != null);
+  if (priced.length < 5) return null;
+  const baseYear = 2020;
+  const candidateSpecs = ['FX-2 / EX-2', 'FX-3 / EX-3', 'XCub', 'NXCub', 'Sport Cub', 'Floats / Amphib'];
+  const rowSpecs = new Map(priced.map(r => [r, cubModelSpecs(r)]));
+  const specs = candidateSpecs.filter(name => {
+    const n = priced.filter(r => rowSpecs.get(r).includes(name)).length;
+    return n >= 2 && n <= priced.length - 2;
+  });
+  const getSpecs = r => (r._specs && r._specs.some(s => candidateSpecs.includes(s)))
+    ? r._specs
+    : (rowSpecs.get(r) || cubModelSpecs(r));
+
+  const terms = [
+    { key: 'const', f: () => 1 },
+    { key: 'spec', label: 'Newer by 1 year', f: r => r.year - baseYear },
+    { key: 'miles', label: UNITS.usagePerLabel, f: r => r.mileage / UNITS.usagePer },
+  ];
+  specs.forEach(name => terms.push({ key: 'spec', label: name, spec: name, f: r => +getSpecs(r).includes(name) }));
+
+  const design = r => terms.map(t => t.f(r));
+  const logFit = (r, beta) => design(r).reduce((s, x, j) => s + x * beta[j], 0);
+  let fitRows = priced, fit = null, outliers = new Set();
+  for (let pass = 0; pass < 3; pass++) {
+    if (fitRows.length < terms.length + 2) {
+      // Fall back to simpler year + hours model on small single-model tabs
+      while (terms.length > 3 && fitRows.length < terms.length + 2) terms.pop();
+      if (fitRows.length < terms.length + 1) return null;
+    }
+    fit = ols(fitRows.map(design), fitRows.map(r => Math.log(r.price)));
+    if (!fit) return null;
+    const absRes = fit.resid.map(Math.abs).sort((a, b) => a - b);
+    const cutoff = Math.max(3 * 1.4826 * quantile(absRes, 0.5), 0.25);
+    const next = new Set(priced.filter(r => Math.abs(Math.log(r.price) - logFit(r, fit.beta)) > cutoff));
+    if (next.size === outliers.size && [...next].every(r => outliers.has(r))) break;
+    outliers = next;
+    fitRows = priced.filter(r => !outliers.has(r));
+  }
+
+  const y = fitRows.map(r => Math.log(r.price));
+  const yBar = y.reduce((s, v) => s + v, 0) / y.length;
+  const ssTot = y.reduce((s, v) => s + (v - yBar) ** 2, 0);
+  const ssRes = fit.resid.reduce((s, v) => s + v * v, 0);
+  const res = [...fit.resid].sort((a, b) => a - b);
+  const sortedBy = (list, f) => list.map(f).sort((a, b) => a - b);
+  const yearCounts = {};
+  fitRows.forEach(r => { yearCounts[r.year] = (yearCounts[r.year] || 0) + 1; });
+  const years = Object.keys(yearCounts).map(Number).sort((a, b) => a - b);
+  const byYear = years.map(yr => {
+    const list = fitRows.filter(r => r.year === yr);
+    const prices = sortedBy(list, r => r.price), miles = sortedBy(list, r => r.mileage);
+    return {
+      year: yr, n: list.length,
+      medPrice: quantile(prices, 0.5), lo: quantile(prices, 0.1), hi: quantile(prices, 0.9),
+      medMiles: quantile(miles, 0.5),
+    };
+  });
+
+  return {
+    terms, beta: fit.beta, se: fit.se, genCut: null, specs: terms.filter(t => t.spec).map(t => t.spec),
+    years, thinYears: [], yearCounts, outliers, byYear,
+    n: fitRows.length, r2: ssTot ? 1 - ssRes / ssTot : 0,
+    typicalPrice: quantile(sortedBy(fitRows, r => r.price), 0.5),
+    medianMiles: quantile(sortedBy(fitRows, r => r.mileage), 0.5),
+    resLo: quantile(res, 0.1), resHi: quantile(res, 0.9),
+    spread: quantile(res.map(Math.abs).sort((a, b) => a - b), 0.5),
+    covers: r => r.year != null && r.mileage != null,
+    predict: r => Math.exp(logFit(r, fit.beta)),
+  };
+}
+
 function buildModel(rows) {
+  if (rows.length && rows.every(r => r.family === 'cubcrafters')) {
+    return buildCubCraftersModel(rows);
+  }
   const priced = rows.filter(r => r.price != null && r.mileage != null && r.year != null);
   if (priced.length < 15) return null;
 
@@ -1245,10 +1335,179 @@ function renderCount(tab, rows) {
     `${rows.length} of ${tab.rows.length} listings` + (filtered && rows.length !== tab.rows.length ? ' (filters active)' : '');
 }
 
+function renderNativeScatter(tab, datasets) {
+  const wrap = tab._panel.querySelector('.chartWrap');
+  const canvas = wrap.querySelector('[data-role=canvas]');
+  let tip = wrap.querySelector('[data-role=native-tip]');
+  if (!tip) {
+    tip = document.createElement('div');
+    tip.dataset.role = 'native-tip';
+    tip.style.cssText = 'position:absolute;pointer-events:none;z-index:5;display:none;background:#12151c;border:1px solid #2f3545;border-radius:8px;padding:8px 10px;font-size:12px;color:#e6e9ef;box-shadow:0 8px 24px rgba(0,0,0,0.45);max-width:300px;line-height:1.45;';
+    wrap.appendChild(tip);
+  }
+  const allPts = [];
+  datasets.forEach(ds => (ds.data || []).forEach(p => {
+    if (p && Number.isFinite(p.x) && Number.isFinite(p.y)) allPts.push({ p, color: typeof ds.backgroundColor === 'string' ? ds.backgroundColor : '#5aa9ff', label: ds.label });
+  }));
+
+  const chart = {
+    chartArea: { left: 78, right: 800, top: 44, bottom: 430 },
+    scales: {
+      x: { getValueForPixel: () => 0 },
+      y: { getValueForPixel: () => 0 },
+    },
+    _pts: [],
+    _handlers: [],
+    draw() {
+      const rect = wrap.getBoundingClientRect();
+      const W = Math.max(200, Math.floor(rect.width)), H = Math.max(200, Math.floor(rect.height));
+      const dpr = window.devicePixelRatio || 1;
+      canvas.width = Math.floor(W * dpr);
+      canvas.height = Math.floor(H * dpr);
+      canvas.style.width = W + 'px';
+      canvas.style.height = H + 'px';
+      const ctx = canvas.getContext('2d');
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      ctx.clearRect(0, 0, W, H);
+
+      // Legend along the top
+      const legendItems = datasets.map(ds => ({ label: ds.label, color: typeof ds.backgroundColor === 'string' ? ds.backgroundColor : '#5aa9ff' }));
+      ctx.font = '12px Inter, -apple-system, BlinkMacSystemFont, sans-serif';
+      let lx = 16, ly = 16;
+      ctx.fillStyle = '#8b93a3';
+      ctx.textBaseline = 'middle';
+      ctx.textAlign = 'left';
+      ctx.fillText('Model Year:', lx, ly);
+      lx += ctx.measureText('Model Year:').width + 12;
+      legendItems.forEach(it => {
+        const w = ctx.measureText(it.label).width + 24;
+        if (lx + w > W - 16) { lx = 16; ly += 18; }
+        ctx.fillStyle = it.color;
+        ctx.beginPath(); ctx.arc(lx + 4, ly, 4, 0, Math.PI * 2); ctx.fill();
+        ctx.fillStyle = '#e6e9ef';
+        ctx.fillText(it.label, lx + 12, ly);
+        lx += w;
+      });
+
+      const pad = { left: 78, right: 20, top: ly + 22, bottom: 46 };
+      const right = W - pad.right, bottom = H - pad.bottom;
+      const pw = Math.max(10, right - pad.left), ph = Math.max(10, bottom - pad.top);
+      chart.chartArea = { left: pad.left, right, top: pad.top, bottom };
+
+      if (!allPts.length) {
+        ctx.fillStyle = '#8b93a3';
+        ctx.textAlign = 'center';
+        ctx.fillText('No listings with both price and total time match the active filters.', W / 2, pad.top + ph / 2);
+        chart._pts = [];
+        return;
+      }
+
+      const xs = allPts.map(o => o.p.x), ys = allPts.map(o => o.p.y);
+      const xLoRaw = Math.min(...xs), xHiRaw = Math.max(...xs);
+      const yLoRaw = Math.min(...ys), yHiRaw = Math.max(...ys);
+      const xPad = Math.max(25, (xHiRaw - xLoRaw) * 0.06);
+      const yPad = Math.max(15000, (yHiRaw - yLoRaw) * 0.08);
+      const xMin = Math.max(0, Math.floor((xLoRaw - xPad) / 50) * 50);
+      const xMax = Math.ceil((xHiRaw + xPad) / 50) * 50 || 100;
+      const yMin = Math.max(0, Math.floor((yLoRaw - yPad) / 25000) * 25000);
+      const yMax = Math.ceil((yHiRaw + yPad) / 25000) * 25000 || 100000;
+
+      const sx = v => pad.left + ((v - xMin) / Math.max(1e-6, xMax - xMin)) * pw;
+      const sy = v => bottom - ((v - yMin) / Math.max(1e-6, yMax - yMin)) * ph;
+      chart.scales = {
+        x: { getValueForPixel: px => xMin + ((px - pad.left) / pw) * (xMax - xMin) },
+        y: { getValueForPixel: py => yMin + ((bottom - py) / ph) * (yMax - yMin) },
+      };
+
+      // Grid + ticks
+      ctx.strokeStyle = '#1e2330';
+      ctx.lineWidth = 1;
+      ctx.font = '11px Inter, -apple-system, BlinkMacSystemFont, sans-serif';
+      const yStep = (yMax - yMin) > 350000 ? 100000 : (yMax - yMin) > 150000 ? 50000 : 25000;
+      for (let yv = yMin; yv <= yMax; yv += yStep) {
+        const py = sy(yv);
+        ctx.beginPath(); ctx.moveTo(pad.left, py); ctx.lineTo(right, py); ctx.stroke();
+        ctx.fillStyle = '#8b93a3'; ctx.textAlign = 'right'; ctx.textBaseline = 'middle';
+        ctx.fillText('$' + yv.toLocaleString(), pad.left - 8, py);
+      }
+      const xStep = Math.max(50, Math.ceil((xMax - xMin) / 6 / 50) * 50);
+      for (let xv = Math.ceil(xMin / xStep) * xStep; xv <= xMax; xv += xStep) {
+        const px = sx(xv);
+        ctx.beginPath(); ctx.moveTo(px, pad.top); ctx.lineTo(px, bottom); ctx.stroke();
+        ctx.fillStyle = '#8b93a3'; ctx.textAlign = 'center'; ctx.textBaseline = 'top';
+        ctx.fillText(xv.toLocaleString(), px, bottom + 8);
+      }
+      // Axis titles
+      ctx.fillStyle = '#8b93a3';
+      ctx.textAlign = 'center';
+      ctx.fillText(UNITS.usageAxis, pad.left + pw / 2, H - 14);
+      ctx.save();
+      ctx.translate(16, pad.top + ph / 2);
+      ctx.rotate(-Math.PI / 2);
+      ctx.fillText('Price ($)', 0, 0);
+      ctx.restore();
+
+      // Points
+      chart._pts = allPts.map(o => {
+        const cx = sx(o.p.x), cy = sy(o.p.y);
+        ctx.fillStyle = o.color;
+        ctx.beginPath();
+        ctx.arc(cx, cy, 5, 0, Math.PI * 2);
+        ctx.fill();
+        return { cx, cy, p: o.p };
+      });
+    },
+    resize() { this.draw(); },
+    destroy() {
+      this._handlers.forEach(([el, ev, fn]) => el.removeEventListener(ev, fn));
+      this._handlers = [];
+      tip.style.display = 'none';
+    },
+  };
+
+  const hit = e => {
+    const r = canvas.getBoundingClientRect();
+    const mx = e.clientX - r.left, my = e.clientY - r.top;
+    let best = null, bestD = 12;
+    for (const pt of chart._pts) {
+      const d = Math.hypot(pt.cx - mx, pt.cy - my);
+      if (d < bestD) { bestD = d; best = pt; }
+    }
+    return best;
+  };
+  const onMove = e => {
+    const h = hit(e);
+    canvas.style.cursor = h ? 'pointer' : 'crosshair';
+    if (!h) { tip.style.display = 'none'; return; }
+    const d = h.p;
+    const sites = d.sources && d.sources.length > 1 ? d.sources.map(sourceLabel).join(' · ') : '';
+    const lines = [d.title, fmtPrice(d.y), fmtMiles(d.x), d.vin, sites, d.dealer || d.city].filter(Boolean);
+    tip.innerHTML = lines.map((line, i) => i === 0 ? `<div style="font-weight:600;margin-bottom:2px;">${escapeHtml(line)}</div>` : `<div style="color:#8b93a3;">${escapeHtml(line)}</div>`).join('');
+    tip.style.display = 'block';
+    const r = wrap.getBoundingClientRect();
+    tip.style.left = Math.min(r.width - 280, Math.max(8, h.cx + 12)) + 'px';
+    tip.style.top = Math.max(8, h.cy - 20) + 'px';
+  };
+  const onLeave = () => { tip.style.display = 'none'; };
+  const onClick = e => {
+    if (tab._justBrushed) return;
+    const h = hit(e);
+    if (!h) return;
+    const link = safeUrl(h.p.link);
+    if (link) window.open(link, '_blank', 'noopener');
+  };
+  const onResize = () => chart.draw();
+  [[canvas, 'mousemove', onMove], [canvas, 'mouseleave', onLeave], [canvas, 'click', onClick], [window, 'resize', onResize]].forEach(([el, ev, fn]) => {
+    el.addEventListener(ev, fn);
+    chart._handlers.push([el, ev, fn]);
+  });
+  chart.draw();
+  return chart;
+}
+
 function renderChart(tab, rows) {
   tab._chartDirty = false;
   if (tab._chart) { tab._chart.destroy(); tab._chart = null; }
-  if (typeof Chart === 'undefined') return;
 
   const pts = rows.filter(d => d.price != null && d.mileage != null);
   const yearColor = y => colorForYear(tab._years.indexOf(y), tab._years.length);
@@ -1286,6 +1545,11 @@ function renderChart(tab, rows) {
         pointHoverRadius: 10,
       });
     }
+  }
+
+  if (typeof Chart === 'undefined') {
+    tab._chart = renderNativeScatter(tab, datasets);
+    return;
   }
 
   tab._chart = new Chart(tab._panel.querySelector('[data-role=canvas]').getContext('2d'), {

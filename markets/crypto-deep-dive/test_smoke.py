@@ -152,6 +152,15 @@ def check_interactions(page):
     page.wait_for_timeout(100)
     print("[1440] cycle chart range and drawdown toggles work")
 
+    page.locator('#heroStats button[data-drill="fear_greed"]').click()
+    page.wait_for_timeout(150)
+    assert "open" in (page.locator("#drawer").get_attribute("class") or ""), "hero stat drill-down drawer did not open"
+    assert page.locator("#drawerBody svg").count() >= 1, "fear & greed drawer missing 31d sparkline"
+    page.locator("#drawerClose").click()
+    page.wait_for_timeout(100)
+    assert "open" not in (page.locator("#drawer").get_attribute("class") or ""), "drawer did not close"
+    print("[1440] hero stat click-through drawer opens and closes")
+
     search = page.locator("#coinSearch")
     search.fill("eth")
     page.wait_for_timeout(100)

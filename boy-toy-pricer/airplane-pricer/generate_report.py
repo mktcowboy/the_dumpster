@@ -340,12 +340,13 @@ def _tab_dict(rows, meta):
     }
 
 
-def render_tabs(tab_pairs, output, fresh_days=2, search_api="http://127.0.0.1:8766"):
+def render_tabs(tab_pairs, output, fresh_days=2, search_api="http://127.0.0.1:8766", page_title=None):
     """Write the report. Each pair is (csv rows, meta dict) and becomes one tab."""
     tabs = [_tab_dict(rows, meta) for rows, meta in tab_pairs]
     tabs.append(readme_tab())
     template = TEMPLATE_PATH.read_text(encoding="utf-8")
-    page_title = "Aircraft for sale" if len(tabs) > 1 else (tabs[0]["title"] + " for sale")
+    if not page_title:
+        page_title = "Aircraft for sale" if len(tabs) > 1 else (tabs[0]["title"] + " for sale")
     fresh = float(fresh_days)
     fresh_js = str(int(fresh)) if fresh.is_integer() else str(fresh)
     generated_at = datetime.now(timezone.utc).astimezone().strftime("%Y-%m-%d %H:%M %Z")

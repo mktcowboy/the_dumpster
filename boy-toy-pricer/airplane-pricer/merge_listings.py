@@ -115,6 +115,9 @@ def _merge_group(rows):
             out["fiki"] = "yes"
         elif row.get("fiki") == "no" and not out.get("fiki"):
             out["fiki"] = "no"
+        if out.get("family") == "cubcrafters" and out.get("variant") in {"EX-2", "FX-2"} and row.get("variant") in {"EX-3", "FX-3"}:
+            if (out.get("serial_number") or "").upper().startswith(("CCX-2000", "CCK-2000")):
+                out["variant"] = row["variant"]
     descriptions = [row.get("description") or "" for row in rows]
     out["description"] = max(descriptions, key=len)
     sources.sort(key=lambda source: (price_number(source.get("price")) is None, price_number(source.get("price")) or 0))

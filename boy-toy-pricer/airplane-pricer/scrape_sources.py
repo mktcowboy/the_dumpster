@@ -6,12 +6,13 @@ and the sites that block automation) load in Playwright via fetch.html. Cirrus
 and ASO expose JSON listings; those are read with fetch.json.
 """
 import html as html_lib
+import json
 import re
 import sys
 from urllib.parse import quote, urljoin
 
 from fetch import ScrapeError
-from listings import apply_listing, blank_row, is_cubcrafters, is_pa28_180_181, number_text, price_number
+from listings import apply_listing, blank_row, format_usd, is_cubcrafters, is_pa28_180_181, number_text, price_number
 
 DEFAULT_FAMILIES = ("sr22", "sr20")
 CIRRUS_MODELS = {
@@ -145,7 +146,7 @@ BLOCKED_BY_FAMILY = {
         ("ebay", "eBay Motors", "https://www.ebay.com/sch/i.html?_nkw=cirrus+vision+jet+sf50&_sacat=637"),
     ),
     "cubcrafters": (
-        ("controller", "Controller.com", "https://www.controller.com/listings/for-sale/cubcrafters/piston-single-aircraft"),
+        ("controller", "Controller.com", "https://www.controller.com/listings/for-sale/cubcrafters/aircraft"),
         ("tradeaplane", "Trade-A-Plane", "https://www.trade-a-plane.com/search?make=CUB+CRAFTERS&s-type=aircraft"),
         ("aircraftcom", "Aircraft.com", "https://www.aircraft.com/aircraft/for-sale?make=CubCrafters"),
         ("aerotrader", "Aerotrader", "https://www.aerotrader.com/CubCrafters/aircraft-for-sale?zip=73102&radius=any"),
@@ -948,6 +949,127 @@ def scrape_barnstormers(fetch, families=DEFAULT_FAMILIES):
     return rows
 
 
+# ---------- Controller.com (when not Cloudflare-challenged) ----------
+
+def parse_controller_html(page_html, page_url, families=DEFAULT_FAMILIES):
+    """Parse Controller.com search results from embedded JSON-LD + card spec blocks."""
+    ld_map = {}
+    for blk in re.findall(
+        r"""<script[^>]*type=["']application/ld\+json["'][^>]*>(.*?)</script>""",
+        page_html or "",
+        re.S | re.I,
+    ):
+        try:
+            data = json.loads(blk)
+        except (TypeError, ValueError):
+            continue
+        offers = ((data.get("offers") or {}).get("offers")) if isinstance(data, dict) else None
+        if not isinstance(offers, list):
+            continue
+        for offer in offers:
+            if not isinstance(offer, dict):
+                continue
+            item = offer.get("itemOffered") if isinstance(offer.get("itemOffered"), dict) else {}
+            lid = str(item.get("@id") or "").strip()
+            if lid:
+                ld_map[lid] = offer
+
+    no_script = re.sub(r"(?is)<script.*?</script>", "", page_html or "")
+    card_specs = {}
+    card_seller = {}
+    parts = re.split(r'data-listing-id="(\d+)"', no_script)
+    for index in range(1, len(parts) - 1, 2):
+        lid, block = parts[index], parts[index + 1]
+        specs = card_specs.setdefault(lid, {})
+        for label_html, val_html in re.findall(
+            r'<span class="spec-label">(.*?)</span>\s*<span class="spec-value">(.*?)</span>',
+            block,
+            re.S,
+        ):
+            key = re.sub(r"<[^>]+>|<!--.*?-->|&nbsp;|:", "", label_html).strip()
+            val = _text(val_html)
+            if key and val and key not in specs:
+                specs[key] = val
+        if lid not in card_seller:
+            seller_match = re.search(r"Seller\s*:\s*([^|<\n]{2,80})", _text(block))
+            if seller_match:
+                card_seller[lid] = seller_match.group(1).strip()
+
+    rows = []
+    seen = set()
+    ordered_ids = list(ld_map.keys()) + [lid for lid in card_specs if lid not in ld_map]
+    for lid in ordered_ids:
+        if lid in seen:
+            continue
+        seen.add(lid)
+        offer = ld_map.get(lid) or {}
+        item = offer.get("itemOffered") if isinstance(offer.get("itemOffered"), dict) else {}
+        specs = card_specs.get(lid) or {}
+        title = _text(item.get("name") or "")
+        if not title:
+            continue
+        raw_price = offer.get("price")
+        currency = str(offer.get("priceCurrency") or "USD").upper()
+        price = ""
+        if raw_price not in (None, "") and currency == "USD":
+            try:
+                num = float(raw_price)
+                if num > 0:
+                    price = format_usd(num)
+            except (TypeError, ValueError):
+                pass
+        addr = ((offer.get("availableAtOrFrom") or {}).get("address")) if isinstance(offer.get("availableAtOrFrom"), dict) else {}
+        addr = addr if isinstance(addr, dict) else {}
+        region = str(addr.get("addressRegion") or "").strip()
+        country = str(addr.get("addressCountry") or "").strip()
+        location = f"{region} ({country})" if region and country else (region or country)
+        ttaf, _tt_kind = _stated_hours(specs.get("Total Time"))
+        eng_hours, eng_type = _stated_hours(specs.get("Engine 1 Time"))
+        desc = _text(item.get("description") or specs.get("Description") or "")
+        href = offer.get("url") or f"/listing/for-sale/{lid}"
+        image = str(item.get("image") or "").strip()
+        row = blank_row()
+        row.update({
+            "listing_id": f"controller:{lid}",
+            "source": "controller",
+            "title": title,
+            "price": price,
+            "model": " ".join(part for part in (item.get("manufacturer") or "", item.get("model") or "") if part),
+            "n_number": specs.get("Registration #") or "",
+            "serial_number": specs.get("Serial Number") or "",
+            "ttaf": ttaf,
+            "engine_hours": eng_hours,
+            "engine_time_type": eng_type,
+            "location": location,
+            "seller": card_seller.get(lid) or "",
+            "posted_date": specs.get("Updated") or "",
+            "description": desc,
+            "link": _abs(page_url, href),
+            "image_url": image,
+        })
+        normalized = apply_listing(row)
+        if _keep(normalized, families):
+            rows.append(normalized)
+    return rows
+
+
+def scrape_controller(fetch, label, url, families=DEFAULT_FAMILIES):
+    try:
+        page_html = fetch.html(url, timeout=25000)
+    except ScrapeError as exc:
+        raise ScrapeError(f"{label} blocked automated access ({exc})") from exc
+    rows = parse_controller_html(page_html, url, families)
+    if rows:
+        return rows
+    if re.search(
+        r"\bSR22\b|\bSF-?50\b|vision\s*jet|cub\s*-?\s*crafters?|carbon\s+cub|\bx-?\s*cub\b",
+        page_html,
+        re.I,
+    ):
+        raise ScrapeError(f"{label} returned a page but no listing parser matched it")
+    raise ScrapeError(f"{label} did not return listings")
+
+
 # ---------- Sites that block automation ----------
 
 def scrape_blocked(fetch, label, url):
@@ -1000,8 +1122,12 @@ def sources_for(families):
         "ebay": "eBay",
     }
     for name, label, url in BLOCKED_BY_FAMILY[blocked_key]:
-        specs.append((name, short[name],
-                      (lambda fetch, label=label, url=url: scrape_blocked(fetch, label, url))))
+        if name == "controller":
+            specs.append((name, short[name],
+                          (lambda fetch, label=label, url=url: scrape_controller(fetch, label, url, fam))))
+        else:
+            specs.append((name, short[name],
+                          (lambda fetch, label=label, url=url: scrape_blocked(fetch, label, url))))
     return tuple(specs)
 
 
