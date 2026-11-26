@@ -63,6 +63,7 @@
 | --- | --- |
 | [Car search tracker](boy-toy-pricer/Car-pricer.html) | For-sale AutoTempest listings and Bring a Trailer sold comps for cars, trucks, and SUVs, from the Audi RS6 and G63 to the SF90, Huracan STO, and RUF Porsches |
 | [Aircraft for-sale tracker](boy-toy-pricer/airplane-pricer/output/report.html) | Cirrus SR22, Vision Jet, CubCrafters, and Piper PA-28-180/181 listings in one HTML report |
+| [CubCrafters tracker](boy-toy-pricer/airplane-pricer/output/cubcrafters.html) | Dedicated CubCrafters for-sale tracker across Carbon Cub SS, FX/EX, XCub, Sport Cub, Top Cub, and NXCub, organized tailwheel-first with OLS market pricing and gear/avionics chips |
 | [Watch for-sale tracker](boy-toy-pricer/watch-pricer/output/report.html) | Patek Philippe Nautilus 5711 and blue or green Aquanaut listings in one HTML report |
 | [Porsche 911 tracker](boy-toy-pricer/911-pricer/report_v2.html) | 6,335 Porsche 911 listings from AutoTempest, one tab per generation from the early 911 to the 992, with Bring a Trailer sold comps and chip filters for trim, body, gearbox, and options |
 

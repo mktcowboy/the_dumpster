@@ -146,6 +146,7 @@ def main(argv=None):
         fresh_days=resolve_fresh_days(None, root),
         search_api="",
         page_title="CubCrafters Tracker",
+        source_note="listings from CubCrafters, Controller, ASO, GlobalAir, AircraftDealer, and Barnstormers",
     )
     return 0
 

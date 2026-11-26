@@ -146,6 +146,7 @@
   .bat-filters[hidden] { display: none; }
   .filter-grid label.check { flex-direction: row; align-items: center; gap: 6px; text-transform: none; letter-spacing: 0; font-size: 13px; padding-bottom: 6px; }
   .filter-grid label.check input { width: auto; accent-color: var(--accent); }
+  .filter-grid [hidden] { display: none; }
   table { width: 100%; border-collapse: collapse; font-size: 13px; }
   th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--border); white-space: nowrap; }
   th { cursor: pointer; user-select: none; color: var(--muted); font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; position: sticky; top: 0; background: var(--panel); z-index: 1; }
@@ -225,7 +226,7 @@
   <header class="page-head">
     <div class="page-title">
       <h1>__PAGE_TITLE__</h1>
-      <div class="meta"><span id="dataAsOf">__DATA_AS_OF__</span>Updated __GENERATED_AT__ &middot; listings from Cirrus, ASO, GlobalAir, AircraftDealer, and Barnstormers</div>
+      <div class="meta"><span id="dataAsOf">__DATA_AS_OF__</span>Updated __GENERATED_AT__ &middot; __SOURCE_NOTE__</div>
     </div>
     <div class="update" id="updateBox" hidden>
       <span class="update-status" id="updateStatus" role="status"></span>

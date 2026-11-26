@@ -340,13 +340,15 @@ def _tab_dict(rows, meta):
     }
 
 
-def render_tabs(tab_pairs, output, fresh_days=2, search_api="http://127.0.0.1:8766", page_title=None):
+def render_tabs(tab_pairs, output, fresh_days=2, search_api="http://127.0.0.1:8766", page_title=None, source_note=None):
     """Write the report. Each pair is (csv rows, meta dict) and becomes one tab."""
     tabs = [_tab_dict(rows, meta) for rows, meta in tab_pairs]
     tabs.append(readme_tab())
     template = TEMPLATE_PATH.read_text(encoding="utf-8")
     if not page_title:
         page_title = "Aircraft for sale" if len(tabs) > 1 else (tabs[0]["title"] + " for sale")
+    if not source_note:
+        source_note = "listings from Cirrus, CubCrafters, Controller, ASO, GlobalAir, AircraftDealer, and Barnstormers"
     fresh = float(fresh_days)
     fresh_js = str(int(fresh)) if fresh.is_integer() else str(fresh)
     generated_at = datetime.now(timezone.utc).astimezone().strftime("%Y-%m-%d %H:%M %Z")
@@ -359,6 +361,7 @@ def render_tabs(tab_pairs, output, fresh_days=2, search_api="http://127.0.0.1:87
         .replace("__PAGE_TITLE__", page_title)
         .replace("__DATA_AS_OF__", data_as_of)
         .replace("__GENERATED_AT__", generated_at)
+        .replace("__SOURCE_NOTE__", source_note)
         .replace("__NOW_MS__", str(int(datetime.now(timezone.utc).timestamp() * 1000)))
         .replace("__FRESH_DAYS__", fresh_js)
         .replace("__SEARCH_API__", js_json(search_api or None))
