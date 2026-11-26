@@ -174,6 +174,8 @@ const GROUPS = {
 
 const PAGES = [
   // Markets
+  { g: "markets", t: "Crypto deep dive", thumb: "crypto-deep-dive", href: "markets/crypto-deep-dive/",
+    d: "Standalone end-to-end map of the crypto market: regime & macro correlations, top-100 heatmap, protocol fees & P/S multiples, perp DEX fee share, stablecoin split, yield pools, Hyperliquid funding & leaderboard, and calculators." },
   { g: "markets", t: "SPY × QQQ max pain", thumb: "options", href: "markets/options/",
     d: "Max-pain map for SPY and QQQ options, built from option chains, with a reproducible snapshot pipeline." },
   { g: "markets", t: "QQQ max-pain board", thumb: "qqq-board", href: "markets/options/qqq-max-pain.html",
@@ -182,16 +184,16 @@ const PAGES = [
     d: "Self-refreshing max-pain dashboard with click-through ticker details and charts.",
     note: "Live data needs the local server.py" },
   { g: "markets", t: "Size & style ETFs", thumb: "styles", href: "markets/size-style/styles.html",
-    d: "Nine iShares S&P style-box ETFs charted together, with a 6M, 1Y, 3Y, and 5Y total-return table. Yahoo Finance through November 4, 2026." },
+    d: "Nine iShares S&P style-box ETFs charted together, with a 6M, 1Y, 3Y, and 5Y total-return table. Yahoo Finance, refreshed weekdays after market close." },
   { g: "markets", t: "SPDR sector ETFs", thumb: "sectors", href: "markets/size-style/sectors.html",
-    d: "Daily dividend-adjusted price history for the 11 Select Sector SPDRs, with period returns. Yahoo Finance through November 4, 2026." },
+    d: "Daily dividend-adjusted price history for the 11 Select Sector SPDRs, with period returns. Yahoo Finance, refreshed weekdays after market close." },
   { g: "markets", t: "Nasdaq-100 earnings straddles", thumb: "er-straddles", href: "markets/er-straddles/site/",
     d: "Seller's-view ATM earnings-straddle screen for Nasdaq-100 names, with cost-aware P&L, liquidity grades, and the October 21, 2026 snapshot." },
 
   { g: "markets", t: "Drawdown check", thumb: "drawdown-check", href: "markets/drawdown-check/drawdown.html",
     d: "How far a ticker is below its all-time high, with a price chart, a testfol.io-style drawdown chart, live 30-day implied volatility, and a command-line tool. Yahoo adjusted close through a small proxy Worker." },
   { g: "markets", t: "Futures curves", thumb: "futures-curves", href: "markets/futures-curves/futures-curves.html",
-    d: "Term structure for 41 futures markets in eight groups, with forward curves, front-month history, and annualized roll yield. Yahoo Finance through November 11, 2026." },
+    d: "Term structure for 41 futures markets in eight groups, with forward curves, front-month history, and annualized roll yield. Yahoo Finance, refreshed weekdays after market close." },
 
   // Real estate
   { g: "estate", t: "Texas Triangle land", thumb: "texas", href: "real-estate/texas-triangle/texas-triangle-land.html",

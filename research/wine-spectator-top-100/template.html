@@ -1,0 +1,949 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Top 100 Cellar Book: Wine Spectator's Top 100, 1988–2026</title>
+<meta name="description" content="All 3,900 wines from Wine Spectator's annual Top 100 lists, 1988 through 2026, with scores, prices, origins, drinking windows, and links to each review.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+:root {
+  color-scheme: light;
+  --paper: #f2e9d6; --paper-2: #fbf6ec; --paper-3: #ede2cb;
+  --ink: #2b1d16; --ink-2: #5a4637; --muted: #8a7562;
+  --rule: #dccbad; --rule-2: #bea57b; --engrave: #a88b5c; --sun: #e9d4a3;
+  --wine: #7a1f33; --wine-soft: #f1dfd9; --gold: #94722a; --vine: #4d5e33;
+  --link: #7a1f33; --grain: .38; --shadow: 0 1px 0 rgba(255,255,255,.6) inset, 0 10px 30px -18px rgba(60,35,20,.45);
+  --c1: #8e2c40; --c2: #c08a1e; --c3: #5d7a35; --c4: #2f6fa8; --c5: #c2562f; --c6: #8a4fa8; --other: #c9bfae;
+  --w-red: #8e2c40; --w-white: #c9a23e; --w-spark: #2f6fa8; --w-dessert: #b0601f; --w-rose: #d673a8;
+}
+@media (prefers-color-scheme: dark) {
+  :root:where(:not([data-theme="light"])) {
+    color-scheme: dark;
+    --paper: #15100d; --paper-2: #1f1815; --paper-3: #2a201b;
+    --ink: #f1e6d2; --ink-2: #cdbca3; --muted: #9a8772;
+    --rule: #3a2e26; --rule-2: #5e4b38; --engrave: #6e5a43; --sun: #3a2c1e;
+    --wine: #e0899a; --wine-soft: #3a1f25; --gold: #d1ad62; --vine: #9db07a;
+    --link: #e8a2b0; --grain: .5; --shadow: 0 10px 30px -18px rgba(0,0,0,.8);
+    --c1: #c24a62; --c2: #c0841e; --c3: #3f9a6a; --c4: #3f87c8; --c5: #d0683a; --c6: #a874c8; --other: #4f443c;
+    --w-red: #c24a62; --w-white: #b58f2a; --w-spark: #3f87c8; --w-dessert: #c87436; --w-rose: #c46aa8;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --paper: #15100d; --paper-2: #1f1815; --paper-3: #2a201b;
+  --ink: #f1e6d2; --ink-2: #cdbca3; --muted: #9a8772;
+  --rule: #3a2e26; --rule-2: #5e4b38; --engrave: #6e5a43; --sun: #3a2c1e;
+  --wine: #e0899a; --wine-soft: #3a1f25; --gold: #d1ad62; --vine: #9db07a;
+  --link: #e8a2b0; --grain: .5; --shadow: 0 10px 30px -18px rgba(0,0,0,.8);
+  --c1: #c24a62; --c2: #c0841e; --c3: #3f9a6a; --c4: #3f87c8; --c5: #d0683a; --c6: #a874c8; --other: #4f443c;
+  --w-red: #c24a62; --w-white: #b58f2a; --w-spark: #3f87c8; --w-dessert: #c87436; --w-rose: #c46aa8;
+}
+* { box-sizing: border-box; }
+html { background: var(--paper); }
+body {
+  margin: 0; color: var(--ink); background: var(--paper);
+  font: 17px/1.55 "EB Garamond", Garamond, Georgia, "Times New Roman", serif;
+  font-variant-numeric: lining-nums; -webkit-font-smoothing: antialiased;
+}
+body::before {
+  content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 0; opacity: var(--grain); mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .33 0 0 0 0 .2 0 0 0 .22 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+:root[data-theme="dark"] body::before { mix-blend-mode: screen; }
+@media (prefers-color-scheme: dark) { :root:where(:not([data-theme="light"])) body::before { mix-blend-mode: screen; } }
+body > * { position: relative; z-index: 1; }
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+.wrap { max-width: 1220px; margin: 0 auto; padding: 0 28px; }
+.caps { text-transform: uppercase; letter-spacing: .18em; font-size: 12px; font-weight: 500; }
+
+/* ---------- masthead ---------- */
+.mast { text-align: center; padding: 0 0 6px; }
+.engr { display: block; width: 100%; height: 220px; margin-bottom: 14px; -webkit-mask-image: linear-gradient(180deg, #000 72%, transparent); mask-image: linear-gradient(180deg, #000 72%, transparent); }
+.engr .ln { stroke: var(--engrave); fill: none; stroke-width: 1; }
+.engr .hill { fill: var(--paper); stroke: var(--engrave); stroke-width: 1.2; }
+.engr .tree { fill: var(--engrave); }
+.engr .row { stroke: var(--engrave); stroke-width: 2.2; stroke-linecap: round; fill: none; }
+.mast .estate { color: var(--gold); }
+.mast .estate span { display: inline-block; margin: 0 10px; }
+.mast h1 { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 500; font-size: clamp(44px, 7.2vw, 88px); line-height: .95; margin: 10px 0 8px; letter-spacing: -.01em; }
+.mast h1 em { font-style: italic; color: var(--wine); font-weight: 500; }
+.mast .vint { font-family: "Cormorant Garamond", Georgia, serif; font-size: 22px; font-style: italic; color: var(--ink-2); }
+.mast .vint b { font-style: normal; font-weight: 600; color: var(--ink); }
+.mast .dek { max-width: 760px; margin: 14px auto 0; color: var(--ink-2); font-size: 17px; }
+.mast .meta { margin-top: 12px; font-size: 14px; color: var(--muted); display: flex; gap: 6px 18px; justify-content: center; flex-wrap: wrap; align-items: center; }
+.themeBtn { font: inherit; font-size: 13px; font-variant: small-caps; letter-spacing: .08em; background: none; border: 1px solid var(--rule-2); color: var(--ink-2); border-radius: 999px; padding: 2px 12px; cursor: pointer; }
+.themeBtn:hover { border-color: var(--gold); color: var(--ink); }
+
+/* ---------- nav ---------- */
+nav.tabs { position: sticky; top: 0; z-index: 30; background: color-mix(in srgb, var(--paper) 94%, transparent); backdrop-filter: blur(6px); margin-top: 22px; }
+nav.tabs a:first-child { margin-left: auto; } nav.tabs a:last-child { margin-right: auto; }
+nav.tabs .wrap { display: flex; justify-content: flex-start; gap: 4px; overflow-x: auto; border-top: 1px solid var(--rule-2); border-bottom: 3px double var(--rule-2); }
+nav.tabs a { padding: 11px 16px 9px; color: var(--ink-2); white-space: nowrap; font-variant: small-caps; letter-spacing: .09em; font-size: 17px; position: relative; }
+nav.tabs a:hover { color: var(--ink); text-decoration: none; }
+nav.tabs a[aria-current="page"] { color: var(--wine); }
+nav.tabs a[aria-current="page"]::after { content: ""; position: absolute; left: 50%; bottom: -5px; width: 7px; height: 7px; transform: translateX(-50%) rotate(45deg); background: var(--gold); outline: 3px solid var(--paper); }
+main { padding: 30px 0 70px; }
+section.view { display: none; }
+section.view.on { display: block; animation: fade .35s ease; }
+@keyframes fade { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+
+/* ---------- section heads ---------- */
+.shead { text-align: center; margin: 60px auto 24px; max-width: 820px; }
+.shead:first-child { margin-top: 10px; }
+.shead .orn { width: 30px; height: 30px; color: var(--gold); display: block; margin: 0 auto 4px; }
+.shead .kick { color: var(--gold); }
+.shead h2 { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 500; font-size: clamp(30px, 4vw, 44px); line-height: 1.08; margin: 4px 0 8px; display: flex; align-items: center; justify-content: center; gap: 18px; }
+.shead h2::before, .shead h2::after { content: ""; flex: 1; max-width: 120px; height: 1px; background: linear-gradient(90deg, transparent, var(--rule-2)); }
+.shead h2::after { background: linear-gradient(270deg, transparent, var(--rule-2)); }
+.shead p { color: var(--ink-2); margin: 0; font-size: 16.5px; }
+.shead h2 i { color: var(--wine); }
+
+/* ---------- numbers row ---------- */
+.numbers { display: grid; grid-template-columns: repeat(auto-fit, minmax(128px, 1fr)); border-top: 1px solid var(--rule-2); border-bottom: 1px solid var(--rule-2); padding: 16px 0; margin-bottom: 18px; }
+.numbers div { text-align: center; padding: 2px 10px; border-left: 1px solid var(--rule); }
+.numbers div:first-child { border-left: 0; }
+.numbers b { display: block; font-family: "Cormorant Garamond", Georgia, serif; font-weight: 500; font-size: 42px; line-height: 1; color: var(--ink); font-variant-numeric: lining-nums tabular-nums; }
+.numbers span { font-variant: small-caps; letter-spacing: .07em; color: var(--ink-2); font-size: 14.5px; }
+
+/* ---------- label frames ---------- */
+.frame { background: var(--paper-2); border: 1px solid var(--rule-2); outline: 1px solid var(--rule); outline-offset: -7px; box-shadow: var(--shadow); position: relative; }
+.lbl { background: var(--paper-3); display: flex; align-items: center; justify-content: center; overflow: hidden; flex: none; }
+.lbl img { max-width: 100%; max-height: 100%; object-fit: contain; display: block; }
+.lbl .ph { width: 28%; height: 66%; border-radius: 40% 40% 10% 10% / 16% 16% 5% 5%; background: var(--sw); opacity: .5; position: relative; }
+.lbl .ph::before { content: ""; position: absolute; left: 36%; right: 36%; top: -26%; height: 28%; background: var(--sw); border-radius: 2px 2px 0 0; }
+.arch { border-radius: 999px 999px 4px 4px; border: 1px solid var(--rule-2); background: var(--paper-3); }
+.arch .lbl { width: 100%; height: 100%; border-radius: 999px 999px 2px 2px; background: transparent; }
+
+/* ---------- hero ---------- */
+.hero { display: grid; grid-template-columns: 290px 1fr; gap: 48px; padding: 44px 52px; align-items: center; }
+.hero .arch { width: 290px; height: 400px; padding: 14px; }
+.hero .eyebrow { color: var(--gold); }
+.hero .roman { font-family: "Cormorant Garamond", Georgia, serif; font-size: 20px; letter-spacing: .4em; color: var(--muted); margin-top: 2px; }
+.hero h3 { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 600; font-size: clamp(40px, 5vw, 64px); line-height: 1; margin: 10px 0 6px; }
+.hero .wn { font-style: italic; font-size: 25px; color: var(--ink-2); margin-bottom: 20px; font-family: "Cormorant Garamond", Georgia, serif; }
+.spec { margin: 0 0 20px; max-width: 520px; }
+.spec div { display: flex; align-items: baseline; gap: 6px; padding: 3px 0; font-size: 16.5px; }
+.spec dt { font-variant: small-caps; letter-spacing: .06em; color: var(--ink-2); }
+.spec dd { margin: 0; text-align: right; }
+.ldr { flex: 1; border-bottom: 1.5px dotted var(--rule-2); transform: translateY(-4px); min-width: 16px; }
+
+/* ---------- links ---------- */
+.links { font-size: 13.5px; line-height: 1.7; }
+.links a { color: var(--ink-2); font-variant: small-caps; letter-spacing: .05em; white-space: nowrap; }
+.links a:not(:first-child)::before { content: "·"; display: inline-block; margin: 0 7px; color: var(--rule-2); text-decoration: none; }
+.links a:hover { color: var(--wine); }
+.links a.pri { color: var(--wine); font-weight: 600; }
+.links a.story { color: var(--vine); font-weight: 600; }
+
+/* ---------- top ten ---------- */
+.ten { display: grid; grid-template-columns: repeat(5, 1fr); gap: 18px; }
+.tcard { padding: 20px 16px 16px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 6px; }
+.tcard .no { font-family: "Cormorant Garamond", Georgia, serif; font-style: italic; font-size: 30px; line-height: 1; color: var(--wine); }
+.tcard .arch { width: 112px; height: 150px; padding: 6px; margin: 4px 0 6px; }
+.tcard .wy { font-variant: small-caps; letter-spacing: .05em; font-weight: 600; font-size: 17px; line-height: 1.15; }
+.tcard .wn2 { font-style: italic; color: var(--ink-2); font-size: 15px; line-height: 1.25; }
+.tcard .sp { font-size: 14.5px; margin-top: auto; padding-top: 6px; border-top: 1px solid var(--rule); width: 100%; }
+.tcard .org { font-size: 13px; color: var(--muted); line-height: 1.3; }
+.tcard .links { font-size: 12.5px; }
+
+/* ---------- wine list ---------- */
+.wlist { columns: 2 460px; column-gap: 56px; column-rule: 1px solid var(--rule); }
+.wgroup h4 { break-after: avoid; font-family: "Cormorant Garamond", Georgia, serif; font-weight: 600; font-size: 22px; font-variant: small-caps; letter-spacing: .08em; color: var(--wine); margin: 18px 0 4px; border-bottom: 1px solid var(--rule-2); display: flex; justify-content: space-between; align-items: baseline; }
+.wgroup:first-child h4 { margin-top: 0; }
+.wgroup h4 span { font-size: 14px; color: var(--muted); font-variant: normal; letter-spacing: 0; font-family: "EB Garamond", Georgia, serif; font-weight: 400; font-style: italic; }
+.wl { display: grid; grid-template-columns: 40px 1fr; gap: 6px; padding: 9px 0 8px; border-bottom: 1px dotted var(--rule); break-inside: avoid; }
+.wl-r { font-family: "Cormorant Garamond", Georgia, serif; font-style: italic; font-size: 22px; line-height: 1.05; color: var(--gold); text-align: right; padding-right: 6px; }
+.wl-l { display: flex; align-items: baseline; gap: 6px; }
+.wl-n { line-height: 1.3; }
+.wl-n .lnk { font-variant: small-caps; letter-spacing: .05em; font-weight: 600; }
+.wl-n i { color: var(--ink-2); }
+.wl-p { white-space: nowrap; font-variant-numeric: lining-nums tabular-nums; }
+.wl-p b { font-weight: 600; }
+.wl-m { font-size: 14px; color: var(--muted); line-height: 1.35; }
+.wl .links { font-size: 12.5px; line-height: 1.5; }
+
+/* ---------- controls ---------- */
+.controls { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: flex-end; justify-content: center; margin: 0 auto 18px; padding: 12px 0 14px; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+.controls label { display: flex; flex-direction: column; font-variant: small-caps; letter-spacing: .06em; font-size: 13.5px; color: var(--ink-2); gap: 1px; }
+.controls label.chk { flex-direction: row; align-items: center; gap: 6px; padding-bottom: 5px; }
+.controls input[type=search], .controls select, .controls input[type=number] {
+  font: inherit; font-size: 16px; font-variant: normal; letter-spacing: 0; color: var(--ink); background: transparent;
+  border: 0; border-bottom: 1px solid var(--rule-2); padding: 4px 2px; border-radius: 0; min-width: 0;
+}
+.controls select option { background: var(--paper-2); color: var(--ink); }
+.controls input:focus, .controls select:focus { outline: none; border-bottom-color: var(--wine); }
+.controls input[type=search] { width: 260px; }
+.controls input[type=number] { width: 80px; }
+.btn { font: inherit; font-size: 14.5px; font-variant: small-caps; letter-spacing: .07em; padding: 4px 14px; border-radius: 999px; border: 1px solid var(--rule-2); background: transparent; color: var(--ink); cursor: pointer; }
+.btn:hover { border-color: var(--wine); color: var(--wine); }
+.btn.solid { background: var(--wine); border-color: var(--wine); color: var(--paper-2); }
+.btn.solid:hover { color: var(--paper-2); filter: brightness(1.08); }
+.chip { font: inherit; font-size: 14px; font-style: italic; padding: 2px 12px; border-radius: 999px; background: var(--wine-soft); color: var(--wine); border: 0; cursor: pointer; }
+.count { text-align: center; color: var(--ink-2); font-style: italic; margin: 0 0 14px; }
+
+/* ---------- ledger tables ---------- */
+.ledger { overflow-x: auto; background: var(--paper-2); border: 1px solid var(--rule-2); box-shadow: var(--shadow); }
+table { border-collapse: collapse; width: 100%; font-size: 15.5px; }
+th, td { text-align: left; padding: 9px 11px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+th { font-weight: 500; font-variant: small-caps; letter-spacing: .07em; color: var(--ink-2); font-size: 14.5px; border-bottom: 3px double var(--rule-2); white-space: nowrap; background: var(--paper-2); position: sticky; top: 0; }
+tbody tr:nth-child(even) td { background: color-mix(in srgb, var(--paper-3) 45%, transparent); }
+tbody tr:hover td { background: color-mix(in srgb, var(--wine-soft) 60%, transparent); }
+td.num, th.num { text-align: right; font-variant-numeric: lining-nums tabular-nums; white-space: nowrap; }
+tr:last-child td { border-bottom: 0; }
+td .wy { font-variant: small-caps; letter-spacing: .04em; font-weight: 600; }
+td .wn2 { font-style: italic; color: var(--ink-2); }
+td .lbl { width: 30px; height: 44px; border-radius: 2px; }
+td .links { font-size: 12.5px; line-height: 1.5; margin-top: 2px; }
+td.wcell { min-width: 330px; }
+.lnk { background: none; border: 0; padding: 0; color: inherit; font: inherit; cursor: pointer; text-align: inherit; }
+.lnk:hover { color: var(--wine); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+.yr { color: var(--wine); cursor: pointer; font-weight: 600; }
+.yr:hover { text-decoration: underline; }
+.more { display: flex; justify-content: center; padding: 18px; }
+.flag { font-size: 12.5px; color: var(--wine); font-style: italic; }
+.dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; background: var(--sw); margin-right: 5px; vertical-align: 0; box-shadow: 0 0 0 1px color-mix(in srgb, var(--ink) 12%, transparent); }
+
+/* ---------- plates (charts) ---------- */
+.plates2 { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.plate { padding: 24px 28px 18px; margin-bottom: 22px; }
+.plate .pno { color: var(--gold); }
+.plate h3 { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 600; font-size: 26px; line-height: 1.15; margin: 2px 0 2px; }
+.plate .cap { color: var(--ink-2); font-size: 15px; font-style: italic; margin: 0 0 12px; }
+.legend { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 14.5px; color: var(--ink-2); margin: 0 0 8px; }
+.legend i { display: inline-block; width: 11px; height: 11px; border-radius: 2px; margin-right: 6px; vertical-align: -1px; background: var(--sw); }
+svg.chart { width: 100%; height: auto; display: block; overflow: visible; }
+svg.chart text { fill: var(--muted); font-size: 12.5px; font-family: "EB Garamond", Georgia, serif; font-variant-numeric: lining-nums tabular-nums; }
+svg.chart .dl { fill: var(--ink-2); font-size: 13.5px; }
+svg.chart .gl { stroke: var(--rule); stroke-width: 1; }
+svg.chart .bl { stroke: var(--rule-2); stroke-width: 1; }
+details.tbl { margin-top: 10px; font-size: 14.5px; }
+details.tbl summary { cursor: pointer; color: var(--ink-2); font-variant: small-caps; letter-spacing: .06em; }
+details.tbl .ledger { max-height: 320px; overflow: auto; margin-top: 8px; box-shadow: none; }
+#tip { position: fixed; pointer-events: none; z-index: 60; background: var(--paper-2); color: var(--ink); border: 1px solid var(--rule-2); outline: 1px solid var(--rule); outline-offset: -4px; box-shadow: 0 10px 28px -10px rgba(40,25,15,.45); padding: 10px 13px; font-size: 14.5px; line-height: 1.4; max-width: 320px; display: none; }
+#tip b { font-family: "Cormorant Garamond", Georgia, serif; font-size: 17px; font-weight: 600; }
+#tip .r { display: flex; justify-content: space-between; gap: 16px; }
+#tip .r span:last-child { font-variant-numeric: lining-nums tabular-nums; }
+
+/* ---------- cellar door (values) ---------- */
+.cellar-door { padding: 28px 32px 18px; }
+.cellar-door h3 { font-family: "Cormorant Garamond", Georgia, serif; font-size: 28px; font-weight: 500; font-style: italic; text-align: center; margin: 0; }
+.cellar-door .under { text-align: center; color: var(--gold); margin-bottom: 10px; }
+
+/* ---------- timeline ---------- */
+.tl { position: relative; padding: 10px 0; }
+.tl::before { content: ""; position: absolute; left: 50%; top: 0; bottom: 0; width: 1px; background: var(--rule-2); }
+.ti { position: relative; width: 50%; padding: 14px 44px 14px 0; }
+.ti:nth-child(even) { margin-left: 50%; padding: 14px 0 14px 44px; }
+.ti::after { content: ""; position: absolute; top: 40px; right: -6px; width: 11px; height: 11px; border-radius: 50%; background: var(--paper); border: 2px solid var(--gold); }
+.ti:nth-child(even)::after { left: -6px; right: auto; }
+.ti .frame { padding: 20px 22px; display: grid; grid-template-columns: 80px 1fr; gap: 18px; }
+.ti .yrb { font-family: "Cormorant Garamond", Georgia, serif; font-size: 44px; line-height: .9; color: var(--gold); font-weight: 500; }
+.ti .yrb small { display: block; font-size: 12px; letter-spacing: .24em; color: var(--muted); margin-top: 5px; }
+.ti .arch { width: 76px; height: 106px; padding: 4px; margin-top: 12px; }
+.ti .wy { font-family: "Cormorant Garamond", Georgia, serif; font-size: 26px; font-weight: 600; line-height: 1.1; }
+.ti .wn2 { font-style: italic; color: var(--ink-2); }
+.ti .sp { font-size: 15px; margin: 6px 0 2px; }
+.ti .org { font-size: 14px; color: var(--muted); }
+
+/* ---------- estates ---------- */
+.yrchips { display: flex; flex-wrap: wrap; gap: 4px; }
+.yrchips a { font-size: 13px; padding: 0 6px; border: 1px solid var(--rule); color: var(--ink-2); font-variant-numeric: lining-nums tabular-nums; border-radius: 2px; }
+.yrchips a:hover { border-color: var(--wine); color: var(--wine); text-decoration: none; }
+.yrchips a.one { background: var(--wine); border-color: var(--wine); color: var(--paper-2); }
+
+/* ---------- provenance ---------- */
+.prose { columns: 2 420px; column-gap: 48px; }
+.prose p { break-inside: avoid; margin-top: 0; }
+.prose > p:first-child::first-letter { font-family: "Cormorant Garamond", Georgia, serif; float: left; font-size: 68px; line-height: .8; padding: 6px 8px 0 0; color: var(--wine); }
+.prov h3 { font-family: "Cormorant Garamond", Georgia, serif; font-size: 26px; font-weight: 600; margin: 34px 0 10px; border-bottom: 1px solid var(--rule-2); padding-bottom: 2px; }
+.prov ul { padding-left: 20px; margin: 6px 0; }
+.prov li { margin-bottom: 6px; }
+.yearlinks { display: flex; flex-wrap: wrap; gap: 6px; }
+.yearlinks a { font-family: "Cormorant Garamond", Georgia, serif; font-size: 19px; font-weight: 600; padding: 0 8px; border: 1px solid var(--rule-2); color: var(--ink); }
+.yearlinks a:hover { background: var(--wine); color: var(--paper-2); border-color: var(--wine); text-decoration: none; }
+.stories { columns: 3 280px; column-gap: 34px; font-size: 15.5px; }
+.stories > div { break-inside: avoid; margin-bottom: 16px; }
+.stories h4 { margin: 0 0 2px; font-family: "Cormorant Garamond", Georgia, serif; font-size: 23px; font-weight: 600; }
+.stories ol { margin: 0; padding-left: 22px; }
+.stories ol li span { color: var(--muted); font-style: italic; }
+code { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: .82em; background: var(--paper-3); padding: 1px 5px; border-radius: 3px; }
+
+footer { text-align: center; color: var(--muted); font-size: 14.5px; padding: 30px 0 50px; }
+footer .orn { width: 26px; height: 26px; color: var(--gold); display: block; margin: 0 auto 8px; }
+footer .colo { font-variant: small-caps; letter-spacing: .1em; color: var(--ink-2); }
+
+@media (max-width: 1080px) { .ten { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 820px) {
+  .plates2 { grid-template-columns: 1fr; }
+  .hero { grid-template-columns: 1fr; padding: 30px 24px; justify-items: center; text-align: center; }
+  .hero .arch { width: 210px; height: 290px; }
+  .spec { margin-left: auto; margin-right: auto; text-align: left; }
+  .ten { grid-template-columns: repeat(2, 1fr); }
+  .tl::before { left: 8px; }
+  .ti, .ti:nth-child(even) { width: auto; margin-left: 0; padding: 12px 0 12px 30px; }
+  .ti::after, .ti:nth-child(even)::after { left: 2px; right: auto; }
+  .wrap { padding: 0 16px; }
+  .engr { height: 140px; }
+}
+@media print { nav.tabs, .controls, .more, .themeBtn { display: none; } section.view { display: block; } body::before { display: none; } }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="grape" viewBox="0 0 40 40">
+    <path d="M20 3c0 3-1 5-3 7" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+    <path d="M21 8c3-4 9-5 13-2-2 4-7 6-12 4" fill="currentColor" opacity=".8"/>
+    <g fill="currentColor">
+      <circle cx="11" cy="15" r="3.3"/><circle cx="17.7" cy="14" r="3.3"/><circle cx="24.4" cy="15" r="3.3"/>
+      <circle cx="14.3" cy="21" r="3.3"/><circle cx="21" cy="20.5" r="3.3"/><circle cx="27.4" cy="21.4" r="3"/>
+      <circle cx="17.5" cy="27" r="3.3"/><circle cx="24" cy="27" r="3.1"/>
+      <circle cx="20.6" cy="33" r="3.2"/>
+    </g>
+  </symbol>
+</svg>
+
+<header class="mast">
+  <div id="engr"></div>
+  <div class="wrap">
+    <div class="estate caps"><span>❧</span>An unofficial register of Wine Spectator's annual Top 100<span>☙</span></div>
+    <h1>The Top 100 <em>Cellar Book</em></h1>
+    <div class="vint" id="hdrVint"></div>
+    <p class="dek" id="hdrDek"></p>
+    <div class="meta">
+      <span id="hdrPulled"></span>
+      <a href="https://top100-list.winespectator.com/">Source list explorer</a>
+      <a href="https://top100.winespectator.com/">Editorial site</a>
+      <button class="themeBtn" id="themeBtn" type="button" aria-label="Switch between daylight and cellar themes">daylight / cellar</button>
+    </div>
+  </div>
+</header>
+
+<nav class="tabs" aria-label="Report sections"><div class="wrap">
+  <a href="#latest" data-tab="latest">The 2026 List</a>
+  <a href="#all" data-tab="all">The Cellar</a>
+  <a href="#woty" data-tab="woty">Wines of the Year</a>
+  <a href="#trends" data-tab="trends">Vintage Trends</a>
+  <a href="#repeat" data-tab="repeat">The Estates</a>
+  <a href="#sources" data-tab="sources">Provenance</a>
+</div></nav>
+
+<main class="wrap">
+
+<section class="view" id="v-latest">
+  <header class="shead"><svg class="orn"><use href="#grape"/></svg><div class="caps kick" id="lt-kick"></div><h2 id="lt-h"></h2><p id="lt-sub"></p></header>
+  <div class="numbers" id="lt-tiles"></div>
+
+  <header class="shead"><div class="caps kick">The wine of the year</div><h2>Number <i>One</i></h2></header>
+  <div class="frame hero" id="lt-hero"></div>
+
+  <header class="shead"><svg class="orn"><use href="#grape"/></svg><h2>The Top <i>Ten</i></h2><p>Each of the Top 10 has a Wine Spectator story page, linked in green as <i>story</i>.</p></header>
+  <div class="ten" id="lt-top10"></div>
+
+  <header class="shead"><div class="caps kick">Plates I &amp; II</div><h2>Origins &amp; <i>Prices</i></h2><p>Where the 2026 wines come from, and what they cost on release.</p></header>
+  <div class="plates2">
+    <div class="frame plate"><div class="caps pno">Plate I</div><h3>Wines by country</h3><p class="cap">Count of the 100 wines. Hover a bar for regions; click to filter the list below.</p><div id="ch-lt-country"></div></div>
+    <div class="frame plate"><div class="caps pno">Plate II</div><h3>Score against release price</h3><p class="cap">Each dot is a wine; price on a log scale. Larger dots are the Top 10. Click a dot for its review.</p><div id="ch-lt-scatter"></div></div>
+  </div>
+
+  <header class="shead"><svg class="orn"><use href="#grape"/></svg><h2>From the <i>Cellar Door</i></h2><p>The best value on the list: the highest-scoring wines under each price ceiling.</p></header>
+  <div class="plates2" id="lt-values"></div>
+
+  <header class="shead"><div class="caps kick">The complete list</div><h2>All One Hundred, <i>2026</i></h2><p>Set as a wine list. Arrange it by rank, country, color, price, or score; click a winery for every year it made the list.</p></header>
+  <div class="controls">
+    <label>Search<input type="search" id="lt-q" placeholder="Winery, wine, region…"></label>
+    <label>Color<select id="lt-color"></select></label>
+    <label>Country<select id="lt-country"></select></label>
+    <label>Arrange<select id="lt-sort">
+      <option value="rank">By rank</option><option value="country">By country</option><option value="color">By color</option>
+      <option value="price">By price</option><option value="score">By score</option>
+    </select></label>
+  </div>
+  <p class="count" id="lt-count"></p>
+  <div class="wlist" id="lt-list"></div>
+</section>
+
+<section class="view" id="v-all">
+  <header class="shead"><svg class="orn"><use href="#grape"/></svg><div class="caps kick">The cellar ledger</div><h2>Every Wine, <i>1988–2026</i></h2><p>All 3,900 wines from 39 lists in one ledger. Filter and sort, then download what you see as CSV. Click a winery for its full record, or a year for that list.</p></header>
+  <div class="controls">
+    <label>Search<input type="search" id="al-q" placeholder="Winery, wine, vintage, region…"></label>
+    <label>List year<select id="al-year"></select></label>
+    <label>Color<select id="al-color"></select></label>
+    <label>Country<select id="al-country"></select></label>
+    <label>US state<select id="al-state"></select></label>
+    <label>Score at least<input type="number" id="al-smin" min="80" max="100" step="1" placeholder="any"></label>
+    <label>Price up to $<input type="number" id="al-pmax" min="1" step="1" placeholder="any"></label>
+    <label class="chk"><input type="checkbox" id="al-open"> Window open in 2026</label>
+    <label>Order<select id="al-sort">
+      <option value="yr">Newest list, by rank</option><option value="yrA">Oldest list first</option>
+      <option value="score">Score, high to low</option><option value="price">Price, low to high</option>
+      <option value="priceD">Price, high to low</option><option value="age">Oldest vintage first</option>
+    </select></label>
+    <span id="al-chips"></span>
+    <button type="button" class="btn" id="al-reset">Reset</button>
+    <button type="button" class="btn solid" id="al-csv">Download CSV</button>
+  </div>
+  <p class="count" id="al-count"></p>
+  <div class="ledger"><table>
+    <thead><tr><th class="num">List</th><th class="num">Rank</th><th></th><th>Wine</th><th class="num">Score</th><th class="num">Price</th><th>Color</th><th>Origin</th><th>Taster</th><th>Drink</th><th class="num">Cases</th></tr></thead>
+    <tbody id="al-body"></tbody>
+  </table></div>
+  <div class="more"><button type="button" class="btn" id="al-more">Show more</button></div>
+</section>
+
+<section class="view" id="v-woty">
+  <header class="shead"><svg class="orn"><use href="#grape"/></svg><div class="caps kick">Thirty-nine vintages</div><h2>Wines of the <i>Year</i></h2><p id="wo-sub"></p></header>
+  <div class="numbers" id="wo-tiles"></div>
+  <div class="tl" id="wo-grid"></div>
+</section>
+
+<section class="view" id="v-trends">
+  <header class="shead"><svg class="orn"><use href="#grape"/></svg><div class="caps kick">Thirty-nine years of the list</div><h2>Vintage <i>Trends</i></h2><p>How the list has shifted by country, color, score, price, and age. Hover any plate for its values; each plate has its numbers in a table below it.</p></header>
+  <div class="frame plate"><div class="caps pno">Plate III</div><h3>Country share of each list</h3><p class="cap">Wines per list, by country. The five largest producers plus Portugal; the rest grouped as Other.</p><div id="ch-country"></div></div>
+  <div class="frame plate"><div class="caps pno">Plate IV</div><h3>Color and style of each list</h3><p class="cap">Wines per list, by color. Dessert includes Port, Sauternes, Tokaji, and other sweet and fortified wines.</p><div id="ch-color"></div></div>
+  <div class="plates2">
+    <div class="frame plate"><div class="caps pno">Plate V</div><h3>Average score</h3><p class="cap">Mean Wine Spectator score of each list's 100 wines.</p><div id="ch-score"></div></div>
+    <div class="frame plate"><div class="caps pno">Plate VI</div><h3>Release price</h3><p class="cap">Median and mean price in US dollars, not adjusted for inflation.</p><div id="ch-price"></div></div>
+  </div>
+  <div class="plates2">
+    <div class="frame plate"><div class="caps pno">Plate VII</div><h3>Wines at 95 points or more</h3><p class="cap">Count out of 100 on each list.</p><div id="ch-95"></div></div>
+    <div class="frame plate"><div class="caps pno">Plate VIII</div><h3>Average age at listing</h3><p class="cap">List year minus vintage, in years. Non-vintage wines are left out.</p><div id="ch-age"></div></div>
+  </div>
+  <header class="shead"><div class="caps kick">All-time</div><h2>By <i>Country</i></h2><p>Click a country to open its wines in the Cellar.</p></header>
+  <div class="ledger" id="tr-countries"></div>
+</section>
+
+<section class="view" id="v-repeat">
+  <header class="shead"><svg class="orn"><use href="#grape"/></svg><div class="caps kick">Repeat honorees</div><h2>The <i>Estates</i></h2><p>Wineries and wines that keep returning. Names are grouped ignoring accents and punctuation, so “Château” and “Chateau” count as one. Filled years mark a No. 1.</p></header>
+  <div class="frame plate"><div class="caps pno">Plate IX</div><h3>Most Top 100 appearances</h3><p class="cap">The 25 most-listed wineries across all 39 lists. Click a bar for every appearance.</p><div id="ch-wineries"></div></div>
+  <header class="shead"><div class="caps kick">Six or more appearances</div><h2>The Estate <i>Register</i></h2><p>Each year links to that year's review.</p></header>
+  <div class="ledger" id="rp-wineries"></div>
+  <header class="shead"><svg class="orn"><use href="#grape"/></svg><h2>Same Wine, <i>Many Lists</i></h2><p>The same winery and wine name, in any vintage, listed four or more times.</p></header>
+  <div class="ledger" id="rp-wines"></div>
+</section>
+
+<section class="view prov" id="v-sources">
+  <header class="shead"><svg class="orn"><use href="#grape"/></svg><div class="caps kick">Sources, method &amp; caveats</div><h2><i>Provenance</i></h2></header>
+  <div class="prose">
+    <p>Every record here comes from Wine Spectator's own <a href="https://top100-list.winespectator.com/">Top 100 list explorer</a>, which ships each year's hundred wines inside its JavaScript bundle. This report decodes those files directly, then adds the Top 10 story pages from the <a href="https://top100.winespectator.com/">editorial site</a> for 2013 onward (see also <a href="https://top100.winespectator.com/archives">the archives</a>). For how the editors taste blind and score, see <a href="https://www.winespectator.com/articles/about-our-tastings">About our tastings</a>.</p>
+    <p>Each wine links to its Wine Spectator review, where the full tasting note lives; some may need a membership. The Wine-Searcher, Vivino, and CellarTracker links are searches for the winery, wine, and vintage. They usually land on the right bottle but aren't checked matches. This report isn't affiliated with Wine Spectator; the ranks, scores, and prices are theirs.</p>
+  </div>
+  <h3>Each list on Wine Spectator</h3>
+  <div class="yearlinks" id="so-years"></div>
+  <h3>Editorial pages &amp; Top 10 stories</h3>
+  <div class="stories" id="so-stories"></div>
+  <h3>Notes on the data</h3>
+  <ul id="so-notes"></ul>
+  <h3>Taster initials</h3>
+  <p style="color:var(--ink-2)">The source records give initials only. Names are added for the most frequent; the rest are shown as published. Blank means no initials were recorded, which is common before 2000.</p>
+  <div class="ledger" id="so-tasters"></div>
+  <h3>Rebuilding</h3>
+  <p style="color:var(--ink-2)"><code>python3 fetch.py</code> downloads the source files into a git-ignored <code>.cache/</code>; <code>python3 build.py</code> writes this page plus <code>data/top100.csv</code> and <code>data/top100.json</code>.</p>
+</section>
+</main>
+<footer class="wrap" id="foot"></footer>
+<div id="tip" role="tooltip"></div>
+
+<script>
+const DATA = /*__DATA__*/[];
+const META = /*__META__*/{};
+const LATEST = META.last;
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const fold = s => String(s).normalize("NFKD").replace(/[̀-ͯ]/g, "").toLowerCase();
+const wkey = s => fold(s).replace(/[^a-z0-9]+/g, " ").trim();
+const fmt = n => n.toLocaleString("en-US");
+const money = r => r.p == null ? "n/a" : "$" + fmt(r.p) + (r.b ? ` <span class="flag">(${esc(r.b)})</span>` : "");
+const moneyT = r => r.p == null ? "n/a" : "$" + fmt(r.p) + (r.b ? ` (${r.b})` : "");
+const median = a => { const s = [...a].sort((x, y) => x - y), m = s.length >> 1; return s.length ? (s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2) : 0; };
+const mean = a => a.reduce((x, y) => x + y, 0) / (a.length || 1);
+const COLORS = ["Red", "White", "Sparkling", "Dessert", "Rosé"];
+const CVAR = { Red: "--w-red", White: "--w-white", Sparkling: "--w-spark", Dessert: "--w-dessert", "Rosé": "--w-rose" };
+const origin = r => [r.rg, r.st, r.co].filter(Boolean).join(", ");
+const title = r => `${r.w} ${r.n} ${r.v}`.replace(/\s+/g, " ").trim();
+const roman = n => [[1000, "M"], [900, "CM"], [500, "D"], [400, "CD"], [100, "C"], [90, "XC"], [50, "L"], [40, "XL"], [10, "X"], [9, "IX"], [5, "V"], [4, "IV"], [1, "I"]].reduce((s, [v, l]) => { while (n >= v) { s += l; n -= v; } return s; }, "");
+
+DATA.forEach((r, i) => {
+  r.i = i;
+  r.k = fold([r.w, r.n, r.v, r.co, r.st, r.rg, r.c].join(" "));
+  r.wk = wkey(r.w);
+  r.age = /^\d{4}$/.test(r.v) ? r.y - +r.v : null;
+});
+const byYear = {};
+DATA.forEach(r => (byYear[r.y] ||= []).push(r));
+const YEARS = Object.keys(byYear).map(Number).sort((a, b) => a - b);
+
+/* ---------- engraved vineyard masthead ---------- */
+function engraving() {
+  const W = 1400, H = 230, cx = 700;
+  let s = `<svg class="engr" viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><defs>
+    <clipPath id="sunC"><circle cx="${cx}" cy="150" r="70"/></clipPath>
+    <clipPath id="fgC"><path d="M0,192 C260,170 520,166 ${cx},168 S1140,170 ${W},192 L${W},${H} L0,${H}Z"/></clipPath></defs>`;
+  for (let a = 196; a <= 344; a += 8) {
+    const t = a * Math.PI / 180, long = (a - 196) % 16 === 0;
+    s += `<line class="ln" x1="${cx + Math.cos(t) * 84}" y1="${150 + Math.sin(t) * 84}" x2="${cx + Math.cos(t) * (long ? 112 : 98)}" y2="${150 + Math.sin(t) * (long ? 112 : 98)}"/>`;
+  }
+  s += `<circle cx="${cx}" cy="150" r="70" fill="var(--sun)" stroke="var(--engrave)"/><g clip-path="url(#sunC)">`;
+  for (let y = 84; y < 222; y += 6) s += `<line class="ln" x1="${cx - 72}" x2="${cx + 72}" y1="${y}" y2="${y}" stroke-opacity="${(.25 + (y - 84) / 300).toFixed(2)}"/>`;
+  s += `</g>`;
+  s += `<path class="hill" d="M0,150 C120,128 220,134 330,142 S520,120 640,140 S860,118 990,136 S1240,122 ${W},140 L${W},${H} L0,${H}Z"/>`;
+  for (let i = 0; i < 26; i++) { const x = 20 + i * 54, y = 150 - 6 * Math.sin(i * .9); s += `<line class="ln" x1="${x}" y1="${y + 4}" x2="${x + 30}" y2="${y + 2}" stroke-opacity=".5"/>`; }
+  s += `<path class="hill" d="M0,172 C180,150 360,154 520,162 S820,146 980,158 S1260,150 ${W},166 L${W},${H} L0,${H}Z"/>`;
+  [[150, 160], [176, 158], [198, 159], [1160, 156], [1184, 157], [1212, 159], [930, 157]].forEach(([x, y], i) => {
+    const h = 34 + (i % 3) * 7; s += `<path class="tree" d="M${x},${y} Q${x - 6},${y - h * .45} ${x},${y - h} Q${x + 6},${y - h * .45} ${x},${y}Z"/>`;
+  });
+  s += `<g class="ln" stroke-width="1.1"><path d="M1040,160 v-14 h34 v14 M1036,147 l21,-11 l21,11 M1050,160 v-7 h7 v7" fill="var(--paper)"/></g>`;
+  s += `<path class="hill" d="M0,192 C260,170 520,166 ${cx},168 S1140,170 ${W},192 L${W},${H} L0,${H}Z"/><g clip-path="url(#fgC)">`;
+  for (let i = -22; i <= 22; i++) s += `<path class="row" stroke-dasharray="1.2 5.5" d="M${cx + i * 16},166 L${cx + i * 120},${H + 20}"/>`;
+  s += `</g></svg>`;
+  return s;
+}
+$("#engr").innerHTML = engraving();
+
+function links(r, compact) {
+  const q = title(r);
+  const ws = `https://www.wine-searcher.com/find/${encodeURIComponent(fold(`${r.w} ${r.n}`).replace(/[^a-z0-9]+/g, " ").trim()).replace(/%20/g, "+")}${/^\d{4}$/.test(r.v) ? "/" + r.v : ""}`;
+  const out = [`<a class="pri" href="https://www.winespectator.com/wine/detail/note_id/${encodeURIComponent(r.id)}" target="_blank" rel="noopener" title="Wine Spectator review">review</a>`];
+  if (r.sk) out.push(`<a class="story" href="${esc(r.sk)}" target="_blank" rel="noopener" title="Wine Spectator Top 10 story">story</a>`);
+  out.push(`<a href="${ws}" target="_blank" rel="noopener" title="Wine-Searcher prices">wine-searcher</a>`);
+  out.push(`<a href="https://www.vivino.com/search/wines?q=${encodeURIComponent(q)}" target="_blank" rel="noopener" title="Vivino search">vivino</a>`);
+  out.push(`<a href="https://www.cellartracker.com/list.asp?Table=List&szSearch=${encodeURIComponent(q)}" target="_blank" rel="noopener" title="CellarTracker search">cellartracker</a>`);
+  if (r.lb && !compact) out.push(`<a href="${esc(r.lb)}" target="_blank" rel="noopener" title="Label image">label</a>`);
+  out.push(`<a href="https://top100-list.winespectator.com/?year=${r.y}" target="_blank" rel="noopener" title="This year's list on Wine Spectator">${r.y} list</a>`);
+  return `<div class="links">${out.join("")}</div>`;
+}
+function label(r, w) {
+  const sw = `var(${CVAR[r.c] || "--other"})`;
+  if (!r.lb) return `<div class="lbl" aria-hidden="true"><div class="ph" style="--sw:${sw}"></div></div>`;
+  const src = r.lb + (r.lb.includes("?") ? "&" : "?") + `w=${w}&auto=format,compress&fit=max&q=65`;
+  return `<div class="lbl"><img loading="lazy" src="${esc(src)}" alt="Label: ${esc(title(r))}" onerror="this.parentNode.innerHTML='<div class=ph style=--sw:${sw}></div>'"></div>`;
+}
+const colorDot = r => `<span class="dot" style="--sw:var(${CVAR[r.c]})"></span>${esc(r.c)}${r.cf ? '<span class="flag" title="Color missing in source; set from wine type or style"> *</span>' : ""}`;
+const wineryBtn = (r, cls = "") => `<button class="lnk ${cls}" data-winery="${esc(r.w)}" title="Every Top 100 appearance for ${esc(r.w)}">${esc(r.w)}</button>`;
+const taster = t => t ? (META.tasters[t] ? `<span title="${esc(META.tasters[t])}">${esc(t)}</span>` : esc(t)) : "";
+const casesTxt = r => r.cm ? fmt(r.cm) + (r.ci ? ` <span class="flag" title="cases imported">(${fmt(r.ci)} imp.)</span>` : "") : (r.ci ? fmt(r.ci) + ' <span class="flag">imp.</span>' : "");
+
+function tcard(r) {
+  return `<article class="frame tcard">
+    <div class="no">No. ${r.r}</div>
+    <div class="arch">${label(r, 240)}</div>
+    <div class="wy">${wineryBtn(r)}</div>
+    <div class="wn2">${esc(r.n)} ${esc(r.v)}</div>
+    <div class="org">${esc(origin(r))}</div>
+    <div class="sp"><b>${r.s}</b> points · ${money(r)}</div>
+    <div class="org">${colorDot(r)}${r.dw ? " · drink " + esc(r.dw) : ""}</div>
+    ${links(r, true)}
+  </article>`;
+}
+function wl(r) {
+  return `<div class="wl">
+    <span class="wl-r">${r.r}</span>
+    <div>
+      <div class="wl-l"><span class="wl-n">${wineryBtn(r)} <i>${esc(r.n)}</i> ${esc(r.v)}</span><span class="ldr"></span><span class="wl-p"><b>${r.s}</b> · ${money(r)}</span></div>
+      <div class="wl-m">${colorDot(r)} · ${esc(origin(r))}${r.dw ? " · drink " + esc(r.dw) : ""}${r.cm ? " · " + fmt(r.cm) + " cases" : ""}</div>
+      ${links(r, true)}
+    </div></div>`;
+}
+
+/* ---------- tooltip ---------- */
+const tip = $("#tip");
+function showTip(e, html) {
+  tip.innerHTML = html; tip.style.display = "block";
+  const pad = 14, w = tip.offsetWidth, h = tip.offsetHeight;
+  let x = e.clientX + pad, y = e.clientY + pad;
+  if (x + w > innerWidth - 8) x = e.clientX - w - pad;
+  if (y + h > innerHeight - 8) y = e.clientY - h - pad;
+  tip.style.left = x + "px"; tip.style.top = y + "px";
+}
+const hideTip = () => tip.style.display = "none";
+const tr = (k, v, sw) => `<div class="r"><span>${sw ? `<span class="dot" style="--sw:${sw}"></span>` : ""}${k}</span><span>${v}</span></div>`;
+
+/* ---------- charts ---------- */
+function niceTicks(lo, hi, n = 5) {
+  const span = hi - lo || 1, step0 = span / n, mag = 10 ** Math.floor(Math.log10(step0));
+  const step = [1, 2, 2.5, 5, 10].map(m => m * mag).find(s => s >= step0);
+  const out = []; for (let v = Math.ceil(lo / step) * step; v <= hi + 1e-9; v += step) out.push(+v.toFixed(6));
+  return out;
+}
+function tableHTML(head, rows) {
+  return `<details class="tbl"><summary>Show the numbers</summary><div class="ledger"><table><thead><tr>${head.map((h, i) => `<th class="${i ? "num" : ""}">${h}</th>`).join("")}</tr></thead><tbody>${rows.map(r => `<tr>${r.map((c, i) => `<td class="${i ? "num" : ""}">${c}</td>`).join("")}</tr>`).join("")}</tbody></table></div></details>`;
+}
+function legendHTML(items) { return `<div class="legend">${items.map(([n, c]) => `<span><i style="--sw:${c}"></i>${esc(n)}</span>`).join("")}</div>`; }
+
+function stackedBars(el, rows, cats, unit) {
+  const W = 1100, H = 300, m = { l: 34, r: 8, t: 8, b: 26 };
+  const iw = W - m.l - m.r, ih = H - m.t - m.b;
+  const max = Math.max(...rows.map(r => cats.reduce((a, [c]) => a + (r.parts[c] || 0), 0)));
+  const bw = iw / rows.length, gap = Math.max(2, bw * .2);
+  let s = `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="Stacked bar chart">`;
+  niceTicks(0, max, 4).forEach(t => { const y = m.t + ih - t / max * ih; s += `<line class="gl" x1="${m.l}" x2="${W - m.r}" y1="${y}" y2="${y}"/><text x="${m.l - 6}" y="${y + 4}" text-anchor="end">${t}</text>`; });
+  rows.forEach((r, i) => {
+    const x = m.l + i * bw + gap / 2, w = bw - gap; let acc = 0;
+    cats.forEach(([c, v], ci) => {
+      const n = r.parts[c] || 0; if (!n) return;
+      const h = n / max * ih, y = m.t + ih - (acc + n) / max * ih; acc += n;
+      const top = cats.slice(ci + 1).every(([c2]) => !(r.parts[c2]));
+      const hh = Math.max(0, h - 2), y2 = y + 2;
+      s += top ? `<path d="M${x},${y2 + hh}V${y2 + Math.min(3, hh)}q0,-3 3,-3h${w - 6}q3,0 3,3V${y2 + hh}Z" fill="var(${v})"/>`
+               : `<rect x="${x}" y="${y2}" width="${w}" height="${hh}" fill="var(${v})"/>`;
+    });
+    if (rows.length < 20 || i % 2 === 0 || i === rows.length - 1) s += `<text x="${x + w / 2}" y="${H - 8}" text-anchor="middle">${rows.length > 20 ? "’" + String(r.x).slice(2) : r.x}</text>`;
+    s += `<rect class="hit" data-i="${i}" x="${m.l + i * bw}" y="${m.t}" width="${bw}" height="${ih}" fill="transparent"/>`;
+  });
+  s += `<line class="bl" x1="${m.l}" x2="${W - m.r}" y1="${m.t + ih}" y2="${m.t + ih}"/></svg>`;
+  el.innerHTML = legendHTML(cats.map(([c, v]) => [c, `var(${v})`])) + s +
+    tableHTML(["List", ...cats.map(c => c[0])], rows.map(r => [r.x, ...cats.map(([c]) => r.parts[c] || 0)]));
+  el.querySelectorAll(".hit").forEach(h => {
+    h.addEventListener("mousemove", e => { const r = rows[+h.dataset.i]; showTip(e, `<b>${r.x}</b>` + [...cats].reverse().map(([c, v]) => tr(c, (r.parts[c] || 0) + (unit || ""), `var(${v})`)).join("")); });
+    h.addEventListener("mouseleave", hideTip);
+  });
+}
+
+function lineChart(el, series, o = {}) {
+  const W = 540, H = 250, m = { l: 40, r: o.endLabels ? 62 : 12, t: 10, b: 24 };
+  const iw = W - m.l - m.r, ih = H - m.t - m.b;
+  const xs = series[0].pts.map(p => p[0]), x0 = Math.min(...xs), x1 = Math.max(...xs);
+  const ys = series.flatMap(s => s.pts.map(p => p[1]));
+  let y0 = o.y0 ?? Math.min(...ys), y1 = Math.max(...ys); const pad = (y1 - y0) * .08; if (o.y0 == null) y0 -= pad; y1 += pad;
+  const ticks = niceTicks(y0, y1, 4); y0 = Math.min(y0, ticks[0]); y1 = Math.max(y1, ticks.at(-1));
+  const X = x => m.l + (x - x0) / (x1 - x0) * iw, Y = y => m.t + ih - (y - y0) / (y1 - y0) * ih;
+  let s = `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="Line chart">`;
+  ticks.forEach(t => s += `<line class="gl" x1="${m.l}" x2="${W - m.r}" y1="${Y(t)}" y2="${Y(t)}"/><text x="${m.l - 6}" y="${Y(t) + 4}" text-anchor="end">${o.yf ? o.yf(t) : t}</text>`);
+  niceTicks(x0, x1, 6).filter(t => Number.isInteger(t)).forEach(t => s += `<text x="${X(t)}" y="${H - 6}" text-anchor="middle">${t}</text>`);
+  s += `<line class="bl" x1="${m.l}" x2="${W - m.r}" y1="${m.t + ih}" y2="${m.t + ih}"/>`;
+  series.forEach(se => {
+    s += `<path d="${se.pts.map((p, i) => (i ? "L" : "M") + X(p[0]).toFixed(1) + "," + Y(p[1]).toFixed(1)).join("")}" fill="none" stroke="var(${se.v})" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>`;
+    if (o.endLabels) { const p = se.pts.at(-1); s += `<text class="dl" x="${X(p[0]) + 6}" y="${Y(p[1]) + 4}">${esc(se.name)}</text>`; }
+  });
+  s += `<line class="xh bl" y1="${m.t}" y2="${m.t + ih}" x1="-9" x2="-9" style="stroke:var(--muted)" visibility="hidden"/>`;
+  series.forEach((se, i) => s += `<circle class="hd" data-s="${i}" r="4.5" cx="-9" cy="-9" visibility="hidden" fill="var(${se.v})" stroke="var(--paper-2)" stroke-width="2"/>`);
+  s += `<rect class="ov" x="${m.l}" y="${m.t}" width="${iw}" height="${ih}" fill="transparent"/></svg>`;
+  el.innerHTML = (series.length > 1 ? legendHTML(series.map(se => [se.name, `var(${se.v})`])) : "") + s +
+    tableHTML(["List", ...series.map(se => se.name)], xs.map((x, i) => [x, ...series.map(se => o.yf ? o.yf(se.pts[i][1]) : se.pts[i][1])]));
+  const svg = el.querySelector("svg"), ov = el.querySelector(".ov"), xh = el.querySelector(".xh"), dots = el.querySelectorAll(".hd");
+  ov.addEventListener("mousemove", e => {
+    const b = svg.getBoundingClientRect(), vx = (e.clientX - b.left) / b.width * W;
+    const xv = Math.round(x0 + (vx - m.l) / iw * (x1 - x0)), i = xs.indexOf(Math.max(x0, Math.min(x1, xv)));
+    if (i < 0) return;
+    xh.setAttribute("visibility", "visible"); xh.setAttribute("x1", X(xs[i])); xh.setAttribute("x2", X(xs[i]));
+    dots.forEach((d, si) => { d.setAttribute("visibility", "visible"); d.setAttribute("cx", X(xs[i])); d.setAttribute("cy", Y(series[si].pts[i][1])); });
+    showTip(e, `<b>${xs[i]}</b>` + series.map(se => tr(se.name, o.yf ? o.yf(se.pts[i][1]) : se.pts[i][1], series.length > 1 ? `var(${se.v})` : "")).join(""));
+  });
+  ov.addEventListener("mouseleave", () => { hideTip(); xh.setAttribute("visibility", "hidden"); dots.forEach(d => d.setAttribute("visibility", "hidden")); });
+}
+
+function hbars(el, items, o = {}) {
+  const rowH = 24, W = o.W || 540, m = { l: o.lw || 150, r: 40, t: 4, b: 4 }, H = items.length * rowH + m.t + m.b, iw = W - m.l - m.r;
+  const max = Math.max(...items.map(d => d.value));
+  let s = `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="Bar chart">`;
+  items.forEach((d, i) => {
+    const y = m.t + i * rowH, w = Math.max(2, d.value / max * iw), bh = 14;
+    s += `<text class="dl" x="${m.l - 8}" y="${y + 16}" text-anchor="end">${esc(d.label.length > 28 ? d.label.slice(0, 27) + "…" : d.label)}</text>`;
+    s += `<path d="M${m.l},${y + 5}h${w - 4}q4,0 4,4v${bh - 8}q0,4 -4,4h${-(w - 4)}Z" fill="var(${o.v || "--c1"})"/>`;
+    s += `<text class="dl" x="${m.l + w + 6}" y="${y + 16}">${d.value}</text>`;
+    s += `<rect class="hit" data-i="${i}" x="0" y="${y}" width="${W}" height="${rowH}" fill="transparent"/>`;
+  });
+  s += `<line class="bl" x1="${m.l}" x2="${m.l}" y1="${m.t}" y2="${H - m.b}"/></svg>`;
+  el.innerHTML = s;
+  el.querySelectorAll(".hit").forEach(h => {
+    h.addEventListener("mousemove", e => showTip(e, items[+h.dataset.i].tip));
+    h.addEventListener("mouseleave", hideTip);
+    if (o.onClick) { h.style.cursor = "pointer"; h.addEventListener("click", () => o.onClick(items[+h.dataset.i])); }
+  });
+}
+
+function scatter(el, rows) {
+  const W = 540, H = 300, m = { l: 36, r: 14, t: 10, b: 28 }, iw = W - m.l - m.r, ih = H - m.t - m.b;
+  const pr = rows.filter(r => r.p);
+  const lx0 = Math.log10(Math.min(...pr.map(r => r.p)) * .85), lx1 = Math.log10(Math.max(...pr.map(r => r.p)) * 1.15);
+  const sy = pr.map(r => r.s), y0 = Math.min(...sy) - .6, y1 = Math.max(...sy) + .6;
+  const X = p => m.l + (Math.log10(p) - lx0) / (lx1 - lx0) * iw, Y = v => m.t + ih - (v - y0) / (y1 - y0) * ih;
+  let s = `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="Score against price">`;
+  for (let v = Math.ceil(y0); v <= y1; v++) s += `<line class="gl" x1="${m.l}" x2="${W - m.r}" y1="${Y(v)}" y2="${Y(v)}"/><text x="${m.l - 6}" y="${Y(v) + 4}" text-anchor="end">${v}</text>`;
+  [10, 15, 20, 30, 50, 75, 100, 150, 200, 300, 500, 1000].filter(p => Math.log10(p) > lx0 && Math.log10(p) < lx1).forEach(p => s += `<text x="${X(p)}" y="${H - 8}" text-anchor="middle">$${p}</text>`);
+  s += `<line class="bl" x1="${m.l}" x2="${W - m.r}" y1="${m.t + ih}" y2="${m.t + ih}"/>`;
+  const seen = {};
+  pr.forEach(r => { const k = r.p + "|" + r.s; const n = seen[k] = (seen[k] || 0) + 1; r._jx = (n - 1) * 5; });
+  pr.forEach((r, i) => {
+    const cx = X(r.p) + r._jx, cy = Y(r.s);
+    s += `<circle cx="${cx}" cy="${cy}" r="${r.r <= 10 ? 6 : 4.5}" fill="var(--c1)" fill-opacity="${r.r <= 10 ? 1 : .6}" stroke="var(--paper-2)" stroke-width="2"/>`;
+    if (r.r === 1) s += `<text class="dl" x="${cx + 9}" y="${cy - 7}" font-style="italic">No. 1</text>`;
+    s += `<circle class="hit" data-i="${i}" cx="${cx}" cy="${cy}" r="9" fill="transparent"/>`;
+  });
+  s += `</svg>`;
+  el.innerHTML = s + tableHTML(["Wine", "Rank", "Score", "Price"], pr.map(r => [esc(title(r)), r.r, r.s, "$" + r.p]));
+  el.querySelectorAll(".hit").forEach(h => {
+    const r = pr[+h.dataset.i];
+    h.addEventListener("mousemove", e => showTip(e, `<b>No. ${r.r} · ${esc(r.w)}</b><div><i>${esc(r.n)}</i> ${esc(r.v)}</div>` + tr("Score", r.s) + tr("Price", moneyT(r)) + tr("Origin", esc(origin(r)))));
+    h.addEventListener("mouseleave", hideTip);
+    h.style.cursor = "pointer";
+    h.addEventListener("click", () => window.open(`https://www.winespectator.com/wine/detail/note_id/${r.id}`, "_blank", "noopener"));
+  });
+}
+
+/* ---------- header ---------- */
+$("#hdrVint").innerHTML = `<b>${META.years}</b> lists · <b>${fmt(META.count)}</b> wines · <b>${META.first}</b> to <b>${META.last}</b>`;
+$("#hdrDek").textContent = `Every wine from every Wine Spectator Top 100, with score, release price, origin, drinking window, and production. Each links to its Wine Spectator review, retail searches, and its year's list; the Top 10 from 2013 on also link to their story pages.`;
+$("#hdrPulled").textContent = `Pulled ${META.pulled}`;
+$("#themeBtn").onclick = () => {
+  const d = document.documentElement, dark = d.dataset.theme ? d.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+  d.dataset.theme = dark ? "light" : "dark";
+};
+
+/* ---------- the latest list ---------- */
+function renderLatest() {
+  const L = byYear[LATEST].slice().sort((a, b) => a.r - b.r), prices = L.filter(r => r.p).map(r => r.p);
+  const countries = new Set(L.map(r => r.co));
+  const topC = Object.entries(L.reduce((a, r) => (a[r.co] = (a[r.co] || 0) + 1, a), {})).sort((a, b) => b[1] - a[1]);
+  $("#lt-kick").textContent = `The list of ${roman(LATEST)}`;
+  $("#lt-h").innerHTML = `The <i>${LATEST}</i> Top 100`;
+  $("#lt-sub").innerHTML = `${L.length} wines from ${countries.size} countries, led by ${topC.slice(0, 3).map(([c, n]) => `${esc(c)} (${n})`).join(", ")}. <a href="https://top100-list.winespectator.com/?year=${LATEST}" target="_blank" rel="noopener">The list on Wine Spectator</a> · <a href="https://top100.winespectator.com/${LATEST}/" target="_blank" rel="noopener">editorial site</a>${META.video.includes(LATEST) ? ` · <a href="https://top100.winespectator.com/${LATEST}/video" target="_blank" rel="noopener">video</a>` : ""}`;
+  const tiles = [
+    [mean(L.map(r => r.s)).toFixed(1), "average score"], [Math.max(...L.map(r => r.s)), "top score"],
+    [L.filter(r => r.s >= 95).length, "at 95 points +"], ["$" + median(prices), "median price"],
+    ["$" + Math.round(mean(prices)), "average price"], [L.filter(r => r.p && r.p <= 30).length, "at $30 or less"],
+    [countries.size, "countries"], [new Set(L.map(r => r.wk)).size, "wineries"],
+  ];
+  $("#lt-tiles").innerHTML = tiles.map(([b, s]) => `<div><b>${b}</b><span>${s}</span></div>`).join("");
+  const one = L[0];
+  const spec = [["Score", `${one.s} points`], ["Release price", money(one)], ["Color", colorDot(one)], ["Origin", esc(origin(one))],
+    one.dw && ["Drink", esc(one.dw)], one.cm && ["Production", `${fmt(one.cm)} cases`],
+    one.tz && ["Taster", esc(META.tasters[one.tz] || one.tz)], one.is && ["Reviewed", esc(one.is)]].filter(Boolean);
+  $("#lt-hero").innerHTML = `<div class="arch">${label(one, 600)}</div><div>
+    <div class="caps eyebrow">Wine of the Year</div><div class="roman">${roman(LATEST)}</div>
+    <h3>${wineryBtn(one)}</h3><div class="wn">${esc(one.n)} · ${esc(one.v)}</div>
+    <dl class="spec">${spec.map(([k, v]) => `<div><dt>${k}</dt><span class="ldr"></span><dd>${v}</dd></div>`).join("")}</dl>
+    ${links(one)}</div>`;
+  $("#lt-top10").innerHTML = L.slice(0, 10).map(tcard).join("");
+
+  const val = cap => L.filter(r => r.p && r.p <= cap).sort((a, b) => b.s - a.s || a.p - b.p || a.r - b.r).slice(0, 7);
+  $("#lt-values").innerHTML = [[30, "Thirty"], [50, "Fifty"]].map(([cap, word]) =>
+    `<div class="frame cellar-door"><h3>${word} dollars &amp; under</h3><div class="caps under">The seven best at $${cap} or less</div>${val(cap).map(wl).join("")}</div>`).join("");
+
+  const opt = (v, t) => `<option value="${esc(v)}">${esc(t)}</option>`;
+  $("#lt-color").innerHTML = opt("", "All colors") + COLORS.filter(c => L.some(r => r.c === c)).map(c => opt(c, `${c} (${L.filter(r => r.c === c).length})`)).join("");
+  $("#lt-country").innerHTML = opt("", "All countries") + topC.map(([c, n]) => opt(c, `${c} (${n})`)).join("");
+  const draw = () => {
+    const q = fold($("#lt-q").value.trim()), c = $("#lt-color").value, co = $("#lt-country").value, so = $("#lt-sort").value;
+    const terms = q.split(/\s+/).filter(Boolean);
+    const rows = L.filter(r => terms.every(t => r.k.includes(t)) && (!c || r.c === c) && (!co || r.co === co));
+    const byRank = (a, b) => a.r - b.r;
+    let groups;
+    if (so === "country") {
+      const g = {}; rows.forEach(r => (g[r.co] ||= []).push(r));
+      groups = Object.entries(g).sort((a, b) => b[1].length - a[1].length).map(([k, rs]) => [k, rs.sort(byRank)]);
+    } else if (so === "color") {
+      groups = COLORS.map(k => [k, rows.filter(r => r.c === k).sort(byRank)]);
+    } else if (so === "price") {
+      groups = [["Under $25", 0, 24.99], ["$25 to $49", 25, 49.99], ["$50 to $99", 50, 99.99], ["$100 and up", 100, 1e9]]
+        .map(([k, lo, hi]) => [k, rows.filter(r => r.p != null && r.p >= lo && r.p <= hi).sort((a, b) => a.p - b.p || a.r - b.r)]);
+      groups.push(["No price listed", rows.filter(r => r.p == null)]);
+    } else if (so === "score") {
+      groups = [...new Set(rows.map(r => r.s))].sort((a, b) => b - a).map(s => [`${s} points`, rows.filter(r => r.s === s).sort(byRank)]);
+    } else {
+      groups = [[1, 25], [26, 50], [51, 75], [76, 100]].map(([a, b]) => [`Nos. ${a} – ${b}`, rows.filter(r => r.r >= a && r.r <= b).sort(byRank)]);
+    }
+    groups = groups.filter(g => g[1].length);
+    $("#lt-count").textContent = `${rows.length} of ${L.length} wines`;
+    $("#lt-list").innerHTML = groups.map(([k, rs]) => `<div class="wgroup"><h4>${esc(k)}<span>${rs.length} wine${rs.length === 1 ? "" : "s"}</span></h4>${rs.map(wl).join("")}</div>`).join("");
+  };
+  ["lt-q", "lt-color", "lt-country", "lt-sort"].forEach(id => $("#" + id).addEventListener("input", draw));
+  draw();
+}
+
+/* ---------- the cellar (all lists) ---------- */
+const AL = { shown: 200, winery: "" };
+function setupAll() {
+  const opt = (v, t) => `<option value="${esc(v)}">${esc(t)}</option>`;
+  const cnt = f => Object.entries(DATA.reduce((a, r) => { const k = f(r); if (k) a[k] = (a[k] || 0) + 1; return a; }, {})).sort((a, b) => b[1] - a[1]);
+  $("#al-year").innerHTML = opt("", "All years") + [...YEARS].reverse().map(y => opt(y, y)).join("");
+  $("#al-color").innerHTML = opt("", "All colors") + cnt(r => r.c).map(([c, n]) => opt(c, `${c} (${fmt(n)})`)).join("");
+  $("#al-country").innerHTML = opt("", "All countries") + cnt(r => r.co).map(([c, n]) => opt(c, `${c} (${fmt(n)})`)).join("");
+  $("#al-state").innerHTML = opt("", "All states") + cnt(r => r.st).map(([c, n]) => opt(c, `${c} (${fmt(n)})`)).join("");
+  ["al-q", "al-year", "al-color", "al-country", "al-state", "al-smin", "al-pmax", "al-open", "al-sort"].forEach(id =>
+    $("#" + id).addEventListener("input", () => { AL.shown = 200; drawAll(); }));
+  $("#al-more").onclick = () => { AL.shown += 200; drawAll(); };
+  $("#al-reset").onclick = () => { resetAll(); drawAll(); };
+  $("#al-csv").onclick = () => {
+    const rows = filtered(), head = ["year", "rank", "winery", "wine", "vintage", "score", "price_usd", "bottle_size", "color", "country", "us_state", "region", "taster", "issue_date", "drink_window", "cases_made", "cases_imported", "ws_review_url", "ws_top10_story_url"];
+    const q = v => { v = String(v ?? ""); return /[",\n]/.test(v) ? `"${v.replace(/"/g, '""')}"` : v; };
+    const lines = [head.join(",")].concat(rows.map(r => [r.y, r.r, r.w, r.n, r.v, r.s, r.p, r.b, r.c, r.co, r.st, r.rg, r.tz, r.is, r.dw, r.cm, r.ci, `https://www.winespectator.com/wine/detail/note_id/${r.id}`, r.sk].map(q).join(",")));
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(new Blob([lines.join("\n")], { type: "text/csv" }));
+    a.download = "wine-spectator-top-100-filtered.csv"; a.click(); URL.revokeObjectURL(a.href);
+  };
+}
+function resetAll() {
+  ["al-q", "al-smin", "al-pmax"].forEach(id => $("#" + id).value = "");
+  ["al-year", "al-color", "al-country", "al-state"].forEach(id => $("#" + id).value = "");
+  $("#al-open").checked = false; $("#al-sort").value = "yr"; AL.winery = ""; AL.shown = 200;
+}
+function filtered() {
+  const q = fold($("#al-q").value.trim()), y = +$("#al-year").value || 0, c = $("#al-color").value, co = $("#al-country").value, st = $("#al-state").value;
+  const smin = +$("#al-smin").value || 0, pmax = +$("#al-pmax").value || 0, open = $("#al-open").checked, so = $("#al-sort").value;
+  const wk = AL.winery ? wkey(AL.winery) : "";
+  const terms = q.split(/\s+/).filter(Boolean);
+  const rows = DATA.filter(r => (!y || r.y === y) && (!c || r.c === c) && (!co || r.co === co) && (!st || r.st === st) &&
+    (!smin || r.s >= smin) && (!pmax || (r.p != null && r.p <= pmax)) && (!open || (r.de && r.de >= 2026)) &&
+    (!wk || r.wk === wk) && terms.every(t => r.k.includes(t)));
+  const P = r => r.p ?? 1e9;
+  const cmp = {
+    yr: (a, b) => b.y - a.y || a.r - b.r, yrA: (a, b) => a.y - b.y || a.r - b.r,
+    score: (a, b) => b.s - a.s || b.y - a.y || a.r - b.r, price: (a, b) => P(a) - P(b) || b.s - a.s,
+    priceD: (a, b) => (b.p ?? -1) - (a.p ?? -1) || b.s - a.s,
+    age: (a, b) => (/^\d{4}$/.test(a.v) ? +a.v : 9999) - (/^\d{4}$/.test(b.v) ? +b.v : 9999) || a.y - b.y,
+  }[so];
+  return rows.sort(cmp);
+}
+function drawAll() {
+  const rows = filtered();
+  $("#al-chips").innerHTML = AL.winery ? `<button class="chip" id="al-wx" type="button" title="Clear winery filter">${esc(AL.winery)} ×</button>` : "";
+  if (AL.winery) $("#al-wx").onclick = () => { AL.winery = ""; drawAll(); };
+  const lists = new Set(rows.map(r => r.y)).size;
+  $("#al-count").textContent = `${fmt(rows.length)} wines across ${lists} list${lists === 1 ? "" : "s"}${rows.length ? ` · average score ${mean(rows.map(r => r.s)).toFixed(1)}` : ""}${rows.some(r => r.p) ? ` · median price $${fmt(median(rows.filter(r => r.p).map(r => r.p)))}` : ""}`;
+  $("#al-body").innerHTML = rows.slice(0, AL.shown).map(r => `<tr>
+    <td class="num"><span class="yr" data-year="${r.y}" title="Show the ${r.y} list">${r.y}</span></td>
+    <td class="num">${r.r}${r.y === 1998 ? '<span class="flag" title="1998 ranks are scrambled in the source"> †</span>' : ""}</td>
+    <td>${label(r, 80)}</td>
+    <td class="wcell">${wineryBtn(r, "wy")}<div class="wn2">${esc(r.n)} ${esc(r.v)}</div>${links(r, true)}</td>
+    <td class="num"><b>${r.s}</b></td><td class="num">${money(r)}</td>
+    <td style="white-space:nowrap">${colorDot(r)}</td><td>${esc(origin(r))}</td><td>${taster(r.tz)}</td>
+    <td style="white-space:nowrap">${esc(r.dw)}</td><td class="num">${casesTxt(r)}</td></tr>`).join("");
+  $("#al-more").style.display = rows.length > AL.shown ? "" : "none";
+  $("#al-more").textContent = `Show ${Math.min(200, rows.length - AL.shown)} more · ${fmt(rows.length - AL.shown)} remaining`;
+}
+function goAll(fn) {
+  resetAll(); fn(); drawAll();
+  if (location.hash !== "#all") location.hash = "all"; else scrollTo(0, 0);
+}
+const gotoWinery = name => goAll(() => { AL.winery = name; });
+const gotoYear = y => goAll(() => { $("#al-year").value = y; });
+const gotoCountry = c => goAll(() => { $("#al-country").value = c; });
+document.addEventListener("click", e => {
+  const w = e.target.closest("[data-winery]"); if (w) { e.preventDefault(); gotoWinery(w.dataset.winery); return; }
+  const y = e.target.closest("[data-year]"); if (y) { e.preventDefault(); gotoYear(+y.dataset.year); return; }
+  const c = e.target.closest("[data-country]"); if (c) { e.preventDefault(); gotoCountry(c.dataset.country); }
+});
+
+/* ---------- wines of the year ---------- */
+function renderWoty() {
+  const ones = DATA.filter(r => r.r === 1).sort((a, b) => b.y - a.y || a.w.localeCompare(b.w));
+  const clean = ones.filter(r => r.y !== 1998);
+  const byC = clean.reduce((a, r) => (a[r.co] = (a[r.co] || 0) + 1, a), {});
+  $("#wo-sub").innerHTML = `Every No. 1 since ${META.first}. In 1997 two Ports tied: Fonseca and Taylor Fladgate, both 1994. For 1998 the source lists three wines at No. 1 and repeats ranks down the list, so all three appear here, marked †; that year's true order can't be recovered from this source.`;
+  const pr = clean.filter(r => r.p).map(r => r.p);
+  $("#wo-tiles").innerHTML = [
+    ...Object.entries(byC).sort((a, b) => b[1] - a[1]).slice(0, 4).map(([c, n]) => [n, `from ${c}`]),
+    ["$" + median(pr), "median price"], [mean(clean.map(r => r.s)).toFixed(1), "average score"],
+  ].map(([b, s]) => `<div><b>${b}</b><span>${esc(s)}</span></div>`).join("");
+  $("#wo-grid").innerHTML = ones.map(r => `<div class="ti"><div class="frame">
+    <div><div class="yrb">${r.y}${r.y === 1998 ? '<span class="flag"> †</span>' : ""}<small>${roman(r.y)}</small></div><div class="arch">${label(r, 160)}</div></div>
+    <div><div class="wy">${wineryBtn(r)}</div><div class="wn2">${esc(r.n)} ${esc(r.v)}</div>
+      <div class="sp"><b>${r.s}</b> points · ${money(r)} · ${colorDot(r)}</div>
+      <div class="org">${esc(origin(r))}${r.dw ? " · drink " + esc(r.dw) : ""}${r.cm ? " · " + fmt(r.cm) + " cases" : ""}</div>
+      ${links(r, true)}</div></div></div>`).join("");
+}
+
+/* ---------- vintage trends ---------- */
+function renderCharts() {
+  const C6 = ["France", "United States", "Italy", "Spain", "Australia", "Portugal"];
+  const cats = [...C6.map((c, i) => [c, `--c${i + 1}`]), ["Other", "--other"]];
+  stackedBars($("#ch-country"), YEARS.map(y => ({ x: y, parts: byYear[y].reduce((a, r) => { const k = C6.includes(r.co) ? r.co : "Other"; a[k] = (a[k] || 0) + 1; return a; }, {}) })), cats);
+  stackedBars($("#ch-color"), YEARS.map(y => ({ x: y, parts: byYear[y].reduce((a, r) => (a[r.c] = (a[r.c] || 0) + 1, a), {}) })), COLORS.map(c => [c, CVAR[c]]));
+  lineChart($("#ch-score"), [{ name: "Average score", v: "--c1", pts: YEARS.map(y => [y, +mean(byYear[y].map(r => r.s)).toFixed(2)]) }], { yf: v => (+v).toFixed(1) });
+  lineChart($("#ch-price"), [
+    { name: "Median", v: "--c1", pts: YEARS.map(y => [y, median(byYear[y].filter(r => r.p).map(r => r.p))]) },
+    { name: "Mean", v: "--c2", pts: YEARS.map(y => [y, Math.round(mean(byYear[y].filter(r => r.p).map(r => r.p)))]) },
+  ], { yf: v => "$" + Math.round(v), y0: 0, endLabels: true });
+  lineChart($("#ch-95"), [{ name: "Wines at 95+", v: "--c1", pts: YEARS.map(y => [y, byYear[y].filter(r => r.s >= 95).length]) }], { y0: 0 });
+  lineChart($("#ch-age"), [{ name: "Average age (years)", v: "--c1", pts: YEARS.map(y => [y, +mean(byYear[y].filter(r => r.age != null).map(r => r.age)).toFixed(2)]) }], { yf: v => (+v).toFixed(1), y0: 0 });
+
+  const L = byYear[LATEST];
+  const cc = Object.entries(L.reduce((a, r) => ((a[r.co] ||= []).push(r), a), {})).sort((a, b) => b[1].length - a[1].length);
+  hbars($("#ch-lt-country"), cc.map(([c, rs]) => {
+    const reg = Object.entries(rs.reduce((a, r) => { const k = r.st || r.rg || c; a[k] = (a[k] || 0) + 1; return a; }, {})).sort((a, b) => b[1] - a[1]);
+    return { label: c, value: rs.length, c, tip: `<b>${esc(c)} · ${rs.length} wines</b>` + reg.map(([k, n]) => tr(esc(k), n)).join("") };
+  }), { lw: 120, onClick: d => { $("#lt-country").value = d.c; $("#lt-country").dispatchEvent(new Event("input")); $("#lt-list").scrollIntoView({ behavior: "smooth" }); } });
+  scatter($("#ch-lt-scatter"), L);
+  hbars($("#ch-wineries"), WINERIES.slice(0, 25).map(w => ({
+    label: w.name, value: w.n, w,
+    tip: `<b>${esc(w.name)}</b>` + tr("Appearances", w.n) + tr("No. 1s", w.ones) + tr("Best rank", w.best) + tr("Years", [...new Set(w.rows.map(r => r.y))].sort().join(", ").replace(/(.{40,}?), /g, "$1,<br>")),
+  })), { lw: 200, W: 900, onClick: d => gotoWinery(d.w.name) });
+}
+
+function countryTable() {
+  const g = DATA.reduce((a, r) => ((a[r.co] ||= []).push(r), a), {});
+  const rows = Object.entries(g).sort((a, b) => b[1].length - a[1].length);
+  $("#tr-countries").innerHTML = `<table><thead><tr><th>Country</th><th class="num">Appearances</th><th class="num">Share</th><th class="num">No. 1 wines</th><th class="num">Avg score</th><th class="num">Median price</th><th class="num">In ${LATEST}</th><th class="num">First listed</th></tr></thead><tbody>${rows.map(([c, rs]) =>
+    `<tr><td><button class="lnk wy" data-country="${esc(c)}">${esc(c)}</button></td><td class="num">${fmt(rs.length)}</td><td class="num">${(rs.length / DATA.length * 100).toFixed(1)}%</td><td class="num">${rs.filter(r => r.r === 1 && r.y !== 1998).length}</td><td class="num">${mean(rs.map(r => r.s)).toFixed(1)}</td><td class="num">${rs.some(r => r.p) ? "$" + median(rs.filter(r => r.p).map(r => r.p)) : "n/a"}</td><td class="num">${rs.filter(r => r.y === LATEST).length}</td><td class="num">${Math.min(...rs.map(r => r.y))}</td></tr>`).join("")}</tbody></table>`;
+}
+
+/* ---------- the estates ---------- */
+let WINERIES = [];
+function computeRepeat() {
+  const g = {};
+  DATA.forEach(r => { (g[r.wk] ||= []).push(r); });
+  WINERIES = Object.values(g).map(rs => {
+    const names = Object.entries(rs.reduce((a, r) => (a[r.w] = (a[r.w] || 0) + 1, a), {})).sort((a, b) => b[1] - a[1]);
+    return { name: names[0][0], rows: rs, n: rs.length, ones: rs.filter(r => r.r === 1 && r.y !== 1998).length, best: Math.min(...rs.map(r => r.r)), co: rs[0].co };
+  }).sort((a, b) => b.n - a.n || b.ones - a.ones || a.best - b.best);
+  const yrChips = rs => `<div class="yrchips">${[...rs].sort((a, b) => a.y - b.y).map(r => `<a href="https://www.winespectator.com/wine/detail/note_id/${r.id}" target="_blank" rel="noopener" class="${r.r === 1 && r.y !== 1998 ? "one" : ""}" title="${esc(`${r.y} No. ${r.r}: ${r.n} ${r.v}, ${r.s} pts`)}">${r.y}</a>`).join("")}</div>`;
+  $("#rp-wineries").innerHTML = `<table><thead><tr><th>Winery</th><th>Country</th><th class="num">Appearances</th><th class="num">No. 1s</th><th class="num">Best rank</th><th class="num">Avg score</th><th>Years</th></tr></thead><tbody>${WINERIES.filter(w => w.n >= 6).map(w =>
+    `<tr><td><button class="lnk wy" data-winery="${esc(w.name)}">${esc(w.name)}</button></td><td>${esc(w.co)}</td><td class="num">${w.n}</td><td class="num">${w.ones || ""}</td><td class="num">${w.best}</td><td class="num">${mean(w.rows.map(r => r.s)).toFixed(1)}</td><td>${yrChips(w.rows)}</td></tr>`).join("")}</tbody></table>`;
+  const wg = {};
+  DATA.forEach(r => { (wg[r.wk + "|" + wkey(r.n)] ||= []).push(r); });
+  const wines = Object.values(wg).filter(rs => rs.length >= 4).sort((a, b) => b.length - a.length || Math.min(...a.map(r => r.r)) - Math.min(...b.map(r => r.r)));
+  $("#rp-wines").innerHTML = `<table><thead><tr><th>Wine</th><th class="num">Times listed</th><th class="num">Best rank</th><th class="num">Price range</th><th>Lists · hover for vintage and score</th></tr></thead><tbody>${wines.map(rs => {
+    const ps = rs.filter(r => r.p).map(r => r.p);
+    return `<tr><td><button class="lnk wy" data-winery="${esc(rs[0].w)}">${esc(rs[0].w)}</button><div class="wn2">${esc(rs[0].n)}</div></td><td class="num">${rs.length}</td><td class="num">${Math.min(...rs.map(r => r.r))}</td><td class="num">${ps.length ? "$" + Math.min(...ps) + "–$" + Math.max(...ps) : "n/a"}</td><td>${yrChips(rs)}</td></tr>`;
+  }).join("")}</tbody></table>`;
+}
+
+/* ---------- provenance ---------- */
+function renderSources() {
+  $("#so-years").innerHTML = [...YEARS].reverse().map(y => `<a href="https://top100-list.winespectator.com/?year=${y}" target="_blank" rel="noopener">${y}</a>`).join("");
+  $("#so-stories").innerHTML = META.storyYears.slice().reverse().map(y => {
+    const top = byYear[y].filter(r => r.sk).sort((a, b) => a.r - b.r);
+    return `<div><h4><a href="https://top100.winespectator.com/${y}/" target="_blank" rel="noopener">${y}</a>${META.video.includes(y) ? ` <a href="https://top100.winespectator.com/${y}/video" target="_blank" rel="noopener" style="font-size:15px;font-style:italic">· video</a>` : ""}</h4><ol>${top.map(r => `<li><a href="${esc(r.sk)}" target="_blank" rel="noopener">${esc(r.w)}</a> <span>${esc(r.n)} ${esc(r.v)}</span></li>`).join("")}</ol></div>`;
+  }).join("");
+  const n98 = byYear[1998].filter(r => r.r === 1).length;
+  const notes = [
+    `<b>Coverage.</b> ${fmt(META.count)} wines: 100 for each of the ${META.years} lists, ${META.first}–${META.last}.`,
+    `<b>Tasting notes are linked, not copied.</b> They are Wine Spectator's writing. The drinking window and case counts are taken from each note; a window was found for ${fmt(META.dwParsed)} wines, as notes before 2000 often give none.`,
+    `<b>1998 ranks.</b> The source repeats ranks 1–40 (${n98} wines at No. 1) and leaves 51–100 empty. Ranks are shown as published and marked †; 1998 isn't matched to story pages and is left out of No. 1 counts.`,
+    `<b>1997 tie.</b> Fonseca and Taylor Fladgate, both 1994 Vintage Port, share No. 1, so 1997 has no No. 2.`,
+    `<b>Country.</b> Older years record US states in the country field; this report sets the country to United States and keeps the state separately. Region names are as published.`,
+    `<b>Color.</b> Casing is normalized and “blush” is grouped with Rosé. Three wines with no color in the source get one from their wine type or style, marked *.`,
+    `<b>Price.</b> Release price in US dollars at review, not adjusted for inflation. Non-750ml bottles are noted. The 1988 La Mission Haut-Brion has no price.`,
+    `<b>Labels.</b> ${fmt(META.labels)} wines, mostly 2016 on, have a label image on Wine Spectator's image host; the rest show a bottle in the wine's color.`,
+    `<b>Winery grouping</b> in The Estates ignores accents, case, and punctuation, but doesn't merge different names for one producer, such as “Beaucastel” and “Château de Beaucastel”.`,
+  ];
+  $("#so-notes").innerHTML = notes.map(n => `<li>${n}</li>`).join("");
+  const tc = Object.entries(DATA.reduce((a, r) => (a[r.tz] = (a[r.tz] || 0) + 1, a), {})).sort((a, b) => b[1] - a[1]);
+  $("#so-tasters").innerHTML = `<table><thead><tr><th>Initials</th><th>Name</th><th class="num">Wines</th><th class="num">Lists</th><th>Main countries</th></tr></thead><tbody>${tc.map(([t, n]) => {
+    const rs = DATA.filter(r => r.tz === t), ys = rs.map(r => r.y);
+    const cs = Object.entries(rs.reduce((a, r) => (a[r.co] = (a[r.co] || 0) + 1, a), {})).sort((a, b) => b[1] - a[1]).slice(0, 3).map(([c, k]) => `${c} (${k})`).join(", ");
+    return `<tr><td>${t ? esc(t) : "<i>blank</i>"}</td><td>${esc(META.tasters[t] || "")}</td><td class="num">${fmt(n)}</td><td class="num">${Math.min(...ys)}–${Math.max(...ys)}</td><td>${esc(cs)}</td></tr>`;
+  }).join("")}</tbody></table>`;
+  $("#foot").innerHTML = `<svg class="orn"><use href="#grape"/></svg><div class="colo">Colophon</div>Set in Cormorant Garamond &amp; EB Garamond. Data from the <a href="https://top100-list.winespectator.com/">Wine Spectator Top 100</a>, pulled ${esc(META.pulled)}.<br>An unofficial register, not affiliated with Wine Spectator. Download <a href="data/top100.csv">top100.csv</a> · <a href="data/top100.json">top100.json</a>`;
+}
+
+/* ---------- tabs ---------- */
+function route() {
+  const t = (location.hash || "#latest").slice(1);
+  const id = document.getElementById("v-" + t) ? t : "latest";
+  document.querySelectorAll("section.view").forEach(s => s.classList.toggle("on", s.id === "v-" + id));
+  document.querySelectorAll("nav.tabs a").forEach(a => a.dataset.tab === id ? a.setAttribute("aria-current", "page") : a.removeAttribute("aria-current"));
+  hideTip();
+}
+addEventListener("hashchange", () => { route(); scrollTo(0, 0); });
+
+computeRepeat();
+renderLatest(); setupAll(); drawAll(); renderWoty(); countryTable(); renderSources(); renderCharts();
+route();
+</script>
+</body>
+</html>

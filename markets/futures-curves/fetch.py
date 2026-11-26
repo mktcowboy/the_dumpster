@@ -4,10 +4,12 @@ For each market: probe every contract in its real listed-month cycle over a hori
 keep contracts that return live data, and record last/chg/volume, prices ~1W and ~1M ago,
 plus ~1Y of the front-month continuous series (ROOT=F).  No price is ever synthesised.
 """
-import json, datetime as dt, sys, os
+import argparse, json, datetime as dt, sys, os, time
 import pandas as pd, yfinance as yf
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+DATA_PATH = os.path.join(HERE, "data.json")
+MIN_MARKETS = 30
 MC = "FGHJKMNQUVXZ"
 MN = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
 ALL = MC
@@ -45,21 +47,63 @@ def candidates(root, sfx, cycle, horizon, today):
             out.append(dict(t=f"{root}{code}{yy%100:02d}.{sfx}", code=code, y=yy, m=mm, lab=f"{MN[mm-1]} {yy%100:02d}"))
     return out
 
-def dl(tickers, period):
+def _clean_frame(f):
+    if f is None or f.empty or "Close" not in f.columns:
+        return None
+    cols = ["Close", "Volume"] if "Volume" in f.columns else ["Close"]
+    out = f[cols].dropna(subset=["Close"]).copy()
+    if "Volume" not in out.columns:
+        out["Volume"] = 0
+    if not len(out):
+        return None
+    idx = pd.to_datetime(out.index)
+    if getattr(idx, "tz", None) is not None:
+        idx = idx.tz_localize(None)
+    out.index = idx
+    out = out[~out.index.duplicated(keep="last")].sort_index()
+    return out
+
+def dl(tickers, period, attempts=3):
     frames = {}
     for i in range(0, len(tickers), 80):
         chunk = tickers[i:i+80]
-        d = yf.download(chunk, period=period, interval="1d", auto_adjust=False, progress=False, group_by="ticker", threads=True)
+        d = None
+        for attempt in range(1, attempts + 1):
+            try:
+                d = yf.download(chunk, period=period, interval="1d", auto_adjust=False, progress=False, group_by="ticker", threads=True)
+                if d is not None and not d.empty:
+                    break
+            except Exception as exc:
+                print(f"chunk {i//80 + 1} attempt {attempt} failed: {exc}", file=sys.stderr)
+            if attempt < attempts:
+                time.sleep(2 ** attempt)
+        if d is None or d.empty:
+            continue
+        is_multi = isinstance(d.columns, pd.MultiIndex)
+        lvl0 = set(d.columns.get_level_values(0)) if is_multi else set()
         for t in chunk:
             try:
-                f = d[t] if (isinstance(d.columns, pd.MultiIndex) and t in d.columns.get_level_values(0)) else d
-                f = f[["Close","Volume"]].dropna(subset=["Close"])
-                if len(f): frames[t] = f
+                if is_multi:
+                    if t not in lvl0:
+                        continue
+                    raw = d[t]
+                else:
+                    if len(chunk) != 1:
+                        continue
+                    raw = d
+                f = _clean_frame(raw)
+                if f is not None:
+                    frames[t] = f
             except Exception:
                 pass
     return frames
 
 def main():
+    parser = argparse.ArgumentParser(description="Fetch futures term-structure data into data.json.")
+    parser.add_argument("--force", action="store_true", help="Write data.json even if market data is unchanged.")
+    parser.add_argument("--allow-older", action="store_true", help="Allow writing data even if asof_bar regressed.")
+    args = parser.parse_args()
+
     today = dt.date.today()
     cands = {}
     for g, l in G.items():
@@ -68,6 +112,8 @@ def main():
     tick = [c["t"] for v in cands.values() for c in v]
     print("probing", len(tick), "contract tickers", file=sys.stderr)
     px = dl(tick, "3mo")
+    if not px:
+        raise RuntimeError("No contract quotes returned from Yahoo Finance.")
     cont = dl([r[0] + "=F" for l in G.values() for r in l], "14mo")
     # continuous series Yahoo lacks: fall back to the cash/spot index (labelled as such in the report)
     for root, alt in SPOT_FALLBACK.items():
@@ -78,6 +124,7 @@ def main():
     print("latest bar", last_day, file=sys.stderr)
     res = {"groups": {}, "asof_bar": last_day.strftime("%Y-%m-%d"),
            "generated": dt.datetime.now().astimezone().isoformat(timespec="minutes"), "probed": len(tick)}
+    ok_markets = 0
     for g, l in G.items():
         res["groups"][g] = []
         for root, n, sfx, cyc, hz, u in l:
@@ -91,10 +138,14 @@ def main():
                 def at(days):
                     s = cl[cl.index <= last_day - pd.Timedelta(days=days)]
                     return round(float(s.iloc[-1]), 6) if len(s) and (last_day - pd.Timedelta(days=days) - s.index[-1]).days <= 5 else None
+                vol_raw = f["Volume"].iloc[-1]
+                vol = int(vol_raw) if pd.notna(vol_raw) else 0
                 rows.append(dict(t=c["t"], code=c["code"], y=c["y"], m=c["m"], lab=c["lab"],
                     last=round(float(cl.iloc[-1]), 6), prev=round(float(cl.iloc[-2]), 6),
-                    d=cl.index[-1].strftime("%Y-%m-%d"), vol=int(f["Volume"].iloc[-1] or 0),
+                    d=cl.index[-1].strftime("%Y-%m-%d"), vol=vol,
                     w1=at(7), m1=at(30)))
+            if rows:
+                ok_markets += 1
             fr = cont.get(root + "=F")
             h = hd = None
             if fr is not None and len(fr) > 30:
@@ -104,7 +155,24 @@ def main():
                                          hsrc=HSRC.get(root, root + "=F"),
                                          cand=len(cands[root])))
             print(f"{g:11s} {root:4s} {len(rows):2d}/{len(cands[root]):2d} contracts  cont={'y' if h else 'n'}", file=sys.stderr)
-    json.dump(res, open(os.path.join(HERE, "data.json"), "w"), separators=(",", ":"))
+
+    if ok_markets < MIN_MARKETS:
+        raise RuntimeError(f"Too few markets returned live curves ({ok_markets} < {MIN_MARKETS}); aborting.")
+
+    if os.path.exists(DATA_PATH):
+        with open(DATA_PATH, encoding="utf-8") as fh:
+            prev = json.load(fh)
+        prev_bar = prev.get("asof_bar")
+        if not args.allow_older and prev_bar and res["asof_bar"] < prev_bar:
+            raise RuntimeError(f"Futures data regressed: {res['asof_bar']} < {prev_bar}")
+        if not args.force and prev.get("asof_bar") == res["asof_bar"] and prev.get("groups") == res["groups"]:
+            print("No new futures data; data.json unchanged.", file=sys.stderr)
+            return
+
+    tmp_path = DATA_PATH + ".tmp"
+    with open(tmp_path, "w", encoding="utf-8") as fh:
+        json.dump(res, fh, separators=(",", ":"))
+    os.replace(tmp_path, DATA_PATH)
 
 if __name__ == "__main__":
     main()

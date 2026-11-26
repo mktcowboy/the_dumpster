@@ -13,9 +13,14 @@ curve sparklines and a roll-yield bar chart. Dark/light theme, group tabs, works
 ## Rebuild
 
 ```sh
+python3 -m pip install -r requirements.txt
 python3 build.py --fetch      # fetch fresh data, then build futures-curves.html
 python3 shot.py CL Energy     # optional: screenshots into shots/ (needs playwright + Chrome)
 ```
+
+## Keeping data updated
+
+A scheduled GitHub Actions workflow (`.github/workflows/markets-daily-refresh.yml`) runs `build.py --fetch` on weekdays at 5:10 PM Eastern after US market close and commits updated `data.json` and `futures-curves.html` back to the repository so GitHub Pages stays current. It can also be triggered manually via **Actions -> Refresh daily market reports -> Run workflow** (with `target: all` or `futures-curves`).
 
 Requires `yfinance`, `pandas`. Files:
 

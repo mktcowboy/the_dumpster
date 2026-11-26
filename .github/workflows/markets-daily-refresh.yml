@@ -1,0 +1,124 @@
+name: Refresh daily market reports
+
+on:
+  schedule:
+    # GitHub Actions cron is UTC. Both hours are checked so this runs at
+    # 5:10 PM America/New_York (after US market close) across DST changes.
+    - cron: '10 21 * * 1-5'
+    - cron: '10 22 * * 1-5'
+  workflow_dispatch:
+    inputs:
+      target:
+        description: Which market reports to refresh
+        required: false
+        default: all
+        type: choice
+        options:
+          - all
+          - size-style
+          - futures-curves
+          - crypto-deep-dive
+
+permissions:
+  contents: write
+
+concurrency:
+  group: markets-daily-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run only at 5 PM Eastern on scheduled runs
+        id: schedule
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          if [ "$EVENT_NAME" = "workflow_dispatch" ] || [ "$(TZ=America/New_York date +%H)" = "17" ]; then
+            echo "should_run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "should_run=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/checkout@v4
+        if: steps.schedule.outputs.should_run == 'true'
+
+      - uses: actions/setup-python@v5
+        if: steps.schedule.outputs.should_run == 'true'
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+          cache-dependency-path: |
+            markets/size-style/requirements.txt
+            markets/futures-curves/requirements.txt
+
+      - name: Install dependencies
+        if: steps.schedule.outputs.should_run == 'true'
+        run: |
+          python3 -m pip install \
+            -r markets/size-style/requirements.txt \
+            -r markets/futures-curves/requirements.txt
+
+      - name: Refresh size and style ETFs
+        id: size_style
+        if: steps.schedule.outputs.should_run == 'true' && (github.event_name != 'workflow_dispatch' || inputs.target == 'all' || inputs.target == 'size-style')
+        continue-on-error: true
+        run: python3 markets/size-style/refresh.py
+
+      - name: Refresh futures curves
+        id: futures_curves
+        if: steps.schedule.outputs.should_run == 'true' && (github.event_name != 'workflow_dispatch' || inputs.target == 'all' || inputs.target == 'futures-curves')
+        continue-on-error: true
+        run: python3 markets/futures-curves/build.py --fetch
+
+      - name: Refresh crypto deep dive
+        id: crypto_deep_dive
+        if: steps.schedule.outputs.should_run == 'true' && (github.event_name != 'workflow_dispatch' || inputs.target == 'all' || inputs.target == 'crypto-deep-dive')
+        continue-on-error: true
+        env:
+          COINGECKO_DEMO_API_KEY: ${{ secrets.COINGECKO_DEMO_API_KEY }}
+        run: |
+          python3 markets/crypto-deep-dive/fetch_data.py --refresh
+          python3 markets/crypto-deep-dive/validate.py
+          python3 markets/crypto-deep-dive/build.py
+
+      - name: Check privacy
+        if: steps.schedule.outputs.should_run == 'true'
+        run: python3 scripts/check_privacy.py
+
+      - name: Commit refreshed reports
+        if: steps.schedule.outputs.should_run == 'true'
+        env:
+          SIZE_STYLE_OUTCOME: ${{ steps.size_style.outcome }}
+          FUTURES_CURVES_OUTCOME: ${{ steps.futures_curves.outcome }}
+          CRYPTO_DEEP_DIVE_OUTCOME: ${{ steps.crypto_deep_dive.outcome }}
+        run: |
+          if [ "$SIZE_STYLE_OUTCOME" = "success" ]; then
+            git add markets/size-style/styles.html markets/size-style/sectors.html markets/size-style/README.md
+          fi
+          if [ "$FUTURES_CURVES_OUTCOME" = "success" ]; then
+            git add markets/futures-curves/data.json markets/futures-curves/futures-curves.html
+          fi
+          if [ "$CRYPTO_DEEP_DIVE_OUTCOME" = "success" ]; then
+            git add markets/crypto-deep-dive/data/snapshot.json markets/crypto-deep-dive/data/history markets/crypto-deep-dive/index.html
+          fi
+          if git diff --cached --quiet; then
+            echo "No market report changes to commit."
+            exit 0
+          fi
+          git config user.name "data-refresh-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git commit -m "Refresh daily market reports"
+          git pull --rebase --autostash
+          git push
+
+      - name: Verify all refreshes succeeded
+        if: steps.schedule.outputs.should_run == 'true' && (steps.size_style.outcome == 'failure' || steps.futures_curves.outcome == 'failure' || steps.crypto_deep_dive.outcome == 'failure')
+        env:
+          SIZE_STYLE_OUTCOME: ${{ steps.size_style.outcome }}
+          FUTURES_CURVES_OUTCOME: ${{ steps.futures_curves.outcome }}
+          CRYPTO_DEEP_DIVE_OUTCOME: ${{ steps.crypto_deep_dive.outcome }}
+        run: |
+          echo "One or more market report refreshes failed (size_style=$SIZE_STYLE_OUTCOME, futures_curves=$FUTURES_CURVES_OUTCOME, crypto_deep_dive=$CRYPTO_DEEP_DIVE_OUTCOME)." >&2
+          exit 1

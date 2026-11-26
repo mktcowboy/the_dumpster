@@ -86,16 +86,27 @@ AVIONICS_PHRASES = [
     "Perspective+",
     "Garmin G1000 NXi",
     "Garmin G1000",
+    "Garmin G3X Touch",
+    "Garmin G3X",
+    "G3X Touch",
+    "G3X",
+    "Garmin AXIS",
     "Garmin GTN 750",
     "Garmin GTN 650",
+    "Garmin GNX 375",
+    "Garmin GNC 355",
     "Garmin G500 TXi",
     "Garmin G500",
     "Garmin G5",
     "Avidyne Entegra",
     "Avidyne",
+    "Dynon SkyView",
+    "Dynon",
     "Garmin GTN",
     "GTN 750",
     "GTN 650",
+    "GNX 375",
+    "GNC 355",
     "GNS 530W",
     "GNS 530",
     "GNS 430",
@@ -122,7 +133,7 @@ TT_RE = re.compile(
     re.I,
 )
 TT_TAIL_RE = re.compile(
-    r"\b([0-9][0-9,]*(?:\.\d+)?)\s*(?:hrs?|hours)?\s*(?:TT|TTSN|TTAF|ACTT)\b",
+    r"\b([0-9][0-9,]*(?:\.\d+)?)\s*(?:hrs?|hours)?\s*(?:TT|TTSN|TTAF(?:E(?:&P)?)?|ACTT)\b",
     re.I,
 )
 ENGINE_TIME_RE = re.compile(
@@ -744,6 +755,14 @@ def enrich(row):
     year = YEAR_RE.search(row.get("title") or "")
     if year:
         _fill(row, "year", year.group(1))
+    elif not row.get("year") and row.get("description"):
+        desc_year = re.search(
+            r"\b((?:19|20)\d{2})\s+(?:cub\s*-?\s*crafters?|carbon\s+cub|sport\s+cub|top\s+cub|x-?\s*cub|nx-?\s*cub|ranger\s+cub)\b",
+            row.get("description") or "",
+            re.I,
+        )
+        if desc_year:
+            _fill(row, "year", desc_year.group(1))
     return row
 
 

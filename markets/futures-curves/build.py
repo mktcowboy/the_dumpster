@@ -3,12 +3,18 @@
 Usage:  python3 build.py           # build from existing data.json
         python3 build.py --fetch   # refresh data from Yahoo Finance first
 """
-import json, os, sys, subprocess, datetime as dt
+import hashlib, json, os, sys, subprocess, datetime as dt
 from zoneinfo import ZoneInfo
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 P = lambda *a: os.path.join(HERE, *a)
 CT = ZoneInfo("America/Chicago")
+
+def _file_sha256(path):
+    if not os.path.exists(path):
+        return None
+    with open(path, "rb") as fh:
+        return hashlib.sha256(fh.read()).hexdigest()
 
 def mi(c): return c["y"] * 12 + c["m"] - 1          # absolute month index
 
@@ -64,19 +70,35 @@ def derive(r, asof):
     return r
 
 def main():
-    if "--fetch" in sys.argv:
-        subprocess.run([sys.executable, P("fetch.py")], check=True)
-    d = json.load(open(P("data.json")))
+    args = sys.argv[1:]
+    data_path = P("data.json")
+    out_path = P("futures-curves.html")
+    if "--fetch" in args:
+        before = _file_sha256(data_path)
+        fetch_cmd = [sys.executable, P("fetch.py")]
+        for flag in ("--force", "--allow-older"):
+            if flag in args:
+                fetch_cmd.append(flag)
+        subprocess.run(fetch_cmd, check=True)
+        after = _file_sha256(data_path)
+        if before is not None and before == after and os.path.exists(out_path) and "--force" not in args:
+            print("data.json unchanged; skipping futures-curves.html rebuild.")
+            return
+    with open(data_path, encoding="utf-8") as fh:
+        d = json.load(fh)
     asof = d["asof_bar"]
     for g in d["groups"].values():
         for r in g: derive(r, asof)
     gen = dt.datetime.fromisoformat(d["generated"]).astimezone(CT)
     d["gen_ct"] = gen.strftime("%b %-d, %Y · %-I:%M %p CT")
     d["asof_nice"] = dt.date.fromisoformat(asof).strftime("%b %-d, %Y")
-    t = open(P("template.html")).read()
-    js = open(P("vendor", "chart.umd.min.js")).read()
+    with open(P("template.html"), encoding="utf-8") as fh:
+        t = fh.read()
+    with open(P("vendor", "chart.umd.min.js"), encoding="utf-8") as fh:
+        js = fh.read()
     h = t.replace("/*__CHARTJS__*/", js).replace("__DATA__", json.dumps(d, separators=(",", ":")))
-    open(P("futures-curves.html"), "w").write(h)
+    with open(out_path, "w", encoding="utf-8") as fh:
+        fh.write(h)
     n = sum(1 for g in d["groups"].values() for r in g if r["ok"])
     print(f"wrote futures-curves.html ({len(h)/1e6:.2f} MB) · {n} markets with curves · generated {d['gen_ct']}")
 

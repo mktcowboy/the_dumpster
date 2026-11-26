@@ -15,15 +15,15 @@
 
 | Project | What it is |
 | --- | --- |
-| [Crypto deep dive](markets/crypto-deep-dive/data/raw/) | Raw CoinGecko, DefiLlama, Fear and Greed, and Hyperliquid caches covering prices, categories, stablecoins, TVL, pools, and protocols |
+| [Crypto deep dive](markets/crypto-deep-dive/) | Standalone end-to-end crypto industry report: market regime, macro correlations, top-100 treemap/table, protocol fees & P/S valuation, perp DEX fee share, stablecoin split, yield pools, Hyperliquid leaderboard & funding heat, wallet watchlist, and calculators. Refreshed weekdays via GitHub Actions |
 | [Options — max pain](markets/options/) | SPY × QQQ max-pain report, QQQ universe scanner, and reproducible snapshot pipeline |
 | [QQQ max-pain board](markets/options/qqq-max-pain.html) | Ranked max-pain board for all loadable QQQ holdings |
 | [Options — live board](markets/options-live/) | Max-pain dashboard with click-through ticker details and charts; requires the [local server](markets/options-live/README.md) |
 | [Nasdaq-100 earnings straddles](markets/er-straddles/) | Seller's-view ATM earnings-straddle screen for Nasdaq-100 names, with cost-aware P&L, liquidity grades, and the October 21, 2026 snapshot |
-| [Size & style ETFs](markets/size-style/styles.html) | Nine iShares S&P style-box ETFs charted together, with a 6M, 1Y, 3Y, and 5Y total-return table. Yahoo Finance through November 4, 2026 |
-| [SPDR sector ETFs](markets/size-style/sectors.html) | Companion chart of the 11 Select Sector SPDRs, daily and dividend-adjusted, with period returns. Yahoo Finance through November 4, 2026 |
+| [Size & style ETFs](markets/size-style/styles.html) | Nine iShares S&P style-box ETFs charted together, with a 6M, 1Y, 3Y, and 5Y total-return table. Yahoo Finance, refreshed weekdays after market close |
+| [SPDR sector ETFs](markets/size-style/sectors.html) | Companion chart of the 11 Select Sector SPDRs, daily and dividend-adjusted, with period returns. Yahoo Finance, refreshed weekdays after market close |
 | [Drawdown check](markets/drawdown-check/drawdown.html) | Current and max drawdown from all-time highs, plus live 30-day ATM and 25-delta implied volatility and official vol-index history, with a local HTML chart and a Yahoo Finance proxy Worker |
-| [Futures curves](markets/futures-curves/futures-curves.html) | Term structure for 41 futures markets in eight groups, with forward curves, front-month history, and annualized roll yield. Yahoo Finance through November 11, 2026 |
+| [Futures curves](markets/futures-curves/futures-curves.html) | Term structure for 41 futures markets in eight groups, with forward curves, front-month history, and annualized roll yield. Yahoo Finance, refreshed weekdays after market close |
 
 ## Real estate
 
@@ -75,5 +75,5 @@
 - `scripts/` holds the privacy checker, the local setup script, and the best-of title matcher.
 - Run `sh scripts/setup_privacy.sh` in each fresh checkout to install privacy hooks and the anonymous repository commit identity.
 - Run `python3 scripts/check_privacy.py` before committing, per [CONTRIBUTING.md](CONTRIBUTING.md).
-- [`index.html`](index.html) is the GitHub Pages catalog of the HTML projects. It links to 29 projects and 44 report pages, with 101 additional ticker detail pages accessible through the earnings-straddle screen. Card thumbnails live in [`site-assets/thumbs/`](site-assets/thumbs/).
+- [`index.html`](index.html) is the GitHub Pages catalog of the HTML projects. It links to 30 projects and 45 report pages, with 101 additional ticker detail pages accessible through the earnings-straddle screen. Card thumbnails live in [`site-assets/thumbs/`](site-assets/thumbs/).
 - Each project folder contains its source files and, where available, a README with build or refresh instructions.

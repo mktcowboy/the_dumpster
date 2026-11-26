@@ -3,63 +3,68 @@
   "title": "CubCrafters",
   "scraped_at": "2026-10-28T23:17:21.044076+00:00",
   "warnings": [
-    "Controller failed (Controller.com blocked automated access (Cloudflare challenge)); no saved Controller listings",
-    "Trade-A-Plane failed (Trade-A-Plane blocked automated access (bot check)); no saved Trade-A-Plane listings",
-    "Aircraft.com failed (Aircraft.com blocked automated access (Cloudflare challenge)); no saved Aircraft.com listings",
-    "Aerotrader failed (Aerotrader blocked automated access (bot check)); no saved Aerotrader listings",
-    "eBay failed (eBay Motors blocked automated access (blocked automated access)); no saved eBay listings"
+    "CubCrafters failed (browser navigation failed (Page.goto: net::ERR_NAME_NOT_RESOLVED at https://cubcrafters.com/c/inventory/\nCall log:\n  - navigating to \"https://cubcrafters.com/c/inventory/\", waiting until \"domcontentloaded\"\n)); showing saved CubCrafters listings from 2026-10-28T23:17:21.044076+00:00",
+    "ASO failed (request failed ([SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1129))); showing saved ASO listings from 2026-10-28T23:17:21.044076+00:00",
+    "GlobalAir failed (browser navigation failed (Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.globalair.com/aircraft-for-sale/cubcrafters\nCall log:\n  - navigating to \"https://www.globalair.com/aircraft-for-sale/cubcrafters\", waiting until \"domcontentloaded\"\n)); showing saved GlobalAir listings from 2026-10-28T23:17:21.044076+00:00",
+    "AircraftDealer failed (AircraftDealer returned no matching listings (cubcrafters: browser navigation failed (Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.aircraftdealer.com/aircraft_for_sale/Cubcrafters_/640/page-1.htm\nCall log:\n  - navigating to \"https://www.aircraftdealer.com/aircraft_for_sale/Cubcrafters_/640/page-1.htm\", waiting until \"domcontentloaded\"\n); CubCrafters: browser navigation failed (Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.aircraftdealer.com/view-ad-list.php?searchVal=CubCrafters&search=Search\nCall log:\n  - navigating to \"https://www.aircraftdealer.com/view-ad-list.php?searchVal=CubCrafters&search=Search\", waiting until \"domcontentloaded\"\n); Carbon Cub: browser navigation failed (Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.aircraftdealer.com/view-ad-list.php?searchVal=Carbon%20Cub&search=Search\nCall log:\n  - navigating to \"https://www.aircraftdealer.com/view-ad-list.php?searchVal=Carbon%20Cub&search=Search\", waiting until \"domcontentloaded\"\n); Carbon Cub UL: browser navigation failed (Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.aircraftdealer.com/view-ad-list.php?searchVal=Carbon%20Cub%20UL&search=Search\nCall log:\n  - navigating to \"https://www.aircraftdealer.com/view-ad-list.php?searchVal=Carbon%20Cub%20UL&search=Search\", waiting until \"domcontentloaded\"\n); XCub: browser navigation failed (Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.aircraftdealer.com/view-ad-list.php?searchVal=XCub&search=Search\nCall log:\n  - navigating to \"https://www.aircraftdealer.com/view-ad-list.php?searchVal=XCub&search=Search\", waiting until \"domcontentloaded\"\n); NXCub: browser navigation failed (Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.aircraftdealer.com/view-ad-list.php?searchVal=NXCub&search=Search\nCall log:\n  - navigating to \"https://www.aircraftdealer.com/view-ad-list.php?searchVal=NXCub&search=Search\", waiting until \"domcontentloaded\"\n); Top Cub: browser navigation failed (Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.aircraftdealer.com/view-ad-list.php?searchVal=Top%20Cub&search=Search\nCall log:\n  - navigating to \"https://www.aircraftdealer.com/view-ad-list.php?searchVal=Top%20Cub&search=Search\", waiting until \"domcontentloaded\"\n); Sport Cub: browser navigation failed (Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.aircraftdealer.com/view-ad-list.php?searchVal=Sport%20Cub&search=Search\nCall log:\n  - navigating to \"https://www.aircraftdealer.com/view-ad-list.php?searchVal=Sport%20Cub&search=Search\", waiting until \"domcontentloaded\"\n); Ranger Cub: browser navigation failed (Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.aircraftdealer.com/view-ad-list.php?searchVal=Ranger%20Cub&search=Search\nCall log:\n  - navigating to \"https://www.aircraftdealer.com/view-ad-list.php?searchVal=Ranger%20Cub&search=Search\", waiting until \"domcontentloaded\"\n); CC18-180: browser navigation failed (Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.aircraftdealer.com/view-ad-list.php?searchVal=CC18-180&search=Search\nCall log:\n  - navigating to \"https://www.aircraftdealer.com/view-ad-list.php?searchVal=CC18-180&search=Search\", waiting until \"domcontentloaded\"\n); CC19: browser navigation failed (Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.aircraftdealer.com/view-ad-list.php?searchVal=CC19&search=Search\nCall log:\n  - navigating to \"https://www.aircraftdealer.com/view-ad-list.php?searchVal=CC19&search=Search\", waiting until \"domcontentloaded\"\n))); showing saved AircraftDealer listings from 2026-10-28T23:17:21.044076+00:00",
+    "Barnstormers failed (browser navigation failed (Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.barnstormers.com/cat_search.php?mfg=CubCrafters&search_type=advanced\nCall log:\n  - navigating to \"https://www.barnstormers.com/cat_search.php?mfg=CubCrafters&search_type=advanced\", waiting until \"domcontentloaded\"\n)); showing saved Barnstormers listings from 2026-10-28T23:17:21.044076+00:00",
+    "Controller failed (Controller.com blocked automated access (browser navigation failed (Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.controller.com/listings/for-sale/cubcrafters/piston-single-aircraft\nCall log:\n  - navigating to \"https://www.controller.com/listings/for-sale/cubcrafters/piston-single-aircraft\", waiting until \"domcontentloaded\"\n))); no saved Controller listings",
+    "Trade-A-Plane failed (Trade-A-Plane blocked automated access (browser navigation failed (Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.trade-a-plane.com/search?make=CUB+CRAFTERS&s-type=aircraft\nCall log:\n  - navigating to \"https://www.trade-a-plane.com/search?make=CUB+CRAFTERS&s-type=aircraft\", waiting until \"domcontentloaded\"\n))); no saved Trade-A-Plane listings",
+    "Aircraft.com failed (Aircraft.com blocked automated access (browser navigation failed (Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.aircraft.com/aircraft/for-sale?make=CubCrafters\nCall log:\n  - navigating to \"https://www.aircraft.com/aircraft/for-sale?make=CubCrafters\", waiting until \"domcontentloaded\"\n))); no saved Aircraft.com listings",
+    "Aerotrader failed (Aerotrader blocked automated access (browser navigation failed (Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.aerotrader.com/CubCrafters/aircraft-for-sale?zip=73102&radius=any\nCall log:\n  - navigating to \"https://www.aerotrader.com/CubCrafters/aircraft-for-sale?zip=73102&radius=any\", waiting until \"domcontentloaded\"\n))); no saved Aerotrader listings",
+    "eBay failed (eBay Motors blocked automated access (browser navigation failed (Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.ebay.com/sch/i.html?_nkw=cubcrafters&_sacat=637\nCall log:\n  - navigating to \"https://www.ebay.com/sch/i.html?_nkw=cubcrafters&_sacat=637\", waiting until \"domcontentloaded\"\n))); no saved eBay listings"
   ],
-  "last_attempt_at": "2026-10-28T23:17:21.044076+00:00",
+  "last_attempt_at": "2026-11-26T19:08:31.162732+00:00",
   "sources": {
     "cubcrafters": {
       "scraped_at": "2026-10-28T23:17:21.044076+00:00",
-      "ok": true,
+      "ok": false,
       "rows": 17,
-      "warning": ""
+      "warning": "browser navigation failed (Page.goto: net::ERR_NAME_NOT_RESOLVED at https://cubcrafters.com/c/inventory/\nCall log:\n  - navigating to \"https://cubcrafters.com/c/inventory/\", waiting until \"domcontentloaded\"\n)"
     },
     "aso": {
       "scraped_at": "2026-10-28T23:17:21.044076+00:00",
-      "ok": true,
+      "ok": false,
       "rows": 11,
-      "warning": ""
+      "warning": "request failed ([SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1129))"
     },
     "globalair": {
       "scraped_at": "2026-10-28T23:17:21.044076+00:00",
-      "ok": true,
+      "ok": false,
       "rows": 14,
-      "warning": ""
+      "warning": "browser navigation failed (Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.globalair.com/aircraft-for-sale/cubcrafters\nCall log:\n  - navigating to \"https://www.globalair.com/aircraft-for-sale/cubcrafters\", waiting until \"domcontentloaded\"\n)"
     },
     "aircraftdealer": {
       "scraped_at": "2026-10-28T23:17:21.044076+00:00",
-      "ok": true,
+      "ok": false,
       "rows": 5,
-      "warning": ""
+      "warning": "AircraftDealer returned no matching listings (cubcrafters: browser navigation failed (Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.aircraftdealer.com/aircraft_for_sale/Cubcrafters_/640/page-1.htm\nCall log:\n  - navigating to \"https://www.aircraftdealer.com/aircraft_for_sale/Cubcrafters_/640/page-1.htm\", waiting until \"domcontentloaded\"\n); CubCrafters: browser navigation failed (Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.aircraftdealer.com/view-ad-list.php?searchVal=CubCrafters&search=Search\nCall log:\n  - navigating to \"https://www.aircraftdealer.com/view-ad-list.php?searchVal=CubCrafters&search=Search\", waiting until \"domcontentloaded\"\n); Carbon Cub: browser navigation failed (Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.aircraftdealer.com/view-ad-list.php?searchVal=Carbon%20Cub&search=Search\nCall log:\n  - navigating to \"https://www.aircraftdealer.com/view-ad-list.php?searchVal=Carbon%20Cub&search=Search\", waiting until \"domcontentloaded\"\n); Carbon Cub UL: browser navigation failed (Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.aircraftdealer.com/view-ad-list.php?searchVal=Carbon%20Cub%20UL&search=Search\nCall log:\n  - navigating to \"https://www.aircraftdealer.com/view-ad-list.php?searchVal=Carbon%20Cub%20UL&search=Search\", waiting until \"domcontentloaded\"\n); XCub: browser navigation failed (Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.aircraftdealer.com/view-ad-list.php?searchVal=XCub&search=Search\nCall log:\n  - navigating to \"https://www.aircraftdealer.com/view-ad-list.php?searchVal=XCub&search=Search\", waiting until \"domcontentloaded\"\n); NXCub: browser navigation failed (Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.aircraftdealer.com/view-ad-list.php?searchVal=NXCub&search=Search\nCall log:\n  - navigating to \"https://www.aircraftdealer.com/view-ad-list.php?searchVal=NXCub&search=Search\", waiting until \"domcontentloaded\"\n); Top Cub: browser navigation failed (Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.aircraftdealer.com/view-ad-list.php?searchVal=Top%20Cub&search=Search\nCall log:\n  - navigating to \"https://www.aircraftdealer.com/view-ad-list.php?searchVal=Top%20Cub&search=Search\", waiting until \"domcontentloaded\"\n); Sport Cub: browser navigation failed (Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.aircraftdealer.com/view-ad-list.php?searchVal=Sport%20Cub&search=Search\nCall log:\n  - navigating to \"https://www.aircraftdealer.com/view-ad-list.php?searchVal=Sport%20Cub&search=Search\", waiting until \"domcontentloaded\"\n); Ranger Cub: browser navigation failed (Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.aircraftdealer.com/view-ad-list.php?searchVal=Ranger%20Cub&search=Search\nCall log:\n  - navigating to \"https://www.aircraftdealer.com/view-ad-list.php?searchVal=Ranger%20Cub&search=Search\", waiting until \"domcontentloaded\"\n); CC18-180: browser navigation failed (Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.aircraftdealer.com/view-ad-list.php?searchVal=CC18-180&search=Search\nCall log:\n  - navigating to \"https://www.aircraftdealer.com/view-ad-list.php?searchVal=CC18-180&search=Search\", waiting until \"domcontentloaded\"\n); CC19: browser navigation failed (Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.aircraftdealer.com/view-ad-list.php?searchVal=CC19&search=Search\nCall log:\n  - navigating to \"https://www.aircraftdealer.com/view-ad-list.php?searchVal=CC19&search=Search\", waiting until \"domcontentloaded\"\n))"
     },
     "barnstormers": {
       "scraped_at": "2026-10-28T23:17:21.044076+00:00",
-      "ok": true,
+      "ok": false,
       "rows": 11,
-      "warning": ""
+      "warning": "browser navigation failed (Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.barnstormers.com/cat_search.php?mfg=CubCrafters&search_type=advanced\nCall log:\n  - navigating to \"https://www.barnstormers.com/cat_search.php?mfg=CubCrafters&search_type=advanced\", waiting until \"domcontentloaded\"\n)"
     },
     "controller": {
       "ok": false,
-      "warning": "Controller.com blocked automated access (Cloudflare challenge)"
+      "warning": "Controller.com blocked automated access (browser navigation failed (Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.controller.com/listings/for-sale/cubcrafters/piston-single-aircraft\nCall log:\n  - navigating to \"https://www.controller.com/listings/for-sale/cubcrafters/piston-single-aircraft\", waiting until \"domcontentloaded\"\n))"
     },
     "tradeaplane": {
       "ok": false,
-      "warning": "Trade-A-Plane blocked automated access (bot check)"
+      "warning": "Trade-A-Plane blocked automated access (browser navigation failed (Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.trade-a-plane.com/search?make=CUB+CRAFTERS&s-type=aircraft\nCall log:\n  - navigating to \"https://www.trade-a-plane.com/search?make=CUB+CRAFTERS&s-type=aircraft\", waiting until \"domcontentloaded\"\n))"
     },
     "aircraftcom": {
       "ok": false,
-      "warning": "Aircraft.com blocked automated access (Cloudflare challenge)"
+      "warning": "Aircraft.com blocked automated access (browser navigation failed (Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.aircraft.com/aircraft/for-sale?make=CubCrafters\nCall log:\n  - navigating to \"https://www.aircraft.com/aircraft/for-sale?make=CubCrafters\", waiting until \"domcontentloaded\"\n))"
     },
     "aerotrader": {
       "ok": false,
-      "warning": "Aerotrader blocked automated access (bot check)"
+      "warning": "Aerotrader blocked automated access (browser navigation failed (Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.aerotrader.com/CubCrafters/aircraft-for-sale?zip=73102&radius=any\nCall log:\n  - navigating to \"https://www.aerotrader.com/CubCrafters/aircraft-for-sale?zip=73102&radius=any\", waiting until \"domcontentloaded\"\n))"
     },
     "ebay": {
       "ok": false,
-      "warning": "eBay Motors blocked automated access (blocked automated access)"
+      "warning": "eBay Motors blocked automated access (browser navigation failed (Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.ebay.com/sch/i.html?_nkw=cubcrafters&_sacat=637\nCall log:\n  - navigating to \"https://www.ebay.com/sch/i.html?_nkw=cubcrafters&_sacat=637\", waiting until \"domcontentloaded\"\n))"
     },
     "merged": {
       "scraped_at": "2026-10-28T23:17:21.044076+00:00",
