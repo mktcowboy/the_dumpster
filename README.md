@@ -1,6 +1,6 @@
 [![Yes No GIF](https://media1.tenor.com/m/GQBgOkfrMZ8AAAAC/yes-no.gif)](https://tenor.com/view/yes-no-gif-23142380)
 
-*Last updated: November 26, 2026*
+*Last updated: November 27, 2026*
 
 # Project index
 
@@ -42,7 +42,7 @@
 | [James Beard award graphs](James-Beard/) | Unofficial Obsidian-style graphs of public James Beard Foundation award results: restaurants and chefs, 1991–2025, and books, broadcast, and journalism, 1991–2024 |
 | [Biochar water filtration](research/biochar/) | Staging pack for carbon-based water filtration: an evidence review of biochar and activated carbon, PPP notes, a papers audit, and a cite-first bibliography |
 | [Gas-solvent food ingredients](research/food-ingredients/gas-solvent-food-ingredients.html) | Exhaustive list of food ingredients made with gas solvents such as supercritical CO₂, propane, butane, dimethyl ether, HFC-134a, and nitrous oxide, with regulatory status, residue data, literature, and charts |
-| [Wine Spectator Top 100](research/wine-spectator-top-100/wine-spectator-top-100.html) | Unofficial cellar book of every Wine Spectator Top 100, 1988–2026: 39 lists and 3,900 wines, with scores, prices, origins, drinking windows, and links to each review. Pulled November 26, 2026 |
+| [Wine Spectator Top 100](research/wine-spectator-top-100/wine-spectator-top-100.html) | Unofficial cellar book of every Wine Spectator Top 100, 1988–2026: 39 lists and 3,900 wines, with scores, prices, origins, drinking windows, inferred grape or style, and links to each review. Pulled November 26, 2026 |
 | [Best of 2026](annual_best_of_list_of_lists/best-of-2026/Best_of_2026.html) | Directory of 157 published best-of-2026 lists across books, albums, film, television, and other topics, with the outlet and a checked link for each. The Master list tab merges variant titles within a category and ranks 3,274 titles by how many lists include each one, with a link back to those lists. Long form: [MASTER.md](annual_best_of_list_of_lists/best-of-2026/MASTER.md) |
 | [Best of 2026 (v2)](annual_best_of_list_of_lists/best-of-2026/Best_of_2026_v2.html) | November 26, 2026 rebuild of the same directory: 157 published best-of-2026 lists, with the outlet and a checked link for each. The Master list tab ranks 3,263 titles by how many lists include each one, with category labels and other non-title rows left out |
 | [Best of 2025](annual_best_of_list_of_lists/best-of-2025/Best_of_2025.html) | Directory of 202 published best-of-2025 lists across books, albums, film, television, and other topics, with the outlet and a checked link for each. The Master list tab merges variant titles within a category and ranks 3,562 titles by how many lists include each one, with a link back to those lists. Long form: [MASTER.md](annual_best_of_list_of_lists/best-of-2025/MASTER.md) |
