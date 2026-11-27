@@ -10,16 +10,20 @@ The page is styled as a cellar book: parchment paper, an engraved vineyard masth
 | --- | --- |
 | The 2026 List | Summary figures, the Wine of the Year, the Top 10 with story links, wines by country, score against price, the best wines at $30 and $50, and all 100 wines set as a wine list you can arrange by rank, country, color, price, or score |
 | The Cellar | All 3,900 wines in one ledger. Filter by year, color, country, US state, score, price, and open drinking window, then export the filtered rows to CSV |
+| The Reds | The 2,703 red wines: grape or style and country charts, grape mix by year, score and price against the whole list, this year's reds by grape, the top-ranked red of each year, best reds at $25 and under, the highest scores, and a filterable register |
+| The Whites | The same page for the 995 white wines |
 | Wines of the Year | Every No. 1 wine, 1988–2026, on a timeline |
 | Vintage Trends | Country share, color mix, average score, median and mean price, 95-point wines, and age at listing, by year, plus an all-time country table |
 | The Estates | Wineries and individual wines that appear on the most lists, with each appearance linked to its review |
 | Provenance | Source links, links to all 39 lists, editorial pages and the 140 Top 10 story links, data caveats, and taster initials |
 
+Grape or style is inferred, because the source has no grape field. `grapes.py` files each red or white under the grape its name gives ("Cabernet Sauvignon Napa Valley") or the main grape or blend of its place ("Pauillac" is a Bordeaux blend, "Barolo" is Nebbiolo). Names with neither go to "Proprietary & other reds" or "Other whites".
+
 Each wine links to its Wine Spectator review, its Top 10 story (2013 on), searches on Wine-Searcher, Vivino, and CellarTracker, its label image where one exists, and its year's list.
 
 ## Data
 
-- [data/top100.csv](data/top100.csv) and [data/top100.json](data/top100.json) hold all 3,900 records: year, rank, winery, wine, vintage, score, price, bottle size, color, type, country, US state, region, taster initials, issue date, drinking window, case production, and links.
+- [data/top100.csv](data/top100.csv) and [data/top100.json](data/top100.json) hold all 3,900 records: year, rank, winery, wine, vintage, score, price, bottle size, color, type, country, US state, region, taster initials, issue date, drinking window, case production, inferred grape or style for reds and whites, and links.
 - Tasting-note text is Wine Spectator's writing and isn't copied here. The build reads each note only to pull the drinking window and case counts; the review link leads to the full note.
 
 ## Rebuilding
@@ -32,7 +36,7 @@ python3 fetch.py
 python3 build.py
 ```
 
-`fetch.py` downloads the list site's JavaScript bundle and data chunks, where each year's list is stored as a `JSON.parse('…')` module. It also pulls the editorial site's year pages for the Top 10 story links. Raw files go to `.cache/`, which git ignores. `build.py` normalizes the records and writes the HTML, CSV, and JSON. The page layout lives in `template.html`.
+`fetch.py` downloads the list site's JavaScript bundle and data chunks, where each year's list is stored as a `JSON.parse('…')` module. It also pulls the editorial site's year pages for the Top 10 story links. Raw files go to `.cache/`, which git ignores. `build.py` normalizes the records, adds the grape or style from `grapes.py`, and writes the HTML, CSV, and JSON. The page layout lives in `template.html`.
 
 ## Caveats
 

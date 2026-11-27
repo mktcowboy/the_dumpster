@@ -165,6 +165,9 @@ section.view.on { display: block; animation: fade .35s ease; }
 .wl-p b { font-weight: 600; }
 .wl-m { font-size: 14px; color: var(--muted); line-height: 1.35; }
 .wl .links { font-size: 12.5px; line-height: 1.5; }
+.wl.yrd { grid-template-columns: 58px 1fr; }
+.wl-r small { display: block; font-family: "EB Garamond", Georgia, serif; font-style: normal; font-size: 13px; font-variant: small-caps; letter-spacing: .05em; color: var(--muted); margin-top: 2px; }
+.woty-mark { color: var(--gold); margin-left: 4px; }
 
 /* ---------- controls ---------- */
 .controls { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: flex-end; justify-content: center; margin: 0 auto 18px; padding: 12px 0 14px; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
@@ -325,6 +328,8 @@ footer .colo { font-variant: small-caps; letter-spacing: .1em; color: var(--ink-
 <nav class="tabs" aria-label="Report sections"><div class="wrap">
   <a href="#latest" data-tab="latest">The 2026 List</a>
   <a href="#all" data-tab="all">The Cellar</a>
+  <a href="#reds" data-tab="reds">The Reds</a>
+  <a href="#whites" data-tab="whites">The Whites</a>
   <a href="#woty" data-tab="woty">Wines of the Year</a>
   <a href="#trends" data-tab="trends">Vintage Trends</a>
   <a href="#repeat" data-tab="repeat">The Estates</a>
@@ -393,6 +398,9 @@ footer .colo { font-variant: small-caps; letter-spacing: .1em; color: var(--ink-
   </table></div>
   <div class="more"><button type="button" class="btn" id="al-more">Show more</button></div>
 </section>
+
+<section class="view" id="v-reds"></section>
+<section class="view" id="v-whites"></section>
 
 <section class="view" id="v-woty">
   <header class="shead"><svg class="orn"><use href="#grape"/></svg><div class="caps kick">Thirty-nine vintages</div><h2>Wines of the <i>Year</i></h2><p id="wo-sub"></p></header>
@@ -616,8 +624,15 @@ function lineChart(el, series, o = {}) {
   s += `<line class="bl" x1="${m.l}" x2="${W - m.r}" y1="${m.t + ih}" y2="${m.t + ih}"/>`;
   series.forEach(se => {
     s += `<path d="${se.pts.map((p, i) => (i ? "L" : "M") + X(p[0]).toFixed(1) + "," + Y(p[1]).toFixed(1)).join("")}" fill="none" stroke="var(${se.v})" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>`;
-    if (o.endLabels) { const p = se.pts.at(-1); s += `<text class="dl" x="${X(p[0]) + 6}" y="${Y(p[1]) + 4}">${esc(se.name)}</text>`; }
   });
+  if (o.endLabels) {
+    // Spread end labels at least 15px apart so near-equal last values don't overlap.
+    const ls = series.map(se => ({ se, y: Y(se.pts.at(-1)[1]) + 4 })).sort((a, b) => a.y - b.y);
+    for (let i = 1; i < ls.length; i++) if (ls[i].y - ls[i - 1].y < 15) {
+      const mid = (ls[i].y + ls[i - 1].y) / 2; ls[i - 1].y = mid - 7.5; ls[i].y = mid + 7.5;
+    }
+    ls.forEach(l => s += `<text class="dl" x="${X(l.se.pts.at(-1)[0]) + 6}" y="${l.y}">${esc(l.se.name)}</text>`);
+  }
   s += `<line class="xh bl" y1="${m.t}" y2="${m.t + ih}" x1="-9" x2="-9" style="stroke:var(--muted)" visibility="hidden"/>`;
   series.forEach((se, i) => s += `<circle class="hd" data-s="${i}" r="4.5" cx="-9" cy="-9" visibility="hidden" fill="var(${se.v})" stroke="var(--paper-2)" stroke-width="2"/>`);
   s += `<rect class="ov" x="${m.l}" y="${m.t}" width="${iw}" height="${ih}" fill="transparent"/></svg>`;
@@ -768,9 +783,9 @@ function setupAll() {
   $("#al-more").onclick = () => { AL.shown += 200; drawAll(); };
   $("#al-reset").onclick = () => { resetAll(); drawAll(); };
   $("#al-csv").onclick = () => {
-    const rows = filtered(), head = ["year", "rank", "winery", "wine", "vintage", "score", "price_usd", "bottle_size", "color", "country", "us_state", "region", "taster", "issue_date", "drink_window", "cases_made", "cases_imported", "ws_review_url", "ws_top10_story_url"];
+    const rows = filtered(), head = ["year", "rank", "winery", "wine", "vintage", "score", "price_usd", "bottle_size", "color", "country", "us_state", "region", "taster", "issue_date", "drink_window", "cases_made", "cases_imported", "ws_review_url", "ws_top10_story_url", "grape_or_style_inferred"];
     const q = v => { v = String(v ?? ""); return /[",\n]/.test(v) ? `"${v.replace(/"/g, '""')}"` : v; };
-    const lines = [head.join(",")].concat(rows.map(r => [r.y, r.r, r.w, r.n, r.v, r.s, r.p, r.b, r.c, r.co, r.st, r.rg, r.tz, r.is, r.dw, r.cm, r.ci, `https://www.winespectator.com/wine/detail/note_id/${r.id}`, r.sk].map(q).join(",")));
+    const lines = [head.join(",")].concat(rows.map(r => [r.y, r.r, r.w, r.n, r.v, r.s, r.p, r.b, r.c, r.co, r.st, r.rg, r.tz, r.is, r.dw, r.cm, r.ci, `https://www.winespectator.com/wine/detail/note_id/${r.id}`, r.sk, r.g].map(q).join(",")));
     const a = document.createElement("a");
     a.href = URL.createObjectURL(new Blob([lines.join("\n")], { type: "text/csv" }));
     a.download = "wine-spectator-top-100-filtered.csv"; a.click(); URL.revokeObjectURL(a.href);
@@ -919,6 +934,7 @@ function renderSources() {
     `<b>Color.</b> Casing is normalized and “blush” is grouped with Rosé. Three wines with no color in the source get one from their wine type or style, marked *.`,
     `<b>Price.</b> Release price in US dollars at review, not adjusted for inflation. Non-750ml bottles are noted. The 1988 La Mission Haut-Brion has no price.`,
     `<b>Labels.</b> ${fmt(META.labels)} wines, mostly 2016 on, have a label image on Wine Spectator's image host; the rest show a bottle in the wine's color.`,
+    `<b>Grape or style</b> on The Reds and The Whites is inferred, since the source has no grape field. A wine that names its grape (“Cabernet Sauvignon Napa Valley”) is filed under it; one that names its place (“Pauillac”, “Barolo”) is filed under that place's main grape or blend, such as Bordeaux blend or Nebbiolo. Proprietary names with no grape or place clue go to “Proprietary &amp; other reds” or “Other whites”. Blends file under the grape named first. The rules are in <code>grapes.py</code>.`,
     `<b>Winery grouping</b> in The Estates ignores accents, case, and punctuation, but doesn't merge different names for one producer, such as “Beaucastel” and “Château de Beaucastel”.`,
   ];
   $("#so-notes").innerHTML = notes.map(n => `<li>${n}</li>`).join("");
@@ -929,6 +945,172 @@ function renderSources() {
     return `<tr><td>${t ? esc(t) : "<i>blank</i>"}</td><td>${esc(META.tasters[t] || "")}</td><td class="num">${fmt(n)}</td><td class="num">${Math.min(...ys)}–${Math.max(...ys)}</td><td>${esc(cs)}</td></tr>`;
   }).join("")}</tbody></table>`;
   $("#foot").innerHTML = `<svg class="orn"><use href="#grape"/></svg><div class="colo">Colophon</div>Set in Cormorant Garamond &amp; EB Garamond. Data from the <a href="https://top100-list.winespectator.com/">Wine Spectator Top 100</a>, pulled ${esc(META.pulled)}.<br>An unofficial register, not affiliated with Wine Spectator. Download <a href="data/top100.csv">top100.csv</a> · <a href="data/top100.json">top100.json</a>`;
+}
+
+/* ---------- the reds & the whites ---------- */
+function wlY(r) {
+  return `<div class="wl yrd">
+    <span class="wl-r">${r.y}<small>No. ${r.r}${r.y === 1998 ? " †" : ""}</small></span>
+    <div>
+      <div class="wl-l"><span class="wl-n">${wineryBtn(r)} <i>${esc(r.n)}</i> ${esc(r.v)}</span><span class="ldr"></span><span class="wl-p"><b>${r.s}</b> · ${money(r)}</span></div>
+      <div class="wl-m">${esc(r.g)} · ${esc(origin(r))}${r.dw ? " · drink " + esc(r.dw) : ""}</div>
+      ${links(r, true)}
+    </div></div>`;
+}
+function colorPage(o) {
+  const { c, id, pre, word, v, p0 } = o;
+  const Word = word[0].toUpperCase() + word.slice(1);
+  const R = DATA.filter(r => r.c === c);
+  const P = i => roman(p0 + i);
+  const tally = (rs, f) => Object.entries(rs.reduce((a, r) => { const k = f(r); if (k) a[k] = (a[k] || 0) + 1; return a; }, {})).sort((a, b) => b[1] - a[1]);
+  const grapes = tally(R, r => r.g), countries = tally(R, r => r.co);
+  const isOne = r => r.r === 1 && r.y !== 1998;
+  const L = R.filter(r => r.y === LATEST).sort((a, b) => a.r - b.r);
+  const priced = rs => rs.filter(r => r.p).map(r => r.p);
+  const pct = (R.length / DATA.length * 100).toFixed(0);
+  const misc = g => /^(Proprietary|Other)/.test(g);
+  const topG = grapes.filter(([g]) => !misc(g));
+  const opt = (val, t) => `<option value="${esc(val)}">${esc(t)}</option>`;
+  const DEC = [...new Set(YEARS.map(y => Math.floor(y / 10) * 10))];
+  const N = 18;
+
+  $("#v-" + id).innerHTML = `
+  <header class="shead"><svg class="orn"><use href="#grape"/></svg><div class="caps kick">The ${word} register</div><h2>The <i>${Word}s</i></h2>
+    <p>${fmt(R.length)} of the ${fmt(DATA.length)} wines on the ${META.years} lists are ${word}, ${pct} percent. ${esc(topG[0][0])} is the most-listed grape or style and ${esc(countries[0][0])} the most-listed country. Grapes are inferred from wine names; see <a href="#sources">Provenance</a>.</p></header>
+  <div class="numbers" id="${pre}-tiles"></div>
+
+  <header class="shead"><div class="caps kick">Plates ${P(0)} &amp; ${P(1)}</div><h2>Grape &amp; <i>Ground</i></h2><p>Every ${word} appearance since ${META.first}, by grape or style and by country. Hover a bar for details; click one to filter the register below.</p></header>
+  <div class="plates2">
+    <div class="frame plate"><div class="caps pno">Plate ${P(0)}</div><h3>By grape or style</h3><p class="cap">${grapes.length > N ? `The ${N} largest of ${grapes.length} groups.` : `All ${grapes.length} groups.`} Place names map to their main grape or blend.</p><div id="ch-${pre}-grape"></div></div>
+    <div class="frame plate"><div class="caps pno">Plate ${P(1)}</div><h3>By country</h3><p class="cap">${countries.length > N ? `The ${N} largest of ${countries.length} countries.` : `All ${countries.length} countries.`}</p><div id="ch-${pre}-country"></div></div>
+  </div>
+  <div class="frame plate"><div class="caps pno">Plate ${P(2)}</div><h3>${Word} wines on each list, by grape</h3><p class="cap">Bar height is the number of ${word} wines out of 100. The six most-listed grapes or styles; the rest grouped as Other.</p><div id="ch-${pre}-mix"></div></div>
+  <div class="plates2">
+    <div class="frame plate"><div class="caps pno">Plate ${P(3)}</div><h3>Average score</h3><p class="cap">Mean score of each list's ${word} wines, against all 100 wines.</p><div id="ch-${pre}-score"></div></div>
+    <div class="frame plate"><div class="caps pno">Plate ${P(4)}</div><h3>Median release price</h3><p class="cap">US dollars, not adjusted for inflation, against all 100 wines.</p><div id="ch-${pre}-price"></div></div>
+  </div>
+
+  <header class="shead"><svg class="orn"><use href="#grape"/></svg><div class="caps kick">The list of ${roman(LATEST)}</div><h2>The ${LATEST} <i>${Word}s</i></h2><p>The ${L.length} ${word} wines on this year's list, grouped by grape or style, in rank order.</p></header>
+  <div class="wlist" id="${pre}-latest"></div>
+
+  <header class="shead"><div class="caps kick">Year by year</div><h2>Top of the <i>List</i></h2><p>The highest-ranked ${word} wine on each list. <span class="woty-mark">❦</span> marks a Wine of the Year.</p></header>
+  <div class="ledger" id="${pre}-best"></div>
+
+  <header class="shead"><svg class="orn"><use href="#grape"/></svg><h2>From the <i>Cellar Door</i></h2><p>Across all ${META.years} lists: the best ${word}s at $25 or less on release, and the highest scores of all.</p></header>
+  <div class="plates2" id="${pre}-values"></div>
+
+  <header class="shead"><div class="caps kick">Every ${word}</div><h2>The ${Word} <i>Register</i></h2><p>All ${fmt(R.length)} ${word} wines. Filter by grape, country, decade, or score; click a winery for every year it made the list.</p></header>
+  <div class="controls">
+    <label>Search<input type="search" id="${pre}-q" placeholder="Winery, wine, region…"></label>
+    <label>Grape or style<select id="${pre}-grape">${opt("", "All grapes & styles")}${grapes.map(([g, n]) => opt(g, `${g} (${fmt(n)})`)).join("")}</select></label>
+    <label>Country<select id="${pre}-country">${opt("", "All countries")}${countries.map(([k, n]) => opt(k, `${k} (${fmt(n)})`)).join("")}</select></label>
+    <label>Decade<select id="${pre}-dec">${opt("", "All lists")}${DEC.reverse().map(d => opt(d, `${d}s`)).join("")}</select></label>
+    <label>Score at least<input type="number" id="${pre}-smin" min="80" max="100" step="1" placeholder="any"></label>
+    <label>Order<select id="${pre}-sort">
+      <option value="yr">Newest list, by rank</option><option value="yrA">Oldest list first</option>
+      <option value="score">Score, high to low</option><option value="price">Price, low to high</option><option value="priceD">Price, high to low</option>
+    </select></label>
+    <button type="button" class="btn" id="${pre}-reset">Reset</button>
+  </div>
+  <p class="count" id="${pre}-count"></p>
+  <div class="ledger"><table>
+    <thead><tr><th class="num">List</th><th class="num">Rank</th><th></th><th>Wine</th><th>Grape or style</th><th class="num">Score</th><th class="num">Price</th><th>Origin</th><th>Drink</th></tr></thead>
+    <tbody id="${pre}-body"></tbody>
+  </table></div>
+  <div class="more"><button type="button" class="btn" id="${pre}-more">Show more</button></div>`;
+
+  $(`#${pre}-tiles`).innerHTML = [
+    [fmt(R.length), `${word} wines`], [pct + "%", "of all entries"], [R.filter(isOne).length, R.filter(isOne).length === 1 ? "wine of the year" : "wines of the year"],
+    [mean(R.map(r => r.s)).toFixed(1), "average score"], ["$" + median(priced(R)), "median price"],
+    [L.length, `on the ${LATEST} list`], [countries.length, "countries"], [grapes.length, "grapes & styles"],
+  ].map(([b, s]) => `<div><b>${b}</b><span>${esc(s)}</span></div>`).join("");
+
+  // Plates: grape & country bars
+  const groupTip = (name, rs, sub) => {
+    const ys = rs.map(r => r.y), ps = priced(rs);
+    return `<b>${esc(name)} · ${fmt(rs.length)} wines</b>` + tr("Average score", mean(rs.map(r => r.s)).toFixed(1)) +
+      tr("Median price", ps.length ? "$" + median(ps) : "n/a") + tr("Wines of the Year", rs.filter(isOne).length) +
+      tr("Listed", `${Math.min(...ys)}–${Math.max(...ys)}`) + tally(rs, sub).slice(0, 3).map(([k, n]) => tr(esc(k), n)).join("");
+  };
+  const scrollReg = () => $(`#${pre}-q`).closest(".controls").scrollIntoView({ behavior: "smooth" });
+  hbars($(`#ch-${pre}-grape`), grapes.slice(0, N).map(([g]) => {
+    const rs = R.filter(r => r.g === g);
+    return { label: g, value: rs.length, g, tip: groupTip(g, rs, r => r.co) };
+  }), { lw: 190, v, onClick: d => { $(`#${pre}-grape`).value = d.g; st.shown = 100; draw(); scrollReg(); } });
+  hbars($(`#ch-${pre}-country`), countries.slice(0, N).map(([k]) => {
+    const rs = R.filter(r => r.co === k);
+    return { label: k, value: rs.length, k, tip: groupTip(k, rs, r => r.g) };
+  }), { lw: 130, v, onClick: d => { $(`#${pre}-country`).value = d.k; st.shown = 100; draw(); scrollReg(); } });
+
+  // Plate: grape mix per list
+  const six = topG.slice(0, 6).map(([g]) => g);
+  stackedBars($(`#ch-${pre}-mix`), YEARS.map(y => ({ x: y, parts: byYear[y].filter(r => r.c === c).reduce((a, r) => { const k = six.includes(r.g) ? r.g : "Other"; a[k] = (a[k] || 0) + 1; return a; }, {}) })),
+    [...six.map((g, i) => [g, `--c${i + 1}`]), ["Other", "--other"]]);
+
+  // Plates: score & price against all wines
+  const ofC = y => byYear[y].filter(r => r.c === c);
+  lineChart($(`#ch-${pre}-score`), [
+    { name: `${Word}s`, v, pts: YEARS.map(y => [y, +mean(ofC(y).map(r => r.s)).toFixed(2)]) },
+    { name: "All wines", v: "--muted", pts: YEARS.map(y => [y, +mean(byYear[y].map(r => r.s)).toFixed(2)]) },
+  ], { yf: x => (+x).toFixed(1), endLabels: true });
+  lineChart($(`#ch-${pre}-price`), [
+    { name: `${Word}s`, v, pts: YEARS.map(y => [y, median(priced(ofC(y)))]) },
+    { name: "All wines", v: "--muted", pts: YEARS.map(y => [y, median(priced(byYear[y]))]) },
+  ], { yf: x => "$" + Math.round(x), y0: 0, endLabels: true });
+
+  // This year's list, by grape
+  const lg = {}; L.forEach(r => (lg[r.g] ||= []).push(r));
+  $(`#${pre}-latest`).innerHTML = Object.entries(lg).sort((a, b) => b[1].length - a[1].length || a[1][0].r - b[1][0].r)
+    .map(([g, rs]) => `<div class="wgroup"><h4>${esc(g)}<span>${rs.length} wine${rs.length === 1 ? "" : "s"}</span></h4>${rs.map(wl).join("")}</div>`).join("");
+
+  // Top of each list
+  const best = [...YEARS].reverse().map(y => ofC(y).sort((a, b) => a.r - b.r)[0]).filter(Boolean);
+  $(`#${pre}-best`).innerHTML = `<table><thead><tr><th class="num">List</th><th class="num">Rank</th><th></th><th>Wine</th><th>Grape or style</th><th class="num">Score</th><th class="num">Price</th><th>Origin</th></tr></thead><tbody>${best.map(r => `<tr>
+    <td class="num"><span class="yr" data-year="${r.y}" title="Show the ${r.y} list">${r.y}</span></td>
+    <td class="num">${r.r}${isOne(r) ? '<span class="woty-mark" title="Wine of the Year">❦</span>' : ""}${r.y === 1998 ? '<span class="flag" title="1998 ranks are scrambled in the source"> †</span>' : ""}</td>
+    <td>${label(r, 80)}</td>
+    <td class="wcell">${wineryBtn(r, "wy")}<div class="wn2">${esc(r.n)} ${esc(r.v)}</div>${links(r, true)}</td>
+    <td>${esc(r.g)}</td><td class="num"><b>${r.s}</b></td><td class="num">${money(r)}</td><td>${esc(origin(r))}</td></tr>`).join("")}</tbody></table>`;
+
+  // Cellar door
+  const byScore = (a, b) => b.s - a.s || a.r - b.r || b.y - a.y;
+  $(`#${pre}-values`).innerHTML = [
+    ["Twenty-five dollars &amp; under", `The eight best ${word}s at $25 or less`, R.filter(r => r.p && r.p <= 25).sort(byScore).slice(0, 8)],
+    ["The highest scored", `The eight top-scoring ${word}s`, R.slice().sort(byScore).slice(0, 8)],
+  ].map(([h, sub, rs]) => `<div class="frame cellar-door"><h3>${h}</h3><div class="caps under">${sub}</div>${rs.map(wlY).join("")}</div>`).join("");
+
+  // Register
+  const st = { shown: 100 };
+  const ids = ["q", "grape", "country", "dec", "smin", "sort"].map(k => `${pre}-${k}`);
+  const draw = () => {
+    const q = fold($(`#${pre}-q`).value.trim()), g = $(`#${pre}-grape`).value, co = $(`#${pre}-country`).value;
+    const dec = +$(`#${pre}-dec`).value || 0, smin = +$(`#${pre}-smin`).value || 0, so = $(`#${pre}-sort`).value;
+    const terms = q.split(/\s+/).filter(Boolean);
+    const Pr = r => r.p ?? 1e9;
+    const rows = R.filter(r => (!g || r.g === g) && (!co || r.co === co) && (!dec || (r.y >= dec && r.y < dec + 10)) &&
+      (!smin || r.s >= smin) && terms.every(t => r.k.includes(t))).sort({
+      yr: (a, b) => b.y - a.y || a.r - b.r, yrA: (a, b) => a.y - b.y || a.r - b.r, score: byScore,
+      price: (a, b) => Pr(a) - Pr(b) || b.s - a.s, priceD: (a, b) => (b.p ?? -1) - (a.p ?? -1) || b.s - a.s,
+    }[so]);
+    const ps = priced(rows);
+    $(`#${pre}-count`).textContent = `${fmt(rows.length)} ${word} wine${rows.length === 1 ? "" : "s"}${rows.length ? ` · average score ${mean(rows.map(r => r.s)).toFixed(1)}` : ""}${ps.length ? ` · median price $${fmt(median(ps))}` : ""}`;
+    $(`#${pre}-body`).innerHTML = rows.slice(0, st.shown).map(r => `<tr>
+      <td class="num"><span class="yr" data-year="${r.y}" title="Show the ${r.y} list">${r.y}</span></td>
+      <td class="num">${r.r}${isOne(r) ? '<span class="woty-mark" title="Wine of the Year">❦</span>' : ""}${r.y === 1998 ? '<span class="flag" title="1998 ranks are scrambled in the source"> †</span>' : ""}</td>
+      <td>${label(r, 80)}</td>
+      <td class="wcell">${wineryBtn(r, "wy")}<div class="wn2">${esc(r.n)} ${esc(r.v)}</div>${links(r, true)}</td>
+      <td>${esc(r.g)}</td><td class="num"><b>${r.s}</b></td><td class="num">${money(r)}</td>
+      <td>${esc(origin(r))}</td><td style="white-space:nowrap">${esc(r.dw)}</td></tr>`).join("");
+    const more = $(`#${pre}-more`);
+    more.style.display = rows.length > st.shown ? "" : "none";
+    more.textContent = `Show ${Math.min(100, rows.length - st.shown)} more · ${fmt(rows.length - st.shown)} remaining`;
+  };
+  ids.forEach(i => $("#" + i).addEventListener("input", () => { st.shown = 100; draw(); }));
+  $(`#${pre}-more`).onclick = () => { st.shown += 100; draw(); };
+  $(`#${pre}-reset`).onclick = () => {
+    ids.forEach(i => $("#" + i).value = ""); $(`#${pre}-sort`).value = "yr"; st.shown = 100; draw();
+  };
+  draw();
 }
 
 /* ---------- tabs ---------- */
@@ -943,6 +1125,8 @@ addEventListener("hashchange", () => { route(); scrollTo(0, 0); });
 
 computeRepeat();
 renderLatest(); setupAll(); drawAll(); renderWoty(); countryTable(); renderSources(); renderCharts();
+colorPage({ c: "Red", id: "reds", pre: "rd", word: "red", v: "--w-red", p0: 10 });
+colorPage({ c: "White", id: "whites", pre: "wh", word: "white", v: "--c2", p0: 15 });
 route();
 </script>
 </body>

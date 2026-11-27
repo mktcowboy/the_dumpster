@@ -21,6 +21,8 @@ import unicodedata
 from collections import Counter
 from pathlib import Path
 
+from grapes import grape
+
 HERE = Path(__file__).resolve().parent
 CACHE = HERE / ".cache"
 OUT_HTML = HERE / "wine-spectator-top-100.html"
@@ -149,6 +151,7 @@ def load():
                 "is": clean(w["issue_date"]), "lb": w.get("label_url") or "",
                 "dw": dw, "de": dend, "cm": made, "ci": imported,
                 "sk": story_url.get((y, rank), "") if rank <= 10 else "",
+                "g": grape(color, clean(w["wine_full"]), region, country),
             })
     # A 1998 quirk: the source repeats ranks, so story matching by rank is off.
     for r in rows:
@@ -166,7 +169,8 @@ def write_data(rows):
             ("bottle_size", "b"), ("color", "c"), ("type", "t"),
             ("country", "co"), ("us_state", "st"), ("region", "rg"),
             ("taster", "tz"), ("issue_date", "is"), ("drink_window", "dw"),
-            ("cases_made", "cm"), ("cases_imported", "ci")]
+            ("cases_made", "cm"), ("cases_imported", "ci"),
+            ("grape_or_style_inferred", "g")]
     with open(OUT_DIR / "top100.csv", "w", newline="") as fh:
         wr = csv.writer(fh)
         wr.writerow([c for c, _ in cols] + ["ws_review_url", "ws_year_list_url",
